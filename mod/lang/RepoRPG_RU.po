@@ -1982,7 +1982,7 @@ msgid "HELP: {0}  {1:0}m"
 msgstr "ПОМОЩЬ: {0}  {1:0} м"
 
 msgid "HIGHLIGHTS"
-msgstr "ЯРКИЕ МОМЕНТЫ"
+msgstr "ГЛАВНОЕ"
 
 msgid "Starter kit"
 msgstr "Стартовый набор"
@@ -2310,6 +2310,786 @@ msgstr "<color=#99ff99>МАКСИМУМ</color>"
 
 msgid "<color=#ff9999>Unlocks at level {0}</color>"
 msgstr "<color=#ff9999>Открывается на уровне {0}</color>"
+
+msgid "<color=#ffb21e>▲ CAN ADD</color>"
+msgstr "<color=#ffb21e>▲ МОЖНО ДОБАВИТЬ</color>"
+
+msgid "<color=#ffb21e>RANK {0} → {1}</color>  <color=#9a9ca0>(pending)</color>"
+msgstr "<color=#ffb21e>РАНГ {0} → {1}</color>  <color=#9a9ca0>(ожидает)</color>"
+
+msgid "CAPSTONE  "
+msgstr "ВЕРШИНА  "
+
+msgid "Move onto"
+msgstr "Перейдите на"
+
+msgid "Point at"
+msgstr "Наведите на"
+
+msgid "MAX"
+msgstr "МАКС"
+
+msgid "{0} / {1} XP"
+msgstr "{0} / {1} опыта"
+
+msgid "Level <b>{0}</b>/{1}   <color=#9a9ca0>{2}</color>"
+msgstr "Уровень <b>{0}</b>/{1}   <color=#9a9ca0>{2}</color>"
+
+msgid "Skill points: <color=#ffd75a><b>{0}</b></color>"
+msgstr "Очки навыков: <color=#ffd75a><b>{0}</b></color>"
+
+msgid "Skill points: <b>0</b>"
+msgstr "Очки навыков: <b>0</b>"
+
+msgid "   <color=#ffb21e>{0} pending</color>"
+msgstr "   <color=#ffb21e>{0} ожидает</color>"
+
+msgid "   <i>(preview)</i>"
+msgstr "   <i>(предпросмотр)</i>"
+
+msgid "<color=#ffd166>ALTERNATE</color>"
+msgstr "<color=#ffd166>АЛЬТЕРНАТИВНАЯ</color>"
+
+msgid "<color=#9a9ca0>PASSIVE</color>"
+msgstr "<color=#9a9ca0>ПАССИВКА</color>"
+
+msgid "<color=#9a9ca0>{0:0} s cooldown. Talents change its numbers: Effects shows them now.</color>"
+msgstr "<color=#9a9ca0>Перезарядка {0:0} с. Таланты меняют её показатели: текущие - в «Эффектах».</color>"
+
+msgid "<color=#9a9ca0>Mastery: the alternate passive is on for this class this run.</color>"
+msgstr "<color=#9a9ca0>Мастерство: в этом забеге у этого класса включена альтернативная пассивка.</color>"
+
+msgid "<color=#9a9ca0>Passive: always on.</color>"
+msgstr "<color=#9a9ca0>Пассивка: действует всегда.</color>"
+
+msgid "SYNERGIES ({0})"
+msgstr "СИНЕРГИИ ({0})"
+
+msgid "<color=#ffb21e><b>SYNERGIES</b></color> ({0})"
+msgstr "<color=#ffb21e><b>СИНЕРГИИ</b></color> ({0})"
+
+msgid "SYNERGIES"
+msgstr "СИНЕРГИИ"
+
+msgid "<color=#9a9ca0>Off on this host.</color>"
+msgstr "<color=#9a9ca0>Отключено на этом хосте.</color>"
+
+msgid "<color=#ffb21e><b>SYNERGIES</b></color>"
+msgstr "<color=#ffb21e><b>СИНЕРГИИ</b></color>"
+
+msgid "<color=#9a9ca0><b>SYNERGIES (off on this host)</b></color>"
+msgstr "<color=#9a9ca0><b>СИНЕРГИИ (отключены на этом хосте)</b></color>"
+
+msgid "<color=#9a9ca0>Works while both classes are in the lobby.</color>"
+msgstr "<color=#9a9ca0>Работает, пока оба класса есть в лобби.</color>"
+
+msgid "<color=#9a9ca0>Synergies are off on this host.</color>"
+msgstr "<color=#9a9ca0>Синергии отключены на этом хосте.</color>"
+
+msgid "Trees"
+msgstr "Древа"
+
+msgid "Effects"
+msgstr "Эффекты"
+
+msgid "Comparing..."
+msgstr "Сравнение..."
+
+msgid "Compare"
+msgstr "Сравнить"
+
+msgid "Respec (no points spent)"
+msgstr "Сброс (очки не потрачены)"
+
+msgid "<color=#ffcc66>Class selection opens in the lobby or shop.</color>"
+msgstr "<color=#ffcc66>Выбор класса открывается в лобби или магазине.</color>"
+
+msgid "Checking..."
+msgstr "Проверка..."
+
+msgid "★ MASTERED"
+msgstr "★ ОСВОЕН"
+
+msgid "<color=#9a9ca0>Locked for this run once points are spent (a respec frees it).</color>"
+msgstr "<color=#9a9ca0>Фиксируется на этот забег, как только потрачены очки (сброс освобождает).</color>"
+
+msgid "Main trees"
+msgstr "Основные древа"
+
+msgid "Prestige tree"
+msgstr "Древо престижа"
+
+msgid "ALTERNATE  "
+msgstr "АЛЬТЕРНАТИВНАЯ  "
+
+msgid "PASSIVE  "
+msgstr "ПАССИВКА  "
+
+msgid "<color=#9a9ca0>{0:0} s cooldown</color>"
+msgstr "<color=#9a9ca0>перезарядка {0:0} с</color>"
+
+msgid "★ ALTERNATE ON"
+msgstr "★ АЛЬТЕРНАТИВНАЯ ВКЛ"
+
+msgid "★ ALTERNATE OFF"
+msgstr "★ АЛЬТЕРНАТИВНАЯ ВЫКЛ"
+
+msgid "<color=#9a9ca0>Select to switch it.</color>"
+msgstr "<color=#9a9ca0>Выберите, чтобы переключить.</color>"
+
+msgid "> CHECKING..."
+msgstr "> ПРОВЕРКА..."
+
+msgid "> COMPARING..."
+msgstr "> СРАВНЕНИЕ..."
+
+msgid "> EFFECTS"
+msgstr "> ЭФФЕКТЫ"
+
+msgid "> TREES"
+msgstr "> ДРЕВА"
+
+msgid "Level <b>{0}</b>/{1}   {2}   Skill points: {3}"
+msgstr "Уровень <b>{0}</b>/{1}   {2}   Очки навыков: {3}"
+
+msgid "> PRESTIGE TREE"
+msgstr "> ДРЕВО ПРЕСТИЖА"
+
+msgid "> MAIN TREES"
+msgstr "> ОСНОВНЫЕ ДРЕВА"
+
+msgid "  <color=#9a9ca0>(no skill points - level up to earn more)</color>"
+msgstr "  <color=#9a9ca0>(нет очков навыков - повышайте уровень, чтобы получить ещё)</color>"
+
+msgid "Level {0}/{1}    {2}    Skill points: <b>{3}</b>{4}    "
+msgstr "Уровень {0}/{1}    {2}    Очки навыков: <b>{3}</b>{4}    "
+
+msgid "    <i>(preview - select this class to spend points)</i>"
+msgstr "    <i>(предпросмотр - выберите этот класс, чтобы тратить очки)</i>"
+
+msgid "  ★ TAKEN"
+msgstr "  ★ ЗАНЯТ"
+
+msgid "  ★ IN {0}{1}"
+msgstr "  ★ В: {0}{1}"
+
+msgid ", LV {0}"
+msgstr ", УР. {0}"
+
+msgid "PRESTIGE: "
+msgstr "ПРЕСТИЖ: "
+
+msgid "  <size={0}>{1} PTS{2}</size>"
+msgstr "  <size={0}>{1} ОЧК.{2}</size>"
+
+msgid "<color=#d9d9d9>Rank {0}/{1}</color>"
+msgstr "<color=#d9d9d9>Ранг {0}/{1}</color>"
+
+msgid "   <size={0}>{1} · RANK {2}/{3}</size>"
+msgstr "   <size={0}>{1} · РАНГ {2}/{3}</size>"
+
+msgid "CAPSTONE"
+msgstr "ВЕРШИНА"
+
+msgid "class level {0}"
+msgstr "уровень класса {0}"
+
+msgid "Click: add a point · right-click: take a pending one back"
+msgstr "Щелчок: добавить очко · правый щелчок: вернуть неподтверждённое"
+
+msgid "[done] "
+msgstr "[выполнено] "
+
+msgid "[failed] "
+msgstr "[провалено] "
+
+msgid " +BONUS"
+msgstr " +БОНУС"
+
+msgid " (+bonus)"
+msgstr " (+бонус)"
+
+msgid " ({0}/{1} DMG)"
+msgstr " ({0}/{1} УРОН)"
+
+msgid "Choose a module"
+msgstr "Выберите модуль"
+
+msgid "Pick one of the modules for this reward."
+msgstr "Выберите один из модулей в качестве этой награды."
+
+msgid "Point at a contract"
+msgstr "Наведите на контракт"
+
+msgid "Its objective, bonus, reward and stakes show here - and Accept, Vote or Drop. Click one to keep it here."
+msgstr "Здесь показываются его цель, бонус, награда и ставки, а также «Принять», «Голосовать» или «Отказаться». Щёлкните по контракту, чтобы закрепить его здесь."
+
+msgid "Crew"
+msgstr "Команда"
+
+msgid "Lv {0}"
+msgstr "Ур. {0}"
+
+msgid "Reroll (free)"
+msgstr "Обновить (бесплатно)"
+
+msgid "BOARD"
+msgstr "ДОСКА"
+
+msgid "Open · slots {0}/{1}"
+msgstr "Открыта · слоты {0}/{1}"
+
+msgid "Closed"
+msgstr "Закрыта"
+
+msgid "REROLL THE BOARD?"
+msgstr "ОБНОВИТЬ ДОСКУ?"
+
+msgid "The board is closed"
+msgstr "Доска закрыта"
+
+msgid "It opens in the lobby and in the shop between levels. Take up to {0} contracts into the next level."
+msgstr "Она открывается в лобби и в магазине между уровнями. На следующий уровень можно взять до {0} контрактов."
+
+msgid "No offers left"
+msgstr "Предложений не осталось"
+
+msgid "Reroll the board for new ones."
+msgstr "Обновите доску, чтобы получить новые."
+
+msgid "ACCEPT THIS CONTRACT?"
+msgstr "ПРИНЯТЬ ЭТОТ КОНТРАКТ?"
+
+msgid "{0} ({1})\n{2}\n\nIt is for the next level. Slots used: {3}/{4}. Failing costs only reputation with the giver."
+msgstr "{0} ({1})\n{2}\n\nОн на следующий уровень. Занято слотов: {3}/{4}. Провал стоит только репутации у заказчика."
+
+msgid "loot"
+msgstr "добыча"
+
+msgid "Taken"
+msgstr "Взят"
+
+msgid "{0}/{1} taken for the next level"
+msgstr "взято на следующий уровень: {0}/{1}"
+
+msgid "this level"
+msgstr "этот уровень"
+
+msgid "No active contracts: pick one from the board."
+msgstr "Нет активных контрактов: выберите на доске."
+
+msgid "No active contracts: pick them from the board in the shop."
+msgstr "Нет активных контрактов: выберите их на доске в магазине."
+
+msgid "DROP THIS CONTRACT?"
+msgstr "ОТКАЗАТЬСЯ ОТ ЭТОГО КОНТРАКТА?"
+
+msgid "1 more vote is waiting for you"
+msgstr "Вас ждёт ещё 1 голосование"
+
+msgid "{0} more votes are waiting for you"
+msgstr "Вас ждёт ещё голосований: {0}"
+
+msgid "team"
+msgstr "команда"
+
+msgid "Voted"
+msgstr "Проголосовано"
+
+msgid "Declined"
+msgstr "Отклонён"
+
+msgid "{0}: {1}/{2} voted"
+msgstr "{0}: проголосовало {1}/{2}"
+
+msgid " · closes when the level starts"
+msgstr " · закроется с началом уровня"
+
+msgid " · {0:0}s left"
+msgstr " · осталось {0:0} с"
+
+msgid "ACCEPT THE TEAM CONTRACT?"
+msgstr "ПРИНЯТЬ КОМАНДНЫЙ КОНТРАКТ?"
+
+msgid "Step {0}/{1}"
+msgstr "Шаг {0}/{1}"
+
+msgid "Done"
+msgstr "Готово"
+
+msgid "Needs rep {0}"
+msgstr "Нужна репутация {0}"
+
+msgid "After this chain"
+msgstr "После этой цепочки"
+
+msgid "Can be offered"
+msgstr "Может быть предложена"
+
+msgid "This run: no contracts finished yet"
+msgstr "Этот забег: завершённых контрактов пока нет"
+
+msgid "This run: {0} completed · {1} failed"
+msgstr "Этот забег: выполнено {0} · провалено {1}"
+
+msgid "View history"
+msgstr "История"
+
+msgid "history"
+msgstr "история"
+
+msgid "Taken for the next level"
+msgstr "Взят на следующий уровень"
+
+msgid "OBJECTIVE"
+msgstr "ЦЕЛЬ"
+
+msgid "REWARD"
+msgstr "НАГРАДА"
+
+msgid "\n<color=#9a9ca0>A reward pick: gear, crafting parts, a module or shop reputation - you choose once it's paid.</color>"
+msgstr "\n<color=#9a9ca0>Награда на выбор: снаряжение, детали для крафта, модуль или репутация магазина - выберете после выплаты.</color>"
+
+msgid "STAKES"
+msgstr "СТАВКИ"
+
+msgid "Failing a step once is allowed; a second failure ends the chain."
+msgstr "Один провал шага допускается; второй обрывает цепочку."
+
+msgid "Only the best score is paid. Needs 2 entrants; with fewer it's void (no loss)."
+msgstr "Оплачивается только лучший результат. Нужно 2 участника; если меньше - контракт аннулируется (без потерь)."
+
+msgid "the giver"
+msgstr "заказчика"
+
+msgid "\nIt counts in the next level you play after taking it."
+msgstr "\nЗасчитывается на следующем уровне, который вы сыграете после взятия."
+
+msgid "Drop (back to the board)"
+msgstr "Отказаться (вернуть на доску)"
+
+msgid "Contracts can be dropped in the lobby and the shop."
+msgstr "Отказаться от контрактов можно в лобби и магазине."
+
+msgid "You've voted"
+msgstr "Вы проголосовали"
+
+msgid "Waiting for your vote"
+msgstr "Ждёт вашего голоса"
+
+msgid "Accepted - you're in"
+msgstr "Принят - вы участвуете"
+
+msgid "Accepted - not in it"
+msgstr "Принят - вы не участвуете"
+
+msgid "STAKES AND THE VOTE"
+msgstr "СТАВКИ И ГОЛОСОВАНИЕ"
+
+msgid "Vote accept"
+msgstr "Голосовать «за»"
+
+msgid "You've voted."
+msgstr "Вы проголосовали."
+
+msgid "Vote decline"
+msgstr "Голосовать «против»"
+
+msgid "Chain · {0} steps"
+msgstr "Цепочка · шагов: {0}"
+
+msgid "After the current chain"
+msgstr "После текущей цепочки"
+
+msgid "Needs reputation {0}"
+msgstr "Нужна репутация {0}"
+
+msgid "STEPS"
+msgstr "ШАГИ"
+
+msgid "<color=#73ff66>[done]</color>"
+msgstr "<color=#73ff66>[готово]</color>"
+
+msgid "<color=#ffd75a>[now]</color>"
+msgstr "<color=#ffd75a>[сейчас]</color>"
+
+msgid " <color=#9a9ca0>(taken for the next level)</color>"
+msgstr " <color=#9a9ca0>(взят на следующий уровень)</color>"
+
+msgid " <color=#9a9ca0>(on the board between levels)</color>"
+msgstr " <color=#9a9ca0>(на доске между уровнями)</color>"
+
+msgid "FINAL REWARD"
+msgstr "ИТОГОВАЯ НАГРАДА"
+
+msgid "THE STORY SO FAR"
+msgstr "ИСТОРИЯ НА ДАННЫЙ МОМЕНТ"
+
+msgid "NEEDS"
+msgstr "ТРЕБУЕТСЯ"
+
+msgid "<color=#9a9ca0>A step can fail once; a second failure ends the chain.</color>"
+msgstr "<color=#9a9ca0>Шаг можно провалить один раз; второй провал обрывает цепочку.</color>"
+
+msgid "Reputation {0} with {1} (you: {2}). Then it can be offered on a board (20% each board), one chain at a time."
+msgstr "Репутация {0} у {1} (у вас: {2}). После этого её могут предложить на доске (20% на каждой доске), по одной цепочке за раз."
+
+msgid "its giver"
+msgstr "её заказчика"
+
+msgid "Reputation {0}/{1}"
+msgstr "Репутация {0}/{1}"
+
+msgid "WHAT THEY OFFER"
+msgstr "ЧТО ПРЕДЛАГАЕТ"
+
+msgid "NEXT TIER"
+msgstr "СЛЕДУЮЩАЯ СТУПЕНЬ"
+
+msgid "{0} at {1} ({2} to go): {3}"
+msgstr "{0} при {1} (осталось {2}): {3}"
+
+msgid "Everything unlocked."
+msgstr "Всё открыто."
+
+msgid "REPUTATION"
+msgstr "РЕПУТАЦИЯ"
+
+msgid "The crew · the whole team"
+msgstr "Команда · все игроки"
+
+msgid "Crew level {0}"
+msgstr "Уровень команды {0}"
+
+msgid "{0}/{1} crew XP"
+msgstr "{0}/{1} опыта команды"
+
+msgid "Max crew level"
+msgstr "Макс. уровень команды"
+
+msgid "BONUSES"
+msgstr "БОНУСЫ"
+
+msgid "CREW XP"
+msgstr "ОПЫТ КОМАНДЫ"
+
+msgid "Extractions, contracts, elites, bosses and milestones, for the whole team."
+msgstr "Извлечения, контракты, элита, боссы и этапы - на всю команду."
+
+msgid "This run"
+msgstr "Этот забег"
+
+msgid "Contract history"
+msgstr "История контрактов"
+
+msgid "<color=#ff6152>Failed</color>"
+msgstr "<color=#ff6152>Провален</color>"
+
+msgid "<b>{0}</b>  {1}\n<color=#9a9ca0>Level {2} · {3} · {4}</color>\n{5}"
+msgstr "<b>{0}</b>  {1}\n<color=#9a9ca0>Уровень {2} · {3} · {4}</color>\n{5}"
+
+msgid "NEWEST FIRST"
+msgstr "СНАЧАЛА НОВЫЕ"
+
+msgid "No contracts finished yet."
+msgstr "Завершённых контрактов пока нет."
+
+msgid " <color=#73ff66>(met)</color>"
+msgstr " <color=#73ff66>(выполнен)</color>"
+
+msgid " <color=#ff7a6b>(missed)</color>"
+msgstr " <color=#ff7a6b>(упущен)</color>"
+
+msgid "\n<color=#9a9ca0>Everyone who takes it competes; best score wins (ties split, top 2 paid with 5+). Needs 2 entrants.</color>"
+msgstr "\n<color=#9a9ca0>Все, кто его взял, соревнуются; побеждает лучший результат (при ничьей награда делится, при 5+ участниках платят двум лучшим). Нужно 2 участника.</color>"
+
+msgid "{0}:{1:00} left"
+msgstr "осталось {0}:{1:00}"
+
+msgid "{0}/{1} damage"
+msgstr "{0}/{1} урона"
+
+msgid "nobody died"
+msgstr "никто не погиб"
+
+msgid "judged at the end"
+msgstr "оценивается в конце"
+
+msgid "{0}/{1} (bonus {2})"
+msgstr "{0}/{1} (бонус {2})"
+
+msgid "  (+{0} more)"
+msgstr "  (ещё +{0})"
+
+msgid "Choose one - the others are gone once you pick."
+msgstr "Выберите одну - остальные пропадут после выбора."
+
+msgid "TAKE THIS REWARD?"
+msgstr "ВЗЯТЬ ЭТУ НАГРАДУ?"
+
+msgid "CHOOSE A MODULE"
+msgstr "ВЫБЕРИТЕ МОДУЛЬ"
+
+msgid "TAKE THIS MODULE?"
+msgstr "ВЗЯТЬ ЭТОТ МОДУЛЬ?"
+
+msgid "Menu and ability use the same key."
+msgstr "Меню и способность назначены на одну клавишу."
+
+msgid "Next notice and {0} use the same key ({1})."
+msgstr "«Следующее уведомление» и {0} назначены на одну клавишу ({1})."
+
+msgid "the menu"
+msgstr "меню"
+
+msgid "the ability"
+msgstr "способность"
+
+msgid "Open / close menu"
+msgstr "Открыть / закрыть меню"
+
+msgid "{0} and {1} use the same key ({2})."
+msgstr "{0} и {1} назначены на одну клавишу ({2})."
+
+msgid "Team panel and {0} use the same key ({1})."
+msgstr "Панель команды и {0} назначены на одну клавишу ({1})."
+
+msgid "Team panel and death head call-out use the same key ({0})."
+msgstr "Панель команды и зов головы после смерти назначены на одну клавишу ({0})."
+
+msgid "T is the game's chat key - the team panel on T opens chat too."
+msgstr "T - клавиша чата игры: панель команды на T заодно откроет чат."
+
+msgid "T is the game's chat key - a class key on T opens chat too."
+msgstr "T - клавиша чата игры: клавиша класса на T заодно откроет чат."
+
+msgid "Menu and ability use the same controller buttons."
+msgstr "Меню и способность назначены на одни и те же кнопки геймпада."
+
+msgid "{0} uses {1}, which also moves the selection."
+msgstr "{0} использует {1}, а она же перемещает выделение."
+
+msgid "UNBOUND"
+msgstr "НЕ НАЗНАЧЕНО"
+
+msgid "D-PAD UP"
+msgstr "КРЕСТОВИНА ВВЕРХ"
+
+msgid "D-PAD DOWN"
+msgstr "КРЕСТОВИНА ВНИЗ"
+
+msgid "D-PAD LEFT"
+msgstr "КРЕСТОВИНА ВЛЕВО"
+
+msgid "D-PAD RIGHT"
+msgstr "КРЕСТОВИНА ВПРАВО"
+
+msgid "L-STICK CLICK"
+msgstr "НАЖАТИЕ Л. СТИКА"
+
+msgid "R-STICK CLICK"
+msgstr "НАЖАТИЕ П. СТИКА"
+
+msgid "INTERFACE"
+msgstr "ИНТЕРФЕЙС"
+
+msgid "Text size and how text fits"
+msgstr "Размер текста и его вписывание"
+
+msgid "TEXT SIZE"
+msgstr "РАЗМЕР ТЕКСТА"
+
+msgid "Fit to boxes"
+msgstr "Вписывать в рамки"
+
+msgid "Reduced effects"
+msgstr "Меньше эффектов"
+
+msgid "ACTION NEEDED"
+msgstr "ТРЕБУЕТСЯ ДЕЙСТВИЕ"
+
+msgid "Votes and choices that wait on you"
+msgstr "Голосования и выборы, которые ждут вас"
+
+msgid "ABOVE HUD"
+msgstr "НАД HUD"
+
+msgid "LEFT MIDDLE"
+msgstr "СЛЕВА ПО ЦЕНТРУ"
+
+msgid "BOTTOM CENTRE"
+msgstr "СНИЗУ ПО ЦЕНТРУ"
+
+msgid "Banner"
+msgstr "Баннер"
+
+msgid "Alert sound"
+msgstr "Звук оповещения"
+
+msgid "Menu key opens it"
+msgstr "Клавиша меню открывает"
+
+msgid "LIST"
+msgstr "СПИСОК"
+
+msgid "TALENTS"
+msgstr "ТАЛАНТЫ"
+
+msgid "TALENTS IF POINTS"
+msgstr "ТАЛАНТЫ, ЕСЛИ ЕСТЬ ОЧКИ"
+
+msgid "OVERVIEW"
+msgstr "ОБЗОР"
+
+msgid "CLASS TAB"
+msgstr "ВКЛАДКА КЛАССА"
+
+msgid "Ability ready sound"
+msgstr "Звук готовности способности"
+
+msgid "Deadline reminder"
+msgstr "Напоминание о сроке"
+
+msgid "Hide votes"
+msgstr "Скрывать голосования"
+
+msgid "Hide choices"
+msgstr "Скрывать выборы"
+
+msgid "Hide reminders"
+msgstr "Скрывать напоминания"
+
+msgid "AUTO-HIDE"
+msgstr "АВТОСКРЫТИЕ"
+
+msgid "ACCESSIBILITY"
+msgstr "ДОСТУПНОСТЬ"
+
+msgid "Easier to read and calmer to look at"
+msgstr "Легче читать и спокойнее для глаз"
+
+msgid "Colorblind-friendly"
+msgstr "Режим для дальтоников"
+
+msgid "Reduced motion"
+msgstr "Меньше движения"
+
+msgid "Reduced motion stops fades, slides and pulsing. Bigger text: Interface > Text size. Bigger HUD: HUD > HUD size."
+msgstr "«Меньше движения» отключает затухания, сдвиги и пульсацию. Текст крупнее: Интерфейс > Размер текста. HUD крупнее: HUD > Размер HUD."
+
+msgid "AUDIO"
+msgstr "ЗВУК"
+
+msgid "Heal sounds are under Notifications"
+msgstr "Звуки лечения - в разделе «Уведомления»"
+
+msgid "Menu sounds"
+msgstr "Звуки меню"
+
+msgid "GAMEPLAY"
+msgstr "ИГРОВОЙ ПРОЦЕСС"
+
+msgid "ASK BEFORE SALVAGE"
+msgstr "СПРАШИВАТЬ ПЕРЕД РАЗБОРКОЙ"
+
+msgid "RARE+"
+msgstr "РЕДКОЕ+"
+
+msgid "Rare+"
+msgstr "Редкое+"
+
+msgid "None"
+msgstr "Нет"
+
+msgid "NOTIFICATIONS"
+msgstr "УВЕДОМЛЕНИЯ"
+
+msgid "DURATION"
+msgstr "ДЛИТЕЛЬНОСТЬ"
+
+msgid "MAX SHOWN"
+msgstr "МАКС. НА ЭКРАНЕ"
+
+msgid "Which pop-ups show (XP, loot, research...): Settings > HUD."
+msgstr "Какие всплывающие сообщения показывать (опыт, добыча, исследования...): Настройки > HUD."
+
+msgid "HEALING"
+msgstr "ЛЕЧЕНИЕ"
+
+msgid "FEEDBACK"
+msgstr "ОТКЛИК"
+
+msgid "DETAILED"
+msgstr "ПОДРОБНО"
+
+msgid "Heal sounds"
+msgstr "Звуки лечения"
+
+msgid "BIG HEAL"
+msgstr "БОЛЬШОЕ ЛЕЧЕНИЕ"
+
+msgid "100 HP"
+msgstr "100 ОЗ"
+
+msgid "CONTROLS - KEYBOARD & MOUSE"
+msgstr "УПРАВЛЕНИЕ - КЛАВИАТУРА И МЫШЬ"
+
+msgid "Use class ability"
+msgstr "Применить способность класса"
+
+msgid "Inside the menu: WASD / arrows move.  Space and Backspace always work as confirm / back, Tab / Shift+Tab switch tabs, Page Up / Down scroll."
+msgstr "В меню: WASD / стрелки - перемещение.  Пробел и Backspace всегда работают как подтверждение / назад, Tab / Shift+Tab переключают вкладки, Page Up / Down прокручивают."
+
+msgid "Menu: confirm / select"
+msgstr "Меню: подтвердить / выбрать"
+
+msgid "Menu: back / cancel"
+msgstr "Меню: назад / отмена"
+
+msgid "Menu: previous sub-tab"
+msgstr "Меню: предыдущая подвкладка"
+
+msgid "Menu: next sub-tab"
+msgstr "Меню: следующая подвкладка"
+
+msgid "Menu: secondary action"
+msgstr "Меню: дополнительное действие"
+
+msgid "Confirm changes (Class / Attributes / Perks)"
+msgstr "Подтвердить изменения (Класс / Характеристики / Перки)"
+
+msgid "Reset changes (Class / Attributes / Perks)"
+msgstr "Сбросить изменения (Класс / Характеристики / Перки)"
+
+msgid "Herald: hum (no mic)"
+msgstr "Глашатай: гул (без микрофона)"
+
+msgid "Quartermaster: hand off item"
+msgstr "Интендант: передать предмет"
+
+msgid "Mimic: swap copied ability"
+msgstr "Мимик: сменить скопированную способность"
+
+msgid "Cartwright: cart follow on / off"
+msgstr "Тележник: следование тележки вкл / выкл"
+
+msgid "Gear tab: salvage selected item"
+msgstr "Вкладка «Снаряжение»: разобрать выбранный предмет"
+
+msgid "Death head: call out for help"
+msgstr "Голова после смерти: позвать на помощь"
+
+msgid "Shop highlights: hide (hold: keep up)"
+msgstr "Главное в магазине: скрыть (удержание: оставить)"
+
+msgid "Team panel (hold)"
+msgstr "Панель команды (удержание)"
+
+msgid "Action needed: next notice"
+msgstr "Требуется действие: следующее уведомление"
+
+msgid "Action needed: dismiss (hold: all)"
+msgstr "Требуется действие: скрыть (удержание: все)"
 
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
@@ -2767,6 +3547,82 @@ msgid "Suggested for your class"
 msgstr "Рекомендуется для вашего класса"
 
 msgctxt "term"
+msgid "Taken by"
+msgstr "Занят"
+
+msgctxt "term"
+msgid "CONTRACTS"
+msgstr "КОНТРАКТЫ"
+
+msgctxt "term"
+msgid "Chain"
+msgstr "Цепочка"
+
+msgctxt "term"
+msgid "Bonus met"
+msgstr "Бонус выполнен"
+
+msgctxt "term"
+msgid "Bonus missed"
+msgstr "Бонус упущен"
+
+msgctxt "term"
+msgid "Done this run"
+msgstr "Пройдена в этом забеге"
+
+msgctxt "term"
+msgid "One failed step"
+msgstr "Один шаг провален"
+
+msgctxt "term"
+msgid "Use ability"
+msgstr "Применить способность"
+
+msgctxt "term"
+msgid "Herald hum"
+msgstr "Гул Глашатая"
+
+msgctxt "term"
+msgid "Quartermaster hand-off"
+msgstr "Передача Интенданта"
+
+msgctxt "term"
+msgid "Mimic swap"
+msgstr "Смена Мимика"
+
+msgctxt "term"
+msgid "Cartwright follow on / off"
+msgstr "Следование Тележника вкл / выкл"
+
+msgctxt "term"
+msgid "Previous tab"
+msgstr "Предыдущая вкладка"
+
+msgctxt "term"
+msgid "Next tab"
+msgstr "Следующая вкладка"
+
+msgctxt "term"
+msgid "Secondary action"
+msgstr "Дополнительное действие"
+
+msgctxt "term"
+msgid "Confirm changes"
+msgstr "Подтвердить изменения"
+
+msgctxt "term"
+msgid "Reset changes"
+msgstr "Сбросить изменения"
+
+msgctxt "term"
+msgid "Previous main tab"
+msgstr "Предыдущая основная вкладка"
+
+msgctxt "term"
+msgid "Next main tab"
+msgstr "Следующая основная вкладка"
+
+msgctxt "term"
 msgid "max"
 msgstr "макс."
 
@@ -2777,6 +3633,46 @@ msgstr "НАГРАДА"
 msgctxt "term"
 msgid "STAKES"
 msgstr "СТАВКИ"
+
+msgctxt "term"
+msgid "Herald"
+msgstr "Глашатай"
+
+msgctxt "term"
+msgid "Quartermaster"
+msgstr "Интендант"
+
+msgctxt "term"
+msgid "Mimic"
+msgstr "Мимик"
+
+msgctxt "term"
+msgid "Cartwright"
+msgstr "Тележник"
+
+msgctxt "term"
+msgid "Common"
+msgstr "Обычный"
+
+msgctxt "term"
+msgid "Uncommon"
+msgstr "Необычный"
+
+msgctxt "term"
+msgid "Rare"
+msgstr "Редкий"
+
+msgctxt "term"
+msgid "Epic"
+msgstr "Эпический"
+
+msgctxt "term"
+msgid "Legendary"
+msgstr "Легендарный"
+
+msgctxt "term"
+msgid "Unique"
+msgstr "Уникальный"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -3754,6 +4650,198 @@ msgctxt "pattern"
 msgid "<color=#ff9999>Requires {0}</color>"
 msgstr "<color=#ff9999>Требуется: {0}</color>"
 
+msgctxt "pattern"
+msgid "Class · {0}"
+msgstr "Класс · {0}"
+
+msgctxt "pattern"
+msgid "{0} a talent, an ability or a synergy to see it in full here."
+msgstr "{0} талант, способность или синергию, чтобы увидеть полное описание здесь."
+
+msgctxt "pattern"
+msgid "Replaces {0}: {1}"
+msgstr "Заменяет {0}: {1}"
+
+msgctxt "pattern"
+msgid "<color=#c8cacd><b>COMPLEXITY {0}</b>  {1}</color>"
+msgstr "<color=#c8cacd><b>СЛОЖНОСТЬ {0}</b>  {1}</color>"
+
+msgctxt "pattern"
+msgid "{0} / {1} XP"
+msgstr "{0} / {1} опыта"
+
+msgctxt "pattern"
+msgid "Build: <color=#ffd75a>{0}</color>   "
+msgstr "Билд: <color=#ffd75a>{0}</color>   "
+
+msgctxt "pattern"
+msgid "<color=#ffb21e>ACTIVE [{0}]</color>"
+msgstr "<color=#ffb21e>АКТИВНАЯ [{0}]</color>"
+
+msgctxt "pattern"
+msgid "With <color={0}><b>{1}</b></color>: "
+msgstr "С классом <color={0}><b>{1}</b></color>: "
+
+msgctxt "pattern"
+msgid "Taken by {0}"
+msgstr "Занят: {0}"
+
+msgctxt "pattern"
+msgid "Play as {0}"
+msgstr "Играть за {0}"
+
+msgctxt "pattern"
+msgid "Alternate ON: {0}"
+msgstr "Альтернативная ВКЛ: {0}"
+
+msgctxt "pattern"
+msgid "Use alternate: {0}"
+msgstr "Включить альтернативную: {0}"
+
+msgctxt "pattern"
+msgid "ACTIVE  {0}"
+msgstr "АКТИВНАЯ  {0}"
+
+msgctxt "pattern"
+msgid "★ MASTERED: {0}"
+msgstr "★ ОСВОЕН: {0}"
+
+msgctxt "pattern"
+msgid "> PLAY AS {0}"
+msgstr "> ИГРАТЬ ЗА {0}"
+
+msgctxt "pattern"
+msgid "   Build: <color=#ffd75a>{0}</color>"
+msgstr "   Билд: <color=#ffd75a>{0}</color>"
+
+msgctxt "pattern"
+msgid "<color=#ffb21e><b>{0}</b></color>  {1}\n<color=#c8cacd><b>COMPLEXITY {2}</b>  {3}</color>"
+msgstr "<color=#ffb21e><b>{0}</b></color>  {1}\n<color=#c8cacd><b>СЛОЖНОСТЬ {2}</b>  {3}</color>"
+
+msgctxt "pattern"
+msgid "    Build: <color=#ffd75a>{0}</color>"
+msgstr "    Билд: <color=#ffd75a>{0}</color>"
+
+msgctxt "pattern"
+msgid "<color=#ffb21e><b>TREES</b></color>   {0}"
+msgstr "<color=#ffb21e><b>ДРЕВА</b></color>   {0}"
+
+msgctxt "pattern"
+msgid "  ★ IN {0}{1}"
+msgstr "  ★ В: {0}{1}"
+
+msgctxt "pattern"
+msgid ", LV {0}"
+msgstr ", УР. {0}"
+
+msgctxt "pattern"
+msgid "Needs a point in {0}"
+msgstr "Нужно очко в: {0}"
+
+msgctxt "pattern"
+msgid "Lv {0}"
+msgstr "Ур. {0}"
+
+msgctxt "pattern"
+msgid "Reroll  {0}"
+msgstr "Обновить  {0}"
+
+msgctxt "pattern"
+msgid "New offers for {0}. Contracts you already took stay.\nThe next reroll this visit costs {1}."
+msgstr "Новые предложения за {0}. Уже взятые контракты остаются.\nСледующее обновление в этот визит стоит {1}."
+
+msgctxt "pattern"
+msgid "{0} goes back on the board. No cost."
+msgstr "{0} вернётся на доску. Бесплатно."
+
+msgctxt "pattern"
+msgid "{0}: {1}\nReward: {2}\nStakes: {3}\n\nTo decline it, use Decline in the panel on the right."
+msgstr "{0}: {1}\nНаграда: {2}\nСтавки: {3}\n\nЧтобы отклонить, нажмите «Отклонить» на панели справа."
+
+msgctxt "pattern"
+msgid "{0}\n<color=#9a9ca0>Progress:</color> {1}"
+msgstr "{0}\n<color=#9a9ca0>Прогресс:</color> {1}"
+
+msgctxt "pattern"
+msgid "Failing costs only reputation with {0} (-1). Nothing else is lost."
+msgstr "Провал стоит только репутации у {0} (-1). Больше ничего не теряется."
+
+msgctxt "pattern"
+msgid "\n<color=#ffb53d>Can't take it now:</color> {0}."
+msgstr "\n<color=#ffb53d>Сейчас взять нельзя:</color> {0}."
+
+msgctxt "pattern"
+msgid "\nFor the {0} only."
+msgstr "\nТолько для класса {0}."
+
+msgctxt "pattern"
+msgid "Team contract{0}"
+msgstr "Командный контракт{0}"
+
+msgctxt "pattern"
+msgid "{0} (everyone in it)"
+msgstr "{0} (каждому участнику)"
+
+msgctxt "pattern"
+msgid "{0}\n<color=#9a9ca0>In a level you can also hold the call-out key to accept.</color>"
+msgstr "{0}\n<color=#9a9ca0>На уровне принять можно и удержанием клавиши зова.</color>"
+
+msgctxt "pattern"
+msgid "<color=#9a9ca0>Next:</color> <i>\"{0}\"</i>\n"
+msgstr "<color=#9a9ca0>Далее:</color> <i>\"{0}\"</i>\n"
+
+msgctxt "pattern"
+msgid "Contract giver · {0}"
+msgstr "Заказчик · {0}"
+
+msgctxt "pattern"
+msgid "{0}\n<color=#9a9ca0>Now:</color> {1}"
+msgstr "{0}\n<color=#9a9ca0>Сейчас:</color> {1}"
+
+msgctxt "pattern"
+msgid "Yours, for this run: Easy +1, Hard +2 (rival, chain step and team contract +2 too), Brutal +3 on completion, -1 on a failure. New tiers show on the next board.\n\n<i><color=#c8c8c8>\"{0}\"</color></i>"
+msgstr "Ваша, на этот забег: лёгкий +1, сложный +2 (соперничество, шаг цепочки и командный контракт - тоже +2), жестокий +3 за выполнение, -1 за провал. Новые ступени появляются на следующей доске.\n\n<i><color=#c8c8c8>\"{0}\"</color></i>"
+
+msgctxt "pattern"
+msgid "<color=#ffd75a><b>{0}</b></color> (next)"
+msgstr "<color=#ffd75a><b>{0}</b></color> (далее)"
+
+msgctxt "pattern"
+msgid "{0}\n<color=#ffd75a>BONUS</color> {1} (+50% {2}){3}"
+msgstr "{0}\n<color=#ffd75a>БОНУС</color> {1} (+50% {2}){3}"
+
+msgctxt "pattern"
+msgid "{0}\n<color=#ffb21e>REWARD</color> {1}"
+msgstr "{0}\n<color=#ffb21e>НАГРАДА</color> {1}"
+
+msgctxt "pattern"
+msgid "REWARD WAITING: {0}"
+msgstr "НАГРАДА ЖДЁТ: {0}"
+
+msgctxt "pattern"
+msgid "{0}\n\nThe other option{1} gone once you take it."
+msgstr "{0}\n\nОстальные варианты пропадут, когда вы возьмёте этот."
+
+msgctxt "pattern"
+msgid "{0}: {1}\n\nIt goes into your module bag."
+msgstr "{0}: {1}\n\nОн попадёт в вашу сумку модулей."
+
+msgctxt "pattern"
+msgid "Controller: {0} and {1} use the same button ({2})."
+msgstr "Геймпад: {0} и {1} назначены на одну кнопку ({2})."
+
+msgctxt "pattern"
+msgid "Controller: Confirm changes and Reset changes use the same button ({0})."
+msgstr "Геймпад: «Подтвердить изменения» и «Сбросить изменения» назначены на одну кнопку ({0})."
+
+msgctxt "pattern"
+msgid "{0} opens the tab that needs you, {1} goes to the next one, {2} hides one (hold: all). Hidden ones still wait in the menu."
+msgstr "{0} открывает вкладку, где нужно ваше действие, {1} переходит к следующему, {2} скрывает одно (удержание: все). Скрытые по-прежнему ждут в меню."
+
+msgctxt "pattern"
+msgid "{0} HP"
+msgstr "{0} ОЗ"
+
 msgctxt "@RpgRuntime::AbilityLimitText#150"
 msgid "  - next "
 msgstr "  - след. "
@@ -3814,6 +4902,10 @@ msgctxt "@RpgRuntime::ApplyTeamResult#1010"
 msgid "TEAM CONTRACT FAILED: "
 msgstr "КОМАНДНЫЙ КОНТРАКТ ПРОВАЛЕН: "
 
+msgctxt "@RpgRuntime::AskDrop#1356"
+msgid " goes back on the board. No cost."
+msgstr " вернётся на доску. Бесплатно."
+
 msgctxt "@RpgRuntime::AskEquipCursed#342"
 msgid "\n\n<color=#ffd75a>This takes off "
 msgstr "\n\n<color=#ffd75a>При этом будет снято: "
@@ -3858,6 +4950,10 @@ msgctxt "@RpgRuntime::AskGearUp#690"
 msgid "Upgraded: "
 msgstr "Улучшено: "
 
+msgctxt "@RpgRuntime::AskPlayAs#1270"
+msgid "Taken by "
+msgstr "Занят: "
+
 msgctxt "@RpgRuntime::AttrDetail#1136"
 msgid "\n\n<b>MILESTONES</b>  <color=#9a9ca0>"
 msgstr "\n\n<b>ВЕХИ</b>  <color=#9a9ca0>"
@@ -3885,6 +4981,22 @@ msgstr "Изгнан: "
 msgctxt "@RpgRuntime::BanishPerk#514"
 msgid " (never offered again this run)"
 msgstr " (больше не будет предложен в этом забеге)"
+
+msgctxt "@RpgRuntime::BindClashes#1491"
+msgid "Controller: "
+msgstr "Геймпад: "
+
+msgctxt "@RpgRuntime::BindClashes#1491"
+msgid " and "
+msgstr " и "
+
+msgctxt "@RpgRuntime::BindClashes#1491"
+msgid " use the same button ("
+msgstr " назначены на одну кнопку ("
+
+msgctxt "@RpgRuntime::BindClashes#1492"
+msgid "Controller: Confirm changes and Reset changes use the same button ("
+msgstr "Геймпад: «Подтвердить изменения» и «Сбросить изменения» назначены на одну кнопку ("
 
 msgctxt "@RpgRuntime::BossReward#635"
 msgid " IS DOWN!"
@@ -4006,6 +5118,14 @@ msgctxt "@RpgRuntime::BuyGunModE#952"
 msgid " (Gun Bench)"
 msgstr " (Оружейный верстак)"
 
+msgctxt "@RpgRuntime::CardBody#1449"
+msgid "\n<color=#ffd75a>BONUS</color> "
+msgstr "\n<color=#ffd75a>БОНУС</color> "
+
+msgctxt "@RpgRuntime::CardBody#1451"
+msgid "\n<color=#ffb21e>REWARD</color> "
+msgstr "\n<color=#ffb21e>НАГРАДА</color> "
+
 msgctxt "@RpgRuntime::ChangeRep#318"
 msgid " now offers "
 msgstr " теперь предлагает: "
@@ -4033,6 +5153,14 @@ msgstr "страница меню '"
 msgctxt "@RpgRuntime::CheckVanillaState#620"
 msgid ") was left open, so the game kept the player in menu mode (no moving, no Escape menu, no interacting): closed it"
 msgstr ") осталась открытой, и игра держала игрока в режиме меню (нельзя двигаться, открыть меню Escape, взаимодействовать): закрыта"
+
+msgctxt "@RpgRuntime::ClassDetail#1234"
+msgid "Class · "
+msgstr "Класс · "
+
+msgctxt "@RpgRuntime::ClassDetail#1235"
+msgid " a talent, an ability or a synergy to see it in full here."
+msgstr " талант, способность или синергию, чтобы увидеть полное описание здесь."
 
 msgctxt "@RpgRuntime::CommitPresetName#762"
 msgid "A preset named '"
@@ -4118,6 +5246,18 @@ msgctxt "@RpgRuntime::DoSavePreset#754"
 msgid "Saved preset '"
 msgstr "Сохранён пресет '"
 
+msgctxt "@RpgRuntime::DrawAbilityChips#1238"
+msgid "Replaces "
+msgstr "Заменяет "
+
+msgctxt "@RpgRuntime::DrawAbilityChips#1281"
+msgid "ACTIVE  "
+msgstr "АКТИВНАЯ  "
+
+msgctxt "@RpgRuntime::DrawAbilityChips#1283"
+msgid "★ MASTERED: "
+msgstr "★ ОСВОЕН: "
+
 msgctxt "@RpgRuntime::DrawAttributesTab#1122"
 msgid "Build: "
 msgstr "Билд: "
@@ -4129,6 +5269,58 @@ msgstr "Билд: <color=#ffd75a>"
 msgctxt "@RpgRuntime::DrawAttributesTab#1128"
 msgid "<color=#ffd75a>NEW: "
 msgstr "<color=#ffd75a>НОВОЕ: "
+
+msgctxt "@RpgRuntime::DrawBoardColumn#1337"
+msgid "Reroll  "
+msgstr "Обновить  "
+
+msgctxt "@RpgRuntime::DrawBoardColumn#1342"
+msgid "New offers for "
+msgstr "Новые предложения за "
+
+msgctxt "@RpgRuntime::DrawBoardColumn#1342"
+msgid ". Contracts you already took stay.\nThe next reroll this visit costs "
+msgstr ". Уже взятые контракты остаются.\nСледующее обновление в этот визит стоит "
+
+msgctxt "@RpgRuntime::DrawClassHeader#1270"
+msgid "Taken by "
+msgstr "Занят: "
+
+msgctxt "@RpgRuntime::DrawClassHeader#1271"
+msgid "Play as "
+msgstr "Играть за "
+
+msgctxt "@RpgRuntime::DrawClassHeader#1287"
+msgid "> PLAY AS "
+msgstr "> ИГРАТЬ ЗА "
+
+msgctxt "@RpgRuntime::DrawClassHeader#1293"
+msgid "   Build: <color=#ffd75a>"
+msgstr "   Билд: <color=#ffd75a>"
+
+msgctxt "@RpgRuntime::DrawClassHeader#1297"
+msgid "\n<color=#c8cacd><b>COMPLEXITY "
+msgstr "\n<color=#c8cacd><b>СЛОЖНОСТЬ "
+
+msgctxt "@RpgRuntime::DrawClassHeader#1298"
+msgid "    Build: <color=#ffd75a>"
+msgstr "    Билд: <color=#ffd75a>"
+
+msgctxt "@RpgRuntime::DrawControlsTab#1526"
+msgid " opens the tab that needs you, "
+msgstr " открывает вкладку, где нужно ваше действие, "
+
+msgctxt "@RpgRuntime::DrawControlsTab#1526"
+msgid " goes to the next one, "
+msgstr " переходит к следующему, "
+
+msgctxt "@RpgRuntime::DrawControlsTab#1526"
+msgid " hides one (hold: all). Hidden ones still wait in the menu."
+msgstr " скрывает одно (удержание: все). Скрытые по-прежнему ждут в меню."
+
+msgctxt "@RpgRuntime::DrawControlsTab#1550"
+msgid " HP"
+msgstr " ОЗ"
 
 msgctxt "@RpgRuntime::DrawCraftDialog#664"
 msgid " for "
@@ -4262,6 +5454,22 @@ msgctxt "@RpgRuntime::DrawLeaveDialog#1115"
 msgid "You have changes that aren't confirmed yet:\n"
 msgstr "У вас есть неподтверждённые изменения:\n"
 
+msgctxt "@RpgRuntime::DrawLeftColumn#1238"
+msgid "Replaces "
+msgstr "Заменяет "
+
+msgctxt "@RpgRuntime::DrawLeftColumn#1239"
+msgid "<color=#c8cacd><b>COMPLEXITY "
+msgstr "<color=#c8cacd><b>СЛОЖНОСТЬ "
+
+msgctxt "@RpgRuntime::DrawLeftColumn#1247"
+msgid "Build: <color=#ffd75a>"
+msgstr "Билд: <color=#ffd75a>"
+
+msgctxt "@RpgRuntime::DrawLeftColumn#1250"
+msgid "<color=#ffb21e>ACTIVE ["
+msgstr "<color=#ffb21e>АКТИВНАЯ ["
+
 msgctxt "@RpgRuntime::DrawMastery#1073"
 msgid "Mastered "
 msgstr "Освоен "
@@ -4294,9 +5502,33 @@ msgctxt "@RpgRuntime::DrawMenuContent#1224"
 msgid ": play as it to spend its talent points."
 msgstr ". Играйте за этот класс, чтобы тратить его очки талантов."
 
+msgctxt "@RpgRuntime::DrawModulePick#1465"
+msgid "\n\nIt goes into your module bag."
+msgstr "\n\nОн попадёт в вашу сумку модулей."
+
 msgctxt "@RpgRuntime::DrawNodeContent#1230"
 msgid "<color=#ff9999>Requires "
 msgstr "<color=#ff9999>Требуется: "
+
+msgctxt "@RpgRuntime::DrawPageButtons#1238"
+msgid "Replaces "
+msgstr "Заменяет "
+
+msgctxt "@RpgRuntime::DrawPageButtons#1270"
+msgid "Taken by "
+msgstr "Занят: "
+
+msgctxt "@RpgRuntime::DrawPageButtons#1271"
+msgid "Play as "
+msgstr "Играть за "
+
+msgctxt "@RpgRuntime::DrawPageButtons#1273"
+msgid "Alternate ON: "
+msgstr "Альтернативная ВКЛ: "
+
+msgctxt "@RpgRuntime::DrawPageButtons#1274"
+msgid "Use alternate: "
+msgstr "Включить альтернативную: "
 
 msgctxt "@RpgRuntime::DrawPawnE#907"
 msgid "Item: "
@@ -4418,6 +5650,10 @@ msgctxt "@RpgRuntime::DrawResearchTabC#833"
 msgid " borrowed for this run"
 msgstr " - позаимствовано на этот забег"
 
+msgctxt "@RpgRuntime::DrawRewardChoice#1457"
+msgid "REWARD WAITING: "
+msgstr "НАГРАДА ЖДЁТ: "
+
 msgctxt "@RpgRuntime::DrawShopBuyback#919"
 msgid "Buy back "
 msgstr "Выкупить "
@@ -4458,6 +5694,10 @@ msgctxt "@RpgRuntime::DrawStyle#1086"
 msgid " (locked)"
 msgstr " (закрыто)"
 
+msgctxt "@RpgRuntime::DrawSynergyChips#1261"
+msgid "With <color="
+msgstr "С классом <color="
+
 msgctxt "@RpgRuntime::DrawTeamContractBox#1041"
 msgid "TEAM CONTRACT: "
 msgstr "КОМАНДНЫЙ КОНТРАКТ: "
@@ -4465,6 +5705,18 @@ msgstr "КОМАНДНЫЙ КОНТРАКТ: "
 msgctxt "@RpgRuntime::DrawTeamRow#1024"
 msgid "TEAM: "
 msgstr "КОМАНДА: "
+
+msgctxt "@RpgRuntime::DrawTeamRow#1366"
+msgid "\nReward: "
+msgstr "\nНаграда: "
+
+msgctxt "@RpgRuntime::DrawTeamRow#1366"
+msgid "\nStakes: "
+msgstr "\nСтавки: "
+
+msgctxt "@RpgRuntime::DrawTeamRow#1366"
+msgid "\n\nTo decline it, use Decline in the panel on the right."
+msgstr "\n\nЧтобы отклонить, нажмите «Отклонить» на панели справа."
 
 msgctxt "@RpgRuntime::DrawUnlocks#1067"
 msgid "Unlock"
@@ -4526,6 +5778,62 @@ msgctxt "@RpgRuntime::FailContract#325"
 msgid "Chain ended: "
 msgstr "Цепочка оборвалась: "
 
+msgctxt "@RpgRuntime::FillChainDetail#1420"
+msgid "<color=#9a9ca0>Next:</color> <i>\""
+msgstr "<color=#9a9ca0>Далее:</color> <i>\""
+
+msgctxt "@RpgRuntime::FillContractDetail#1383"
+msgid "\n<color=#9a9ca0>Progress:</color> "
+msgstr "\n<color=#9a9ca0>Прогресс:</color> "
+
+msgctxt "@RpgRuntime::FillContractDetail#1389"
+msgid "Failing costs only reputation with "
+msgstr "Провал стоит только репутации у "
+
+msgctxt "@RpgRuntime::FillContractDetail#1389"
+msgid " (-1). Nothing else is lost."
+msgstr " (-1). Больше ничего не теряется."
+
+msgctxt "@RpgRuntime::FillContractDetail#1392"
+msgid "\n<color=#ffb53d>Can't take it now:</color> "
+msgstr "\n<color=#ffb53d>Сейчас взять нельзя:</color> "
+
+msgctxt "@RpgRuntime::FillContractDetail#1393"
+msgid "\nFor the "
+msgstr "\nТолько для класса "
+
+msgctxt "@RpgRuntime::FillContractDetail#1393"
+msgid " only."
+msgstr "."
+
+msgctxt "@RpgRuntime::FillCrewDetail#1438"
+msgid "</b></color> (next)"
+msgstr "</b></color> (далее)"
+
+msgctxt "@RpgRuntime::FillGiverDetail#1424"
+msgid "Contract giver · "
+msgstr "Заказчик · "
+
+msgctxt "@RpgRuntime::FillGiverDetail#1427"
+msgid "\n<color=#9a9ca0>Now:</color> "
+msgstr "\n<color=#9a9ca0>Сейчас:</color> "
+
+msgctxt "@RpgRuntime::FillGiverDetail#1432"
+msgid "Yours, for this run: Easy +1, Hard +2 (rival, chain step and team contract +2 too), Brutal +3 on completion, -1 on a failure. New tiers show on the next board.\n\n<i><color=#c8c8c8>\""
+msgstr "Ваша, на этот забег: лёгкий +1, сложный +2 (соперничество, шаг цепочки и командный контракт - тоже +2), жестокий +3 за выполнение, -1 за провал. Новые ступени появляются на следующей доске.\n\n<i><color=#c8c8c8>\""
+
+msgctxt "@RpgRuntime::FillTeamDetail#1396"
+msgid "Team contract"
+msgstr "Командный контракт"
+
+msgctxt "@RpgRuntime::FillTeamDetail#1401"
+msgid " (everyone in it)"
+msgstr " (каждому участнику)"
+
+msgctxt "@RpgRuntime::FillTeamDetail#1403"
+msgid "\n<color=#9a9ca0>In a level you can also hold the call-out key to accept.</color>"
+msgstr "\n<color=#9a9ca0>На уровне принять можно и удержанием клавиши зова.</color>"
+
 msgctxt "@RpgRuntime::GiveGear#471"
 msgid "Found "
 msgstr "Найдено: "
@@ -4569,6 +5877,10 @@ msgstr " отменяет предложение"
 msgctxt "@RpgRuntime::HostTradeRequest#880"
 msgid " declined"
 msgstr " отказывается"
+
+msgctxt "@RpgRuntime::LayoutLeft#1238"
+msgid "Replaces "
+msgstr "Заменяет "
 
 msgctxt "@RpgRuntime::LearnCopy#166"
 msgid "Copied "
@@ -4673,6 +5985,10 @@ msgstr " играет за "
 msgctxt "@RpgRuntime::OnClaimsUpdated#425"
 msgid " to pick another class"
 msgstr ", чтобы выбрать другой класс"
+
+msgctxt "@RpgRuntime::OnCommitResult#1270"
+msgid "Taken by "
+msgstr "Занят: "
 
 msgctxt "@RpgRuntime::OnContractReply#286"
 msgid "Contract not accepted: "
@@ -4906,6 +6222,10 @@ msgctxt "@RpgRuntime::RemoveModule#364"
 msgid "remove module from "
 msgstr "снять модуль с "
 
+msgctxt "@RpgRuntime::RequestClass#1270"
+msgid "Taken by "
+msgstr "Занят: "
+
 msgctxt "@RpgRuntime::RerollKeeps#544"
 msgid ", slot and rarity"
 msgstr ", слот и редкость"
@@ -5081,6 +6401,14 @@ msgstr " не разобрано"
 msgctxt "@RpgRuntime::TickThreats#251"
 msgid "Tier "
 msgstr "Ранг "
+
+msgctxt "@RpgRuntime::TipForNode#1311"
+msgid "Needs a point in "
+msgstr "Нужно очко в: "
+
+msgctxt "@RpgRuntime::TreeThemes#1302"
+msgid "<color=#ffb21e><b>TREES</b></color>   "
+msgstr "<color=#ffb21e><b>ДРЕВА</b></color>   "
 
 msgctxt "@RpgRuntime::TryGuardianAngel#391"
 msgid "Guardian Angel: "

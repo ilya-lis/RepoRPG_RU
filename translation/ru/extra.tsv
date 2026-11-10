@@ -4,3 +4,15 @@
 +term	REWARD	НАГРАДА
 +term	STAKES	СТАВКИ
 +global	 (everyone in it)	 (каждому участнику)
+# классы, упомянутые в коде (полный список - в данных мода)
++term	Herald	Глашатай
++term	Quartermaster	Интендант
++term	Mimic	Мимик
++term	Cartwright	Тележник
+# редкости
++term	Common	Обычный
++term	Uncommon	Необычный
++term	Rare	Редкий
++term	Epic	Эпический
++term	Legendary	Легендарный
++term	Unique	Уникальный
