@@ -202,6 +202,7 @@ namespace RepoRPG
 
             Measured();
             Sentences("Rune", "Blade", 3);
+            Stats();
 
             // 14. the mod's own {named} placeholders
             Label("Kill {t} monster{s}".Replace("{t}", "3").Replace("{s}", "s"));
@@ -232,10 +233,43 @@ namespace RepoRPG
             Label(two);
         }
 
+        // 17. stat lines the mod takes apart itself, and string tests that say how they compare
+        private static string Describe(int stat, float v)
+        {
+            string n = "+" + v.ToString("0");
+            switch (stat)
+            {
+                case 0: return n + "% max health";
+                case 1: return n + "s Mark duration";
+                default: return n + "s stun";
+            }
+        }
+
+        private void Stats()
+        {
+            string line = Describe(1, 2f);
+            int sp = line.IndexOf(' ');
+            Out.Add("stat1=" + line.Substring(0, sp) + "|" + line.Substring(sp + 1));     // value | name, as SplitStat() does
+            string label = Text(8);
+            Out.Add("unit=" + (label.StartsWith("s ") ? label : " " + label));            // the test the stat lines never reach
+            Out.Add("stat2=" + Describe(2, 3f));
+            Label(Describe(2, 3f));
+            string key = Text(9);
+            if (key.StartsWith("gear", StringComparison.Ordinal)) Out.Add("probe-case-ok");
+            if (key.EndsWith("R3", StringComparison.OrdinalIgnoreCase)) Out.Add("probe-nocase-ok");
+            Out.Add("cap=" + Caption(4) + "/" + Caption(-4));
+            Label(Caption(-4));
+            Label(Describe(0, 5f));
+        }
+
+        private string Caption(int n) { return n > 0 ? "Gear: " + n : "Layer3"; }
+
         private string Text(int i)
         {
             switch (i)
             {
+                case 8: return "s stun";
+                case 9: return "gear3";
                 case 0: return "Load too big for this door";
                 case 1: return "Bonus x2";
                 case 2: return "A hidden affix appears.";

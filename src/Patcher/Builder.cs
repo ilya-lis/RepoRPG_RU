@@ -67,6 +67,7 @@ namespace RepoRPG_RU
             public readonly Dictionary<uint, int> Counts = new Dictionary<uint, int>();              // method token -> original instruction count
             public readonly Dictionary<uint, string> Names = new Dictionary<uint, string>();         // method token -> full name (tokens move when Cecil writes)
             public readonly List<Probe> Probes = new List<Probe>();                                  // string tests that interface text must keep passing
+            public HashSet<string> Free;                                                             // texts that never reach those tests ([probes] free)
         }
 
         public static byte[] Build(byte[] original, BuildOptions o, Report report)
@@ -111,6 +112,7 @@ namespace RepoRPG_RU
         private static Plan MakePlan(byte[] original, BuildOptions o, Report report)
         {
             Plan plan = new Plan();
+            plan.Free = o.Rules != null ? o.Rules.ProbeFree : null;
             using (AssemblyDefinition asm = Read(original))
             {
                 ModuleDefinition module = asm.MainModule;
@@ -340,7 +342,7 @@ namespace RepoRPG_RU
                 }
             }
             // whatever the entry says: a text the mod recognises by its wording must keep that wording inside the code
-            Probe broken = BrokenProbe(plan.Probes, occ.Value, occ.Translated);
+            Probe broken = BrokenProbe(plan.Probes, plan.Free, occ.Value, occ.Translated);
             if (broken != null)
             {
                 report.SkippedProbe++;
@@ -359,8 +361,9 @@ namespace RepoRPG_RU
         }
 
         /// <summary>First probe whose answer differs between the original text and its translation.</summary>
-        private static Probe BrokenProbe(List<Probe> probes, string original, string translated)
+        private static Probe BrokenProbe(List<Probe> probes, HashSet<string> free, string original, string translated)
         {
+            if (free != null && free.Contains(original)) return null;
             for (int i = 0; i < probes.Count; i++)
             {
                 Probe p = probes[i];
@@ -688,7 +691,7 @@ namespace RepoRPG_RU
                         if (any == null || !any.TryGetValue(value, out t)) return null;
                     }
                     else t = own[value];
-                    Probe broken = BrokenProbe(probes, value, t);
+                    Probe broken = BrokenProbe(probes, rules.ProbeFree, value, t);
                     if (broken != null)
                     {
                         report.SkippedProbe++;

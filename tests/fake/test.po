@@ -225,3 +225,27 @@ msgstr " тележек в ширину"
 msgctxt "pattern"
 msgid "Load too big {0} carts wide"
 msgstr "Груз слишком велик: {0} тележек в ширину"
+
+# --- stat lines: cut by the mod at the first space; tests that name their comparison mode
+msgctxt "@RpgRuntime::Describe#1"
+msgid "% max health"
+msgstr "% к макс. здоровью"
+
+msgctxt "@RpgRuntime::Describe#2"
+msgid "s Mark duration"
+msgstr " к длительности Метки (сек.)"
+
+msgctxt "@RpgRuntime::Describe#3"
+msgid "s stun"
+msgstr " с оглушения"
+
+msgctxt "pattern"
+msgid "{0}s stun"
+msgstr "{0} с оглушения"
+
+msgid "Gear: "
+msgstr "Снаряжение: "
+
+msgid "Layer3"
+msgstr "Слой 3"
+

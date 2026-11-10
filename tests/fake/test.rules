@@ -29,6 +29,8 @@ classes: complexityTip, bases
 protect "Gift"
 # plugin name detection, never applied to interface text
 ignore "late join"
+# a stat line never reaches the StartsWith("s ") that sorts ability labels
+free "s Mark duration"
 
 [calls]
 Content::set_text

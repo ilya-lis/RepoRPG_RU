@@ -100,10 +100,41 @@ namespace RepoRPG_RU
             for (int i = 1; i < m.Parameters.Count; i++)
             {
                 string pt = m.Parameters[i].ParameterType.FullName;
-                // the comparison mode is a run-time value; assume the loosest one
-                if (pt == "System.StringComparison" || pt == "System.Boolean" || pt == "System.Globalization.CultureInfo") ignoreCase = true;
+                if (pt == "System.StringComparison" && i == m.Parameters.Count - 1)
+                {
+                    // text.StartsWith("gear", StringComparison.Ordinal): the mode is written right there, as the last argument.
+                    // Taking every such test for a case-blind one made "Gear: " and every "... XP" look like texts the mod
+                    // recognises (StartsWith("gear"), LastIndexOf(" x")) - and kept them out of the code for no reason.
+                    int mode;
+                    if (c.Ins != null && Constant(c.Ins.Previous, out mode)) { if ((mode & 1) != 0) ignoreCase = true; }
+                    else ignoreCase = true;                     // a run-time value: assume the loosest one
+                }
+                else if (pt == "System.StringComparison" || pt == "System.Boolean" || pt == "System.Globalization.CultureInfo") ignoreCase = true;
             }
             return true;
+        }
+
+        /// <summary>ldc.i4 of any shape -> its value.</summary>
+        private static bool Constant(Instruction ins, out int value)
+        {
+            value = 0;
+            if (ins == null) return false;
+            switch (ins.OpCode.Code)
+            {
+                case Code.Ldc_I4_M1: value = -1; return true;
+                case Code.Ldc_I4_0: value = 0; return true;
+                case Code.Ldc_I4_1: value = 1; return true;
+                case Code.Ldc_I4_2: value = 2; return true;
+                case Code.Ldc_I4_3: value = 3; return true;
+                case Code.Ldc_I4_4: value = 4; return true;
+                case Code.Ldc_I4_5: value = 5; return true;
+                case Code.Ldc_I4_6: value = 6; return true;
+                case Code.Ldc_I4_7: value = 7; return true;
+                case Code.Ldc_I4_8: value = 8; return true;
+                case Code.Ldc_I4_S: value = (sbyte)ins.Operand; return true;
+                case Code.Ldc_I4: value = (int)ins.Operand; return true;
+                default: return false;
+            }
         }
 
         /// <summary>Probes that can be about interface text. A bare word looked for anywhere inside a string ("fix", "Text",

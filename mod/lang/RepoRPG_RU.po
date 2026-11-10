@@ -6167,7 +6167,7 @@ msgid "Rescue: revive a teammate"
 msgstr "Спасение: возродите напарника"
 
 msgid "Specialist: use your ability {0} times (personal)"
-msgstr "Специалист: используйте способность x{0} (личный)"
+msgstr "Специалист: используйте способность ({0} раз, личный)"
 
 msgid "Haul: complete {0} extraction points"
 msgstr "Добыча: завершите точки извлечения ({0})"
@@ -9452,7 +9452,7 @@ msgstr "{0} ОЗ союзникам рядом каждые 3 с"
 
 msgctxt "pattern"
 msgid "{0}m aura radius"
-msgstr "{0} м радиуса ауры"
+msgstr "{0} к радиусу ауры (м)"
 
 msgctxt "pattern"
 msgid "{0} HP to allies revived near you"
@@ -9464,7 +9464,7 @@ msgstr "{0} ОЗ, когда рядом с вами погибает враг"
 
 msgctxt "pattern"
 msgid "{0}m enemy sense range"
-msgstr "{0} м дальности чутья на врагов"
+msgstr "{0} к дальности чутья на врагов (м)"
 
 msgctxt "pattern"
 msgid "{0}% ability cooldown reduction"
@@ -9528,7 +9528,7 @@ msgstr "{0} к зарядам способности"
 
 msgctxt "pattern"
 msgid "{0}s ability cooldown per nearby kill"
-msgstr "{0} с перезарядки способности за убийство рядом"
+msgstr "{0} к сокращению перезарядки за убийство рядом (сек.)"
 
 msgctxt "pattern"
 msgid "{0}% gear find on extraction"
@@ -9556,7 +9556,7 @@ msgstr "{0}% к стоимости оценённых вами ценносте�
 
 msgctxt "pattern"
 msgid "{0}m appraisal radius"
-msgstr "{0} м радиуса оценки"
+msgstr "{0} к радиусу оценки (м)"
 
 msgctxt "pattern"
 msgid "{0}% less damage for allies near you"
@@ -9564,7 +9564,7 @@ msgstr "{0}% меньше урона союзникам рядом с вами"
 
 msgctxt "pattern"
 msgid "{0}m Shield Wall radius"
-msgstr "{0} м радиуса «Стены щитов»"
+msgstr "{0} к радиусу «Стены щитов» (м)"
 
 msgctxt "pattern"
 msgid "{0}% less damage for low-HP allies in your aura"
@@ -9580,7 +9580,7 @@ msgstr "{0} к макс. зарядам Импульса"
 
 msgctxt "pattern"
 msgid "{0}s Momentum hold after you stop"
-msgstr "{0} с удержания Импульса после остановки"
+msgstr "{0} к удержанию Импульса после остановки (сек.)"
 
 msgctxt "pattern"
 msgid "{0}% throw & weapon damage per Frenzy stack"
@@ -9596,7 +9596,7 @@ msgstr "{0} выносл./с союзникам рядом с вами"
 
 msgctxt "pattern"
 msgid "{0}m Power Link radius"
-msgstr "{0} м радиуса «Энергосвязи»"
+msgstr "{0} к радиусу «Энергосвязи» (м)"
 
 msgctxt "pattern"
 msgid "{0}% speed for 3s after a dodge"
@@ -9604,7 +9604,7 @@ msgstr "{0}% к скорости на 3 с после уклонения"
 
 msgctxt "pattern"
 msgid "{0}s ability cooldown per dodge"
-msgstr "{0} с перезарядки способности за уклонение"
+msgstr "{0} к сокращению перезарядки за уклонение (сек.)"
 
 msgctxt "pattern"
 msgid "{0}% Scar Tissue per hit taken"
@@ -9620,7 +9620,7 @@ msgstr "{0}% урона по врагам с Меткой"
 
 msgctxt "pattern"
 msgid "{0}s Mark duration"
-msgstr "{0} с длительности Метки"
+msgstr "{0} к длительности Метки (сек.)"
 
 msgctxt "pattern"
 msgid "{0}% noise you make"
@@ -9668,7 +9668,7 @@ msgstr "!Не удалось подарить: {0}"
 
 msgctxt "pattern"
 msgid "{0} doesn't seem to have RepoRPG: lobbies over 6 players need it{1}"
-msgstr "{0}: похоже, нет RepoRPG - он нужен в лобби больше 6 игроков{1}"
+msgstr "{0}: похоже, не установлен RepoRPG, а он нужен в лобби больше 6 игроков{1}"
 
 msgctxt "pattern"
 msgid "Boss: {0}"
@@ -9752,7 +9752,7 @@ msgstr "{0} урона"
 
 msgctxt "@BigLobby::CheckJoiners#3963"
 msgid " doesn't seem to have RepoRPG: lobbies over 6 players need it"
-msgstr ": похоже, нет RepoRPG - он нужен в лобби больше 6 игроков"
+msgstr ": похоже, не установлен RepoRPG, а он нужен в лобби больше 6 игроков"
 
 msgctxt "@Bosses::DebugPromoteNearest#3970"
 msgid "Boss: "
@@ -12468,7 +12468,7 @@ msgstr " ОЗ союзникам рядом каждые 3 с"
 
 msgctxt "@StatInfo::Describe#3270"
 msgid "m aura radius"
-msgstr " м радиуса ауры"
+msgstr " к радиусу ауры (м)"
 
 msgctxt "@StatInfo::Describe#3271"
 msgid " HP to allies revived near you"
@@ -12480,7 +12480,7 @@ msgstr " ОЗ, когда рядом с вами погибает враг"
 
 msgctxt "@StatInfo::Describe#3273"
 msgid "m enemy sense range"
-msgstr " м дальности чутья на врагов"
+msgstr " к дальности чутья на врагов (м)"
 
 msgctxt "@StatInfo::Describe#3274"
 msgid "% ability cooldown reduction"
@@ -12540,7 +12540,7 @@ msgstr " к удаче снаряжения"
 
 msgctxt "@StatInfo::Describe#3289"
 msgid "s ability cooldown per nearby kill"
-msgstr " с перезарядки способности за убийство рядом"
+msgstr " к сокращению перезарядки за убийство рядом (сек.)"
 
 msgctxt "@StatInfo::Describe#3290"
 msgid "% gear find on extraction"
@@ -12568,7 +12568,7 @@ msgstr "% к стоимости оценённых вами ценностей"
 
 msgctxt "@StatInfo::Describe#3296"
 msgid "m appraisal radius"
-msgstr " м радиуса оценки"
+msgstr " к радиусу оценки (м)"
 
 msgctxt "@StatInfo::Describe#3297"
 msgid "% less damage for allies near you"
@@ -12576,7 +12576,7 @@ msgstr "% меньше урона союзникам рядом с вами"
 
 msgctxt "@StatInfo::Describe#3298"
 msgid "m Shield Wall radius"
-msgstr " м радиуса «Стены щитов»"
+msgstr " к радиусу «Стены щитов» (м)"
 
 msgctxt "@StatInfo::Describe#3299"
 msgid "% less damage for low-HP allies in your aura"
@@ -12588,7 +12588,7 @@ msgstr "% к скорости бега за заряд Импульса"
 
 msgctxt "@StatInfo::Describe#3302"
 msgid "s Momentum hold after you stop"
-msgstr " с удержания Импульса после остановки"
+msgstr " к удержанию Импульса после остановки (сек.)"
 
 msgctxt "@StatInfo::Describe#3303"
 msgid "% throw & weapon damage per Frenzy stack"
@@ -12600,7 +12600,7 @@ msgstr " выносл./с союзникам рядом с вами"
 
 msgctxt "@StatInfo::Describe#3306"
 msgid "m Power Link radius"
-msgstr " м радиуса «Энергосвязи»"
+msgstr " к радиусу «Энергосвязи» (м)"
 
 msgctxt "@StatInfo::Describe#3307"
 msgid "% speed for 3s after a dodge"
@@ -12608,7 +12608,7 @@ msgstr "% к скорости на 3 с после уклонения"
 
 msgctxt "@StatInfo::Describe#3308"
 msgid "s ability cooldown per dodge"
-msgstr " с перезарядки способности за уклонение"
+msgstr " к сокращению перезарядки за уклонение (сек.)"
 
 msgctxt "@StatInfo::Describe#3309"
 msgid "% Scar Tissue per hit taken"
@@ -12624,7 +12624,7 @@ msgstr "% урона по врагам с Меткой"
 
 msgctxt "@StatInfo::Describe#3312"
 msgid "s Mark duration"
-msgstr " с длительности Метки"
+msgstr " к длительности Метки (сек.)"
 
 msgctxt "@StatInfo::Describe#3313"
 msgid "% noise you make"

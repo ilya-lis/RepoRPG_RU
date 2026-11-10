@@ -41,6 +41,9 @@ namespace RepoRPG_RU
         public readonly HashSet<string> ProbeIgnore = new HashSet<string>(StringComparer.Ordinal);
         /// <summary>[probes] protect "word": a plain word searched for with Contains/IndexOf that is applied to interface text.</summary>
         public readonly HashSet<string> ProbeProtect = new HashSet<string>(StringComparer.Ordinal);
+        /// <summary>[probes] free "text": this text of the mod never reaches any of its wording tests, whatever it looks like
+        /// ("s Mark duration" is a stat line, not one of the ability labels that StartsWith("s ") sorts).</summary>
+        public readonly HashSet<string> ProbeFree = new HashSet<string>(StringComparer.Ordinal);
         public readonly List<string> Problems = new List<string>();
         public ulong Fingerprint = Hash.Seed;
         public int FileCount;
@@ -131,7 +134,7 @@ namespace RepoRPG_RU
         {
             int q = line.IndexOf('"');
             int end = line.LastIndexOf('"');
-            if (q < 0 || end <= q) throw new FormatException("expected: ignore \"text\"  or  protect \"text\"");
+            if (q < 0 || end <= q) throw new FormatException("expected: ignore \"text\",  protect \"text\"  or  free \"text\"");
             string verb = line.Substring(0, q).Trim().ToLowerInvariant();
             StringBuilder sb = new StringBuilder();
             for (int i = q + 1; i < end; i++)
@@ -147,7 +150,8 @@ namespace RepoRPG_RU
             if (sb.Length == 0) throw new FormatException("empty probe text");
             if (verb == "ignore") ProbeIgnore.Add(sb.ToString());
             else if (verb == "protect") ProbeProtect.Add(sb.ToString());
-            else throw new FormatException("expected: ignore \"text\"  or  protect \"text\"");
+            else if (verb == "free") ProbeFree.Add(sb.ToString());
+            else throw new FormatException("expected: ignore \"text\",  protect \"text\"  or  free \"text\"");
         }
 
         private void ParseHook(string line, string source)

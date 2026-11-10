@@ -80,6 +80,11 @@ Game
 [keep]
 # whatever is sent to other players stays exactly as the mod wrote it
 Net::*
+# the state of the run travels as one object: its texts are put there by these (the notes "season|The run is complete" are
+# cut to 300 characters on arrival, the source of a vote to 60)
+RunShape::HostBroadcast#0
+RunShape::HostNote#0
+RunShape::StartVote#2
 
 [data]
 # embedded JSON: only these properties are text; everything else is an id, a number or a colour
@@ -92,6 +97,13 @@ ignore "late join"
 ignore "more players"
 ignore "shared upgrade"
 ignore "team upgrade"
+# stat lines (StatInfo.Describe): StartsWith("s ") sorts the labels of ability numbers and EndsWith(" kill") the reasons of
+# XP gains - a stat line never gets there. Left in English they would come out of the mod's own SplitStat()/StatName()
+# as "Mark duration", a text no dictionary entry knows.
+free "s ability cooldown per nearby kill"
+free "s Momentum hold after you stop"
+free "s ability cooldown per dodge"
+free "s Mark duration"
 '''
 
 HOOKED = set()
@@ -111,12 +123,13 @@ def main():
     bad = [p for p in P if (p['type'].split('.')[-1], p['method'], p['param']) in HOOKED and p['anykey']]
     for p in bad: print('  HOOKED BUT USED AS ID: %s::%s(%s)  %s' % (p['type'], p['method'], p['param'], p['whykey']))
 
-    ids, keeps, through = collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict()
+    ids, keeps, through, sends = collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict()
     for p in P:
         ref = '%s::%s#%d' % (p['type'], p['method'], p['index'])
         hooked = (p['type'].split('.')[-1], p['method'], p['param']) in HOOKED
         if hooked: continue
         if p['anykey'] or p['label'] == 'KEY': ids.setdefault(ref, p['param'] + ((': ' + p['whykey']) if p['whykey'] else ''))
+        elif p.get('sent'): sends.setdefault(ref, p['param'] + ': ' + p['sent'])
         elif (p['anylog'] or p['label'] == 'LOG') and p['label'] != 'DISPLAY': keeps.setdefault(ref, p['param'])
         if p['through'] and not p['anykey'] and p['label'] != 'KEY': through.setdefault(ref, p['param'])
     out = [HEAD.rstrip('\n'), '',
@@ -129,10 +142,12 @@ def main():
     for ref, why in ids.items(): out.append('%-58s # %s' % (ref, why[:70]))
     out += ['', '[keep]', '# the argument ends up in the log']
     for ref, why in keeps.items(): out.append('%-58s # %s' % (ref, why))
+    out += ['', '# the argument is sent to the other players through another method of the mod']
+    for ref, why in sends.items(): out.append('%-58s # %s' % (ref, why))
     out += ['', '[through]', '# the argument comes back inside the return value: what matters is what the caller does with the result']
     for ref, why in through.items(): out.append('%-58s # %s' % (ref, why))
     open(sys.argv[2], 'w', encoding='utf-8', newline='\n').write('\n'.join(out) + '\n')
-    print('rules: %d hooks, %d id, %d keep, %d through' % (len(HOOKED), len(ids), len(keeps), len(through)))
+    print('rules: %d hooks, %d id, %d keep (+%d sent), %d through' % (len(HOOKED), len(ids), len(keeps), len(sends), len(through)))
     return 1 if missing or bad else 0
 
 

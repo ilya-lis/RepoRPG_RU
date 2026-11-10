@@ -50,7 +50,13 @@ def check(src, tr):
     if stray(hs) != stray(ht): return 'braces differ'
     if sorted(t.lower() for t in TAG.findall(src)) != sorted(t.lower() for t in TAG.findall(tr)): return 'rich text tags differ'
     if ('\n' in tr) != ('\n' in src) and len(src) < 60: return 'line breaks differ'
+    m = TAGGED.match(src)
+    if m and not tr.startswith(m.group(0)): return 'the message tag %r has to stay in front' % m.group(0)
     return None
+
+
+# "season|The run is complete.": the host sends the note with a tag in front, the receiving side takes the tag off and shows the rest
+TAGGED = re.compile(r'^(?:\{\d+\})?[a-z][a-z0-9+\-]{1,11}\|(?=\S)')
 
 
 def split_runs(pattern):
@@ -117,6 +123,25 @@ def main():
         bad = check(src, t)
         if bad:
             problems.append('%s: #%s %s: %r -> %r' % (where, uid, bad, src[:60], t[:60])); continue
+        if 'StatInfo::Describe' in u.get('scopes', ()) and src.startswith('{0}'):
+            # the mod takes its own stat lines apart: SplitStat() cuts at the first space ("+5%" | "max health") and
+            # StatName()/StatUnit() expect "+1", then "%" or nothing, then a space. A unit glued to the number in English
+            # ("+3m aura radius") cannot be glued in Russian (the mod looks for the letters m and s), so it goes to the end.
+            want = '{0}% ' if src.startswith('{0}%') else '{0} '
+            if not t.startswith(want) or t[len(want):len(want) + 1] in ('', ' ') or re.match(r'^(м|с|сек\.?|мин\.?) ', t[len(want):]):
+                problems.append('%s: #%s a stat line has to start with %r and then the name (the mod cuts it at the first space): %r -> %r'
+                                % (where, uid, want, src[:60], t[:60])); continue
+        m = TAGGED.match(src)
+        if m and re.search('[A-Za-z]{2}', src[m.end():]):
+            # "season|The run is complete.": a note the host puts into the state of the run, which goes to every player.
+            # It stays as the mod wrote it inside the code (the receiving side cuts it to a fixed length, and a player
+            # without the add-on should not get Russian text); what is shown is the part after the tag, and that part
+            # gets an entry of its own, used at the moment it is drawn - on the host's screen as well.
+            rest_s, rest_t = src[m.end():], t[m.end():]
+            if any(NUM.match(h) for h in HOLE.findall(rest_s)): pat_e[rest_s] = rest_t
+            else: term_e[rest_s] = rest_t
+            checks.append(sample(rest_s, rest_t))
+            continue
         if u['kind'] == 'lit':
             (term_e if u.get('term') else glob_e)[src] = t
             lit_by_text[src] = (t, u)

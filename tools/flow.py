@@ -452,6 +452,24 @@ def run(path):
         if not grew: break
     anykey = strong
 
+    # ---- third question: does the argument travel to the other players (Net.SendNotice(target, kind, value, text)),
+    #      directly or through another method of the mod?  Such a text stays as the mod wrote it: the receiving side cuts it
+    #      to a fixed length, and a player without the add-on should not get a text in another language.
+    sent, why_sent = set(), {}
+    for _ in range(8):
+        grew = False
+        for key, lst in uses.items():
+            if key in sent: continue
+            for sk, m, i in lst:
+                if sk[0] != 'CALL' or m is None or m['short'] == 'Net': continue
+                r = resolve(sk[1], int(sk[2].split(':')[0]), m)
+                if r is None: continue
+                if r[0]['short'] == 'Net' or (r[0]['line'], r[1]) in sent:
+                    sent.add(key); grew = True
+                    why_sent[key] = '-> ' + r[0]['short'] + '::' + r[0]['name'] + '(' + r[0]['params'][r[1]][1] + ')'
+                    break
+        if not grew: break
+
     # ---- "a " + x + " b": the pieces of one sentence, put back together as  a {0} b
     BOUND = {',', ';', '=', '+=', '-=', '??=', '?', ':', '??', '==', '!=', '<', '>', '<=', '>=', '&&', '||', '=>', '{', '}'}
     KW_BOUND = {'return', 'throw', 'case', 'in', 'is', 'as', 'await', 'yield', 'else'}
@@ -537,7 +555,7 @@ def run(path):
             params.append({'type': m['type'], 'method': m['name'], 'line': m['line'], 'param': n, 'index': k,
                            'label': param_label.get((m['line'], k), 'NONE'), 'through': (m['line'], k) in through,
                            'anykey': (m['line'], k) in anykey, 'weakkey': (m['line'], k) in weak, 'anylog': (m['line'], k) in anylog,
-                           'whykey': why_key.get((m['line'], k), '')})
+                           'whykey': why_key.get((m['line'], k), ''), 'sent': why_sent.get((m['line'], k), '')})
     return out, params, chains
 
 

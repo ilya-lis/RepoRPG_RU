@@ -130,6 +130,14 @@ check('named placeholder invented -> rejected', has(out, 'Label:Carry 2 items'))
 check('glued sentence: every piece replaced in the code', has(out, 'glue1=Вставлено: Rune в Blade'), [l for l in out if l.startswith('glue')])
 check('glued sentence with a probed piece: untouched in the code, translated when drawn',
       has(out, 'glue2=Load too big 3 carts wide') and has(out, 'Label:Груз слишком велик: 3 тележек в ширину'), [l for l in out if 'carts' in l or 'тележ' in l])
+# stat lines and comparison modes
+check('stat line declared free of the tests: replaced in the code, the mod cuts the translation', has(out, 'stat1=+2|к длительности Метки (сек.)'), [l for l in out if l.startswith('stat')])
+check('same wording without the rule: kept for the test, translated when drawn',
+      has(out, 'unit=s stun') and has(out, 'stat2=+3s stun') and has(out, 'Label:+3 с оглушения'), [l for l in out if 'stun' in l or 'оглуш' in l])
+check('StartsWith(.., Ordinal): the caption with another case is not a key', has(out, 'probe-case-ok') and contains(out, 'cap=Снаряжение: 4/'), [l for l in out if l.startswith('cap=')])
+check('EndsWith(.., OrdinalIgnoreCase): the text it would stop matching stays', has(out, 'probe-nocase-ok') and has(out, 'cap=Снаряжение: 4/Layer3') and has(out, 'Label:Слой 3'),
+      [l for l in out if l.startswith('cap=') or 'Layer' in l or 'Слой' in l])
+check('stat line', has(out, 'Label:+5% к макс. здоровью'))
 check('call-site hook: translated before the mod measure', has(out, 'measure=Широкий') and has(out, 'measure2=Широкий'), [l for l in out if l.startswith('measure')])
 check('missing hook reported, not fatal', contains(out, 'точек перевода не найдены'))
 # data

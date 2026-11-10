@@ -73,6 +73,11 @@ Game
 [keep]
 # whatever is sent to other players stays exactly as the mod wrote it
 Net::*
+# the state of the run travels as one object: its texts are put there by these (the notes "season|The run is complete" are
+# cut to 300 characters on arrival, the source of a vote to 60)
+RunShape::HostBroadcast#0
+RunShape::HostNote#0
+RunShape::StartVote#2
 
 [data]
 # embedded JSON: only these properties are text; everything else is an id, a number or a colour
@@ -85,6 +90,13 @@ ignore "late join"
 ignore "more players"
 ignore "shared upgrade"
 ignore "team upgrade"
+# stat lines (StatInfo.Describe): StartsWith("s ") sorts the labels of ability numbers and EndsWith(" kill") the reasons of
+# XP gains - a stat line never gets there. Left in English they would come out of the mod's own SplitStat()/StatName()
+# as "Mark duration", a text no dictionary entry knows.
+free "s ability cooldown per nearby kill"
+free "s Momentum hold after you stop"
+free "s ability cooldown per dodge"
+free "s Mark duration"
 
 # ---------------------------------------------------------------------------------------------------------
 # Generated from the source of RepoRPG 1.0.100 (tools/flow.py): how the mod's own methods use their text arguments.
@@ -498,7 +510,6 @@ RpgRuntime::ChangeRep#2                                    # why
 RpgRuntime::NewRunReset#1                                  # why
 RpgRuntime::SelectClass#0                                  # id
 RpgRuntime::OnTradeC#5                                     # removeUid
-RpgRuntime::TellTrade#6                                    # removeUid
 RpgRuntime::HostPawnFallbackE#1                            # steamId
 RpgRuntime::HostSalvage#1                                  # steamId
 RpgRuntime::ClassTrace#0                                   # msg
@@ -545,6 +556,18 @@ TeamPlay::HostSettleLevel#0                                # why
 AttributeAlloc::HostHandle#1                               # steamId
 Commit::HostHandle#2                                       # steamId
 VanillaStyle::Apply#1                                      # from
+
+# the argument is sent to the other players through another method of the mod
+RpgRuntime::TellTrade#4                                    # otherName: -> Net::SendTradeState(otherName)
+RpgRuntime::TellTrade#5                                    # itemJson: -> Net::SendTradeState(itemJson)
+RpgRuntime::TellTrade#6                                    # removeUid: -> Net::SendTradeState(removeUid)
+RpgRuntime::TellTrade#7                                    # text: -> Net::SendTradeState(text)
+RpgRuntime::CancelTrade#1                                  # why: -> RpgRuntime::TellTrade(text)
+RpgRuntime::Send#1                                         # payload: -> Net::SendCommit(payload)
+ClassClaims::AnnounceLocal#0                               # classId: -> Net::SendPick(classId)
+ClassClaims::Tick#0                                        # currentClassId: -> ClassClaims::AnnounceLocal(classId)
+Research::HostGrantAll#1                                   # reason: -> Net::SendResearchData(reason)
+Upgrades::Pay#1                                            # key: -> Net::BroadcastUpgradeUsed(key)
 
 [through]
 # the argument comes back inside the return value: what matters is what the caller does with the result

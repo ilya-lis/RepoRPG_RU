@@ -10,4 +10,7 @@ cp mod/lang/RepoRPG_RU.po "$W/lang/"
 REF="$RTK/reference-assemblies/v4.6"
 "$RTK/csc.sh" -nologo -r:"$REF/mscorlib.dll" -r:"$REF/System.dll" -r:"$REF/System.Core.dll" -target:exe -langversion:7.3 -nowarn:1591 \
     -out:"$W/LangCheck.exe" tests/LangCheck.cs src/Runtime/Loc.cs src/Shared/*.cs >/dev/null
+"$RTK/csc.sh" -nologo -r:"$REF/mscorlib.dll" -r:"$REF/System.dll" -r:"$REF/System.Core.dll" -target:exe -langversion:7.3 -nowarn:1591 \
+    -out:"$W/Shipped.exe" tests/Shipped.cs src/Patcher/Rules.cs src/Shared/*.cs >/dev/null
+"$RTK/run.sh" "$W/Shipped.exe" mod "$W/lang"
 "$RTK/run.sh" "$W/LangCheck.exe" "$W/checks.tsv" "$@"
