@@ -584,7 +584,7 @@ msgid "Vigilant!"
 msgstr "Начеку!"
 
 msgid "Gambler's Die rolled: one gear line doubled, one halved this level"
-msgstr "Кость игрока брошена: на этом уровне одно свойство снаряжения удвоено, одно уполовинено"
+msgstr "Кубик азартного игрока брошен: на этом уровне одно свойство снаряжения удвоено, одно уполовинено"
 
 msgid "Chrono Core: that one was free"
 msgstr "Хроноядро: это применение было бесплатным"
@@ -1058,7 +1058,7 @@ msgid "Frenzy x{0}"
 msgstr "Ярость x{0}"
 
 msgid "Momentum {0}/{1}  (+{2:0}% sprint)"
-msgstr "Импульс {0}/{1}  (+{2:0}% к спринту)"
+msgstr "Импульс {0}/{1}  (+{2:0}% к бегу)"
 
 msgid "Frenzy x{0}  {1:0}s"
 msgstr "Ярость x{0}  {1:0} с"
@@ -3272,7 +3272,7 @@ msgid " (2 piece on)"
 msgstr " (бонус за 2 предм.)"
 
 msgid "\n<color=#ffb21e>Gambler's Die is rolled for this level.</color>"
-msgstr "\n<color=#ffb21e>Кость игрока брошена на этот уровень.</color>"
+msgstr "\n<color=#ffb21e>Кубик азартного игрока брошен на этот уровень.</color>"
 
 msgid "EQUIPPED"
 msgstr "НАДЕТО"
@@ -5557,6 +5557,297 @@ msgstr "Ваша тележка упала - она возвращена вме�
 msgid "The level ended before your bet came in"
 msgstr "Уровень закончился раньше, чем сыграла ваша ставка"
 
+msgid "Rally Cry"
+msgstr "Боевой клич"
+
+msgid "No head in sight"
+msgstr "Голов в поле зрения нет"
+
+msgid "Rally the Fallen"
+msgstr "Сбор павших"
+
+msgid "Undertaker"
+msgstr "Гробовщик"
+
+msgid "Unsettled bet"
+msgstr "Неразыгранная ставка"
+
+msgid "Resupply: those items were already resupplied this level"
+msgstr "Пополнение: эти предметы уже пополнялись на этом уровне"
+
+msgid "Resupply: no drained batteries in reach"
+msgstr "Пополнение: поблизости нет разряженных батарей"
+
+msgid "Resupply: not enough Scrap"
+msgstr "Пополнение: не хватает лома"
+
+msgid "Hand-off: hold the item first"
+msgstr "Передача: сначала возьмите предмет"
+
+msgid "Hand-off: only items and valuables"
+msgstr "Передача: только предметы и ценности"
+
+msgid "Hand-off: they're out of sight"
+msgstr "Передача: напарник вне поля зрения"
+
+msgid "Hand-off: no teammate in reach"
+msgstr "Передача: поблизости нет напарника"
+
+msgid "Already marked"
+msgstr "Уже отмечено"
+
+msgid "Bet placed on ${0:N0} - {1} at stake. Get it out in {2:0}s!"
+msgstr "Ставка на ${0:N0} - на кону {1}. Вывезите за {2:0} с!"
+
+msgid "Your marked valuable is gone"
+msgstr "Ваша отмеченная ценность пропала"
+
+msgid "Side Bet"
+msgstr "Побочная ставка"
+
+msgid "{0} won the bet! x{1:0.0} - ${2:N0}"
+msgstr "{0} выигрывает ставку! x{1:0.0} - ${2:N0}"
+
+msgid "Lost bet"
+msgstr "Проигранная ставка"
+
+msgid "The marked valuable broke"
+msgstr "Отмеченная ценность разбилась"
+
+msgid "Insurance"
+msgstr "Страховка"
+
+msgid "That can't be dispatched"
+msgstr "Это нельзя отправить"
+
+msgid "No valuable within reach to dispatch"
+msgstr "Поблизости нет ценности для отправки"
+
+msgid "Put it down first: it has to sit still"
+msgstr "Сначала поставьте: она должна стоять неподвижно"
+
+msgid "Already on its way"
+msgstr "Уже в пути"
+
+msgid "Two dispatches are already counting down"
+msgstr "Две отправки уже ведут отсчёт"
+
+msgid "A dispatch is already counting down"
+msgstr "Отправка уже ведёт отсчёт"
+
+msgid "Dispatch: {0} {1} in {2:0}s - nobody touch it"
+msgstr "Отправка: {0} {1} через {2:0} с - никому не трогать"
+
+msgid "goes to your Drop Pad"
+msgstr "отправится на вашу площадку доставки"
+
+msgid "leaves"
+msgstr "отбудет"
+
+msgid "Dispatch lost: the item broke"
+msgstr "Отправка сорвана: предмет разбился"
+
+msgid "someone grabbed it"
+msgstr "кто-то его схватил"
+
+msgid "it was moved"
+msgstr "его сдвинули"
+
+msgid "it was damaged"
+msgstr "его повредили"
+
+msgid "the extraction closed"
+msgstr "извлечение закрылось"
+
+msgid "it couldn't be moved"
+msgstr "его не удалось переместить"
+
+msgid "Rush Fee"
+msgstr "Плата за срочность"
+
+msgid "Drop Pad delivered: ${0:N0} with the haul"
+msgstr "Площадка доставки: ${0:N0} доставлено вместе с добычей"
+
+msgid "That monster can't be provoked"
+msgstr "Этого монстра нельзя спровоцировать"
+
+msgid "Provoked: {0} vs {1} ({2:0}s)"
+msgstr "Провокация: {0} против {1} ({2:0} с)"
+
+msgid "Provoked: two monsters vs {0} ({1:0}s)"
+msgstr "Провокация: два монстра против {0} ({1:0} с)"
+
+msgid "the attacker"
+msgstr "нападающий"
+
+msgid "its target"
+msgstr "своей цели"
+
+msgid "Prize Money"
+msgstr "Призовые"
+
+msgid "Prospecting: +{0:0}% value"
+msgstr "Старательство: +{0:0}% к стоимости"
+
+msgid "Padding Kit: no value lost ({0} left)"
+msgstr "Набор прокладок: стоимость не потеряна (осталось: {0})"
+
+msgid "Taxman's Ledger"
+msgstr "Гроссбух мытаря"
+
+msgid "Catch! +{0:0}% value"
+msgstr "Поймал! +{0:0}% к стоимости"
+
+msgid "Butterfingers Insurance: no value lost"
+msgstr "Страховка растяпы: стоимость не потеряна"
+
+msgid "Careful: no value lost"
+msgstr "Аккуратность: стоимость не потеряна"
+
+msgid "Nothing nearby has lost value (or it's already been mended)"
+msgstr "Поблизости ничто не потеряло в стоимости (или уже починено)"
+
+msgid "Mended {0} valuable{1}: +${2:N0}"
+msgstr "Починено ценностей: {0} (+${2:N0})"
+
+msgid "Keen Eye: found something"
+msgstr "Острый глаз: кое-что найдено"
+
+msgid "Rummage needs a room to search"
+msgstr "Для обыска нужна комната"
+
+msgid "Nothing to rummage in the truck"
+msgstr "В грузовике обыскивать нечего"
+
+msgid "This room has already been rummaged"
+msgstr "Эта комната уже обыскана"
+
+msgid "You've found all you can this level"
+msgstr "На этом уровне вы нашли всё, что могли"
+
+msgid "Nothing to find here"
+msgstr "Здесь нечего искать"
+
+msgid "Rummage: found {0} thing{1}"
+msgstr "Обыск: найдено вещей: {0}"
+
+msgid "That can't be insured"
+msgstr "Это нельзя застраховать"
+
+msgid "Already insured"
+msgstr "Уже застраховано"
+
+msgid "Policy on {0}: move it {1:0}m to activate"
+msgstr "Полис на {0}: перенесите на {1:0} м для активации"
+
+msgid "No valuable within reach to tag"
+msgstr "Поблизости нет ценности для страхования"
+
+msgid "Policy void: a player broke it"
+msgstr "Полис аннулирован: предмет разбил игрок"
+
+msgid "Policy void: only moved {0:0}m of {1:0}m"
+msgstr "Полис аннулирован: перенесено только {0:0} м из {1:0} м"
+
+msgid "Policy paid: ${0:N0} counts toward the haul"
+msgstr "Выплата по полису: ${0:N0} идёт в счёт добычи"
+
+msgid "Too far to place a Watchpost"
+msgstr "Слишком далеко, чтобы поставить сторожевой пост"
+
+msgid "You need the Field Charger talent"
+msgstr "Нужен талант «Полевая зарядка»"
+
+msgid "Hold a gun to recharge it"
+msgstr "Возьмите оружие в руки, чтобы зарядить его"
+
+msgid "This weapon has no battery"
+msgstr "У этого оружия нет батареи"
+
+msgid "No cart close enough"
+msgstr "Рядом нет тележки"
+
+msgid "Gun recharged from cart (+{0:0}%)"
+msgstr "Оружие заряжено от тележки (+{0:0}%)"
+
+msgid "Pacified {0} for {1:0}s"
+msgstr "Усмирён: {0} на {1:0} с"
+
+msgid "Pacified {0} monsters for {1:0}s"
+msgstr "Усмирено монстров: {0} на {1:0} с"
+
+msgid "No monster in sight to pacify"
+msgstr "В поле зрения нет монстра для усмирения"
+
+msgid "Nothing to hook there"
+msgstr "Там не за что зацепиться"
+
+msgid "Out of the Hook's reach"
+msgstr "Вне досягаемости крюка"
+
+msgid "Too heavy to yank"
+msgstr "Слишком тяжело для рывка"
+
+msgid "Someone is holding it"
+msgstr "Это кто-то держит"
+
+msgid "Can't hook through walls"
+msgstr "Сквозь стены крюк не цепляет"
+
+msgid "Too far for an echo"
+msgstr "Слишком далеко для эха"
+
+msgid "Smoke: {0} monster{1} lost sight of you"
+msgstr "Дым: монстров потеряло вас из виду: {0}"
+
+msgid "Smoke Canister burst"
+msgstr "Дымовая шашка сработала"
+
+msgid "Decoy Whistle: monsters go to check it out"
+msgstr "Свисток-приманка: монстры идут проверить"
+
+msgid "Flash: {0} monster{1} stunned"
+msgstr "Вспышка: оглушено монстров: {0}"
+
+msgid "Flash Charge went off"
+msgstr "Светошумовой заряд сработал"
+
+msgid "Recall Beacon: used this level"
+msgstr "Маяк отзыва: уже использован на этом уровне"
+
+msgid "Recall Beacon: no empty cart"
+msgstr "Маяк отзыва: нет пустой тележки"
+
+msgid "Recall Beacon: a cart is here"
+msgstr "Маяк отзыва: тележка прибыла"
+
+msgid "Twin Pads: only a Courier has a Drop Pad"
+msgstr "Парные площадки: площадка доставки есть только у Курьера"
+
+msgid "Twin Pads: Drop Pad 2 is here"
+msgstr "Парные площадки: площадка доставки 2 установлена"
+
+msgid "Insulated Cart: already used this level"
+msgstr "Изолированная тележка: уже использовано на этом уровне"
+
+msgid "Insulated Cart: stand next to a cart"
+msgstr "Изолированная тележка: встаньте рядом с тележкой"
+
+msgid "Insulated Cart: its valuables lose no value from bumps while it stands still"
+msgstr "Изолированная тележка: пока она стоит, ценности в ней не теряют стоимость от ударов"
+
+msgid "Vault cracked"
+msgstr "Сейф взломан"
+
+msgid "Vault cracked by {0}: now worth ${1:N0}"
+msgstr "Сейф взломан ({0}): теперь стоит ${1:N0}"
+
+msgid "Trailer Hitch: carts hitched. Yank them apart to unhitch."
+msgstr "Сцепка: тележки сцеплены. Растащите их, чтобы расцепить."
+
+msgid "Dumbwaiter: {0} (${1:N0}) sent to the open extraction"
+msgstr "Подъёмник: {0} (${1:N0}) отправлено к открытому извлечению"
+
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
 
@@ -6357,6 +6648,18 @@ msgid "YOUR ABILITIES NOW"
 msgstr "ВАШИ СПОСОБНОСТИ СЕЙЧАС"
 
 msgctxt "term"
+msgid "The Gambler"
+msgstr "Азартный игрок"
+
+msgctxt "term"
+msgid "Only in a level"
+msgstr "Только на уровне"
+
+msgctxt "term"
+msgid "Couldn't recharge"
+msgstr "Не удалось зарядить"
+
+msgctxt "term"
 msgid "max"
 msgstr "макс."
 
@@ -6443,6 +6746,70 @@ msgstr "Оценщик"
 msgctxt "term"
 msgid "Lookout"
 msgstr "Дозорный"
+
+msgctxt "term"
+msgid "Gambler"
+msgstr "Азартный игрок"
+
+msgctxt "term"
+msgid "Undertaker"
+msgstr "Гробовщик"
+
+msgctxt "term"
+msgid "Physicist"
+msgstr "Физик"
+
+msgctxt "term"
+msgid "Trickster"
+msgstr "Плут"
+
+msgctxt "term"
+msgid "Demolitionist"
+msgstr "Подрывник"
+
+msgctxt "term"
+msgid "Courier"
+msgstr "Курьер"
+
+msgctxt "term"
+msgid "Ventriloquist"
+msgstr "Чревовещатель"
+
+msgctxt "term"
+msgid "Restorer"
+msgstr "Реставратор"
+
+msgctxt "term"
+msgid "Scavenger"
+msgstr "Старьёвщик"
+
+msgctxt "term"
+msgid "Insurer"
+msgstr "Страховщик"
+
+msgctxt "term"
+msgid "Shepherd"
+msgstr "Пастух"
+
+msgctxt "term"
+msgid "Grappler"
+msgstr "Крючник"
+
+msgctxt "term"
+msgid "Instigator"
+msgstr "Подстрекатель"
+
+msgctxt "term"
+msgid "Gunsmith"
+msgstr "Оружейник"
+
+msgctxt "term"
+msgid "Pacifist"
+msgstr "Пацифист"
+
+msgctxt "term"
+msgid "Gambler's Die"
+msgstr "Кубик азартного игрока"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -8437,6 +8804,194 @@ msgid "overdrive ended ({0})"
 msgstr "форсаж завершён ({0})"
 
 msgctxt "pattern"
+msgid "Resupply: out of charges - another costs {0}"
+msgstr "Пополнение: заряды кончились - ещё один стоит {0}"
+
+msgctxt "pattern"
+msgid "Resupplied{0}: {1}"
+msgstr "Пополнено{0}: {1}"
+
+msgctxt "pattern"
+msgid "{0}'s bet was void - extracted before it was live"
+msgstr "{0}: ставка аннулирована - извлечено до её начала"
+
+msgctxt "pattern"
+msgid "{0}'s Double or Nothing expired - the bonus is lost"
+msgstr "{0}: «Вдвое или ничего» истекло - бонус потерян"
+
+msgctxt "pattern"
+msgid "{0}'s bet was lost"
+msgstr "{0}: ставка проиграна"
+
+msgctxt "pattern"
+msgid "{0} lost the bet{1}"
+msgstr "{0} проигрывает ставку{1}"
+
+msgctxt "pattern"
+msgid "Dispatch cancelled: {0}"
+msgstr "Отправка отменена: {0}"
+
+msgctxt "pattern"
+msgid "Provoke: {0} couldn't reach {1} - cooldown refunded"
+msgstr "Провокация: {0} не может добраться до {1} - перезарядка возвращена"
+
+msgctxt "pattern"
+msgid "{0}% max health"
+msgstr "{0}% к макс. здоровью"
+
+msgctxt "pattern"
+msgid "{0}% damage taken"
+msgstr "{0}% получаемого урона"
+
+msgctxt "pattern"
+msgid "{0}% walk speed"
+msgstr "{0}% к скорости ходьбы"
+
+msgctxt "pattern"
+msgid "{0}% sprint speed"
+msgstr "{0}% к скорости бега"
+
+msgctxt "pattern"
+msgid "{0}% crouch speed"
+msgstr "{0}% к скорости в приседе"
+
+msgctxt "pattern"
+msgid "{0}% jump force"
+msgstr "{0}% к силе прыжка"
+
+msgctxt "pattern"
+msgid "{0} extra jump{1}"
+msgstr "{0} к доп. прыжкам"
+
+msgctxt "pattern"
+msgid "{0}% max stamina"
+msgstr "{0}% к макс. выносливости"
+
+msgctxt "pattern"
+msgid "{0}% sprint stamina drain"
+msgstr "{0}% расхода выносливости при беге"
+
+msgctxt "pattern"
+msgid "{0}% grab strength"
+msgstr "{0}% к силе хвата"
+
+msgctxt "pattern"
+msgid "{0}% grab range"
+msgstr "{0}% к дальности хвата"
+
+msgctxt "pattern"
+msgid "{0}% throw strength"
+msgstr "{0}% к силе броска"
+
+msgctxt "pattern"
+msgid "{0} HP/s regen"
+msgstr "{0} ОЗ/с регенерации"
+
+msgctxt "pattern"
+msgid "{0}% dodge chance"
+msgstr "{0}% к шансу уклонения"
+
+msgctxt "pattern"
+msgid "{0}% speed below 35% HP"
+msgstr "{0}% к скорости при ОЗ ниже 35%"
+
+msgctxt "pattern"
+msgid "{0}% stamina drain while carrying"
+msgstr "{0}% расхода выносливости при переноске"
+
+msgctxt "pattern"
+msgid "{0} death save per level"
+msgstr "{0} к спасениям от смерти за уровень"
+
+msgctxt "pattern"
+msgid "{0} HP to nearby allies every 3s"
+msgstr "{0} ОЗ союзникам рядом каждые 3 с"
+
+msgctxt "pattern"
+msgid "{0}m aura radius"
+msgstr "{0} м радиуса ауры"
+
+msgctxt "pattern"
+msgid "{0} HP to allies revived near you"
+msgstr "{0} ОЗ союзникам, возрождённым рядом с вами"
+
+msgctxt "pattern"
+msgid "{0} HP when an enemy dies near you"
+msgstr "{0} ОЗ, когда рядом с вами погибает враг"
+
+msgctxt "pattern"
+msgid "{0}m enemy sense range"
+msgstr "{0} м дальности чутья на врагов"
+
+msgctxt "pattern"
+msgid "{0}% ability cooldown reduction"
+msgstr "{0}% сокращения перезарядки способности"
+
+msgctxt "pattern"
+msgid "{0}% ability duration"
+msgstr "{0}% к длительности способности"
+
+msgctxt "pattern"
+msgid "{0}% ability power"
+msgstr "{0}% к силе способности"
+
+msgctxt "pattern"
+msgid "{0}% ability radius"
+msgstr "{0}% к радиусу способности"
+
+msgctxt "pattern"
+msgid "{0}% all XP"
+msgstr "{0}% ко всему опыту"
+
+msgctxt "pattern"
+msgid "{0}% kill XP"
+msgstr "{0}% к опыту за убийства"
+
+msgctxt "pattern"
+msgid "{0}% extraction XP"
+msgstr "{0}% к опыту за извлечение"
+
+msgctxt "pattern"
+msgid "{0}% revive XP"
+msgstr "{0}% к опыту за возрождение"
+
+msgctxt "pattern"
+msgid "{0}% level-complete XP"
+msgstr "{0}% к опыту за прохождение уровня"
+
+msgctxt "pattern"
+msgid "{0}% weapon damage"
+msgstr "{0}% к урону оружия"
+
+msgctxt "pattern"
+msgid "{0}% bleed chance on hit"
+msgstr "{0}% шанс кровотечения при попадании"
+
+msgctxt "pattern"
+msgid "{0}% stun chance on hit"
+msgstr "{0}% шанс оглушения при попадании"
+
+msgctxt "pattern"
+msgid "{0} HP per weapon hit"
+msgstr "{0} ОЗ за попадание оружием"
+
+msgctxt "pattern"
+msgid "{0} gear luck"
+msgstr "{0} к удаче снаряжения"
+
+msgctxt "pattern"
+msgid "{0} ability charge{1}"
+msgstr "{0} к зарядам способности"
+
+msgctxt "pattern"
+msgid "{0}s ability cooldown per nearby kill"
+msgstr "{0} с перезарядки способности за убийство рядом"
+
+msgctxt "pattern"
+msgid "{0}% gear find on extraction"
+msgstr "{0}% к находкам снаряжения при извлечении"
+
+msgctxt "pattern"
 msgid "{0}s stun"
 msgstr "{0} с оглушения"
 
@@ -8468,6 +9023,22 @@ msgctxt "pattern"
 msgid "{0} damage"
 msgstr "{0} урона"
 
+msgctxt "@ClassHost::CancelDispatch#3007"
+msgid "Dispatch cancelled: "
+msgstr "Отправка отменена: "
+
+msgctxt "@ClassHost::EndFight#3041"
+msgid "Provoke: "
+msgstr "Провокация: "
+
+msgctxt "@ClassHost::EndFight#3041"
+msgid " couldn't reach "
+msgstr " не может добраться до "
+
+msgctxt "@ClassHost::EndFight#3041"
+msgid " - cooldown refunded"
+msgstr " - перезарядка возвращена"
+
 msgctxt "@ClassHost::EndOverdrive#2866"
 msgid "Overdrive ended: "
 msgstr "Форсаж завершён: "
@@ -8475,6 +9046,30 @@ msgstr "Форсаж завершён: "
 msgctxt "@ClassHost::EndOverdrive#2868"
 msgid "overdrive ended ("
 msgstr "форсаж завершён ("
+
+msgctxt "@ClassHost::OnExtracting#2984"
+msgid "'s bet was void - extracted before it was live"
+msgstr ": ставка аннулирована - извлечено до её начала"
+
+msgctxt "@ClassHost::Resupply#2971"
+msgid "Resupply: out of charges - another costs "
+msgstr "Пополнение: заряды кончились - ещё один стоит "
+
+msgctxt "@ClassHost::Resupply#2975"
+msgid "Resupplied"
+msgstr "Пополнено"
+
+msgctxt "@ClassHost::SettleExpired#2987"
+msgid "'s Double or Nothing expired - the bonus is lost"
+msgstr ": «Вдвое или ничего» истекло - бонус потерян"
+
+msgctxt "@ClassHost::SettleLost#2988"
+msgid "'s bet was lost"
+msgstr ": ставка проиграна"
+
+msgctxt "@ClassHost::SettleLost#2990"
+msgid " lost the bet"
+msgstr " проигрывает ставку"
 
 msgctxt "@ResearchCrew::HostRunEnd#2799"
 msgid "Sponsor: "
@@ -10995,3 +11590,151 @@ msgstr "Проголосовали: "
 msgctxt "@Scrap::HostGift#485"
 msgid "not enough "
 msgstr "не хватает "
+
+msgctxt "@StatInfo::Describe#3252"
+msgid "% max health"
+msgstr "% к макс. здоровью"
+
+msgctxt "@StatInfo::Describe#3253"
+msgid "% damage taken"
+msgstr "% получаемого урона"
+
+msgctxt "@StatInfo::Describe#3254"
+msgid "% walk speed"
+msgstr "% к скорости ходьбы"
+
+msgctxt "@StatInfo::Describe#3255"
+msgid "% sprint speed"
+msgstr "% к скорости бега"
+
+msgctxt "@StatInfo::Describe#3256"
+msgid "% crouch speed"
+msgstr "% к скорости в приседе"
+
+msgctxt "@StatInfo::Describe#3257"
+msgid "% jump force"
+msgstr "% к силе прыжка"
+
+msgctxt "@StatInfo::Describe#3259"
+msgid "% max stamina"
+msgstr "% к макс. выносливости"
+
+msgctxt "@StatInfo::Describe#3260"
+msgid "% sprint stamina drain"
+msgstr "% расхода выносливости при беге"
+
+msgctxt "@StatInfo::Describe#3261"
+msgid "% grab strength"
+msgstr "% к силе хвата"
+
+msgctxt "@StatInfo::Describe#3262"
+msgid "% grab range"
+msgstr "% к дальности хвата"
+
+msgctxt "@StatInfo::Describe#3263"
+msgid "% throw strength"
+msgstr "% к силе броска"
+
+msgctxt "@StatInfo::Describe#3264"
+msgid " HP/s regen"
+msgstr " ОЗ/с регенерации"
+
+msgctxt "@StatInfo::Describe#3265"
+msgid "% dodge chance"
+msgstr "% к шансу уклонения"
+
+msgctxt "@StatInfo::Describe#3266"
+msgid "% speed below 35% HP"
+msgstr "% к скорости при ОЗ ниже 35%"
+
+msgctxt "@StatInfo::Describe#3267"
+msgid "% stamina drain while carrying"
+msgstr "% расхода выносливости при переноске"
+
+msgctxt "@StatInfo::Describe#3268"
+msgid " death save per level"
+msgstr " к спасениям от смерти за уровень"
+
+msgctxt "@StatInfo::Describe#3269"
+msgid " HP to nearby allies every 3s"
+msgstr " ОЗ союзникам рядом каждые 3 с"
+
+msgctxt "@StatInfo::Describe#3270"
+msgid "m aura radius"
+msgstr " м радиуса ауры"
+
+msgctxt "@StatInfo::Describe#3271"
+msgid " HP to allies revived near you"
+msgstr " ОЗ союзникам, возрождённым рядом с вами"
+
+msgctxt "@StatInfo::Describe#3272"
+msgid " HP when an enemy dies near you"
+msgstr " ОЗ, когда рядом с вами погибает враг"
+
+msgctxt "@StatInfo::Describe#3273"
+msgid "m enemy sense range"
+msgstr " м дальности чутья на врагов"
+
+msgctxt "@StatInfo::Describe#3274"
+msgid "% ability cooldown reduction"
+msgstr "% сокращения перезарядки способности"
+
+msgctxt "@StatInfo::Describe#3275"
+msgid "% ability duration"
+msgstr "% к длительности способности"
+
+msgctxt "@StatInfo::Describe#3276"
+msgid "% ability power"
+msgstr "% к силе способности"
+
+msgctxt "@StatInfo::Describe#3277"
+msgid "% ability radius"
+msgstr "% к радиусу способности"
+
+msgctxt "@StatInfo::Describe#3278"
+msgid "% all XP"
+msgstr "% ко всему опыту"
+
+msgctxt "@StatInfo::Describe#3279"
+msgid "% kill XP"
+msgstr "% к опыту за убийства"
+
+msgctxt "@StatInfo::Describe#3280"
+msgid "% extraction XP"
+msgstr "% к опыту за извлечение"
+
+msgctxt "@StatInfo::Describe#3281"
+msgid "% revive XP"
+msgstr "% к опыту за возрождение"
+
+msgctxt "@StatInfo::Describe#3282"
+msgid "% level-complete XP"
+msgstr "% к опыту за прохождение уровня"
+
+msgctxt "@StatInfo::Describe#3283"
+msgid "% weapon damage"
+msgstr "% к урону оружия"
+
+msgctxt "@StatInfo::Describe#3284"
+msgid "% bleed chance on hit"
+msgstr "% шанс кровотечения при попадании"
+
+msgctxt "@StatInfo::Describe#3285"
+msgid "% stun chance on hit"
+msgstr "% шанс оглушения при попадании"
+
+msgctxt "@StatInfo::Describe#3286"
+msgid " HP per weapon hit"
+msgstr " ОЗ за попадание оружием"
+
+msgctxt "@StatInfo::Describe#3287"
+msgid " gear luck"
+msgstr " к удаче снаряжения"
+
+msgctxt "@StatInfo::Describe#3289"
+msgid "s ability cooldown per nearby kill"
+msgstr " с перезарядки способности за убийство рядом"
+
+msgctxt "@StatInfo::Describe#3290"
+msgid "% gear find on extraction"
+msgstr "% к находкам снаряжения при извлечении"

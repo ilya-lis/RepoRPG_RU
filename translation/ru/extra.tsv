@@ -29,6 +29,23 @@
 +term	Medic	Медик
 +term	Appraiser	Оценщик
 +term	Lookout	Дозорный
++term	Gambler	Азартный игрок
++term	Undertaker	Гробовщик
++term	Physicist	Физик
++term	Trickster	Плут
++term	Demolitionist	Подрывник
++term	Courier	Курьер
++term	Ventriloquist	Чревовещатель
++term	Restorer	Реставратор
++term	Scavenger	Старьёвщик
++term	Insurer	Страховщик
++term	Shepherd	Пастух
++term	Grappler	Крючник
++term	Instigator	Подстрекатель
++term	Gunsmith	Оружейник
++term	Pacifist	Пацифист
+# названия из данных, которые встречаются в сообщениях
++term	Gambler's Die	Кубик азартного игрока
 +@RpgRuntime::ResearchDetail	Personal	Личное
 +@RpgRuntime::ShopEntryDetail	Unlock	Снять фиксацию
 +pattern	{0}s stun	{0} с оглушения
