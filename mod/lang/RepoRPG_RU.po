@@ -5848,6 +5848,63 @@ msgstr "Сцепка: тележки сцеплены. Растащите их, 
 msgid "Dumbwaiter: {0} (${1:N0}) sent to the open extraction"
 msgstr "Подъёмник: {0} (${1:N0}) отправлено к открытому извлечению"
 
+msgid "Talent: {0} (rank {1})"
+msgstr "Талант: {0} (ранг {1})"
+
+msgid "Attribute: {0} ({1} pts)"
+msgstr "Характеристика: {0} ({1} очк.)"
+
+msgid "Pairing: "
+msgstr "Сочетание: "
+
+msgid "Milestone: "
+msgstr "Веха: "
+
+msgid "Set: {0} {1}-piece"
+msgstr "Комплект: {0}, предметов: {1}"
+
+msgid "Upgrade: {0} x{1}"
+msgstr "Улучшение: {0} x{1}"
+
+msgid "Tag bonus: {0} x{1}"
+msgstr "Бонус тега: {0} x{1}"
+
+msgid "Seed money"
+msgstr "Стартовый капитал"
+
+msgid "an older version (protocol {0}; {1} is RepoRPG's old name)"
+msgstr "более старая версия (протокол {0}; {1} - прежнее название RepoRPG)"
+
+msgid "a newer version (protocol {0})"
+msgstr "более новая версия (протокол {0})"
+
+msgid "an older version (Semibot RPG?)"
+msgstr "более старая версия (Semibot RPG?)"
+
+msgid "a newer version"
+msgstr "более новая версия"
+
+msgid " (removed)."
+msgstr " (удалён)."
+
+msgid "Auditor contract failed"
+msgstr "Контракт Аудитора провален"
+
+msgid "You left the game"
+msgstr "Вы вышли из игры"
+
+msgid "The host changed"
+msgstr "Хост сменился"
+
+msgid "Couldn't reach the host - ability not used"
+msgstr "Нет связи с хостом - способность не использована"
+
+msgid "Defeat The Liquidator first: the extraction is sealed"
+msgstr "Сначала одолейте Ликвидатора: извлечение запечатано"
+
+msgid "Efficient Rounds"
+msgstr "Экономные патроны"
+
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
 
@@ -8992,6 +9049,138 @@ msgid "{0}% gear find on extraction"
 msgstr "{0}% к находкам снаряжения при извлечении"
 
 msgctxt "pattern"
+msgid "{0}% extra elite gear drop"
+msgstr "{0}% к доп. добыче снаряжения с элиты"
+
+msgctxt "pattern"
+msgid "{0} HP when an extraction completes"
+msgstr "{0} ОЗ при завершении извлечения"
+
+msgctxt "pattern"
+msgid "{0}% mod shop discount"
+msgstr "{0}% скидки в магазине мода"
+
+msgctxt "pattern"
+msgid "{0}% less damage to items you hold"
+msgstr "{0}% меньше урона предметам в ваших руках"
+
+msgctxt "pattern"
+msgid "{0}% value to valuables you appraise"
+msgstr "{0}% к стоимости оценённых вами ценностей"
+
+msgctxt "pattern"
+msgid "{0}m appraisal radius"
+msgstr "{0} м радиуса оценки"
+
+msgctxt "pattern"
+msgid "{0}% less damage for allies near you"
+msgstr "{0}% меньше урона союзникам рядом с вами"
+
+msgctxt "pattern"
+msgid "{0}m Shield Wall radius"
+msgstr "{0} м радиуса «Стены щитов»"
+
+msgctxt "pattern"
+msgid "{0}% less damage for low-HP allies in your aura"
+msgstr "{0}% меньше урона союзникам с низким ОЗ в вашей ауре"
+
+msgctxt "pattern"
+msgid "{0}% sprint speed per Momentum stack"
+msgstr "{0}% к скорости бега за заряд Импульса"
+
+msgctxt "pattern"
+msgid "{0} max Momentum stack{1}"
+msgstr "{0} к макс. зарядам Импульса"
+
+msgctxt "pattern"
+msgid "{0}s Momentum hold after you stop"
+msgstr "{0} с удержания Импульса после остановки"
+
+msgctxt "pattern"
+msgid "{0}% throw & weapon damage per Frenzy stack"
+msgstr "{0}% к урону бросков и оружия за заряд Ярости"
+
+msgctxt "pattern"
+msgid "{0} max Frenzy stack{1}"
+msgstr "{0} к макс. зарядам Ярости"
+
+msgctxt "pattern"
+msgid "{0} stamina/s for allies near you"
+msgstr "{0} выносл./с союзникам рядом с вами"
+
+msgctxt "pattern"
+msgid "{0}m Power Link radius"
+msgstr "{0} м радиуса «Энергосвязи»"
+
+msgctxt "pattern"
+msgid "{0}% speed for 3s after a dodge"
+msgstr "{0}% к скорости на 3 с после уклонения"
+
+msgctxt "pattern"
+msgid "{0}s ability cooldown per dodge"
+msgstr "{0} с перезарядки способности за уклонение"
+
+msgctxt "pattern"
+msgid "{0}% Scar Tissue per hit taken"
+msgstr "{0}% «Рубцовой ткани» за полученный удар"
+
+msgctxt "pattern"
+msgid "{0}% max Scar Tissue"
+msgstr "{0}% макс. «Рубцовой ткани»"
+
+msgctxt "pattern"
+msgid "{0}% damage to Marked enemies"
+msgstr "{0}% урона по врагам с Меткой"
+
+msgctxt "pattern"
+msgid "{0}s Mark duration"
+msgstr "{0} с длительности Метки"
+
+msgctxt "pattern"
+msgid "{0}% noise you make"
+msgstr "{0}% издаваемого вами шума"
+
+msgctxt "pattern"
+msgid "{0}% bonus currency share"
+msgstr "{0}% к доле валюты"
+
+msgctxt "pattern"
+msgid "{0}% more for Rare+ valuables you appraise"
+msgstr "{0}% сверх того за оценённые вами ценности редкости «Редкий» и выше"
+
+msgctxt "pattern"
+msgid "Alternate passive: {0}"
+msgstr "Альтернативная пассивка: {0}"
+
+msgctxt "pattern"
+msgid "Passive: {0}"
+msgstr "Пассивка: {0}"
+
+msgctxt "pattern"
+msgid "Gear: {0}"
+msgstr "Снаряжение: {0}"
+
+msgctxt "pattern"
+msgid "Perk: {0}"
+msgstr "Перк: {0}"
+
+msgctxt "pattern"
+msgid "Evolved: {0}"
+msgstr "Эволюция: {0}"
+
+msgctxt "pattern"
+msgid "Gift failed: {0}"
+msgstr "Не удалось подарить: {0}"
+
+msgctxt "pattern"
+msgid "{0} runs {1}: they need RepoRPG 1.0.100{2}"
+msgstr "{0}: {1} - нужен RepoRPG 1.0.100{2}"
+
+msgctxt "pattern"
+msgid "!Gift failed: {0}"
+msgstr "!Не удалось подарить: {0}"
+
+msgctxt "pattern"
 msgid "{0}s stun"
 msgstr "{0} с оглушения"
 
@@ -9070,6 +9259,22 @@ msgstr ": ставка проиграна"
 msgctxt "@ClassHost::SettleLost#2990"
 msgid " lost the bet"
 msgstr " проигрывает ставку"
+
+msgctxt "@Net::Dispatch#3359"
+msgid "!Gift failed: "
+msgstr "!Не удалось подарить: "
+
+msgctxt "@Net::Gift#3352"
+msgid "Gift failed: "
+msgstr "Не удалось подарить: "
+
+msgctxt "@Net::OnEvent#3355"
+msgid " runs "
+msgstr ": "
+
+msgctxt "@Net::OnEvent#3355"
+msgid ": they need RepoRPG 1.0.100"
+msgstr " - нужен RepoRPG 1.0.100"
 
 msgctxt "@ResearchCrew::HostRunEnd#2799"
 msgid "Sponsor: "
@@ -11738,3 +11943,115 @@ msgstr " с перезарядки способности за убийство 
 msgctxt "@StatInfo::Describe#3290"
 msgid "% gear find on extraction"
 msgstr "% к находкам снаряжения при извлечении"
+
+msgctxt "@StatInfo::Describe#3291"
+msgid "% extra elite gear drop"
+msgstr "% к доп. добыче снаряжения с элиты"
+
+msgctxt "@StatInfo::Describe#3292"
+msgid " HP when an extraction completes"
+msgstr " ОЗ при завершении извлечения"
+
+msgctxt "@StatInfo::Describe#3293"
+msgid "% mod shop discount"
+msgstr "% скидки в магазине мода"
+
+msgctxt "@StatInfo::Describe#3294"
+msgid "% less damage to items you hold"
+msgstr "% меньше урона предметам в ваших руках"
+
+msgctxt "@StatInfo::Describe#3295"
+msgid "% value to valuables you appraise"
+msgstr "% к стоимости оценённых вами ценностей"
+
+msgctxt "@StatInfo::Describe#3296"
+msgid "m appraisal radius"
+msgstr " м радиуса оценки"
+
+msgctxt "@StatInfo::Describe#3297"
+msgid "% less damage for allies near you"
+msgstr "% меньше урона союзникам рядом с вами"
+
+msgctxt "@StatInfo::Describe#3298"
+msgid "m Shield Wall radius"
+msgstr " м радиуса «Стены щитов»"
+
+msgctxt "@StatInfo::Describe#3299"
+msgid "% less damage for low-HP allies in your aura"
+msgstr "% меньше урона союзникам с низким ОЗ в вашей ауре"
+
+msgctxt "@StatInfo::Describe#3300"
+msgid "% sprint speed per Momentum stack"
+msgstr "% к скорости бега за заряд Импульса"
+
+msgctxt "@StatInfo::Describe#3302"
+msgid "s Momentum hold after you stop"
+msgstr " с удержания Импульса после остановки"
+
+msgctxt "@StatInfo::Describe#3303"
+msgid "% throw & weapon damage per Frenzy stack"
+msgstr "% к урону бросков и оружия за заряд Ярости"
+
+msgctxt "@StatInfo::Describe#3305"
+msgid " stamina/s for allies near you"
+msgstr " выносл./с союзникам рядом с вами"
+
+msgctxt "@StatInfo::Describe#3306"
+msgid "m Power Link radius"
+msgstr " м радиуса «Энергосвязи»"
+
+msgctxt "@StatInfo::Describe#3307"
+msgid "% speed for 3s after a dodge"
+msgstr "% к скорости на 3 с после уклонения"
+
+msgctxt "@StatInfo::Describe#3308"
+msgid "s ability cooldown per dodge"
+msgstr " с перезарядки способности за уклонение"
+
+msgctxt "@StatInfo::Describe#3309"
+msgid "% Scar Tissue per hit taken"
+msgstr "% «Рубцовой ткани» за полученный удар"
+
+msgctxt "@StatInfo::Describe#3310"
+msgid "% max Scar Tissue"
+msgstr "% макс. «Рубцовой ткани»"
+
+msgctxt "@StatInfo::Describe#3311"
+msgid "% damage to Marked enemies"
+msgstr "% урона по врагам с Меткой"
+
+msgctxt "@StatInfo::Describe#3312"
+msgid "s Mark duration"
+msgstr " с длительности Метки"
+
+msgctxt "@StatInfo::Describe#3313"
+msgid "% noise you make"
+msgstr "% издаваемого вами шума"
+
+msgctxt "@StatInfo::Describe#3314"
+msgid "% bonus currency share"
+msgstr "% к доле валюты"
+
+msgctxt "@StatInfo::Describe#3315"
+msgid "% more for Rare+ valuables you appraise"
+msgstr "% сверх того за оценённые вами ценности редкости «Редкий» и выше"
+
+msgctxt "@StatSheet::Explain#3316"
+msgid "Alternate passive: "
+msgstr "Альтернативная пассивка: "
+
+msgctxt "@StatSheet::Explain#3317"
+msgid "Passive: "
+msgstr "Пассивка: "
+
+msgctxt "@StatSheet::Explain#3322"
+msgid "Gear: "
+msgstr "Снаряжение: "
+
+msgctxt "@StatSheet::Explain#3325"
+msgid "Perk: "
+msgstr "Перк: "
+
+msgctxt "@StatSheet::Explain#3326"
+msgid "Evolved: "
+msgstr "Эволюция: "
