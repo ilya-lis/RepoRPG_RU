@@ -183,16 +183,31 @@ namespace RepoRPG_RU
                     if (d == ' ' || d == '\'' || d == '-' || d == '/' || d == '&') { j++; continue; }
                     break;
                 }
-                if (end - start >= 2 && !(start == 0 && end == n))
+                // the longest stretch of whole words that is known wins: "Scrap 20" -> "Scrap", "Iron Plate of Doom" -> all of it
+                int ws = start;
+                while (ws < end)
                 {
-                    string run = text.Substring(start, end - start);
-                    string t = Sub(run, depth + 1);
-                    if (t != null)
+                    if (!IsLatinLetter(text[ws])) { ws++; continue; }
+                    int firstEnd = -1, tries = 0;
+                    int[] ends = new int[6];
+                    for (int k = ws + 1; k <= end && tries < ends.Length; k++)
                     {
-                        if (sb == null) sb = new StringBuilder(n + 16);
-                        sb.Append(text, copied, start - copied).Append(t);
-                        copied = end;
+                        bool wordEnd = k == end || !(IsLatinLetter(text[k]) || (text[k] >= '0' && text[k] <= '9'));
+                        bool afterWord = IsLatinLetter(text[k - 1]) || (text[k - 1] >= '0' && text[k - 1] <= '9');
+                        if (wordEnd && afterWord) { ends[tries++] = k; if (firstEnd < 0) firstEnd = k; }
                     }
+                    bool done = false;
+                    for (int k = tries - 1; k >= 0 && !done; k--)
+                    {
+                        int e = ends[k];
+                        if (e - ws < 2 || (ws == 0 && e == n)) continue;
+                        string t = Sub(text.Substring(ws, e - ws), depth + 1);
+                        if (t == null) continue;
+                        if (sb == null) sb = new StringBuilder(n + 16);
+                        sb.Append(text, copied, ws - copied).Append(t);
+                        copied = e; ws = e; done = true;
+                    }
+                    if (!done) ws = firstEnd < 0 ? end : firstEnd;
                 }
                 i = end;
             }

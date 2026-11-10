@@ -81,7 +81,8 @@ check('ternary', has(out, 'Toast:Недостаточно золота') and has
 check('concat', has(out, 'Label:Уровень 5'))
 check('format with holes', has(out, 'Label:Уровень 3 — 40.5 опыта'))
 check('interpolated', has(out, 'Label:Золото: 3'))
-check('concat x3 + runtime term', has(out, 'Toast:Снаряжение: Iron Plate — надето'), [l for l in out if l.startswith('Toast:')])
+# the name comes from the mod's data at run time: it is found inside the already translated sentence
+check('concat x3 + runtime term inside', has(out, 'Toast:Снаряжение: Железная пластина — надето'), [l for l in out if l.startswith('Toast:')])
 check('string.Concat(3)', has(out, 'Label:Откроется на уровне 7.'))
 check('switch bodies', has(out, 'Label:Редкий предмет') and has(out, 'Label:Эпический предмет'))
 check('confirm dialog', has(out, 'Ask:Сбросить класс?/Все очки будут возвращены./Сбросить'))
