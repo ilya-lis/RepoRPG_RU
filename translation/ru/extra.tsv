@@ -1,3 +1,6 @@
 # Дополнения к автоматически собранным записям: +вид<TAB>английский<TAB>русский
 +pattern	{0} XP	{0} опыта
 +term	max	макс.
++term	REWARD	НАГРАДА
++term	STAKES	СТАВКИ
++global	 (everyone in it)	 (каждому участнику)

@@ -853,7 +853,7 @@
 "shape": "text",
 "group": "maybe",
 "first": 2660,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::.cctor"
 ],
@@ -14919,7 +14919,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 20741,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::ResCrewText"
 ],
@@ -18599,7 +18599,7 @@ null
 "shape": "caps",
 "group": "maybe",
 "first": 23812,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::TeamBoxBody"
 ],
@@ -18615,7 +18615,7 @@ null
 "shape": "text",
 "group": "maybe",
 "first": 23814,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::TeamBoxBody"
 ],
@@ -19664,7 +19664,7 @@ null,
 "shape": "word",
 "group": "maybe",
 "first": 25360,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::DrawAscensionPicker"
 ],
@@ -19735,7 +19735,7 @@ null,
 "shape": "caps",
 "group": "maybe",
 "first": 25413,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildAscensionText"
 ],
@@ -19847,7 +19847,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 25420,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildAscensionText",
 "RpgRuntime::BuildRecordsText"
@@ -20727,7 +20727,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 26411,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildAttrSideTexts"
 ],
@@ -30887,7 +30887,7 @@ null,
 "shape": "word",
 "group": "maybe",
 "first": 35960,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::InspectText"
 ],
@@ -30998,7 +30998,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 36038,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildGearSide"
 ],
@@ -33955,7 +33955,7 @@ null
 "shape": "caps",
 "group": "maybe",
 "first": 38722,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::RunStatusChips"
 ],
@@ -39678,7 +39678,7 @@ null
 "shape": "word",
 "group": "maybe",
 "first": 46399,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::CompareColumn",
 "RpgRuntime::WeaknessOf"
@@ -39836,7 +39836,7 @@ null,
 "shape": "caps",
 "group": "maybe",
 "first": 46442,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::CompareColumn"
 ],
@@ -42521,7 +42521,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 49455,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::DepthGuideText"
 ],
@@ -44110,7 +44110,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 50532,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildRecapText"
 ],
@@ -44126,7 +44126,7 @@ null,
 "shape": "caps",
 "group": "maybe",
 "first": 50536,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildRecapText"
 ],
@@ -44159,7 +44159,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 50552,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildRecordsText"
 ],
@@ -44191,7 +44191,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 50600,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildRecordsText"
 ],
@@ -44207,7 +44207,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 50605,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildRecordsText"
 ],
@@ -44239,7 +44239,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 50634,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildHistoryText"
 ],
@@ -44255,7 +44255,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 50637,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildHistoryText"
 ],
@@ -44303,7 +44303,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 50664,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::RunDetailsText"
 ],
@@ -46776,7 +46776,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 53653,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildEffects"
 ],
@@ -46792,7 +46792,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 53667,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::BuildEffects"
 ],
@@ -47277,7 +47277,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 54425,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::ShadowText"
 ],
@@ -47441,7 +47441,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 54776,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::ScaleSizeTags"
 ],
@@ -47457,7 +47457,7 @@ null,
 "shape": "text",
 "group": "maybe",
 "first": 54777,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::ScaleSizeTags"
 ],
@@ -49080,7 +49080,7 @@ null
 "shape": "word",
 "group": "maybe",
 "first": 58263,
-"term": true,
+"term": false,
 "scopes": [
 "RpgRuntime::Tally"
 ],
@@ -51134,7 +51134,7 @@ null
 "shape": "caps",
 "group": "debug",
 "first": 64492,
-"term": true,
+"term": false,
 "scopes": [
 "ClassHost::WriteReport"
 ],
@@ -51302,7 +51302,7 @@ null
 "shape": "text",
 "group": "debug",
 "first": 64524,
-"term": true,
+"term": false,
 "scopes": [
 "ClassHost::WriteReport"
 ],
@@ -51318,7 +51318,7 @@ null
 "shape": "text",
 "group": "debug",
 "first": 64526,
-"term": true,
+"term": false,
 "scopes": [
 "ClassHost::WriteReport"
 ],
@@ -51414,7 +51414,7 @@ null
 "shape": "text",
 "group": "debug",
 "first": 64561,
-"term": true,
+"term": false,
 "scopes": [
 "ClassHost::WriteReport"
 ],
@@ -54579,7 +54579,7 @@ null
 "shape": "text",
 "group": "debug",
 "first": 73934,
-"term": true,
+"term": false,
 "scopes": [
 "Compat::CheckKeysOnce"
 ],
@@ -58948,7 +58948,7 @@ null
 "shape": "text",
 "group": "maybe",
 "first": 84144,
-"term": true,
+"term": false,
 "scopes": [
 "HaulGoalPatch::Prefix"
 ],
@@ -58964,7 +58964,7 @@ null
 "shape": "text",
 "group": "maybe",
 "first": 84148,
-"term": true,
+"term": false,
 "scopes": [
 "HaulGoalPatch::Prefix"
 ],
@@ -73672,7 +73672,7 @@ null
 "shape": "text",
 "group": "maybe",
 "first": 103430,
-"term": true,
+"term": false,
 "scopes": [
 "Market::HostStep"
 ],
@@ -78466,7 +78466,7 @@ null,
 "shape": "word",
 "group": "maybe",
 "first": 114130,
-"term": true,
+"term": false,
 "scopes": [
 "Starters::FindItem"
 ],
@@ -80879,7 +80879,7 @@ null
 "shape": "text",
 "group": "debug",
 "first": 118934,
-"term": true,
+"term": false,
 "scopes": [
 "Pad::Diagnose"
 ],
@@ -82054,7 +82054,7 @@ null
 "shape": "text",
 "group": "maybe",
 "first": 120807,
-"term": true,
+"term": false,
 "scopes": [
 "TextSearch::Highlight"
 ],

@@ -115,6 +115,11 @@ def main():
         if u['kind'] == 'lit':
             (term_e if u.get('term') else glob_e)[src] = t
             lit_by_text[src] = (t, u)
+            if any(NUM.match(h) for h in HOLE.findall(src)) and len(re.findall('[A-Za-z]', HOLE.sub('', src))) < 3:
+                # "{0}  Lv {1}": too little text for the add-on to treat it as a sentence on its own accord.
+                # A whole word next to the number is still safe to recognise; "{0}s" or "x{0}" is not.
+                if re.search(r'(?<![A-Za-z\x00])[A-Za-z]{2,}(?![A-Za-z\x00])', HOLE.sub('\x00', src)): pat_e[src] = t
+                else: continue
             checks.append(sample(src, t))
             continue
         runs_s, holes_s = split_runs(src)

@@ -82,7 +82,9 @@ def main():
         # short names parked in tables and fields: translated when drawn, never inside the code
         stored = kind == 'lit' and not has_display and all(o['whole'] and o['sink'][0] in ('COLL', 'MEMBER', 'ASSIGN', 'RETURN', 'CALL') for o in shown)
         words = len(re.findall(r"[A-Za-z']+", core(text)))
-        term = stored and words <= 4 and not re.search(r'[.!?]\s*$', text.strip()) and '{' not in text
+        # ...but a piece of rich text or a piece with spaces around it never shows up alone: it has to be replaced in the code
+        term = (stored and words <= 4 and not re.search(r'[.!?:]\s*$', text.strip()) and '{' not in text
+                and text == text.strip() and '<' not in text and '\n' not in text)
         first = min(o['line'] for o in shown)
         rec = {'kind': kind, 'text': text, 'shape': sh, 'group': group, 'first': first, 'term': term,
                'scopes': sorted({o['scope'] for o in shown}),

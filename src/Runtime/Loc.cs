@@ -113,6 +113,15 @@ namespace RepoRPG_RU
             if ((r = ByCase(text)) != null) return r;
             if (depth >= MaxDepth) return null;
 
+            // a whole sentence the mod filled in: the most exact answer there is
+            if (text.Length >= 2)
+            {
+                Pattern[] bucket;
+                if (byHead.TryGetValue(text.Substring(0, 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
+                if (byTail.TryGetValue(text.Substring(text.Length - 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
+                if (loose.Length > 0 && (r = Try(loose, text, depth)) != null) return r;
+            }
+
             // rich text wrapper: <color=#fff><b>TEXT</b></color>
             int head = 0, tail = text.Length;
             while (head < tail && text[head] == '<')
@@ -133,14 +142,6 @@ namespace RepoRPG_RU
                 if (core != null) return text.Substring(0, head) + core + text.Substring(tail);
             }
 
-            if (text.Length >= 2)
-            {
-                Pattern[] bucket;
-                if (byHead.TryGetValue(text.Substring(0, 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
-                if (byTail.TryGetValue(text.Substring(text.Length - 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
-                if (loose.Length > 0 && (r = Try(loose, text, depth)) != null) return r;
-            }
-
             // texts glued together by the mod
             if ((r = Parts(text, "\n", false, depth)) != null) return r;
             if ((r = Edge(text, depth)) != null) return r;
@@ -153,7 +154,56 @@ namespace RepoRPG_RU
             if ((r = Parts(text, "   ", false, depth)) != null) return r;
             if ((r = Parts(text, ": ", true, depth)) != null) return r;
             if ((r = Parts(text, ", ", false, depth)) != null) return r;
-            return Peel(text, depth);
+            if ((r = Peel(text, depth)) != null) return r;
+            return Islands(text, depth);
+        }
+
+        /// <summary>
+        /// Last resort: "Куплено: Iron Plate (Rare)" - known English texts sitting between punctuation or inside a
+        /// sentence that is already Russian (a name from the mod's data, a word the code had to keep).
+        /// </summary>
+        private static string Islands(string text, int depth)
+        {
+            StringBuilder sb = null;
+            int n = text.Length, i = 0, copied = 0;
+            while (i < n)
+            {
+                char c = text[i];
+                if (c == '<')
+                {
+                    int close = text.IndexOf('>', i);
+                    if (close > i && close - i <= 40) { i = close + 1; continue; }      // a rich text tag is not a word
+                }
+                if (!IsLatinLetter(c)) { i++; continue; }
+                int start = i, end = i + 1, j = i + 1;
+                while (j < n)
+                {
+                    char d = text[j];
+                    if (IsLatinLetter(d) || (d >= '0' && d <= '9')) { end = j + 1; j++; continue; }
+                    if (d == ' ' || d == '\'' || d == '-' || d == '/' || d == '&') { j++; continue; }
+                    break;
+                }
+                if (end - start >= 2 && !(start == 0 && end == n))
+                {
+                    string run = text.Substring(start, end - start);
+                    string t = Sub(run, depth + 1);
+                    if (t != null)
+                    {
+                        if (sb == null) sb = new StringBuilder(n + 16);
+                        sb.Append(text, copied, start - copied).Append(t);
+                        copied = end;
+                    }
+                }
+                i = end;
+            }
+            if (sb == null) return null;
+            sb.Append(text, copied, n - copied);
+            return sb.ToString();
+        }
+
+        private static bool IsLatinLetter(char c)
+        {
+            return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
         }
 
         /// <summary>"Rally Cry (copy)", "press E": a known beginning or ending (an entry that starts / ends with a space) and the rest.</summary>
