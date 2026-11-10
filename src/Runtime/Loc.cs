@@ -98,7 +98,9 @@ namespace RepoRPG_RU
             {
                 if (memo.TryGetValue(text, out result)) return result;
             }
+            int before = cuts;
             result = Derive(text, depth);
+            if (result == null && cuts != before) return null;      // given up because of the depth, not because there is no answer
             lock (Gate)
             {
                 if (memo.Count < MemoLimit) memo[text] = result;
@@ -106,12 +108,23 @@ namespace RepoRPG_RU
             return result;
         }
 
+        [ThreadStatic] private static int cuts;
+
         private static string Derive(string text, int depth)
         {
             string r;
             if (map.TryGetValue(text, out r)) return r;
             if ((r = ByCase(text)) != null) return r;
-            if (depth >= MaxDepth) return null;
+            if (depth >= MaxDepth) { cuts++; return null; }
+            r = Compose(text, depth);
+            // "+3% опыта, +3% Scrap": a known name that was left standing between translated parts
+            if (r != null && HasLatin(r)) r = Islands(r, depth) ?? r;
+            return r;
+        }
+
+        private static string Compose(string text, int depth)
+        {
+            string r;
 
             // a whole sentence the mod filled in: the most exact answer there is
             if (text.Length >= 2)
@@ -120,6 +133,16 @@ namespace RepoRPG_RU
                 if (byHead.TryGetValue(text.Substring(0, 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
                 if (byTail.TryGetValue(text.Substring(text.Length - 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
                 if (loose.Length > 0 && (r = Try(loose, text, depth)) != null) return r;
+            }
+
+            // spaces and line breaks around the text say nothing: " Rare gear" is "Rare gear"
+            int ws = 0, we = text.Length;
+            while (ws < we && IsBlank(text[ws])) ws++;
+            while (we > ws && IsBlank(text[we - 1])) we--;
+            if (we - ws >= 2 && (ws > 0 || we < text.Length))
+            {
+                string core = Sub(text.Substring(ws, we - ws), depth + 1);
+                if (core != null) return text.Substring(0, ws) + core + text.Substring(we);
             }
 
             // rich text wrapper: <color=#fff><b>TEXT</b></color>
@@ -143,17 +166,18 @@ namespace RepoRPG_RU
             }
 
             // texts glued together by the mod
-            if ((r = Parts(text, "\n", false, depth)) != null) return r;
+            if ((r = Parts(text, "\n", Lines, depth)) != null) return r;
             if ((r = Edge(text, depth)) != null) return r;
             if ((r = Runs(text, depth)) != null) return r;
-            if ((r = Parts(text, "  \u00B7  ", false, depth)) != null) return r;
-            if ((r = Parts(text, " \u00B7 ", false, depth)) != null) return r;
-            if ((r = Parts(text, " | ", false, depth)) != null) return r;
-            if ((r = Parts(text, " + ", false, depth)) != null) return r;
-            if ((r = Parts(text, " - ", false, depth)) != null) return r;
-            if ((r = Parts(text, "   ", false, depth)) != null) return r;
-            if ((r = Parts(text, ": ", true, depth)) != null) return r;
-            if ((r = Parts(text, ", ", false, depth)) != null) return r;
+            if ((r = Parts(text, "  \u00B7  ", Cells, depth)) != null) return r;
+            if ((r = Parts(text, " \u00B7 ", Cells, depth)) != null) return r;
+            if ((r = Parts(text, " | ", Cells, depth)) != null) return r;
+            if ((r = Parts(text, "   ", Cells, depth)) != null) return r;
+            if ((r = Sentences(text, depth)) != null) return r;
+            if ((r = Parts(text, " + ", Phrase, depth)) != null) return r;
+            if ((r = Parts(text, " - ", Phrase, depth)) != null) return r;
+            if ((r = Parts(text, ": ", Label, depth)) != null) return r;
+            if ((r = Parts(text, ", ", Phrase, depth)) != null) return r;
             if ((r = Peel(text, depth)) != null) return r;
             return Islands(text, depth);
         }
@@ -162,8 +186,16 @@ namespace RepoRPG_RU
         /// Last resort: "Куплено: Iron Plate (Rare)" - known English texts sitting between punctuation or inside a
         /// sentence that is already Russian (a name from the mod's data, a word the code had to keep).
         /// </summary>
+        /// <summary>
+        /// A name the mod took from its data or its settings and put into a sentence that is already Russian:
+        /// "Куплено: Iron Plate (Cursed)", "Нужно ещё 30 Scrap". Only a whole run of English words is replaced, and only when
+        /// the dictionary knows exactly that run - a word out of an English phrase is never picked out on its own.
+        /// </summary>
         private static string Islands(string text, int depth)
         {
+            bool russian = false;
+            for (int q = 0; q < text.Length && !russian; q++) russian = text[q] >= '\u0400' && text[q] <= '\u04FF';
+            if (!russian) return null;
             StringBuilder sb = null;
             int n = text.Length, i = 0, copied = 0;
             while (i < n)
@@ -174,47 +206,39 @@ namespace RepoRPG_RU
                     int close = text.IndexOf('>', i);
                     if (close > i && close - i <= 40) { i = close + 1; continue; }      // a rich text tag is not a word
                 }
-                if (!IsLatinLetter(c)) { i++; continue; }
-                int start = i, end = i + 1, j = i + 1;
+                if (!IsLatinLetter(c) || (i > 0 && IsWordChar(text[i - 1]))) { i++; continue; }
+                // a run: words that start with a letter, one space (or " & ", "/") between them
+                int start = i, end = i;
+                int j = i;
                 while (j < n)
                 {
-                    char d = text[j];
-                    if (IsLatinLetter(d) || (d >= '0' && d <= '9')) { end = j + 1; j++; continue; }
-                    if (d == ' ' || d == '\'' || d == '-' || d == '/' || d == '&') { j++; continue; }
+                    if (!IsLatinLetter(text[j])) break;
+                    while (j < n && (IsWordChar(text[j]) || ((text[j] == '\'' || text[j] == '-') && j + 1 < n && IsWordChar(text[j + 1])))) j++;
+                    end = j;
+                    if (j + 1 < n && (text[j] == ' ' || text[j] == '/') && IsLatinLetter(text[j + 1])) { j++; continue; }
+                    if (j + 3 < n && text[j] == ' ' && text[j + 1] == '&' && text[j + 2] == ' ' && IsLatinLetter(text[j + 3])) { j += 3; continue; }
                     break;
                 }
-                // the longest stretch of whole words that is known wins: "Scrap 20" -> "Scrap", "Iron Plate of Doom" -> all of it
-                int ws = start;
-                while (ws < end)
+                if (end - start >= 2 && !(start == 0 && end == n))
                 {
-                    if (!IsLatinLetter(text[ws])) { ws++; continue; }
-                    int firstEnd = -1, tries = 0;
-                    int[] ends = new int[6];
-                    for (int k = ws + 1; k <= end && tries < ends.Length; k++)
+                    string t = Sub(text.Substring(start, end - start), depth + 1);
+                    if (t != null)
                     {
-                        bool wordEnd = k == end || !(IsLatinLetter(text[k]) || (text[k] >= '0' && text[k] <= '9'));
-                        bool afterWord = IsLatinLetter(text[k - 1]) || (text[k - 1] >= '0' && text[k - 1] <= '9');
-                        if (wordEnd && afterWord) { ends[tries++] = k; if (firstEnd < 0) firstEnd = k; }
-                    }
-                    bool done = false;
-                    for (int k = tries - 1; k >= 0 && !done; k--)
-                    {
-                        int e = ends[k];
-                        if (e - ws < 2 || (ws == 0 && e == n)) continue;
-                        string t = Sub(text.Substring(ws, e - ws), depth + 1);
-                        if (t == null) continue;
                         if (sb == null) sb = new StringBuilder(n + 16);
-                        sb.Append(text, copied, ws - copied).Append(t);
-                        copied = e; ws = e; done = true;
+                        sb.Append(text, copied, start - copied).Append(t);
+                        copied = end;
                     }
-                    if (!done) ws = firstEnd < 0 ? end : firstEnd;
                 }
-                i = end;
+                i = end > start ? end : start + 1;
             }
             if (sb == null) return null;
             sb.Append(text, copied, n - copied);
             return sb.ToString();
         }
+
+        private static bool IsWordChar(char c) { return IsLatinLetter(c) || (c >= '0' && c <= '9') || c == '_'; }
+
+        private static bool IsBlank(char c) { return c == ' ' || c == '\n' || c == '\r' || c == '\t'; }
 
         private static bool IsLatinLetter(char c)
         {
@@ -229,40 +253,134 @@ namespace RepoRPG_RU
                 string k = suffixes[i].Key;
                 if (text.Length <= k.Length || string.CompareOrdinal(text, text.Length - k.Length, k, 0, k.Length) != 0) continue;
                 string rest = text.Substring(0, text.Length - k.Length);
-                return (Sub(rest, depth + 1) ?? rest) + suffixes[i].Value;
+                string t = Sub(rest, depth + 1);
+                if (t == null && !(Pattern.Simple(rest) && NameLike(rest, false))) continue;       // a sentence of its own, not a name
+                return (t ?? rest) + suffixes[i].Value;
             }
             for (int i = 0; i < prefixes.Length; i++)
             {
                 string k = prefixes[i].Key;
                 if (text.Length <= k.Length || string.CompareOrdinal(text, 0, k, 0, k.Length) != 0) continue;
                 string rest = text.Substring(k.Length);
-                return prefixes[i].Value + (Sub(rest, depth + 1) ?? rest);
+                string t = Sub(rest, depth + 1);
+                if (t == null && !(Pattern.Simple(rest) && NameLike(rest, false))) continue;
+                return prefixes[i].Value + (t ?? rest);
             }
             return null;
         }
 
-        /// <summary>"A{sep}B{sep}C": every part on its own; null unless at least one part is known.</summary>
-        private static string Parts(string text, string sep, bool firstOnly, int depth)
+        /// <summary>
+        /// What may stay as it is next to translated text: a name, a number, a key ("Iron Plate", "1,200 Scrap", "F1").
+        /// A piece of an English sentence may not: better a whole text in one language than half of it in each.
+        /// A name is written Like This (at most four words, every longer one with a capital) and closes every bracket it opens.
+        /// lenient: a single word passes in any case - a player's nickname need not be capitalised.
+        /// </summary>
+        internal static bool NameLike(string v, bool lenient)
+        {
+            int words = 0, tokens = 0, visible = 0, round = 0, square = 0;
+            bool inToken = false, title = true;
+            for (int i = 0; i < v.Length; i++)
+            {
+                char c = v[i];
+                if (c == '\n') return false;
+                if (c == '<')
+                {
+                    int close = v.IndexOf('>', i);
+                    if (close > i && close - i <= 40) { i = close; inToken = false; continue; }
+                }
+                visible++;
+                if (c == '(') round++;
+                else if (c == ')') { if (--round < 0) return false; }
+                else if (c == '[') square++;
+                else if (c == ']') { if (--square < 0) return false; }
+                bool letter = IsLatinLetter(c);
+                if (letter || (c >= '0' && c <= '9') || c == '\'' || c == '_')
+                {
+                    if (inToken) continue;
+                    inToken = true;
+                    tokens++;
+                    if (!letter) continue;                              // "3s", "10px" are values, not words
+                    words++;
+                    if (c >= 'A' && c <= 'Z') continue;
+                    int len = 1;
+                    while (i + len < v.Length && IsLatinLetter(v[i + len])) len++;
+                    if (words == 1 || len >= 4) title = false;
+                }
+                else inToken = false;
+            }
+            if (round != 0 || square != 0) return false;
+            if (words == 0) return true;
+            if (visible > 60) return false;
+            if (lenient && tokens == 1) return true;
+            return title && words <= 4;
+        }
+
+        private const int Lines = 0, Cells = 1, Phrase = 2, Label = 3;
+
+        /// <summary>
+        /// Texts the mod glued together with a separator.
+        ///   Lines   every line is a text of its own: translated or left alone, one by one.
+        ///   Cells   columns of one row ("a  ·  b  ·  c"): the same, unless most of the row would stay English.
+        ///   Phrase  parts of one phrase ("a, b, c"): what cannot be translated has to be a name or a number,
+        ///           otherwise the whole text is left as it is.
+        ///   Label   "Label: value" - split at the first separator only; the label itself must be known.
+        /// </summary>
+        private static string Parts(string text, string sep, int mode, int depth)
         {
             int at = text.IndexOf(sep, StringComparison.Ordinal);
             if (at < 0) return null;
             StringBuilder sb = null;
-            int start = 0;
-            bool any = false;
+            int start = 0, index = 0, done = 0, foreign = 0;
             while (true)
             {
                 int end = at < 0 ? text.Length : at;
                 string part = text.Substring(start, end - start);
                 string t = Sub(part, depth + 1);
-                if (t != null) any = true;
+                if (t != null) done++;
+                else if (mode != Lines && HasLatin(part))
+                {
+                    if (mode == Label && index == 0) return null;
+                    if (!NameLike(part, false))
+                    {
+                        if (mode != Cells) return null;
+                        foreign++;
+                    }
+                }
                 if (sb == null) sb = new StringBuilder(text.Length + 16);
                 sb.Append(t ?? part);
                 if (at < 0) break;
                 sb.Append(sep);
                 start = at + sep.Length;
-                at = firstOnly ? -1 : text.IndexOf(sep, start, StringComparison.Ordinal);
+                index++;
+                at = mode == Label ? -1 : text.IndexOf(sep, start, StringComparison.Ordinal);
             }
-            return any ? sb.ToString() : null;
+            return done > 0 && done >= foreign ? sb.ToString() : null;
+        }
+
+        /// <summary>"First sentence. Second one! Third?" - the mod often joins ready sentences. All of them or none.</summary>
+        private static string Sentences(string text, int depth)
+        {
+            StringBuilder sb = null;
+            int start = 0, count = 0;
+            for (int i = 0; i + 2 < text.Length; i++)
+            {
+                char c = text[i];
+                if ((c != '.' && c != '!' && c != '?') || text[i + 1] != ' ') continue;
+                char next = text[i + 2];
+                if (!((next >= 'A' && next <= 'Z') || next == '<' || next == '(' || next == '[' || (next >= '0' && next <= '9'))) continue;
+                string part = text.Substring(start, i + 1 - start);
+                string t = Sub(part, depth + 1);
+                if (t == null && HasLatin(part)) return null;
+                if (sb == null) sb = new StringBuilder(text.Length + 16);
+                sb.Append(t ?? part).Append(' ');
+                start = i + 2;
+                count++;
+            }
+            if (count == 0) return null;
+            string last = text.Substring(start);
+            string tl = Sub(last, depth + 1);
+            if (tl == null && HasLatin(last)) return null;
+            return sb.Append(tl ?? last).ToString();
         }
 
         /// <summary>"<b>Shop</b>  <color=#999>closed</color>": the text between rich text tags, run by run.</summary>
@@ -341,7 +459,10 @@ namespace RepoRPG_RU
             bool keyUpper = string.Equals(e.Key, u, StringComparison.Ordinal);
             if (string.Equals(text, text.ToLowerInvariant(), StringComparison.Ordinal))
                 return keyUpper ? Lower(e.Value) : LowerFirst(e.Value);
-            return keyUpper ? Sentence(e.Value) : e.Value;
+            if (keyUpper) return Sentence(e.Value);
+            // "Closes when the level starts" from the known "closes when the level starts"
+            if (char.IsUpper(text[0]) && char.IsLower(e.Key[0])) return UpperFirst(e.Value);
+            return e.Value;
         }
 
         private static string LowerFirst(string s)
@@ -350,6 +471,23 @@ namespace RepoRPG_RU
             if (s.Length > 1 && IsUpperLetter(s[1])) return s;        // an abbreviation: leave it alone
             string first = Lower(s.Substring(0, 1));
             return first + s.Substring(1);
+        }
+
+        private static string UpperFirst(string s)
+        {
+            // the first letter may sit behind a bracket or a rich text tag: "(надето)", "<b>надето</b>"
+            for (int i = 0; i < s.Length; i++)
+            {
+                char c = s[i];
+                if (c == '<')
+                {
+                    int close = s.IndexOf('>', i);
+                    if (close > i && close - i <= 40) { i = close; continue; }
+                }
+                if (char.IsLetter(c)) return s.Substring(0, i) + Upper(s.Substring(i, 1)) + s.Substring(i + 1);
+                if (char.IsDigit(c)) return s;
+            }
+            return s;
         }
 
         private static string Sentence(string s)
@@ -417,12 +555,20 @@ namespace RepoRPG_RU
             public string Template;    // the translation
             public int Weight;         // literal characters: the more, the more specific
             public int[] Ghosts;       // "{1}{2}": the first placeholder takes the whole text, the others come out empty
+            public bool Tight;         // few words of its own ("{0} gear"): it may only catch something short and simple
+            public bool[] Glued;       // "item{1}": the placeholder continues a word - an ending ("s") or a separate piece (" (new)")
+            public byte[] Kind;        // what a placeholder stands for, judged by the text around it: Value, Clause or Line
+            public bool[] Numeric;     // "{0:N0}", "{1:0.#}": only a number fits
+            public bool Counter;       // "HEAT {0}", "{0} XP": one shouted word and a number - "HEAT SINK" is somebody's name, not heat level "SINK"
+
+            private const byte Value = 0, Clause = 1, Line = 2;
 
             public static Pattern Parse(string original, string translation, bool explicitPattern)
             {
                 List<string> lits = new List<string>();
                 List<int> slots = new List<int>();
                 List<int> ghosts = null;
+                List<bool> glued = new List<bool>(), numeric = new List<bool>();
                 string lastHole = null;
                 StringBuilder lit = new StringBuilder();
                 int letters = 0;
@@ -448,6 +594,8 @@ namespace RepoRPG_RU
                             continue;
                         }
                         lastHole = hole;
+                        numeric.Add(hole.IndexOf(':') > 0);
+                        glued.Add(lit.Length > 0 && IsLatinLetter(lit[lit.Length - 1]));
                         lits.Add(lit.ToString());
                         lit.Length = 0;
                         slots.Add(index);
@@ -458,6 +606,18 @@ namespace RepoRPG_RU
                     {
                         if (i + 1 < original.Length && original[i + 1] == '}') { lit.Append('}'); i++; continue; }
                         return null;
+                    }
+                    if (c == '<')
+                    {
+                        // a rich text tag is not text of the pattern's own
+                        int tagEnd = original.IndexOf('>', i);
+                        if (tagEnd > i && tagEnd - i <= 40 && original.IndexOf('{', i, tagEnd - i) < 0)
+                        {
+                            lit.Append(original, i, tagEnd - i + 1);
+                            i = tagEnd;
+                            lastHole = null;
+                            continue;
+                        }
                     }
                     if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) letters++;
                     lit.Append(c);
@@ -471,8 +631,82 @@ namespace RepoRPG_RU
                 p.Slots = slots.ToArray();
                 p.Template = translation;
                 p.Ghosts = ghosts == null ? null : ghosts.ToArray();
+                p.Tight = letters < 14;
+                p.Glued = glued.ToArray();
+                p.Numeric = numeric.ToArray();
+                if (p.Tight && p.Slots.Length == 1 && letters > 0)
+                {
+                    bool bare = true;
+                    foreach (string l in p.Lits)
+                        foreach (char c in l)
+                            if (c != ' ' && !(c >= 'A' && c <= 'Z')) bare = false;
+                    p.Counter = bare;
+                }
+                p.Kind = new byte[p.Slots.Length];
+                for (int k = 0; k < p.Slots.Length; k++)
+                {
+                    // "{0}/{1} voted", "Taken by {0}"        a value inside the sentence: a name, a number
+                    // "{0} This can't be undone.", "... - {0}"  a clause or a sentence of its own
+                    // "{0}\n<b>Reward</b> {1}"                  a line of its own: whatever it is, it is none of this pattern's business
+                    string before = p.Lits[k], after = p.Lits[k + 1];
+                    int bl = before.Length;
+                    bool first = k == 0 && bl == 0, last = k == p.Slots.Length - 1 && after.Length == 0;
+                    bool lineBefore = first || before[bl - 1] == '\n';
+                    bool lineAfter = last || after[0] == '\n';
+                    bool breakBefore = lineBefore || before[bl - 1] == '>'
+                                       || (bl > 1 && before[bl - 1] == ' ' && (before[bl - 2] == '.' || before[bl - 2] == '!' || before[bl - 2] == '?'
+                                                                                 || before[bl - 2] == ':' || before[bl - 2] == '-' || before[bl - 2] == '>'));
+                    bool breakAfter = lineAfter || after[0] == '.' || after[0] == '!' || after[0] == '?' || after[0] == ':' || after[0] == '<'
+                                      || (after.Length > 1 && after[0] == ' ' && ((after[1] >= 'A' && after[1] <= 'Z') || after[1] == '<' || after[1] == '-' || after[1] == '('));
+                    p.Kind[k] = lineBefore && lineAfter ? Line : breakBefore && breakAfter ? Clause : Value;
+                }
                 foreach (string l in p.Lits) p.Weight += l.Length;
                 return p;
+            }
+
+            // What a short pattern may catch: a name, a number, a price. Not a sentence, not several things in a row,
+            // not a piece of rich text that starts or ends somewhere else. The rest is left to the splitting further down.
+            // "One boon for the whole team. 3" is not the "{0}" of "{0}/{1} voted": a value does not run over a sentence end or a line break
+            private static bool Several(string v)
+            {
+                for (int i = 0; i < v.Length; i++)
+                {
+                    char c = v[i];
+                    if (c == '\n') return true;
+                    if ((c == '.' || c == '!' || c == '?' || c == ';') && i + 2 < v.Length && v[i + 1] == ' ') return true;
+                }
+                return false;
+            }
+
+            internal static bool Simple(string v)
+            {
+                if (v.Length > 80 || !NameLike(v, true)) return false;
+                if (v.Length > 0 && (IsBlank(v[0]) || IsBlank(v[v.Length - 1]))) return false;
+                int open = 0;
+                for (int i = 0; i < v.Length; i++)
+                {
+                    char c = v[i];
+                    if (c == '\n') return false;
+                    if (c == '<')
+                    {
+                        int close = v.IndexOf('>', i);
+                        if (close > i && close - i <= 40 && i + 1 < v.Length)
+                        {
+                            if (v[i + 1] == '/') { if (--open < 0) return false; }
+                            else if (IsLatinLetter(v[i + 1])) { if (open == 0 && i > 0) return false; open++; }
+                            else continue;
+                            if (open == 0 && close + 1 < v.Length) return false;      // text after the closing tag
+                            i = close;
+                        }
+                        continue;
+                    }
+                    if (i + 1 >= v.Length) break;
+                    char d = v[i + 1];
+                    if (d == ' ' && (c == ':' || c == ',' || c == '.' || c == '!' || c == '?' || c == ';') && i + 2 < v.Length) return false;
+                    if (c == ' ' && (d == '·' || d == '|') ) return false;
+                    if (c == ' ' && d == ' ') return false;
+                }
+                return open == 0;
             }
 
             public string Apply(string s, int depth)
@@ -494,6 +728,29 @@ namespace RepoRPG_RU
                     pos = at + Lits[k].Length;
                 }
                 caught[last - 1] = s.Substring(pos, end - pos);
+                for (int k = 0; k < caught.Length; k++)
+                {
+                    string v = caught[k];
+                    if (Numeric[k])
+                    {
+                        for (int q = 0; q < v.Length; q++) if (char.IsLetter(v[q])) return null;
+                        continue;
+                    }
+                    if (Tight && !Simple(v)) return null;
+                    if (Kind[k] == Value)
+                    {
+                        if (Several(v)) return null;
+                        // " and your 3" + " skill points to spend": the text began before this pattern does
+                        if (k == 0 && Lits[0].Length == 0 && v.Length > 0 && v[0] == ' ') return null;
+                        if (k == caught.Length - 1 && Lits[k + 1].Length == 0 && v.Length > 0 && v[v.Length - 1] == ' ') return null;
+                    }
+                    if (Glued[k] && v.Length > 0 && IsLatinLetter(v[0]))
+                    {
+                        // "Unlock{0}" + "s at Regular reputation" is another sentence; "item{1}" + "s" is this one
+                        if (v.Length > 3) return null;
+                        for (int q = 1; q < v.Length; q++) if (!IsLatinLetter(v[q])) return null;
+                    }
+                }
 
                 StringBuilder sb = new StringBuilder(Template.Length + s.Length);
                 for (int i = 0; i < Template.Length; i++)
@@ -514,6 +771,9 @@ namespace RepoRPG_RU
                         string value = caught[slot];
                         // a name inside the text may be translatable on its own: "Equipped: Iron Plate"
                         string inner = Sub(value, depth + 1);
+                        // ...and a clause has to be: "<English sentence> Это нельзя отменить." helps nobody
+                        if (inner == null && Kind[slot] == Clause && HasLatin(value) && !Simple(value)) return null;
+                        if (inner == null && Counter && HasLatin(value)) return null;
                         sb.Append(inner ?? value);
                         i = close;
                         continue;
