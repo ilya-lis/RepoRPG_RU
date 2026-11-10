@@ -4195,6 +4195,768 @@ msgstr "<color=#ffb21e><b>СИНЕРГИИ</b></color>  "
 msgid "<color=#9a9ca0><b>SYNERGIES (off on this host)</b></color>  "
 msgstr "<color=#9a9ca0><b>СИНЕРГИИ (отключены на этом хосте)</b></color>  "
 
+msgid "(see passives)"
+msgstr "(см. пассивные)"
+
+msgid "<color=#ffb21e><b>ACTIVE</b></color>  <b>{0}</b> ({1:0}s)\n{2}\n"
+msgstr "<color=#ffb21e><b>АКТИВНАЯ</b></color>  <b>{0}</b> ({1:0} с)\n{2}\n"
+
+msgid "<color=#ffb21e><b>TREES</b></color>  "
+msgstr "<color=#ffb21e><b>ДРЕВА</b></color>  "
+
+msgid "{0} skill point{1}"
+msgstr "очков навыков: {0}"
+
+msgid "{0} attribute point{1}"
+msgstr "очков характеристик: {0}"
+
+msgid "{0} perk pick{1}"
+msgstr "выборов перка: {0}"
+
+msgid "Ascension: Slow Recovery"
+msgstr "Вознесение: медленное восстановление"
+
+msgid "RESEARCH SAMPLE"
+msgstr "ОБРАЗЕЦ ДЛЯ ИССЛЕДОВАНИЙ"
+
+msgid "Level research: +{0:0} Data ({1} now)"
+msgstr "Исследования за уровень: +{0:0} данных (сейчас {1})"
+
+msgid " · {0} sample{1} left behind"
+msgstr " · образцов оставлено: {0}"
+
+msgid "+{0:0} Research Data ({1})"
+msgstr "+{0:0} данных исследований ({1})"
+
+msgid "{0} research projects finished"
+msgstr "Завершено исследований: {0}"
+
+msgid "RESEARCH"
+msgstr "ИССЛЕДОВАНИЯ"
+
+msgid "Enough Data to start research"
+msgstr "Хватает данных, чтобы начать исследование"
+
+msgid "DATA"
+msgstr "ДАННЫЕ"
+
+msgid "Research is off"
+msgstr "Исследования отключены"
+
+msgid "The host has turned research off in this lobby. Your Data and finished projects are kept for lobbies that have it on."
+msgstr "Хост отключил исследования в этом лобби. Ваши данные и завершённые проекты сохранятся для лобби, где они включены."
+
+msgid "<color=#9a9ca0>Lab slots {0}/{1}  ·  {2}/{3} done  ·  Kept across runs  ·  One dot: Personal, three: {4}</color>"
+msgstr "<color=#9a9ca0>Слоты лаборатории {0}/{1}  ·  готово {2}/{3}  ·  Сохраняется между забегами  ·  Одна точка: личное, три: {4}</color>"
+
+msgid "<b>RESEARCHING:</b> {0}  <color=#40f2d9>{1}/{2} levels</color>  <color=#9a9ca0>· {3}</color>"
+msgstr "<b>ИССЛЕДУЕТСЯ:</b> {0}  <color=#40f2d9>уровней: {1}/{2}</color>  <color=#9a9ca0>· {3}</color>"
+
+msgid "Recall Beacon: call an empty cart"
+msgstr "Маяк отзыва: вызвать пустую тележку"
+
+msgid "Cancel (half back)"
+msgstr "Отменить (вернётся половина)"
+
+msgid "Start research"
+msgstr "Начать исследование"
+
+msgid "{0} lab slot{1}"
+msgstr "слотов лаборатории: {0}"
+
+msgid " · Parallel Lab adds a second"
+msgstr " · «Параллельная лаборатория» добавит второй"
+
+msgid "DONE"
+msgstr "ГОТОВО"
+
+msgid "IN PROGRESS"
+msgstr "В РАБОТЕ"
+
+msgid "SOON"
+msgstr "СКОРО"
+
+msgid "{0} · {1} LV"
+msgstr "{0} · {1} УР."
+
+msgid "LOCKED"
+msgstr "ЗАКРЫТО"
+
+msgid "PERSONAL"
+msgstr "ЛИЧНОЕ"
+
+msgid "Only for you, in any lobby you play in."
+msgstr "Только для вас, в любом лобби, где вы играете."
+
+msgid "Lobby-wide (host decides)"
+msgstr "На всё лобби (решает хост)"
+
+msgid "Lobby-wide (anyone's counts)"
+msgstr "На всё лобби (считается у любого)"
+
+msgid " (in this lobby: once anyone has it)."
+msgstr " (в этом лобби: как только оно есть у кого-либо)."
+
+msgid ". Your own counts when you host."
+msgstr ". Ваше засчитывается, когда хост - вы."
+
+msgid "{0} · Tier {1} · "
+msgstr "{0} · Ранг {1} · "
+
+msgid "Personal"
+msgstr "Личный"
+
+msgid "Can't start yet"
+msgstr "Пока нельзя начать"
+
+msgid "Lobby-wide"
+msgstr "На всё лобби"
+
+msgid "\n<color=#9a9ca0>Active in this lobby.</color>"
+msgstr "\n<color=#9a9ca0>Действует в этом лобби.</color>"
+
+msgid "Not researched yet."
+msgstr "Ещё не исследовано."
+
+msgid "{0} Data (you have {1}) · takes {2} levels cleared, in any run"
+msgstr "{0} данных (у вас {1}) · нужно пройти уровней: {2}, в любых забегах"
+
+msgid "\n<color=#ffd75a>Coming in a later update.</color>"
+msgstr "\n<color=#ffd75a>Появится в одном из следующих обновлений.</color>"
+
+msgid "{0}\n\nCosts {1} Data now ({2} available) and finishes after {3} levels cleared, in any run."
+msgstr "{0}\n\nСтоит {1} данных сейчас (доступно {2}) и завершится после {3} пройденных уровней, в любых забегах."
+
+msgid "Start"
+msgstr "Начать"
+
+msgid "You get {0} Data back and its progress is lost."
+msgstr "Вы получите обратно {0} данных, а прогресс пропадёт."
+
+msgid "Cancel it"
+msgstr "Отменить"
+
+msgid "You've already haggled this visit"
+msgstr "Вы уже торговались в этот визит"
+
+msgid "Haggled: 25% off!"
+msgstr "Сторговались: скидка 25%!"
+
+msgid "Haggling backfired: 10% more"
+msgstr "Торг не удался: на 10% дороже"
+
+msgid "  (you)"
+msgstr "  (вы)"
+
+msgid "  Lv {0}"
+msgstr "  Ур. {0}"
+
+msgid "Choosing..."
+msgstr "Выбирает..."
+
+msgid "No class yet"
+msgstr "Класса пока нет"
+
+msgid "CLASSES   {0}/{1} picked"
+msgstr "КЛАССЫ   выбрано {0}/{1}"
+
+msgid "+{0} more synergies"
+msgstr "ещё синергий: +{0}"
+
+msgid "HOST"
+msgstr "ХОСТ"
+
+msgid " Lv {0}"
+msgstr " ур. {0}"
+
+msgid " - Down"
+msgstr " - повержен"
+
+msgid "+{0} pts"
+msgstr "+{0} очк."
+
+msgid " (you)"
+msgstr " (вы)"
+
+msgid "TEAM   {0} player{1}"
+msgstr "КОМАНДА   игроков: {0}"
+
+msgid "<color=#9a9ca0>Choose points with + / - (or left / right), then confirm.</color>"
+msgstr "<color=#9a9ca0>Распределите очки кнопками + / - (или влево / вправо), затем подтвердите.</color>"
+
+msgid "<color=#73ff66><b>Applying...</b></color>  "
+msgstr "<color=#73ff66><b>Применяется...</b></color>  "
+
+msgid "Respec"
+msgstr "Сброс"
+
+msgid "<color=#9a9ca0>SHOP CLOSED</color> - open while you're in the shop between levels."
+msgstr "<color=#9a9ca0>МАГАЗИН ЗАКРЫТ</color> - работает, пока вы в магазине между уровнями."
+
+msgid "You earn {0:0.#}% of the money the team makes as bonus {1} "
+msgstr "Вы получаете {0:0.#}% от денег, заработанных командой, в виде бонуса: {1} "
+
+msgid "(split evenly)"
+msgstr "(делится поровну)"
+
+msgid "(half split evenly, half by the loot you carry out)"
+msgstr "(половина поровну, половина по вынесенной вами добыче)"
+
+msgid "<color=#ffb21e>Your discount: {0:0}%</color>"
+msgstr "<color=#ffb21e>Ваша скидка: {0:0}%</color>"
+
+msgid "Target: no gear"
+msgstr "Цель: нет снаряжения"
+
+msgid "Line: none to reroll"
+msgstr "Свойство: нечего перебрасывать"
+
+msgid "Affix Reroll"
+msgstr "Переброс свойства"
+
+msgid "The chosen line rolls a new stat (counts as one of the item's crafts)."
+msgstr "Выбранное свойство получит новый параметр (считается за один крафт предмета)."
+
+msgid "REROLL A LINE?"
+msgstr "ПЕРЕБРОСИТЬ СВОЙСТВО?"
+
+msgid "Attunement Boost"
+msgstr "Ускорение сонастройки"
+
+msgid "+20 attunement, once per item per visit, never past Tempered."
+msgstr "+20 к сонастройке, раз на предмет за визит, не выше статуса «Закалённый»."
+
+msgid "BOOST ATTUNEMENT?"
+msgstr "УСКОРИТЬ СОНАСТРОЙКУ?"
+
+msgid "Already boosted this visit"
+msgstr "Уже ускорено в этот визит"
+
+msgid "Parts Upgrade"
+msgstr "Улучшение за детали"
+
+msgid "UPGRADE WITH PARTS?"
+msgstr "УЛУЧШИТЬ ЗА ДЕТАЛИ?"
+
+msgid "Uniques can't be upgraded"
+msgstr "Уникальные предметы нельзя улучшать"
+
+msgid "Already Epic or better"
+msgstr "Уже эпический или лучше"
+
+msgid "Its rarity upgrade is used"
+msgstr "Повышение редкости уже использовано"
+
+msgid "Needs 2 Core Shards"
+msgstr "Нужно 2 осколка ядра"
+
+msgid "<b>UPGRADE {0} +{1}/{2}</b>  <color=#9a9ca0>{3}. New lines at +1, +3 and +5 (pick 1 of 3), every line +15% at +2 and +4, a socket at +5.</color>"
+msgstr "<b>УЛУЧШЕНИЕ {0} +{1}/{2}</b>  <color=#9a9ca0>{3}. Новые свойства на +1, +3 и +5 (выбор 1 из 3), каждое свойство +15% на +2 и +4, гнездо на +5.</color>"
+
+msgid "Perk Reroll"
+msgstr "Переброс перков"
+
+msgid "Swap your current perk choices for new ones. Each reroll in the same level costs more."
+msgstr "Заменяет текущие варианты перков новыми. Каждый следующий переброс на том же уровне стоит дороже."
+
+msgid "No perk pick waiting - you get one at class level milestones"
+msgstr "Нет ожидающего выбора перка - он даётся на этапах уровня класса"
+
+msgid "Applying your perk choice..."
+msgstr "Применяется ваш выбор перка..."
+
+msgid "Skill Respec"
+msgstr "Сброс навыков"
+
+msgid "Refund every skill point in your current class."
+msgstr "Возвращает все очки навыков текущего класса."
+
+msgid "Respecs are turned off by the host"
+msgstr "Сбросы отключены хостом"
+
+msgid "No skill points spent yet - nothing to refund"
+msgstr "Очки навыков ещё не потрачены - возвращать нечего"
+
+msgid "Attribute Respec"
+msgstr "Сброс характеристик"
+
+msgid "Refund every attribute point."
+msgstr "Возвращает все очки характеристик."
+
+msgid "No attribute points spent yet - nothing to refund"
+msgstr "Очки характеристик ещё не потрачены - возвращать нечего"
+
+msgid "{0} to {1}"
+msgstr "{0} для {1}"
+
+msgid "Nobody else is here."
+msgstr "Здесь больше никого нет."
+
+msgid "GAME SHOP UPGRADES"
+msgstr "УЛУЧШЕНИЯ ИЗ МАГАЗИНА ИГРЫ"
+
+msgid "Pick a class to see its favourite upgrades."
+msgstr "Выберите класс, чтобы увидеть его любимые улучшения."
+
+msgid "Every upgrade you use also gives mod XP and a small RPG bonus. Upgrades roll a rarity: Rare+ add an attribute point, Epic+ add gear, Legendary adds a perk pick. Pick one up to see exactly what it gives you."
+msgstr "Каждое использованное улучшение также даёт опыт мода и небольшой RPG-бонус. У улучшений есть редкость: редкие и выше дают очко характеристик, эпические и выше - снаряжение, легендарные - выбор перка. Поднимите улучшение, чтобы увидеть, что именно оно даст."
+
+msgid "No upgrade bonuses yet this run."
+msgstr "В этом забеге пока нет бонусов от улучшений."
+
+msgid "Free"
+msgstr "Бесплатно"
+
+msgid "\n<color=#9fe6c0>✔ You can afford this</color>"
+msgstr "\n<color=#9fe6c0>✔ Вам это по карману</color>"
+
+msgid "BOSS {0}: {1}{2}  {3:0}m"
+msgstr "БОСС {0}: {1}{2}  {3:0} м"
+
+msgid "  * class affinity"
+msgstr "  * родство с классом"
+
+msgid "Holding: {0} valuable  ${1:N0}"
+msgstr "В руках: ценность ({0})  ${1:N0}"
+
+msgid "MAP MODIFIER: "
+msgstr "МОДИФИКАТОР КАРТЫ: "
+
+msgid "NEXT LEVEL: "
+msgstr "СЛЕД. УРОВЕНЬ: "
+
+msgid "\n\n<color=#ffd75a><b>FREE RE-PICK</b></color>: your class was replaced in this version, so {0} starts at <b>Lv {1}</b>. "
+msgstr "\n\n<color=#ffd75a><b>БЕСПЛАТНЫЙ ПЕРЕВЫБОР</b></color>: ваш класс заменён в этой версии, поэтому {0} начинает с <b>ур. {1}</b>. "
+
+msgid "You get its skill points to spend in its trees. Your {0} stays at Lv {1} on the bench. Once only."
+msgstr "Вы получаете его очки навыков для траты в его древах. Ваш прежний класс ({0}) остаётся в запасе на ур. {1}. Только один раз."
+
+msgid "\n\n<color=#ffd75a><b>MILESTONE {0} SWITCH</b></color>: {1} starts at <b>Lv {2}</b> "
+msgstr "\n\n<color=#ffd75a><b>СМЕНА КЛАССА НА ЭТАПЕ {0}</b></color>: {1} начинает с <b>ур. {2}</b> "
+
+msgid "({0:0}% of your {1} Lv {2}). You get its skill points to spend in the new trees, "
+msgstr "({0:0}% от вашего класса {1} ур. {2}). Вы получаете его очки навыков для траты в новых древах, "
+
+msgid "and your attribute points are refunded ({0} to spend). Your {1} stays at Lv {2} on the bench. "
+msgstr "а ваши очки характеристик возвращаются (на трату: {0}). Ваш прежний класс ({1}) остаётся в запасе на ур. {2}. "
+
+msgid "Milestone switch: {0} starts at Lv {1} - {2} skill points and your attribute points to spend ({3}). Your {4} is on the bench."
+msgstr "Смена класса на этапе: {0} начинает с ур. {1} - на трату {2} очк. навыков и ваши очки характеристик ({3}). Прежний класс ({4}) - в запасе."
+
+msgid "Free re-pick: {0} starts at Lv {1} - {2} skill points to spend ({3}). Your {4} is on the bench."
+msgstr "Бесплатный перевыбор: {0} начинает с ур. {1} - очков навыков на трату: {2} ({3}). Прежний класс ({4}) - в запасе."
+
+msgid "<color=#9a9ca0>Deep-run content is off in this lobby (Unlocks/Enabled).</color>"
+msgstr "<color=#9a9ca0>Контент глубокого забега отключён в этом лобби (Unlocks/Enabled).</color>"
+
+msgid "<color=#8cf2bf><b>{0}</b></color>  <color=#9a9ca0>(level {1}, unlocked)</color>\n{2}\n"
+msgstr "<color=#8cf2bf><b>{0}</b></color>  <color=#9a9ca0>(уровень {1}, открыто)</color>\n{2}\n"
+
+msgid "<color=#ffd75a><b>{0}</b></color>  <color=#9a9ca0>Unlocks at level {1}</color>\n"
+msgstr "<color=#ffd75a><b>{0}</b></color>  <color=#9a9ca0>Открывается на уровне {1}</color>\n"
+
+msgid "\n<b>MAP MODIFIERS</b>\n"
+msgstr "\n<b>МОДИФИКАТОРЫ КАРТЫ</b>\n"
+
+msgid "<color=#9a9ca0>{0}: unlocks at level {1}</color>\n"
+msgstr "<color=#9a9ca0>{0}: открывается на уровне {1}</color>\n"
+
+msgid "New record: a chapter cleared at heat {0}"
+msgstr "Новый рекорд: глава пройдена при накале {0}"
+
+msgid "Full Sweep"
+msgstr "Полная зачистка"
+
+msgid "Lone Wolf: last one standing - 30% less damage, 15% faster"
+msgstr "Одинокий волк: вы последний на ногах - на 30% меньше урона, на 15% быстрее"
+
+msgid "That milestone reward was already taken"
+msgstr "Эта награда за этап уже получена"
+
+msgid "Milestone {0}: +{1} {2}"
+msgstr "Этап {0}: +{1} {2}"
+
+msgid "milestone {0}"
+msgstr "этап {0}"
+
+msgid "MILESTONE {0} REWARD"
+msgstr "НАГРАДА ЗА ЭТАП {0}"
+
+msgid "<color=#9a9ca0>Pick it in the truck or the shop.</color>"
+msgstr "<color=#9a9ca0>Выберите её в грузовике или магазине.</color>"
+
+msgid "<color=#9a9ca0>Choose one: the other is gone once you pick.</color>"
+msgstr "<color=#9a9ca0>Выберите одно: второе пропадёт после выбора.</color>"
+
+msgid "A Unique (Legendary)"
+msgstr "Уникальный предмет (легендарный)"
+
+msgid "TAKE A UNIQUE?"
+msgstr "ВЗЯТЬ УНИКАЛЬНЫЙ ПРЕДМЕТ?"
+
+msgid "A random Unique for one of your gear slots (one you don't have yet).\n\nThe {0} {1} payout is gone once you take it."
+msgstr "Случайный уникальный предмет для одного из ваших слотов снаряжения (которого у вас ещё нет).\n\nВыплата ({0} {1}) пропадёт, если вы его возьмёте."
+
+msgid "Take it"
+msgstr "Взять"
+
+msgid "TAKE THE PAYOUT?"
+msgstr "ВЗЯТЬ ВЫПЛАТУ?"
+
+msgid "{0} {1} now.\n\nThe Unique is gone once you take it."
+msgstr "{0} {1} сразу.\n\nУникальный предмет пропадёт, если вы возьмёте выплату."
+
+msgid "VICTORY - END THE RUN, OR KEEP GOING?"
+msgstr "ПОБЕДА - ЗАВЕРШИТЬ ЗАБЕГ ИЛИ ПРОДОЛЖИТЬ?"
+
+msgid "MILESTONE {0}"
+msgstr "ЭТАП {0}"
+
+msgid "<color=#9a9ca0>{0}/{1} voted; decided when everyone has, or when the next level starts (then it's Endless). A tie keeps the run going.</color>"
+msgstr "<color=#9a9ca0>Проголосовало {0}/{1}; решение - когда проголосуют все или начнётся следующий уровень (тогда - бесконечный режим). При ничьей забег продолжается.</color>"
+
+msgid "<color=#9a9ca0>One boon for the whole team, the rest of the run. {0}/{1} voted; decided when everyone has, or when the next level starts. You can change your vote.</color>"
+msgstr "<color=#9a9ca0>Один дар на всю команду до конца забега. Проголосовало {0}/{1}; решение - когда проголосуют все или начнётся следующий уровень. Голос можно изменить.</color>"
+
+msgid "NEXT LEVEL ({0}): CHOOSE A ROUTE"
+msgstr "СЛЕДУЮЩИЙ УРОВЕНЬ ({0}): ВЫБЕРИТЕ МАРШРУТ"
+
+msgid "{0}/{1} voted; decided when everyone has, or when the next level starts. No votes = Safe; a tie goes to the safer route. You can change your vote."
+msgstr "Проголосовало {0}/{1}; решение - когда проголосуют все или начнётся следующий уровень. Нет голосов = «Безопасный»; при ничьей выбирается более безопасный маршрут. Голос можно изменить."
+
+msgid "Chosen"
+msgstr "Выбрано"
+
+msgid "Vote: Safe"
+msgstr "Голосовать: Безопасный"
+
+msgid "Vote: this route"
+msgstr "Голосовать: этот маршрут"
+
+msgid "HEAT {0}: RAISE IT FOR THE NEXT CHAPTER?"
+msgstr "НАКАЛ {0}: ПОВЫСИТЬ НА СЛЕДУЮЩУЮ ГЛАВУ?"
+
+msgid "<color=#9a9ca0>{0}/{1} voted; decided when everyone has, or when the next level starts. A card stays all run. No votes or a tie = Skip.</color>"
+msgstr "<color=#9a9ca0>Проголосовало {0}/{1}; решение - когда проголосуют все или начнётся следующий уровень. Карта действует весь забег. Нет голосов или ничья = пропуск.</color>"
+
+msgid "Vote: Skip"
+msgstr "Голосовать: Пропустить"
+
+msgid "Vote: this card"
+msgstr "Голосовать: эта карта"
+
+msgid "The host didn't answer: the milestone reward is still waiting, try again"
+msgstr "Хост не ответил: награда за этап всё ещё ждёт, попробуйте ещё раз"
+
+msgid "<b>RUN BOONS</b>  <color=#9a9ca0>{0} of {1}. They work for the whole team until the run ends. The codes are the ones on the HUD.</color>\n\n"
+msgstr "<b>ДАРЫ ЗАБЕГА</b>  <color=#9a9ca0>{0} из {1}. Действуют на всю команду до конца забега. Коды - те же, что на HUD.</color>\n\n"
+
+msgid "<color=#9a9ca0>None yet. The team votes on one after each milestone, and sometimes after a boss kill.</color>\n"
+msgstr "<color=#9a9ca0>Пока нет. Команда голосует за дар после каждого этапа, а иногда и после убийства босса.</color>\n"
+
+msgid "<color=#99e6ff>A boon vote is open: see the top of the Shop tab.</color>\n"
+msgstr "<color=#99e6ff>Открыто голосование за дар: см. верх вкладки «Магазин».</color>\n"
+
+msgid "CREW LEVEL {0}"
+msgstr "УРОВЕНЬ КОМАНДЫ {0}"
+
+msgid "{0} / {1} crew XP to level {2}"
+msgstr "{0} / {1} опыта команды до уровня {2}"
+
+msgid "CHAPTER {0}"
+msgstr "ГЛАВА {0}"
+
+msgid "THE FINALE"
+msgstr "ФИНАЛ"
+
+msgid "A MILESTONE"
+msgstr "ЭТАП"
+
+msgid "{0} · MILESTONE IN {1}"
+msgstr "{0} · ЭТАП ЧЕРЕЗ {1}"
+
+msgid "CATCH-UP +{0:0}% XP"
+msgstr "ДОГОНЯЮЩИЙ +{0:0}% ОПЫТА"
+
+msgid "Chapter {0}"
+msgstr "Глава {0}"
+
+msgid "milestone boss"
+msgstr "этапный босс"
+
+msgid "{0} · next milestone: {1} levels"
+msgstr "{0} · до следующего этапа уровней: {1}"
+
+msgid "Endless"
+msgstr "Бесконечный режим"
+
+msgid "Run won"
+msgstr "Забег выигран"
+
+msgid "Streak {0} (+{1:0}%)"
+msgstr "Серия {0} (+{1:0}%)"
+
+msgid "{0} run boon{1}"
+msgstr "даров забега: {0}"
+
+msgid "Route vote open (Shop tab)"
+msgstr "Открыто голосование за маршрут (вкладка «Магазин»)"
+
+msgid "Heat {0} · heat vote open (Shop tab)"
+msgstr "Накал {0} · открыто голосование за накал (вкладка «Магазин»)"
+
+msgid "Heat {0} (Scrap +{1:0}%)"
+msgstr "Накал {0} (лом +{1:0}%)"
+
+msgid "Crew {0} ({1}/{2})"
+msgstr "Команда {0} ({1}/{2})"
+
+msgid "Crew {0} (max)"
+msgstr "Команда {0} (макс.)"
+
+msgid "Most bosses in a run"
+msgstr "Больше всего боссов за забег"
+
+msgid "Season won on {0} (wins: {1})"
+msgstr "Сезон выигран ({0}; побед: {1})"
+
+msgid "Most Scrap in a run"
+msgstr "Больше всего лома за забег"
+
+msgid "Biggest haul carried in one level ($)"
+msgstr "Самая большая добыча, вывезенная за один уровень ($)"
+
+msgid "VICTORY: {0} levels, the finale beaten! "
+msgstr "ПОБЕДА: уровней: {0}, финал пройден! "
+
+msgid "Run over: {0} level{1}, chapter {2}. "
+msgstr "Забег окончен: уровней: {0}, глава {2}. "
+
+msgid " - {0} new record{1}!"
+msgstr " - новых рекордов: {0}!"
+
+msgid "<b>LAST RUN</b>\n<color=#9a9ca0>No run has ended yet. When one does, its recap shows here.</color>"
+msgstr "<b>ПРОШЛЫЙ ЗАБЕГ</b>\n<color=#9a9ca0>Ни один забег ещё не завершён. Когда завершится, здесь появятся его итоги.</color>"
+
+msgid "Levels cleared <b>{0}</b>  ·  chapter <b>{1}</b>  ·  milestones <b>{2}</b>  ·  best streak <b>{3}</b>\n"
+msgstr "Пройдено уровней <b>{0}</b>  ·  глава <b>{1}</b>  ·  этапов <b>{2}</b>  ·  лучшая серия <b>{3}</b>\n"
+
+msgid "Total haul <b>${0:N0}</b>  ·  bosses <b>{1}</b>{2}  ·  elites <b>{3}</b>\n"
+msgstr "Всего добычи <b>${0:N0}</b>  ·  боссов <b>{1}</b>{2}  ·  элиты <b>{3}</b>\n"
+
+msgid " ({0} milestone)"
+msgstr " (этапных: {0})"
+
+msgid "Scrap earned by the team <b>{0:N0}</b>\n"
+msgstr "Лома заработано командой <b>{0:N0}</b>\n"
+
+msgid "\n<color=#ffcc66>BEST MOMENTS</color>\n"
+msgstr "\n<color=#ffcc66>ЛУЧШИЕ МОМЕНТЫ</color>\n"
+
+msgid "\n<color=#ffcc66>MVPS</color>\n"
+msgstr "\n<color=#ffcc66>ЛУЧШИЕ ИГРОКИ</color>\n"
+
+msgid "<b>PERSONAL BESTS</b>\n"
+msgstr "<b>ЛИЧНЫЕ РЕКОРДЫ</b>\n"
+
+msgid "Highest heat a chapter was cleared at"
+msgstr "Наивысший накал, при котором пройдена глава"
+
+msgid "Best heat by difficulty: "
+msgstr "Лучший накал по сложностям: "
+
+msgid "Most levels by difficulty: "
+msgstr "Больше всего уровней по сложностям: "
+
+msgid "Seasons won: <b>{0}</b>{1}\n"
+msgstr "Сезонов выиграно: <b>{0}</b>{1}\n"
+
+msgid "<b>RUN HISTORY</b>  <color=#9a9ca0>(the last 20)</color>\n"
+msgstr "<b>ИСТОРИЯ ЗАБЕГОВ</b>  <color=#9a9ca0>(последние 20)</color>\n"
+
+msgid "<color=#9a9ca0>No runs yet.</color>"
+msgstr "<color=#9a9ca0>Забегов пока нет.</color>"
+
+msgid "{0}  ·  {1}{2}  ·  {3} level{4}, chapter {5}  ·  streak {6}  ·  {7} boss{8}  ·  {9:N0} {10}"
+msgstr "{0}  ·  {1}{2}  ·  уровней: {3}, глава {5}  ·  серия {6}  ·  боссов: {7}  ·  {9:N0} {10}"
+
+msgid "<color=#ffd75a>WON</color>  ·  "
+msgstr "<color=#ffd75a>ПОБЕДА</color>  ·  "
+
+msgid "<color=#c79aff>Ascension {0}</color> <color=#9a9ca0>({1}) - Account > Ascension lists the modifiers</color>"
+msgstr "<color=#c79aff>Вознесение {0}</color> <color=#9a9ca0>({1}) - модификаторы перечислены в «Аккаунт > Вознесение»</color>"
+
+msgid "Threat rating {0} → {1:0.0}"
+msgstr "Рейтинг угрозы {0} → {1:0.0}"
+
+msgid "Run boons: {0}"
+msgstr "Дары забега: {0}"
+
+msgid "Heat {0} → {1}"
+msgstr "Накал {0} → {1}"
+
+msgid "RUN UPDATE"
+msgstr "НОВОСТИ ЗАБЕГА"
+
+msgid "Appraisal Scan: no valuables within {0:0} m - no cooldown used"
+msgstr "Оценочное сканирование: в радиусе {0:0} м нет ценностей - перезарядка не потрачена"
+
+msgid "A teammate's scan: valuables marked"
+msgstr "Сканирование напарника: ценности отмечены"
+
+msgid "LOW"
+msgstr "НИЗК."
+
+msgid "MID"
+msgstr "СРЕДН."
+
+msgid "HIGH"
+msgstr "ВЫСОК."
+
+msgid "TOP"
+msgstr "ТОП"
+
+msgid "Unbound"
+msgstr "Не назначено"
+
+msgid "{0} change{1} not saved"
+msgstr "не сохранено изменений: {0}"
+
+msgid "host setting"
+msgstr "настройка хоста"
+
+msgid "your game only"
+msgstr "только ваша игра"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "Already the default."
+msgstr "Уже значение по умолчанию."
+
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+msgid "Nothing changed yet."
+msgstr "Пока ничего не изменено."
+
+msgid "Nothing to undo."
+msgstr "Нечего отменять."
+
+msgid "Reset section"
+msgstr "Сбросить раздел"
+
+msgid "This section has nothing to reset."
+msgstr "В этом разделе нечего сбрасывать."
+
+msgid "Reset all"
+msgstr "Сбросить всё"
+
+msgid "RESET ALL SETTINGS?"
+msgstr "СБРОСИТЬ ВСЕ НАСТРОЙКИ?"
+
+msgid "Every one of your own settings and key bindings goes back to its default. Undo takes it back until you save."
+msgstr "Все ваши личные настройки и назначения клавиш вернутся к значениям по умолчанию. «Отменить» вернёт всё как было, пока вы не сохраните."
+
+msgid "{0} change{1} not saved · they apply now, Undo takes them back"
+msgstr "не сохранено изменений: {0} · они уже действуют, «Отменить» вернёт как было"
+
+msgid "Your own settings: they only change your game"
+msgstr "Ваши личные настройки: они меняют только вашу игру"
+
+msgid "Unlocks at Regular reputation"
+msgstr "Открывается с репутацией «Завсегдатай»"
+
+msgid "Unlocks at Customer reputation"
+msgstr "Открывается с репутацией «Клиент»"
+
+msgid "Crates are turned off in this lobby"
+msgstr "Ящики отключены в этом лобби"
+
+msgid "Unlocks at level {0}"
+msgstr "Открывается на уровне {0}"
+
+msgid "Deep-run content is off in this lobby"
+msgstr "Контент глубокого забега отключён в этом лобби"
+
+msgid "The market is turned off in this lobby"
+msgstr "Рынок отключён в этом лобби"
+
+msgid "Research unlocks (Pawn Counter, Futures, Gun Bench, Gear Exchange) show here"
+msgstr "Здесь появляются разблокировки исследований (ломбард, фьючерсы, оружейный верстак, обмен снаряжением)"
+
+msgid "Research is turned off in this lobby"
+msgstr "Исследования отключены в этом лобби"
+
+msgid "An item, a service or a vote shows in full here."
+msgstr "Здесь полностью показывается предмет, услуга или голосование."
+
+msgid "> BUY CART: 10  (9,999 SCRAP)"
+msgstr "> КУПИТЬ КОРЗИНУ: 10  (9 999 ЛОМА)"
+
+msgid "> CLEAR"
+msgstr "> ОЧИСТИТЬ"
+
+msgid "every tier unlocked"
+msgstr "все ранги открыты"
+
+msgid "max"
+msgstr "макс."
+
+msgid "Cart: empty"
+msgstr "Корзина: пусто"
+
+msgid "Buy cart: {0}  ({1})"
+msgstr "Купить корзину: {0}  ({1})"
+
+msgid "<color=#73ff66>SHOP OPEN</color> · restocks next shop visit"
+msgstr "<color=#73ff66>МАГАЗИН ОТКРЫТ</color> · ассортимент обновится в следующий визит"
+
+msgid "<color=#9a9ca0>SHOP CLOSED</color> - it opens in the shop between levels"
+msgstr "<color=#9a9ca0>МАГАЗИН ЗАКРЫТ</color> - открывается в магазине между уровнями"
+
+msgid "No stock yet"
+msgstr "Товара пока нет"
+
+msgid "Sold out"
+msgstr "Распродано"
+
+msgid "Rivet restocks every time the team reaches the shop between levels."
+msgstr "Ривет обновляет ассортимент каждый раз, когда команда добирается до магазина между уровнями."
+
+msgid "Select an item"
+msgstr "Выберите предмет"
+
+msgid "Its details, a comparison, and Buy, Add to cart and Lock show here."
+msgstr "Здесь появятся его описание, сравнение и кнопки «Купить», «В корзину» и «Зафиксировать»."
+
+msgid "Module"
+msgstr "Модуль"
+
+msgid "Consumable"
+msgstr "Расходник"
+
+msgid "Sold"
+msgstr "Продано"
+
+msgid "If you equip it:"
+msgstr "Если надеть:"
+
+msgid "If you equip it: no change to your stats."
+msgstr "Если надеть: ваши параметры не изменятся."
+
+msgid "\n<color=#9a9ca0>Works until the next shop visit. One of each per visit, {0} different ones at most (you have {1}).</color>"
+msgstr "\n<color=#9a9ca0>Действует до следующего визита в магазин. По одному каждого вида за визит, не больше {0} разных (у вас {1}).</color>"
+
+msgid "\n<color=#9a9ca0>Goes into your module bag; slot it on the Gear tab.</color>"
+msgstr "\n<color=#9a9ca0>Попадёт в сумку модулей; вставьте его во вкладке «Снаряжение».</color>"
+
+msgid "\n<color=#9a9ca0>The shop is closed: it opens between levels.</color>"
+msgstr "\n<color=#9a9ca0>Магазин закрыт: он открывается между уровнями.</color>"
+
+msgid "BUY?"
+msgstr "КУПИТЬ?"
+
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
 
@@ -4953,6 +5715,42 @@ msgstr "КОЛЁСИКО"
 msgctxt "term"
 msgid "Not discovered"
 msgstr "Не открыт"
+
+msgctxt "term"
+msgid "BOONS"
+msgstr "ДАРЫ"
+
+msgctxt "term"
+msgid "Most levels cleared"
+msgstr "Больше всего пройдено уровней"
+
+msgctxt "term"
+msgid "Best streak"
+msgstr "Лучшая серия"
+
+msgctxt "term"
+msgid "Highest chapter"
+msgstr "Самая дальняя глава"
+
+msgctxt "term"
+msgid "Highest heat at Victory"
+msgstr "Наивысший накал при победе"
+
+msgctxt "term"
+msgid "Changed, not saved"
+msgstr "Изменено, не сохранено"
+
+msgctxt "term"
+msgid "Featured deal"
+msgstr "Предложение с витрины"
+
+msgctxt "term"
+msgid "Locked for next visit"
+msgstr "Зафиксировано до следующего визита"
+
+msgctxt "term"
+msgid "Can't afford"
+msgstr "Не хватает средств"
 
 msgctxt "term"
 msgid "max"
@@ -6594,6 +7392,302 @@ msgctxt "pattern"
 msgid "<b>{0}</b> with <color={1}><b>{2}</b></color>: {3}"
 msgstr "<b>{0}</b> и <color={1}><b>{2}</b></color>: {3}"
 
+msgctxt "pattern"
+msgid "<color=#ffb21e><b>ROLE</b></color>  {0} / {1}\n"
+msgstr "<color=#ffb21e><b>РОЛЬ</b></color>  {0} / {1}\n"
+
+msgctxt "pattern"
+msgid "<color=#ffb21e><b>COMPLEXITY</b></color>  {0}\n"
+msgstr "<color=#ffb21e><b>СЛОЖНОСТЬ</b></color>  {0}\n"
+
+msgctxt "pattern"
+msgid "<color=#ffb21e><b>PASSIVE</b></color>  <b>{0}</b>: {1}\n"
+msgstr "<color=#ffb21e><b>ПАССИВНАЯ</b></color>  <b>{0}</b>: {1}\n"
+
+msgctxt "pattern"
+msgid "<color=#ff9999><b>WEAKNESS</b></color>  {0}\n"
+msgstr "<color=#ff9999><b>СЛАБОСТЬ</b></color>  {0}\n"
+
+msgctxt "pattern"
+msgid "<color=#ffb21e><b>SYNERGIES</b></color>  {0}\n"
+msgstr "<color=#ffb21e><b>СИНЕРГИИ</b></color>  {0}\n"
+
+msgctxt "pattern"
+msgid "Rank 1: {0}"
+msgstr "Ранг 1: {0}"
+
+msgctxt "pattern"
+msgid "Now: {0}"
+msgstr "Сейчас: {0}"
+
+msgctxt "pattern"
+msgid "Now: {0}  ·  Next: {1}"
+msgstr "Сейчас: {0}  ·  Далее: {1}"
+
+msgctxt "pattern"
+msgid "Unspent: {0}  ({1})"
+msgstr "Не потрачено: {0}  ({1})"
+
+msgctxt "pattern"
+msgid "Not enough {0} - {1} more needed"
+msgstr "Не хватает {0} - нужно ещё {1}"
+
+msgctxt "pattern"
+msgid "[Hold {0}] Reel in cart"
+msgstr "[Удерживайте {0}] Подтянуть тележку"
+
+msgctxt "pattern"
+msgid "Research finished: {0} - {1}"
+msgstr "Исследование завершено: {0} - {1}"
+
+msgctxt "pattern"
+msgid "Research finished: {0}"
+msgstr "Исследование завершено: {0}"
+
+msgctxt "pattern"
+msgid "{0} · {1} LV"
+msgstr "{0} · {1} УР."
+
+msgctxt "pattern"
+msgid "Works for everyone in the lobby once the host has it{0}"
+msgstr "Работает для всех в лобби, как только оно есть у хоста{0}"
+
+msgctxt "pattern"
+msgid "In progress{0}"
+msgstr "В работе{0}"
+
+msgctxt "pattern"
+msgid "Requires {0}.\n"
+msgstr "Требуется: {0}.\n"
+
+msgctxt "pattern"
+msgid "START {0}?"
+msgstr "НАЧАТЬ {0}?"
+
+msgctxt "pattern"
+msgid "Researching {0}"
+msgstr "Исследуется: {0}"
+
+msgctxt "pattern"
+msgid "CANCEL {0}?"
+msgstr "ОТМЕНИТЬ {0}?"
+
+msgctxt "pattern"
+msgid "  Lv {0}"
+msgstr "  Ур. {0}"
+
+msgctxt "pattern"
+msgid "Synergy: {0} + {1}"
+msgstr "Синергия: {0} + {1}"
+
+msgctxt "pattern"
+msgid " Lv {0}"
+msgstr " ур. {0}"
+
+msgctxt "pattern"
+msgid "Spectating {0}"
+msgstr "Наблюдение: {0}"
+
+msgctxt "pattern"
+msgid "Respec {0}"
+msgstr "Сброс: {0}"
+
+msgctxt "pattern"
+msgid "<color=#73ff66>SHOP OPEN</color> - paid with your own {0}. The team's money is never touched."
+msgstr "<color=#73ff66>МАГАЗИН ОТКРЫТ</color> - оплата из вашего личного запаса ({0}). Деньги команды не тратятся."
+
+msgctxt "pattern"
+msgid "Target: {0} ({1})"
+msgstr "Цель: {0} ({1})"
+
+msgctxt "pattern"
+msgid "Reroll {0} on {1} for {2}?"
+msgstr "Перебросить свойство {0} на предмете {1} за {2}?"
+
+msgctxt "pattern"
+msgid "+20 attunement on {0} for {1}?"
+msgstr "+20 к сонастройке предмета {0} за {1}?"
+
+msgctxt "pattern"
+msgid "One rarity up (Epic at most), for Scrap plus 2 Core Shards. Uses the item's rarity upgrade. You have {0}."
+msgstr "На одну редкость выше (не выше эпической), за лом и 2 осколка ядра. Расходует повышение редкости предмета. У вас: {0}."
+
+msgctxt "pattern"
+msgid "Upgrade {0} to {1} for {2} and 2 Core Shards?"
+msgstr "Улучшить {0} до {1} за {2} и 2 осколка ядра?"
+
+msgctxt "pattern"
+msgid "Module removal ({0}) and whole-item rerolls / upgrades are on the Gear tab's inspect card."
+msgstr "Извлечение модулей ({0}) и переброс / улучшение предмета целиком - на карточке осмотра во вкладке «Снаряжение»."
+
+msgctxt "pattern"
+msgid "GIFT {0}"
+msgstr "ПОДАРИТЬ {0}"
+
+msgctxt "pattern"
+msgid "{0} to {1}"
+msgstr "{0} для {1}"
+
+msgctxt "pattern"
+msgid "{0} favourites (count double): {1}"
+msgstr "{0} - любимые улучшения (считаются вдвойне): {1}"
+
+msgctxt "pattern"
+msgid "<color=#ffb21e>This run:</color> {0}"
+msgstr "<color=#ffb21e>Этот забег:</color> {0}"
+
+msgctxt "pattern"
+msgid "Buy {0}"
+msgstr "Купить: {0}"
+
+msgctxt "pattern"
+msgid "{0} {1}upgrade{2}"
+msgstr "{0} {1}(улучшение){2}"
+
+msgctxt "pattern"
+msgid "MAP MODIFIER: {0}"
+msgstr "МОДИФИКАТОР КАРТЫ: {0}"
+
+msgctxt "pattern"
+msgid "Map modifier: {0}"
+msgstr "Модификатор карты: {0}"
+
+msgctxt "pattern"
+msgid "New deeper in the run: {0}"
+msgstr "Новое в глубине забега: {0}"
+
+msgctxt "pattern"
+msgid "NEW: {0}"
+msgstr "НОВОЕ: {0}"
+
+msgctxt "pattern"
+msgid "{0} (the Guide has the details)"
+msgstr "{0} (подробности в справке)"
+
+msgctxt "pattern"
+msgid "{0}XP toward the next level isn't carried over. Once per milestone."
+msgstr "{0}Опыт до следующего уровня не переносится. Раз за этап."
+
+msgctxt "pattern"
+msgid "TEAM BOON VOTE ({0})"
+msgstr "ГОЛОСОВАНИЕ ЗА ДАР КОМАНДЫ ({0})"
+
+msgctxt "pattern"
+msgid "Vote: {0}"
+msgstr "Голосовать: {0}"
+
+msgctxt "pattern"
+msgid "Chosen: <b>{0}</b>"
+msgstr "Выбрано: <b>{0}</b>"
+
+msgctxt "pattern"
+msgid "<color=#9a9ca0>{0} · extractions, contracts, elites, bosses, milestones</color>"
+msgstr "<color=#9a9ca0>{0} · извлечения, контракты, элита, боссы, этапы</color>"
+
+msgctxt "pattern"
+msgid "FINALE - {0}"
+msgstr "ФИНАЛ - {0}"
+
+msgctxt "pattern"
+msgid "MILESTONE LEVEL - {0}"
+msgstr "ЭТАПНЫЙ УРОВЕНЬ - {0}"
+
+msgctxt "pattern"
+msgid "{0} · NEXT LEVEL IS {1}"
+msgstr "{0} · СЛЕДУЮЩИЙ УРОВЕНЬ - {1}"
+
+msgctxt "pattern"
+msgid "{0} · next level: {1}"
+msgstr "{0} · следующий уровень: {1}"
+
+msgctxt "pattern"
+msgid "Next level: {0}"
+msgstr "След. уровень: {0}"
+
+msgctxt "pattern"
+msgid "Most levels on {0}"
+msgstr "Больше всего уровней ({0})"
+
+msgctxt "pattern"
+msgid "Highest heat at Victory on {0}"
+msgstr "Наивысший накал при победе ({0})"
+
+msgctxt "pattern"
+msgid "{0}The recap is on the Account tab ({1}){2}"
+msgstr "{0}Итоги - на вкладке «Аккаунт» ({1}){2}"
+
+msgctxt "pattern"
+msgid "<b>THIS RUN</b>\n{0}"
+msgstr "<b>ЭТОТ ЗАБЕГ</b>\n{0}"
+
+msgctxt "pattern"
+msgid "<b>LAST RUN</b>  <color=#ffd75a><b>VICTORY</b></color>  <color=#9a9ca0>{0}  ·  {1}</color>\n"
+msgstr "<b>ПРОШЛЫЙ ЗАБЕГ</b>  <color=#ffd75a><b>ПОБЕДА</b></color>  <color=#9a9ca0>{0}  ·  {1}</color>\n"
+
+msgctxt "pattern"
+msgid "<b>LAST RUN</b>  <color=#9a9ca0>{0}  ·  {1}</color>\n"
+msgstr "<b>ПРОШЛЫЙ ЗАБЕГ</b>  <color=#9a9ca0>{0}  ·  {1}</color>\n"
+
+msgctxt "pattern"
+msgid "<color=#ffd75a><b>New record!</b> {0}</color>\n"
+msgstr "<color=#ffd75a><b>Новый рекорд!</b> {0}</color>\n"
+
+msgctxt "pattern"
+msgid "<color=#9a9ca0>Next level:</color> {0}"
+msgstr "<color=#9a9ca0>След. уровень:</color> {0}"
+
+msgctxt "pattern"
+msgid "Boons: {0}"
+msgstr "Дары: {0}"
+
+msgctxt "pattern"
+msgid "{0}\n<color=#9a9ca0>Full run details: hold {1}, or Account > Runs</color>"
+msgstr "{0}\n<color=#9a9ca0>Все подробности забега: удерживайте {1} или «Аккаунт > Забеги»</color>"
+
+msgctxt "pattern"
+msgid "Bound to: {0}"
+msgstr "Назначено: {0}"
+
+msgctxt "pattern"
+msgid "Setting · {0} · {1}"
+msgstr "Настройка · {0} · {1}"
+
+msgctxt "pattern"
+msgid "\n<color=#9a9ca0>Now: {0}</color>"
+msgstr "\n<color=#9a9ca0>Сейчас: {0}</color>"
+
+msgctxt "pattern"
+msgid "Default: {0}. Saved in the config file under [{1}] {2}."
+msgstr "По умолчанию: {0}. Хранится в файле конфигурации: [{1}] {2}."
+
+msgctxt "pattern"
+msgid "next ({0}): {1}"
+msgstr "далее ({0}): {1}"
+
+msgctxt "pattern"
+msgid "<color=#ffd75a>REPUTATION: {0}</color>  {1}  <color=#9a9ca0>· {2}</color>"
+msgstr "<color=#ffd75a>РЕПУТАЦИЯ: {0}</color>  {1}  <color=#9a9ca0>· {2}</color>"
+
+msgctxt "pattern"
+msgid "{0}     <color=#ffb21e><b>RIVET:</b></color> <i>\"{1}\"</i>"
+msgstr "{0}     <color=#ffb21e><b>РИВЕТ:</b></color> <i>\"{1}\"</i>"
+
+msgctxt "pattern"
+msgid "{0} is locked"
+msgstr "{0}: закрыто"
+
+msgctxt "pattern"
+msgid "Price: {0}"
+msgstr "Цена: {0}"
+
+msgctxt "pattern"
+msgid "\n<color=#ff9a8a>Need {0} more {1}.</color>"
+msgstr "\n<color=#ff9a8a>Нужно ещё {0} {1}.</color>"
+
+msgctxt "pattern"
+msgid "Buy {0} for {1}?"
+msgstr "Купить: {0} за {1}?"
+
 msgctxt "@RpgRuntime::AbilityLimitText#150"
 msgid "  - next "
 msgstr "  - след. "
@@ -6714,6 +7808,18 @@ msgctxt "@RpgRuntime::AdvanceChain#330"
 msgid "CHAIN COMPLETE: "
 msgstr "ЦЕПОЧКА ЗАВЕРШЕНА: "
 
+msgctxt "@RpgRuntime::AnnounceUnlocks#2406"
+msgid "New deeper in the run: "
+msgstr "Новое в глубине забега: "
+
+msgctxt "@RpgRuntime::AnnounceUnlocks#2407"
+msgid "NEW: "
+msgstr "НОВОЕ: "
+
+msgctxt "@RpgRuntime::AnnounceUnlocks#2408"
+msgid " (the Guide has the details)"
+msgstr " (подробности в справке)"
+
 msgctxt "@RpgRuntime::ApplyLoadout#370"
 msgid " is empty - save one first"
 msgstr " пуст - сначала сохраните его"
@@ -6729,6 +7835,10 @@ msgstr "КОМАНДНЫЙ КОНТРАКТ ВЫПОЛНЕН: "
 msgctxt "@RpgRuntime::ApplyTeamResult#1010"
 msgid "TEAM CONTRACT FAILED: "
 msgstr "КОМАНДНЫЙ КОНТРАКТ ПРОВАЛЕН: "
+
+msgctxt "@RpgRuntime::AskCancelResearch#2325"
+msgid "CANCEL "
+msgstr "ОТМЕНИТЬ "
 
 msgctxt "@RpgRuntime::AskDrop#1356"
 msgid " goes back on the board. No cost."
@@ -6781,6 +7891,14 @@ msgstr "Улучшено: "
 msgctxt "@RpgRuntime::AskPlayAs#1270"
 msgid "Taken by "
 msgstr "Занят: "
+
+msgctxt "@RpgRuntime::AskStartResearch#2321"
+msgid "START "
+msgstr "НАЧАТЬ "
+
+msgctxt "@RpgRuntime::AskStartResearch#2324"
+msgid "Researching "
+msgstr "Исследуется: "
 
 msgctxt "@RpgRuntime::AttrDetail#1136"
 msgid "\n\n<b>MILESTONES</b>  <color=#9a9ca0>"
@@ -6930,6 +8048,26 @@ msgctxt "@RpgRuntime::BuildNoticeRows#2106"
 msgid "] dismiss (hold: all)"
 msgstr "] скрыть (удержание: все)"
 
+msgctxt "@RpgRuntime::BuildRecapText#2505"
+msgid "<b>LAST RUN</b>  <color=#ffd75a><b>VICTORY</b></color>  <color=#9a9ca0>"
+msgstr "<b>ПРОШЛЫЙ ЗАБЕГ</b>  <color=#ffd75a><b>ПОБЕДА</b></color>  <color=#9a9ca0>"
+
+msgctxt "@RpgRuntime::BuildRecapText#2506"
+msgid "<b>LAST RUN</b>  <color=#9a9ca0>"
+msgstr "<b>ПРОШЛЫЙ ЗАБЕГ</b>  <color=#9a9ca0>"
+
+msgctxt "@RpgRuntime::BuildRecapText#2511"
+msgid "<color=#ffd75a><b>New record!</b> "
+msgstr "<color=#ffd75a><b>Новый рекорд!</b> "
+
+msgctxt "@RpgRuntime::BuildRosterLines#2336"
+msgid "Synergy: "
+msgstr "Синергия: "
+
+msgctxt "@RpgRuntime::BuildRpgHudLines#2401"
+msgid "upgrade"
+msgstr "(улучшение)"
+
 msgctxt "@RpgRuntime::BuildSynergyLine#2259"
 msgid "</b> with <color="
 msgstr "</b> и <color="
@@ -7078,6 +8216,26 @@ msgctxt "@RpgRuntime::CommitPresetName#765"
 msgid "' already exists. Overwrite it with the current settings? Its old values can't be recovered."
 msgstr "' уже существует. Перезаписать его текущими настройками? Прежние значения восстановить будет нельзя."
 
+msgctxt "@RpgRuntime::CompareColumn#2262"
+msgid "<color=#ffb21e><b>ROLE</b></color>  "
+msgstr "<color=#ffb21e><b>РОЛЬ</b></color>  "
+
+msgctxt "@RpgRuntime::CompareColumn#2263"
+msgid "<color=#ffb21e><b>COMPLEXITY</b></color>  "
+msgstr "<color=#ffb21e><b>СЛОЖНОСТЬ</b></color>  "
+
+msgctxt "@RpgRuntime::CompareColumn#2265"
+msgid "<color=#ffb21e><b>PASSIVE</b></color>  <b>"
+msgstr "<color=#ffb21e><b>ПАССИВНАЯ</b></color>  <b>"
+
+msgctxt "@RpgRuntime::CompareColumn#2266"
+msgid "<color=#ff9999><b>WEAKNESS</b></color>  "
+msgstr "<color=#ff9999><b>СЛАБОСТЬ</b></color>  "
+
+msgctxt "@RpgRuntime::CompareColumn#2267"
+msgid "<color=#ffb21e><b>SYNERGIES</b></color>  "
+msgstr "<color=#ffb21e><b>СИНЕРГИИ</b></color>  "
+
 msgctxt "@RpgRuntime::CompleteContractCore#309"
 msgid "Contract complete: "
 msgstr "Контракт выполнен: "
@@ -7093,6 +8251,14 @@ msgstr " и данные исследований в конце забега (п
 msgctxt "@RpgRuntime::CycleNotice#2108"
 msgid "] to open)"
 msgstr "] - открыть)"
+
+msgctxt "@RpgRuntime::DepthLevelStart#2404"
+msgid "MAP MODIFIER: "
+msgstr "МОДИФИКАТОР КАРТЫ: "
+
+msgctxt "@RpgRuntime::DepthLevelStart#2405"
+msgid "Map modifier: "
+msgstr "Модификатор карты: "
 
 msgctxt "@RpgRuntime::Direction#1207"
 msgid "here"
@@ -7269,6 +8435,10 @@ msgstr "; его параметры вырастут."
 msgctxt "@RpgRuntime::DrawCraftDialog#673"
 msgid "Line: "
 msgstr "Свойство: "
+
+msgctxt "@RpgRuntime::DrawCrewCard#2462"
+msgid " · extractions, contracts, elites, bosses, milestones</color>"
+msgstr " · извлечения, контракты, элита, боссы, этапы</color>"
 
 msgctxt "@RpgRuntime::DrawDownLine#1606"
 msgid "Your death head can call out:  "
@@ -7634,6 +8804,14 @@ msgctxt "@RpgRuntime::DrawResearchHudX#975"
 msgid "] Crack the vault (6 s, loud)"
 msgstr "] Вскрыть хранилище (6 с, громко)"
 
+msgctxt "@RpgRuntime::DrawResearchPrompts#2280"
+msgid "[Hold "
+msgstr "[Удерживайте "
+
+msgctxt "@RpgRuntime::DrawResearchPrompts#2280"
+msgid "] Reel in cart"
+msgstr "] Подтянуть тележку"
+
 msgctxt "@RpgRuntime::DrawResearchTabC#824"
 msgid "<b>LAB NETWORK:</b> borrowed <color=#40f2d9>"
 msgstr "<b>СЕТЬ ЛАБОРАТОРИЙ:</b> позаимствовано <color=#40f2d9>"
@@ -7662,6 +8840,22 @@ msgctxt "@RpgRuntime::DrawRewardChoice#1457"
 msgid "REWARD WAITING: "
 msgstr "НАГРАДА ЖДЁТ: "
 
+msgctxt "@RpgRuntime::DrawRoutePanel#2447"
+msgid "Chosen: <b>"
+msgstr "Выбрано: <b>"
+
+msgctxt "@RpgRuntime::DrawRunShapePanel#2440"
+msgid "TEAM BOON VOTE ("
+msgstr "ГОЛОСОВАНИЕ ЗА ДАР КОМАНДЫ ("
+
+msgctxt "@RpgRuntime::DrawRunShapePanel#2445"
+msgid "Vote: "
+msgstr "Голосовать: "
+
+msgctxt "@RpgRuntime::DrawRunsPage#2503"
+msgid "<b>THIS RUN</b>\n"
+msgstr "<b>ЭТОТ ЗАБЕГ</b>\n"
+
 msgctxt "@RpgRuntime::DrawShopBuyback#919"
 msgid "Buy back "
 msgstr "Выкупить "
@@ -7678,6 +8872,78 @@ msgctxt "@RpgRuntime::DrawShopBuyback#921"
 msgid " more "
 msgstr " "
 
+msgctxt "@RpgRuntime::DrawShopContent#2349"
+msgid "<color=#73ff66>SHOP OPEN</color> - paid with your own "
+msgstr "<color=#73ff66>МАГАЗИН ОТКРЫТ</color> - оплата из вашего личного запаса ("
+
+msgctxt "@RpgRuntime::DrawShopContent#2349"
+msgid ". The team's money is never touched."
+msgstr "). Деньги команды не тратятся."
+
+msgctxt "@RpgRuntime::DrawShopContent#2355"
+msgid "Target: "
+msgstr "Цель: "
+
+msgctxt "@RpgRuntime::DrawShopContent#2360"
+msgid "Reroll "
+msgstr "Перебросить свойство "
+
+msgctxt "@RpgRuntime::DrawShopContent#2360"
+msgid " on "
+msgstr " на предмете "
+
+msgctxt "@RpgRuntime::DrawShopContent#2360"
+msgid " for "
+msgstr " за "
+
+msgctxt "@RpgRuntime::DrawShopContent#2364"
+msgid "+20 attunement on "
+msgstr "+20 к сонастройке предмета "
+
+msgctxt "@RpgRuntime::DrawShopContent#2364"
+msgid " for "
+msgstr " за "
+
+msgctxt "@RpgRuntime::DrawShopContent#2367"
+msgid "One rarity up (Epic at most), for Scrap plus 2 Core Shards. Uses the item's rarity upgrade. You have "
+msgstr "На одну редкость выше (не выше эпической), за лом и 2 осколка ядра. Расходует повышение редкости предмета. У вас: "
+
+msgctxt "@RpgRuntime::DrawShopContent#2369"
+msgid "Upgrade "
+msgstr "Улучшить "
+
+msgctxt "@RpgRuntime::DrawShopContent#2369"
+msgid " to "
+msgstr " до "
+
+msgctxt "@RpgRuntime::DrawShopContent#2369"
+msgid " for "
+msgstr " за "
+
+msgctxt "@RpgRuntime::DrawShopContent#2369"
+msgid " and 2 Core Shards?"
+msgstr " и 2 осколка ядра?"
+
+msgctxt "@RpgRuntime::DrawShopContent#2376"
+msgid "Module removal ("
+msgstr "Извлечение модулей ("
+
+msgctxt "@RpgRuntime::DrawShopContent#2376"
+msgid ") and whole-item rerolls / upgrades are on the Gear tab's inspect card."
+msgstr ") и переброс / улучшение предмета целиком - на карточке осмотра во вкладке «Снаряжение»."
+
+msgctxt "@RpgRuntime::DrawShopContent#2388"
+msgid "GIFT "
+msgstr "ПОДАРИТЬ "
+
+msgctxt "@RpgRuntime::DrawShopContent#2392"
+msgid " favourites (count double): "
+msgstr " - любимые улучшения (считаются вдвойне): "
+
+msgctxt "@RpgRuntime::DrawShopContent#2395"
+msgid "<color=#ffb21e>This run:</color> "
+msgstr "<color=#ffb21e>Этот забег:</color> "
+
 msgctxt "@RpgRuntime::DrawShopContent#673"
 msgid "Line: "
 msgstr "Свойство: "
@@ -7693,6 +8959,22 @@ msgstr "Прототип этого забега: <b>"
 msgctxt "@RpgRuntime::DrawShopResearchE#902"
 msgid "</b> (Gear section). "
 msgstr "</b> (раздел «Снаряжение»). "
+
+msgctxt "@RpgRuntime::DrawShopTabBody#2571"
+msgid "next ("
+msgstr "далее ("
+
+msgctxt "@RpgRuntime::DrawShopTabBody#2573"
+msgid "<color=#ffd75a>REPUTATION: "
+msgstr "<color=#ffd75a>РЕПУТАЦИЯ: "
+
+msgctxt "@RpgRuntime::DrawShopTabBody#2579"
+msgid "     <color=#ffb21e><b>RIVET:</b></color> <i>\""
+msgstr "     <color=#ffb21e><b>РИВЕТ:</b></color> <i>\""
+
+msgctxt "@RpgRuntime::DrawShopTabBody#2580"
+msgid " is locked"
+msgstr ": закрыто"
 
 msgctxt "@RpgRuntime::DrawStyle#1080"
 msgid "Title: "
@@ -7990,6 +9272,10 @@ msgctxt "@RpgRuntime::MenuBlocked#2064"
 msgid "Menu unavailable while "
 msgstr "Меню недоступно, пока "
 
+msgctxt "@RpgRuntime::MilestoneSwitchText#2413"
+msgid "XP toward the next level isn't carried over. Once per milestone."
+msgstr "Опыт до следующего уровня не переносится. Раз за этап."
+
 msgctxt "@RpgRuntime::MimicSwap#169"
 msgid "Ready: "
 msgstr "Готово: "
@@ -8025,6 +9311,26 @@ msgstr "Тележка: "
 msgctxt "@RpgRuntime::NodeStatus#1230"
 msgid "<color=#ff9999>Requires "
 msgstr "<color=#ff9999>Требуется: "
+
+msgctxt "@RpgRuntime::NodeValues#2269"
+msgid "Rank 1: "
+msgstr "Ранг 1: "
+
+msgctxt "@RpgRuntime::NodeValues#2270"
+msgid "Now: "
+msgstr "Сейчас: "
+
+msgctxt "@RpgRuntime::NodeValues#2271"
+msgid "Now: "
+msgstr "Сейчас: "
+
+msgctxt "@RpgRuntime::NodeValues#2271"
+msgid "  ·  Next: "
+msgstr "  ·  Далее: "
+
+msgctxt "@RpgRuntime::NoteSetting#2539"
+msgid "Bound to: "
+msgstr "Назначено: "
 
 msgctxt "@RpgRuntime::NoticeWhere#2096"
 msgid "Open ["
@@ -8153,6 +9459,14 @@ msgstr " за "
 msgctxt "@RpgRuntime::OnPurchaseNotice#502"
 msgid " bought "
 msgstr ": покупка - "
+
+msgctxt "@RpgRuntime::OnRecap#2499"
+msgid "The recap is on the Account tab ("
+msgstr "Итоги - на вкладке «Аккаунт» ("
+
+msgctxt "@RpgRuntime::OnResearchFinished#2281"
+msgid "Research finished: "
+msgstr "Исследование завершено: "
 
 msgctxt "@RpgRuntime::OnRivalResult#328"
 msgid "RIVAL CONTRACT WON: "
@@ -8302,6 +9616,10 @@ msgctxt "@RpgRuntime::PrewarmHudFont#2038"
 msgid " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~·•→★×–—…‘’“”"
 msgstr " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~·•→★×–—…‘’“”АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя«»№"
 
+msgctxt "@RpgRuntime::ProvideResearchNotices#2285"
+msgid "Research finished: "
+msgstr "Исследование завершено: "
+
 msgctxt "@RpgRuntime::RefreshAttrCache#1119"
 msgid "<color=#ffd75a><b>NEW</b> "
 msgstr "<color=#ffd75a><b>НОВОЕ</b> "
@@ -8350,6 +9668,18 @@ msgctxt "@RpgRuntime::ResCrewText#834"
 msgid "<b>SPONSOR:</b> <color=#ffd166>"
 msgstr "<b>СПОНСОР:</b> <color=#ffd166>"
 
+msgctxt "@RpgRuntime::ResearchDetail"
+msgid "Personal"
+msgstr "Личное"
+
+msgctxt "@RpgRuntime::ResearchDetail#2313"
+msgid "In progress"
+msgstr "В работе"
+
+msgctxt "@RpgRuntime::ResearchDetail#2318"
+msgid "Requires "
+msgstr "Требуется: "
+
 msgctxt "@RpgRuntime::ResearchRestockE#890"
 msgid "Price Board: next visit's featured deal is "
 msgstr "Доска цен: предложение на витрине в следующий визит - "
@@ -8369,6 +9699,10 @@ msgstr "Лаборатория прототипов: "
 msgctxt "@RpgRuntime::ResearchRestockE#892"
 msgid " is in the Gear section"
 msgstr " - в разделе «Снаряжение»"
+
+msgctxt "@RpgRuntime::RespecLabel#2348"
+msgid "Respec "
+msgstr "Сброс: "
 
 msgctxt "@RpgRuntime::RewardContracts#309"
 msgid "Contract complete: "
@@ -8390,6 +9724,34 @@ msgctxt "@RpgRuntime::Rule#630"
 msgid "couldn't undo it ("
 msgstr "не удалось отменить ("
 
+msgctxt "@RpgRuntime::RunDetailsText#2525"
+msgid "<color=#9a9ca0>Next level:</color> "
+msgstr "<color=#9a9ca0>След. уровень:</color> "
+
+msgctxt "@RpgRuntime::RunDetailsText#2526"
+msgid "Boons: "
+msgstr "Дары: "
+
+msgctxt "@RpgRuntime::RunShapeBanner#2473"
+msgid " · next level: "
+msgstr " · следующий уровень: "
+
+msgctxt "@RpgRuntime::RunShapeBanner#2481"
+msgid "Next level: "
+msgstr "След. уровень: "
+
+msgctxt "@RpgRuntime::RunShapeHudLine#2464"
+msgid "FINALE - "
+msgstr "ФИНАЛ - "
+
+msgctxt "@RpgRuntime::RunShapeHudLine#2465"
+msgid "MILESTONE LEVEL - "
+msgstr "ЭТАПНЫЙ УРОВЕНЬ - "
+
+msgctxt "@RpgRuntime::RunShapeHudLine#2466"
+msgid " · NEXT LEVEL IS "
+msgstr " · СЛЕДУЮЩИЙ УРОВЕНЬ - "
+
 msgctxt "@RpgRuntime::Salvage#474"
 msgid "Inventory full: salvaged "
 msgstr "Инвентарь полон: разобрано "
@@ -8405,6 +9767,10 @@ msgstr " Это нельзя отменить."
 msgctxt "@RpgRuntime::SaveLoadout#368"
 msgid " saved"
 msgstr " сохранён"
+
+msgctxt "@RpgRuntime::ScopeLobbyText#2308"
+msgid "Works for everyone in the lobby once the host has it"
+msgstr "Работает для всех в лобби, как только оно есть у хоста"
 
 msgctxt "@RpgRuntime::SelectClass#423"
 msgid "Class: "
@@ -8438,6 +9804,50 @@ msgctxt "@RpgRuntime::ServicePartsUp#584"
 msgid " to "
 msgstr " до "
 
+msgctxt "@RpgRuntime::SettingsDetail#2542"
+msgid "Setting · "
+msgstr "Настройка · "
+
+msgctxt "@RpgRuntime::SettingsDetail#2546"
+msgid "\n<color=#9a9ca0>Now: "
+msgstr "\n<color=#9a9ca0>Сейчас: "
+
+msgctxt "@RpgRuntime::SettingsDetail#2547"
+msgid "Default: "
+msgstr "По умолчанию: "
+
+msgctxt "@RpgRuntime::SettingsDetail#2547"
+msgid ". Saved in the config file under ["
+msgstr ". Хранится в файле конфигурации: ["
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2397"
+msgid "Buy "
+msgstr "Купить: "
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2596"
+msgid "Price: "
+msgstr "Цена: "
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2597"
+msgid "\n<color=#ff9a8a>Need "
+msgstr "\n<color=#ff9a8a>Нужно ещё "
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2597"
+msgid " more "
+msgstr " "
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2599"
+msgid "Buy "
+msgstr "Купить: "
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2599"
+msgid " for "
+msgstr " за "
+
+msgctxt "@RpgRuntime::ShopRow#2397"
+msgid "Buy "
+msgstr "Купить: "
+
 msgctxt "@RpgRuntime::SlotModule#362"
 msgid "Slotted "
 msgstr "Вставлено: "
@@ -8445,6 +9855,10 @@ msgstr "Вставлено: "
 msgctxt "@RpgRuntime::SlotModule#362"
 msgid " into "
 msgstr " в "
+
+msgctxt "@RpgRuntime::SpectatedLine#2343"
+msgid "Spectating "
+msgstr "Наблюдение: "
 
 msgctxt "@RpgRuntime::StartCompare#2256"
 msgid "Compare: now select another class to compare with "
@@ -8530,6 +9944,14 @@ msgctxt "@RpgRuntime::TickPendingSalvage#996"
 msgid " not salvaged"
 msgstr " не разобрано"
 
+msgctxt "@RpgRuntime::TickRunSummary#2531"
+msgid "\n<color=#9a9ca0>Full run details: hold "
+msgstr "\n<color=#9a9ca0>Все подробности забега: удерживайте "
+
+msgctxt "@RpgRuntime::TickRunSummary#2531"
+msgid ", or Account > Runs</color>"
+msgstr " или «Аккаунт > Забеги»</color>"
+
 msgctxt "@RpgRuntime::TickThreats#251"
 msgid "Tier "
 msgstr "Ранг "
@@ -8557,6 +9979,10 @@ msgstr " спасает вас!"
 msgctxt "@RpgRuntime::TryUseActive#271"
 msgid "Choose your class - "
 msgstr "Выберите класс - "
+
+msgctxt "@RpgRuntime::UnspentText#2275"
+msgid "Unspent: "
+msgstr "Не потрачено: "
 
 msgctxt "@RpgRuntime::UpdateMain#408"
 msgid " ended"

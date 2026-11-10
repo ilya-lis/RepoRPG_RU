@@ -155,6 +155,9 @@ def main():
                     if g and g[0] != b and sc in g[1]['scopes']: clash.add(uid)
             if not clash: break
             dropped += len(clash)
+            if os.environ.get('MKPO_VERBOSE'):
+                for uid in sorted(clash):
+                    print('  draw time only: #%s in %s: %r' % (uid, sc, [p for u2, p in alive if u2 == uid]))
             alive = [(uid, p) for uid, p in alive if uid not in clash]
         for uid, pieces in alive:
             for a, b in pieces.items(): scoped.setdefault(sc + '#' + uid, collections.OrderedDict())[a] = b

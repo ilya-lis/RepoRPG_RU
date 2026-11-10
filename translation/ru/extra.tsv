@@ -29,3 +29,4 @@
 +term	Medic	Медик
 +term	Appraiser	Оценщик
 +term	Lookout	Дозорный
++@RpgRuntime::ResearchDetail	Personal	Личное
