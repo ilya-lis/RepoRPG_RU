@@ -30,3 +30,12 @@
 +term	Appraiser	Оценщик
 +term	Lookout	Дозорный
 +@RpgRuntime::ResearchDetail	Personal	Личное
++@RpgRuntime::ShopEntryDetail	Unlock	Снять фиксацию
++pattern	{0}s stun	{0} с оглушения
++pattern	{0}% self heal	{0}% самолечения
++pattern	{0} HP ally heal	{0} ОЗ лечения союзника
++pattern	{0}% heal over time	{0}% лечения со временем
++pattern	{0} rally strength	сила клича {0}
++pattern	{0}% revive health	{0}% здоровья при возрождении
++pattern	{0}% power	{0}% силы
++pattern	{0} damage	{0} урона

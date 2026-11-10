@@ -4957,6 +4957,606 @@ msgstr "\n<color=#9a9ca0>Магазин закрыт: он открываетс�
 msgid "BUY?"
 msgstr "КУПИТЬ?"
 
+msgid "Already sold."
+msgstr "Уже продано."
+
+msgid "The shop is closed."
+msgstr "Магазин закрыт."
+
+msgid "You can't afford it yet."
+msgstr "Вам пока не хватает средств."
+
+msgid "Add to cart"
+msgstr "В корзину"
+
+msgid "Lock (Customer)"
+msgstr "Фиксация («Клиент»)"
+
+msgid "Lock for next visit (free)"
+msgstr "Зафиксировать до следующего визита (бесплатно)"
+
+msgid "Locking needs Customer reputation."
+msgstr "Для фиксации нужна репутация «Клиент»."
+
+msgid "Haggled this visit"
+msgstr "Торг в этот визит уже был"
+
+msgid "Haggle (50/50)"
+msgstr "Торговаться (50/50)"
+
+msgid "Haggled: -25%"
+msgstr "Торг: -25%"
+
+msgid "Haggled: +10%"
+msgstr "Торг: +10%"
+
+msgid "HAGGLE?"
+msgstr "ТОРГОВАТЬСЯ?"
+
+msgid "Haggle"
+msgstr "Торговаться"
+
+msgid "One haggle per shop visit."
+msgstr "Один торг за визит в магазин."
+
+msgid "<b>{0}</b> <color=#9a9ca0>(was {1})</color>"
+msgstr "<b>{0}</b> <color=#9a9ca0>(было {1})</color>"
+
+msgid "<color=#7fd8ff>LOCKED</color>  "
+msgstr "<color=#7fd8ff>ФИКСАЦИЯ</color>  "
+
+msgid "<color=#9a9ca0>SOLD</color>"
+msgstr "<color=#9a9ca0>ПРОДАНО</color>"
+
+msgid "Rare or better, guaranteed. "
+msgstr "Гарантированно редкий или лучше. "
+
+msgid "Uncommon or better, guaranteed. "
+msgstr "Гарантированно необычный или лучше. "
+
+msgid "Your odds now (gear luck raises the rarer rows): "
+msgstr "Ваши шансы сейчас (удача снаряжения повышает редкие строки): "
+
+msgid "\nFixed odds, shown before you buy."
+msgstr "\nШансы фиксированы и показаны до покупки."
+
+msgid "Premium Mystery Crate"
+msgstr "Премиум-ящик с сюрпризом"
+
+msgid "Mystery Crate"
+msgstr "Ящик с сюрпризом"
+
+msgid "BUY A CRATE?"
+msgstr "КУПИТЬ ЯЩИК?"
+
+msgid "Premium "
+msgstr "премиальный "
+
+msgid "Nothing to buy back"
+msgstr "Нечего выкупать"
+
+msgid "Gear you salvage during this shop visit can be bought back here, for exactly what salvaging paid. The list clears when you leave the shop."
+msgstr "Снаряжение, разобранное за этот визит в магазин, можно выкупить здесь - ровно за столько, сколько дала разборка. Список очищается, когда вы покидаете магазин."
+
+msgid "<color=#9a9ca0>Bought back for exactly what salvaging paid (no discounts). The list clears when you leave the shop. Modules stay in your bag.</color>"
+msgstr "<color=#9a9ca0>Выкуп ровно за столько, сколько дала разборка (без скидок). Список очищается, когда вы покидаете магазин. Модули остаются в сумке.</color>"
+
+msgid "Each restock, one gear slot has a 10% chance to be what you wished for: a piece of the set, or the Unique (Uniques only at Shareholder reputation, or as the featured deal). You get a pop-up when it's in."
+msgstr "При каждом обновлении ассортимента один слот снаряжения с шансом 10% окажется тем, что вы пожелали: предметом комплекта или уникальным предметом (уникальные - только с репутацией «Акционер» или как предложение с витрины). Когда он появится, вы получите всплывающее сообщение."
+
+msgid "View"
+msgstr "Смотреть"
+
+msgid "Choose"
+msgstr "Выбрать"
+
+msgid "<b>MILESTONE {0} REWARD</b>"
+msgstr "<b>НАГРАДА ЗА ЭТАП {0}</b>"
+
+msgid "  <color=#9a9ca0>pick it in the truck or shop</color>"
+msgstr "  <color=#9a9ca0>выберите в грузовике или магазине</color>"
+
+msgid "  <color=#9a9ca0>a Unique or the payout</color>"
+msgstr "  <color=#9a9ca0>уникальный предмет или выплата</color>"
+
+msgid "<b>{0}</b>  {1}/{2} voted"
+msgstr "<b>{0}</b>  проголосовало {1}/{2}"
+
+msgid "END OR ENDLESS"
+msgstr "ФИНИШ ИЛИ БЕСКОНЕЧНЫЙ РЕЖИМ"
+
+msgid "BOON VOTE"
+msgstr "ГОЛОСОВАНИЕ ЗА ДАР"
+
+msgid "<b>ROUTE VOTE (LEVEL {0})</b>  {1}/{2} voted"
+msgstr "<b>ГОЛОСОВАНИЕ ЗА МАРШРУТ (УРОВЕНЬ {0})</b>  проголосовало {1}/{2}"
+
+msgid "Dismiss"
+msgstr "Скрыть"
+
+msgid "<b>ROUTE (LEVEL {0}):</b> {1}"
+msgstr "<b>МАРШРУТ (УРОВЕНЬ {0}):</b> {1}"
+
+msgid "<b>HEAT VOTE (HEAT {0})</b>  {1}/{2} voted"
+msgstr "<b>ГОЛОСОВАНИЕ ЗА НАКАЛ (НАКАЛ {0})</b>  проголосовало {1}/{2}"
+
+msgid "Back to shop"
+msgstr "Назад в магазин"
+
+msgid "bonus buff"
+msgstr "бонусный эффект"
+
+msgid "<color=#9a9ca0>No talents yet: spend skill points in any tree to see their effects here.</color>"
+msgstr "<color=#9a9ca0>Талантов пока нет: потратьте очки навыков в любом древе, чтобы увидеть здесь их эффекты.</color>"
+
+msgid " m range"
+msgstr " м дальности"
+
+msgid " s cooldown"
+msgstr " с перезарядки"
+
+msgid " <color=#ffcc66>(cooldown reduction capped)</color>"
+msgstr " <color=#ffcc66>(достигнут предел сокращения перезарядки)</color>"
+
+msgid " charge"
+msgstr " заряд"
+
+msgid " charges"
+msgstr " зарядов"
+
+msgid "<color=#9a9ca0>no changes from talents yet</color>"
+msgstr "<color=#9a9ca0>таланты пока ничего не изменили</color>"
+
+msgid " <color=#ffcc66>(capped)</color>"
+msgstr " <color=#ffcc66>(предел)</color>"
+
+msgid "  ({0} PTS{1})"
+msgstr "  ({0} ОЧК.{1})"
+
+msgid "<color=#ffd75a>★ CAPSTONE</color>  "
+msgstr "<color=#ffd75a>★ ВЕРШИНА</color>  "
+
+msgid "X DOWN"
+msgstr "X ПОВЕРЖЕН"
+
+msgid "A teammate"
+msgstr "Напарник"
+
+msgid "DOWN {0:0}m"
+msgstr "ПОВЕРЖЕН {0:0} м"
+
+msgid "<b>TEAM</b>"
+msgstr "<b>КОМАНДА</b>"
+
+msgid "X {0}  DOWN {1:0}m"
+msgstr "X {0}  ПОВЕРЖЕН {1:0} м"
+
+msgid "Available"
+msgstr "Доступно"
+
+msgid "Selected"
+msgstr "Выбрано"
+
+msgid "Locked"
+msgstr "Закрыто"
+
+msgid "Maxed"
+msgstr "Макс."
+
+msgid "Equipped"
+msgstr "Надето"
+
+msgid "In development"
+msgstr "В разработке"
+
+msgid "Running..."
+msgstr "Выполняется..."
+
+msgid "Stopped. "
+msgstr "Остановлено. "
+
+msgid "No issues ({0:N0} texts checked)."
+msgstr "Проблем нет (проверено текстов: {0:N0})."
+
+msgid "{0} issues: "
+msgstr "Проблем: {0}: "
+
+msgid " Report: BepInEx/config/RepoRPG_layout_check.txt"
+msgstr " Отчёт: BepInEx/config/RepoRPG_layout_check.txt"
+
+msgid "Layout check: no issues"
+msgstr "Проверка вёрстки: проблем нет"
+
+msgid "Layout check: {0} issues (see the report)"
+msgstr "Проверка вёрстки: проблем - {0} (см. отчёт)"
+
+msgid "Close the menu: the HUD part of the check runs then"
+msgstr "Закройте меню: тогда запустится часть проверки для HUD"
+
+msgid "{0} · {1} of {2}"
+msgstr "{0} · {1} из {2}"
+
+msgid "No class"
+msgstr "Нет класса"
+
+msgid "Loading..."
+msgstr "Загрузка..."
+
+msgid "{0}% to Lv {1}"
+msgstr "{0}% до ур. {1}"
+
+msgid "Skill pts <b>{0}</b>"
+msgstr "Очки навыков <b>{0}</b>"
+
+msgid "Attribute pts <b>{0}</b>"
+msgstr "Очки характ. <b>{0}</b>"
+
+msgid "Data <b>{0:N0}</b>"
+msgstr "Данные <b>{0:N0}</b>"
+
+msgid "<b>{0}</b> need you"
+msgstr "Требуют внимания: <b>{0}</b>"
+
+msgid "Nothing selected"
+msgstr "Ничего не выбрано"
+
+msgid "Point at something, or select it, to see it in full here."
+msgstr "Наведите на что-нибудь или выберите - и здесь появится полное описание."
+
+msgid "Nothing to reset."
+msgstr "Нечего сбрасывать."
+
+msgid "Nothing to confirm yet."
+msgstr "Пока нечего подтверждать."
+
+msgid "Team contract"
+msgstr "Командный контракт"
+
+msgid "Closes when the level starts"
+msgstr "Закроется с началом уровня"
+
+msgid "No reward, no stakes"
+msgstr "Ни награды, ни ставки"
+
+msgid "<b>Decline</b>\nThe contract is discarded: no reward, no stakes."
+msgstr "<b>Отклонить</b>\nКонтракт отменяется: ни награды, ни ставки."
+
+msgid "Milestone reward"
+msgstr "Награда за этап"
+
+msgid "Milestone {0} reward"
+msgstr "Награда за этап {0}"
+
+msgid "Pick it in the truck or shop"
+msgstr "Выберите в грузовике или магазине"
+
+msgid "Yours to pick"
+msgstr "Выбор за вами"
+
+msgid "Pick it in the truck or the shop."
+msgstr "Выберите её в грузовике или магазине."
+
+msgid "Waiting for the host."
+msgstr "Ожидание хоста."
+
+msgid "A Unique"
+msgstr "Уникальный предмет"
+
+msgid "Legendary, for a slot you lack"
+msgstr "Легендарный, для слота, которого у вас нет"
+
+msgid "<b>A Unique (Legendary)</b>\nA random Unique for one of your gear slots (one you don't have yet). The payout is gone once you take it."
+msgstr "<b>Уникальный предмет (легендарный)</b>\nСлучайный уникальный предмет для одного из ваших слотов снаряжения (которого у вас ещё нет). Выплата пропадёт, если вы его возьмёте."
+
+msgid "Paid now"
+msgstr "Выплата сразу"
+
+msgid "<b>{0} {1}</b>\nPaid now. The Unique is gone once you take it."
+msgstr "<b>{0} {1}</b>\nВыплачивается сразу. Уникальный предмет пропадёт, если вы возьмёте выплату."
+
+msgid "Your own choice - not a vote. One of the two; the other is gone once you pick."
+msgstr "Ваш личный выбор - не голосование. Одно из двух; второе пропадёт после выбора."
+
+msgid "Run vote"
+msgstr "Голосование о забеге"
+
+msgid "Boon vote"
+msgstr "Голосование за дар"
+
+msgid "End the run, or keep going?"
+msgstr "Завершить забег или продолжить?"
+
+msgid "Closes when the next level starts"
+msgstr "Закроется с началом следующего уровня"
+
+msgid "Votes are cast in the truck or the shop."
+msgstr "Голосуют в грузовике или магазине."
+
+msgid "Decided when everyone has voted, or when the next level starts. A tie, or nobody voting, keeps the run going (Endless)."
+msgstr "Решение - когда проголосуют все или начнётся следующий уровень. При ничьей или без голосов забег продолжается (бесконечный режим)."
+
+msgid "One boon for the whole team, for the rest of the run. Decided when everyone has voted, or when the next level starts; a tie is settled at random."
+msgstr "Один дар на всю команду до конца забега. Решение - когда проголосуют все или начнётся следующий уровень; ничья разрешается случайно."
+
+msgid "Route vote"
+msgstr "Голосование за маршрут"
+
+msgid "Route for level {0}"
+msgstr "Маршрут на уровень {0}"
+
+msgid "Safe Route"
+msgstr "Безопасный маршрут"
+
+msgid "No risk, no extra reward"
+msgstr "Без риска, без дополнительной награды"
+
+msgid "Expedition"
+msgstr "Экспедиция"
+
+msgid "<b>Expedition</b>\n<color=#ff9a8a>Risk: monsters +20%, haul goal +10%</color>\n<color=#73ff66>Reward: 40% more valuables and twice the research samples</color>"
+msgstr "<b>Экспедиция</b>\n<color=#ff9a8a>Риск: монстры +20%, цель по вывозу +10%</color>\n<color=#73ff66>Награда: на 40% больше ценностей и вдвое больше образцов для исследований</color>"
+
+msgid "Decided when everyone has voted, or when the next level starts. No votes = Safe; a tie goes to the safer route."
+msgstr "Решение - когда проголосуют все или начнётся следующий уровень. Нет голосов = «Безопасный»; при ничьей выбирается более безопасный маршрут."
+
+msgid "Heat vote"
+msgstr "Голосование за накал"
+
+msgid "Heat {0}: raise it?"
+msgstr "Накал {0}: повысить?"
+
+msgid "Heat stays at {0}"
+msgstr "Накал остаётся {0}"
+
+msgid "+{0} heat · {1}"
+msgstr "+{0} к накалу · {1}"
+
+msgid "A card stays all run; more heat pays more haul Scrap and luck. Decided when everyone has voted, or when the next level starts. No votes or a tie = Skip."
+msgstr "Карта действует весь забег; чем выше накал, тем больше лома за добычу и удачи. Решение - когда проголосуют все или начнётся следующий уровень. Нет голосов или ничья = пропуск."
+
+msgid "Crew drill"
+msgstr "Тренировка команды"
+
+msgid "Crew level {0}: a crew drill"
+msgstr "Уровень команды {0}: тренировка команды"
+
+msgid "The drill is a team rule for the rest of the run. Decided when everyone has voted, or when the next level starts; a tie or no votes is settled at random."
+msgstr "Тренировка - это правило для команды до конца забега. Решение - когда проголосуют все или начнётся следующий уровень; ничья или отсутствие голосов разрешаются случайно."
+
+msgid "Sponsor vote"
+msgstr "Голосование за спонсора"
+
+msgid "The run's sponsor"
+msgstr "Спонсор забега"
+
+msgid "The sponsor's goal runs all run and pays at the end (half at half way). Decided when everyone has voted, or when the next level starts; a tie or no votes is settled at random."
+msgstr "Цель спонсора действует весь забег и оплачивается в конце (половина - на полпути). Решение - когда проголосуют все или начнётся следующий уровень; ничья или отсутствие голосов разрешаются случайно."
+
+msgid "Heat: {0} (+{1})"
+msgstr "Накал: {0} (+{1})"
+
+msgid "Heat: skipped"
+msgstr "Накал: пропущено"
+
+msgid "Heat stays at {0}."
+msgstr "Накал остаётся {0}."
+
+msgid "Run: end it"
+msgstr "Забег: завершить"
+
+msgid "Run: keep going (Endless)"
+msgstr "Забег: продолжить (бесконечный режим)"
+
+msgid "The team chose to end the run."
+msgstr "Команда решила завершить забег."
+
+msgid "accepted"
+msgstr "принят"
+
+msgid "declined"
+msgstr "отклонён"
+
+msgid "\n\n<color=#9a9ca0>Votes:</color> "
+msgstr "\n\n<color=#9a9ca0>Голоса:</color> "
+
+msgid "No votes right now"
+msgstr "Сейчас голосований нет"
+
+msgid "Votes appear in the shop and between levels: the route, heat and boons, crew drills and sponsors, and team contracts at the start of a level."
+msgstr "Голосования появляются в магазине и между уровнями: маршрут, накал и дары, тренировки команды и спонсоры, а также командные контракты в начале уровня."
+
+msgid "No votes"
+msgstr "Нет голосований"
+
+msgid "Open votes show here when they start."
+msgstr "Открытые голосования появляются здесь, когда начинаются."
+
+msgid "Point at a vote"
+msgstr "Наведите на голосование"
+
+msgid "Every option in full, the rules, who voted for what - and the Vote buttons. Click a vote to keep it here."
+msgstr "Все варианты полностью, правила, кто за что голосовал - и кнопки голосования. Щёлкните по голосованию, чтобы закрепить его здесь."
+
+msgid "Closes in {0:0}s"
+msgstr "Закроется через {0:0} с"
+
+msgid "Waiting for you"
+msgstr "Ждёт вас"
+
+msgid "Your vote is needed"
+msgstr "Нужен ваш голос"
+
+msgid "YOUR VOTE"
+msgstr "ВАШ ГОЛОС"
+
+msgid "waiting:"
+msgstr "ждём:"
+
+msgid "Hasn't voted yet."
+msgstr "Ещё не голосовал."
+
+msgid "Has voted."
+msgstr "Проголосовал."
+
+msgid "RECENT RESULTS"
+msgstr "НЕДАВНИЕ РЕЗУЛЬТАТЫ"
+
+msgid "Decided"
+msgstr "Решено"
+
+msgid "Result"
+msgstr "Результат"
+
+msgid "WHAT IT DOES"
+msgstr "ЧТО ЭТО ДАЁТ"
+
+msgid "RULES"
+msgstr "ПРАВИЛА"
+
+msgid "The vote closes when its timer runs out."
+msgstr "Голосование закроется, когда истечёт таймер."
+
+msgid " You can change your vote until it closes."
+msgstr " Голос можно менять, пока оно не закрылось."
+
+msgid "WHO VOTED FOR IT"
+msgstr "КТО ЗА ЭТО ГОЛОСОВАЛ"
+
+msgid "Change vote to this"
+msgstr "Изменить голос на этот"
+
+msgid "Vote for this"
+msgstr "Голосовать за это"
+
+msgid "You voted for this."
+msgstr "Вы проголосовали за это."
+
+msgid "  <color=#7fb8ff>(your vote)</color>"
+msgstr "  <color=#7fb8ff>(ваш голос)</color>"
+
+msgid "WHO VOTED"
+msgstr "КТО ГОЛОСОВАЛ"
+
+msgid "Your vote."
+msgstr "Ваш голос."
+
+msgid "nobody yet"
+msgstr "пока никто"
+
+msgid "Nobody has voted yet.\n"
+msgstr "Пока никто не голосовал.\n"
+
+msgid "<color=#9a9ca0>The host keeps votes private (Team/VotesShowWho): who voted, not for what.</color>\n"
+msgstr "<color=#9a9ca0>Хост скрывает голоса (Team/VotesShowWho): видно, кто голосовал, но не за что.</color>\n"
+
+msgid "{0} vote(s) cast."
+msgstr "Подано голосов: {0}."
+
+msgid "Ghosting: monsters lost your trail"
+msgstr "Призрачность: монстры потеряли ваш след"
+
+msgid "waiting at extraction"
+msgstr "ждёт у точки извлечения"
+
+msgid "making way"
+msgstr "уступает дорогу"
+
+msgid "coming for your loot"
+msgstr "едет за вашей добычей"
+
+msgid "parked beside you"
+msgstr "стоит рядом с вами"
+
+msgid "waiting (monster near)"
+msgstr "ждёт (рядом монстр)"
+
+msgid "Load too big for this route"
+msgstr "Груз слишком велик для этого маршрута"
+
+msgid "No safe route (too tight for the cart)"
+msgstr "Нет безопасного маршрута (слишком узко для тележки)"
+
+msgid "No safe route (stairs or a steep slope on the way)"
+msgstr "Нет безопасного маршрута (на пути лестница или крутой склон)"
+
+msgid "No safe route (a ledge on the way)"
+msgstr "Нет безопасного маршрута (на пути уступ)"
+
+msgid "No cart nearby"
+msgstr "Рядом нет тележки"
+
+msgid "Cart is being held - let go first"
+msgstr "Тележку держат - сначала отпустите"
+
+msgid "No extraction point found"
+msgstr "Точка извлечения не найдена"
+
+msgid "No safe route"
+msgstr "Нет безопасного маршрута"
+
+msgid "level changed"
+msgstr "уровень сменился"
+
+msgid "stopped"
+msgstr "остановлено"
+
+msgid "parked - push it or walk up to it"
+msgstr "стоит - толкните её или подойдите к ней"
+
+msgid "ready to follow"
+msgstr "готова следовать"
+
+msgid "idle"
+msgstr "простаивает"
+
+msgid "paused (held)"
+msgstr "пауза (держат)"
+
+msgid "stuck"
+msgstr "застряла"
+
+msgid "parked at extraction"
+msgstr "стоит у точки извлечения"
+
+msgid "No safe route (the cart isn't on walkable ground)"
+msgstr "Нет безопасного маршрута (тележка не на проходимой поверхности)"
+
+msgid "No safe route to that spot"
+msgstr "Нет безопасного маршрута к этой точке"
+
+msgid "waiting"
+msgstr "ждёт"
+
+msgid "time up"
+msgstr "время вышло"
+
+msgid "caster down"
+msgstr "владелец повержен"
+
+msgid "arrived"
+msgstr "прибыла"
+
+msgid "waiting (too far)"
+msgstr "ждёт (слишком далеко)"
+
+msgid "no route"
+msgstr "нет маршрута"
+
+msgid "load too big for this route"
+msgstr "груз слишком велик для этого маршрута"
+
+msgid "Cart stuck"
+msgstr "Тележка застряла"
+
+msgid "recovered"
+msgstr "возвращена"
+
+msgid "Your cart fell - brought it back with its load"
+msgstr "Ваша тележка упала - она возвращена вместе с грузом"
+
+msgid "The level ended before your bet came in"
+msgstr "Уровень закончился раньше, чем сыграла ваша ставка"
+
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
 
@@ -5751,6 +6351,10 @@ msgstr "Зафиксировано до следующего визита"
 msgctxt "term"
 msgid "Can't afford"
 msgstr "Не хватает средств"
+
+msgctxt "term"
+msgid "YOUR ABILITIES NOW"
+msgstr "ВАШИ СПОСОБНОСТИ СЕЙЧАС"
 
 msgctxt "term"
 msgid "max"
@@ -7688,6 +8292,194 @@ msgctxt "pattern"
 msgid "Buy {0} for {1}?"
 msgstr "Купить: {0} за {1}?"
 
+msgctxt "pattern"
+msgid "Lock for next visit {0}"
+msgstr "Зафиксировать до следующего визита: {0}"
+
+msgctxt "pattern"
+msgid "Haggle over {0}: a 50% chance it's 25% cheaper, a 50% chance it's 10% dearer. One haggle per shop visit."
+msgstr "Торг за {0}: 50% шанс, что станет на 25% дешевле, 50% - что на 10% дороже. Один торг за визит в магазин."
+
+msgctxt "pattern"
+msgid "<color=#ff9a8a>Need {0} more {1}</color>"
+msgstr "<color=#ff9a8a>Нужно ещё {0} {1}</color>"
+
+msgctxt "pattern"
+msgid "Buy a {0}Mystery Crate for {1}?"
+msgstr "Купить {0}ящик с сюрпризом за {1}?"
+
+msgctxt "pattern"
+msgid "{0}\n<color=#9a9ca0>Exact price: {1} (discounts don't apply)</color>"
+msgstr "{0}\n<color=#9a9ca0>Точная цена: {1} (скидки не действуют)</color>"
+
+msgctxt "pattern"
+msgid "Wishlist: <b>{0}</b>"
+msgstr "Список желаний: <b>{0}</b>"
+
+msgctxt "pattern"
+msgid "Change: {0}"
+msgstr "Изменить: {0}"
+
+msgctxt "pattern"
+msgid "<color=#9a9ca0>Back to the shop: the button in the strip above, or {0}. The vote view closes once you've voted.</color>"
+msgstr "<color=#9a9ca0>Назад в магазин: кнопка в полосе выше или {0}. Окно голосования закроется, когда вы проголосуете.</color>"
+
+msgctxt "pattern"
+msgid "{0} (LOCKED)"
+msgstr "{0} (ЗАКРЫТО)"
+
+msgctxt "pattern"
+msgid "<color=#9a9ca0>Without talents → now{0}. Ability numbers include gear, perks and attributes; passives show what talents add.</color>"
+msgstr "<color=#9a9ca0>Без талантов → сейчас{0}. Числа способностей учитывают снаряжение, перки и характеристики; пассивные показывают, что добавляют таланты.</color>"
+
+msgctxt "pattern"
+msgid " <color={0}>→ after Confirm</color>"
+msgstr " <color={0}>→ после подтверждения</color>"
+
+msgctxt "pattern"
+msgid "<b>{0}</b>: copying <color={1}>{2}</color>'s {3} at <b>{4}%</b> strength"
+msgstr "<b>{0}</b>: копируется у <color={1}>{2}</color> - {3} с силой <b>{4}%</b>"
+
+msgctxt "pattern"
+msgid "<b>{0}</b>: copy strength <b>{1}%</b> (no ability copied yet)"
+msgstr "<b>{0}</b>: сила копии <b>{1}%</b> (способность ещё не скопирована)"
+
+msgctxt "pattern"
+msgid "adds <b>{0}</b>"
+msgstr "добавляет <b>{0}</b>"
+
+msgctxt "pattern"
+msgid "<color={0}>adds {1}</color>"
+msgstr "<color={0}>добавляет {1}</color>"
+
+msgctxt "pattern"
+msgid "{0} <color={1}>→ {2}  PENDING</color>"
+msgstr "{0} <color={1}>→ {2}  ОЖИДАЕТ</color>"
+
+msgctxt "pattern"
+msgid "<color={0}>{1}  PENDING</color>"
+msgstr "<color={0}>{1}  ОЖИДАЕТ</color>"
+
+msgctxt "pattern"
+msgid "{0} is critical"
+msgstr "{0} в критическом состоянии"
+
+msgctxt "pattern"
+msgid "{0} · {1} of {2}"
+msgstr "{0} · {1} из {2}"
+
+msgctxt "pattern"
+msgid "Reward: {0}"
+msgstr "Награда: {0}"
+
+msgctxt "pattern"
+msgid "<b>Accept</b>\n{0}\n<color=#73ff66>Reward: {1} (everyone in it)</color>\n<color=#ff9a8a>Stakes: {2}</color>"
+msgstr "<b>Принять</b>\n{0}\n<color=#73ff66>Награда: {1} (каждому участнику)</color>\n<color=#ff9a8a>Ставка: {2}</color>"
+
+msgctxt "pattern"
+msgid "Decided by vote: {0}. Joining after the vote: no reward, no loss. In a level you can also hold the call-out key to accept."
+msgstr "Решается голосованием: {0}. Кто присоединится после голосования - без награды и без потерь. На уровне можно также удерживать клавишу оклика, чтобы принять."
+
+msgctxt "pattern"
+msgid "Team boon ({0})"
+msgstr "Дар команды ({0})"
+
+msgctxt "pattern"
+msgid "{0} · Reward: {1}"
+msgstr "{0} · Награда: {1}"
+
+msgctxt "pattern"
+msgid "Route: {0}"
+msgstr "Маршрут: {0}"
+
+msgctxt "pattern"
+msgid "Endless: the run goes on.{0}"
+msgstr "Бесконечный режим: забег продолжается.{0}"
+
+msgctxt "pattern"
+msgid "Boon: {0}"
+msgstr "Дар: {0}"
+
+msgctxt "pattern"
+msgid "Crew drill: {0}"
+msgstr "Тренировка команды: {0}"
+
+msgctxt "pattern"
+msgid "Sponsor: {0}"
+msgstr "Спонсор: {0}"
+
+msgctxt "pattern"
+msgid "Team contract: {0} {1}"
+msgstr "Командный контракт: {0} {1}"
+
+msgctxt "pattern"
+msgid "Your vote{0}"
+msgstr "Ваш голос{0}"
+
+msgctxt "pattern"
+msgid "Voted: {0}"
+msgstr "Проголосовали: {0}"
+
+msgctxt "pattern"
+msgid "{0} (your vote)"
+msgstr "{0} (ваш голос)"
+
+msgctxt "pattern"
+msgid "Voted: {0}\n"
+msgstr "Проголосовали: {0}\n"
+
+msgctxt "pattern"
+msgid "Overdrive ended: {0}"
+msgstr "Форсаж завершён: {0}"
+
+msgctxt "pattern"
+msgid "overdrive ended ({0})"
+msgstr "форсаж завершён ({0})"
+
+msgctxt "pattern"
+msgid "{0}s stun"
+msgstr "{0} с оглушения"
+
+msgctxt "pattern"
+msgid "{0}% self heal"
+msgstr "{0}% самолечения"
+
+msgctxt "pattern"
+msgid "{0} HP ally heal"
+msgstr "{0} ОЗ лечения союзника"
+
+msgctxt "pattern"
+msgid "{0}% heal over time"
+msgstr "{0}% лечения со временем"
+
+msgctxt "pattern"
+msgid "{0} rally strength"
+msgstr "сила клича {0}"
+
+msgctxt "pattern"
+msgid "{0}% revive health"
+msgstr "{0}% здоровья при возрождении"
+
+msgctxt "pattern"
+msgid "{0}% power"
+msgstr "{0}% силы"
+
+msgctxt "pattern"
+msgid "{0} damage"
+msgstr "{0} урона"
+
+msgctxt "@ClassHost::EndOverdrive#2866"
+msgid "Overdrive ended: "
+msgstr "Форсаж завершён: "
+
+msgctxt "@ClassHost::EndOverdrive#2868"
+msgid "overdrive ended ("
+msgstr "форсаж завершён ("
+
+msgctxt "@ResearchCrew::HostRunEnd#2799"
+msgid "Sponsor: "
+msgstr "Спонсор: "
+
 msgctxt "@RpgRuntime::AbilityLimitText#150"
 msgid "  - next "
 msgstr "  - след. "
@@ -7980,6 +8772,58 @@ msgctxt "@RpgRuntime::BuildAttrSideTexts#1157"
 msgid "<color=#ffd75a><b>NEW "
 msgstr "<color=#ffd75a><b>НОВОЕ "
 
+msgctxt "@RpgRuntime::BuildEffects#2663"
+msgid "<color=#9a9ca0>Without talents → now"
+msgstr "<color=#9a9ca0>Без талантов → сейчас"
+
+msgctxt "@RpgRuntime::BuildEffects#2663"
+msgid ". Ability numbers include gear, perks and attributes; passives show what talents add.</color>"
+msgstr ". Числа способностей учитывают снаряжение, перки и характеристики; пассивные показывают, что добавляют таланты.</color>"
+
+msgctxt "@RpgRuntime::BuildEffects#2664"
+msgid ">→ after Confirm</color>"
+msgstr ">→ после подтверждения</color>"
+
+msgctxt "@RpgRuntime::BuildEffects#2665"
+msgid "</b>: copying <color="
+msgstr "</b>: копируется у <color="
+
+msgctxt "@RpgRuntime::BuildEffects#2665"
+msgid "</color>'s "
+msgstr "</color> - "
+
+msgctxt "@RpgRuntime::BuildEffects#2665"
+msgid " at <b>"
+msgstr " с силой <b>"
+
+msgctxt "@RpgRuntime::BuildEffects#2665"
+msgid "%</b> strength"
+msgstr "%</b>"
+
+msgctxt "@RpgRuntime::BuildEffects#2666"
+msgid "</b>: copy strength <b>"
+msgstr "</b>: сила копии <b>"
+
+msgctxt "@RpgRuntime::BuildEffects#2666"
+msgid "%</b> (no ability copied yet)"
+msgstr "%</b> (способность ещё не скопирована)"
+
+msgctxt "@RpgRuntime::BuildEffects#2673"
+msgid "adds <b>"
+msgstr "добавляет <b>"
+
+msgctxt "@RpgRuntime::BuildEffects#2674"
+msgid ">adds "
+msgstr ">добавляет "
+
+msgctxt "@RpgRuntime::BuildEffects#2679"
+msgid "  PENDING</color>"
+msgstr "  ОЖИДАЕТ</color>"
+
+msgctxt "@RpgRuntime::BuildEffects#2680"
+msgid "  PENDING</color>"
+msgstr "  ОЖИДАЕТ</color>"
+
 msgctxt "@RpgRuntime::BuildHostHead#698"
 msgid "<color=#ff9999>Paused: the host runs RepoRPG "
 msgstr "<color=#ff9999>Приостановлено: у хоста RepoRPG "
@@ -8071,6 +8915,38 @@ msgstr "(улучшение)"
 msgctxt "@RpgRuntime::BuildSynergyLine#2259"
 msgid "</b> with <color="
 msgstr "</b> и <color="
+
+msgctxt "@RpgRuntime::BuildVoteCards#2742"
+msgid "Reward: "
+msgstr "Награда: "
+
+msgctxt "@RpgRuntime::BuildVoteCards#2743"
+msgid "<b>Accept</b>\n"
+msgstr "<b>Принять</b>\n"
+
+msgctxt "@RpgRuntime::BuildVoteCards#2743"
+msgid "\n<color=#73ff66>Reward: "
+msgstr "\n<color=#73ff66>Награда: "
+
+msgctxt "@RpgRuntime::BuildVoteCards#2743"
+msgid " (everyone in it)</color>\n<color=#ff9a8a>Stakes: "
+msgstr " (каждому участнику)</color>\n<color=#ff9a8a>Ставка: "
+
+msgctxt "@RpgRuntime::BuildVoteCards#2746"
+msgid "Decided by vote: "
+msgstr "Решается голосованием: "
+
+msgctxt "@RpgRuntime::BuildVoteCards#2746"
+msgid ". Joining after the vote: no reward, no loss. In a level you can also hold the call-out key to accept."
+msgstr ". Кто присоединится после голосования - без награды и без потерь. На уровне можно также удерживать клавишу оклика, чтобы принять."
+
+msgctxt "@RpgRuntime::BuildVoteCards#2763"
+msgid "Team boon ("
+msgstr "Дар команды ("
+
+msgctxt "@RpgRuntime::BuildVoteCards#2776"
+msgid " · Reward: "
+msgstr " · Награда: "
 
 msgctxt "@RpgRuntime::BuildVoteRows#806"
 msgid "  <color=#9a9ca0>· your vote: "
@@ -8171,6 +9047,10 @@ msgstr ": снова "
 msgctxt "@RpgRuntime::ChangeRep#319"
 msgid " locked again"
 msgstr " опять недоступно"
+
+msgctxt "@RpgRuntime::CheckCritical#2682"
+msgid " is critical"
+msgstr " в критическом состоянии"
 
 msgctxt "@RpgRuntime::CheckPerkMilestones#556"
 msgid "Perk ready! Choose one in the menu ("
@@ -8856,6 +9736,18 @@ msgctxt "@RpgRuntime::DrawRunsPage#2503"
 msgid "<b>THIS RUN</b>\n"
 msgstr "<b>ЭТОТ ЗАБЕГ</b>\n"
 
+msgctxt "@RpgRuntime::DrawSectionTab#2653"
+msgid " (LOCKED)"
+msgstr " (ЗАКРЫТО)"
+
+msgctxt "@RpgRuntime::DrawShopBuyback#2634"
+msgid "\n<color=#9a9ca0>Exact price: "
+msgstr "\n<color=#9a9ca0>Точная цена: "
+
+msgctxt "@RpgRuntime::DrawShopBuyback#2634"
+msgid " (discounts don't apply)</color>"
+msgstr " (скидки не действуют)</color>"
+
 msgctxt "@RpgRuntime::DrawShopBuyback#919"
 msgid "Buy back "
 msgstr "Выкупить "
@@ -8948,6 +9840,22 @@ msgctxt "@RpgRuntime::DrawShopContent#673"
 msgid "Line: "
 msgstr "Свойство: "
 
+msgctxt "@RpgRuntime::DrawShopCrates#2628"
+msgid "Buy a "
+msgstr "Купить "
+
+msgctxt "@RpgRuntime::DrawShopCrates#2628"
+msgid "Mystery Crate for "
+msgstr "ящик с сюрпризом за "
+
+msgctxt "@RpgRuntime::DrawShopGrid#2621"
+msgid "<color=#ff9a8a>Need "
+msgstr "<color=#ff9a8a>Нужно ещё "
+
+msgctxt "@RpgRuntime::DrawShopGrid#2621"
+msgid " more "
+msgstr " "
+
 msgctxt "@RpgRuntime::DrawShopResearchE#895"
 msgid "Next visit's featured deal: <color="
 msgstr "Предложение на витрине в следующий визит: <color="
@@ -8975,6 +9883,22 @@ msgstr "     <color=#ffb21e><b>РИВЕТ:</b></color> <i>\""
 msgctxt "@RpgRuntime::DrawShopTabBody#2580"
 msgid " is locked"
 msgstr ": закрыто"
+
+msgctxt "@RpgRuntime::DrawShopVoteView#2652"
+msgid "<color=#9a9ca0>Back to the shop: the button in the strip above, or "
+msgstr "<color=#9a9ca0>Назад в магазин: кнопка в полосе выше или "
+
+msgctxt "@RpgRuntime::DrawShopVoteView#2652"
+msgid ". The vote view closes once you've voted.</color>"
+msgstr ". Окно голосования закроется, когда вы проголосуете.</color>"
+
+msgctxt "@RpgRuntime::DrawShopWishlist#2635"
+msgid "Wishlist: <b>"
+msgstr "Список желаний: <b>"
+
+msgctxt "@RpgRuntime::DrawShopWishlist#2636"
+msgid "Change: "
+msgstr "Изменить: "
 
 msgctxt "@RpgRuntime::DrawStyle#1080"
 msgid "Title: "
@@ -9031,6 +9955,14 @@ msgstr "нужно: "
 msgctxt "@RpgRuntime::DrawUpgradeRow#680"
 msgid "<color=#ff9a8a>Available "
 msgstr "<color=#ff9a8a>Доступно "
+
+msgctxt "@RpgRuntime::DrawVoteOption#2816"
+msgid "Your vote"
+msgstr "Ваш голос"
+
+msgctxt "@RpgRuntime::DrawVoterIcons#2818"
+msgid "Voted: "
+msgstr "Проголосовали: "
 
 msgctxt "@RpgRuntime::ElementText#1753"
 msgid ">Element: "
@@ -9328,9 +10260,33 @@ msgctxt "@RpgRuntime::NodeValues#2271"
 msgid "  ·  Next: "
 msgstr "  ·  Далее: "
 
+msgctxt "@RpgRuntime::NoteCrewResults#2798"
+msgid "Crew drill: "
+msgstr "Тренировка команды: "
+
+msgctxt "@RpgRuntime::NoteCrewResults#2799"
+msgid "Sponsor: "
+msgstr "Спонсор: "
+
+msgctxt "@RpgRuntime::NoteRunShapeResults#2789"
+msgid "Route: "
+msgstr "Маршрут: "
+
+msgctxt "@RpgRuntime::NoteRunShapeResults#2793"
+msgid "Endless: the run goes on."
+msgstr "Бесконечный режим: забег продолжается."
+
+msgctxt "@RpgRuntime::NoteRunShapeResults#2797"
+msgid "Boon: "
+msgstr "Дар: "
+
 msgctxt "@RpgRuntime::NoteSetting#2539"
 msgid "Bound to: "
 msgstr "Назначено: "
+
+msgctxt "@RpgRuntime::NoteTeamResult#2800"
+msgid "Team contract: "
+msgstr "Командный контракт: "
 
 msgctxt "@RpgRuntime::NoticeWhere#2096"
 msgid "Open ["
@@ -9820,6 +10776,10 @@ msgctxt "@RpgRuntime::SettingsDetail#2547"
 msgid ". Saved in the config file under ["
 msgstr ". Хранится в файле конфигурации: ["
 
+msgctxt "@RpgRuntime::ShopEntryDetail"
+msgid "Unlock"
+msgstr "Снять фиксацию"
+
 msgctxt "@RpgRuntime::ShopEntryDetail#2397"
 msgid "Buy "
 msgstr "Купить: "
@@ -9843,6 +10803,18 @@ msgstr "Купить: "
 msgctxt "@RpgRuntime::ShopEntryDetail#2599"
 msgid " for "
 msgstr " за "
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2605"
+msgid "Lock for next visit "
+msgstr "Зафиксировать до следующего визита: "
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2614"
+msgid "Haggle over "
+msgstr "Торг за "
+
+msgctxt "@RpgRuntime::ShopEntryDetail#2614"
+msgid ": a 50% chance it's 25% cheaper, a 50% chance it's 10% dearer. One haggle per shop visit."
+msgstr ": 50% шанс, что станет на 25% дешевле, 50% - что на 10% дороже. Один торг за визит в магазин."
 
 msgctxt "@RpgRuntime::ShopRow#2397"
 msgid "Buy "
@@ -10004,6 +10976,10 @@ msgctxt "@RpgRuntime::VoteTeam#1021"
 msgid "You voted to decline "
 msgstr "Вы проголосовали против: "
 
+msgctxt "@RpgRuntime::VtFill#2835"
+msgid " (your vote)"
+msgstr " (ваш голос)"
+
 msgctxt "@RpgRuntime::WaitingFor#2110"
 msgid "<color=#ffd75a>Waiting for:</color> "
 msgstr "<color=#ffd75a>Ждём:</color> "
@@ -10011,6 +10987,10 @@ msgstr "<color=#ffd75a>Ждём:</color> "
 msgctxt "@RpgRuntime::WhoText#2110"
 msgid "<color=#ffd75a>Waiting for:</color> "
 msgstr "<color=#ffd75a>Ждём:</color> "
+
+msgctxt "@RpgRuntime::WhoText#2838"
+msgid "Voted: "
+msgstr "Проголосовали: "
 
 msgctxt "@Scrap::HostGift#485"
 msgid "not enough "
