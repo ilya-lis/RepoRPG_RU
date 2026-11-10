@@ -77,6 +77,7 @@ namespace RepoRPG_RU
             {
                 if (memo.TryGetValue(text, out result)) return result ?? text;
             }
+            steps = 0;
             result = Derive(text, 0);
             lock (Gate)
             {
@@ -87,7 +88,10 @@ namespace RepoRPG_RU
             return result ?? text;
         }
 
-        private const int MaxDepth = 3;
+        // How far a text is taken apart (a line of a block, a cell of the line, a sentence of the cell, a name in the sentence...)
+        // and how much work one text may cost. Past either limit the answer is "unknown", never "half done".
+        private const int MaxDepth = 6;
+        private const int MaxSteps = 4000;
 
         /// <summary>A part of a bigger text: same work, same memory.</summary>
         private static string Sub(string text, int depth)
@@ -100,6 +104,9 @@ namespace RepoRPG_RU
             }
             int before = cuts;
             result = Derive(text, depth);
+#if TRACE
+            Console.Error.WriteLine(new string(' ', depth * 2) + depth + " [" + text + "] => " + (result ?? "-") + (cuts != before ? "   (cut)" : ""));
+#endif
             if (result == null && cuts != before) return null;      // given up because of the depth, not because there is no answer
             lock (Gate)
             {
@@ -109,13 +116,33 @@ namespace RepoRPG_RU
         }
 
         [ThreadStatic] private static int cuts;
+        [ThreadStatic] private static int steps;
 
-        private static string Derive(string text, int depth)
+        /// <summary>
+        /// A piece of a bigger text. "unknown" is raised when the search was cut short: the piece may well have a
+        /// translation, so the caller must not build a result that leaves it in English.
+        /// </summary>
+        private static string Piece(string text, int depth, ref bool unknown)
+        {
+            int before = cuts;
+            string t = Sub(text, depth + 1);
+            if (t == null && cuts != before) unknown = true;
+            return t;
+        }
+
+        /// <summary>The dictionary itself: the text as it is, or in another case.</summary>
+        private static string Exact(string text)
         {
             string r;
             if (map.TryGetValue(text, out r)) return r;
-            if ((r = ByCase(text)) != null) return r;
-            if (depth >= MaxDepth) { cuts++; return null; }
+            return ByCase(text);
+        }
+
+        private static string Derive(string text, int depth)
+        {
+            string r = Exact(text);
+            if (r != null) return r;
+            if (depth >= MaxDepth || ++steps > MaxSteps) { cuts++; return null; }
             r = Compose(text, depth);
             // "+3% опыта, +3% Scrap": a known name that was left standing between translated parts
             if (r != null && HasLatin(r)) r = Islands(r, depth) ?? r;
@@ -221,7 +248,7 @@ namespace RepoRPG_RU
                 }
                 if (end - start >= 2 && !(start == 0 && end == n))
                 {
-                    string t = Sub(text.Substring(start, end - start), depth + 1);
+                    string t = Exact(text.Substring(start, end - start));
                     if (t != null)
                     {
                         if (sb == null) sb = new StringBuilder(n + 16);
@@ -253,8 +280,9 @@ namespace RepoRPG_RU
                 string k = suffixes[i].Key;
                 if (text.Length <= k.Length || string.CompareOrdinal(text, text.Length - k.Length, k, 0, k.Length) != 0) continue;
                 string rest = text.Substring(0, text.Length - k.Length);
-                string t = Sub(rest, depth + 1);
-                if (t == null && !(Pattern.Simple(rest) && NameLike(rest, false))) continue;       // a sentence of its own, not a name
+                bool unknown = false;
+                string t = Piece(rest, depth, ref unknown);
+                if (t == null && (unknown || !(Pattern.Simple(rest) && NameLike(rest, false)))) continue;       // a sentence of its own, not a name
                 return (t ?? rest) + suffixes[i].Value;
             }
             for (int i = 0; i < prefixes.Length; i++)
@@ -262,8 +290,9 @@ namespace RepoRPG_RU
                 string k = prefixes[i].Key;
                 if (text.Length <= k.Length || string.CompareOrdinal(text, 0, k, 0, k.Length) != 0) continue;
                 string rest = text.Substring(k.Length);
-                string t = Sub(rest, depth + 1);
-                if (t == null && !(Pattern.Simple(rest) && NameLike(rest, false))) continue;
+                bool unknown = false;
+                string t = Piece(rest, depth, ref unknown);
+                if (t == null && (unknown || !(Pattern.Simple(rest) && NameLike(rest, false)))) continue;
                 return prefixes[i].Value + (t ?? rest);
             }
             return null;
@@ -335,7 +364,9 @@ namespace RepoRPG_RU
             {
                 int end = at < 0 ? text.Length : at;
                 string part = text.Substring(start, end - start);
-                string t = Sub(part, depth + 1);
+                bool unknown = false;
+                string t = Piece(part, depth, ref unknown);
+                if (unknown) return null;
                 if (t != null) done++;
                 else if (mode != Lines && HasLatin(part))
                 {
@@ -390,7 +421,7 @@ namespace RepoRPG_RU
             if (lt < 0) return null;
             StringBuilder sb = new StringBuilder(text.Length + 16);
             int start = 0, i = lt, tags = 0;
-            bool any = false;
+            bool any = false, unknown = false;
             while (i >= 0 && i < text.Length)
             {
                 int close = text.IndexOf('>', i);
@@ -401,7 +432,8 @@ namespace RepoRPG_RU
                 if (i > start)
                 {
                     string run = text.Substring(start, i - start);
-                    string t = Sub(run, depth + 1);
+                    string t = Piece(run, depth, ref unknown);
+                    if (unknown) return null;
                     if (t != null) any = true;
                     sb.Append(t ?? run);
                 }
@@ -414,7 +446,8 @@ namespace RepoRPG_RU
             if (start < text.Length)
             {
                 string run = text.Substring(start);
-                string t = Sub(run, depth + 1);
+                string t = Piece(run, depth, ref unknown);
+                if (unknown) return null;
                 if (t != null) any = true;
                 sb.Append(t ?? run);
             }
@@ -560,6 +593,7 @@ namespace RepoRPG_RU
             public byte[] Kind;        // what a placeholder stands for, judged by the text around it: Value, Clause or Line
             public bool[] Numeric;     // "{0:N0}", "{1:0.#}": only a number fits
             public bool Counter;       // "HEAT {0}", "{0} XP": one shouted word and a number - "HEAT SINK" is somebody's name, not heat level "SINK"
+            public bool[] Dropped;     // the translation has no use for it: the English plural ending in "{0} item{1}"
 
             private const byte Value = 0, Clause = 1, Line = 2;
 
@@ -642,6 +676,14 @@ namespace RepoRPG_RU
                             if (c != ' ' && !(c >= 'A' && c <= 'Z')) bare = false;
                     p.Counter = bare;
                 }
+                p.Dropped = new bool[p.Slots.Length];
+                List<string> used = Fmt.Holes(translation);
+                for (int k = 0; k < p.Slots.Length; k++)
+                {
+                    bool kept = false;
+                    foreach (string h in used) if (Fmt.FormatIndex(h) == p.Slots[k]) kept = true;
+                    p.Dropped[k] = !kept;
+                }
                 p.Kind = new byte[p.Slots.Length];
                 for (int k = 0; k < p.Slots.Length; k++)
                 {
@@ -680,7 +722,28 @@ namespace RepoRPG_RU
 
             internal static bool Simple(string v)
             {
-                if (v.Length > 80 || !NameLike(v, true)) return false;
+                return v.Length <= 80 && NameLike(v, true) && Whole(v);
+            }
+
+            // "big bob", "the legend 27": players call themselves anything, but briefly
+            private static bool Short(string v)
+            {
+                if (v.Length > 32 || !Whole(v)) return false;
+                int words = 0;
+                bool inWord = false;
+                for (int i = 0; i < v.Length; i++)
+                {
+                    if (v[i] == '<' || v[i] == '>') return false;
+                    bool w = !IsBlank(v[i]);
+                    if (w && !inWord) words++;
+                    inWord = w;
+                }
+                return words <= 4;
+            }
+
+            // one thing, not several in a row and not a piece of rich text that starts or ends somewhere else
+            private static bool Whole(string v)
+            {
                 if (v.Length > 0 && (IsBlank(v[0]) || IsBlank(v[v.Length - 1]))) return false;
                 int open = 0;
                 for (int i = 0; i < v.Length; i++)
@@ -744,6 +807,13 @@ namespace RepoRPG_RU
                         if (k == 0 && Lits[0].Length == 0 && v.Length > 0 && v[0] == ' ') return null;
                         if (k == caught.Length - 1 && Lits[k + 1].Length == 0 && v.Length > 0 && v[v.Length - 1] == ' ') return null;
                     }
+                    if (Dropped[k])
+                    {
+                        // what the translation throws away must be nothing but an ending: "", "s", "ies"
+                        if (v.Length > 3) return null;
+                        for (int q = 0; q < v.Length; q++) if (!IsLatinLetter(v[q])) return null;
+                        continue;
+                    }
                     if (Glued[k] && v.Length > 0 && IsLatinLetter(v[0]))
                     {
                         // "Unlock{0}" + "s at Regular reputation" is another sentence; "item{1}" + "s" is this one
@@ -770,10 +840,14 @@ namespace RepoRPG_RU
                         }
                         string value = caught[slot];
                         // a name inside the text may be translatable on its own: "Equipped: Iron Plate"
-                        string inner = Sub(value, depth + 1);
+                        bool unknown = false;
+                        string inner = Piece(value, depth, ref unknown);
+                        if (unknown) return null;
                         // ...and a clause has to be: "<English sentence> Это нельзя отменить." helps nobody
                         if (inner == null && Kind[slot] == Clause && HasLatin(value) && !Simple(value)) return null;
                         if (inner == null && Counter && HasLatin(value)) return null;
+                        // ...and what stays English inside a sentence is a name or a nickname, not the rest of another sentence
+                        if (inner == null && Kind[slot] == Value && HasLatin(value) && !Simple(value) && !Short(value)) return null;
                         sb.Append(inner ?? value);
                         i = close;
                         continue;

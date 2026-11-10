@@ -69,6 +69,11 @@ def split_runs(pattern):
 def sample(text, expected):
     """fill the placeholders of an english text and of its translation with the same values"""
     vals = {}
+    # a placeholder the translation leaves out is the English plural ending ("{0} item{1}"): the mod fills it with "s"
+    kept = set(int(m.group(1)) for m in (NUM.match(h) for h in HOLE.findall(expected)) if m)
+    for h in HOLE.findall(text):
+        m = NUM.match(h)
+        if m and int(m.group(1)) not in kept: vals[int(m.group(1))] = 's'
     def fill(s):
         def rep(m):
             h = m.group(0)
