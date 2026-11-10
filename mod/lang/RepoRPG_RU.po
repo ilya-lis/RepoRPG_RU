@@ -5905,6 +5905,336 @@ msgstr "Сначала одолейте Ликвидатора: извлечен
 msgid "Efficient Rounds"
 msgstr "Экономные патроны"
 
+msgid "Elite Patrols"
+msgstr "Элитные патрули"
+
+msgid "Elites spawn 25% more often."
+msgstr "Элита появляется на 25% чаще."
+
+msgid "Inflation"
+msgstr "Инфляция"
+
+msgid "Mod shop prices +10%."
+msgstr "Цены в магазине мода +10%."
+
+msgid "Fewer Second Chances"
+msgstr "Меньше вторых шансов"
+
+msgid "One fewer death save on boss levels (never below 0)."
+msgstr "На уровнях с боссом на одно спасение от смерти меньше (но не ниже 0)."
+
+msgid "Brittle Haul"
+msgstr "Хрупкая добыча"
+
+msgid "Valuables take 15% more damage when hit."
+msgstr "Ценности получают на 15% больше урона от ударов."
+
+msgid "Mutating Bosses"
+msgstr "Мутирующие боссы"
+
+msgid "Bosses get one more modifier."
+msgstr "Боссы получают ещё один модификатор."
+
+msgid "Narrow Choice"
+msgstr "Узкий выбор"
+
+msgid "Boon votes offer 2 boons instead of 3."
+msgstr "В голосованиях за дар предлагается 2 дара вместо 3."
+
+msgid "Hard Hitters"
+msgstr "Тяжёлая рука"
+
+msgid "Monsters deal 10% more damage."
+msgstr "Монстры наносят на 10% больше урона."
+
+msgid "Cold Start"
+msgstr "Холодный старт"
+
+msgid "Starting Scrap (Seed money, late-join Scrap) is halved."
+msgstr "Стартовый лом (стартовый капитал, лом за позднее подключение) уменьшен вдвое."
+
+msgid "Rising Heat"
+msgstr "Растущий накал"
+
+msgid "In heat votes, Skip only wins with a majority (otherwise the top card wins)."
+msgstr "В голосованиях за накал «Пропустить» побеждает только большинством голосов (иначе побеждает верхняя карта)."
+
+msgid "Sharp Ears"
+msgstr "Острый слух"
+
+msgid "Monsters hear noises 15% farther."
+msgstr "Монстры слышат шум на 15% дальше."
+
+msgid "Short Supply"
+msgstr "Дефицит"
+
+msgid "The shop has one fewer gear item and one fewer consumable each visit."
+msgstr "При каждом посещении в магазине на один предмет снаряжения и на один расходник меньше."
+
+msgid "Tough Hides"
+msgstr "Толстая шкура"
+
+msgid "Monsters have 15% more health."
+msgstr "У монстров на 15% больше здоровья."
+
+msgid "Slow Recovery"
+msgstr "Медленное восстановление"
+
+msgid "Revived players come back with 25% less health."
+msgstr "Возрождённые игроки возвращаются со здоровьем на 25% меньше."
+
+msgid "Escorted Bosses"
+msgstr "Боссы с эскортом"
+
+msgid "Every boss comes with an elite escort (the finale gets two)."
+msgstr "Каждого босса сопровождает элитный эскорт (в финале - два)."
+
+msgid "Tight Contracts"
+msgstr "Жёсткие контракты"
+
+msgid "Contract targets are 15% higher."
+msgstr "Цели контрактов на 15% выше."
+
+msgid "Heavy Quotas"
+msgstr "Тяжёлые квоты"
+
+msgid "Haul goals +10%."
+msgstr "Цели по добыче +10%."
+
+msgid "Scarce Parts"
+msgstr "Нехватка деталей"
+
+msgid "Monsters drop 30% fewer crafting parts."
+msgstr "Монстры роняют на 30% меньше деталей для крафта."
+
+msgid "Veteran Elites"
+msgstr "Элита-ветераны"
+
+msgid "Elites get one more modifier (up to 3)."
+msgstr "Элита получает ещё один модификатор (до 3)."
+
+msgid "Marked Earner"
+msgstr "Меченый добытчик"
+
+msgid "Each level, last level's top Scrap earner is Marked: noises near them carry 25% farther."
+msgstr "На каждом уровне тот, кто заработал больше всех лома на прошлом, получает Метку: шум рядом с ним разносится на 25% дальше."
+
+msgid "Final Form"
+msgstr "Финальная форма"
+
+msgid "The finale boss gets a third phase at 25% health: another escort and one more modifier."
+msgstr "Финальный босс получает третью фазу при 25% здоровья: ещё один эскорт и ещё один модификатор."
+
+msgid "The Liquidator"
+msgstr "Ликвидатор"
+
+msgid "+{0:0}% XP, +{1:0}% Scrap, +{2:0}% Data"
+msgstr "+{0:0}% опыта, +{1:0}% лома, +{2:0}% данных"
+
+msgid ", +{0} gear luck"
+msgstr ", +{0} к удаче снаряжения"
+
+msgid "normal rewards"
+msgstr "обычные награды"
+
+msgid "Ascension {0} win"
+msgstr "Победа в Вознесении {0}"
+
+msgid "Ascension: you're the Marked Earner this level - noises near you carry farther"
+msgstr "Вознесение: на этом уровне вы - Меченый добытчик, шум рядом с вами разносится дальше"
+
+msgid "Unspent Potential"
+msgstr "Нераскрытый потенциал"
+
+msgid "Bruiser"
+msgstr "Громила"
+
+msgid "Ghost"
+msgstr "Призрак"
+
+msgid "Pack Rat"
+msgstr "Барахольщик"
+
+msgid "Lucky Devil"
+msgstr "Везунчик"
+
+msgid "Marksman"
+msgstr "Меткий стрелок"
+
+msgid "Spellslinger"
+msgstr "Чародей"
+
+msgid "Field Medic"
+msgstr "Полевой медик"
+
+msgid "Acrobat"
+msgstr "Акробат"
+
+msgid "Specialist"
+msgstr "Специалист"
+
+msgid "Tank"
+msgstr "Танк"
+
+msgid "Jack of All Trades"
+msgstr "Мастер на все руки"
+
+msgid "Balanced"
+msgstr "Сбалансированный"
+
+msgid "Player {0}"
+msgstr "Игрок {0}"
+
+msgid "{0} players"
+msgstr "игроков: {0}"
+
+msgid "{0} / {1} players"
+msgstr "игроков: {0} / {1}"
+
+msgid "The Boss"
+msgstr "Босс"
+
+msgid "Boss kill (Bounty Board)"
+msgstr "Убийство босса («Доска наград»)"
+
+msgid "Boss kill"
+msgstr "Убийство босса"
+
+msgid "Boss core"
+msgstr "Ядро босса"
+
+msgid "another player"
+msgstr "другой игрок"
+
+msgid "The {0} was replaced by the {1}: your Lv {2} carries over"
+msgstr "Класс «{0}» заменён классом «{1}»: ваш ур. {2} сохраняется"
+
+msgid " and your {0} skill point{1} are back to spend."
+msgstr " , а очки навыков возвращены для траты: {0}."
+
+msgid " (mastered, alternate passive included)"
+msgstr " (освоен, включая альтернативную пассивку)"
+
+msgid " (best Lv {0})"
+msgstr " (лучший ур. {0})"
+
+msgid "Contract"
+msgstr "Контракт"
+
+msgid "Hard contracts"
+msgstr "сложные контракты"
+
+msgid "Brutal contracts and their chain"
+msgstr "жестокие контракты и их цепочка"
+
+msgid "a third reward option"
+msgstr "третий вариант награды"
+
+msgid "{0} {1} + {2} XP"
+msgstr "{0} {1} + {2} опыта"
+
+msgid "  (bonus: +{0} {1})"
+msgstr "  (бонус: +{0} {1})"
+
+msgid "Winner: {0} {1} + {2} XP + a reward pick"
+msgstr "Победителю: {0} {1} + {2} опыта + награда на выбор"
+
+msgid "A random module"
+msgstr "Случайный модуль"
+
+msgid "A module of your choice"
+msgstr "Модуль на ваш выбор"
+
+msgid "No rivals took it - void"
+msgstr "Никто из соперников не взял - аннулирован"
+
+msgid "Rival contract"
+msgstr "Контракт соперничества"
+
+msgid "Exterminate: kill {0} enemies"
+msgstr "Истребление: убейте врагов ({0})"
+
+msgid "Elite Hunter: kill an elite enemy"
+msgstr "Охотник на элиту: убейте элитного врага"
+
+msgid "Speedrun: finish the level within {0} min"
+msgstr "Спидран: пройдите уровень за {0} мин"
+
+msgid "No Casualties: nobody dies this level"
+msgstr "Без потерь: на этом уровне никто не погибает"
+
+msgid "Rescue: revive a teammate"
+msgstr "Спасение: возродите напарника"
+
+msgid "Specialist: use your ability {0} times (personal)"
+msgstr "Специалист: используйте способность x{0} (личный)"
+
+msgid "Haul: complete {0} extraction points"
+msgstr "Добыча: завершите точки извлечения ({0})"
+
+msgid "+{0} attribute point"
+msgstr "+{0} к очкам характеристик"
+
+msgid "nothing"
+msgstr "ничего"
+
+msgid "5 monsters lured"
+msgstr "приманено 5 монстров"
+
+msgid "  <color=#9a9ca0>(this curse doesn't weaken)</color>"
+msgstr "  <color=#9a9ca0>(это проклятие не слабеет)</color>"
+
+msgid "  <color=#9a9ca0>(attunement: {0}% weaker)</color>"
+msgstr "  <color=#9a9ca0>(сонастройка: слабее на {0}%)</color>"
+
+msgid "PAYOUT {0}{1}  x{2:0.##}"
+msgstr "ВЫПЛАТЫ: {0}{1}  x{2:0.##}"
+
+msgid "Normal"
+msgstr "Нормально"
+
+msgid "Gentle scaling, quick leveling and generous rewards: the max class level comes in about 19 levels."
+msgstr "Мягкое масштабирование, быстрая прокачка и щедрые награды: максимальный уровень класса достигается примерно за 19 уровней."
+
+msgid "A softer run: fewer, weaker monsters, quicker leveling (max class level in about 24 levels), a bit more Scrap and better loot."
+msgstr "Забег помягче: монстров меньше и они слабее, прокачка быстрее (максимальный уровень класса примерно за 24 уровня), чуть больше лома и добыча получше."
+
+msgid "The intended experience: the max class level comes late in a long run (around level 30)."
+msgstr "Игра, какой она задумана: максимальный уровень класса достигается ближе к концу долгого забега (около 30-го уровня)."
+
+msgid "Busier, tougher levels and slower leveling (about 30% of the max class level by level 8, the max around level 38), tighter caps and economy."
+msgstr "Уровни оживлённее и жёстче, прокачка медленнее (около 30% максимального уровня класса к 8-му уровню, максимум около 38-го), ограничения и экономика строже."
+
+msgid "Strict scaling, slow leveling (the max class level around level 47), a tight economy and the tightest caps."
+msgstr "Строгое масштабирование, медленная прокачка (максимальный уровень класса около 47-го уровня), жёсткая экономика и самые строгие ограничения."
+
+msgid "Difficulty: Normal"
+msgstr "Сложность: Нормально"
+
+msgid "Your weapon burns monsters for the next level (Burn: damage over time; the first one panics them)."
+msgstr "На следующем уровне ваше оружие поджигает монстров (Горение: урон со временем; первое вызывает у них панику)."
+
+msgid "Your weapon shocks monsters for the next level (Static: a short stun, sometimes jumping to a second monster)."
+msgstr "На следующем уровне ваше оружие бьёт монстров током (Статика: короткое оглушение, иногда перескакивает на второго монстра)."
+
+msgid "Your weapon chills monsters for the next level (slower; enough hits in a row freeze them)."
+msgstr "На следующем уровне ваше оружие охлаждает монстров (они медленнее; несколько попаданий подряд замораживают их)."
+
+msgid "Your weapon corrodes monsters for the next level (Rot: they take more damage from everything)."
+msgstr "На следующем уровне ваше оружие разъедает монстров (Гниение: они получают больше урона от всего)."
+
+msgid "Your weapon weakens monsters for the next level (Weaken: they hit you softer)."
+msgstr "На следующем уровне ваше оружие ослабляет монстров (Ослабление: они бьют вас слабее)."
+
+msgid "SHATTER"
+msgstr "РАСКОЛ"
+
+msgid "OVERLOAD"
+msgstr "ПЕРЕГРУЗКА"
+
+msgid "SHORT CIRCUIT"
+msgstr "КОРОТКОЕ ЗАМЫКАНИЕ"
+
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
 
@@ -6717,6 +7047,142 @@ msgid "Couldn't recharge"
 msgstr "Не удалось зарядить"
 
 msgctxt "term"
+msgid "Lamplighter"
+msgstr "Фонарщик"
+
+msgctxt "term"
+msgid "Locksmith"
+msgstr "Взломщик"
+
+msgctxt "term"
+msgid "Rival"
+msgstr "Соперничество"
+
+msgctxt "term"
+msgid "Easy"
+msgstr "Легко"
+
+msgctxt "term"
+msgid "Hard"
+msgstr "Сложно"
+
+msgctxt "term"
+msgid "Brutal"
+msgstr "Жестоко"
+
+msgctxt "term"
+msgid "Stranger"
+msgstr "Незнакомец"
+
+msgctxt "term"
+msgid "Known"
+msgstr "Знакомый"
+
+msgctxt "term"
+msgid "Trusted"
+msgstr "Доверенный"
+
+msgctxt "term"
+msgid "Partner"
+msgstr "Партнёр"
+
+msgctxt "term"
+msgid "Sinew"
+msgstr "Сухожилие"
+
+msgctxt "term"
+msgid "Core Shard"
+msgstr "Осколок ядра"
+
+msgctxt "term"
+msgid "Prime Essence"
+msgstr "Первичная эссенция"
+
+msgctxt "term"
+msgid "Boss Heart"
+msgstr "Сердце босса"
+
+msgctxt "term"
+msgid "Hardcore"
+msgstr "Хардкор"
+
+msgctxt "term"
+msgid "Glass Cannon"
+msgstr "Стеклянная пушка"
+
+msgctxt "term"
+msgid "No Shop"
+msgstr "Без магазина"
+
+msgctxt "term"
+msgid "Fragile Goods"
+msgstr "Хрупкий товар"
+
+msgctxt "term"
+msgid "Elite Swarm"
+msgstr "Рой элиты"
+
+msgctxt "term"
+msgid "Lone Wolves"
+msgstr "Одинокие волки"
+
+msgctxt "term"
+msgid "Thin Wallets"
+msgstr "Тощие кошельки"
+
+msgctxt "term"
+msgid "Iron Bodies"
+msgstr "Железные тела"
+
+msgctxt "term"
+msgid "Short Fuse"
+msgstr "Короткий фитиль"
+
+msgctxt "term"
+msgid "Blackout"
+msgstr "Затемнение"
+
+msgctxt "term"
+msgid "Relaxed"
+msgstr "Расслабленно"
+
+msgctxt "term"
+msgid "Fire"
+msgstr "Огонь"
+
+msgctxt "term"
+msgid "Shock"
+msgstr "Разряд"
+
+msgctxt "term"
+msgid "Frost"
+msgstr "Мороз"
+
+msgctxt "term"
+msgid "Corrosive"
+msgstr "Коррозия"
+
+msgctxt "term"
+msgid "Burn"
+msgstr "Горение"
+
+msgctxt "term"
+msgid "Static"
+msgstr "Статика"
+
+msgctxt "term"
+msgid "Chill"
+msgstr "Холод"
+
+msgctxt "term"
+msgid "Rot"
+msgstr "Гниение"
+
+msgctxt "term"
+msgid "Weaken"
+msgstr "Ослабление"
+
+msgctxt "term"
 msgid "max"
 msgstr "макс."
 
@@ -6868,6 +7334,26 @@ msgctxt "term"
 msgid "Gambler's Die"
 msgstr "Кубик азартного игрока"
 
+msgctxt "term"
+msgid "Medium"
+msgstr "Средне"
+
+msgctxt "term"
+msgid "Unrated"
+msgstr "Без оценки"
+
+msgctxt "term"
+msgid "Standard"
+msgstr "Стандартно"
+
+msgctxt "term"
+msgid "Nightmare"
+msgstr "Кошмар"
+
+msgctxt "term"
+msgid "Normal"
+msgstr "Нормально"
+
 msgctxt "pattern"
 msgid "{0}  - next {1}"
 msgstr "{0}  - след. {1}"
@@ -6982,7 +7468,7 @@ msgstr "{0} теперь предлагает: {1} (со следующей до
 
 msgctxt "pattern"
 msgid "{0}: back to {1} - {2} locked again"
-msgstr "{0}: снова {1} - {2} опять недоступно"
+msgstr "{0}: снова {1} - {2} (снова закрыто)"
 
 msgctxt "pattern"
 msgid "The Auditor fines you {0}"
@@ -6998,7 +7484,7 @@ msgstr "Цепочка оборвалась: {0}"
 
 msgctxt "pattern"
 msgid "RIVAL CONTRACT WON: {0}"
-msgstr "КОНТРАКТ СОПЕРНИКОВ ВЫИГРАН: {0}"
+msgstr "КОНТРАКТ СОПЕРНИЧЕСТВА ВЫИГРАН: {0}"
 
 msgctxt "pattern"
 msgid "CHAIN COMPLETE: {0}"
@@ -7858,7 +8344,7 @@ msgstr "Заменяет {0}: {1}"
 
 msgctxt "pattern"
 msgid "<color=#c8cacd><b>COMPLEXITY {0}</b>  {1}</color>"
-msgstr "<color=#c8cacd><b>СЛОЖНОСТЬ {0}</b>  {1}</color>"
+msgstr "<color=#c8cacd><b>СЛОЖНОСТЬ: {0}</b>  {1}</color>"
 
 msgctxt "pattern"
 msgid "{0} / {1} XP"
@@ -7910,7 +8396,7 @@ msgstr "   Билд: <color=#ffd75a>{0}</color>"
 
 msgctxt "pattern"
 msgid "<color=#ffb21e><b>{0}</b></color>  {1}\n<color=#c8cacd><b>COMPLEXITY {2}</b>  {3}</color>"
-msgstr "<color=#ffb21e><b>{0}</b></color>  {1}\n<color=#c8cacd><b>СЛОЖНОСТЬ {2}</b>  {3}</color>"
+msgstr "<color=#ffb21e><b>{0}</b></color>  {1}\n<color=#c8cacd><b>СЛОЖНОСТЬ: {2}</b>  {3}</color>"
 
 msgctxt "pattern"
 msgid "    Build: <color=#ffd75a>{0}</color>"
@@ -9181,6 +9667,58 @@ msgid "!Gift failed: {0}"
 msgstr "!Не удалось подарить: {0}"
 
 msgctxt "pattern"
+msgid "{0} doesn't seem to have RepoRPG: lobbies over 6 players need it{1}"
+msgstr "{0}: похоже, нет RepoRPG - он нужен в лобби больше 6 игроков{1}"
+
+msgctxt "pattern"
+msgid "Boss: {0}"
+msgstr "Босс: {0}"
+
+msgctxt "pattern"
+msgid "Account: your class records moved with the replaced classes: {0}. Titles are unchanged."
+msgstr "Аккаунт: записи ваших классов перенесены на заменившие их классы: {0}. Титулы не изменились."
+
+msgctxt "pattern"
+msgid "{0} {1} + {2} XP"
+msgstr "{0} {1} + {2} опыта"
+
+msgctxt "pattern"
+msgid "{0} + a reward pick"
+msgstr "{0} + награда на выбор"
+
+msgctxt "pattern"
+msgid "Gear: {0} or better"
+msgstr "Снаряжение: {0} или лучше"
+
+msgctxt "pattern"
+msgid "Crafting parts: {0}"
+msgstr "Детали для крафта: {0}"
+
+msgctxt "pattern"
+msgid "{0}+ gear"
+msgstr "{0}+ предмет"
+
+msgctxt "pattern"
+msgid "<color=#E0344B><b>CURSED:</b></color> {0}\n<color=#FF8A8A><b>[!] CURSE:</b> {1}</color>{2}"
+msgstr "<color=#E0344B><b>ПРОКЛЯТО:</b></color> {0}\n<color=#FF8A8A><b>[!] ПРОКЛЯТИЕ:</b> {1}</color>{2}"
+
+msgctxt "pattern"
+msgid "Custom (based on {0})"
+msgstr "Свой (на основе: {0})"
+
+msgctxt "pattern"
+msgid "Difficulty: {0}"
+msgstr "Сложность: {0}"
+
+msgctxt "pattern"
+msgid " · resists {0}"
+msgstr " · сопротивление: {0}"
+
+msgctxt "pattern"
+msgid " · weak to {0}"
+msgstr " · слабость: {0}"
+
+msgctxt "pattern"
 msgid "{0}s stun"
 msgstr "{0} с оглушения"
 
@@ -9211,6 +9749,14 @@ msgstr "{0}% силы"
 msgctxt "pattern"
 msgid "{0} damage"
 msgstr "{0} урона"
+
+msgctxt "@BigLobby::CheckJoiners#3963"
+msgid " doesn't seem to have RepoRPG: lobbies over 6 players need it"
+msgstr ": похоже, нет RepoRPG - он нужен в лобби больше 6 игроков"
+
+msgctxt "@Bosses::DebugPromoteNearest#3970"
+msgid "Boss: "
+msgstr "Босс: "
 
 msgctxt "@ClassHost::CancelDispatch#3007"
 msgid "Dispatch cancelled: "
@@ -9259,6 +9805,58 @@ msgstr ": ставка проиграна"
 msgctxt "@ClassHost::SettleLost#2990"
 msgid " lost the bet"
 msgstr " проигрывает ставку"
+
+msgctxt "@ClassMigration::MigrateAccount#3982"
+msgid "Account: your class records moved with the replaced classes: "
+msgstr "Аккаунт: записи ваших классов перенесены на заменившие их классы: "
+
+msgctxt "@ClassMigration::MigrateAccount#3982"
+msgid ". Titles are unchanged."
+msgstr ". Титулы не изменились."
+
+msgctxt "@ContractBoard::OptionText#4002"
+msgid "Gear: "
+msgstr "Снаряжение: "
+
+msgctxt "@ContractBoard::OptionText#4002"
+msgid " or better"
+msgstr " или лучше"
+
+msgctxt "@ContractBoard::OptionText#4003"
+msgid "Crafting parts: "
+msgstr "Детали для крафта: "
+
+msgctxt "@ContractBoard::RewardText#4001"
+msgid " + a reward pick"
+msgstr " + награда на выбор"
+
+msgctxt "@Contracts::Reward#4031"
+msgid "+ gear"
+msgstr "+ предмет"
+
+msgctxt "@Cursed::Describe#4044"
+msgid "<color=#E0344B><b>CURSED:</b></color> "
+msgstr "<color=#E0344B><b>ПРОКЛЯТО:</b></color> "
+
+msgctxt "@Cursed::Describe#4044"
+msgid "\n<color=#FF8A8A><b>[!] CURSE:</b> "
+msgstr "\n<color=#FF8A8A><b>[!] ПРОКЛЯТИЕ:</b> "
+
+msgctxt "@DifficultyPresets::Refresh#4065"
+msgid "Custom (based on "
+msgstr "Свой (на основе: "
+
+msgctxt "@DifficultyPresets::Refresh#4066"
+msgid "Difficulty: "
+msgstr "Сложность: "
+
+msgctxt "@Elements::AffinityText#4078"
+msgid " · resists "
+msgstr " · сопротивление: "
+
+msgctxt "@Elements::AffinityText#4079"
+msgid " · weak to "
+msgstr " · слабость: "
 
 msgctxt "@Net::Dispatch#3359"
 msgid "!Gift failed: "
@@ -9846,7 +10444,7 @@ msgstr ": снова "
 
 msgctxt "@RpgRuntime::ChangeRep#319"
 msgid " locked again"
-msgstr " опять недоступно"
+msgstr " (снова закрыто)"
 
 msgctxt "@RpgRuntime::CheckCritical#2682"
 msgid " is critical"
@@ -10058,7 +10656,7 @@ msgstr "   Билд: <color=#ffd75a>"
 
 msgctxt "@RpgRuntime::DrawClassHeader#1297"
 msgid "\n<color=#c8cacd><b>COMPLEXITY "
-msgstr "\n<color=#c8cacd><b>СЛОЖНОСТЬ "
+msgstr "\n<color=#c8cacd><b>СЛОЖНОСТЬ: "
 
 msgctxt "@RpgRuntime::DrawClassHeader#1298"
 msgid "    Build: <color=#ffd75a>"
@@ -10290,7 +10888,7 @@ msgstr "Заменяет "
 
 msgctxt "@RpgRuntime::DrawLeftColumn#1239"
 msgid "<color=#c8cacd><b>COMPLEXITY "
-msgstr "<color=#c8cacd><b>СЛОЖНОСТЬ "
+msgstr "<color=#c8cacd><b>СЛОЖНОСТЬ: "
 
 msgctxt "@RpgRuntime::DrawLeftColumn#1247"
 msgid "Build: <color=#ffd75a>"
@@ -11226,7 +11824,7 @@ msgstr "Исследование завершено: "
 
 msgctxt "@RpgRuntime::OnRivalResult#328"
 msgid "RIVAL CONTRACT WON: "
-msgstr "КОНТРАКТ СОПЕРНИКОВ ВЫИГРАН: "
+msgstr "КОНТРАКТ СОПЕРНИЧЕСТВА ВЫИГРАН: "
 
 msgctxt "@RpgRuntime::OnSalvageResult#998"
 msgid "Couldn't salvage "
@@ -11791,6 +12389,10 @@ msgstr "<color=#ffd75a>Ждём:</color> "
 msgctxt "@RpgRuntime::WhoText#2838"
 msgid "Voted: "
 msgstr "Проголосовали: "
+
+msgctxt "@RunShape::HostBossKilled#3970"
+msgid "Boss: "
+msgstr "Босс: "
 
 msgctxt "@Scrap::HostGift#485"
 msgid "not enough "

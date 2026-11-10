@@ -56,3 +56,14 @@
 +pattern	{0}% revive health	{0}% здоровья при возрождении
 +pattern	{0}% power	{0}% силы
 +pattern	{0} damage	{0} урона
+# сложность: классов (Easy / Medium / Hard), контрактов (Easy / Hard / Brutal), предустановок и уровня выплат.
+# Наречия, потому что одно и то же слово стоит то при «сложность», то при «контракт», то при «класс»
++term	Medium	Средне
++term	Unrated	Без оценки
++term	Standard	Стандартно
++term	Nightmare	Кошмар
++term	Easy	Легко
++term	Hard	Сложно
++term	Brutal	Жестоко
++term	Relaxed	Расслабленно
++term	Normal	Нормально
