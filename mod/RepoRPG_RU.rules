@@ -1,0 +1,586 @@
+# RepoRPG_RU.rules - what the add-on may and may not touch in RepoRPG.dll.
+# Written for RepoRPG 1.0.100. Plain text on purpose: after an update of the mod it can be adjusted without rebuilding anything.
+# The report (BepInEx/config/RepoRPG_RU/report.txt) lists every rule that no longer finds its target.
+#
+#   Type::Method(param)   the mod's own method and the name of its text parameter
+#   Type::Method#N        argument N (0-based) of a call; "Namespace.Type::Method" also matches other assemblies
+
+[hooks]
+# Everything the mod draws or measures passes through these helpers of its own.
+# The text is translated right at their entrance: before it is measured, shortened or wrapped.
+RpgRuntime::Label(text)
+RpgRuntime::ShadowLabel(text)
+RpgRuntime::BadgeText(text)
+RpgRuntime::CenterText(text)
+RpgRuntime::TextW(text)
+RpgRuntime::TextH(text)
+RpgRuntime::FitStyle(text)
+RpgRuntime::Fit(s)
+RpgRuntime::FitWidth(text)
+RpgRuntime::FitLines(text)
+RpgRuntime::LabelW(label)
+RpgRuntime::ChipW(label)
+RpgRuntime::BtnW(label)
+RpgRuntime::UBtn(label)
+RpgRuntime::Btn(label)
+# notices and dialogs: the text is stored first and drawn later
+RpgRuntime::Toast(text)
+RpgRuntime::Notify(text)
+RpgRuntime::Banner(text)
+RpgRuntime::PresetNote(text)
+RpgRuntime::AskConfirm(title, body, okLabel)
+RpgRuntime::AskPurchase(title, body)
+RpgRuntime::SetTip(title, body, foot)
+# pages of the in-game menu (MenuLib)
+NativeMenu::NewPage(title)
+NativeMenu::AddText(text)
+NativeMenu::AddButton(text)
+
+[calls]
+# The HUD measures some texts directly (GUIContent.text = ...) before drawing them: translated at that very call.
+UnityEngine.GUIContent::set_text
+
+[display]
+MenuLib.MenuAPI::CreateREPOButton#0
+MenuLib.MenuAPI::CreateREPOLabel#0
+MenuLib.MenuAPI::CreateREPOPopupPage#0
+
+[skip]
+# network, saves, parsers, self-checks: never touched inside the code (their texts are still translated when drawn)
+Net
+Json
+SaveBook
+SaveWriter
+RunStore
+Account
+HostSettings
+SettingsSync
+ClassDatabase
+LateJoinHost
+NetCodeCheck
+GameCheck
+MenuLibCheck
+Compat
+Guard
+PatchGuard
+Tuning
+HudTrace
+LoopTrace
+NetMeter
+VanillaStyle
+Game
+
+[keep]
+# whatever is sent to other players stays exactly as the mod wrote it
+Net::*
+
+[data]
+# embedded JSON: only these properties are text; everything else is an id, a number or a colour
+*: name, desc, complexityTip, evolveHow, evolveName, evolveDesc, flavor, unlock, bases
+*: !id, !key, !stat, !type, !requires, !tags, !icon, !color, !colour
+
+[probes]
+# the mod looks for these words in the names of OTHER plugins, never in its own interface texts
+ignore "late join"
+ignore "more players"
+ignore "shared upgrade"
+ignore "team upgrade"
+
+# ---------------------------------------------------------------------------------------------------------
+# Generated from the source of RepoRPG 1.0.100 (tools/flow.py): how the mod's own methods use their text arguments.
+
+[id]
+# the argument is compared, looked up or parsed somewhere down the line: a caption passed here is never replaced
+# inside the code (it is still translated when it is drawn)
+RpgRuntime::ClassStat#0                                    # name: -> StatSheet::Custom(name)
+RpgRuntime::StableHash#0                                   # s
+RpgRuntime::Find#1                                         # id
+RpgRuntime::OnClassNotice#2                                # text: field _cartState compared with a literal
+RpgRuntime::TickAltPassives#1                              # id: compared with a literal
+RpgRuntime::EndPull#0                                      # cancelled: compared with a literal
+RpgRuntime::OnCourierNotice#1                              # text: TEST:StartsWith
+RpgRuntime::TickCourierInstigator#1                        # id: compared with a literal
+RpgRuntime::TickThirdWave#1                                # id: switch
+RpgRuntime::ApplyThirdWaveExtras#0                         # id: switch
+RpgRuntime::OnWatchPing#1                                  # name: -> RpgRuntime::Notify(key)
+RpgRuntime::HasActive#0                                    # obj
+RpgRuntime::OnContractReply#4                              # reason: compared with a literal
+RpgRuntime::OnContractEvent#0                              # key: compared with a literal
+RpgRuntime::EndType#0                                      # obj: switch
+RpgRuntime::CEv#0                                          # key: -> SaveWriter::Enqueue(path)
+RpgRuntime::CEvOne#0                                       # key: compared with a literal
+RpgRuntime::ChangeRep#0                                    # giver: -> RpgRuntime::Notify(key)
+RpgRuntime::OnRivalResult#0                                # id
+RpgRuntime::TakeReward#1                                   # opt: switch
+RpgRuntime::TakeReward#2                                   # moduleId: -> GearX::Module(id)
+RpgRuntime::CurseKey#0                                     # id: CurseKeys.TryGetValue
+RpgRuntime::Curse#0                                        # id: -> RpgRuntime::CurseKey(id)
+RpgRuntime::OnCurseNotice#2                                # text: compared with a literal
+RpgRuntime::TryDeathSave#0                                 # source: compared with a literal
+RpgRuntime::GearStat#0                                     # key: -> StatSheet::Custom(name)
+RpgRuntime::AddModule#0                                    # id: -> GearX::Module(id)
+RpgRuntime::SlotModule#2                                   # id: -> GearX::Module(id)
+RpgRuntime::CraftModule#0                                  # chosen: local text -> RpgRuntime::AddModule(id)
+RpgRuntime::PerkBump#0                                     # counter
+RpgRuntime::LoadRun#0                                      # id: -> RunStore::PruneCaches(owner)
+RpgRuntime::NewRunReset#0                                  # id: -> RunStore::DeleteCache(ownerId)
+RpgRuntime::OnProgressFromHost#0                           # key
+RpgRuntime::Buy#0                                          # itemKey: -> Net::Buy(item)
+RpgRuntime::OnPurchaseNotice#1                             # item: TEST:StartsWith
+RpgRuntime::RollPerkSet#4                                  # classId: -> Perks::WeightedPick(classId)
+RpgRuntime::StartUnstickWatch#0                            # why: field _vuWhy TEST:StartsWith
+RpgRuntime::F#1                                            # n: AccessTools.Field
+RpgRuntime::Rule#0                                         # id: _vuSince.TryGetValue
+RpgRuntime::RemoveWorldMark#0                              # id
+RpgRuntime::OnPartGrant#2                                  # reason: compared with a literal
+RpgRuntime::AddParts#1                                     # reason: compared with a literal
+RpgRuntime::DoCraft#0                                      # uid
+RpgRuntime::OnVersionMismatch#0                            # hostVersion: -> SettingsSync::IsOlder(v)
+RpgRuntime::LoadPreset#0                                   # name: HostSettings.Find
+RpgRuntime::DoSavePreset#0                                 # name: -> HostSettings::Save(name)
+RpgRuntime::DoRenamePreset#1                               # to: HostSettings.Find
+RpgRuntime::Spaced#0                                       # key
+RpgRuntime::ResearchDamageMultC#1                          # c: compared with a literal
+RpgRuntime::ResearchCooldownMultC#0                        # cls: compared with a literal
+RpgRuntime::CrewOptionText#1                               # id: -> ResearchCrew::SponsorMult(id)
+RpgRuntime::DrawVotePanelC#2                               # which: compared with a literal
+RpgRuntime::TradeLocked#0                                  # uid
+RpgRuntime::RequestPawnE#0                                 # uid: -> Net::SendPawnE(uid)
+RpgRuntime::HostPawnE#1                                    # steamId: local steamId2 -> ResearchEcon::HostNotePawn(steamId)
+RpgRuntime::HostPawnE#2                                    # uid: -> ResearchEcon::HostNotePawn(uid)
+RpgRuntime::HostPawnFallbackE#2                            # uid
+RpgRuntime::BuyGunModE#0                                   # id: -> ShopX::BasePrice(key)
+RpgRuntime::SalvagePending#0                               # uid
+RpgRuntime::OnSalvageResult#4                              # reason: compared with a literal
+RpgRuntime::HostSalvage#2                                  # uid: -> ShopX::HostNoteSalvage(uid)
+RpgRuntime::SynergyDuration#1                              # cls: compared with a literal
+RpgRuntime::SynergyCooldownMult#0                          # cls: -> RpgRuntime::ResearchCooldownMultC(cls)
+RpgRuntime::SynergyCooldownMultBase#0                      # cls: compared with a literal
+RpgRuntime::OnMastered#0                                   # cls: -> RpgRuntime::Notify(key)
+RpgRuntime::AttrPendingOf#0                                # id: (…).TryGetValue
+RpgRuntime::AttrPts#1                                      # id
+RpgRuntime::AttrPtsAfter#1                                 # id: -> RpgRuntime::AttrPendingOf(id)
+RpgRuntime::FitWidth#0                                     # key
+RpgRuntime::CtItem#1                                       # id: field _ctPin compared with a literal
+RpgRuntime::DrawOfferCard#3                                # why: compared with a literal
+RpgRuntime::GiverBadge#1                                   # giverId
+RpgRuntime::CtFlashing#0                                   # uid: _ctFlash.TryGetValue
+RpgRuntime::ValueGroup#1                                   # label: -> RpgRuntime::SettingByLabel(label)
+RpgRuntime::ValueGroup#6                                   # editText: -> RpgRuntime::Stepper(editText)
+RpgRuntime::DebugDeath#0                                   # kind: compared with a literal
+RpgRuntime::FlashGear#1                                    # uid: _gearFlash.TryGetValue
+RpgRuntime::OpenHelpFor#0                                  # tab: compared with a literal
+RpgRuntime::SelectGuideTopic#0                             # id: -> Guide::Get(id)
+RpgRuntime::AddDynamic#0                                   # name: switch
+RpgRuntime::CfgValue#0                                     # key
+RpgRuntime::CfgBool#0                                      # key
+RpgRuntime::KeyToken#0                                     # name: compared with a literal
+RpgRuntime::HudChoice#1                                    # label: -> RpgRuntime::ValueGroup(label)
+RpgRuntime::NoteHudSize#1                                  # text
+RpgRuntime::DigitShape#0                                   # text: _digitShape.TryGetValue
+RpgRuntime::Placeholder#1                                  # icon: -> RpgRuntime::DrawSlotIcon(id)
+RpgRuntime::EmptyState#1                                   # icon: -> RpgRuntime::Placeholder(icon)
+RpgRuntime::DrawSlotIcon#1                                 # id: switch
+RpgRuntime::DemandName#0                                   # key: TEST:StartsWith
+RpgRuntime::NoticeById#0                                   # id
+RpgRuntime::DismissNotice#0                                # id: compared with a literal
+RpgRuntime::NoticeHighlight#0                              # anchor
+RpgRuntime::DrawTabNoticeBadge#1                           # tab
+RpgRuntime::WaitingFor#0                                   # what
+RpgRuntime::PadDown#0                                      # chord: -> Pad::ChordDown(chord)
+RpgRuntime::PadLabel#1                                     # kind: compared with a literal
+RpgRuntime::ConfirmTab#0                                   # tab: switch
+RpgRuntime::ResetTab#0                                     # tab: switch
+RpgRuntime::OnCommitResult#3                               # reason: TEST:StartsWith
+RpgRuntime::PerfStep#1                                     # label: -> RpgRuntime::ValueGroup(label)
+RpgRuntime::FlashEdge#2                                    # key: flashes.TryGetValue
+RpgRuntime::XpLabel#0                                      # reason: switch
+RpgRuntime::Notify#3                                       # key: TEST:StartsWith
+RpgRuntime::ResColumn#0                                    # branch: _resCols.TryGetValue
+RpgRuntime::OnHaggled#0                                    # key: index _haggled
+RpgRuntime::HaggleMult#0                                   # key: _haggled.TryGetValue
+RpgRuntime::ClassReadable#0                                # cls: _readableClass.TryGetValue
+RpgRuntime::AttrDetail#0                                   # part: _attrDetail.TryGetValue
+RpgRuntime::ShowRunNote#0                                  # note: local text switch
+RpgRuntime::VoteLine#1                                     # id: -> RpgRuntime::BoonLine(id)
+RpgRuntime::BoonLine#0                                     # id: _boonLines.TryGetValue
+RpgRuntime::DifficultyName#0                               # label: TEST:Contains
+RpgRuntime::CtlShowing#0                                   # name
+RpgRuntime::SettingByLabel#0                               # label: _setByLabel.TryGetValue
+RpgRuntime::BoonName#0                                     # id: -> RunShape::Boon(id)
+RpgRuntime::OpenShopVoteFor#0                              # anchor: field _shopVote switch
+RpgRuntime::ShadowText#0                                   # text: TEST:IndexOf
+RpgRuntime::ScaleSizeTags#0                                # text: TEST:IndexOf
+RpgRuntime::DrawIcon#1                                     # key: -> RpgRuntime::IconOf(key)
+RpgRuntime::IconOf#0                                       # key: IconTex.TryGetValue
+RpgRuntime::InIcon#0                                       # key: switch
+RpgRuntime::LcIssue#0                                      # kind: _lcByKind.TryGetValue
+RpgRuntime::ProbeRegion#0                                  # name: index _lcRegions
+RpgRuntime::LcShort#0                                      # text
+RpgRuntime::TabBadge#0                                     # tab: compared with a literal
+RpgRuntime::TabNew#0                                       # tab: compared with a literal
+RpgRuntime::LayoutTemplate#1                               # tab: compared with a literal
+RpgRuntime::StartNumEdit#1                                 # start: field _numEditText local text switch
+RpgRuntime::Stepper#5                                      # editText: -> RpgRuntime::StartNumEdit(start)
+RpgRuntime::RouteShort#0                                   # o: compared with a literal
+RpgRuntime::VtItem#1                                       # id: field _vtPin compared with a literal
+ClassHost::StopWhy#1                                       # why: -> ClassHost::ProbeStop(why)
+ClassHost::StopPilot#1                                     # finalState: -> ClassHost::SendCartState(state)
+ClassHost::SetState#3                                      # hud: -> ClassHost::SendCartState(state)
+ClassHost::EndOverdrive#1                                  # why: switch
+ClassHost::Halt#1                                          # state: -> ClassHost::SendCartState(state)
+ClassHost::SendCartState#1                                 # state: -> Net::SendNotice(text)
+ClassHost::Category#0                                      # why: TEST:StartsWith
+ClassHost::ProbeStop#1                                     # why: -> ClassHost::Category(why)
+ClassHost::ProbeAbort#1                                    # outcome: -> ClassHost::EndPassage(outcome)
+ClassHost::ProbePlanRefused#1                              # err: -> ClassHost::Category(why)
+ClassHost::EndPassage#1                                    # outcome: compared with a literal
+ClassHost::OnReleased#1                                    # cls: compared with a literal
+ClassHost::CartPuller#1                                    # cls: compared with a literal
+ClassHost::LedgerFor#1                                     # id: local key _memLedgers.TryGetValue
+ClassHost::TakeScrap#0                                     # id: TEST:StartsWith
+ClassHost::TakeScrap#3                                     # reason: -> Scrap::HostTakeId(reason)
+ClassHost::Refuse#1                                        # why: -> Net::SendNotice(text)
+ClassHost::SmallOrMedium#0                                 # size: compared with a literal
+ClassHost::CancelDispatch#2                                # why: -> Net::SendNotice(text)
+ClassHost::Tell#1                                          # text: -> Net::SendNotice(text)
+ClassHost::CurseOf#1                                       # id: -> ClassStats::Get(stat)
+ClassStats::Get#1                                          # stat: value.Stats.TryGetValue
+Game::Field#1                                              # name: Fields.TryGetValue
+Game::Method#1                                             # name: local text Methods.TryGetValue
+GameCheck::CheckApi#0                                      # type: AccessTools.TypeByName
+GameCheck::CheckApi#2                                      # member: type2.GetProperty
+Guard::On#0                                                # feature: States.TryGetValue
+Guard::Fail#0                                              # feature: States.TryGetValue
+Guard::DisableForSession#0                                 # feature: States.TryGetValue
+MenuLibCheck::Relative#1                                   # path: TEST:StartsWith
+StatInfo::Parse#0                                          # name: Enum.TryParse
+StatSheet::Custom#0                                        # name: _custom.TryGetValue
+ClassDatabase::Get#0                                       # id: _byId.TryGetValue
+ClassDatabase::ReadWithOverride#0                          # stem: Path.Combine
+ClassDatabase::ReadWithOverride#1                          # embedded: File.WriteAllText
+ClassDatabase::ReadEmbedded#0                              # stem: (…).Assembly.GetManifestResourceStream
+Guide::Get#0                                               # id: ById.TryGetValue
+Json::WriteString#1                                        # s
+ClassProgress::RankOf#0                                    # nodeId
+RpgData::Upgrade#0                                         # key
+RpgData::Perk#0                                            # id
+RpgData::SlotIndex#0                                       # id
+RunSave::AttributePoints#0                                 # id
+RunSave::FindItem#0                                        # uid
+Net::Buy#1                                                 # item: -> Net::HostDecide(item)
+Net::HostDecide#1                                          # item: TEST:StartsWith
+Net::SendNotice#3                                          # text: -> RpgRuntime::OnClassNotice(text)
+Net::Salvage#1                                             # uid: -> RpgRuntime::HostSalvage(uid)
+Net::SendWatchPing#1                                       # name: -> RpgRuntime::OnWatchPing(name)
+Net::SendPartGrant#3                                       # reason: -> RpgRuntime::OnPartGrant(reason)
+Net::SendContractAccept#2                                  # id: -> ContractHost::HostAccept(id)
+Net::SendContractEvent#1                                   # key: -> RpgRuntime::OnContractEvent(key)
+Net::SendHaggle#0                                          # key: -> RpgRuntime::OnHaggled(key)
+Net::SendPawnE#1                                           # uid: -> RpgRuntime::HostPawnE(uid)
+BatteryRule::Note#5                                        # why: compared with a literal
+GameSaveDeletePatch::Postfix#0                             # __0: -> SaveBook::Delete(saveId)
+PatchGuard::Run#0                                          # what: -> Guard::Fail(feature)
+RunStore::Dir#0                                            # owner: Path.Combine
+RunStore::CachePath#0                                      # owner: -> RunStore::Dir(owner)
+RunStore::CachePath#1                                      # runKey: Path.Combine
+RunStore::IsTempKey#0                                      # key: TEST:StartsWith
+RunStore::ReadCache#0                                      # ownerId: -> RunStore::CachePath(owner)
+RunStore::ReadCache#1                                      # runKey: -> RunStore::IsTempKey(key)
+RunStore::DeleteCache#0                                    # ownerId: -> RunStore::CachePath(owner)
+RunStore::DeleteCache#1                                    # runKey: -> RunStore::IsTempKey(key)
+RunStore::PruneCaches#0                                    # owner: -> RunStore::Dir(owner)
+SaveBook::PathFor#0                                        # saveId: Path.Combine
+SaveBook::Open#0                                           # saveId: -> RunStore::IsTempKey(key)
+SaveBook::RunIdFor#0                                       # saveId: -> RunStore::IsTempKey(key)
+SaveBook::StartNewRun#0                                    # saveId: -> RunStore::IsTempKey(key)
+SaveBook::Get#0                                            # saveId: -> SaveBook::Open(saveId)
+SaveBook::Entry#0                                          # saveId: -> RunStore::IsTempKey(key)
+SaveBook::Ledger#0                                         # saveId: -> SaveBook::Entry(saveId)
+SaveBook::GetScrap#0                                       # saveId: -> SaveBook::Entry(saveId)
+SaveBook::AddScrap#0                                       # saveId: -> SaveBook::Entry(saveId)
+SaveBook::Put#0                                            # saveId: -> SaveBook::Open(saveId)
+SaveBook::Delete#0                                         # saveId: -> RunStore::IsTempKey(key)
+SaveWriter::Queue#0                                        # path: -> SaveWriter::Enqueue(path)
+SaveWriter::Delete#0                                       # path: -> SaveWriter::Enqueue(path)
+SaveWriter::Enqueue#0                                      # path: index Pending
+SaveWriter::ApplyNewest#0                                  # path: Written.TryGetValue
+SaveWriter::ApplyNewest#1                                  # json: -> SaveWriter::Apply(json)
+SaveWriter::Apply#0                                        # path: Path.GetDirectoryName
+SaveWriter::Apply#1                                        # json: File.WriteAllText
+Account::ReadFile#0                                        # path: File.Exists
+Account::Counter#0                                         # id
+Account::RecordOf#0                                        # key
+Account::Value#0                                           # counter: compared with a literal
+Account::Has#0                                             # unlockId
+Account::EarnedAt#0                                        # unlockId
+Account::Active#0                                          # unlockId
+Account::Mastered#0                                        # id
+Account::OnClassXp#0                                       # cls: -> RpgRuntime::OnMastered(cls)
+Account::AltDef#0                                          # cls: Alts.TryGetValue
+Account::AltInRun#1                                        # cls: -> Account::AltDef(cls)
+Account::PrestigeUsable#0                                  # cls
+Account::TitleUnlock#0                                     # title
+Ascension::ClassBest#0                                     # cls
+Ascension::UniqueAllowed#0                                 # unlock: compared with a literal
+AttrBonus::IsFavored#0                                     # classId: Favored.TryGetValue
+AttrBonus::FavoredOf#0                                     # classId: Favored.TryGetValue
+AttrBonus::Needed#0                                        # classId: -> AttrBonus::IsFavored(classId)
+AttrBonus::MilestonesOf#0                                  # attrId
+AttrBonus::PairingsOf#0                                    # attrId
+AttrBonus::Active#1                                        # classId: -> AttrBonus::Needed(classId)
+ClassClaims::OtherOwner#0                                  # classId
+ClassClaims::TakenByOther#0                                # classId
+ClassClaims::LostTieFor#0                                  # classId
+ContractKind::Parse#0                                      # s: compared with a literal
+ContractBoard::Get#0                                       # id: ById.TryGetValue
+ContractBoard::Chain#0                                     # id
+ContractBoard::GiverIndex#0                                # id
+ContractBoard::Giver#0                                     # id
+ContractBoard::TeamGiver#0                                 # teamId
+ContractBoard::GiverColor#0                                # id
+ContractBoard::Rep#1                                       # giver
+ContractBoard::MakeChainStep#0                             # chainId
+ContractBoard::Generate#2                                  # classId
+ContractBoard::IsMoney#0                                   # obj: switch
+ContractBoard::OptionText#0                                # opt: switch
+ContractHost::Get#1                                        # key: value.TryGetValue
+ContractHost::Add#1                                        # key: value.TryGetValue
+ContractHost::Ev#1                                         # key: -> Net::SendContractEvent(key)
+ContractHost::ClsEv#1                                      # cls: -> ContractHost::Ev(key)
+ContractHost::HostAccept#2                                 # id: -> ContractBoard::Get(id)
+ContractHost::HostDrop#1                                   # uid
+Contracts::Progress#1                                      # type
+Contracts::Fail#1                                          # type
+Cursed::Def#0                                              # id: ById.TryGetValue
+DifficultyPresets::Entry#0                                 # key: _byKey.TryGetValue
+Gear::Roll#3                                               # forcedSlot
+Gear::RollExact#2                                          # forcedSlot
+GearSets::Get#0                                            # id: ById.TryGetValue
+GearX::Behavior#0                                          # id: Behaviors.TryGetValue
+GearX::Module#0                                            # id: Modules.TryGetValue
+GearX::BaseOf#0                                            # slot
+Heat::Card#0                                               # id
+Heat::Name#0                                               # option: compared with a literal
+Heat::Text#0                                               # option: compared with a literal
+HostSettings::OnAck#2                                      # mod: compared with a literal
+HostSettings::CleanName#0                                  # n
+HostSettings::WriteAtomic#0                                # path: local text2 File.WriteAllText
+HostSettings::WriteAtomic#1                                # text: File.WriteAllText
+HostSettings::Save#0                                       # name: Path.Combine
+HostSettings::Rename#1                                     # to: Path.Combine
+HostSettings::MoveFile#0                                   # src: local text File.Move
+HostSettings::MoveFile#1                                   # dst: File.Move
+HostSettings::SetDefault#0                                 # name: -> HostSettings::WriteAtomic(text)
+LateJoinHost::RpcTo#1                                      # method: component.RPC
+Market::CategoryOf#0                                       # name: -> Market::Classify(name)
+Market::Classify#0                                         # name: Overrides.TryGetValue
+Market::EventOf#0                                          # id
+Market::EventActive#0                                      # id
+Market::ValueMult#0                                        # name: -> Market::CategoryOf(name)
+Market::Tag#0                                              # name: -> Market::CategoryOf(name)
+Market::Group#0                                            # key: TEST:StartsWith
+Market::SectionOf#0                                        # group: TEST:StartsWith
+Market::PriceMult#0                                        # key: compared with a literal
+NetMeter::PhotonCount#0                                    # name: AccessTools.Property
+Notices::ActedOn#0                                         # anchor
+Notices::CountForTab#0                                     # tab
+Notices::TopForTab#0                                       # tab
+Notices::HasAnchor#0                                       # anchor
+Perks::Tag#0                                               # tag: TagById.TryGetValue
+Perks::TagCount#1                                          # tag: (…).TryGetValue
+Perks::Progress#1                                          # id
+Perks::Bump#1                                              # counter
+Perks::Tracking#1                                          # counter
+Perks::WeightedPick#2                                      # classId: ClassTags.TryGetValue
+Research::Def#0                                            # id: ById.TryGetValue
+Research::InProgress#0                                     # id
+Research::Cancel#0                                         # id: -> Research::Def(id)
+Research::OnContractDone#0                                 # contractId
+ResearchCrew::DrillDef#0                                   # id
+ResearchCrew::SponsorMult#0                                # id: compared with a literal
+ResearchCrew::Borrowed#0                                   # id
+ResearchCrew::HostContractPaid#1                           # id: -> ContractBoard::Get(id)
+ResearchCrew::Metric#1                                     # id: switch
+ResearchEcon::IsGunMod#0                                   # id: TEST:StartsWith
+ResearchEcon::ConsOffered#0                                # id: -> ResearchEcon::IsGunMod(id)
+ResearchEcon::BasePrice#0                                  # key: TEST:StartsWith
+ResearchEcon::HostNotePawn#0                               # steamId: index PawnBook
+ResearchEcon::HostNotePawn#1                               # uid: index PawnBook
+ResearchEcon::HostPawnPrice#1                              # uid: local text2 PawnBook.TryGetValue
+Haggle::HostMult#1                                         # key
+FieldResearch::LevelHas#0                                  # modId
+Routes::Risk#0                                             # id: compared with a literal
+Routes::Reward#0                                           # id
+Routes::Parse#0                                            # option: compared with a literal
+Routes::Name#0                                             # option: compared with a literal
+Routes::Text#0                                             # option: compared with a literal
+RunDepth::Def#0                                            # id: ById.TryGetValue
+RunDepth::LevelOf#0                                        # id: -> RunDepth::Def(id)
+RunDepth::UnlockedAt#0                                     # id: -> RunDepth::LevelOf(id)
+RunDepth::Unlocked#0                                       # id: -> RunDepth::UnlockedAt(id)
+RunInfo::NoteNewRun#0                                      # key
+RunInfo::ForgetSave#0                                      # name
+RunInfo::StableHash#0                                      # s
+RunReset::HostNewRun#0                                     # saveId: -> SaveBook::StartNewRun(saveId)
+RunShape::Boon#0                                           # id: ById.TryGetValue
+Scrap::Distribute#1                                        # reason: compared with a literal
+Scrap::GearOf#1                                            # key: -> ClassStats::Get(stat)
+Scrap::HostNoticeTo#1                                      # text: -> Net::SendNotice(text)
+Scrap::HostAdd#3                                           # reason: TEST:StartsWith
+Scrap::HostGrant#2                                         # reason: -> Scrap::HostAdd(reason)
+Scrap::HostTake#2                                          # reason: -> Scrap::HostAdd(reason)
+Scrap::HostTakeId#3                                        # reason: -> Scrap::HostAdd(reason)
+Scrap::Tell#1                                              # steamId
+Scrap::Tell#4                                              # reason: -> Scrap::OnBalance(reason)
+Scrap::OnBalance#2                                         # reason: TEST:StartsWith
+Season::OptionText#0                                       # id: compared with a literal
+SettingsSync::BlockForVersion#0                            # what: -> RpgRuntime::OnVersionMismatch(hostVersion)
+SettingsSync::IsOlder#0                                    # v: TEST:StartsWith
+SettingsSync::ApplyFromHost#3                              # modVersion: compared with a literal
+Shop::HostBasePrice#0                                      # key: switch
+ShopX::Cons#0                                              # id
+ShopX::BasePrice#0                                         # key: TEST:StartsWith
+ShopX::HostNoteSalvage#1                                   # uid: index value
+ShopX::HostBuybackPrice#1                                  # uid: TEST:StartsWith
+ShopX::HostForgetBuyback#1                                 # uid: TEST:StartsWith
+ShopX::HostLimit#1                                         # key: TEST:StartsWith
+ShopX::HostNoteBought#1                                    # key: TEST:StartsWith
+ShopX::Generate#4                                          # wishlist: -> ShopX::TryWish(wish)
+ShopX::Marked#1                                            # mark: local key -> ShopX::BasePrice(key)
+ShopX::MakeUnique#1                                        # name
+ShopX::TryWish#1                                           # wish: TEST:StartsWith
+ShopX::WishName#0                                          # wish: TEST:StartsWith
+Starters::Def#0                                            # cls: ByClass.TryGetValue
+Starters::Prop#1                                           # name: type.GetProperty
+SynergyDef::PartnerOf#0                                    # cls
+Synergies::Add#0                                           # cls: ByClass.TryGetValue
+Synergies::For#0                                           # cls: ByClass.TryGetValue
+Synergies::Get#0                                           # id: ById.TryGetValue
+Synergies::V#0                                             # id: ById.TryGetValue
+Synergies::V2#0                                            # id: ById.TryGetValue
+Synergies::Has#1                                           # id: value.TryGetValue
+Synergies::AnyActive#0                                     # id: value2.TryGetValue
+TeamContracts::Get#0                                       # id: ById.TryGetValue
+Tuning::Note#0                                             # topic: File.AppendAllText
+Tuning::Note#1                                             # line: File.AppendAllText
+Upgrades::Snapshot#0                                       # steamId: dictionary2.TryGetValue
+Upgrades::StaminaLevelsText#0                              # steamId: item.Value.TryGetValue
+ValueScale::Find#0                                         # cleanName: ByName.TryGetValue
+ValueScale::Num#1                                          # field: AccessTools.Field
+ValueScale::Clean#0                                        # s: local s TEST:IndexOf
+AttributeAlloc::Find#0                                     # id
+AttributeAlloc::HostHandle#0                               # key: -> RunStore::IsTempKey(key)
+Pad.UnityPad::Prop#1                                       # name: AccessTools.Property
+Pad::ChordParts#0                                          # chord: Chords.TryGetValue
+Pad::Held#0                                                # button: Now.TryGetValue
+Pad::Down#0                                                # button: -> Pad::Held(button)
+Pad::ChordDown#0                                           # chord: -> Pad::ChordParts(chord)
+Pad::ChordHeld#0                                           # chord: -> Pad::ChordParts(chord)
+HudTrace::Area#0                                           # section: index Areas
+TalentAlloc::Find#1                                        # id
+Commit::HostHandle#1                                       # key: -> RunStore::IsTempKey(key)
+TextSearch::Tokens#0                                       # query: TEST:Split
+TextSearch::Doc#0                                          # text: local text2 TEST:Contains
+TextSearch::Close#1                                        # w
+TextSearch::Lev#1                                          # b
+TextSearch::Highlight#0                                    # text: local text2 TEST:IndexOf
+UiAudio::F#2                                               # name: AccessTools.Field
+DetailInfo::Is#0                                           # key
+VanillaStyle::Count#1                                      # key: index d
+VanillaStyle::Strip#0                                      # s: TEST:LastIndexOf
+
+[keep]
+# the argument ends up in the log
+RpgRuntime::HookLog#0                                      # msg
+RpgRuntime::CtTrace#0                                      # what
+RpgRuntime::ChangeRep#2                                    # why
+RpgRuntime::NewRunReset#1                                  # why
+RpgRuntime::SelectClass#0                                  # id
+RpgRuntime::OnTradeC#5                                     # removeUid
+RpgRuntime::TellTrade#6                                    # removeUid
+RpgRuntime::HostPawnFallbackE#1                            # steamId
+RpgRuntime::HostSalvage#1                                  # steamId
+RpgRuntime::ClassTrace#0                                   # msg
+RpgRuntime::RaiseClassChanged#2                            # why
+RpgRuntime::AbilityDiag#0                                  # msg
+RpgRuntime::ForceCloseMenu#0                               # why
+RpgRuntime::ClassBlockDiag#0                               # state
+RpgRuntime::HeadReport#0                                   # when
+RpgRuntime::DebugLog#0                                     # what
+RpgRuntime::NoteRunReload#0                                # why
+RpgRuntime::OnTransitionStart#0                            # what
+RpgRuntime::CloseForTransition#0                           # what
+RpgRuntime::OnCommitResult#4                               # result
+RpgRuntime::LcIssue#1                                      # what
+ClassHost::DiagLog#0                                       # msg
+ClassHost::SetState#2                                      # why
+ClassHost::CartLog#1                                       # what
+ClassHost::FightLog#0                                      # msg
+ClassHost::FailFight#1                                     # why
+Game::WarnOnce#0                                           # msg
+LoopTrace::Note#0                                          # what
+ClassDatabase::ResolveAll#0                                # classId
+Json.Parser::Err#0                                         # msg
+Net::SenderSteamId#1                                       # claimed
+BatteryRule::Note#1                                        # path
+OverclockState::Note#1                                     # state
+OverclockStateTime::Scale#1                                # state
+RunStore::Use#0                                            # ownerId
+RunStore::Use#1                                            # runKey
+RunStore::ReadCache#2                                      # runId
+SaveBook::Get#1                                            # steamId
+ContractBoard::AddRep#1                                    # giver
+Heat::HostDecide#1                                         # why
+HostSettings::Load#0                                       # name
+HostSettings::Rename#0                                     # from
+HostSettings::Delete#0                                     # name
+LateJoinHost::SetOpen#1                                    # why
+Haggle::HostRoll#1                                         # key
+Routes::HostDecide#1                                       # why
+RunInfo::SetRunId#0                                        # id
+RunReset::HostNewRun#1                                     # why
+RunShape::HostTake#1                                       # steamId
+TeamPlay::HostSettleLevel#0                                # why
+AttributeAlloc::HostHandle#1                               # steamId
+Commit::HostHandle#2                                       # steamId
+VanillaStyle::Apply#1                                      # from
+
+[through]
+# the argument comes back inside the return value: what matters is what the caller does with the result
+RpgRuntime::OnPawnResultE#5                                # reason
+RpgRuntime::ShortAttr#0                                    # name
+RpgRuntime::Chord#0                                        # s
+RpgRuntime::Hex#0                                          # hex
+RpgRuntime::ResolveGuide#0                                 # text
+RpgRuntime::GlyphColor#0                                   # g
+RpgRuntime::TabHasPending#0                                # tab
+RpgRuntime::Capital#0                                      # s
+RpgRuntime::ShopReason#2                                   # otherReason
+RpgRuntime::TabPath#0                                      # tab
+RpgRuntime::StripRich#0                                    # s
+RpgRuntime::VoteIdFor#0                                    # anchor
+GameCheck::CheckApi#3                                      # returns
+ClassDatabase::Underlying#1                                # stat
+Net::SenderSteamId#1                                       # claimed
+RunStore::Safe#0                                           # s
+Account::Decorate#1                                        # name
+ClassMigration::NewName#0                                  # id
+ContractHost::RivalScore#0                                 # obj
+Gear::SlotName#0                                           # id
+Research::BranchName#0                                     # id
+ResearchCrew::DrillName#0                                  # id
+ResearchCrew::SponsorName#0                                # id
+ResearchCrew::TargetFor#0                                  # id
+ResearchCrew::SponsorGoal#0                                # id
+ResearchEcon::ModuleText#0                                 # stat
+ResearchEcon::ProtoSlot#0                                  # behaviorId
+Roster::Clean#0                                            # s
+RunShape::HostVictory#1                                    # note
+Season::OptionName#0                                       # id
+ShopX::StockKey#2                                          # mark
+TeamContracts::CurseDesc#0                                 # id
+Upgrades::Name#0                                           # key
+Upgrades::PlayerName#0                                     # steamId
+ValueScale::CleanName#0                                    # raw
+ValueScale::ShortName#0                                    # name

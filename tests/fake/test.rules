@@ -1,0 +1,34 @@
+[hooks]
+RpgRuntime::Label(text)
+RpgRuntime::Btn(label)
+RpgRuntime::Toast(text)
+RpgRuntime::TextW(text)
+RpgRuntime::Notify(text)          # key is an id
+RpgRuntime::AskConfirm(title, body, okLabel)
+RpgRuntime::Missing(text)         # reported, not fatal
+
+[keep]
+RpgRuntime::DebugLog
+Net::SendNotice
+
+[id]
+Game::Get
+RpgRuntime::Notify#0
+RpgRuntime::Spaced
+
+[skip]
+Net
+
+[data]
+*: name, desc
+classes: complexityTip, bases
+*: !id, !stat, !tags, !requires, !color
+
+[probes]
+# a bare word looked for with IndexOf is ignored unless listed here
+protect "Gift"
+# plugin name detection, never applied to interface text
+ignore "late join"
+
+[calls]
+Content::set_text
