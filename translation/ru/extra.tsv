@@ -108,3 +108,24 @@
 +term	High	Максимум
 # значение настройки «Эффекты стихий» - имя значения в верхнем регистре (FULL / REDUCED / OFF)
 +term	FULL	ПОЛНЫЕ
+# Не переводы, а пометки для распознавания готовых фраз на экране (см. tools/mkpo.py):
+#   +numbers  в этих местах фразы всегда число   («more players» - не «{0} players»)
+#   +words    в этих местах - слово самого мода (редкость, вкладка, сложность): фраза узнаётся, только если слово есть в словаре
++numbers	Need {0} more {1}	0
++numbers	+{0} Scrap – {1}	0
++numbers	+{0} Scrap – {1} (x{2})	0,2
++numbers	-{0} Scrap – {1}	0
++numbers	ENDLESS {0}	0
++words	{0} gear	0
++words	{0}+ gear	0
++words	a {0} item	0
++words	{0} futures crate	0
++words	{0} perk	0
++words	{0} is locked	0
++words	Already on {0}	0
++words	Most levels on {0}	0
++words	 · resists {0}	0
++words	 · weak to {0}	0
++words	Go to {0}	0
++words	{0} {1} upgrade{2}	0
++words	{0} {1}upgrade{2}	0

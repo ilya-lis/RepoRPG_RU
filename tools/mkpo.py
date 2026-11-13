@@ -97,6 +97,7 @@ def main():
     units = json.load(open(sys.argv[1], encoding='utf-8'))
     by_id = {str(u['id']): u for u in units}
     tr, extra, problems = {}, [], []
+    hand_num, hand_words = [], []
     for f in sorted(glob.glob(os.path.join(sys.argv[2], '*.tsv'))):
         for n, line in enumerate(open(f, encoding='utf-8'), 1):
             line = line.rstrip('\n').rstrip('\r')
@@ -105,6 +106,13 @@ def main():
             where = '%s:%d' % (os.path.basename(f), n)
             if cols[0].startswith('+'):
                 if len(cols) != 3: problems.append(where + ': expected +kind<TAB>english<TAB>russian'); continue
+                if cols[0] in ('+numbers', '+words'):
+                    # +numbers<TAB>+{0} Scrap – {1}<TAB>0     placeholder 0 of that sentence is always a number
+                    # +words<TAB>{0} gear<TAB>0               placeholder 0 is one of the mod's own words (a rarity, a tab):
+                    #                                         the sentence is recognised only when the dictionary has that word
+                    if not re.fullmatch(r'\d+(,\d+)*', cols[2].strip()): problems.append(where + ': expected placeholder numbers like 0,2')
+                    else: (hand_num if cols[0] == '+numbers' else hand_words).append((unescape(cols[1]), set(int(x) for x in cols[2].split(',')), where))
+                    continue
                 extra.append((cols[0][1:], unescape(cols[1]), unescape(cols[2]), where)); continue
             if len(cols) != 2: problems.append(where + ': expected id<TAB>text'); continue
             key = cols[0].strip().rstrip('ct')
@@ -113,6 +121,13 @@ def main():
             tr[key] = (unescape(cols[1]), where)
 
     glob_e, term_e, pat_e = collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict()
+    num_e = {}                 # english text with placeholders -> the placeholders that are numbers wherever the mod makes it
+
+    def numbers(en, u):
+        have = set(u.get('num', ()))
+        # stat lines are "+5% max health", "-2 extra jumps": the mod writes the sign and the number first (StatInfo::Describe)
+        if 'StatInfo::Describe' in u.get('scopes', ()) and en.startswith('{0}'): have.add(0)
+        num_e[en] = (num_e[en] & have) if en in num_e else have
     chain_scoped = []          # (scope, unit id, {piece: translation})
     checks = []
     lit_by_text = {}
@@ -139,13 +154,14 @@ def main():
             # without the add-on should not get Russian text); what is shown is the part after the tag, and that part
             # gets an entry of its own, used at the moment it is drawn - on the host's screen as well.
             rest_s, rest_t = src[m.end():], t[m.end():]
-            if any(NUM.match(h) for h in HOLE.findall(rest_s)): pat_e[rest_s] = rest_t
+            if any(NUM.match(h) for h in HOLE.findall(rest_s)): pat_e[rest_s] = rest_t; numbers(rest_s, u)
             else: term_e[rest_s] = rest_t
             checks.append(sample(rest_s, rest_t))
             continue
         if u['kind'] == 'lit':
             (term_e if u.get('term') else glob_e)[src] = t
             lit_by_text[src] = (t, u)
+            if any(NUM.match(h) for h in HOLE.findall(src)): numbers(src, u)
             named = []
             for h in HOLE.findall(src):
                 if SIMPLE_NAME.match(h) and h not in named: named.append(h)
@@ -165,7 +181,7 @@ def main():
             continue
         runs_s, holes_s = split_runs(src)
         runs_t, holes_t = split_runs(t)
-        if holes_s: pat_e[src] = t
+        if holes_s: pat_e[src] = t; numbers(src, u)
         checks.append(sample(src, t))
         # the same sentence, piece by piece, for the places where the mod builds it
         if holes_t != holes_s or len(runs_t) != len(runs_s): continue
@@ -220,6 +236,8 @@ def main():
            '#   term              only at the moment the text is drawn (words the mod also uses as internal names)',
            '#   pattern           a sentence the mod puts together itself; {0} stands for the changing part',
            '#   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)',
+           '#   numbers           not a translation: which placeholders of a sentence are numbers (worked out from the mod\'s code)',
+           '#   words             not a translation: which placeholders hold one of the mod\'s own words (a rarity, a tab name)',
            'msgid ""', 'msgstr ""', '"Content-Type: text/plain; charset=UTF-8\\n"', '"Language: ru\\n"', '']
     def emit(ctx, table):
         for en, ru in table.items():
@@ -227,6 +245,23 @@ def main():
             out.append('msgid ' + po(en)); out.append('msgstr ' + po(ru)); out.append('')
     emit(None, glob_e); emit('term', term_e); emit('pattern', pat_e)
     for sc in sorted(scoped): emit('@' + sc, scoped[sc])
+    # which placeholders are numbers: "{0} players" is made from a count, so "more players" is another text altogether
+    for en, idx, where in hand_num:
+        if en not in pat_e and en not in glob_e: problems.append('%s: +numbers for a sentence that has no entry: %r' % (where, en[:60])); continue
+        num_e[en] = set(num_e.get(en, ())) | idx
+    word_e = {}
+    for en, idx, where in hand_words:
+        if en not in pat_e and en not in glob_e: problems.append('%s: +words for a sentence that has no entry: %r' % (where, en[:60])); continue
+        word_e[en] = set(word_e.get(en, ())) | idx
+    # the generated samples put numbers into every placeholder; where a word of the mod's own belongs, a number proves nothing
+    # (those sentences are checked by hand-written cases in tests/drawn.tsv)
+    skip = set(sample(en, (pat_e.get(en) or glob_e.get(en)))[0] for en in word_e)
+    checks = [c for c in checks if c[0] not in skip]
+    for ctx, table in (('numbers', num_e), ('words', word_e)):
+        for en in list(glob_e) + list(pat_e):
+            idx = table.get(en)
+            if not idx: continue
+            out.append('msgctxt ' + po(ctx)); out.append('msgid ' + po(en)); out.append('msgstr ' + po(','.join(str(k) for k in sorted(idx)))); out.append('')
     os.makedirs(os.path.dirname(sys.argv[3]), exist_ok=True)
     open(sys.argv[3], 'w', encoding='utf-8', newline='\n').write('\n'.join(out))
     if len(sys.argv) > 4:

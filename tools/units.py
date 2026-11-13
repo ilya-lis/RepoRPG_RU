@@ -51,12 +51,14 @@ def main():
         if 'chain' in l:
             ch = chains[l['chain']]
             key = ('chain', ch['pattern'])
-            u = units.setdefault(key, {'kind': 'chain', 'text': ch['pattern'], 'pieces': ch['pieces'], 'occ': {}, 'lits': []})
+            u = units.setdefault(key, {'kind': 'chain', 'text': ch['pattern'], 'pieces': ch['pieces'], 'occ': {}, 'lits': [], 'nums': {}})
+            u['nums'][l['chain']] = ch.get('num')
             o = u['occ'].setdefault((scope, l['chain']), {'scope': scope, 'line': ch['line'], 'use': 'NONE', 'sink': l['sink'], 'whole': False})
             if ORDER[l['use']] > ORDER[o['use']]: o['use'] = l['use']
         else:
             key = ('lit', l['value'])
-            u = units.setdefault(key, {'kind': 'lit', 'text': l['value'], 'occ': {}, 'interp': False})
+            u = units.setdefault(key, {'kind': 'lit', 'text': l['value'], 'occ': {}, 'interp': False, 'nums': {}})
+            u['nums'][len(u['nums'])] = l.get('num')
             u['occ'][(scope, l['line'], len(u['occ']))] = {'scope': scope, 'line': l['line'], 'use': l['use'], 'sink': l['sink'], 'whole': l['whole'],
                                                          'inside': l.get('inside')}
             if l.get('interp'): u['interp'] = True
@@ -95,6 +97,12 @@ def main():
             bad = sorted({sc for sc in rec['scopes'] for p in u['pieces']
                           if p and re.search('[A-Za-z]', p) and (alone.get((sc, p), set()) - {'DISPLAY'})})
             if bad: rec['unsafe'] = bad
+        # placeholders that are numbers wherever this text is made (flow.py / numtype.py): "{0} players", "Tier {0}"
+        nums = list(u['nums'].values())
+        if nums and all(nums):
+            width = min(len(n) for n in nums)
+            num = [k for k in range(width) if all(n[k] for n in nums)]
+            if num: rec['num'] = num
         ins = sorted({o['inside'] for o in shown if o.get('inside') is not None})
         if ins: rec['inside'] = [chains[i]['pattern'] for i in ins][:3]
         out.append(rec)

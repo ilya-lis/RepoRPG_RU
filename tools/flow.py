@@ -15,6 +15,7 @@ import json, re, sys, os, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from csctx import tokenize, match_brackets, build_scopes, qualified_callee, OPEN, CLOSE
 from methods import index as method_index
+import numtype
 
 THROUGH_CALLS = {'string.Format', 'String.Format', 'string.Concat', 'String.Concat', 'string.Join', 'String.Join'}
 THROUGH_RECV = {'ToUpperInvariant', 'ToUpper', 'ToLower', 'ToLowerInvariant', 'Trim', 'TrimEnd', 'TrimStart', 'Replace', 'Substring',
@@ -88,6 +89,45 @@ def run(path):
             if e < i and k < len(spans) - 1 and spans[k][0] < i - 200000: break
             k -= 1
         return None
+
+    # ---- is what fills a placeholder a number? (see numtype.py)
+    all_types = numtype.Types(src)
+    local_cache = {}
+
+    def tok_end(j):
+        t = toks[j]
+        return t.lit.end if t.k == 'str' else t.pos + len(t.s)
+
+    def numeric(s0, e0):
+        """the expression made of tokens s0..e0"""
+        m = owner(s0)
+        if m is None: return False
+        loc = local_cache.get(m['line'])
+        if loc is None:
+            a, b = m['body']
+            loc = local_cache[m['line']] = numtype.locals_of(m['params'], src[toks[a].pos:tok_end(b)])
+        try:
+            return numtype.is_number(src[toks[s0].pos:tok_end(e0)], loc, all_types)
+        except Exception:
+            return False
+
+    def format_args(i):
+        """string.Format("...", a, b) / sb.AppendFormat("...", a, b): token ranges of a, b for the literal at token i"""
+        L = encl[i]
+        if L < 1 or toks[L].s != '(' or partner[L] < 0 or L + 1 != i: return None
+        if not (toks[L - 1].k == 'id' and toks[L - 1].s in ('Format', 'AppendFormat')): return None
+        args = []; start = None; j = i + 1; end = partner[L]
+        while j < end:
+            t = toks[j]
+            if t.k == 'op' and t.s in OPEN and partner[j] >= 0:
+                if start is None: start = j
+                j = partner[j] + 1; continue
+            if t.k == 'op' and t.s == ',':
+                if start is not None: args.append((start, j - 1))
+                start = j + 1
+            j += 1
+        if start is not None and start <= end - 1: args.append((start, end - 1))
+        return args
 
     def resolve(callee, argi, caller):
         """decompiled callee text + argument index -> (method, param index) or None"""
@@ -532,7 +572,7 @@ def run(path):
         lits = [x for k, x in parts if k == 'L']
         if not lits or len(lits) == len(parts): continue
         if not any(re.search('[A-Za-z]', toks[x].lit.value) for x in lits): continue
-        pat = []; hole = 0; last_hole = False; pieces = []
+        pat = []; hole = 0; last_hole = False; pieces = []; nums = []
         for k, x in parts:
             if k == 'L':
                 v = toks[x].lit.value
@@ -540,10 +580,13 @@ def run(path):
             else:
                 if not last_hole:
                     pat.append('{%d}' % hole); hole += 1; pieces.append(None)
+                    nums.append(numeric(x[0], x[1]))
+                else:
+                    nums[-1] = False            # two things in a row: where one ends is anybody's guess
                 last_hole = True
         cid = len(chains)
         for n, x in enumerate(lits): chain_of[x] = (cid, n)
-        chains.append({'pattern': ''.join(pat), 'pieces': pieces, 'line': line_of[lits[0]], 'tok': lits[0], 'span': (a, b)})
+        chains.append({'pattern': ''.join(pat), 'pieces': pieces, 'line': line_of[lits[0]], 'tok': lits[0], 'span': (a, b), 'num': nums})
 
     # literals sitting inside a hole of a chain ( "Cost: " + (free ? "free" : price) ) are shown together with it
     inside = {}
@@ -565,6 +608,22 @@ def run(path):
                'sink': [sink[0], sink[1], sink[2]], 'whole': sink[3], 'use': lab, 'interp': bool(L.holes)}
         if i in chain_of: rec['chain'], rec['piece'] = chain_of[i]
         elif i in inside: rec['inside'] = inside[i]
+        # numbers among the placeholders of a format text: $"{count} players", string.Format("{0} perk pick{1}", n, ending)
+        if L.holes:
+            m2 = owner(i)
+            if m2 is not None:
+                loc = local_cache.get(m2['line'])
+                if loc is None:
+                    a2, b2 = m2['body']
+                    loc = local_cache[m2['line']] = numtype.locals_of(m2['params'], src[toks[a2].pos:tok_end(b2)])
+                nums = []
+                for expr, _, fmt in L.holes:
+                    try: nums.append(bool(fmt) or numtype.is_number(expr, loc, all_types))
+                    except Exception: nums.append(False)
+                rec['num'] = nums
+        elif '{0' in L.value:
+            args = format_args(i)
+            if args: rec['num'] = [numeric(a2, b2) for (a2, b2) in args]
         out.append(rec)
     for ch in chains:
         del ch['tok']; del ch['span']

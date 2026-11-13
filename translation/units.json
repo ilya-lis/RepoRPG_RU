@@ -2628,6 +2628,10 @@
 "UNKNOWN": 2
 },
 "code": "return $\"  {num2}/{num} this level\";",
+"num": [
+0,
+1
+],
 "id": 149
 },
 {
@@ -2716,6 +2720,10 @@ null
 "DISPLAY": 1
 },
 "code": "value2.Text = ((armed < 1f) ? $\"x{mult:0.0}  {Mathf.CeilToInt(remaining)}s  ARMING\" : $\"x{mult:0.0}  {Mathf.CeilToInt(remaining)}s\");",
+"num": [
+0,
+1
+],
 "id": 154
 },
 {
@@ -2851,6 +2859,9 @@ null
 "UNKNOWN": 1
 },
 "code": "_ => $\"[Hold {InteractKey()}] Recharge from cart  <color=#9a9ca0>(gun {_ccGunLife:0}%)</color>\",",
+"num": [
+1
+],
 "id": 161
 },
 {
@@ -2867,6 +2878,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add($\"+{speed:0}% speed\");",
+"num": [
+0
+],
 "id": 162
 },
 {
@@ -2883,6 +2897,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add($\"+{grip:0}% grip\");",
+"num": [
+0
+],
 "id": 163
 },
 {
@@ -2899,6 +2916,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add($\"-{guard:0}% damage\");",
+"num": [
+0
+],
 "id": 164
 },
 {
@@ -3282,6 +3302,9 @@ null
 "UNKNOWN": 1
 },
 "code": "_headLines.Add(($\"Head: {arg} {num4:0}m {Direction(target)}\", col));",
+"num": [
+1
+],
 "id": 185
 },
 {
@@ -3298,6 +3321,9 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Inspire {_inspire:0}  [{new string('|', num3)}{new string('.', 10 - num3)}]\" + (_talking ? \"  (speaking)\" : \"\"), val));",
+"num": [
+0
+],
 "id": 186
 },
 {
@@ -3369,6 +3395,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Blood Pact  {_pactEnd - Time.time:0}s  (-{_pactDrain:0.#} HP/s)\", val));",
+"num": [
+0,
+1
+],
 "id": 190
 },
 {
@@ -3385,6 +3415,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "lines.Add(((Mathf.Abs(num - num2) < 0.05f) ? $\"Blood Price: {num:0.#} HP per hit / throw\" : $\"Blood Price: {num2:0.#} HP per hit, {num:0.#} per throw\", val));",
+"num": [
+0
+],
 "id": 191
 },
 {
@@ -3401,6 +3434,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "lines.Add(((Mathf.Abs(num - num2) < 0.05f) ? $\"Blood Price: {num:0.#} HP per hit / throw\" : $\"Blood Price: {num2:0.#} HP per hit, {num:0.#} per throw\", val));",
+"num": [
+0,
+1
+],
 "id": 192
 },
 {
@@ -3437,6 +3474,10 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Inspired  +{_inspireFromAllies.speed:0.#}% speed, +{_inspireFromAllies.grip:0.#}% grip\", new Color(1f, 0.75f, 0.55f)));",
+"num": [
+0,
+1
+],
 "id": 194
 },
 {
@@ -4003,6 +4044,10 @@ null
 "UNKNOWN": 1
 },
 "code": "return string.Format(\"nearest to the crosshair: {0}, {1:0} deg off (needs 12), {2:0} m{3}{4}\", ClassHost.EnemyName((Component)(object)val), num, num3, (num3 > range) ? \" - too far\" : \"\", flag ? (\", blocked by \" + ((Object)((RaycastHit)(ref val2)).collider).nam",
+"num": [
+1,
+2
+],
 "id": 228
 },
 {
@@ -4035,6 +4080,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, (text == \"pad\") ? $\"Dispatch: on your Drop Pad (${value:N0})\" : $\"Dispatch delivered: ${value:N0} toward the haul\", CourierCol, \"dispatch\");",
+"num": [
+0
+],
 "id": 230
 },
 {
@@ -4051,6 +4099,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, (text == \"pad\") ? $\"Dispatch: on your Drop Pad (${value:N0})\" : $\"Dispatch delivered: ${value:N0} toward the haul\", CourierCol, \"dispatch\");",
+"num": [
+0
+],
 "id": 231
 },
 {
@@ -4067,6 +4118,9 @@ null
 "UNKNOWN": 1
 },
 "code": "label(arg, $\"Dispatch {Mathf.Max(0f, mark.End - time):0}s\", CourierCol);",
+"num": [
+0
+],
 "id": 232
 },
 {
@@ -4115,6 +4169,9 @@ null
 "UNKNOWN": 1
 },
 "code": "label(arg, $\"FIGHT  {Mathf.Max(0f, mark.End - 0.5f - time):0}s\", FightCol);",
+"num": [
+0
+],
 "id": 235
 },
 {
@@ -4131,6 +4188,10 @@ null
 "UNKNOWN": 1
 },
 "code": "label(_padPos + Vector3.up * 0.4f, (_padSlots > 0) ? $\"Drop Pad {_padCount}/{_padSlots}\" : \"Drop Pad\", CourierCol);",
+"num": [
+0,
+1
+],
 "id": 236
 },
 {
@@ -4163,6 +4224,9 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add((string.Format(\"{0} monster fight{1} going\", num, (num == 1) ? \"\" : \"s\"), col));",
+"num": [
+0
+],
 "id": 238
 },
 {
@@ -4179,6 +4243,10 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add((string.Format(\"Drop Pad {0}/{1}{2}\", _padCount, _padSlots, (_padValue >= 1f) ? $\"  ·  ${_padValue:N0} toward the haul\" : \"\"), col));",
+"num": [
+0,
+1
+],
 "id": 239
 },
 {
@@ -4195,6 +4263,9 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add((string.Format(\"Drop Pad {0}/{1}{2}\", _padCount, _padSlots, (_padValue >= 1f) ? $\"  ·  ${_padValue:N0} toward the haul\" : \"\"), col));",
+"num": [
+0
+],
 "id": 240
 },
 {
@@ -4362,6 +4433,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, $\"Watchpost: {name} {num:0}m {Direction(pos)}\", (Color?)new Color(0.78f, 1f, 0.25f), \"watch:\" + name);",
+"num": [
+1
+],
 "id": 250
 },
 {
@@ -4381,6 +4455,9 @@ null
 "pieces": [
 "Tier ",
 null
+],
+"num": [
+0
 ],
 "id": 251
 },
@@ -4446,6 +4523,9 @@ null
 "UNKNOWN": 1
 },
 "code": "HookAim.Item => $\"Hook: yank  {num6}m\",",
+"num": [
+0
+],
 "id": 255
 },
 {
@@ -4462,6 +4542,9 @@ null
 "UNKNOWN": 1
 },
 "code": "HookAim.Ledge => $\"Hook: climb  {num6}m\",",
+"num": [
+0
+],
 "id": 256
 },
 {
@@ -4478,6 +4561,9 @@ null
 "UNKNOWN": 1
 },
 "code": "HookAim.Floor => $\"Hook: land  {num6}m\",",
+"num": [
+0
+],
 "id": 257
 },
 {
@@ -4494,6 +4580,9 @@ null
 "UNKNOWN": 1
 },
 "code": "HookAim.Wall => $\"Hook: cling  {num6}m\",",
+"num": [
+0
+],
 "id": 258
 },
 {
@@ -4510,6 +4599,9 @@ null
 "UNKNOWN": 1
 },
 "code": "HookAim.Ceiling => $\"Hook: hang  {num6}m\",",
+"num": [
+0
+],
 "id": 259
 },
 {
@@ -4582,6 +4674,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Overclock  +{fire:0}% fire rate  {value.Item1 - Time.time:0}s\", col));",
+"num": [
+0,
+1
+],
 "id": 263
 },
 {
@@ -4614,6 +4710,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"Patched up: {num2:0}% less damage for 4s\", Good);",
+"num": [
+0
+],
 "id": 265
 },
 {
@@ -4646,6 +4745,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"Feather Fall: caught at {num} HP\", Good);",
+"num": [
+0
+],
 "id": 267
 },
 {
@@ -4911,6 +5013,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "why = $\"All {ContractBoard.Slots} slots used\";",
+"num": [
+0
+],
 "id": 281
 },
 {
@@ -5299,6 +5404,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Contract, string.Format(\"{0} accepted contract{1} expired (for another level or class)\", num, (num == 1) ? \"\" : \"s\"), Color.gray);",
+"num": [
+0
+],
 "id": 302
 },
 {
@@ -5315,6 +5423,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Contract, string.Format(\"{0} contract{1} active ({2})\", list.Count, (list.Count == 1) ? \"\" : \"s\", MenuPrompt), CtGold);",
+"num": [
+0
+],
 "id": 303
 },
 {
@@ -5475,6 +5586,9 @@ null
 "UNKNOWN": 2
 },
 "code": "string text = ((scrap > 0) ? (Scrap.Price(scrap) + \" + \") : \"\") + $\"{c.rewardXp} XP\";",
+"num": [
+0
+],
 "id": 312
 },
 {
@@ -5555,6 +5669,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Contract, string.Format(\"{0}{1} reputation with {2} ({3}\", (delta > 0) ? \"+\" : \"\", num2 - num, text, num2) + ((num3 > 0) ? $\"/{num3})\" : \", max)\"), (delta > 0) ? ContractBoard.GiverColor(giver) : CtBad, \"rep:\" + giver);",
+"num": [
+1,
+3
+],
 "id": 316
 },
 {
@@ -5803,6 +5921,10 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Contract, $\"{chainDef.name}: step {ctRun.chainStep}/{chainDef.steps.Length} done - the next one is on the next board\", ContractBoard.GiverColor(chainDef.giver));",
+"num": [
+1,
+2
+],
 "id": 329
 },
 {
@@ -5857,6 +5979,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Notify(PopupKind.Other, $\"+{amount} shop reputation\", (Color?)new Color(1f, 0.74f, 0.22f), \"\");",
+"num": [
+0
+],
 "id": 332
 },
 {
@@ -6164,6 +6289,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast(flag ? \"Second Wind! The team's run boon saved you (once a level)\" : ((source == \"fall\") ? $\"Death save! Caught your fall ({deathSavesLeft} left this level)\" : $\"Death save! ({deathSavesLeft} left this level)\"), new Color(1f, 0.85f, 0.3f));",
+"num": [
+0
+],
 "id": 348
 },
 {
@@ -6180,6 +6308,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast(flag ? \"Second Wind! The team's run boon saved you (once a level)\" : ((source == \"fall\") ? $\"Death save! Caught your fall ({deathSavesLeft} left this level)\" : $\"Death save! ({deathSavesLeft} left this level)\"), new Color(1f, 0.85f, 0.3f));",
+"num": [
+0
+],
 "id": 349
 },
 {
@@ -6505,6 +6636,9 @@ null
 "DISPLAY": 1
 },
 "code": "name = $\"Loadout {loadouts.Count + 1}\"",
+"num": [
+0
+],
 "id": 367
 },
 {
@@ -6598,6 +6732,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, gearLoadout.name + \" equipped\" + ((num > 0) ? string.Format(\" ({0} item{1} gone)\", num, (num == 1) ? \"\" : \"s\") : \"\"));",
+"num": [
+0
+],
 "inside": [
 "{0} equipped{1}"
 ],
@@ -6703,6 +6840,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, $\"You joined {text}: pick a class in the next {pickSeconds:0} s ({MenuPrompt})\", Accent, \"chooseclass\");",
+"num": [
+1
+],
 "id": 377
 },
 {
@@ -6827,6 +6967,10 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Level, $\"Catch-up: {Current.name} starts at Lv {CurrentProgress.level} - {Leveling.AvailablePoints(CurrentProgress)} skill points to spend ({MenuPrompt})\", null, \"level\");",
+"num": [
+1,
+2
+],
 "id": 384
 },
 {
@@ -6915,6 +7059,9 @@ null
 "DISPLAY": 1
 },
 "code": "Toast($\"Ghost Protocol: silent for {num:0}s\", new Color(0.7f, 0.85f, 1f));",
+"num": [
+0
+],
 "id": 389
 },
 {
@@ -6984,6 +7131,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"Blood Money: -{Mathf.Min(num, num2 - 1)} HP\", Perks.CursedColor);",
+"num": [
+0
+],
 "id": 393
 },
 {
@@ -7032,6 +7182,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"{Current.name}  -  Level {CurrentProgress.level}\");",
+"num": [
+1
+],
 "id": 396
 },
 {
@@ -7048,6 +7201,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Skill points: {Leveling.AvailablePoints(CurrentProgress)}\");",
+"num": [
+0
+],
 "id": 397
 },
 {
@@ -7064,6 +7220,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Attribute points: {Leveling.AvailableAttributePoints(CurrentProgress, data)}\");",
+"num": [
+0
+],
 "id": 398
 },
 {
@@ -7080,6 +7239,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Perk picks ready: {data.perkPicksPending}\");",
+"num": [
+0
+],
 "id": 399
 },
 {
@@ -7096,6 +7258,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Gear: {data.inventory.Count} items, perks: {data.perks.Count}\");",
+"num": [
+0,
+1
+],
 "id": 400
 },
 {
@@ -7299,6 +7465,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"Welcome back - {Current.name} Lv {CurrentProgress.level}, {_store.Data.inventory.Count} gear, \" + $\"{_store.Data.perks.Count} perks restored\", new Color(1f, 0.7f, 0.12f), 5f);",
+"num": [
+1,
+2
+],
 "id": 411
 },
 {
@@ -7315,6 +7485,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"Welcome back - {Current.name} Lv {CurrentProgress.level}, {_store.Data.inventory.Count} gear, \" + $\"{_store.Data.perks.Count} perks restored\", new Color(1f, 0.7f, 0.12f), 5f);",
+"num": [
+0
+],
 "id": 412
 },
 {
@@ -7382,6 +7555,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast(string.Format(\"Attributes reworked - your {0} attribute point{1} were refunded\", num, (num == 1) ? \"\" : \"s\"), new Color(1f, 0.7f, 0.12f), 6f);",
+"num": [
+0
+],
 "id": 416
 },
 {
@@ -7398,6 +7574,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast(string.Format(\"Skill trees redesigned - your {0} skill point{1} were refunded\", num2, (num2 == 1) ? \"\" : \"s\"), new Color(1f, 0.7f, 0.12f), 6f);",
+"num": [
+0
+],
 "id": 417
 },
 {
@@ -7847,6 +8026,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"Enemies hit are Marked: +{num13:0}% damage for {num14:0}s\", new Color(0.4f, 0.65f, 1f));",
+"num": [
+0,
+1
+],
 "id": 443
 },
 {
@@ -7863,6 +8046,11 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Level, $\"Level up! {Current.name} Lv {CurrentProgress.level} – {num4} skill / {num5} attribute points ({MenuPrompt})\", null, \"level\");",
+"num": [
+1,
+2,
+3
+],
 "id": 444
 },
 {
@@ -8311,6 +8499,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Contract, $\"+{item.rewardAttributePoints} attribute point (contract)\");",
+"num": [
+0
+],
 "id": 470
 },
 {
@@ -9193,6 +9384,9 @@ null
 "DISPLAY": 1
 },
 "code": "string body = string.Format(\"{0}: {1} affix{2}\", arg, GearX.RandomAffixCount(g), (GearX.RandomAffixCount(g) == 1) ? \"\" : \"es\") + (upgrade ? \" (the base stat grows with the rarity)\" : \"\") + \"\\nKeeps: \" + RerollKeeps(g) + \"\\n\\nCost: \" + Scrap.Price(amount);",
+"num": [
+1
+],
 "inside": [
 "{0}\nKeeps: {1}\n\nCost: {2}"
 ],
@@ -9538,6 +9732,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"{0} socket{1}\", g.sockets, (g.sockets == 1) ? \"\" : \"s\") + ((num > 0) ? string.Format(\" with {0} module{1}\", num, (num == 1) ? \"\" : \"s\") : \"\"));",
+"num": [
+0
+],
 "id": 538
 },
 {
@@ -9554,6 +9751,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"{0} socket{1}\", g.sockets, (g.sockets == 1) ? \"\" : \"s\") + ((num > 0) ? string.Format(\" with {0} module{1}\", num, (num == 1) ? \"\" : \"s\") : \"\"));",
+"num": [
+0
+],
 "id": 539
 },
 {
@@ -9586,6 +9786,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"upgrade level +{g.up}\" + ((g.upSteps > 0) ? $\" and its +{(float)g.upSteps * (GearX.Pack.upgrades ?? new GearUpgradeDef()).step:0}%\" : \"\") + ((g.upFx.Length != 0) ? \" (its upgrade lines roll again on a reroll)\" : \"\"));",
+"num": [
+0
+],
 "id": 541
 },
 {
@@ -9602,6 +9805,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"upgrade level +{g.up}\" + ((g.upSteps > 0) ? $\" and its +{(float)g.upSteps * (GearX.Pack.upgrades ?? new GearUpgradeDef()).step:0}%\" : \"\") + ((g.upFx.Length != 0) ? \" (its upgrade lines roll again on a reroll)\" : \"\"));",
+"num": [
+0
+],
 "id": 542
 },
 {
@@ -9691,6 +9897,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string arg = ((count != 1) ? $\"{count} items\" : ((bestRarity >= 2) ? (\"a \" + Gear.Rarity(bestRarity).name + \" item\") : \"1 item\"));",
+"num": [
+0
+],
 "id": 547
 },
 {
@@ -9723,6 +9932,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Loot, $\"Appraised {arg}: +${gained:N0} value\", (Color?)new Color(0.94f, 0.63f, 0.82f), \"\");",
+"num": [
+1
+],
 "id": 549
 },
 {
@@ -10075,6 +10287,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"You can lock {shopMaxLocksE} items at most\", Bad);",
+"num": [
+0
+],
 "id": 568
 },
 {
@@ -10445,6 +10660,9 @@ null
 "DISPLAY": 1
 },
 "code": "AskPurchase(\"BUY THE CART?\", string.Format(\"Buy {0} item{1} for {2}?\\n\", _cart.Count, (_cart.Count == 1) ? \"\" : \"s\", Scrap.Price(CartTotal())) + string.Join(\"\\n\", list), delegate",
+"num": [
+0
+],
 "id": 588
 },
 {
@@ -10477,6 +10695,9 @@ null
 "DISPLAY": 1
 },
 "code": "Toast($\"Frenzy x{_frenzy}\", new Color(1f, 0.35f, 0.3f), 1.5f);",
+"num": [
+0
+],
 "id": 590
 },
 {
@@ -10493,6 +10714,11 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Momentum {_momentum}/{num}  (+{(float)_momentum * _stats[Stat.MomentumPower]:0}% sprint)\", (_momentum >= num) ? new Color(0.4f, 0.85f, 1f) : new Color(0.6f, 0.75f, 0.85f)));",
+"num": [
+0,
+1,
+2
+],
 "id": 591
 },
 {
@@ -10509,6 +10735,10 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Frenzy x{_frenzy}  {Mathf.Max(0f, _frenzyEnd - Time.time):0}s\", new Color(1f, 0.4f, 0.35f)));",
+"num": [
+0,
+1
+],
 "id": 592
 },
 {
@@ -10525,6 +10755,9 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Shadowstep  {_shadowstepEnd - Time.time:0.0}s\", new Color(0.7f, 0.75f, 0.95f)));",
+"num": [
+0
+],
 "id": 593
 },
 {
@@ -10541,6 +10774,9 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Scar Tissue  -{_scar:0.#}% damage\", new Color(0.65f, 0.8f, 0.45f)));",
+"num": [
+0
+],
 "id": 594
 },
 {
@@ -10557,6 +10793,9 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Shield Wall  -{_guardedBy:0}% damage\", new Color(1f, 0.75f, 0.35f)));",
+"num": [
+0
+],
 "id": 595
 },
 {
@@ -10573,6 +10812,9 @@ null
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"Power Link  +{_linkRegen:0.#} stamina/s\", new Color(0.7f, 0.6f, 1f)));",
+"num": [
+0
+],
 "id": 596
 },
 {
@@ -10884,6 +11126,11 @@ null,
 "UNKNOWN": 1
 },
 "code": "return \"menu manager \" + (s.MenuOpen ? \"OPEN\" : \"closed\") + ((s.Page != \"\") ? (\" (page \" + s.Page + \", \" + (s.PageVisible ? \"visible\" : \"not visible\") + \")\") : \" (no page)\") + \", controls: player map \" + ((!s.PlayerMap.HasValue) ? \"?\" : (s.PlayerMap.Value ? \"o",
+"num": [
+0,
+1,
+2
+],
 "inside": [
 "menu manager {0}, controls: player map {1}, UI map {2}, {3}chat {4}, text input {5}"
 ],
@@ -10903,6 +11150,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return \"menu manager \" + (s.MenuOpen ? \"OPEN\" : \"closed\") + ((s.Page != \"\") ? (\" (page \" + s.Page + \", \" + (s.PageVisible ? \"visible\" : \"not visible\") + \")\") : \" (no page)\") + \", controls: player map \" + ((!s.PlayerMap.HasValue) ? \"?\" : (s.PlayerMap.Value ? \"o",
+"num": [
+1
+],
 "inside": [
 "menu manager {0}, controls: player map {1}, UI map {2}, {3}chat {4}, text input {5}"
 ],
@@ -10922,6 +11172,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return \"menu manager \" + (s.MenuOpen ? \"OPEN\" : \"closed\") + ((s.Page != \"\") ? (\" (page \" + s.Page + \", \" + (s.PageVisible ? \"visible\" : \"not visible\") + \")\") : \" (no page)\") + \", controls: player map \" + ((!s.PlayerMap.HasValue) ? \"?\" : (s.PlayerMap.Value ? \"o",
+"num": [
+0
+],
 "inside": [
 "menu manager {0}, controls: player map {1}, UI map {2}, {3}chat {4}, text input {5}"
 ],
@@ -11360,6 +11613,9 @@ null,
 "boss:",
 null
 ],
+"num": [
+0
+],
 "id": 636
 },
 {
@@ -11392,6 +11648,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = data.migrationNote + $\" You can keep it, or pick any other class once for free here: it starts at Lv {data.repickLevel} ({MenuPrompt}).\";",
+"num": [
+0
+],
 "id": 638
 },
 {
@@ -11428,6 +11687,9 @@ null
 "pieces": [
 "part:",
 null
+],
+"num": [
+0
 ],
 "id": 640
 },
@@ -11737,6 +11999,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Loot, $\"Crafted: {RecipeName(r)} on {copy.name} ({copy.crafts}/{Plugin.Cfg.MaxCraftsPerItem.Value})\", ParseColor(rarityDef2.color));",
+"num": [
+2
+],
 "id": 659
 },
 {
@@ -11785,6 +12050,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = $\"<color={rarityDef.color}><b>{rarityDef.name} {gearItem.name}</b></color>   Crafts {gearItem.crafts}/{Plugin.Cfg.MaxCraftsPerItem.Value}\" + $\"   Rarity upgrades {gearItem.rarityUps}/{Plugin.Cfg.MaxRarityUpgrades.Value}\\nYour parts: {Crafting.Des",
+"num": [
+3
+],
 "id": 662
 },
 {
@@ -11801,6 +12069,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = $\"<color={rarityDef.color}><b>{rarityDef.name} {gearItem.name}</b></color>   Crafts {gearItem.crafts}/{Plugin.Cfg.MaxCraftsPerItem.Value}\" + $\"   Rarity upgrades {gearItem.rarityUps}/{Plugin.Cfg.MaxRarityUpgrades.Value}\\nYour parts: {Crafting.Des",
+"num": [
+0
+],
 "id": 663
 },
 {
@@ -12068,6 +12339,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string label2 = (compact ? $\"Upgrade +{g.up + 1}\" : $\"Upgrade +{g.up + 1}  ·  {Scrap.Price(num2)} + {Crafting.Describe(array2)}  ·  {GearUp.NextText(g).Substring(GearUp.NextText(g).IndexOf(':') + 1).Trim()}\");",
+"num": [
+0
+],
 "id": 677
 },
 {
@@ -12084,6 +12358,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string label2 = (compact ? $\"Upgrade +{g.up + 1}\" : $\"Upgrade +{g.up + 1}  ·  {Scrap.Price(num2)} + {Crafting.Describe(array2)}  ·  {GearUp.NextText(g).Substring(GearUp.NextText(g).IndexOf(':') + 1).Trim()}\");",
+"num": [
+0
+],
 "id": 678
 },
 {
@@ -12141,6 +12418,9 @@ null,
 "DISPLAY": 1
 },
 "code": "SetTip(r, $\"UPGRADE +{g.up + 1}\", GearUp.NextText(g), \"<color=#ff9a8a>Available \" + text + \".</color>\");",
+"num": [
+0
+],
 "id": 681
 },
 {
@@ -12232,6 +12512,9 @@ null
 "DISPLAY": 1
 },
 "code": "AskConfirm($\"UPGRADE {g.name.ToUpperInvariant()} TO +{lvl}?\", stringBuilder.ToString(), \"Upgrade\", delegate",
+"num": [
+1
+],
 "id": 686
 },
 {
@@ -12264,6 +12547,9 @@ null
 "DISPLAY": 1
 },
 "code": "Buy(key, $\"upgrade +{lvl} on {g.name}\", ShopX.BasePrice(key), delegate",
+"num": [
+0
+],
 "id": 688
 },
 {
@@ -12394,6 +12680,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, string.Format(\"Host updated settings ({0} change{1}) - open the menu's Host tab to view them\", changes, (changes == 1) ? \"\" : \"s\"), (Color?)new Color(1f, 0.8f, 0.35f), \"hostsettings\");",
+"num": [
+0
+],
 "id": 695
 },
 {
@@ -12479,6 +12768,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text = ((!edit) ? (SettingsSync.VersionBlocked ? (\"<color=#ff9999>Paused: the host runs RepoRPG \" + SettingsSync.HostModVersion + \", you run 1.0.100.</color>\") : \"<color=#9a9ca0>[LOCKED] Set by host - read only. Your own config file is never changed.</c",
+"num": [
+1
+],
 "id": 700
 },
 {
@@ -12575,6 +12867,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = \"<color=#ffcc66>Last change from the host:</color> \" + string.Join(\"  ·  \", SettingsSync.LastChanges.GetRange(0, Mathf.Min(6, SettingsSync.LastChanges.Count))) + ((SettingsSync.LastChanges.Count > 6) ? $\"  and {SettingsSync.LastChanges.Count - 6}",
+"num": [
+0
+],
 "inside": [
 "<color=#ffcc66>Last change from the host:</color> {0}"
 ],
@@ -12610,6 +12905,9 @@ null
 "DISPLAY": 1
 },
 "code": "if (Btn(val, string.Format(\"{0} {1}  ({2}){3}  -  {4}\", flag ? \"▾\" : \"▸\", item, item3.Count, (num6 > 0) ? $\"  · {num6} pending\" : \"\", item2)))",
+"num": [
+0
+],
 "id": 707
 },
 {
@@ -12698,6 +12996,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text2 = ((num2 == 1) ? \"1 setting\" : $\"{num2} settings\");",
+"num": [
+0
+],
 "id": 712
 },
 {
@@ -12730,6 +13031,9 @@ null,
 "DISPLAY": 1
 },
 "code": "_hsCountText = ((_hsFound == 1) ? \"1 setting found\" : $\"{_hsFound} settings found\");",
+"num": [
+0
+],
 "id": 714
 },
 {
@@ -12884,6 +13188,9 @@ null
 "DISPLAY": 1
 },
 "code": "_applyLabel = ((count > 0) ? $\"Apply ({count})\" : \"Apply\");",
+"num": [
+0
+],
 "id": 723
 },
 {
@@ -12916,6 +13223,9 @@ null
 "DISPLAY": 1
 },
 "code": "_presetsLabel = (_presetsOpen ? \"Hide presets\" : $\"Presets ({presetCount}) ▾\");",
+"num": [
+0
+],
 "id": 725
 },
 {
@@ -12948,6 +13258,9 @@ null
 "UNKNOWN": 1
 },
 "code": "string text = ((count == 1) ? \"1 change\" : $\"{count} changes\");",
+"num": [
+0
+],
 "id": 727
 },
 {
@@ -13045,6 +13358,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "Part($\"<color=#ffcc66>{scheduled} waiting for the next level / run</color>\");",
+"num": [
+0
+],
 "id": 732
 },
 {
@@ -13061,6 +13377,9 @@ null,
 "DISPLAY": 1
 },
 "code": "PresetNote(string.Format(\"Default preset '{0}' applied ({1} change{2})\", name, changes, (changes == 1) ? \"\" : \"s\"), good: true, 8f);",
+"num": [
+1
+],
 "id": 733
 },
 {
@@ -13077,6 +13396,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, string.Format(\"Default preset '{0}' applied to your lobby ({1} change{2})\", name, changes, (changes == 1) ? \"\" : \"s\"), (Color?)new Color(0.55f, 0.95f, 0.75f), \"defaultpreset\");",
+"num": [
+1
+],
 "id": 734
 },
 {
@@ -13939,6 +14261,12 @@ null,
 ", set to ",
 null
 ],
+"num": [
+1,
+2,
+3,
+4
+],
 "id": 780
 },
 {
@@ -14167,6 +14495,9 @@ null,
 "DISPLAY": 1
 },
 "code": "stringBuilder.Append($\"  ...and {_hostPending.Count - 18} more\\n\");",
+"num": [
+0
+],
 "id": 792
 },
 {
@@ -14236,6 +14567,9 @@ null,
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(((Rect)(ref r)).x + num, ((Rect)(ref r)).y + num, num3, num6 + 2f), string.Format(\"APPLY {0} CHANGE{1}?\", _hostPending.Count, (_hostPending.Count == 1) ? \"\" : \"S\"), _title, Accent, 3f);",
+"num": [
+0
+],
 "id": 796
 },
 {
@@ -14252,6 +14586,9 @@ null,
 "DISPLAY": 1
 },
 "code": "PresetNote(string.Format(\"Applied {0} change{1}\", dictionary.Count, (dictionary.Count == 1) ? \"\" : \"s\") + ((HostSettings.Scheduled > 0) ? \" - some wait for the next level / run\" : \"\"), good: true);",
+"num": [
+0
+],
 "id": 797
 },
 {
@@ -14316,6 +14653,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, $\"Crew level {s.DrillFor}: vote on a crew drill (Shop tab)\", (Color?)new Color(0.45f, 0.85f, 1f), \"crewdrill\");",
+"num": [
+0
+],
 "id": 801
 },
 {
@@ -14426,6 +14766,11 @@ null,
 "DISPLAY": 1
 },
 "code": "Text = $\"<b>CREW DRILL (CREW LEVEL {cur.DrillFor})</b>  {cur.DrillVotes}/{players} voted\" + ((text != \"\") ? (\"  <color=#9a9ca0>· your vote: \" + text + \"</color>\") : \"\")",
+"num": [
+0,
+1,
+2
+],
 "id": 807
 },
 {
@@ -14461,6 +14806,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Text = $\"<b>SPONSOR VOTE</b>  {cur.SponsorVotes}/{players} voted\" + ((text2 != \"\") ? (\"  <color=#9a9ca0>· your vote: \" + text2 + \"</color>\") : \"\")",
+"num": [
+0,
+1
+],
 "id": 809
 },
 {
@@ -14502,6 +14851,9 @@ null,
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(num7, num6, num, LineH(_h2) + 2f), flag ? $\"CREW LEVEL {cur.DrillFor}: PICK A CREW DRILL\" : \"PICK THE RUN'S SPONSOR\", _h2, val);",
+"num": [
+0
+],
 "id": 811
 },
 {
@@ -14566,6 +14918,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(num7, num6, num, LineH(_small) + 2f), $\"<color=#9a9ca0>{num8}/{Mathf.Max(1, Game.Players().Count)} voted; decided when everyone has, or when the next level starts. {arg}</color>\", _small);",
+"num": [
+0,
+1
+],
 "id": 815
 },
 {
@@ -14604,6 +14960,9 @@ null,
 "DISPLAY": 2
 },
 "code": "Toast($\"Uplink ready in {_uplinkNext - time:0} s\", Color.gray, 1.5f);",
+"num": [
+0
+],
 "id": 817
 },
 {
@@ -14652,6 +15011,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string label = ((num == 0) ? \"MONSTER\" : $\"VALUABLE ${num3:N0}\");",
+"num": [
+0
+],
 "id": 820
 },
 {
@@ -14687,6 +15049,9 @@ null,
 "pieces": [
 "uplink:",
 null
+],
+"num": [
+0
 ],
 "id": 822
 },
@@ -14959,6 +15324,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "value += string.Format(\"  <color=#9a9ca0>+{0} module{1} (they go with it)</color>\", num, (num == 1) ? \"\" : \"s\");",
+"num": [
+0
+],
 "id": 837
 },
 {
@@ -14997,6 +15365,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = ((_tradeState == 1) ? (\"<b>\" + _tradeOtherName + \"</b> offers you:\\n\" + _tradeItemText) : ((_tradeState == 2) ? $\"Waiting for <b>{_tradeOtherName}</b> to answer ({Mathf.Max(0f, _tradeUntil - unscaledTime):0} s). You offered:\\n{_tradeItemText}\" : ",
+"num": [
+1
+],
 "id": 839
 },
 {
@@ -16085,6 +16456,9 @@ null,
 "DISPLAY": 1
 },
 "code": "y = TextE(area, y, (num == 0) ? \"<color=#9a9ca0>No Uniques on file yet. Every Unique you find is added.</color>\" : string.Format(\"{0} Unique{1} on file. Each visit, one of them is in your Gear section.\", num, (num == 1) ? \"\" : \"s\"));",
+"num": [
+0
+],
 "id": 900
 },
 {
@@ -16822,6 +17196,9 @@ null,
 "futures:",
 null
 ],
+"num": [
+0
+],
 "id": 938
 },
 {
@@ -17167,6 +17544,9 @@ null
 "DISPLAY": 1
 },
 "code": "y = ShopRow(area, y, \"Fuse 3 \" + rarityDef.name + \" \" + Gear.SlotName(item), $\"You have {item3}. Makes one <color={rarityDef2.color}>{rarityDef2.name}</color> {Gear.SlotName(item)}.\", 0, open, delegate",
+"num": [
+0
+],
 "id": 957
 },
 {
@@ -17496,6 +17876,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = ((_rxVaultHold > 0.05f) ? $\"Cracking the vault... {Mathf.Min(_rxVaultHold, 6f):0.0} / 6 s (monsters hear it)\" : (\"[Hold \" + InteractKey() + \"] Crack the vault (6 s, loud)\"));",
+"num": [
+0
+],
 "id": 976
 },
 {
@@ -17592,6 +17975,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast(string.Format(\"Survey Drone: {0} valuable{1} marked for 10 s\", num2, (num2 == 1) ? \"\" : \"s\"), ResTeal);",
+"num": [
+0
+],
 "id": 982
 },
 {
@@ -17660,6 +18046,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "return string.Format(\"Salvage {0} item{1} for +{2} {3}\", _salvageAskBulk.Count, (_salvageAskBulk.Count == 1) ? \"\" : \"s\", num, Scrap.Short) + (Plugin.Cfg.SalvageGivesXp.Value ? \" (and their salvage XP)\" : \"\") + \"? Equipped gear is kept.\";",
+"num": [
+0,
+2
+],
 "inside": [
 "{0}? Equipped gear is kept."
 ],
@@ -17714,6 +18104,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "text = $\" <color=#ffcc66>This is part of the {setDef.name} set (you wear {value}/4).</color>\";",
+"num": [
+1
+],
 "id": 989
 },
 {
@@ -17730,6 +18123,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "text += $\" <color=#ff9999>You'll lose the {setDef.name} {value}-piece bonus.</color>\";",
+"num": [
+1
+],
 "id": 990
 },
 {
@@ -17762,6 +18158,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "text += $\" <color=#ffcc66>It's {GearX.TierNames[num2 - 1]} ({salvageAsk.attune} attunement) - that progress is lost.</color>\";",
+"num": [
+1
+],
 "id": 992
 },
 {
@@ -17778,6 +18177,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "text += string.Format(\" Its {0} module{1} go back to your bag.\", num3, (num3 == 1) ? \"\" : \"s\");",
+"num": [
+0
+],
 "id": 993
 },
 {
@@ -17814,6 +18216,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"Salvage {Cursed.RarityName(salvageAsk)} {salvageAsk.name} for +{SalvagePreview(salvageAsk)} {Scrap.Short}?\" + text + (_store.Data.IsEquipped(salvageAsk) ? \" It's equipped: it will be unequipped first.\" : \"\") + \" This can't be undone.\";",
+"num": [
+2
+],
 "inside": [
 "{0} This can't be undone."
 ],
@@ -18182,6 +18587,12 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"Accept {num3} · Decline {num2} · Waiting {Mathf.Max(0, num - num3 - num2)} (of {num})\";",
+"num": [
+0,
+1,
+2,
+3
+],
 "id": 1015
 },
 {
@@ -18198,6 +18609,11 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"Hauled ${_tcHaul:N0} / ${_tcNeed:N0} ({_tcTarget}% of the level's goal)\";",
+"num": [
+0,
+1,
+2
+],
 "id": 1016
 },
 {
@@ -18508,6 +18924,9 @@ null
 "UNKNOWN": 1
 },
 "code": "0 => \"VOTING: \" + TeamVoteCount() + \"  ·  \" + (_tcBoardVote ? \"closes when the level starts\" : $\"{Mathf.Max(0f, _tcVoteEnd - Time.time):0}s left\") + \"  ·  \" + VoteRuleText(),",
+"num": [
+0
+],
 "inside": [
 "VOTING: {0}  ·  {1}  ·  {2}"
 ],
@@ -18726,6 +19145,9 @@ null
 "DISPLAY": 1
 },
 "code": "Toast($\"Call out again in {_nextCallOut - time:0} s\", Color.gray, 1.5f);",
+"num": [
+0
+],
 "id": 1045
 },
 {
@@ -18742,6 +19164,9 @@ null
 "DISPLAY": 1
 },
 "code": "Toast($\"You called for help ({num - _callOutsThisDeath} left)\", new Color(1f, 0.5f, 0.4f), 2f);",
+"num": [
+0
+],
 "id": 1046
 },
 {
@@ -18778,6 +19203,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = $\"HELP: {callOut.Name}  {num4:0}m\";",
+"num": [
+1
+],
 "id": 1048
 },
 {
@@ -19021,6 +19449,13 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = (Account.Enabled ? string.Format(\"Mastered {0}/{1}   ·   Unlocks {2}/{3}   ·   Levels finished {4}   ·   {5}   ·   Payout tier: {6}{7} (x{8:0.##})\", Account.MasteredCount, Plugin.Db.Classes.Count, Account.Data.unlocks.Count, Account.Unlocks.Count",
+"num": [
+0,
+1,
+2,
+3,
+8
+],
 "id": 1061
 },
 {
@@ -19213,6 +19648,9 @@ null,
 "DISPLAY": 1
 },
 "code": "tabDetail.Status.Add(flag ? (UiStatus.Maxed, \"Mastered\") : (UiStatus.Pending, $\"Best level {accountClass?.bestLevel ?? 0}/{30}\"));",
+"num": [
+1
+],
 "id": 1072
 },
 {
@@ -19250,6 +19688,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "tabDetail.Now = (flag ? (\"Mastered \" + accountClass.masteredAt + \".\") : $\"Reach level {30} with {c.name} to master it.\");",
+"num": [
+0
+],
 "id": 1074
 },
 {
@@ -19290,6 +19731,9 @@ null
 "UNKNOWN": 1
 },
 "code": "tabDetail.Needs = $\"Mastery XP {accountClass?.masteryXp ?? 0:N0}.\";",
+"num": [
+0
+],
 "id": 1076
 },
 {
@@ -19343,6 +19787,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref r)).x + 12f, ((Rect)(ref r)).y + 12f + LineH(_bodyB) + LineH(_small), ((Rect)(ref r)).width - 24f, LineH(_small) + 2f), $\"<color=#9a9ca0>Mastery XP {accountClass?.masteryXp ?? 0:N0}</color>\", _small);",
+"num": [
+0
+],
 "id": 1079
 },
 {
@@ -19491,6 +19938,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = ((lvl < 20) ? $\" Ascension {lvl + 1} is open.\" : \" That's the top: Ascension 20.\");",
+"num": [
+0
+],
 "id": 1087
 },
 {
@@ -19523,6 +19973,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Banner((lvl > 0) ? $\"ASCENSION {lvl} CONQUERED\" : \"RUN WON\", AscColor);",
+"num": [
+0
+],
 "id": 1089
 },
 {
@@ -19555,6 +20008,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, (newHigh ? $\"New record: Ascension {lvl} won!\" : $\"Ascension {lvl} won again.\") + text, AscColor, \"ascension\");",
+"num": [
+0
+],
 "id": 1091
 },
 {
@@ -19571,6 +20027,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, (newHigh ? $\"New record: Ascension {lvl} won!\" : $\"Ascension {lvl} won again.\") + text, AscColor, \"ascension\");",
+"num": [
+0
+],
 "id": 1092
 },
 {
@@ -19587,6 +20046,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = (canPick ? $\"up to A{num}\" : (Game.IsMaster() ? \"fixed for this run\" : \"the host picks\"));",
+"num": [
+0
+],
 "id": 1093
 },
 {
@@ -19635,6 +20097,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref r)).x + 16f + 2f * (btnH + 4f), ((Rect)(ref r)).y + (BtnH - LineH(_smallLine)) / 2f, ((Rect)(ref r)).width - 2f * (btnH + 4f) - 24f, LineH(_smallLine) + 2f), string.Format(\"<b>ASCENSION {0}</b>  <color=#9a9ca0>{1} · {2} · your best w",
+"num": [
+0
+],
 "id": 1096
 },
 {
@@ -19711,6 +20176,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(flag ? $\"<b>A{mod.N} {mod.Name}</b>  {mod.Desc}\" : $\"<color=#9a9ca0>A{mod.N} - win A{mod.N - 1} to see</color>\").Append((mine.highest >= mod.N) ? \"  <color=#73ff66>won</color>\" : \"\").Append('\\n');",
+"num": [
+0,
+1
+],
 "id": 1100
 },
 {
@@ -20131,6 +20600,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref area)).x, ((Rect)(ref area)).y, ((Rect)(ref area)).width - num3 - 16f, num4), $\"Attribute points to spend: <b>{num2}</b>{text}    <color=#9a9ca0>Spent: {data.SpentAttributePoints()}</color>     {text2}\", _body);",
+"num": [
+0,
+2
+],
 "id": 1124
 },
 {
@@ -20219,6 +20692,9 @@ null,
 "DISPLAY": 1
 },
 "code": "text5 = (flag6 ? (\"<color=#ffd75a>NEW: \" + item4.name + \"</color>\") : $\"Next: {item4.name} at {num21}\");",
+"num": [
+1
+],
 "id": 1129
 },
 {
@@ -20267,6 +20743,11 @@ null,
 "DISPLAY": 1
 },
 "code": "attrDetailInfo.Type = attrFocus.category + \" · \" + ((num4 > 0) ? $\"{num3} → {num5}/{attrFocus.maxPoints} points\" : $\"{num3}/{attrFocus.maxPoints} points\");",
+"num": [
+0,
+1,
+2
+],
 "id": 1132
 },
 {
@@ -20283,6 +20764,10 @@ null,
 "DISPLAY": 1
 },
 "code": "attrDetailInfo.Type = attrFocus.category + \" · \" + ((num4 > 0) ? $\"{num3} → {num5}/{attrFocus.maxPoints} points\" : $\"{num3}/{attrFocus.maxPoints} points\");",
+"num": [
+0,
+1
+],
 "id": 1133
 },
 {
@@ -20299,6 +20784,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "attrDetailInfo.Status.Add((UiStatus.Pending, $\"+{num4} pending\"));",
+"num": [
+0
+],
 "id": 1134
 },
 {
@@ -20406,6 +20894,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "attrDetailInfo.Needs = ((num5 >= attrFocus.maxPoints) ? \"Maxed.\" : ((CurrentProgress == null) ? \"Pick a class first: attribute points come from class levels.\" : $\"1 attribute point per point (you have {avail} to spend).\"));",
+"num": [
+0
+],
 "id": 1140
 },
 {
@@ -20583,6 +21074,9 @@ null
 "UNKNOWN": 1
 },
 "code": "_sNext = \"<b>Next point:</b> \" + AttrEffects(fa, num4) + ((num4 < 0.999f) ? $\" <color=#ffb21e>({num4 * 100f:0}%, past the soft cap)</color>\" : \"\");",
+"num": [
+0
+],
 "inside": [
 "<b>Next point:</b> {0}"
 ],
@@ -20650,6 +21144,10 @@ null
 "UNKNOWN": 1
 },
 "code": "_sMilesSum = ((!AttrBonus.MilestonesOn) ? \"<color=#9a9ca0>(off)</color>\" : $\"{num5} of {num6} reached\");",
+"num": [
+0,
+1
+],
 "id": 1154
 },
 {
@@ -20682,6 +21180,10 @@ null
 "UNKNOWN": 1
 },
 "code": "_sPairsSum = ((!AttrBonus.PairingsOn) ? \"<color=#9a9ca0>(off)</color>\" : ((num10 == 0) ? \"<color=#9a9ca0>None.</color>\" : $\"{num9} of {num10} active\"));",
+"num": [
+0,
+1
+],
 "id": 1156
 },
 {
@@ -20816,6 +21318,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = $\"BOSS  {bossMark.Name}  {num7:0}m\";",
+"num": [
+1
+],
 "id": 1164
 },
 {
@@ -21345,6 +21850,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"{Current.name}  Lv {currentProgress.level}\" + ((Leveling.AvailablePoints(currentProgress) > 0) ? $\"   ({Leveling.AvailablePoints(currentProgress)} pts)\" : \"\"), ParseColor(Current.color)));",
+"num": [
+1
+],
 "id": 1195
 },
 {
@@ -21361,6 +21869,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "lines.Add(($\"{Current.name}  Lv {currentProgress.level}\" + ((Leveling.AvailablePoints(currentProgress) > 0) ? $\"   ({Leveling.AvailablePoints(currentProgress)} pts)\" : \"\"), ParseColor(Current.color)));",
+"num": [
+0
+],
 "id": 1196
 },
 {
@@ -21394,6 +21905,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text = ((BuffRemaining > 0f) ? $\"ACTIVE {BuffRemaining:0.0}s\" : ((!(CooldownRemaining > 0f)) ? (Game.InLevel() ? \"READY\" : \"levels only\") : $\"{CooldownRemaining:0}s\"));",
+"num": [
+0
+],
 "id": 1198
 },
 {
@@ -21444,6 +21958,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "text += $\" (+1 in {Mathf.Max(0f, _cooldownEnd - Time.time):0}s)\";",
+"num": [
+0
+],
 "id": 1201
 },
 {
@@ -21460,6 +21977,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "lines.Add(((_senseCount == 0) ? $\"No enemies within {_stats[Stat.EnemySense]:0}m\" : string.Format(\"! {0} enem{1} nearby - closest {2:0}m\", _senseCount, (_senseCount == 1) ? \"y\" : \"ies\", _senseNearest), (_senseCount == 0) ? new Color(0.6f, 0.8f, 0.6f) : new Col",
+"num": [
+0
+],
 "id": 1202
 },
 {
@@ -21476,6 +21996,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "lines.Add(((_senseCount == 0) ? $\"No enemies within {_stats[Stat.EnemySense]:0}m\" : string.Format(\"! {0} enem{1} nearby - closest {2:0}m\", _senseCount, (_senseCount == 1) ? \"y\" : \"ies\", _senseNearest), (_senseCount == 0) ? new Color(0.6f, 0.8f, 0.6f) : new Col",
+"num": [
+0,
+2
+],
 "id": 1203
 },
 {
@@ -21826,6 +22350,9 @@ null
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref r6)).x + num6, ((Rect)(ref r6)).y, ((Rect)(ref r6)).width - num6, ((Rect)(ref r6)).height), flag3 ? (\"<color=#ff6152>\" + (string.IsNullOrWhiteSpace(ownerName) ? \"TAKEN\" : (\"TAKEN BY \" + ownerName.ToUpperInvariant())) + \"</color>\") : ",
+"num": [
+0
+],
 "id": 1223
 },
 {
@@ -21934,6 +22461,9 @@ null,
 "UNKNOWN": 2
 },
 "code": "ClassDatabase.RankBlock.LevelTooLow => $\"<color=#ff9999>Unlocks at level {ClassDatabase.UnlockLevel(n)}</color>\",",
+"num": [
+0
+],
 "id": 1229
 },
 {
@@ -21991,6 +22521,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "}) : $\"<color=#ffb21e>RANK {rank} → {now}</color>  <color=#9a9ca0>(pending)</color>\");",
+"num": [
+0,
+1
+],
 "id": 1232
 },
 {
@@ -22169,6 +22703,10 @@ null,
 "UNKNOWN": 2
 },
 "code": "string arg = ((vp.level >= Leveling.MaxLevel) ? \"MAX\" : $\"{vp.xp} / {Leveling.XpToNext(vp.level)} XP\");",
+"num": [
+0,
+1
+],
 "id": 1241
 },
 {
@@ -22185,6 +22723,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(x, y, width, num5), $\"Level <b>{vp.level}</b>/{Leveling.MaxLevel}   <color=#9a9ca0>{arg}</color>\", _smallLine);",
+"num": [
+0
+],
 "id": 1242
 },
 {
@@ -22201,6 +22742,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = ((num3 > 0) ? $\"Skill points: <color=#ffd75a><b>{num3}</b></color>\" : \"Skill points: <b>0</b>\") + ((num4 > 0) ? $\"   <color=#ffb21e>{num4} pending</color>\" : \"\") + (isCurrent ? \"\" : \"   <i>(preview)</i>\");",
+"num": [
+0
+],
 "id": 1243
 },
 {
@@ -22233,6 +22777,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = ((num3 > 0) ? $\"Skill points: <color=#ffd75a><b>{num3}</b></color>\" : \"Skill points: <b>0</b>\") + ((num4 > 0) ? $\"   <color=#ffb21e>{num4} pending</color>\" : \"\") + (isCurrent ? \"\" : \"   <i>(preview)</i>\");",
+"num": [
+0
+],
 "id": 1245
 },
 {
@@ -22343,6 +22890,9 @@ null,
 "DISPLAY": 1
 },
 "code": "foot = $\"<color=#9a9ca0>{vc.active.cooldown:0} s cooldown. Talents change its numbers: Effects shows them now.</color>\";",
+"num": [
+0
+],
 "id": 1251
 },
 {
@@ -22364,6 +22914,9 @@ null,
 null,
 "|",
 null
+],
+"num": [
+1
 ],
 "id": 1252
 },
@@ -22413,6 +22966,9 @@ null
 "DISPLAY": 1
 },
 "code": "((Rect)(ref r2))..ctor(x, y, Mathf.Min(((Rect)(ref r)).width, TextW($\"SYNERGIES ({count})\", _smallLine) + 16f), num);",
+"num": [
+0
+],
 "id": 1255
 },
 {
@@ -22429,6 +22985,9 @@ null
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref r2)).x + 8f, ((Rect)(ref r2)).y + 5f, ((Rect)(ref r2)).width - 10f, LineH(_smallLine) + 2f), $\"<color=#ffb21e><b>SYNERGIES</b></color> ({count})\", _smallLine);",
+"num": [
+0
+],
 "id": 1256
 },
 {
@@ -22893,6 +23452,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add((\"[\" + AbilityPrompt + \"] \" + vc.active.name.ToUpperInvariant(), \"ACTIVE  \" + vc.active.name.ToUpperInvariant(), vc.active.desc, $\"<color=#9a9ca0>{vc.active.cooldown:0} s cooldown</color>\"));",
+"num": [
+0
+],
 "id": 1282
 },
 {
@@ -23098,6 +23660,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text5 = $\"Level <b>{vp.level}</b>/{Leveling.MaxLevel}   {text2}   Skill points: {text4}\" + (isCurrent ? (\"   Build: <color=#ffd75a>\" + BuildTitle() + \"</color>\") : \"   <i>(preview)</i>\") + \"   <color=#8cf2bf>\" + Scrap.Short + \": <b>\" + Scrap.Format(Scra",
+"num": [
+0
+],
 "inside": [
 "{0}   <color=#8cf2bf>{1}: <b>{2}</b></color>"
 ],
@@ -23213,6 +23778,10 @@ null,
 "DISPLAY": 1
 },
 "code": "string text8 = $\"Level {vp.level}/{Leveling.MaxLevel}    {text2}    Skill points: <b>{num7}</b>{text7}    \" + \"<color=#8cf2bf>\" + Scrap.Short + \": <b>\" + Scrap.Format(Scrap.Mine) + \"</b></color>\" + (isCurrent ? \"\" : \"    <i>(preview - select this class to spen",
+"num": [
+0,
+3
+],
 "inside": [
 "{0}<color=#8cf2bf>{1}: <b>{2}</b></color>{3}"
 ],
@@ -23287,6 +23856,9 @@ null
 "UNKNOWN": 1
 },
 "code": "string arg = ((item == 0) ? \"  ★ TAKEN\" : string.Format(\"  ★ IN {0}{1}\", item, (vp.level < item2) ? $\", LV {item2}\" : \"\"));",
+"num": [
+0
+],
 "id": 1304
 },
 {
@@ -23303,6 +23875,9 @@ null
 "UNKNOWN": 1
 },
 "code": "string arg = ((item == 0) ? \"  ★ TAKEN\" : string.Format(\"  ★ IN {0}{1}\", item, (vp.level < item2) ? $\", LV {item2}\" : \"\"));",
+"num": [
+0
+],
 "id": 1305
 },
 {
@@ -23337,6 +23912,10 @@ null
 "DISPLAY": 1
 },
 "code": "string text = (prestige ? \"PRESTIGE: \" : \"\") + b.name.ToUpperInvariant() + $\"  <size={Mathf.RoundToInt(14f * _fontMul)}>{num} PTS{arg}</size>\";",
+"num": [
+0,
+1
+],
 "id": 1307
 },
 {
@@ -23353,6 +23932,10 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"<color=#d9d9d9>Rank {now}/{n.maxRank}</color>\";",
+"num": [
+0,
+1
+],
 "id": 1308
 },
 {
@@ -23369,6 +23952,11 @@ null
 "DISPLAY": 1
 },
 "code": "string title = (n.capstone ? \"★ \" : \"\") + n.name.ToUpperInvariant() + string.Format(\"   <size={0}>{1} · RANK {2}/{3}</size>\", Mathf.RoundToInt(14f * _fontMul), n.capstone ? \"CAPSTONE\" : (\"T\" + n.tier), now, n.maxRank);",
+"num": [
+0,
+2,
+3
+],
 "id": 1309
 },
 {
@@ -23421,6 +24009,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text3 = ((nodeDef != null) ? (\"Needs a point in \" + nodeDef.name) : \"\") + ((num > 1) ? (((nodeDef != null) ? \" · \" : \"\") + $\"class level {num}\") : \"\");",
+"num": [
+0
+],
 "id": 1312
 },
 {
@@ -23533,6 +24124,10 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\" ({c.progress}/{c.target} DMG)\";",
+"num": [
+0,
+1
+],
 "id": 1319
 },
 {
@@ -23602,6 +24197,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "_sigSb.Append(string.Format(\" | alpha {0} | font {1} {2}px {3} | rect {4:0},{5:0} {6:0}x{7:0} | GUI depth {8} | ui scale {9:0.###} x{10:0.##}\", (_contractsAlpha >= 1f) ? \"1\" : \"fading\", ((Object)(object)st.font != (Object)null) ? ((Object)st.font).name : \"defa",
+"num": [
+9,
+10
+],
 "id": 1323
 },
 {
@@ -23650,6 +24249,12 @@ null,
 "UNKNOWN": 1
 },
 "code": "_overlapParts.Add($\"{((Object)val).name} (order {val.sortingOrder}) / {((Object)val2).name}: \\\"{((text.Length > 40) ? text.Substring(0, 40) : text)}\\\" at {((Rect)(ref val3)).x:0},{((Rect)(ref val3)).y:0} {((Rect)(ref val3)).width:0}x{((Rect)(ref val3)).height:",
+"num": [
+4,
+5,
+6,
+7
+],
 "id": 1326
 },
 {
@@ -23805,6 +24410,9 @@ null,
 "DISPLAY": 2
 },
 "code": "text2 = $\"Lv {crewLevel}\";",
+"num": [
+0
+],
 "id": 1335
 },
 {
@@ -23893,6 +24501,10 @@ null
 "DISPLAY": 1
 },
 "code": "string s = (open ? $\"Open · slots {CtUsedSlots}/{ContractBoard.Slots}\" : \"Closed\");",
+"num": [
+0,
+1
+],
 "id": 1340
 },
 {
@@ -23980,6 +24592,9 @@ null,
 "DISPLAY": 1
 },
 "code": "EmptyState(val, \"list\", \"The board is closed\", $\"It opens in the lobby and in the shop between levels. Take up to {ContractBoard.Slots} contracts into the next level.\");",
+"num": [
+0
+],
 "id": 1345
 },
 {
@@ -24044,6 +24659,10 @@ null,
 "DISPLAY": 1
 },
 "code": "AskPurchase(\"ACCEPT THIS CONTRACT?\", $\"{ContractBoard.Name(c)} ({StripRich(TierTag(c))})\\n{ContractBoard.Objective(c)}\\n\\nIt is for the next level. Slots used: {CtUsedSlots + 1}/{ContractBoard.Slots}. Failing costs only reputation with the giver.\", delegate",
+"num": [
+3,
+4
+],
 "id": 1349
 },
 {
@@ -24096,6 +24715,10 @@ null,
 "DISPLAY": 1
 },
 "code": "string text2 = ((!(text == \"ACTIVE\")) ? \"\" : (open ? $\"{run.accepted.Count}/{ContractBoard.Slots} taken for the next level\" : (flag ? \"this level\" : \"\")));",
+"num": [
+0,
+1
+],
 "id": 1352
 },
 {
@@ -24214,6 +24837,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string s = ((n == 1) ? \"1 more vote is waiting for you\" : $\"{n} more votes are waiting for you\");",
+"num": [
+0
+],
 "id": 1359
 },
 {
@@ -24284,6 +24910,10 @@ null,
 "DISPLAY": 1
 },
 "code": "string s2 = ((_tcState == 0) ? ($\"{tcDef.name}: {num8}/{num7} voted\" + (_tcBoardVote ? \" · closes when the level starts\" : $\" · {Mathf.Max(0f, _tcVoteEnd - Time.time):0}s left\")) : ((TeamHaulLine() != \"\") ? TeamHaulLine() : TeamContracts.Goal(tcDef, _tcTarget)",
+"num": [
+1,
+2
+],
 "id": 1363
 },
 {
@@ -24320,6 +24950,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string s2 = ((_tcState == 0) ? ($\"{tcDef.name}: {num8}/{num7} voted\" + (_tcBoardVote ? \" · closes when the level starts\" : $\" · {Mathf.Max(0f, _tcVoteEnd - Time.time):0}s left\")) : ((TeamHaulLine() != \"\") ? TeamHaulLine() : TeamContracts.Goal(tcDef, _tcTarget)",
+"num": [
+0
+],
 "id": 1365
 },
 {
@@ -24401,6 +25034,10 @@ null
 "UNKNOWN": 1
 },
 "code": "string label = (flag ? $\"Step {Mathf.Min(run.chainStep + 1, num5)}/{num5}\" : (flag2 ? \"Done\" : ((!flag3) ? $\"Needs rep {6}\" : ((run.chain != \"\") ? \"After this chain\" : \"Can be offered\"))));",
+"num": [
+0,
+1
+],
 "id": 1369
 },
 {
@@ -24439,6 +25076,9 @@ null
 "DISPLAY": 1
 },
 "code": "string label = (flag ? $\"Step {Mathf.Min(run.chainStep + 1, num5)}/{num5}\" : (flag2 ? \"Done\" : ((!flag3) ? $\"Needs rep {6}\" : ((run.chain != \"\") ? \"After this chain\" : \"Can be offered\"))));",
+"num": [
+0
+],
 "id": 1371
 },
 {
@@ -24523,6 +25163,10 @@ null
 "DISPLAY": 1
 },
 "code": "string s = ((contractHistory.Count == 0) ? \"This run: no contracts finished yet\" : ($\"This run: {num} completed · {num2} failed\" + ((num3 > 0) ? (\" · +\" + Scrap.Price(num3)) : \"\")));",
+"num": [
+0,
+1
+],
 "id": 1376
 },
 {
@@ -25060,6 +25704,9 @@ null,
 "DISPLAY": 1
 },
 "code": "d.Type = $\"Chain · {ch.steps.Length} steps\" + ((contractGiverDef != null) ? (\" · \" + contractGiverDef.name) : \"\");",
+"num": [
+0
+],
 "id": 1407
 },
 {
@@ -25108,6 +25755,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "d.Status.Add((UiStatus.Locked, $\"Needs reputation {6}\"));",
+"num": [
+0
+],
 "id": 1410
 },
 {
@@ -25307,6 +25957,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "d.Needs = string.Format(\"Reputation {0} with {1} (you: {2}). Then it can be offered on a board (20% each board), one chain at a time.\", 6, contractGiverDef?.name ?? \"its giver\", num);",
+"num": [
+0,
+2
+],
 "id": 1422
 },
 {
@@ -25359,6 +26013,10 @@ null
 "UNKNOWN": 1
 },
 "code": "d.Status.Add((UiStatus.Selected, $\"Reputation {num}/{15}\"));",
+"num": [
+0,
+1
+],
 "id": 1425
 },
 {
@@ -25428,6 +26086,10 @@ null
 "UNKNOWN": 1
 },
 "code": "d.NextNote = ((num3 > 0) ? $\"{ContractBoard.RepTierNames[num2 + 1]} at {num3} ({num3 - num} to go): {ContractBoard.TierUnlock(num2 + 1)}\" : \"Everything unlocked.\");",
+"num": [
+1,
+2
+],
 "id": 1429
 },
 {
@@ -25514,6 +26176,9 @@ null,
 "DISPLAY": 2
 },
 "code": "d.Name = $\"Crew level {crewLevel}\";",
+"num": [
+0
+],
 "id": 1434
 },
 {
@@ -25530,6 +26195,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "d.Status.Add((item2 > 0) ? (UiStatus.Pending, $\"{item}/{item2} crew XP\") : (UiStatus.Maxed, \"Max crew level\"));",
+"num": [
+0,
+1
+],
 "id": 1435
 },
 {
@@ -25682,6 +26351,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(string.Format(\"<b>{0}</b>  {1}\\n<color=#9a9ca0>Level {2} · {3} · {4}</color>\\n{5}\", contractHistory2.name, text, contractHistory2.level + 1, text2, ContractBoard.Giver(contractHistory2.giver)?.name ?? \"?\", contractHistory2.reward));",
+"num": [
+2
+],
 "id": 1444
 },
 {
@@ -25824,6 +26496,10 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"{Mathf.FloorToInt(num / 60f)}:{Mathf.FloorToInt(num % 60f):00} left\";",
+"num": [
+0,
+1
+],
 "id": 1452
 },
 {
@@ -25840,6 +26516,10 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"{c.progress}/{c.target} damage\";",
+"num": [
+0,
+1
+],
 "id": 1453
 },
 {
@@ -25888,6 +26568,11 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"{c.progress}/{c.target} (bonus {c.target * 2})\";",
+"num": [
+0,
+1,
+2
+],
 "id": 1456
 },
 {
@@ -25925,6 +26610,9 @@ null
 "DISPLAY": 2
 },
 "code": "string text = \"REWARD WAITING: \" + ContractBoard.Name(c).ToUpperInvariant() + ((waiting > 1) ? $\"  (+{waiting - 1} more)\" : \"\");",
+"num": [
+0
+],
 "inside": [
 "REWARD WAITING: {0}"
 ],
@@ -27478,6 +28166,9 @@ null,
 null,
 " HP"
 ],
+"num": [
+0
+],
 "id": 1550
 },
 {
@@ -28088,6 +28779,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = $\"XP x{cfg.XpMultiplier.Value:0.##}   ·   Max level {cfg.MaxLevel.Value}   ·   Skill points per level {cfg.PointsPerLevel.Value}   ·   \" + string.Format(\"{0} bonus {1:0.#}% ({2})   ·   Respecs {3}   ·   \", Scrap.Short, cfg.ScrapPercent.Value, cfg",
+"num": [
+0
+],
 "inside": [
 "{0}Class picks: lobby & shop only   ·   Elites {1}"
 ],
@@ -28348,6 +29042,11 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"Out of range ({lo:0.##} - {hi:0.##}): set to {x:0.##}\", Bad, 2.5f);",
+"num": [
+0,
+1,
+2
+],
 "id": 1602
 },
 {
@@ -28733,6 +29432,9 @@ null,
 "DISPLAY": 2
 },
 "code": "Toast($\"Debug: level {CurrentProgress.level}\", Accent);",
+"num": [
+0
+],
 "id": 1623
 },
 {
@@ -29107,6 +29809,9 @@ null
 "DISPLAY": 1
 },
 "code": "Toast((list2.Count == 0) ? \"Contrast check: 0 failures\" : $\"Contrast check: {list2.Count} failure(s) - see the log\", (list2.Count == 0) ? Good : Bad);",
+"num": [
+0
+],
 "id": 1645
 },
 {
@@ -29139,6 +29844,10 @@ null
 "DISPLAY": 1
 },
 "code": "if (Btn(Next(), LayoutCheckRunning ? $\"Layout check: {_lcStep}/{CheckSizes.Length * CheckScales.Length}\" : \"Layout check (every tab)\", !LayoutCheckRunning))",
+"num": [
+0,
+1
+],
 "id": 1647
 },
 {
@@ -29216,6 +29925,9 @@ null
 null,
 " problem(s):</color>\n",
 null
+],
+"num": [
+0
 ],
 "id": 1651
 },
@@ -29432,6 +30144,9 @@ null
 "DISPLAY": 2
 },
 "code": "Toast($\"Debug: {Leveling.AvailablePoints(currentProgress)} skill point(s) free\", Accent);",
+"num": [
+0
+],
 "id": 1664
 },
 {
@@ -29516,6 +30231,11 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref area)).x, num4, ((Rect)(ref area)).width, ((Rect)(ref area)).yMax - num4), (flag ? $\"Current: {Current.name}, level {currentProgress.level}, {Leveling.AvailablePoints(currentProgress)} skill point(s) free ({currentProgress.bonusPoint",
+"num": [
+1,
+2,
+3
+],
 "inside": [
 "{0}Running an active here spends no charge and ignores the cooldown; it still runs every normal check (targets, range, host rules), so a refusal shows its usual message. The host's class-owner check is skipped for these test runs only. With AbilityDiagnostics or DebugTools on, each stage is written to the log as [ability]."
 ],
@@ -29763,6 +30483,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref area)).x, num3, ((Rect)(ref area)).width, ((Rect)(ref area)).yMax - num3), $\"Death saves: {DeathSavesLeft} left this level (of {Mathf.FloorToInt(_stats[Stat.DeathSaves])}).\\n\" + \"Each button sends a hit that would kill you down the s",
+"num": [
+0,
+1
+],
 "inside": [
 "{0}Each button sends a hit that would kill you down the same path the real thing uses:\n - Lethal fall: the fall guard's decision (a save leaves 1 HP; without one you die). You aren't moved - in a real fall the game's truck return places you.\n - Pit / kill zone: a kill-collider hit (no dodge or damage reduction; only a death save stops it).\n - Monster hit / Explosion: a normal lethal hit (dodge, damage reduction and caps apply, then a death save). Both reach the mod the same way; a real explosion also has the Demolitionist's blast rules applied before it.\nWatch the log for \"Death save used (...)\" lines."
 ],
@@ -29918,6 +30642,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"x{num3:0.###} Scar Tissue / Shield Wall / Stabilize auras   x{num4:0.###} ally buffs and class guards\");",
+"num": [
+0,
+1
+],
 "id": 1691
 },
 {
@@ -29934,6 +30662,11 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Damage taken: {num5 * 100f:0.#}% before the total cap, <b>{Mathf.Max(num5, num6) * 100f:0.#}%</b> applied (cap: at least {num6 * 100f:0.#}%)\" + ((Time.time < _invulnUntil) ? \"   - invulnerable right now\" : \"\"));",
+"num": [
+0,
+1,
+2
+],
 "id": 1692
 },
 {
@@ -29966,6 +30699,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Applied: {Signed(Mathf.Min(_stats[s], Plugin.Cfg.MaxSpeedBonus.Value))}% (cap {Plugin.Cfg.MaxSpeedBonus.Value:0}%, low-HP speed counts toward it)\");",
+"num": [
+1
+],
 "id": 1694
 },
 {
@@ -29982,6 +30718,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Applied: {Mathf.Min(_stats[s], Plugin.Cfg.MaxDodgeChance.Value):0.#}% (cap {Plugin.Cfg.MaxDodgeChance.Value:0}%)\");",
+"num": [
+0,
+1
+],
 "id": 1695
 },
 {
@@ -29998,6 +30738,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"{DeathSavesLeft} left this level\");",
+"num": [
+0
+],
 "id": 1696
 },
 {
@@ -30014,6 +30757,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Applied: at most {Shop.MaxLegitDiscount():0}% from this stat; 80% total with the Quartermaster's discount\");",
+"num": [
+0
+],
 "id": 1697
 },
 {
@@ -30367,6 +31113,9 @@ null
 "DISPLAY": 1
 },
 "code": "_diffStatus = (((num >= 0 && num != DifficultyPresets.Base) || (num >= 0 && DifficultyPresets.Custom)) ? string.Format(\"<color=#ffcc66>{0}: {1} change{2} pending - press Apply</color>  <color=#9a9ca0>(now: {3})</color>\", DifficultyPresets.Names[num], _hostPend",
+"num": [
+1
+],
 "id": 1718
 },
 {
@@ -30451,6 +31200,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = ((num == 0 && _hostPending.Count == 0) ? (\"Already on \" + DifficultyPresets.Names[i]) : string.Format(\"{0} loaded: {1} change{2} - press Apply\", DifficultyPresets.Names[i], num, (num == 1) ? \"\" : \"s\"));",
+"num": [
+1
+],
 "id": 1723
 },
 {
@@ -30470,6 +31222,9 @@ null
 "pieces": [
 "combo:",
 null
+],
+"num": [
+0
 ],
 "id": 1724
 },
@@ -30691,6 +31446,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"<color=#ffd75a>UPGRADE {GearUp.Pips(g)} +{g.up}/{GearUp.Max}</color>\\n\");",
+"num": [
+1
+],
 "id": 1736
 },
 {
@@ -30771,6 +31529,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "text += $\"  <color=#ffd75a>(upgraded +{(num2 - 1f) * 100f:0}%)</color>\";",
+"num": [
+0
+],
 "id": 1741
 },
 {
@@ -30863,6 +31624,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"\\n<b>Attunement</b> {g.attune}\" + ((num4 > 0) ? (\"  <color=#ffd75a>\" + GearX.TierNames[num4 - 1] + \"</color>\") : \"\") + ((num6 > 0) ? $\"  <color=#9a9ca0>(next: {GearX.TierNames[num4]} in {num6 - num5})</color>\" : \"\") + \"\\n\");",
+"num": [
+0
+],
 "id": 1746
 },
 {
@@ -30927,6 +31691,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"<color=#9a9ca0>Crafts: {g.crafts}/{Plugin.Cfg.MaxCraftsPerItem.Value}</color>\\n\");",
+"num": [
+0
+],
 "id": 1750
 },
 {
@@ -30943,6 +31710,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"<color=#9fe6c0>Salvage: +{SalvagePreview(g)} {Scrap.Short}\" + (Plugin.Cfg.SalvageGivesXp.Value ? string.Format(\", +{0} XP\", Gear.Rarity(g.rarity).salvageXp * ((!GearX.Has(g, \"gear.studious\")) ? 1 : 2)) : \"\") + \"</color>\\n\");",
+"num": [
+0
+],
 "inside": [
 "{0}</color>\n"
 ],
@@ -31118,6 +31888,10 @@ null,
 "DISPLAY": 1
 },
 "code": "float num4 = SectionHeader(new Rect(((Rect)(ref right)).x, ((Rect)(ref right)).y, ((Rect)(ref right)).width, HeaderH), $\"INVENTORY  {data.inventory.Count}/{InventoryCap}\");",
+"num": [
+0,
+1
+],
 "id": 1761
 },
 {
@@ -31293,6 +32067,9 @@ null
 "DISPLAY": 1
 },
 "code": "Placeholder(Inset(r3), id, \"NO \" + slots[i].name.ToUpperInvariant(), SlotDesc(slots[i]).ToUpperInvariant(), ConfirmGlyph(), (num4 > 0) ? $\"SHOW {num4} IN INVENTORY\" : \"NONE IN INVENTORY YET\", num4 > 0);",
+"num": [
+0
+],
 "id": 1770
 },
 {
@@ -31325,6 +32102,9 @@ null
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref val2)).x, num5 + (float)i * num6, ((Rect)(ref val2)).width, num6 + 2f), (i == num7 - 1 && list.Count > num7) ? $\"<color=#9a9ca0>+{list.Count - i} more</color>\" : list[i], _smallLine);",
+"num": [
+0
+],
 "id": 1772
 },
 {
@@ -31414,6 +32194,9 @@ null
 "DISPLAY": 1
 },
 "code": "if (Btn(r2, $\"Equip {i + 1}\", loadoutSwapAllowed && gearLoadout.uids.Length != 0))",
+"num": [
+0
+],
 "id": 1777
 },
 {
@@ -31430,6 +32213,9 @@ null
 "DISPLAY": 1
 },
 "code": "if (Btn(r3, $\"Save {i + 1}\"))",
+"num": [
+0
+],
 "id": 1778
 },
 {
@@ -31446,6 +32232,10 @@ null
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref val2)).x, ((Rect)(ref val2)).y + BtnH + 4f, ((Rect)(ref val2)).width, LineH(_smallLine) + 2f), $\"<color=#7fd8ff>MODULE BAG {moduleBag.Count}/{10}</color>  \" + (loadoutSwapAllowed ? \"\" : \"<color=#9a9ca0>(loadouts swap in the truck / s",
+"num": [
+0,
+1
+],
 "id": 1779
 },
 {
@@ -31813,6 +32603,9 @@ null
 "UNKNOWN": 1
 },
 "code": "gearDetail.Needs = $\"Upgrade +{g.up + 1}: {Scrap.Price(num)} + {Crafting.Describe(GearUp.PartsFor(g))}\" + (openNow ? \"\" : \" (in the shop)\");",
+"num": [
+0
+],
 "id": 1800
 },
 {
@@ -31881,6 +32674,9 @@ null
 "DISPLAY": 1
 },
 "code": "gearDetail.Act(SalvagePending(g.uid) ? \"Salvaging...\" : $\"Salvage +{SalvagePreview(g)}\", BtnKind.Danger, !SalvagePending(g.uid), delegate",
+"num": [
+0
+],
 "id": 1804
 },
 {
@@ -32018,6 +32814,9 @@ null
 "DISPLAY": 1
 },
 "code": "if (Btn(r2, (_modPick == i) ? \"Pick a module...\" : $\"Socket {i + 1}: slot module\", run.moduleBag.Count > 0))",
+"num": [
+0
+],
 "id": 1812
 },
 {
@@ -32333,6 +33132,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text8 = \"<b><color=\" + Hex(item.color) + \">\" + item.name.ToUpperInvariant() + \"</color></b>   <color=#ffb21e>\" + item.group.ToUpperInvariant() + \" · \" + item.role + \"</color>   <color=#c8cacd>Complexity: \" + Complexity.Name(item) + \"</color>\\n\" + $\"{Cla",
+"num": [
+2
+],
 "inside": [
 "<b><color={0}>{1}</color></b>   <color=#ffb21e>{2} · {3}</color>   <color=#c8cacd>Complexity: {4}</color>\n{5}"
 ],
@@ -32371,6 +33173,9 @@ null
 "DISPLAY": 1
 },
 "code": "Add(GKind.Head, $\"ALL {Synergies.All.Count} SYNERGIES\", w);",
+"num": [
+0
+],
 "id": 1831
 },
 {
@@ -32408,6 +33213,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Add(GKind.Head, $\"ALL {Account.Unlocks.Count} UNLOCKS\", w);",
+"num": [
+0
+],
 "id": 1833
 },
 {
@@ -32464,6 +33272,9 @@ null
 "DISPLAY": 1
 },
 "code": "Add(GKind.Head, $\"ALL {GearSets.All.Count} SETS\", w);",
+"num": [
+0
+],
 "id": 1836
 },
 {
@@ -32656,6 +33467,10 @@ null
 "DISPLAY": 1
 },
 "code": "AddTerm(rarityDef.name, string.Format(\"stats x{0:0.##}, {1} stat line{2}, salvages for {3} Scrap\", rarityDef.mult, rarityDef.affixes, (rarityDef.affixes == 1) ? \"\" : \"s\", rarityDef.salvageScrap), w, ParseColor(rarityDef.color));",
+"num": [
+0,
+3
+],
 "id": 1847
 },
 {
@@ -32774,6 +33589,10 @@ null
 "DISPLAY": 1
 },
 "code": "string text2 = ((text == \"rival\") ? ContractBoard.Objective(ContractBoard.Make(item6, 1, withBonus: false, level)) : (ContractBoard.Objective(ContractBoard.Make(item6, 0, withBonus: false, level)) + ((item6.targets[0] != item6.targets[2]) ? $\"  ({item6.targets",
+"num": [
+0,
+1
+],
 "id": 1854
 },
 {
@@ -32843,6 +33662,9 @@ null
 "DISPLAY": 1
 },
 "code": "AddTerm(chainDef.name, string.Format(\"{0} (reputation {1}+)\\n{2}\\n<color=#ffb21e>Final reward</color> {3}\", ContractBoard.Giver(chainDef.giver)?.name, 6, string.Join(\"\\n\", list2), chainDef.rewardDesc), w, ContractBoard.GiverColor(chainDef.giver));",
+"num": [
+1
+],
 "id": 1858
 },
 {
@@ -32939,6 +33761,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Row(\"Menu\", K(cfg.MenuKey.Value), P(cfg.PadMenuButton.Value) + $\" (hold {cfg.PadMenuHoldSeconds.Value:0.#}s)\");",
+"num": [
+0
+],
 "id": 1864
 },
 {
@@ -33397,6 +34222,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list2.Add($\"class bonus {num4:+0.#;-0.#}\");",
+"num": [
+0
+],
 "id": 1890
 },
 {
@@ -33413,6 +34241,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list2.Add($\"active ability {_stats.Temp(value):+0.#;-0.#}\");",
+"num": [
+0
+],
 "id": 1891
 },
 {
@@ -33429,6 +34260,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list2.Add($\"right now {_stats.Dyn(value):+0.#;-0.#}\");",
+"num": [
+0
+],
 "id": 1892
 },
 {
@@ -33615,6 +34449,9 @@ null
 "DISPLAY": 1
 },
 "code": "popup.Text = ((popup.Amount > 0) ? $\"+{popup.Amount} HP – {label}\" : label);",
+"num": [
+0
+],
 "id": 1902
 },
 {
@@ -33631,6 +34468,9 @@ null
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(((Rect)(ref val)).xMax + 14f, ((Rect)(ref val)).center.y - num7 / 2f, 160f * _fontMul, num7), $\"+{_healCount} HP\", _hud, new Color(HealGreen.r, HealGreen.g, HealGreen.b, num6));",
+"num": [
+0
+],
 "id": 1903
 },
 {
@@ -33687,6 +34527,9 @@ null
 "DISPLAY": 1
 },
 "code": "hc.Level = ((currentProgress.level >= Leveling.MaxLevel) ? $\"LV {currentProgress.level} MAX\" : $\"LV {currentProgress.level}\");",
+"num": [
+0
+],
 "id": 1906
 },
 {
@@ -33703,6 +34546,9 @@ null
 "DISPLAY": 1
 },
 "code": "hc.Level = ((currentProgress.level >= Leveling.MaxLevel) ? $\"LV {currentProgress.level} MAX\" : $\"LV {currentProgress.level}\");",
+"num": [
+0
+],
 "id": 1907
 },
 {
@@ -33767,6 +34613,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text2 = ((num <= 0.01f) ? \"NO BATTERY COST\" : $\"BATTERY {num:0}%\");",
+"num": [
+0
+],
 "id": 1911
 },
 {
@@ -33799,6 +34648,9 @@ null
 "UNKNOWN": 1
 },
 "code": "hc.Chips.Add((hcCompact ? $\"+{num4}\" : $\"+{num4} TO SPEND  {MenuPrompt}\".ToUpperInvariant(), HcGold));",
+"num": [
+0
+],
 "id": 1913
 },
 {
@@ -33851,6 +34703,9 @@ null
 "UNKNOWN": 1
 },
 "code": "hc.Chips.Add((hcCompact ? \"SYN\" : ((_synActive.Count == 1) ? (\"SYNERGY: \" + _synActive[0].name.ToUpperInvariant()) : $\"{_synActive.Count} SYNERGIES\"), new Color(0.55f, 0.85f, 1f)));",
+"num": [
+0
+],
 "id": 1916
 },
 {
@@ -33899,6 +34754,9 @@ null
 "UNKNOWN": 1
 },
 "code": "hc.Lines.Add(((_senseCount == 0) ? $\"NO ENEMIES WITHIN {_stats[Stat.EnemySense]:0}M\" : string.Format(\"! {0} ENEM{1} NEARBY - CLOSEST {2:0}M\", _senseCount, (_senseCount == 1) ? \"Y\" : \"IES\", _senseNearest), (_senseCount == 0) ? new Color(0.6f, 0.8f, 0.6f) : new ",
+"num": [
+0
+],
 "id": 1919
 },
 {
@@ -33915,6 +34773,10 @@ null
 "UNKNOWN": 1
 },
 "code": "hc.Lines.Add(((_senseCount == 0) ? $\"NO ENEMIES WITHIN {_stats[Stat.EnemySense]:0}M\" : string.Format(\"! {0} ENEM{1} NEARBY - CLOSEST {2:0}M\", _senseCount, (_senseCount == 1) ? \"Y\" : \"IES\", _senseNearest), (_senseCount == 0) ? new Color(0.6f, 0.8f, 0.6f) : new ",
+"num": [
+0,
+2
+],
 "id": 1920
 },
 {
@@ -33947,6 +34809,9 @@ null
 "UNKNOWN": 1
 },
 "code": "hc.Lines.Add(($\"+{num7} MORE\", HcDim));",
+"num": [
+0
+],
 "id": 1922
 },
 {
@@ -33979,6 +34844,9 @@ null
 "UNKNOWN": 1
 },
 "code": "string item = (Season.On ? Season.ChapterLabel(RunShape.Chapter).Replace(\"Chapter \", \"CH \").ToUpperInvariant() : $\"CH {RunShape.Chapter}\");",
+"num": [
+0
+],
 "id": 1924
 },
 {
@@ -34027,6 +34895,9 @@ null
 "UNKNOWN": 1
 },
 "code": "_runChips.Add(((levelsToMilestone != 0) ? $\"MILESTONE IN {levelsToMilestone + 1}\" : (flag3 ? \"NEXT: FINALE\" : \"NEXT: MILESTONE\"), RunChipGold));",
+"num": [
+0
+],
 "id": 1927
 },
 {
@@ -34075,6 +34946,9 @@ null
 "UNKNOWN": 1
 },
 "code": "_runChips.Add((hcCompact ? $\"STREAK {RunShape.Cur.Streak}\" : $\"STREAK {RunShape.Cur.Streak} +{RunShape.StreakXpPct:0}%\", RunChipGold));",
+"num": [
+0
+],
 "id": 1930
 },
 {
@@ -34092,6 +34966,10 @@ null
 "UNKNOWN": 2
 },
 "code": "_runChips.Add((hcCompact ? $\"STREAK {RunShape.Cur.Streak}\" : $\"STREAK {RunShape.Cur.Streak} +{RunShape.StreakXpPct:0}%\", RunChipGold));",
+"num": [
+0,
+1
+],
 "id": 1931
 },
 {
@@ -34109,6 +34987,9 @@ null
 "UNKNOWN": 2
 },
 "code": "_runChips.Add(($\"BOONS {RunShape.Cur.Boons.Length}\", RunChipBlue));",
+"num": [
+0
+],
 "id": 1932
 },
 {
@@ -34126,6 +35007,9 @@ null
 "UNKNOWN": 2
 },
 "code": "_runChips.Add(($\"HEAT {Heat.Total}\", RunChipHot));",
+"num": [
+0
+],
 "id": 1933
 },
 {
@@ -34143,6 +35027,9 @@ null
 "UNKNOWN": 2
 },
 "code": "_runChips.Add(($\"CREW {RunShape.CrewLevel}\", RunChipBlue));",
+"num": [
+0
+],
 "id": 1934
 },
 {
@@ -34383,6 +35270,9 @@ null
 "DISPLAY": 1
 },
 "code": "Toast($\"HUD probe in {delay:0} s - the HUD as it is then is recorded\", Accent);",
+"num": [
+0
+],
 "id": 1949
 },
 {
@@ -34484,6 +35374,9 @@ null,
 "DISPLAY": 1
 },
 "code": "_hpSummary = ((list.Count == 0) ? \"HUD probe: no floating HUD elements\" : $\"HUD probe: {list.Count} floating element(s)\");",
+"num": [
+0
+],
 "id": 1955
 },
 {
@@ -34517,6 +35410,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "StringBuilder stringBuilder = new StringBuilder().AppendLine().AppendLine($\"HUD: floating elements ({list.Count})\" + ((list.Count == 0) ? \": none\" : \"\"));",
+"num": [
+0
+],
 "id": 1957
 },
 {
@@ -34549,6 +35445,9 @@ null,
 "DISPLAY": 1
 },
 "code": "LayoutCheckSummary += ((list.Count == 0) ? \"  HUD: no floating elements.\" : $\"  HUD: {list.Count} floating element(s).\");",
+"num": [
+0
+],
 "id": 1959
 },
 {
@@ -36009,6 +36908,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text3 = ((num4 > 0) ? $\"<color=#73ff66>rising +{num4}%</color>\" : ((num4 < 0) ? $\"<color=#ff8a7a>falling {num4}%</color>\" : \"<color=#9a9ca0>steady</color>\"));",
+"num": [
+0
+],
 "id": 2046
 },
 {
@@ -36025,6 +36927,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text3 = ((num4 > 0) ? $\"<color=#73ff66>rising +{num4}%</color>\" : ((num4 < 0) ? $\"<color=#ff8a7a>falling {num4}%</color>\" : \"<color=#9a9ca0>steady</color>\"));",
+"num": [
+0
+],
 "id": 2047
 },
 {
@@ -36394,6 +37299,9 @@ null
 "DISPLAY": 1
 },
 "code": "Detail = $\"Heat {cur.Heat}: raise it for better rewards, or Skip\",",
+"num": [
+0
+],
 "id": 2069
 },
 {
@@ -36471,6 +37379,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Id = $\"vote.team.{_tcLevel}.{_tcDef.id}\",",
+"num": [
+0
+],
 "id": 2073
 },
 {
@@ -36523,6 +37434,9 @@ null
 "DISPLAY": 1
 },
 "code": "Title = ((list.Count > 1) ? $\"Choose your milestone rewards ({list.Count})\" : \"Choose your milestone reward\"),",
+"num": [
+0
+],
 "id": 2076
 },
 {
@@ -36591,6 +37505,9 @@ null
 "DISPLAY": 1
 },
 "code": "Title = ((data.rewardQueue.Count > 1) ? $\"Choose contract rewards ({data.rewardQueue.Count})\" : \"Choose a contract reward\"),",
+"num": [
+0
+],
 "id": 2080
 },
 {
@@ -36641,6 +37558,9 @@ null
 "DISPLAY": 1
 },
 "code": "Title = ((data.perkPicksPending > 1) ? $\"Pick your perks ({data.perkPicksPending})\" : \"Pick a perk\"),",
+"num": [
+0
+],
 "id": 2083
 },
 {
@@ -36673,6 +37593,9 @@ null
 "DISPLAY": 1
 },
 "code": "Title = string.Format(\"{0} skill point{1} to spend\", num, (num == 1) ? \"\" : \"s\"),",
+"num": [
+0
+],
 "id": 2085
 },
 {
@@ -36689,6 +37612,9 @@ null
 "DISPLAY": 1
 },
 "code": "Short = $\"{num} SKILL\",",
+"num": [
+0
+],
 "id": 2086
 },
 {
@@ -36721,6 +37647,9 @@ null
 "DISPLAY": 1
 },
 "code": "Title = string.Format(\"{0} attribute point{1} to spend\", num2, (num2 == 1) ? \"\" : \"s\"),",
+"num": [
+0
+],
 "id": 2088
 },
 {
@@ -36737,6 +37666,9 @@ null
 "DISPLAY": 1
 },
 "code": "Short = $\"{num2} ATTR\",",
+"num": [
+0
+],
 "id": 2089
 },
 {
@@ -36882,6 +37814,10 @@ null
 "DISPLAY": 1
 },
 "code": "list.Add($\"{Mathf.Min(n.Responded, n.Total)}/{n.Total} voted\");",
+"num": [
+0,
+1
+],
 "id": 2097
 },
 {
@@ -36898,6 +37834,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add($\"{Mathf.Max(0, Mathf.CeilToInt(n.EndsAt - Time.unscaledTime))}s left\");",
+"num": [
+0
+],
 "id": 2098
 },
 {
@@ -36914,6 +37853,9 @@ null
 "DISPLAY": 1
 },
 "code": "_nbTitle = (_nbFinal ? $\"{Mathf.Max(0, Mathf.CeilToInt(actionNotice2.EndsAt - unscaledTime))} SECONDS LEFT: \" : \"\") + actionNotice2.Title.ToUpperInvariant();",
+"num": [
+0
+],
 "id": 2099
 },
 {
@@ -36930,6 +37872,9 @@ null
 "DISPLAY": 1
 },
 "code": "_nbTitle = $\"{_nbNow.Count} ACTIONS NEEDED\";",
+"num": [
+0
+],
 "id": 2100
 },
 {
@@ -36950,6 +37895,9 @@ null
 "DISPLAY": 2
 },
 "code": "_nbLines.Add($\"+{_nbNow.Count - 4} more\");",
+"num": [
+0
+],
 "id": 2101
 },
 {
@@ -37011,6 +37959,9 @@ null
 "DISPLAY": 1
 },
 "code": "_nlHead = ((num > 0) ? $\"ACTION NEEDED ({num})\" : \"REMINDERS\");",
+"num": [
+0
+],
 "id": 2104
 },
 {
@@ -37108,6 +38059,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text3 = ((list2.Count > 6) ? (string.Join(\", \", list2.GetRange(0, 6)) + $\" +{list2.Count - 6} more\") : string.Join(\", \", list2));",
+"num": [
+0
+],
 "id": 2109
 },
 {
@@ -37738,6 +38692,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Perk, $\"Tag bonus: {tag.tag} x{tier} – {arg}\", (Color?)new Color(1f, 0.85f, 0.35f), \"\");",
+"num": [
+1
+],
 "id": 2147
 },
 {
@@ -38042,6 +38999,9 @@ null,
 "UNKNOWN": 2
 },
 "code": "return $\"<color=#73ff66><b>{TalentPendingTotal()} pending:</b></color>  \" + string.Join(\", \", list);",
+"num": [
+0
+],
 "id": 2164
 },
 {
@@ -38074,6 +39034,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"<color=#73ff66><b>{_perkPending.Count} selected:</b></color>  \" + string.Join(\", \", list);",
+"num": [
+0
+],
 "id": 2166
 },
 {
@@ -38090,6 +39053,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"Settings: {0} change{1} not saved\", num, (num == 1) ? \"\" : \"s\"));",
+"num": [
+0
+],
 "id": 2167
 },
 {
@@ -38106,6 +39072,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"Class: {0} talent point{1} ({2})\", num2, (num2 == 1) ? \"\" : \"s\", Current.name));",
+"num": [
+0
+],
 "id": 2168
 },
 {
@@ -38122,6 +39091,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"Attributes: {0} point{1}\", num3, (num3 == 1) ? \"\" : \"s\"));",
+"num": [
+0
+],
 "id": 2169
 },
 {
@@ -38138,6 +39110,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"Perks: {0} pick{1}\", _perkPending.Count, (_perkPending.Count == 1) ? \"\" : \"s\"));",
+"num": [
+0
+],
 "id": 2170
 },
 {
@@ -38195,6 +39170,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"You'll stop playing {Current.name}. Your {Current.name} progress (level {CurrentProgress.level}, \" + $\"{CurrentProgress.SpentPoints()} talent points) is kept and comes back if you switch back - nothing is refunded or lost. \");",
+"num": [
+2
+],
 "id": 2173
 },
 {
@@ -38211,6 +39189,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"You'll stop playing {Current.name}. Your {Current.name} progress (level {CurrentProgress.level}, \" + $\"{CurrentProgress.SpentPoints()} talent points) is kept and comes back if you switch back - nothing is refunded or lost. \");",
+"num": [
+0
+],
 "id": 2174
 },
 {
@@ -38243,6 +39224,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\" <color=#ff9999>Your {TalentPendingTotal()} unconfirmed talent points will be discarded.</color>\");",
+"num": [
+0
+],
 "id": 2176
 },
 {
@@ -38519,6 +39503,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = ((value > 0) ? $\"Next pick at level {data.perkMilestone + value} of your best class this run.\" : \"Perks are turned off by the host.\");",
+"num": [
+0
+],
 "id": 2192
 },
 {
@@ -38551,6 +39538,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text2 = ((num > 0) ? string.Format(\"<color=#ffb21e><b>{0} PERK PICK{1} READY</b></color> - select one{2}, then confirm.  {3}\", num, (num > 1) ? \"S\" : \"\", (num > 1) ? \" for each pick\" : \"\", text) : text);",
+"num": [
+0
+],
 "id": 2194
 },
 {
@@ -38753,6 +39743,9 @@ null,
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(0f, num6, num7, LineH(_h2) + 2f), $\"PICK {j + 1}\", _h2, Accent);",
+"num": [
+0
+],
 "id": 2206
 },
 {
@@ -38885,6 +39878,9 @@ null
 "DISPLAY": 1
 },
 "code": "Label(new Rect(0f, num6, num7, LineH(_small) + 2f), string.Format(\"<color=#9a9ca0>+{0} more pick{1} after these.</color>\", picks - num, (picks - num > 1) ? \"s\" : \"\"), _small);",
+"num": [
+0
+],
 "id": 2214
 },
 {
@@ -38974,6 +39970,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text6 = ((!Shop.OpenNow) ? \"Rerolls are sold in the shop between levels. \" : \"\") + ((Plugin.Cfg.PerkRerollStep.Value > 0) ? (\"Each reroll this level costs \" + Scrap.Price(Plugin.Cfg.PerkRerollStep.Value) + \" more. \") : \"\") + ((Plugin.Cfg.PerkBanishes.Va",
+"num": [
+0
+],
 "id": 2219
 },
 {
@@ -39006,6 +40005,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref val)).x + num2 + 16f, ((Rect)(ref val)).y, ((Rect)(ref val)).width - num2 - 16f, BtnH), string.Format(\"{0} perk{1} owned this run\", _ownedList.Count, (_ownedList.Count == 1) ? \"\" : \"s\"), _smallLine);",
+"num": [
+0
+],
 "id": 2221
 },
 {
@@ -39038,6 +40040,9 @@ null,
 "DISPLAY": 1
 },
 "code": "EmptyState(val2, \"crate\", \"No perks yet\", $\"You get a perk pick every {Mathf.Max(1, Plugin.Cfg.PerkEvery.Value)} levels of your best class this run. Picks show under Picks; the ones you choose show here.\", \"See all perks\", delegate",
+"num": [
+0
+],
 "id": 2223
 },
 {
@@ -39118,6 +40123,10 @@ null,
 "DISPLAY": 1
 },
 "code": "y += SectionHeader(new Rect(((Rect)(ref area)).x, y, ((Rect)(ref area)).width, HeaderH), \"ALL PERKS\", $\"{num}/{Plugin.Rpg.perks.Length} OWNED\") + 4f;",
+"num": [
+0,
+1
+],
 "id": 2228
 },
 {
@@ -39536,6 +40545,10 @@ null
 "DISPLAY": 1
 },
 "code": "popup.Text = ((popup.Count > 1) ? $\"+{popup.Amount} XP – {item2} (x{popup.Count})\" : $\"+{popup.Amount} XP – {item}\");",
+"num": [
+0,
+2
+],
 "id": 2252
 },
 {
@@ -39552,6 +40565,9 @@ null
 "DISPLAY": 1
 },
 "code": "popup.Text = ((popup.Count > 1) ? $\"+{popup.Amount} XP – {item2} (x{popup.Count})\" : $\"+{popup.Amount} XP – {item}\");",
+"num": [
+0
+],
 "id": 2253
 },
 {
@@ -39763,6 +40779,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"<color=#ffb21e><b>ACTIVE</b></color>  <b>{c.active.name}</b> ({c.active.cooldown:0}s)\\n{c.active.desc}\\n\");",
+"num": [
+1
+],
 "id": 2264
 },
 {
@@ -39922,6 +40941,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"{0} skill point{1}\", num, (num == 1) ? \"\" : \"s\"));",
+"num": [
+0
+],
 "id": 2272
 },
 {
@@ -39955,6 +40977,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"{0} perk pick{1}\", perkPicksPending, (perkPicksPending == 1) ? \"\" : \"s\"));",
+"num": [
+0
+],
 "id": 2274
 },
 {
@@ -40113,6 +41138,10 @@ null
 "DISPLAY": 1
 },
 "code": "string text = $\"Level research: +{num:0} Data ({Mathf.FloorToInt(Research.Mine.data)} now)\" + ((left > 0) ? string.Format(\" · {0} sample{1} left behind\", left, (left == 1) ? \"\" : \"s\") : \"\");",
+"num": [
+0,
+1
+],
 "id": 2282
 },
 {
@@ -40129,6 +41158,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = $\"Level research: +{num:0} Data ({Mathf.FloorToInt(Research.Mine.data)} now)\" + ((left > 0) ? string.Format(\" · {0} sample{1} left behind\", left, (left == 1) ? \"\" : \"s\") : \"\");",
+"num": [
+0
+],
 "id": 2283
 },
 {
@@ -40145,6 +41177,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Currency, $\"+{amount:0} Research Data ({reason})\", ResTeal, \"researchdata\");",
+"num": [
+0
+],
 "id": 2284
 },
 {
@@ -40181,6 +41216,9 @@ null
 "DISPLAY": 1
 },
 "code": "Title = ((mine.unseen.Count > 1) ? $\"{mine.unseen.Count} research projects finished\" : (\"Research finished: \" + researchDef?.name)),",
+"num": [
+0
+],
 "id": 2286
 },
 {
@@ -40279,6 +41317,12 @@ null
 "DISPLAY": 1
 },
 "code": "string text = $\"<color=#9a9ca0>Lab slots {mine.active.Count}/{Research.Slots}  ·  {mine.done.Count}/{Research.File.projects.Length} done  ·  Kept across runs  ·  One dot: Personal, three: {LobbyWord()}</color>\";",
+"num": [
+0,
+1,
+2,
+3
+],
 "id": 2292
 },
 {
@@ -40295,6 +41339,10 @@ null
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref r)).x + 12f, ((Rect)(ref r)).y + (BtnH - LineH(_smallLine)) / 2f, ((Rect)(ref r)).width - 24f, LineH(_smallLine) + 2f), $\"<b>RESEARCHING:</b> {researchDef.name}  <color=#40f2d9>{item.progress}/{item.need} levels</color>  <color=#9a9c",
+"num": [
+1,
+2
+],
 "id": 2293
 },
 {
@@ -40361,6 +41409,9 @@ null
 "DISPLAY": 1
 },
 "code": "BarNote(string.Format(\"{0} lab slot{1}\", Research.Slots, (Research.Slots == 1) ? \"\" : \"s\") + ((Research.Slots == 1) ? \" · Parallel Lab adds a second\" : \"\"));",
+"num": [
+0
+],
 "id": 2297
 },
 {
@@ -40441,6 +41492,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Research.St.Available => $\"{Research.Cost(d)} · {Research.Levels(d)} LV\",",
+"num": [
+1
+],
 "id": 2302
 },
 {
@@ -40595,6 +41649,9 @@ null
 "DISPLAY": 1
 },
 "code": "resDetail.Type = $\"{Research.BranchName(d.branch)} · Tier {d.tier} · \" + (flag2 ? LobbyWord() : \"Personal\");",
+"num": [
+1
+],
 "id": 2311
 },
 {
@@ -40734,6 +41791,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text3 = $\"{Research.Cost(d)} Data (you have {Mathf.FloorToInt(mine.data)}) · takes {Research.Levels(d)} levels cleared, in any run\";",
+"num": [
+1,
+2
+],
 "id": 2319
 },
 {
@@ -40787,6 +41848,10 @@ null,
 "DISPLAY": 1
 },
 "code": "AskConfirm(\"START \" + d.name.ToUpperInvariant() + \"?\", $\"{d.unlock}\\n\\nCosts {Research.Cost(d)} Data now ({Mathf.FloorToInt(Research.Mine.data)} available) and finishes after {Research.Levels(d)} levels cleared, in any run.\", \"Start\", delegate",
+"num": [
+2,
+3
+],
 "id": 2322
 },
 {
@@ -41007,6 +42072,10 @@ null,
 "DISPLAY": 1
 },
 "code": "_rosterHeader = $\"CLASSES   {num}/{Roster.Rows.Count} picked\";",
+"num": [
+0,
+1
+],
 "id": 2335
 },
 {
@@ -41045,6 +42114,9 @@ null
 "UNKNOWN": 1
 },
 "code": "_rosterSyn.Add($\"+{num2 - 4} more synergies\");",
+"num": [
+0
+],
 "id": 2337
 },
 {
@@ -41114,6 +42186,9 @@ null
 "DISPLAY": 1
 },
 "code": "list2.Add($\"+{item.Unspent} pts\");",
+"num": [
+0
+],
 "id": 2341
 },
 {
@@ -41169,6 +42244,9 @@ null
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(((Rect)(ref r)).x + num2, ((Rect)(ref r)).y + num2, num7 - 2f * num2, LineH(_hud)), string.Format(\"TEAM   {0} player{1}\", count, (count == 1) ? \"\" : \"s\"), _hud, TextMain);",
+"num": [
+0
+],
 "id": 2344
 },
 {
@@ -41290,6 +42368,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text3 = $\"You earn {Plugin.Cfg.ScrapPercent.Value:0.#}% of the money the team makes as bonus {Scrap.Short} \" + ((Plugin.Cfg.ScrapSplit.Value == ScrapSplitMode.Equal) ? \"(split evenly)\" : \"(half split evenly, half by the loot you carry out)\") + \". \" + ((",
+"num": [
+0
+],
 "id": 2351
 },
 {
@@ -41338,6 +42419,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text3 = $\"You earn {Plugin.Cfg.ScrapPercent.Value:0.#}% of the money the team makes as bonus {Scrap.Short} \" + ((Plugin.Cfg.ScrapSplit.Value == ScrapSplitMode.Equal) ? \"(split evenly)\" : \"(half split evenly, half by the loot you carry out)\") + \". \" + ((",
+"num": [
+0
+],
 "id": 2354
 },
 {
@@ -41711,6 +42795,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref area)).x, num9, ((Rect)(ref area)).width, LineH(_small) + 2f), $\"<b>UPGRADE {GearUp.Pips(gearItem)} +{gearItem.up}/{GearUp.Max}</b>  <color=#9a9ca0>{GearUp.NextText(gearItem)}. New lines at +1, +3 and +5 (pick 1 of 3), every line +15",
+"num": [
+1
+],
 "id": 2375
 },
 {
@@ -41944,6 +43031,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text4 = $\"{num15} to {arg}\";",
+"num": [
+0
+],
 "id": 2389
 },
 {
@@ -42134,6 +43224,9 @@ null
 "UNKNOWN": 1
 },
 "code": "_eliteLines.Insert(0, ($\"BOSS {Bosses.NameFor(Elites.ViewId((Component)(object)current))}: {Elites.Describe(info.Mods)}{Elements.AffinityText(Elites.ViewId((Component)(object)current), info.Tier)}  {num:0}m\", new Color(1f, 0.78f, 0.25f)));",
+"num": [
+3
+],
 "id": 2400
 },
 {
@@ -42356,6 +43449,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"\\n\\n<color=#ffd75a><b>FREE RE-PICK</b></color>: your class was replaced in this version, so {target.name} starts at <b>Lv {toLevel}</b>. \" + $\"You get its skill points to spend in its trees. Your {Current.name} stays at Lv {CurrentProgress.level} on t",
+"num": [
+1
+],
 "id": 2412
 },
 {
@@ -42411,6 +43507,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"\\n\\n<color=#ffd75a><b>MILESTONE {milestone} SWITCH</b></color>: {target.name} starts at <b>Lv {toLevel}</b> \" + $\"({Plugin.Cfg.SwitchShare.Value:0}% of your {Current.name} Lv {CurrentProgress.level}). You get its skill points to spend in the new trees",
+"num": [
+0,
+2
+],
 "inside": [
 "{0}XP toward the next level isn't carried over. Once per milestone."
 ],
@@ -42430,6 +43530,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"\\n\\n<color=#ffd75a><b>MILESTONE {milestone} SWITCH</b></color>: {target.name} starts at <b>Lv {toLevel}</b> \" + $\"({Plugin.Cfg.SwitchShare.Value:0}% of your {Current.name} Lv {CurrentProgress.level}). You get its skill points to spend in the new trees",
+"num": [
+0,
+2
+],
 "inside": [
 "{0}XP toward the next level isn't carried over. Once per milestone."
 ],
@@ -42449,6 +43553,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Level, $\"Milestone switch: {Current.name} starts at Lv {CurrentProgress.level} - {Leveling.AvailablePoints(CurrentProgress)} skill points and your attribute points to spend ({MenuPrompt}). Your {fromName} is on the bench.\", null, \"level\");",
+"num": [
+1,
+2
+],
 "id": 2417
 },
 {
@@ -42465,6 +43573,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Level, $\"Free re-pick: {Current.name} starts at Lv {CurrentProgress.level} - {Leveling.AvailablePoints(CurrentProgress)} skill points to spend ({MenuPrompt}). Your {fromName} is on the bench.\", null, \"level\");",
+"num": [
+1,
+2
+],
 "id": 2418
 },
 {
@@ -42497,6 +43609,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(flag ? $\"<color=#8cf2bf><b>{depthUnlockDef.name}</b></color>  <color=#9a9ca0>(level {num}, unlocked)</color>\\n{depthUnlockDef.hint}\\n\" : $\"<color=#ffd75a><b>{depthUnlockDef.name}</b></color>  <color=#9a9ca0>Unlocks at level {num}</color>\\n",
+"num": [
+1
+],
 "id": 2420
 },
 {
@@ -42513,6 +43628,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(flag ? $\"<color=#8cf2bf><b>{depthUnlockDef.name}</b></color>  <color=#9a9ca0>(level {num}, unlocked)</color>\\n{depthUnlockDef.hint}\\n\" : $\"<color=#ffd75a><b>{depthUnlockDef.name}</b></color>  <color=#9a9ca0>Unlocks at level {num}</color>\\n",
+"num": [
+1
+],
 "id": 2421
 },
 {
@@ -42545,6 +43663,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(RunDepth.Unlocked(mapModifierDef.unlock) ? (\"<b>\" + mapModifierDef.name + \"</b>: \" + mapModifierDef.risk + \"; \" + mapModifierDef.reward + \"\\n\") : $\"<color=#9a9ca0>{mapModifierDef.name}: unlocks at level {RunDepth.LevelOf(mapModifierDef.unl",
+"num": [
+1
+],
 "id": 2423
 },
 {
@@ -42561,6 +43682,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, $\"New record: a chapter cleared at heat {old.Heat}\", (Color?)new Color(1f, 0.85f, 0.35f), \"heat-record\");",
+"num": [
+0
+],
 "id": 2424
 },
 {
@@ -42647,6 +43771,10 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, $\"Milestone {milestone}: +{paid} {Scrap.Short}\", Scrap.Color);",
+"num": [
+0,
+1
+],
 "id": 2429
 },
 {
@@ -42664,6 +43792,9 @@ null
 "DISPLAY": 2
 },
 "code": "GiveGear(gearItem, $\"milestone {milestone}\");",
+"num": [
+0
+],
 "inside": [
 "Team boon ({0})"
 ],
@@ -42683,6 +43814,9 @@ null
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(num5, num4, num, LineH(_h2) + 2f), $\"MILESTONE {m} REWARD\" + ((list.Count > 1) ? $\"  (+{list.Count - 1} more)\" : \"\"), _h2, val);",
+"num": [
+0
+],
 "id": 2431
 },
 {
@@ -42765,6 +43899,9 @@ null
 "DISPLAY": 2
 },
 "code": "AskConfirm(\"TAKE A UNIQUE?\", $\"A random Unique for one of your gear slots (one you don't have yet).\\n\\nThe {num7} {Scrap.Short} payout is gone once you take it.\", \"Take it\", delegate",
+"num": [
+0
+],
 "id": 2436
 },
 {
@@ -42817,6 +43954,9 @@ null
 "DISPLAY": 2
 },
 "code": "AskConfirm(\"TAKE THE PAYOUT?\", $\"{num7} {Scrap.Short} now.\\n\\nThe Unique is gone once you take it.\", \"Take it\", delegate",
+"num": [
+0
+],
 "id": 2439
 },
 {
@@ -42870,6 +44010,9 @@ null,
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(num5, num4, num, LineH(_h2) + 2f), flag4 ? \"VICTORY - END THE RUN, OR KEEP GOING?\" : (\"TEAM BOON VOTE (\" + ((cur.VoteFrom != \"\") ? cur.VoteFrom.ToUpperInvariant() : $\"MILESTONE {cur.VoteFor}\") + \")\"), _h2, (Color)(flag4 ? val : new Color(0",
+"num": [
+0
+],
 "inside": [
 "TEAM BOON VOTE ({0})"
 ],
@@ -42889,6 +44032,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(num5, num4, num, LineH(_small) + 2f), flag4 ? $\"<color=#9a9ca0>{cur.Votes}/{cur.Voters} voted; decided when everyone has, or when the next level starts (then it's Endless). A tie keeps the run going.</color>\" : $\"<color=#9a9ca0>One boon for the ",
+"num": [
+0,
+1
+],
 "id": 2443
 },
 {
@@ -42905,6 +44052,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(num5, num4, num, LineH(_small) + 2f), flag4 ? $\"<color=#9a9ca0>{cur.Votes}/{cur.Voters} voted; decided when everyone has, or when the next level starts (then it's Endless). A tie keeps the run going.</color>\" : $\"<color=#9a9ca0>One boon for the ",
+"num": [
+0,
+1
+],
 "id": 2444
 },
 {
@@ -42941,6 +44092,9 @@ null
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(num7, num6, num, LineH(_h2) + 2f), $\"NEXT LEVEL ({cur.RouteFor + 1}): CHOOSE A ROUTE\", _h2, val);",
+"num": [
+0
+],
 "id": 2446
 },
 {
@@ -42978,6 +44132,10 @@ null,
 "DISPLAY": 1
 },
 "code": "string text2 = (flag ? $\"{cur.RouteVotes}/{Mathf.Max(1, Game.Players().Count)} voted; decided when everyone has, or when the next level starts. No votes = Safe; a tie goes to the safer route. You can change your vote.\" : (\"Chosen: <b>\" + Routes.Name(cur.RouteO",
+"num": [
+0,
+1
+],
 "id": 2448
 },
 {
@@ -43044,6 +44202,9 @@ null,
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(num7, num6, num, LineH(_h2) + 2f), $\"HEAT {cur.Heat}: RAISE IT FOR THE NEXT CHAPTER?\", _h2, val);",
+"num": [
+0
+],
 "id": 2452
 },
 {
@@ -43060,6 +44221,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Label(new Rect(num7, num6, num, LineH(_small) + 2f), $\"<color=#9a9ca0>{cur.HeatVotes}/{Mathf.Max(1, Game.Players().Count)} voted; decided when everyone has, or when the next level starts. A card stays all run. No votes or a tie = Skip.</color>\", _small);",
+"num": [
+0,
+1
+],
 "id": 2453
 },
 {
@@ -43124,6 +44289,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"<b>RUN BOONS</b>  <color=#9a9ca0>{cur.Boons.Length} of {RunShape.Data.boons.Length}. They work for the whole team until the run ends. The codes are the ones on the HUD.</color>\\n\\n\");",
+"num": [
+0,
+1
+],
 "id": 2457
 },
 {
@@ -43172,6 +44341,9 @@ null,
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(((Rect)(ref r)).x + 12f, ((Rect)(ref r)).y + 12f, num3 * 0.5f, LineH(_h2) + 2f), $\"CREW LEVEL {crewLevel}\", _h2, color);",
+"num": [
+0
+],
 "id": 2460
 },
 {
@@ -43188,6 +44360,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text2 = ((num2 > 0) ? $\"{num} / {num2} crew XP to level {crewLevel + 1}\" : \"Max crew level\");",
+"num": [
+2
+],
 "id": 2461
 },
 {
@@ -43225,6 +44400,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text = (Season.On ? Season.ChapterLabel(RunShape.Chapter).ToUpperInvariant() : $\"CHAPTER {RunShape.Chapter}\");",
+"num": [
+0
+],
 "id": 2463
 },
 {
@@ -43342,6 +44520,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add((levelsToMilestone == 0) ? (text + \" · NEXT LEVEL IS \" + (Season.IsFinaleLevel(RunInfo.LevelIndex) ? \"THE FINALE\" : \"A MILESTONE\")) : $\"{text} · MILESTONE IN {levelsToMilestone + 1}\");",
+"num": [
+1
+],
 "id": 2469
 },
 {
@@ -43374,6 +44555,9 @@ null
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append((stringBuilder.Length > 0) ? \"  ·  \" : \"\").Append($\"CATCH-UP +{Mathf.Clamp(Plugin.Cfg.BehindXpBonus.Value, 0f, 100f):0}% XP\");",
+"num": [
+0
+],
 "id": 2471
 },
 {
@@ -43392,6 +44576,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = (Season.On ? (Season.ChapterLabel(RunShape.Chapter) + \" - \" + Season.ChapterName(RunShape.Chapter)) : $\"Chapter {RunShape.Chapter}\");",
+"num": [
+0
+],
 "id": 2472
 },
 {
@@ -43448,6 +44635,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add((levelsToMilestone == 0) ? (text + \" · next level: \" + (Season.IsFinaleLevel(RunInfo.LevelIndex) ? \"THE FINALE\" : \"milestone boss\")) : $\"{text} · next milestone: {levelsToMilestone + 1} levels\");",
+"num": [
+1
+],
 "id": 2475
 },
 {
@@ -43501,6 +44691,10 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Streak {RunShape.Cur.Streak} (+{RunShape.StreakXpPct:0}%)\");",
+"num": [
+0,
+1
+],
 "id": 2478
 },
 {
@@ -43517,6 +44711,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add(string.Format(\"{0} run boon{1}\", RunShape.Cur.Boons.Length, (RunShape.Cur.Boons.Length == 1) ? \"\" : \"s\"));",
+"num": [
+0
+],
 "id": 2479
 },
 {
@@ -43569,6 +44766,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add((RunShape.Cur.HeatFor != 0) ? $\"Heat {RunShape.Cur.Heat} · heat vote open (Shop tab)\" : $\"Heat {RunShape.Cur.Heat} (Scrap +{(float)Mathf.Min(RunShape.Cur.Heat, Heat.Data.maxRewardHeat) * Heat.Data.scrapPerHeat:0}%)\");",
+"num": [
+0
+],
 "id": 2482
 },
 {
@@ -43585,6 +44785,10 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add((RunShape.Cur.HeatFor != 0) ? $\"Heat {RunShape.Cur.Heat} · heat vote open (Shop tab)\" : $\"Heat {RunShape.Cur.Heat} (Scrap +{(float)Mathf.Min(RunShape.Cur.Heat, Heat.Data.maxRewardHeat) * Heat.Data.scrapPerHeat:0}%)\");",
+"num": [
+0,
+1
+],
 "id": 2483
 },
 {
@@ -43601,6 +44805,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add((num3 > 0) ? $\"Crew {RunShape.CrewLevel} ({num2}/{num3})\" : $\"Crew {RunShape.CrewLevel} (max)\");",
+"num": [
+0
+],
 "id": 2484
 },
 {
@@ -43617,6 +44824,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add((num3 > 0) ? $\"Crew {RunShape.CrewLevel} ({num2}/{num3})\" : $\"Crew {RunShape.CrewLevel} (max)\");",
+"num": [
+0
+],
 "id": 2485
 },
 {
@@ -43913,6 +45123,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, (recap.victory ? $\"VICTORY: {recap.levels} levels, the finale beaten! \" : string.Format(\"Run over: {0} level{1}, chapter {2}. \", recap.levels, (recap.levels == 1) ? \"\" : \"s\", recap.chapter)) + \"The recap is on the Account tab (\" + MenuP",
+"num": [
+2
+],
 "inside": [
 "{0}The recap is on the Account tab ({1}){2}"
 ],
@@ -43932,6 +45145,9 @@ null
 "DISPLAY": 1
 },
 "code": "Notify(PopupKind.Other, (recap.victory ? $\"VICTORY: {recap.levels} levels, the finale beaten! \" : string.Format(\"Run over: {0} level{1}, chapter {2}. \", recap.levels, (recap.levels == 1) ? \"\" : \"s\", recap.chapter)) + \"The recap is on the Account tab (\" + MenuP",
+"num": [
+0
+],
 "inside": [
 "{0}The recap is on the Account tab ({1}){2}"
 ],
@@ -44033,6 +45249,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"Levels cleared <b>{recap.levels}</b>  ·  chapter <b>{recap.chapter}</b>  ·  milestones <b>{recap.milestones}</b>  ·  best streak <b>{recap.bestStreak}</b>\\n\");",
+"num": [
+1,
+3
+],
 "id": 2507
 },
 {
@@ -44049,6 +45269,11 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(string.Format(\"Total haul <b>${0:N0}</b>  ·  bosses <b>{1}</b>{2}  ·  elites <b>{3}</b>\\n\", recap.haul, recap.bosses, (recap.milestoneBosses > 0) ? $\" ({recap.milestoneBosses} milestone)\" : \"\", recap.elites));",
+"num": [
+0,
+1,
+3
+],
 "id": 2508
 },
 {
@@ -44065,6 +45290,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(string.Format(\"Total haul <b>${0:N0}</b>  ·  bosses <b>{1}</b>{2}  ·  elites <b>{3}</b>\\n\", recap.haul, recap.bosses, (recap.milestoneBosses > 0) ? $\" ({recap.milestoneBosses} milestone)\" : \"\", recap.elites));",
+"num": [
+0
+],
 "id": 2509
 },
 {
@@ -44081,6 +45309,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"Scrap earned by the team <b>{num:N0}</b>\\n\");",
+"num": [
+0
+],
 "id": 2510
 },
 {
@@ -44231,6 +45462,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(string.Format(\"Seasons won: <b>{0}</b>{1}\\n\", num4, (list3.Count > 0) ? (\"  (\" + string.Join(\"  ·  \", list3) + \")\") : \"\"));",
+"num": [
+0
+],
 "id": 2519
 },
 {
@@ -44279,6 +45513,11 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(string.Format(\"{0}  ·  {1}{2}  ·  {3} level{4}, chapter {5}  ·  streak {6}  ·  {7} boss{8}  ·  {9:N0} {10}\", Date(item.endedUtc), item.won ? \"<color=#ffd75a>WON</color>  ·  \" : \"\", item.difficulty, item.levels, (item.levels == 1) ? \"\" : \"s",
+"num": [
+5,
+6,
+7
+],
 "id": 2522
 },
 {
@@ -44383,6 +45622,9 @@ null
 "DISPLAY": 1
 },
 "code": "list.Add($\"Threat rating {array[1]} → {rating:0.0}\");",
+"num": [
+1
+],
 "id": 2528
 },
 {
@@ -44399,6 +45641,9 @@ null
 "DISPLAY": 1
 },
 "code": "list.Add($\"Run boons: {cur.Boons.Length}\");",
+"num": [
+0
+],
 "id": 2529
 },
 {
@@ -44415,6 +45660,9 @@ null
 "DISPLAY": 1
 },
 "code": "list.Add($\"Heat {array[3]} → {cur.Heat}\");",
+"num": [
+1
+],
 "id": 2530
 },
 {
@@ -44469,6 +45717,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast($\"Appraisal Scan: no valuables within {radius:0} m - no cooldown used\", Color.gray);",
+"num": [
+0
+],
 "id": 2533
 },
 {
@@ -44601,6 +45852,9 @@ null
 "DISPLAY": 1
 },
 "code": "Label(new Rect(((Rect)(ref side)).x + num7 + 4f, num2, ((Rect)(ref side)).width - num7 - 4f, num6 + 2f), string.Format(\"{0} change{1} not saved\", num5, (num5 == 1) ? \"\" : \"s\"), _smallLine);",
+"num": [
+0
+],
 "id": 2541
 },
 {
@@ -44903,6 +46157,9 @@ null,
 "DISPLAY": 1
 },
 "code": "BarNote((num > 0) ? string.Format(\"{0} change{1} not saved · they apply now, Undo takes them back\", num, (num == 1) ? \"\" : \"s\") : \"Your own settings: they only change your game\");",
+"num": [
+0
+],
 "id": 2558
 },
 {
@@ -45210,6 +46467,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string label = ((_cart.Count == 0) ? \"Cart: empty\" : $\"Buy cart: {_cart.Count}  ({Scrap.Price(CartTotal())})\");",
+"num": [
+0
+],
 "id": 2576
 },
 {
@@ -45511,6 +46771,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "shopDetail.Now = item + ((e.kind == \"cons\") ? $\"\\n<color=#9a9ca0>Works until the next shop visit. One of each per visit, {Plugin.Cfg.ShopConsumablesPerLevel.Value} different ones at most (you have {run.consBought.Count}).</color>\" : \"\\n<color=#9a9ca0>Goes into",
+"num": [
+1
+],
 "id": 2594
 },
 {
@@ -45925,6 +47188,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"<b>{Scrap.Price(num)}</b> <color=#9a9ca0>(was {basePrice})</color>\";",
+"num": [
+1
+],
 "id": 2618
 },
 {
@@ -46377,6 +47643,10 @@ null
 "DISPLAY": 1
 },
 "code": "Text = string.Format(\"<b>{0}</b>  {1}/{2} voted\", flag2 ? \"END OR ENDLESS\" : \"BOON VOTE\", cur.Votes, Mathf.Max(1, cur.Voters)) + ((text != \"\") ? (\"  <color=#9a9ca0>· your vote: \" + text + \"</color>\") : \"\")",
+"num": [
+1,
+2
+],
 "id": 2644
 },
 {
@@ -46425,6 +47695,11 @@ null
 "DISPLAY": 1
 },
 "code": "Text = $\"<b>ROUTE VOTE (LEVEL {cur.RouteFor + 1})</b>  {cur.RouteVotes}/{num} voted\" + ((text2 != \"\") ? (\"  <color=#9a9ca0>· your vote: \" + text2 + \"</color>\") : \"\")",
+"num": [
+0,
+1,
+2
+],
 "id": 2647
 },
 {
@@ -46457,6 +47732,9 @@ null
 "DISPLAY": 1
 },
 "code": "Text = $\"<b>ROUTE (LEVEL {cur.RouteFor + 1}):</b> {Routes.Name(cur.RouteOptions[cur.RouteChosen])}\"",
+"num": [
+0
+],
 "id": 2649
 },
 {
@@ -46473,6 +47751,11 @@ null
 "DISPLAY": 1
 },
 "code": "Text = $\"<b>HEAT VOTE (HEAT {cur.Heat})</b>  {cur.HeatVotes}/{num} voted\" + ((text3 != \"\") ? (\"  <color=#9a9ca0>· your vote: \" + text3 + \"</color>\") : \"\")",
+"num": [
+0,
+1,
+2
+],
 "id": 2650
 },
 {
@@ -46959,6 +48242,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text10 = ((m >= 3) ? \"PRESTIGE: \" : \"\") + branchDef.name.ToUpperInvariant() + string.Format(\"  ({0} PTS{1})\", num5, (num6 != num5) ? $\" <color={text}>→ {num6}</color>\" : \"\");",
+"num": [
+0
+],
 "id": 2677
 },
 {
@@ -47125,6 +48411,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "Why($\"3 health data: nothing from the host yet (last message {Time.unscaledTime - _matesAt:0.0}s ago; solo = no teammates)\");",
+"num": [
+0
+],
 "id": 2686
 },
 {
@@ -47141,6 +48430,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "Why($\"3 health data: stale ({Time.unscaledTime - _matesAt:0.0}s since the host's last update)\");",
+"num": [
+0
+],
 "id": 2687
 },
 {
@@ -47173,6 +48465,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "Why(string.Format(\"ok: {0} teammate(s) from the host, {1} avatar(s) found, bars {2}, list {3}, \", _mates.Count, num, Plugin.Cfg.TriageBars.Value ? \"on\" : \"OFF in Controls\", Plugin.Cfg.TriageList.Value ? \"on\" : \"off\") + string.Format(\"camera {0}, range {1:0}m\",",
+"num": [
+0,
+1
+],
 "id": 2689
 },
 {
@@ -47237,6 +48533,9 @@ null,
 "DISPLAY": 1
 },
 "code": "ShadowLabel(new Rect(((Rect)(ref val6)).x - 30f, ((Rect)(ref val6)).y, ((Rect)(ref val6)).width + 60f, num5), Mark(item) + (item.Down ? $\"DOWN {num8:0}m\" : item.BarText), style, color2);",
+"num": [
+0
+],
 "id": 2693
 },
 {
@@ -47269,6 +48568,9 @@ null,
 "DISPLAY": 1
 },
 "code": "item.ListText = (item.Down ? $\"X {item.Name}  DOWN {Vector3.Distance(position, MatePos(item)):0}m\" : $\"{Mark(item)}{item.Name}  {item.Hp}/{item.Max}\");",
+"num": [
+1
+],
 "id": 2695
 },
 {
@@ -47626,6 +48928,9 @@ null,
 "DISPLAY": 1
 },
 "code": "LayoutCheckSummary = (stopped ? \"Stopped. \" : \"\") + ((count == 0) ? $\"No issues ({_lcTexts:N0} texts checked).\" : ($\"{count} issues: \" + string.Join(\", \", ByKind()) + \".\")) + ((text != \"\") ? \" Report: BepInEx/config/RepoRPG_layout_check.txt\" : \"\");",
+"num": [
+0
+],
 "id": 2717
 },
 {
@@ -47642,6 +48947,9 @@ null,
 "DISPLAY": 1
 },
 "code": "LayoutCheckSummary = (stopped ? \"Stopped. \" : \"\") + ((count == 0) ? $\"No issues ({_lcTexts:N0} texts checked).\" : ($\"{count} issues: \" + string.Join(\", \", ByKind()) + \".\")) + ((text != \"\") ? \" Report: BepInEx/config/RepoRPG_layout_check.txt\" : \"\");",
+"num": [
+0
+],
 "id": 2718
 },
 {
@@ -47690,6 +48998,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Toast((count == 0) ? \"Layout check: no issues\" : $\"Layout check: {count} issues (see the report)\", (count == 0) ? Good : Bad);",
+"num": [
+0
+],
 "id": 2721
 },
 {
@@ -47722,6 +49033,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string item2 = $\"[{kind}] {_lcTab} @ {_lcSize}, text {_lcScale * 100f:0}%: {what}\";",
+"num": [
+3
+],
 "id": 2723
 },
 {
@@ -47754,6 +49068,10 @@ null,
 "DISPLAY": 1
 },
 "code": "string text7 = $\"{NavGroups[num].name} · {Mathf.Max(1, list2.IndexOf(_tab) + 1)} of {list2.Count}\";",
+"num": [
+1,
+2
+],
 "id": 2725
 },
 {
@@ -47802,6 +49120,10 @@ null,
 "DISPLAY": 1
 },
 "code": "_ctxXp = (flag ? \"Max level\" : $\"{Mathf.RoundToInt(_ctxXpFrac * 100f)}% to Lv {currentProgress.level + 1}\");",
+"num": [
+0,
+1
+],
 "id": 2728
 },
 {
@@ -47818,6 +49140,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "_ctxItems.Add(($\"Skill pts <b>{num2}</b>\", \"Class\"));",
+"num": [
+0
+],
 "id": 2729
 },
 {
@@ -47834,6 +49159,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "_ctxItems.Add(($\"Attribute pts <b>{num3}</b>\", \"Attributes\"));",
+"num": [
+0
+],
 "id": 2730
 },
 {
@@ -47850,6 +49178,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "_ctxItems.Add(($\"Data <b>{num4:N0}</b>\", \"Research\"));",
+"num": [
+0
+],
 "id": 2731
 },
 {
@@ -47866,6 +49197,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = $\"<b>{_ctxNeed}</b> need you\";",
+"num": [
+0
+],
 "id": 2732
 },
 {
@@ -48147,6 +49481,9 @@ null,
 "DISPLAY": 1
 },
 "code": "vCard2.Title = $\"Milestone {num6} reward\" + ((list.Count > 1) ? $\" (+{list.Count - 1})\" : \"\");",
+"num": [
+0
+],
 "id": 2748
 },
 {
@@ -48291,6 +49628,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "NewOpt(vCard2, $\"{num7} {Scrap.Short}\", \"Paid now\", $\"<b>{num7} {Scrap.Short}</b>\\nPaid now. The Unique is gone once you take it.\", mine: false, text2 == \"\", text2);",
+"num": [
+0
+],
 "id": 2757
 },
 {
@@ -48523,6 +49863,9 @@ null,
 "DISPLAY": 1
 },
 "code": "vCard4.Title = $\"Route for level {cur.RouteFor + 1}\";",
+"num": [
+0
+],
 "id": 2771
 },
 {
@@ -48666,6 +50009,9 @@ null
 "DISPLAY": 1
 },
 "code": "vCard5.Title = $\"Heat {cur.Heat}: raise it?\";",
+"num": [
+0
+],
 "id": 2779
 },
 {
@@ -48682,6 +50028,9 @@ null
 "DISPLAY": 1
 },
 "code": "string shortLine3 = ((heatCardDef == null) ? $\"Heat stays at {cur.Heat}\" : $\"+{heatCardDef.heat} heat · {StripRich(heatCardDef.desc)}\");",
+"num": [
+0
+],
 "id": 2780
 },
 {
@@ -48698,6 +50047,9 @@ null
 "DISPLAY": 1
 },
 "code": "string shortLine3 = ((heatCardDef == null) ? $\"Heat stays at {cur.Heat}\" : $\"+{heatCardDef.heat} heat · {StripRich(heatCardDef.desc)}\");",
+"num": [
+0
+],
 "id": 2781
 },
 {
@@ -48746,6 +50098,9 @@ null
 "DISPLAY": 1
 },
 "code": "vCard6.Title = $\"Crew level {cur2.DrillFor}: a crew drill\";",
+"num": [
+0
+],
 "id": 2784
 },
 {
@@ -48878,6 +50233,9 @@ null
 "DISPLAY": 1
 },
 "code": "NoteVoteResult((text != \"\") ? $\"Heat: {Heat.Name(text)} (+{Heat.Card(text)?.heat ?? 1})\" : \"Heat: skipped\", ((!(text != \"\")) ? $\"Heat stays at {s.Heat}.\" : (Heat.Card(text)?.desc ?? \"\")) + Tally(old.HeatBy, old.HeatOffer, Heat.Name));",
+"num": [
+0
+],
 "id": 2792
 },
 {
@@ -49221,6 +50579,9 @@ null
 "DISPLAY": 1
 },
 "code": "string s = ((vCard.Deadline == \"countdown\") ? $\"Closes in {Mathf.Max(0f, _tcVoteEnd - Time.time):0}s\" : vCard.Deadline);",
+"num": [
+0
+],
 "id": 2811
 },
 {
@@ -49271,6 +50632,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = $\"opt:{c.Id}:{oi}\";",
+"num": [
+1
+],
 "id": 2814
 },
 {
@@ -49410,6 +50774,9 @@ null
 "pieces": [
 "res:",
 null
+],
+"num": [
+0
 ],
 "id": 2822
 },
@@ -49724,6 +51091,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append($\"{c.Votes} vote(s) cast.\");",
+"num": [
+0
+],
 "id": 2841
 },
 {
@@ -50413,6 +51783,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "why = string.Format(\"no floor {0} ({1:0.0}m)\", (num4 == 0f) ? \"ahead\" : ((num4 < 0f) ? \"ahead-left\" : \"ahead-right\"), num);",
+"num": [
+1
+],
 "id": 2881
 },
 {
@@ -50429,6 +51802,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "why = $\"too steep ahead ({Vector3.Angle(normal2, Vector3.up):0}deg, {num6:+0.00;-0.00}m)\";",
+"num": [
+0,
+1
+],
 "id": 2882
 },
 {
@@ -50445,6 +51822,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "why = $\"step / stairs ahead ({num6:+0.00;-0.00}m)\";",
+"num": [
+0
+],
 "id": 2883
 },
 {
@@ -50461,6 +51841,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "why = string.Format(\"drop {0} of the path ({1:0.00}m)\", (num4 < 0f) ? \"left\" : \"right\", 0f - num6);",
+"num": [
+1
+],
 "id": 2884
 },
 {
@@ -50525,6 +51908,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "Limit(pl, ref limit, num10 / pl.BaseSpeed, $\"corner {num7:0}deg\");",
+"num": [
+0
+],
 "id": 2888
 },
 {
@@ -50589,6 +51975,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "Limit(pl, ref limit, (num13 < 0.3f) ? 0f : Mathf.Max(0.15f, Mathf.Clamp01((num13 - 0.3f) / Mathf.Max(0.5f, num11))), $\"obstacle {num13:0.0}m ({pl.BlockName})\");",
+"num": [
+0
+],
 "id": 2892
 },
 {
@@ -50605,6 +51994,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "StopWhy(pl, $\"blocked by {pl.BlockName} {num13:0.00}m ahead\");",
+"num": [
+1
+],
 "id": 2893
 },
 {
@@ -50918,6 +52310,12 @@ null,
 "UNKNOWN": 1
 },
 "code": "DebugLines.Add($\"CART {((Object)pl.Cart).name}  {pl.St}  {pl.CurSpeed:0.0} m/s (want {pl.BaseSpeed * pl.SpeedLimit:0.0})  route {pl.Index}/{pl.Path.Length}\");",
+"num": [
+2,
+3,
+4,
+5
+],
 "id": 2912
 },
 {
@@ -50934,6 +52332,13 @@ null,
 "UNKNOWN": 1
 },
 "code": "DebugLines.Add($\"width {cartW:0.00}m (empty {2f * pl.EmptyHalfWidth:0.00})  height {pl.Height:0.00}  load {pl.LoadMass:0}  nudge {pl.Nudge:+0.00;-0.00}  line-up {pl.LineUp}\");",
+"num": [
+0,
+1,
+2,
+3,
+4
+],
 "id": 2913
 },
 {
@@ -50950,6 +52355,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "DebugLines.Add((gap < float.MaxValue) ? $\"OPENING {gap:0.00}m  clearance {gap - cartW:+0.00;-0.00}m\" : \"open ground\");",
+"num": [
+0,
+1
+],
 "id": 2914
 },
 {
@@ -51024,6 +52433,12 @@ null
 "UNKNOWN": 1
 },
 "code": "DebugLines.Add($\"passage: {value.Seconds:0.0}s  stops {value.Stops}  grazes {value.Contacts}  back-ups {value.Backups}\");",
+"num": [
+0,
+1,
+2,
+3
+],
 "id": 2918
 },
 {
@@ -51078,6 +52493,9 @@ null
 "UNKNOWN": 1
 },
 "code": "sb.Append($\"  {title,-28} {num,4} passages   clean {Pct(num2, num),5}   grazed {Pct(num3, num),5}   stopped then through {Pct(num4, num),5}   failed {Pct(num5, num),5}\" + ((num6 > 0) ? $\"   (+{num6} real misfits refused)\" : \"\") + \"\\n\");",
+"num": [
+1
+],
 "id": 2921
 },
 {
@@ -51094,6 +52512,9 @@ null
 "UNKNOWN": 1
 },
 "code": "sb.Append($\"  {title,-28} {num,4} passages   clean {Pct(num2, num),5}   grazed {Pct(num3, num),5}   stopped then through {Pct(num4, num),5}   failed {Pct(num5, num),5}\" + ((num6 > 0) ? $\"   (+{num6} real misfits refused)\" : \"\") + \"\\n\");",
+"num": [
+0
+],
 "id": 2922
 },
 {
@@ -51342,6 +52763,11 @@ null
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append((passage != null) ? $\"  narrowest handled: {passage.MinGap:0.00}m opening, cart {passage.CartW:0.00}m (clearance {num3:+0.00;-0.00}m) - {passage.Outcome}, {passage.Mode}, {passage.Level}\\n\" : \"  narrowest handled: -\\n\");",
+"num": [
+0,
+1,
+2
+],
 "id": 2937
 },
 {
@@ -51374,6 +52800,11 @@ null
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append((passage3 != null) ? $\"  widest failed:     {passage3.MinGap:0.00}m opening, cart {passage3.CartW:0.00}m (clearance {num5:+0.00;-0.00}m) - {passage3.Why}, {passage3.Mode}, {passage3.Level}\\n\" : \"  widest failed:     -\\n\");",
+"num": [
+0,
+1,
+2
+],
 "id": 2939
 },
 {
@@ -51406,6 +52837,11 @@ null
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append((passage2 != null && passage2 != passage3) ? $\"  narrowest failed:  {passage2.MinGap:0.00}m opening, cart {passage2.CartW:0.00}m (clearance {num4:+0.00;-0.00}m) - {passage2.Why}, {passage2.Mode}, {passage2.Level}\\n\" : \"\");",
+"num": [
+0,
+1,
+2
+],
 "id": 2941
 },
 {
@@ -51914,6 +53350,9 @@ null
 "actor:",
 null
 ],
+"num": [
+0
+],
 "id": 2969
 },
 {
@@ -52132,6 +53571,10 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(by, Notice.Text, 0f, $\"Bet placed on ${num2:N0} - {Scrap.Price((int)val2)} at stake. Get it out in {bet.Timer:0}s!\");",
+"num": [
+0,
+2
+],
 "id": 2982
 },
 {
@@ -52200,6 +53643,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendBetState(bet.ViewId, bet.Actor, bet.Applied, 0f, 1f, $\"{bet.Name} won the bet! x{bet.Applied:0.0} - ${num2:N0}\");",
+"num": [
+1,
+2
+],
 "id": 2986
 },
 {
@@ -52422,6 +53869,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, string.Format(\"Dispatch: {0} {1} in {2:0}s - nobody touch it\", ItemName((Component)(object)val2), flag2 ? \"goes to your Drop Pad\" : \"leaves\", num6));",
+"num": [
+2
+],
 "id": 2999
 },
 {
@@ -52655,6 +54105,10 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(item, Notice.Courier, _padCredit, $\"pad|{count}|{slots}\");",
+"num": [
+0,
+1
+],
 "id": 3013
 },
 {
@@ -52671,6 +54125,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(item2, Notice.Popup, 0f, $\"Drop Pad delivered: ${num:N0} with the haul\");",
+"num": [
+0
+],
 "id": 3014
 },
 {
@@ -52803,6 +54260,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, (num3 == 1) ? $\"Provoked: {EnemyName((Component)(object)val3)} vs {EnemyName((Component)(object)val)} ({seconds:0}s)\" : $\"Provoked: two monsters vs {EnemyName((Component)(object)val)} ({seconds:0}s)\");",
+"num": [
+2
+],
 "id": 3022
 },
 {
@@ -52819,6 +54279,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, (num3 == 1) ? $\"Provoked: {EnemyName((Component)(object)val3)} vs {EnemyName((Component)(object)val)} ({seconds:0}s)\" : $\"Provoked: two monsters vs {EnemyName((Component)(object)val)} ({seconds:0}s)\");",
+"num": [
+1
+],
 "id": 3023
 },
 {
@@ -52981,6 +54444,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "FailFight(fight, $\"{EnemyName((Component)(object)fight.Attacker)} couldn't reach {EnemyName((Component)(object)fight.Target)} ({num3:0.#} m left)\");",
+"num": [
+2
+],
 "id": 3032
 },
 {
@@ -53211,6 +54677,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(p, Notice.Text, 0f, $\"Prospecting: +{num:0}% value\");",
+"num": [
+0
+],
 "id": 3045
 },
 {
@@ -53227,6 +54696,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(val2, Notice.Text, 0f, $\"Padding Kit: no value lost ({num2 - value - 1} left)\");",
+"num": [
+0
+],
 "id": 3046
 },
 {
@@ -53259,6 +54731,9 @@ null,
 "DISPLAY": 2
 },
 "code": "Net.SendNotice(perkThrow.By, Notice.Text, 0f, $\"Catch! +{num:0}% value\");",
+"num": [
+0
+],
 "id": 3048
 },
 {
@@ -53323,6 +54798,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, string.Format(\"Mended {0} valuable{1}: +${2:N0}\", num, (num == 1) ? \"\" : \"s\", num2));",
+"num": [
+0,
+2
+],
 "id": 3052
 },
 {
@@ -53455,6 +54934,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, string.Format(\"Rummage: found {0} thing{1}\", num3, (num3 == 1) ? \"\" : \"s\"));",
+"num": [
+0
+],
 "id": 3060
 },
 {
@@ -53503,6 +54985,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, $\"Policy on {ItemName((Component)(object)val2)}: move it {_policies[_policies.Count - 1].Required:0}m to activate\");",
+"num": [
+1
+],
 "id": 3063
 },
 {
@@ -53551,6 +55036,10 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(val, Notice.Popup, 0f, $\"Policy void: only moved {policy.Moved:0}m of {policy.Required:0}m\");",
+"num": [
+0,
+1
+],
 "id": 3066
 },
 {
@@ -53567,6 +55056,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(val, Notice.Popup, 0f, $\"Policy paid: ${num2:N0} counts toward the haul\");",
+"num": [
+0
+],
 "id": 3067
 },
 {
@@ -53822,6 +55314,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "No(flag ? \"No battery in cart\" : \"No cart close enough\", flag ? \"no battery in the cart(s) in reach\" : $\"no cart within {num4:0.#} m\");",
+"num": [
+0
+],
 "id": 3082
 },
 {
@@ -53890,6 +55385,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(p, Notice.Popup, num8, $\"Gun recharged from cart (+{num8:0}%)\");",
+"num": [
+0
+],
 "id": 3086
 },
 {
@@ -53906,6 +55404,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, (num == 1) ? $\"Pacified {EnemyName((Component)(object)val)} for {seconds:0}s\" : $\"Pacified {num} monsters for {seconds:0}s\");",
+"num": [
+1
+],
 "id": 3087
 },
 {
@@ -53922,6 +55423,10 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, (num == 1) ? $\"Pacified {EnemyName((Component)(object)val)} for {seconds:0}s\" : $\"Pacified {num} monsters for {seconds:0}s\");",
+"num": [
+0,
+1
+],
 "id": 3088
 },
 {
@@ -54034,6 +55539,15 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"ledger {_books.Count}, finds {_scavenged.Count}/{_pendingFinds.Count}, hinges {_hingeClosed.Count}, dispatches {_dispatches.Count}, pad {_padItems.Count}, policies {_policies.Count}, \" + $\"sensors {_sensors.Count}, echoes {_echoes.Count}, fights {_fig",
+"num": [
+0,
+1,
+2,
+3,
+4,
+5,
+6
+],
 "id": 3095
 },
 {
@@ -54050,6 +55564,14 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"ledger {_books.Count}, finds {_scavenged.Count}/{_pendingFinds.Count}, hinges {_hingeClosed.Count}, dispatches {_dispatches.Count}, pad {_padItems.Count}, policies {_policies.Count}, \" + $\"sensors {_sensors.Count}, echoes {_echoes.Count}, fights {_fig",
+"num": [
+0,
+1,
+2,
+3,
+4,
+5
+],
 "id": 3096
 },
 {
@@ -54066,6 +55588,13 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"ledger {_books.Count}, finds {_scavenged.Count}/{_pendingFinds.Count}, hinges {_hingeClosed.Count}, dispatches {_dispatches.Count}, pad {_padItems.Count}, policies {_policies.Count}, \" + $\"sensors {_sensors.Count}, echoes {_echoes.Count}, fights {_fig",
+"num": [
+0,
+1,
+2,
+3,
+4
+],
 "id": 3097
 },
 {
@@ -54155,6 +55684,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, (num > 0) ? string.Format(\"Smoke: {0} monster{1} lost sight of you\", num, (num == 1) ? \"\" : \"s\") : \"Smoke Canister burst\");",
+"num": [
+0
+],
 "id": 3102
 },
 {
@@ -54203,6 +55735,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(from, Notice.Popup, 0f, (num > 0) ? string.Format(\"Flash: {0} monster{1} stunned\", num, (num == 1) ? \"\" : \"s\") : \"Flash Charge went off\");",
+"num": [
+0
+],
 "id": 3105
 },
 {
@@ -54379,6 +55914,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(item, Notice.Popup, 0f, $\"Vault cracked by {arg}: now worth ${num3:N0}\");",
+"num": [
+1
+],
 "id": 3116
 },
 {
@@ -54411,6 +55949,9 @@ null
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(item, Notice.Text, 0f, $\"Dumbwaiter: {ItemName((Component)(object)val3)} (${num:N0}) sent to the open extraction\");",
+"num": [
+1
+],
 "id": 3118
 },
 {
@@ -56335,6 +57876,9 @@ null
 "DISPLAY": 1
 },
 "code": "string text = string.Join(\", \", Off.Take(6)) + ((Off.Count > 6) ? $\" and {Off.Count - 6} more\" : \"\");",
+"num": [
+0
+],
 "id": 3235
 },
 {
@@ -57966,6 +59510,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Each($\"Talent: {nodeDef.name} (rank {num})\", nodeDef.effects, num);",
+"num": [
+1
+],
 "id": 3318
 },
 {
@@ -57982,6 +59529,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Each($\"Attribute: {attributeDef.name} ({num2} pts)\", attributeDef.effects, attributeDef.EffectivePoints(num2));",
+"num": [
+1
+],
 "id": 3319
 },
 {
@@ -58066,6 +59616,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Each($\"Upgrade: {upgradeDef.name} x{upgradeBonu.rank}\", upgradeDef.effects, upgradeBonu.rank);",
+"num": [
+1
+],
 "id": 3324
 },
 {
@@ -58364,6 +59917,9 @@ null
 "UNKNOWN": 1
 },
 "code": "problems.Add($\"{@class.id} has {@class.branches.Length} trees (needs 3)\");",
+"num": [
+1
+],
 "id": 3339
 },
 {
@@ -58828,6 +60384,9 @@ null
 "UNKNOWN": 1
 },
 "code": "conflicts.Add(string.Format(\"{0} ({1}.{2}) {3} event {4}\", asm.GetName().Name, t.FullName, m.Name, flag ? \"sends\" : \"listens for\", item));",
+"num": [
+4
+],
 "id": 3363
 },
 {
@@ -68060,6 +69619,11 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"+{(float)lvl * C.AscXpPerLevel.Value:0}% XP, +{(float)lvl * C.AscScrapPerLevel.Value:0}% Scrap, +{(float)lvl * C.AscDataPerLevel.Value:0}% Data\" + ((lvl >= 4) ? $\", +{lvl / 4} gear luck\" : \"\");",
+"num": [
+0,
+1,
+2
+],
 "id": 3939
 },
 {
@@ -68076,6 +69640,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"+{(float)lvl * C.AscXpPerLevel.Value:0}% XP, +{(float)lvl * C.AscScrapPerLevel.Value:0}% Scrap, +{(float)lvl * C.AscDataPerLevel.Value:0}% Data\" + ((lvl >= 4) ? $\", +{lvl / 4} gear luck\" : \"\");",
+"num": [
+0
+],
 "id": 3940
 },
 {
@@ -68142,6 +69709,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"Ascension win at A{num} (everyone)\";",
+"num": [
+0
+],
 "id": 3944
 },
 {
@@ -68158,6 +69728,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Research.Receive(100f + 25f * (float)lvl, $\"Ascension {lvl} win\");",
+"num": [
+0
+],
 "id": 3945
 },
 {
@@ -68472,6 +70045,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"{PhotonNetwork.CurrentRoom.PlayerCount} players\";",
+"num": [
+0
+],
 "id": 3964
 },
 {
@@ -68488,6 +70064,10 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"{PhotonNetwork.CurrentRoom.PlayerCount} / {maxPlayers} players\";",
+"num": [
+0,
+1
+],
 "id": 3965
 },
 {
@@ -68708,6 +70288,9 @@ null
 "DISPLAY": 1
 },
 "code": "list.Add($\"The {item} was replaced by the {NewName(to)}: your Lv {classProgress2.level} carries over\" + ((num2 > 0) ? string.Format(\" and your {0} skill point{1} are back to spend.\", num2, (num2 == 1) ? \"\" : \"s\") : \".\"));",
+"num": [
+2
+],
 "id": 3978
 },
 {
@@ -68724,6 +70307,9 @@ null
 "DISPLAY": 1
 },
 "code": "list.Add($\"The {item} was replaced by the {NewName(to)}: your Lv {classProgress2.level} carries over\" + ((num2 > 0) ? string.Format(\" and your {0} skill point{1} are back to spend.\", num2, (num2 == 1) ? \"\" : \"s\") : \".\"));",
+"num": [
+0
+],
 "id": 3979
 },
 {
@@ -68756,6 +70342,9 @@ null
 "DISPLAY": 1
 },
 "code": "list.Add(item + \" -> \" + NewName(to) + ((accountClass3.masteredAt != \"\") ? \" (mastered, alternate passive included)\" : $\" (best Lv {accountClass3.bestLevel})\"));",
+"num": [
+0
+],
 "id": 3981
 },
 {
@@ -69048,6 +70637,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text = $\"{c.rewardScrap} {Scrap.Short} + {c.rewardXp} XP\";",
+"num": [
+0,
+2
+],
 "id": 3998
 },
 {
@@ -69064,6 +70657,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "text += $\"  (bonus: +{Mathf.RoundToInt((float)c.rewardScrap * 0.5f)} {Scrap.Short})\";",
+"num": [
+0
+],
 "id": 3999
 },
 {
@@ -69080,6 +70676,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"Winner: {c.rewardScrap} {Scrap.Short} + {c.rewardXp} XP + a reward pick\";",
+"num": [
+0,
+2
+],
 "id": 4000
 },
 {
@@ -69496,6 +71096,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"Exterminate\" => $\"Exterminate: kill {c.target} enemies\",",
+"num": [
+0
+],
 "id": 4024
 },
 {
@@ -69528,6 +71131,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"Speedrun\" => $\"Speedrun: finish the level within {c.target} min\",",
+"num": [
+0
+],
 "id": 4026
 },
 {
@@ -69576,6 +71182,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"Specialist\" => $\"Specialist: use your ability {c.target} times (personal)\",",
+"num": [
+0
+],
 "id": 4029
 },
 {
@@ -69592,6 +71201,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"Haul\" => $\"Haul: complete {c.target} extraction points\",",
+"num": [
+0
+],
 "id": 4030
 },
 {
@@ -69628,6 +71240,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"+{c.rewardAttributePoints} attribute point\");",
+"num": [
+0
+],
 "id": 4032
 },
 {
@@ -69809,6 +71424,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text = (cursedDef.fixedCurse ? \"  <color=#9a9ca0>(this curse doesn't weaken)</color>\" : ((num < 0.999f) ? $\"  <color=#9a9ca0>(attunement: {Mathf.RoundToInt((1f - num) * 100f)}% weaker)</color>\" : \"\"));",
+"num": [
+0
+],
 "id": 4043
 },
 {
@@ -70011,6 +71629,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return string.Format(\"PAYOUT {0}{1}  x{2:0.##}\", Tier.ToString().ToUpperInvariant(), (count > 0) ? $\" +{count}\" : \"\", Payout());",
+"num": [
+2
+],
 "id": 4055
 },
 {
@@ -70508,6 +72129,9 @@ null
 "UNKNOWN": 1
 },
 "code": "ElemLogOnce(attacker, e, \"miss\", () => $\"[elements] {Game.ActorNumber(attacker)}:{ClassClaims.NameOf(Game.ActorNumber(attacker))} has {Elements.Names[e]} but this hit didn't carry it ({HeldText(attacker)}; hit by {((Object)col).name}).\");",
+"num": [
+0
+],
 "id": 4085
 },
 {
@@ -71004,6 +72628,9 @@ null,
 "DISPLAY": 1
 },
 "code": "Net.SendNotice(item, Notice.Popup, 0f, $\"Monster Nest: {num} monsters guard it. Kill them all for a nest core.\");",
+"num": [
+0
+],
 "id": 4114
 },
 {
@@ -71165,6 +72792,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"<color={s.color}><b>{s.name} set {Mathf.Min(worn, 4)}/4</b></color>\\n\" + \"<color=\" + ((worn >= 2) ? text : text2) + \">2 pieces: \" + s.twoDesc + \"</color>\\n<color=\" + ((worn >= 4) ? text : text2) + \">4 pieces: \" + s.fourDesc + \"</color>\";",
+"num": [
+2
+],
 "inside": [
 "{0}<color={1}>2 pieces: {2}</color>\n<color={3}>4 pieces: {4}</color>"
 ],
@@ -71184,6 +72814,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list3.Add(($\"+ {setDef.name} {num}-piece: {((num == 2) ? setDef.twoDesc : setDef.fourDesc)}\", true));",
+"num": [
+1
+],
 "id": 4124
 },
 {
@@ -71200,6 +72833,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list3.Add(($\"- {setDef.name} {num}-piece: {((num == 2) ? setDef.twoDesc : setDef.fourDesc)}\", false));",
+"num": [
+1
+],
 "id": 4125
 },
 {
@@ -71280,6 +72916,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text = (AddsLine(g) ? \"a new line (pick 1 of 3)\" : (IsLineLevel(num) ? $\"all lines +{D.step:0}% (no room for a new line)\" : $\"all lines +{D.step:0}%\"));",
+"num": [
+0
+],
 "id": 4130
 },
 {
@@ -71296,6 +72935,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text = (AddsLine(g) ? \"a new line (pick 1 of 3)\" : (IsLineLevel(num) ? $\"all lines +{D.step:0}% (no room for a new line)\" : $\"all lines +{D.step:0}%\"));",
+"num": [
+0
+],
 "id": 4131
 },
 {
@@ -71328,6 +72970,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"upg:{Rar(g)}:{g.up + 1}\";",
+"num": [
+0,
+1
+],
 "id": 4133
 },
 {
@@ -71431,6 +73077,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"<b>Skip</b>\\nNo heat added this chapter. Heat stays at {Total}.\";",
+"num": [
+0
+],
 "id": 4139
 },
 {
@@ -71447,6 +73096,13 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"<b>{heatCardDef.name}</b>  <color=#ff8a5c>+{heatCardDef.heat} heat</color>\\n<color=#ff9a8a>{heatCardDef.desc}</color>\\n<color=#73ff66>Heat {Total} -> {Total + heatCardDef.heat}: haul Scrap +{(float)Mathf.Min(Total + heatCardDef.heat, Data.maxRewardHea",
+"num": [
+1,
+3,
+4,
+5,
+6
+],
 "id": 4140
 },
 {
@@ -71463,6 +73119,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"heat|Heat stays at {t.heat}: the team skipped\";",
+"num": [
+0
+],
 "id": 4141
 },
 {
@@ -71479,6 +73138,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"heat|Heat {t.heat}: {heatCardDef.name} ({heatCardDef.desc})\";",
+"num": [
+0
+],
 "id": 4142
 },
 {
@@ -72622,6 +74284,9 @@ null,
 "DISPLAY": 1
 },
 "code": "return Invalid(presetInfo, $\"{num3} damaged line(s)\");",
+"num": [
+0
+],
 "id": 4210
 },
 {
@@ -72674,6 +74339,9 @@ null
 "DISPLAY": 1
 },
 "code": "presetInfo.Detail = $\"{num} settings\" + ((text != \"\") ? (\" · RepoRPG \" + text) : \"\") + ((num2 > 0) ? $\" · {num2} out-of-range value(s) skipped\" : \"\");",
+"num": [
+0
+],
 "id": 4213
 },
 {
@@ -73824,6 +75492,9 @@ null
 "UNKNOWN": 1
 },
 "code": "string text2 = ((levelIndex >= Cur.EventFrom) ? ((Cur.EventUntil - levelIndex <= 1) ? \"this level\" : $\"{Cur.EventUntil - levelIndex} more levels\") : ((Cur.EventUntil - Cur.EventFrom == 1) ? \"next level\" : $\"from the next level, {Cur.EventUntil - Cur.EventFrom}",
+"num": [
+0
+],
 "id": 4281
 },
 {
@@ -73856,6 +75527,9 @@ null
 "UNKNOWN": 1
 },
 "code": "string text2 = ((levelIndex >= Cur.EventFrom) ? ((Cur.EventUntil - levelIndex <= 1) ? \"this level\" : $\"{Cur.EventUntil - levelIndex} more levels\") : ((Cur.EventUntil - Cur.EventFrom == 1) ? \"next level\" : $\"from the next level, {Cur.EventUntil - Cur.EventFrom}",
+"num": [
+0
+],
 "id": 4283
 },
 {
@@ -73872,6 +75546,12 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"{Cur.ReqGiver} wants {Names[Cur.ReqCat]}: extract {Cur.ReqNeed} ({Cur.ReqHave}/{Cur.ReqNeed}) for +{Cur.ReqReward} {Scrap.Short} each\";",
+"num": [
+2,
+3,
+4,
+5
+],
 "id": 4284
 },
 {
@@ -73888,6 +75568,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"{Cur.ReqGiver}'s request for {Names[Cur.ReqCat]} done (+{Cur.ReqReward} {Scrap.Short} each)\";",
+"num": [
+2
+],
 "id": 4285
 },
 {
@@ -73904,6 +75587,10 @@ null
 "UNKNOWN": 1
 },
 "code": "string text4 = ((num3 >= 0 && _photonOut0 >= 0) ? $\"Photon (all of the game): {(float)(num3 - _photonOut0) / secs:0} out/s, {(float)(num4 - _photonIn0) / secs:0} in/s (room limit about 500 msg/s)\" : \"Photon totals unavailable\");",
+"num": [
+0,
+1
+],
 "id": 4286
 },
 {
@@ -74489,6 +76176,16 @@ null
 "UNKNOWN": 1
 },
 "code": "string text2 = $\"{num13,4}  {Where(),-26} {text,-6} {count,2}p {num12,3}m  FPS {num2,5:0} (1% low {num4,4:0})  frame {num5,5:0.0} ms  RepoRPG {num6,5:0.00} ms (worst {num7,5:0.0})  \" + string.Format(\"alloc {0,6:0.00} KB/frame{1}  GC {2,3}  heap {3,6:0} MB  tot",
+"num": [
+0,
+3,
+4,
+5,
+6,
+7,
+8,
+9
+],
 "inside": [
 "{0}growing: {1}"
 ],
@@ -74508,6 +76205,14 @@ null
 "UNKNOWN": 1
 },
 "code": "string text2 = $\"{num13,4}  {Where(),-26} {text,-6} {count,2}p {num12,3}m  FPS {num2,5:0} (1% low {num4,4:0})  frame {num5,5:0.0} ms  RepoRPG {num6,5:0.00} ms (worst {num7,5:0.0})  \" + string.Format(\"alloc {0,6:0.00} KB/frame{1}  GC {2,3}  heap {3,6:0} MB  tot",
+"num": [
+0,
+2,
+3,
+4,
+5,
+6
+],
 "inside": [
 "{0}growing: {1}"
 ],
@@ -74527,6 +76232,10 @@ null
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(\"\\nNETWORK (RepoRPG messages per second, last window)\\n\").Append($\"  sent {num10:0.0}/s, received {num11:0.0}/s\\n\");",
+"num": [
+0,
+1
+],
 "id": 4324
 },
 {
@@ -74607,6 +76316,9 @@ null
 "UNKNOWN": 1
 },
 "code": "list.Add($\"Completes {text} x{value + 1}\");",
+"num": [
+1
+],
 "id": 4329
 },
 {
@@ -74977,6 +76689,9 @@ null
 "UNKNOWN": 1
 },
 "code": "why = ((Slots == 1) ? \"Lab slot in use (Parallel Lab adds a second)\" : $\"All {Slots} lab slots in use\");",
+"num": [
+0
+],
 "id": 4350
 },
 {
@@ -74993,6 +76708,9 @@ null
 "UNKNOWN": 1
 },
 "code": "why = $\"Needs {Cost(d)} Data (you have {Mathf.FloorToInt(Mine.data)})\";",
+"num": [
+1
+],
 "id": 4351
 },
 {
@@ -75282,6 +77000,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"brass\" => $\"Finish {target} contracts as a team\",",
+"num": [
+0
+],
 "id": 4369
 },
 {
@@ -75298,6 +77019,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"kaboom\" => $\"Take down {target} elites (a boss counts 3)\",",
+"num": [
+0
+],
 "id": 4370
 },
 {
@@ -75314,6 +77038,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"hollis\" => $\"Lose no more than {target} lives in the whole team (and clear 5 levels)\",",
+"num": [
+0
+],
 "id": 4371
 },
 {
@@ -75330,6 +77057,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"dispatch\" => $\"Reach a streak of {target} levels\",",
+"num": [
+0
+],
 "id": 4372
 },
 {
@@ -75346,6 +77076,9 @@ null
 "UNKNOWN": 1
 },
 "code": "\"auditor\" => $\"Reach {target} more milestones\",",
+"num": [
+0
+],
 "id": 4373
 },
 {
@@ -75378,6 +77111,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\" + {ArchivistData(tier)} Research Data\";",
+"num": [
+0
+],
 "id": 4375
 },
 {
@@ -75426,6 +77162,9 @@ null
 "UNKNOWN": 1
 },
 "code": "string text = (r.sponsorPaid ? \"paid out\" : ((r.sponsor == \"hollis\") ? $\"{num} lost so far\" : $\"{Mathf.Min(num, r.sponsorTarget)}/{r.sponsorTarget}\"));",
+"num": [
+0
+],
 "id": 4378
 },
 {
@@ -75486,6 +77225,9 @@ null
 "UNKNOWN": 1
 },
 "code": "1 => $\"Sponsor {text}: half way there. +{num3} Scrap and some Research Data\",",
+"num": [
+1
+],
 "id": 4381
 },
 {
@@ -75502,6 +77244,9 @@ null
 "UNKNOWN": 1
 },
 "code": "2 => $\"Sponsor {text}: goal met! +{num3} Scrap and Research Data\",",
+"num": [
+1
+],
 "id": 4382
 },
 {
@@ -76256,6 +78001,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "note = ((note != \"\") ? (note + \"\\n\") : \"\") + $\"crew|Crew level {num2}: {CrewBonus[Mathf.Clamp(num2, 0, CrewBonus.Length - 1)]}\";",
+"num": [
+0
+],
 "id": 4427
 },
 {
@@ -76272,6 +78020,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "note = $\"streak+|Streak {teamRunSave.streak}! +{Mathf.Min(Cap, (float)Mathf.Min(teamRunSave.streak, C.StreakCap.Value) * C.StreakXp.Value):0}% XP and Scrap\";",
+"num": [
+0,
+1
+],
 "id": 4428
 },
 {
@@ -76304,6 +78056,9 @@ null,
 "DISPLAY": 1
 },
 "code": "StartVote(teamRunSave, num, $\"Milestone {num}\");",
+"num": [
+0
+],
 "id": 4430
 },
 {
@@ -76320,6 +78075,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "string text2 = (Season.On ? (Season.ChapterLabel(num + 1) + \": \" + Season.ChapterName(num + 1)) : $\"chapter {num + 1}\");",
+"num": [
+0
+],
 "id": 4431
 },
 {
@@ -76336,6 +78094,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "note = (flag ? \"\" : $\"milestone|Milestone {num} reached - {text2} begins\");",
+"num": [
+0
+],
 "id": 4432
 },
 {
@@ -76368,6 +78129,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return ((note != \"\") ? (note + \"\\n\") : \"\") + $\"victory|VICTORY! The run is won - {num} {Scrap.Short} each. Vote: end the run, or keep going (Endless)\";",
+"num": [
+0
+],
 "id": 4434
 },
 {
@@ -76425,6 +78189,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"heat|Heat stays at {t.heat}\";",
+"num": [
+0
+],
 "id": 4437
 },
 {
@@ -76441,6 +78208,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"heat|Heat {t.heat}: {Heat.Name(t.heatCards[t.heatCards.Count - 1])}\";",
+"num": [
+0
+],
 "id": 4438
 },
 {
@@ -76478,6 +78248,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "note = string.Format(\"streak-|Streak -{0}: {1} died\", streak - teamRunSave.streak, Game.Get(p, \"playerName\", \"a player\"));",
+"num": [
+0
+],
 "id": 4440
 },
 {
@@ -76546,6 +78319,9 @@ null
 "DISPLAY": 1
 },
 "code": "Scrap.HostGrant(val, num, $\"Milestone {milestone} payout\");",
+"num": [
+0
+],
 "id": 4444
 },
 {
@@ -76610,6 +78386,9 @@ null
 "UNKNOWN": 1
 },
 "code": "recap.moments.Add(string.Format(\"Level {0}: {1} - {2}{3}\", item.level + 1, item.title, item.who, (item.detail != \"\") ? (\" (\" + item.detail + \")\") : \"\"));",
+"num": [
+0
+],
 "id": 4448
 },
 {
@@ -76626,6 +78405,9 @@ null
 "UNKNOWN": 1
 },
 "code": "recap.moments.Add(string.Format(\"{0} milestone boss{1} down\", teamRunSave.milestoneBosses, (teamRunSave.milestoneBosses == 1) ? \"\" : \"es\"));",
+"num": [
+0
+],
 "id": 4449
 },
 {
@@ -76642,6 +78424,9 @@ null
 "UNKNOWN": 1
 },
 "code": "recap.moments.Add($\"A {teamRunSave.bestStreak}-level streak\");",
+"num": [
+0
+],
 "id": 4450
 },
 {
@@ -76756,6 +78541,11 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"Threat {r:0.0}: monsters x{Monsters(r):0.##}, health x{Health(r):0.##}\" + ((C.ThreatDamage.Value > 0f) ? $\", damage x{Damage(r):0.##}\" : \"\") + $\", elites x{Elites(r):0.##}, loot and goal x{Loot(r):0.##}, rewards x{RewardMult(r):0.##}\";",
+"num": [
+0,
+1,
+2
+],
 "id": 4457
 },
 {
@@ -76772,6 +78562,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"Threat {r:0.0}: monsters x{Monsters(r):0.##}, health x{Health(r):0.##}\" + ((C.ThreatDamage.Value > 0f) ? $\", damage x{Damage(r):0.##}\" : \"\") + $\", elites x{Elites(r):0.##}, loot and goal x{Loot(r):0.##}, rewards x{RewardMult(r):0.##}\";",
+"num": [
+0
+],
 "id": 4458
 },
 {
@@ -76788,6 +78581,11 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"Threat {r:0.0}: monsters x{Monsters(r):0.##}, health x{Health(r):0.##}\" + ((C.ThreatDamage.Value > 0f) ? $\", damage x{Damage(r):0.##}\" : \"\") + $\", elites x{Elites(r):0.##}, loot and goal x{Loot(r):0.##}, rewards x{RewardMult(r):0.##}\";",
+"num": [
+0,
+1,
+2
+],
 "id": 4459
 },
 {
@@ -76804,6 +78602,10 @@ null
 "DISPLAY": 1
 },
 "code": "RpgRuntime.Instance?.Notify(RpgRuntime.PopupKind.Other, string.Format(\"Threat rating up: {0:0.0} after {1} level{2} cleared - tougher monsters, better rewards\", rating, levelsCleared, (levelsCleared == 1) ? \"\" : \"s\"), (Color?)new Color(1f, 0.55f, 0.3f), \"threa",
+"num": [
+0,
+1
+],
 "id": 4460
 },
 {
@@ -76820,6 +78622,11 @@ null
 "DISPLAY": 1
 },
 "code": "_banner = $\"Levels cleared: {levelsCleared}  ·  Threat rating: {rating:0.0} / {num:0}\";",
+"num": [
+0,
+1,
+2
+],
 "id": 4461
 },
 {
@@ -77023,6 +78830,9 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"Endless {chapter - Chapters}\";",
+"num": [
+0
+],
 "id": 4473
 },
 {
@@ -77039,6 +78849,10 @@ null
 "UNKNOWN": 1
 },
 "code": "return $\"Chapter {chapter}/{Chapters}\";",
+"num": [
+0,
+1
+],
 "id": 4474
 },
 {
@@ -78125,6 +79939,12 @@ null,
 "UNKNOWN": 1
 },
 "code": "return string.Format(\"stock:{0}:{1}:{2}:{3}:{4}\", g.rarity, (g.unique != \"\") ? 1 : 0, (GearSets.Get(g.set) != null) ? 1 : 0, Mathf.Clamp(g.sockets, 0, 2), discount ? 1 : 0) + ((mark != \"\") ? (\":\" + mark) : \"\");",
+"num": [
+0,
+2,
+3,
+4
+],
 "id": 4541
 },
 {
@@ -78555,6 +80375,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "how = $\"the sum of {_goalCount} extraction goals; the game's level goal is ${num:N0}\";",
+"num": [
+0,
+1
+],
 "id": 4564
 },
 {
@@ -78571,6 +80395,11 @@ null,
 "UNKNOWN": 1
 },
 "code": "how = $\"the game's level goal; {_goalCount}/{num2} extraction goals seen (${_goalSum:N0})\";",
+"num": [
+0,
+1,
+2
+],
 "id": 4565
 },
 {
@@ -79401,6 +81230,9 @@ null
 "DISPLAY": 1
 },
 "code": "Detail = ((hashSet.Count > 1) ? $\"{item4.detail} (level {item4.level + 1})\" : item4.detail),",
+"num": [
+1
+],
 "id": 4615
 },
 {
@@ -79417,6 +81249,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Most valuable carried\", Ev.Carried, 2000f, (float v) => $\"${v:N0} carried to extraction\");",
+"num": [
+0
+],
 "id": 4616
 },
 {
@@ -79433,6 +81268,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Clutch revive\", Ev.Clutch, 60f, (float v) => $\"revived a teammate in {Mathf.Max(1f, 90f - v):0} s\");",
+"num": [
+0
+],
 "id": 4617
 },
 {
@@ -79449,6 +81287,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Most damage dodged\", Ev.Prevented, 50f, (float v) => $\"{v:0} damage avoided\");",
+"num": [
+0
+],
 "id": 4618
 },
 {
@@ -79465,6 +81306,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Field medic\", Ev.Healed, 60f, (float v) => $\"{v:0} HP healed on teammates\");",
+"num": [
+0
+],
 "id": 4619
 },
 {
@@ -79481,6 +81325,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Monster slayer\", Ev.Kills, 3f, (float v) => $\"{v:0} monsters finished off\");",
+"num": [
+0
+],
 "id": 4620
 },
 {
@@ -79497,6 +81344,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Elite hunter\", Ev.Elites, 1f, (float v) => (!(v >= 2f)) ? \"took down an elite\" : $\"{v:0} elites down\");",
+"num": [
+0
+],
 "id": 4621
 },
 {
@@ -79513,6 +81363,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Biggest bet won\", Ev.BetWon, 1f, (float v) => $\"Double or Nothing paid ${v:N0}\");",
+"num": [
+0
+],
 "id": 4622
 },
 {
@@ -79529,6 +81382,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Pied piper\", Ev.Lures, 5f, (float v) => $\"{v:0} monsters lured away\");",
+"num": [
+0
+],
 "id": 4623
 },
 {
@@ -79545,6 +81401,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Cart MVP\", Ev.CartValue, 2000f, (float v) => $\"${v:N0} moved by cart\");",
+"num": [
+0
+],
 "id": 4624
 },
 {
@@ -79561,6 +81420,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Restoration\", Ev.Restored, 500f, (float v) => $\"${v:N0} of value restored or insured\");",
+"num": [
+0
+],
 "id": 4625
 },
 {
@@ -79577,6 +81439,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Scrap tycoon\", Ev.Scrap, 10f, (float v) => $\"{v:0} Scrap earned\");",
+"num": [
+0
+],
 "id": 4626
 },
 {
@@ -79593,6 +81458,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Contract closer\", Ev.Contracts, 1f, (float v) => string.Format(\"{0:0} contract{1} completed\", v, (v >= 2f) ? \"s\" : \"\"));",
+"num": [
+0
+],
 "id": 4627
 },
 {
@@ -79609,6 +81477,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Explorer\", Ev.Rooms, 4f, (float v) => $\"first into {v:0} rooms\");",
+"num": [
+0
+],
 "id": 4628
 },
 {
@@ -79625,6 +81496,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Sharp eyes\", Ev.Spotted, 5f, (float v) => $\"{v:0} monsters spotted\");",
+"num": [
+0
+],
 "id": 4629
 },
 {
@@ -79641,6 +81515,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Express delivery\", Ev.Dispatched, 2f, (float v) => $\"{v:0} valuables dispatched\");",
+"num": [
+0
+],
 "id": 4630
 },
 {
@@ -79657,6 +81534,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Fight promoter\", Ev.Fight, 100f, (float v) => $\"a monster fight worth {v:0} damage\");",
+"num": [
+0
+],
 "id": 4631
 },
 {
@@ -79673,6 +81553,9 @@ null
 "UNKNOWN": 1
 },
 "code": "Top(\"Butterfingers\", Ev.Broken, 1000f, (float v) => $\"${v:N0} lost to breaks\", joke: true);",
+"num": [
+0
+],
 "id": 4632
 },
 {
@@ -79689,6 +81572,9 @@ null
 "UNKNOWN": 1
 },
 "code": "C(\"Iron wall\", num, num4, 100f, $\"took {num4:0} damage and walked out\");",
+"num": [
+0
+],
 "id": 4633
 },
 {
@@ -79705,6 +81591,9 @@ null
 "UNKNOWN": 1
 },
 "code": "C(\"Team player\", num2, num5, 60f, $\"{num5 / 60f:0.#} min with a synergy on\");",
+"num": [
+0
+],
 "id": 4634
 },
 {
@@ -79721,6 +81610,9 @@ null
 "UNKNOWN": 1
 },
 "code": "C(\"Untouchable\", num3, num6, 1000f, $\"not a scratch, ${num6:N0} carried\");",
+"num": [
+0
+],
 "id": 4635
 },
 {
@@ -79856,6 +81748,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"+{num} XP\" + (flag ? (\" (x2 \" + cls.name + \" affinity)\") : \"\"));",
+"num": [
+0
+],
 "id": 4643
 },
 {
@@ -80105,6 +82000,10 @@ null,
 "UNKNOWN": 1
 },
 "code": "_from = $\"built from the levels' valuable lists ({refs.Count} entries, {Time.realtimeSinceStartup - t0:0.0} s)\";",
+"num": [
+0,
+1
+],
 "id": 4658
 },
 {
@@ -80121,6 +82020,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "_from = $\"built from the levels' valuable lists ({list.Count} entries, at level start)\";",
+"num": [
+0
+],
 "id": 4659
 },
 {
@@ -80268,6 +82170,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "_from = $\"from InterestingLevels' catalog ({num} entries)\";",
+"num": [
+0
+],
 "id": 4668
 },
 {
@@ -80301,6 +82206,11 @@ null,
 "UNKNOWN": 1
 },
 "code": "why = $\"top ${it.Max:N0} > {C.ValueMaxAboveVanilla.Value:0.##}x vanilla {SizeNames[it.Size].ToLowerInvariant()} top ${num:N0}\";",
+"num": [
+0,
+1,
+3
+],
 "id": 4670
 },
 {
@@ -80317,6 +82227,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.Append(string.Format(\"RepoRPG valuable values ({0}). Normalize {1}, up to {2:0.##}x vanilla's top value per size, \", \"1.0.100\", C.ValueNormalize.Value ? \"on\" : \"off\", C.ValueMaxAboveVanilla.Value)).Append(string.Format(\"value multiplier x{0:0.##}",
+"num": [
+0
+],
 "id": 4671
 },
 {
@@ -80371,6 +82284,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return $\"{attributeDef.name} would go past its cap of {attributeDef.maxPoints}\";",
+"num": [
+1
+],
 "id": 4674
 },
 {
@@ -80387,6 +82303,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "return string.Format(\"only {0} attribute point{1} left\", num2, (num2 == 1) ? \"\" : \"s\");",
+"num": [
+0
+],
 "id": 4675
 },
 {
@@ -80568,6 +82487,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"{item}: {item4} on {item2} is {num:0.00}:1\");",
+"num": [
+3
+],
 "id": 4686
 },
 {
@@ -80584,6 +82506,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"{item}: text on the accent fill is {num2:0.00}:1\");",
+"num": [
+1
+],
 "id": 4687
 },
 {
@@ -80600,6 +82525,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "list.Add($\"{item}: class name {class2.name} is {num3:0.00}:1\");",
+"num": [
+2
+],
 "id": 4688
 },
 {
@@ -81038,6 +82966,9 @@ null,
 "DISPLAY": 1
 },
 "code": "AddButton(page, $\"Choose perk ({perkPicksPending} ready)\", delegate",
+"num": [
+0
+],
 "id": 4714
 },
 {
@@ -81070,6 +83001,9 @@ null,
 "DISPLAY": 1
 },
 "code": "string text = ((classProgress != null) ? $\"  LV {classProgress.level}\" : \"\");",
+"num": [
+0
+],
 "id": 4716
 },
 {
@@ -81197,6 +83131,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "ClassDatabase.RankBlock.LevelTooLow => $\"{nodeDef2.name} unlocks at level {ClassDatabase.UnlockLevel(nodeDef2)}\",",
+"num": [
+1
+],
 "id": 4723
 },
 {
@@ -81470,6 +83407,9 @@ null
 "DISPLAY": 1
 },
 "code": "Plugin.Cfg.PerfAutoPicked.Value = $\"{perfPreset} ({num:0} FPS in the first minute)\";",
+"num": [
+1
+],
 "id": 4739
 },
 {
@@ -81486,6 +83426,9 @@ null
 "DISPLAY": 1
 },
 "code": "RpgRuntime.Instance?.Toast($\"Performance (Auto): {perfPreset} - {num:0} FPS measured. Settings > Performance to change it.\", new Color(0.6f, 0.85f, 1f), 4f);",
+"num": [
+1
+],
 "id": 4740
 },
 {
@@ -82148,6 +84091,10 @@ null
 "UNKNOWN": 1
 },
 "code": "stringBuilder.AppendLine($\"Probed {f.probedUtc} from {f.textsSeen} game texts and {f.imagesSeen} images. Every RepoRPG screen uses these values.\");",
+"num": [
+1,
+2
+],
 "id": 4781
 },
 {
@@ -82285,6 +84232,9 @@ null,
 "UNKNOWN": 1
 },
 "code": "stringBuilder.AppendLine($\"| Text shadow | {f.shadow}, offset {f.shadowOffset:0.#}px |\");",
+"num": [
+1
+],
 "id": 4788
 },
 {

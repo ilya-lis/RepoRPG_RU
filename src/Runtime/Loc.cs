@@ -596,10 +596,11 @@ namespace RepoRPG_RU
             public bool[] Dropped;     // the translation has no use for it: the English plural ending in "{0} item{1}"
             public bool[] Roomy;       // "Gift failed: {0}", "+{0} Scrap – {1}", "{0} (level {1})": a text of its own may stand here
             public bool[] Framed;      // "RepoRPG: '{0}' hit an error and was switched off...": the sentence's own words stand on both sides
+            public bool[] Known;       // "{0} gear": a rarity stands here - a word the dictionary has, or this is another text ("Spawn gear")
 
             private const byte Value = 0, Clause = 1, Line = 2;
 
-            public static Pattern Parse(string original, string translation, bool explicitPattern)
+            public static Pattern Parse(string original, string translation, bool explicitPattern, int[] numbers, int[] words)
             {
                 List<string> lits = new List<string>();
                 List<int> slots = new List<int>();
@@ -631,7 +632,8 @@ namespace RepoRPG_RU
                             continue;
                         }
                         lastHole = hole;
-                        numeric.Add(hole.IndexOf(':') > 0);
+                        // "{0:0.#}" is a number by its format; "{0} players" is one because the mod's code says so (msgctxt "numbers")
+                        numeric.Add(hole.IndexOf(':') > 0 || (numbers != null && Array.IndexOf(numbers, index) >= 0));
                         glued.Add(lit.Length > 0 && IsLatinLetter(lit[lit.Length - 1]));
                         lits.Add(lit.ToString());
                         owns.Add(own);
@@ -693,6 +695,9 @@ namespace RepoRPG_RU
                 p.Kind = new byte[p.Slots.Length];
                 p.Roomy = new bool[p.Slots.Length];
                 p.Framed = new bool[p.Slots.Length];
+                p.Known = new bool[p.Slots.Length];
+                if (words != null)
+                    for (int k = 0; k < p.Slots.Length; k++) p.Known[k] = Array.IndexOf(words, p.Slots[k]) >= 0;
                 for (int k = 0; k < p.Slots.Length; k++)
                 {
                     // a long sentence that goes on after the placeholder cannot be mistaken for another one: what it caught is
@@ -810,9 +815,17 @@ namespace RepoRPG_RU
                     string v = caught[k];
                     if (Numeric[k])
                     {
-                        for (int q = 0; q < v.Length; q++) if (char.IsLetter(v[q])) return null;
+                        // a number has a digit and no letters: "more players" is not "{0} players", "kill XP" is not "{0} XP"
+                        bool digit = false;
+                        for (int q = 0; q < v.Length; q++)
+                        {
+                            if (char.IsLetter(v[q])) return null;
+                            if (v[q] >= '0' && v[q] <= '9') digit = true;
+                        }
+                        if (!digit) return null;
                         continue;
                     }
+                    if (Known[k] && Exact(v) == null) return null;
                     if (Tight && !Simple(v))
                     {
                         // "Gift failed: " + "that player isn't here", "+25 Scrap – " + "starter tool": the reason is a text of the
@@ -837,12 +850,9 @@ namespace RepoRPG_RU
                         for (int q = 0; q < v.Length; q++) if (!IsLatinLetter(v[q])) return null;
                         continue;
                     }
-                    if (Glued[k] && v.Length > 0 && IsLatinLetter(v[0]))
-                    {
-                        // "Unlock{0}" + "s at Regular reputation" is another sentence; "item{1}" + "s" is this one
-                        if (v.Length > 3) return null;
-                        for (int q = 1; q < v.Length; q++) if (!IsLatinLetter(v[q])) return null;
-                    }
+                    // "Unlock{0}" + "s at Regular reputation", "upgrade{2}" + "s": the word goes on, so this is another word and
+                    // another sentence. (An English plural ending is fine where the translation drops it - handled above.)
+                    if (Glued[k] && v.Length > 0 && IsLatinLetter(v[0])) return null;
                 }
 
                 StringBuilder sb = new StringBuilder(Template.Length + s.Length);
@@ -957,13 +967,19 @@ namespace RepoRPG_RU
             List<Pattern> all = new List<Pattern>();
             foreach (KeyValuePair<string, string> kv in lang.Patterns)
             {
-                Pattern p = Pattern.Parse(kv.Key, kv.Value, true);
+                int[] nums, words;
+                lang.Numbers.TryGetValue(kv.Key, out nums);
+                lang.Words.TryGetValue(kv.Key, out words);
+                Pattern p = Pattern.Parse(kv.Key, kv.Value, true, nums, words);
                 if (p != null) all.Add(p);
             }
             foreach (KeyValuePair<string, string> kv in m)
             {
                 if (kv.Key.IndexOf('{') < 0 || lang.Patterns.ContainsKey(kv.Key)) continue;
-                Pattern p = Pattern.Parse(kv.Key, kv.Value, false);
+                int[] nums, words;
+                lang.Numbers.TryGetValue(kv.Key, out nums);
+                lang.Words.TryGetValue(kv.Key, out words);
+                Pattern p = Pattern.Parse(kv.Key, kv.Value, false, nums, words);
                 if (p != null) all.Add(p);
             }
             all.Sort(delegate(Pattern a, Pattern b)

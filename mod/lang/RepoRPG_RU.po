@@ -5,6 +5,8 @@
 #   term              only at the moment the text is drawn (words the mod also uses as internal names)
 #   pattern           a sentence the mod puts together itself; {0} stands for the changing part
 #   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)
+#   numbers           not a translation: which placeholders of a sentence are numbers (worked out from the mod's code)
+#   words             not a translation: which placeholders hold one of the mod's own words (a rarity, a tab name)
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14672,3 +14674,2399 @@ msgstr " (x2: родство с классом "
 msgctxt "@Upgrades::DescribeReward#4642"
 msgid " affinity)"
 msgstr ")"
+
+msgctxt "numbers"
+msgid "  {0}/{1} this level"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "x{0:0.0}  {1}s  ARMING"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "[Hold {0}] Recharge from cart  <color=#9a9ca0>(gun {1:0}%)</color>"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "+{0:0}% speed"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0:0}% grip"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "-{0:0}% damage"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Head: {0} {1:0}m {2}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Inspire {0:0}  [{1}{2}]"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Blood Pact  {0:0}s  (-{1:0.#} HP/s)"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Blood Price: {0:0.#} HP per hit / throw"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Blood Price: {0:0.#} HP per hit, {1:0.#} per throw"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Inspired  +{0:0.#}% speed, +{1:0.#}% grip"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Dispatch: on your Drop Pad (${0:N0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Dispatch delivered: ${0:N0} toward the haul"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Dispatch {0:0}s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "FIGHT  {0:0}s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Drop Pad {0}/{1}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0} monster fight{1} going"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Drop Pad {0}/{1}{2}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "  ·  ${0:N0} toward the haul"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Watchpost: {0} {1:0}m {2}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Hook: yank  {0}m"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Hook: climb  {0}m"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Hook: land  {0}m"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Hook: cling  {0}m"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Hook: hang  {0}m"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Overclock  +{0:0}% fire rate  {1:0}s"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Patched up: {0:0}% less damage for 4s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Feather Fall: caught at {0} HP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "All {0} slots used"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} accepted contract{1} expired (for another level or class)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} contract{1} active ({2})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}{1} reputation with {2} ({3}"
+msgstr "1,3"
+
+msgctxt "numbers"
+msgid "{0}: step {1}/{2} done - the next one is on the next board"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "+{0} shop reputation"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Death save! Caught your fall ({0} left this level)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Death save! ({0} left this level)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Loadout {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " ({0} item{1} gone)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "You joined {0}: pick a class in the next {1:0} s ({2})"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Catch-up: {0} starts at Lv {1} - {2} skill points to spend ({3})"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "Ghost Protocol: silent for {0:0}s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Blood Money: -{0} HP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}  -  Level {1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Skill points: {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Attribute points: {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Perk picks ready: {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Gear: {0} items, perks: {1}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Welcome back - {0} Lv {1}, {2} gear, "
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "{0} perks restored"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Attributes reworked - your {0} attribute point{1} were refunded"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Skill trees redesigned - your {0} skill point{1} were refunded"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Enemies hit are Marked: +{0:0}% damage for {1:0}s"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Level up! {0} Lv {1} – {2} skill / {3} attribute points ({4})"
+msgstr "1,2,3"
+
+msgctxt "numbers"
+msgid "+{0} attribute point (contract)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}: {1} affix{2}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} socket{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " with {0} module{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "upgrade level +{0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " and its +{0:0}%"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} items"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Appraised {0}: +${1:N0} value"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "You can lock {0} items at most"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Buy {0} item{1} for {2}?\n"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Frenzy x{0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Momentum {0}/{1}  (+{2:0}% sprint)"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Frenzy x{0}  {1:0}s"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Shadowstep  {0:0.0}s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Scar Tissue  -{0:0.#}% damage"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Shield Wall  -{0:0}% damage"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Power Link  +{0:0.#} stamina/s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " You can keep it, or pick any other class once for free here: it starts at Lv {0} ({1})."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Crafted: {0} on {1} ({2}/{3})"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "<color={0}><b>{1} {2}</b></color>   Crafts {3}/{4}"
+msgstr "3"
+
+msgctxt "numbers"
+msgid "   Rarity upgrades {0}/{1}\nYour parts: {2}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Upgrade +{0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Upgrade +{0}  ·  {1} + {2}  ·  {3}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "UPGRADE +{0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "UPGRADE {0} TO +{1}?"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "upgrade +{0} on {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Host updated settings ({0} change{1}) - open the menu's Host tab to view them"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "You're the host: these rules apply to everyone. Settings version {0}, confirmed by {1} player(s)."
+msgstr "1"
+
+msgctxt "numbers"
+msgid "  and {0} more"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "  · {0} pending"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} settings"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} settings found"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Apply ({0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Presets ({0}) ▾"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} changes"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#ffcc66>{0} waiting for the next level / run</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Default preset '{0}' applied ({1} change{2})"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Default preset '{0}' applied to your lobby ({1} change{2})"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "  ...and {0} more\n"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "APPLY {0} CHANGE{1}?"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Applied {0} change{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Crew level {0}: vote on a crew drill (Shop tab)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<b>CREW DRILL (CREW LEVEL {0})</b>  {1}/{2} voted"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "<b>SPONSOR VOTE</b>  {0}/{1} voted"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "CREW LEVEL {0}: PICK A CREW DRILL"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>{0}/{1} voted; decided when everyone has, or when the next level starts. {2}</color>"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Uplink ready in {0:0} s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "VALUABLE ${0:N0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "  <color=#9a9ca0>+{0} module{1} (they go with it)</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Waiting for <b>{0}</b> to answer ({1:0} s). You offered:\n{2}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} Unique{1} on file. Each visit, one of them is in your Gear section."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "You have {0}. Makes one <color={1}>{2}</color> {3}."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Cracking the vault... {0:0.0} / 6 s (monsters hear it)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Survey Drone: {0} valuable{1} marked for 10 s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Salvage {0} item{1} for +{2} {3}"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid " <color=#ffcc66>This is part of the {0} set (you wear {1}/4).</color>"
+msgstr "1"
+
+msgctxt "numbers"
+msgid " <color=#ff9999>You'll lose the {0} {1}-piece bonus.</color>"
+msgstr "1"
+
+msgctxt "numbers"
+msgid " <color=#ffcc66>It's {0} ({1} attunement) - that progress is lost.</color>"
+msgstr "1"
+
+msgctxt "numbers"
+msgid " Its {0} module{1} go back to your bag."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Salvage {0} {1} for +{2} {3}?"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "Accept {0} · Decline {1} · Waiting {2} (of {3})"
+msgstr "0,1,2,3"
+
+msgctxt "numbers"
+msgid "Hauled ${0:N0} / ${1:N0} ({2}% of the level's goal)"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "{0:0}s left"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Call out again in {0:0} s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "You called for help ({0} left)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "HELP: {0}  {1:0}m"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Mastered {0}/{1}   ·   Unlocks {2}/{3}   ·   Levels finished {4}   ·   {5}   ·   Payout tier: {6}{7} (x{8:0.##})"
+msgstr "0,1,2,3,8"
+
+msgctxt "numbers"
+msgid "Best level {0}/{1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Reach level {0} with {1} to master it."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Mastery XP {0:N0}."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>Mastery XP {0:N0}</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " Ascension {0} is open."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "ASCENSION {0} CONQUERED"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "New record: Ascension {0} won!"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Ascension {0} won again."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "up to A{0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<b>ASCENSION {0}</b>  <color=#9a9ca0>{1} · {2} · your best win: {3}</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>A{0} - win A{1} to see</color>"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Attribute points to spend: <b>{0}</b>{1}    <color=#9a9ca0>Spent: {2}</color>     {3}"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "Next: {0} at {1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} → {1}/{2} points"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "{0}/{1} points"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0} pending"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "1 attribute point per point (you have {0} to spend)."
+msgstr "0"
+
+msgctxt "numbers"
+msgid " <color=#ffb21e>({0:0}%, past the soft cap)</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} of {1} reached"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0} of {1} active"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "BOSS  {0}  {1:0}m"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0}  Lv {1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "   ({0} pts)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "ACTIVE {0:0.0}s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " (+1 in {0:0}s)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "No enemies within {0:0}m"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "! {0} enem{1} nearby - closest {2:0}m"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "LV {0}  -  "
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#ff9999>Unlocks at level {0}</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#ffb21e>RANK {0} → {1}</color>  <color=#9a9ca0>(pending)</color>"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0} / {1} XP"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Level <b>{0}</b>/{1}   <color=#9a9ca0>{2}</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Skill points: <color=#ffd75a><b>{0}</b></color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "   <color=#ffb21e>{0} pending</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>{0:0} s cooldown. Talents change its numbers: Effects shows them now.</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "SYNERGIES ({0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#ffb21e><b>SYNERGIES</b></color> ({0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>{0:0} s cooldown</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Level <b>{0}</b>/{1}   {2}   Skill points: {3}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Level {0}/{1}    {2}    Skill points: <b>{3}</b>{4}    "
+msgstr "0,3"
+
+msgctxt "numbers"
+msgid "  ★ IN {0}{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid ", LV {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "  <size={0}>{1} PTS{2}</size>"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "<color=#d9d9d9>Rank {0}/{1}</color>"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "   <size={0}>{1} · RANK {2}/{3}</size>"
+msgstr "0,2,3"
+
+msgctxt "numbers"
+msgid "class level {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " ({0}/{1} DMG)"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Lv {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Open · slots {0}/{1}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "It opens in the lobby and in the shop between levels. Take up to {0} contracts into the next level."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} ({1})\n{2}\n\nIt is for the next level. Slots used: {3}/{4}. Failing costs only reputation with the giver."
+msgstr "3,4"
+
+msgctxt "numbers"
+msgid "{0}/{1} taken for the next level"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0} more votes are waiting for you"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}: {1}/{2} voted"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid " · {0:0}s left"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Step {0}/{1}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Needs rep {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "This run: {0} completed · {1} failed"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Chain · {0} steps"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Needs reputation {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Reputation {0} with {1} (you: {2}). Then it can be offered on a board (20% each board), one chain at a time."
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "Reputation {0}/{1}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0} at {1} ({2} to go): {3}"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "Crew level {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}/{1} crew XP"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "<b>{0}</b>  {1}\n<color=#9a9ca0>Level {2} · {3} · {4}</color>\n{5}"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "{0}:{1:00} left"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0}/{1} damage"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0}/{1} (bonus {2})"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "  (+{0} more)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "XP x{0:0.##}   ·   Max level {1}   ·   Skill points per level {2}   ·   "
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Out of range ({0:0.##} - {1:0.##}): set to {2:0.##}"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "<color=#ffcc66>{0}: {1} change{2} pending - press Apply</color>  <color=#9a9ca0>(now: {3})</color>"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} loaded: {1} change{2} - press Apply"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "<color=#ffd75a>UPGRADE {0} +{1}/{2}</color>\n"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "  <color=#ffd75a>(upgraded +{0:0}%)</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "\n<b>Attunement</b> {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>Crafts: {0}/{1}</color>\n"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9fe6c0>Salvage: +{0} {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "INVENTORY  {0}/{1}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "SHOW {0} IN INVENTORY"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>+{0} more</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Equip {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Save {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#7fd8ff>MODULE BAG {0}/{1}</color>  "
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Upgrade +{0}: {1} + {2}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Salvage +{0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Socket {0}: slot module"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}\n<b>Active:</b> {1} ({2:0}s cooldown)"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "ALL {0} SYNERGIES"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "ALL {0} UNLOCKS"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "ALL {0} SETS"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "stats x{0:0.##}, {1} stat line{2}, salvages for {3} Scrap"
+msgstr "0,3"
+
+msgctxt "numbers"
+msgid "  ({0:N0} / {1:N0} at Hard / Brutal)"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0} (reputation {1}+)\n{2}\n<color=#ffb21e>Final reward</color> {3}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid " (hold {0:0.#}s)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "class bonus {0:+0.#;-0.#}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "active ability {0:+0.#;-0.#}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "right now {0:+0.#;-0.#}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} HP – {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} HP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "LV {0} MAX"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "LV {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "BATTERY {0:0}%"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} TO SPEND  {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} SYNERGIES"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "NO ENEMIES WITHIN {0:0}M"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "! {0} ENEM{1} NEARBY - CLOSEST {2:0}M"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "+{0} MORE"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "CH {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "MILESTONE IN {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "STREAK {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "STREAK {0} +{1:0}%"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "BOONS {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "HEAT {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "CREW {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#73ff66>rising +{0}%</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#ff8a7a>falling {0}%</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat {0}: raise it for better rewards, or Skip"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Choose your milestone rewards ({0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Choose contract rewards ({0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Pick your perks ({0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} skill point{1} to spend"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} SKILL"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} attribute point{1} to spend"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} ATTR"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}/{1} voted"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0}s left"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} SECONDS LEFT: "
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} ACTIONS NEEDED"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} more"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "ACTION NEEDED ({0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " +{0} more"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Tag bonus: {0} x{1} – {2}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "<color=#73ff66><b>{0} pending:</b></color>  "
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#73ff66><b>{0} selected:</b></color>  "
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Settings: {0} change{1} not saved"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Class: {0} talent point{1} ({2})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Attributes: {0} point{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Perks: {0} pick{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "You'll stop playing {0}. Your {0} progress (level {1}, "
+msgstr "2"
+
+msgctxt "numbers"
+msgid "{0} talent points) is kept and comes back if you switch back - nothing is refunded or lost. "
+msgstr "0"
+
+msgctxt "numbers"
+msgid " <color=#ff9999>Your {0} unconfirmed talent points will be discarded.</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Next pick at level {0} of your best class this run."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#ffb21e><b>{0} PERK PICK{1} READY</b></color> - select one{2}, then confirm.  {3}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "PICK {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>+{0} more pick{1} after these.</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Banishes left this run: {0}."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} perk{1} owned this run"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "You get a perk pick every {0} levels of your best class this run. Picks show under Picks; the ones you choose show here."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}/{1} OWNED"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0} XP – {1} (x{2})"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "+{0} XP – {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#ffb21e><b>ACTIVE</b></color>  <b>{0}</b> ({1:0}s)\n{2}\n"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} skill point{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} perk pick{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Level research: +{0:0} Data ({1} now)"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid " · {0} sample{1} left behind"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0:0} Research Data ({1})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} research projects finished"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>Lab slots {0}/{1}  ·  {2}/{3} done  ·  Kept across runs  ·  One dot: Personal, three: {4}</color>"
+msgstr "0,1,2,3"
+
+msgctxt "numbers"
+msgid "<b>RESEARCHING:</b> {0}  <color=#40f2d9>{1}/{2} levels</color>  <color=#9a9ca0>· {3}</color>"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "{0} lab slot{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} · {1} LV"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} · Tier {1} · "
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} Data (you have {1}) · takes {2} levels cleared, in any run"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "{0}\n\nCosts {1} Data now ({2} available) and finishes after {3} levels cleared, in any run."
+msgstr "2,3"
+
+msgctxt "numbers"
+msgid "CLASSES   {0}/{1} picked"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0} more synergies"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} pts"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "TEAM   {0} player{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "You earn {0:0.#}% of the money the team makes as bonus {1} "
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#ffb21e>Your discount: {0:0}%</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<b>UPGRADE {0} +{1}/{2}</b>  <color=#9a9ca0>{3}. New lines at +1, +3 and +5 (pick 1 of 3), every line +15% at +2 and +4, a socket at +5.</color>"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} to {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "BOSS {0}: {1}{2}  {3:0}m"
+msgstr "3"
+
+msgctxt "numbers"
+msgid "You get its skill points to spend in its trees. Your {0} stays at Lv {1} on the bench. Once only."
+msgstr "1"
+
+msgctxt "numbers"
+msgid "({0:0}% of your {1} Lv {2}). You get its skill points to spend in the new trees, "
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "and your attribute points are refunded ({0} to spend). Your {1} stays at Lv {2} on the bench. "
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "Milestone switch: {0} starts at Lv {1} - {2} skill points and your attribute points to spend ({3}). Your {4} is on the bench."
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "Free re-pick: {0} starts at Lv {1} - {2} skill points to spend ({3}). Your {4} is on the bench."
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "<color=#8cf2bf><b>{0}</b></color>  <color=#9a9ca0>(level {1}, unlocked)</color>\n{2}\n"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "<color=#ffd75a><b>{0}</b></color>  <color=#9a9ca0>Unlocks at level {1}</color>\n"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>{0}: unlocks at level {1}</color>\n"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "New record: a chapter cleared at heat {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Milestone {0}: +{1} {2}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "milestone {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "MILESTONE {0} REWARD"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "A random Unique for one of your gear slots (one you don't have yet).\n\nThe {0} {1} payout is gone once you take it."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} {1} now.\n\nThe Unique is gone once you take it."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "MILESTONE {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>{0}/{1} voted; decided when everyone has, or when the next level starts (then it's Endless). A tie keeps the run going.</color>"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>One boon for the whole team, the rest of the run. {0}/{1} voted; decided when everyone has, or when the next level starts. You can change your vote.</color>"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "NEXT LEVEL ({0}): CHOOSE A ROUTE"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}/{1} voted; decided when everyone has, or when the next level starts. No votes = Safe; a tie goes to the safer route. You can change your vote."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "HEAT {0}: RAISE IT FOR THE NEXT CHAPTER?"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color=#9a9ca0>{0}/{1} voted; decided when everyone has, or when the next level starts. A card stays all run. No votes or a tie = Skip.</color>"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "<b>RUN BOONS</b>  <color=#9a9ca0>{0} of {1}. They work for the whole team until the run ends. The codes are the ones on the HUD.</color>\n\n"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "CREW LEVEL {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} / {1} crew XP to level {2}"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "CHAPTER {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} · MILESTONE IN {1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "CATCH-UP +{0:0}% XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Chapter {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} · next milestone: {1} levels"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Streak {0} (+{1:0}%)"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0} run boon{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat {0} · heat vote open (Shop tab)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat {0} (Scrap +{1:0}%)"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Crew {0} ({1}/{2})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Crew {0} (max)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Run over: {0} level{1}, chapter {2}. "
+msgstr "2"
+
+msgctxt "numbers"
+msgid " - {0} new record{1}!"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Levels cleared <b>{0}</b>  ·  chapter <b>{1}</b>  ·  milestones <b>{2}</b>  ·  best streak <b>{3}</b>\n"
+msgstr "1,3"
+
+msgctxt "numbers"
+msgid "Total haul <b>${0:N0}</b>  ·  bosses <b>{1}</b>{2}  ·  elites <b>{3}</b>\n"
+msgstr "0,1,3"
+
+msgctxt "numbers"
+msgid " ({0} milestone)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Scrap earned by the team <b>{0:N0}</b>\n"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Seasons won: <b>{0}</b>{1}\n"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}  ·  {1}{2}  ·  {3} level{4}, chapter {5}  ·  streak {6}  ·  {7} boss{8}  ·  {9:N0} {10}"
+msgstr "5,6,7"
+
+msgctxt "numbers"
+msgid "Threat rating {0} → {1:0.0}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Run boons: {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat {0} → {1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Appraisal Scan: no valuables within {0:0} m - no cooldown used"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} change{1} not saved"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} change{1} not saved · they apply now, Undo takes them back"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Buy cart: {0}  ({1})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "\n<color=#9a9ca0>Works until the next shop visit. One of each per visit, {0} different ones at most (you have {1}).</color>"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "<b>{0}</b> <color=#9a9ca0>(was {1})</color>"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "<b>{0}</b>  {1}/{2} voted"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "<b>ROUTE VOTE (LEVEL {0})</b>  {1}/{2} voted"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "<b>ROUTE (LEVEL {0}):</b> {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<b>HEAT VOTE (HEAT {0})</b>  {1}/{2} voted"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "  ({0} PTS{1})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "DOWN {0:0}m"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "X {0}  DOWN {1:0}m"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "No issues ({0:N0} texts checked)."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} issues: "
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Layout check: {0} issues (see the report)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} · {1} of {2}"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "{0}% to Lv {1}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Skill pts <b>{0}</b>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Attribute pts <b>{0}</b>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Data <b>{0:N0}</b>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<b>{0}</b> need you"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Milestone {0} reward"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<b>{0} {1}</b>\nPaid now. The Unique is gone once you take it."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Route for level {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat {0}: raise it?"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat stays at {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} heat · {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Crew level {0}: a crew drill"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat stays at {0}."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Closes in {0:0}s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} vote(s) cast."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Bet placed on ${0:N0} - {1} at stake. Get it out in {2:0}s!"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "{0} won the bet! x{1:0.0} - ${2:N0}"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "Dispatch: {0} {1} in {2:0}s - nobody touch it"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "Drop Pad delivered: ${0:N0} with the haul"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Provoked: {0} vs {1} ({2:0}s)"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "Provoked: two monsters vs {0} ({1:0}s)"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Prospecting: +{0:0}% value"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Padding Kit: no value lost ({0} left)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Catch! +{0:0}% value"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Mended {0} valuable{1}: +${2:N0}"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "Rummage: found {0} thing{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Policy on {0}: move it {1:0}m to activate"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Policy void: only moved {0:0}m of {1:0}m"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Policy paid: ${0:N0} counts toward the haul"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Gun recharged from cart (+{0:0}%)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Pacified {0} for {1:0}s"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Pacified {0} monsters for {1:0}s"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Smoke: {0} monster{1} lost sight of you"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Flash: {0} monster{1} stunned"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Vault cracked by {0}: now worth ${1:N0}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Dumbwaiter: {0} (${1:N0}) sent to the open extraction"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Talent: {0} (rank {1})"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Attribute: {0} ({1} pts)"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Upgrade: {0} x{1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "+{0:0}% XP, +{1:0}% Scrap, +{2:0}% Data"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid ", +{0} gear luck"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Ascension {0} win"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} players"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} / {1} players"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "The {0} was replaced by the {1}: your Lv {2} carries over"
+msgstr "2"
+
+msgctxt "numbers"
+msgid " and your {0} skill point{1} are back to spend."
+msgstr "0"
+
+msgctxt "numbers"
+msgid " (best Lv {0})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} {1} + {2} XP"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "  (bonus: +{0} {1})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Winner: {0} {1} + {2} XP + a reward pick"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "Exterminate: kill {0} enemies"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Speedrun: finish the level within {0} min"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Specialist: use your ability {0} times (personal)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Haul: complete {0} extraction points"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} attribute point"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "  <color=#9a9ca0>(attunement: {0}% weaker)</color>"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "PAYOUT {0}{1}  x{2:0.##}"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "Monster Nest: {0} monsters guard it. Kill them all for a nest core."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<color={0}><b>{1} set {2}/4</b></color>\n"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "+ {0} {1}-piece: {2}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "- {0} {1}-piece: {2}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "all lines +{0:0}% (no room for a new line)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "all lines +{0:0}%"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<b>Skip</b>\nNo heat added this chapter. Heat stays at {0}."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "<b>{0}</b>  <color=#ff8a5c>+{1} heat</color>\n<color=#ff9a8a>{2}</color>\n<color=#73ff66>Heat {3} -> {4}: haul Scrap +{5:0}%, luck +{6:0}</color>"
+msgstr "1,3,4,5,6"
+
+msgctxt "numbers"
+msgid "{0} damaged line(s)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " · {0} out-of-range value(s) skipped"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} more levels"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "from the next level, {0} levels"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} wants {1}: extract {2} ({3}/{2}) for +{4} {5} each"
+msgstr "2,3,4,5"
+
+msgctxt "numbers"
+msgid "{0}'s request for {1} done (+{2} {3} each)"
+msgstr "2"
+
+msgctxt "numbers"
+msgid "Completes {0} x{1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "All {0} lab slots in use"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Needs {0} Data (you have {1})"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Finish {0} contracts as a team"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Take down {0} elites (a boss counts 3)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Lose no more than {0} lives in the whole team (and clear 5 levels)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Reach a streak of {0} levels"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Reach {0} more milestones"
+msgstr "0"
+
+msgctxt "numbers"
+msgid " + {0} Research Data"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} lost so far"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Sponsor {0}: half way there. +{1} Scrap and some Research Data"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Sponsor {0}: goal met! +{1} Scrap and Research Data"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Milestone {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "chapter {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Milestone {0} payout"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Level {0}: {1} - {2}{3}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} milestone boss{1} down"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "A {0}-level streak"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Threat {0:0.0}: monsters x{1:0.##}, health x{2:0.##}"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid ", damage x{0:0.##}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid ", elites x{0:0.##}, loot and goal x{1:0.##}, rewards x{2:0.##}"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Threat rating up: {0:0.0} after {1} level{2} cleared - tougher monsters, better rewards"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Levels cleared: {0}  ·  Threat rating: {1:0.0} / {2:0}"
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Endless {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Chapter {0}/{1}"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0} (level {1})"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "${0:N0} carried to extraction"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "revived a teammate in {0:0} s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} damage avoided"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} HP healed on teammates"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} monsters finished off"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} elites down"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Double or Nothing paid ${0:N0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} monsters lured away"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "${0:N0} moved by cart"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "${0:N0} of value restored or insured"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} Scrap earned"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} contract{1} completed"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "first into {0:0} rooms"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} monsters spotted"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0} valuables dispatched"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "a monster fight worth {0:0} damage"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "${0:N0} lost to breaks"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "took {0:0} damage and walked out"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0:0.#} min with a synergy on"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "not a scratch, ${0:N0} carried"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} would go past its cap of {1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "only {0} attribute point{1} left"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Choose perk ({0} ready)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "  LV {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} unlocks at level {1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} ({1:0} FPS in the first minute)"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "Performance (Auto): {0} - {1:0} FPS measured. Settings > Performance to change it."
+msgstr "1"
+
+msgctxt "numbers"
+msgid " and {0} more"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Tier {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}: {1} is outside {2} - {3}, set to {4}"
+msgstr "1,2,3,4"
+
+msgctxt "numbers"
+msgid "Need {0} more {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}  Lv {1}"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "LV {0}  -  "
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} / {1} XP"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "  ★ IN {0}{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid ", LV {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Lv {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} HP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} HP – {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} HP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "LV {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "CH {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} XP – {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} · {1} LV"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} to {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} · {1} of {2}"
+msgstr "1,2"
+
+msgctxt "numbers"
+msgid "{0}% max health"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% damage taken"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% walk speed"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% sprint speed"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% crouch speed"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% jump force"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} extra jump{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% max stamina"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% sprint stamina drain"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% grab strength"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% grab range"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% throw strength"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} HP/s regen"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% dodge chance"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% speed below 35% HP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% stamina drain while carrying"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} death save per level"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} HP to nearby allies every 3s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}m aura radius"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} HP to allies revived near you"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} HP when an enemy dies near you"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}m enemy sense range"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% ability cooldown reduction"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% ability duration"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% ability power"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% ability radius"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% all XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% kill XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% extraction XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% revive XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% level-complete XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% weapon damage"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% bleed chance on hit"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% stun chance on hit"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} HP per weapon hit"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} gear luck"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} ability charge{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}s ability cooldown per nearby kill"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% gear find on extraction"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% extra elite gear drop"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} HP when an extraction completes"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% mod shop discount"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% less damage to items you hold"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% value to valuables you appraise"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}m appraisal radius"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% less damage for allies near you"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}m Shield Wall radius"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% less damage for low-HP allies in your aura"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% sprint speed per Momentum stack"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} max Momentum stack{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}s Momentum hold after you stop"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% throw & weapon damage per Frenzy stack"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} max Frenzy stack{1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} stamina/s for allies near you"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}m Power Link radius"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% speed for 3s after a dodge"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}s ability cooldown per dodge"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% Scar Tissue per hit taken"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% max Scar Tissue"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% damage to Marked enemies"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}s Mark duration"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% noise you make"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% bonus currency share"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% more for Rare+ valuables you appraise"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} {1} + {2} XP"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "Heat stays at {0}: the team skipped"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat {0}: {1} ({2})"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Crew level {0}: {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Streak {0}! +{1:0}% XP and Scrap"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Milestone {0} reached - {1} begins"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "VICTORY! The run is won - {0} {1} each. Vote: end the run, or keep going (Endless)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat stays at {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Heat {0}: {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Streak -{0}: {1} died"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} XP"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "  LV {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} Scrap – {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} Scrap – {1} (x{2})"
+msgstr "0,2"
+
+msgctxt "numbers"
+msgid "-{0} Scrap – {1}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "ENDLESS {0}"
+msgstr "0"
+
+msgctxt "words"
+msgid "a {0} item"
+msgstr "0"
+
+msgctxt "words"
+msgid "{0} {1} upgrade{2}"
+msgstr "0"
+
+msgctxt "words"
+msgid "{0} futures crate"
+msgstr "0"
+
+msgctxt "words"
+msgid "Already on {0}"
+msgstr "0"
+
+msgctxt "words"
+msgid "Go to {0}"
+msgstr "0"
+
+msgctxt "words"
+msgid "{0} gear"
+msgstr "0"
+
+msgctxt "words"
+msgid "{0} perk"
+msgstr "0"
+
+msgctxt "words"
+msgid "{0} {1}upgrade{2}"
+msgstr "0"
+
+msgctxt "words"
+msgid "Most levels on {0}"
+msgstr "0"
+
+msgctxt "words"
+msgid "{0} is locked"
+msgstr "0"
+
+msgctxt "words"
+msgid "{0}+ gear"
+msgstr "0"
+
+msgctxt "words"
+msgid " · resists {0}"
+msgstr "0"
+
+msgctxt "words"
+msgid " · weak to {0}"
+msgstr "0"

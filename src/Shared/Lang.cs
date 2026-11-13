@@ -22,6 +22,10 @@ namespace RepoRPG_RU
         public readonly Dictionary<string, HashSet<string>> Unsafe = new Dictionary<string, HashSet<string>>(StringComparer.Ordinal);
         /// <summary>msgctxt "term".</summary>
         public readonly Dictionary<string, string> Terms = new Dictionary<string, string>(StringComparer.Ordinal);
+        /// <summary>msgctxt "numbers": sentence -> the placeholders that hold a number wherever the mod makes that sentence.</summary>
+        public readonly Dictionary<string, int[]> Numbers = new Dictionary<string, int[]>(StringComparer.Ordinal);
+        /// <summary>msgctxt "words": sentence -> the placeholders that hold one of the mod's own words.</summary>
+        public readonly Dictionary<string, int[]> Words = new Dictionary<string, int[]>(StringComparer.Ordinal);
         /// <summary>msgctxt "pattern": "{0} cancelled the offer" - matched against finished texts at display time only.</summary>
         public readonly Dictionary<string, string> Patterns = new Dictionary<string, string>(StringComparer.Ordinal);
         /// <summary>msgctxt "data" (key "") and "data:stem" (key stem).</summary>
@@ -61,6 +65,19 @@ namespace RepoRPG_RU
 
         private void Add(PoEntry e)
         {
+            if (e.Ctx == "numbers" || e.Ctx == "words")
+            {
+                // not a translation: msgstr lists placeholders of the sentence ("0,2") - the ones that are always numbers,
+                // or the ones that hold a word of the mod's own (a rarity, the name of a tab)
+                List<int> idx = new List<int>();
+                foreach (string part in e.Str.Split(','))
+                {
+                    int k;
+                    if (int.TryParse(part.Trim(), out k) && k >= 0) idx.Add(k);
+                }
+                if (idx.Count > 0) (e.Ctx == "numbers" ? Numbers : Words)[e.Id] = idx.ToArray();
+                return;
+            }
             if (!Fmt.SameHoles(e.Id, e.Str))
             {
                 Rejected++;

@@ -76,3 +76,33 @@ RepoRPG: 'contracts level end, EnemyHurtPatch' hit an error and was switched off
 Late join: Late Join Fix by somebody (v1.2) handles joining; RepoRPG catches joiners up	Позднее подключение: подключением занимается Late Join Fix by somebody (v1.2); RepoRPG помогает новичкам догнать команду
 +150 Scrap – Late-join starting Scrap	+150 лома – Стартовый лом за позднее подключение
 MARKET REPORT: Prices steady\n<color=#9a9ca0>Shop tab > Market for every price</color>	СВОДКА РЫНКА: Цены стабильны\n<color=#9a9ca0>Все цены: вкладка «Магазин» > «Рынок»</color>
+# a number belongs here and nothing else ("numbers" marks worked out from the mod's code)
+2 players	игроков: 2
+more players	more players
+dead players	dead players
+50 XP	50 опыта
+kill XP	kill XP
+3 perk picks	выборов перка: 3
+Grant perk pick	Grant perk pick
+Milestone 3	Этап 3
+milestone data	milestone data
+Tier 3	Ранг 3
++2 extra jumps	+2 к доп. прыжкам
+more extra jumps	more extra jumps
+ENDLESS mode	ENDLESS mode
+late join: dead players	late join: dead players
+Herald: hold to hum.	Herald: hold to hum.
+# a word of the mod's own belongs here ("words" marks, translation/ru/extra.tsv)
+Rare gear	Снаряжение (Редкий)
+Spawn gear	Spawn gear
+Legendary+ gear	Легендарный+ предмет
+a Rare item	Редкий предмет
+Epic futures crate	Эпический фьючерсный ящик
+Rare perk	Редкий перк
+Go to Shop	Перейти: Магазин
+Go to hell	Go to hell
+ · resists Fire	 · сопротивление: Огонь
+ · weak to Void	 · слабость: Пустота
+Rare Strength upgrade	Улучшение: Strength (Редкий)
+shared upgrades	shared upgrades
+shared upgrade	shared upgrade
