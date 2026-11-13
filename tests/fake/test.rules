@@ -18,6 +18,7 @@ RpgRuntime::Spaced
 
 [skip]
 Net
+RpgRuntime::Host*
 
 [data]
 *: name, desc

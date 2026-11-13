@@ -805,6 +805,9 @@ namespace RepoRPG_RU
                         if (Several(v)) return null;
                         // " and your 3" + " skill points to spend": the text began before this pattern does
                         if (k == 0 && Lits[0].Length == 0 && v.Length > 0 && v[0] == ' ') return null;
+                        // "Collector Frenzy (next level): Golden Statue" + " is worth double": a caption stands in front of this sentence,
+                        // the name is only its last part - the splitting at ": " further down gets both right
+                        if (k == 0 && Lits[0].Length == 0 && v.IndexOf(": ", StringComparison.Ordinal) >= 0) return null;
                         if (k == caught.Length - 1 && Lits[k + 1].Length == 0 && v.Length > 0 && v[v.Length - 1] == ' ') return null;
                     }
                     if (Dropped[k])

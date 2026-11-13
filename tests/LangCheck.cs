@@ -51,6 +51,26 @@ internal static class LangCheck
                                   + (worstText.Length > 70 ? worstText.Substring(0, 70) + "..." : worstText) + "), changed " + changed);
                 continue;
             }
+            if (args[i].StartsWith("%"))
+            {
+                // %in.txt:out.txt - what the translator does to texts it has no entry for, one "text => result" per changed line:
+                // two such files, made before and after a change of the translator, show what the change did
+                string[] io = args[i].Substring(1).Split(':');
+                StringBuilder dump = new StringBuilder();
+                int count = 0;
+                foreach (string line in File.ReadAllLines(io[0], Encoding.UTF8))
+                {
+                    if (line.Length == 0) continue;
+                    string text = Un(line);
+                    string t = RepoRPG_RU.Loc.T(text);
+                    if (t == text) continue;
+                    count++;
+                    dump.Append(line).Append("  =>  ").Append(t.Replace("\\", "\\\\").Replace("\n", "\\n")).Append('\n');
+                }
+                File.WriteAllText(io[1], dump.ToString(), new UTF8Encoding(false));
+                Console.WriteLine("dump: " + count + " changed texts -> " + io[1]);
+                continue;
+            }
             Console.WriteLine(args[i] + "  ->  " + RepoRPG_RU.Loc.T(Un(args[i])).Replace("\n", "\\n"));
         }
         Console.WriteLine(n + " samples, " + bad + " wrong; dictionary entries: " + RepoRPG_RU.Loc.Count);

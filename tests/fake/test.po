@@ -249,3 +249,10 @@ msgstr "Снаряжение: "
 msgid "Layer3"
 msgstr "Слой 3"
 
+# --- host-side logic ([skip] RpgRuntime::Host*)
+msgid "Too many trades are open"
+msgstr "Открыто слишком много обменов"
+
+msgid "No answer in time"
+msgstr "Нет ответа вовремя"
+

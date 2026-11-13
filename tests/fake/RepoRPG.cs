@@ -260,6 +260,17 @@ namespace RepoRPG
             Out.Add("cap=" + Caption(4) + "/" + Caption(-4));
             Label(Caption(-4));
             Label(Describe(0, 5f));
+
+            // 18. host-side logic: what it writes travels to the other players, so it stays as written - and is translated when drawn
+            string refusal = HostRefuse(3);
+            Out.Add("state=" + refusal);
+            Label(refusal);
+        }
+
+        private string HostRefuse(int open)
+        {
+            Func<string> why = () => open > 2 ? "Too many trades are open" : "No answer in time";
+            return why();
         }
 
         private string Caption(int n) { return n > 0 ? "Gear: " + n : "Layer3"; }

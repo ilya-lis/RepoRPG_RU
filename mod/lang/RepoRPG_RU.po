@@ -5306,7 +5306,7 @@ msgid "Heat {0}: raise it?"
 msgstr "Накал {0}: повысить?"
 
 msgid "Heat stays at {0}"
-msgstr "Накал остаётся {0}"
+msgstr "Накал остаётся на уровне {0}"
 
 msgid "+{0} heat · {1}"
 msgstr "+{0} к накалу · {1}"
@@ -5339,7 +5339,7 @@ msgid "Heat: skipped"
 msgstr "Накал: пропущено"
 
 msgid "Heat stays at {0}."
-msgstr "Накал остаётся {0}."
+msgstr "Накал остаётся на уровне {0}."
 
 msgid "Run: end it"
 msgstr "Забег: завершить"
@@ -6234,6 +6234,453 @@ msgstr "ПЕРЕГРУЗКА"
 
 msgid "SHORT CIRCUIT"
 msgstr "КОРОТКОЕ ЗАМЫКАНИЕ"
+
+msgid "Haul Hound"
+msgstr "Охотник за добычей"
+
+msgid "Elite kill (Bounty Board)"
+msgstr "Убийство элиты («Доска наград»)"
+
+msgid "Elite kill (Bounty drill)"
+msgstr "Убийство элиты («Наградная тренировка»)"
+
+msgid "Lifesteal"
+msgstr "Вампиризм"
+
+msgid "Side Hustle"
+msgstr "Подработка"
+
+msgid "Monster Nest: {0} monsters guard it. Kill them all for a nest core."
+msgstr "Гнездо монстров: его охраняют монстры ({0}). Убейте всех, чтобы получить ядро гнезда."
+
+msgid "Nest cleared: a nest core dropped. Extract it for Research Data."
+msgstr "Гнездо зачищено: выпало ядро гнезда. Извлеките его, чтобы получить данные исследований."
+
+msgid "Nest core"
+msgstr "Ядро гнезда"
+
+msgid "Champion"
+msgstr "Чемпион"
+
+msgid "Overlord"
+msgstr "Владыка"
+
+msgid "Boss"
+msgstr "Босс"
+
+msgid "<color={0}><b>{1} set {2}/4</b></color>\n"
+msgstr "<color={0}><b>Комплект «{1}» {2}/4</b></color>\n"
+
+msgid "+ {0} {1}-piece: {2}"
+msgstr "+ «{0}», бонус за {1} предм.: {2}"
+
+msgid "- {0} {1}-piece: {2}"
+msgstr "- «{0}», бонус за {1} предм.: {2}"
+
+msgid "Starter items can't be upgraded"
+msgstr "Стартовые предметы нельзя улучшать"
+
+msgid "Fully upgraded"
+msgstr "Улучшено полностью"
+
+msgid "fully upgraded"
+msgstr "улучшено полностью"
+
+msgid "a new line (pick 1 of 3)"
+msgstr "новое свойство (выбор 1 из 3)"
+
+msgid "all lines +{0:0}% (no room for a new line)"
+msgstr "все свойства +{0:0}% (для нового свойства нет места)"
+
+msgid "all lines +{0:0}%"
+msgstr "все свойства +{0:0}%"
+
+msgid " and a socket"
+msgstr " и гнездо"
+
+msgid "<b>Skip</b>\nNo heat added this chapter. Heat stays at {0}."
+msgstr "<b>Пропустить</b>\nВ этой главе накал не добавляется. Накал остаётся на уровне {0}."
+
+msgid "<b>{0}</b>  <color=#ff8a5c>+{1} heat</color>\n<color=#ff9a8a>{2}</color>\n<color=#73ff66>Heat {3} -> {4}: haul Scrap +{5:0}%, luck +{6:0}</color>"
+msgstr "<b>{0}</b>  <color=#ff8a5c>+{1} к накалу</color>\n<color=#ff9a8a>{2}</color>\n<color=#73ff66>Накал {3} -> {4}: лом за добычу +{5:0}%, удача +{6:0}</color>"
+
+msgid "Class and ability tuning shared by the whole lobby."
+msgstr "Настройки классов и способностей, общие для всего лобби."
+
+msgid "How fast classes level and what a level gives."
+msgstr "Как быстро растут уровни классов и что даёт уровень."
+
+msgid "Scrap: how much you earn, how it's split, prices."
+msgstr "Лом: сколько вы зарабатываете, как он делится, цены."
+
+msgid "Global caps and run rules."
+msgstr "Общие пределы и правила забега."
+
+msgid "Caps on healing from every source."
+msgstr "Пределы лечения из всех источников."
+
+msgid "Elites, gear drops, contracts per level and other RPG rules."
+msgstr "Элита, выпадение снаряжения, контракты за уровень и другие правила RPG."
+
+msgid "Named bosses: how often, how tough, what they drop."
+msgstr "Именные боссы: как часто появляются, насколько сильны, что с них выпадает."
+
+msgid "Set pieces and crafting parts."
+msgstr "Части комплектов и детали для крафта."
+
+msgid "Synergies, highlights, call-outs and clutch revives."
+msgstr "Синергии, карточка «Главное», зовы о помощи и возрождения в последний момент."
+
+msgid "The contract board (size, rerolls, slots, rivals, rewards) and team contracts (voting and stakes)."
+msgstr "Доска контрактов (размер, перебросы, слоты, соперники, награды) и командные контракты (голосование и ставки)."
+
+msgid "Monster count, health and damage (the difficulty presets set these), the payout tier and the run modifiers."
+msgstr "Количество, здоровье и урон монстров (их задают пресеты сложности), уровень выплат и модификаторы забега."
+
+msgid "Valuable values: overpriced modded valuables brought in line with vanilla, and the overall value multiplier."
+msgstr "Стоимость ценностей: завышенные цены ценностей из модов приводятся к ванильным, плюс общий множитель стоимости."
+
+msgid "Class starter items: the small class-bound gear piece each class gets once per run, and the starter tools some classes get at their first level."
+msgstr "Стартовые предметы классов: небольшой привязанный к классу предмет снаряжения, который каждый класс получает один раз за забег, и стартовые инструменты, которые некоторые классы получают на первом уровне."
+
+msgid "Elemental weapons: on or off, how strong the statuses are, and the visuals."
+msgstr "Стихийное оружие: включено или нет, сила статусов и визуальные эффекты."
+
+msgid "Ascension: after a win, replay at higher levels with stacking modifiers and better rewards; who decides the levels the host can pick."
+msgstr "Вознесение: после победы переигрывайте на более высоких уровнях с накапливающимися модификаторами и лучшими наградами; кто определяет, какие уровни может выбрать хост."
+
+msgid "Research: whether it's on, whose research decides the lobby-wide unlocks, how much Data runs give, costs and sample chance."
+msgstr "Исследования: включены ли они, чьи исследования определяют разблокировки для всего лобби, сколько данных дают забеги, стоимость и шанс образцов."
+
+msgid "The living economy: valuable prices by category that move with what the team extracts, shop demand, market requests and market events."
+msgstr "Живая экономика: цены ценностей по категориям, которые меняются в зависимости от того, что извлекает команда, спрос в магазине, рыночные запросы и рыночные события."
+
+msgid "Players joining after the run started: where, spawn, class window, catch-up."
+msgstr "Игроки, подключившиеся после начала забега: где, появление, окно выбора класса, догоняющий старт."
+
+msgid "Lobby size (up to 20) and difficulty scaling by player count: strength and each category."
+msgstr "Размер лобби (до 20) и масштабирование сложности по числу игроков: сила и каждая категория."
+
+msgid "How long a run is (chapters x levels), with a finale boss at the end and an End / Endless vote after the win; the route vote between levels; and the heat vote after each milestone."
+msgstr "Длина забега (главы x уровни) с финальным боссом в конце и голосованием «Конец / Бесконечный режим» после победы; голосование за маршрут между уровнями; голосование за накал после каждого этапа."
+
+msgid "Milestones every few levels (a milestone boss, rewards, a boon vote, a new chapter) and the team streak."
+msgstr "Этапы раз в несколько уровней (этапный босс, награды, голосование за дар, новая глава) и командная серия."
+
+msgid "Run boons from boss kills, the crew level (a shared team level with small bonuses), and what unlocks deeper into a run."
+msgstr "Дары забега за убийства боссов, уровень команды (общий уровень команды с небольшими бонусами) и то, что открывается по ходу забега."
+
+msgid "The threat rating that rises with every level cleared: speed, cap, grace levels and each category."
+msgstr "Рейтинг угрозы, который растёт с каждым пройденным уровнем: скорость, предел, льготные уровни и каждая категория."
+
+msgid "What players' account progress (unlocks, mastery, prestige) may do in this lobby."
+msgstr "Что прогресс аккаунтов игроков (разблокировки, мастерство, престиж) может давать в этом лобби."
+
+msgid "applies next level"
+msgstr "применяется со следующего уровня"
+
+msgid "applies now"
+msgstr "применяется сразу"
+
+msgid "applies next run"
+msgstr "применяется со следующего забега"
+
+msgid "removed from the room."
+msgstr "удалён из комнаты."
+
+msgid "their mod is paused in your lobby."
+msgstr "его мод приостановлен в вашем лобби."
+
+msgid "{0} damaged line(s)"
+msgstr "повреждённых строк: {0}"
+
+msgid "no settings in it"
+msgstr "в нём нет настроек"
+
+msgid " · {0} out-of-range value(s) skipped"
+msgstr " · пропущено значений вне диапазона: {0}"
+
+msgid "Boom"
+msgstr "Бум"
+
+msgid "{cat} is worth 50% more."
+msgstr "Категория «{cat}» стоит на 50% дороже."
+
+msgid "Crash"
+msgstr "Обвал"
+
+msgid "{cat} is worth 40% less."
+msgstr "Категория «{cat}» стоит на 40% дешевле."
+
+msgid "Shortage"
+msgstr "Дефицит"
+
+msgid "The shop's {sec} section has half its stock, at 25% more."
+msgstr "В разделе магазина «{sec}» вдвое меньше товара, и он на 25% дороже."
+
+msgid "Collector Frenzy"
+msgstr "Ажиотаж коллекционеров"
+
+msgid "{item} is worth double, and a collector wants it."
+msgstr "Предмет «{item}» стоит вдвое дороже, и его ищет коллекционер."
+
+msgid "Recession"
+msgstr "Спад"
+
+msgid "Every valuable is worth 10% less; contracts pay 25% more."
+msgstr "Все ценности стоят на 10% дешевле; контракты платят на 25% больше."
+
+msgid "Clearance Sale"
+msgstr "Распродажа"
+
+msgid "The shop's {sec} section is 30% off."
+msgstr "В разделе магазина «{sec}» скидка 30%."
+
+msgid "Fragile Premium"
+msgstr "Наценка за хрупкость"
+
+msgid "Fragile goods are worth 40% more, everything else 5% less."
+msgstr "Хрупкие ценности стоят на 40% дороже, всё остальное - на 5% дешевле."
+
+msgid "Scrap Drive"
+msgstr "Сбор утиля"
+
+msgid "Junk is worth double."
+msgstr "Хлам стоит вдвое дороже."
+
+msgid "Tech Rush"
+msgstr "Технобум"
+
+msgid "Electronics and Tech are worth 30% more; Art and Antiques 15% less."
+msgstr "Электроника и техника стоят на 30% дороже; искусство и антиквариат - на 15% дешевле."
+
+msgid "Stimulus"
+msgstr "Стимул"
+
+msgid "Every price resets to normal, and the haul pays 10% more Scrap."
+msgstr "Все цены возвращаются к норме, а добыча приносит на 10% больше лома."
+
+msgid "A collector"
+msgstr "Коллекционер"
+
+msgid "Prices steady"
+msgstr "Цены стабильны"
+
+msgid "{0} more levels"
+msgstr "ещё уровней: {0}"
+
+msgid "next level"
+msgstr "следующий уровень"
+
+msgid "from the next level, {0} levels"
+msgstr "со следующего уровня, уровней: {0}"
+
+msgid "{0} wants {1}: extract {2} ({3}/{2}) for +{4} {5} each"
+msgstr "{0} просит «{1}»: извлеките {2} ({3}/{2}) - каждому +{4} {5}"
+
+msgid "{0}'s request for {1} done (+{2} {3} each)"
+msgstr "{0}: запрос «{1}» выполнен (каждому +{2} {3})"
+
+msgid "Completes {0} x{1}"
+msgstr "Завершает: {0} x{1}"
+
+msgid "  ·  Difficulty scaling off"
+msgstr "  ·  Масштабирование сложности выключено"
+
+msgid " or "
+msgstr " или "
+
+msgid "In progress"
+msgstr "В работе"
+
+msgid "Coming in a later update"
+msgstr "Появится в одном из следующих обновлений"
+
+msgid "Lab slot in use (Parallel Lab adds a second)"
+msgstr "Слот лаборатории занят («Параллельная лаборатория» добавит второй)"
+
+msgid "All {0} lab slots in use"
+msgstr "Все слоты лаборатории ({0}) заняты"
+
+msgid "Needs {0} Data (you have {1})"
+msgstr "Нужно данных: {0} (у вас {1})"
+
+msgid "Tight Formation"
+msgstr "Плотный строй"
+
+msgid "Take 6% less damage while a living teammate is within 8 m."
+msgstr "Получаете на 6% меньше урона, пока живой напарник находится в пределах 8 м."
+
+msgid "Quick Draw"
+msgstr "Быстрая рука"
+
+msgid "Ability cooldowns are 6% shorter."
+msgstr "Перезарядка способностей на 6% короче."
+
+msgid "Study Hall"
+msgstr "Учебный зал"
+
+msgid "Everyone earns 6% more XP (inside the XP bonus cap)."
+msgstr "Все получают на 6% больше опыта (в рамках предела бонуса опыта)."
+
+msgid "Payday"
+msgstr "День выплат"
+
+msgid "Every finished extraction pays everyone 4 Scrap."
+msgstr "Каждое завершённое извлечение приносит всем по 4 лома."
+
+msgid "First Aid"
+msgstr "Первая помощь"
+
+msgid "Finished extractions heal you 5 HP more (inside the extraction heal cap)."
+msgstr "Завершённые извлечения лечат вас на 5 ОЗ больше (в рамках предела лечения от извлечения)."
+
+msgid "Recovery"
+msgstr "Восстановление"
+
+msgid "Revived players come back with at least 35% health."
+msgstr "Возрождённые игроки возвращаются минимум с 35% здоровья."
+
+msgid "Salvage Drill"
+msgstr "Трофейная тренировка"
+
+msgid "Monsters drop 25% more crafting parts."
+msgstr "С монстров выпадает на 25% больше деталей для крафта."
+
+msgid "Bounty Drill"
+msgstr "Наградная тренировка"
+
+msgid "Every elite killed pays everyone 4 Scrap."
+msgstr "Каждый убитый элитный враг приносит всем по 4 лома."
+
+msgid "Finish {0} contracts as a team"
+msgstr "Выполните контракты командой ({0})"
+
+msgid "Take down {0} elites (a boss counts 3)"
+msgstr "Уничтожьте элитных врагов ({0}; босс считается за 3)"
+
+msgid "Lose no more than {0} lives in the whole team (and clear 5 levels)"
+msgstr "Жизней, потерянных всей командой, - не больше {0} (и пройдите 5 уровней)"
+
+msgid "Reach a streak of {0} levels"
+msgstr "Достигните серии уровней ({0})"
+
+msgid "Reach {0} more milestones"
+msgstr "Пройдите ещё несколько этапов ({0})"
+
+msgid "Payday drill"
+msgstr "Тренировка «День выплат»"
+
+msgid " + {0} Research Data"
+msgstr " + {0} данных исследований"
+
+msgid "The Archivist"
+msgstr "Архивариус"
+
+msgid "paid out"
+msgstr "выплачено"
+
+msgid "{0} lost so far"
+msgstr "пока потеряно {0}"
+
+msgid "Sponsor {0}: half way there. +{1} Scrap and some Research Data"
+msgstr "Спонсор {0}: полпути пройдено. +{1} лома и немного данных исследований"
+
+msgid "Sponsor {0}: goal met! +{1} Scrap and Research Data"
+msgstr "Спонсор {0}: цель достигнута! +{1} лома и данные исследований"
+
+msgid "Smoke Canister"
+msgstr "Дымовая шашка"
+
+msgid "The first time your health drops below 50% in a level, smoke bursts: monsters within 8 m lose sight of you for 6 s."
+msgstr "Когда ваше здоровье впервые за уровень падает ниже 50%, вырывается дым: монстры в радиусе 8 м теряют вас из виду на 6 с."
+
+msgid "Decoy Whistle"
+msgstr "Свисток-приманка"
+
+msgid "The first time a monster comes within 6 m of you in a level, you throw a whistle 10 m ahead: monsters within 20 m go to check it out."
+msgstr "Когда монстр впервые за уровень подходит к вам ближе чем на 6 м, вы бросаете свисток на 10 м вперёд: монстры в радиусе 20 м идут проверить его."
+
+msgid "Flash Charge"
+msgstr "Светошумовой заряд"
+
+msgid "The first time a monster comes within 3 m of you in a level, a flash stuns monsters within 5 m for 2.5 s."
+msgstr "Когда монстр впервые за уровень подходит к вам ближе чем на 3 м, вспышка оглушает монстров в радиусе 5 м на 2.5 с."
+
+msgid "Suppressor"
+msgstr "Глушитель"
+
+msgid "Gun Bench: monsters barely hear the shots of guns you hold (next level)."
+msgstr "Оружейный верстак: монстры едва слышат выстрелы оружия в ваших руках (следующий уровень)."
+
+msgid "Scatter Choke"
+msgstr "Рассеивающий чок"
+
+msgid "Gun Bench: guns you hold fire one extra pellet per shot, with a much wider spread (next level)."
+msgstr "Оружейный верстак: оружие в ваших руках выпускает на одну дробину больше за выстрел, но с гораздо большим разбросом (следующий уровень)."
+
+msgid "Stock"
+msgstr "Приклад"
+
+msgid "Gun Bench: guns you hold kick 70% less (next level)."
+msgstr "Оружейный верстак: отдача оружия в ваших руках на 70% меньше (следующий уровень)."
+
+msgid "Monsters you hit are marked for the team for 3 s"
+msgstr "Монстры, по которым вы попали, отмечаются для команды на 3 с"
+
+msgid "Aim at a valuable to see its value"
+msgstr "Наведитесь на ценность, чтобы увидеть её стоимость"
+
+msgid "Items you let go float for 1 s"
+msgstr "Отпущенные вами предметы парят 1 с"
+
+msgid "Research sample"
+msgstr "Образец для исследований"
+
+msgid "monsters +20%, haul goal +10%"
+msgstr "монстры +20%, цель добычи +10%"
+
+msgid "40% more valuables, twice the research samples"
+msgstr "на 40% больше ценностей, вдвое больше образцов для исследований"
+
+msgid "Anomaly sample"
+msgstr "Образец аномалии"
+
+msgid "You"
+msgstr "Вы"
+
+msgid "Player"
+msgstr "Игрок"
+
+msgid "<b>Safe Route</b>\nNo risk, no extra reward: the level as usual."
+msgstr "<b>Безопасный маршрут</b>\nБез риска, без дополнительной награды: уровень как обычно."
+
+msgid "+1 Featured item in each shop restock"
+msgstr "+1 предмет на витрине при каждом обновлении ассортимента"
+
+msgid "Milestone {0}"
+msgstr "Этап {0}"
+
+msgid "chapter {0}"
+msgstr "глава {0}"
+
+msgid "Victory"
+msgstr "Победа"
+
+msgid "Milestone {0} payout"
+msgstr "Выплата за этап {0}"
+
+msgid "A boss kill"
+msgstr "Убийство босса"
+
+msgid "Level {0}: {1} - {2}{3}"
+msgstr "Уровень {0}: {1} - {2}{3}"
+
+msgid "{0} milestone boss{1} down"
+msgstr "Этапных боссов повержено: {0}"
+
+msgid "A {0}-level streak"
+msgstr "Серия: {0} ур. подряд"
 
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
@@ -7183,6 +7630,250 @@ msgid "Weaken"
 msgstr "Ослабление"
 
 msgctxt "term"
+msgid "Classes & Abilities"
+msgstr "Классы и способности"
+
+msgctxt "term"
+msgid "Leveling"
+msgstr "Прокачка"
+
+msgctxt "term"
+msgid "XP Sources"
+msgstr "Источники опыта"
+
+msgctxt "term"
+msgid "XP & Leveling"
+msgstr "Опыт и прокачка"
+
+msgctxt "term"
+msgid "Currency"
+msgstr "Валюта"
+
+msgctxt "term"
+msgid "Economy & Scrap"
+msgstr "Экономика и лом"
+
+msgctxt "term"
+msgid "Rules"
+msgstr "Правила"
+
+msgctxt "term"
+msgid "Rules & Caps"
+msgstr "Правила и пределы"
+
+msgctxt "term"
+msgid "Monsters & Elites"
+msgstr "Монстры и элита"
+
+msgctxt "term"
+msgid "Bosses"
+msgstr "Боссы"
+
+msgctxt "term"
+msgid "Gear & Crafting"
+msgstr "Снаряжение и крафт"
+
+msgctxt "term"
+msgid "Team"
+msgstr "Команда"
+
+msgctxt "term"
+msgid "Team Play"
+msgstr "Командная игра"
+
+msgctxt "term"
+msgid "Difficulty"
+msgstr "Сложность"
+
+msgctxt "term"
+msgid "Difficulty & Modifiers"
+msgstr "Сложность и модификаторы"
+
+msgctxt "term"
+msgid "Valuables"
+msgstr "Ценности"
+
+msgctxt "term"
+msgid "Starters"
+msgstr "Стартовые предметы"
+
+msgctxt "term"
+msgid "Class Starters"
+msgstr "Стартовые предметы классов"
+
+msgctxt "term"
+msgid "Elements"
+msgstr "Стихии"
+
+msgctxt "term"
+msgid "Late Join"
+msgstr "Позднее подключение"
+
+msgctxt "term"
+msgid "Players"
+msgstr "Игроки"
+
+msgctxt "term"
+msgid "Scaling"
+msgstr "Масштабирование"
+
+msgctxt "term"
+msgid "Players & Scaling"
+msgstr "Игроки и масштабирование"
+
+msgctxt "term"
+msgid "Season"
+msgstr "Сезон"
+
+msgctxt "term"
+msgid "Routes"
+msgstr "Маршруты"
+
+msgctxt "term"
+msgid "Season, Routes & Heat"
+msgstr "Сезон, маршруты и накал"
+
+msgctxt "term"
+msgid "Milestones"
+msgstr "Этапы"
+
+msgctxt "term"
+msgid "Streaks"
+msgstr "Серии"
+
+msgctxt "term"
+msgid "Milestones & Streaks"
+msgstr "Этапы и серии"
+
+msgctxt "term"
+msgid "Boons"
+msgstr "Дары"
+
+msgctxt "term"
+msgid "Boons, Crew & Unlocks"
+msgstr "Дары, команда и разблокировки"
+
+msgctxt "term"
+msgid "Threat"
+msgstr "Угроза"
+
+msgctxt "term"
+msgid "Run Progress"
+msgstr "Прогресс забега"
+
+msgctxt "term"
+msgid "Account & Players"
+msgstr "Аккаунт и игроки"
+
+msgctxt "term"
+msgid "a player"
+msgstr "игрок"
+
+msgctxt "term"
+msgid "Fragile"
+msgstr "Хрупкое"
+
+msgctxt "term"
+msgid "Heavy"
+msgstr "Тяжёлое"
+
+msgctxt "term"
+msgid "Art"
+msgstr "Искусство"
+
+msgctxt "term"
+msgid "Antiques"
+msgstr "Антиквариат"
+
+msgctxt "term"
+msgid "Electronics"
+msgstr "Электроника"
+
+msgctxt "term"
+msgid "Tech"
+msgstr "Техника"
+
+msgctxt "term"
+msgid "Curiosities"
+msgstr "Диковины"
+
+msgctxt "term"
+msgid "Junk"
+msgstr "Хлам"
+
+msgctxt "term"
+msgid "Monsters"
+msgstr "Монстры"
+
+msgctxt "term"
+msgid "Health"
+msgstr "Здоровье"
+
+msgctxt "term"
+msgid "Damage"
+msgstr "Урон"
+
+msgctxt "term"
+msgid "Haul goal"
+msgstr "Цель добычи"
+
+msgctxt "term"
+msgid "Elites"
+msgstr "Элита"
+
+msgctxt "term"
+msgid "Bosses +1 modifier"
+msgstr "Боссы +1 модификатор"
+
+msgctxt "term"
+msgid "+5% XP"
+msgstr "+5% опыта"
+
+msgctxt "term"
+msgid "+10% max health"
+msgstr "+10% к макс. здоровью"
+
+msgctxt "term"
+msgid "+5% haul Scrap"
+msgstr "+5% лома за добычу"
+
+msgctxt "term"
+msgid "+1 gear and shop luck"
+msgstr "+1 к удаче снаряжения и магазина"
+
+msgctxt "term"
+msgid "Contract rewards +10%"
+msgstr "Награды за контракты +10%"
+
+msgctxt "term"
+msgid "+5% XP (+10% in all)"
+msgstr "+5% опыта (всего +10%)"
+
+msgctxt "term"
+msgid "Mod shop prices -5%"
+msgstr "Цены в магазине мода -5%"
+
+msgctxt "term"
+msgid "Milestone payouts +25%"
+msgstr "Выплаты за этапы +25%"
+
+msgctxt "term"
+msgid "The run is complete. Back to the main menu in 15 s - well played!"
+msgstr "Забег завершён. Возврат в главное меню через 15 с - отличная игра!"
+
+msgctxt "term"
+msgid "Endless: the run goes on. Every chapter from here is a new record."
+msgstr "Бесконечный режим: забег продолжается. Каждая глава отсюда - новый рекорд."
+
+msgctxt "term"
+msgid "Second Wind saved a life"
+msgstr "«Второе дыхание» спасло жизнь"
+
+msgctxt "term"
+msgid "Full Sweep: every extraction point done - +15 Scrap and bonus XP for everyone"
+msgstr "Полная зачистка: все точки извлечения завершены - +15 лома и бонусный опыт каждому"
+
+msgctxt "term"
 msgid "max"
 msgstr "макс."
 
@@ -7353,6 +8044,10 @@ msgstr "Кошмар"
 msgctxt "term"
 msgid "Normal"
 msgstr "Нормально"
+
+msgctxt "term"
+msgid "Streak broken: the level was lost"
+msgstr "Серия прервана: уровень проигран"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -9719,6 +10414,146 @@ msgid " · weak to {0}"
 msgstr " · слабость: {0}"
 
 msgctxt "pattern"
+msgid "Supply Drop: a crate fell near {0}"
+msgstr "Сброс припасов: ящик упал рядом с игроком {0}"
+
+msgctxt "pattern"
+msgid "{0}<color={1}>2 pieces: {2}</color>\n<color={3}>4 pieces: {4}</color>"
+msgstr "{0}<color={1}>2 предмета: {2}</color>\n<color={3}>4 предмета: {4}</color>"
+
+msgctxt "pattern"
+msgid "Heat stays at {0}: the team skipped"
+msgstr "Накал остаётся на уровне {0}: команда пропустила"
+
+msgctxt "pattern"
+msgid "Heat {0}: {1} ({2})"
+msgstr "Накал {0}: {1} ({2})"
+
+msgctxt "pattern"
+msgid "{0} has an older version ({1}; Semibot RPG is RepoRPG's old name) and needs RepoRPG 1.0.100: "
+msgstr "{0}: более старая версия ({1}; Semibot RPG - прежнее название RepoRPG), нужен RepoRPG 1.0.100: "
+
+msgctxt "pattern"
+msgid "{0} has RepoRPG {1} (you have 1.0.100): "
+msgstr "{0}: RepoRPG {1} (у вас 1.0.100): "
+
+msgctxt "pattern"
+msgid "can't be read: {0}"
+msgstr "не удаётся прочитать: {0}"
+
+msgctxt "pattern"
+msgid "Invalid: {0}"
+msgstr "Недействителен: {0}"
+
+msgctxt "pattern"
+msgid "Default preset '{0}' couldn't be loaded"
+msgstr "Не удалось загрузить пресет по умолчанию '{0}'"
+
+msgctxt "pattern"
+msgid "{0} is worth 50% more."
+msgstr "Категория «{0}» стоит на 50% дороже."
+
+msgctxt "pattern"
+msgid "{0} is worth 40% less."
+msgstr "Категория «{0}» стоит на 40% дешевле."
+
+msgctxt "pattern"
+msgid "The shop's {0} section has half its stock, at 25% more."
+msgstr "В разделе магазина «{0}» вдвое меньше товара, и он на 25% дороже."
+
+msgctxt "pattern"
+msgid "{0} is worth double, and a collector wants it."
+msgstr "Предмет «{0}» стоит вдвое дороже, и его ищет коллекционер."
+
+msgctxt "pattern"
+msgid "The shop's {0} section is 30% off."
+msgstr "В разделе магазина «{0}» скидка 30%."
+
+msgctxt "pattern"
+msgid "Market request ({0})"
+msgstr "Рыночный запрос ({0})"
+
+msgctxt "pattern"
+msgid "Starts a challenge: {0}"
+msgstr "Начинает испытание: {0}"
+
+msgctxt "pattern"
+msgid "{0}: no scaling"
+msgstr "{0}: без масштабирования"
+
+msgctxt "pattern"
+msgid "{0}Next level: {1}"
+msgstr "{0}След. уровень: {1}"
+
+msgctxt "pattern"
+msgid "{0}  ·  lobby size by {1}"
+msgstr "{0}  ·  размер лобби задаёт {1}"
+
+msgctxt "pattern"
+msgid "Every other {0} project"
+msgstr "Все остальные проекты ветки «{0}»"
+
+msgctxt "pattern"
+msgid "Requires {0}"
+msgstr "Требуется: {0}"
+
+msgctxt "pattern"
+msgid "Crew drill: {0} - {1}"
+msgstr "Командная тренировка: {0} - {1}"
+
+msgctxt "pattern"
+msgid "Sponsor: {0} - {1}"
+msgstr "Спонсор: {0} - {1}"
+
+msgctxt "pattern"
+msgid "Sponsor {0}: the goal wasn't reached. No payout"
+msgstr "Спонсор {0}: цель не достигнута. Выплаты нет"
+
+msgctxt "pattern"
+msgid "<b>{0}</b>\n<color=#ff9a8a>Risk: {1}</color>{2}\n<color=#73ff66>Reward: {3} - {4}</color>"
+msgstr "<b>{0}</b>\n<color=#ff9a8a>Риск: {1}</color>{2}\n<color=#73ff66>Награда: {3} - {4}</color>"
+
+msgctxt "pattern"
+msgid "Crew level {0}: {1}"
+msgstr "Уровень команды {0}: {1}"
+
+msgctxt "pattern"
+msgid "Streak {0}! +{1:0}% XP and Scrap"
+msgstr "Серия {0}! +{1:0}% опыта и лома"
+
+msgctxt "pattern"
+msgid "Milestone {0} reached - {1} begins"
+msgstr "Этап {0} пройден - начинается {1}"
+
+msgctxt "pattern"
+msgid "VICTORY! The run is won - {0} {1} each. Vote: end the run, or keep going (Endless)"
+msgstr "ПОБЕДА! Забег выигран - каждому {0} {1}. Голосование: завершить забег или продолжить (бесконечный режим)"
+
+msgctxt "pattern"
+msgid "Route: {1}"
+msgstr "Маршрут: {1}"
+
+msgctxt "pattern"
+msgid "Heat stays at {0}"
+msgstr "Накал остаётся на уровне {0}"
+
+msgctxt "pattern"
+msgid "Heat {0}: {1}"
+msgstr "Накал {0}: {1}"
+
+msgctxt "pattern"
+msgid "Streak {0}: the level was lost"
+msgstr "Серия {0}: уровень проигран"
+
+msgctxt "pattern"
+msgid "Streak -{0}: {1} died"
+msgstr "Серия -{0}: {1} погибает"
+
+msgctxt "pattern"
+msgid "Run boon: {0}"
+msgstr "Дар забега: {0}"
+
+msgctxt "pattern"
 msgid "{0}s stun"
 msgstr "{0} с оглушения"
 
@@ -9749,6 +10584,58 @@ msgstr "{0}% силы"
 msgctxt "pattern"
 msgid "{0} damage"
 msgstr "{0} урона"
+
+msgctxt "pattern"
+msgid "Monsters x{0}"
+msgstr "Монстры x{0}"
+
+msgctxt "pattern"
+msgid "Health x{0}"
+msgstr "Здоровье x{0}"
+
+msgctxt "pattern"
+msgid "Damage x{0}"
+msgstr "Урон x{0}"
+
+msgctxt "pattern"
+msgid "Valuables x{0}"
+msgstr "Ценности x{0}"
+
+msgctxt "pattern"
+msgid "Haul goal x{0}"
+msgstr "Цель добычи x{0}"
+
+msgctxt "pattern"
+msgid "Elites x{0}"
+msgstr "Элита x{0}"
+
+msgctxt "pattern"
+msgid "Scrap x{0}"
+msgstr "Лом x{0}"
+
+msgctxt "pattern"
+msgid "Requires Every other {0} project"
+msgstr "Требуется: все остальные проекты ветки «{0}»"
+
+msgctxt "pattern"
+msgid "Requires {0} or {1}"
+msgstr "Требуется: {0} или {1}"
+
+msgctxt "pattern"
+msgid "{0} (this level)"
+msgstr "{0} (этот уровень)"
+
+msgctxt "pattern"
+msgid "{0} (next level)"
+msgstr "{0} (следующий уровень)"
+
+msgctxt "pattern"
+msgid "{0} ({1} more levels)"
+msgstr "{0} (ещё уровней: {1})"
+
+msgctxt "pattern"
+msgid "{0} (from the next level, {1} levels)"
+msgstr "{0} (со следующего уровня, уровней: {1})"
 
 msgctxt "@BigLobby::CheckJoiners#3963"
 msgid " doesn't seem to have RepoRPG: lobbies over 6 players need it"
@@ -9858,6 +10745,54 @@ msgctxt "@Elements::AffinityText#4079"
 msgid " · weak to "
 msgstr " · слабость: "
 
+msgctxt "@GearSets::Progress#4122"
+msgid ">2 pieces: "
+msgstr ">2 предмета: "
+
+msgctxt "@GearSets::Progress#4122"
+msgid ">4 pieces: "
+msgstr ">4 предмета: "
+
+msgctxt "@HostDirector::SupplyDropX#4117"
+msgid "Supply Drop: a crate fell near "
+msgstr "Сброс припасов: ящик упал рядом с игроком "
+
+msgctxt "@HostSettings::Check#4214"
+msgid "can't be read: "
+msgstr "не удаётся прочитать: "
+
+msgctxt "@HostSettings::Invalid#4215"
+msgid "Invalid: "
+msgstr "Недействителен: "
+
+msgctxt "@HostSettings::OnAck#4206"
+msgid " has an older version ("
+msgstr ": более старая версия ("
+
+msgctxt "@HostSettings::OnAck#4206"
+msgid "; Semibot RPG is RepoRPG's old name) and needs RepoRPG 1.0.100: "
+msgstr "; Semibot RPG - прежнее название RepoRPG), нужен RepoRPG 1.0.100: "
+
+msgctxt "@HostSettings::OnAck#4207"
+msgid " has RepoRPG "
+msgstr ": RepoRPG "
+
+msgctxt "@HostSettings::OnAck#4207"
+msgid " (you have 1.0.100): "
+msgstr " (у вас 1.0.100): "
+
+msgctxt "@HostSettings::TickDefault#4216"
+msgid "Default preset '"
+msgstr "Не удалось загрузить пресет по умолчанию '"
+
+msgctxt "@HostSettings::TickDefault#4216"
+msgid "' couldn't be loaded"
+msgstr "'"
+
+msgctxt "@Market::HostExtracted#4276"
+msgid "Market request ("
+msgstr "Рыночный запрос ("
+
 msgctxt "@Net::Dispatch#3359"
 msgid "!Gift failed: "
 msgstr "!Не удалось подарить: "
@@ -9874,9 +10809,89 @@ msgctxt "@Net::OnEvent#3355"
 msgid ": they need RepoRPG 1.0.100"
 msgstr " - нужен RepoRPG 1.0.100"
 
+msgctxt "@Perks::PickPreview#4330"
+msgid "Starts a challenge: "
+msgstr "Начинает испытание: "
+
+msgctxt "@PlayerScaling::Banner#4340"
+msgid "Next level: "
+msgstr "След. уровень: "
+
+msgctxt "@PlayerScaling::Banner#4342"
+msgid "  ·  lobby size by "
+msgstr "  ·  размер лобби задаёт "
+
+msgctxt "@PlayerScaling::Describe"
+msgid "{0} player{1}"
+msgstr "Игроков {0}"
+
+msgctxt "@PlayerScaling::Describe"
+msgid "Monsters"
+msgstr "Монстры"
+
+msgctxt "@PlayerScaling::Describe"
+msgid "Health"
+msgstr "Здоровье"
+
+msgctxt "@PlayerScaling::Describe"
+msgid "Damage"
+msgstr "Урон"
+
+msgctxt "@PlayerScaling::Describe"
+msgid "Valuables"
+msgstr "Ценности"
+
+msgctxt "@PlayerScaling::Describe"
+msgid "Haul goal"
+msgstr "Цель добычи"
+
+msgctxt "@PlayerScaling::Describe"
+msgid "Elites"
+msgstr "Элита"
+
+msgctxt "@PlayerScaling::Describe"
+msgid "Scrap"
+msgstr "Лом"
+
+msgctxt "@PlayerScaling::Describe"
+msgid "Bosses +1 modifier"
+msgstr "Боссы +1 модификатор"
+
+msgctxt "@PlayerScaling::Describe#4332"
+msgid ": no scaling"
+msgstr ": без масштабирования"
+
+msgctxt "@Research::CanStart#4348"
+msgid "Requires "
+msgstr "Требуется: "
+
+msgctxt "@Research::Unlocked#4344"
+msgid "Every other "
+msgstr "Все остальные проекты ветки «"
+
+msgctxt "@Research::Unlocked#4344"
+msgid " project"
+msgstr "»"
+
 msgctxt "@ResearchCrew::HostRunEnd#2799"
 msgid "Sponsor: "
 msgstr "Спонсор: "
+
+msgctxt "@ResearchCrew::HostRunEnd#4383"
+msgid "Sponsor "
+msgstr "Спонсор "
+
+msgctxt "@ResearchCrew::HostRunEnd#4383"
+msgid ": the goal wasn't reached. No payout"
+msgstr ": цель не достигнута. Выплаты нет"
+
+msgctxt "@Routes::Text#4416"
+msgid "</b>\n<color=#ff9a8a>Risk: "
+msgstr "</b>\n<color=#ff9a8a>Риск: "
+
+msgctxt "@Routes::Text#4416"
+msgid "\n<color=#73ff66>Reward: "
+msgstr "\n<color=#73ff66>Награда: "
 
 msgctxt "@RpgRuntime::AbilityLimitText#150"
 msgid "  - next "

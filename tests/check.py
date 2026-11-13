@@ -138,6 +138,8 @@ check('StartsWith(.., Ordinal): the caption with another case is not a key', has
 check('EndsWith(.., OrdinalIgnoreCase): the text it would stop matching stays', has(out, 'probe-nocase-ok') and has(out, 'cap=Снаряжение: 4/Layer3') and has(out, 'Label:Слой 3'),
       [l for l in out if l.startswith('cap=') or 'Layer' in l or 'Слой' in l])
 check('stat line', has(out, 'Label:+5% к макс. здоровью'))
+check('[skip] Type::Member*: host-side text untouched in the code (closure included), translated when drawn',
+      has(out, 'state=Too many trades are open') and has(out, 'Label:Открыто слишком много обменов'), [l for l in out if 'trades' in l or 'обмен' in l])
 check('call-site hook: translated before the mod measure', has(out, 'measure=Широкий') and has(out, 'measure2=Широкий'), [l for l in out if l.startswith('measure')])
 check('missing hook reported, not fatal', contains(out, 'точек перевода не найдены'))
 # data

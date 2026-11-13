@@ -69,6 +69,45 @@ LoopTrace
 NetMeter
 VanillaStyle
 Game
+# host-side logic: what these methods write goes to the other players (notices, refusals, the shared state of the run),
+# where it is cut to a fixed length, compared or stored. It stays as the mod wrote it; every player's own copy of the
+# add-on translates it at the moment it is drawn - the host's included.
+Ascension::Host*
+AttributeAlloc::Host*
+BossGraveyard::Host*
+Bosses::Host*
+ClassClaims::Host*
+ClassHost::Host*
+Commit::Host*
+ContractHost::Host*
+Crafting::Host*
+Cursed::Host*
+FieldResearch::Host*
+Haggle::Host*
+Heat::Host*
+Market::Host*
+PerkAlloc::Host*
+Research::Host*
+ResearchCrew::Host*
+ResearchEcon::Host*
+ResearchSamples::Host*
+Routes::Host*
+RunReset::Host*
+RunShape::Host*
+Scrap::Host*
+Season::Host*
+Shop::Host*
+ShopX::Host*
+Starters::Host*
+TalentAlloc::Host*
+TeamContracts::Host*
+TeamPlay::Host*
+RpgRuntime::HostCommit
+RpgRuntime::HostPawnE
+RpgRuntime::HostPawnFallbackE
+RpgRuntime::HostSalvage
+RpgRuntime::HostTradeRequest
+RpgRuntime::HostTradeTick
 
 [keep]
 # whatever is sent to other players stays exactly as the mod wrote it

@@ -15,6 +15,7 @@ HOLE = re.compile(r'\{\{|\}\}|\{[^{}]*\}|[{}]')
 TAG = re.compile(r'</?(?:color|b|i|size|u|s|mark|sup|sub)(?:=[^>]*)?>', re.I)
 NUM = re.compile(r'^\{(\d+)([,:][^{}]*)?\}$')
 NAMED = re.compile(r'^\{[A-Za-z][^{}]*\}$')
+SIMPLE_NAME = re.compile(r'^\{[A-Za-z][A-Za-z0-9]{0,7}\}$')
 
 
 def unescape(s):
@@ -145,6 +146,16 @@ def main():
         if u['kind'] == 'lit':
             (term_e if u.get('term') else glob_e)[src] = t
             lit_by_text[src] = (t, u)
+            named = []
+            for h in HOLE.findall(src):
+                if SIMPLE_NAME.match(h) and h not in named: named.append(h)
+            if named and not any(NUM.match(h) for h in HOLE.findall(src)):
+                # "{cat} is worth 50% more.": the mod puts the name in with Replace("{cat}", ...). Where the code is not
+                # rewritten the text arrives with the name already inside, so the same sentence is also kept as a pattern.
+                ps, pt = src, t
+                for k, h in enumerate(named): ps, pt = ps.replace(h, '{%d}' % k), pt.replace(h, '{%d}' % k)
+                pat_e[ps] = pt
+                checks.append(sample(ps, pt))
             if any(NUM.match(h) for h in HOLE.findall(src)) and len(re.findall('[A-Za-z]', HOLE.sub('', src))) < 3:
                 # "{0}  Lv {1}": too little text for the add-on to treat it as a sentence on its own accord.
                 # A whole word next to the number is still safe to recognise; "{0}s" or "x{0}" is not.

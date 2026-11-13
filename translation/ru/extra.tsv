@@ -67,3 +67,32 @@
 +term	Brutal	Жестоко
 +term	Relaxed	Расслабленно
 +term	Normal	Нормально
+# PlayerScaling.Describe: "5 players: Monsters x1.2, Scrap x1.1" - the names are handed to a local function and glued to the factor
+# no colon in the first one: Banner() takes what follows the first ':' of "5 players: Monsters x1.2"
++@PlayerScaling::Describe	{0} player{1}	Игроков {0}
++@PlayerScaling::Describe	Monsters	Монстры
++@PlayerScaling::Describe	Health	Здоровье
++@PlayerScaling::Describe	Damage	Урон
++@PlayerScaling::Describe	Valuables	Ценности
++@PlayerScaling::Describe	Haul goal	Цель добычи
++@PlayerScaling::Describe	Elites	Элита
++@PlayerScaling::Describe	Scrap	Лом
++@PlayerScaling::Describe	Bosses +1 modifier	Боссы +1 модификатор
+# the run note "streak-|Streak " + "broken" + ": the level was lost" (the word alone means too many things to translate)
++term	Streak broken: the level was lost	Серия прервана: уровень проигран
+# the same names when the line arrives whole (code not rewritten)
++pattern	Monsters x{0}	Монстры x{0}
++pattern	Health x{0}	Здоровье x{0}
++pattern	Damage x{0}	Урон x{0}
++pattern	Valuables x{0}	Ценности x{0}
++pattern	Haul goal x{0}	Цель добычи x{0}
++pattern	Elites x{0}	Элита x{0}
++pattern	Scrap x{0}	Лом x{0}
+# Research.CanStart: "Requires " + (all the other projects of a branch | A or B) - whole, for the code that was not rewritten
++pattern	Requires Every other {0} project	Требуется: все остальные проекты ветки «{0}»
++pattern	Requires {0} or {1}	Требуется: {0} или {1}
+# Market.EventText: name + " (" + when + "): " + description
++pattern	{0} (this level)	{0} (этот уровень)
++pattern	{0} (next level)	{0} (следующий уровень)
++pattern	{0} ({1} more levels)	{0} (ещё уровней: {1})
++pattern	{0} (from the next level, {1} levels)	{0} (со следующего уровня, уровней: {1})
