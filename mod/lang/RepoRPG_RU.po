@@ -6682,6 +6682,444 @@ msgstr "Этапных боссов повержено: {0}"
 msgid "A {0}-level streak"
 msgstr "Серия: {0} ур. подряд"
 
+msgid "Threat {0:0.0}: monsters x{1:0.##}, health x{2:0.##}"
+msgstr "Угроза {0:0.0}: монстры x{1:0.##}, здоровье x{2:0.##}"
+
+msgid ", damage x{0:0.##}"
+msgstr ", урон x{0:0.##}"
+
+msgid ", elites x{0:0.##}, loot and goal x{1:0.##}, rewards x{2:0.##}"
+msgstr ", элита x{0:0.##}, добыча и цель x{1:0.##}, награды x{2:0.##}"
+
+msgid "Threat rating up: {0:0.0} after {1} level{2} cleared - tougher monsters, better rewards"
+msgstr "Рейтинг угрозы вырос: {0:0.0}, пройдено уровней: {1} - монстры сильнее, награды лучше"
+
+msgid "Levels cleared: {0}  ·  Threat rating: {1:0.0} / {2:0}"
+msgstr "Пройдено уровней: {0}  ·  Рейтинг угрозы: {1:0.0} / {2:0}"
+
+msgid "Valuables extracted"
+msgstr "Ценности извлечены"
+
+msgid "Level haul"
+msgstr "Добыча за уровень"
+
+msgid "Team earnings"
+msgstr "Заработок команды"
+
+msgid "Windfall! Double Scrap from that extraction"
+msgstr "Удача! Двойной лом за это извлечение"
+
+msgid "gifting is turned off by the host"
+msgstr "дарение отключено хостом"
+
+msgid "invalid amount"
+msgstr "недопустимое количество"
+
+msgid "no save loaded"
+msgstr "сохранение не загружено"
+
+msgid "that player isn't here"
+msgstr "этого игрока здесь нет"
+
+msgid "Endless {0}"
+msgstr "Бесконечный режим {0}"
+
+msgid "Chapter {0}/{1}"
+msgstr "Глава {0}/{1}"
+
+msgid "Ascend (Ascension {0})"
+msgstr "Вознестись (Вознесение {0})"
+
+msgid "Keep going (Endless)"
+msgstr "Продолжить (бесконечный режим)"
+
+msgid "End the run"
+msgstr "Завершить забег"
+
+msgid "<b>Keep going: Endless.</b> Chapters keep coming. Each one past the last raises the threat cap and gives bosses another modifier. How deep can the team go?"
+msgstr "<b>Продолжить: бесконечный режим.</b> Главы идут одна за другой. Каждая глава сверх последней повышает предел угрозы и даёт боссам ещё один модификатор. Как далеко зайдёт команда?"
+
+msgid "<b>End the run.</b> It's complete: the win is on everyone's record, and everyone goes back to the main menu. (The save stays; loading it again carries on as Endless.)"
+msgstr "<b>Завершить забег.</b> Он пройден: победа записана каждому, и все возвращаются в главное меню. (Сохранение остаётся; если загрузить его снова, забег продолжится в бесконечном режиме.)"
+
+msgid "<b>Ascend.</b> The run is complete as a win, and the next run starts at Ascension {0}: one more modifier on top of the ones you have, and better rewards. Everyone goes back to the main menu; start the next run from there."
+msgstr "<b>Вознестись.</b> Забег завершается победой, а следующий начнётся на Вознесении {0}: ещё один модификатор сверх уже имеющихся и награды лучше. Все возвращаются в главное меню; следующий забег начинайте оттуда."
+
+msgid "3 gear slots, consumables, services, crates, buyback"
+msgstr "3 слота снаряжения, расходники, услуги, ящики, выкуп"
+
+msgid "4 gear slots, item locks, wishlist"
+msgstr "4 слота снаряжения, фиксация предметов, список желаний"
+
+msgid "the Modules section, better gear odds"
+msgstr "раздел «Модули», шансы на снаряжение получше"
+
+msgid "5 gear slots, 4 consumables, an Epic-or-better featured deal"
+msgstr "5 слотов снаряжения, 4 расходника, предложение витрины не ниже Эпического"
+
+msgid "6 gear slots, Uniques in stock, a better chance of a featured Unique"
+msgstr "6 слотов снаряжения, Уникальные предметы в продаже, выше шанс Уникального на витрине"
+
+msgid "Padding Kit"
+msgstr "Мягкая упаковка"
+
+msgid "The next 3 impacts on valuables you carry cause no value loss."
+msgstr "Следующие 3 удара по ценностям, которые вы несёте, не снижают их стоимость."
+
+msgid "Signal Jammer"
+msgstr "Глушилка сигнала"
+
+msgid "Monsters take 0.5 s longer to notice you."
+msgstr "Монстры замечают вас на 0,5 с позже."
+
+msgid "Four-Leaf Fuse"
+msgstr "Четырёхлистный предохранитель"
+
+msgid "+2 gear luck."
+msgstr "+2 к удаче снаряжения."
+
+msgid "Spare Battery"
+msgstr "Запасная батарея"
+
+msgid "+1 ability charge."
+msgstr "+1 заряд способности."
+
+msgid "The first time you drop below 30% health, heal 20 HP."
+msgstr "Когда здоровье впервые опустится ниже 30%, вы восстановите 20 ОЗ."
+
+msgid "Incendiary Coating"
+msgstr "Зажигательное покрытие"
+
+msgid "This level your weapon's hits Burn monsters. Coatings don't stack: the first in the list (Fire, Shock, Frost, Corrosive, Void) counts."
+msgstr "На этом уровне попадания вашего оружия поджигают монстров (Горение). Покрытия не складываются: действует первое по списку (Огонь, Разряд, Мороз, Коррозия, Пустота)."
+
+msgid "Voltaic Coating"
+msgstr "Электрическое покрытие"
+
+msgid "This level your weapon's hits Shock monsters (short stuns that sometimes jump)."
+msgstr "На этом уровне попадания вашего оружия бьют монстров током (Разряд: короткие оглушения, которые иногда перескакивают)."
+
+msgid "Glacial Coating"
+msgstr "Ледяное покрытие"
+
+msgid "This level your weapon's hits Chill monsters (slower; enough hits freeze them)."
+msgstr "На этом уровне попадания вашего оружия охлаждают монстров (Холод: они медленнее; несколько попаданий их замораживают)."
+
+msgid "Caustic Coating"
+msgstr "Едкое покрытие"
+
+msgid "This level your weapon's hits Rot monsters (they take more damage from everything)."
+msgstr "На этом уровне попадания вашего оружия разъедают монстров (Гниение: они получают больше урона от всего)."
+
+msgid "Void Coating"
+msgstr "Покрытие Пустоты"
+
+msgid "This level your weapon's hits Weaken monsters (they hit you softer)."
+msgstr "На этом уровне попадания вашего оружия ослабляют монстров (Ослабление: они бьют вас слабее)."
+
+msgid "Coin Funnel"
+msgstr "Монетная воронка"
+
+msgid "+5% Scrap share."
+msgstr "+5% к доле лома."
+
+msgid "Everything's ninety percent original parts. Some of them are even original."
+msgstr "Всё на девяносто процентов из оригинальных деталей. Некоторые из них даже оригинальные."
+
+msgid "Take your time. I've got nowhere to be. Literally. My wheels are bolted down."
+msgstr "Не торопитесь. Мне некуда спешить. Буквально. Мои колёса прикручены к полу."
+
+msgid "Fresh stock! Well. Fresh-ish."
+msgstr "Свежий товар! Ну. Почти свежий."
+
+msgid "If it hums, don't lick it."
+msgstr "Если оно гудит - не лижите."
+
+msgid "Pleasure doing business. No refunds. Mostly."
+msgstr "Приятно иметь с вами дело. Возвратов нет. В основном."
+
+msgid "Treat it well. Or don't. I'm not your mother."
+msgstr "Берегите эту вещь. Или не берегите. Я вам не мать."
+
+msgid "Sold! Rivet thanks you for your patronage."
+msgstr "Продано! Ривет благодарит вас за покупку."
+
+msgid "Ah. Come back with more Scrap and a better attitude."
+msgstr "А. Возвращайтесь, когда будет больше лома и настроение получше."
+
+msgid "That's a 'look, don't touch' price for you, friend."
+msgstr "Для вас, друг, это цена из разряда «смотри, но не трогай»."
+
+msgid "My pity is free. The gear isn't."
+msgstr "Моё сочувствие бесплатно. Снаряжение - нет."
+
+msgid "Fell off a truck. A very nice truck."
+msgstr "Упало с грузовика. С очень хорошего грузовика."
+
+msgid "Today only. Probably. I lose track of days."
+msgstr "Только сегодня. Наверное. Я сбиваюсь со счёта дней."
+
+msgid "one of each consumable per visit"
+msgstr "по одному расходнику каждого вида за визит"
+
+msgid "consumable limit reached"
+msgstr "достигнут лимит расходников"
+
+msgid "2 locks at most"
+msgstr "не больше 2 фиксаций"
+
+msgid "one futures order per visit"
+msgstr "один фьючерсный заказ за визит"
+
+msgid "a curse"
+msgstr "проклятие"
+
+msgid "starter tool"
+msgstr "стартовый инструмент"
+
+msgid "Team contract failed"
+msgstr "Командный контракт провален"
+
+msgid "most value carried into an extraction ($2,000+)"
+msgstr "самый ценный груз, донесённый до извлечения (от $2,000)"
+
+msgid "the fastest revive after a death (under 30 s)"
+msgstr "самое быстрое возрождение после смерти (быстрее 30 с)"
+
+msgid "no damage all level, $1,000+ carried"
+msgstr "ни единого урона за уровень и груз от $1,000"
+
+msgid "most damage avoided by dodges, saves and reductions (50+)"
+msgstr "больше всего урона, которого удалось избежать уклонениями, спасениями и снижениями (от 50)"
+
+msgid "most damage taken and still standing (100+)"
+msgstr "больше всего полученного урона - и остался на ногах (от 100)"
+
+msgid "most health healed on teammates (60+)"
+msgstr "больше всего здоровья, восстановленного напарникам (от 60)"
+
+msgid "took down an elite"
+msgstr "победил элитного врага"
+
+msgid "largest Double or Nothing payout"
+msgstr "самая большая выплата «Вдвое или ничего»"
+
+msgid "most monsters lured by Echo or Decoy Beacon (5+)"
+msgstr "больше всего монстров, отвлечённых «Эхом» или маяком-приманкой (от 5)"
+
+msgid "most value moved by a cart you pushed ($2,000+)"
+msgstr "больше всего ценностей, перевезённых на тележке, которую вы толкали (от $2,000)"
+
+msgid "most value restored or insured ($500+)"
+msgstr "больше всего восстановленной или застрахованной стоимости (от $500)"
+
+msgid "first into the most rooms (4+)"
+msgstr "первым вошёл в наибольшее число комнат (от 4)"
+
+msgid "longest time with a synergy on (1 min+)"
+msgstr "дольше всех с активной синергией (от 1 мин)"
+
+msgid "most monsters spotted by Watchposts (5+)"
+msgstr "больше всего монстров, замеченных сторожевыми постами (от 5)"
+
+msgid "most valuables sent by Dispatch (2+)"
+msgstr "больше всего ценностей, отправленных «Отправкой» (от 2)"
+
+msgid "the biggest monster fight you started (100+ damage)"
+msgstr "самая крупная драка монстров, которую вы начали (от 100 урона)"
+
+msgid "most value lost to breaks ($1,000+, only when few others qualify)"
+msgstr "больше всего стоимости потеряно из-за поломок (от $1,000; только когда мало других претендентов)"
+
+msgid "{0} (level {1})"
+msgstr "{0} (уровень {1})"
+
+msgid "${0:N0} carried to extraction"
+msgstr "${0:N0} донесено до извлечения"
+
+msgid "revived a teammate in {0:0} s"
+msgstr "возродил напарника за {0:0} с"
+
+msgid "{0:0} damage avoided"
+msgstr "избегнуто урона: {0:0}"
+
+msgid "{0:0} HP healed on teammates"
+msgstr "восстановлено напарникам: {0:0} ОЗ"
+
+msgid "{0:0} monsters finished off"
+msgstr "добито монстров: {0:0}"
+
+msgid "{0:0} elites down"
+msgstr "побеждено элитных врагов: {0:0}"
+
+msgid "Double or Nothing paid ${0:N0}"
+msgstr "«Вдвое или ничего» принесло ${0:N0}"
+
+msgid "{0:0} monsters lured away"
+msgstr "отвлечено монстров: {0:0}"
+
+msgid "${0:N0} moved by cart"
+msgstr "${0:N0} перевезено на тележке"
+
+msgid "${0:N0} of value restored or insured"
+msgstr "${0:N0} стоимости восстановлено или застраховано"
+
+msgid "{0:0} Scrap earned"
+msgstr "заработано лома: {0:0}"
+
+msgid "{0:0} contract{1} completed"
+msgstr "выполнено контрактов: {0:0}"
+
+msgid "first into {0:0} rooms"
+msgstr "первым вошёл в комнаты: {0:0}"
+
+msgid "{0:0} monsters spotted"
+msgstr "замечено монстров: {0:0}"
+
+msgid "{0:0} valuables dispatched"
+msgstr "отправлено ценностей: {0:0}"
+
+msgid "a monster fight worth {0:0} damage"
+msgstr "драка монстров на {0:0} урона"
+
+msgid "${0:N0} lost to breaks"
+msgstr "${0:N0} потеряно из-за поломок"
+
+msgid "took {0:0} damage and walked out"
+msgstr "получил {0:0} урона и ушёл на своих ногах"
+
+msgid "{0:0.#} min with a synergy on"
+msgstr "{0:0.#} мин с активной синергией"
+
+msgid "not a scratch, ${0:N0} carried"
+msgstr "ни царапины и ${0:N0} груза"
+
+msgid "+{0} XP"
+msgstr "+{0} опыта"
+
+msgid "nothing to apply"
+msgstr "нечего применять"
+
+msgid "{0} would go past its cap of {1}"
+msgstr "{0}: превышен предел в {1}"
+
+msgid "only {0} attribute point{1} left"
+msgstr "осталось очков характеристик: всего {0}"
+
+msgid "no attribute points left"
+msgstr "очков характеристик не осталось"
+
+msgid "the host is on a different save"
+msgstr "у хоста другое сохранение"
+
+msgid "invalid request"
+msgstr "недопустимый запрос"
+
+msgid "the host doesn't have your progress yet - try again in a moment"
+msgstr "у хоста пока нет вашего прогресса - попробуйте ещё раз через мгновение"
+
+msgid "gamepad"
+msgstr "геймпад"
+
+msgid "XInput (Xbox controller, slot {0})"
+msgstr "XInput (геймпад Xbox, слот {0})"
+
+msgid "Always"
+msgstr "Всегда"
+
+msgid "Truck & shop"
+msgstr "Грузовик и магазин"
+
+msgid "Levels only"
+msgstr "Только уровни"
+
+msgid "Never"
+msgstr "Никогда"
+
+msgid "Choose class"
+msgstr "Выбрать класс"
+
+msgid "Choose perk ({0} ready)"
+msgstr "Выбрать перк (доступно: {0})"
+
+msgid "Skill tree, gear & more"
+msgstr "Древо навыков, снаряжение и прочее"
+
+msgid "  LV {0}"
+msgstr "  УР. {0}"
+
+msgid "Choose a perk"
+msgstr "Выберите перк"
+
+msgid "unknown talent"
+msgstr "неизвестный талант"
+
+msgid "not enough skill points"
+msgstr "не хватает очков навыков"
+
+msgid "{0} unlocks at level {1}"
+msgstr "{0} открывается на уровне {1}"
+
+msgid "no progress for that class yet"
+msgstr "для этого класса пока нет прогресса"
+
+msgid "that prestige tree isn't unlocked"
+msgstr "это древо престижа не открыто"
+
+msgid "not that many perk picks"
+msgstr "столько выборов перка у вас нет"
+
+msgid "that pick isn't available"
+msgstr "этот выбор недоступен"
+
+msgid "that perk isn't on offer"
+msgstr "этого перка нет в предложении"
+
+msgid "you already have that perk"
+msgstr "этот перк у вас уже есть"
+
+msgid "the same perk was picked twice"
+msgstr "один и тот же перк выбран дважды"
+
+msgid "unknown perk"
+msgstr "неизвестный перк"
+
+msgid "that perk was banished"
+msgstr "этот перк изгнан"
+
+msgid "cursed perks are turned off"
+msgstr "проклятые перки отключены"
+
+msgid "class selection is only open in the lobby or shop"
+msgstr "выбор класса открыт только в лобби или магазине"
+
+msgid "{0} ({1:0} FPS in the first minute)"
+msgstr "{0} ({1:0} FPS за первую минуту)"
+
+msgid "Performance (Auto): {0} - {1:0} FPS measured. Settings > Performance to change it."
+msgstr "Производительность (Авто): {0} - измерено {1:0} FPS. Изменить: Настройки > Производительность."
+
+msgid "Measures your first minute in a level, then picks Low, Medium or High."
+msgstr "Измеряет первую минуту на уровне, затем выбирает «Минимум», «Средне» или «Максимум»."
+
+msgid "Reduced effects, no outlines or light beams, element icons without the glow, shorter nameplate and health bar range, fewer floor rings."
+msgstr "Меньше эффектов, без контуров и лучей света, значки стихий без свечения, имена и полосы здоровья видны с меньшего расстояния, меньше колец на полу."
+
+msgid "RepoRPG's normal visuals."
+msgstr "Обычная графика RepoRPG."
+
+msgid "Everything on, nameplates seen from further away."
+msgstr "Всё включено, имена видны с большего расстояния."
+
+msgid "Set by hand."
+msgstr "Настроено вручную."
+
+msgid "DOES NOW"
+msgstr "ЧТО ДАЁТ СЕЙЧАС"
+
+msgid "CHANGES NEXT"
+msgstr "ЧТО ИЗМЕНИТСЯ ДАЛЬШЕ"
+
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
 
@@ -7874,6 +8312,146 @@ msgid "Full Sweep: every extraction point done - +15 Scrap and bonus XP for ever
 msgstr "Полная зачистка: все точки извлечения завершены - +15 лома и бонусный опыт каждому"
 
 msgctxt "term"
+msgid "Most valuable carried"
+msgstr "Самый ценный груз"
+
+msgctxt "term"
+msgid "Most revives"
+msgstr "Больше всего возрождений"
+
+msgctxt "term"
+msgid "Most kills"
+msgstr "Больше всего убийств"
+
+msgctxt "term"
+msgid "Most contracts"
+msgstr "Больше всего контрактов"
+
+msgctxt "term"
+msgid "Most Scrap earned"
+msgstr "Больше всего заработано лома"
+
+msgctxt "term"
+msgid "Fewest deaths"
+msgstr "Меньше всего смертей"
+
+msgctxt "term"
+msgid "Gift"
+msgstr "Подарок"
+
+msgctxt "term"
+msgid "Customer"
+msgstr "Клиент"
+
+msgctxt "term"
+msgid "Regular"
+msgstr "Завсегдатай"
+
+msgctxt "term"
+msgid "Shareholder"
+msgstr "Акционер"
+
+msgctxt "term"
+msgid "Clutch revive"
+msgstr "Возрождение в последний момент"
+
+msgctxt "term"
+msgid "Untouchable"
+msgstr "Неприкасаемый"
+
+msgctxt "term"
+msgid "Most damage dodged"
+msgstr "Больше всего урона избегнуто"
+
+msgctxt "term"
+msgid "Iron wall"
+msgstr "Железная стена"
+
+msgctxt "term"
+msgid "Field medic"
+msgstr "Полевой медик"
+
+msgctxt "term"
+msgid "Monster slayer"
+msgstr "Истребитель монстров"
+
+msgctxt "term"
+msgid "most monsters finished off (3+)"
+msgstr "больше всего добитых монстров (от 3)"
+
+msgctxt "term"
+msgid "Elite hunter"
+msgstr "Охотник на элиту"
+
+msgctxt "term"
+msgid "Biggest bet won"
+msgstr "Самая крупная выигранная ставка"
+
+msgctxt "term"
+msgid "Pied piper"
+msgstr "Крысолов"
+
+msgctxt "term"
+msgid "Cart MVP"
+msgstr "Мастер тележки"
+
+msgctxt "term"
+msgid "Restoration"
+msgstr "Реставрация"
+
+msgctxt "term"
+msgid "Scrap tycoon"
+msgstr "Ломовой магнат"
+
+msgctxt "term"
+msgid "most Scrap earned (10+)"
+msgstr "больше всего заработано лома (от 10)"
+
+msgctxt "term"
+msgid "Contract closer"
+msgstr "Мастер контрактов"
+
+msgctxt "term"
+msgid "most contracts completed"
+msgstr "больше всего выполненных контрактов"
+
+msgctxt "term"
+msgid "Explorer"
+msgstr "Первопроходец"
+
+msgctxt "term"
+msgid "Team player"
+msgstr "Командный игрок"
+
+msgctxt "term"
+msgid "Sharp eyes"
+msgstr "Зоркий глаз"
+
+msgctxt "term"
+msgid "Express delivery"
+msgstr "Экспресс-доставка"
+
+msgctxt "term"
+msgid "Fight promoter"
+msgstr "Организатор боёв"
+
+msgctxt "term"
+msgid "Butterfingers"
+msgstr "Дырявые руки"
+
+msgctxt "term"
+msgid "+1 attribute point"
+msgstr "+1 очко характеристик"
+
+msgctxt "term"
+msgid "+ Rare-or-better gear"
+msgstr "+ снаряжение не ниже Редкого"
+
+msgctxt "term"
+msgid "+ a perk pick"
+msgstr "+ выбор перка"
+
+msgctxt "term"
 msgid "max"
 msgstr "макс."
 
@@ -8048,6 +8626,18 @@ msgstr "Нормально"
 msgctxt "term"
 msgid "Streak broken: the level was lost"
 msgstr "Серия прервана: уровень проигран"
+
+msgctxt "term"
+msgid "Auto"
+msgstr "Авто"
+
+msgctxt "term"
+msgid "Low"
+msgstr "Минимум"
+
+msgctxt "term"
+msgid "High"
+msgstr "Максимум"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -10554,6 +11144,118 @@ msgid "Run boon: {0}"
 msgstr "Дар забега: {0}"
 
 msgctxt "pattern"
+msgid "Gift to {0}"
+msgstr "Подарок для {0}"
+
+msgctxt "pattern"
+msgid "Gift from {0}"
+msgstr "Подарок от {0}"
+
+msgctxt "pattern"
+msgid "FINALE - SECOND PHASE: {0} is enraged{1}"
+msgstr "ФИНАЛ - ВТОРАЯ ФАЗА: {0} в ярости{1}"
+
+msgctxt "pattern"
+msgid " and calls {0} to its side!"
+msgstr " и зовёт на помощь: {0}!"
+
+msgctxt "pattern"
+msgid "Cursed: {0}"
+msgstr "Проклятие: {0}"
+
+msgctxt "pattern"
+msgid "Cursed {0}"
+msgstr "Проклято: {0}"
+
+msgctxt "pattern"
+msgid "{0} (Unique)"
+msgstr "{0} (уникальный предмет)"
+
+msgctxt "pattern"
+msgid "{0} set"
+msgstr "{0} (комплект)"
+
+msgctxt "pattern"
+msgid "<color=#8fd18f><b>STARTER:</b> {0}</color>\n"
+msgstr "<color=#8fd18f><b>СТАРТОВЫЙ ПРЕДМЕТ:</b> {0}</color>\n"
+
+msgctxt "pattern"
+msgid "{0}<color=#9a9ca0>{1} only. Salvages for 0 Scrap; can't be rerolled, upgraded or crafted. A class switch swaps it for the new class's.</color>\n"
+msgstr "{0}<color=#9a9ca0>Только для класса {1}. Разбирается за 0 лома; его нельзя перебросить, улучшить или создать. При смене класса заменяется предметом нового класса.</color>\n"
+
+msgctxt "pattern"
+msgid "Starter tool: {0} at your feet"
+msgstr "Стартовый инструмент: {0} у ваших ног"
+
+msgctxt "pattern"
+msgid "Starter tool unavailable ({0}): +25 Scrap instead"
+msgstr "Стартовый инструмент недоступен ({0}): взамен +25 лома"
+
+msgctxt "pattern"
+msgid "curse next level: {0} ({1})"
+msgstr "проклятие на следующем уровне: {0} ({1})"
+
+msgctxt "pattern"
+msgid "Team contract accepted: {0}"
+msgstr "Командный контракт принят: {0}"
+
+msgctxt "pattern"
+msgid "Team contract declined: {0} - no reward, no stakes"
+msgstr "Командный контракт отклонён: {0} - ни награды, ни ставок"
+
+msgctxt "pattern"
+msgid "Team contract complete: {0}!"
+msgstr "Командный контракт выполнен: {0}!"
+
+msgctxt "pattern"
+msgid "Team contract failed: {0}"
+msgstr "Командный контракт провален: {0}"
+
+msgctxt "pattern"
+msgid " (x2 {0} affinity)"
+msgstr " (x2: родство с классом {0})"
+
+msgctxt "pattern"
+msgid "+{0} XP"
+msgstr "+{0} опыта"
+
+msgctxt "pattern"
+msgid "unknown attribute ({0})"
+msgstr "неизвестная характеристика ({0})"
+
+msgctxt "pattern"
+msgid "  LV {0}"
+msgstr "  УР. {0}"
+
+msgctxt "pattern"
+msgid "> {0} - playing{1}"
+msgstr "> {0} - вы играете{1}"
+
+msgctxt "pattern"
+msgid "{0} - taken by {1}"
+msgstr "{0} - занят: {1}"
+
+msgctxt "pattern"
+msgid "{0} is already maxed"
+msgstr "{0}: уже максимум"
+
+msgctxt "pattern"
+msgid "{0} needs {1}"
+msgstr "{0}: требуется {1}"
+
+msgctxt "pattern"
+msgid "{0} can't be learned"
+msgstr "{0}: нельзя изучить"
+
+msgctxt "pattern"
+msgid "you aren't playing {0}"
+msgstr "вы играете не за класс {0}"
+
+msgctxt "pattern"
+msgid "taken by {0}"
+msgstr "занят: {0}"
+
+msgctxt "pattern"
 msgid "{0}s stun"
 msgstr "{0} с оглушения"
 
@@ -10637,6 +11339,26 @@ msgctxt "pattern"
 msgid "{0} (from the next level, {1} levels)"
 msgstr "{0} (со следующего уровня, уровней: {1})"
 
+msgctxt "pattern"
+msgid "+{0} Scrap – {1}"
+msgstr "+{0} лома – {1}"
+
+msgctxt "pattern"
+msgid "+{0} Scrap – {1} (x{2})"
+msgstr "+{0} лома – {1} (x{2})"
+
+msgctxt "pattern"
+msgid "-{0} Scrap – {1}"
+msgstr "-{0} лома – {1}"
+
+msgctxt "pattern"
+msgid "ENDLESS {0}"
+msgstr "БЕСКОНЕЧНЫЙ РЕЖИМ {0}"
+
+msgctxt "@AttributeAlloc::Validate#4673"
+msgid "unknown attribute ("
+msgstr "неизвестная характеристика ("
+
 msgctxt "@BigLobby::CheckJoiners#3963"
 msgid " doesn't seem to have RepoRPG: lobbies over 6 players need it"
 msgstr ": похоже, не установлен RepoRPG, а он нужен в лобби больше 6 игроков"
@@ -10700,6 +11422,10 @@ msgstr "Аккаунт: записи ваших классов перенесе�
 msgctxt "@ClassMigration::MigrateAccount#3982"
 msgid ". Titles are unchanged."
 msgstr ". Титулы не изменились."
+
+msgctxt "@Commit::HostHandle#4738"
+msgid "taken by "
+msgstr "занят: "
 
 msgctxt "@ContractBoard::OptionText#4002"
 msgid "Gear: "
@@ -10792,6 +11518,14 @@ msgstr "'"
 msgctxt "@Market::HostExtracted#4276"
 msgid "Market request ("
 msgstr "Рыночный запрос ("
+
+msgctxt "@NativeMenu::OpenClassPage#4717"
+msgid " - playing"
+msgstr " - вы играете"
+
+msgctxt "@NativeMenu::OpenClassPage#4718"
+msgid " - taken by "
+msgstr " - занят: "
 
 msgctxt "@Net::Dispatch#3359"
 msgid "!Gift failed: "
@@ -13409,9 +14143,69 @@ msgctxt "@RunShape::HostBossKilled#3970"
 msgid "Boss: "
 msgstr "Босс: "
 
+msgctxt "@Scrap::HostGift#4471"
+msgid "Gift to "
+msgstr "Подарок для "
+
+msgctxt "@Scrap::HostGift#4472"
+msgid "Gift from "
+msgstr "Подарок от "
+
 msgctxt "@Scrap::HostGift#485"
 msgid "not enough "
 msgstr "не хватает "
+
+msgctxt "@Season::HostTick#4476"
+msgid " and calls "
+msgstr " и зовёт на помощь: "
+
+msgctxt "@Season::HostTick#4476"
+msgid " to its side!"
+msgstr "!"
+
+msgctxt "@ShopX::Cursed#4550"
+msgid "Cursed: "
+msgstr "Проклятие: "
+
+msgctxt "@ShopX::Cursed#4552"
+msgid "Cursed "
+msgstr "Проклято: "
+
+msgctxt "@ShopX::WishName#4553"
+msgid " (Unique)"
+msgstr " (уникальный предмет)"
+
+msgctxt "@ShopX::WishName#4554"
+msgid " set"
+msgstr " (комплект)"
+
+msgctxt "@Starters::Describe#4555"
+msgid "<color=#8fd18f><b>STARTER:</b> "
+msgstr "<color=#8fd18f><b>СТАРТОВЫЙ ПРЕДМЕТ:</b> "
+
+msgctxt "@Starters::Describe#4556"
+msgid "<color=#9a9ca0>"
+msgstr "<color=#9a9ca0>Только для класса "
+
+msgctxt "@Starters::Describe#4556"
+msgid " only. Salvages for 0 Scrap; can't be rerolled, upgraded or crafted. A class switch swaps it for the new class's.</color>\n"
+msgstr ". Разбирается за 0 лома; его нельзя перебросить, улучшить или создать. При смене класса заменяется предметом нового класса.</color>\n"
+
+msgctxt "@Starters::HostTick#4557"
+msgid "Starter tool: "
+msgstr "Стартовый инструмент: "
+
+msgctxt "@Starters::HostTick#4557"
+msgid " at your feet"
+msgstr " у ваших ног"
+
+msgctxt "@Starters::HostTick#4559"
+msgid "Starter tool unavailable ("
+msgstr "Стартовый инструмент недоступен ("
+
+msgctxt "@Starters::HostTick#4559"
+msgid "): +25 Scrap instead"
+msgstr "): взамен +25 лома"
 
 msgctxt "@StatInfo::Describe#3252"
 msgid "% max health"
@@ -13672,3 +14466,51 @@ msgstr "Перк: "
 msgctxt "@StatSheet::Explain#3326"
 msgid "Evolved: "
 msgstr "Эволюция: "
+
+msgctxt "@TalentAlloc::HostHandle#4726"
+msgid "you aren't playing "
+msgstr "вы играете не за класс "
+
+msgctxt "@TalentAlloc::Simulate#4721"
+msgid " is already maxed"
+msgstr ": уже максимум"
+
+msgctxt "@TalentAlloc::Simulate#4724"
+msgid " needs "
+msgstr ": требуется "
+
+msgctxt "@TalentAlloc::Simulate#4725"
+msgid " can't be learned"
+msgstr ": нельзя изучить"
+
+msgctxt "@TeamContracts::Decide#4562"
+msgid "Team contract accepted: "
+msgstr "Командный контракт принят: "
+
+msgctxt "@TeamContracts::Decide#4563"
+msgid "Team contract declined: "
+msgstr "Командный контракт отклонён: "
+
+msgctxt "@TeamContracts::Decide#4563"
+msgid " - no reward, no stakes"
+msgstr " - ни награды, ни ставок"
+
+msgctxt "@TeamContracts::LossText#4561"
+msgid "curse next level: "
+msgstr "проклятие на следующем уровне: "
+
+msgctxt "@TeamContracts::Settle#4570"
+msgid "Team contract complete: "
+msgstr "Командный контракт выполнен: "
+
+msgctxt "@TeamContracts::Settle#4571"
+msgid "Team contract failed: "
+msgstr "Командный контракт провален: "
+
+msgctxt "@Upgrades::DescribeReward#4642"
+msgid " (x2 "
+msgstr " (x2: родство с классом "
+
+msgctxt "@Upgrades::DescribeReward#4642"
+msgid " affinity)"
+msgstr ")"

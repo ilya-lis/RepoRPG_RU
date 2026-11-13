@@ -115,6 +115,22 @@ RpgRuntime::HostPawnFallbackE
 RpgRuntime::HostSalvage
 RpgRuntime::HostTradeRequest
 RpgRuntime::HostTradeTick
+# the same kind of work under other names: the recap of a run and the highlights card are put together by the host,
+# stored in the save and sent to everyone
+RunShape::SendRecap
+RunShape::Mvps
+TeamPlay::BuildCard
+TeamPlay::Merge
+TeamPlay::StoreLevel
+# checks whose verdict the host sends back as the reason of a refusal ("Attributes not applied: " + reason)
+AttributeAlloc::Validate
+PerkAlloc::Validate
+TalentAlloc::Simulate
+# the line about the sponsor is part of the crew state every player receives
+ResearchCrew::SponsorGoal
+ResearchCrew::SponsorLine
+# the name of the buff travels with it (AllyBuff.Source)
+ClassHost::OnRevived
 
 [keep]
 # whatever is sent to other players stays exactly as the mod wrote it

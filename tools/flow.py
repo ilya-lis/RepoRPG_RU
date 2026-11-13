@@ -456,14 +456,33 @@ def run(path):
     #      directly or through another method of the mod?  Such a text stays as the mod wrote it: the receiving side cuts it
     #      to a fixed length, and a player without the add-on should not get a text in another language.
     sent, why_sent = set(), {}
+
+    def net_call_around(i):
+        """Net.SendTeamState(new object[12] { _state, ..., text ?? "", ... }): the parameter sits somewhere inside the
+        argument list of a Net call, however deep"""
+        o, depth = encl[i], 0
+        while o >= 0 and depth < 6:
+            if toks[o].k == 'op' and toks[o].s == '(':
+                k = callee_start(o)
+                if o - k >= 3 and toks[k].k == 'id' and toks[k].s == 'Net' and toks[k + 1].s == '.':
+                    return ''.join(t.s for t in toks[k:o])
+            o = encl[o]; depth += 1
+        return None
+
     for _ in range(8):
         grew = False
         for key, lst in uses.items():
             if key in sent: continue
             for sk, m, i in lst:
-                if sk[0] != 'CALL' or m is None or m['short'] == 'Net': continue
-                r = resolve(sk[1], int(sk[2].split(':')[0]), m)
-                if r is None: continue
+                if m is None or m['short'] == 'Net': continue
+                r = resolve(sk[1], int(sk[2].split(':')[0]), m) if sk[0] == 'CALL' else None
+                if r is None:
+                    around = net_call_around(i)
+                    if around:
+                        sent.add(key); grew = True
+                        why_sent[key] = '-> ' + around.replace('.', '::') + '(...)'
+                        break
+                    continue
                 if r[0]['short'] == 'Net' or (r[0]['line'], r[1]) in sent:
                     sent.add(key); grew = True
                     why_sent[key] = '-> ' + r[0]['short'] + '::' + r[0]['name'] + '(' + r[0]['params'][r[1]][1] + ')'

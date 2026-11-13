@@ -594,6 +594,7 @@ namespace RepoRPG_RU
             public bool[] Numeric;     // "{0:N0}", "{1:0.#}": only a number fits
             public bool Counter;       // "HEAT {0}", "{0} XP": one shouted word and a number - "HEAT SINK" is somebody's name, not heat level "SINK"
             public bool[] Dropped;     // the translation has no use for it: the English plural ending in "{0} item{1}"
+            public bool[] Roomy;       // "Gift failed: {0}", "+{0} Scrap – {1}", "{0} (level {1})": a text of its own may stand here
 
             private const byte Value = 0, Clause = 1, Line = 2;
 
@@ -685,6 +686,7 @@ namespace RepoRPG_RU
                     p.Dropped[k] = !kept;
                 }
                 p.Kind = new byte[p.Slots.Length];
+                p.Roomy = new bool[p.Slots.Length];
                 for (int k = 0; k < p.Slots.Length; k++)
                 {
                     // "{0}/{1} voted", "Taken by {0}"        a value inside the sentence: a name, a number
@@ -701,6 +703,8 @@ namespace RepoRPG_RU
                     bool breakAfter = lineAfter || after[0] == '.' || after[0] == '!' || after[0] == '?' || after[0] == ':' || after[0] == '<'
                                       || (after.Length > 1 && after[0] == ' ' && ((after[1] >= 'A' && after[1] <= 'Z') || after[1] == '<' || after[1] == '-' || after[1] == '('));
                     p.Kind[k] = lineBefore && lineAfter ? Line : breakBefore && breakAfter ? Clause : Value;
+                    bool dashBefore = bl > 1 && before[bl - 1] == ' ' && (before[bl - 2] == '\u2013' || before[bl - 2] == '\u2014');
+                    p.Roomy[k] = (breakBefore || dashBefore) && breakAfter;
                 }
                 foreach (string l in p.Lits) p.Weight += l.Length;
                 return p;
@@ -791,6 +795,7 @@ namespace RepoRPG_RU
                     pos = at + Lits[k].Length;
                 }
                 caught[last - 1] = s.Substring(pos, end - pos);
+                int owed = 0;       // bit k: this placeholder caught more than a name - it counts only if the dictionary knows that text
                 for (int k = 0; k < caught.Length; k++)
                 {
                     string v = caught[k];
@@ -799,7 +804,13 @@ namespace RepoRPG_RU
                         for (int q = 0; q < v.Length; q++) if (char.IsLetter(v[q])) return null;
                         continue;
                     }
-                    if (Tight && !Simple(v)) return null;
+                    if (Tight && !Simple(v))
+                    {
+                        // "Gift failed: " + "that player isn't here", "+25 Scrap – " + "starter tool": the reason is a text of the
+                        // mod's own. A short pattern may take it when - and only when - that text turns out to have a translation
+                        if (!Roomy[k] || k >= 30 || v.Length > 80 || !Whole(v) || Dropped[k]) return null;
+                        owed |= 1 << k;
+                    }
                     if (Kind[k] == Value)
                     {
                         if (Several(v)) return null;
@@ -846,6 +857,7 @@ namespace RepoRPG_RU
                         bool unknown = false;
                         string inner = Piece(value, depth, ref unknown);
                         if (unknown) return null;
+                        if (inner == null && (owed & (1 << slot)) != 0) return null;
                         // ...and a clause has to be: "<English sentence> Это нельзя отменить." helps nobody
                         if (inner == null && Kind[slot] == Clause && HasLatin(value) && !Simple(value)) return null;
                         if (inner == null && Counter && HasLatin(value)) return null;
