@@ -7120,6 +7120,60 @@ msgstr "ЧТО ДАЁТ СЕЙЧАС"
 msgid "CHANGES NEXT"
 msgstr "ЧТО ИЗМЕНИТСЯ ДАЛЬШЕ"
 
+msgid "GUN BENCH"
+msgstr "ОРУЖЕЙНЫЙ ВЕРСТАК"
+
+msgid "Fit one mod to the guns you hold during the next level. A new mod replaces the old one."
+msgstr "Установите одну модификацию на оружие, которое будете держать в руках на следующем уровне. Новая модификация заменяет прежнюю."
+
+msgid "FIT?"
+msgstr "УСТАНОВИТЬ?"
+
+msgid "Fitted for the next level"
+msgstr "Установлено на следующий уровень"
+
+msgid "PERFORMANCE"
+msgstr "ПРОИЗВОДИТЕЛЬНОСТЬ"
+
+msgid "For slower computers. Only for you, and only how things look: gameplay is the same"
+msgstr "Для слабых компьютеров. Только для вас и только внешний вид: игровой процесс не меняется"
+
+msgid "it picks after your first minute in a level."
+msgstr "выбор будет сделан после вашей первой минуты на уровне."
+
+msgid "THE MOST EXPENSIVE VISUALS"
+msgstr "САМЫЕ ЗАТРАТНЫЕ ЭФФЕКТЫ"
+
+msgid "Each on its own (changing one makes the preset Custom)"
+msgstr "Каждый по отдельности (изменение любого делает пресет «Свой»)"
+
+msgid "ELEMENT VISUALS"
+msgstr "ЭФФЕКТЫ СТИХИЙ"
+
+msgid "REDUCED"
+msgstr "МЕНЬШЕ"
+
+msgid "NAMEPLATE RANGE"
+msgstr "ДАЛЬНОСТЬ ИМЁН"
+
+msgid "HEALTH BAR RANGE"
+msgstr "ДАЛЬНОСТЬ ПОЛОС ЗДОРОВЬЯ"
+
+msgid "FLOOR RINGS"
+msgstr "КОЛЬЦА НА ПОЛУ"
+
+msgid "Reduced effects also makes the HUD refresh 3 times a second instead of 7, and stops menu animations. Debug > PerfProbe measures what RepoRPG costs on your computer (BepInEx/config/RepoRPG_perf.txt)."
+msgstr "«Меньше эффектов» также обновляет HUD 3 раза в секунду вместо 7 и останавливает анимации меню. Параметр Debug > PerfProbe в конфиге измеряет, во что RepoRPG обходится вашему компьютеру (BepInEx/config/RepoRPG_perf.txt)."
+
+msgid " and {0} more"
+msgstr " и ещё {0}"
+
+msgid "A player"
+msgstr "Игрок"
+
+msgid "Late-join starting Scrap"
+msgstr "Стартовый лом за позднее подключение"
+
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
 
@@ -8452,6 +8506,10 @@ msgid "+ a perk pick"
 msgstr "+ выбор перка"
 
 msgctxt "term"
+msgid "Outlines on scanned loot"
+msgstr "Контуры у просканированной добычи"
+
+msgctxt "term"
 msgid "max"
 msgstr "макс."
 
@@ -8638,6 +8696,10 @@ msgstr "Минимум"
 msgctxt "term"
 msgid "High"
 msgstr "Максимум"
+
+msgctxt "term"
+msgid "FULL"
+msgstr "ПОЛНЫЕ"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -11256,6 +11318,42 @@ msgid "taken by {0}"
 msgstr "занят: {0}"
 
 msgctxt "pattern"
+msgid "Fit a {0} for {1}? It works on any gun you hold until the next shop visit."
+msgstr "Установить «{0}» за {1}? Действует на любое оружие в ваших руках до следующего посещения магазина."
+
+msgctxt "pattern"
+msgid "In demand: {0}"
+msgstr "Пользуется спросом: {0}"
+
+msgctxt "pattern"
+msgid "MARKET REPORT: {0}\n<color=#9a9ca0>Shop tab > Market for every price</color>"
+msgstr "СВОДКА РЫНКА: {0}\n<color=#9a9ca0>Все цены: вкладка «Магазин» > «Рынок»</color>"
+
+msgctxt "pattern"
+msgid "Performance: {0}"
+msgstr "Производительность: {0}"
+
+msgctxt "pattern"
+msgid "Auto: {0}"
+msgstr "Авто: {0}"
+
+msgctxt "pattern"
+msgid "picked {0}."
+msgstr "выбрано - {0}."
+
+msgctxt "pattern"
+msgid "RepoRPG: this game version changed something - off: {0}. See the log."
+msgstr "RepoRPG: в этой версии игры что-то изменилось - отключено: {0}. См. журнал."
+
+msgctxt "pattern"
+msgid "RepoRPG: '{0}' hit an error and was switched off until the next level. The rest of the mod keeps working."
+msgstr "RepoRPG: в функции «{0}» произошла ошибка, и она отключена до следующего уровня. Остальная часть мода продолжает работать."
+
+msgctxt "pattern"
+msgid "Late join: {0} handles joining; RepoRPG catches joiners up"
+msgstr "Позднее подключение: подключением занимается {0}; RepoRPG помогает новичкам догнать команду"
+
+msgctxt "pattern"
 msgid "{0}s stun"
 msgstr "{0} с оглушения"
 
@@ -11471,6 +11569,14 @@ msgctxt "@Elements::AffinityText#4079"
 msgid " · weak to "
 msgstr " · слабость: "
 
+msgctxt "@GameCheck::TickNotice#3236"
+msgid "RepoRPG: this game version changed something - off: "
+msgstr "RepoRPG: в этой версии игры что-то изменилось - отключено: "
+
+msgctxt "@GameCheck::TickNotice#3236"
+msgid ". See the log."
+msgstr ". См. журнал."
+
 msgctxt "@GearSets::Progress#4122"
 msgid ">2 pieces: "
 msgstr ">2 предмета: "
@@ -11478,6 +11584,14 @@ msgstr ">2 предмета: "
 msgctxt "@GearSets::Progress#4122"
 msgid ">4 pieces: "
 msgstr ">4 предмета: "
+
+msgctxt "@Guard::TickNotice#3237"
+msgid "RepoRPG: '"
+msgstr "RepoRPG: в функции «"
+
+msgctxt "@Guard::TickNotice#3237"
+msgid "' hit an error and was switched off until the next level. The rest of the mod keeps working."
+msgstr "» произошла ошибка, и она отключена до следующего уровня. Остальная часть мода продолжает работать."
 
 msgctxt "@HostDirector::SupplyDropX#4117"
 msgid "Supply Drop: a crate fell near "
@@ -11514,6 +11628,14 @@ msgstr "Не удалось загрузить пресет по умолчан�
 msgctxt "@HostSettings::TickDefault#4216"
 msgid "' couldn't be loaded"
 msgstr "'"
+
+msgctxt "@LateJoinHost::Tick#4217"
+msgid "Late join: "
+msgstr "Позднее подключение: подключением занимается "
+
+msgctxt "@LateJoinHost::Tick#4217"
+msgid " handles joining; RepoRPG catches joiners up"
+msgstr "; RepoRPG помогает новичкам догнать команду"
 
 msgctxt "@Market::HostExtracted#4276"
 msgid "Market request ("
@@ -12563,6 +12685,18 @@ msgctxt "@RpgRuntime::DrawGearTab#1768"
 msgid "] salvages the selected item"
 msgstr "] разбирает выбранный предмет"
 
+msgctxt "@RpgRuntime::DrawGunBenchE#949"
+msgid "Fit a "
+msgstr "Установить «"
+
+msgctxt "@RpgRuntime::DrawGunBenchE#949"
+msgid " for "
+msgstr "» за "
+
+msgctxt "@RpgRuntime::DrawGunBenchE#949"
+msgid "? It works on any gun you hold until the next shop visit."
+msgstr "? Действует на любое оружие в ваших руках до следующего посещения магазина."
+
 msgctxt "@RpgRuntime::DrawHighlightsCard#1051"
 msgid "] hide  ·  hold ["
 msgstr "] скрыть  ·  удерживайте ["
@@ -12786,6 +12920,18 @@ msgstr "Нужно ещё "
 msgctxt "@RpgRuntime::DrawPawnE#921"
 msgid " more "
 msgstr " "
+
+msgctxt "@RpgRuntime::DrawPerfSettings#2179"
+msgid "Performance: "
+msgstr "Производительность: "
+
+msgctxt "@RpgRuntime::DrawPerfSettings#2180"
+msgid "Auto: "
+msgstr "Авто: "
+
+msgctxt "@RpgRuntime::DrawPerfSettings#2181"
+msgid "picked "
+msgstr "выбрано - "
 
 msgctxt "@RpgRuntime::DrawPerkPicks#2215"
 msgid "Reroll choices "
@@ -14050,6 +14196,18 @@ msgstr "Выберите класс - нажмите "
 msgctxt "@RpgRuntime::TickCommits#2156"
 msgid "Couldn't reach the host - "
 msgstr "Нет связи с хостом - "
+
+msgctxt "@RpgRuntime::TickMarketReport#2040"
+msgid "In demand: "
+msgstr "Пользуется спросом: "
+
+msgctxt "@RpgRuntime::TickMarketReport#2041"
+msgid "MARKET REPORT: "
+msgstr "СВОДКА РЫНКА: "
+
+msgctxt "@RpgRuntime::TickMarketReport#2041"
+msgid "\n<color=#9a9ca0>Shop tab > Market for every price</color>"
+msgstr "\n<color=#9a9ca0>Все цены: вкладка «Магазин» > «Рынок»</color>"
 
 msgctxt "@RpgRuntime::TickNotices#2095"
 msgid "Vote closed: "

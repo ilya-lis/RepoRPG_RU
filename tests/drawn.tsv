@@ -70,3 +70,9 @@ Medium (47 FPS in the first minute)	Средне (47 FPS за первую ми�
 # must stay as they are: a short pattern may not take what it has no translation for
 Skip to next level	Skip to next level
 team contract kill	team contract kill
+# notices of the mod's self-checks: the sentence is translated, the names of the features stay as the log has them
+RepoRPG: this game version changed something - off: kill XP, revive XP and heals. See the log.	RepoRPG: в этой версии игры что-то изменилось - отключено: kill XP, revive XP and heals. См. журнал.
+RepoRPG: 'contracts level end, EnemyHurtPatch' hit an error and was switched off until the next level. The rest of the mod keeps working.	RepoRPG: в функции «contracts level end, EnemyHurtPatch» произошла ошибка, и она отключена до следующего уровня. Остальная часть мода продолжает работать.
+Late join: Late Join Fix by somebody (v1.2) handles joining; RepoRPG catches joiners up	Позднее подключение: подключением занимается Late Join Fix by somebody (v1.2); RepoRPG помогает новичкам догнать команду
++150 Scrap – Late-join starting Scrap	+150 лома – Стартовый лом за позднее подключение
+MARKET REPORT: Prices steady\n<color=#9a9ca0>Shop tab > Market for every price</color>	СВОДКА РЫНКА: Цены стабильны\n<color=#9a9ca0>Все цены: вкладка «Магазин» > «Рынок»</color>

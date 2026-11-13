@@ -595,6 +595,7 @@ namespace RepoRPG_RU
             public bool Counter;       // "HEAT {0}", "{0} XP": one shouted word and a number - "HEAT SINK" is somebody's name, not heat level "SINK"
             public bool[] Dropped;     // the translation has no use for it: the English plural ending in "{0} item{1}"
             public bool[] Roomy;       // "Gift failed: {0}", "+{0} Scrap – {1}", "{0} (level {1})": a text of its own may stand here
+            public bool[] Framed;      // "RepoRPG: '{0}' hit an error and was switched off...": the sentence's own words stand on both sides
 
             private const byte Value = 0, Clause = 1, Line = 2;
 
@@ -606,7 +607,8 @@ namespace RepoRPG_RU
                 List<bool> glued = new List<bool>(), numeric = new List<bool>();
                 string lastHole = null;
                 StringBuilder lit = new StringBuilder();
-                int letters = 0;
+                int letters = 0, own = 0;                 // letters of the whole pattern / of the piece being read
+                List<int> owns = new List<int>();
                 for (int i = 0; i < original.Length; i++)
                 {
                     char c = original[i];
@@ -632,6 +634,8 @@ namespace RepoRPG_RU
                         numeric.Add(hole.IndexOf(':') > 0);
                         glued.Add(lit.Length > 0 && IsLatinLetter(lit[lit.Length - 1]));
                         lits.Add(lit.ToString());
+                        owns.Add(own);
+                        own = 0;
                         lit.Length = 0;
                         slots.Add(index);
                         i = close;
@@ -654,11 +658,12 @@ namespace RepoRPG_RU
                             continue;
                         }
                     }
-                    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) letters++;
+                    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) { letters++; own++; }
                     lit.Append(c);
                     lastHole = null;
                 }
                 lits.Add(lit.ToString());
+                owns.Add(own);
                 if (slots.Count == 0) return null;
                 if (letters < (explicitPattern ? 1 : 3)) return null;     // "{0}: {1}" would swallow everything
                 Pattern p = new Pattern();
@@ -687,8 +692,12 @@ namespace RepoRPG_RU
                 }
                 p.Kind = new byte[p.Slots.Length];
                 p.Roomy = new bool[p.Slots.Length];
+                p.Framed = new bool[p.Slots.Length];
                 for (int k = 0; k < p.Slots.Length; k++)
                 {
+                    // a long sentence that goes on after the placeholder cannot be mistaken for another one: what it caught is
+                    // its own - the name of a feature as the log has it, the name of another mod - and may stay as written
+                    p.Framed[k] = letters >= 30 && owns[k] >= 4 && owns[k + 1] >= 4;
                     // "{0}/{1} voted", "Taken by {0}"        a value inside the sentence: a name, a number
                     // "{0} This can't be undone.", "... - {0}"  a clause or a sentence of its own
                     // "{0}\n<b>Reward</b> {1}"                  a line of its own: whatever it is, it is none of this pattern's business
@@ -859,10 +868,11 @@ namespace RepoRPG_RU
                         if (unknown) return null;
                         if (inner == null && (owed & (1 << slot)) != 0) return null;
                         // ...and a clause has to be: "<English sentence> Это нельзя отменить." helps nobody
-                        if (inner == null && Kind[slot] == Clause && HasLatin(value) && !Simple(value)) return null;
+                        bool asWritten = inner == null && Framed[slot] && value.Length <= 200 && value.IndexOf('<') < 0 && !Several(value);
+                        if (inner == null && Kind[slot] == Clause && HasLatin(value) && !Simple(value) && !asWritten) return null;
                         if (inner == null && Counter && HasLatin(value)) return null;
                         // ...and what stays English inside a sentence is a name or a nickname, not the rest of another sentence
-                        if (inner == null && Kind[slot] == Value && HasLatin(value) && !Simple(value) && !Short(value)) return null;
+                        if (inner == null && Kind[slot] == Value && HasLatin(value) && !Simple(value) && !Short(value) && !asWritten) return null;
                         sb.Append(inner ?? value);
                         i = close;
                         continue;
