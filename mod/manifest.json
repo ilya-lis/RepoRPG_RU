@@ -1,0 +1,10 @@
+{
+  "name": "RepoRPG_RU",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/ilya-lis/RepoRPG_RU",
+  "description": "Русификатор мода RepoRPG: меню, подсказки и сообщения на русском. Оригинальный файл мода не изменяется. Russian translation of the RepoRPG mod.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "ExtraCreamyMilk-RepoRPG-1.0.100"
+  ]
+}

@@ -106,3 +106,14 @@ Go to hell	Go to hell
 Rare Strength upgrade	Улучшение: Strength (Редкий)
 shared upgrades	shared upgrades
 shared upgrade	shared upgrade
+# late join: where the player joined is one of three texts of the mod
+Bob joined mid-level	Bob присоединяется посреди уровня
+Bob joined in the shop	Bob присоединяется в магазине
+Bob joined the dark side	Bob joined the dark side
+A player присоединяется в магазине	Игрок присоединяется в магазине
+You joined mid-level - welcome back, Medic Lv 3	Вы присоединились посреди уровня - с возвращением, Медик ур. 3
+RepoRPG: this game version changed something - off: kill XP, revive XP, heals, team XP, cart hooks, map hooks and 3 more. See the log.	RepoRPG: в этой версии игры что-то изменилось - отключено: kill XP, revive XP, heals, team XP, cart hooks, map hooks и ещё 3. См. журнал.
+Авто: выбрано - Medium (47 FPS за первую минуту).	Авто: выбрано - Средне (47 FPS за первую минуту).
+Авто: выбрано - Medium (47 FPS in the first minute).	Авто: выбрано - Средне (47 FPS за первую минуту).
+Auto: picked Medium (47 FPS in the first minute).	Авто: выбрано - Средне (47 FPS за первую минуту).
+Medium (47 FPS in the first minute)	Средне (47 FPS за первую минуту)

@@ -463,7 +463,16 @@ namespace RepoRPG_RU
             while (tail > head && Peelable(text[tail - 1])) tail--;
             if ((head == 0 && tail == text.Length) || tail - head < 2) return null;
             string core = Sub(text.Substring(head, tail - head), depth + 1);
-            return core == null ? null : text.Substring(0, head) + core + text.Substring(tail);
+            if (core != null) return text.Substring(0, head) + core + text.Substring(tail);
+            // "Medium (47 FPS in the first minute)" + ".": the bracket belongs to the text, only the full stop was added
+            int n = text.Length;
+            if (head == 0 && n - tail >= 2 && (text[n - 1] == '.' || text[n - 1] == '!' || text[n - 1] == '?' || text[n - 1] == ':' || text[n - 1] == ',')
+                && (text[n - 2] == ')' || text[n - 2] == ']'))
+            {
+                core = Sub(text.Substring(0, n - 1), depth + 1);
+                if (core != null) return core + text.Substring(n - 1);
+            }
+            return null;
         }
 
         private static bool Peelable(char c)
@@ -702,7 +711,7 @@ namespace RepoRPG_RU
                 {
                     // a long sentence that goes on after the placeholder cannot be mistaken for another one: what it caught is
                     // its own - the name of a feature as the log has it, the name of another mod - and may stay as written
-                    p.Framed[k] = letters >= 30 && owns[k] >= 4 && owns[k + 1] >= 4;
+                    p.Framed[k] = letters >= 30 && owns[k] >= 3 && owns[k + 1] >= 3;
                     // "{0}/{1} voted", "Taken by {0}"        a value inside the sentence: a name, a number
                     // "{0} This can't be undone.", "... - {0}"  a clause or a sentence of its own
                     // "{0}\n<b>Reward</b> {1}"                  a line of its own: whatever it is, it is none of this pattern's business
@@ -825,8 +834,12 @@ namespace RepoRPG_RU
                         if (!digit) return null;
                         continue;
                     }
-                    if (Known[k] && Exact(v) == null) return null;
-                    if (Tight && !Simple(v))
+                    if (Known[k])
+                    {
+                        // one of the mod's own words belongs here ("Rare", "in the shop"): the dictionary has it, or this is another text
+                        if (Exact(v) == null) return null;
+                    }
+                    else if (Tight && !Simple(v))
                     {
                         // "Gift failed: " + "that player isn't here", "+25 Scrap – " + "starter tool": the reason is a text of the
                         // mod's own. A short pattern may take it when - and only when - that text turns out to have a translation

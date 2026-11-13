@@ -129,3 +129,15 @@
 +words	Go to {0}	0
 +words	{0} {1} upgrade{2}	0
 +words	{0} {1}upgrade{2}	0
++pattern	RepoRPG: this game version changed something - off: {0} and {1} more. See the log.	RepoRPG: в этой версии игры что-то изменилось - отключено: {0} и ещё {1}. См. журнал.
++numbers	RepoRPG: this game version changed something - off: {0} and {1} more. See the log.	1
+# «mid-level» в коде выглядит как ключ, поэтому в общий список не попал; показывается в сообщениях о позднем подключении
++@RpgRuntime::OnLateJoinNote	mid-level	посреди уровня
++@RpgRuntime::OnLateJoinAnnounce	mid-level	посреди уровня
++term	mid-level	посреди уровня
++words	{0} joined {1}	1
+# Эта строка записывается в файл настроек мода (Performance / AutoPicked): в коде остаётся как есть, переводится при выводе
++pattern	{0} ({1:0} FPS in the first minute)	{0} ({1:0} FPS за первую минуту)
++words	{0} ({1:0} FPS in the first minute)	0
++pattern	Auto: picked {0} ({1:0} FPS in the first minute).	Авто: выбрано - {0} ({1:0} FPS за первую минуту).
++words	Auto: picked {0} ({1:0} FPS in the first minute).	0
