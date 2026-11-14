@@ -5760,7 +5760,7 @@ msgid "Too far to place a Watchpost"
 msgstr "Слишком далеко, чтобы поставить сторожевой пост"
 
 msgid "You need the Field Charger talent"
-msgstr "Нужен талант «Полевая зарядка»"
+msgstr "Нужен талант «Полевой зарядник»"
 
 msgid "Hold a gun to recharge it"
 msgstr "Возьмите оружие в руки, чтобы зарядить его"
@@ -13877,16 +13877,116 @@ msgid "Explosions near you hurt players and valuables 5% less"
 msgstr "Взрывы рядом с вами вредят игрокам и ценностям на 5% меньше"
 
 msgctxt "term"
+msgid "Zero Collateral"
+msgstr "Нулевой ущерб"
+
+msgctxt "term"
+msgid "explosions near you never hurt players or valuables"
+msgstr "взрывы рядом с вами никогда не вредят игрокам и ценностям"
+
+msgctxt "term"
+msgid "Sapper"
+msgstr "Сапёр"
+
+msgctxt "term"
+msgid "A better Breach Charge."
+msgstr "Пробивной заряд получше."
+
+msgctxt "term"
+msgid "Packed Charge"
+msgstr "Плотный заряд"
+
+msgctxt "term"
+msgid "Breach Charge +8% damage"
+msgstr "«Пробивной заряд»: +8% урона"
+
+msgctxt "term"
+msgid "Wide Charge"
+msgstr "Широкий заряд"
+
+msgctxt "term"
+msgid "Breach Charge reaches 8% farther"
+msgstr "«Пробивной заряд» действует на 8% дальше"
+
+msgctxt "term"
+msgid "Prepared"
+msgstr "Подготовка"
+
+msgctxt "term"
+msgid "Breach Charge cooldown 5% shorter"
+msgstr "Перезарядка «Пробивного заряда» на 5% короче"
+
+msgctxt "term"
+msgid "Long Stun"
+msgstr "Долгое оглушение"
+
+msgctxt "term"
+msgid "Breach Charge stun lasts 10% longer"
+msgstr "Оглушение от «Пробивного заряда» длится на 10% дольше"
+
+msgctxt "term"
+msgid "Demolition Crew"
+msgstr "Бригада подрывников"
+
+msgctxt "term"
+msgid "2 charges and a 1s fuse"
+msgstr "зарядов: 2, запал 1 с"
+
+msgctxt "term"
+msgid "Supply"
+msgstr "Снабжение"
+
+msgctxt "term"
+msgid "Resupply when the team's guns run low"
+msgstr "Применяйте «Пополнение», когда у команды садится оружие"
+
+msgctxt "term"
+msgid "Knows the shop by heart: cheaper gear, charged batteries, and the right item in the right hands."
+msgstr "Знает магазин наизусть: снаряжение дешевле, батареи заряжены, а нужный предмет - в нужных руках."
+
+msgctxt "term"
+msgid "Knows the shop by heart"
+msgstr "Знает магазин наизусть"
+
+msgctxt "term"
 msgid "Bulk Buyer"
 msgstr "Оптовый покупатель"
+
+msgctxt "term"
+msgid "-15% prices in the mod shop (your own Scrap purchases)."
+msgstr "-15% к ценам в магазине мода (ваши собственные покупки за лом)."
 
 msgctxt "term"
 msgid "Supply Line"
 msgstr "Линия снабжения"
 
 msgctxt "term"
+msgid "Items you hold recharge 50% faster. Hand-off key: give the item you're holding to the teammate you're looking at (6m). Weakness: -10% max stamina, -5% sprint speed."
+msgstr "Предметы у вас в руках заряжаются на 50% быстрее. Клавиша передачи: отдаёт предмет из ваших рук напарнику, на которого вы смотрите (6 м). Слабость: -10% к макс. выносливости, -5% к скорости бега."
+
+msgctxt "term"
+msgid "Items you hold recharge 50% faster. Hand-off key: give the item you're holding to the teammate you're looking at (6m)."
+msgstr "Предметы у вас в руках заряжаются на 50% быстрее. Клавиша передачи: отдаёт предмет из ваших рук напарнику, на которого вы смотрите (6 м)."
+
+msgctxt "term"
+msgid "-10% max stamina, -5% sprint speed."
+msgstr "-10% к макс. выносливости, -5% к скорости бега."
+
+msgctxt "term"
+msgid "Restore 50% of the battery of every item you and teammates within 8m are carrying. 2 charges per level (refilled when a level starts); each item can be resupplied once per level."
+msgstr "Восстанавливает 50% батареи каждого предмета, который несёте вы и напарники в пределах 8 м. Зарядов на уровень: 2 (восполняются в начале уровня); каждый предмет можно пополнить один раз за уровень."
+
+msgctxt "term"
+msgid "Spend less, keep more."
+msgstr "Тратьте меньше, сохраняйте больше."
+
+msgctxt "term"
 msgid "Coupons"
 msgstr "Купоны"
+
+msgctxt "term"
+msgid "Mod shop 2% cheaper"
+msgstr "Магазин мода дешевле на 2%"
 
 msgctxt "term"
 msgid "Scrap Sense"
@@ -13901,6 +14001,10 @@ msgid "Refund Policy"
 msgstr "Правила возврата"
 
 msgctxt "term"
+msgid "Salvaging gear gives 10% more XP"
+msgstr "Разбор снаряжения даёт на 10% больше опыта"
+
+msgctxt "term"
 msgid "Clearance"
 msgstr "Распродажа"
 
@@ -13909,32 +14013,508 @@ msgid "Supplier"
 msgstr "Поставщик"
 
 msgctxt "term"
+msgid "mod shop 10% cheaper and +5% Scrap share"
+msgstr "магазин мода дешевле на 10% и +5% к доле лома"
+
+msgctxt "term"
+msgid "Power Cells"
+msgstr "Элементы питания"
+
+msgctxt "term"
+msgid "Batteries that never quit."
+msgstr "Батареи, которые не сдаются."
+
+msgctxt "term"
+msgid "Items you hold recharge 10% faster"
+msgstr "Предметы у вас в руках заряжаются на 10% быстрее"
+
+msgctxt "term"
+msgid "Items you hold drain 6% slower"
+msgstr "Предметы у вас в руках разряжаются на 6% медленнее"
+
+msgctxt "term"
 msgid "Field Charger"
 msgstr "Полевой зарядник"
+
+msgctxt "term"
+msgid "Teammates' items within 5m recharge 10% faster"
+msgstr "Предметы напарников в пределах 5 м заряжаются на 10% быстрее"
 
 msgctxt "term"
 msgid "Infinite Cells"
 msgstr "Бесконечные элементы"
 
 msgctxt "term"
+msgid "items you hold never drop below 25% battery"
+msgstr "заряд предметов у вас в руках не падает ниже 25%"
+
+msgctxt "term"
+msgid "A better Resupply."
+msgstr "Пополнение получше."
+
+msgctxt "term"
 msgid "Topped Up"
 msgstr "Под завязку"
+
+msgctxt "term"
+msgid "Resupply restores 4% more of each battery"
+msgstr "«Пополнение» восстанавливает на 4% больше каждой батареи"
 
 msgctxt "term"
 msgid "Wide Net"
 msgstr "Широкая сеть"
 
 msgctxt "term"
+msgid "Resupply reaches 10% farther"
+msgstr "«Пополнение» действует на 10% дальше"
+
+msgctxt "term"
 msgid "Long Arm"
 msgstr "Длинная рука"
+
+msgctxt "term"
+msgid "Hand-off reaches 1m farther"
+msgstr "Передача действует на 1 м дальше"
 
 msgctxt "term"
 msgid "Rations"
 msgstr "Пайки"
 
 msgctxt "term"
+msgid "Resupply also refills 10% stamina"
+msgstr "«Пополнение» также восполняет 10% выносливости"
+
+msgctxt "term"
+msgid "Supply Drop"
+msgstr "Сброс припасов"
+
+msgctxt "term"
+msgid "+1 Resupply charge per level, restores 10% more and reaches 25% farther"
+msgstr "+1 заряд «Пополнения» на уровень, восстанавливает на 10% больше и действует на 25% дальше"
+
+msgctxt "term"
+msgid "Chaos"
+msgstr "Хаос"
+
+msgctxt "term"
+msgid "Only bet on items you can carry out quickly"
+msgstr "Ставьте только на предметы, которые сможете быстро вынести"
+
+msgctxt "term"
+msgid "Lives for the roll: a random blessing and a random curse every level, and a habit of betting the loot."
+msgstr "Живёт ради броска костей: на каждом уровне случайное благословение и случайное проклятие, плюс привычка ставить добычу на кон."
+
+msgctxt "term"
+msgid "Lives for the roll"
+msgstr "Живёт ради броска костей"
+
+msgctxt "term"
+msgid "Fortune's Wheel"
+msgstr "Колесо фортуны"
+
+msgctxt "term"
+msgid "Each level rolls a random blessing and a random curse (the curse is your weakness)."
+msgstr "На каждом уровне выпадают случайное благословение и случайное проклятие (проклятие - ваша слабость)."
+
+msgctxt "term"
+msgid "Lucky Streak"
+msgstr "Полоса удачи"
+
+msgctxt "term"
+msgid "Blessings are 10% stronger."
+msgstr "Благословения сильнее на 10%."
+
+msgctxt "term"
+msgid "Double or Nothing"
+msgstr "Вдвое или ничего"
+
+msgctxt "term"
+msgid "Mark the valuable you're holding. It hums, drawing monsters to it. Extract it within 150s (it must be marked for 20s first) for 1.5x to 3x its value: the longer and more dangerous the run, the bigger the payout. Break it and you lose Scrap; run out of time and the mark expires (the bonus is lost). Once per level."
+msgstr "Отмечает ценность у вас в руках. Она гудит и притягивает монстров. Извлеките её за 150 с (сначала она должна пробыть отмеченной 20 с) и получите от 1.5x до 3x её стоимости: чем дольше и опаснее путь, тем больше выплата. Разобьёте - потеряете лом; не успеете - метка пропадёт (бонус потерян). Раз за уровень."
+
+msgctxt "term"
+msgid "Lady Luck"
+msgstr "Госпожа Удача"
+
+msgctxt "term"
+msgid "Better blessings."
+msgstr "Благословения получше."
+
+msgctxt "term"
+msgid "Blessings 6% stronger"
+msgstr "Благословения сильнее на 6%"
+
+msgctxt "term"
+msgid "Second Roll"
+msgstr "Второй бросок"
+
+msgctxt "term"
+msgid "15% chance per level to roll a second blessing"
+msgstr "15% шанс на уровне получить второе благословение"
+
+msgctxt "term"
+msgid "+4% gear find"
+msgstr "+4% к находкам снаряжения"
+
+msgctxt "term"
+msgid "Golden Touch"
+msgstr "Золотое касание"
+
+msgctxt "term"
+msgid "Jackpot"
+msgstr "Джекпот"
+
+msgctxt "term"
+msgid "always roll two blessings"
+msgstr "всегда выпадают два благословения"
+
+msgctxt "term"
+msgid "Hedge"
+msgstr "Подстраховка"
+
+msgctxt "term"
+msgid "Softer curses."
+msgstr "Проклятия помягче."
+
+msgctxt "term"
+msgid "Lucky Charm"
+msgstr "Талисман на удачу"
+
+msgctxt "term"
+msgid "Curses 6% weaker"
+msgstr "Проклятия слабее на 6%"
+
+msgctxt "term"
+msgid "Double or Nothing losses 10% smaller"
+msgstr "Потери во «Вдвое или ничего» меньше на 10%"
+
+msgctxt "term"
+msgid "Rabbit's Foot"
+msgstr "Кроличья лапка"
+
+msgctxt "term"
+msgid "10% chance per level to roll no curse"
+msgstr "10% шанс на уровне обойтись без проклятия"
+
+msgctxt "term"
+msgid "Hedge Bets"
+msgstr "Страховочные ставки"
+
+msgctxt "term"
+msgid "Fixed Game"
+msgstr "Подстроенная игра"
+
+msgctxt "term"
+msgid "curses 30% weaker"
+msgstr "проклятия слабее на 30%"
+
+msgctxt "term"
+msgid "All In"
+msgstr "Ва-банк"
+
+msgctxt "term"
+msgid "Bigger bets."
+msgstr "Ставки покрупнее."
+
+msgctxt "term"
+msgid "Raise"
+msgstr "Повышение"
+
+msgctxt "term"
+msgid "Long Odds"
+msgstr "Долгая игра"
+
+msgctxt "term"
+msgid "Double or Nothing's timer 6% longer"
+msgstr "Таймер «Вдвое или ничего» на 6% дольше"
+
+msgctxt "term"
+msgid "A won bet also pays 5% of the value as Scrap"
+msgstr "Выигранная ставка также приносит 5% стоимости ломом"
+
+msgctxt "term"
+msgid "The marked valuable takes 8% less damage"
+msgstr "Отмеченная ценность получает на 8% меньше урона"
+
+msgctxt "term"
+msgid "Let It Ride"
+msgstr "Пусть играет"
+
+msgctxt "term"
+msgid "+1 Double or Nothing per level, and its top multiplier +0.3x"
+msgstr "+1 «Вдвое или ничего» на уровень, а его наибольший множитель +0.3x"
+
+msgctxt "term"
 msgid "Bloodbound"
 msgstr "Кровник"
+
+msgctxt "term"
+msgid "Pact only near enemies you can kill to Feed"
+msgstr "Заключайте договор только рядом с врагами, которых сможете убить ради Подпитки"
+
+msgctxt "term"
+msgid "Pays in blood: spends health to hit harder, throw farther and run faster - and drinks it back from every kill."
+msgstr "Платит кровью: тратит здоровье, чтобы бить сильнее, бросать дальше и бегать быстрее, - и выпивает его обратно с каждого убийства."
+
+msgctxt "term"
+msgid "Pays in blood"
+msgstr "Платит кровью"
+
+msgctxt "term"
+msgid "Blood Price"
+msgstr "Цена крови"
+
+msgctxt "term"
+msgid "Weapon hits deal 35% more damage and throws are 25% stronger, but each costs 2 HP (never below 1)."
+msgstr "Удары оружием наносят на 35% больше урона, а броски на 25% сильнее, но каждый стоит 2 ОЗ (не ниже 1)."
+
+msgctxt "term"
+msgid "Each kill near you restores 10 HP. Weakness: -20% max health."
+msgstr "Каждое убийство рядом с вами восстанавливает 10 ОЗ. Слабость: -20% к макс. здоровью."
+
+msgctxt "term"
+msgid "Each kill near you restores 10 HP."
+msgstr "Каждое убийство рядом с вами восстанавливает 10 ОЗ."
+
+msgctxt "term"
+msgid "-20% max health."
+msgstr "-20% к макс. здоровью."
+
+msgctxt "term"
+msgid "Blood Pact"
+msgstr "Кровавый договор"
+
+msgctxt "term"
+msgid "+40% weapon damage, +25% throw strength and +20% speed for 8s, draining 4 HP/s (never below 1)."
+msgstr "+40% к урону оружия, +25% к силе броска и +20% к скорости на 8 с, отнимая 4 ОЗ/с (не ниже 1)."
+
+msgctxt "term"
+msgid "Hemomancy"
+msgstr "Гемомантия"
+
+msgctxt "term"
+msgid "Make every drop count."
+msgstr "Пусть каждая капля идёт в дело."
+
+msgctxt "term"
+msgid "Sharpened"
+msgstr "Заточка"
+
+msgctxt "term"
+msgid "Blood Price: hits +5% damage"
+msgstr "«Цена крови»: удары +5% урона"
+
+msgctxt "term"
+msgid "Heavy Hand"
+msgstr "Тяжёлая рука"
+
+msgctxt "term"
+msgid "Blood Price: throws +6% stronger"
+msgstr "«Цена крови»: броски сильнее на 6%"
+
+msgctxt "term"
+msgid "Efficient Veins"
+msgstr "Экономные вены"
+
+msgctxt "term"
+msgid "Blood Price costs 0.3 HP less"
+msgstr "«Цена крови» стоит на 0.3 ОЗ меньше"
+
+msgctxt "term"
+msgid "Below 40% health, hits +6% damage"
+msgstr "При здоровье ниже 40%: удары +6% урона"
+
+msgctxt "term"
+msgid "Crimson Tide"
+msgstr "Багровый прилив"
+
+msgctxt "term"
+msgid "Blood Price hits +30%, throws +20%, and costs 1 HP less"
+msgstr "«Цена крови»: удары +30%, броски +20%, стоит на 1 ОЗ меньше"
+
+msgctxt "term"
+msgid "Transfusion"
+msgstr "Переливание"
+
+msgctxt "term"
+msgid "Drink deeper."
+msgstr "Пейте глубже."
+
+msgctxt "term"
+msgid "Thirst"
+msgstr "Жажда"
+
+msgctxt "term"
+msgid "Kills restore 2 more HP"
+msgstr "Убийства восстанавливают ещё 2 ОЗ"
+
+msgctxt "term"
+msgid "Weapon hits restore 0.5 HP"
+msgstr "Удары оружием восстанавливают 0.5 ОЗ"
+
+msgctxt "term"
+msgid "Hunter's Range"
+msgstr "Охотничья дистанция"
+
+msgctxt "term"
+msgid "Feed works from 4m farther"
+msgstr "«Подпитка» действует на 4 м дальше"
+
+msgctxt "term"
+msgid "Second Helping"
+msgstr "Добавка"
+
+msgctxt "term"
+msgid "Kills take 2s off Blood Pact's cooldown"
+msgstr "Убийства сокращают перезарядку «Кровавого договора» на 2 с"
+
+msgctxt "term"
+msgid "kills restore 25 more HP and give +15% speed for 5s"
+msgstr "убийства восстанавливают ещё 25 ОЗ и дают +15% к скорости на 5 с"
+
+msgctxt "term"
+msgid "Pact"
+msgstr "Договор"
+
+msgctxt "term"
+msgid "A longer, stronger Blood Pact."
+msgstr "Кровавый договор - дольше и сильнее."
+
+msgctxt "term"
+msgid "Deeper Pact"
+msgstr "Глубокий договор"
+
+msgctxt "term"
+msgid "Blood Pact 6% stronger"
+msgstr "«Кровавый договор» сильнее на 6%"
+
+msgctxt "term"
+msgid "Prolong"
+msgstr "Продление"
+
+msgctxt "term"
+msgid "Blood Pact lasts 8% longer"
+msgstr "«Кровавый договор» действует на 8% дольше"
+
+msgctxt "term"
+msgid "Clotting"
+msgstr "Свёртывание"
+
+msgctxt "term"
+msgid "Blood Pact drains 0.5 HP/s less"
+msgstr "«Кровавый договор» отнимает на 0.5 ОЗ/с меньше"
+
+msgctxt "term"
+msgid "Quick Oath"
+msgstr "Быстрая клятва"
+
+msgctxt "term"
+msgid "Blood Pact cooldown 5% shorter"
+msgstr "Перезарядка «Кровавого договора» на 5% короче"
+
+msgctxt "term"
+msgid "Eternal Pact"
+msgstr "Вечный договор"
+
+msgctxt "term"
+msgid "Blood Pact 30% stronger and lasts 30% longer"
+msgstr "«Кровавый договор» сильнее на 30% и действует на 30% дольше"
+
+msgctxt "term"
+msgid "Instigation"
+msgstr "Подстрекательство"
+
+msgctxt "term"
+msgid "Provoke when two monsters are near each other, away from the team"
+msgstr "Провоцируйте, когда два монстра рядом друг с другом и вдали от команды"
+
+msgctxt "term"
+msgid "Starts fights it never joins. Turns monsters on each other and makes their grudges last."
+msgstr "Начинает драки, в которые не лезет. Стравливает монстров и не даёт их обидам остыть."
+
+msgctxt "term"
+msgid "Starts fights it never joins"
+msgstr "Начинает драки, в которые не лезет"
+
+msgctxt "term"
+msgid "Bad Blood"
+msgstr "Вражда"
+
+msgctxt "term"
+msgid "While you're alive in the level, a monster hit by another monster's attack fights back for 5s. At most 2 of these fights at once."
+msgstr "Пока вы живы на уровне, монстр, попавший под атаку другого монстра, 5 с даёт сдачи. Не больше 2 таких драк одновременно."
+
+msgctxt "term"
+msgid "Ringside"
+msgstr "У ринга"
+
+msgctxt "term"
+msgid "Monsters fighting each other within 10m of you deal 25% more damage to each other. Weakness: every fight is loud: monsters within 12m come to see it."
+msgstr "Монстры, дерущиеся друг с другом в пределах 10 м от вас, наносят друг другу на 25% больше урона. Слабость: каждая драка шумная: монстры в пределах 12 м приходят на неё посмотреть."
+
+msgctxt "term"
+msgid "Monsters fighting each other within 10m of you deal 25% more damage to each other."
+msgstr "Монстры, дерущиеся друг с другом в пределах 10 м от вас, наносят друг другу на 25% больше урона."
+
+msgctxt "term"
+msgid "every fight is loud: monsters within 12m come to see it."
+msgstr "каждая драка шумная: монстры в пределах 12 м приходят на неё посмотреть."
+
+msgctxt "term"
+msgid "Mark the monster you look at (within 20m): the nearest other monster within 15m of it attacks it for 8s. Bosses can be attacked, but never attack."
+msgstr "Отмечает монстра, на которого вы смотрите (в пределах 20 м): ближайший другой монстр в пределах 15 м от него атакует его 8 с. На боссов можно натравить, но сами они не нападают."
+
+msgctxt "term"
+msgid "Grudges that last."
+msgstr "Обиды, которые не проходят."
+
+msgctxt "term"
+msgid "Grudge"
+msgstr "Обида"
+
+msgctxt "term"
+msgid "Bad Blood fights last 1s longer"
+msgstr "Драки «Вражды» длятся на 1 с дольше"
+
+msgctxt "term"
+msgid "Wider Ring"
+msgstr "Ринг пошире"
+
+msgctxt "term"
+msgid "Ringside reaches 3m farther"
+msgstr "«У ринга» действует на 3 м дальше"
+
+msgctxt "term"
+msgid "Escalation"
+msgstr "Эскалация"
+
+msgctxt "term"
+msgid "Each hit in a fight deals 5% more than the one before (up to 3 stacks)"
+msgstr "Каждый удар в драке наносит на 5% больше предыдущего (до 3 зарядов)"
+
+msgctxt "term"
+msgid "Hothead"
+msgstr "Горячая голова"
+
+msgctxt "term"
+msgid "1 more Bad Blood fight can run at once"
+msgstr "Одновременно может идти на 1 драку «Вражды» больше"
+
+msgctxt "term"
+msgid "Feud"
+msgstr "Распря"
+
+msgctxt "term"
+msgid "bosses can attack too, in Provoke and Bad Blood"
+msgstr "боссы тоже могут нападать - в «Провокации» и во «Вражде»"
+
+msgctxt "term"
+msgid "Provocateur"
+msgstr "Провокатор"
+
+msgctxt "term"
+msgid "Better marks, bigger fights."
+msgstr "Метки лучше, драки крупнее."
 
 msgctxt "term"
 msgid "Spotter"
@@ -19555,6 +20135,258 @@ msgstr "Ваши бонусы к взрывам действуют на {0} м �
 msgctxt "shape"
 msgid "Explosions near you hurt players and valuables {0}% less"
 msgstr "Взрывы рядом с вами вредят игрокам и ценностям на {0}% меньше"
+
+msgctxt "shape"
+msgid "Breach Charge +{0}% damage"
+msgstr "«Пробивной заряд»: +{0}% урона"
+
+msgctxt "shape"
+msgid "Breach Charge reaches {0}% farther"
+msgstr "«Пробивной заряд» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Breach Charge cooldown {0}% shorter"
+msgstr "Перезарядка «Пробивного заряда» на {0}% короче"
+
+msgctxt "shape"
+msgid "Breach Charge stun lasts {0}% longer"
+msgstr "Оглушение от «Пробивного заряда» длится на {0}% дольше"
+
+msgctxt "shape"
+msgid "{0} charges and a {1}s fuse"
+msgstr "зарядов: {0}, запал {1} с"
+
+msgctxt "shape"
+msgid "-{0}% prices in the mod shop (your own Scrap purchases)."
+msgstr "-{0}% к ценам в магазине мода (ваши собственные покупки за лом)."
+
+msgctxt "shape"
+msgid "Items you hold recharge {0}% faster. Hand-off key: give the item you're holding to the teammate you're looking at ({1}m). Weakness: -{2}% max stamina, -{3}% sprint speed."
+msgstr "Предметы у вас в руках заряжаются на {0}% быстрее. Клавиша передачи: отдаёт предмет из ваших рук напарнику, на которого вы смотрите ({1} м). Слабость: -{2}% к макс. выносливости, -{3}% к скорости бега."
+
+msgctxt "shape"
+msgid "Items you hold recharge {0}% faster. Hand-off key: give the item you're holding to the teammate you're looking at ({1}m)."
+msgstr "Предметы у вас в руках заряжаются на {0}% быстрее. Клавиша передачи: отдаёт предмет из ваших рук напарнику, на которого вы смотрите ({1} м)."
+
+msgctxt "shape"
+msgid "-{0}% max stamina, -{1}% sprint speed."
+msgstr "-{0}% к макс. выносливости, -{1}% к скорости бега."
+
+msgctxt "shape"
+msgid "Restore {0}% of the battery of every item you and teammates within {1}m are carrying. {2} charges per level (refilled when a level starts); each item can be resupplied once per level."
+msgstr "Восстанавливает {0}% батареи каждого предмета, который несёте вы и напарники в пределах {1} м. Зарядов на уровень: {2} (восполняются в начале уровня); каждый предмет можно пополнить один раз за уровень."
+
+msgctxt "shape"
+msgid "Mod shop {0}% cheaper"
+msgstr "Магазин мода дешевле на {0}%"
+
+msgctxt "shape"
+msgid "Salvaging gear gives {0}% more XP"
+msgstr "Разбор снаряжения даёт на {0}% больше опыта"
+
+msgctxt "shape"
+msgid "mod shop {0}% cheaper and +{1}% Scrap share"
+msgstr "магазин мода дешевле на {0}% и +{1}% к доле лома"
+
+msgctxt "shape"
+msgid "Items you hold recharge {0}% faster"
+msgstr "Предметы у вас в руках заряжаются на {0}% быстрее"
+
+msgctxt "shape"
+msgid "Items you hold drain {0}% slower"
+msgstr "Предметы у вас в руках разряжаются на {0}% медленнее"
+
+msgctxt "shape"
+msgid "Teammates' items within {0}m recharge {1}% faster"
+msgstr "Предметы напарников в пределах {0} м заряжаются на {1}% быстрее"
+
+msgctxt "shape"
+msgid "items you hold never drop below {0}% battery"
+msgstr "заряд предметов у вас в руках не падает ниже {0}%"
+
+msgctxt "shape"
+msgid "Resupply restores {0}% more of each battery"
+msgstr "«Пополнение» восстанавливает на {0}% больше каждой батареи"
+
+msgctxt "shape"
+msgid "Resupply reaches {0}% farther"
+msgstr "«Пополнение» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Hand-off reaches {0}m farther"
+msgstr "Передача действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Resupply also refills {0}% stamina"
+msgstr "«Пополнение» также восполняет {0}% выносливости"
+
+msgctxt "shape"
+msgid "+{0} Resupply charge per level, restores {1}% more and reaches {2}% farther"
+msgstr "+{0} заряд «Пополнения» на уровень, восстанавливает на {1}% больше и действует на {2}% дальше"
+
+msgctxt "shape"
+msgid "Blessings are {0}% stronger."
+msgstr "Благословения сильнее на {0}%."
+
+msgctxt "shape"
+msgid "Mark the valuable you're holding. It hums, drawing monsters to it. Extract it within {0}s (it must be marked for {1}s first) for {2}x to {3}x its value: the longer and more dangerous the run, the bigger the payout. Break it and you lose Scrap; run out of time and the mark expires (the bonus is lost). Once per level."
+msgstr "Отмечает ценность у вас в руках. Она гудит и притягивает монстров. Извлеките её за {0} с (сначала она должна пробыть отмеченной {1} с) и получите от {2}x до {3}x её стоимости: чем дольше и опаснее путь, тем больше выплата. Разобьёте - потеряете лом; не успеете - метка пропадёт (бонус потерян). Раз за уровень."
+
+msgctxt "shape"
+msgid "Blessings {0}% stronger"
+msgstr "Благословения сильнее на {0}%"
+
+msgctxt "shape"
+msgid "{0}% chance per level to roll a second blessing"
+msgstr "{0}% шанс на уровне получить второе благословение"
+
+msgctxt "shape"
+msgid "+{0}% gear find"
+msgstr "+{0}% к находкам снаряжения"
+
+msgctxt "shape"
+msgid "Curses {0}% weaker"
+msgstr "Проклятия слабее на {0}%"
+
+msgctxt "shape"
+msgid "Double or Nothing losses {0}% smaller"
+msgstr "Потери во «Вдвое или ничего» меньше на {0}%"
+
+msgctxt "shape"
+msgid "{0}% chance per level to roll no curse"
+msgstr "{0}% шанс на уровне обойтись без проклятия"
+
+msgctxt "shape"
+msgid "curses {0}% weaker"
+msgstr "проклятия слабее на {0}%"
+
+msgctxt "shape"
+msgid "Double or Nothing's timer {0}% longer"
+msgstr "Таймер «Вдвое или ничего» на {0}% дольше"
+
+msgctxt "shape"
+msgid "A won bet also pays {0}% of the value as Scrap"
+msgstr "Выигранная ставка также приносит {0}% стоимости ломом"
+
+msgctxt "shape"
+msgid "The marked valuable takes {0}% less damage"
+msgstr "Отмеченная ценность получает на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "+{0} Double or Nothing per level, and its top multiplier +{1}x"
+msgstr "+{0} «Вдвое или ничего» на уровень, а его наибольший множитель +{1}x"
+
+msgctxt "shape"
+msgid "Weapon hits deal {0}% more damage and throws are {1}% stronger, but each costs {2} HP (never below {3})."
+msgstr "Удары оружием наносят на {0}% больше урона, а броски на {1}% сильнее, но каждый стоит {2} ОЗ (не ниже {3})."
+
+msgctxt "shape"
+msgid "Each kill near you restores {0} HP. Weakness: -{1}% max health."
+msgstr "Каждое убийство рядом с вами восстанавливает {0} ОЗ. Слабость: -{1}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "Each kill near you restores {0} HP."
+msgstr "Каждое убийство рядом с вами восстанавливает {0} ОЗ."
+
+msgctxt "shape"
+msgid "+{0}% weapon damage, +{1}% throw strength and +{2}% speed for {3}s, draining {4} HP/s (never below {5})."
+msgstr "+{0}% к урону оружия, +{1}% к силе броска и +{2}% к скорости на {3} с, отнимая {4} ОЗ/с (не ниже {5})."
+
+msgctxt "shape"
+msgid "Blood Price: hits +{0}% damage"
+msgstr "«Цена крови»: удары +{0}% урона"
+
+msgctxt "shape"
+msgid "Blood Price: throws +{0}% stronger"
+msgstr "«Цена крови»: броски сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Blood Price costs {0} HP less"
+msgstr "«Цена крови» стоит на {0} ОЗ меньше"
+
+msgctxt "shape"
+msgid "Below {0}% health, hits +{1}% damage"
+msgstr "При здоровье ниже {0}%: удары +{1}% урона"
+
+msgctxt "shape"
+msgid "Blood Price hits +{0}%, throws +{1}%, and costs {2} HP less"
+msgstr "«Цена крови»: удары +{0}%, броски +{1}%, стоит на {2} ОЗ меньше"
+
+msgctxt "shape"
+msgid "Kills restore {0} more HP"
+msgstr "Убийства восстанавливают ещё {0} ОЗ"
+
+msgctxt "shape"
+msgid "Weapon hits restore {0} HP"
+msgstr "Удары оружием восстанавливают {0} ОЗ"
+
+msgctxt "shape"
+msgid "Feed works from {0}m farther"
+msgstr "«Подпитка» действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Kills take {0}s off Blood Pact's cooldown"
+msgstr "Убийства сокращают перезарядку «Кровавого договора» на {0} с"
+
+msgctxt "shape"
+msgid "kills restore {0} more HP and give +{1}% speed for {2}s"
+msgstr "убийства восстанавливают ещё {0} ОЗ и дают +{1}% к скорости на {2} с"
+
+msgctxt "shape"
+msgid "Blood Pact {0}% stronger"
+msgstr "«Кровавый договор» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Blood Pact lasts {0}% longer"
+msgstr "«Кровавый договор» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Blood Pact drains {0} HP/s less"
+msgstr "«Кровавый договор» отнимает на {0} ОЗ/с меньше"
+
+msgctxt "shape"
+msgid "Blood Pact cooldown {0}% shorter"
+msgstr "Перезарядка «Кровавого договора» на {0}% короче"
+
+msgctxt "shape"
+msgid "Blood Pact {0}% stronger and lasts {1}% longer"
+msgstr "«Кровавый договор» сильнее на {0}% и действует на {1}% дольше"
+
+msgctxt "shape"
+msgid "While you're alive in the level, a monster hit by another monster's attack fights back for {0}s. At most {1} of these fights at once."
+msgstr "Пока вы живы на уровне, монстр, попавший под атаку другого монстра, {0} с даёт сдачи. Не больше {1} таких драк одновременно."
+
+msgctxt "shape"
+msgid "Monsters fighting each other within {0}m of you deal {1}% more damage to each other. Weakness: every fight is loud: monsters within {2}m come to see it."
+msgstr "Монстры, дерущиеся друг с другом в пределах {0} м от вас, наносят друг другу на {1}% больше урона. Слабость: каждая драка шумная: монстры в пределах {2} м приходят на неё посмотреть."
+
+msgctxt "shape"
+msgid "Monsters fighting each other within {0}m of you deal {1}% more damage to each other."
+msgstr "Монстры, дерущиеся друг с другом в пределах {0} м от вас, наносят друг другу на {1}% больше урона."
+
+msgctxt "shape"
+msgid "every fight is loud: monsters within {0}m come to see it."
+msgstr "каждая драка шумная: монстры в пределах {0} м приходят на неё посмотреть."
+
+msgctxt "shape"
+msgid "Mark the monster you look at (within {0}m): the nearest other monster within {1}m of it attacks it for {2}s. Bosses can be attacked, but never attack."
+msgstr "Отмечает монстра, на которого вы смотрите (в пределах {0} м): ближайший другой монстр в пределах {1} м от него атакует его {2} с. На боссов можно натравить, но сами они не нападают."
+
+msgctxt "shape"
+msgid "Bad Blood fights last {0}s longer"
+msgstr "Драки «Вражды» длятся на {0} с дольше"
+
+msgctxt "shape"
+msgid "Ringside reaches {0}m farther"
+msgstr "«У ринга» действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Each hit in a fight deals {0}% more than the one before (up to {1} stacks)"
+msgstr "Каждый удар в драке наносит на {0}% больше предыдущего (до {1} зарядов)"
+
+msgctxt "shape"
+msgid "{0} more Bad Blood fight can run at once"
+msgstr "Одновременно может идти на {0} драку «Вражды» больше"
 
 msgctxt "shape"
 msgid "Thrown items stun monsters they hit for {0} s."
