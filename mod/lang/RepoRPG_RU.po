@@ -51839,7 +51839,7 @@ msgstr "Слоты контрактов"
 
 msgctxt "data:guide"
 msgid "Rival contracts"
-msgstr "Контракты-состязания"
+msgstr "Контракты соперничества"
 
 msgctxt "data:guide"
 msgid "Gear chance per extraction (%)"
@@ -52035,7 +52035,7 @@ msgstr "1  ВЫБЕРИТЕ КЛАСС"
 
 msgctxt "data:guide"
 msgid "Open the Class tab, choose a class and press Play as. Each class has two passives, one active ability and a weakness.\n\nOnly one person can play each class, so agree on picks with your team."
-msgstr "Откройте вкладку «Класс», выберите класс и нажмите «Играть за». У каждого класса два пассивных умения, одна активная способность и слабость.\n\nЗа каждый класс может играть только один человек, так что договоритесь о выборе с командой."
+msgstr "Откройте вкладку «Класс», выберите класс и нажмите «Играть за». У каждого класса две пассивки, одна активная способность и слабость.\n\nЗа каждый класс может играть только один человек, так что договоритесь о выборе с командой."
 
 msgctxt "data:guide"
 msgid "2  LEVEL UP"
@@ -52111,11 +52111,11 @@ msgstr "Классы"
 
 msgctxt "data:guide"
 msgid "Your class is your role for the run: {count:classes} classes, each with two passives, one active ability and a weakness."
-msgstr "Класс - ваша роль на забег: классов - {count:classes}, у каждого два пассивных умения, одна активная способность и слабость."
+msgstr "Класс - ваша роль на забег: классов - {count:classes}, у каждого две пассивки, одна активная способность и слабость."
 
 msgctxt "data:guide"
 msgid "class classes role pick choose play as job character ability active passive weakness switch compare filter"
-msgstr "class classes role pick choose play as job character ability active passive weakness switch compare filter класс классы роль выбрать выбор играть за персонаж способность активная пассивное умение слабость сменить сравнить фильтр"
+msgstr "class classes role pick choose play as job character ability active passive weakness switch compare filter класс классы роль выбрать выбор играть за персонаж способность активная пассивка пассивное умение слабость сменить сравнить фильтр"
 
 msgctxt "data:guide"
 msgid "Pick a class in the truck or the shop between levels, or in the pre-game lobby: select it, then press Play as."
@@ -52383,7 +52383,7 @@ msgstr "talents talent tree trees skills skill points ranks capstone build spec 
 
 msgctxt "data:guide"
 msgid "The Class tab shows a class on one page: its passives, active, synergies and buttons on the left, every talent tree (every tier) on the right, and the full details of whatever you point at or select in the strip under the trees."
-msgstr "Вкладка «Класс» показывает класс на одной странице: слева его пассивные умения, активная способность, синергии и кнопки, справа все древа талантов (все ярусы), а в полосе под древами - все подробности о том, на что вы навели курсор или что выбрали."
+msgstr "Вкладка «Класс» показывает класс на одной странице: слева его пассивки, активная способность, синергии и кнопки, справа все древа талантов (все ярусы), а в полосе под древами - все подробности о том, на что вы навели курсор или что выбрали."
 
 msgctxt "data:guide"
 msgid "Select a talent to add a rank; {key:secondary} takes one back."
@@ -53206,44 +53206,1292 @@ msgid "The Market"
 msgstr "Рынок"
 
 msgctxt "data:guide"
+msgid "Valuables are worth more or less by category, and prices move with what the team extracts. The shop and contracts follow the market too."
+msgstr "Ценности стоят больше или меньше в зависимости от категории, а цены меняются вслед за тем, что извлекает команда. Магазин и контракты тоже следуют за рынком."
+
+msgctxt "data:guide"
+msgid "market economy price category art antiques electronics tech fragile heavy curiosities junk event boom crash shortage sale demand request"
+msgstr "market economy price category art antiques electronics tech fragile heavy curiosities junk event boom crash shortage sale demand request рынок экономика цена цены категория искусство антиквариат электроника техника хрупкое тяжёлое диковины хлам событие бум обвал дефицит распродажа спрос заказ"
+
+msgctxt "data:guide"
+msgid "How prices move"
+msgstr "Как меняются цены"
+
+msgctxt "data:guide"
+msgid "Every valuable is in one of eight categories: Art, Antiques, Electronics, Tech, Fragile, Heavy, Curiosities, Junk."
+msgstr "Каждая ценность относится к одной из восьми категорий: Искусство, Антиквариат, Электроника, Техника, Хрупкое, Тяжёлое, Диковины, Хлам."
+
+msgctxt "data:guide"
+msgid "What the team extracts gets cheaper (more for valuable items). Categories nobody brings back get dearer. Everything drifts back toward normal each level."
+msgstr "То, что команда извлекает, дешевеет (сильнее - за дорогие предметы). Категории, которые никто не приносит, дорожают. С каждым уровнем всё понемногу возвращается к норме."
+
+msgctxt "data:guide"
+msgid "Prices stay between x{cfg:Market/MinMultiplier} and x{cfg:Market/MaxMultiplier}, and a typical map is worth about what it would be without the market."
+msgstr "Цены держатся между x{cfg:Market/MinMultiplier} и x{cfg:Market/MaxMultiplier}, а обычная карта стоит примерно столько же, сколько стоила бы без рынка."
+
+msgctxt "data:guide"
+msgid "Prices change between levels only, so a level's haul goal never moves while you play it."
+msgstr "Цены меняются только между уровнями, так что цель по добыче не сдвигается, пока вы проходите уровень."
+
+msgctxt "data:guide"
+msgid "The Appraiser's scan shows each valuable's category and price change (\"Art +12%\")."
+msgstr "Сканирование Оценщика показывает категорию каждой ценности и изменение её цены («Искусство +12%»)."
+
+msgctxt "data:guide"
+msgid "The shop and requests"
+msgstr "Магазин и заказы"
+
+msgctxt "data:guide"
+msgid "Each shop visit shows a market report: the biggest movers, any event, and what's in demand. Shop tab > Market lists every category."
+msgstr "При каждом посещении магазина показывается сводка рынка: самые сильные изменения, событие (если есть) и что пользуется спросом. Вкладка «Магазин» > «Рынок» перечисляет все категории."
+
+msgctxt "data:guide"
+msgid "Shop items the team buys a lot cost more (up to +30%); items nobody buys go on sale (up to -25%). Both drift back to normal."
+msgstr "Товары магазина, которые команда часто покупает, дорожают (до +30%); те, что никто не покупает, идут со скидкой (до -25%). И то и другое постепенно возвращается к норме."
+
+msgctxt "data:guide"
+msgid "Each level a contract giver wants one category: extract 3 for a Scrap bonus for everyone (more when the market wants it badly)."
+msgstr "На каждом уровне заказчик просит одну категорию: извлеките 3 предмета ради бонуса лома для всех (он больше, когда рынку эта категория очень нужна)."
+
+msgctxt "data:guide"
+msgid "Market events (announced a level ahead)"
+msgstr "События рынка (объявляются за уровень)"
+
+msgctxt "data:guide"
+msgid "Boom"
+msgstr "Бум"
+
+msgctxt "data:guide"
+msgid "One category is worth 50% more (2 levels)."
+msgstr "Одна категория стоит на 50% дороже (2 уровня)."
+
+msgctxt "data:guide"
+msgid "Crash"
+msgstr "Обвал"
+
+msgctxt "data:guide"
+msgid "One category is worth 40% less (2 levels)."
+msgstr "Одна категория стоит на 40% дешевле (2 уровня)."
+
+msgctxt "data:guide"
+msgid "Shortage"
+msgstr "Дефицит"
+
+msgctxt "data:guide"
+msgid "One shop section has half its stock, at 25% more (2 levels)."
+msgstr "В одном разделе магазина вдвое меньше товаров, и они на 25% дороже (2 уровня)."
+
+msgctxt "data:guide"
+msgid "Collector Frenzy"
+msgstr "Ажиотаж коллекционеров"
+
+msgctxt "data:guide"
+msgid "One valuable type is worth double, and a collector wants it (1 level)."
+msgstr "Один вид ценностей стоит вдвое дороже, и его ищет коллекционер (1 уровень)."
+
+msgctxt "data:guide"
+msgid "Recession"
+msgstr "Спад"
+
+msgctxt "data:guide"
+msgid "Every valuable is worth 10% less; contracts pay 25% more (2 levels)."
+msgstr "Все ценности стоят на 10% дешевле; контракты платят на 25% больше (2 уровня)."
+
+msgctxt "data:guide"
+msgid "Clearance Sale"
+msgstr "Распродажа"
+
+msgctxt "data:guide"
+msgid "One shop section is 30% off (1 level)."
+msgstr "Один раздел магазина со скидкой 30% (1 уровень)."
+
+msgctxt "data:guide"
+msgid "Fragile Premium"
+msgstr "Наценка за хрупкость"
+
+msgctxt "data:guide"
+msgid "Fragile goods +40%, everything else -5% (2 levels)."
+msgstr "Хрупкие ценности +40%, всё остальное -5% (2 уровня)."
+
+msgctxt "data:guide"
+msgid "Scrap Drive"
+msgstr "Сбор утиля"
+
+msgctxt "data:guide"
+msgid "Junk is worth double (1 level)."
+msgstr "Хлам стоит вдвое дороже (1 уровень)."
+
+msgctxt "data:guide"
+msgid "Tech Rush"
+msgstr "Технобум"
+
+msgctxt "data:guide"
+msgid "Electronics and Tech +30%, Art and Antiques -15% (2 levels)."
+msgstr "Электроника и Техника +30%, Искусство и Антиквариат -15% (2 уровня)."
+
+msgctxt "data:guide"
+msgid "Stimulus"
+msgstr "Стимул"
+
+msgctxt "data:guide"
+msgid "Every price resets to normal, and the haul pays 10% more Scrap (1 level)."
+msgstr "Все цены возвращаются к норме, а добыча приносит на 10% больше лома (1 уровень)."
+
+msgctxt "data:guide"
+msgid "Research"
+msgstr "Исследования"
+
+msgctxt "data:guide"
+msgid "Earn Research Data in runs and spend it on projects that unlock new mechanics for good."
+msgstr "Зарабатывайте данные исследований в забегах и тратьте их на проекты, которые навсегда открывают новые механики."
+
+msgctxt "data:guide"
+msgid "research data sample lab project tree unlock logistics economy arsenal exploration crew boss core"
+msgstr "research data sample lab project tree unlock logistics economy arsenal exploration crew boss core исследования исследование данные образец лаборатория проект древо разблокировка логистика экономика арсенал разведка команда босс ядро"
+
+msgctxt "data:guide"
+msgid "How it works"
+msgstr "Как это работает"
+
+msgctxt "data:guide"
+msgid "Research Data comes from: research samples (15 each; every level has 1 to 3, deep in the map, more deeper in the run and on harder difficulties: a valuable with a teal light and a thin teal beam, labelled within 10 m, 25 m with the Sample Scanner or as an Appraiser; extract it like any valuable and everyone in the level gets the Data), boss kills (60; milestone boss 80; finale 150), reaching a milestone (25), about 1 in 4 completed contracts (5-15), The Archivist's contracts, and a Scavenger's finds (1 in 10 is a sample). Difficulty scales it: Relaxed x0.5, Easy x0.75, Normal x1, Hard x1.35, Brutal x1.75."
+msgstr "Данные исследований дают: образцы для исследований (по 15; на каждом уровне их от 1 до 3, в глубине карты, больше - глубже в забеге и на высоких сложностях: ценность с бирюзовым огоньком и тонким бирюзовым лучом, подписана в пределах 10 м, в пределах 25 м - со «Сканером образцов» или Оценщику; извлеките её как любую ценность, и данные получат все на уровне), убийства боссов (60; этапный босс - 80; финал - 150), достижение этапа (25), примерно 1 из 4 выполненных контрактов (5-15), контракты Архивариуса и находки Старьёвщика (1 из 10 - образец). Сложность меняет их количество: «Расслабленно» x0.5, «Легко» x0.75, «Нормально» x1, «Сложно» x1.35, «Жестоко» x1.75."
+
+msgctxt "data:guide"
+msgid "Every gain pops up (\"+15 Research Data\"), and at the end of each level a line sums up the level's Data and any samples left behind."
+msgstr "О каждом получении сообщает всплывающая строка («+15 данных исследований»), а в конце каждого уровня строка подводит итог: данные за уровень и оставленные образцы."
+
+msgctxt "data:guide"
+msgid "Spend it on the Research tab. A started project finishes after a number of levels cleared, in any run; one runs at a time (two with Parallel Lab, three with Lab Network). Cancelling gives half back."
+msgstr "Тратьте их на вкладке «Исследования». Начатый проект завершается через несколько пройденных уровней, в любом забеге; одновременно идёт один проект (два - с «Параллельной лабораторией», три - с «Сетью лабораторий»). Отмена возвращает половину."
+
+msgctxt "data:guide"
+msgid "Research is kept with your account: a run reset never touches it."
+msgstr "Исследования хранятся в вашем аккаунте: сброс забега их никогда не затрагивает."
+
+msgctxt "data:guide"
+msgid "Lobby-wide unlocks use the host's research (or anyone's, if the host chose that); personal ones use your own."
+msgstr "Разблокировки на всё лобби берутся из исследований хоста (или любого игрока, если так выбрал хост); личные - из ваших собственных."
+
+msgctxt "data:guide"
+msgid "Personal tools (Recall Beacon, Twin Pads, Insulated Cart, Survey Drone, Lab Network's borrow) are buttons on the Research tab during a level. Shop unlocks (Pawn Counter, Futures, Gun Bench, Fusion Forge, Gear Exchange) are in the shop's Research section."
+msgstr "Личные инструменты («Маяк отзыва», «Парные площадки», «Изолированная тележка», «Дрон-разведчик», заимствование «Сети лабораторий») - это кнопки на вкладке «Исследования» во время уровня. Разблокировки магазина («Ломбард», «Фьючерсы», «Оружейный верстак», «Кузница слияния», «Обмен снаряжением») находятся в разделе «Исследования» магазина."
+
+msgctxt "data:guide"
+msgid "Logistics"
+msgstr "Логистика"
+
+msgctxt "data:guide"
+msgid "T1 Cart Winch"
+msgstr "T1 Лебёдка для тележки"
+
+msgctxt "data:guide"
+msgid "Look at a cart 3-10 m away and hold Interact (E) to reel it toward you (slowly; it stops if it hits something). Personal."
+msgstr "Посмотрите на тележку в 3-10 м от вас и удерживайте «Взаимодействие» (E), чтобы подтянуть её к себе (медленно; она останавливается, если во что-то упирается). Личное."
+
+msgctxt "data:guide"
+msgid "T2 Extraction Drill"
+msgstr "T2 Бур извлечения"
+
+msgctxt "data:guide"
+msgid "When every living player stands in an extraction zone, its countdown runs twice as fast. Lobby-wide."
+msgstr "Когда все живые игроки стоят в зоне извлечения, её отсчёт идёт вдвое быстрее. На всё лобби."
+
+msgctxt "data:guide"
+msgid "T2 Recall Beacon"
+msgstr "T2 Маяк отзыва"
+
+msgctxt "data:guide"
+msgid "Once per level, call the nearest empty cart to where you stand (Research tab, in a level). Personal."
+msgstr "Раз за уровень: вызовите ближайшую пустую тележку туда, где стоите (вкладка «Исследования», на уровне). Личное."
+
+msgctxt "data:guide"
+msgid "T3 Trailer Hitch"
+msgstr "T3 Сцепка"
+
+msgctxt "data:guide"
+msgid "Push a cart into another to hitch them: pushing one tows the other. Yank them apart to unhitch. Lobby-wide."
+msgstr "Толкните одну тележку в другую, чтобы сцепить их: толкаете одну - вторая едет следом. Растащите их, чтобы расцепить. На всё лобби."
+
+msgctxt "data:guide"
+msgid "T3 Twin Pads"
+msgstr "T3 Парные площадки"
+
+msgctxt "data:guide"
+msgid "The Courier can put a second Drop Pad anywhere (Research tab, in a level). It counts like the one in the truck. Personal."
+msgstr "Курьер может поставить вторую площадку доставки где угодно (вкладка «Исследования», на уровне). Она считается так же, как площадка в грузовике. Личное."
+
+msgctxt "data:guide"
+msgid "T4 Insulated Cart"
+msgstr "T4 Изолированная тележка"
+
+msgctxt "data:guide"
+msgid "Once per level, mark the nearest cart (Research tab): its valuables lose no value from bumps while it stands still. Personal."
+msgstr "Раз за уровень: отметьте ближайшую тележку (вкладка «Исследования») - её ценности не теряют стоимость от толчков, пока она стоит на месте. Личное."
+
+msgctxt "data:guide"
+msgid "T5 Dumbwaiter"
+msgstr "T5 Подъёмник"
+
+msgctxt "data:guide"
+msgid "Every extraction point gets a chute: once per point, leave one valuable on it and it's sent straight to the open extraction. Lobby-wide."
+msgstr "На каждой точке извлечения появляется жёлоб: раз за точку оставьте на нём одну ценность, и она отправится прямо к открытому извлечению. На всё лобби."
+
+msgctxt "data:guide"
+msgid "Economy"
+msgstr "Экономика"
+
+msgctxt "data:guide"
+msgid "T1 Price Board"
+msgstr "T1 Доска цен"
+
+msgctxt "data:guide"
+msgid "The shop's Research section shows next visit's featured deal, and that deal will be exactly that item. Personal."
+msgstr "Раздел «Исследования» в магазине показывает предложение с витрины следующего посещения, и это предложение будет именно этим предметом. Личное."
+
+msgctxt "data:guide"
+msgid "T2 Haggling"
+msgstr "T2 Торг"
+
+msgctxt "data:guide"
+msgid "Once per shop visit, haggle one item: 50% chance it's 25% cheaper, 50% chance it's 10% dearer (that visit). Personal."
+msgstr "Раз за посещение магазина: поторгуйтесь за один предмет - шанс 50%, что он станет на 25% дешевле, и шанс 50%, что на 10% дороже (в это посещение). Личное."
+
+msgctxt "data:guide"
+msgid "T2 Rotation Lock"
+msgstr "T2 Блокировка ассортимента"
+
+msgctxt "data:guide"
+msgid "Lock one more shop item (3 at most), and your first lock each shop visit is free. Personal."
+msgstr "Закрепите ещё один предмет в магазине (не больше 3), а первое закрепление за каждое посещение магазина бесплатно. Личное."
+
+msgctxt "data:guide"
+msgid "T3 The Archivist"
+msgstr "T3 Архивариус"
+
+msgctxt "data:guide"
+msgid "A new contract giver whose contracts pay Research Data (samples, a full catalogue, specimens). Lobby-wide."
+msgstr "Новый заказчик, чьи контракты оплачиваются данными исследований (образцы, полный каталог, экземпляры). На всё лобби."
+
+msgctxt "data:guide"
+msgid "T3 Pawn Counter"
+msgstr "T3 Ломбард"
+
+msgctxt "data:guide"
+msgid "New shop section: pawn a gear item for 60% of its salvage, buy it back at 80% until the run ends. Lobby-wide."
+msgstr "Новый раздел магазина: заложите предмет снаряжения за 60% стоимости его разбора и выкупите за 80% до конца забега. На всё лобби."
+
+msgctxt "data:guide"
+msgid "T4 Futures"
+msgstr "T4 Фьючерсы"
+
+msgctxt "data:guide"
+msgid "New shop section: pay now for an item of a chosen rarity, delivered when the team clears the next milestone (one order per visit). Lobby-wide."
+msgstr "Новый раздел магазина: заплатите сейчас за предмет выбранной редкости - его доставят, когда команда пройдёт следующий этап (один заказ за посещение). На всё лобби."
+
+msgctxt "data:guide"
+msgid "T5 Sponsors"
+msgstr "T5 Спонсоры"
+
+msgctxt "data:guide"
+msgid "At run start the team picks one of three sponsors; each sets a run-long side goal and pays Scrap and Data at the run's end. Lobby-wide."
+msgstr "В начале забега команда выбирает одного из трёх спонсоров; каждый ставит побочную цель на весь забег и платит ломом и данными в конце забега. На всё лобби."
+
+msgctxt "data:guide"
+msgid "Arsenal"
+msgstr "Арсенал"
+
+msgctxt "data:guide"
+msgid "T1 Modules II"
+msgstr "T1 Модули II"
+
+msgctxt "data:guide"
+msgid "Three new modules can drop and be bought: Tracer (monsters you hit are marked for the team for 3 s), Spotter Lens (aim at a valuable to see its value) and Tether (items you let go float for 1 s). Personal."
+msgstr "Могут выпадать и продаваться три новых модуля: «Трассер» (монстры, которых вы задели, отмечаются для команды на 3 с), «Линза наводчика» (наведитесь на ценность, чтобы увидеть её стоимость) и «Привязь» (предметы, которые вы отпустили, парят 1 с). Личное."
+
+msgctxt "data:guide"
+msgid "T2 Consumables II"
+msgstr "T2 Расходники II"
+
+msgctxt "data:guide"
+msgid "New shop consumables that go off on their own once per level: Smoke Canister (below 50% health, nearby monsters lose sight of you), Decoy Whistle (a monster gets close: a whistle draws monsters away) and Flash Charge (a monster gets very close: a flash stuns it). Personal."
+msgstr "Новые расходники в магазине, которые срабатывают сами раз за уровень: «Дымовая шашка» (здоровье ниже 50% - ближайшие монстры теряют вас из виду), «Свисток-приманка» (монстр подошёл близко - свист отвлекает монстров) и «Светошумовой заряд» (монстр подошёл вплотную - вспышка оглушает его). Личное."
+
+msgctxt "data:guide"
+msgid "T2 Behaviors II"
+msgstr "T2 Поведения II"
+
+msgctxt "data:guide"
+msgid "Four new behavior affixes can roll on your gear: Hasty, Momentum, Steady and Second Wind. Personal."
+msgstr "На вашем снаряжении могут выпасть четыре новых свойства-поведения: «Торопливый», «Импульс», «Твёрдость» и «Второе дыхание». Личное."
+
+msgctxt "data:guide"
+msgid "T3 Gun Bench"
+msgstr "T3 Оружейный верстак"
+
+msgctxt "data:guide"
+msgid "Shop service: fit a Suppressor (quiet shots), Scatter Choke (an extra pellet, wider spread) or Stock (less kick) to the guns you hold next level. Personal."
+msgstr "Услуга магазина: установите глушитель (тихие выстрелы), рассеивающий чок (лишняя дробина, шире разброс) или приклад (меньше отдача) на оружие, которое будет у вас в руках на следующем уровне. Личное."
+
+msgctxt "data:guide"
+msgid "T3 Fusion Forge"
+msgstr "T3 Кузница слияния"
+
+msgctxt "data:guide"
+msgid "Fuse three unequipped items of one slot and rarity into one item a rarity higher (shop Research section; not Uniques, cursed or starter items). Personal."
+msgstr "Объедините три ненадетых предмета одного слота и редкости в один предмет на редкость выше (раздел «Исследования» в магазине; кроме уникальных, проклятых и стартовых предметов). Личное."
+
+msgctxt "data:guide"
+msgid "T4 Blueprint Archive"
+msgstr "T4 Архив чертежей"
+
+msgctxt "data:guide"
+msgid "Uniques you've found before can appear in your shop (one per visit). Personal."
+msgstr "Уникальные предметы, которые вы уже находили, могут появляться в вашем магазине (один за посещение). Личное."
+
+msgctxt "data:guide"
+msgid "T5 Prototype Lab"
+msgstr "T5 Лаборатория прототипов"
+
+msgctxt "data:guide"
+msgid "Each run, one prototype item with an effect only research gives (one of 6) appears in your shop. Personal."
+msgstr "В каждом забеге в вашем магазине появляется один прототип с эффектом, который дают только исследования (один из 6). Личное."
+
+msgctxt "data:guide"
+msgid "Exploration"
+msgstr "Разведка"
+
+msgctxt "data:guide"
+msgid "T1 Sample Scanner"
+msgstr "T1 Сканер образцов"
+
+msgctxt "data:guide"
+msgid "Research samples within 25 m show as a ping on your screen. Personal."
+msgstr "Образцы для исследований в пределах 25 м показываются меткой на экране. Личное."
+
+msgctxt "data:guide"
+msgid "T2 New Hazards"
+msgstr "T2 Новые опасности"
+
+msgctxt "data:guide"
+msgid "Two map modifiers join the pool: Blackout (lights dimmed, monsters a little slower) and Supply Drop (a crate worth extra falls mid-level). Lobby-wide."
+msgstr "В набор добавляются два модификатора карты: «Затемнение» (свет приглушён, монстры чуть медленнее) и «Сброс припасов» (посреди уровня падает ящик, который ценится дороже). На всё лобби."
+
+msgctxt "data:guide"
+msgid "T2 Survey Drone"
+msgstr "T2 Дрон-разведчик"
+
+msgctxt "data:guide"
+msgid "Once per level (Research tab): a survey drone marks the valuables up to 22 m ahead of you for 10 s. Personal."
+msgstr "Раз за уровень (вкладка «Исследования»): дрон-разведчик на 10 с отмечает ценности на расстоянии до 22 м перед вами. Личное."
+
+msgctxt "data:guide"
+msgid "T3 Vault Cracking"
+msgstr "T3 Взлом хранилищ"
+
+msgctxt "data:guide"
+msgid "Some levels have a locked vault deep in the map: hold Interact on it for 6 s (monsters hear it) to crack it for more than double its value and Data. Lobby-wide."
+msgstr "На некоторых уровнях в глубине карты есть запертое хранилище: удерживайте на нём «Взаимодействие» 6 с (монстры это слышат), чтобы вскрыть его и получить больше двойной стоимости и данные. На всё лобби."
+
+msgctxt "data:guide"
+msgid "T3 Nest Hunting"
+msgstr "T3 Охота на гнёзда"
+
+msgctxt "data:guide"
+msgid "Some levels have a Monster Nest: kill all its marked guards and the last one drops a nest core (Data when extracted). Lobby-wide."
+msgstr "На некоторых уровнях есть гнездо монстров: убейте всех его помеченных стражей, и из последнего выпадет ядро гнезда (данные при извлечении). На всё лобби."
+
+msgctxt "data:guide"
+msgid "T4 Expeditions"
+msgstr "T4 Экспедиции"
+
+msgctxt "data:guide"
+msgid "A new route in the route vote: Expedition, with 40% more valuables, more monsters and twice the research samples. Lobby-wide."
+msgstr "Новый маршрут в голосовании за маршрут: «Экспедиция» - на 40% больше ценностей, больше монстров и вдвое больше образцов для исследований. На всё лобби."
+
+msgctxt "data:guide"
+msgid "T5 Anomaly Rooms"
+msgstr "T5 Комнаты-аномалии"
+
+msgctxt "data:guide"
+msgid "Some maps have an anomaly deep inside: valuables float in low gravity around an anomaly sample worth a lot of Data. Lobby-wide."
+msgstr "На некоторых картах в глубине есть аномалия: ценности парят в низкой гравитации вокруг образца аномалии, который стоит много данных. На всё лобби."
+
+msgctxt "data:guide"
+msgid "Crew"
+msgstr "Команда"
+
+msgctxt "data:guide"
+msgid "T1 Boons II"
+msgstr "T1 Дары II"
+
+msgctxt "data:guide"
+msgid "Four new run boons join the vote pool: Quick Study, Data Mine, Stockpile, Deep Pockets. Lobby-wide."
+msgstr "В набор для голосования добавляются четыре новых дара забега: «Быстрая учёба», «Кладезь данных», «Запас», «Глубокие карманы». На всё лобби."
+
+msgctxt "data:guide"
+msgid "T2 Parallel Lab"
+msgstr "T2 Параллельная лаборатория"
+
+msgctxt "data:guide"
+msgid "Run two research projects at once. Personal."
+msgstr "Ведите два исследовательских проекта одновременно. Личное."
+
+msgctxt "data:guide"
+msgid "T2 Spectator Uplink"
+msgstr "T2 Связь наблюдателя"
+
+msgctxt "data:guide"
+msgid "While dead, press your ability key to mark the monster or valuable the spectate view looks at, for the living team. Personal."
+msgstr "Пока вы мертвы, нажмите клавишу способности, чтобы отметить для живых напарников монстра или ценность, на которую смотрит камера наблюдения. Личное."
+
+msgctxt "data:guide"
+msgid "T3 Synergies II"
+msgstr "T3 Синергии II"
+
+msgctxt "data:guide"
+msgid "Four new class-pair synergies: Iron Wall, Quick Patch, Study Group, Side Hustle. Lobby-wide."
+msgstr "Четыре новые синергии пар классов: «Железная стена», «Быстрая заплатка», «Учебная группа», «Подработка». На всё лобби."
+
+msgctxt "data:guide"
+msgid "T3 Gear Exchange"
+msgstr "T3 Обмен снаряжением"
+
+msgctxt "data:guide"
+msgid "Trade gear with a teammate in the shop's Research section: one item for one, both confirm. Personal."
+msgstr "Обменивайтесь снаряжением с напарником в разделе «Исследования» магазина: один предмет на один, подтверждают оба. Личное."
+
+msgctxt "data:guide"
+msgid "T4 Crew Drills"
+msgstr "T4 Тренировки команды"
+
+msgctxt "data:guide"
+msgid "At each crew level the team votes one of three drills: a small team rule for the rest of the run. Lobby-wide."
+msgstr "На каждом уровне команды команда выбирает голосованием одну из трёх тренировок: небольшое командное правило до конца забега. На всё лобби."
+
+msgctxt "data:guide"
+msgid "T5 Lab Network"
+msgstr "T5 Сеть лабораторий"
+
+msgctxt "data:guide"
+msgid "Run three research projects at once, and once per run borrow one personal unlock a teammate has researched (Research tab). Personal."
+msgstr "Ведите три исследовательских проекта одновременно и раз за забег позаимствуйте одну личную разблокировку, исследованную напарником (вкладка «Исследования»). Личное."
+
+msgctxt "data:guide"
+msgid "Go to the Research tab"
+msgstr "Перейти на вкладку «Исследования»"
+
+msgctxt "data:guide"
+msgid "Ascension"
+msgstr "Вознесение"
+
+msgctxt "data:guide"
+msgid "Win a run, then replay it at higher Ascension levels: each adds a modifier on top of the lower ones, with better rewards."
+msgstr "Выиграйте забег, а затем пройдите его снова на более высоких уровнях Вознесения: каждый добавляет модификатор поверх предыдущих и даёт лучшие награды."
+
+msgctxt "data:guide"
+msgid "ascension ascend win victory finale liquidator endless modifier rank title crown apex"
+msgstr "ascension ascend win victory finale liquidator endless modifier rank title crown apex вознесение вознестись победа выиграть финал ликвидатор бесконечный режим модификатор ранг титул корона апекс"
+
+msgctxt "data:guide"
+msgid "A run is won by clearing the last chapter (level 50 on Standard) and defeating its finale boss, The Liquidator (Armored, Enraged, Warlord; a second phase at half health). Its level's extractions stay sealed until it falls."
+msgstr "Забег выигран, когда пройдена последняя глава (уровень 50 при длине Standard) и побеждён её финальный босс - Ликвидатор (Бронированный, Разъярённый, Военачальник; вторая фаза при половине здоровья). Извлечения на его уровне запечатаны, пока он не падёт."
+
+msgctxt "data:guide"
+msgid "After the win the team votes: End the run, Keep going (Endless, no more Ascension credit), or Ascend (the next run starts one Ascension higher)."
+msgstr "После победы команда голосует: завершить забег, продолжить (бесконечный режим, Вознесение больше не засчитывается) или вознестись (следующий забег начнётся на одно Вознесение выше)."
+
+msgctxt "data:guide"
+msgid "A win at Ascension N opens Ascension N+1 (up to 20). The host picks the level before the run starts (Settings tab, under the difficulty), up to their best win + 1 (or anyone's: Ascension/Source)."
+msgstr "Победа на Вознесении N открывает Вознесение N+1 (до 20). Хост выбирает уровень до начала забега (вкладка «Настройки», под сложностью) - не выше своей лучшей победы + 1 (или победы любого игрока: Ascension/Source)."
+
+msgctxt "data:guide"
+msgid "Per level: +{cfg:Ascension/XpPerLevel}% XP, +{cfg:Ascension/ScrapPerLevel}% haul Scrap, +{cfg:Ascension/DataPerLevel}% Research Data, and +1 gear luck every 4 levels."
+msgstr "За каждый уровень: +{cfg:Ascension/XpPerLevel}% опыта, +{cfg:Ascension/ScrapPerLevel}% лома за добычу, +{cfg:Ascension/DataPerLevel}% данных исследований и +1 к удаче снаряжения каждые 4 уровня."
+
+msgctxt "data:guide"
+msgid "A first win at each level gives Research Data (100 + 25 per level). Titles at A1, A5, A10, A15 and A20, your rank by your name, per-class records, the Crown of Ascent (A10) and the cursed Apex Brand (A20)."
+msgstr "Первая победа на каждом уровне даёт данные исследований (100 + 25 за уровень). Титулы на A1, A5, A10, A15 и A20, ваш ранг рядом с именем, рекорды по классам, «Корона восхождения» (A10) и проклятое «Клеймо Апекса» (A20)."
+
+msgctxt "data:guide"
+msgid "Ascension is kept with your account; a run wipe never touches it."
+msgstr "Вознесение хранится в вашем аккаунте; сброс забега его никогда не затрагивает."
+
+msgctxt "data:guide"
+msgid "The 20 modifiers (each adds to the lower ones)"
+msgstr "20 модификаторов (каждый добавляется к предыдущим)"
+
+msgctxt "data:guide"
+msgid "A1 Elite Patrols"
+msgstr "A1 Элитные патрули"
+
+msgctxt "data:guide"
+msgid "Elites spawn 25% more often."
+msgstr "Элита появляется на 25% чаще."
+
+msgctxt "data:guide"
+msgid "A2 Inflation"
+msgstr "A2 Инфляция"
+
+msgctxt "data:guide"
+msgid "Mod shop prices +10%."
+msgstr "Цены в магазине мода +10%."
+
+msgctxt "data:guide"
+msgid "A3 Fewer Second Chances"
+msgstr "A3 Меньше вторых шансов"
+
+msgctxt "data:guide"
+msgid "One fewer death save on boss levels (never below 0)."
+msgstr "На уровнях с боссом на одно спасение от смерти меньше (но не ниже 0)."
+
+msgctxt "data:guide"
+msgid "A4 Brittle Haul"
+msgstr "A4 Хрупкая добыча"
+
+msgctxt "data:guide"
+msgid "Valuables take 15% more damage when hit."
+msgstr "Ценности получают на 15% больше урона от ударов."
+
+msgctxt "data:guide"
+msgid "A5 Mutating Bosses"
+msgstr "A5 Мутирующие боссы"
+
+msgctxt "data:guide"
+msgid "Bosses get one more modifier."
+msgstr "Боссы получают ещё один модификатор."
+
+msgctxt "data:guide"
+msgid "A6 Narrow Choice"
+msgstr "A6 Узкий выбор"
+
+msgctxt "data:guide"
+msgid "Boon votes offer 2 boons instead of 3."
+msgstr "В голосованиях за дар предлагается 2 дара вместо 3."
+
+msgctxt "data:guide"
+msgid "A7 Hard Hitters"
+msgstr "A7 Тяжёлая рука"
+
+msgctxt "data:guide"
+msgid "Monsters deal 10% more damage."
+msgstr "Монстры наносят на 10% больше урона."
+
+msgctxt "data:guide"
+msgid "A8 Cold Start"
+msgstr "A8 Холодный старт"
+
+msgctxt "data:guide"
+msgid "Starting Scrap (Seed money, late-join Scrap) is halved."
+msgstr "Стартовый лом (стартовый капитал, лом за позднее подключение) уменьшен вдвое."
+
+msgctxt "data:guide"
+msgid "A9 Rising Heat"
+msgstr "A9 Растущий накал"
+
+msgctxt "data:guide"
+msgid "In heat votes, Skip only wins with a majority (otherwise the top card wins)."
+msgstr "В голосованиях за накал «Пропустить» побеждает только большинством голосов (иначе побеждает верхняя карта)."
+
+msgctxt "data:guide"
+msgid "A10 Sharp Ears"
+msgstr "A10 Острый слух"
+
+msgctxt "data:guide"
+msgid "Monsters hear noises 15% farther."
+msgstr "Монстры слышат шум на 15% дальше."
+
+msgctxt "data:guide"
+msgid "A11 Short Supply"
+msgstr "A11 Дефицит"
+
+msgctxt "data:guide"
+msgid "The shop has one fewer gear item and one fewer consumable each visit."
+msgstr "При каждом посещении в магазине на один предмет снаряжения и на один расходник меньше."
+
+msgctxt "data:guide"
+msgid "A12 Tough Hides"
+msgstr "A12 Толстая шкура"
+
+msgctxt "data:guide"
+msgid "Monsters have 15% more health."
+msgstr "У монстров на 15% больше здоровья."
+
+msgctxt "data:guide"
+msgid "A13 Slow Recovery"
+msgstr "A13 Медленное восстановление"
+
+msgctxt "data:guide"
+msgid "Revived players come back with 25% less health."
+msgstr "Возрождённые игроки возвращаются со здоровьем на 25% меньше."
+
+msgctxt "data:guide"
+msgid "A14 Escorted Bosses"
+msgstr "A14 Боссы с эскортом"
+
+msgctxt "data:guide"
+msgid "Every boss comes with an elite escort (the finale gets two)."
+msgstr "Каждого босса сопровождает элитный эскорт (в финале - два)."
+
+msgctxt "data:guide"
+msgid "A15 Tight Contracts"
+msgstr "A15 Жёсткие контракты"
+
+msgctxt "data:guide"
+msgid "Contract targets are 15% higher."
+msgstr "Цели контрактов на 15% выше."
+
+msgctxt "data:guide"
+msgid "A16 Heavy Quotas"
+msgstr "A16 Тяжёлые квоты"
+
+msgctxt "data:guide"
+msgid "Haul goals +10%."
+msgstr "Цели по добыче +10%."
+
+msgctxt "data:guide"
+msgid "A17 Scarce Parts"
+msgstr "A17 Нехватка деталей"
+
+msgctxt "data:guide"
+msgid "Monsters drop 30% fewer crafting parts."
+msgstr "Монстры роняют на 30% меньше деталей для крафта."
+
+msgctxt "data:guide"
+msgid "A18 Veteran Elites"
+msgstr "A18 Элита-ветераны"
+
+msgctxt "data:guide"
+msgid "Elites get one more modifier (up to 3)."
+msgstr "Элита получает ещё один модификатор (до 3)."
+
+msgctxt "data:guide"
+msgid "A19 Marked Earner"
+msgstr "A19 Меченый добытчик"
+
+msgctxt "data:guide"
+msgid "Each level, last level's top Scrap earner is Marked: noises near them carry 25% farther."
+msgstr "На каждом уровне тот, кто заработал больше всех лома на прошлом, получает Метку: шум рядом с ним разносится на 25% дальше."
+
+msgctxt "data:guide"
+msgid "A20 Final Form"
+msgstr "A20 Финальная форма"
+
+msgctxt "data:guide"
+msgid "The finale boss gets a third phase at 25% health: another escort and one more modifier."
+msgstr "Финальный босс получает третью фазу при 25% здоровья: ещё один эскорт и ещё один модификатор."
+
+msgctxt "data:guide"
 msgid "Crafting & Modules"
 msgstr "Крафт и модули"
+
+msgctxt "data:guide"
+msgid "Crafting parts, modules and attunement let you improve the gear you already like."
+msgstr "Детали для крафта, модули и сонастройка позволяют улучшать снаряжение, которое вам уже нравится."
+
+msgctxt "data:guide"
+msgid "crafting craft parts sinew core shard prime essence boss heart recipe module socket attunement bonded tempered soulbound unique affix"
+msgstr "crafting craft parts sinew core shard prime essence boss heart recipe module socket attunement bonded tempered soulbound unique affix крафт создание детали сухожилие осколок ядра первичная эссенция сердце босса рецепт модуль гнездо сонастройка привязанный закалённый связанный душой уникальный свойство"
+
+msgctxt "data:guide"
+msgid "Crafting"
+msgstr "Крафт"
+
+msgctxt "data:guide"
+msgid "{cfg:Loot/CraftingParts?Monsters drop crafting parts. Walk over the glowing label to pick up your own copy.:Crafting is off on this host.}"
+msgstr "{cfg:Loot/CraftingParts?С монстров выпадают детали для крафта. Пройдите по светящейся метке, чтобы подобрать свою копию.:Крафт отключён на этом хосте.}"
+
+msgctxt "data:guide"
+msgid "Parts also come from contracts, extractions and salvaging Rare or better gear. Drops fade after {cfg:Loot/PartLifetime} s."
+msgstr "Детали также дают контракты, извлечения и разбор снаряжения редкости «Редкий» и выше. Выпавшие детали исчезают через {cfg:Loot/PartLifetime} с."
+
+msgctxt "data:guide"
+msgid "Craft on the Gear tab: select an item and press Craft. Each item can be crafted {cfg:Loot/MaxCraftsPerItem} times."
+msgstr "Крафт - на вкладке «Снаряжение»: выберите предмет и нажмите «Крафт». Каждый предмет можно изменить крафтом {cfg:Loot/MaxCraftsPerItem} раз."
+
+msgctxt "data:guide"
+msgid "Recipes"
+msgstr "Рецепты"
+
+msgctxt "data:guide"
+msgid "Reroll a stat"
+msgstr "Перебросить характеристику"
+
+msgctxt "data:guide"
+msgid "3 Sinew + 1 Core Shard."
+msgstr "3 сухожилия + 1 осколок ядра."
+
+msgctxt "data:guide"
+msgid "Raise a stat"
+msgstr "Повысить параметр"
+
+msgctxt "data:guide"
+msgid "2 Core Shard."
+msgstr "2 осколка ядра."
+
+msgctxt "data:guide"
+msgid "Upgrade rarity (up to Epic)"
+msgstr "Повысить редкость (до эпической)"
+
+msgctxt "data:guide"
+msgid "2 Core Shard + 1 Prime Essence."
+msgstr "2 осколка ядра + 1 первичная эссенция."
+
+msgctxt "data:guide"
+msgid "Upgrade to Legendary"
+msgstr "Улучшить до легендарного"
+
+msgctxt "data:guide"
+msgid "2 Prime Essence + 1 Boss Heart."
+msgstr "2 первичные эссенции + 1 сердце босса."
+
+msgctxt "data:guide"
+msgid "Modules"
+msgstr "Модули"
+
+msgctxt "data:guide"
+msgid "Rare and better gear can have sockets. Slot a module for free from the item's card."
+msgstr "У снаряжения редкости «Редкий» и выше могут быть гнёзда. Вставьте модуль бесплатно с карточки предмета."
+
+msgctxt "data:guide"
+msgid "Get modules from elites, crates and bosses, or craft one."
+msgstr "Модули выпадают с элиты, из ящиков и с боссов, или их можно создать крафтом."
+
+msgctxt "data:guide"
+msgid "Take a module out in the Shop for {cfg:Loot/ModuleRemoveCost} Scrap. Salvaging an item gives its modules back."
+msgstr "Извлечь модуль можно в магазине за {cfg:Loot/ModuleRemoveCost} лома. При разборе предмета его модули возвращаются."
+
+msgctxt "data:guide"
+msgid "Attunement"
+msgstr "Сонастройка"
+
+msgctxt "data:guide"
+msgid "Wear gear to attune it: finishing levels, carrying valuables and kills all count."
+msgstr "Носите снаряжение, чтобы сонастроить его: засчитываются пройденные уровни, перенос ценностей и убийства."
+
+msgctxt "data:guide"
+msgid "Bonded (25) adds a hidden stat, Tempered (75) boosts the best one, Soulbound (150) boosts the base stat."
+msgstr "«Привязанный» (25) добавляет скрытую характеристику, «Закалённый» (75) усиливает лучшую, «Связанный душой» (150) усиливает базовую характеристику."
 
 msgctxt "data:guide"
 msgid "Scrap & the Shop"
 msgstr "Лом и магазин"
 
 msgctxt "data:guide"
+msgid "Scrap is your own money: you earn it alongside the team's haul and spend it in the mod's Shop."
+msgstr "Лом - ваши личные деньги: вы зарабатываете его вместе с добычей команды и тратите в магазине мода."
+
+msgctxt "data:guide"
+msgid "scrap money currency cash coins earn spend shop rivet store buy crate reputation consumables respec buyback wishlist lock"
+msgstr "scrap money currency cash coins earn spend shop rivet store buy crate reputation consumables respec buyback wishlist lock лом деньги валюта наличные монеты заработать потратить магазин ривет лавка купить ящик репутация расходники сброс выкуп список желаний закрепить"
+
+msgctxt "data:guide"
+msgid "Earn Scrap worth {cfg:Currency/Percent}% of what the team extracts, plus salvage and contracts."
+msgstr "Вы зарабатываете лом в размере {cfg:Currency/Percent}% от того, что извлекает команда, плюс разбор и контракты."
+
+msgctxt "data:guide"
+msgid "Your Scrap is yours alone: the team's money is never touched."
+msgstr "Ваш лом - только ваш: деньги команды никогда не затрагиваются."
+
+msgctxt "data:guide"
+msgid "Shop {cfg:Shop/ShopAnywhere?anywhere (host setting).:between levels, in the game's shop.}"
+msgstr "Магазин доступен {cfg:Shop/ShopAnywhere?где угодно (настройка хоста).:между уровнями, в магазине игры.}"
+
+msgctxt "data:guide"
+msgid "Your stock refreshes each shop visit: gear, consumables, crates and one featured deal."
+msgstr "Ваш ассортимент обновляется при каждом посещении магазина: снаряжение, расходники, ящики и одно предложение с витрины."
+
+msgctxt "data:guide"
+msgid "Lock up to 2 items ({cfg:Shop/LockFee} Scrap each) to keep them for the next visit."
+msgstr "Закрепите до 2 предметов (по {cfg:Shop/LockFee} лома), чтобы сохранить их до следующего посещения."
+
+msgctxt "data:guide"
+msgid "Spend Scrap here to raise your shop reputation: higher tiers stock better items."
+msgstr "Тратьте здесь лом, чтобы повышать репутацию в магазине: на более высоких ступенях товары лучше."
+
+msgctxt "data:guide"
+msgid "Salvaged something by mistake? Buy it back before you leave the shop."
+msgstr "Разобрали что-то по ошибке? Выкупите это, пока не ушли из магазина."
+
+msgctxt "data:guide"
+msgid "What you can buy"
+msgstr "Что можно купить"
+
+msgctxt "data:guide"
+msgid "Crates"
+msgstr "Ящики"
+
+msgctxt "data:guide"
+msgid "Gear Crate {cfg:Shop/GearCrateScrap} Scrap, Premium Crate {cfg:Shop/PremiumCrateScrap} Scrap. The card shows your odds."
+msgstr "Ящик снаряжения - {cfg:Shop/GearCrateScrap} лома, премиум-ящик - {cfg:Shop/PremiumCrateScrap} лома. На карточке показаны ваши шансы."
+
+msgctxt "data:guide"
+msgid "Consumables"
+msgstr "Расходники"
+
+msgctxt "data:guide"
+msgid "Small bonuses that last until your next shop visit."
+msgstr "Небольшие бонусы, которые действуют до следующего посещения магазина."
+
+msgctxt "data:guide"
+msgid "Services"
+msgstr "Услуги"
+
+msgctxt "data:guide"
+msgid "Respec ({cfg:Shop/RespecScrap} Scrap), perk reroll, affix reroll and more."
+msgstr "Сброс навыков ({cfg:Shop/RespecScrap} лома), переброс перков, переброс свойства и другое."
+
+msgctxt "data:guide"
+msgid "Buying then salvaging never makes a profit."
+msgstr "Купить и потом разобрать - всегда в убыток."
+
+msgctxt "data:guide"
+msgid "Go to the Shop tab"
+msgstr "Перейти на вкладку «Магазин»"
+
+msgctxt "data:guide"
+msgid "Contracts"
+msgstr "Контракты"
+
+msgctxt "data:guide"
+msgid "Contracts are side goals for the next level: finish them for Scrap, XP, a reward of your choice and reputation."
+msgstr "Контракты - побочные цели на следующий уровень: выполняйте их ради лома, опыта, награды на выбор и репутации."
+
+msgctxt "data:guide"
+msgid "contracts contract board quests missions jobs accept reroll slots tier easy hard brutal bonus objective reward giver reputation rival chain"
+msgstr "contracts contract board quests missions jobs accept reroll slots tier easy hard brutal bonus objective reward giver reputation rival chain контракты контракт доска задания миссии работа принять переброс обновить слоты ступень легко сложно жестоко бонус цель награда заказчик репутация соперничество цепочка"
+
+msgctxt "data:guide"
+msgid "Open the board in the truck, the shop or the pre-game lobby, and accept up to {cfg:Contracts/ContractSlots} contracts."
+msgstr "Откройте доску в грузовике, магазине или лобби перед игрой и примите до {cfg:Contracts/ContractSlots} контрактов."
+
+msgctxt "data:guide"
+msgid "Finish them in the next level to get Scrap and XP, then pick a reward on the Contracts tab."
+msgstr "Выполните их на следующем уровне, чтобы получить лом и опыт, затем выберите награду на вкладке «Контракты»."
+
+msgctxt "data:guide"
+msgid "Harder tiers (Easy, Hard, Brutal) have bigger goals and pay more."
+msgstr "На более трудных ступенях («Легко», «Сложно», «Жестоко») цели больше, а платят лучше."
+
+msgctxt "data:guide"
+msgid "Meet a contract's bonus objective for 50% more Scrap."
+msgstr "Выполните бонусную цель контракта - и получите на 50% больше лома."
+
+msgctxt "data:guide"
+msgid "Don't like the offers? Reroll for {cfg:Contracts/RerollScrap} Scrap."
+msgstr "Не нравятся предложения? Обновите доску за {cfg:Contracts/RerollScrap} лома."
+
+msgctxt "data:guide"
+msgid "A failed contract only costs a little reputation with its giver."
+msgstr "Проваленный контракт стоит лишь немного репутации у его заказчика."
+
+msgctxt "data:guide"
+msgid "The tab is one screen: the board on the left, your active contracts, the team contract and chains in the middle, reputation with every giver along the top and the run's history at the bottom. Point at anything (or click it to keep it) and the panel on the right shows it in full, with Accept, Vote or Drop."
+msgstr "Вкладка - это один экран: слева доска, посередине ваши активные контракты, командный контракт и цепочки, вверху репутация у каждого заказчика, а внизу история забега. Наведите курсор на что угодно (или щёлкните, чтобы закрепить), и панель справа покажет это целиком, с кнопками «Принять», «Голосовать» или «Отказаться»."
+
+msgctxt "data:guide"
+msgid "Kinds of contract"
+msgstr "Виды контрактов"
+
+msgctxt "data:guide"
+msgid "Personal"
+msgstr "Личный"
+
+msgctxt "data:guide"
+msgid "Your own goal: kills, extractions, valuables, speed."
+msgstr "Ваша собственная цель: убийства, извлечения, ценности, скорость."
+
+msgctxt "data:guide"
+msgid "Class"
+msgstr "Класс"
+
+msgctxt "data:guide"
+msgid "A goal that fits the class you play."
+msgstr "Цель, которая подходит классу, за который вы играете."
+
+msgctxt "data:guide"
+msgid "Rival"
+msgstr "Соперничество"
+
+msgctxt "data:guide"
+msgid "Friendly competition with teammates: the best score wins."
+msgstr "Дружеское состязание с напарниками: побеждает лучший результат."
+
+msgctxt "data:guide"
+msgid "Team"
+msgstr "Командный"
+
+msgctxt "data:guide"
+msgid "One shared goal the lobby votes on, with a big reward and a real loss."
+msgstr "Одна общая цель, за которую голосует лобби, - с большой наградой и настоящей потерей."
+
+msgctxt "data:guide"
+msgid "Go to the Contracts tab"
+msgstr "Перейти на вкладку «Контракты»"
+
+msgctxt "data:guide"
 msgid "Givers & Reputation"
 msgstr "Заказчики и репутация"
+
+msgctxt "data:guide"
+msgid "Each contract comes from one of four givers, and finishing their contracts earns their trust for the run."
+msgstr "Каждый контракт выдаёт один из четырёх заказчиков, а выполнение их контрактов приносит их доверие на весь забег."
+
+msgctxt "data:guide"
+msgid "reputation rep givers giver madame brass kaboom hollis dispatch trust tier stranger known trusted partner chain unlock"
+msgstr "reputation rep givers giver madame brass kaboom hollis dispatch trust tier stranger known trusted partner chain unlock репутация заказчики заказчик мадам брасс бабах холлис диспетчерская доверие ступень незнакомец знакомый доверенный партнёр цепочка разблокировка"
+
+msgctxt "data:guide"
+msgid "Finish a contract to gain reputation with its giver: Easy +1, Hard +2, Brutal +3."
+msgstr "Выполните контракт, чтобы получить репутацию у его заказчика: «Легко» +1, «Сложно» +2, «Жестоко» +3."
+
+msgctxt "data:guide"
+msgid "Rival, chain and team contracts give +2. A failure takes away 1."
+msgstr "Контракты соперничества, цепочек и командные дают +2. Провал отнимает 1."
+
+msgctxt "data:guide"
+msgid "Reach 3 for Hard contracts, 6 for Brutal ones and their story chain, 10 for a third reward choice."
+msgstr "Наберите 3 ради контрактов ступени «Сложно», 6 - ради ступени «Жестоко» и сюжетной цепочки заказчика, 10 - ради третьего варианта награды."
+
+msgctxt "data:guide"
+msgid "New tiers show on your next board. The Givers section shows how close you are."
+msgstr "Новые ступени появляются на следующей доске. Раздел «Заказчики» показывает, сколько вам осталось."
+
+msgctxt "data:guide"
+msgid "Chains are short stories over 2-3 levels that end in a big reward."
+msgstr "Цепочки - короткие истории на 2-3 уровня, которые заканчиваются большой наградой."
 
 msgctxt "data:guide"
 msgid "Team Contracts"
 msgstr "Командные контракты"
 
 msgctxt "data:guide"
+msgid "A team contract is one risky goal the whole lobby votes on: a shared reward if you win, a shared loss if you fail."
+msgstr "Командный контракт - одна рискованная цель, за которую голосует всё лобби: общая награда при победе, общая потеря при провале."
+
+msgctxt "data:guide"
+msgid "team contract vote stakes curse risk shared group fragile exposed marked drained"
+msgstr "team contract vote stakes curse risk shared group fragile exposed marked drained командный контракт команда голосование ставки проклятие риск общий группа хрупкое без прикрытия метка истощение"
+
+msgctxt "data:guide"
+msgid "{cfg:TeamContracts/TeamContracts?The board offers one team contract for the next level.:Team contracts are off on this host.}"
+msgstr "{cfg:TeamContracts/TeamContracts?Доска предлагает один командный контракт на следующий уровень.:Командные контракты отключены на этом хосте.}"
+
+msgctxt "data:guide"
+msgid "Vote Accept or Decline on the board ({cfg:TeamContracts/VoteMode} decides)."
+msgstr "Голосуйте «Принять» или «Отклонить» на доске (решает {cfg:TeamContracts/VoteMode})."
+
+msgctxt "data:guide"
+msgid "In a level, hold {key:callout} to vote Accept during the first {cfg:TeamContracts/VoteSeconds} s."
+msgstr "На уровне удерживайте {key:callout}, чтобы проголосовать «Принять», в первые {cfg:TeamContracts/VoteSeconds} с."
+
+msgctxt "data:guide"
+msgid "Only players there for the vote win or lose. Your Scrap never goes below 0."
+msgstr "Выигрывают и проигрывают только игроки, которые были на месте во время голосования. Ваш лом никогда не опускается ниже 0."
+
+msgctxt "data:guide"
+msgid "Some failures curse the next level; the curse shows on your HUD."
+msgstr "Некоторые провалы накладывают проклятие на следующий уровень; оно показано на вашем HUD."
+
+msgctxt "data:guide"
 msgid "Elites & Bosses"
 msgstr "Элита и боссы"
+
+msgctxt "data:guide"
+msgid "Elites are tougher monsters with special modifiers, and bosses are the toughest of all: both drop better loot."
+msgstr "Элита - более живучие монстры с особыми модификаторами, а боссы живучее всех: и с тех и с других выпадает добыча получше."
+
+msgctxt "data:guide"
+msgid "elites elite bosses boss monsters enemies modifiers armored swift champion overlord legendary drop"
+msgstr "elites elite bosses boss monsters enemies modifiers armored swift champion overlord legendary drop элита элитный элитные боссы босс монстры враги модификаторы бронированный быстрый чемпион владыка легендарный выпадение добыча"
+
+msgctxt "data:guide"
+msgid "Any monster can spawn as an elite, more often on later levels (up to {cfg:RPG/EliteMaxChance}%)."
+msgstr "Любой монстр может появиться элитным, чаще на поздних уровнях (до {cfg:RPG/EliteMaxChance}%)."
+
+msgctxt "data:guide"
+msgid "Kill an elite for {cfg:RPG/EliteXpMultiplier}x XP and a gear drop."
+msgstr "Убейте элитного монстра ради опыта x{cfg:RPG/EliteXpMultiplier} и предмета снаряжения."
+
+msgctxt "data:guide"
+msgid "Nearby elites show at the top right of your screen."
+msgstr "Элита поблизости показана справа вверху экрана."
+
+msgctxt "data:guide"
+msgid "{cfg:Bosses/Bosses?Every few levels, one monster becomes a named boss with several modifiers.:Bosses are off on this host.}"
+msgstr "{cfg:Bosses/Bosses?Раз в несколько уровней один монстр становится именным боссом с несколькими модификаторами.:Боссы отключены на этом хосте.}"
+
+msgctxt "data:guide"
+msgid "Bosses come every {cfg:Bosses/BossEvery} levels (sooner on Brutal and at a high threat rating)."
+msgstr "Боссы появляются каждые {cfg:Bosses/BossEvery} уровней (раньше на «Жестоко» и при высоком рейтинге угрозы)."
+
+msgctxt "data:guide"
+msgid "Beat a boss and every player gets a Legendary item, Scrap and a Boss Heart."
+msgstr "Победите босса - и каждый игрок получит легендарный предмет, лом и сердце босса."
+
+msgctxt "data:guide"
+msgid "Modifiers"
+msgstr "Модификаторы"
+
+msgctxt "data:guide"
+msgid "Armored"
+msgstr "Бронированный"
+
+msgctxt "data:guide"
+msgid "Takes 40% less damage."
+msgstr "Получает на 40% меньше урона."
+
+msgctxt "data:guide"
+msgid "Regenerating"
+msgstr "Регенерирующий"
+
+msgctxt "data:guide"
+msgid "Heals over time."
+msgstr "Лечится со временем."
+
+msgctxt "data:guide"
+msgid "Swift"
+msgstr "Быстрый"
+
+msgctxt "data:guide"
+msgid "Moves 30% faster."
+msgstr "Движется на 30% быстрее."
+
+msgctxt "data:guide"
+msgid "Unstoppable"
+msgstr "Неудержимый"
+
+msgctxt "data:guide"
+msgid "Shrugs off most of a stun."
+msgstr "Почти не поддаётся оглушению."
+
+msgctxt "data:guide"
+msgid "Enraged"
+msgstr "Разъярённый"
+
+msgctxt "data:guide"
+msgid "Faster and tougher below half health."
+msgstr "Быстрее и живучее при здоровье ниже половины."
+
+msgctxt "data:guide"
+msgid "Relentless (bosses)"
+msgstr "Неумолимый (боссы)"
+
+msgctxt "data:guide"
+msgid "Calming effects work half as well."
+msgstr "Успокаивающие эффекты действуют вдвое слабее."
+
+msgctxt "data:guide"
+msgid "Stalwart (bosses)"
+msgstr "Стойкий (боссы)"
+
+msgctxt "data:guide"
+msgid "Takes half damage from explosions."
+msgstr "Получает половину урона от взрывов."
+
+msgctxt "data:guide"
+msgid "Team Play"
+msgstr "Командная игра"
+
+msgctxt "data:guide"
+msgid "Playing together pays off: partner classes boost each other, the shop shows your best moments, and fast revives earn more."
+msgstr "Играть вместе выгодно: классы-партнёры усиливают друг друга, магазин показывает ваши лучшие моменты, а быстрые возрождения приносят больше."
+
+msgctxt "data:guide"
+msgid "team play synergy synergies partner pair highlights card mvp revive call out death head clutch help together"
+msgstr "team play synergy synergies partner pair highlights card mvp revive call out death head clutch help together командная игра команда синергия синергии партнёр пара главное карточка лучший игрок возрождение зов о помощи голова помощь вместе"
+
+msgctxt "data:guide"
+msgid "Synergies"
+msgstr "Синергии"
+
+msgctxt "data:guide"
+msgid "Stay within {cfg:Team/SynergyRange} m of a partner class to switch on a synergy bonus ({cfg:Team/Synergies?on:off} here)."
+msgstr "Держитесь в пределах {cfg:Team/SynergyRange} м от класса-партнёра, чтобы включить бонус синергии (здесь - {cfg:Team/Synergies?включено:выключено})."
+
+msgctxt "data:guide"
+msgid "Each class has 2-3 partners; the HUD shows \"Synergy\" while one is on."
+msgstr "У каждого класса 2-3 партнёра; пока синергия действует, HUD показывает «Синергия»."
+
+msgctxt "data:guide"
+msgid "Who plays what"
+msgstr "Кто за кого играет"
+
+msgctxt "data:guide"
+msgid "In the pre-game lobby, the class roster (right middle) shows who picked which class and who still has to. Players without a class come first. Click your own row to open the Class tab."
+msgstr "В лобби перед игрой список классов (справа посередине) показывает, кто какой класс выбрал и кому ещё предстоит выбрать. Игроки без класса идут первыми. Щёлкните по своей строке, чтобы открыть вкладку «Класс»."
+
+msgctxt "data:guide"
+msgid "In play, a small tag over each teammate's head shows their class and level. It fades with distance and hides behind walls (both can be changed in Settings). A death head shows \"- Down\"."
+msgstr "В игре небольшая подпись над головой каждого напарника показывает его класс и уровень. Она тускнеет с расстоянием и скрывается за стенами (и то и другое можно изменить в настройках). У головы погибшего показано « - повержен»."
+
+msgctxt "data:guide"
+msgid "Hold {key:teampanel} for the team panel: every player's class, level, XP, mastery (★) and unspent points. While you're spectating, it also shows who you're watching."
+msgstr "Удерживайте {key:teampanel}, чтобы открыть панель команды: класс, уровень, опыт, мастерство (★) и непотраченные очки каждого игрока. Пока вы наблюдаете, она показывает и то, за кем вы следите."
+
+msgctxt "data:guide"
+msgid "Highlights"
+msgstr "Главное"
+
+msgctxt "data:guide"
+msgid "When you reach the shop, a card shows the team's best moments since the last shop."
+msgstr "Когда вы добираетесь до магазина, карточка показывает лучшие моменты команды с прошлого магазина."
+
+msgctxt "data:guide"
+msgid "Tap {key:highlights} to hide it, or hold it to keep it up."
+msgstr "Нажмите {key:highlights}, чтобы скрыть её, или удерживайте, чтобы оставить."
+
+msgctxt "data:guide"
+msgid "Reviving"
+msgstr "Возрождение"
+
+msgctxt "data:guide"
+msgid "Down? As a death head, press {key:callout} to show your team where you are."
+msgstr "Вас свалили? Будучи головой, нажмите {key:callout}, чтобы показать команде, где вы."
+
+msgctxt "data:guide"
+msgid "Carry a death head to the extraction or truck to revive them, as usual."
+msgstr "Донесите голову погибшего до точки извлечения или грузовика, чтобы возродить его, как обычно."
+
+msgctxt "data:guide"
+msgid "Medics and Undertakers earn extra XP for fast revives."
+msgstr "Медики и Гробовщики получают дополнительный опыт за быстрые возрождения."
+
+msgctxt "data:guide"
+msgid "The full lists are below: every synergy and every highlight."
+msgstr "Полные списки ниже: все синергии и все достижения для карточки «Главное»."
 
 msgctxt "data:guide"
 msgid "Death Saves"
 msgstr "Спасения от смерти"
 
 msgctxt "data:guide"
+msgid "A death save stops a hit that would kill you, once per charge each level."
+msgstr "Спасение от смерти останавливает удар, который убил бы вас, - по разу на заряд за уровень."
+
+msgctxt "data:guide"
+msgid "death save saves second chance phoenix last stand survive revive charges fall lethal"
+msgstr "death save saves second chance phoenix last stand survive revive charges fall lethal спасение от смерти спасения второй шанс феникс последний рубеж выжить возрождение заряды падение смертельно"
+
+msgctxt "data:guide"
+msgid "Get death saves from perks, gear and some classes."
+msgstr "Спасения от смерти дают перки, снаряжение и некоторые классы."
+
+msgctxt "data:guide"
+msgid "Each charge stops one killing hit and gives you a moment of safety."
+msgstr "Каждый заряд останавливает один смертельный удар и даёт вам мгновение безопасности."
+
+msgctxt "data:guide"
+msgid "Charges refill every level."
+msgstr "Заряды восполняются каждый уровень."
+
+msgctxt "data:guide"
+msgid "{cfg:Rules/LethalFalls?Falling off the level is deadly, and a death save catches that too.:Falling off the level sends you back to the truck.}"
+msgstr "{cfg:Rules/LethalFalls?Падение за пределы уровня смертельно, и спасение от смерти срабатывает и на него.:Падение за пределы уровня возвращает вас в грузовик.}"
+
+msgctxt "data:guide"
 msgid "Saving & Runs"
 msgstr "Сохранения и забеги"
+
+msgctxt "data:guide"
+msgid "Your RepoRPG progress is saved with the game's own save, so the same save means the same run."
+msgstr "Ваш прогресс в RepoRPG хранится вместе с сохранением самой игры, так что то же сохранение - это тот же забег."
+
+msgctxt "data:guide"
+msgid "save saving load run reset progress delete rejoin host keeps data"
+msgstr "save saving load run reset progress delete rejoin host keeps data сохранение сохранить загрузка забег сброс прогресс удалить вернуться хост хранит данные"
+
+msgctxt "data:guide"
+msgid "Your class levels, talents, gear, perks and Scrap belong to the run."
+msgstr "Уровни классов, таланты, снаряжение, перки и лом относятся к забегу."
+
+msgctxt "data:guide"
+msgid "Saving, loading or deleting a game save does the same to its run."
+msgstr "Сохранение, загрузка или удаление сохранения игры делает то же самое с его забегом."
+
+msgctxt "data:guide"
+msgid "In a lobby, the host keeps everyone's run, so you get yours back when you rejoin the same save."
+msgstr "В лобби хост хранит забеги всех игроков, так что вы получите свой обратно, когда вернётесь в то же сохранение."
+
+msgctxt "data:guide"
+msgid "Your own settings (controls, HUD, text size) are never part of a run."
+msgstr "Ваши собственные настройки (управление, HUD, размер текста) никогда не входят в забег."
+
+msgctxt "data:guide"
+msgid "When a run ends, everything in it resets. Your account unlocks and mastery stay."
+msgstr "Когда забег заканчивается, всё в нём сбрасывается. Открытия аккаунта и мастерство остаются."
 
 msgctxt "data:guide"
 msgid "Account & Unlocks"
 msgstr "Аккаунт и открытия"
 
 msgctxt "data:guide"
+msgid "Your account keeps unlocks, titles and mastery between runs, on your own computer."
+msgstr "Аккаунт хранит открытия, титулы и мастерство между забегами - на вашем компьютере."
+
+msgctxt "data:guide"
+msgid "account unlocks titles cosmetics badge style collection between runs permanent"
+msgstr "account unlocks titles cosmetics badge style collection between runs permanent аккаунт открытия разблокировки титулы украшения значок стиль коллекция между забегами навсегда"
+
+msgctxt "data:guide"
+msgid "Earn unlocks by playing: they stay on your account for good."
+msgstr "Получайте открытия, просто играя: они остаются в вашем аккаунте навсегда."
+
+msgctxt "data:guide"
+msgid "Some unlocks give you a choice at the start of a run ({cfg:Account/StartingUnlocks?on here:off here})."
+msgstr "Некоторые открытия дают выбор в начале забега ({cfg:Account/StartingUnlocks?здесь включено:здесь выключено})."
+
+msgctxt "data:guide"
+msgid "Pick your title and cosmetics on the Account tab. Teammates see your title and badge."
+msgstr "Выбирайте титул и украшения на вкладке «Аккаунт». Напарники видят ваш титул и значок."
+
+msgctxt "data:guide"
+msgid "Go to the Account tab"
+msgstr "Перейти на вкладку «Аккаунт»"
+
+msgctxt "data:guide"
 msgid "Mastery & Prestige"
 msgstr "Мастерство и престиж"
 
 msgctxt "data:guide"
+msgid "Reach level {cfg:Leveling/MaxLevel} with a class to master it, for a badge and new options on later runs."
+msgstr "Достигните уровня {cfg:Leveling/MaxLevel} за класс, чтобы освоить его - ради значка и новых возможностей в следующих забегах."
+
+msgctxt "data:guide"
+msgid "mastery master prestige star badge alternate passive fourth tree 4th"
+msgstr "mastery master prestige star badge alternate passive fourth tree 4th мастерство освоить освоен престиж звезда значок альтернативная пассивка четвёртое древо 4-е"
+
+msgctxt "data:guide"
+msgid "Master a class to get a ★ next to its name and yours, for good."
+msgstr "Освойте класс, чтобы навсегда получить ★ рядом с его названием и вашим именем."
+
+msgctxt "data:guide"
+msgid "Swap in the class's alternate passive before spending points ({cfg:Account/AlternatePassives?allowed here:off here})."
+msgstr "Замените пассивку класса на альтернативную, прежде чем тратить очки ({cfg:Account/AlternatePassives?здесь разрешено:здесь выключено})."
+
+msgctxt "data:guide"
+msgid "Unlock a fourth talent tree for the class ({cfg:Account/PrestigeTrees?allowed here:off here})."
+msgstr "Откройте четвёртое древо талантов для класса ({cfg:Account/PrestigeTrees?здесь разрешено:здесь выключено})."
+
+msgctxt "data:guide"
 msgid "Joining Late"
 msgstr "Позднее подключение"
+
+msgctxt "data:guide"
+msgid "{cfg:LateJoin/Enabled?Friends can join after the run has started: in the truck, the shop or mid-level.:Joining after the run has started is off on this host.}"
+msgstr "{cfg:LateJoin/Enabled?Друзья могут подключиться после начала забега - в грузовике, магазине или посреди уровня.:Подключение после начала забега отключено на этом хосте.}"
+
+msgctxt "data:guide"
+msgid "late join joining mid level drop in rejoin friend spawn shield catch up catch up catch-up starting scrap starting gear behind xp bonus"
+msgstr "late join joining mid level drop in rejoin friend spawn shield catch up catch up catch-up starting scrap starting gear behind xp bonus позднее подключение подключиться посреди уровня зайти вернуться друг появление щит догнать догоняющий стартовый лом стартовое снаряжение отставание бонус опыта"
+
+msgctxt "data:guide"
+msgid "Join where the host allows: truck {cfg:LateJoin/AllowTruck?on:off}, shop {cfg:LateJoin/AllowShop?on:off}, mid-level {cfg:LateJoin/AllowLevels?on:off}."
+msgstr "Подключайтесь там, где разрешает хост: грузовик - {cfg:LateJoin/AllowTruck?вкл.:выкл.}, магазин - {cfg:LateJoin/AllowShop?вкл.:выкл.}, посреди уровня - {cfg:LateJoin/AllowLevels?вкл.:выкл.}."
+
+msgctxt "data:guide"
+msgid "You can't be hurt for {cfg:LateJoin/SpawnShield} s after you appear."
+msgstr "Вы неуязвимы {cfg:LateJoin/SpawnShield} с после появления."
 
 msgctxt "data:guide"
 msgid "Deeper in the run"
