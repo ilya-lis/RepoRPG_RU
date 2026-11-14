@@ -17,6 +17,7 @@ How a text is used (KIND) decides how it is translated:
     contract    "{t}" = the target, "{s}" = "s" when the target is not 1                              -> shapes
     synergy     "{v}", "{v2}" = values
     pre/beh/base/post   words gear names are made of ("Sharp" + "Striker Module" + " of the " + "Brawler")
+    slot        a gear slot: a name, and the last word of a prototype's name ("Prototype " + "Mender" + " " + "Core")
     first/epithet       boss names ("Grindle" + " the " + "Unbroken")
     guide       the Guide: replaced inside the data itself (the mod fills in {key:menu}, {cfg:...} and searches it)
     keywords    search words of a Guide topic: the Russian ones are added to the English ones
@@ -35,7 +36,7 @@ KIND = {
     },
     'rpg': {
         'attributes/name': 'name', 'attributes/desc': 'text', 'attributes/category': 'name',
-        'rarities/name': 'name', 'slots/name': 'name', 'slots/desc': 'text', 'slots/bases': 'base',
+        'rarities/name': 'name', 'slots/name': 'slot', 'slots/desc': 'text', 'slots/bases': 'base',
         'uniques/name': 'name', 'uniques/desc': 'text',
         'perks/name': 'name', 'perks/desc': 'text', 'upgrades/name': 'name',
         'blessings/name': 'name', 'blessings/desc': 'text', 'curses/name': 'name', 'curses/desc': 'text',
@@ -166,15 +167,18 @@ def main():
         if '--done' in sys.argv:
             d = sys.argv[sys.argv.index('--done') + 1]
             for f in glob.glob(os.path.join(d, '*.tsv')):
+                own = os.path.basename(f)[:-4].split('-')[0]
                 for line in open(f, encoding='utf-8'):
-                    if '\t' in line and not line.startswith(('#', '+')): done.add(line.split('\t', 1)[0])
+                    if '\t' in line and not line.startswith(('#', '+')):
+                        key = line.split('\t', 1)[0]
+                        done.add(key if '.' in key else own + '.' + key)
         for u in us:
             if u['file'] != stem: continue
             n = int(u['id'].rsplit('.', 1)[1])
             if n < lo or n > hi: continue
             if u['id'] in done and '--all' not in sys.argv: continue
             leaf = u['path'].split('/', 1)[-1] if '/' in u['path'] else u['path']
-            special = [k for k in u['kinds'] if k in ('pre', 'beh', 'base', 'post', 'first', 'epithet')]
+            special = [k for k in u['kinds'] if k in ('pre', 'beh', 'base', 'post', 'slot', 'first', 'epithet')]
             if special: leaf += ' [' + ','.join(special) + ']'
             print('%s\t%s\t%s' % (u['id'].split('.', 1)[1], leaf, u['text'].replace('\\', '\\\\').replace('\n', '\\n')))
     else:

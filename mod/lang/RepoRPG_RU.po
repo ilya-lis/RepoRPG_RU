@@ -6051,7 +6051,7 @@ msgid "Unspent Potential"
 msgstr "Нераскрытый потенциал"
 
 msgid "Bruiser"
-msgstr "Громила"
+msgstr "Костолом"
 
 msgid "Ghost"
 msgstr "Призрак"
@@ -8890,7 +8890,7 @@ msgstr "Аккаунт"
 
 msgctxt "term"
 msgid "Physical"
-msgstr "Физический"
+msgstr "Тело"
 
 msgctxt "term"
 msgid "very rare"
@@ -10257,44 +10257,180 @@ msgid "Throw Strength"
 msgstr "Сила броска"
 
 msgctxt "term"
+msgid "Thrown objects fly farther and hit harder."
+msgstr "Брошенные предметы летят дальше и бьют сильнее."
+
+msgctxt "term"
 msgid "Weapon Damage"
 msgstr "Урон оружия"
+
+msgctxt "term"
+msgid "Held weapons and melee hits deal more damage."
+msgstr "Оружие в руках и удары в ближнем бою наносят больше урона."
 
 msgctxt "term"
 msgid "Focus"
 msgstr "Концентрация"
 
 msgctxt "term"
+msgid "Use your class ability more often, and harder."
+msgstr "Способность класса применяется чаще и действует сильнее."
+
+msgctxt "term"
 msgid "Vitality"
 msgstr "Живучесть"
+
+msgctxt "term"
+msgid "More max health."
+msgstr "Больше максимального здоровья."
 
 msgctxt "term"
 msgid "Endurance"
 msgstr "Выносливость"
 
 msgctxt "term"
+msgid "More stamina, and it comes back faster."
+msgstr "Больше выносливости, и она восстанавливается быстрее."
+
+msgctxt "term"
 msgid "Agility"
 msgstr "Ловкость"
+
+msgctxt "term"
+msgid "Walk, sprint and crouch faster."
+msgstr "Быстрее ходьба, бег и движение в приседе."
 
 msgctxt "term"
 msgid "Leap"
 msgstr "Прыжок"
 
 msgctxt "term"
+msgid "Jump higher."
+msgstr "Выше прыжок."
+
+msgctxt "term"
 msgid "Grip Strength"
 msgstr "Сила хвата"
+
+msgctxt "term"
+msgid "Lift heavier things and hold them steadier."
+msgstr "Вы поднимаете более тяжёлые вещи и держите их увереннее."
 
 msgctxt "term"
 msgid "Reach"
 msgstr "Досягаемость"
 
 msgctxt "term"
+msgid "Grab things from farther away."
+msgstr "Вы хватаете вещи с большего расстояния."
+
+msgctxt "term"
 msgid "Finesse"
 msgstr "Аккуратность"
 
 msgctxt "term"
+msgid "Carrying things costs less stamina."
+msgstr "Переноска вещей тратит меньше выносливости."
+
+msgctxt "term"
+msgid "Your movement and the things you handle make less noise, so monsters notice you later."
+msgstr "Ваши движения и вещи в ваших руках производят меньше шума, поэтому монстры замечают вас позже."
+
+msgctxt "term"
+msgid "Slowly heal between fights; more XP for revives."
+msgstr "Медленное лечение между боями; больше опыта за возрождения."
+
+msgctxt "term"
 msgid "Fortune"
 msgstr "Удача"
+
+msgctxt "term"
+msgid "Slightly better gear rarity, and a bonus on top of your currency share."
+msgstr "Чуть выше редкость снаряжения и бонус сверх вашей доли валюты."
+
+msgctxt "term"
+msgid "Weapon Module"
+msgstr "Оружейный модуль"
+
+msgctxt "term"
+msgid "Plating"
+msgstr "Броня"
+
+msgctxt "term"
+msgid "Servos"
+msgstr "Сервоприводы"
+
+msgctxt "term"
+msgid "Core"
+msgstr "Ядро"
+
+msgctxt "term"
+msgid "Bloodletter"
+msgstr "Кровопускатель"
+
+msgctxt "term"
+msgid "Hits often make enemies bleed."
+msgstr "Удары часто вызывают у врагов кровотечение."
+
+msgctxt "term"
+msgid "Concussor"
+msgstr "Оглушитель"
+
+msgctxt "term"
+msgid "Hits often stun."
+msgstr "Удары часто оглушают."
+
+msgctxt "term"
+msgid "Every hit heals you."
+msgstr "Каждый удар лечит вас."
+
+msgctxt "term"
+msgid "Phoenix Plate"
+msgstr "Пластина феникса"
+
+msgctxt "term"
+msgid "Cheat death one more time per level."
+msgstr "Ещё один раз за уровень обманите смерть."
+
+msgctxt "term"
+msgid "Aegis Shell"
+msgstr "Панцирь-эгида"
+
+msgctxt "term"
+msgid "Shrug off a chunk of every hit."
+msgstr "Гасит часть каждого удара."
+
+msgctxt "term"
+msgid "Overclocked Legs"
+msgstr "Разогнанные ноги"
+
+msgctxt "term"
+msgid "An extra mid-air jump."
+msgstr "Дополнительный прыжок в воздухе."
+
+msgctxt "term"
+msgid "Perpetual Drive"
+msgstr "Вечный привод"
+
+msgctxt "term"
+msgid "Sprinting barely costs stamina."
+msgstr "Бег почти не тратит выносливость."
+
+msgctxt "term"
+msgid "Chrono Core"
+msgstr "Хроноядро"
+
+msgctxt "term"
+msgid "Your ability comes back much faster."
+msgstr "Способность восстанавливается намного быстрее."
+
+msgctxt "term"
+msgid "Midas Core"
+msgstr "Ядро Мидаса"
+
+msgctxt "term"
+msgid "XP and loot luck pour in."
+msgstr "Опыт и удача на добычу льются рекой."
 
 msgctxt "term"
 msgid "Double Charge"
@@ -10390,7 +10526,7 @@ msgstr "Усиленная гидравлика"
 
 msgctxt "term"
 msgid "+50% grab strength and +25% grab range."
-msgstr "+50% к силе захвата и +25% к дальности захвата."
+msgstr "+50% к силе хвата и +25% к дальности хвата."
 
 msgctxt "term"
 msgid "Quick Learner"
@@ -10427,6 +10563,10 @@ msgstr "Союзники в пределах 8 м восстанавливают
 msgctxt "term"
 msgid "Berserk"
 msgstr "Берсерк"
+
+msgctxt "term"
+msgid "Below 35% HP: +30% speed. Also +15% weapon damage."
+msgstr "Ниже 35% ОЗ: +30% к скорости. Кроме того, +15% к урону оружия."
 
 msgctxt "term"
 msgid "Sixth Sense"
@@ -10515,6 +10655,266 @@ msgstr "Крепкий орешек"
 msgctxt "term"
 msgid "+30% max health, but sprint 10% slower."
 msgstr "+30% к макс. здоровью, но бег на 10% медленнее."
+
+msgctxt "term"
+msgid "Stamina"
+msgstr "Выносливость"
+
+msgctxt "term"
+msgid "Sprint Speed"
+msgstr "Скорость бега"
+
+msgctxt "term"
+msgid "Grab Strength"
+msgstr "Сила хвата"
+
+msgctxt "term"
+msgid "Grab Range"
+msgstr "Дальность хвата"
+
+msgctxt "term"
+msgid "Extra Jump"
+msgstr "Дополнительный прыжок"
+
+msgctxt "term"
+msgid "Tumble Launch"
+msgstr "Толчок в падении"
+
+msgctxt "term"
+msgid "Map Player Count"
+msgstr "Игроки на карте"
+
+msgctxt "term"
+msgid "Tumble Wings"
+msgstr "Крылья в падении"
+
+msgctxt "term"
+msgid "Tumble Climb"
+msgstr "Карабканье в падении"
+
+msgctxt "term"
+msgid "Death Head Battery"
+msgstr "Батарея головы"
+
+msgctxt "term"
+msgid "Crouch Rest"
+msgstr "Отдых в приседе"
+
+msgctxt "term"
+msgid "Fleet Foot"
+msgstr "Быстрые ноги"
+
+msgctxt "term"
+msgid "+12% walk and sprint speed"
+msgstr "+12% к скорости ходьбы и бега"
+
+msgctxt "term"
+msgid "Take 12% less damage"
+msgstr "Вы получаете на 12% меньше урона"
+
+msgctxt "term"
+msgid "Vigor"
+msgstr "Бодрость"
+
+msgctxt "term"
+msgid "+20% max health"
+msgstr "+20% к макс. здоровью"
+
+msgctxt "term"
+msgid "Big Lungs"
+msgstr "Большие лёгкие"
+
+msgctxt "term"
+msgid "+30% max stamina"
+msgstr "+30% к макс. выносливости"
+
+msgctxt "term"
+msgid "Iron Grip"
+msgstr "Железная хватка"
+
+msgctxt "term"
+msgid "+25% grab strength"
+msgstr "+25% к силе хвата"
+
+msgctxt "term"
+msgid "Golden Arm"
+msgstr "Золотая рука"
+
+msgctxt "term"
+msgid "+25% throw strength"
+msgstr "+25% к силе броска"
+
+msgctxt "term"
+msgid "Scholar"
+msgstr "Грамотей"
+
+msgctxt "term"
+msgid "+20% XP"
+msgstr "+20% опыта"
+
+msgctxt "term"
+msgid "Four-Leaf"
+msgstr "Четырёхлистник"
+
+msgctxt "term"
+msgid "+2 gear luck"
+msgstr "+2 к удаче снаряжения"
+
+msgctxt "term"
+msgid "+1 death save this level"
+msgstr "+1 спасение от смерти на этом уровне"
+
+msgctxt "term"
+msgid "Loaded Dice"
+msgstr "Шулерские кости"
+
+msgctxt "term"
+msgid "+1 Double or Nothing this level"
+msgstr "+1 «Вдвое или ничего» на этом уровне"
+
+msgctxt "term"
+msgid "Hot Streak"
+msgstr "Полоса везения"
+
+msgctxt "term"
+msgid "Double or Nothing's top multiplier +0.5x"
+msgstr "Наибольший множитель «Вдвое или ничего»: +0.5x"
+
+msgctxt "term"
+msgid "Quick Hands"
+msgstr "Быстрые руки"
+
+msgctxt "term"
+msgid "Ability cooldowns 12% shorter"
+msgstr "Перезарядка способностей на 12% короче"
+
+msgctxt "term"
+msgid "Springs"
+msgstr "Пружины"
+
+msgctxt "term"
+msgid "+20% jump force"
+msgstr "+20% к силе прыжка"
+
+msgctxt "term"
+msgid "Tycoon"
+msgstr "Магнат"
+
+msgctxt "term"
+msgid "+10% Scrap share"
+msgstr "+10% к доле лома"
+
+msgctxt "term"
+msgid "Sluggish"
+msgstr "Вялость"
+
+msgctxt "term"
+msgid "-8% walk and sprint speed"
+msgstr "-8% к скорости ходьбы и бега"
+
+msgctxt "term"
+msgid "Brittle"
+msgstr "Хрупкость"
+
+msgctxt "term"
+msgid "Take 10% more damage"
+msgstr "Вы получаете на 10% больше урона"
+
+msgctxt "term"
+msgid "Frail"
+msgstr "Хилость"
+
+msgctxt "term"
+msgid "-10% max health"
+msgstr "-10% к макс. здоровью"
+
+msgctxt "term"
+msgid "Winded"
+msgstr "Одышка"
+
+msgctxt "term"
+msgid "-20% max stamina"
+msgstr "-20% к макс. выносливости"
+
+msgctxt "term"
+msgid "-15% grab strength"
+msgstr "-15% к силе хвата"
+
+msgctxt "term"
+msgid "Limp Arm"
+msgstr "Слабая рука"
+
+msgctxt "term"
+msgid "-20% throw strength"
+msgstr "-20% к силе броска"
+
+msgctxt "term"
+msgid "Dull"
+msgstr "Тупость"
+
+msgctxt "term"
+msgid "-15% XP"
+msgstr "-15% опыта"
+
+msgctxt "term"
+msgid "Leaden"
+msgstr "Свинцовые ноги"
+
+msgctxt "term"
+msgid "-15% jump force"
+msgstr "-15% к силе прыжка"
+
+msgctxt "term"
+msgid "Wheezing"
+msgstr "Хрипы"
+
+msgctxt "term"
+msgid "Sprinting drains 20% more stamina"
+msgstr "Бег тратит на 20% больше выносливости"
+
+msgctxt "term"
+msgid "Short Reach"
+msgstr "Короткие руки"
+
+msgctxt "term"
+msgid "-10% grab range"
+msgstr "-10% к дальности хвата"
+
+msgctxt "term"
+msgid "Slow Hands"
+msgstr "Медленные руки"
+
+msgctxt "term"
+msgid "Ability cooldowns 10% longer"
+msgstr "Перезарядка способностей на 10% дольше"
+
+msgctxt "term"
+msgid "Double or Nothing's timer 30% shorter"
+msgstr "Таймер «Вдвое или ничего» на 30% короче"
+
+msgctxt "term"
+msgid "Loud Mark"
+msgstr "Громкая метка"
+
+msgctxt "term"
+msgid "Your marked valuable hums 50% farther"
+msgstr "Ваша отмеченная ценность гудит на 50% дальше"
+
+msgctxt "term"
+msgid "Low threat"
+msgstr "Низкая угроза"
+
+msgctxt "term"
+msgid "Dangerous"
+msgstr "Опасно"
+
+msgctxt "term"
+msgid "Deadly"
+msgstr "Смертельно"
+
+msgctxt "term"
+msgid "Lethal"
+msgstr "Гибельно"
 
 msgctxt "term"
 msgid "Juggernaut"
@@ -11255,6 +11655,550 @@ msgstr "Проверка полиса"
 msgctxt "term"
 msgid "Rush Order"
 msgstr "Срочный заказ"
+
+msgctxt "term"
+msgid "Striker Module"
+msgstr "Ударный модуль"
+
+msgctxt "term"
+msgid "Striker Module of the Hauler"
+msgstr "Ударный модуль носильщика"
+
+msgctxt "term"
+msgid "Field Medic Striker Module"
+msgstr "Ударный модуль полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Striker Module of the Hauler"
+msgstr "Ударный модуль полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Striker Module"
+msgstr "Удачливый ударный модуль"
+
+msgctxt "term"
+msgid "Lucky Striker Module of the Hauler"
+msgstr "Удачливый ударный модуль носильщика"
+
+msgctxt "term"
+msgid "Second Wind Striker Module"
+msgstr "Ударный модуль второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Striker Module of the Hauler"
+msgstr "Ударный модуль второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Impact Gauntlet"
+msgstr "Боевая перчатка"
+
+msgctxt "term"
+msgid "Impact Gauntlet of the Hauler"
+msgstr "Боевая перчатка носильщика"
+
+msgctxt "term"
+msgid "Field Medic Impact Gauntlet"
+msgstr "Боевая перчатка полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Impact Gauntlet of the Hauler"
+msgstr "Боевая перчатка полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Impact Gauntlet"
+msgstr "Удачливая боевая перчатка"
+
+msgctxt "term"
+msgid "Lucky Impact Gauntlet of the Hauler"
+msgstr "Удачливая боевая перчатка носильщика"
+
+msgctxt "term"
+msgid "Second Wind Impact Gauntlet"
+msgstr "Боевая перчатка второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Impact Gauntlet of the Hauler"
+msgstr "Боевая перчатка второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Breaker Arm"
+msgstr "Рука-крушитель"
+
+msgctxt "term"
+msgid "Breaker Arm of the Hauler"
+msgstr "Рука-крушитель носильщика"
+
+msgctxt "term"
+msgid "Field Medic Breaker Arm"
+msgstr "Рука-крушитель полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Breaker Arm of the Hauler"
+msgstr "Рука-крушитель полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Breaker Arm"
+msgstr "Удачливая рука-крушитель"
+
+msgctxt "term"
+msgid "Lucky Breaker Arm of the Hauler"
+msgstr "Удачливая рука-крушитель носильщика"
+
+msgctxt "term"
+msgid "Second Wind Breaker Arm"
+msgstr "Рука-крушитель второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Breaker Arm of the Hauler"
+msgstr "Рука-крушитель второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Ram Fist"
+msgstr "Кулак-таран"
+
+msgctxt "term"
+msgid "Ram Fist of the Hauler"
+msgstr "Кулак-таран носильщика"
+
+msgctxt "term"
+msgid "Field Medic Ram Fist"
+msgstr "Кулак-таран полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Ram Fist of the Hauler"
+msgstr "Кулак-таран полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Ram Fist"
+msgstr "Удачливый кулак-таран"
+
+msgctxt "term"
+msgid "Lucky Ram Fist of the Hauler"
+msgstr "Удачливый кулак-таран носильщика"
+
+msgctxt "term"
+msgid "Second Wind Ram Fist"
+msgstr "Кулак-таран второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Ram Fist of the Hauler"
+msgstr "Кулак-таран второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Scrap Plating"
+msgstr "Броня из лома"
+
+msgctxt "term"
+msgid "Scrap Plating of the Hauler"
+msgstr "Броня из лома носильщика"
+
+msgctxt "term"
+msgid "Field Medic Scrap Plating"
+msgstr "Броня из лома полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Scrap Plating of the Hauler"
+msgstr "Броня из лома полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Scrap Plating"
+msgstr "Удачливая броня из лома"
+
+msgctxt "term"
+msgid "Lucky Scrap Plating of the Hauler"
+msgstr "Удачливая броня из лома носильщика"
+
+msgctxt "term"
+msgid "Second Wind Scrap Plating"
+msgstr "Броня из лома второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Scrap Plating of the Hauler"
+msgstr "Броня из лома второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Riot Plating"
+msgstr "Штурмовая броня"
+
+msgctxt "term"
+msgid "Riot Plating of the Hauler"
+msgstr "Штурмовая броня носильщика"
+
+msgctxt "term"
+msgid "Field Medic Riot Plating"
+msgstr "Штурмовая броня полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Riot Plating of the Hauler"
+msgstr "Штурмовая броня полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Riot Plating"
+msgstr "Удачливая штурмовая броня"
+
+msgctxt "term"
+msgid "Lucky Riot Plating of the Hauler"
+msgstr "Удачливая штурмовая броня носильщика"
+
+msgctxt "term"
+msgid "Second Wind Riot Plating"
+msgstr "Штурмовая броня второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Riot Plating of the Hauler"
+msgstr "Штурмовая броня второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Ceramic Shell"
+msgstr "Керамический панцирь"
+
+msgctxt "term"
+msgid "Ceramic Shell of the Hauler"
+msgstr "Керамический панцирь носильщика"
+
+msgctxt "term"
+msgid "Field Medic Ceramic Shell"
+msgstr "Керамический панцирь полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Ceramic Shell of the Hauler"
+msgstr "Керамический панцирь полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Ceramic Shell"
+msgstr "Удачливый керамический панцирь"
+
+msgctxt "term"
+msgid "Lucky Ceramic Shell of the Hauler"
+msgstr "Удачливый керамический панцирь носильщика"
+
+msgctxt "term"
+msgid "Second Wind Ceramic Shell"
+msgstr "Керамический панцирь второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Ceramic Shell of the Hauler"
+msgstr "Керамический панцирь второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Bulkhead Vest"
+msgstr "Жилет-переборка"
+
+msgctxt "term"
+msgid "Bulkhead Vest of the Hauler"
+msgstr "Жилет-переборка носильщика"
+
+msgctxt "term"
+msgid "Field Medic Bulkhead Vest"
+msgstr "Жилет-переборка полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Bulkhead Vest of the Hauler"
+msgstr "Жилет-переборка полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Bulkhead Vest"
+msgstr "Удачливый жилет-переборка"
+
+msgctxt "term"
+msgid "Lucky Bulkhead Vest of the Hauler"
+msgstr "Удачливый жилет-переборка носильщика"
+
+msgctxt "term"
+msgid "Second Wind Bulkhead Vest"
+msgstr "Жилет-переборка второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Bulkhead Vest of the Hauler"
+msgstr "Жилет-переборка второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Leg Servos"
+msgstr "Ножные сервоприводы"
+
+msgctxt "term"
+msgid "Leg Servos of the Hauler"
+msgstr "Ножные сервоприводы носильщика"
+
+msgctxt "term"
+msgid "Field Medic Leg Servos"
+msgstr "Ножные сервоприводы полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Leg Servos of the Hauler"
+msgstr "Ножные сервоприводы полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Leg Servos"
+msgstr "Удачливые ножные сервоприводы"
+
+msgctxt "term"
+msgid "Lucky Leg Servos of the Hauler"
+msgstr "Удачливые ножные сервоприводы носильщика"
+
+msgctxt "term"
+msgid "Second Wind Leg Servos"
+msgstr "Ножные сервоприводы второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Leg Servos of the Hauler"
+msgstr "Ножные сервоприводы второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Spring Actuators"
+msgstr "Пружинные приводы"
+
+msgctxt "term"
+msgid "Spring Actuators of the Hauler"
+msgstr "Пружинные приводы носильщика"
+
+msgctxt "term"
+msgid "Field Medic Spring Actuators"
+msgstr "Пружинные приводы полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Spring Actuators of the Hauler"
+msgstr "Пружинные приводы полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Spring Actuators"
+msgstr "Удачливые пружинные приводы"
+
+msgctxt "term"
+msgid "Lucky Spring Actuators of the Hauler"
+msgstr "Удачливые пружинные приводы носильщика"
+
+msgctxt "term"
+msgid "Second Wind Spring Actuators"
+msgstr "Пружинные приводы второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Spring Actuators of the Hauler"
+msgstr "Пружинные приводы второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Gyro Joints"
+msgstr "Гироскопические суставы"
+
+msgctxt "term"
+msgid "Gyro Joints of the Hauler"
+msgstr "Гироскопические суставы носильщика"
+
+msgctxt "term"
+msgid "Field Medic Gyro Joints"
+msgstr "Гироскопические суставы полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Gyro Joints of the Hauler"
+msgstr "Гироскопические суставы полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Gyro Joints"
+msgstr "Удачливые гироскопические суставы"
+
+msgctxt "term"
+msgid "Lucky Gyro Joints of the Hauler"
+msgstr "Удачливые гироскопические суставы носильщика"
+
+msgctxt "term"
+msgid "Second Wind Gyro Joints"
+msgstr "Гироскопические суставы второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Gyro Joints of the Hauler"
+msgstr "Гироскопические суставы второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Track Motors"
+msgstr "Гусеничные моторы"
+
+msgctxt "term"
+msgid "Track Motors of the Hauler"
+msgstr "Гусеничные моторы носильщика"
+
+msgctxt "term"
+msgid "Field Medic Track Motors"
+msgstr "Гусеничные моторы полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Track Motors of the Hauler"
+msgstr "Гусеничные моторы полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Track Motors"
+msgstr "Удачливые гусеничные моторы"
+
+msgctxt "term"
+msgid "Lucky Track Motors of the Hauler"
+msgstr "Удачливые гусеничные моторы носильщика"
+
+msgctxt "term"
+msgid "Second Wind Track Motors"
+msgstr "Гусеничные моторы второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Track Motors of the Hauler"
+msgstr "Гусеничные моторы второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Logic Core"
+msgstr "Логическое ядро"
+
+msgctxt "term"
+msgid "Logic Core of the Hauler"
+msgstr "Логическое ядро носильщика"
+
+msgctxt "term"
+msgid "Field Medic Logic Core"
+msgstr "Логическое ядро полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Logic Core of the Hauler"
+msgstr "Логическое ядро полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Logic Core"
+msgstr "Удачливое логическое ядро"
+
+msgctxt "term"
+msgid "Lucky Logic Core of the Hauler"
+msgstr "Удачливое логическое ядро носильщика"
+
+msgctxt "term"
+msgid "Second Wind Logic Core"
+msgstr "Логическое ядро второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Logic Core of the Hauler"
+msgstr "Логическое ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Quantum Core"
+msgstr "Квантовое ядро"
+
+msgctxt "term"
+msgid "Quantum Core of the Hauler"
+msgstr "Квантовое ядро носильщика"
+
+msgctxt "term"
+msgid "Field Medic Quantum Core"
+msgstr "Квантовое ядро полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Quantum Core of the Hauler"
+msgstr "Квантовое ядро полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Quantum Core"
+msgstr "Удачливое квантовое ядро"
+
+msgctxt "term"
+msgid "Lucky Quantum Core of the Hauler"
+msgstr "Удачливое квантовое ядро носильщика"
+
+msgctxt "term"
+msgid "Second Wind Quantum Core"
+msgstr "Квантовое ядро второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Quantum Core of the Hauler"
+msgstr "Квантовое ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Battery Core"
+msgstr "Батарейное ядро"
+
+msgctxt "term"
+msgid "Battery Core of the Hauler"
+msgstr "Батарейное ядро носильщика"
+
+msgctxt "term"
+msgid "Field Medic Battery Core"
+msgstr "Батарейное ядро полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Battery Core of the Hauler"
+msgstr "Батарейное ядро полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Battery Core"
+msgstr "Удачливое батарейное ядро"
+
+msgctxt "term"
+msgid "Lucky Battery Core of the Hauler"
+msgstr "Удачливое батарейное ядро носильщика"
+
+msgctxt "term"
+msgid "Second Wind Battery Core"
+msgstr "Батарейное ядро второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Battery Core of the Hauler"
+msgstr "Батарейное ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Neural Core"
+msgstr "Нейронное ядро"
+
+msgctxt "term"
+msgid "Neural Core of the Hauler"
+msgstr "Нейронное ядро носильщика"
+
+msgctxt "term"
+msgid "Field Medic Neural Core"
+msgstr "Нейронное ядро полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Neural Core of the Hauler"
+msgstr "Нейронное ядро полевого медика носильщика"
+
+msgctxt "term"
+msgid "Lucky Neural Core"
+msgstr "Удачливое нейронное ядро"
+
+msgctxt "term"
+msgid "Lucky Neural Core of the Hauler"
+msgstr "Удачливое нейронное ядро носильщика"
+
+msgctxt "term"
+msgid "Second Wind Neural Core"
+msgstr "Нейронное ядро второго дыхания"
+
+msgctxt "term"
+msgid "Second Wind Neural Core of the Hauler"
+msgstr "Нейронное ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Prototype Field Medic Weapon Module"
+msgstr "Прототип: Оружейный модуль полевого медика"
+
+msgctxt "term"
+msgid "Prototype Second Wind Weapon Module"
+msgstr "Прототип: Оружейный модуль второго дыхания"
+
+msgctxt "term"
+msgid "Prototype Field Medic Plating"
+msgstr "Прототип: Броня полевого медика"
+
+msgctxt "term"
+msgid "Prototype Second Wind Plating"
+msgstr "Прототип: Броня второго дыхания"
+
+msgctxt "term"
+msgid "Prototype Field Medic Servos"
+msgstr "Прототип: Сервоприводы полевого медика"
+
+msgctxt "term"
+msgid "Prototype Second Wind Servos"
+msgstr "Прототип: Сервоприводы второго дыхания"
+
+msgctxt "term"
+msgid "Prototype Field Medic Core"
+msgstr "Прототип: Ядро полевого медика"
+
+msgctxt "term"
+msgid "Prototype Second Wind Core"
+msgstr "Прототип: Ядро второго дыхания"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -14070,7 +15014,7 @@ msgstr "+{0} дополнительный прыжок и +{1}% к силе пр
 
 msgctxt "shape"
 msgid "+{0}% grab strength and +{1}% grab range."
-msgstr "+{0}% к силе захвата и +{1}% к дальности захвата."
+msgstr "+{0}% к силе хвата и +{1}% к дальности хвата."
 
 msgctxt "shape"
 msgid "+{0}% XP from everything."
@@ -14087,6 +15031,10 @@ msgstr "-{0}% к перезарядке способности и +{1}% к её 
 msgctxt "shape"
 msgid "Allies within {0}m regain {1} HP every {2}s."
 msgstr "Союзники в пределах {0} м восстанавливают {1} ОЗ каждые {2} с."
+
+msgctxt "shape"
+msgid "Below {0}% HP: +{1}% speed. Also +{2}% weapon damage."
+msgstr "Ниже {0}% ОЗ: +{1}% к скорости. Кроме того, +{2}% к урону оружия."
 
 msgctxt "shape"
 msgid "Your HUD warns of enemies within {0}m."
@@ -14117,6 +15065,114 @@ msgid "+{0}% max health, but sprint {1}% slower."
 msgstr "+{0}% к макс. здоровью, но бег на {1}% медленнее."
 
 msgctxt "shape"
+msgid "+{0}% walk and sprint speed"
+msgstr "+{0}% к скорости ходьбы и бега"
+
+msgctxt "shape"
+msgid "Take {0}% less damage"
+msgstr "Вы получаете на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "+{0}% max health"
+msgstr "+{0}% к макс. здоровью"
+
+msgctxt "shape"
+msgid "+{0}% max stamina"
+msgstr "+{0}% к макс. выносливости"
+
+msgctxt "shape"
+msgid "+{0}% grab strength"
+msgstr "+{0}% к силе хвата"
+
+msgctxt "shape"
+msgid "+{0}% throw strength"
+msgstr "+{0}% к силе броска"
+
+msgctxt "shape"
+msgid "+{0}% XP"
+msgstr "+{0}% опыта"
+
+msgctxt "shape"
+msgid "+{0} gear luck"
+msgstr "+{0} к удаче снаряжения"
+
+msgctxt "shape"
+msgid "+{0} death save this level"
+msgstr "+{0} спасение от смерти на этом уровне"
+
+msgctxt "shape"
+msgid "+{0} Double or Nothing this level"
+msgstr "+{0} «Вдвое или ничего» на этом уровне"
+
+msgctxt "shape"
+msgid "Double or Nothing's top multiplier +{0}x"
+msgstr "Наибольший множитель «Вдвое или ничего»: +{0}x"
+
+msgctxt "shape"
+msgid "Ability cooldowns {0}% shorter"
+msgstr "Перезарядка способностей на {0}% короче"
+
+msgctxt "shape"
+msgid "+{0}% jump force"
+msgstr "+{0}% к силе прыжка"
+
+msgctxt "shape"
+msgid "+{0}% Scrap share"
+msgstr "+{0}% к доле лома"
+
+msgctxt "shape"
+msgid "-{0}% walk and sprint speed"
+msgstr "-{0}% к скорости ходьбы и бега"
+
+msgctxt "shape"
+msgid "Take {0}% more damage"
+msgstr "Вы получаете на {0}% больше урона"
+
+msgctxt "shape"
+msgid "-{0}% max health"
+msgstr "-{0}% к макс. здоровью"
+
+msgctxt "shape"
+msgid "-{0}% max stamina"
+msgstr "-{0}% к макс. выносливости"
+
+msgctxt "shape"
+msgid "-{0}% grab strength"
+msgstr "-{0}% к силе хвата"
+
+msgctxt "shape"
+msgid "-{0}% throw strength"
+msgstr "-{0}% к силе броска"
+
+msgctxt "shape"
+msgid "-{0}% XP"
+msgstr "-{0}% опыта"
+
+msgctxt "shape"
+msgid "-{0}% jump force"
+msgstr "-{0}% к силе прыжка"
+
+msgctxt "shape"
+msgid "Sprinting drains {0}% more stamina"
+msgstr "Бег тратит на {0}% больше выносливости"
+
+msgctxt "shape"
+msgid "-{0}% grab range"
+msgstr "-{0}% к дальности хвата"
+
+msgctxt "shape"
+msgid "Ability cooldowns {0}% longer"
+msgstr "Перезарядка способностей на {0}% дольше"
+
+msgctxt "shape"
+msgid "Double or Nothing's timer {0}% shorter"
+msgstr "Таймер «Вдвое или ничего» на {0}% короче"
+
+msgctxt "shape"
+msgid "Your marked valuable hums {0}% farther"
+msgstr "Ваша отмеченная ценность гудит на {0}% дальше"
+
+msgctxt "shape"
 msgid "+{0}% max health. Allies within {1}m of you take {2}% less damage."
 msgstr "+{0}% к макс. здоровью. Союзники в пределах {1} м от вас получают на {2}% меньше урона."
 
@@ -14143,10 +15199,6 @@ msgstr "Ценности в пределах {0} м от вас оцениваю
 msgctxt "shape"
 msgid "For {0}s, your HUD tracks the {1} most valuable items within {2}m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
 msgstr "В течение {0} с HUD отслеживает {1} самых ценных предмета в пределах {2} м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
-
-msgctxt "shape"
-msgid "+{0}% Scrap share"
-msgstr "+{0}% к доле лома"
 
 msgctxt "shape"
 msgid "Thrown items stun monsters they hit for {0} s."
@@ -14209,10 +15261,6 @@ msgid "carrying drains {0}% less stamina"
 msgstr "переноска тратит на {0}% меньше выносливости"
 
 msgctxt "shape"
-msgid "+{0}% throw strength"
-msgstr "+{0}% к силе броска"
-
-msgctxt "shape"
 msgid "thrown valuables can't break for {0} s"
 msgstr "брошенные ценности не могут разбиться в течение {0} с"
 
@@ -14231,10 +15279,6 @@ msgstr "ваше лечение напарников +{0}%"
 msgctxt "shape"
 msgid "teammates within {0} m take {1}% less damage"
 msgstr "напарники в пределах {0} м получают на {1}% меньше урона"
-
-msgctxt "shape"
-msgid "+{0} gear luck"
-msgstr "+{0} к удаче снаряжения"
 
 msgctxt "shape"
 msgid "+{0}% weapon damage to elites"
@@ -14263,10 +15307,6 @@ msgstr "при {0}+ зарядах способности они восполн�
 msgctxt "shape"
 msgid "+{0} stamina/s regen (while recharging)"
 msgstr "+{0} к восстановлению выносливости в секунду (пока она восстанавливается)"
-
-msgctxt "shape"
-msgid "+{0}% max stamina"
-msgstr "+{0}% к макс. выносливости"
 
 msgctxt "shape"
 msgid "+{0} ability charge."

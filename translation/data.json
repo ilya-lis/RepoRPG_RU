@@ -398,7 +398,7 @@
 "file": "rpg",
 "path": "slots/name",
 "kinds": [
-"name"
+"slot"
 ],
 "text": "Weapon Module",
 "count": 1,
@@ -464,7 +464,7 @@
 "file": "rpg",
 "path": "slots/name",
 "kinds": [
-"name"
+"slot"
 ],
 "text": "Plating",
 "count": 1,
@@ -530,7 +530,7 @@
 "file": "rpg",
 "path": "slots/name",
 "kinds": [
-"name"
+"slot"
 ],
 "text": "Servos",
 "count": 1,
@@ -596,7 +596,7 @@
 "file": "rpg",
 "path": "slots/name",
 "kinds": [
-"name"
+"slot"
 ],
 "text": "Core",
 "count": 1,

@@ -138,7 +138,7 @@ def build(data_json, tsv_dir, known, problems):
         shapes[sh[0]] = sh[1]
         checks.append(fill(*sh))
 
-    pre, base, post, first, epithet = [], [], [], [], []
+    pre, behs, base, slots, post, first, epithet = [], [], [], [], [], [], []
     for u in units:
         todo[u['file']] += 1
         en, kinds = u['text'], u['kinds']
@@ -169,7 +169,12 @@ def build(data_json, tsv_dir, known, problems):
             m = extra.get('m', ru)
             if 'post' not in extra and not all(k in extra for k in 'fnp'):
                 problems.append('%s: a word gear names start with needs f=, n= and p= forms (or post=)' % where)
-            else: pre.append((en, m, extra))
+            else:
+                pre.append((en, m, extra))
+                if 'beh' in kinds: behs.append((en, m, extra))
+        if 'slot' in kinds:
+            if extra.get('g') not in ('m', 'f', 'n', 'p'): problems.append('%s: a gear slot needs g=m, f, n or p' % where)
+            else: slots.append((en, ru, extra['g']))
         if 'base' in kinds:
             if extra.get('g') not in ('m', 'f', 'n', 'p'): problems.append('%s: a gear base needs g=m, f, n or p' % where)
             else: base.append((en, ru, extra['g']))
@@ -220,6 +225,13 @@ def build(data_json, tsv_dir, known, problems):
                     if s_en: ru += ' ' + s_ru
                     if en in known or en in terms: continue
                     terms[en] = ru; made += 1
+    # "Prototype Mender Core": the item of the research project "Prototype lab"
+    for b_en, b_ru, g in slots:
+        for p_en, p_m, p_x in behs:
+            en = 'Prototype ' + p_en + ' ' + b_en
+            if 'post' in p_x and not all(k in p_x for k in 'fnp'): ru = b_ru + ' ' + p_x['post']
+            else: ru = cap({'m': p_m, 'f': p_x['f'], 'n': p_x['n'], 'p': p_x['p']}[g]) + ' ' + low(b_ru)
+            if en not in known and en not in terms: terms[en] = 'Прототип: ' + ru; made += 1
     bosses = 0
     for f_en, f_ru, g in first:
         for e_en, e_ru, e_f in epithet:
