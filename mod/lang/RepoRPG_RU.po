@@ -49,7 +49,7 @@ msgid "<color=#9a9ca0>Keyboard: type the name, Enter saves, Esc cancels (click t
 msgstr "<color=#9a9ca0>Клавиатура: введите имя, Enter - сохранить, Esc - отмена (щёлкните по полю, чтобы прекратить ввод). Геймпад / WASD: выбирайте буквы ниже.</color>"
 
 msgid "<color=#9a9ca0>Loads as pending changes (press Apply). In a run: XP rates and monsters change from the next level, point and perk gains from the next run. The payout tier and run modifiers stack on top.</color>"
-msgstr "<color=#9a9ca0>Загружается как отложенные изменения (нажмите «Применить»). В забеге: скорость набора опыта и монстры меняются со следующего уровня, получение очков и перков - со следующего забега. Уровень выплат и модификаторы забега действуют поверх.</color>"
+msgstr "<color=#9a9ca0>Загружается как отложенные изменения (нажмите «Применить»). В забеге: скорость набора опыта и монстры меняются со следующего уровня, получение очков и перков - со следующего забега. Ступень выплат и модификаторы забега действуют поверх.</color>"
 
 msgid "<color=#9a9ca0>Set by the host. In a run, XP rates and monsters change from the next level, point and perk gains from the next run.</color>"
 msgstr "<color=#9a9ca0>Задаётся хостом. В забеге скорость набора опыта и монстры меняются со следующего уровня, получение очков и перков - со следующего забега.</color>"
@@ -1996,7 +1996,7 @@ msgid "Field kit"
 msgstr "Полевой набор"
 
 msgid "Mastered {0}/{1}   ·   Unlocks {2}/{3}   ·   Levels finished {4}   ·   {5}   ·   Payout tier: {6}{7} (x{8:0.##})"
-msgstr "Мастерство {0}/{1}   ·   Разблокировки {2}/{3}   ·   Пройдено уровней {4}   ·   {5}   ·   Уровень выплат: {6}{7} (x{8:0.##})"
+msgstr "Мастерство {0}/{1}   ·   Разблокировки {2}/{3}   ·   Пройдено уровней {4}   ·   {5}   ·   Ступень выплат: {6}{7} (x{8:0.##})"
 
 msgid "<color=#ffcc66>Account progress is off on this host: nothing is earned in this lobby (your account is kept).</color>"
 msgstr "<color=#ffcc66>Прогресс аккаунта отключён на этом хосте: в этом лобби ничего не зарабатывается (ваш аккаунт сохранён).</color>"
@@ -6340,7 +6340,7 @@ msgid "The contract board (size, rerolls, slots, rivals, rewards) and team contr
 msgstr "Доска контрактов (размер, перебросы, слоты, соперники, награды) и командные контракты (голосование и ставки)."
 
 msgid "Monster count, health and damage (the difficulty presets set these), the payout tier and the run modifiers."
-msgstr "Количество, здоровье и урон монстров (их задают пресеты сложности), уровень выплат и модификаторы забега."
+msgstr "Количество, здоровье и урон монстров (их задают пресеты сложности), ступень выплат и модификаторы забега."
 
 msgid "Valuable values: overpriced modded valuables brought in line with vanilla, and the overall value multiplier."
 msgstr "Стоимость ценностей: завышенные цены ценностей из модов приводятся к ванильным, плюс общий множитель стоимости."
@@ -7243,7 +7243,7 @@ msgid "For weaker PCs: no menu button animation, slower HUD refresh. Gameplay is
 msgstr "Для слабых ПК: без анимации кнопок меню, более редкое обновление HUD. На игровой процесс не влияет."
 
 msgid "Off / Minimal (green glow on the health display) / Standard (glow + one \"+X HP\" number; pop-ups for teammate heals, big heals and revives) / Detailed (also a pop-up per healing source). Personal, never synced."
-msgstr "Off (выкл.) / Minimal (зелёное свечение на индикаторе здоровья) / Standard (свечение и одно число «+X ОЗ»; всплывающие сообщения о лечении от напарников, сильном лечении и возрождениях) / Detailed (ещё и сообщение на каждый источник лечения). Личная настройка, не синхронизируется."
+msgstr "Off / Minimal (зелёное свечение на индикаторе здоровья) / Standard (свечение и одно число «+X ОЗ»; всплывающие сообщения о лечении от напарников, сильном лечении и возрождениях) / Detailed (ещё и сообщение на каждый источник лечения). Личная настройка, не синхронизируется."
 
 msgid "A short, quiet sound when a teammate heals or revives you. Small and over-time heals are always silent."
 msgstr "Короткий тихий звук, когда напарник лечит или возрождает вас. Слабое и постепенное лечение всегда беззвучно."
@@ -9315,7 +9315,7 @@ msgstr "Уровень команды"
 
 msgctxt "term"
 msgid "Payout tier"
-msgstr "Уровень выплат"
+msgstr "Ступень выплат"
 
 msgctxt "term"
 msgid "Map modifier"
@@ -10292,6 +10292,134 @@ msgstr "Щитоносный"
 msgctxt "term"
 msgid "Warlord"
 msgstr "Военачальник"
+
+msgctxt "term"
+msgid "TruckAndShop"
+msgstr "Грузовик и магазин"
+
+msgctxt "term"
+msgid "LevelsOnly"
+msgstr "Только уровни"
+
+msgctxt "term"
+msgid "Small"
+msgstr "Мелко"
+
+msgctxt "term"
+msgid "Large"
+msgstr "Крупно"
+
+msgctxt "term"
+msgid "Majority"
+msgstr "Большинство"
+
+msgctxt "term"
+msgid "Unanimous"
+msgstr "Единогласно"
+
+msgctxt "term"
+msgid "Level"
+msgstr "Уровень"
+
+msgctxt "term"
+msgid "JoinOrder"
+msgstr "Порядок входа"
+
+msgctxt "term"
+msgid "Halve"
+msgstr "Вдвое меньше"
+
+msgctxt "term"
+msgid "Equal"
+msgstr "Поровну"
+
+msgctxt "term"
+msgid "ByContribution"
+msgstr "По вкладу"
+
+msgctxt "term"
+msgid "Short"
+msgstr "Короткий"
+
+msgctxt "term"
+msgid "Anyone"
+msgstr "Любой игрок"
+
+msgctxt "term"
+msgid "AboveHud"
+msgstr "Над HUD"
+
+msgctxt "term"
+msgid "LeftMiddle"
+msgstr "Слева по центру"
+
+msgctxt "term"
+msgid "BottomCentre"
+msgstr "Снизу по центру"
+
+msgctxt "term"
+msgid "Stack"
+msgstr "Складывать"
+
+msgctxt "term"
+msgid "SkipThreat"
+msgstr "Без угрозы"
+
+msgctxt "term"
+msgid "SkipDanger"
+msgstr "Без опасности"
+
+msgctxt "term"
+msgid "PauseMod"
+msgstr "Приостановить мод"
+
+msgctxt "term"
+msgid "Kick"
+msgstr "Исключить"
+
+msgctxt "term"
+msgid "StayDead"
+msgstr "Остаётся мёртвым"
+
+msgctxt "term"
+msgid "AsNormalMonster"
+msgstr "Как обычный монстр"
+
+msgctxt "term"
+msgid "Truck"
+msgstr "Грузовик"
+
+msgctxt "term"
+msgid "Detailed"
+msgstr "Подробно"
+
+msgctxt "term"
+msgid "Full"
+msgstr "Полный"
+
+msgctxt "term"
+msgid "Reduced"
+msgstr "Меньше"
+
+msgctxt "term"
+msgid "Talents"
+msgstr "Таланты"
+
+msgctxt "term"
+msgid "TalentsWhenPoints"
+msgstr "Таланты, если есть очки"
+
+msgctxt "term"
+msgid "Overview"
+msgstr "Обзор"
+
+msgctxt "term"
+msgid "Half"
+msgstr "Половина"
+
+msgctxt "term"
+msgid "ThreeQuarters"
+msgstr "Три четверти"
 
 msgctxt "term"
 msgid "Throw Strength"
@@ -51983,7 +52111,7 @@ msgstr "Голосование за командный контракт"
 
 msgctxt "data:guide"
 msgid "Difficulty tier"
-msgstr "Уровень сложности"
+msgstr "Ступень выплат"
 
 msgctxt "data:guide"
 msgid "Account progress"
@@ -53103,7 +53231,7 @@ msgstr "Стихия работает на огнестрельном оружи
 
 msgctxt "data:guide"
 msgid "While you hold a supported weapon, its element shows under the crosshair (or \"not supported on this weapon\"). Everyone sees a coloured glow on an elemental weapon, and puffs of colour on affected monsters (Elements/Vfx Full)."
-msgstr "Пока вы держите поддерживаемое оружие, его стихия показана под прицелом (или «не поддерживается этим оружием»). Все видят цветное свечение стихийного оружия и цветные облачка на затронутых монстрах (Elements/Vfx: Full)."
+msgstr "Пока вы держите поддерживаемое оружие, его стихия показана под прицелом (или «не поддерживается этим оружием»). Все видят цветное свечение стихийного оружия и цветные облачка на затронутых монстрах (Elements/Vfx: «Полный»)."
 
 msgctxt "data:guide"
 msgid "The elements"
@@ -53695,7 +53823,7 @@ msgstr "ascension ascend win victory finale liquidator endless modifier rank tit
 
 msgctxt "data:guide"
 msgid "A run is won by clearing the last chapter (level 50 on Standard) and defeating its finale boss, The Liquidator (Armored, Enraged, Warlord; a second phase at half health). Its level's extractions stay sealed until it falls."
-msgstr "Забег выигран, когда пройдена последняя глава (уровень 50 при длине Standard) и побеждён её финальный босс - Ликвидатор (Бронированный, Разъярённый, Военачальник; вторая фаза при половине здоровья). Извлечения на его уровне запечатаны, пока он не падёт."
+msgstr "Забег выигран, когда пройдена последняя глава (уровень 50 при длине забега «Стандартно») и побеждён её финальный босс - Ликвидатор (Бронированный, Разъярённый, Военачальник; вторая фаза при половине здоровья). Извлечения на его уровне запечатаны, пока он не падёт."
 
 msgctxt "data:guide"
 msgid "After the win the team votes: End the run, Keep going (Endless, no more Ascension credit), or Ascend (the next run starts one Ascension higher)."
@@ -54179,7 +54307,7 @@ msgstr "{cfg:TeamContracts/TeamContracts?Доска предлагает оди�
 
 msgctxt "data:guide"
 msgid "Vote Accept or Decline on the board ({cfg:TeamContracts/VoteMode} decides)."
-msgstr "Голосуйте «Принять» или «Отклонить» на доске (решает {cfg:TeamContracts/VoteMode})."
+msgstr "Голосуйте «Принять» или «Отклонить» на доске (как решается: {cfg:TeamContracts/VoteMode})."
 
 msgctxt "data:guide"
 msgid "In a level, hold {key:callout} to vote Accept during the first {cfg:TeamContracts/VoteSeconds} s."
@@ -54487,31 +54615,963 @@ msgstr "late join joining mid level drop in rejoin friend spawn shield catch up 
 
 msgctxt "data:guide"
 msgid "Join where the host allows: truck {cfg:LateJoin/AllowTruck?on:off}, shop {cfg:LateJoin/AllowShop?on:off}, mid-level {cfg:LateJoin/AllowLevels?on:off}."
-msgstr "Подключайтесь там, где разрешает хост: грузовик - {cfg:LateJoin/AllowTruck?вкл.:выкл.}, магазин - {cfg:LateJoin/AllowShop?вкл.:выкл.}, посреди уровня - {cfg:LateJoin/AllowLevels?вкл.:выкл.}."
+msgstr "Подключайтесь там, где разрешает хост: грузовик - {cfg:LateJoin/AllowTruck?вкл:выкл}, магазин - {cfg:LateJoin/AllowShop?вкл:выкл}, посреди уровня - {cfg:LateJoin/AllowLevels?вкл:выкл}."
 
 msgctxt "data:guide"
 msgid "You can't be hurt for {cfg:LateJoin/SpawnShield} s after you appear."
 msgstr "Вы неуязвимы {cfg:LateJoin/SpawnShield} с после появления."
 
 msgctxt "data:guide"
+msgid "Rejoin the same save to get your class, levels, gear and Scrap back."
+msgstr "Вернитесь в то же сохранение, чтобы получить обратно свой класс, уровни, снаряжение и лом."
+
+msgctxt "data:guide"
+msgid "{cfg:LateJoin/ClassPickOnJoin?Joined mid-level? You have 60 s to pick a class.:Joined mid-level? Pick a class at the next shop.}"
+msgstr "{cfg:LateJoin/ClassPickOnJoin?Подключились посреди уровня? У вас 60 с на выбор класса.:Подключились посреди уровня? Выберите класс в следующем магазине.}"
+
+msgctxt "data:guide"
+msgid "Catch-up"
+msgstr "Догоняющие бонусы"
+
+msgctxt "data:guide"
+msgid "A player who joins after the first level starts their first class at {cfg:LateJoin/CatchUpShare}% of the team's average class level, with the points to spend."
+msgstr "Игрок, который подключился после первого уровня, начинает свой первый класс с {cfg:LateJoin/CatchUpShare}% среднего уровня классов команды - с очками, которые можно потратить."
+
+msgctxt "data:guide"
+msgid "They also get {cfg:LateJoin/StartScrapPerLevel} Scrap per level cleared (at most 300) and one item per gear slot ({cfg:LateJoin/StartGear?on here:off here}): rarer the deeper the run. Once per player per run."
+msgstr "Он также получает {cfg:LateJoin/StartScrapPerLevel} лома за каждый пройденный уровень (не больше 300) и по одному предмету на каждый слот снаряжения ({cfg:LateJoin/StartGear?здесь включено:здесь выключено}): чем глубже забег, тем они реже. Один раз на игрока за забег."
+
+msgctxt "data:guide"
+msgid "Anyone whose class level falls more than 2 below the team's average (say, after being dead for a while) gets +{cfg:LateJoin/BehindXpBonus}% XP until they're within 1 level. The HUD shows CATCH-UP while it's on."
+msgstr "Тот, чей уровень класса отстал от среднего по команде больше чем на 2 (скажем, после долгой смерти), получает +{cfg:LateJoin/BehindXpBonus}% опыта, пока разрыв не сократится до 1 уровня. В это время HUD показывает «ДОГОНЯЮЩИЙ»."
+
+msgctxt "data:guide"
+msgid "Milestones, Boons & Crew"
+msgstr "Этапы, дары и команда"
+
+msgctxt "data:guide"
+msgid "Runs come in chapters. Every few levels there's a milestone boss; clearing it gives every player a reward, a team boon vote and a harder chapter. Clear levels in a row for a streak, and everything the team does raises the crew level."
+msgstr "Забег делится на главы. Раз в несколько уровней появляется этапный босс; победа над ним даёт каждому игроку награду, команде - голосование за дар, а следующая глава становится труднее. Проходите уровни подряд ради серии, а всё, что делает команда, повышает уровень команды."
+
+msgctxt "data:guide"
+msgid "milestone milestones chapter chapters milestone boss streak streaks boon boons run boon vote reward unique payout recap records personal best history second wind salvage line bone collectors light load hold the line bounty board crew crew level team level bonus boss vote easy money free estimate hazard pay head start spare parts full sweep lucky break lone wolf rapid response tip jar crowd control marked for death safety net"
+msgstr "milestone milestones chapter chapters milestone boss streak streaks boon boons run boon vote reward unique payout recap records personal best history second wind salvage line bone collectors light load hold the line bounty board crew crew level team level bonus boss vote easy money free estimate hazard pay head start spare parts full sweep lucky break lone wolf rapid response tip jar crowd control marked for death safety net этап этапы веха глава главы этапный босс серия серии дар дары дар забега голосование награда уникальный выплата итоги рекорды личный рекорд история второе дыхание спасательная линия собиратели костей лёгкий груз держать строй доска наград команда уровень команды командный уровень бонус голосование за босса лёгкие деньги бесплатная смета доплата за вредность фора запчасти полная зачистка счастливый случай одинокий волк быстрое реагирование банка для чаевых сдерживание толпы смертельная метка страховочная сеть"
+
+msgctxt "data:guide"
+msgid "The Season"
+msgstr "Сезон"
+
+msgctxt "data:guide"
+msgid "A run is a set number of chapters: Standard is 10 chapters of 5 levels (50 in all), Short is 25 levels, Marathon 70 ({cfg:Season/Length} here). The last chapter ends with the <b>finale</b>: a tougher milestone boss that enrages at half health and calls an elite escort to its side."
+msgstr "Забег - это заданное число глав: «Стандартно» - 10 глав по 5 уровней (всего 50), «Короткий» - 25 уровней, «Марафон» - 70 (здесь: {cfg:Season/Length}). Последняя глава заканчивается <b>финалом</b>: это этапный босс покрепче, который впадает в ярость при половине здоровья и призывает элитный эскорт."
+
+msgctxt "data:guide"
+msgid "Beat the finale and extract to <b>win the run</b>: a payout for everyone, a Victory recap and a win on your record. Then the team votes: <b>End</b> the run (everyone goes back to the main menu; the save stays) or <b>Endless</b> (chapters keep coming, each one tougher: more threat, bosses with more modifiers)."
+msgstr "Победите в финале и выполните извлечение, чтобы <b>выиграть забег</b>: выплата каждому, итоги с пометкой «Победа» и победа в вашем послужном списке. Затем команда голосует: <b>завершить</b> забег (все возвращаются в главное меню; сохранение остаётся) или <b>бесконечный режим</b> (главы продолжаются, и каждая труднее: больше угрозы, у боссов больше модификаторов)."
+
+msgctxt "data:guide"
+msgid "Each chapter has a name, shown when it starts. The HUD card and the truck screen show where you are (Chapter 4/10, Finale, Endless 2). Deep-run unlocks are spread over the whole season."
+msgstr "У каждой главы есть название - оно показывается в её начале. Карточка HUD и экран грузовика показывают, где вы сейчас (Глава 4/10, Финал, Бесконечный режим 2). Открытия глубокого забега распределены по всему сезону."
+
+msgctxt "data:guide"
+msgid "Routes"
+msgstr "Маршруты"
+
+msgctxt "data:guide"
+msgid "After each normal level the team votes on the next level's route (Run › Votes, or the Shop's vote strip): <b>Safe</b> (the level as usual) or one of two risky routes, each a risk (more monsters, elites, a higher haul goal, a map modifier...) and a reward (gear, Scrap, luck or crafting parts)."
+msgstr "После каждого обычного уровня команда голосует за маршрут следующего уровня («Забег» › «Голосования» или полоса голосований в магазине): <b>безопасный</b> (уровень как обычно) или один из двух рискованных маршрутов - у каждого свой риск (больше монстров, элита, цель по добыче выше, модификатор карты...) и своя награда (снаряжение, лом, удача или детали для крафта)."
+
+msgctxt "data:guide"
+msgid "It's decided when everyone has voted, or when the next level starts. No votes = Safe; a tie goes to the safer route. Milestone (boss) levels have no route vote."
+msgstr "Решение принимается, когда проголосуют все или когда начнётся следующий уровень. Нет голосов - безопасный маршрут; при ничьей побеждает более безопасный. На этапных уровнях (с боссом) голосования за маршрут нет."
+
+msgctxt "data:guide"
+msgid "The chosen route shows on the truck banner and on your HUD card while you play it."
+msgstr "Выбранный маршрут показан на баннере грузовика и на карточке HUD, пока вы его проходите."
+
+msgctxt "data:guide"
+msgid "Heat"
+msgstr "Накал"
+
+msgctxt "data:guide"
+msgid "After each milestone boss (not the finale) the team votes in Run › Votes: one of 3 heat cards, or <b>Skip</b>. No votes or a tie = Skip. It's decided when everyone has voted, or when the next level starts."
+msgstr "После каждого этапного босса (кроме финала) команда голосует в разделе «Забег» › «Голосования»: одна из 3 карт накала или <b>«Пропустить»</b>. Нет голосов или ничья - «Пропустить». Решение принимается, когда проголосуют все или когда начнётся следующий уровень."
+
+msgctxt "data:guide"
+msgid "Heat only goes up: a card stays for the rest of the run. Skipping is how the team keeps it where it is."
+msgstr "Накал только растёт: карта остаётся до конца забега. Пропуск - способ команды удержать его на месте."
+
+msgctxt "data:guide"
+msgid "Each point of heat (up to 10): +4% haul Scrap and +1 gear and shop luck. Never more XP."
+msgstr "Каждое очко накала (до 10): +4% лома за добычу и +1 к удаче снаряжения и магазина. Опыта больше не становится."
+
+msgctxt "data:guide"
+msgid "Cards: Monster Surge (1), Lean Shop (1), Blackout (1), Elite Swarm (2), Hardened Bosses (2), Glass Cannon (2), Fragile Goods (2), Short Fuse (2), Iron Bodies (3), Thin Wallets (3)."
+msgstr "Карты: «Наплыв монстров» (1), «Скудный магазин» (1), «Затемнение» (1), «Рой элиты» (2), «Закалённые боссы» (2), «Стеклянная пушка» (2), «Хрупкий товар» (2), «Короткий фитиль» (2), «Железные тела» (3), «Тощие кошельки» (3)."
+
+msgctxt "data:guide"
+msgid "Records on the Account tab: the highest heat a chapter was cleared at, and the heat at Victory, per difficulty. Heat shows as a chip on the HUD card and on the truck banner."
+msgstr "Рекорды на вкладке «Аккаунт»: наивысший накал, при котором пройдена глава, и накал при победе - по каждой сложности. Накал показан меткой на карточке HUD и на баннере грузовика."
+
+msgctxt "data:guide"
+msgid "Milestones and chapters"
+msgstr "Этапы и главы"
+
+msgctxt "data:guide"
+msgid "Every {cfg:Milestones/Every} levels is a milestone level ({cfg:Milestones/Enabled?on here:off here}). It always has a milestone boss: more modifiers, more health, and a Legendary drop for every player."
+msgstr "Каждые {cfg:Milestones/Every} уровней - этапный уровень ({cfg:Milestones/Enabled?здесь включено:здесь выключено}). На нём всегда есть этапный босс: больше модификаторов, больше здоровья и легендарный предмет каждому игроку."
+
+msgctxt "data:guide"
+msgid "Clearing it reaches the milestone and starts the next chapter. Each chapter adds {cfg:Milestones/ChapterThreat} to the threat rating, and {cfg:Milestones/ChapterRewards}% more XP and Scrap and +1 gear and shop luck."
+msgstr "Его прохождение завершает этап и начинает следующую главу. Каждая глава добавляет {cfg:Milestones/ChapterThreat} к рейтингу угрозы, на {cfg:Milestones/ChapterRewards}% больше опыта и лома и +1 к удаче снаряжения и магазина."
+
+msgctxt "data:guide"
+msgid "The HUD and the truck and shop banner show the chapter and how many levels are left to the next milestone."
+msgstr "HUD и баннер грузовика и магазина показывают главу и сколько уровней осталось до следующего этапа."
+
+msgctxt "data:guide"
+msgid "Your milestone reward"
+msgstr "Ваша награда за этап"
+
+msgctxt "data:guide"
+msgid "After a milestone each player picks one reward in Run › Votes: a Unique (a Legendary for a slot, one you don't have yet) or a Scrap payout ({cfg:Milestones/ScrapPayout} at the first milestone, more for each one after)."
+msgstr "После этапа каждый игрок выбирает одну награду в разделе «Забег» › «Голосования»: уникальный предмет (легендарный предмет для слота, которого у вас ещё нет) или выплату ломом ({cfg:Milestones/ScrapPayout} за первый этап и больше за каждый следующий)."
+
+msgctxt "data:guide"
+msgid "You pick in the truck or the shop, with a confirm. There's no rush: it waits in the run save until you pick, even across a reload."
+msgstr "Вы выбираете в грузовике или магазине, с подтверждением. Спешить некуда: награда ждёт в сохранении забега, пока вы не выберете, даже после перезагрузки."
+
+msgctxt "data:guide"
+msgid "The team boon vote"
+msgstr "Командное голосование за дар"
+
+msgctxt "data:guide"
+msgid "After a milestone the team votes on one of three run boons. A regular boss kill can also start a vote ({cfg:Boons/BossVoteChance}% chance). The winner works for everyone for the rest of the run, and boons stack."
+msgstr "После этапа команда голосует за один из трёх даров забега. Убийство обычного босса тоже может начать голосование (шанс {cfg:Boons/BossVoteChance}%). Победивший дар действует на всех до конца забега, и дары складываются."
+
+msgctxt "data:guide"
+msgid "The vote ends when everyone has voted, or when the next level starts. Most votes wins; a tie, or no votes at all, is decided at random. You can change your vote until then. Vote in the truck or the shop."
+msgstr "Голосование заканчивается, когда проголосуют все или когда начнётся следующий уровень. Побеждает большинство голосов; ничья или полное отсутствие голосов решается случайно. До тех пор голос можно изменить. Голосуйте в грузовике или магазине."
+
+msgctxt "data:guide"
+msgid "The team's boons are listed in the Shop tab's Run Boons section, and their 2-letter codes show on the HUD (Settings: Run boons on the HUD)."
+msgstr "Дары команды перечислены в разделе «Дары забега» вкладки «Магазин», а их двухбуквенные коды показаны на HUD (настройки: дары забега на HUD)."
+
+msgctxt "data:guide"
+msgid "Team streak"
+msgstr "Командная серия"
+
+msgctxt "data:guide"
+msgid "Every level the team clears adds 1 to the streak ({cfg:Streaks/Enabled?on here:off here}). Each streak level gives +{cfg:Streaks/XpPerLevel}% XP, +{cfg:Streaks/ScrapPerLevel}% Scrap from the haul and +{cfg:Streaks/LuckPerLevel} luck, for up to {cfg:Streaks/Cap} streak levels."
+msgstr "Каждый уровень, пройденный командой, добавляет 1 к серии ({cfg:Streaks/Enabled?здесь включено:здесь выключено}). Каждый уровень серии даёт +{cfg:Streaks/XpPerLevel}% опыта, +{cfg:Streaks/ScrapPerLevel}% лома за добычу и +{cfg:Streaks/LuckPerLevel} к удаче - вплоть до {cfg:Streaks/Cap} уровней серии."
+
+msgctxt "data:guide"
+msgid "A death (one a death save doesn't stop) costs {cfg:Streaks/DeathPenalty} streak level(s). A lost level: {cfg:Streaks/FailMode}."
+msgstr "Смерть (которую не остановило спасение от смерти) стоит уровней серии: {cfg:Streaks/DeathPenalty}. Проигранный уровень: {cfg:Streaks/FailMode}."
+
+msgctxt "data:guide"
+msgid "Streak and chapter bonuses together are capped at {cfg:Streaks/MaxTotalBonus}%."
+msgstr "Бонусы серии и главы вместе ограничены {cfg:Streaks/MaxTotalBonus}%."
+
+msgctxt "data:guide"
+msgid "Crew level"
+msgstr "Уровень команды"
+
+msgctxt "data:guide"
+msgid "The crew level (1-10) is shared by the whole team and resets with the run ({cfg:Crew/Enabled?on here:off here}). Crew XP comes from levels cleared, extraction points, contracts, team contracts, elites, bosses and milestones."
+msgstr "Уровень команды (1-10) общий для всей команды и сбрасывается вместе с забегом ({cfg:Crew/Enabled?здесь включено:здесь выключено}). Опыт команды дают пройденные уровни, точки извлечения, контракты, командные контракты, элита, боссы и этапы."
+
+msgctxt "data:guide"
+msgid "Each crew level adds a small team-wide bonus: 2 an extra Featured item in the shop, 3 +5% XP, 4 +10% max health, 5 +5% haul Scrap, 6 +1 luck, 7 contracts pay +10%, 8 +5% more XP, 9 mod shop -5%, 10 milestone payouts +25%."
+msgstr "Каждый уровень команды добавляет небольшой бонус всей команде: 2 - ещё один предмет на витрине магазина, 3 - +5% опыта, 4 - +10% к макс. здоровью, 5 - +5% лома за добычу, 6 - +1 к удаче, 7 - оплата контрактов +10%, 8 - ещё +5% опыта, 9 - магазин мода -5%, 10 - выплаты за этапы +25%."
+
+msgctxt "data:guide"
+msgid "The crew level is in the row along the top of the Contracts tab (select it to see every bonus). Crew XP and Scrap bonuses share the {cfg:Streaks/MaxTotalBonus}% cap with the streak and chapters."
+msgstr "Уровень команды показан в строке вверху вкладки «Контракты» (выберите его, чтобы увидеть все бонусы). Бонусы команды к опыту и лому делят предел в {cfg:Streaks/MaxTotalBonus}% с серией и главами."
+
+msgctxt "data:guide"
+msgid "Recap, records and history"
+msgstr "Итоги, рекорды и история"
+
+msgctxt "data:guide"
+msgid "When a run ends every player gets a recap on the Account tab (Runs): levels, chapter, haul, bosses, best moments and MVPs. It never pops up over the game."
+msgstr "Когда забег заканчивается, каждый игрок получает итоги на вкладке «Аккаунт» («Забеги»): уровни, глава, добыча, боссы, лучшие моменты и лучшие игроки. Они никогда не всплывают поверх игры."
+
+msgctxt "data:guide"
+msgid "Your personal bests (most levels, best streak, highest chapter, most Scrap and bosses in a run, biggest haul in one level) and your last 20 runs are kept on your account."
+msgstr "Ваши личные рекорды (больше всего уровней, лучшая серия, наивысшая глава, больше всего лома и боссов за забег, самая большая добыча за один уровень) и последние 20 забегов хранятся в вашем аккаунте."
+
+msgctxt "data:guide"
+msgid "Go to the Contracts tab (crew level)"
+msgstr "Перейти на вкладку «Контракты» (уровень команды)"
+
+msgctxt "data:guide"
 msgid "Deeper in the run"
 msgstr "В глубине забега"
+
+msgctxt "data:guide"
+msgid "The longer the run, the more there is: new elite types, boss twists, Uniques, map modifiers, a fifth contract giver and two shop sections open up as the team clears levels."
+msgstr "Чем дольше забег, тем больше всего появляется: новые типы элиты, особенности боссов, уникальные предметы, модификаторы карты, пятый заказчик и два раздела магазина открываются по мере того, как команда проходит уровни."
+
+msgctxt "data:guide"
+msgid "deep run unlocks unlock level map modifier modifiers heavy haul infestation thin air fragile goods elite night skeleton crew overtime brutish vampiric juggernaut shielded warlord twin bosses auditor black market contraband cursed final notice repossessor night shift servos overtime plating ledger of debts danger money class switch milestone switch"
+msgstr "deep run unlocks unlock level map modifier modifiers heavy haul infestation thin air fragile goods elite night skeleton crew overtime brutish vampiric juggernaut shielded warlord twin bosses auditor black market contraband cursed final notice repossessor night shift servos overtime plating ledger of debts danger money class switch milestone switch глубокий забег открытия разблокировки разблокировка уровень модификатор карты модификаторы тяжёлая добыча нашествие разрежённый воздух хрупкий товар ночь элиты неполный состав сверхурочные свирепый вампирический джаггернаут щитоносный военачальник боссы-близнецы аудитор чёрный рынок контрабанда проклятый последнее уведомление конфискатор сервоприводы ночной смены сверхурочная броня книга долгов надбавка за риск смена класса смена на этапе"
+
+msgctxt "data:guide"
+msgid "Something new opens up at every milestone through level 30 ({cfg:Unlocks/Enabled?on here:off here}). The team gets a banner in the truck when it does."
+msgstr "Что-то новое открывается на каждом этапе до 30-го уровня ({cfg:Unlocks/Enabled?здесь включено:здесь выключено}). Когда это происходит, команда видит баннер в грузовике."
+
+msgctxt "data:guide"
+msgid "Map modifiers: once unlocked, {cfg:Unlocks/ModifierChance}% of levels roll one, a risk with a reward. It shows in the truck before the level and on the HUD. From level 30 every level has one, and two can stack."
+msgstr "Модификаторы карты: после открытия на {cfg:Unlocks/ModifierChance}% уровней выпадает один - риск с наградой. Он показан в грузовике перед уровнем и на HUD. С 30-го уровня модификатор есть на каждом уровне, и два могут сложиться."
+
+msgctxt "data:guide"
+msgid "The Auditor offers high-stakes contracts: 1.5x the pay, but a failure costs 15% of the reward in Scrap."
+msgstr "Аудитор предлагает контракты с высокими ставками: оплата x1.5, но провал стоит 15% награды ломом."
+
+msgctxt "data:guide"
+msgid "The Black Market and Contraband are extra Shop tab sections. Contraband gear is Legendary with an extra stat line and a curse that stays on it."
+msgstr "«Чёрный рынок» и «Контрабанда» - дополнительные разделы вкладки «Магазин». Контрабандное снаряжение - легендарное, с дополнительной строкой характеристик и проклятием, которое остаётся на нём навсегда."
+
+msgctxt "data:guide"
+msgid "Switching class at a milestone"
+msgstr "Смена класса на этапе"
+
+msgctxt "data:guide"
+msgid "In the shop right after a milestone ({cfg:Classes/SwitchAtMilestones?on here:off here}), switching class carries your progress over: the new class starts at {cfg:Classes/SwitchShare}% of your current class level, if it's lower than that."
+msgstr "В магазине сразу после этапа ({cfg:Classes/SwitchAtMilestones?здесь включено:здесь выключено}) смена класса переносит ваш прогресс: новый класс начинает с {cfg:Classes/SwitchShare}% уровня вашего текущего класса, если его уровень ниже."
+
+msgctxt "data:guide"
+msgid "You get its skill points to spend, and your attribute points are refunded so you can spend them again. Your old class stays at its level on the bench. Gear, perks, Scrap and boons stay. Once per milestone."
+msgstr "Вы получаете его очки навыков, а ваши очки характеристик возвращаются, чтобы вы могли потратить их заново. Прежний класс остаётся на своём уровне в запасе. Снаряжение, перки, лом и дары сохраняются. Один раз за этап."
+
+msgctxt "data:guide"
+msgid "One player per class, unless the host allows duplicates ({cfg:Classes/AllowDuplicates?allowed here:not here})."
+msgstr "Один игрок на класс, если только хост не разрешил повторы ({cfg:Classes/AllowDuplicates?здесь разрешены:здесь нет})."
+
+msgctxt "data:guide"
+msgid "Difficulty"
+msgstr "Сложность"
+
+msgctxt "data:guide"
+msgid "The host picks one of five difficulties (Relaxed to Brutal), and can add a payout tier and modifiers on top. Every level you clear raises a threat rating."
+msgstr "Хост выбирает одну из пяти сложностей (от «Расслабленно» до «Жестоко») и может добавить поверх ступень выплат и модификаторы. Каждый пройденный уровень повышает рейтинг угрозы."
+
+msgctxt "data:guide"
+msgid "difficulty tier hard brutal nightmare relaxed modifiers hardcore payout challenge threat rating run progress levels cleared later levels scaling preset presets easy normal custom selector pacing leveling speed economy valuables value"
+msgstr "difficulty tier hard brutal nightmare relaxed modifiers hardcore payout challenge threat rating run progress levels cleared later levels scaling preset presets easy normal custom selector pacing leveling speed economy valuables value сложность ступень сложно жестоко кошмар расслабленно модификаторы хардкор выплата испытание рейтинг угрозы угроза прогресс забега пройдено уровней поздние уровни масштабирование пресет пресеты легко нормально свой переключатель темп скорость прокачки экономика ценности стоимость"
+
+msgctxt "data:guide"
+msgid "This lobby: {live:difficulty}."
+msgstr "Это лобби: {live:difficulty}."
+
+msgctxt "data:guide"
+msgid "The host picks it with the Difficulty selector at the top of the Settings tab or the Host tab. It sets about 45 host settings at once: leveling speed, Scrap and prices, loot, monsters, elites, bosses, run progress and the global caps."
+msgstr "Хост выбирает её переключателем «Сложность» вверху вкладки «Настройки» или вкладки «Хост». Он задаёт разом около 45 настроек хоста: скорость прокачки, лом и цены, добычу, монстров, элиту, боссов, прогресс забега и общие пределы."
+
+msgctxt "data:guide"
+msgid "Picking one loads it as pending changes: nothing changes until the host presses Apply. Changing any one setting afterwards shows Custom (based on ...)."
+msgstr "Выбор загружает её как отложенные изменения: ничего не меняется, пока хост не нажмёт «Применить». Если после этого изменить любую настройку, будет показано «Свой (на основе: ...)»."
+
+msgctxt "data:guide"
+msgid "In a run, XP rates and monsters change from the next level, and point and perk gains from the next run."
+msgstr "В забеге скорость набора опыта и монстры меняются со следующего уровня, а получение очков и перков - со следующего забега."
+
+msgctxt "data:guide"
+msgid "Difficulties"
+msgstr "Сложности"
+
+msgctxt "data:guide"
+msgid "Relaxed"
+msgstr "Расслабленно"
+
+msgctxt "data:guide"
+msgid "Gentle scaling, quick leveling and generous rewards: the max class level comes in about 19 levels."
+msgstr "Мягкое масштабирование, быстрая прокачка и щедрые награды: максимальный уровень класса достигается примерно за 19 уровней."
+
+msgctxt "data:guide"
+msgid "Easy"
+msgstr "Легко"
+
+msgctxt "data:guide"
+msgid "A softer run: fewer, weaker monsters, quicker leveling (max class level in about 24 levels), a bit more Scrap and better loot."
+msgstr "Забег помягче: монстров меньше и они слабее, прокачка быстрее (максимальный уровень класса примерно за 24 уровня), чуть больше лома и добыча получше."
+
+msgctxt "data:guide"
+msgid "Normal"
+msgstr "Нормально"
+
+msgctxt "data:guide"
+msgid "The intended experience: the max class level comes late in a long run (around level 30)."
+msgstr "Игра, какой она задумана: максимальный уровень класса достигается ближе к концу долгого забега (около 30-го уровня)."
+
+msgctxt "data:guide"
+msgid "Hard"
+msgstr "Сложно"
+
+msgctxt "data:guide"
+msgid "Busier, tougher levels and slower leveling (about 30% of the max class level by level 8, the max around level 38), tighter caps and economy."
+msgstr "Уровни оживлённее и жёстче, прокачка медленнее (около 30% максимального уровня класса к 8-му уровню, максимум около 38-го), ограничения и экономика строже."
+
+msgctxt "data:guide"
+msgid "Brutal"
+msgstr "Жестоко"
+
+msgctxt "data:guide"
+msgid "Strict scaling, slow leveling (the max class level around level 47), a tight economy and the tightest caps."
+msgstr "Строгое масштабирование, медленная прокачка (максимальный уровень класса около 47-го уровня), жёсткая экономика и самые строгие ограничения."
+
+msgctxt "data:guide"
+msgid "Payout tier"
+msgstr "Ступень выплат"
+
+msgctxt "data:guide"
+msgid "This run: {cfg:Difficulty/Tier}. Extra risk for extra reward, on top of the difficulty. The payout shows on your HUD when it isn't Standard."
+msgstr "Этот забег: {cfg:Difficulty/Tier}. Дополнительный риск ради дополнительной награды, поверх сложности. Выплата показана на вашем HUD, когда она не «Стандартно»."
+
+msgctxt "data:guide"
+msgid "Changes to the tier start with the next run, so the rules never change midway."
+msgstr "Изменения ступени вступают в силу со следующего забега, так что правила никогда не меняются на полпути."
+
+msgctxt "data:guide"
+msgid "A higher payout means more Scrap, better gear luck and faster mastery."
+msgstr "Более высокая выплата - это больше лома, выше удача снаряжения и быстрее мастерство."
+
+msgctxt "data:guide"
+msgid "Payout tiers"
+msgstr "Ступени выплат"
+
+msgctxt "data:guide"
+msgid "Monsters hit softer, fewer elites. x0.8"
+msgstr "Монстры бьют слабее, элиты меньше. x0.8"
+
+msgctxt "data:guide"
+msgid "Standard"
+msgstr "Стандартно"
+
+msgctxt "data:guide"
+msgid "As normal. x1"
+msgstr "Как обычно. x1"
+
+msgctxt "data:guide"
+msgid "Monsters hit harder, more elites. x1.3"
+msgstr "Монстры бьют сильнее, элиты больше. x1.3"
+
+msgctxt "data:guide"
+msgid "Much harder, bosses every 2 levels. x1.7"
+msgstr "Намного труднее, боссы каждые 2 уровня. x1.7"
+
+msgctxt "data:guide"
+msgid "Nightmare"
+msgstr "Кошмар"
+
+msgctxt "data:guide"
+msgid "The hardest, death saves cost 2 charges. x2.2"
+msgstr "Самая трудная, спасение от смерти стоит 2 заряда. x2.2"
+
+msgctxt "data:guide"
+msgid "Hardcore"
+msgstr "Хардкор"
+
+msgctxt "data:guide"
+msgid "One death save per level."
+msgstr "Одно спасение от смерти за уровень."
+
+msgctxt "data:guide"
+msgid "Glass Cannon"
+msgstr "Стеклянная пушка"
+
+msgctxt "data:guide"
+msgid "Deal and take 30% more damage."
+msgstr "Вы наносите и получаете на 30% больше урона."
+
+msgctxt "data:guide"
+msgid "No Shop"
+msgstr "Без магазина"
+
+msgctxt "data:guide"
+msgid "The mod's shop is closed."
+msgstr "Магазин мода закрыт."
+
+msgctxt "data:guide"
+msgid "Fragile Goods"
+msgstr "Хрупкий товар"
+
+msgctxt "data:guide"
+msgid "Valuables break more easily."
+msgstr "Ценности легче разбиваются."
+
+msgctxt "data:guide"
+msgid "Elite Swarm"
+msgstr "Рой элиты"
+
+msgctxt "data:guide"
+msgid "Twice as many elites."
+msgstr "Вдвое больше элиты."
+
+msgctxt "data:guide"
+msgid "Lone Wolves"
+msgstr "Одинокие волки"
+
+msgctxt "data:guide"
+msgid "No synergies."
+msgstr "Без синергий."
+
+msgctxt "data:guide"
+msgid "Thin Wallets"
+msgstr "Тощие кошельки"
+
+msgctxt "data:guide"
+msgid "Half the Scrap from the haul."
+msgstr "Вдвое меньше лома за добычу."
+
+msgctxt "data:guide"
+msgid "Iron Bodies"
+msgstr "Железные тела"
+
+msgctxt "data:guide"
+msgid "No healing from abilities or gear."
+msgstr "Нет лечения от способностей и снаряжения."
+
+msgctxt "data:guide"
+msgid "Short Fuse"
+msgstr "Короткий фитиль"
+
+msgctxt "data:guide"
+msgid "Ability cooldowns 25% longer."
+msgstr "Перезарядка способностей на 25% дольше."
+
+msgctxt "data:guide"
+msgid "Blackout"
+msgstr "Затемнение"
+
+msgctxt "data:guide"
+msgid "No threat labels or markers."
+msgstr "Без меток угроз и прочих меток."
+
+msgctxt "data:guide"
+msgid "{cfg:Threat/Enabled?Every level your team clears raises a threat rating.:The threat rating is off on this host.}"
+msgstr "{cfg:Threat/Enabled?Каждый уровень, пройденный вашей командой, повышает рейтинг угрозы.:Рейтинг угрозы отключён на этом хосте.}"
+
+msgctxt "data:guide"
+msgid "It starts after {cfg:Threat/GraceLevels} levels cleared and slows down as it nears its cap of {cfg:Threat/MaxRating}."
+msgstr "Он начинает расти после {cfg:Threat/GraceLevels} пройденных уровней и замедляется, приближаясь к своему пределу - {cfg:Threat/MaxRating}."
+
+msgctxt "data:guide"
+msgid "The new rating starts with the next level, never in the middle of one."
+msgstr "Новый рейтинг начинает действовать со следующего уровня, никогда - посреди текущего."
+
+msgctxt "data:guide"
+msgid "A higher threat means more and tougher monsters, more elites, and bosses with extra modifiers."
+msgstr "Чем выше угроза, тем больше монстров и тем они сильнее, тем больше элиты, а у боссов есть дополнительные модификаторы."
+
+msgctxt "data:guide"
+msgid "It also means more valuables and a bigger haul goal (they grow together, so the goal stays reachable), more Scrap, better contract rewards and better gear and shop luck."
+msgstr "Вместе с ней растут число ценностей и цель по добыче (они растут вместе, так что цель остаётся достижимой), лом, награды за контракты и удача снаряжения и магазина."
+
+msgctxt "data:guide"
+msgid "You see it in the truck, in the shop and on the Host tab, with a pop-up when it goes up."
+msgstr "Рейтинг виден в грузовике, в магазине и на вкладке «Хост», а о его росте сообщает всплывающая строка."
+
+msgctxt "data:guide"
+msgid "It's part of the run: it's saved with your game save and resets when the run ends."
+msgstr "Он часть забега: хранится вместе с сохранением игры и сбрасывается, когда забег заканчивается."
+
+msgctxt "data:guide"
+msgid "How it adds up: the game already makes later levels harder on its own. The threat rating is a gentle extra on top, multiplied with player-count scaling, the difficulty tier and modifiers. The global caps still apply."
+msgstr "Как всё складывается: игра и сама делает поздние уровни труднее. Рейтинг угрозы - мягкая надбавка поверх этого; он перемножается с масштабированием по числу игроков, ступенью выплат и модификаторами. Общие пределы по-прежнему действуют."
+
+msgctxt "data:guide"
+msgid "Go to the Host tab"
+msgstr "Перейти на вкладку «Хост»"
+
+msgctxt "data:guide"
+msgid "Valuable values"
+msgstr "Стоимость ценностей"
+
+msgctxt "data:guide"
+msgid "{cfg:Valuables/Normalize?Modded valuables worth far more than vanilla ones of the same size are scaled down toward vanilla's values.:Modded valuables keep their own values on this host.}"
+msgstr "{cfg:Valuables/Normalize?Ценности из модов, которые стоят намного больше ценностей игры того же размера, приводятся к стоимости ценностей игры.:Ценности из модов сохраняют свою стоимость на этом хосте.}"
+
+msgctxt "data:guide"
+msgid "A modded valuable may be worth up to {cfg:Valuables/MaxAboveVanilla}x the most valuable vanilla item of its size."
+msgstr "Ценность из мода может стоить не больше чем в {cfg:Valuables/MaxAboveVanilla} раз дороже самого дорогого предмета игры того же размера."
+
+msgctxt "data:guide"
+msgid "Every valuable is worth x{cfg:Valuables/ValueMultiplier} on this difficulty; haul goals follow, so they stay reachable."
+msgstr "На этой сложности каждая ценность стоит x{cfg:Valuables/ValueMultiplier}; цели по добыче меняются соответственно, так что остаются достижимыми."
 
 msgctxt "data:guide"
 msgid "Big Lobbies"
 msgstr "Большие лобби"
 
 msgctxt "data:guide"
+msgid "Lobbies can hold up to 20 players, and the game gets harder as more players join."
+msgstr "В лобби помещается до 20 игроков, и чем больше игроков, тем труднее игра."
+
+msgctxt "data:guide"
+msgid "more players big lobby lobby size max players 20 scaling difficulty player count crowd"
+msgstr "more players big lobby lobby size max players 20 scaling difficulty player count crowd больше игроков большое лобби размер лобби максимум игроков 20 масштабирование сложность число игроков толпа"
+
+msgctxt "data:guide"
+msgid "The host sets the lobby size before hosting (this host: {cfg:Players/MaxPlayers})."
+msgstr "Хост задаёт размер лобби перед созданием игры (этот хост: {cfg:Players/MaxPlayers})."
+
+msgctxt "data:guide"
+msgid "{cfg:Scaling/Enabled?With more than 4 players, levels get more monsters, tougher monsters, more loot and a bigger haul goal.:Difficulty scaling by player count is off on this host.}"
+msgstr "{cfg:Scaling/Enabled?Когда игроков больше 4, на уровнях больше монстров, монстры сильнее, больше добычи и выше цель по добыче.:Масштабирование сложности по числу игроков отключено на этом хосте.}"
+
+msgctxt "data:guide"
+msgid "Each extra player adds a little less than the one before."
+msgstr "Каждый дополнительный игрок добавляет чуть меньше предыдущего."
+
+msgctxt "data:guide"
+msgid "The lobby and truck show what the next level will use; it stays fixed for the whole level."
+msgstr "Лобби и грузовик показывают, что будет применено на следующем уровне; это не меняется весь уровень."
+
+msgctxt "data:guide"
+msgid "Scrap is adjusted so each player earns about what they would in a group of 4."
+msgstr "Лом пересчитывается так, чтобы каждый игрок зарабатывал примерно столько же, сколько в группе из 4 человек."
+
+msgctxt "data:guide"
+msgid "Everyone in the lobby needs RepoRPG, on the same version."
+msgstr "Всем в лобби нужен RepoRPG одной и той же версии."
+
+msgctxt "data:guide"
+msgid "Host Settings"
+msgstr "Настройки хоста"
+
+msgctxt "data:guide"
+msgid "The host's settings apply to everyone in the lobby, so you all play by the same rules."
+msgstr "Настройки хоста действуют на всех в лобби, так что все играют по одним правилам."
+
+msgctxt "data:guide"
+msgid "host settings rules balance config lobby presets apply version"
+msgstr "host settings rules balance config lobby presets apply version настройки хоста хост правила баланс конфиг лобби пресеты применить версия"
+
+msgctxt "data:guide"
+msgid "In someone else's lobby, their settings are used. Your own file is never changed."
+msgstr "В чужом лобби используются настройки его хоста. Ваш собственный файл никогда не меняется."
+
+msgctxt "data:guide"
+msgid "Your controls and display settings always stay yours."
+msgstr "Ваши настройки управления и отображения всегда остаются вашими."
+
+msgctxt "data:guide"
+msgid "Hosting? Change settings on the Host tab and press Apply. Each shows when it takes effect."
+msgstr "Вы хост? Меняйте настройки на вкладке «Хост» и нажимайте «Применить». У каждой показано, когда она вступает в силу."
+
+msgctxt "data:guide"
+msgid "Presets: save the settings under a name, then Load, Overwrite, Rename or Delete them from the Presets list. Loading only fills in pending changes (press Apply). Mark one as the default and it's applied whenever you host a new lobby."
+msgstr "Пресеты: сохраните настройки под именем, а затем загружайте, перезаписывайте, переименовывайте или удаляйте их в списке пресетов. Загрузка лишь заполняет отложенные изменения (нажмите «Применить»). Отметьте пресет как пресет по умолчанию, и он будет применяться всякий раз, когда вы создаёте новое лобби."
+
+msgctxt "data:guide"
+msgid "Search: type in the box at the top of the Host tab (or press / or Ctrl+F; on a controller the left stick click opens an on-screen keyboard) to find any setting by name, description or group. Small typos are fine. The filter chips show only changed, pending, or now / next level / run start settings."
+msgstr "Поиск: введите текст в поле вверху вкладки «Хост» (или нажмите / или Ctrl+F; на контроллере нажатие левого стика открывает экранную клавиатуру), чтобы найти любую настройку по названию, описанию или группе. Мелкие опечатки допустимы. Метки-фильтры показывают только изменённые, отложенные настройки либо те, что действуют сразу / со следующего уровня / с начала забега."
+
+msgctxt "data:guide"
+msgid "Players on a different RepoRPG version are paused (or removed, if the host chose that)."
+msgstr "Игроки с другой версией RepoRPG приостанавливаются (или исключаются, если так выбрал хост)."
+
+msgctxt "data:guide"
 msgid "Controls"
 msgstr "Управление"
+
+msgctxt "data:guide"
+msgid "Every RepoRPG action, with its key or button for the device you're using."
+msgstr "Все действия RepoRPG с клавишей или кнопкой для устройства, которым вы пользуетесь."
+
+msgctxt "data:guide"
+msgid "controls keys keybinds bindings buttons controller gamepad keyboard rebind input"
+msgstr "controls keys keybinds bindings buttons controller gamepad keyboard rebind input управление клавиши привязки назначение кнопки контроллер геймпад клавиатура переназначить ввод"
+
+msgctxt "data:guide"
+msgid "How every tab is laid out"
+msgstr "Как устроена каждая вкладка"
+
+msgctxt "data:guide"
+msgid "Tabs come in four groups: Character (Class, Attributes, Perks), Loot (Gear, Shop), Run (Contracts, Votes, Research) and Options (Settings, Host, Account, Guide). Keyboard: 1-4 or Tab / Shift+Tab switch the group, Q / E the tab inside it, 5-9 jump to Gear, Shop, Votes, Contracts and Settings. Controller: LT / RT and LB / RB. A group comes back on the tab you left it on."
+msgstr "Вкладки собраны в четыре группы: «Персонаж» («Класс», «Характеристики», «Перки»), «Добыча» («Снаряжение», «Магазин»), «Забег» («Контракты», «Голосования», «Исследования») и «Параметры» («Настройки», «Хост», «Аккаунт», «Справка»). Клавиатура: 1-4 или Tab / Shift+Tab переключают группу, Q / E - вкладку внутри неё, 5-9 переходят к «Снаряжению», «Магазину», «Голосованиям», «Контрактам» и «Настройкам». Контроллер: LT / RT и LB / RB. Группа открывается на той вкладке, с которой вы из неё ушли."
+
+msgctxt "data:guide"
+msgid "Run › Votes has every vote and choice in one place: route, heat, boons (or End / Endless), your milestone reward, team contracts and crew votes - each a small card with its options in a row and \"2/4 voted\" with an icon per player (who voted for what, unless the host keeps votes private). Click an option to vote or change your vote; point at a vote (or click its title to keep it) for every option in full, the rules and who voted, in the panel on the right. Decided votes move to Recent results at the bottom. Notices open it on the one that needs you."
+msgstr "В разделе «Забег» › «Голосования» все голосования и выборы собраны в одном месте: маршрут, накал, дары (или завершение / бесконечный режим), ваша награда за этап, командные контракты и голосования команды - каждое в виде небольшой карточки с вариантами в ряд и надписью «проголосовало 2/4» со значком на каждого игрока (кто за что голосовал, если хост не скрыл голоса). Щёлкните по варианту, чтобы проголосовать или изменить голос; наведите курсор на голосование (или щёлкните по его заголовку, чтобы закрепить) - и панель справа покажет все варианты целиком, правила и кто голосовал. Завершённые голосования уходят в «Недавние результаты» внизу. Уведомления открывают раздел на том голосовании, где нужны вы."
+
+msgctxt "data:guide"
+msgid "Top: the tabs, then a slim bar with your class, level, XP, Scrap, skill and attribute points, Research Data and how many things need you. Click any of them to go to its tab."
+msgstr "Вверху: вкладки, затем узкая полоса с вашим классом, уровнем, опытом, ломом, очками навыков и характеристик, данными исследований и числом дел, которые вас ждут. Щёлкните по любому из них, чтобы перейти на его вкладку."
+
+msgctxt "data:guide"
+msgid "Middle: the tab's own content on the left. On the right, the detail panel: whatever you point at or select, in full, always in the same order (what it is, what it does now, what changes next, what it needs, its buttons)."
+msgstr "Посередине: слева содержимое самой вкладки. Справа панель подробностей: то, на что вы навели курсор или что выбрали, целиком и всегда в одном порядке (что это, что оно делает сейчас, что изменится дальше, что для этого нужно, его кнопки)."
+
+msgctxt "data:guide"
+msgid "Bottom: the action bar (Confirm, Reset, Undo and the tab's main actions), then the keys you can press."
+msgstr "Внизу: панель действий («Подтвердить», «Сброс», «Отменить» и основные действия вкладки), затем клавиши, которые можно нажать."
+
+msgctxt "data:guide"
+msgid "Statuses look the same everywhere, each with its own shape: Available (dot), Pending (half dot), Selected (diamond), Locked (padlock), Maxed (star), Equipped (tick), New (sparkle), Cursed (triangle), In development (striped square)."
+msgstr "Состояния везде выглядят одинаково, у каждого своя фигура: «Доступно» (точка), «Ожидает» (полуточка), «Выбрано» (ромб), «Закрыто» (замок), «Макс.» (звезда), «Надето» (галочка), «Новое» (искра), «Проклятый» (треугольник), «В разработке» (полосатый квадрат)."
+
+msgctxt "data:guide"
+msgid "Settings: changes apply at once so you can see them. Undo takes them back, Save keeps them. Closing the menu with changes not saved asks first."
+msgstr "Настройки: изменения применяются сразу, чтобы вы их видели. «Отменить» возвращает их, «Сохранить» оставляет. При закрытии меню с несохранёнными изменениями игра сначала спрашивает."
+
+msgctxt "data:guide"
+msgid "In the menu, move with WASD, the arrow keys or the d-pad. {key:confirm} selects, {key:back} goes back and {key:tabs} switch tabs."
+msgstr "В меню перемещайтесь клавишами WASD, стрелками или крестовиной. {key:confirm} выбирает, {key:back} возвращает назад, а {key:tabs} переключают вкладки."
+
+msgctxt "data:guide"
+msgid "Rebind in Settings"
+msgstr "Переназначить в настройках"
 
 msgctxt "data:guide"
 msgid "HUD Guide"
 msgstr "Справка по HUD"
 
 msgctxt "data:guide"
+msgid "What each part of RepoRPG's on-screen display shows, and where to find it."
+msgstr "Что показывает каждая часть экранного интерфейса RepoRPG и где её найти."
+
+msgctxt "data:guide"
+msgid "hud display screen ui overlay popups banner labels markers where action needed notices vote reminder badge hide hidden show preset minimal clean full custom clutter"
+msgstr "hud display screen ui overlay popups banner labels markers where action needed notices vote reminder badge hide hidden show preset minimal clean full custom clutter hud интерфейс экран оверлей всплывающие сообщения баннер подписи метки где требуется действие уведомления напоминание о голосовании значок скрыть скрыто показать пресет минимальный чистый полный свой беспорядок"
+
+msgctxt "data:guide"
+msgid "Action needed"
+msgstr "Требуется действие"
+
+msgctxt "data:guide"
+msgid "Just above your class card: votes, choices and unspent points that wait on you, with the tab to open. Votes show how many have voted and any time left."
+msgstr "Прямо над карточкой класса: голосования, выборы и непотраченные очки, которые ждут вас, с указанием нужной вкладки. Для голосований показано, сколько человек проголосовало и сколько осталось времени."
+
+msgctxt "data:guide"
+msgid "Bottom left"
+msgstr "Слева внизу"
+
+msgctxt "data:guide"
+msgid "One card: the run status chips (chapter, next milestone, streak, boons, heat, crew, payout, map modifier), your class, level, Scrap, XP bar and ability, the other keys your class has (Cart follow, Hum, Hand off, Swap copy, with their state), and your class's own lines. Pop-ups and Action Needed stack above it. Every row and chip can be hidden (Settings > HUD); hidden rows take no space."
+msgstr "Одна карточка: метки состояния забега (глава, следующий этап, серия, дары, накал, команда, выплата, модификатор карты), ваш класс, уровень, лом, полоса опыта и способность, другие клавиши вашего класса («Следование тележки», «Гул», «Передать», «Сменить копию» - с их состоянием) и собственные строки вашего класса. Всплывающие сообщения и «Требуется действие» располагаются над ней. Каждую строку и метку можно скрыть («Настройки» > «HUD»); скрытые строки не занимают места."
+
+msgctxt "data:guide"
+msgid "Bottom right"
+msgstr "Справа внизу"
+
+msgctxt "data:guide"
+msgid "This level's contracts and any active synergy."
+msgstr "Контракты этого уровня и действующая синергия."
+
+msgctxt "data:guide"
+msgid "Top right"
+msgstr "Справа вверху"
+
+msgctxt "data:guide"
+msgid "Nearby elites and what you're holding."
+msgstr "Элита поблизости и то, что вы держите."
+
+msgctxt "data:guide"
+msgid "Pop-ups"
+msgstr "Всплывающие сообщения"
+
+msgctxt "data:guide"
+msgid "XP, level ups, loot and contracts, stacked above your class."
+msgstr "Опыт, повышения уровня, добыча и контракты - столбиком над вашим классом."
+
+msgctxt "data:guide"
+msgid "Labels in the world"
+msgstr "Подписи в мире"
+
+msgctxt "data:guide"
+msgid "Threat labels, room marks, scan markers and calls for help."
+msgstr "Метки угроз, пометки комнат, метки сканирования и зовы о помощи."
+
+msgctxt "data:guide"
+msgid "Highlights card"
+msgstr "Карточка «Главное»"
+
+msgctxt "data:guide"
+msgid "Top centre in the shop: the team's best moments."
+msgstr "Вверху по центру в магазине: лучшие моменты команды."
+
+msgctxt "data:guide"
+msgid "Banner"
+msgstr "Баннер"
+
+msgctxt "data:guide"
+msgid "Top centre for a moment: a boss appeared or fell, a team contract ended."
+msgstr "Ненадолго вверху по центру: появился или пал босс, завершился командный контракт."
+
+msgctxt "data:guide"
+msgid "When something needs you - a team vote (boon, route, heat, team contract, End / Endless), a reward or perk to pick, a class to choose - a banner shows near the top middle for a few seconds: what's needed and where (\"Vote on Heat - Open [{key:menu}] RepoRPG → Run › Votes\"). Several at once come as one banner."
+msgstr "Когда что-то требует вашего участия - командное голосование (дар, маршрут, накал, командный контракт, завершение / бесконечный режим), выбор награды или перка, выбор класса, - вверху посередине на несколько секунд появляется баннер: что нужно и где («Голосование за накал - Откройте [{key:menu}] RepoRPG → Забег › Голосования»). Несколько сразу приходят одним баннером."
+
+msgctxt "data:guide"
+msgid "It then stays in the small <b>ACTION NEEDED</b> list above your class card until it's done. Unspent skill or attribute points are only a small reminder there (and a dot on the menu hint)."
+msgstr "Затем это остаётся в небольшом списке <b>ТРЕБУЕТСЯ ДЕЙСТВИЕ</b> над карточкой класса, пока не будет сделано. Непотраченные очки навыков и характеристик там лишь небольшое напоминание (и точка на подсказке меню)."
+
+msgctxt "data:guide"
+msgid "Press {key:menu}: the menu opens on the tab that needs you, with the item outlined and selected. {key:notices} steps through what's waiting; the menu key then opens that one. Tabs show a count badge."
+msgstr "Нажмите {key:menu}: меню откроется на вкладке, где нужно ваше действие, а нужный пункт будет обведён и выбран. {key:notices} перебирает то, что ждёт; клавиша меню после этого открывает выбранное. На вкладках показан значок со счётчиком."
+
+msgctxt "data:guide"
+msgid "A vote with a time limit counts down, with a last reminder at 10 seconds. A vote that closes before you voted says \"Vote closed\". The host sees who hasn't voted yet in each vote panel."
+msgstr "Голосование с ограничением по времени ведёт отсчёт, с последним напоминанием за 10 секунд. Если голосование закрылось до того, как вы проголосовали, появится «Голосование закрыто». Хост видит на панели каждого голосования, кто ещё не проголосовал."
+
+msgctxt "data:guide"
+msgid "Hidden while loading, in the level's intro and outro and while you're dead; while spectating only votes show. Settings > Action needed: banner, alert sound, where the list sits, and whether the menu key opens it."
+msgstr "Скрыто во время загрузки, во вступлении и завершении уровня и пока вы мертвы; при наблюдении показаны только голосования. «Настройки» > «Требуется действие»: баннер, звук оповещения, расположение списка и открывает ли его клавиша меню."
+
+msgctxt "data:guide"
+msgid "Choosing what you see"
+msgstr "Выбор того, что вы видите"
+
+msgctxt "data:guide"
+msgid "Settings > HUD: a preset and a live preview of your card. <b>Full</b> shows everything, <b>Minimal</b> keeps your class, ability, alerts and the important pop-ups (level ups, loot, contracts, perks), <b>Clean</b> keeps only the ability circle and alerts. Change anything by hand and it says <b>Custom</b>."
+msgstr "«Настройки» > «HUD»: пресет и живой предпросмотр вашей карточки. <b>«Полный»</b> показывает всё, <b>«Минимальный»</b> оставляет класс, способность, оповещения и важные всплывающие сообщения (повышения уровня, добыча, контракты, перки), <b>«Чистый»</b> оставляет только круг способности и оповещения. Измените что-нибудь вручную - и появится <b>«Свой»</b>."
+
+msgctxt "data:guide"
+msgid "Every part has its own switch: the whole card, each row (class and level, Scrap, XP bar, ability, its timer and name, your class's lines), each status chip, each kind of pop-up, and the Action needed panel. Settings > In-world has nameplates, Medic health, Appraiser markers and outlines, monster icons, threat labels, the synergy indicator, boss marks and text, and light beams; Settings > Panels & notices has the lobby roster, the menu hint, the highlights and run summary cards and the contracts panel."
+msgstr "У каждой части свой переключатель: вся карточка, каждая строка (класс и уровень, лом, полоса опыта, способность, её таймер и название, строки вашего класса), каждая метка состояния, каждый вид всплывающих сообщений и панель «Требуется действие». В разделе «Настройки» > «В мире» - имена напарников, здоровье для Медика, метки и контуры Оценщика, значки монстров, метки угроз, индикатор синергии, отметки и текст боссов и лучи света; в разделе «Настройки» > «Панели и уведомления» - список классов в лобби, подсказка меню, карточки «Главное» и итогов забега и панель контрактов."
+
+msgctxt "data:guide"
+msgid "Classes with keys besides their ability get a row under it: the key or button (whichever you are using, updated when you rebind), what it does and its state, such as \"[G] CART FOLLOW: ON\". Greyed out with the reason when it can't be used right now. Compact card: just the keys. Settings > HUD > Class's extra keys hides it."
+msgstr "Классы, у которых кроме способности есть другие клавиши, получают под ней строку: клавиша или кнопка (та, которой вы пользуетесь; обновляется при переназначении), что она делает и её состояние, например «[G] СЛЕДОВАНИЕ ТЕЛЕЖКИ: ВКЛ». Когда ею сейчас нельзя воспользоваться, она серая и с указанием причины. Компактная карточка: только клавиши. «Настройки» > «HUD» > «Доп. клавиши класса» скрывает строку."
+
+msgctxt "data:guide"
+msgid "Some have a choice of where they show: Always, Truck & shop, Levels only or Never (the card, your class's lines and the contracts panel)."
+msgstr "Для некоторых частей можно выбрать, где их показывать: «Всегда», «Грузовик и магазин», «Только уровни» или «Никогда» (карточка, строки вашего класса и панель контрактов)."
+
+msgctxt "data:guide"
+msgid "Hiding only hides it: your ability, scans, contracts and votes all still work. With the Action needed panel hidden, tabs still get their badge, and a vote with a deadline still comes back once near its end (unless Deadline reminder is off)."
+msgstr "Скрытие только скрывает: способность, сканирование, контракты и голосования продолжают работать. Когда панель «Требуется действие» скрыта, вкладки всё равно получают значок, а голосование со сроком всё равно напомнит о себе один раз ближе к концу (если не отключено «Напоминание о сроке»)."
+
+msgctxt "data:guide"
+msgid "These are yours alone: the host never changes them, and they stay through run resets, restarts and updates. Reset HUD puts them all back to default (Undo takes it back until you save)."
+msgstr "Эти настройки только ваши: хост их никогда не меняет, и они сохраняются при сбросах забега, перезапусках и обновлениях. «Сбросить HUD» возвращает всё к значениям по умолчанию («Отменить» возвращает обратно, пока вы не сохранили)."
+
+msgctxt "data:guide"
+msgid "Settings has HUD size, text size, reduced effects and colourblind mode."
+msgstr "В настройках есть размер HUD, размер текста, режим «Меньше эффектов» и режим для дальтоников."
+
+msgctxt "data:guide"
+msgid "Go to the Settings tab"
+msgstr "Перейти на вкладку «Настройки»"
+
+msgctxt "data:guide"
 msgid "Glossary"
 msgstr "Словарь"
+
+msgctxt "data:guide"
+msgid "Every RepoRPG term in one place, in plain words."
+msgstr "Все термины RepoRPG в одном месте, простыми словами."
+
+msgctxt "data:guide"
+msgid "glossary terms words dictionary meaning definitions what is"
+msgstr "glossary terms words dictionary meaning definitions what is словарь термины слова глоссарий значение определения что такое"
+
+msgctxt "data:guide"
+msgid "Run"
+msgstr "Забег"
+
+msgctxt "data:guide"
+msgid "Everything from a new save until it ends. Most progress resets after a run."
+msgstr "Всё от нового сохранения до его конца. Большая часть прогресса сбрасывается после забега."
+
+msgctxt "data:guide"
+msgid "Your role for the run: two passives, one active ability and a weakness."
+msgstr "Ваша роль на забег: две пассивки, одна активная способность и слабость."
+
+msgctxt "data:guide"
+msgid "Ability"
+msgstr "Способность"
+
+msgctxt "data:guide"
+msgid "Your class's active power, used with {key:ability}."
+msgstr "Активное умение вашего класса; применяется клавишей {key:ability}."
+
+msgctxt "data:guide"
+msgid "XP"
+msgstr "Опыт"
+
+msgctxt "data:guide"
+msgid "What your class earns to level up. Each class levels on its own."
+msgstr "То, что получает ваш класс, чтобы повышать уровень. Каждый класс прокачивается отдельно."
+
+msgctxt "data:guide"
+msgid "Skill points"
+msgstr "Очки навыков"
+
+msgctxt "data:guide"
+msgid "Earned each level; spent on talents."
+msgstr "Даются за каждый уровень; тратятся на таланты."
+
+msgctxt "data:guide"
+msgid "Upgrades in your class's three trees, bought in ranks."
+msgstr "Улучшения в трёх древах вашего класса, покупаются рангами."
+
+msgctxt "data:guide"
+msgid "Ranks"
+msgstr "Ранги"
+
+msgctxt "data:guide"
+msgid "How many points a talent has."
+msgstr "Сколько очков вложено в талант."
+
+msgctxt "data:guide"
+msgid "Capstone"
+msgstr "Вершина"
+
+msgctxt "data:guide"
+msgid "The big talent at the end of a tree."
+msgstr "Большой талант в конце древа."
+
+msgctxt "data:guide"
+msgid "Attribute points"
+msgstr "Очки характеристик"
+
+msgctxt "data:guide"
+msgid "Earned each level; spent on attributes that help every class."
+msgstr "Даются за каждый уровень; тратятся на характеристики, которые помогают любому классу."
+
+msgctxt "data:guide"
+msgid "Milestone"
+msgstr "Веха"
+
+msgctxt "data:guide"
+msgid "An extra effect for reaching 5, 10 or 15 points in an attribute."
+msgstr "Дополнительный эффект за 5, 10 или 15 очков в характеристике."
+
+msgctxt "data:guide"
+msgid "Run-long bonuses you pick every few levels."
+msgstr "Бонусы на весь забег, которые вы выбираете раз в несколько уровней."
+
+msgctxt "data:guide"
+msgid "Tags"
+msgstr "Метки"
+
+msgctxt "data:guide"
+msgid "Perk families; collect 3 or 5 of one for a bonus."
+msgstr "Семейства перков; соберите 3 или 5 перков одной метки ради бонуса."
+
+msgctxt "data:guide"
+msgid "Pending"
+msgstr "Ожидает"
+
+msgctxt "data:guide"
+msgid "Points you've placed but not confirmed yet."
+msgstr "Очки, которые вы распределили, но ещё не подтвердили."
+
+msgctxt "data:guide"
+msgid "Items in your four slots that add stats."
+msgstr "Предметы в ваших четырёх слотах, которые дают характеристики."
+
+msgctxt "data:guide"
+msgid "Rarity"
+msgstr "Редкость"
+
+msgctxt "data:guide"
+msgid "How good an item or perk is: Common up to Legendary."
+msgstr "Насколько хорош предмет или перк: от обычного до легендарного."
+
+msgctxt "data:guide"
+msgid "Set"
+msgstr "Комплект"
+
+msgctxt "data:guide"
+msgid "Gear pieces that give a bonus when worn together."
+msgstr "Части снаряжения, которые дают бонус, когда надеты вместе."
+
+msgctxt "data:guide"
+msgid "Unique"
+msgstr "Уникальный"
+
+msgctxt "data:guide"
+msgid "A Legendary item with its own special effect."
+msgstr "Легендарный предмет с собственным особым эффектом."
+
+msgctxt "data:guide"
+msgid "Module"
+msgstr "Модуль"
+
+msgctxt "data:guide"
+msgid "A plug-in for a gear socket."
+msgstr "Вставка для гнезда снаряжения."
+
+msgctxt "data:guide"
+msgid "Gear gets stronger the longer you wear it."
+msgstr "Снаряжение становится тем сильнее, чем дольше вы его носите."
+
+msgctxt "data:guide"
+msgid "Scrap"
+msgstr "Лом"
+
+msgctxt "data:guide"
+msgid "Your own money for the mod's Shop. The team's money is separate."
+msgstr "Ваши личные деньги для магазина мода. Деньги команды - отдельно."
+
+msgctxt "data:guide"
+msgid "Side goals for the next level."
+msgstr "Побочные цели на следующий уровень."
+
+msgctxt "data:guide"
+msgid "Reputation"
+msgstr "Репутация"
+
+msgctxt "data:guide"
+msgid "How much a contract giver trusts you this run."
+msgstr "Насколько заказчик доверяет вам в этом забеге."
+
+msgctxt "data:guide"
+msgid "Synergy"
+msgstr "Синергия"
+
+msgctxt "data:guide"
+msgid "A bonus two partner classes get while close together."
+msgstr "Бонус, который два класса-партнёра получают, пока находятся рядом."
+
+msgctxt "data:guide"
+msgid "Elite"
+msgstr "Элита"
+
+msgctxt "data:guide"
+msgid "A tougher monster with modifiers and better loot."
+msgstr "Более сильный монстр с модификаторами и лучшей добычей."
+
+msgctxt "data:guide"
+msgid "Boss"
+msgstr "Босс"
+
+msgctxt "data:guide"
+msgid "A named, much tougher elite every few levels."
+msgstr "Именной и гораздо более сильный элитный монстр раз в несколько уровней."
+
+msgctxt "data:guide"
+msgid "Death save"
+msgstr "Спасение от смерти"
+
+msgctxt "data:guide"
+msgid "A charge that stops one killing hit."
+msgstr "Заряд, который останавливает один смертельный удар."
+
+msgctxt "data:guide"
+msgid "Mastery"
+msgstr "Мастерство"
+
+msgctxt "data:guide"
+msgid "Reaching the top level with a class, for good."
+msgstr "Достижение максимального уровня за класс - навсегда."
+
+msgctxt "data:guide"
+msgid "Host settings"
+msgstr "Настройки хоста"
+
+msgctxt "data:guide"
+msgid "Rules the host sets for the whole lobby."
+msgstr "Правила, которые хост задаёт для всего лобби."
+
+msgctxt "data:guide"
+msgid "How tough the run has become; it rises with every level cleared."
+msgstr "Насколько трудным стал забег; растёт с каждым пройденным уровнем."
 
 msgctxt "data:contracts"
 msgid "Dispatch"

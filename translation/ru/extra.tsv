@@ -180,3 +180,37 @@
 +term	Warlord	Военачальник
 # строка элиты на HUD: «Champion: Armored Swift  12m» (ранг, свойства, расстояние)
 +pattern	{0}: {1}{2}  {3:0}m	{0}: {1}{2}  {3:0} м
+# значения перечислений настроек: вкладка «Хост» и справка показывают их имена как есть («TruckAndShop», «Majority»);
+# описания настроек называют их по-английски, и при выводе они заменяются теми же словами
++term	TruckAndShop	Грузовик и магазин
++term	LevelsOnly	Только уровни
++term	Small	Мелко
++term	Large	Крупно
++term	Majority	Большинство
++term	Unanimous	Единогласно
++term	Level	Уровень
++term	JoinOrder	Порядок входа
++term	Halve	Вдвое меньше
++term	Equal	Поровну
++term	ByContribution	По вкладу
++term	Short	Короткий
++term	Anyone	Любой игрок
++term	AboveHud	Над HUD
++term	LeftMiddle	Слева по центру
++term	BottomCentre	Снизу по центру
++term	Stack	Складывать
++term	SkipThreat	Без угрозы
++term	SkipDanger	Без опасности
++term	PauseMod	Приостановить мод
++term	Kick	Исключить
++term	StayDead	Остаётся мёртвым
++term	AsNormalMonster	Как обычный монстр
++term	Truck	Грузовик
++term	Detailed	Подробно
++term	Full	Полный
++term	Reduced	Меньше
++term	Talents	Таланты
++term	TalentsWhenPoints	Таланты, если есть очки
++term	Overview	Обзор
++term	Half	Половина
++term	ThreeQuarters	Три четверти
