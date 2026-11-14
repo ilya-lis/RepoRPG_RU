@@ -35,6 +35,16 @@ namespace RepoRPG_RU
         /// "+{0}% max health for {1}s" - matched at display time against the text with every number taken out.
         /// </summary>
         public readonly Dictionary<string, string> Shapes = new Dictionary<string, string>(StringComparer.Ordinal);
+        /// <summary>
+        /// The words the mod builds names from ("Rare Sharp Striker Module of the Brawler"). In Russian they have to agree, so the
+        /// name is put together at the moment it is drawn:
+        ///   msgctxt "adj"   a word names start with, its four forms: "Острый|Острая|Острое|Острые" (he, she, it, they);
+        ///   msgctxt "noun"  the thing itself: its gender (m, f, n, p), then "|" and its translation when the dictionary has none;
+        ///   msgctxt "of"    whose it is ("... of the Brawler"): the genitive, "драчуна".
+        /// </summary>
+        public readonly Dictionary<string, string[]> Adjectives = new Dictionary<string, string[]>(StringComparer.Ordinal);
+        public readonly Dictionary<string, string> Nouns = new Dictionary<string, string>(StringComparer.Ordinal);
+        public readonly Dictionary<string, string> Owners = new Dictionary<string, string>(StringComparer.Ordinal);
 
         public readonly List<string> Problems = new List<string>();
         public readonly List<string> Files = new List<string>();
@@ -94,6 +104,27 @@ namespace RepoRPG_RU
             if (e.Ctx == "shape") { Shapes[e.Id] = e.Str; return; }
             if (e.Ctx == null) { Global[e.Id] = e.Str; return; }
             if (e.Ctx == "term") { Terms[e.Id] = e.Str; return; }
+            if (e.Ctx == "adj" || e.Ctx == "noun" || e.Ctx == "of")
+            {
+                string[] parts = e.Str.Split('|');
+                bool good = e.Id.Trim().Length > 0;
+                foreach (string part in parts) if (part.Trim().Length == 0) good = false;
+                if (e.Ctx == "adj") good = good && parts.Length == 4;
+                else if (e.Ctx == "noun") good = good && parts.Length <= 2 && parts[0].Length == 1 && "mfnp".IndexOf(parts[0][0]) >= 0;
+                else good = good && parts.Length == 1;
+                if (!good)
+                {
+                    Entries--;
+                    Rejected++;
+                    Problems.Add(e.File + ":" + e.Line + ": " + (e.Ctx == "adj" ? "an adjective needs four forms (m|f|n|p)"
+                        : e.Ctx == "noun" ? "a noun needs its gender (m, f, n or p)" : "one word form expected") + ", entry ignored");
+                    return;
+                }
+                if (e.Ctx == "adj") Adjectives[e.Id] = parts;
+                else if (e.Ctx == "noun") Nouns[e.Id] = e.Str;
+                else Owners[e.Id] = e.Str;
+                return;
+            }
             if (e.Ctx == "pattern")
             {
                 bool hole = false;

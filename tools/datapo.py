@@ -6,8 +6,9 @@
 
 A translation line may carry word forms after the text:   Острый|f=Острая|n=Острое|p=Острые
     m f n p     forms of an adjective a gear name starts with (m only when the text itself is not that adjective)
-    g           gender of a gear base: m, f, n or p (plural)
-    post        the genitive that goes after a gear base instead ("of the Brawler" -> драчуна; "Second Wind" -> второго дыхания)
+    g           gender of a gear base, a gear slot, a gear item with a name of its own: m, f, n or p (plural).
+                What stands before it agrees with it: Редкая острая боевая перчатка
+    post        the genitive of the word a gear name ends with ("of the Brawler" -> драчуна)
     e           the form used in a boss name when it is not the text itself (a nickname made of nouns: Мелкий Шрифт)
                 boss names: an adjective takes its f= form after a name marked g=f
 
@@ -15,6 +16,8 @@ What comes out:
     terms       exact texts, translated at the moment they are drawn
     shapes      the same texts with their numbers as placeholders (a talent at another rank, a contract with another target)
     guide       values of guide.json, replaced inside the data itself (msgctxt "data:guide")
+    adj, noun, of   the words the mod builds gear names from ("Rare Sharp Striker Module of the Brawler"): the add-on puts
+                such a name together itself at the moment it is drawn (Loc.Built), so that its words agree
 """
 import json, re, os, glob, collections
 
@@ -93,7 +96,23 @@ def summary(text):
 
 
 def cap(s): return s[:1].upper() + s[1:]
-def low(s): return s[:1].lower() + s[1:]
+def low(s): return s if s[1:2].isupper() else s[:1].lower() + s[1:]         # the same rule as Loc.LowerFirst
+
+
+# gear items with a name of their own (uniques, cursed items, starter gear): the mod writes a rarity in front of it
+ITEMS = {('rpg', 'uniques/name'), ('gear', 'uniques/name'), ('gear', 'cursed/name'), ('gear', 'starters/name')}
+
+
+def is_item(u):
+    return (u['file'], u['path']) in ITEMS or any(tuple(a.split(':', 1)) in ITEMS for a in u['also'])
+
+
+def built(adj, of, heads, name, gender, owner=None):
+    """What Loc.Built makes of "Rare Sharp Striker Module of the Brawler": every word in front takes the form of the
+    thing's gender, the first one keeps its capital, the thing itself comes last, then whose it is."""
+    k = 'mfnp'.index(gender)
+    words = [adj[h].split('|')[k] for h in heads] + [name]
+    return ' '.join(words[:1] + [low(w) for w in words[1:]]) + (' ' + of[owner] if owner else '')
 
 
 def load(data_json, tsv_dir, problems):
@@ -118,8 +137,10 @@ def load(data_json, tsv_dir, problems):
     return units, tr
 
 
-def build(data_json, tsv_dir, known, problems):
-    """known: english -> russian of the entries the code units already have (a data text that is the same text gets the same words)"""
+def build(data_json, tsv_dir, known, problems, heads=None, things=None):
+    """known: english -> russian of the entries the code units already have (a data text that is the same text gets the same words)
+    heads: adjectives given by hand, english -> 'm|f|n|p' (the rarities, "Starter", "Cursed")
+    things: nouns given by hand, english -> 'g|translation' ("gear")"""
     units, tr = load(data_json, tsv_dir, problems)
     terms, shapes, guide, checks = collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict(), []
     todo = collections.Counter(); done = collections.Counter()
@@ -146,7 +167,7 @@ def build(data_json, tsv_dir, known, problems):
         shapes[sh[0]] = sh[1]
         checks.append(fill(*sh))
 
-    pre, behs, base, slots, post, first, epithet = [], [], [], [], [], [], []
+    pre, behs, base, slots, post, first, epithet, items = [], [], [], [], [], [], [], []
     left_ids = []
     for u in units:
         todo[u['file']] += 1
@@ -177,8 +198,8 @@ def build(data_json, tsv_dir, known, problems):
             problems.append('%s: stray braces' % where); continue
         if set(kinds) & {'pre', 'beh'}:
             m = extra.get('m', ru)
-            if 'post' not in extra and not all(k in extra for k in 'fnp'):
-                problems.append('%s: a word gear names start with needs f=, n= and p= forms (or post=)' % where)
+            if not all(k in extra for k in 'fnp'):
+                problems.append('%s: a word gear names start with needs f=, n= and p= forms' % where)
             else:
                 pre.append((en, m, extra))
                 if 'beh' in kinds: behs.append((en, m, extra))
@@ -191,6 +212,9 @@ def build(data_json, tsv_dir, known, problems):
         if 'post' in kinds:
             if 'post' not in extra: problems.append('%s: the last word of gear names needs post= (genitive)' % where)
             else: post.append((en, extra['post']))
+        if is_item(u):
+            if extra.get('g') not in ('m', 'f', 'n', 'p'): problems.append('%s: the name of a gear item needs g=m, f, n or p (a rarity in front of it agrees with it)' % where)
+            else: items.append((en, ru, extra['g']))
         if 'first' in kinds: first.append((en, ru, extra.get('g', 'm')))
         if 'epithet' in kinds: epithet.append((en, extra.get('e', ru), extra.get('f')))
         if kinds == ['pre'] or kinds == ['post'] or kinds == ['first'] or kinds == ['epithet'] or kinds == ['base']:
@@ -221,27 +245,47 @@ def build(data_json, tsv_dir, known, problems):
                     text(en[:i].strip(), ru[:j].strip(), where + ' (before the weakness)')
                     text(en[i + 9:].strip(), ru[j + 9:].strip(), where + ' (the weakness)')
 
-    # names the mod builds itself
-    made = 0
-    if base and (pre or post):
-        for b_en, b_ru, g in base:
-            for p_en, p_m, p_x in [(None, None, None)] + pre:
-                for s_en, s_ru in [(None, None)] + post:
-                    if p_en is None and s_en is None: term(b_en, b_ru, 'gear name'); continue
-                    en = (p_en + ' ' if p_en else '') + b_en + (' of the ' + s_en if s_en else '')
-                    if p_en is None: ru = b_ru
-                    elif 'post' in p_x and not all(k in p_x for k in 'fnp'): ru = b_ru + ' ' + p_x['post']
-                    else: ru = cap({'m': p_m, 'f': p_x['f'], 'n': p_x['n'], 'p': p_x['p']}[g]) + ' ' + low(b_ru)
-                    if s_en: ru += ' ' + s_ru
-                    if en in known or en in terms: continue
-                    terms[en] = ru; made += 1
-    # "Prototype Mender Core": the item of the research project "Prototype lab"
+    # Names the mod builds itself: "Sharp Striker Module of the Brawler", "Rare Light Servos", "Epic Weapon Module".
+    # The add-on puts them together from these words at the moment they are drawn.
+    adj, noun, of = collections.OrderedDict(heads or ()), collections.OrderedDict(things or ()), collections.OrderedDict()
+    outer = list(adj)                                            # what stands before a whole name: a rarity, "Starter", "Cursed"
+    for p_en, p_m, p_x in pre:
+        forms_ = '|'.join([p_m, p_x['f'], p_x['n'], p_x['p']])
+        if adj.get(p_en, forms_) != forms_: problems.append('gear names: %r has two sets of forms: %r and %r' % (p_en, adj[p_en], forms_)); continue
+        adj[p_en] = forms_
+    inner = [p_en for p_en, p_m, p_x in pre if p_en not in outer]
+    for s_en, s_ru in post: of[s_en] = s_ru
+    for b_en, b_ru, g in base: term(b_en, b_ru, 'gear name')    # a name may be the base and nothing else
+    for b_en, b_ru, g in base + slots + items:
+        if noun.get(b_en, g) != g: problems.append('gear names: %r has two genders: %s and %s' % (b_en, noun[b_en], g)); continue
+        noun[b_en] = g
+        if b_en in adj: problems.append('gear names: %r is both a thing and a word in front of things' % b_en)
+    # "Prototype Mender Plating": the item of the research project "Prototype lab" - a thing with a name of its own
+    protos = []
     for b_en, b_ru, g in slots:
         for p_en, p_m, p_x in behs:
             en = 'Prototype ' + p_en + ' ' + b_en
-            if 'post' in p_x and not all(k in p_x for k in 'fnp'): ru = b_ru + ' ' + p_x['post']
-            else: ru = cap({'m': p_m, 'f': p_x['f'], 'n': p_x['n'], 'p': p_x['p']}[g]) + ' ' + low(b_ru)
-            if en not in known and en not in terms: terms[en] = 'Прототип: ' + low(ru); made += 1
+            ru = 'Прототип: ' + low(built(adj, of, [p_en], b_ru, g))
+            if en in known or terms.get(en, ru) != ru: problems.append('gear names: %r is in the dictionary already' % en); continue
+            terms[en] = ru; noun[en] = 'm'; protos.append(en)
+    made = len(protos)
+    # samples: what the add-on is expected to make of such names
+    samples = []
+    for n, (b_en, b_ru, g) in enumerate(base):
+        for h in inner: samples.append((h + ' ' + b_en, built(adj, of, [h], b_ru, g)))
+        for s_en in of: samples.append((b_en + ' of the ' + s_en, built(adj, of, [], b_ru, g, s_en)))
+        for i, h in enumerate(inner):
+            s_en = list(of)[(i + n) % len(of)] if of else None
+            if s_en: samples.append((h + ' ' + b_en + ' of the ' + s_en, built(adj, of, [h], b_ru, g, s_en)))
+            if outer:
+                o = outer[(i + n) % len(outer)]
+                samples.append((' '.join([o, h, b_en]) + (' of the ' + s_en if s_en else ''), built(adj, of, [o, h], b_ru, g, s_en)))
+    for b_en, b_ru, g in base + slots + items:
+        for o in outer: samples.append((o + ' ' + b_en, built(adj, of, [o], b_ru, g)))
+    for k, en in enumerate(protos):
+        if outer: samples.append((outer[k % len(outer)] + ' ' + en, built(adj, of, [outer[k % len(outer)]], terms[en], 'm')))
+    samples += [(en.upper(), ru.upper()) for en, ru in samples[::40]]           # "EQUIP " + the name in capitals + "?"
+    checks.extend(samples)
     bosses = 0
     for f_en, f_ru, g in first:
         for e_en, e_ru, e_f in epithet:
@@ -267,4 +311,5 @@ def build(data_json, tsv_dir, known, problems):
     stats['left ids'] = left_ids
     stats['left'] = ', '.join('%s %d' % (f, todo[f] - done[f]) for f in todo if todo[f] != done[f])
     stats['gear names'] = made; stats['boss names'] = bosses
+    stats['adj'] = adj; stats['noun'] = noun; stats['of'] = of; stats['built samples'] = len(samples)
     return terms, shapes, guide, checks, stats

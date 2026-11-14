@@ -261,9 +261,21 @@ def main():
     # +inside:contracts<TAB>Dispatch<TAB>Диспетчерская: a value replaced where it stands in that file of the mod's data
     # (only at the paths the [data] rules of tools/genrules.py allow). For a name that is two different things in English.
     inside = collections.OrderedDict()
+    # +adj<TAB>Rare<TAB>Редкий|Редкая|Редкое|Редкие: a word the mod writes in front of a name (a rarity, "Starter"); it takes the
+    #       form of the thing named - he, she, it, they (Loc.Built)
+    # +noun<TAB>gear<TAB>n|снаряжение: a common word such a name may end with - its gender and its translation
+    adj_e, noun_e, of_e = collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict()
     for kind, en, ru, where in extra:
         bad = check(en, ru)
         if bad: problems.append('%s: %s: %r' % (where, bad, en[:60])); continue
+        if kind == 'adj':
+            if len(ru.split('|')) != 4 or not all(x.strip() for x in ru.split('|')): problems.append('%s: +adj needs four forms: m|f|n|p' % where)
+            else: adj_e[en] = ru
+            continue
+        if kind == 'noun':
+            if not re.fullmatch(r'[mfnp]\|[^|]+', ru): problems.append('%s: +noun needs a gender and the translation: n|снаряжение' % where)
+            else: noun_e[en] = ru
+            continue
         if kind == 'term': term_e[en] = ru
         elif kind == 'pattern': pat_e[en] = ru
         elif kind == 'global': glob_e[en] = ru
@@ -279,6 +291,9 @@ def main():
            '#   term              only at the moment the text is drawn (words the mod also uses as internal names)',
            '#   pattern           a sentence the mod puts together itself; {0} stands for the changing part',
            '#   shape             a text of the mod\'s data; {0}, {1} are its numbers, which change with ranks and settings',
+           '#   adj, noun, of     the words of names the mod builds itself ("Rare Sharp Striker Module of the Brawler"):',
+           '#                     adj - a word in front, its forms he|she|it|they; noun - the thing, its gender (m, f, n, p);',
+           '#                     of - whose it is, in the genitive. The name is put together when it is drawn, in agreement',
            '#   data:guide        a value of the mod\'s guide.json, replaced inside the data (the Guide tab and its search)',
            '#   data:contracts    the same for contracts.json: only the values at the paths the rules file names',
            '#   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)',
@@ -294,10 +309,15 @@ def main():
     data_json = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), 'data.json')
     if os.path.isfile(data_json):
         known = dict(glob_e); known.update(term_e)
-        d_terms, shape_e, guide_e, d_checks, data_stats = datapo.build(data_json, os.path.join(sys.argv[2], 'data'), known, problems)
+        d_terms, shape_e, guide_e, d_checks, data_stats = datapo.build(data_json, os.path.join(sys.argv[2], 'data'), known, problems,
+                                                                        heads=adj_e, things=noun_e)
         for en, ru in d_terms.items(): term_e[en] = ru
         checks.extend(d_checks)
-    emit(None, glob_e); emit('term', term_e); emit('pattern', pat_e); emit('shape', shape_e); emit('data:guide', guide_e)
+        adj_e, noun_e, of_e = data_stats['adj'], data_stats['noun'], data_stats['of']
+    for en in noun_e:
+        if '|' not in noun_e[en] and en not in term_e and en not in glob_e: problems.append('noun %r: the dictionary has no such name' % en)
+    emit(None, glob_e); emit('term', term_e); emit('pattern', pat_e); emit('shape', shape_e)
+    emit('adj', adj_e); emit('noun', noun_e); emit('of', of_e); emit('data:guide', guide_e)
     for stem, table in inside.items():
         if os.path.isfile(data_json):
             texts = set(u['text'] for u in json.load(open(data_json, encoding='utf-8'))
@@ -341,9 +361,11 @@ def main():
             os.makedirs(out, exist_ok=True)
             with open(os.path.join(out, 'data-left.txt'), 'w', encoding='utf-8') as f: f.write('\n'.join(data_stats['left ids']) + '\n')
         except OSError: pass
-        print('data: %d of %d texts translated; %d terms, %d shapes, %d guide values; generated: %d gear names, %d boss names%s'
+        print('data: %d of %d texts translated; %d terms, %d shapes, %d guide values; generated: %d prototype names, %d boss names%s'
               % (data_stats['translated'], data_stats['units'], len(d_terms), len(shape_e), len(guide_e), data_stats['gear names'],
                  data_stats['boss names'], ('; left: ' + data_stats['left']) if data_stats['left'] else ''))
+        print('names built when drawn: %d words in front, %d things, %d owners (%d samples)'
+              % (len(adj_e), len(noun_e), len(of_e), data_stats['built samples']))
     for p in problems: print('  PROBLEM ' + p)
     return 1 if problems else 0
 

@@ -93,7 +93,8 @@ ENDLESS mode	ENDLESS mode
 late join: dead players	late join: dead players
 Herald: hold to hum.	Глашатай: удерживайте, чтобы гудеть.
 # a word of the mod's own belongs here ("words" marks, translation/ru/extra.tsv)
-Rare gear	Снаряжение (Редкий)
+Rare gear	Редкое снаряжение
+Legendary gear	Легендарное снаряжение
 Spawn gear	Spawn gear
 Legendary+ gear	Легендарный+ предмет
 a Rare item	Редкий предмет
@@ -152,3 +153,68 @@ curse next level: Marked (Elite chance +15%)	проклятие на следу�
 GRINDLE THE UNBROKEN IS DOWN!	ГРИНДЛ НЕСЛОМЛЕННЫЙ - БОСС ПОВЕРЖЕН!
 MILESTONE BOSS: Madame Ohm the Night Manager  -  Armored Enraged	ЭТАПНЫЙ БОСС: Мадам Ом Ночная Управляющая  -  Бронированный Разъярённый
 БОСС Rustmaw the Fine Print: Armored Enraged · сопротивление: Rot  12 м	БОСС Ржавая Пасть Мелкий Шрифт: Бронированный Разъярённый · сопротивление: Гниение  12 м
+# names the mod builds from words (a rarity, "Starter", "Cursed", a behaviour, the thing, whose it is): put together in
+# agreement when drawn. The heads are Russian already where the mod's code is rewritten ("EQUIP " -> «НАДЕТЬ: »)
+Rare Sharp Striker Module of the Brawler	Редкий острый ударный модуль драчуна
+Uncommon Impact Gauntlet	Необычная боевая перчатка
+Common Ration Core	Обычное пайковое ядро
+Uncommon Light Servos	Необычные лёгкие сервоприводы
+Legendary Final Notice	Легендарное последнее уведомление
+Legendary The Negotiator	Легендарный переговорщик
+Starter Reinforced Plating	Стартовая усиленная броня
+Cursed Hungering Edge	Проклятое голодное лезвие
+Cursed Sharp Striker Module of the Brawler	Проклятый острый ударный модуль драчуна
+Rare Cursed Heavy Riot Plating	Редкая проклятая тяжёлая штурмовая броня
+Static Field Quantum Core of the Sage	Электростатическое квантовое ядро мудреца
+Epic Prototype Mender Plating	Эпический прототип: ремонтная броня
+SHARP STRIKER MODULE OF THE BRAWLER	ОСТРЫЙ УДАРНЫЙ МОДУЛЬ ДРАЧУНА
+Sharp Striker Module +2	Острый ударный модуль +2
+<color=#4FA3FF><b>Rare Impact Gauntlet of the Sage</b></color> <color=#9a9ca0>(Weapon Module)</color>  +5% weapon damage	<color=#4FA3FF><b>Редкая боевая перчатка мудреца</b></color> <color=#9a9ca0>(Оружейный модуль)</color>  +5% к урону оружия
+<color=#4FA3FF><b>Rare Swift Leg Servos</b></color>   Крафт 1/3   Повышений редкости 0/2	<color=#4FA3FF><b>Редкие быстрые ножные сервоприводы</b></color>   Крафт 1/3   Повышений редкости 0/2
+<color=#9a9ca0>Rare Plating</color>  <color=#7fb8ff>Надето</color>	<color=#9a9ca0>Редкая броня</color>  <color=#7fb8ff>Надето</color>
+Legendary Core: +5% XP · +3% sprint speed	Легендарное ядро: +5% опыта · +3% к скорости бега
+Найдено: Rare Swift Leg Servos [комплект Mover's] (extraction)	Найдено: Редкие быстрые ножные сервоприводы [комплект Перевозчик] (извлечение)
+Found Rare Swift Leg Servos (extraction)	Найдено: Редкие быстрые ножные сервоприводы (извлечение)
+Upgraded: Epic Quantum Core	Улучшено: Эпическое квантовое ядро
+Rerolled: Epic Quantum Core	Переброшено: Эпическое квантовое ядро
+НАДЕТЬ: CURSED IMPACT GAUNTLET?	НАДЕТЬ: ПРОКЛЯТАЯ БОЕВАЯ ПЕРЧАТКА?
+EQUIP SHARP STRIKER MODULE OF THE BRAWLER?	НАДЕТЬ: ОСТРЫЙ УДАРНЫЙ МОДУЛЬ ДРАЧУНА?
+ПЕРЕБРОСИТЬ: HEAVY RIOT PLATING?	ПЕРЕБРОСИТЬ: ТЯЖЁЛАЯ ШТУРМОВАЯ БРОНЯ?
+УЛУЧШИТЬ: SHARP STRIKER MODULE ДО +2?	УЛУЧШИТЬ: ОСТРЫЙ УДАРНЫЙ МОДУЛЬ ДО +2?
+Разобрать предмет «Rare Impact Gauntlet» за +12 лома? Это нельзя отменить.	Разобрать предмет «Редкая боевая перчатка» за +12 лома? Это нельзя отменить.
+Разобрать предмет «Starter Reinforced Plating» за +2 лома? Это нельзя отменить.	Разобрать предмет «Стартовая усиленная броня» за +2 лома? Это нельзя отменить.
+Salvage Rare Impact Gauntlet for +12 Scrap? This can't be undone.	Разобрать предмет «Редкая боевая перчатка» за +12 лома? Это нельзя отменить.
+Слить 3: Rare Plating	Слить 3: Редкая броня
+Слить Sharp Striker Module, Swift Striker Module, Heavy Striker Module в один предмет: Epic Weapon Module? Все три будут израсходованы (их модули вернутся в вашу сумку). Это нельзя отменить.	Слить Острый ударный модуль, Быстрый ударный модуль, Тяжёлый ударный модуль в один предмет: Эпический оружейный модуль? Все три будут израсходованы (их модули вернутся в вашу сумку). Это нельзя отменить.
+Couldn't buy Sharp Striker Module of the Brawler: not enough Scrap	Не удалось купить «Острый ударный модуль драчуна»: не хватает лома
+Couldn't salvage Heavy Riot Plating: unequip it first	Не удалось разобрать «Тяжёлая штурмовая броня»: сначала снимите предмет
+Couldn't salvage Heavy Riot Plating: сначала снимите предмет	Не удалось разобрать «Тяжёлая штурмовая броня»: сначала снимите предмет
+Выкупить «Swift Leg Servos» за 30 лома?	Выкупить «Быстрые ножные сервоприводы» за 30 лома?
+Лаборатория прототипов: Prototype Capacitor Weapon Module - в разделе «Снаряжение»	Лаборатория прототипов: Прототип: конденсаторный оружейный модуль - в разделе «Снаряжение»
+Cursed: -10% max health	Проклятие: -10% к макс. здоровью
+Slotted Spark Plug into Sharp Striker Module of the Brawler	Вставлено: Свеча зажигания - в предмет «Острый ударный модуль драчуна»
+Upgraded Heavy Riot Plating to Epic	Улучшено: Тяжёлая штурмовая броня - теперь редкость «Эпический»
+Rerolled a line on Heavy Riot Plating: +5% max health	Переброшено свойство предмета «Тяжёлая штурмовая броня»: +5% к макс. здоровью
+Крафт: Повысить параметр - «Heavy Riot Plating» (1/3)	Крафт: Повысить параметр - «Тяжёлая штурмовая броня» (1/3)
+Couldn't pawn Heavy Riot Plating: unequip it first	Не удалось заложить «Тяжёлая штурмовая броня»: сначала снимите предмет
+Повышает редкость до «Epic» и перебрасывает	Повышает редкость до «Эпический» и перебрасывает
+Улучшить «Heavy Riot Plating» до редкости «Epic» за 40 лома и 2 осколка ядра?	Улучшить «Тяжёлая штурмовая броня» до редкости «Эпический» за 40 лома и 2 осколка ядра?
++20 к сонастройке предмета «Swift Leg Servos» за 25 лома?	+20 к сонастройке предмета «Быстрые ножные сервоприводы» за 25 лома?
+У вас 4. Получится 1 предмет: Plating, редкость - <color=#B26BFF>Epic</color>.	У вас 4. Получится 1 предмет: Броня, редкость - <color=#B26BFF>Эпический</color>.
+Создать: Spark Plug (1P)	Создать: Свеча зажигания (1P)
+Только один проклятый предмет за раз. Снято: Hungering Edge	Только один проклятый предмет за раз. Снято: Голодное лезвие
+Only one cursed item at a time: Hungering Edge taken off	Только один проклятый предмет за раз. Снято: Голодное лезвие
+Inventory full: salvaged Scrap Plating	Инвентарь полон. Разобрано: Броня из лома
+# the rarity in a bracket after the item takes the item's form
+Предмет: Heavy Riot Plating (Rare, equipped)	Предмет: Тяжёлая штурмовая броня (редкая, надето)
+Item: Heavy Riot Plating (Rare, equipped)	Предмет: Тяжёлая штурмовая броня (редкая, надето)
+Цель: Swift Leg Servos (Cursed)	Цель: Быстрые ножные сервоприводы (проклятые)
+Target: Thornshell (Epic)	Цель: Шипастый панцирь (эпический)
+Price Board: next visit's featured deal is Final Notice (Legendary)	Доска цен: предложение на витрине в следующий визит - Последнее уведомление (легендарное)
+Target: Bob (Rare)	Цель: Bob (Редкий)
+# names saved by versions 0.1.x of the add-on, which rewrote these two heads inside the mod
+Проклято: Sharp Striker Module	Проклято: Острый ударный модуль
+Прототип Mender Plating	Прототип Ремонтная броня
+# not names: a known word in front of something else stays as it is
+Rare Find	Rare Find
+Heavy Metal Core Sample	Heavy Metal Core Sample

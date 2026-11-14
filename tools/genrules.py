@@ -133,6 +133,10 @@ ResearchCrew::SponsorGoal
 ResearchCrew::SponsorLine
 # the name of the buff travels with it (AllyBuff.Source)
 ClassHost::OnRevived
+# the name and the description of a gear item are written into the item itself: it is saved, traded and shown to other
+# players. Items keep the names the mod gives them ("Cursed Sharp Striker Module", "Prototype Mender Plating")
+ShopX::Cursed
+RpgRuntime::MakePrototypeE
 
 [keep]
 # whatever is sent to other players stays exactly as the mod wrote it

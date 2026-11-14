@@ -16,6 +16,18 @@
 +term	Epic	Эпический
 +term	Legendary	Легендарный
 +term	Unique	Уникальный
+# The same words in front of a name: "Rare Impact Gauntlet", "Starter Reinforced Plating", "Cursed Sharp Striker Module".
+# They take the form of the thing named (he|she|it|they); the add-on puts such names together when they are drawn.
++adj	Common	Обычный|Обычная|Обычное|Обычные
++adj	Uncommon	Необычный|Необычная|Необычное|Необычные
++adj	Rare	Редкий|Редкая|Редкое|Редкие
++adj	Epic	Эпический|Эпическая|Эпическое|Эпические
++adj	Legendary	Легендарный|Легендарная|Легендарное|Легендарные
++adj	Unique	Уникальный|Уникальная|Уникальное|Уникальные
++adj	Starter	Стартовый|Стартовая|Стартовое|Стартовые
++adj	Cursed	Проклятый|Проклятая|Проклятое|Проклятые
+# "Rare gear", "Legendary gear" (a reward): a common word instead of a name
++noun	gear	n|снаряжение
 # валюта мода: название берётся из настроек (Currency / Name, ShortName); короткое стоит после чисел
 +term	Scrap	лома
 +term	RPG Scrap	RPG-лом

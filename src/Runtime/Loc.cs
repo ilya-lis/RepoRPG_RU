@@ -28,6 +28,10 @@ namespace RepoRPG_RU
         private static Dictionary<string, CaseEntry> upper;
         private static Dictionary<string, Pattern[]> byHead, byTail;
         private static Dictionary<string, string> shapes;
+        // names the mod builds from the words of its data (see Built); the keys are in upper case
+        private static Dictionary<string, string[]> kinds;      // "SHARP" -> its four forms
+        private static Dictionary<string, Thing> things;        // "STRIKER MODULE" -> the gender and the translation
+        private static Dictionary<string, string> owners;       // "BRAWLER" -> "драчуна"
         private static Pattern[] loose;
         private static KeyValuePair<string, string>[] prefixes = new KeyValuePair<string, string>[0], suffixes = new KeyValuePair<string, string>[0];
         private static Dictionary<string, string> memo;
@@ -147,6 +151,7 @@ namespace RepoRPG_RU
         {
             string r = Exact(text);
             if (r != null) return r;
+            if (things != null && (r = Built(text)) != null) return r;
             if (shapes != null && (r = Shape(text)) != null) return r;
             if (depth >= MaxDepth || ++steps > MaxSteps) { cuts++; return null; }
             r = Compose(text, depth);
@@ -282,6 +287,33 @@ namespace RepoRPG_RU
         }
 
         /// <summary>
+        /// "Heavy Riot Plating (Rare, equipped)": the rarity in the bracket takes the form of the item in front of it -
+        /// «Тяжёлая штурмовая броня (редкая, надето)».
+        /// </summary>
+        private static string Agreed(string outer, string inner, int depth, ref bool unknown)
+        {
+            if (things == null) return null;
+            int comma = inner.IndexOf(", ", StringComparison.Ordinal);
+            string word = comma < 0 ? inner : inner.Substring(0, comma);
+            string[] forms;
+            if (word.Length > 24 || !kinds.TryGetValue(word.ToUpperInvariant(), out forms)) return null;
+            if (string.Equals(word, word.ToUpperInvariant(), StringComparison.Ordinal)) return null;       // shouted: left to the usual way
+            // the name is what the text in front ends with: "Предмет: Heavy Riot Plating"
+            int from = outer.Length;
+            while (from > 0 && (IsLatinLetter(outer[from - 1]) || outer[from - 1] == ' ' || outer[from - 1] == '\'' || outer[from - 1] == '-')) from--;
+            while (from < outer.Length && outer[from] == ' ') from++;
+            if (from >= outer.Length) return null;
+            int gender = Gender(outer.Substring(from));
+            if (gender < 0) return null;
+            string form = LowerFirst(forms[gender]);
+            if (comma < 0) return form;
+            string more = inner.Substring(comma + 2);
+            string rest = Piece(more, depth, ref unknown);
+            if (rest == null && (unknown || (HasLatin(more) && !NameLike(more, false)))) return null;
+            return form + ", " + (rest ?? more);
+        }
+
+        /// <summary>
         /// "Fleet Foot (+12% walk and sprint speed)", "Iron Plate (Rare, equipped)": a text and what the mod put in brackets
         /// after it. Each half is a text of its own; what stays as written has to be a name or a number.
         /// </summary>
@@ -302,7 +334,8 @@ namespace RepoRPG_RU
             if (at < 2 || text[at - 1] != ' ' || at + 1 >= n - 1) return null;
             string outer = text.Substring(0, at - 1), inner = text.Substring(at + 1, n - at - 2);
             bool unknown = false;
-            string to = Piece(outer, depth, ref unknown), ti = Piece(inner, depth, ref unknown);
+            string to = Piece(outer, depth, ref unknown);
+            string ti = (open == '(' ? Agreed(outer, inner, depth, ref unknown) : null) ?? Piece(inner, depth, ref unknown);
             if (unknown || (to == null && ti == null)) return null;
             if (to == null && HasLatin(outer) && !NameLike(outer, false)) return null;
             if (ti == null && HasLatin(inner) && !NameLike(inner, false)) return null;
@@ -365,7 +398,7 @@ namespace RepoRPG_RU
                 if (c != '.' && c != ',' && c != '%' && c != '+' && c != '-' && c != '/' && c != '\u00A0') return null;
             }
             if (!digit) return null;
-            string name = Exact(text.Substring(0, sp));
+            string name = Named(text.Substring(0, sp));
             return name == null ? null : name + text.Substring(sp);
         }
 
@@ -409,7 +442,7 @@ namespace RepoRPG_RU
                 if (end - start >= 2 && !(start == 0 && end == n))
                 {
                     string run = text.Substring(start, end - start);
-                    string t = Exact(run) ?? Names(run);
+                    string t = Named(run) ?? Names(run);
                     if (t != null)
                     {
                         if (sb == null) sb = new StringBuilder(n + 16);
@@ -422,6 +455,102 @@ namespace RepoRPG_RU
             if (sb == null) return null;
             sb.Append(text, copied, n - copied);
             return sb.ToString();
+        }
+
+        /// <summary>The dictionary, or a name the mod built from the words of its data.</summary>
+        private static string Named(string text)
+        {
+            return Exact(text) ?? (things != null ? Built(text) : null);
+        }
+
+        private sealed class Thing
+        {
+            public int Gender;          // 0 he, 1 she, 2 it, 3 they
+            public string Name;
+        }
+
+        private const int MaxKinds = 4;
+
+        /// <summary>
+        /// "Rare Sharp Striker Module of the Brawler", "Starter Reinforced Plating", "Epic Weapon Module", "CURSED HUNGERING EDGE":
+        /// a name the mod builds from words of its data - what kind of thing it is (a rarity, "Starter", "Cursed", a behaviour,
+        /// a stat word), the thing itself, and whose it is. In Russian the kinds agree with the thing, so the name is put
+        /// together here: «Редкий острый ударный модуль драчуна», «Стартовая усиленная броня», «Эпическое ядро».
+        /// The thing alone is an ordinary entry of the dictionary: this is for a name with something around it.
+        /// </summary>
+        private static string Built(string text)
+        {
+            string[][] found = new string[MaxKinds][];
+            int count;
+            string owner;
+            bool lower;
+            Thing thing = Parse(text, found, out count, out owner, out lower);
+            if (thing == null || (count == 0 && owner == null)) return null;
+            StringBuilder sb = new StringBuilder(text.Length + 24);
+            for (int k = 0; k < count; k++)
+            {
+                string form = found[k][thing.Gender];
+                sb.Append(k == 0 ? form : LowerFirst(form)).Append(' ');
+            }
+            sb.Append(count == 0 ? thing.Name : LowerFirst(thing.Name));
+            if (owner != null) sb.Append(' ').Append(owner);
+            string r = sb.ToString();
+            if (!lower) return Upper(r);                                    // SHOUTED by the mod
+            return text[0] >= 'a' && text[0] <= 'z' ? LowerFirst(r) : UpperFirst(r);
+        }
+
+        /// <summary>Which form goes with this name - 0 he, 1 she, 2 it, 3 they; -1 when the text is not the name of a thing.</summary>
+        private static int Gender(string text)
+        {
+            int count;
+            string owner;
+            bool lower;
+            Thing thing = Parse(text, new string[MaxKinds][], out count, out owner, out lower);
+            return thing == null ? -1 : thing.Gender;
+        }
+
+        /// <summary>Takes a name apart: the kinds in front (found, count), the thing, whose it is.</summary>
+        private static Thing Parse(string text, string[][] found, out int count, out string owner, out bool lower)
+        {
+            count = 0;
+            owner = null;
+            lower = false;
+            int n = text.Length;
+            if (n < 2 || n > 120) return null;
+            for (int i = 0; i < n; i++)
+            {
+                char c = text[i];
+                if (c == ' ') { if (i == 0 || i == n - 1 || text[i - 1] == ' ') return null; }
+                else if (c >= 'a' && c <= 'z') lower = true;
+                else if (!((c >= 'A' && c <= 'Z') || c == '\'' || c == '-')) return null;
+            }
+            string u = lower ? text.ToUpperInvariant() : text;
+            int cut = u.LastIndexOf(" OF THE ", StringComparison.Ordinal);
+            if (cut > 0 && owners.TryGetValue(u.Substring(cut + 8), out owner)) u = u.Substring(0, cut);
+            else owner = null;
+            return Kinds(u, 0, found, ref count);
+        }
+
+        /// <summary>The kinds in front, one after another, and the thing they lead to. Null: the text is something else.</summary>
+        private static Thing Kinds(string u, int from, string[][] found, ref int count)
+        {
+            Thing thing;
+            if (things.TryGetValue(from == 0 ? u : u.Substring(from), out thing)) return thing;
+            if (count == MaxKinds) return null;
+            // a kind is one to three words: "SHARP", "STATIC FIELD"
+            int space = from;
+            for (int words = 0; words < 3; words++)
+            {
+                space = u.IndexOf(' ', space + 1);
+                if (space < 0) break;
+                string[] forms;
+                if (!kinds.TryGetValue(u.Substring(from, space - from), out forms)) continue;
+                found[count++] = forms;
+                thing = Kinds(u, space + 1, found, ref count);
+                if (thing != null) return thing;
+                count--;
+            }
+            return null;
         }
 
         /// <summary>
@@ -1052,7 +1181,7 @@ namespace RepoRPG_RU
                         // one of the mod's own words belongs here ("Rare", "in the shop"): the dictionary has it, or this is another text
                         if (Exact(v) == null) return null;
                     }
-                    else if (Tight && !Simple(v))
+                    else if (Tight && !Simple(v) && !(things != null && Built(v) != null))      // (a long name the mod built is still a name)
                     {
                         // "Gift failed: " + "that player isn't here", "+25 Scrap – " + "starter tool": the reason is a text of the
                         // mod's own. A short pattern may take it when - and only when - that text turns out to have a translation
@@ -1082,6 +1211,7 @@ namespace RepoRPG_RU
                 }
 
                 StringBuilder sb = new StringBuilder(Template.Length + s.Length);
+                int lastSlot = -1, lastEnd = -1;        // the placeholder filled last and where the template went on after it
                 for (int i = 0; i < Template.Length; i++)
                 {
                     char c = Template[i];
@@ -1098,9 +1228,24 @@ namespace RepoRPG_RU
                             return null;
                         }
                         string value = caught[slot];
+                        // "{0} {1}", a rarity and the item next to it: together they are one name, and its words agree
+                        if (things != null && slot + 1 < caught.Length && Lits[slot + 1] == " "
+                            && close + 2 < Template.Length && Template[close + 1] == ' ' && Template[close + 2] == '{')
+                        {
+                            int close2 = Template.IndexOf('}', close + 2);
+                            if (close2 > 0 && Fmt.FormatIndex(Template.Substring(close + 2, close2 - close - 1)) == Slots[slot + 1])
+                            {
+                                string both = Built(value + " " + caught[slot + 1]);
+                                if (both != null) { sb.Append(both); i = close2; continue; }
+                            }
+                        }
                         // a name inside the text may be translatable on its own: "Equipped: Iron Plate"
                         bool unknown = false;
-                        string inner = Piece(value, depth, ref unknown);
+                        string inner = null;
+                        // "{0} ({1})", an item and its rarity in a bracket: the rarity takes the form of the item
+                        if (slot == lastSlot + 1 && slot > 0 && i - lastEnd == 2 && Template[lastEnd] == ' ' && Template[lastEnd + 1] == '(' && Lits[slot] == " (")
+                            inner = Agreed(caught[slot - 1], value, depth, ref unknown);
+                        if (inner == null) inner = Piece(value, depth, ref unknown);
                         if (unknown) return null;
                         if (inner == null && (owed & (1 << slot)) != 0) return null;
                         // ...and a clause has to be: "<English sentence> Это нельзя отменить." helps nobody
@@ -1110,6 +1255,8 @@ namespace RepoRPG_RU
                         // ...and what stays English inside a sentence is a name or a nickname, not the rest of another sentence
                         if (inner == null && Kind[slot] == Value && HasLatin(value) && !Simple(value) && !Short(value) && !asWritten) return null;
                         sb.Append(inner ?? value);
+                        lastSlot = slot;
+                        lastEnd = close + 1;
                         i = close;
                         continue;
                     }
@@ -1246,8 +1393,34 @@ namespace RepoRPG_RU
                 }
             }
 
+            Dictionary<string, string[]> kn = null;
+            Dictionary<string, Thing> th = null;
+            Dictionary<string, string> ow = null;
+            if (lang.Nouns.Count > 0)
+            {
+                kn = new Dictionary<string, string[]>(lang.Adjectives.Count, StringComparer.Ordinal);
+                foreach (KeyValuePair<string, string[]> kv in lang.Adjectives) kn[kv.Key.ToUpperInvariant()] = kv.Value;
+                ow = new Dictionary<string, string>(lang.Owners.Count, StringComparer.Ordinal);
+                foreach (KeyValuePair<string, string> kv in lang.Owners) ow[kv.Key.ToUpperInvariant()] = kv.Value;
+                th = new Dictionary<string, Thing>(lang.Nouns.Count, StringComparer.Ordinal);
+                foreach (KeyValuePair<string, string> kv in lang.Nouns)
+                {
+                    // "n" - the dictionary has the name itself; "n|снаряжение" - a common word, its translation is given here
+                    Thing thing = new Thing();
+                    thing.Gender = "mfnp".IndexOf(kv.Value[0]);
+                    int bar = kv.Value.IndexOf('|');
+                    if (bar > 0) thing.Name = kv.Value.Substring(bar + 1);
+                    else if (!m.TryGetValue(kv.Key, out thing.Name)) continue;
+                    if (thing.Gender >= 0 && !string.IsNullOrEmpty(thing.Name)) th[kv.Key.ToUpperInvariant()] = thing;
+                }
+                if (th.Count == 0) th = null;
+            }
+
             minLength = lo;
             maxLength = hi;
+            kinds = kn;
+            owners = ow;
+            things = th;
             shapes = sh;
             upper = up;
             prefixes = pre.ToArray();
