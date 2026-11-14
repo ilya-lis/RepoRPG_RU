@@ -20494,6 +20494,286 @@ msgid "Win a run at Ascension 20"
 msgstr "Выиграйте забег на Вознесении 20"
 
 msgctxt "term"
+msgid "Arsenal"
+msgstr "Арсенал"
+
+msgctxt "term"
+msgid "Exploration"
+msgstr "Разведка"
+
+msgctxt "term"
+msgid "Cart Winch"
+msgstr "Лебёдка для тележки"
+
+msgctxt "term"
+msgid "Look at a cart 3-10 m away and hold Interact (E) to reel it toward you (slowly; it stops if it hits something)."
+msgstr "Посмотрите на тележку в 3-10 м от вас и удерживайте «Взаимодействие» (E), чтобы подтянуть её к себе (медленно; она останавливается, если во что-то упирается)."
+
+msgctxt "term"
+msgid "Extraction Drill"
+msgstr "Бур извлечения"
+
+msgctxt "term"
+msgid "When every living player stands in an extraction zone, its countdown runs twice as fast."
+msgstr "Когда все живые игроки стоят в зоне извлечения, её отсчёт идёт вдвое быстрее."
+
+msgctxt "term"
+msgid "Recall Beacon"
+msgstr "Маяк отзыва"
+
+msgctxt "term"
+msgid "Once per level, call the nearest empty cart to where you stand (Research tab, in a level)."
+msgstr "Раз за уровень: вызовите ближайшую пустую тележку туда, где стоите (вкладка «Исследования», на уровне)."
+
+msgctxt "term"
+msgid "Trailer Hitch"
+msgstr "Сцепка"
+
+msgctxt "term"
+msgid "Push a cart into another to hitch them: pushing one tows the other. Yank them apart to unhitch."
+msgstr "Толкните одну тележку в другую, чтобы сцепить их: толкаете одну - вторая едет следом. Растащите их, чтобы расцепить."
+
+msgctxt "term"
+msgid "Twin Pads"
+msgstr "Парные площадки"
+
+msgctxt "term"
+msgid "The Courier can put a second Drop Pad anywhere (Research tab, in a level). It counts like the one in the truck."
+msgstr "Курьер может поставить вторую площадку доставки где угодно (вкладка «Исследования», на уровне). Она считается так же, как площадка в грузовике."
+
+msgctxt "term"
+msgid "Insulated Cart"
+msgstr "Изолированная тележка"
+
+msgctxt "term"
+msgid "Once per level, mark the nearest cart (Research tab): its valuables lose no value from bumps while it stands still."
+msgstr "Раз за уровень: отметьте ближайшую тележку (вкладка «Исследования») - её ценности не теряют стоимость от толчков, пока она стоит на месте."
+
+msgctxt "term"
+msgid "Dumbwaiter"
+msgstr "Подъёмник"
+
+msgctxt "term"
+msgid "Every extraction point gets a chute: once per point, leave one valuable on it and it's sent straight to the open extraction."
+msgstr "На каждой точке извлечения появляется жёлоб: раз за точку оставьте на нём одну ценность, и она отправится прямо к открытому извлечению."
+
+msgctxt "term"
+msgid "Price Board"
+msgstr "Доска цен"
+
+msgctxt "term"
+msgid "The shop's Research section shows next visit's featured deal, and that deal will be exactly that item."
+msgstr "Раздел «Исследования» в магазине показывает предложение с витрины следующего посещения, и это предложение будет именно этим предметом."
+
+msgctxt "term"
+msgid "Haggling"
+msgstr "Торг"
+
+msgctxt "term"
+msgid "Once per shop visit, haggle one item: 50% chance it's 25% cheaper, 50% chance it's 10% dearer (that visit)."
+msgstr "Раз за посещение магазина: поторгуйтесь за один предмет - шанс 50%, что он станет на 25% дешевле, и шанс 50%, что на 10% дороже (в это посещение)."
+
+msgctxt "term"
+msgid "Rotation Lock"
+msgstr "Блокировка ассортимента"
+
+msgctxt "term"
+msgid "Lock one more shop item (3 at most), and your first lock each shop visit is free."
+msgstr "Закрепите ещё один предмет в магазине (не больше 3), а первое закрепление за каждое посещение магазина бесплатно."
+
+msgctxt "term"
+msgid "A new contract giver whose contracts pay Research Data (samples, a full catalogue, specimens)."
+msgstr "Новый заказчик, чьи контракты оплачиваются данными исследований (образцы, полный каталог, экземпляры)."
+
+msgctxt "term"
+msgid "Pawn Counter"
+msgstr "Ломбард"
+
+msgctxt "term"
+msgid "New shop section: pawn a gear item for 60% of its salvage, buy it back at 80% until the run ends."
+msgstr "Новый раздел магазина: заложите предмет снаряжения за 60% стоимости его разбора и выкупите за 80% до конца забега."
+
+msgctxt "term"
+msgid "Futures"
+msgstr "Фьючерсы"
+
+msgctxt "term"
+msgid "New shop section: pay now for an item of a chosen rarity, delivered when the team clears the next milestone (one order per visit)."
+msgstr "Новый раздел магазина: заплатите сейчас за предмет выбранной редкости - его доставят, когда команда пройдёт следующий этап (один заказ за посещение)."
+
+msgctxt "term"
+msgid "Sponsors"
+msgstr "Спонсоры"
+
+msgctxt "term"
+msgid "At run start the team picks one of three sponsors; each sets a run-long side goal and pays Scrap and Data at the run's end."
+msgstr "В начале забега команда выбирает одного из трёх спонсоров; каждый ставит побочную цель на весь забег и платит ломом и данными в конце забега."
+
+msgctxt "term"
+msgid "Modules II"
+msgstr "Модули II"
+
+msgctxt "term"
+msgid "Three new modules can drop and be bought: Tracer (monsters you hit are marked for the team for 3 s), Spotter Lens (aim at a valuable to see its value) and Tether (items you let go float for 1 s)."
+msgstr "Могут выпадать и продаваться три новых модуля: «Трассер» (монстры, которых вы задели, отмечаются для команды на 3 с), «Линза наводчика» (наведитесь на ценность, чтобы увидеть её стоимость) и «Привязь» (предметы, которые вы отпустили, парят 1 с)."
+
+msgctxt "term"
+msgid "Consumables II"
+msgstr "Расходники II"
+
+msgctxt "term"
+msgid "New shop consumables that go off on their own once per level: Smoke Canister (below 50% health, nearby monsters lose sight of you), Decoy Whistle (a monster gets close: a whistle draws monsters away) and Flash Charge (a monster gets very close: a flash stuns it)."
+msgstr "Новые расходники в магазине, которые срабатывают сами раз за уровень: «Дымовая шашка» (здоровье ниже 50% - ближайшие монстры теряют вас из виду), «Свисток-приманка» (монстр подошёл близко - свист отвлекает монстров) и «Светошумовой заряд» (монстр подошёл вплотную - вспышка оглушает его)."
+
+msgctxt "term"
+msgid "Behaviors II"
+msgstr "Поведения II"
+
+msgctxt "term"
+msgid "Four new behavior affixes can roll on your gear: Hasty, Momentum, Steady and Second Wind."
+msgstr "На вашем снаряжении могут выпасть четыре новых свойства-поведения: «Торопливый», «Импульс», «Твёрдость» и «Второе дыхание»."
+
+msgctxt "term"
+msgid "Gun Bench"
+msgstr "Оружейный верстак"
+
+msgctxt "term"
+msgid "Shop service: fit a Suppressor (quiet shots), Scatter Choke (an extra pellet, wider spread) or Stock (less kick) to the guns you hold next level."
+msgstr "Услуга магазина: установите глушитель (тихие выстрелы), рассеивающий чок (лишняя дробина, шире разброс) или приклад (меньше отдача) на оружие, которое будет у вас в руках на следующем уровне."
+
+msgctxt "term"
+msgid "Fuse three unequipped items of one slot and rarity into one item a rarity higher (shop Research section; not Uniques, cursed or starter items)."
+msgstr "Объедините три ненадетых предмета одной ячейки и редкости в один предмет на редкость выше (раздел «Исследования» в магазине; кроме уникальных, проклятых и стартовых предметов)."
+
+msgctxt "term"
+msgid "Blueprint Archive"
+msgstr "Архив чертежей"
+
+msgctxt "term"
+msgid "Uniques you've found before can appear in your shop (one per visit)."
+msgstr "Уникальные предметы, которые вы уже находили, могут появляться в вашем магазине (один за посещение)."
+
+msgctxt "term"
+msgid "Prototype Lab"
+msgstr "Лаборатория прототипов"
+
+msgctxt "term"
+msgid "Each run, one prototype item with an effect only research gives (one of 6) appears in your shop."
+msgstr "В каждом забеге в вашем магазине появляется один прототип с эффектом, который дают только исследования (один из 6)."
+
+msgctxt "term"
+msgid "Sample Scanner"
+msgstr "Сканер образцов"
+
+msgctxt "term"
+msgid "Research samples within 25 m show as a ping on your screen."
+msgstr "Образцы для исследований в пределах 25 м показываются меткой на экране."
+
+msgctxt "term"
+msgid "New Hazards"
+msgstr "Новые опасности"
+
+msgctxt "term"
+msgid "Two map modifiers join the pool: Blackout (lights dimmed, monsters a little slower) and Supply Drop (a crate worth extra falls mid-level)."
+msgstr "В набор добавляются два модификатора карты: «Затемнение» (свет приглушён, монстры чуть медленнее) и «Сброс припасов» (посреди уровня падает ящик, который ценится дороже)."
+
+msgctxt "term"
+msgid "Survey Drone"
+msgstr "Дрон-разведчик"
+
+msgctxt "term"
+msgid "Once per level (Research tab): a survey drone marks the valuables up to 22 m ahead of you for 10 s."
+msgstr "Раз за уровень (вкладка «Исследования»): дрон-разведчик на 10 с отмечает ценности на расстоянии до 22 м перед вами."
+
+msgctxt "term"
+msgid "Vault Cracking"
+msgstr "Взлом хранилищ"
+
+msgctxt "term"
+msgid "Some levels have a locked vault deep in the map: hold Interact on it for 6 s (monsters hear it) to crack it for more than double its value and Data."
+msgstr "На некоторых уровнях в глубине карты есть запертое хранилище: удерживайте на нём «Взаимодействие» 6 с (монстры это слышат), чтобы вскрыть его и получить больше двойной стоимости и данные."
+
+msgctxt "term"
+msgid "Nest Hunting"
+msgstr "Охота на гнёзда"
+
+msgctxt "term"
+msgid "Some levels have a Monster Nest: kill all its marked guards and the last one drops a nest core (Data when extracted)."
+msgstr "На некоторых уровнях есть гнездо монстров: убейте всех его помеченных стражей, и из последнего выпадет ядро гнезда (данные при извлечении)."
+
+msgctxt "term"
+msgid "Expeditions"
+msgstr "Экспедиции"
+
+msgctxt "term"
+msgid "A new route in the route vote: Expedition, with 40% more valuables, more monsters and twice the research samples."
+msgstr "Новый маршрут в голосовании за маршрут: «Экспедиция» - на 40% больше ценностей, больше монстров и вдвое больше образцов для исследований."
+
+msgctxt "term"
+msgid "Anomaly Rooms"
+msgstr "Комнаты-аномалии"
+
+msgctxt "term"
+msgid "Some maps have an anomaly deep inside: valuables float in low gravity around an anomaly sample worth a lot of Data."
+msgstr "На некоторых картах в глубине есть аномалия: ценности парят в низкой гравитации вокруг образца аномалии, который стоит много данных."
+
+msgctxt "term"
+msgid "Boons II"
+msgstr "Дары II"
+
+msgctxt "term"
+msgid "Four new run boons join the vote pool: Quick Study, Data Mine, Stockpile, Deep Pockets."
+msgstr "В набор для голосования добавляются четыре новых дара забега: «Быстрая учёба», «Кладезь данных», «Запас», «Глубокие карманы»."
+
+msgctxt "term"
+msgid "Parallel Lab"
+msgstr "Параллельная лаборатория"
+
+msgctxt "term"
+msgid "Run two research projects at once."
+msgstr "Ведите два исследовательских проекта одновременно."
+
+msgctxt "term"
+msgid "Spectator Uplink"
+msgstr "Связь наблюдателя"
+
+msgctxt "term"
+msgid "While dead, press your ability key to mark the monster or valuable the spectate view looks at, for the living team."
+msgstr "Пока вы мертвы, нажмите клавишу способности, чтобы отметить для живых напарников монстра или ценность, на которую смотрит камера наблюдения."
+
+msgctxt "term"
+msgid "Synergies II"
+msgstr "Синергии II"
+
+msgctxt "term"
+msgid "Four new class-pair synergies: Iron Wall, Quick Patch, Study Group, Side Hustle."
+msgstr "Четыре новые синергии пар классов: «Железная стена», «Быстрая заплатка», «Учебная группа», «Подработка»."
+
+msgctxt "term"
+msgid "Gear Exchange"
+msgstr "Обмен снаряжением"
+
+msgctxt "term"
+msgid "Trade gear with a teammate in the shop's Research section: one item for one, both confirm."
+msgstr "Обменивайтесь снаряжением с напарником в разделе «Исследования» магазина: один предмет на один, подтверждают оба."
+
+msgctxt "term"
+msgid "Crew Drills"
+msgstr "Тренировки команды"
+
+msgctxt "term"
+msgid "At each crew level the team votes one of three drills: a small team rule for the rest of the run."
+msgstr "На каждом уровне команды команда выбирает голосованием одну из трёх тренировок: небольшое командное правило до конца забега."
+
+msgctxt "term"
+msgid "Lab Network"
+msgstr "Сеть лабораторий"
+
+msgctxt "term"
+msgid "Run three research projects at once, and once per run borrow one personal unlock a teammate has researched (Research tab)."
+msgstr "Ведите три исследовательских проекта одновременно и раз за забег позаимствуйте одну личную разблокировку, исследованную напарником (вкладка «Исследования»)."
+
+msgctxt "term"
 msgid "Striker Module"
 msgstr "Ударный модуль"
 
@@ -43453,6 +43733,1030 @@ msgctxt "term"
 msgid "Prototype Capacitor Core"
 msgstr "Прототип: конденсаторное ядро"
 
+msgctxt "term"
+msgid "Grindle the Unbroken"
+msgstr "Гриндл Несломленный"
+
+msgctxt "term"
+msgid "Grindle the Fine Print"
+msgstr "Гриндл Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Grindle the Hungry"
+msgstr "Гриндл Голодный"
+
+msgctxt "term"
+msgid "Grindle the Final Notice"
+msgstr "Гриндл Последнее Уведомление"
+
+msgctxt "term"
+msgid "Grindle the Repossessor"
+msgstr "Гриндл Конфискатор"
+
+msgctxt "term"
+msgid "Grindle the Overtime"
+msgstr "Гриндл Сверхурочный"
+
+msgctxt "term"
+msgid "Grindle the Patient"
+msgstr "Гриндл Терпеливый"
+
+msgctxt "term"
+msgid "Grindle the Collector"
+msgstr "Гриндл Коллектор"
+
+msgctxt "term"
+msgid "Grindle the Last Shift"
+msgstr "Гриндл Последняя Смена"
+
+msgctxt "term"
+msgid "Grindle the Unpaid"
+msgstr "Гриндл Неоплаченный"
+
+msgctxt "term"
+msgid "Grindle the Loud"
+msgstr "Гриндл Громкий"
+
+msgctxt "term"
+msgid "Grindle the Very Tall"
+msgstr "Гриндл Очень Высокий"
+
+msgctxt "term"
+msgid "Grindle the Uninsured"
+msgstr "Гриндл Незастрахованный"
+
+msgctxt "term"
+msgid "Grindle the Night Manager"
+msgstr "Гриндл Ночной Управляющий"
+
+msgctxt "term"
+msgid "Grindle the Unrefunded"
+msgstr "Гриндл Невозмещённый"
+
+msgctxt "term"
+msgid "Grindle the Clock-Watcher"
+msgstr "Гриндл Считающий Минуты"
+
+msgctxt "term"
+msgid "Vexx the Unbroken"
+msgstr "Векс Несломленный"
+
+msgctxt "term"
+msgid "Vexx the Fine Print"
+msgstr "Векс Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Vexx the Hungry"
+msgstr "Векс Голодный"
+
+msgctxt "term"
+msgid "Vexx the Final Notice"
+msgstr "Векс Последнее Уведомление"
+
+msgctxt "term"
+msgid "Vexx the Repossessor"
+msgstr "Векс Конфискатор"
+
+msgctxt "term"
+msgid "Vexx the Overtime"
+msgstr "Векс Сверхурочный"
+
+msgctxt "term"
+msgid "Vexx the Patient"
+msgstr "Векс Терпеливый"
+
+msgctxt "term"
+msgid "Vexx the Collector"
+msgstr "Векс Коллектор"
+
+msgctxt "term"
+msgid "Vexx the Last Shift"
+msgstr "Векс Последняя Смена"
+
+msgctxt "term"
+msgid "Vexx the Unpaid"
+msgstr "Векс Неоплаченный"
+
+msgctxt "term"
+msgid "Vexx the Loud"
+msgstr "Векс Громкий"
+
+msgctxt "term"
+msgid "Vexx the Very Tall"
+msgstr "Векс Очень Высокий"
+
+msgctxt "term"
+msgid "Vexx the Uninsured"
+msgstr "Векс Незастрахованный"
+
+msgctxt "term"
+msgid "Vexx the Night Manager"
+msgstr "Векс Ночной Управляющий"
+
+msgctxt "term"
+msgid "Vexx the Unrefunded"
+msgstr "Векс Невозмещённый"
+
+msgctxt "term"
+msgid "Vexx the Clock-Watcher"
+msgstr "Векс Считающий Минуты"
+
+msgctxt "term"
+msgid "Mortimer the Unbroken"
+msgstr "Мортимер Несломленный"
+
+msgctxt "term"
+msgid "Mortimer the Fine Print"
+msgstr "Мортимер Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Mortimer the Hungry"
+msgstr "Мортимер Голодный"
+
+msgctxt "term"
+msgid "Mortimer the Final Notice"
+msgstr "Мортимер Последнее Уведомление"
+
+msgctxt "term"
+msgid "Mortimer the Repossessor"
+msgstr "Мортимер Конфискатор"
+
+msgctxt "term"
+msgid "Mortimer the Overtime"
+msgstr "Мортимер Сверхурочный"
+
+msgctxt "term"
+msgid "Mortimer the Patient"
+msgstr "Мортимер Терпеливый"
+
+msgctxt "term"
+msgid "Mortimer the Collector"
+msgstr "Мортимер Коллектор"
+
+msgctxt "term"
+msgid "Mortimer the Last Shift"
+msgstr "Мортимер Последняя Смена"
+
+msgctxt "term"
+msgid "Mortimer the Unpaid"
+msgstr "Мортимер Неоплаченный"
+
+msgctxt "term"
+msgid "Mortimer the Loud"
+msgstr "Мортимер Громкий"
+
+msgctxt "term"
+msgid "Mortimer the Very Tall"
+msgstr "Мортимер Очень Высокий"
+
+msgctxt "term"
+msgid "Mortimer the Uninsured"
+msgstr "Мортимер Незастрахованный"
+
+msgctxt "term"
+msgid "Mortimer the Night Manager"
+msgstr "Мортимер Ночной Управляющий"
+
+msgctxt "term"
+msgid "Mortimer the Unrefunded"
+msgstr "Мортимер Невозмещённый"
+
+msgctxt "term"
+msgid "Mortimer the Clock-Watcher"
+msgstr "Мортимер Считающий Минуты"
+
+msgctxt "term"
+msgid "Clank the Unbroken"
+msgstr "Лязг Несломленный"
+
+msgctxt "term"
+msgid "Clank the Fine Print"
+msgstr "Лязг Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Clank the Hungry"
+msgstr "Лязг Голодный"
+
+msgctxt "term"
+msgid "Clank the Final Notice"
+msgstr "Лязг Последнее Уведомление"
+
+msgctxt "term"
+msgid "Clank the Repossessor"
+msgstr "Лязг Конфискатор"
+
+msgctxt "term"
+msgid "Clank the Overtime"
+msgstr "Лязг Сверхурочный"
+
+msgctxt "term"
+msgid "Clank the Patient"
+msgstr "Лязг Терпеливый"
+
+msgctxt "term"
+msgid "Clank the Collector"
+msgstr "Лязг Коллектор"
+
+msgctxt "term"
+msgid "Clank the Last Shift"
+msgstr "Лязг Последняя Смена"
+
+msgctxt "term"
+msgid "Clank the Unpaid"
+msgstr "Лязг Неоплаченный"
+
+msgctxt "term"
+msgid "Clank the Loud"
+msgstr "Лязг Громкий"
+
+msgctxt "term"
+msgid "Clank the Very Tall"
+msgstr "Лязг Очень Высокий"
+
+msgctxt "term"
+msgid "Clank the Uninsured"
+msgstr "Лязг Незастрахованный"
+
+msgctxt "term"
+msgid "Clank the Night Manager"
+msgstr "Лязг Ночной Управляющий"
+
+msgctxt "term"
+msgid "Clank the Unrefunded"
+msgstr "Лязг Невозмещённый"
+
+msgctxt "term"
+msgid "Clank the Clock-Watcher"
+msgstr "Лязг Считающий Минуты"
+
+msgctxt "term"
+msgid "Hollow Jim the Unbroken"
+msgstr "Полый Джим Несломленный"
+
+msgctxt "term"
+msgid "Hollow Jim the Fine Print"
+msgstr "Полый Джим Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Hollow Jim the Hungry"
+msgstr "Полый Джим Голодный"
+
+msgctxt "term"
+msgid "Hollow Jim the Final Notice"
+msgstr "Полый Джим Последнее Уведомление"
+
+msgctxt "term"
+msgid "Hollow Jim the Repossessor"
+msgstr "Полый Джим Конфискатор"
+
+msgctxt "term"
+msgid "Hollow Jim the Overtime"
+msgstr "Полый Джим Сверхурочный"
+
+msgctxt "term"
+msgid "Hollow Jim the Patient"
+msgstr "Полый Джим Терпеливый"
+
+msgctxt "term"
+msgid "Hollow Jim the Collector"
+msgstr "Полый Джим Коллектор"
+
+msgctxt "term"
+msgid "Hollow Jim the Last Shift"
+msgstr "Полый Джим Последняя Смена"
+
+msgctxt "term"
+msgid "Hollow Jim the Unpaid"
+msgstr "Полый Джим Неоплаченный"
+
+msgctxt "term"
+msgid "Hollow Jim the Loud"
+msgstr "Полый Джим Громкий"
+
+msgctxt "term"
+msgid "Hollow Jim the Very Tall"
+msgstr "Полый Джим Очень Высокий"
+
+msgctxt "term"
+msgid "Hollow Jim the Uninsured"
+msgstr "Полый Джим Незастрахованный"
+
+msgctxt "term"
+msgid "Hollow Jim the Night Manager"
+msgstr "Полый Джим Ночной Управляющий"
+
+msgctxt "term"
+msgid "Hollow Jim the Unrefunded"
+msgstr "Полый Джим Невозмещённый"
+
+msgctxt "term"
+msgid "Hollow Jim the Clock-Watcher"
+msgstr "Полый Джим Считающий Минуты"
+
+msgctxt "term"
+msgid "Big Sal the Unbroken"
+msgstr "Большой Сэл Несломленный"
+
+msgctxt "term"
+msgid "Big Sal the Fine Print"
+msgstr "Большой Сэл Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Big Sal the Hungry"
+msgstr "Большой Сэл Голодный"
+
+msgctxt "term"
+msgid "Big Sal the Final Notice"
+msgstr "Большой Сэл Последнее Уведомление"
+
+msgctxt "term"
+msgid "Big Sal the Repossessor"
+msgstr "Большой Сэл Конфискатор"
+
+msgctxt "term"
+msgid "Big Sal the Overtime"
+msgstr "Большой Сэл Сверхурочный"
+
+msgctxt "term"
+msgid "Big Sal the Patient"
+msgstr "Большой Сэл Терпеливый"
+
+msgctxt "term"
+msgid "Big Sal the Collector"
+msgstr "Большой Сэл Коллектор"
+
+msgctxt "term"
+msgid "Big Sal the Last Shift"
+msgstr "Большой Сэл Последняя Смена"
+
+msgctxt "term"
+msgid "Big Sal the Unpaid"
+msgstr "Большой Сэл Неоплаченный"
+
+msgctxt "term"
+msgid "Big Sal the Loud"
+msgstr "Большой Сэл Громкий"
+
+msgctxt "term"
+msgid "Big Sal the Very Tall"
+msgstr "Большой Сэл Очень Высокий"
+
+msgctxt "term"
+msgid "Big Sal the Uninsured"
+msgstr "Большой Сэл Незастрахованный"
+
+msgctxt "term"
+msgid "Big Sal the Night Manager"
+msgstr "Большой Сэл Ночной Управляющий"
+
+msgctxt "term"
+msgid "Big Sal the Unrefunded"
+msgstr "Большой Сэл Невозмещённый"
+
+msgctxt "term"
+msgid "Big Sal the Clock-Watcher"
+msgstr "Большой Сэл Считающий Минуты"
+
+msgctxt "term"
+msgid "Rustmaw the Unbroken"
+msgstr "Ржавая Пасть Несломленная"
+
+msgctxt "term"
+msgid "Rustmaw the Fine Print"
+msgstr "Ржавая Пасть Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Rustmaw the Hungry"
+msgstr "Ржавая Пасть Голодная"
+
+msgctxt "term"
+msgid "Rustmaw the Final Notice"
+msgstr "Ржавая Пасть Последнее Уведомление"
+
+msgctxt "term"
+msgid "Rustmaw the Repossessor"
+msgstr "Ржавая Пасть Конфискатор"
+
+msgctxt "term"
+msgid "Rustmaw the Overtime"
+msgstr "Ржавая Пасть Сверхурочная"
+
+msgctxt "term"
+msgid "Rustmaw the Patient"
+msgstr "Ржавая Пасть Терпеливая"
+
+msgctxt "term"
+msgid "Rustmaw the Collector"
+msgstr "Ржавая Пасть Коллектор"
+
+msgctxt "term"
+msgid "Rustmaw the Last Shift"
+msgstr "Ржавая Пасть Последняя Смена"
+
+msgctxt "term"
+msgid "Rustmaw the Unpaid"
+msgstr "Ржавая Пасть Неоплаченная"
+
+msgctxt "term"
+msgid "Rustmaw the Loud"
+msgstr "Ржавая Пасть Громкая"
+
+msgctxt "term"
+msgid "Rustmaw the Very Tall"
+msgstr "Ржавая Пасть Очень Высокая"
+
+msgctxt "term"
+msgid "Rustmaw the Uninsured"
+msgstr "Ржавая Пасть Незастрахованная"
+
+msgctxt "term"
+msgid "Rustmaw the Night Manager"
+msgstr "Ржавая Пасть Ночная Управляющая"
+
+msgctxt "term"
+msgid "Rustmaw the Unrefunded"
+msgstr "Ржавая Пасть Невозмещённая"
+
+msgctxt "term"
+msgid "Rustmaw the Clock-Watcher"
+msgstr "Ржавая Пасть Считающая Минуты"
+
+msgctxt "term"
+msgid "Old Tuck the Unbroken"
+msgstr "Старый Так Несломленный"
+
+msgctxt "term"
+msgid "Old Tuck the Fine Print"
+msgstr "Старый Так Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Old Tuck the Hungry"
+msgstr "Старый Так Голодный"
+
+msgctxt "term"
+msgid "Old Tuck the Final Notice"
+msgstr "Старый Так Последнее Уведомление"
+
+msgctxt "term"
+msgid "Old Tuck the Repossessor"
+msgstr "Старый Так Конфискатор"
+
+msgctxt "term"
+msgid "Old Tuck the Overtime"
+msgstr "Старый Так Сверхурочный"
+
+msgctxt "term"
+msgid "Old Tuck the Patient"
+msgstr "Старый Так Терпеливый"
+
+msgctxt "term"
+msgid "Old Tuck the Collector"
+msgstr "Старый Так Коллектор"
+
+msgctxt "term"
+msgid "Old Tuck the Last Shift"
+msgstr "Старый Так Последняя Смена"
+
+msgctxt "term"
+msgid "Old Tuck the Unpaid"
+msgstr "Старый Так Неоплаченный"
+
+msgctxt "term"
+msgid "Old Tuck the Loud"
+msgstr "Старый Так Громкий"
+
+msgctxt "term"
+msgid "Old Tuck the Very Tall"
+msgstr "Старый Так Очень Высокий"
+
+msgctxt "term"
+msgid "Old Tuck the Uninsured"
+msgstr "Старый Так Незастрахованный"
+
+msgctxt "term"
+msgid "Old Tuck the Night Manager"
+msgstr "Старый Так Ночной Управляющий"
+
+msgctxt "term"
+msgid "Old Tuck the Unrefunded"
+msgstr "Старый Так Невозмещённый"
+
+msgctxt "term"
+msgid "Old Tuck the Clock-Watcher"
+msgstr "Старый Так Считающий Минуты"
+
+msgctxt "term"
+msgid "Gristle the Unbroken"
+msgstr "Хрящ Несломленный"
+
+msgctxt "term"
+msgid "Gristle the Fine Print"
+msgstr "Хрящ Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Gristle the Hungry"
+msgstr "Хрящ Голодный"
+
+msgctxt "term"
+msgid "Gristle the Final Notice"
+msgstr "Хрящ Последнее Уведомление"
+
+msgctxt "term"
+msgid "Gristle the Repossessor"
+msgstr "Хрящ Конфискатор"
+
+msgctxt "term"
+msgid "Gristle the Overtime"
+msgstr "Хрящ Сверхурочный"
+
+msgctxt "term"
+msgid "Gristle the Patient"
+msgstr "Хрящ Терпеливый"
+
+msgctxt "term"
+msgid "Gristle the Collector"
+msgstr "Хрящ Коллектор"
+
+msgctxt "term"
+msgid "Gristle the Last Shift"
+msgstr "Хрящ Последняя Смена"
+
+msgctxt "term"
+msgid "Gristle the Unpaid"
+msgstr "Хрящ Неоплаченный"
+
+msgctxt "term"
+msgid "Gristle the Loud"
+msgstr "Хрящ Громкий"
+
+msgctxt "term"
+msgid "Gristle the Very Tall"
+msgstr "Хрящ Очень Высокий"
+
+msgctxt "term"
+msgid "Gristle the Uninsured"
+msgstr "Хрящ Незастрахованный"
+
+msgctxt "term"
+msgid "Gristle the Night Manager"
+msgstr "Хрящ Ночной Управляющий"
+
+msgctxt "term"
+msgid "Gristle the Unrefunded"
+msgstr "Хрящ Невозмещённый"
+
+msgctxt "term"
+msgid "Gristle the Clock-Watcher"
+msgstr "Хрящ Считающий Минуты"
+
+msgctxt "term"
+msgid "Madame Ohm the Unbroken"
+msgstr "Мадам Ом Несломленная"
+
+msgctxt "term"
+msgid "Madame Ohm the Fine Print"
+msgstr "Мадам Ом Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Madame Ohm the Hungry"
+msgstr "Мадам Ом Голодная"
+
+msgctxt "term"
+msgid "Madame Ohm the Final Notice"
+msgstr "Мадам Ом Последнее Уведомление"
+
+msgctxt "term"
+msgid "Madame Ohm the Repossessor"
+msgstr "Мадам Ом Конфискатор"
+
+msgctxt "term"
+msgid "Madame Ohm the Overtime"
+msgstr "Мадам Ом Сверхурочная"
+
+msgctxt "term"
+msgid "Madame Ohm the Patient"
+msgstr "Мадам Ом Терпеливая"
+
+msgctxt "term"
+msgid "Madame Ohm the Collector"
+msgstr "Мадам Ом Коллектор"
+
+msgctxt "term"
+msgid "Madame Ohm the Last Shift"
+msgstr "Мадам Ом Последняя Смена"
+
+msgctxt "term"
+msgid "Madame Ohm the Unpaid"
+msgstr "Мадам Ом Неоплаченная"
+
+msgctxt "term"
+msgid "Madame Ohm the Loud"
+msgstr "Мадам Ом Громкая"
+
+msgctxt "term"
+msgid "Madame Ohm the Very Tall"
+msgstr "Мадам Ом Очень Высокая"
+
+msgctxt "term"
+msgid "Madame Ohm the Uninsured"
+msgstr "Мадам Ом Незастрахованная"
+
+msgctxt "term"
+msgid "Madame Ohm the Night Manager"
+msgstr "Мадам Ом Ночная Управляющая"
+
+msgctxt "term"
+msgid "Madame Ohm the Unrefunded"
+msgstr "Мадам Ом Невозмещённая"
+
+msgctxt "term"
+msgid "Madame Ohm the Clock-Watcher"
+msgstr "Мадам Ом Считающая Минуты"
+
+msgctxt "term"
+msgid "Sprocket the Unbroken"
+msgstr "Шестерёнка Несломленная"
+
+msgctxt "term"
+msgid "Sprocket the Fine Print"
+msgstr "Шестерёнка Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Sprocket the Hungry"
+msgstr "Шестерёнка Голодная"
+
+msgctxt "term"
+msgid "Sprocket the Final Notice"
+msgstr "Шестерёнка Последнее Уведомление"
+
+msgctxt "term"
+msgid "Sprocket the Repossessor"
+msgstr "Шестерёнка Конфискатор"
+
+msgctxt "term"
+msgid "Sprocket the Overtime"
+msgstr "Шестерёнка Сверхурочная"
+
+msgctxt "term"
+msgid "Sprocket the Patient"
+msgstr "Шестерёнка Терпеливая"
+
+msgctxt "term"
+msgid "Sprocket the Collector"
+msgstr "Шестерёнка Коллектор"
+
+msgctxt "term"
+msgid "Sprocket the Last Shift"
+msgstr "Шестерёнка Последняя Смена"
+
+msgctxt "term"
+msgid "Sprocket the Unpaid"
+msgstr "Шестерёнка Неоплаченная"
+
+msgctxt "term"
+msgid "Sprocket the Loud"
+msgstr "Шестерёнка Громкая"
+
+msgctxt "term"
+msgid "Sprocket the Very Tall"
+msgstr "Шестерёнка Очень Высокая"
+
+msgctxt "term"
+msgid "Sprocket the Uninsured"
+msgstr "Шестерёнка Незастрахованная"
+
+msgctxt "term"
+msgid "Sprocket the Night Manager"
+msgstr "Шестерёнка Ночная Управляющая"
+
+msgctxt "term"
+msgid "Sprocket the Unrefunded"
+msgstr "Шестерёнка Невозмещённая"
+
+msgctxt "term"
+msgid "Sprocket the Clock-Watcher"
+msgstr "Шестерёнка Считающая Минуты"
+
+msgctxt "term"
+msgid "Duke Rattle the Unbroken"
+msgstr "Герцог Грохот Несломленный"
+
+msgctxt "term"
+msgid "Duke Rattle the Fine Print"
+msgstr "Герцог Грохот Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Duke Rattle the Hungry"
+msgstr "Герцог Грохот Голодный"
+
+msgctxt "term"
+msgid "Duke Rattle the Final Notice"
+msgstr "Герцог Грохот Последнее Уведомление"
+
+msgctxt "term"
+msgid "Duke Rattle the Repossessor"
+msgstr "Герцог Грохот Конфискатор"
+
+msgctxt "term"
+msgid "Duke Rattle the Overtime"
+msgstr "Герцог Грохот Сверхурочный"
+
+msgctxt "term"
+msgid "Duke Rattle the Patient"
+msgstr "Герцог Грохот Терпеливый"
+
+msgctxt "term"
+msgid "Duke Rattle the Collector"
+msgstr "Герцог Грохот Коллектор"
+
+msgctxt "term"
+msgid "Duke Rattle the Last Shift"
+msgstr "Герцог Грохот Последняя Смена"
+
+msgctxt "term"
+msgid "Duke Rattle the Unpaid"
+msgstr "Герцог Грохот Неоплаченный"
+
+msgctxt "term"
+msgid "Duke Rattle the Loud"
+msgstr "Герцог Грохот Громкий"
+
+msgctxt "term"
+msgid "Duke Rattle the Very Tall"
+msgstr "Герцог Грохот Очень Высокий"
+
+msgctxt "term"
+msgid "Duke Rattle the Uninsured"
+msgstr "Герцог Грохот Незастрахованный"
+
+msgctxt "term"
+msgid "Duke Rattle the Night Manager"
+msgstr "Герцог Грохот Ночной Управляющий"
+
+msgctxt "term"
+msgid "Duke Rattle the Unrefunded"
+msgstr "Герцог Грохот Невозмещённый"
+
+msgctxt "term"
+msgid "Duke Rattle the Clock-Watcher"
+msgstr "Герцог Грохот Считающий Минуты"
+
+msgctxt "term"
+msgid "Lurch the Unbroken"
+msgstr "Шатун Несломленный"
+
+msgctxt "term"
+msgid "Lurch the Fine Print"
+msgstr "Шатун Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Lurch the Hungry"
+msgstr "Шатун Голодный"
+
+msgctxt "term"
+msgid "Lurch the Final Notice"
+msgstr "Шатун Последнее Уведомление"
+
+msgctxt "term"
+msgid "Lurch the Repossessor"
+msgstr "Шатун Конфискатор"
+
+msgctxt "term"
+msgid "Lurch the Overtime"
+msgstr "Шатун Сверхурочный"
+
+msgctxt "term"
+msgid "Lurch the Patient"
+msgstr "Шатун Терпеливый"
+
+msgctxt "term"
+msgid "Lurch the Collector"
+msgstr "Шатун Коллектор"
+
+msgctxt "term"
+msgid "Lurch the Last Shift"
+msgstr "Шатун Последняя Смена"
+
+msgctxt "term"
+msgid "Lurch the Unpaid"
+msgstr "Шатун Неоплаченный"
+
+msgctxt "term"
+msgid "Lurch the Loud"
+msgstr "Шатун Громкий"
+
+msgctxt "term"
+msgid "Lurch the Very Tall"
+msgstr "Шатун Очень Высокий"
+
+msgctxt "term"
+msgid "Lurch the Uninsured"
+msgstr "Шатун Незастрахованный"
+
+msgctxt "term"
+msgid "Lurch the Night Manager"
+msgstr "Шатун Ночной Управляющий"
+
+msgctxt "term"
+msgid "Lurch the Unrefunded"
+msgstr "Шатун Невозмещённый"
+
+msgctxt "term"
+msgid "Lurch the Clock-Watcher"
+msgstr "Шатун Считающий Минуты"
+
+msgctxt "term"
+msgid "Nana Volt the Unbroken"
+msgstr "Бабуля Вольт Несломленная"
+
+msgctxt "term"
+msgid "Nana Volt the Fine Print"
+msgstr "Бабуля Вольт Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Nana Volt the Hungry"
+msgstr "Бабуля Вольт Голодная"
+
+msgctxt "term"
+msgid "Nana Volt the Final Notice"
+msgstr "Бабуля Вольт Последнее Уведомление"
+
+msgctxt "term"
+msgid "Nana Volt the Repossessor"
+msgstr "Бабуля Вольт Конфискатор"
+
+msgctxt "term"
+msgid "Nana Volt the Overtime"
+msgstr "Бабуля Вольт Сверхурочная"
+
+msgctxt "term"
+msgid "Nana Volt the Patient"
+msgstr "Бабуля Вольт Терпеливая"
+
+msgctxt "term"
+msgid "Nana Volt the Collector"
+msgstr "Бабуля Вольт Коллектор"
+
+msgctxt "term"
+msgid "Nana Volt the Last Shift"
+msgstr "Бабуля Вольт Последняя Смена"
+
+msgctxt "term"
+msgid "Nana Volt the Unpaid"
+msgstr "Бабуля Вольт Неоплаченная"
+
+msgctxt "term"
+msgid "Nana Volt the Loud"
+msgstr "Бабуля Вольт Громкая"
+
+msgctxt "term"
+msgid "Nana Volt the Very Tall"
+msgstr "Бабуля Вольт Очень Высокая"
+
+msgctxt "term"
+msgid "Nana Volt the Uninsured"
+msgstr "Бабуля Вольт Незастрахованная"
+
+msgctxt "term"
+msgid "Nana Volt the Night Manager"
+msgstr "Бабуля Вольт Ночная Управляющая"
+
+msgctxt "term"
+msgid "Nana Volt the Unrefunded"
+msgstr "Бабуля Вольт Невозмещённая"
+
+msgctxt "term"
+msgid "Nana Volt the Clock-Watcher"
+msgstr "Бабуля Вольт Считающая Минуты"
+
+msgctxt "term"
+msgid "Scrapjaw the Unbroken"
+msgstr "Ломозуб Несломленный"
+
+msgctxt "term"
+msgid "Scrapjaw the Fine Print"
+msgstr "Ломозуб Мелкий Шрифт"
+
+msgctxt "term"
+msgid "Scrapjaw the Hungry"
+msgstr "Ломозуб Голодный"
+
+msgctxt "term"
+msgid "Scrapjaw the Final Notice"
+msgstr "Ломозуб Последнее Уведомление"
+
+msgctxt "term"
+msgid "Scrapjaw the Repossessor"
+msgstr "Ломозуб Конфискатор"
+
+msgctxt "term"
+msgid "Scrapjaw the Overtime"
+msgstr "Ломозуб Сверхурочный"
+
+msgctxt "term"
+msgid "Scrapjaw the Patient"
+msgstr "Ломозуб Терпеливый"
+
+msgctxt "term"
+msgid "Scrapjaw the Collector"
+msgstr "Ломозуб Коллектор"
+
+msgctxt "term"
+msgid "Scrapjaw the Last Shift"
+msgstr "Ломозуб Последняя Смена"
+
+msgctxt "term"
+msgid "Scrapjaw the Unpaid"
+msgstr "Ломозуб Неоплаченный"
+
+msgctxt "term"
+msgid "Scrapjaw the Loud"
+msgstr "Ломозуб Громкий"
+
+msgctxt "term"
+msgid "Scrapjaw the Very Tall"
+msgstr "Ломозуб Очень Высокий"
+
+msgctxt "term"
+msgid "Scrapjaw the Uninsured"
+msgstr "Ломозуб Незастрахованный"
+
+msgctxt "term"
+msgid "Scrapjaw the Night Manager"
+msgstr "Ломозуб Ночной Управляющий"
+
+msgctxt "term"
+msgid "Scrapjaw the Unrefunded"
+msgstr "Ломозуб Невозмещённый"
+
+msgctxt "term"
+msgid "Scrapjaw the Clock-Watcher"
+msgstr "Ломозуб Считающий Минуты"
+
+msgctxt "term"
+msgid "The Foreman the Unbroken"
+msgstr "Бригадир Несломленный"
+
+msgctxt "term"
+msgid "The Foreman the Fine Print"
+msgstr "Бригадир Мелкий Шрифт"
+
+msgctxt "term"
+msgid "The Foreman the Hungry"
+msgstr "Бригадир Голодный"
+
+msgctxt "term"
+msgid "The Foreman the Final Notice"
+msgstr "Бригадир Последнее Уведомление"
+
+msgctxt "term"
+msgid "The Foreman the Repossessor"
+msgstr "Бригадир Конфискатор"
+
+msgctxt "term"
+msgid "The Foreman the Overtime"
+msgstr "Бригадир Сверхурочный"
+
+msgctxt "term"
+msgid "The Foreman the Patient"
+msgstr "Бригадир Терпеливый"
+
+msgctxt "term"
+msgid "The Foreman the Collector"
+msgstr "Бригадир Коллектор"
+
+msgctxt "term"
+msgid "The Foreman the Last Shift"
+msgstr "Бригадир Последняя Смена"
+
+msgctxt "term"
+msgid "The Foreman the Unpaid"
+msgstr "Бригадир Неоплаченный"
+
+msgctxt "term"
+msgid "The Foreman the Loud"
+msgstr "Бригадир Громкий"
+
+msgctxt "term"
+msgid "The Foreman the Very Tall"
+msgstr "Бригадир Очень Высокий"
+
+msgctxt "term"
+msgid "The Foreman the Uninsured"
+msgstr "Бригадир Незастрахованный"
+
+msgctxt "term"
+msgid "The Foreman the Night Manager"
+msgstr "Бригадир Ночной Управляющий"
+
+msgctxt "term"
+msgid "The Foreman the Unrefunded"
+msgstr "Бригадир Невозмещённый"
+
+msgctxt "term"
+msgid "The Foreman the Clock-Watcher"
+msgstr "Бригадир Считающий Минуты"
+
 msgctxt "pattern"
 msgid "{0}  - next {1}"
 msgstr "{0}  - след. {1}"
@@ -50428,6 +51732,50 @@ msgstr "Потратьте {0} лома в магазине мода (за вс�
 msgctxt "shape"
 msgid "Win a run at Ascension {0}"
 msgstr "Выиграйте забег на Вознесении {0}"
+
+msgctxt "shape"
+msgid "Look at a cart {0}-{1} m away and hold Interact (E) to reel it toward you (slowly; it stops if it hits something)."
+msgstr "Посмотрите на тележку в {0}-{1} м от вас и удерживайте «Взаимодействие» (E), чтобы подтянуть её к себе (медленно; она останавливается, если во что-то упирается)."
+
+msgctxt "shape"
+msgid "Once per shop visit, haggle one item: {0}% chance it's {1}% cheaper, {2}% chance it's {3}% dearer (that visit)."
+msgstr "Раз за посещение магазина: поторгуйтесь за один предмет - шанс {0}%, что он станет на {1}% дешевле, и шанс {2}%, что на {3}% дороже (в это посещение)."
+
+msgctxt "shape"
+msgid "Lock one more shop item ({0} at most), and your first lock each shop visit is free."
+msgstr "Закрепите ещё один предмет в магазине (не больше {0}), а первое закрепление за каждое посещение магазина бесплатно."
+
+msgctxt "shape"
+msgid "New shop section: pawn a gear item for {0}% of its salvage, buy it back at {1}% until the run ends."
+msgstr "Новый раздел магазина: заложите предмет снаряжения за {0}% стоимости его разбора и выкупите за {1}% до конца забега."
+
+msgctxt "shape"
+msgid "Three new modules can drop and be bought: Tracer (monsters you hit are marked for the team for {0} s), Spotter Lens (aim at a valuable to see its value) and Tether (items you let go float for {1} s)."
+msgstr "Могут выпадать и продаваться три новых модуля: «Трассер» (монстры, которых вы задели, отмечаются для команды на {0} с), «Линза наводчика» (наведитесь на ценность, чтобы увидеть её стоимость) и «Привязь» (предметы, которые вы отпустили, парят {1} с)."
+
+msgctxt "shape"
+msgid "New shop consumables that go off on their own once per level: Smoke Canister (below {0}% health, nearby monsters lose sight of you), Decoy Whistle (a monster gets close: a whistle draws monsters away) and Flash Charge (a monster gets very close: a flash stuns it)."
+msgstr "Новые расходники в магазине, которые срабатывают сами раз за уровень: «Дымовая шашка» (здоровье ниже {0}% - ближайшие монстры теряют вас из виду), «Свисток-приманка» (монстр подошёл близко - свист отвлекает монстров) и «Светошумовой заряд» (монстр подошёл вплотную - вспышка оглушает его)."
+
+msgctxt "shape"
+msgid "Each run, one prototype item with an effect only research gives (one of {0}) appears in your shop."
+msgstr "В каждом забеге в вашем магазине появляется один прототип с эффектом, который дают только исследования (один из {0})."
+
+msgctxt "shape"
+msgid "Research samples within {0} m show as a ping on your screen."
+msgstr "Образцы для исследований в пределах {0} м показываются меткой на экране."
+
+msgctxt "shape"
+msgid "Once per level (Research tab): a survey drone marks the valuables up to {0} m ahead of you for {1} s."
+msgstr "Раз за уровень (вкладка «Исследования»): дрон-разведчик на {1} с отмечает ценности на расстоянии до {0} м перед вами."
+
+msgctxt "shape"
+msgid "Some levels have a locked vault deep in the map: hold Interact on it for {0} s (monsters hear it) to crack it for more than double its value and Data."
+msgstr "На некоторых уровнях в глубине карты есть запертое хранилище: удерживайте на нём «Взаимодействие» {0} с (монстры это слышат), чтобы вскрыть его и получить больше двойной стоимости и данные."
+
+msgctxt "shape"
+msgid "A new route in the route vote: Expedition, with {0}% more valuables, more monsters and twice the research samples."
+msgstr "Новый маршрут в голосовании за маршрут: «Экспедиция» - на {0}% больше ценностей, больше монстров и вдвое больше образцов для исследований."
 
 msgctxt "data:guide"
 msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
