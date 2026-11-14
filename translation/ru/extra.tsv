@@ -239,3 +239,12 @@
 +numbers	{0}  ({1:N0} / {2:N0} at Hard / Brutal)	1,2
 +pattern	<color=#ffd75a>Bonus</color> {0}	<color=#ffd75a>Бонус</color> {0}
 +pattern	<color=#ffd75a>Bonus</color> {0}  (needs teammates)	<color=#ffd75a>Бонус</color> {0}  (нужны напарники)
+# The three loadouts keep the names the mod gave them in the save ("Loadout 1"; «Набор 1» from versions 0.1.x of the add-on):
+# what the mod says about a loadout is translated when it is drawn (units 368-372 stay as they are inside the code)
++pattern	{0} saved	{0} сохранён
++pattern	{0} is empty - save one first	{0} пуст - сначала сохраните его
++pattern	{0} equipped	{0} надет
++pattern	{0} equipped ({1} item gone)	{0} надет (пропало предметов: {1})
++pattern	{0} equipped ({1} items gone)	{0} надет (пропало предметов: {1})
++numbers	{0} equipped ({1} item gone)	1
++numbers	{0} equipped ({1} items gone)	1

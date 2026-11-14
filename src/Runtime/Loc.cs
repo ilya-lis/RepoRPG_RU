@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Text;
 
 [assembly: AssemblyTitle("RepoRPG RU - runtime")]
-[assembly: AssemblyVersion("0.1.1.0")]
+[assembly: AssemblyVersion("0.2.0.0")]
 
 namespace RepoRPG_RU
 {

@@ -15,7 +15,7 @@ using BepInEx.Logging;
 using Mono.Cecil;
 
 [assembly: AssemblyTitle("RepoRPG RU - patcher")]
-[assembly: AssemblyVersion("0.1.1.0")]
+[assembly: AssemblyVersion("0.2.0.0")]
 
 namespace RepoRPG_RU
 {

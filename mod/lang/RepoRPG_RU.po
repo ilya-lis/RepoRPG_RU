@@ -632,9 +632,6 @@ msgstr "Набор {0}"
 msgid "Loadouts swap in the truck or the shop, not mid-level"
 msgstr "Наборы меняются в грузовике или магазине, не посреди уровня"
 
-msgid " ({0} item{1} gone)"
-msgstr " (пропало предметов: {0})"
-
 msgid "in the shop"
 msgstr "в магазине"
 
@@ -942,10 +939,10 @@ msgid "upgrade"
 msgstr "улучшение"
 
 msgid "upgrade "
-msgstr "улучшение "
+msgstr "улучшение: "
 
 msgid "reroll "
-msgstr "переброс "
+msgstr "переброс: "
 
 msgid "That item is gone - bought a gear crate roll instead"
 msgstr "Этого предмета больше нет - взамен куплен бросок ящика снаряжения"
@@ -2667,7 +2664,7 @@ msgid "Only the best score is paid. Needs 2 entrants; with fewer it's void (no l
 msgstr "Оплачивается только лучший результат. Нужно 2 участника; если меньше - контракт аннулируется (без потерь)."
 
 msgid "the giver"
-msgstr "заказчика"
+msgstr "не указан"
 
 msgid "\nIt counts in the next level you play after taking it."
 msgstr "\nЗасчитывается на следующем уровне, который вы сыграете после взятия."
@@ -2739,10 +2736,10 @@ msgid "<color=#9a9ca0>A step can fail once; a second failure ends the chain.</co
 msgstr "<color=#9a9ca0>Шаг можно провалить один раз; второй провал обрывает цепочку.</color>"
 
 msgid "Reputation {0} with {1} (you: {2}). Then it can be offered on a board (20% each board), one chain at a time."
-msgstr "Репутация {0} у {1} (у вас: {2}). После этого её могут предложить на доске (20% на каждой доске), по одной цепочке за раз."
+msgstr "Нужна репутация {0} (у вас: {2}), заказчик: {1}. После этого её могут предложить на доске (20% на каждой доске), по одной цепочке за раз."
 
 msgid "its giver"
-msgstr "её заказчика"
+msgstr "не указан"
 
 msgid "Reputation {0}/{1}"
 msgstr "Репутация {0}/{1}"
@@ -3213,7 +3210,7 @@ msgid "Review & apply"
 msgstr "Просмотреть и применить"
 
 msgid "{0} loaded: {1} change{2} - press Apply"
-msgstr "{0} загружено: изменений: {1} - нажмите «Применить»"
+msgstr "Пресет «{0}» загружен, изменений: {1} - нажмите «Применить»"
 
 msgid "Gear for this slot."
 msgstr "Снаряжение для этого слота."
@@ -6849,7 +6846,7 @@ msgid "Ah. Come back with more Scrap and a better attitude."
 msgstr "А. Возвращайтесь, когда будет больше лома и настроение получше."
 
 msgid "That's a 'look, don't touch' price for you, friend."
-msgstr "Для вас, друг, это цена из разряда «смотри, но не трогай»."
+msgstr "Для вас, друг, это цена из разряда „смотри, но не трогай“."
 
 msgid "My pity is free. The gear isn't."
 msgstr "Моё сочувствие бесплатно. Снаряжение - нет."
@@ -7059,7 +7056,7 @@ msgid "not enough skill points"
 msgstr "не хватает очков навыков"
 
 msgid "{0} unlocks at level {1}"
-msgstr "{0} открывается на уровне {1}"
+msgstr "{0}: открывается на уровне {1}"
 
 msgid "no progress for that class yet"
 msgstr "для этого класса пока нет прогресса"
@@ -15091,7 +15088,7 @@ msgstr "Барахольщик"
 
 msgctxt "term"
 msgid "+10% Scrap when you salvage gear."
-msgstr "+10% лома при разборе снаряжения."
+msgstr "+10% лома при разборке снаряжения."
 
 msgctxt "term"
 msgid "Search the room you're in for 4s, standing still: turns up 1-3 small valuables. Each room can be rummaged once per level."
@@ -15191,7 +15188,7 @@ msgstr "Находки бьются на 10% труднее"
 
 msgctxt "term"
 msgid "+5% Scrap when you salvage gear"
-msgstr "+5% лома при разборе снаряжения"
+msgstr "+5% лома при разборке снаряжения"
 
 msgctxt "term"
 msgid "Eye for Value II"
@@ -20083,7 +20080,7 @@ msgstr "+3 к удаче снаряжения и магазина на уров�
 
 msgctxt "term"
 msgid "Salvage Rights"
-msgstr "Право на разбор"
+msgstr "Право на разборку"
 
 msgctxt "term"
 msgid "4 crafting parts each when the level is cleared"
@@ -20715,7 +20712,7 @@ msgstr "Ломбард"
 
 msgctxt "term"
 msgid "New shop section: pawn a gear item for 60% of its salvage, buy it back at 80% until the run ends."
-msgstr "Новый раздел магазина: заложите предмет снаряжения за 60% стоимости его разбора и выкупите за 80% до конца забега."
+msgstr "Новый раздел магазина: заложите предмет снаряжения за 60% стоимости его разборки и выкупите за 80% до конца забега."
 
 msgctxt "term"
 msgid "Futures"
@@ -22507,7 +22504,7 @@ msgstr "Доска обновлена (-{0})"
 
 msgctxt "pattern"
 msgid "The host didn't pay {0} ({1})"
-msgstr "Хост не выплатил {0} ({1})"
+msgstr "Хост не выплатил награду за контракт «{0}» ({1})"
 
 msgctxt "pattern"
 msgid "Contract complete: {0}"
@@ -22571,7 +22568,7 @@ msgstr "\n\n<color=#ffd75a>При этом будет снято: {0}. Одно�
 
 msgctxt "pattern"
 msgid "{0}\n\n<color=#9a9ca0>You can take it off again at any time.</color>"
-msgstr "{0}\n\n<color=#9a9ca0>Снять его можно в любой момент.</color>"
+msgstr "{0}\n\n<color=#9a9ca0>Снять предмет можно в любой момент.</color>"
 
 msgctxt "pattern"
 msgid "EQUIP {0}?"
@@ -22583,7 +22580,7 @@ msgstr "Только один проклятый предмет за раз. С�
 
 msgctxt "pattern"
 msgid "{0} is {1}! {2}"
-msgstr "{0}: {1}! {2}"
+msgstr "{0}: ступень «{1}»! {2}"
 
 msgctxt "pattern"
 msgid "Module bag full: {0} was lost"
@@ -22600,18 +22597,6 @@ msgstr "Вставлено: {0} - в предмет «{1}»"
 msgctxt "pattern"
 msgid "remove module from {0}"
 msgstr "извлечение модуля: {0}"
-
-msgctxt "pattern"
-msgid "{0} saved"
-msgstr "{0} сохранён"
-
-msgctxt "pattern"
-msgid "{0} is empty - save one first"
-msgstr "{0} пуст - сначала сохраните его"
-
-msgctxt "pattern"
-msgid "{0} equipped{1}"
-msgstr "{0} надет{1}"
 
 msgctxt "pattern"
 msgid "You joined {0}: choose your class ({1})"
@@ -22639,7 +22624,7 @@ msgstr "Класс: {0}"
 
 msgctxt "pattern"
 msgid "{0} is playing {1} - {2} to pick another class"
-msgstr "{0} играет за {1} - {2}, чтобы выбрать другой класс"
+msgstr "{0} играет за класс {1} - {2}, чтобы выбрать другой класс"
 
 msgctxt "pattern"
 msgid "{0} (copy)"
@@ -22651,7 +22636,7 @@ msgstr "{0}: убийство"
 
 msgctxt "pattern"
 msgid "Head Start: {0} recharged"
-msgstr "Фора: {0} перезаряжено"
+msgstr "Фора: способность «{0}» перезаряжена"
 
 msgctxt "pattern"
 msgid "route: {0}"
@@ -22759,7 +22744,7 @@ msgstr "Список желаний: {0} есть в магазине!"
 
 msgctxt "pattern"
 msgid "lock {0}"
-msgstr "фиксация {0}"
+msgstr "фиксация: {0}"
 
 msgctxt "pattern"
 msgid "buy back {0}"
@@ -22779,7 +22764,7 @@ msgstr "ускорение сонастройки: {0}"
 
 msgctxt "pattern"
 msgid "{0} is {1}!"
-msgstr "{0}: {1}!"
+msgstr "{0}: ступень «{1}»!"
 
 msgctxt "pattern"
 msgid "parts upgrade on {0}"
@@ -23039,7 +23024,7 @@ msgstr "{0} предлагает вам обмен снаряжением (вк�
 
 msgctxt "pattern"
 msgid "Trade done: you got {0} from {1}"
-msgstr "Обмен состоялся: вы получили {0} от {1}"
+msgstr "Обмен состоялся. Получено: {0} - от игрока {1}"
 
 msgctxt "pattern"
 msgid "Gear trade: {0}"
@@ -23175,7 +23160,7 @@ msgstr "{0} Это нельзя отменить."
 
 msgctxt "pattern"
 msgid "Couldn't reach the host - {0} not salvaged"
-msgstr "Нет связи с хостом - {0} не разобрано"
+msgstr "Нет связи с хостом - {0}: не разобрано"
 
 msgctxt "pattern"
 msgid "Couldn't salvage {0}: {1}"
@@ -23291,11 +23276,11 @@ msgstr "<color=#8cf2bf>Получено {0}</color>"
 
 msgctxt "pattern"
 msgid "Mastered {0}."
-msgstr "Освоен {0}."
+msgstr "Освоен класс: {0}."
 
 msgctxt "pattern"
 msgid "Mastery unlocks the alternate passive {0} (replaces {1}): {2}"
-msgstr "Мастерство открывает альтернативную пассивку {0} (заменяет {1}): {2}"
+msgstr "Мастерство открывает альтернативную пассивку «{0}» (заменяет «{1}»): {2}"
 
 msgctxt "pattern"
 msgid "<color=#8cf2bf>Mastered {0}</color>"
@@ -23319,7 +23304,7 @@ msgstr "Характеристики не применены: {0}"
 
 msgctxt "pattern"
 msgid "PLAY AS {0}?"
-msgstr "ИГРАТЬ ЗА {0}?"
+msgstr "ИГРАТЬ ЗА КЛАСС {0}?"
 
 msgctxt "pattern"
 msgid "You have changes that aren't confirmed yet:\n{0}"
@@ -23363,7 +23348,7 @@ msgstr "<b>Следующее очко:</b> {0}"
 
 msgctxt "pattern"
 msgid "<color=#ffd75a><b>NEW {0}</b></color>"
-msgstr "<color=#ffd75a><b>НОВОЕ {0}</b></color>"
+msgstr "<color=#ffd75a><b>НОВОЕ: {0}</b></color>"
 
 msgctxt "pattern"
 msgid "{0}  Lv {1}"
@@ -23435,7 +23420,7 @@ msgstr "Занят: {0}"
 
 msgctxt "pattern"
 msgid "Play as {0}"
-msgstr "Играть за {0}"
+msgstr "Играть за класс {0}"
 
 msgctxt "pattern"
 msgid "Alternate ON: {0}"
@@ -23455,7 +23440,7 @@ msgstr "★ ОСВОЕН: {0}"
 
 msgctxt "pattern"
 msgid "> PLAY AS {0}"
-msgstr "> ИГРАТЬ ЗА {0}"
+msgstr "> ИГРАТЬ ЗА КЛАСС {0}"
 
 msgctxt "pattern"
 msgid "   Build: <color=#ffd75a>{0}</color>"
@@ -23499,7 +23484,7 @@ msgstr "Новые предложения за {0}. Уже взятые конт
 
 msgctxt "pattern"
 msgid "{0} goes back on the board. No cost."
-msgstr "{0} вернётся на доску. Бесплатно."
+msgstr "{0}: контракт вернётся на доску. Бесплатно."
 
 msgctxt "pattern"
 msgid "{0}: {1}\nReward: {2}\nStakes: {3}\n\nTo decline it, use Decline in the panel on the right."
@@ -23511,7 +23496,7 @@ msgstr "{0}\n<color=#9a9ca0>Прогресс:</color> {1}"
 
 msgctxt "pattern"
 msgid "Failing costs only reputation with {0} (-1). Nothing else is lost."
-msgstr "Провал стоит только репутации у {0} (-1). Больше ничего не теряется."
+msgstr "Провал стоит только репутации (-1) у заказчика: {0}. Больше ничего не теряется."
 
 msgctxt "pattern"
 msgid "\n<color=#ffb53d>Can't take it now:</color> {0}."
@@ -23735,7 +23720,7 @@ msgstr "  <color=#9a9ca0>(Требуется исследование: {0})</col
 
 msgctxt "pattern"
 msgid "<b>{0}</b> (replaces {1}): {2}"
-msgstr "<b>{0}</b> (заменяет {1}): {2}"
+msgstr "<b>{0}</b> (заменяет «{1}»): {2}"
 
 msgctxt "pattern"
 msgid "<b>2 pieces:</b> {0}\n<b>4 pieces:</b> {1}"
@@ -23967,7 +23952,7 @@ msgstr "Сложность: {0}"
 
 msgctxt "pattern"
 msgid "Compare: now select another class to compare with {0}"
-msgstr "Сравнение: теперь выберите другой класс для сравнения с {0}"
+msgstr "Сравнение: теперь выберите другой класс. Первый: {0}"
 
 msgctxt "pattern"
 msgid "<b>{0}</b> with <color={1}><b>{2}</b></color>: {3}"
@@ -24043,7 +24028,7 @@ msgstr "Требуется: {0}.\n"
 
 msgctxt "pattern"
 msgid "START {0}?"
-msgstr "НАЧАТЬ {0}?"
+msgstr "НАЧАТЬ: {0}?"
 
 msgctxt "pattern"
 msgid "Researching {0}"
@@ -24051,7 +24036,7 @@ msgstr "Исследуется: {0}"
 
 msgctxt "pattern"
 msgid "CANCEL {0}?"
-msgstr "ОТМЕНИТЬ {0}?"
+msgstr "ОТМЕНИТЬ: {0}?"
 
 msgctxt "pattern"
 msgid "  Lv {0}"
@@ -24275,7 +24260,7 @@ msgstr "Зафиксировать до следующего визита: {0}"
 
 msgctxt "pattern"
 msgid "Haggle over {0}: a 50% chance it's 25% cheaper, a 50% chance it's 10% dearer. One haggle per shop visit."
-msgstr "Торг за {0}: 50% шанс, что станет на 25% дешевле, 50% - что на 10% дороже. Один торг за визит в магазин."
+msgstr "Торг за предмет «{0}»: 50% шанс, что станет на 25% дешевле, 50% - что на 10% дороже. Один торг за визит в магазин."
 
 msgctxt "pattern"
 msgid "<color=#ff9a8a>Need {0} more {1}</color>"
@@ -25200,6 +25185,26 @@ msgstr "<color=#ffd75a>Бонус</color> {0}"
 msgctxt "pattern"
 msgid "<color=#ffd75a>Bonus</color> {0}  (needs teammates)"
 msgstr "<color=#ffd75a>Бонус</color> {0}  (нужны напарники)"
+
+msgctxt "pattern"
+msgid "{0} saved"
+msgstr "{0} сохранён"
+
+msgctxt "pattern"
+msgid "{0} is empty - save one first"
+msgstr "{0} пуст - сначала сохраните его"
+
+msgctxt "pattern"
+msgid "{0} equipped"
+msgstr "{0} надет"
+
+msgctxt "pattern"
+msgid "{0} equipped ({1} item gone)"
+msgstr "{0} надет (пропало предметов: {1})"
+
+msgctxt "pattern"
+msgid "{0} equipped ({1} items gone)"
+msgstr "{0} надет (пропало предметов: {1})"
 
 msgctxt "shape"
 msgid "Your ability holds {0} charges."
@@ -26979,7 +26984,7 @@ msgstr "Когда вы впервые открываете дверь, шкаф
 
 msgctxt "shape"
 msgid "+{0}% Scrap when you salvage gear."
-msgstr "+{0}% лома при разборе снаряжения."
+msgstr "+{0}% лома при разборке снаряжения."
 
 msgctxt "shape"
 msgid "Search the room you're in for {0}s, standing still: turns up {1}-{2} small valuables. Each room can be rummaged once per level."
@@ -27023,7 +27028,7 @@ msgstr "Находки бьются на {0}% труднее"
 
 msgctxt "shape"
 msgid "+{0}% Scrap when you salvage gear"
-msgstr "+{0}% лома при разборе снаряжения"
+msgstr "+{0}% лома при разборке снаряжения"
 
 msgctxt "shape"
 msgid "Finds are worth {0}% more"
@@ -29423,7 +29428,7 @@ msgstr "Закрепите ещё один предмет в магазине (�
 
 msgctxt "shape"
 msgid "New shop section: pawn a gear item for {0}% of its salvage, buy it back at {1}% until the run ends."
-msgstr "Новый раздел магазина: заложите предмет снаряжения за {0}% стоимости его разбора и выкупите за {1}% до конца забега."
+msgstr "Новый раздел магазина: заложите предмет снаряжения за {0}% стоимости его разборки и выкупите за {1}% до конца забега."
 
 msgctxt "shape"
 msgid "Three new modules can drop and be bought: Tracer (monsters you hit are marked for the team for {0} s), Spotter Lens (aim at a valuable to see its value) and Tether (items you let go float for {1} s)."
@@ -31271,7 +31276,7 @@ msgstr "Снаряжение даёт характеристики в четыр
 
 msgctxt "data:guide"
 msgid "gear items equipment loot slots rarity salvage compare inventory bag weapon plating servos core sets"
-msgstr "gear items equipment loot slots rarity salvage compare inventory bag weapon plating servos core sets снаряжение предметы экипировка добыча слоты редкость разбор сравнить инвентарь сумка оружие броня сервоприводы ядро комплекты"
+msgstr "gear items equipment loot slots rarity salvage compare inventory bag weapon plating servos core sets снаряжение предметы экипировка добыча слоты редкость разборка разбор сравнить инвентарь сумка оружие броня сервоприводы ядро комплекты"
 
 msgctxt "data:guide"
 msgid "Your slots: {list:slots}."
@@ -31327,7 +31332,7 @@ msgstr "Разбор улучшенного предмета возвращае�
 
 msgctxt "data:guide"
 msgid "Salvaging asks first for set pieces, Uniques and attuned gear."
-msgstr "Перед разбором частей комплектов, уникальных предметов и сонастроенного снаряжения игра спрашивает подтверждение."
+msgstr "Перед разборкой частей комплектов, уникальных предметов и сонастроенного снаряжения игра спрашивает подтверждение."
 
 msgctxt "data:guide"
 msgid "Want to improve an item you like? See Crafting & Modules."
@@ -31355,7 +31360,7 @@ msgstr "Раз за забег, когда ваш класс выбран на �
 
 msgctxt "data:guide"
 msgid "Only that class can equip it. It salvages for 0 Scrap and can't be rerolled, upgraded or crafted. Sockets work as normal."
-msgstr "Надеть его может только этот класс. При разборе он даёт 0 лома; его нельзя перебросить, улучшить или изменить крафтом. Гнёзда работают как обычно."
+msgstr "Надеть его может только этот класс. При разборке он даёт 0 лома; его нельзя перебросить, улучшить или изменить крафтом. Гнёзда работают как обычно."
 
 msgctxt "data:guide"
 msgid "Switching class (milestones) swaps it for the new class's piece."
@@ -32187,7 +32192,7 @@ msgstr "T3 Ломбард"
 
 msgctxt "data:guide"
 msgid "New shop section: pawn a gear item for 60% of its salvage, buy it back at 80% until the run ends. Lobby-wide."
-msgstr "Новый раздел магазина: заложите предмет снаряжения за 60% стоимости его разбора и выкупите за 80% до конца забега. На всё лобби."
+msgstr "Новый раздел магазина: заложите предмет снаряжения за 60% стоимости его разборки и выкупите за 80% до конца забега. На всё лобби."
 
 msgctxt "data:guide"
 msgid "T4 Futures"
@@ -32611,7 +32616,7 @@ msgstr "{cfg:Loot/CraftingParts?С монстров выпадают детал�
 
 msgctxt "data:guide"
 msgid "Parts also come from contracts, extractions and salvaging Rare or better gear. Drops fade after {cfg:Loot/PartLifetime} s."
-msgstr "Детали также дают контракты, извлечения и разбор снаряжения редкости «Редкий» и выше. Выпавшие детали исчезают через {cfg:Loot/PartLifetime} с."
+msgstr "Детали также дают контракты, извлечения и разборка снаряжения редкости «Редкий» и выше. Выпавшие детали исчезают через {cfg:Loot/PartLifetime} с."
 
 msgctxt "data:guide"
 msgid "Craft on the Gear tab: select an item and press Craft. Each item can be crafted {cfg:Loot/MaxCraftsPerItem} times."
@@ -32667,7 +32672,7 @@ msgstr "Модули выпадают с элиты, из ящиков и с б�
 
 msgctxt "data:guide"
 msgid "Take a module out in the Shop for {cfg:Loot/ModuleRemoveCost} Scrap. Salvaging an item gives its modules back."
-msgstr "Извлечь модуль можно в магазине за {cfg:Loot/ModuleRemoveCost} лома. При разборе предмета его модули возвращаются."
+msgstr "Извлечь модуль можно в магазине за {cfg:Loot/ModuleRemoveCost} лома. При разборке предмета его модули возвращаются."
 
 msgctxt "data:guide"
 msgid "Attunement"
@@ -32695,7 +32700,7 @@ msgstr "scrap money currency cash coins earn spend shop rivet store buy crate re
 
 msgctxt "data:guide"
 msgid "Earn Scrap worth {cfg:Currency/Percent}% of what the team extracts, plus salvage and contracts."
-msgstr "Вы зарабатываете лом в размере {cfg:Currency/Percent}% от того, что извлекает команда, плюс разбор и контракты."
+msgstr "Вы зарабатываете лом в размере {cfg:Currency/Percent}% от того, что извлекает команда, плюс разборка и контракты."
 
 msgctxt "data:guide"
 msgid "Your Scrap is yours alone: the team's money is never touched."
@@ -34509,10 +34514,6 @@ msgctxt "@RpgRuntime::AddDynamic#1832"
 msgid "  <color=#9a9ca0>(Requires research: "
 msgstr "  <color=#9a9ca0>(Требуется исследование: "
 
-msgctxt "@RpgRuntime::AddDynamic#1835"
-msgid "</b> (replaces "
-msgstr "</b> (заменяет "
-
 msgctxt "@RpgRuntime::AddDynamic#1837"
 msgid "<b>2 pieces:</b> "
 msgstr "<b>2 предмета:</b> "
@@ -34577,14 +34578,6 @@ msgctxt "@RpgRuntime::AnnounceUnlocks#2408"
 msgid " (the Guide has the details)"
 msgstr " (подробности в справке)"
 
-msgctxt "@RpgRuntime::ApplyLoadout#370"
-msgid " is empty - save one first"
-msgstr " пуст - сначала сохраните его"
-
-msgctxt "@RpgRuntime::ApplyLoadout#371"
-msgid " equipped"
-msgstr " надет"
-
 msgctxt "@RpgRuntime::ApplyTeamResult#1009"
 msgid "TEAM CONTRACT COMPLETE: "
 msgstr "КОМАНДНЫЙ КОНТРАКТ ВЫПОЛНЕН: "
@@ -34595,11 +34588,11 @@ msgstr "КОМАНДНЫЙ КОНТРАКТ ПРОВАЛЕН: "
 
 msgctxt "@RpgRuntime::AskCancelResearch#2325"
 msgid "CANCEL "
-msgstr "ОТМЕНИТЬ "
+msgstr "ОТМЕНИТЬ: "
 
 msgctxt "@RpgRuntime::AskDrop#1356"
 msgid " goes back on the board. No cost."
-msgstr " вернётся на доску. Бесплатно."
+msgstr ": контракт вернётся на доску. Бесплатно."
 
 msgctxt "@RpgRuntime::AskEquipCursed#342"
 msgid "\n\n<color=#ffd75a>This takes off "
@@ -34611,7 +34604,7 @@ msgstr ". Одновременно можно носить только один
 
 msgctxt "@RpgRuntime::AskEquipCursed#343"
 msgid "\n\n<color=#9a9ca0>You can take it off again at any time.</color>"
-msgstr "\n\n<color=#9a9ca0>Снять его можно в любой момент.</color>"
+msgstr "\n\n<color=#9a9ca0>Снять предмет можно в любой момент.</color>"
 
 msgctxt "@RpgRuntime::AskEquipCursed#344"
 msgid "EQUIP "
@@ -34651,7 +34644,7 @@ msgstr "Занят: "
 
 msgctxt "@RpgRuntime::AskStartResearch#2321"
 msgid "START "
-msgstr "НАЧАТЬ "
+msgstr "НАЧАТЬ: "
 
 msgctxt "@RpgRuntime::AskStartResearch#2324"
 msgid "Researching "
@@ -34672,10 +34665,6 @@ msgstr ": открыто "
 msgctxt "@RpgRuntime::AttrRejected#1111"
 msgid "Attributes not applied: "
 msgstr "Характеристики не применены: "
-
-msgctxt "@RpgRuntime::AttuneAdd#355"
-msgid " is "
-msgstr ": "
 
 msgctxt "@RpgRuntime::BanishPerk#514"
 msgid "Banished: "
@@ -34735,7 +34724,7 @@ msgstr "<b>Следующее очко:</b> "
 
 msgctxt "@RpgRuntime::BuildAttrSideTexts#1157"
 msgid "<color=#ffd75a><b>NEW "
-msgstr "<color=#ffd75a><b>НОВОЕ "
+msgstr "<color=#ffd75a><b>НОВОЕ: "
 
 msgctxt "@RpgRuntime::BuildEffects#2663"
 msgid "<color=#9a9ca0>Without talents → now"
@@ -35195,11 +35184,11 @@ msgstr "Занят: "
 
 msgctxt "@RpgRuntime::DrawClassHeader#1271"
 msgid "Play as "
-msgstr "Играть за "
+msgstr "Играть за класс "
 
 msgctxt "@RpgRuntime::DrawClassHeader#1287"
 msgid "> PLAY AS "
-msgstr "> ИГРАТЬ ЗА "
+msgstr "> ИГРАТЬ ЗА КЛАСС "
 
 msgctxt "@RpgRuntime::DrawClassHeader#1293"
 msgid "   Build: <color=#ffd75a>"
@@ -35427,7 +35416,7 @@ msgstr "«Требуется действие» скрыто: на вкладк�
 
 msgctxt "@RpgRuntime::DrawLeaveDialog#1113"
 msgid "PLAY AS "
-msgstr "ИГРАТЬ ЗА "
+msgstr "ИГРАТЬ ЗА КЛАСС "
 
 msgctxt "@RpgRuntime::DrawLeaveDialog#1115"
 msgid "You have changes that aren't confirmed yet:\n"
@@ -35451,15 +35440,7 @@ msgstr "<color=#ffb21e>АКТИВНАЯ ["
 
 msgctxt "@RpgRuntime::DrawMastery#1073"
 msgid "Mastered "
-msgstr "Освоен "
-
-msgctxt "@RpgRuntime::DrawMastery#1075"
-msgid "Mastery unlocks the alternate passive "
-msgstr "Мастерство открывает альтернативную пассивку "
-
-msgctxt "@RpgRuntime::DrawMastery#1075"
-msgid " (replaces "
-msgstr " (заменяет "
+msgstr "Освоен класс: "
 
 msgctxt "@RpgRuntime::DrawMastery#1078"
 msgid "<color=#8cf2bf>Mastered "
@@ -35511,7 +35492,7 @@ msgstr "Занят: "
 
 msgctxt "@RpgRuntime::DrawPageButtons#1271"
 msgid "Play as "
-msgstr "Играть за "
+msgstr "Играть за класс "
 
 msgctxt "@RpgRuntime::DrawPageButtons#1273"
 msgid "Alternate ON: "
@@ -35975,11 +35956,11 @@ msgstr "\n<color=#9a9ca0>Прогресс:</color> "
 
 msgctxt "@RpgRuntime::FillContractDetail#1389"
 msgid "Failing costs only reputation with "
-msgstr "Провал стоит только репутации у "
+msgstr "Провал стоит только репутации (-1) у заказчика: "
 
 msgctxt "@RpgRuntime::FillContractDetail#1389"
 msgid " (-1). Nothing else is lost."
-msgstr " (-1). Больше ничего не теряется."
+msgstr ". Больше ничего не теряется."
 
 msgctxt "@RpgRuntime::FillContractDetail#1392"
 msgid "\n<color=#ffb53d>Can't take it now:</color> "
@@ -36123,7 +36104,7 @@ msgstr "Не удалось прочитать пресет '"
 
 msgctxt "@RpgRuntime::LockEntry#569"
 msgid "lock "
-msgstr "фиксация "
+msgstr "фиксация: "
 
 msgctxt "@RpgRuntime::MakePrototypeE#893"
 msgid "Prototype "
@@ -36259,7 +36240,7 @@ msgstr " зовёт на помощь!"
 
 msgctxt "@RpgRuntime::OnClaimsUpdated#425"
 msgid " is playing "
-msgstr " играет за "
+msgstr " играет за класс "
 
 msgctxt "@RpgRuntime::OnClaimsUpdated#425"
 msgid " to pick another class"
@@ -36292,10 +36273,6 @@ msgstr "Не удалось обновить: "
 msgctxt "@RpgRuntime::OnContractReply#296"
 msgid "Board rerolled (-"
 msgstr "Доска обновлена (-"
-
-msgctxt "@RpgRuntime::OnContractReply#297"
-msgid "The host didn't pay "
-msgstr "Хост не выплатил "
 
 msgctxt "@RpgRuntime::OnCurse#1011"
 msgid "Cursed this level: "
@@ -36371,11 +36348,11 @@ msgstr "КОНТРАКТ СОПЕРНИЧЕСТВА ВЫИГРАН: "
 
 msgctxt "@RpgRuntime::OnTeamXp#462"
 msgid "Head Start: "
-msgstr "Фора: "
+msgstr "Фора: способность «"
 
 msgctxt "@RpgRuntime::OnTeamXp#462"
 msgid " recharged"
-msgstr " перезаряжено"
+msgstr "» перезаряжена"
 
 msgctxt "@RpgRuntime::OnTeamXp#469"
 msgid "route: "
@@ -36387,11 +36364,11 @@ msgstr " предлагает вам обмен снаряжением (вкла
 
 msgctxt "@RpgRuntime::OnTradeC#857"
 msgid "Trade done: you got "
-msgstr "Обмен состоялся: вы получили "
+msgstr "Обмен состоялся. Получено: "
 
 msgctxt "@RpgRuntime::OnTradeC#857"
 msgid " from "
-msgstr " от "
+msgstr " - от игрока "
 
 msgctxt "@RpgRuntime::OnTradeC#859"
 msgid "Gear trade: "
@@ -36657,10 +36634,6 @@ msgctxt "@RpgRuntime::SalvageDialogText#994"
 msgid " This can't be undone."
 msgstr " Это нельзя отменить."
 
-msgctxt "@RpgRuntime::SaveLoadout#368"
-msgid " saved"
-msgstr " сохранён"
-
 msgctxt "@RpgRuntime::ScopeLobbyText#2308"
 msgid "Works for everyone in the lobby once the host has it"
 msgstr "Работает для всех в лобби, как только оно есть у хоста"
@@ -36676,10 +36649,6 @@ msgstr "переброс свойства: "
 msgctxt "@RpgRuntime::ServiceAttune#580"
 msgid "attunement boost on "
 msgstr "ускорение сонастройки: "
-
-msgctxt "@RpgRuntime::ServiceAttune#581"
-msgid " is "
-msgstr ": "
 
 msgctxt "@RpgRuntime::ServicePartsUp#582"
 msgid "parts upgrade on "
@@ -36735,11 +36704,11 @@ msgstr "Зафиксировать до следующего визита: "
 
 msgctxt "@RpgRuntime::ShopEntryDetail#2614"
 msgid "Haggle over "
-msgstr "Торг за "
+msgstr "Торг за предмет «"
 
 msgctxt "@RpgRuntime::ShopEntryDetail#2614"
 msgid ": a 50% chance it's 25% cheaper, a 50% chance it's 10% dearer. One haggle per shop visit."
-msgstr ": 50% шанс, что станет на 25% дешевле, 50% - что на 10% дороже. Один торг за визит в магазин."
+msgstr "»: 50% шанс, что станет на 25% дешевле, 50% - что на 10% дороже. Один торг за визит в магазин."
 
 msgctxt "@RpgRuntime::ShopRow#2397"
 msgid "Buy "
@@ -36751,7 +36720,7 @@ msgstr "Наблюдение: "
 
 msgctxt "@RpgRuntime::StartCompare#2256"
 msgid "Compare: now select another class to compare with "
-msgstr "Сравнение: теперь выберите другой класс для сравнения с "
+msgstr "Сравнение: теперь выберите другой класс. Первый: "
 
 msgctxt "@RpgRuntime::TalentsRejected#2144"
 msgid "Talents not applied: "
@@ -36843,7 +36812,7 @@ msgstr "Нет связи с хостом - "
 
 msgctxt "@RpgRuntime::TickPendingSalvage#996"
 msgid " not salvaged"
-msgstr " не разобрано"
+msgstr ": не разобрано"
 
 msgctxt "@RpgRuntime::TickRunSummary#2531"
 msgid "\n<color=#9a9ca0>Full run details: hold "
@@ -37451,10 +37420,6 @@ msgstr "0"
 
 msgctxt "numbers"
 msgid "Loadout {0}"
-msgstr "0"
-
-msgctxt "numbers"
-msgid " ({0} item{1} gone)"
 msgstr "0"
 
 msgctxt "numbers"
@@ -39644,6 +39609,14 @@ msgstr "1"
 msgctxt "numbers"
 msgid "{0}  ({1:N0} / {2:N0} at Hard / Brutal)"
 msgstr "1,2"
+
+msgctxt "numbers"
+msgid "{0} equipped ({1} item gone)"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} equipped ({1} items gone)"
+msgstr "1"
 
 msgctxt "words"
 msgid "{0} joined {1}"

@@ -82,11 +82,11 @@ namespace RepoRPG_RU
                 "Переводить строки интерфейса, зашитые в код мода (кнопки, подсказки, сообщения).",
                 "Translate the UI strings compiled into the mod's code.");
             Item(sb, "TranslateData", TranslateData,
-                "Переводить встроенные данные мода (названия и описания классов, перков, предметов).",
-                "Translate the mod's embedded data (names and descriptions of classes, perks, items).");
+                "Переводить тексты справочника (Guide) прямо во встроенных данных мода. Остальные данные - классы, перки, предметы - мод хранит и рассылает как есть; они переводятся в момент вывода на экран (DisplayHooks).",
+                "Translate the Guide inside the mod's embedded data. Everything else in the data is translated when it is drawn (DisplayHooks).");
             Item(sb, "DisplayHooks", DisplayHooks,
-                "Переводить слова, которые мод одновременно использует как внутренние идентификаторы (названия вкладок, имена настроек), прямо в момент вывода на экран.",
-                "Translate words the mod also uses as internal ids (tab names, setting names) at the moment they are drawn.");
+                "Переводить в момент вывода на экран то, что нельзя заменить внутри мода: названия и описания из его данных (классы, перки, предметы, контракты), сообщения хоста, слова, которые мод использует и как внутренние имена.",
+                "Translate at the moment of drawing whatever cannot be replaced inside the mod: names and descriptions from its data, messages of the host, words the mod also uses as internal ids.");
             sb.Append("[Debug]\n\n");
             Item(sb, "LogUntranslated", LogUntranslated,
                 "Записывать непереведённые строки, которые реально появились на экране, в BepInEx/config/RepoRPG_RU/untranslated.txt (помогает дополнять перевод).",
@@ -109,7 +109,7 @@ namespace RepoRPG_RU
 
     internal static class BuildInfo
     {
-        public const string Version = "0.1.1";
+        public const string Version = "0.2.0";
         public const string Id = "ilyalis.reporpg.ru";
         public const string TargetGuid = "rpgmod.semibotrpg";
         public const string TargetFile = "RepoRPG.dll";

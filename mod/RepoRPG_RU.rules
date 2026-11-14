@@ -130,6 +130,8 @@ ClassHost::OnRevived
 # players. Items keep the names the mod gives them ("Cursed Sharp Striker Module", "Prototype Mender Plating")
 ShopX::Cursed
 RpgRuntime::MakePrototypeE
+# the three loadouts are named once ("Loadout 1") and the names are kept in the save
+RpgRuntime::LoadoutAt
 
 [keep]
 # whatever is sent to other players stays exactly as the mod wrote it

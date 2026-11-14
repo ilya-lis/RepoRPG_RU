@@ -45,7 +45,7 @@ Attributes not applied: the host is on a different save	Характеристи
 Характеристики не применены: only 2 attribute points left	Характеристики не применены: осталось очков характеристик: всего 2
 Перки не применены: that perk was banished	Перки не применены: этот перк изгнан
 Таланты не применены: Quick Hands needs Steady Grip	Таланты не применены: Быстрые руки: требуется Твёрдый хват
-Таланты не применены: Quick Hands unlocks at level 5	Таланты не применены: Быстрые руки открывается на уровне 5
+Таланты не применены: Quick Hands unlocks at level 5	Таланты не применены: Быстрые руки: открывается на уровне 5
 Talents not applied: you aren't playing Medic	Таланты не применены: вы играете не за класс Медик
 Taken by Bob - you're still on No class	Занят: Bob - вы по-прежнему без класса
 Couldn't take that class: class selection is only open in the lobby or shop - you're still on No class	Не удалось взять этот класс: выбор класса открыт только в лобби или магазине - вы по-прежнему без класса
@@ -259,3 +259,28 @@ JUGGERNAUT: BULWARK DUTY	ДЖАГГЕРНАУТ: ДЕЖУРСТВО ОПЛОТА
 # not names: a known word in front of something else stays as it is
 Rare Find	Rare Find
 Heavy Metal Core Sample	Heavy Metal Core Sample
+# what a purchase is called in its notice: the item's name stands after a colon
+Куплено: улучшение: Heavy Riot Plating (-40 лома)	Куплено: улучшение: Тяжёлая штурмовая броня (-40 лома)
+Куплено: фиксация: Heavy Riot Plating (-10 лома)	Куплено: фиксация: Тяжёлая штурмовая броня (-10 лома)
+Не удалось купить «фиксация: Heavy Riot Plating»: не хватает лома	Не удалось купить «фиксация: Тяжёлая штурмовая броня»: не хватает лома
+Нет связи с хостом - переброс: Heavy Riot Plating: не куплено	Нет связи с хостом - переброс: Тяжёлая штурмовая броня: не куплено
+Куплено: Rare фьючерсный ящик (-120 лома)	Куплено: Редкий фьючерсный ящик (-120 лома)
+Куплено: Heavy Riot Plating (витрина) (-40 лома)	Куплено: Тяжёлая штурмовая броня (витрина) (-40 лома)
+# sentences with a name of the mod's data in them: the name stays in the nominative (after a colon, in «», after «класс»)
+Хост не выплатил награду за контракт «Clean Delivery» (shop closed)	Хост не выплатил награду за контракт «Чистая доставка» (магазин закрыт)
+Heavy Riot Plating: ступень «Bonded»!	Тяжёлая штурмовая броня: ступень «Привязанный»!
+Vasya играет за класс Medic - нажмите F5, чтобы выбрать другой класс	Vasya играет за класс Медик - нажмите F5, чтобы выбрать другой класс
+Фора: способность «Nanite Burst» перезаряжена	Фора: способность «Нанитный всплеск» перезаряжена
+Обмен состоялся. Получено: Heavy Riot Plating - от игрока Vasya	Обмен состоялся. Получено: Тяжёлая штурмовая броня - от игрока Vasya
+Нет связи с хостом - Heavy Riot Plating: не разобрано	Нет связи с хостом - Тяжёлая штурмовая броня: не разобрано
+ИГРАТЬ ЗА КЛАСС JUGGERNAUT?	ИГРАТЬ ЗА КЛАСС ДЖАГГЕРНАУТ?
+Играть за класс Medic	Играть за класс Медик
+Сравнение: теперь выберите другой класс. Первый: Hauler	Сравнение: теперь выберите другой класс. Первый: Носильщик
+Clean Delivery: контракт вернётся на доску. Бесплатно.	Чистая доставка: контракт вернётся на доску. Бесплатно.
+Провал стоит только репутации (-1) у заказчика: Kaboom & Sons. Больше ничего не теряется.	Провал стоит только репутации (-1) у заказчика: Бабах и сыновья. Больше ничего не теряется.
+# the three loadouts keep their names in the save: "Loadout 1", or «Набор 1» from versions 0.1.x
+Loadout 1 saved	Набор 1 сохранён
+Набор 1 saved	Набор 1 сохранён
+Loadout 2 is empty - save one first	Набор 2 пуст - сначала сохраните его
+Loadout 3 equipped (2 items gone)	Набор 3 надет (пропало предметов: 2)
+Набор 3 equipped (1 item gone)	Набор 3 надет (пропало предметов: 1)
