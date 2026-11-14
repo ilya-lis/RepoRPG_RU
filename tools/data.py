@@ -2,7 +2,7 @@
 """The mod's built-in data (dump/RepoRPG.*.json, written by the add-on with DumpStrings = true): what there is to translate.
 
     data.py units   <dump dir> <out data.json>                 every text of the data files with a stable id
-    data.py list    <data.json> <file[:from[-to]]> [--done <tsv dir>] [--all]
+    data.py list    <data.json> <file[:from[-to]]> [--done <tsv dir>] [--left build/data-left.txt] [--all]
     data.py paths   <dump dir>                                  every path with a text-like value and what is done with it
 
 An id is "<file>.<n>": the n-th string value of that file, counted over ALL its string values - it does not move when the
@@ -172,11 +172,15 @@ def main():
                     if '\t' in line and not line.startswith(('#', '+')):
                         key = line.split('\t', 1)[0]
                         done.add(key if '.' in key else own + '.' + key)
+        left = None
+        if '--left' in sys.argv:          # the list mkpo.py writes: the units no entry of the dictionary covers yet
+            left = set(open(sys.argv[sys.argv.index('--left') + 1], encoding='utf-8').read().split())
         for u in us:
             if u['file'] != stem: continue
             n = int(u['id'].rsplit('.', 1)[1])
             if n < lo or n > hi: continue
             if u['id'] in done and '--all' not in sys.argv: continue
+            if left is not None and u['id'] not in left: continue
             leaf = u['path'].split('/', 1)[-1] if '/' in u['path'] else u['path']
             special = [k for k in u['kinds'] if k in ('pre', 'beh', 'base', 'post', 'slot', 'first', 'epithet')]
             if special: leaf += ' [' + ','.join(special) + ']'

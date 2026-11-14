@@ -323,6 +323,12 @@ def main():
     print('translated units: %d (interface %d of %d)   entries: %d global, %d term, %d pattern, %d scoped in %d methods (%d sentences only at draw time)'
           % (len(tr), have, total, len(glob_e), len(term_e), len(pat_e), sum(len(v) for v in scoped.values()), len(scoped), dropped))
     if data_stats:
+        # the data units nothing covers yet, for "data.py list --left"
+        out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[2]))), 'build')
+        try:
+            os.makedirs(out, exist_ok=True)
+            with open(os.path.join(out, 'data-left.txt'), 'w', encoding='utf-8') as f: f.write('\n'.join(data_stats['left ids']) + '\n')
+        except OSError: pass
         print('data: %d of %d texts translated; %d terms, %d shapes, %d guide values; generated: %d gear names, %d boss names%s'
               % (data_stats['translated'], data_stats['units'], len(d_terms), len(shape_e), len(guide_e), data_stats['gear names'],
                  data_stats['boss names'], ('; left: ' + data_stats['left']) if data_stats['left'] else ''))

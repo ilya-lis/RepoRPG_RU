@@ -5694,7 +5694,7 @@ msgid "Prospecting: +{0:0}% value"
 msgstr "Старательство: +{0:0}% к стоимости"
 
 msgid "Padding Kit: no value lost ({0} left)"
-msgstr "Набор прокладок: стоимость не потеряна (осталось: {0})"
+msgstr "Мягкая упаковка: стоимость не потеряна (осталось: {0})"
 
 msgid "Taxman's Ledger"
 msgstr "Гроссбух мытаря"
@@ -10921,6 +10921,18 @@ msgid "Juggernaut"
 msgstr "Джаггернаут"
 
 msgctxt "term"
+msgid "Stay near your team: Shield Wall protects allies within 5 m"
+msgstr "Держитесь рядом с командой: «Стена щитов» защищает союзников в пределах 5 м"
+
+msgctxt "term"
+msgid "A walking blast door. Soaks the hits that would flatten anyone else, at the cost of top speed."
+msgstr "Ходячая взрывозащитная дверь. Принимает на себя удары, которые расплющили бы любого другого, - ценой скорости."
+
+msgctxt "term"
+msgid "A walking blast door"
+msgstr "Ходячая взрывозащитная дверь"
+
+msgctxt "term"
 msgid "Shield Wall"
 msgstr "Стена щитов"
 
@@ -10945,116 +10957,1252 @@ msgid "Lock your plating: take 60% less damage for 6s, and your Shield Wall prot
 msgstr "Зафиксируйте броню: на 6 с вы получаете на 60% меньше урона, а «Стена щитов» защищает союзников на 15% сильнее."
 
 msgctxt "term"
+msgid "Bulwark"
+msgstr "Оплот"
+
+msgctxt "term"
+msgid "Become unkillable yourself."
+msgstr "Станьте неубиваемым сами."
+
+msgctxt "term"
 msgid "Thick Plating"
 msgstr "Толстая броня"
+
+msgctxt "term"
+msgid "+6% max health"
+msgstr "+6% к макс. здоровью"
 
 msgctxt "term"
 msgid "Impact Dampers"
 msgstr "Амортизаторы ударов"
 
 msgctxt "term"
+msgid "Take 3% less damage"
+msgstr "Вы получаете на 3% меньше урона"
+
+msgctxt "term"
 msgid "Overbuilt"
 msgstr "Усиленная конструкция"
+
+msgctxt "term"
+msgid "+4% max health, Iron Wall lasts 8% longer"
+msgstr "+4% к макс. здоровью, «Железная стена» действует на 8% дольше"
 
 msgctxt "term"
 msgid "Hardened Core"
 msgstr "Закалённое ядро"
 
 msgctxt "term"
+msgid "Take 2% less damage, +3% max health"
+msgstr "Вы получаете на 2% меньше урона, +3% к макс. здоровью"
+
+msgctxt "term"
 msgid "Immovable Object"
 msgstr "Несокрушимая преграда"
+
+msgctxt "term"
+msgid "take 6% less damage and +15% max health"
+msgstr "вы получаете на 6% меньше урона и +15% к макс. здоровью"
+
+msgctxt "term"
+msgid "Stand in front so your team doesn't have to."
+msgstr "Встаньте впереди, чтобы команде не пришлось."
 
 msgctxt "term"
 msgid "Wide Stance"
 msgstr "Широкая стойка"
 
 msgctxt "term"
+msgid "Shield Wall reaches 0.6m farther"
+msgstr "«Стена щитов» действует на 0.6 м дальше"
+
+msgctxt "term"
 msgid "Protector"
 msgstr "Защитник"
+
+msgctxt "term"
+msgid "Shield Wall: allies take 3% less damage"
+msgstr "«Стена щитов»: союзники получают на 3% меньше урона"
 
 msgctxt "term"
 msgid "Rallying Wall"
 msgstr "Сплачивающая стена"
 
 msgctxt "term"
+msgid "Iron Wall makes your Shield Wall 5% stronger"
+msgstr "«Железная стена» усиливает вашу «Стену щитов» на 5%"
+
+msgctxt "term"
 msgid "Interpose"
 msgstr "Заслон"
+
+msgctxt "term"
+msgid "Shield Wall: allies take 2% less damage, reaches 0.5m farther"
+msgstr "«Стена щитов»: союзники получают на 2% меньше урона, действует на 0.5 м дальше"
 
 msgctxt "term"
 msgid "Living Fortress"
 msgstr "Живая крепость"
 
 msgctxt "term"
+msgid "Shield Wall 6% stronger and reaches 2m farther"
+msgstr "«Стена щитов» сильнее на 6% и действует на 2 м дальше"
+
+msgctxt "term"
+msgid "Siege Engine"
+msgstr "Осадная машина"
+
+msgctxt "term"
+msgid "Lock down more often and punish whatever hits the wall."
+msgstr "Блокируйтесь чаще и наказывайте всё, что бьётся о стену."
+
+msgctxt "term"
 msgid "Quick Lock"
 msgstr "Быстрая фиксация"
+
+msgctxt "term"
+msgid "Iron Wall cooldown 4% shorter"
+msgstr "Перезарядка «Железной стены» на 4% короче"
 
 msgctxt "term"
 msgid "Reinforced Wall"
 msgstr "Укреплённая стена"
 
 msgctxt "term"
+msgid "Iron Wall 10% stronger"
+msgstr "«Железная стена» сильнее на 10%"
+
+msgctxt "term"
 msgid "Seismic Lock"
 msgstr "Сейсмическая фиксация"
+
+msgctxt "term"
+msgid "Iron Wall stuns enemies within 5m for 0.5s"
+msgstr "«Железная стена» оглушает врагов в пределах 5 м на 0.5 с"
 
 msgctxt "term"
 msgid "Stalwart"
 msgstr "Стойкий"
 
 msgctxt "term"
+msgid "Iron Wall lasts 12% longer"
+msgstr "«Железная стена» действует на 12% дольше"
+
+msgctxt "term"
 msgid "Citadel"
 msgstr "Цитадель"
+
+msgctxt "term"
+msgid "Iron Wall holds 2 charges, and its stun lasts 1s longer"
+msgstr "«Железная стена» хранит зарядов: 2, а её оглушение длится на 1 с дольше"
+
+msgctxt "term"
+msgid "Stay central so the aura reaches everyone"
+msgstr "Держитесь в центре, чтобы аура доставала до всех"
+
+msgctxt "term"
+msgid "Keeps the crew ticking. Passive healing aura, stronger revives, and a burst heal for emergencies."
+msgstr "Не даёт команде заглохнуть. Пассивная аура лечения, усиленные возрождения и мощное лечение на крайний случай."
+
+msgctxt "term"
+msgid "Keeps the crew ticking"
+msgstr "Не даёт команде заглохнуть"
+
+msgctxt "term"
+msgid "Field Triage"
+msgstr "Полевая сортировка"
+
+msgctxt "term"
+msgid "Every 3s, allies within 6m regain 1 HP. Stabilize: allies in your aura below 30% HP take 15% less damage. Triage sight: you see every teammate's health - bars over their heads within 30m (through walls), a team list lowest-first, a warning when one is critical, and how far to a downed teammate's head."
+msgstr "Каждые 3 с союзники в пределах 6 м восстанавливают 1 ОЗ. Стабилизация: союзники в вашей ауре с ОЗ ниже 30% получают на 15% меньше урона. Взгляд медика: вы видите здоровье каждого напарника - полосы над головами в пределах 30 м (сквозь стены), список команды от самого низкого здоровья, предупреждение, когда кто-то при смерти, и расстояние до головы павшего напарника."
+
+msgctxt "term"
+msgid "Revive Protocol"
+msgstr "Протокол возрождения"
+
+msgctxt "term"
+msgid "Allies revived near you get +15 HP; +50% revive XP."
+msgstr "Союзники, возрождённые рядом с вами, получают +15 ОЗ; +50% опыта за возрождение."
+
+msgctxt "term"
+msgid "Nanite Burst"
+msgstr "Нанитный всплеск"
+
+msgctxt "term"
+msgid "Heal yourself for 15% max HP and allies within 8m for 15 HP; take 20% less damage for 5s."
+msgstr "Лечит вас на 15% макс. ОЗ, а союзников в пределах 8 м - на 15 ОЗ; на 5 с вы получаете на 20% меньше урона."
+
+msgctxt "term"
+msgid "Triage"
+msgstr "Сортировка"
+
+msgctxt "term"
+msgid "A bigger, stronger healing aura."
+msgstr "Аура лечения больше и сильнее."
 
 msgctxt "term"
 msgid "Wide Field"
 msgstr "Широкое поле"
 
 msgctxt "term"
+msgid "Aura reaches 0.6m farther"
+msgstr "Аура действует на 0.6 м дальше"
+
+msgctxt "term"
+msgid "Potent Nanites"
+msgstr "Сильные наниты"
+
+msgctxt "term"
+msgid "Aura heals 0.5 more HP per pulse"
+msgstr "Аура лечит на 0.5 ОЗ больше за импульс"
+
+msgctxt "term"
+msgid "Critical Care"
+msgstr "Интенсивная терапия"
+
+msgctxt "term"
+msgid "Stabilize: low-HP allies take 5% less damage"
+msgstr "Стабилизация: союзники с низким ОЗ получают на 5% меньше урона"
+
+msgctxt "term"
+msgid "Field Surgeon"
+msgstr "Полевой хирург"
+
+msgctxt "term"
+msgid "Aura heals 0.3 more HP and reaches 0.5m farther"
+msgstr "Аура лечит на 0.3 ОЗ больше и действует на 0.5 м дальше"
+
+msgctxt "term"
+msgid "Guardian Angel"
+msgstr "Ангел-хранитель"
+
+msgctxt "term"
+msgid "aura heals 1 more HP per pulse, Stabilize 10% stronger"
+msgstr "аура лечит на 1 ОЗ больше за импульс, «Стабилизация» сильнее на 10%"
+
+msgctxt "term"
+msgid "Biotech"
+msgstr "Биотех"
+
+msgctxt "term"
+msgid "Turn Nanite Burst into a team-saving blast."
+msgstr "Превратите «Нанитный всплеск» в спасительный для команды залп."
+
+msgctxt "term"
+msgid "Concentrated Dose"
+msgstr "Концентрированная доза"
+
+msgctxt "term"
+msgid "Nanite Burst 6% stronger"
+msgstr "«Нанитный всплеск» сильнее на 6%"
+
+msgctxt "term"
+msgid "Wide Dispersal"
+msgstr "Широкое распыление"
+
+msgctxt "term"
+msgid "Nanite Burst reaches 10% farther"
+msgstr "«Нанитный всплеск» действует на 10% дальше"
+
+msgctxt "term"
+msgid "Rapid Synthesis"
+msgstr "Быстрый синтез"
+
+msgctxt "term"
+msgid "Nanite Burst cooldown 5% shorter"
+msgstr "Перезарядка «Нанитного всплеска» на 5% короче"
+
+msgctxt "term"
+msgid "Nanite Cloud"
+msgstr "Облако нанитов"
+
+msgctxt "term"
+msgid "Nanite Burst 4% stronger and reaches 8% farther"
+msgstr "«Нанитный всплеск» сильнее на 4% и действует на 8% дальше"
+
+msgctxt "term"
+msgid "Miracle Worker"
+msgstr "Чудотворец"
+
+msgctxt "term"
+msgid "Nanite Burst 30% stronger and reaches 20% farther"
+msgstr "«Нанитный всплеск» сильнее на 30% и действует на 20% дальше"
+
+msgctxt "term"
+msgid "Nobody stays down on your watch."
+msgstr "Пока вы на посту, никто не останется лежать."
+
+msgctxt "term"
+msgid "Bedside Manner"
+msgstr "Врачебный такт"
+
+msgctxt "term"
+msgid "Allies revived near you get +3 HP"
+msgstr "Союзники, возрождённые рядом с вами, получают +3 ОЗ"
+
+msgctxt "term"
+msgid "Mender's Lessons"
+msgstr "Уроки лекаря"
+
+msgctxt "term"
+msgid "+15% revive XP"
+msgstr "+15% опыта за возрождение"
+
+msgctxt "term"
+msgid "Triage Priority"
+msgstr "Очерёдность помощи"
+
+msgctxt "term"
+msgid "Stabilize: low-HP allies take 4% less damage"
+msgstr "Стабилизация: союзники с низким ОЗ получают на 4% меньше урона"
+
+msgctxt "term"
+msgid "Emergency Response"
+msgstr "Экстренный вызов"
+
+msgctxt "term"
+msgid "Revived allies get +2 HP, Nanite Burst cooldown 3% shorter"
+msgstr "Возрождённые союзники получают +2 ОЗ, перезарядка «Нанитного всплеска» на 3% короче"
+
+msgctxt "term"
+msgid "Lazarus Protocol"
+msgstr "Протокол «Лазарь»"
+
+msgctxt "term"
+msgid "revived allies get +10 HP, +25% revive XP, Stabilize 5% stronger"
+msgstr "возрождённые союзники получают +10 ОЗ, +25% опыта за возрождение, «Стабилизация» сильнее на 5%"
+
+msgctxt "term"
 msgid "Scout"
 msgstr "Разведчик"
+
+msgctxt "term"
+msgid "Keep sprinting to build Momentum"
+msgstr "Не прекращайте бег, чтобы копить Импульс"
+
+msgctxt "term"
+msgid "Fast, light and hard to pin down. First in, first out, and always the one who finds the exit."
+msgstr "Быстрый, лёгкий и неуловимый. Первым входит, первым выходит и всегда находит выход."
+
+msgctxt "term"
+msgid "Fast, light and hard to pin down"
+msgstr "Быстрый, лёгкий и неуловимый"
+
+msgctxt "term"
+msgid "Momentum"
+msgstr "Импульс"
+
+msgctxt "term"
+msgid "+10% walk and sprint speed. Every second you keep sprinting adds a Momentum stack (+2% sprint speed, up to 5); stacks drop 1s after you stop."
+msgstr "+10% к скорости ходьбы и бега. Каждая секунда непрерывного бега добавляет заряд Импульса (+2% к скорости бега, до 5); заряды пропадают через 1 с после остановки."
+
+msgctxt "term"
+msgid "Spring Legs"
+msgstr "Пружинные ноги"
+
+msgctxt "term"
+msgid "+1 extra jump and +10% jump force."
+msgstr "+1 дополнительный прыжок и +10% к силе прыжка."
+
+msgctxt "term"
+msgid "Overclock Sprint"
+msgstr "Турбобег"
+
+msgctxt "term"
+msgid "For 8s: +40% sprint speed and sprinting costs no stamina."
+msgstr "На 8 с: +40% к скорости бега, и бег не тратит выносливость."
+
+msgctxt "term"
+msgid "Velocity"
+msgstr "Скорость"
+
+msgctxt "term"
+msgid "Build Momentum and never let it drop."
+msgstr "Копите Импульс и не давайте ему упасть."
+
+msgctxt "term"
+msgid "Fast Feet"
+msgstr "Быстрые ступни"
+
+msgctxt "term"
+msgid "+3% sprint speed"
+msgstr "+3% к скорости бега"
+
+msgctxt "term"
+msgid "Quick Step"
+msgstr "Быстрый шаг"
+
+msgctxt "term"
+msgid "+4% walk speed"
+msgstr "+4% к скорости ходьбы"
+
+msgctxt "term"
+msgid "Build-Up"
+msgstr "Разбег"
+
+msgctxt "term"
+msgid "Momentum stacks give +0.5% more sprint speed"
+msgstr "Заряды Импульса дают на 0.5% больше скорости бега"
+
+msgctxt "term"
+msgid "Long Stride"
+msgstr "Широкий шаг"
+
+msgctxt "term"
+msgid "+1 max Momentum stack"
+msgstr "+1 к макс. числу зарядов Импульса"
+
+msgctxt "term"
+msgid "Unbroken"
+msgstr "Несломленный"
+
+msgctxt "term"
+msgid "Momentum lasts 4s after you stop, +8% sprint speed"
+msgstr "Импульс держится 4 с после остановки, +8% к скорости бега"
+
+msgctxt "term"
+msgid "Acrobatics"
+msgstr "Акробатика"
+
+msgctxt "term"
+msgid "Take the high road: over gaps, rails and monsters."
+msgstr "Идите поверху: над провалами, перилами и монстрами."
+
+msgctxt "term"
+msgid "Coiled Springs"
+msgstr "Сжатые пружины"
+
+msgctxt "term"
+msgid "+4% jump force"
+msgstr "+4% к силе прыжка"
+
+msgctxt "term"
+msgid "Hang Time"
+msgstr "Зависание"
+
+msgctxt "term"
+msgid "Overclock Sprint gives +8% jump force"
+msgstr "«Турбобег» даёт +8% к силе прыжка"
+
+msgctxt "term"
+msgid "Stride Jumps"
+msgstr "Прыжки с разбега"
+
+msgctxt "term"
+msgid "+3% jump force, +2% walk speed"
+msgstr "+3% к силе прыжка, +2% к скорости ходьбы"
+
+msgctxt "term"
+msgid "Skyward"
+msgstr "Ввысь"
+
+msgctxt "term"
+msgid "Overclock Sprint gives +6% more jump force, +2% jump force"
+msgstr "«Турбобег» даёт ещё +6% к силе прыжка, +2% к силе прыжка"
+
+msgctxt "term"
+msgid "Double Down"
+msgstr "Двойная ставка"
+
+msgctxt "term"
+msgid "+1 extra jump, +10% jump force"
+msgstr "+1 дополнительный прыжок, +10% к силе прыжка"
+
+msgctxt "term"
+msgid "Pathfinder"
+msgstr "Следопыт"
+
+msgctxt "term"
+msgid "Overclock Sprint, more often and longer."
+msgstr "«Турбобег» - чаще и дольше."
+
+msgctxt "term"
+msgid "Redline"
+msgstr "Красная зона"
+
+msgctxt "term"
+msgid "Overclock Sprint 5% stronger"
+msgstr "«Турбобег» сильнее на 5%"
+
+msgctxt "term"
+msgid "Long Haul"
+msgstr "Долгий забег"
+
+msgctxt "term"
+msgid "Overclock Sprint lasts 12% longer"
+msgstr "«Турбобег» действует на 12% дольше"
+
+msgctxt "term"
+msgid "Pit Stop"
+msgstr "Пит-стоп"
+
+msgctxt "term"
+msgid "Overclock Sprint cooldown 5% shorter"
+msgstr "Перезарядка «Турбобега» на 5% короче"
+
+msgctxt "term"
+msgid "Overclock Sprint refills 15% of your stamina"
+msgstr "«Турбобег» восполняет 15% вашей выносливости"
 
 msgctxt "term"
 msgid "Afterburner"
 msgstr "Дожиг"
 
 msgctxt "term"
+msgid "Overclock Sprint lasts 25% longer and fills your Momentum instantly"
+msgstr "«Турбобег» действует на 25% дольше и мгновенно заполняет Импульс"
+
+msgctxt "term"
 msgid "Hauler"
 msgstr "Носильщик"
+
+msgctxt "term"
+msgid "Cargo"
+msgstr "Груз"
+
+msgctxt "term"
+msgid "Save Power Lift for heavy or fragile loot"
+msgstr "Берегите «Силовой подъём» для тяжёлой или хрупкой добычи"
+
+msgctxt "term"
+msgid "Built to move the big-ticket items. Carries heavy loot farther and longer than anyone."
+msgstr "Создан таскать самое дорогое. Несёт тяжёлую добычу дальше и дольше всех."
+
+msgctxt "term"
+msgid "Built to move the big-ticket items"
+msgstr "Создан таскать самое дорогое"
+
+msgctxt "term"
+msgid "Hydraulic Arms"
+msgstr "Гидравлические руки"
+
+msgctxt "term"
+msgid "+35% grab strength."
+msgstr "+35% к силе хвата."
+
+msgctxt "term"
+msgid "Steady Grip"
+msgstr "Твёрдый хват"
+
+msgctxt "term"
+msgid "35% less stamina drain while carrying something; items you hold take 10% less damage."
+msgstr "Переноска тратит на 35% меньше выносливости; предметы у вас в руках получают на 10% меньше урона."
+
+msgctxt "term"
+msgid "Power Lift"
+msgstr "Силовой подъём"
+
+msgctxt "term"
+msgid "For 12s: +100% grab strength, +40% grab range, and items you hold take 25% less damage."
+msgstr "На 12 с: +100% к силе хвата, +40% к дальности хвата, а предметы у вас в руках получают на 25% меньше урона."
+
+msgctxt "term"
+msgid "Cargo Master"
+msgstr "Мастер груза"
+
+msgctxt "term"
+msgid "Lift anything, from anywhere, for as long as it takes."
+msgstr "Поднимайте что угодно, откуда угодно и сколько потребуется."
+
+msgctxt "term"
+msgid "Reinforced Servos"
+msgstr "Усиленные сервоприводы"
+
+msgctxt "term"
+msgid "+5% grab strength"
+msgstr "+5% к силе хвата"
 
 msgctxt "term"
 msgid "Long Reach"
 msgstr "Дальний захват"
 
 msgctxt "term"
+msgid "+6% grab range"
+msgstr "+6% к дальности хвата"
+
+msgctxt "term"
+msgid "5% less stamina drain while carrying"
+msgstr "Переноска тратит на 5% меньше выносливости"
+
+msgctxt "term"
+msgid "Counterbalance"
+msgstr "Противовес"
+
+msgctxt "term"
+msgid "+4% grab strength, 3.33% less stamina drain while carrying"
+msgstr "+4% к силе хвата, переноска тратит на 3.33% меньше выносливости"
+
+msgctxt "term"
+msgid "Crane Arm"
+msgstr "Рука-кран"
+
+msgctxt "term"
+msgid "+20% grab range, +15% grab strength"
+msgstr "+20% к дальности хвата, +15% к силе хвата"
+
+msgctxt "term"
+msgid "Careful Hands"
+msgstr "Бережные руки"
+
+msgctxt "term"
+msgid "Get every valuable to the truck in one piece."
+msgstr "Донесите каждую ценность до грузовика в целости."
+
+msgctxt "term"
+msgid "Padded Grip"
+msgstr "Мягкий хват"
+
+msgctxt "term"
+msgid "Items you hold take 3% less damage"
+msgstr "Предметы у вас в руках получают на 3% меньше урона"
+
+msgctxt "term"
+msgid "Careful Courier"
+msgstr "Аккуратный курьер"
+
+msgctxt "term"
+msgid "Items you hold take 4% less damage"
+msgstr "Предметы у вас в руках получают на 4% меньше урона"
+
+msgctxt "term"
+msgid "Shock Absorbers"
+msgstr "Амортизаторы"
+
+msgctxt "term"
+msgid "Power Lift protects items 4% more"
+msgstr "«Силовой подъём» защищает предметы на 4% сильнее"
+
+msgctxt "term"
+msgid "Cradle"
+msgstr "Колыбель"
+
+msgctxt "term"
+msgid "Items you hold take 3% less damage, +2% grab strength"
+msgstr "Предметы у вас в руках получают на 3% меньше урона, +2% к силе хвата"
+
+msgctxt "term"
+msgid "White Glove"
+msgstr "Белые перчатки"
+
+msgctxt "term"
+msgid "items you hold take 10% less damage, Power Lift protects 2% more"
+msgstr "предметы у вас в руках получают на 10% меньше урона, «Силовой подъём» защищает на 2% сильнее"
+
+msgctxt "term"
+msgid "Logistics"
+msgstr "Логистика"
+
+msgctxt "term"
+msgid "Bigger, longer, more frequent Power Lifts."
+msgstr "«Силовой подъём» - мощнее, дольше и чаще."
+
+msgctxt "term"
+msgid "Overpressure"
+msgstr "Избыточное давление"
+
+msgctxt "term"
+msgid "Power Lift 6% stronger"
+msgstr "«Силовой подъём» сильнее на 6%"
+
+msgctxt "term"
+msgid "Extended Shift"
+msgstr "Продлённая смена"
+
+msgctxt "term"
+msgid "Power Lift lasts 12% longer"
+msgstr "«Силовой подъём» действует на 12% дольше"
+
+msgctxt "term"
+msgid "Quick Rig"
+msgstr "Быстрая оснастка"
+
+msgctxt "term"
+msgid "Power Lift cooldown 5% shorter"
+msgstr "Перезарядка «Силового подъёма» на 5% короче"
+
+msgctxt "term"
+msgid "Hydraulic Reserve"
+msgstr "Гидравлический резерв"
+
+msgctxt "term"
+msgid "Power Lift lasts 8% longer and is 4% stronger"
+msgstr "«Силовой подъём» действует на 8% дольше и сильнее на 4%"
+
+msgctxt "term"
+msgid "Heavy Lifter"
+msgstr "Тяжеловес"
+
+msgctxt "term"
+msgid "Power Lift 30% stronger and lasts 20% longer"
+msgstr "«Силовой подъём» сильнее на 30% и действует на 20% дольше"
+
+msgctxt "term"
 msgid "Brute"
 msgstr "Громила"
+
+msgctxt "term"
+msgid "Fighter"
+msgstr "Боец"
+
+msgctxt "term"
+msgid "Slam when a monster is on a teammate"
+msgstr "Бейте по полу, когда монстр вцепился в напарника"
+
+msgctxt "term"
+msgid "Fights back. Turns thrown objects into weapons, heals off kills, and flattens anything nearby."
+msgstr "Даёт сдачи. Превращает брошенные предметы в оружие, лечится за убийства и расплющивает всё вокруг."
+
+msgctxt "term"
+msgid "Fights back"
+msgstr "Даёт сдачи"
+
+msgctxt "term"
+msgid "Heavy Hitter"
+msgstr "Тяжёлый удар"
+
+msgctxt "term"
+msgid "+40% throw strength."
+msgstr "+40% к силе броска."
+
+msgctxt "term"
+msgid "Frenzy"
+msgstr "Ярость"
+
+msgctxt "term"
+msgid "Heal 10 HP and gain a Frenzy stack when an enemy dies near you (15s, up to 3): +5% throw strength, +5% weapon damage and +2% speed each. +25% kill XP."
+msgstr "Когда рядом с вами гибнет враг, вы лечитесь на 10 ОЗ и получаете заряд Ярости (15 с, до 3): каждый даёт +5% к силе броска, +5% к урону оружия и +2% к скорости. +25% опыта за убийства."
+
+msgctxt "term"
+msgid "Shockwave"
+msgstr "Ударная волна"
+
+msgctxt "term"
+msgid "Slam the floor: deal 40 damage and stun enemies within 6m for 2s."
+msgstr "Удар по полу: наносит 40 урона и оглушает врагов в пределах 6 м на 2 с."
+
+msgctxt "term"
+msgid "Wrecker"
+msgstr "Разрушитель"
+
+msgctxt "term"
+msgid "Every object is a weapon."
+msgstr "Любой предмет - оружие."
+
+msgctxt "term"
+msgid "Big Arms"
+msgstr "Большие руки"
+
+msgctxt "term"
+msgid "+6% throw strength"
+msgstr "+6% к силе броска"
+
+msgctxt "term"
+msgid "Trophy Hunter"
+msgstr "Охотник за трофеями"
+
+msgctxt "term"
+msgid "+10% kill XP"
+msgstr "+10% опыта за убийства"
+
+msgctxt "term"
+msgid "Heavy Swings"
+msgstr "Тяжёлые взмахи"
+
+msgctxt "term"
+msgid "+4% weapon damage"
+msgstr "+4% к урону оружия"
+
+msgctxt "term"
+msgid "Concussion Blows"
+msgstr "Оглушающие удары"
+
+msgctxt "term"
+msgid "+3% chance for weapon hits to stun"
+msgstr "+3% к шансу оглушить ударом оружия"
+
+msgctxt "term"
+msgid "Wrecking Ball"
+msgstr "Шар-баба"
+
+msgctxt "term"
+msgid "+25% throw strength, +10% weapon damage"
+msgstr "+25% к силе броска, +10% к урону оружия"
+
+msgctxt "term"
+msgid "Bloodlust"
+msgstr "Жажда крови"
+
+msgctxt "term"
+msgid "Kill, heal, frenzy, repeat."
+msgstr "Убей, вылечись, впади в ярость, повтори."
+
+msgctxt "term"
+msgid "Feast"
+msgstr "Пир"
+
+msgctxt "term"
+msgid "Heal 2 more HP when an enemy dies near you"
+msgstr "Лечит ещё на 2 ОЗ, когда рядом с вами гибнет враг"
+
+msgctxt "term"
+msgid "Bloodrush"
+msgstr "Прилив крови"
+
+msgctxt "term"
+msgid "Frenzy stacks give +1% more"
+msgstr "Заряды Ярости дают ещё +1%"
+
+msgctxt "term"
+msgid "Savage"
+msgstr "Дикарь"
+
+msgctxt "term"
+msgid "+4% chance for weapon hits to make enemies bleed"
+msgstr "+4% к шансу вызвать у врага кровотечение ударом оружия"
+
+msgctxt "term"
+msgid "Leech"
+msgstr "Пиявка"
+
+msgctxt "term"
+msgid "Heal 0.5 HP per weapon hit"
+msgstr "Лечит на 0.5 ОЗ за каждый удар оружием"
+
+msgctxt "term"
+msgid "Rampage"
+msgstr "Буйство"
+
+msgctxt "term"
+msgid "+2 max Frenzy stacks, heal 1 more HP per weapon hit"
+msgstr "+2 к макс. числу зарядов Ярости, ещё +1 ОЗ лечения за удар оружием"
+
+msgctxt "term"
+msgid "Quake"
+msgstr "Землетрясение"
+
+msgctxt "term"
+msgid "Harder, wider Shockwaves that start the frenzy."
+msgstr "«Ударные волны» сильнее и шире - и с них начинается ярость."
+
+msgctxt "term"
+msgid "Aftershock"
+msgstr "Афтершок"
+
+msgctxt "term"
+msgid "Shockwave 6% stronger"
+msgstr "«Ударная волна» сильнее на 6%"
+
+msgctxt "term"
+msgid "Wide Quake"
+msgstr "Широкое землетрясение"
+
+msgctxt "term"
+msgid "Shockwave reaches 10% farther"
+msgstr "«Ударная волна» действует на 10% дальше"
+
+msgctxt "term"
+msgid "Concussive"
+msgstr "Контузия"
+
+msgctxt "term"
+msgid "Shockwave stuns 12% longer"
+msgstr "«Ударная волна» оглушает на 12% дольше"
+
+msgctxt "term"
+msgid "Tremor"
+msgstr "Дрожь земли"
+
+msgctxt "term"
+msgid "Shockwave cooldown 5% shorter"
+msgstr "Перезарядка «Ударной волны» на 5% короче"
+
+msgctxt "term"
+msgid "Earthshaker"
+msgstr "Сотрясатель земли"
+
+msgctxt "term"
+msgid "Shockwave 30% stronger and gives you a Frenzy stack"
+msgstr "«Ударная волна» сильнее на 30% и даёт вам заряд Ярости"
 
 msgctxt "term"
 msgid "Engineer"
 msgstr "Инженер"
 
 msgctxt "term"
+msgid "Use Overdrive for long carries back to the truck"
+msgstr "Включайте «Форсаж» для долгой переноски к грузовику"
+
+msgctxt "term"
+msgid "Tuned power systems. Huge stamina pool, fast recharge, and an overdrive that runs the frame hot."
+msgstr "Отлаженные силовые системы. Огромный запас выносливости, быстрое восстановление и форсаж, от которого раскаляется каркас."
+
+msgctxt "term"
+msgid "Tuned power systems"
+msgstr "Отлаженные силовые системы"
+
+msgctxt "term"
 msgid "Efficient Cells"
 msgstr "Экономичные элементы"
+
+msgctxt "term"
+msgid "+40% max stamina."
+msgstr "+40% к макс. выносливости."
+
+msgctxt "term"
+msgid "Power Link"
+msgstr "Энергосвязь"
+
+msgctxt "term"
+msgid "Regenerate 4 extra stamina per second; allies within 6m regenerate 2 stamina per second."
+msgstr "Вы восстанавливаете на 4 выносливости в секунду больше; союзники в пределах 6 м восстанавливают 2 выносливости в секунду."
+
+msgctxt "term"
+msgid "Overdrive"
+msgstr "Форсаж"
+
+msgctxt "term"
+msgid "Refill stamina; for 10s sprinting is free, +25% grab strength, +10% move speed."
+msgstr "Восполняет выносливость; на 10 с бег бесплатен, +25% к силе хвата, +10% к скорости движения."
+
+msgctxt "term"
+msgid "Power Grid"
+msgstr "Энергосеть"
+
+msgctxt "term"
+msgid "A stamina pool that never runs dry."
+msgstr "Запас выносливости, который никогда не иссякает."
+
+msgctxt "term"
+msgid "Capacitors"
+msgstr "Конденсаторы"
+
+msgctxt "term"
+msgid "+5% max stamina"
+msgstr "+5% к макс. выносливости"
 
 msgctxt "term"
 msgid "Fast Charge"
 msgstr "Быстрая зарядка"
 
 msgctxt "term"
+msgid "+1 stamina/s"
+msgstr "+1 выносливости/с"
+
+msgctxt "term"
+msgid "Efficient Motors"
+msgstr "Экономичные моторы"
+
+msgctxt "term"
+msgid "5% less sprint stamina drain"
+msgstr "Бег тратит на 5% меньше выносливости"
+
+msgctxt "term"
+msgid "Insulated Cells"
+msgstr "Изолированные элементы"
+
+msgctxt "term"
+msgid "+4% max stamina, +0.5 stamina/s"
+msgstr "+4% к макс. выносливости, +0.5 выносливости/с"
+
+msgctxt "term"
+msgid "Perpetual Motion"
+msgstr "Вечное движение"
+
+msgctxt "term"
+msgid "+4 stamina/s, 15% less sprint stamina drain"
+msgstr "+4 выносливости/с, бег тратит на 15% меньше выносливости"
+
+msgctxt "term"
+msgid "Share the grid with your team."
+msgstr "Поделитесь сетью с командой."
+
+msgctxt "term"
+msgid "Long Cables"
+msgstr "Длинные кабели"
+
+msgctxt "term"
+msgid "Power Link reaches 0.6m farther"
+msgstr "«Энергосвязь» действует на 0.6 м дальше"
+
+msgctxt "term"
+msgid "Shared Grid"
+msgstr "Общая сеть"
+
+msgctxt "term"
+msgid "Power Link gives allies +0.5 stamina/s"
+msgstr "«Энергосвязь» даёт союзникам +0.5 выносливости/с"
+
+msgctxt "term"
+msgid "Surge Link"
+msgstr "Усиленная связь"
+
+msgctxt "term"
+msgid "Overdrive boosts Power Link by +1 stamina/s"
+msgstr "«Форсаж» усиливает «Энергосвязь» на +1 выносливости/с"
+
+msgctxt "term"
+msgid "Grid Tap"
+msgstr "Отвод от сети"
+
+msgctxt "term"
+msgid "Power Link +0.3 stamina/s, reaches 0.5m farther"
+msgstr "«Энергосвязь»: +0.3 выносливости/с, действует на 0.5 м дальше"
+
+msgctxt "term"
+msgid "Grid Overload"
+msgstr "Перегрузка сети"
+
+msgctxt "term"
+msgid "Power Link +2 stamina/s, reaches 3m farther"
+msgstr "«Энергосвязь»: +2 выносливости/с, действует на 3 м дальше"
+
+msgctxt "term"
+msgid "Run the frame hot, as long as you dare."
+msgstr "Раскаляйте каркас, пока хватает смелости."
+
+msgctxt "term"
+msgid "Hot Running"
+msgstr "Работа на пределе"
+
+msgctxt "term"
+msgid "Overdrive lasts 6% longer"
+msgstr "«Форсаж» действует на 6% дольше"
+
+msgctxt "term"
+msgid "Overvolt"
+msgstr "Перенапряжение"
+
+msgctxt "term"
+msgid "Overdrive 12% stronger"
+msgstr "«Форсаж» сильнее на 12%"
+
+msgctxt "term"
+msgid "Rapid Cycle"
+msgstr "Быстрый цикл"
+
+msgctxt "term"
+msgid "Overdrive cooldown 5% shorter"
+msgstr "Перезарядка «Форсажа» на 5% короче"
+
+msgctxt "term"
 msgid "Overcharge"
 msgstr "Перезаряд"
+
+msgctxt "term"
+msgid "Overdrive 8% stronger and lasts 5% longer"
+msgstr "«Форсаж» сильнее на 8% и действует на 5% дольше"
+
+msgctxt "term"
+msgid "Meltdown"
+msgstr "Расплавление"
+
+msgctxt "term"
+msgid "Overdrive lasts 25% longer, cooldown 10% shorter"
+msgstr "«Форсаж» действует на 25% дольше, перезарядка на 10% короче"
 
 msgctxt "term"
 msgid "Phantom"
 msgstr "Фантом"
 
 msgctxt "term"
+msgid "Phase out the moment you get caught, not before"
+msgstr "Уходите в фазу в тот миг, когда вас поймали, не раньше"
+
+msgctxt "term"
+msgid "Quiet and slippery. Moves fast while crouched, shrugs off hits outright, and can phase out of danger."
+msgstr "Тихий и скользкий. Быстро двигается в приседе, полностью игнорирует часть ударов и может уйти из опасности в другую фазу."
+
+msgctxt "term"
+msgid "Quiet and slippery"
+msgstr "Тихий и скользкий"
+
+msgctxt "term"
+msgid "Silent Servos"
+msgstr "Бесшумные сервоприводы"
+
+msgctxt "term"
+msgid "+40% crouch speed."
+msgstr "+40% к скорости в приседе."
+
+msgctxt "term"
+msgid "15% chance to completely ignore a hit. Every dodge gives you +20% speed for 3s."
+msgstr "15% шанс полностью проигнорировать удар. Каждое уклонение даёт вам +20% к скорости на 3 с."
+
+msgctxt "term"
+msgid "Phase Out"
+msgstr "Фазовый сдвиг"
+
+msgctxt "term"
+msgid "For 4s: immune to damage and +30% walk/sprint speed."
+msgstr "На 4 с: неуязвимость к урону и +30% к скорости ходьбы/бега."
+
+msgctxt "term"
+msgid "Shadow"
+msgstr "Тень"
+
+msgctxt "term"
+msgid "Creep past everything, unseen and untouched."
+msgstr "Проскользните мимо всех - незамеченным и нетронутым."
+
+msgctxt "term"
+msgid "Soft Steps"
+msgstr "Мягкие шаги"
+
+msgctxt "term"
+msgid "+6% crouch speed"
+msgstr "+6% к скорости в приседе"
+
+msgctxt "term"
+msgid "Slippery"
+msgstr "Скользкий"
+
+msgctxt "term"
+msgid "+3% dodge chance"
+msgstr "+3% к шансу уклонения"
+
+msgctxt "term"
+msgid "Desperate Flight"
+msgstr "Отчаянное бегство"
+
+msgctxt "term"
+msgid "+8% speed while below 35% HP"
+msgstr "+8% к скорости, пока ОЗ ниже 35%"
+
+msgctxt "term"
+msgid "Ghost Feet"
+msgstr "Призрачные ступни"
+
+msgctxt "term"
+msgid "+4% crouch speed, +1% dodge chance"
+msgstr "+4% к скорости в приседе, +1% к шансу уклонения"
+
+msgctxt "term"
+msgid "Ghost Walk"
+msgstr "Призрачная походка"
+
+msgctxt "term"
+msgid "+10% dodge chance, +20% crouch speed"
+msgstr "+10% к шансу уклонения, +20% к скорости в приседе"
+
+msgctxt "term"
+msgid "Every near miss pushes you faster."
+msgstr "Каждый удар, прошедший мимо, разгоняет вас."
+
+msgctxt "term"
+msgid "Afterimage"
+msgstr "Остаточный образ"
+
+msgctxt "term"
+msgid "Shadowstep gives +3% more speed"
+msgstr "«Шаг в тень» даёт ещё +3% к скорости"
+
+msgctxt "term"
+msgid "Evasive Instinct"
+msgstr "Инстинкт уклонения"
+
+msgctxt "term"
+msgid "+2% dodge chance"
+msgstr "+2% к шансу уклонения"
+
+msgctxt "term"
+msgid "Slip Away"
+msgstr "Ускользание"
+
+msgctxt "term"
+msgid "Each dodge takes 1s off Phase Out's cooldown"
+msgstr "Каждое уклонение сокращает перезарядку «Фазового сдвига» на 1 с"
+
+msgctxt "term"
+msgid "Blur"
+msgstr "Размытие"
+
+msgctxt "term"
+msgid "Shadowstep +4% speed, +3% speed below 35% HP"
+msgstr "«Шаг в тень»: +4% к скорости, +3% к скорости при ОЗ ниже 35%"
+
+msgctxt "term"
+msgid "Vanish"
+msgstr "Исчезновение"
+
+msgctxt "term"
+msgid "each dodge takes 1s more off the cooldown, +5% dodge chance"
+msgstr "каждое уклонение сокращает перезарядку ещё на 1 с, +5% к шансу уклонения"
+
+msgctxt "term"
+msgid "Phasing"
+msgstr "Фазирование"
+
+msgctxt "term"
+msgid "Live between worlds a little longer."
+msgstr "Поживите между мирами чуть дольше."
+
+msgctxt "term"
+msgid "Extended Phase"
+msgstr "Продлённая фаза"
+
+msgctxt "term"
+msgid "Phase Out lasts 6% longer"
+msgstr "«Фазовый сдвиг» действует на 6% дольше"
+
+msgctxt "term"
+msgid "Slipstream"
+msgstr "Попутный поток"
+
+msgctxt "term"
+msgid "Phase Out 10% stronger"
+msgstr "«Фазовый сдвиг» сильнее на 10%"
+
+msgctxt "term"
+msgid "Quick Fade"
+msgstr "Быстрое растворение"
+
+msgctxt "term"
+msgid "Phase Out cooldown 5% shorter"
+msgstr "Перезарядка «Фазового сдвига» на 5% короче"
+
+msgctxt "term"
+msgid "Phase Recovery"
+msgstr "Фазовое восстановление"
+
+msgctxt "term"
+msgid "Phase Out heals you for 3% max HP"
+msgstr "«Фазовый сдвиг» лечит вас на 3% макс. ОЗ"
+
+msgctxt "term"
+msgid "Between Worlds"
+msgstr "Между мирами"
+
+msgctxt "term"
+msgid "Phase Out lasts 30% longer and heals 5% more"
+msgstr "«Фазовый сдвиг» действует на 30% дольше и лечит на 5% больше"
+
+msgctxt "term"
 msgid "Survivor"
 msgstr "Выживший"
 
 msgctxt "term"
+msgid "Sustain"
+msgstr "Стойкость"
+
+msgctxt "term"
+msgid "Patch early, and avoid hits while Scar Tissue regenerates"
+msgstr "Латайтесь заранее и избегайте ударов, пока восстанавливается «Рубцовая ткань»"
+
+msgctxt "term"
+msgid "Refuses to die. Repairs itself between fights and cheats death once every level."
+msgstr "Отказывается умирать. Чинит себя между боями и раз за уровень обманывает смерть."
+
+msgctxt "term"
+msgid "Refuses to die"
+msgstr "Отказывается умирать"
+
+msgctxt "term"
 msgid "Scar Tissue"
 msgstr "Рубцовая ткань"
+
+msgctxt "term"
+msgid "Regenerate 0.25 HP/s (pauses 6s after taking damage). Every hit you take makes you take 1% less damage for the rest of the level (up to 10%)."
+msgstr "Восстанавливает 0.25 ОЗ/с (пауза на 6 с после получения урона). Каждый полученный удар снижает получаемый вами урон на 1% до конца уровня (до 10%)."
 
 msgctxt "term"
 msgid "Once per level, a lethal hit leaves you at 1 HP with 2.5s of invulnerability."
@@ -11065,60 +12213,152 @@ msgid "Emergency Patch"
 msgstr "Экстренная заплатка"
 
 msgctxt "term"
+msgid "Restore 30% max HP over 6s and take 25% less damage meanwhile."
+msgstr "Восстанавливает 30% макс. ОЗ за 6 с, и всё это время вы получаете на 25% меньше урона."
+
+msgctxt "term"
+msgid "Resilience"
+msgstr "Устойчивость"
+
+msgctxt "term"
+msgid "Get tougher with every hit you take."
+msgstr "Становитесь крепче с каждым полученным ударом."
+
+msgctxt "term"
 msgid "Self-Repair"
 msgstr "Самовосстановление"
+
+msgctxt "term"
+msgid "+0.05 HP/s regeneration"
+msgstr "+0.05 ОЗ/с регенерации"
 
 msgctxt "term"
 msgid "Thick Scars"
 msgstr "Толстые шрамы"
 
 msgctxt "term"
+msgid "+3% max Scar Tissue"
+msgstr "+3% к максимуму «Рубцовой ткани»"
+
+msgctxt "term"
 msgid "Hard Lessons"
 msgstr "Суровые уроки"
+
+msgctxt "term"
+msgid "+0.5% Scar Tissue per hit"
+msgstr "+0.5% «Рубцовой ткани» за удар"
 
 msgctxt "term"
 msgid "Old Wounds"
 msgstr "Старые раны"
 
 msgctxt "term"
+msgid "+2% max Scar Tissue, +0.03 HP/s"
+msgstr "+2% к максимуму «Рубцовой ткани», +0.03 ОЗ/с"
+
+msgctxt "term"
 msgid "Battle-Scarred"
 msgstr "Закалённый в боях"
+
+msgctxt "term"
+msgid "+1% Scar Tissue per hit, +6% max"
+msgstr "+1% «Рубцовой ткани» за удар, +6% к максимуму"
+
+msgctxt "term"
+msgid "Cheat death, then come back swinging."
+msgstr "Обманите смерть и вернитесь в бой."
 
 msgctxt "term"
 msgid "Grit"
 msgstr "Упорство"
 
 msgctxt "term"
+msgid "Last Stand invulnerability lasts 0.3s longer"
+msgstr "Неуязвимость «Последнего рубежа» длится на 0.3 с дольше"
+
+msgctxt "term"
+msgid "Last Stand heals you 5 HP right after"
+msgstr "«Последний рубеж» сразу после срабатывания лечит вас на 5 ОЗ"
+
+msgctxt "term"
 msgid "Rally"
 msgstr "Подъём"
+
+msgctxt "term"
+msgid "Last Stand gives +10% speed for 5s"
+msgstr "«Последний рубеж» даёт +10% к скорости на 5 с"
 
 msgctxt "term"
 msgid "Never Quit"
 msgstr "Не сдаваться"
 
 msgctxt "term"
+msgid "Last Stand invulnerability 0.5s longer, heals 3 HP more"
+msgstr "Неуязвимость «Последнего рубежа» на 0.5 с дольше, лечит ещё на 3 ОЗ"
+
+msgctxt "term"
 msgid "Cockroach"
 msgstr "Таракан"
+
+msgctxt "term"
+msgid "+1 Last Stand per level, heals 10 HP more"
+msgstr "+1 «Последний рубеж» за уровень, лечит ещё на 10 ОЗ"
+
+msgctxt "term"
+msgid "A better patch, sooner."
+msgstr "Заплатка получше - и пораньше."
 
 msgctxt "term"
 msgid "Strong Dose"
 msgstr "Сильная доза"
 
 msgctxt "term"
+msgid "Emergency Patch 6% stronger"
+msgstr "«Экстренная заплатка» сильнее на 6%"
+
+msgctxt "term"
 msgid "Slow Release"
 msgstr "Медленное действие"
+
+msgctxt "term"
+msgid "Emergency Patch lasts 12% longer"
+msgstr "«Экстренная заплатка» действует на 12% дольше"
 
 msgctxt "term"
 msgid "Quick Patch"
 msgstr "Быстрая заплатка"
 
 msgctxt "term"
+msgid "Emergency Patch cooldown 5% shorter"
+msgstr "Перезарядка «Экстренной заплатки» на 5% короче"
+
+msgctxt "term"
 msgid "Field Dressing"
 msgstr "Полевая перевязка"
 
 msgctxt "term"
+msgid "Emergency Patch gives 2% Scar Tissue at once"
+msgstr "«Экстренная заплатка» сразу даёт 2% «Рубцовой ткани»"
+
+msgctxt "term"
 msgid "Phoenix Protocol"
 msgstr "Протокол «Феникс»"
+
+msgctxt "term"
+msgid "Emergency Patch 30% stronger, cooldown 15% shorter"
+msgstr "«Экстренная заплатка» сильнее на 30%, перезарядка на 15% короче"
+
+msgctxt "term"
+msgid "Scan when you enter a new area"
+msgstr "Сканируйте, когда входите в новую зону"
+
+msgctxt "term"
+msgid "Knows what everything is worth. Finds the best loot, reaches it from afar, and levels fastest from hauls."
+msgstr "Знает, что сколько стоит. Находит лучшую добычу, дотягивается до неё издалека и быстрее всех растёт в уровне на добыче."
+
+msgctxt "term"
+msgid "Knows what everything is worth"
+msgstr "Знает, что сколько стоит"
 
 msgctxt "term"
 msgid "Keen Eye"
@@ -11145,180 +12385,1496 @@ msgid "For 12s, your HUD tracks the 3 most valuable items within 40m that aren't
 msgstr "В течение 12 с HUD отслеживает 3 самых ценных предмета в пределах 40 м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
 
 msgctxt "term"
+msgid "Valuation"
+msgstr "Оценка"
+
+msgctxt "term"
+msgid "Make every item worth more."
+msgstr "Сделайте каждый предмет дороже."
+
+msgctxt "term"
 msgid "Price Tag"
 msgstr "Ценник"
+
+msgctxt "term"
+msgid "Appraised valuables gain 1% more value"
+msgstr "Оценённые ценности получают ещё 1% стоимости"
 
 msgctxt "term"
 msgid "Wide Appraisal"
 msgstr "Широкая оценка"
 
 msgctxt "term"
+msgid "Appraisal aura reaches 2m farther"
+msgstr "Аура оценки действует на 2 м дальше"
+
+msgctxt "term"
 msgid "Connoisseur"
 msgstr "Знаток"
+
+msgctxt "term"
+msgid "Rare+ valuables gain 3% more when appraised"
+msgstr "Ценности редкости «редкое» и выше получают при оценке ещё 3%"
 
 msgctxt "term"
 msgid "Market Sense"
 msgstr "Чутьё рынка"
 
 msgctxt "term"
+msgid "Appraised valuables gain 1% more, aura reaches 1m farther"
+msgstr "Оценённые ценности получают ещё 1%, аура действует на 1 м дальше"
+
+msgctxt "term"
 msgid "Golden Eye"
 msgstr "Золотой глаз"
+
+msgctxt "term"
+msgid "appraised valuables gain 5% more, Rare+ another 5%"
+msgstr "оценённые ценности получают ещё 5%, а редкие и выше - ещё 5% сверху"
+
+msgctxt "term"
+msgid "Accountant"
+msgstr "Бухгалтер"
+
+msgctxt "term"
+msgid "Turn every haul into XP and better gear."
+msgstr "Превращайте каждую добычу в опыт и снаряжение получше."
 
 msgctxt "term"
 msgid "Commission"
 msgstr "Комиссия"
 
 msgctxt "term"
+msgid "+4% extraction XP"
+msgstr "+4% опыта за извлечение"
+
+msgctxt "term"
+msgid "+8% level-complete XP"
+msgstr "+8% опыта за прохождение уровня"
+
+msgctxt "term"
+msgid "+5% chance to find gear on extraction"
+msgstr "+5% к шансу найти снаряжение при извлечении"
+
+msgctxt "term"
 msgid "Lucky Find"
 msgstr "Удачная находка"
+
+msgctxt "term"
+msgid "+1 gear luck (better rarities)"
+msgstr "+1 к удаче снаряжения (редкость выше)"
 
 msgctxt "term"
 msgid "Insider Deal"
 msgstr "Сделка для своих"
 
 msgctxt "term"
+msgid "+10% all XP, +3 gear luck"
+msgstr "+10% ко всему опыту, +3 к удаче снаряжения"
+
+msgctxt "term"
+msgid "Scanner"
+msgstr "Сканер"
+
+msgctxt "term"
+msgid "See every valuable in the building."
+msgstr "Увидьте каждую ценность в здании."
+
+msgctxt "term"
 msgid "Deep Scan"
 msgstr "Глубокое сканирование"
+
+msgctxt "term"
+msgid "Appraisal Scan tracks 20% more items"
+msgstr "«Оценочное сканирование» отслеживает на 20% больше предметов"
 
 msgctxt "term"
 msgid "Long Range"
 msgstr "Дальний радиус"
 
 msgctxt "term"
+msgid "Appraisal Scan reaches 15% farther"
+msgstr "«Оценочное сканирование» действует на 15% дальше"
+
+msgctxt "term"
 msgid "Lingering Data"
 msgstr "Долгая память"
+
+msgctxt "term"
+msgid "Appraisal Scan lasts 15% longer"
+msgstr "«Оценочное сканирование» действует на 15% дольше"
 
 msgctxt "term"
 msgid "Rapid Survey"
 msgstr "Быстрый осмотр"
 
 msgctxt "term"
+msgid "Appraisal Scan cooldown 6% shorter"
+msgstr "Перезарядка «Оценочного сканирования» на 6% короче"
+
+msgctxt "term"
 msgid "Omniscience"
 msgstr "Всеведение"
+
+msgctxt "term"
+msgid "Appraisal Scan tracks 50% more items and reaches 25% farther"
+msgstr "«Оценочное сканирование» отслеживает на 50% больше предметов и действует на 25% дальше"
 
 msgctxt "term"
 msgid "Warden"
 msgstr "Страж"
 
 msgctxt "term"
+msgid "Hold Stasis for when a chase reaches the team"
+msgstr "Берегите «Стазис» на случай, когда погоня добежит до команды"
+
+msgctxt "term"
+msgid "The team's early-warning system. Senses enemies through walls and freezes them in place."
+msgstr "Система раннего оповещения команды. Чует врагов сквозь стены и замораживает их на месте."
+
+msgctxt "term"
+msgid "The team's early-warning system"
+msgstr "Система раннего оповещения команды"
+
+msgctxt "term"
 msgid "Sentinel Sense"
 msgstr "Чутьё стража"
+
+msgctxt "term"
+msgid "Your HUD warns you of enemies within 15m, through walls. Enemies hit by your Stasis Field are Marked: they take 20% more damage from everyone for 10s."
+msgstr "HUD предупреждает вас о врагах в пределах 15 м, сквозь стены. Враги, попавшие под ваше «Стазисное поле», получают метку: 10 с они получают на 20% больше урона от всех."
 
 msgctxt "term"
 msgid "Steadfast"
 msgstr "Непоколебимый"
 
 msgctxt "term"
+msgid "+15% max health and 10% less damage taken."
+msgstr "+15% к макс. здоровью, получаемый урон меньше на 10%."
+
+msgctxt "term"
 msgid "Stasis Field"
 msgstr "Стазисное поле"
+
+msgctxt "term"
+msgid "Stun every enemy within 10m for 5s and deal 10 damage."
+msgstr "Оглушает всех врагов в пределах 10 м на 5 с и наносит 10 урона."
+
+msgctxt "term"
+msgid "Watchtower"
+msgstr "Сторожевая башня"
+
+msgctxt "term"
+msgid "See them coming, and hunt the elites."
+msgstr "Замечайте их на подходе и охотьтесь на элиту."
 
 msgctxt "term"
 msgid "Keen Sensors"
 msgstr "Чуткие датчики"
 
 msgctxt "term"
+msgid "Enemy warning reaches 2m farther"
+msgstr "Предупреждение о врагах действует на 2 м дальше"
+
+msgctxt "term"
 msgid "Elite Tracker"
 msgstr "Охотник на элиту"
+
+msgctxt "term"
+msgid "+10% chance elites drop a second item"
+msgstr "+10% к шансу, что с элиты выпадет второй предмет"
 
 msgctxt "term"
 msgid "Hunter's Mark"
 msgstr "Метка охотника"
 
 msgctxt "term"
+msgid "Marked enemies take 3% more damage"
+msgstr "Враги с меткой получают на 3% больше урона"
+
+msgctxt "term"
 msgid "Vigil"
 msgstr "Бдение"
+
+msgctxt "term"
+msgid "Enemy warning 2m farther, Marks last 1s longer"
+msgstr "Предупреждение о врагах - на 2 м дальше, метки держатся на 1 с дольше"
 
 msgctxt "term"
 msgid "All-Seeing"
 msgstr "Всевидящий"
 
 msgctxt "term"
+msgid "enemy warning 15m farther, Marked enemies take 5% more"
+msgstr "предупреждение о врагах - на 15 м дальше, враги с меткой получают ещё на 5% больше"
+
+msgctxt "term"
+msgid "Judgment"
+msgstr "Суд"
+
+msgctxt "term"
+msgid "Marked enemies fall fast, and every kill reloads you."
+msgstr "Враги с меткой падают быстро, а каждое убийство перезаряжает вас."
+
+msgctxt "term"
 msgid "Lasting Mark"
 msgstr "Стойкая метка"
+
+msgctxt "term"
+msgid "Marks last 1s longer"
+msgstr "Метки держатся на 1 с дольше"
 
 msgctxt "term"
 msgid "Reprisal"
 msgstr "Возмездие"
 
 msgctxt "term"
+msgid "Each kill near you takes 1s off Stasis Field's cooldown"
+msgstr "Каждое убийство рядом с вами сокращает перезарядку «Стазисного поля» на 1 с"
+
+msgctxt "term"
 msgid "Condemn"
 msgstr "Осуждение"
+
+msgctxt "term"
+msgid "Marked enemies take 2% more damage"
+msgstr "Враги с меткой получают на 2% больше урона"
 
 msgctxt "term"
 msgid "Warden's Resolve"
 msgstr "Решимость стража"
 
 msgctxt "term"
+msgid "Kills take 1s more off the cooldown, Marks last 1s longer"
+msgstr "Убийства сокращают перезарядку ещё на 1 с, метки держатся на 1 с дольше"
+
+msgctxt "term"
 msgid "Sentence"
 msgstr "Приговор"
+
+msgctxt "term"
+msgid "Marked enemies take 5% more damage for 4s longer"
+msgstr "Враги с меткой получают на 5% больше урона на 4 с дольше"
+
+msgctxt "term"
+msgid "Stasis"
+msgstr "Стазис"
+
+msgctxt "term"
+msgid "Bigger, longer freezes."
+msgstr "Заморозка - шире и дольше."
 
 msgctxt "term"
 msgid "Long Freeze"
 msgstr "Долгая заморозка"
 
 msgctxt "term"
+msgid "Stasis Field lasts 6% longer"
+msgstr "«Стазисное поле» действует на 6% дольше"
+
+msgctxt "term"
+msgid "Stasis Field reaches 12% farther"
+msgstr "«Стазисное поле» действует на 12% дальше"
+
+msgctxt "term"
+msgid "Shatter"
+msgstr "Раскол"
+
+msgctxt "term"
+msgid "Stasis Field deals 15% more damage"
+msgstr "«Стазисное поле» наносит на 15% больше урона"
+
+msgctxt "term"
 msgid "Recharge"
 msgstr "Перезарядка"
+
+msgctxt "term"
+msgid "Stasis Field cooldown 5% shorter"
+msgstr "Перезарядка «Стазисного поля» на 5% короче"
 
 msgctxt "term"
 msgid "Time Lock"
 msgstr "Временной замок"
 
 msgctxt "term"
+msgid "Stasis Field lasts 30% longer and reaches 20% farther"
+msgstr "«Стазисное поле» действует на 30% дольше и на 20% дальше"
+
+msgctxt "term"
+msgid "Morale"
+msgstr "Боевой дух"
+
+msgctxt "term"
+msgid "Build Inspire in safe rooms, spend it on hard pushes"
+msgstr "Копите Воодушевление в безопасных комнатах, тратьте в трудных рывках"
+
+msgctxt "term"
+msgid "Talks the crew through it. Speaking near teammates builds Inspire, making them faster and stronger - but monsters hear every word."
+msgstr "Ведёт команду голосом. Разговор рядом с напарниками копит Воодушевление, которое делает их быстрее и сильнее, - но монстры слышат каждое слово."
+
+msgctxt "term"
+msgid "Talks the crew through it"
+msgstr "Ведёт команду голосом"
+
+msgctxt "term"
+msgid "Inspire"
+msgstr "Воодушевление"
+
+msgctxt "term"
+msgid "Talking near teammates builds Inspire (0-100; no mic: hold the Hum key, slower). Teammates within 8m get up to +8% speed and +10% grip strength, scaled by Inspire."
+msgstr "Разговор рядом с напарниками копит Воодушевление (0-100; без микрофона: удерживайте клавишу гула, это медленнее). Напарники в пределах 8 м получают до +8% к скорости и +10% к силе хвата, в зависимости от Воодушевления."
+
+msgctxt "term"
+msgid "Loud Voice"
+msgstr "Громкий голос"
+
+msgctxt "term"
+msgid "Weakness: while you talk, monsters within 15m come to investigate you. -10% max health."
+msgstr "Слабость: пока вы говорите, монстры в пределах 15 м идут проверить, что там. -10% к макс. здоровью."
+
+msgctxt "term"
+msgid "while you talk, monsters within 15m come to investigate you. -10% max health."
+msgstr "пока вы говорите, монстры в пределах 15 м идут проверить, что там. -10% к макс. здоровью."
+
+msgctxt "term"
+msgid "Teammates within 10m get up to +12% speed, +15% grip and 10% less damage for 8s (full strength at 100 Inspire, half at 0); monsters within 10m flinch. Spends half your Inspire."
+msgstr "Напарники в пределах 10 м получают до +12% к скорости, +15% к хвату и на 10% меньше урона на 8 с (в полную силу при 100 Воодушевления, вполовину при 0); монстры в пределах 10 м вздрагивают. Тратит половину вашего Воодушевления."
+
+msgctxt "term"
+msgid "Anthem"
+msgstr "Гимн"
+
+msgctxt "term"
+msgid "Louder, longer, stronger buffs."
+msgstr "Усиления - громче, дольше, сильнее."
+
+msgctxt "term"
+msgid "Projection"
+msgstr "Подача голоса"
+
+msgctxt "term"
+msgid "Inspire: +1% speed for teammates"
+msgstr "Воодушевление: +1% к скорости напарников"
+
+msgctxt "term"
+msgid "Resonance"
+msgstr "Резонанс"
+
+msgctxt "term"
+msgid "Inspire reaches 1m farther"
+msgstr "Воодушевление действует на 1 м дальше"
+
+msgctxt "term"
+msgid "Encore"
+msgstr "На бис"
+
+msgctxt "term"
+msgid "Rally Cry lasts 10% longer"
+msgstr "«Боевой клич» действует на 10% дольше"
+
+msgctxt "term"
+msgid "Power Chord"
+msgstr "Мощный аккорд"
+
+msgctxt "term"
+msgid "Inspire: +3% grip and +1% speed for teammates"
+msgstr "Воодушевление: +3% к хвату и +1% к скорости напарников"
+
+msgctxt "term"
+msgid "Standing Ovation"
+msgstr "Овация стоя"
+
+msgctxt "term"
+msgid "Rally Cry 30% stronger and reaches 25% farther"
+msgstr "«Боевой клич» сильнее на 30% и действует на 25% дальше"
+
+msgctxt "term"
+msgid "Composure"
+msgstr "Самообладание"
+
+msgctxt "term"
+msgid "Stay quiet and bank the charge."
+msgstr "Молчите и копите заряд."
+
+msgctxt "term"
+msgid "Steady Breath"
+msgstr "Ровное дыхание"
+
+msgctxt "term"
+msgid "Inspire fades 0.5 per second slower"
+msgstr "Воодушевление угасает на 0.5 в секунду медленнее"
+
+msgctxt "term"
+msgid "Inner Monologue"
+msgstr "Внутренний монолог"
+
+msgctxt "term"
+msgid "While silent, Inspire slowly builds by itself (0.6/s, up to 10)"
+msgstr "Пока вы молчите, Воодушевление медленно копится само (0.6/с, до 10)"
+
+msgctxt "term"
+msgid "Measured Words"
+msgstr "Взвешенные слова"
+
+msgctxt "term"
+msgid "Talking builds Inspire 10% faster"
+msgstr "Разговор копит Воодушевление на 10% быстрее"
+
+msgctxt "term"
+msgid "Patience"
+msgstr "Терпение"
+
+msgctxt "term"
+msgid "Rally Cry cooldown 5% shorter"
+msgstr "Перезарядка «Боевого клича» на 5% короче"
+
+msgctxt "term"
+msgid "Calm Before the Storm"
+msgstr "Затишье перед бурей"
+
+msgctxt "term"
+msgid "Rally Cry at 80+ Inspire spends none and refunds 40% of its cooldown"
+msgstr "«Боевой клич» при 80+ Воодушевления ничего не тратит и возвращает 40% своей перезарядки"
+
+msgctxt "term"
+msgid "Lightning Rod"
+msgstr "Громоотвод"
+
+msgctxt "term"
+msgid "Pull the monsters onto yourself."
+msgstr "Стяните монстров на себя."
+
+msgctxt "term"
+msgid "Bellow"
+msgstr "Рёв"
+
+msgctxt "term"
+msgid "Rally Cry makes monsters within 4m more go to you"
+msgstr "«Боевой клич» заставляет идти к вам монстров ещё на 4 м дальше"
+
+msgctxt "term"
+msgid "Thick Skin"
+msgstr "Толстая кожа"
+
+msgctxt "term"
+msgid "Take 4% less damage while a monster is within 10m"
+msgstr "Вы получаете на 4% меньше урона, пока монстр в пределах 10 м"
+
+msgctxt "term"
+msgid "Rallying Pain"
+msgstr "Сплачивающая боль"
+
+msgctxt "term"
+msgid "Each hit you take builds 4 Inspire"
+msgstr "Каждый полученный удар даёт 4 Воодушевления"
+
+msgctxt "term"
+msgid "Stagger"
+msgstr "Ошеломление"
+
+msgctxt "term"
+msgid "Rally Cry's flinch lasts 0.3s longer"
+msgstr "Монстры вздрагивают от «Боевого клича» на 0.3 с дольше"
+
+msgctxt "term"
+msgid "above 50 Inspire you take 15% less damage"
+msgstr "при Воодушевлении выше 50 вы получаете на 15% меньше урона"
+
+msgctxt "term"
+msgid "Adaptive"
+msgstr "Адаптация"
+
+msgctxt "term"
+msgid "Copy the ability your team is missing"
+msgstr "Копируйте ту способность, которой не хватает команде"
+
+msgctxt "term"
+msgid "No ability of its own. Stands near a teammate to learn theirs, then uses a weaker copy."
+msgstr "Своей способности нет. Встаёт рядом с напарником, чтобы изучить его способность, а затем применяет её ослабленную копию."
+
+msgctxt "term"
+msgid "No ability of its own"
+msgstr "Своей способности нет"
+
+msgctxt "term"
+msgid "Copycat"
+msgstr "Подражатель"
+
+msgctxt "term"
+msgid "Stay within 8m of a teammate for 2s to copy their active ability at 60% strength. Can't copy another Mimic. You keep the last copy until you learn a new one."
+msgstr "Побудьте 2 с в пределах 8 м от напарника, чтобы скопировать его активную способность с силой 60%. Другого Мимика скопировать нельзя. Последняя копия остаётся у вас, пока вы не изучите новую."
+
+msgctxt "term"
+msgid "Hollow Kit"
+msgstr "Пустой набор"
+
+msgctxt "term"
+msgid "Weakness: no ability until you've copied one each level, and copies have 20% longer cooldowns."
+msgstr "Слабость: на каждом уровне способности нет, пока вы её не скопируете, а перезарядка копий на 20% дольше."
+
+msgctxt "term"
+msgid "no ability until you've copied one each level, and copies have 20% longer cooldowns."
+msgstr "на каждом уровне способности нет, пока вы её не скопируете, а перезарядка копий на 20% дольше."
+
+msgctxt "term"
+msgid "Mimicry"
+msgstr "Мимикрия"
+
+msgctxt "term"
+msgid "Uses the ability you've copied, at reduced strength."
+msgstr "Применяет скопированную вами способность с пониженной силой."
+
+msgctxt "term"
+msgid "Perfect Copy"
+msgstr "Идеальная копия"
+
+msgctxt "term"
+msgid "A copy closer to the real thing."
+msgstr "Копия, более близкая к оригиналу."
+
+msgctxt "term"
+msgid "Study"
+msgstr "Изучение"
+
+msgctxt "term"
+msgid "Copies 3% stronger"
+msgstr "Копии сильнее на 3%"
+
+msgctxt "term"
+msgid "Mirror Polish"
+msgstr "Зеркальная полировка"
+
+msgctxt "term"
+msgid "Copies last 5% longer"
+msgstr "Копии действуют на 5% дольше"
+
+msgctxt "term"
+msgid "Wider Echo"
+msgstr "Широкое эхо"
+
+msgctxt "term"
+msgid "Copies reach 6% farther"
+msgstr "Копии действуют на 6% дальше"
+
+msgctxt "term"
+msgid "Muscle Memory"
+msgstr "Мышечная память"
+
+msgctxt "term"
+msgid "Copies 3% stronger, cooldown penalty 3% smaller"
+msgstr "Копии сильнее на 3%, штраф к перезарядке меньше на 3%"
+
+msgctxt "term"
+msgid "Doppelganger"
+msgstr "Двойник"
+
+msgctxt "term"
+msgid "copies 15% stronger, and no cooldown penalty"
+msgstr "копии сильнее на 15%, штрафа к перезарядке нет"
+
+msgctxt "term"
+msgid "Dual Memory"
+msgstr "Двойная память"
+
+msgctxt "term"
+msgid "Hold two abilities at once."
+msgstr "Держите две способности сразу."
+
+msgctxt "term"
+msgid "Using a copy refunds 4% of its cooldown"
+msgstr "Применение копии возвращает 4% её перезарядки"
+
+msgctxt "term"
+msgid "Archive"
+msgstr "Архив"
+
+msgctxt "term"
+msgid "Copies gain an extra charge at rank 3"
+msgstr "На ранге 3 копии получают дополнительный заряд"
+
+msgctxt "term"
+msgid "Keep your last two copies; the Swap key switches between them. Copy cooldowns 2% shorter"
+msgstr "Сохраняйте две последние копии; клавиша смены переключает их. Перезарядка копий на 2% короче"
+
+msgctxt "term"
+msgid "Interleave"
+msgstr "Чередование"
+
+msgctxt "term"
+msgid "Using one copy shortens the other's cooldown by 5% (with Twin Souls, which gives them separate cooldowns)"
+msgstr "Применение одной копии сокращает перезарядку другой на 5% (с талантом «Души-близнецы», который даёт им отдельные перезарядки)"
+
+msgctxt "term"
+msgid "Twin Souls"
+msgstr "Души-близнецы"
+
+msgctxt "term"
+msgid "your two copies keep separate cooldowns"
+msgstr "у двух ваших копий отдельные перезарядки"
+
+msgctxt "term"
+msgid "Quick Study"
+msgstr "Быстрая учёба"
+
+msgctxt "term"
+msgid "Learn faster, from farther away."
+msgstr "Учитесь быстрее и с большего расстояния."
+
+msgctxt "term"
+msgid "Keen Observer"
+msgstr "Зоркий наблюдатель"
+
+msgctxt "term"
+msgid "Copy 0.25s faster"
+msgstr "Копирование на 0.25 с быстрее"
+
+msgctxt "term"
+msgid "Long Sight"
+msgstr "Дальнозоркость"
+
+msgctxt "term"
+msgid "Copy from 1.5m farther"
+msgstr "Копирование с расстояния на 1.5 м больше"
+
+msgctxt "term"
+msgid "Adaptable"
+msgstr "Приспособляемость"
+
+msgctxt "term"
+msgid "Copy cooldowns 4% shorter"
+msgstr "Перезарядка копий на 4% короче"
+
+msgctxt "term"
+msgid "Fresh Copy"
+msgstr "Свежая копия"
+
+msgctxt "term"
+msgid "A new copy starts 25% of the way through its cooldown"
+msgstr "Новая копия начинает с 25% пройденной перезарядки"
+
+msgctxt "term"
+msgid "Instant Learner"
+msgstr "Мгновенная учёба"
+
+msgctxt "term"
+msgid "copy instantly, from 4m farther"
+msgstr "копирование мгновенное, с расстояния на 4 м больше"
+
+msgctxt "term"
+msgid "Keep death heads safe and in sight"
+msgstr "Берегите головы погибших и не теряйте их из виду"
+
+msgctxt "term"
+msgid "Death is an inconvenience. Keeps heads intact and brings people back faster and stronger - but never heals anyone."
+msgstr "Смерть - это неудобство. Сохраняет головы целыми и возвращает людей быстрее и сильнее - но никогда никого не лечит."
+
+msgctxt "term"
+msgid "Death is an inconvenience"
+msgstr "Смерть - это неудобство"
+
+msgctxt "term"
 msgid "Pallbearer"
 msgstr "Носильщик гроба"
+
+msgctxt "term"
+msgid "Death heads you carry can't break, and you move 10% faster while carrying one."
+msgstr "Головы погибших, которые вы несёте, не могут разбиться, а вы с головой в руках двигаетесь на 10% быстрее."
 
 msgctxt "term"
 msgid "Last Rites"
 msgstr "Последние почести"
 
 msgctxt "term"
+msgid "Teammates revived near you (10m) come back with 30% more health. Weakness: -10% max health, -5% sprint speed."
+msgstr "Напарники, возрождённые рядом с вами (10 м), возвращаются с запасом здоровья на 30% больше. Слабость: -10% к макс. здоровью, -5% к скорости бега."
+
+msgctxt "term"
+msgid "Teammates revived near you (10m) come back with 30% more health."
+msgstr "Напарники, возрождённые рядом с вами (10 м), возвращаются с запасом здоровья на 30% больше."
+
+msgctxt "term"
+msgid "-10% max health, -5% sprint speed."
+msgstr "-10% к макс. здоровью, -5% к скорости бега."
+
+msgctxt "term"
+msgid "Revive a teammate whose death head you can see within 15m, at 25% health (30% with Last Rites)."
+msgstr "Возрождает напарника, чью голову вы видите в пределах 15 м, с 25% здоровья (30% с «Последними почестями»)."
+
+msgctxt "term"
+msgid "Gravekeeper"
+msgstr "Смотритель кладбища"
+
+msgctxt "term"
+msgid "Nobody's head gets left behind."
+msgstr "Ничья голова не останется брошенной."
+
+msgctxt "term"
 msgid "Steady Hands"
 msgstr "Твёрдые руки"
+
+msgctxt "term"
+msgid "+3% speed while carrying a head"
+msgstr "+3% к скорости с головой в руках"
 
 msgctxt "term"
 msgid "Grave Sense"
 msgstr "Могильное чутьё"
 
 msgctxt "term"
+msgid "See where dead teammates' heads are, up to 15m away per rank"
+msgstr "Вы видите, где лежат головы погибших напарников, на расстоянии до 15 м за ранг"
+
+msgctxt "term"
 msgid "Sure Grip"
 msgstr "Надёжный хват"
+
+msgctxt "term"
+msgid "+8% grab strength on heads"
+msgstr "+8% к силе хвата для голов"
 
 msgctxt "term"
 msgid "Shroud"
 msgstr "Саван"
 
 msgctxt "term"
+msgid "Take 4% less damage while carrying a head"
+msgstr "Вы получаете на 4% меньше урона, пока несёте голову"
+
+msgctxt "term"
 msgid "Ferryman"
 msgstr "Паромщик"
+
+msgctxt "term"
+msgid "Reboot reaches 50% farther and costs 30% less cooldown"
+msgstr "«Перезагрузка» действует на 50% дальше, а её перезарядка на 30% короче"
+
+msgctxt "term"
+msgid "Resurrectionist"
+msgstr "Воскреситель"
+
+msgctxt "term"
+msgid "Faster, healthier comebacks."
+msgstr "Возвращения - быстрее и здоровее."
 
 msgctxt "term"
 msgid "Defibrillate"
 msgstr "Дефибрилляция"
 
 msgctxt "term"
+msgid "Revived teammates come back with 4% more health"
+msgstr "Возрождённые напарники возвращаются с запасом здоровья на 4% больше"
+
+msgctxt "term"
 msgid "Wide Rites"
 msgstr "Широкие почести"
+
+msgctxt "term"
+msgid "Last Rites works from 2m farther"
+msgstr "«Последние почести» действуют на 2 м дальше"
+
+msgctxt "term"
+msgid "Reboot reaches 10% farther"
+msgstr "«Перезагрузка» действует на 10% дальше"
+
+msgctxt "term"
+msgid "Reboot cooldown 6% shorter"
+msgstr "Перезарядка «Перезагрузки» на 6% короче"
 
 msgctxt "term"
 msgid "Mass Resurrection"
 msgstr "Массовое воскрешение"
 
 msgctxt "term"
+msgid "Reboot revives every head in range"
+msgstr "«Перезагрузка» возрождает все головы в радиусе действия"
+
+msgctxt "term"
+msgid "Wake"
+msgstr "Пробуждение"
+
+msgctxt "term"
+msgid "The revived come back angry (no healing involved)."
+msgstr "Возрождённые возвращаются злыми (без всякого лечения)."
+
+msgctxt "term"
 msgid "Adrenal Wake"
 msgstr "Адреналиновое пробуждение"
+
+msgctxt "term"
+msgid "Revived teammates take 3% less damage for 10s"
+msgstr "Возрождённые напарники 10 с получают на 3% меньше урона"
 
 msgctxt "term"
 msgid "Fresh Legs"
 msgstr "Свежие ноги"
 
 msgctxt "term"
+msgid "Revived teammates get +4% speed for 10s"
+msgstr "Возрождённые напарники получают +4% к скорости на 10 с"
+
+msgctxt "term"
 msgid "Grace Period"
 msgstr "Отсрочка"
 
 msgctxt "term"
+msgid "Revived teammates' buffs last 3s longer"
+msgstr "Усиления возрождённых напарников длятся на 3 с дольше"
+
+msgctxt "term"
+msgid "+5% speed for 8s after any revive near you"
+msgstr "+5% к скорости на 8 с после любого возрождения рядом с вами"
+
+msgctxt "term"
 msgid "Undying Crew"
 msgstr "Бессмертная команда"
+
+msgctxt "term"
+msgid "revived teammates take 15% less damage, for 10s longer"
+msgstr "возрождённые напарники получают на 15% меньше урона, на 10 с дольше"
+
+msgctxt "term"
+msgid "Fill the cart before sending it off"
+msgstr "Наполните тележку, прежде чем отправлять её"
+
+msgctxt "term"
+msgid "Lives behind a cart. Faster carts, safer cargo, and a cart that follows you around."
+msgstr "Живёт за тележкой. Тележки быстрее, груз целее, а одна тележка ездит за вами сама."
+
+msgctxt "term"
+msgid "Lives behind a cart"
+msgstr "Живёт за тележкой"
+
+msgctxt "term"
+msgid "Teamster"
+msgstr "Возчик"
+
+msgctxt "term"
+msgid "Carts you push move 20% faster, and valuables in a cart near you (6m) lose 25% less value when damaged."
+msgstr "Тележки, которые вы толкаете, едут на 20% быстрее, а ценности в тележке рядом с вами (6 м) теряют на 25% меньше стоимости при повреждении."
+
+msgctxt "term"
+msgid "Loyal Cart"
+msgstr "Верная тележка"
+
+msgctxt "term"
+msgid "The last cart you pushed follows you hands-free while you're within 8m of it, steering around ledges and obstacles. Holding it pauses it; it carries on when let go. Weakness: -15% throw strength, -10% max stamina."
+msgstr "Последняя тележка, которую вы толкали, сама едет за вами, пока вы в пределах 8 м от неё, объезжая уступы и препятствия. Пока вы её держите, она стоит; отпустите - поедет дальше. Слабость: -15% к силе броска, -10% к макс. выносливости."
+
+msgctxt "term"
+msgid "The last cart you pushed follows you hands-free while you're within 8m of it, steering around ledges and obstacles. Holding it pauses it; it carries on when let go."
+msgstr "Последняя тележка, которую вы толкали, сама едет за вами, пока вы в пределах 8 м от неё, объезжая уступы и препятствия. Пока вы её держите, она стоит; отпустите - поедет дальше."
+
+msgctxt "term"
+msgid "-15% throw strength, -10% max stamina."
+msgstr "-15% к силе броска, -10% к макс. выносливости."
+
+msgctxt "term"
+msgid "Cart Overdrive"
+msgstr "Форсаж тележки"
+
+msgctxt "term"
+msgid "The nearest cart within 6m drives itself safely to the nearest extraction point (up to 40s) and parks there. Won't launch without a safe route."
+msgstr "Ближайшая тележка в пределах 6 м сама безопасно едет к ближайшей точке извлечения (до 40 с) и останавливается там. Без безопасного маршрута не поедет."
+
+msgctxt "term"
+msgid "Faster carts that stick close."
+msgstr "Тележки быстрее и держатся рядом."
+
+msgctxt "term"
+msgid "Greased Wheels"
+msgstr "Смазанные колёса"
+
+msgctxt "term"
+msgid "Carts you push +3% speed"
+msgstr "Тележки, которые вы толкаете: +3% к скорости"
+
+msgctxt "term"
+msgid "Long Leash"
+msgstr "Длинный поводок"
+
+msgctxt "term"
+msgid "Loyal Cart follows from 1m farther"
+msgstr "«Верная тележка» следует за вами с расстояния на 1 м больше"
+
+msgctxt "term"
+msgid "Tight Turns"
+msgstr "Крутые повороты"
+
+msgctxt "term"
+msgid "Loyal Cart keeps up 10% better"
+msgstr "«Верная тележка» поспевает за вами на 10% лучше"
+
+msgctxt "term"
+msgid "Momentum Cart"
+msgstr "Тележка с разгоном"
+
+msgctxt "term"
+msgid "Freight Train"
+msgstr "Товарный поезд"
+
+msgctxt "term"
+msgid "carts you push +20% speed, and your carts stun monsters they hit for 1.5s"
+msgstr "тележки, которые вы толкаете: +20% к скорости, а ваши тележки оглушают монстров, в которых врезаются, на 1.5 с"
+
+msgctxt "term"
+msgid "Padding"
+msgstr "Упаковка"
+
+msgctxt "term"
+msgid "Cargo arrives in one piece."
+msgstr "Груз доезжает в целости."
+
+msgctxt "term"
+msgid "Packing Straw"
+msgstr "Упаковочная солома"
+
+msgctxt "term"
+msgid "Cargo near you loses 4% less value"
+msgstr "Груз рядом с вами теряет на 4% меньше стоимости"
+
+msgctxt "term"
+msgid "Sheltered"
+msgstr "Укрытие"
+
+msgctxt "term"
+msgid "Take 3% less damage while within 4m of a cart"
+msgstr "Вы получаете на 3% меньше урона в пределах 4 м от тележки"
+
+msgctxt "term"
+msgid "When cargo in your cart breaks, get 5% of its value as Scrap"
+msgstr "Когда груз в вашей тележке разбивается, вы получаете 5% его стоимости ломом"
+
+msgctxt "term"
+msgid "Bubble Wrap"
+msgstr "Пузырчатая плёнка"
+
+msgctxt "term"
+msgid "Armored Cart"
+msgstr "Бронированная тележка"
+
+msgctxt "term"
+msgid "cargo near you loses 30% less value"
+msgstr "груз рядом с вами теряет на 30% меньше стоимости"
+
+msgctxt "term"
+msgid "Autopilot"
+msgstr "Автопилот"
+
+msgctxt "term"
+msgid "A better Overdrive."
+msgstr "Форсаж получше."
+
+msgctxt "term"
+msgid "Tuned Motor"
+msgstr "Настроенный мотор"
+
+msgctxt "term"
+msgid "Overdrive drives 5% faster"
+msgstr "«Форсаж» везёт тележку на 5% быстрее"
+
+msgctxt "term"
+msgid "Quick Start"
+msgstr "Быстрый старт"
+
+msgctxt "term"
+msgid "Wide Hitch"
+msgstr "Широкая сцепка"
+
+msgctxt "term"
+msgid "Overdrive grabs a cart 15% farther away"
+msgstr "«Форсаж» захватывает тележку на 15% дальше"
+
+msgctxt "term"
+msgid "Convoy"
+msgstr "Конвой"
+
+msgctxt "term"
+msgid "Overdrive drives every cart in range, and holds 2 charges"
+msgstr "«Форсаж» ведёт все тележки в радиусе действия и хранит зарядов: 2"
+
+msgctxt "term"
+msgid "Manipulation"
+msgstr "Манипуляция"
+
+msgctxt "term"
+msgid "Bubble monsters, not your own carry"
+msgstr "Ловите в пузырь монстров, а не свою ношу"
+
+msgctxt "term"
+msgid "Bends the rules of falling. Lighter loads, longer throws, and valuables that float down instead of smashing."
+msgstr "Нарушает законы падения. Ноша легче, броски дальше, а ценности плавно опускаются, вместо того чтобы разбиваться."
+
+msgctxt "term"
+msgid "Bends the rules of falling"
+msgstr "Нарушает законы падения"
+
+msgctxt "term"
+msgid "Mass Dampening"
+msgstr "Гашение массы"
+
+msgctxt "term"
+msgid "Objects you hold are 25% lighter, and you throw 15% farther."
+msgstr "Предметы у вас в руках на 25% легче, а бросаете вы на 15% дальше."
+
+msgctxt "term"
+msgid "Soft Landing"
+msgstr "Мягкая посадка"
+
+msgctxt "term"
+msgid "Valuables you let go of fall slowly for 2s and take 30% less impact damage. Weakness: -15% max health."
+msgstr "Ценности, которые вы отпустили, 2 с падают медленно и получают на 30% меньше урона от удара. Слабость: -15% к макс. здоровью."
+
+msgctxt "term"
+msgid "Valuables you let go of fall slowly for 2s and take 30% less impact damage."
+msgstr "Ценности, которые вы отпустили, 2 с падают медленно и получают на 30% меньше урона от удара."
+
+msgctxt "term"
+msgid "-15% max health."
+msgstr "-15% к макс. здоровью."
+
+msgctxt "term"
+msgid "Zero-G Field"
+msgstr "Поле невесомости"
+
+msgctxt "term"
+msgid "A 5m bubble for 6s: objects inside float, and monsters inside float helplessly."
+msgstr "Пузырь на 5 м на 6 с: предметы внутри парят, а монстры внутри беспомощно висят в воздухе."
+
+msgctxt "term"
+msgid "Mass Control"
+msgstr "Контроль массы"
+
+msgctxt "term"
+msgid "Carry anything."
+msgstr "Носите что угодно."
+
+msgctxt "term"
+msgid "Lighten"
+msgstr "Облегчение"
+
+msgctxt "term"
+msgid "Held objects 3% lighter"
+msgstr "Предметы в руках на 3% легче"
+
+msgctxt "term"
+msgid "Stabilizer"
+msgstr "Стабилизатор"
+
+msgctxt "term"
+msgid "Held objects swing 10% less"
+msgstr "Предметы в руках раскачиваются на 10% меньше"
+
+msgctxt "term"
+msgid "Featherweight"
+msgstr "Вес пера"
+
+msgctxt "term"
+msgid "Inertial Lock"
+msgstr "Инерционный замок"
+
+msgctxt "term"
+msgid "Held valuables take 5% less impact damage"
+msgstr "Ценности в руках получают на 5% меньше урона от удара"
+
+msgctxt "term"
+msgid "Antigravity Grip"
+msgstr "Антигравитационный хват"
+
+msgctxt "term"
+msgid "held objects 15% lighter and take 20% less damage"
+msgstr "предметы в руках на 15% легче и получают на 20% меньше урона"
+
+msgctxt "term"
+msgid "Trajectory"
+msgstr "Траектория"
+
+msgctxt "term"
+msgid "Throw it farther, land it softer."
+msgstr "Бросайте дальше, приземляйте мягче."
+
+msgctxt "term"
+msgid "Arc"
+msgstr "Дуга"
+
+msgctxt "term"
+msgid "Throw 3% farther"
+msgstr "Бросок на 3% дальше"
+
+msgctxt "term"
+msgid "Slow Fall"
+msgstr "Медленное падение"
+
+msgctxt "term"
+msgid "Soft Landing lasts 0.5s longer"
+msgstr "«Мягкая посадка» действует на 0.5 с дольше"
+
+msgctxt "term"
+msgid "Cushion"
+msgstr "Подушка"
+
+msgctxt "term"
+msgid "Soft Landing: 5% less impact damage"
+msgstr "«Мягкая посадка»: на 5% меньше урона от удара"
+
+msgctxt "term"
+msgid "Ballistics"
+msgstr "Баллистика"
+
+msgctxt "term"
+msgid "Thrown objects that hit a monster deal 3 extra damage"
+msgstr "Брошенные предметы, попавшие в монстра, наносят 3 дополнительного урона"
+
+msgctxt "term"
+msgid "Orbital"
+msgstr "Орбита"
+
+msgctxt "term"
+msgid "throw 20% farther, and thrown objects stun monsters for 1s"
+msgstr "бросок на 20% дальше, а брошенные предметы оглушают монстров на 1 с"
+
+msgctxt "term"
+msgid "Field Theory"
+msgstr "Теория поля"
+
+msgctxt "term"
+msgid "A bigger, longer field."
+msgstr "Поле - больше и дольше."
+
+msgctxt "term"
+msgid "Zero-G Field lasts 6% longer"
+msgstr "«Поле невесомости» действует на 6% дольше"
+
+msgctxt "term"
+msgid "Expand"
+msgstr "Расширение"
+
+msgctxt "term"
+msgid "Zero-G Field reaches 8% farther"
+msgstr "«Поле невесомости» действует на 8% дальше"
+
+msgctxt "term"
+msgid "Recalibrate"
+msgstr "Перекалибровка"
+
+msgctxt "term"
+msgid "Zero-G Field cooldown 5% shorter"
+msgstr "Перезарядка «Поля невесомости» на 5% короче"
+
+msgctxt "term"
+msgid "Event Horizon"
+msgstr "Горизонт событий"
+
+msgctxt "term"
+msgid "Monsters in the field take 10% more damage"
+msgstr "Монстры в поле получают на 10% больше урона"
+
+msgctxt "term"
+msgid "Singularity"
+msgstr "Сингулярность"
+
+msgctxt "term"
+msgid "the field pulls things toward its centre, and holds 2 charges"
+msgstr "поле притягивает всё к своему центру и хранит зарядов: 2"
+
+msgctxt "term"
+msgid "Misdirection"
+msgstr "Отвлечение"
+
+msgctxt "term"
+msgid "Drop the beacon before a chase, not during one"
+msgstr "Ставьте маяк до погони, а не во время неё"
+
+msgctxt "term"
+msgid "Never fights fair - never fights at all. Throws its voice, fakes its footsteps and leaves monsters chasing nothing."
+msgstr "Не дерётся честно - вообще не дерётся. Перебрасывает голос, подделывает шаги и оставляет монстров гоняться за пустотой."
+
+msgctxt "term"
+msgid "Never fights fair - never fights at all"
+msgstr "Не дерётся честно - вообще не дерётся"
+
+msgctxt "term"
+msgid "Ventriloquism"
+msgstr "Чревовещание"
+
+msgctxt "term"
+msgid "Objects you throw make a lure noise where they land: monsters within 12m go to investigate it."
+msgstr "Брошенные вами предметы издают шум-приманку там, где упали: монстры в пределах 12 м идут его проверить."
+
+msgctxt "term"
+msgid "False Steps"
+msgstr "Ложные шаги"
+
+msgctxt "term"
+msgid "While a monster is within 10m, every 8s your footsteps are faked 10m behind you and it goes there instead. Weakness: take 10% more damage."
+msgstr "Пока монстр в пределах 10 м, каждые 8 с ваши шаги подделываются в 10 м позади вас, и он идёт туда. Слабость: вы получаете на 10% больше урона."
+
+msgctxt "term"
+msgid "While a monster is within 10m, every 8s your footsteps are faked 10m behind you and it goes there instead."
+msgstr "Пока монстр в пределах 10 м, каждые 8 с ваши шаги подделываются в 10 м позади вас, и он идёт туда."
+
+msgctxt "term"
+msgid "take 10% more damage."
+msgstr "вы получаете на 10% больше урона."
+
+msgctxt "term"
+msgid "Decoy Beacon"
+msgstr "Маяк-приманка"
+
+msgctxt "term"
+msgid "Drop a beacon that makes noise for 10s; monsters within 18m go to it."
+msgstr "Ставит маяк, который шумит 10 с; монстры в пределах 18 м идут к нему."
+
+msgctxt "term"
+msgid "Louder, farther lures."
+msgstr "Приманки - громче и дальше."
+
+msgctxt "term"
+msgid "Project"
+msgstr "Посыл"
+
+msgctxt "term"
+msgid "Lures reach 1m farther"
+msgstr "Приманки действуют на 1 м дальше"
+
+msgctxt "term"
+msgid "Distant Echo"
+msgstr "Далёкое эхо"
+
+msgctxt "term"
+msgid "Quick Wit"
+msgstr "Находчивость"
+
+msgctxt "term"
+msgid "Lures can trigger 0.5s more often"
+msgstr "Приманки могут срабатывать на 0.5 с чаще"
+
+msgctxt "term"
+msgid "Startle"
+msgstr "Испуг"
+
+msgctxt "term"
+msgid "Lures stun monsters within 2m of the landing spot for 0.4s"
+msgstr "Приманки оглушают монстров в пределах 2 м от места падения на 0.4 с"
+
+msgctxt "term"
+msgid "Grand Illusion"
+msgstr "Великая иллюзия"
+
+msgctxt "term"
+msgid "lures reach 8m farther, and every lure also fakes your footsteps"
+msgstr "приманки действуют на 8 м дальше, и каждая приманка ещё и подделывает ваши шаги"
+
+msgctxt "term"
+msgid "Footwork"
+msgstr "Работа ног"
+
+msgctxt "term"
+msgid "Fake steps, real escapes."
+msgstr "Шаги ложные, побеги настоящие."
+
+msgctxt "term"
+msgid "Restless"
+msgstr "Непоседа"
+
+msgctxt "term"
+msgid "Fake steps 0.6s more often"
+msgstr "Ложные шаги на 0.6 с чаще"
+
+msgctxt "term"
+msgid "Far Steps"
+msgstr "Дальние шаги"
+
+msgctxt "term"
+msgid "Fake steps land 2m farther away"
+msgstr "Ложные шаги звучат на 2 м дальше"
+
+msgctxt "term"
+msgid "+4% sprint speed for 3s after fake steps"
+msgstr "+4% к скорости бега на 3 с после ложных шагов"
+
+msgctxt "term"
+msgid "Sidestep"
+msgstr "Шаг в сторону"
+
+msgctxt "term"
+msgid "Fake steps fool monsters 2m farther away"
+msgstr "Ложные шаги обманывают монстров на 2 м дальше"
+
+msgctxt "term"
+msgid "Doppel Step"
+msgstr "Двойной шаг"
+
+msgctxt "term"
+msgid "fake steps 2s more often and fool monsters 5m farther away"
+msgstr "ложные шаги на 2 с чаще и обманывают монстров на 5 м дальше"
+
+msgctxt "term"
+msgid "Beacon"
+msgstr "Маяк"
+
+msgctxt "term"
+msgid "A better decoy."
+msgstr "Приманка получше."
+
+msgctxt "term"
+msgid "Long Battery"
+msgstr "Ёмкая батарея"
+
+msgctxt "term"
+msgid "Decoy Beacon lasts 6% longer"
+msgstr "«Маяк-приманка» действует на 6% дольше"
+
+msgctxt "term"
+msgid "Decoy Beacon reaches 8% farther"
+msgstr "«Маяк-приманка» действует на 8% дальше"
+
+msgctxt "term"
+msgid "Quick Deploy"
+msgstr "Быстрая установка"
+
+msgctxt "term"
+msgid "Decoy Beacon cooldown 5% shorter"
+msgstr "Перезарядка «Маяка-приманки» на 5% короче"
+
+msgctxt "term"
+msgid "Bang"
+msgstr "Хлопок"
+
+msgctxt "term"
+msgid "When the beacon ends, monsters within 4m are stunned 0.5s"
+msgstr "Когда маяк гаснет, монстры в пределах 4 м оглушаются на 0.5 с"
+
+msgctxt "term"
+msgid "Twin Beacons"
+msgstr "Парные маяки"
+
+msgctxt "term"
+msgid "2 charges, and beacons last 20% longer"
+msgstr "зарядов: 2, а маяки действуют на 20% дольше"
+
+msgctxt "term"
+msgid "Explosives"
+msgstr "Взрывчатка"
+
+msgctxt "term"
+msgid "Drop the charge and step back toward the team"
+msgstr "Поставьте заряд и отойдите к команде"
+
+msgctxt "term"
+msgid "Turns every bang into a better bang: bigger, deadlier explosions that spare the crew and the loot."
+msgstr "Делает каждый взрыв лучше: взрывы мощнее и смертоноснее, но щадят команду и добычу."
+
+msgctxt "term"
+msgid "Turns every bang into a better bang"
+msgstr "Делает каждый взрыв лучше"
+
+msgctxt "term"
+msgid "Blast Expert"
+msgstr "Знаток взрывов"
+
+msgctxt "term"
+msgid "Explosions within 12m of you hit monsters 40% harder and are 20% bigger."
+msgstr "Взрывы в пределах 12 м от вас бьют по монстрам на 40% сильнее, а их радиус на 20% больше."
+
+msgctxt "term"
+msgid "Controlled Burn"
+msgstr "Контролируемый подрыв"
+
+msgctxt "term"
+msgid "Those explosions deal 50% less damage to players and to valuables. Weakness: -10% max health."
+msgstr "Эти взрывы наносят на 50% меньше урона игрокам и ценностям. Слабость: -10% к макс. здоровью."
+
+msgctxt "term"
+msgid "Those explosions deal 50% less damage to players and to valuables."
+msgstr "Эти взрывы наносят на 50% меньше урона игрокам и ценностям."
+
+msgctxt "term"
+msgid "-10% max health."
+msgstr "-10% к макс. здоровью."
+
+msgctxt "term"
+msgid "Breach Charge"
+msgstr "Пробивной заряд"
+
+msgctxt "term"
+msgid "Place a charge at your feet: 2s later it hits monsters within 4m for 30 damage and stuns them for 4s. It never hurts players or loot."
+msgstr "Ставит заряд у ваших ног: через 2 с он наносит монстрам в пределах 4 м 30 урона и оглушает их на 4 с. Игрокам и добыче он не вредит никогда."
+
+msgctxt "term"
+msgid "Shaped Charges"
+msgstr "Кумулятивные заряды"
+
+msgctxt "term"
+msgid "Bigger, deadlier blasts."
+msgstr "Взрывы - мощнее и смертоноснее."
+
+msgctxt "term"
+msgid "Hot Mix"
+msgstr "Горячая смесь"
+
+msgctxt "term"
+msgid "Explosions near you +6% damage to monsters"
+msgstr "Взрывы рядом с вами: +6% урона по монстрам"
+
+msgctxt "term"
+msgid "Wide Blast"
+msgstr "Широкий взрыв"
+
+msgctxt "term"
+msgid "Explosions near you 4% bigger"
+msgstr "Взрывы рядом с вами на 4% больше"
+
+msgctxt "term"
+msgid "Explosions near you stun monsters 0.4s"
+msgstr "Взрывы рядом с вами оглушают монстров на 0.4 с"
+
+msgctxt "term"
+msgid "Big Bang"
+msgstr "Большой взрыв"
+
+msgctxt "term"
+msgid "explosions near you +40% damage and 20% bigger"
+msgstr "взрывы рядом с вами: +40% урона и на 20% больше"
+
+msgctxt "term"
+msgid "Safety First"
+msgstr "Безопасность прежде всего"
+
+msgctxt "term"
+msgid "Nobody gets hurt but the monsters."
+msgstr "Не страдает никто, кроме монстров."
+
+msgctxt "term"
+msgid "Careful"
+msgstr "Аккуратность"
+
+msgctxt "term"
+msgid "Explosions near you hurt players 6% less"
+msgstr "Взрывы рядом с вами вредят игрокам на 6% меньше"
+
+msgctxt "term"
+msgid "Loot Shield"
+msgstr "Щит для добычи"
+
+msgctxt "term"
+msgid "Explosions near you damage valuables 8% less"
+msgstr "Взрывы рядом с вами повреждают ценности на 8% меньше"
+
+msgctxt "term"
+msgid "Range Safety"
+msgstr "Безопасный радиус"
+
+msgctxt "term"
+msgid "Your explosion bonuses reach 2m farther"
+msgstr "Ваши бонусы к взрывам действуют на 2 м дальше"
+
+msgctxt "term"
+msgid "Fireproof"
+msgstr "Огнеупорность"
+
+msgctxt "term"
+msgid "Explosions near you hurt players and valuables 5% less"
+msgstr "Взрывы рядом с вами вредят игрокам и ценностям на 5% меньше"
 
 msgctxt "term"
 msgid "Bulk Buyer"
@@ -11661,12 +14217,20 @@ msgid "Striker Module"
 msgstr "Ударный модуль"
 
 msgctxt "term"
+msgid "Striker Module of the Medic"
+msgstr "Ударный модуль медика"
+
+msgctxt "term"
 msgid "Striker Module of the Hauler"
 msgstr "Ударный модуль носильщика"
 
 msgctxt "term"
 msgid "Field Medic Striker Module"
 msgstr "Ударный модуль полевого медика"
+
+msgctxt "term"
+msgid "Field Medic Striker Module of the Medic"
+msgstr "Ударный модуль полевого медика медика"
 
 msgctxt "term"
 msgid "Field Medic Striker Module of the Hauler"
@@ -11677,6 +14241,10 @@ msgid "Lucky Striker Module"
 msgstr "Удачливый ударный модуль"
 
 msgctxt "term"
+msgid "Lucky Striker Module of the Medic"
+msgstr "Удачливый ударный модуль медика"
+
+msgctxt "term"
 msgid "Lucky Striker Module of the Hauler"
 msgstr "Удачливый ударный модуль носильщика"
 
@@ -11685,12 +14253,44 @@ msgid "Second Wind Striker Module"
 msgstr "Ударный модуль второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Striker Module of the Medic"
+msgstr "Ударный модуль второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Striker Module of the Hauler"
 msgstr "Ударный модуль второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Striker Module"
+msgstr "Крепостной ударный модуль"
+
+msgctxt "term"
+msgid "Bulwark Striker Module of the Medic"
+msgstr "Крепостной ударный модуль медика"
+
+msgctxt "term"
+msgid "Bulwark Striker Module of the Hauler"
+msgstr "Крепостной ударный модуль носильщика"
+
+msgctxt "term"
+msgid "Momentum Striker Module"
+msgstr "Инерционный ударный модуль"
+
+msgctxt "term"
+msgid "Momentum Striker Module of the Medic"
+msgstr "Инерционный ударный модуль медика"
+
+msgctxt "term"
+msgid "Momentum Striker Module of the Hauler"
+msgstr "Инерционный ударный модуль носильщика"
+
+msgctxt "term"
 msgid "Impact Gauntlet"
 msgstr "Боевая перчатка"
+
+msgctxt "term"
+msgid "Impact Gauntlet of the Medic"
+msgstr "Боевая перчатка медика"
 
 msgctxt "term"
 msgid "Impact Gauntlet of the Hauler"
@@ -11701,12 +14301,20 @@ msgid "Field Medic Impact Gauntlet"
 msgstr "Боевая перчатка полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Impact Gauntlet of the Medic"
+msgstr "Боевая перчатка полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Impact Gauntlet of the Hauler"
 msgstr "Боевая перчатка полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Impact Gauntlet"
 msgstr "Удачливая боевая перчатка"
+
+msgctxt "term"
+msgid "Lucky Impact Gauntlet of the Medic"
+msgstr "Удачливая боевая перчатка медика"
 
 msgctxt "term"
 msgid "Lucky Impact Gauntlet of the Hauler"
@@ -11717,12 +14325,44 @@ msgid "Second Wind Impact Gauntlet"
 msgstr "Боевая перчатка второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Impact Gauntlet of the Medic"
+msgstr "Боевая перчатка второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Impact Gauntlet of the Hauler"
 msgstr "Боевая перчатка второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Impact Gauntlet"
+msgstr "Крепостная боевая перчатка"
+
+msgctxt "term"
+msgid "Bulwark Impact Gauntlet of the Medic"
+msgstr "Крепостная боевая перчатка медика"
+
+msgctxt "term"
+msgid "Bulwark Impact Gauntlet of the Hauler"
+msgstr "Крепостная боевая перчатка носильщика"
+
+msgctxt "term"
+msgid "Momentum Impact Gauntlet"
+msgstr "Инерционная боевая перчатка"
+
+msgctxt "term"
+msgid "Momentum Impact Gauntlet of the Medic"
+msgstr "Инерционная боевая перчатка медика"
+
+msgctxt "term"
+msgid "Momentum Impact Gauntlet of the Hauler"
+msgstr "Инерционная боевая перчатка носильщика"
+
+msgctxt "term"
 msgid "Breaker Arm"
 msgstr "Рука-крушитель"
+
+msgctxt "term"
+msgid "Breaker Arm of the Medic"
+msgstr "Рука-крушитель медика"
 
 msgctxt "term"
 msgid "Breaker Arm of the Hauler"
@@ -11733,12 +14373,20 @@ msgid "Field Medic Breaker Arm"
 msgstr "Рука-крушитель полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Breaker Arm of the Medic"
+msgstr "Рука-крушитель полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Breaker Arm of the Hauler"
 msgstr "Рука-крушитель полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Breaker Arm"
 msgstr "Удачливая рука-крушитель"
+
+msgctxt "term"
+msgid "Lucky Breaker Arm of the Medic"
+msgstr "Удачливая рука-крушитель медика"
 
 msgctxt "term"
 msgid "Lucky Breaker Arm of the Hauler"
@@ -11749,12 +14397,44 @@ msgid "Second Wind Breaker Arm"
 msgstr "Рука-крушитель второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Breaker Arm of the Medic"
+msgstr "Рука-крушитель второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Breaker Arm of the Hauler"
 msgstr "Рука-крушитель второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Breaker Arm"
+msgstr "Крепостная рука-крушитель"
+
+msgctxt "term"
+msgid "Bulwark Breaker Arm of the Medic"
+msgstr "Крепостная рука-крушитель медика"
+
+msgctxt "term"
+msgid "Bulwark Breaker Arm of the Hauler"
+msgstr "Крепостная рука-крушитель носильщика"
+
+msgctxt "term"
+msgid "Momentum Breaker Arm"
+msgstr "Инерционная рука-крушитель"
+
+msgctxt "term"
+msgid "Momentum Breaker Arm of the Medic"
+msgstr "Инерционная рука-крушитель медика"
+
+msgctxt "term"
+msgid "Momentum Breaker Arm of the Hauler"
+msgstr "Инерционная рука-крушитель носильщика"
+
+msgctxt "term"
 msgid "Ram Fist"
 msgstr "Кулак-таран"
+
+msgctxt "term"
+msgid "Ram Fist of the Medic"
+msgstr "Кулак-таран медика"
 
 msgctxt "term"
 msgid "Ram Fist of the Hauler"
@@ -11765,12 +14445,20 @@ msgid "Field Medic Ram Fist"
 msgstr "Кулак-таран полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Ram Fist of the Medic"
+msgstr "Кулак-таран полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Ram Fist of the Hauler"
 msgstr "Кулак-таран полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Ram Fist"
 msgstr "Удачливый кулак-таран"
+
+msgctxt "term"
+msgid "Lucky Ram Fist of the Medic"
+msgstr "Удачливый кулак-таран медика"
 
 msgctxt "term"
 msgid "Lucky Ram Fist of the Hauler"
@@ -11781,12 +14469,44 @@ msgid "Second Wind Ram Fist"
 msgstr "Кулак-таран второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Ram Fist of the Medic"
+msgstr "Кулак-таран второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Ram Fist of the Hauler"
 msgstr "Кулак-таран второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Ram Fist"
+msgstr "Крепостной кулак-таран"
+
+msgctxt "term"
+msgid "Bulwark Ram Fist of the Medic"
+msgstr "Крепостной кулак-таран медика"
+
+msgctxt "term"
+msgid "Bulwark Ram Fist of the Hauler"
+msgstr "Крепостной кулак-таран носильщика"
+
+msgctxt "term"
+msgid "Momentum Ram Fist"
+msgstr "Инерционный кулак-таран"
+
+msgctxt "term"
+msgid "Momentum Ram Fist of the Medic"
+msgstr "Инерционный кулак-таран медика"
+
+msgctxt "term"
+msgid "Momentum Ram Fist of the Hauler"
+msgstr "Инерционный кулак-таран носильщика"
+
+msgctxt "term"
 msgid "Scrap Plating"
 msgstr "Броня из лома"
+
+msgctxt "term"
+msgid "Scrap Plating of the Medic"
+msgstr "Броня из лома медика"
 
 msgctxt "term"
 msgid "Scrap Plating of the Hauler"
@@ -11797,12 +14517,20 @@ msgid "Field Medic Scrap Plating"
 msgstr "Броня из лома полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Scrap Plating of the Medic"
+msgstr "Броня из лома полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Scrap Plating of the Hauler"
 msgstr "Броня из лома полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Scrap Plating"
 msgstr "Удачливая броня из лома"
+
+msgctxt "term"
+msgid "Lucky Scrap Plating of the Medic"
+msgstr "Удачливая броня из лома медика"
 
 msgctxt "term"
 msgid "Lucky Scrap Plating of the Hauler"
@@ -11813,12 +14541,44 @@ msgid "Second Wind Scrap Plating"
 msgstr "Броня из лома второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Scrap Plating of the Medic"
+msgstr "Броня из лома второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Scrap Plating of the Hauler"
 msgstr "Броня из лома второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Scrap Plating"
+msgstr "Крепостная броня из лома"
+
+msgctxt "term"
+msgid "Bulwark Scrap Plating of the Medic"
+msgstr "Крепостная броня из лома медика"
+
+msgctxt "term"
+msgid "Bulwark Scrap Plating of the Hauler"
+msgstr "Крепостная броня из лома носильщика"
+
+msgctxt "term"
+msgid "Momentum Scrap Plating"
+msgstr "Инерционная броня из лома"
+
+msgctxt "term"
+msgid "Momentum Scrap Plating of the Medic"
+msgstr "Инерционная броня из лома медика"
+
+msgctxt "term"
+msgid "Momentum Scrap Plating of the Hauler"
+msgstr "Инерционная броня из лома носильщика"
+
+msgctxt "term"
 msgid "Riot Plating"
 msgstr "Штурмовая броня"
+
+msgctxt "term"
+msgid "Riot Plating of the Medic"
+msgstr "Штурмовая броня медика"
 
 msgctxt "term"
 msgid "Riot Plating of the Hauler"
@@ -11829,12 +14589,20 @@ msgid "Field Medic Riot Plating"
 msgstr "Штурмовая броня полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Riot Plating of the Medic"
+msgstr "Штурмовая броня полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Riot Plating of the Hauler"
 msgstr "Штурмовая броня полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Riot Plating"
 msgstr "Удачливая штурмовая броня"
+
+msgctxt "term"
+msgid "Lucky Riot Plating of the Medic"
+msgstr "Удачливая штурмовая броня медика"
 
 msgctxt "term"
 msgid "Lucky Riot Plating of the Hauler"
@@ -11845,12 +14613,44 @@ msgid "Second Wind Riot Plating"
 msgstr "Штурмовая броня второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Riot Plating of the Medic"
+msgstr "Штурмовая броня второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Riot Plating of the Hauler"
 msgstr "Штурмовая броня второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Riot Plating"
+msgstr "Крепостная штурмовая броня"
+
+msgctxt "term"
+msgid "Bulwark Riot Plating of the Medic"
+msgstr "Крепостная штурмовая броня медика"
+
+msgctxt "term"
+msgid "Bulwark Riot Plating of the Hauler"
+msgstr "Крепостная штурмовая броня носильщика"
+
+msgctxt "term"
+msgid "Momentum Riot Plating"
+msgstr "Инерционная штурмовая броня"
+
+msgctxt "term"
+msgid "Momentum Riot Plating of the Medic"
+msgstr "Инерционная штурмовая броня медика"
+
+msgctxt "term"
+msgid "Momentum Riot Plating of the Hauler"
+msgstr "Инерционная штурмовая броня носильщика"
+
+msgctxt "term"
 msgid "Ceramic Shell"
 msgstr "Керамический панцирь"
+
+msgctxt "term"
+msgid "Ceramic Shell of the Medic"
+msgstr "Керамический панцирь медика"
 
 msgctxt "term"
 msgid "Ceramic Shell of the Hauler"
@@ -11861,12 +14661,20 @@ msgid "Field Medic Ceramic Shell"
 msgstr "Керамический панцирь полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Ceramic Shell of the Medic"
+msgstr "Керамический панцирь полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Ceramic Shell of the Hauler"
 msgstr "Керамический панцирь полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Ceramic Shell"
 msgstr "Удачливый керамический панцирь"
+
+msgctxt "term"
+msgid "Lucky Ceramic Shell of the Medic"
+msgstr "Удачливый керамический панцирь медика"
 
 msgctxt "term"
 msgid "Lucky Ceramic Shell of the Hauler"
@@ -11877,12 +14685,44 @@ msgid "Second Wind Ceramic Shell"
 msgstr "Керамический панцирь второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Ceramic Shell of the Medic"
+msgstr "Керамический панцирь второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Ceramic Shell of the Hauler"
 msgstr "Керамический панцирь второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Ceramic Shell"
+msgstr "Крепостной керамический панцирь"
+
+msgctxt "term"
+msgid "Bulwark Ceramic Shell of the Medic"
+msgstr "Крепостной керамический панцирь медика"
+
+msgctxt "term"
+msgid "Bulwark Ceramic Shell of the Hauler"
+msgstr "Крепостной керамический панцирь носильщика"
+
+msgctxt "term"
+msgid "Momentum Ceramic Shell"
+msgstr "Инерционный керамический панцирь"
+
+msgctxt "term"
+msgid "Momentum Ceramic Shell of the Medic"
+msgstr "Инерционный керамический панцирь медика"
+
+msgctxt "term"
+msgid "Momentum Ceramic Shell of the Hauler"
+msgstr "Инерционный керамический панцирь носильщика"
+
+msgctxt "term"
 msgid "Bulkhead Vest"
 msgstr "Жилет-переборка"
+
+msgctxt "term"
+msgid "Bulkhead Vest of the Medic"
+msgstr "Жилет-переборка медика"
 
 msgctxt "term"
 msgid "Bulkhead Vest of the Hauler"
@@ -11893,12 +14733,20 @@ msgid "Field Medic Bulkhead Vest"
 msgstr "Жилет-переборка полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Bulkhead Vest of the Medic"
+msgstr "Жилет-переборка полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Bulkhead Vest of the Hauler"
 msgstr "Жилет-переборка полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Bulkhead Vest"
 msgstr "Удачливый жилет-переборка"
+
+msgctxt "term"
+msgid "Lucky Bulkhead Vest of the Medic"
+msgstr "Удачливый жилет-переборка медика"
 
 msgctxt "term"
 msgid "Lucky Bulkhead Vest of the Hauler"
@@ -11909,12 +14757,44 @@ msgid "Second Wind Bulkhead Vest"
 msgstr "Жилет-переборка второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Bulkhead Vest of the Medic"
+msgstr "Жилет-переборка второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Bulkhead Vest of the Hauler"
 msgstr "Жилет-переборка второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Bulkhead Vest"
+msgstr "Крепостной жилет-переборка"
+
+msgctxt "term"
+msgid "Bulwark Bulkhead Vest of the Medic"
+msgstr "Крепостной жилет-переборка медика"
+
+msgctxt "term"
+msgid "Bulwark Bulkhead Vest of the Hauler"
+msgstr "Крепостной жилет-переборка носильщика"
+
+msgctxt "term"
+msgid "Momentum Bulkhead Vest"
+msgstr "Инерционный жилет-переборка"
+
+msgctxt "term"
+msgid "Momentum Bulkhead Vest of the Medic"
+msgstr "Инерционный жилет-переборка медика"
+
+msgctxt "term"
+msgid "Momentum Bulkhead Vest of the Hauler"
+msgstr "Инерционный жилет-переборка носильщика"
+
+msgctxt "term"
 msgid "Leg Servos"
 msgstr "Ножные сервоприводы"
+
+msgctxt "term"
+msgid "Leg Servos of the Medic"
+msgstr "Ножные сервоприводы медика"
 
 msgctxt "term"
 msgid "Leg Servos of the Hauler"
@@ -11925,12 +14805,20 @@ msgid "Field Medic Leg Servos"
 msgstr "Ножные сервоприводы полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Leg Servos of the Medic"
+msgstr "Ножные сервоприводы полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Leg Servos of the Hauler"
 msgstr "Ножные сервоприводы полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Leg Servos"
 msgstr "Удачливые ножные сервоприводы"
+
+msgctxt "term"
+msgid "Lucky Leg Servos of the Medic"
+msgstr "Удачливые ножные сервоприводы медика"
 
 msgctxt "term"
 msgid "Lucky Leg Servos of the Hauler"
@@ -11941,12 +14829,44 @@ msgid "Second Wind Leg Servos"
 msgstr "Ножные сервоприводы второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Leg Servos of the Medic"
+msgstr "Ножные сервоприводы второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Leg Servos of the Hauler"
 msgstr "Ножные сервоприводы второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Leg Servos"
+msgstr "Крепостные ножные сервоприводы"
+
+msgctxt "term"
+msgid "Bulwark Leg Servos of the Medic"
+msgstr "Крепостные ножные сервоприводы медика"
+
+msgctxt "term"
+msgid "Bulwark Leg Servos of the Hauler"
+msgstr "Крепостные ножные сервоприводы носильщика"
+
+msgctxt "term"
+msgid "Momentum Leg Servos"
+msgstr "Инерционные ножные сервоприводы"
+
+msgctxt "term"
+msgid "Momentum Leg Servos of the Medic"
+msgstr "Инерционные ножные сервоприводы медика"
+
+msgctxt "term"
+msgid "Momentum Leg Servos of the Hauler"
+msgstr "Инерционные ножные сервоприводы носильщика"
+
+msgctxt "term"
 msgid "Spring Actuators"
 msgstr "Пружинные приводы"
+
+msgctxt "term"
+msgid "Spring Actuators of the Medic"
+msgstr "Пружинные приводы медика"
 
 msgctxt "term"
 msgid "Spring Actuators of the Hauler"
@@ -11957,12 +14877,20 @@ msgid "Field Medic Spring Actuators"
 msgstr "Пружинные приводы полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Spring Actuators of the Medic"
+msgstr "Пружинные приводы полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Spring Actuators of the Hauler"
 msgstr "Пружинные приводы полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Spring Actuators"
 msgstr "Удачливые пружинные приводы"
+
+msgctxt "term"
+msgid "Lucky Spring Actuators of the Medic"
+msgstr "Удачливые пружинные приводы медика"
 
 msgctxt "term"
 msgid "Lucky Spring Actuators of the Hauler"
@@ -11973,12 +14901,44 @@ msgid "Second Wind Spring Actuators"
 msgstr "Пружинные приводы второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Spring Actuators of the Medic"
+msgstr "Пружинные приводы второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Spring Actuators of the Hauler"
 msgstr "Пружинные приводы второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Spring Actuators"
+msgstr "Крепостные пружинные приводы"
+
+msgctxt "term"
+msgid "Bulwark Spring Actuators of the Medic"
+msgstr "Крепостные пружинные приводы медика"
+
+msgctxt "term"
+msgid "Bulwark Spring Actuators of the Hauler"
+msgstr "Крепостные пружинные приводы носильщика"
+
+msgctxt "term"
+msgid "Momentum Spring Actuators"
+msgstr "Инерционные пружинные приводы"
+
+msgctxt "term"
+msgid "Momentum Spring Actuators of the Medic"
+msgstr "Инерционные пружинные приводы медика"
+
+msgctxt "term"
+msgid "Momentum Spring Actuators of the Hauler"
+msgstr "Инерционные пружинные приводы носильщика"
+
+msgctxt "term"
 msgid "Gyro Joints"
 msgstr "Гироскопические суставы"
+
+msgctxt "term"
+msgid "Gyro Joints of the Medic"
+msgstr "Гироскопические суставы медика"
 
 msgctxt "term"
 msgid "Gyro Joints of the Hauler"
@@ -11989,12 +14949,20 @@ msgid "Field Medic Gyro Joints"
 msgstr "Гироскопические суставы полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Gyro Joints of the Medic"
+msgstr "Гироскопические суставы полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Gyro Joints of the Hauler"
 msgstr "Гироскопические суставы полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Gyro Joints"
 msgstr "Удачливые гироскопические суставы"
+
+msgctxt "term"
+msgid "Lucky Gyro Joints of the Medic"
+msgstr "Удачливые гироскопические суставы медика"
 
 msgctxt "term"
 msgid "Lucky Gyro Joints of the Hauler"
@@ -12005,12 +14973,44 @@ msgid "Second Wind Gyro Joints"
 msgstr "Гироскопические суставы второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Gyro Joints of the Medic"
+msgstr "Гироскопические суставы второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Gyro Joints of the Hauler"
 msgstr "Гироскопические суставы второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Gyro Joints"
+msgstr "Крепостные гироскопические суставы"
+
+msgctxt "term"
+msgid "Bulwark Gyro Joints of the Medic"
+msgstr "Крепостные гироскопические суставы медика"
+
+msgctxt "term"
+msgid "Bulwark Gyro Joints of the Hauler"
+msgstr "Крепостные гироскопические суставы носильщика"
+
+msgctxt "term"
+msgid "Momentum Gyro Joints"
+msgstr "Инерционные гироскопические суставы"
+
+msgctxt "term"
+msgid "Momentum Gyro Joints of the Medic"
+msgstr "Инерционные гироскопические суставы медика"
+
+msgctxt "term"
+msgid "Momentum Gyro Joints of the Hauler"
+msgstr "Инерционные гироскопические суставы носильщика"
+
+msgctxt "term"
 msgid "Track Motors"
 msgstr "Гусеничные моторы"
+
+msgctxt "term"
+msgid "Track Motors of the Medic"
+msgstr "Гусеничные моторы медика"
 
 msgctxt "term"
 msgid "Track Motors of the Hauler"
@@ -12021,12 +15021,20 @@ msgid "Field Medic Track Motors"
 msgstr "Гусеничные моторы полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Track Motors of the Medic"
+msgstr "Гусеничные моторы полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Track Motors of the Hauler"
 msgstr "Гусеничные моторы полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Track Motors"
 msgstr "Удачливые гусеничные моторы"
+
+msgctxt "term"
+msgid "Lucky Track Motors of the Medic"
+msgstr "Удачливые гусеничные моторы медика"
 
 msgctxt "term"
 msgid "Lucky Track Motors of the Hauler"
@@ -12037,12 +15045,44 @@ msgid "Second Wind Track Motors"
 msgstr "Гусеничные моторы второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Track Motors of the Medic"
+msgstr "Гусеничные моторы второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Track Motors of the Hauler"
 msgstr "Гусеничные моторы второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Track Motors"
+msgstr "Крепостные гусеничные моторы"
+
+msgctxt "term"
+msgid "Bulwark Track Motors of the Medic"
+msgstr "Крепостные гусеничные моторы медика"
+
+msgctxt "term"
+msgid "Bulwark Track Motors of the Hauler"
+msgstr "Крепостные гусеничные моторы носильщика"
+
+msgctxt "term"
+msgid "Momentum Track Motors"
+msgstr "Инерционные гусеничные моторы"
+
+msgctxt "term"
+msgid "Momentum Track Motors of the Medic"
+msgstr "Инерционные гусеничные моторы медика"
+
+msgctxt "term"
+msgid "Momentum Track Motors of the Hauler"
+msgstr "Инерционные гусеничные моторы носильщика"
+
+msgctxt "term"
 msgid "Logic Core"
 msgstr "Логическое ядро"
+
+msgctxt "term"
+msgid "Logic Core of the Medic"
+msgstr "Логическое ядро медика"
 
 msgctxt "term"
 msgid "Logic Core of the Hauler"
@@ -12053,12 +15093,20 @@ msgid "Field Medic Logic Core"
 msgstr "Логическое ядро полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Logic Core of the Medic"
+msgstr "Логическое ядро полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Logic Core of the Hauler"
 msgstr "Логическое ядро полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Logic Core"
 msgstr "Удачливое логическое ядро"
+
+msgctxt "term"
+msgid "Lucky Logic Core of the Medic"
+msgstr "Удачливое логическое ядро медика"
 
 msgctxt "term"
 msgid "Lucky Logic Core of the Hauler"
@@ -12069,12 +15117,44 @@ msgid "Second Wind Logic Core"
 msgstr "Логическое ядро второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Logic Core of the Medic"
+msgstr "Логическое ядро второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Logic Core of the Hauler"
 msgstr "Логическое ядро второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Logic Core"
+msgstr "Крепостное логическое ядро"
+
+msgctxt "term"
+msgid "Bulwark Logic Core of the Medic"
+msgstr "Крепостное логическое ядро медика"
+
+msgctxt "term"
+msgid "Bulwark Logic Core of the Hauler"
+msgstr "Крепостное логическое ядро носильщика"
+
+msgctxt "term"
+msgid "Momentum Logic Core"
+msgstr "Инерционное логическое ядро"
+
+msgctxt "term"
+msgid "Momentum Logic Core of the Medic"
+msgstr "Инерционное логическое ядро медика"
+
+msgctxt "term"
+msgid "Momentum Logic Core of the Hauler"
+msgstr "Инерционное логическое ядро носильщика"
+
+msgctxt "term"
 msgid "Quantum Core"
 msgstr "Квантовое ядро"
+
+msgctxt "term"
+msgid "Quantum Core of the Medic"
+msgstr "Квантовое ядро медика"
 
 msgctxt "term"
 msgid "Quantum Core of the Hauler"
@@ -12085,12 +15165,20 @@ msgid "Field Medic Quantum Core"
 msgstr "Квантовое ядро полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Quantum Core of the Medic"
+msgstr "Квантовое ядро полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Quantum Core of the Hauler"
 msgstr "Квантовое ядро полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Quantum Core"
 msgstr "Удачливое квантовое ядро"
+
+msgctxt "term"
+msgid "Lucky Quantum Core of the Medic"
+msgstr "Удачливое квантовое ядро медика"
 
 msgctxt "term"
 msgid "Lucky Quantum Core of the Hauler"
@@ -12101,12 +15189,44 @@ msgid "Second Wind Quantum Core"
 msgstr "Квантовое ядро второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Quantum Core of the Medic"
+msgstr "Квантовое ядро второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Quantum Core of the Hauler"
 msgstr "Квантовое ядро второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Quantum Core"
+msgstr "Крепостное квантовое ядро"
+
+msgctxt "term"
+msgid "Bulwark Quantum Core of the Medic"
+msgstr "Крепостное квантовое ядро медика"
+
+msgctxt "term"
+msgid "Bulwark Quantum Core of the Hauler"
+msgstr "Крепостное квантовое ядро носильщика"
+
+msgctxt "term"
+msgid "Momentum Quantum Core"
+msgstr "Инерционное квантовое ядро"
+
+msgctxt "term"
+msgid "Momentum Quantum Core of the Medic"
+msgstr "Инерционное квантовое ядро медика"
+
+msgctxt "term"
+msgid "Momentum Quantum Core of the Hauler"
+msgstr "Инерционное квантовое ядро носильщика"
+
+msgctxt "term"
 msgid "Battery Core"
 msgstr "Батарейное ядро"
+
+msgctxt "term"
+msgid "Battery Core of the Medic"
+msgstr "Батарейное ядро медика"
 
 msgctxt "term"
 msgid "Battery Core of the Hauler"
@@ -12117,12 +15237,20 @@ msgid "Field Medic Battery Core"
 msgstr "Батарейное ядро полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Battery Core of the Medic"
+msgstr "Батарейное ядро полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Battery Core of the Hauler"
 msgstr "Батарейное ядро полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Battery Core"
 msgstr "Удачливое батарейное ядро"
+
+msgctxt "term"
+msgid "Lucky Battery Core of the Medic"
+msgstr "Удачливое батарейное ядро медика"
 
 msgctxt "term"
 msgid "Lucky Battery Core of the Hauler"
@@ -12133,12 +15261,44 @@ msgid "Second Wind Battery Core"
 msgstr "Батарейное ядро второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Battery Core of the Medic"
+msgstr "Батарейное ядро второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Battery Core of the Hauler"
 msgstr "Батарейное ядро второго дыхания носильщика"
 
 msgctxt "term"
+msgid "Bulwark Battery Core"
+msgstr "Крепостное батарейное ядро"
+
+msgctxt "term"
+msgid "Bulwark Battery Core of the Medic"
+msgstr "Крепостное батарейное ядро медика"
+
+msgctxt "term"
+msgid "Bulwark Battery Core of the Hauler"
+msgstr "Крепостное батарейное ядро носильщика"
+
+msgctxt "term"
+msgid "Momentum Battery Core"
+msgstr "Инерционное батарейное ядро"
+
+msgctxt "term"
+msgid "Momentum Battery Core of the Medic"
+msgstr "Инерционное батарейное ядро медика"
+
+msgctxt "term"
+msgid "Momentum Battery Core of the Hauler"
+msgstr "Инерционное батарейное ядро носильщика"
+
+msgctxt "term"
 msgid "Neural Core"
 msgstr "Нейронное ядро"
+
+msgctxt "term"
+msgid "Neural Core of the Medic"
+msgstr "Нейронное ядро медика"
 
 msgctxt "term"
 msgid "Neural Core of the Hauler"
@@ -12149,12 +15309,20 @@ msgid "Field Medic Neural Core"
 msgstr "Нейронное ядро полевого медика"
 
 msgctxt "term"
+msgid "Field Medic Neural Core of the Medic"
+msgstr "Нейронное ядро полевого медика медика"
+
+msgctxt "term"
 msgid "Field Medic Neural Core of the Hauler"
 msgstr "Нейронное ядро полевого медика носильщика"
 
 msgctxt "term"
 msgid "Lucky Neural Core"
 msgstr "Удачливое нейронное ядро"
+
+msgctxt "term"
+msgid "Lucky Neural Core of the Medic"
+msgstr "Удачливое нейронное ядро медика"
 
 msgctxt "term"
 msgid "Lucky Neural Core of the Hauler"
@@ -12165,8 +15333,36 @@ msgid "Second Wind Neural Core"
 msgstr "Нейронное ядро второго дыхания"
 
 msgctxt "term"
+msgid "Second Wind Neural Core of the Medic"
+msgstr "Нейронное ядро второго дыхания медика"
+
+msgctxt "term"
 msgid "Second Wind Neural Core of the Hauler"
 msgstr "Нейронное ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Bulwark Neural Core"
+msgstr "Крепостное нейронное ядро"
+
+msgctxt "term"
+msgid "Bulwark Neural Core of the Medic"
+msgstr "Крепостное нейронное ядро медика"
+
+msgctxt "term"
+msgid "Bulwark Neural Core of the Hauler"
+msgstr "Крепостное нейронное ядро носильщика"
+
+msgctxt "term"
+msgid "Momentum Neural Core"
+msgstr "Инерционное нейронное ядро"
+
+msgctxt "term"
+msgid "Momentum Neural Core of the Medic"
+msgstr "Инерционное нейронное ядро медика"
+
+msgctxt "term"
+msgid "Momentum Neural Core of the Hauler"
+msgstr "Инерционное нейронное ядро носильщика"
 
 msgctxt "term"
 msgid "Prototype Field Medic Weapon Module"
@@ -12177,12 +15373,28 @@ msgid "Prototype Second Wind Weapon Module"
 msgstr "Прототип: Оружейный модуль второго дыхания"
 
 msgctxt "term"
+msgid "Prototype Bulwark Weapon Module"
+msgstr "Прототип: Крепостной оружейный модуль"
+
+msgctxt "term"
+msgid "Prototype Momentum Weapon Module"
+msgstr "Прототип: Инерционный оружейный модуль"
+
+msgctxt "term"
 msgid "Prototype Field Medic Plating"
 msgstr "Прототип: Броня полевого медика"
 
 msgctxt "term"
 msgid "Prototype Second Wind Plating"
 msgstr "Прототип: Броня второго дыхания"
+
+msgctxt "term"
+msgid "Prototype Bulwark Plating"
+msgstr "Прототип: Крепостная броня"
+
+msgctxt "term"
+msgid "Prototype Momentum Plating"
+msgstr "Прототип: Инерционная броня"
 
 msgctxt "term"
 msgid "Prototype Field Medic Servos"
@@ -12193,12 +15405,28 @@ msgid "Prototype Second Wind Servos"
 msgstr "Прототип: Сервоприводы второго дыхания"
 
 msgctxt "term"
+msgid "Prototype Bulwark Servos"
+msgstr "Прототип: Крепостные сервоприводы"
+
+msgctxt "term"
+msgid "Prototype Momentum Servos"
+msgstr "Прототип: Инерционные сервоприводы"
+
+msgctxt "term"
 msgid "Prototype Field Medic Core"
 msgstr "Прототип: Ядро полевого медика"
 
 msgctxt "term"
 msgid "Prototype Second Wind Core"
 msgstr "Прототип: Ядро второго дыхания"
+
+msgctxt "term"
+msgid "Prototype Bulwark Core"
+msgstr "Прототип: Крепостное ядро"
+
+msgctxt "term"
+msgid "Prototype Momentum Core"
+msgstr "Прототип: Инерционное ядро"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -15173,6 +18401,10 @@ msgid "Your marked valuable hums {0}% farther"
 msgstr "Ваша отмеченная ценность гудит на {0}% дальше"
 
 msgctxt "shape"
+msgid "Stay near your team: Shield Wall protects allies within {0} m"
+msgstr "Держитесь рядом с командой: «Стена щитов» защищает союзников в пределах {0} м"
+
+msgctxt "shape"
 msgid "+{0}% max health. Allies within {1}m of you take {2}% less damage."
 msgstr "+{0}% к макс. здоровью. Союзники в пределах {1} м от вас получают на {2}% меньше урона."
 
@@ -15185,8 +18417,520 @@ msgid "Lock your plating: take {0}% less damage for {1}s, and your Shield Wall p
 msgstr "Зафиксируйте броню: на {1} с вы получаете на {0}% меньше урона, а «Стена щитов» защищает союзников на {2}% сильнее."
 
 msgctxt "shape"
+msgid "+{0}% max health, Iron Wall lasts {1}% longer"
+msgstr "+{0}% к макс. здоровью, «Железная стена» действует на {1}% дольше"
+
+msgctxt "shape"
+msgid "Take {0}% less damage, +{1}% max health"
+msgstr "Вы получаете на {0}% меньше урона, +{1}% к макс. здоровью"
+
+msgctxt "shape"
+msgid "take {0}% less damage and +{1}% max health"
+msgstr "вы получаете на {0}% меньше урона и +{1}% к макс. здоровью"
+
+msgctxt "shape"
+msgid "Shield Wall reaches {0}m farther"
+msgstr "«Стена щитов» действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Shield Wall: allies take {0}% less damage"
+msgstr "«Стена щитов»: союзники получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "Iron Wall makes your Shield Wall {0}% stronger"
+msgstr "«Железная стена» усиливает вашу «Стену щитов» на {0}%"
+
+msgctxt "shape"
+msgid "Shield Wall: allies take {0}% less damage, reaches {1}m farther"
+msgstr "«Стена щитов»: союзники получают на {0}% меньше урона, действует на {1} м дальше"
+
+msgctxt "shape"
+msgid "Shield Wall {0}% stronger and reaches {1}m farther"
+msgstr "«Стена щитов» сильнее на {0}% и действует на {1} м дальше"
+
+msgctxt "shape"
+msgid "Iron Wall cooldown {0}% shorter"
+msgstr "Перезарядка «Железной стены» на {0}% короче"
+
+msgctxt "shape"
+msgid "Iron Wall {0}% stronger"
+msgstr "«Железная стена» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Iron Wall stuns enemies within {0}m for {1}s"
+msgstr "«Железная стена» оглушает врагов в пределах {0} м на {1} с"
+
+msgctxt "shape"
+msgid "Iron Wall lasts {0}% longer"
+msgstr "«Железная стена» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Iron Wall holds {0} charges, and its stun lasts {1}s longer"
+msgstr "«Железная стена» хранит зарядов: {0}, а её оглушение длится на {1} с дольше"
+
+msgctxt "shape"
+msgid "Every {0}s, allies within {1}m regain {2} HP. Stabilize: allies in your aura below {3}% HP take {4}% less damage. Triage sight: you see every teammate's health - bars over their heads within {5}m (through walls), a team list lowest-first, a warning when one is critical, and how far to a downed teammate's head."
+msgstr "Каждые {0} с союзники в пределах {1} м восстанавливают {2} ОЗ. Стабилизация: союзники в вашей ауре с ОЗ ниже {3}% получают на {4}% меньше урона. Взгляд медика: вы видите здоровье каждого напарника - полосы над головами в пределах {5} м (сквозь стены), список команды от самого низкого здоровья, предупреждение, когда кто-то при смерти, и расстояние до головы павшего напарника."
+
+msgctxt "shape"
+msgid "Allies revived near you get +{0} HP; +{1}% revive XP."
+msgstr "Союзники, возрождённые рядом с вами, получают +{0} ОЗ; +{1}% опыта за возрождение."
+
+msgctxt "shape"
+msgid "Heal yourself for {0}% max HP and allies within {1}m for {2} HP; take {3}% less damage for {4}s."
+msgstr "Лечит вас на {0}% макс. ОЗ, а союзников в пределах {1} м - на {2} ОЗ; на {4} с вы получаете на {3}% меньше урона."
+
+msgctxt "shape"
+msgid "Aura reaches {0}m farther"
+msgstr "Аура действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Aura heals {0} more HP per pulse"
+msgstr "Аура лечит на {0} ОЗ больше за импульс"
+
+msgctxt "shape"
+msgid "Stabilize: low-HP allies take {0}% less damage"
+msgstr "Стабилизация: союзники с низким ОЗ получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "Aura heals {0} more HP and reaches {1}m farther"
+msgstr "Аура лечит на {0} ОЗ больше и действует на {1} м дальше"
+
+msgctxt "shape"
+msgid "aura heals {0} more HP per pulse, Stabilize {1}% stronger"
+msgstr "аура лечит на {0} ОЗ больше за импульс, «Стабилизация» сильнее на {1}%"
+
+msgctxt "shape"
+msgid "Nanite Burst {0}% stronger"
+msgstr "«Нанитный всплеск» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Nanite Burst reaches {0}% farther"
+msgstr "«Нанитный всплеск» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Nanite Burst cooldown {0}% shorter"
+msgstr "Перезарядка «Нанитного всплеска» на {0}% короче"
+
+msgctxt "shape"
+msgid "Nanite Burst {0}% stronger and reaches {1}% farther"
+msgstr "«Нанитный всплеск» сильнее на {0}% и действует на {1}% дальше"
+
+msgctxt "shape"
+msgid "Allies revived near you get +{0} HP"
+msgstr "Союзники, возрождённые рядом с вами, получают +{0} ОЗ"
+
+msgctxt "shape"
+msgid "+{0}% revive XP"
+msgstr "+{0}% опыта за возрождение"
+
+msgctxt "shape"
+msgid "Revived allies get +{0} HP, Nanite Burst cooldown {1}% shorter"
+msgstr "Возрождённые союзники получают +{0} ОЗ, перезарядка «Нанитного всплеска» на {1}% короче"
+
+msgctxt "shape"
+msgid "revived allies get +{0} HP, +{1}% revive XP, Stabilize {2}% stronger"
+msgstr "возрождённые союзники получают +{0} ОЗ, +{1}% опыта за возрождение, «Стабилизация» сильнее на {2}%"
+
+msgctxt "shape"
+msgid "+{0}% walk and sprint speed. Every second you keep sprinting adds a Momentum stack (+{1}% sprint speed, up to {2}); stacks drop {3}s after you stop."
+msgstr "+{0}% к скорости ходьбы и бега. Каждая секунда непрерывного бега добавляет заряд Импульса (+{1}% к скорости бега, до {2}); заряды пропадают через {3} с после остановки."
+
+msgctxt "shape"
+msgid "For {0}s: +{1}% sprint speed and sprinting costs no stamina."
+msgstr "На {0} с: +{1}% к скорости бега, и бег не тратит выносливость."
+
+msgctxt "shape"
+msgid "+{0}% sprint speed"
+msgstr "+{0}% к скорости бега"
+
+msgctxt "shape"
+msgid "+{0}% walk speed"
+msgstr "+{0}% к скорости ходьбы"
+
+msgctxt "shape"
+msgid "Momentum stacks give +{0}% more sprint speed"
+msgstr "Заряды Импульса дают на {0}% больше скорости бега"
+
+msgctxt "shape"
+msgid "+{0} max Momentum stack"
+msgstr "+{0} к макс. числу зарядов Импульса"
+
+msgctxt "shape"
+msgid "Momentum lasts {0}s after you stop, +{1}% sprint speed"
+msgstr "Импульс держится {0} с после остановки, +{1}% к скорости бега"
+
+msgctxt "shape"
+msgid "Overclock Sprint gives +{0}% jump force"
+msgstr "«Турбобег» даёт +{0}% к силе прыжка"
+
+msgctxt "shape"
+msgid "+{0}% jump force, +{1}% walk speed"
+msgstr "+{0}% к силе прыжка, +{1}% к скорости ходьбы"
+
+msgctxt "shape"
+msgid "Overclock Sprint gives +{0}% more jump force, +{1}% jump force"
+msgstr "«Турбобег» даёт ещё +{0}% к силе прыжка, +{1}% к силе прыжка"
+
+msgctxt "shape"
+msgid "+{0} extra jump, +{1}% jump force"
+msgstr "+{0} дополнительный прыжок, +{1}% к силе прыжка"
+
+msgctxt "shape"
+msgid "Overclock Sprint {0}% stronger"
+msgstr "«Турбобег» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Overclock Sprint lasts {0}% longer"
+msgstr "«Турбобег» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Overclock Sprint cooldown {0}% shorter"
+msgstr "Перезарядка «Турбобега» на {0}% короче"
+
+msgctxt "shape"
+msgid "Overclock Sprint refills {0}% of your stamina"
+msgstr "«Турбобег» восполняет {0}% вашей выносливости"
+
+msgctxt "shape"
+msgid "Overclock Sprint lasts {0}% longer and fills your Momentum instantly"
+msgstr "«Турбобег» действует на {0}% дольше и мгновенно заполняет Импульс"
+
+msgctxt "shape"
+msgid "+{0}% grab strength."
+msgstr "+{0}% к силе хвата."
+
+msgctxt "shape"
+msgid "{0}% less stamina drain while carrying something; items you hold take {1}% less damage."
+msgstr "Переноска тратит на {0}% меньше выносливости; предметы у вас в руках получают на {1}% меньше урона."
+
+msgctxt "shape"
+msgid "For {0}s: +{1}% grab strength, +{2}% grab range, and items you hold take {3}% less damage."
+msgstr "На {0} с: +{1}% к силе хвата, +{2}% к дальности хвата, а предметы у вас в руках получают на {3}% меньше урона."
+
+msgctxt "shape"
+msgid "+{0}% grab range"
+msgstr "+{0}% к дальности хвата"
+
+msgctxt "shape"
+msgid "{0}% less stamina drain while carrying"
+msgstr "Переноска тратит на {0}% меньше выносливости"
+
+msgctxt "shape"
+msgid "+{0}% grab strength, {1}% less stamina drain while carrying"
+msgstr "+{0}% к силе хвата, переноска тратит на {1}% меньше выносливости"
+
+msgctxt "shape"
+msgid "+{0}% grab range, +{1}% grab strength"
+msgstr "+{0}% к дальности хвата, +{1}% к силе хвата"
+
+msgctxt "shape"
+msgid "Items you hold take {0}% less damage"
+msgstr "Предметы у вас в руках получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "Power Lift protects items {0}% more"
+msgstr "«Силовой подъём» защищает предметы на {0}% сильнее"
+
+msgctxt "shape"
+msgid "Items you hold take {0}% less damage, +{1}% grab strength"
+msgstr "Предметы у вас в руках получают на {0}% меньше урона, +{1}% к силе хвата"
+
+msgctxt "shape"
+msgid "items you hold take {0}% less damage, Power Lift protects {1}% more"
+msgstr "предметы у вас в руках получают на {0}% меньше урона, «Силовой подъём» защищает на {1}% сильнее"
+
+msgctxt "shape"
+msgid "Power Lift {0}% stronger"
+msgstr "«Силовой подъём» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Power Lift lasts {0}% longer"
+msgstr "«Силовой подъём» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Power Lift cooldown {0}% shorter"
+msgstr "Перезарядка «Силового подъёма» на {0}% короче"
+
+msgctxt "shape"
+msgid "Power Lift lasts {0}% longer and is {1}% stronger"
+msgstr "«Силовой подъём» действует на {0}% дольше и сильнее на {1}%"
+
+msgctxt "shape"
+msgid "Power Lift {0}% stronger and lasts {1}% longer"
+msgstr "«Силовой подъём» сильнее на {0}% и действует на {1}% дольше"
+
+msgctxt "shape"
+msgid "+{0}% throw strength."
+msgstr "+{0}% к силе броска."
+
+msgctxt "shape"
+msgid "Heal {0} HP and gain a Frenzy stack when an enemy dies near you ({1}s, up to {2}): +{3}% throw strength, +{4}% weapon damage and +{5}% speed each. +{6}% kill XP."
+msgstr "Когда рядом с вами гибнет враг, вы лечитесь на {0} ОЗ и получаете заряд Ярости ({1} с, до {2}): каждый даёт +{3}% к силе броска, +{4}% к урону оружия и +{5}% к скорости. +{6}% опыта за убийства."
+
+msgctxt "shape"
+msgid "Slam the floor: deal {0} damage and stun enemies within {1}m for {2}s."
+msgstr "Удар по полу: наносит {0} урона и оглушает врагов в пределах {1} м на {2} с."
+
+msgctxt "shape"
+msgid "+{0}% kill XP"
+msgstr "+{0}% опыта за убийства"
+
+msgctxt "shape"
+msgid "+{0}% weapon damage"
+msgstr "+{0}% к урону оружия"
+
+msgctxt "shape"
+msgid "+{0}% chance for weapon hits to stun"
+msgstr "+{0}% к шансу оглушить ударом оружия"
+
+msgctxt "shape"
+msgid "+{0}% throw strength, +{1}% weapon damage"
+msgstr "+{0}% к силе броска, +{1}% к урону оружия"
+
+msgctxt "shape"
+msgid "Heal {0} more HP when an enemy dies near you"
+msgstr "Лечит ещё на {0} ОЗ, когда рядом с вами гибнет враг"
+
+msgctxt "shape"
+msgid "Frenzy stacks give +{0}% more"
+msgstr "Заряды Ярости дают ещё +{0}%"
+
+msgctxt "shape"
+msgid "+{0}% chance for weapon hits to make enemies bleed"
+msgstr "+{0}% к шансу вызвать у врага кровотечение ударом оружия"
+
+msgctxt "shape"
+msgid "Heal {0} HP per weapon hit"
+msgstr "Лечит на {0} ОЗ за каждый удар оружием"
+
+msgctxt "shape"
+msgid "+{0} max Frenzy stacks, heal {1} more HP per weapon hit"
+msgstr "+{0} к макс. числу зарядов Ярости, ещё +{1} ОЗ лечения за удар оружием"
+
+msgctxt "shape"
+msgid "Shockwave {0}% stronger"
+msgstr "«Ударная волна» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Shockwave reaches {0}% farther"
+msgstr "«Ударная волна» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Shockwave stuns {0}% longer"
+msgstr "«Ударная волна» оглушает на {0}% дольше"
+
+msgctxt "shape"
+msgid "Shockwave cooldown {0}% shorter"
+msgstr "Перезарядка «Ударной волны» на {0}% короче"
+
+msgctxt "shape"
+msgid "Shockwave {0}% stronger and gives you a Frenzy stack"
+msgstr "«Ударная волна» сильнее на {0}% и даёт вам заряд Ярости"
+
+msgctxt "shape"
+msgid "+{0}% max stamina."
+msgstr "+{0}% к макс. выносливости."
+
+msgctxt "shape"
+msgid "Regenerate {0} extra stamina per second; allies within {1}m regenerate {2} stamina per second."
+msgstr "Вы восстанавливаете на {0} выносливости в секунду больше; союзники в пределах {1} м восстанавливают {2} выносливости в секунду."
+
+msgctxt "shape"
+msgid "Refill stamina; for {0}s sprinting is free, +{1}% grab strength, +{2}% move speed."
+msgstr "Восполняет выносливость; на {0} с бег бесплатен, +{1}% к силе хвата, +{2}% к скорости движения."
+
+msgctxt "shape"
+msgid "+{0} stamina/s"
+msgstr "+{0} выносливости/с"
+
+msgctxt "shape"
+msgid "{0}% less sprint stamina drain"
+msgstr "Бег тратит на {0}% меньше выносливости"
+
+msgctxt "shape"
+msgid "+{0}% max stamina, +{1} stamina/s"
+msgstr "+{0}% к макс. выносливости, +{1} выносливости/с"
+
+msgctxt "shape"
+msgid "+{0} stamina/s, {1}% less sprint stamina drain"
+msgstr "+{0} выносливости/с, бег тратит на {1}% меньше выносливости"
+
+msgctxt "shape"
+msgid "Power Link reaches {0}m farther"
+msgstr "«Энергосвязь» действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Power Link gives allies +{0} stamina/s"
+msgstr "«Энергосвязь» даёт союзникам +{0} выносливости/с"
+
+msgctxt "shape"
+msgid "Overdrive boosts Power Link by +{0} stamina/s"
+msgstr "«Форсаж» усиливает «Энергосвязь» на +{0} выносливости/с"
+
+msgctxt "shape"
+msgid "Power Link +{0} stamina/s, reaches {1}m farther"
+msgstr "«Энергосвязь»: +{0} выносливости/с, действует на {1} м дальше"
+
+msgctxt "shape"
+msgid "Overdrive lasts {0}% longer"
+msgstr "«Форсаж» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Overdrive {0}% stronger"
+msgstr "«Форсаж» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Overdrive cooldown {0}% shorter"
+msgstr "Перезарядка «Форсажа» на {0}% короче"
+
+msgctxt "shape"
+msgid "Overdrive {0}% stronger and lasts {1}% longer"
+msgstr "«Форсаж» сильнее на {0}% и действует на {1}% дольше"
+
+msgctxt "shape"
+msgid "Overdrive lasts {0}% longer, cooldown {1}% shorter"
+msgstr "«Форсаж» действует на {0}% дольше, перезарядка на {1}% короче"
+
+msgctxt "shape"
+msgid "+{0}% crouch speed."
+msgstr "+{0}% к скорости в приседе."
+
+msgctxt "shape"
+msgid "{0}% chance to completely ignore a hit. Every dodge gives you +{1}% speed for {2}s."
+msgstr "{0}% шанс полностью проигнорировать удар. Каждое уклонение даёт вам +{1}% к скорости на {2} с."
+
+msgctxt "shape"
+msgid "For {0}s: immune to damage and +{1}% walk/sprint speed."
+msgstr "На {0} с: неуязвимость к урону и +{1}% к скорости ходьбы/бега."
+
+msgctxt "shape"
+msgid "+{0}% crouch speed"
+msgstr "+{0}% к скорости в приседе"
+
+msgctxt "shape"
+msgid "+{0}% dodge chance"
+msgstr "+{0}% к шансу уклонения"
+
+msgctxt "shape"
+msgid "+{0}% speed while below {1}% HP"
+msgstr "+{0}% к скорости, пока ОЗ ниже {1}%"
+
+msgctxt "shape"
+msgid "+{0}% crouch speed, +{1}% dodge chance"
+msgstr "+{0}% к скорости в приседе, +{1}% к шансу уклонения"
+
+msgctxt "shape"
+msgid "+{0}% dodge chance, +{1}% crouch speed"
+msgstr "+{0}% к шансу уклонения, +{1}% к скорости в приседе"
+
+msgctxt "shape"
+msgid "Shadowstep gives +{0}% more speed"
+msgstr "«Шаг в тень» даёт ещё +{0}% к скорости"
+
+msgctxt "shape"
+msgid "Each dodge takes {0}s off Phase Out's cooldown"
+msgstr "Каждое уклонение сокращает перезарядку «Фазового сдвига» на {0} с"
+
+msgctxt "shape"
+msgid "Shadowstep +{0}% speed, +{1}% speed below {2}% HP"
+msgstr "«Шаг в тень»: +{0}% к скорости, +{1}% к скорости при ОЗ ниже {2}%"
+
+msgctxt "shape"
+msgid "each dodge takes {0}s more off the cooldown, +{1}% dodge chance"
+msgstr "каждое уклонение сокращает перезарядку ещё на {0} с, +{1}% к шансу уклонения"
+
+msgctxt "shape"
+msgid "Phase Out lasts {0}% longer"
+msgstr "«Фазовый сдвиг» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Phase Out {0}% stronger"
+msgstr "«Фазовый сдвиг» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Phase Out cooldown {0}% shorter"
+msgstr "Перезарядка «Фазового сдвига» на {0}% короче"
+
+msgctxt "shape"
+msgid "Phase Out heals you for {0}% max HP"
+msgstr "«Фазовый сдвиг» лечит вас на {0}% макс. ОЗ"
+
+msgctxt "shape"
+msgid "Phase Out lasts {0}% longer and heals {1}% more"
+msgstr "«Фазовый сдвиг» действует на {0}% дольше и лечит на {1}% больше"
+
+msgctxt "shape"
+msgid "Regenerate {0} HP/s (pauses {1}s after taking damage). Every hit you take makes you take {2}% less damage for the rest of the level (up to {3}%)."
+msgstr "Восстанавливает {0} ОЗ/с (пауза на {1} с после получения урона). Каждый полученный удар снижает получаемый вами урон на {2}% до конца уровня (до {3}%)."
+
+msgctxt "shape"
 msgid "Once per level, a lethal hit leaves you at {0} HP with {1}s of invulnerability."
 msgstr "Раз за уровень смертельный удар оставляет вас с {0} ОЗ и даёт {1} с неуязвимости."
+
+msgctxt "shape"
+msgid "Restore {0}% max HP over {1}s and take {2}% less damage meanwhile."
+msgstr "Восстанавливает {0}% макс. ОЗ за {1} с, и всё это время вы получаете на {2}% меньше урона."
+
+msgctxt "shape"
+msgid "+{0} HP/s regeneration"
+msgstr "+{0} ОЗ/с регенерации"
+
+msgctxt "shape"
+msgid "+{0}% max Scar Tissue"
+msgstr "+{0}% к максимуму «Рубцовой ткани»"
+
+msgctxt "shape"
+msgid "+{0}% Scar Tissue per hit"
+msgstr "+{0}% «Рубцовой ткани» за удар"
+
+msgctxt "shape"
+msgid "+{0}% max Scar Tissue, +{1} HP/s"
+msgstr "+{0}% к максимуму «Рубцовой ткани», +{1} ОЗ/с"
+
+msgctxt "shape"
+msgid "+{0}% Scar Tissue per hit, +{1}% max"
+msgstr "+{0}% «Рубцовой ткани» за удар, +{1}% к максимуму"
+
+msgctxt "shape"
+msgid "Last Stand invulnerability lasts {0}s longer"
+msgstr "Неуязвимость «Последнего рубежа» длится на {0} с дольше"
+
+msgctxt "shape"
+msgid "Last Stand heals you {0} HP right after"
+msgstr "«Последний рубеж» сразу после срабатывания лечит вас на {0} ОЗ"
+
+msgctxt "shape"
+msgid "Last Stand gives +{0}% speed for {1}s"
+msgstr "«Последний рубеж» даёт +{0}% к скорости на {1} с"
+
+msgctxt "shape"
+msgid "Last Stand invulnerability {0}s longer, heals {1} HP more"
+msgstr "Неуязвимость «Последнего рубежа» на {0} с дольше, лечит ещё на {1} ОЗ"
+
+msgctxt "shape"
+msgid "+{0} Last Stand per level, heals {1} HP more"
+msgstr "+{0} «Последний рубеж» за уровень, лечит ещё на {1} ОЗ"
+
+msgctxt "shape"
+msgid "Emergency Patch {0}% stronger"
+msgstr "«Экстренная заплатка» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Emergency Patch lasts {0}% longer"
+msgstr "«Экстренная заплатка» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Emergency Patch cooldown {0}% shorter"
+msgstr "Перезарядка «Экстренной заплатки» на {0}% короче"
+
+msgctxt "shape"
+msgid "Emergency Patch gives {0}% Scar Tissue at once"
+msgstr "«Экстренная заплатка» сразу даёт {0}% «Рубцовой ткани»"
+
+msgctxt "shape"
+msgid "Emergency Patch {0}% stronger, cooldown {1}% shorter"
+msgstr "«Экстренная заплатка» сильнее на {0}%, перезарядка на {1}% короче"
 
 msgctxt "shape"
 msgid "Rare or better valuables you appraise gain an extra {0}% value; +{1}% extraction XP and +{2}% level-complete XP."
@@ -15199,6 +18943,618 @@ msgstr "Ценности в пределах {0} м от вас оцениваю
 msgctxt "shape"
 msgid "For {0}s, your HUD tracks the {1} most valuable items within {2}m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
 msgstr "В течение {0} с HUD отслеживает {1} самых ценных предмета в пределах {2} м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
+
+msgctxt "shape"
+msgid "Appraised valuables gain {0}% more value"
+msgstr "Оценённые ценности получают ещё {0}% стоимости"
+
+msgctxt "shape"
+msgid "Appraisal aura reaches {0}m farther"
+msgstr "Аура оценки действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Rare+ valuables gain {0}% more when appraised"
+msgstr "Ценности редкости «редкое» и выше получают при оценке ещё {0}%"
+
+msgctxt "shape"
+msgid "Appraised valuables gain {0}% more, aura reaches {1}m farther"
+msgstr "Оценённые ценности получают ещё {0}%, аура действует на {1} м дальше"
+
+msgctxt "shape"
+msgid "appraised valuables gain {0}% more, Rare+ another {1}%"
+msgstr "оценённые ценности получают ещё {0}%, а редкие и выше - ещё {1}% сверху"
+
+msgctxt "shape"
+msgid "+{0}% extraction XP"
+msgstr "+{0}% опыта за извлечение"
+
+msgctxt "shape"
+msgid "+{0}% level-complete XP"
+msgstr "+{0}% опыта за прохождение уровня"
+
+msgctxt "shape"
+msgid "+{0}% chance to find gear on extraction"
+msgstr "+{0}% к шансу найти снаряжение при извлечении"
+
+msgctxt "shape"
+msgid "+{0} gear luck (better rarities)"
+msgstr "+{0} к удаче снаряжения (редкость выше)"
+
+msgctxt "shape"
+msgid "+{0}% all XP, +{1} gear luck"
+msgstr "+{0}% ко всему опыту, +{1} к удаче снаряжения"
+
+msgctxt "shape"
+msgid "Appraisal Scan tracks {0}% more items"
+msgstr "«Оценочное сканирование» отслеживает на {0}% больше предметов"
+
+msgctxt "shape"
+msgid "Appraisal Scan reaches {0}% farther"
+msgstr "«Оценочное сканирование» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Appraisal Scan lasts {0}% longer"
+msgstr "«Оценочное сканирование» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Appraisal Scan cooldown {0}% shorter"
+msgstr "Перезарядка «Оценочного сканирования» на {0}% короче"
+
+msgctxt "shape"
+msgid "Appraisal Scan tracks {0}% more items and reaches {1}% farther"
+msgstr "«Оценочное сканирование» отслеживает на {0}% больше предметов и действует на {1}% дальше"
+
+msgctxt "shape"
+msgid "Your HUD warns you of enemies within {0}m, through walls. Enemies hit by your Stasis Field are Marked: they take {1}% more damage from everyone for {2}s."
+msgstr "HUD предупреждает вас о врагах в пределах {0} м, сквозь стены. Враги, попавшие под ваше «Стазисное поле», получают метку: {2} с они получают на {1}% больше урона от всех."
+
+msgctxt "shape"
+msgid "+{0}% max health and {1}% less damage taken."
+msgstr "+{0}% к макс. здоровью, получаемый урон меньше на {1}%."
+
+msgctxt "shape"
+msgid "Stun every enemy within {0}m for {1}s and deal {2} damage."
+msgstr "Оглушает всех врагов в пределах {0} м на {1} с и наносит {2} урона."
+
+msgctxt "shape"
+msgid "Enemy warning reaches {0}m farther"
+msgstr "Предупреждение о врагах действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "+{0}% chance elites drop a second item"
+msgstr "+{0}% к шансу, что с элиты выпадет второй предмет"
+
+msgctxt "shape"
+msgid "Marked enemies take {0}% more damage"
+msgstr "Враги с меткой получают на {0}% больше урона"
+
+msgctxt "shape"
+msgid "Enemy warning {0}m farther, Marks last {1}s longer"
+msgstr "Предупреждение о врагах - на {0} м дальше, метки держатся на {1} с дольше"
+
+msgctxt "shape"
+msgid "enemy warning {0}m farther, Marked enemies take {1}% more"
+msgstr "предупреждение о врагах - на {0} м дальше, враги с меткой получают ещё на {1}% больше"
+
+msgctxt "shape"
+msgid "Marks last {0}s longer"
+msgstr "Метки держатся на {0} с дольше"
+
+msgctxt "shape"
+msgid "Each kill near you takes {0}s off Stasis Field's cooldown"
+msgstr "Каждое убийство рядом с вами сокращает перезарядку «Стазисного поля» на {0} с"
+
+msgctxt "shape"
+msgid "Kills take {0}s more off the cooldown, Marks last {1}s longer"
+msgstr "Убийства сокращают перезарядку ещё на {0} с, метки держатся на {1} с дольше"
+
+msgctxt "shape"
+msgid "Marked enemies take {0}% more damage for {1}s longer"
+msgstr "Враги с меткой получают на {0}% больше урона на {1} с дольше"
+
+msgctxt "shape"
+msgid "Stasis Field lasts {0}% longer"
+msgstr "«Стазисное поле» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Stasis Field reaches {0}% farther"
+msgstr "«Стазисное поле» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Stasis Field deals {0}% more damage"
+msgstr "«Стазисное поле» наносит на {0}% больше урона"
+
+msgctxt "shape"
+msgid "Stasis Field cooldown {0}% shorter"
+msgstr "Перезарядка «Стазисного поля» на {0}% короче"
+
+msgctxt "shape"
+msgid "Stasis Field lasts {0}% longer and reaches {1}% farther"
+msgstr "«Стазисное поле» действует на {0}% дольше и на {1}% дальше"
+
+msgctxt "shape"
+msgid "Talking near teammates builds Inspire ({0}-{1}; no mic: hold the Hum key, slower). Teammates within {2}m get up to +{3}% speed and +{4}% grip strength, scaled by Inspire."
+msgstr "Разговор рядом с напарниками копит Воодушевление ({0}-{1}; без микрофона: удерживайте клавишу гула, это медленнее). Напарники в пределах {2} м получают до +{3}% к скорости и +{4}% к силе хвата, в зависимости от Воодушевления."
+
+msgctxt "shape"
+msgid "Weakness: while you talk, monsters within {0}m come to investigate you. -{1}% max health."
+msgstr "Слабость: пока вы говорите, монстры в пределах {0} м идут проверить, что там. -{1}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "while you talk, monsters within {0}m come to investigate you. -{1}% max health."
+msgstr "пока вы говорите, монстры в пределах {0} м идут проверить, что там. -{1}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "Teammates within {0}m get up to +{1}% speed, +{2}% grip and {3}% less damage for {4}s (full strength at {5} Inspire, half at {6}); monsters within {7}m flinch. Spends half your Inspire."
+msgstr "Напарники в пределах {0} м получают до +{1}% к скорости, +{2}% к хвату и на {3}% меньше урона на {4} с (в полную силу при {5} Воодушевления, вполовину при {6}); монстры в пределах {7} м вздрагивают. Тратит половину вашего Воодушевления."
+
+msgctxt "shape"
+msgid "Inspire: +{0}% speed for teammates"
+msgstr "Воодушевление: +{0}% к скорости напарников"
+
+msgctxt "shape"
+msgid "Inspire reaches {0}m farther"
+msgstr "Воодушевление действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Rally Cry lasts {0}% longer"
+msgstr "«Боевой клич» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Inspire: +{0}% grip and +{1}% speed for teammates"
+msgstr "Воодушевление: +{0}% к хвату и +{1}% к скорости напарников"
+
+msgctxt "shape"
+msgid "Rally Cry {0}% stronger and reaches {1}% farther"
+msgstr "«Боевой клич» сильнее на {0}% и действует на {1}% дальше"
+
+msgctxt "shape"
+msgid "Inspire fades {0} per second slower"
+msgstr "Воодушевление угасает на {0} в секунду медленнее"
+
+msgctxt "shape"
+msgid "While silent, Inspire slowly builds by itself ({0}/s, up to {1})"
+msgstr "Пока вы молчите, Воодушевление медленно копится само ({0}/с, до {1})"
+
+msgctxt "shape"
+msgid "Talking builds Inspire {0}% faster"
+msgstr "Разговор копит Воодушевление на {0}% быстрее"
+
+msgctxt "shape"
+msgid "Rally Cry cooldown {0}% shorter"
+msgstr "Перезарядка «Боевого клича» на {0}% короче"
+
+msgctxt "shape"
+msgid "Rally Cry at {0}+ Inspire spends none and refunds {1}% of its cooldown"
+msgstr "«Боевой клич» при {0}+ Воодушевления ничего не тратит и возвращает {1}% своей перезарядки"
+
+msgctxt "shape"
+msgid "Rally Cry makes monsters within {0}m more go to you"
+msgstr "«Боевой клич» заставляет идти к вам монстров ещё на {0} м дальше"
+
+msgctxt "shape"
+msgid "Take {0}% less damage while a monster is within {1}m"
+msgstr "Вы получаете на {0}% меньше урона, пока монстр в пределах {1} м"
+
+msgctxt "shape"
+msgid "Each hit you take builds {0} Inspire"
+msgstr "Каждый полученный удар даёт {0} Воодушевления"
+
+msgctxt "shape"
+msgid "Rally Cry's flinch lasts {0}s longer"
+msgstr "Монстры вздрагивают от «Боевого клича» на {0} с дольше"
+
+msgctxt "shape"
+msgid "above {0} Inspire you take {1}% less damage"
+msgstr "при Воодушевлении выше {0} вы получаете на {1}% меньше урона"
+
+msgctxt "shape"
+msgid "Stay within {0}m of a teammate for {1}s to copy their active ability at {2}% strength. Can't copy another Mimic. You keep the last copy until you learn a new one."
+msgstr "Побудьте {1} с в пределах {0} м от напарника, чтобы скопировать его активную способность с силой {2}%. Другого Мимика скопировать нельзя. Последняя копия остаётся у вас, пока вы не изучите новую."
+
+msgctxt "shape"
+msgid "Weakness: no ability until you've copied one each level, and copies have {0}% longer cooldowns."
+msgstr "Слабость: на каждом уровне способности нет, пока вы её не скопируете, а перезарядка копий на {0}% дольше."
+
+msgctxt "shape"
+msgid "no ability until you've copied one each level, and copies have {0}% longer cooldowns."
+msgstr "на каждом уровне способности нет, пока вы её не скопируете, а перезарядка копий на {0}% дольше."
+
+msgctxt "shape"
+msgid "Copies {0}% stronger"
+msgstr "Копии сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Copies last {0}% longer"
+msgstr "Копии действуют на {0}% дольше"
+
+msgctxt "shape"
+msgid "Copies reach {0}% farther"
+msgstr "Копии действуют на {0}% дальше"
+
+msgctxt "shape"
+msgid "Copies {0}% stronger, cooldown penalty {1}% smaller"
+msgstr "Копии сильнее на {0}%, штраф к перезарядке меньше на {1}%"
+
+msgctxt "shape"
+msgid "copies {0}% stronger, and no cooldown penalty"
+msgstr "копии сильнее на {0}%, штрафа к перезарядке нет"
+
+msgctxt "shape"
+msgid "Using a copy refunds {0}% of its cooldown"
+msgstr "Применение копии возвращает {0}% её перезарядки"
+
+msgctxt "shape"
+msgid "Copies gain an extra charge at rank {0}"
+msgstr "На ранге {0} копии получают дополнительный заряд"
+
+msgctxt "shape"
+msgid "Keep your last two copies; the Swap key switches between them. Copy cooldowns {0}% shorter"
+msgstr "Сохраняйте две последние копии; клавиша смены переключает их. Перезарядка копий на {0}% короче"
+
+msgctxt "shape"
+msgid "Using one copy shortens the other's cooldown by {0}% (with Twin Souls, which gives them separate cooldowns)"
+msgstr "Применение одной копии сокращает перезарядку другой на {0}% (с талантом «Души-близнецы», который даёт им отдельные перезарядки)"
+
+msgctxt "shape"
+msgid "Copy {0}s faster"
+msgstr "Копирование на {0} с быстрее"
+
+msgctxt "shape"
+msgid "Copy from {0}m farther"
+msgstr "Копирование с расстояния на {0} м больше"
+
+msgctxt "shape"
+msgid "Copy cooldowns {0}% shorter"
+msgstr "Перезарядка копий на {0}% короче"
+
+msgctxt "shape"
+msgid "A new copy starts {0}% of the way through its cooldown"
+msgstr "Новая копия начинает с {0}% пройденной перезарядки"
+
+msgctxt "shape"
+msgid "copy instantly, from {0}m farther"
+msgstr "копирование мгновенное, с расстояния на {0} м больше"
+
+msgctxt "shape"
+msgid "Death heads you carry can't break, and you move {0}% faster while carrying one."
+msgstr "Головы погибших, которые вы несёте, не могут разбиться, а вы с головой в руках двигаетесь на {0}% быстрее."
+
+msgctxt "shape"
+msgid "Teammates revived near you ({0}m) come back with {1}% more health. Weakness: -{2}% max health, -{3}% sprint speed."
+msgstr "Напарники, возрождённые рядом с вами ({0} м), возвращаются с запасом здоровья на {1}% больше. Слабость: -{2}% к макс. здоровью, -{3}% к скорости бега."
+
+msgctxt "shape"
+msgid "Teammates revived near you ({0}m) come back with {1}% more health."
+msgstr "Напарники, возрождённые рядом с вами ({0} м), возвращаются с запасом здоровья на {1}% больше."
+
+msgctxt "shape"
+msgid "-{0}% max health, -{1}% sprint speed."
+msgstr "-{0}% к макс. здоровью, -{1}% к скорости бега."
+
+msgctxt "shape"
+msgid "Revive a teammate whose death head you can see within {0}m, at {1}% health ({2}% with Last Rites)."
+msgstr "Возрождает напарника, чью голову вы видите в пределах {0} м, с {1}% здоровья ({2}% с «Последними почестями»)."
+
+msgctxt "shape"
+msgid "+{0}% speed while carrying a head"
+msgstr "+{0}% к скорости с головой в руках"
+
+msgctxt "shape"
+msgid "See where dead teammates' heads are, up to {0}m away per rank"
+msgstr "Вы видите, где лежат головы погибших напарников, на расстоянии до {0} м за ранг"
+
+msgctxt "shape"
+msgid "+{0}% grab strength on heads"
+msgstr "+{0}% к силе хвата для голов"
+
+msgctxt "shape"
+msgid "Take {0}% less damage while carrying a head"
+msgstr "Вы получаете на {0}% меньше урона, пока несёте голову"
+
+msgctxt "shape"
+msgid "Reboot reaches {0}% farther and costs {1}% less cooldown"
+msgstr "«Перезагрузка» действует на {0}% дальше, а её перезарядка на {1}% короче"
+
+msgctxt "shape"
+msgid "Revived teammates come back with {0}% more health"
+msgstr "Возрождённые напарники возвращаются с запасом здоровья на {0}% больше"
+
+msgctxt "shape"
+msgid "Last Rites works from {0}m farther"
+msgstr "«Последние почести» действуют на {0} м дальше"
+
+msgctxt "shape"
+msgid "Reboot reaches {0}% farther"
+msgstr "«Перезагрузка» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Reboot cooldown {0}% shorter"
+msgstr "Перезарядка «Перезагрузки» на {0}% короче"
+
+msgctxt "shape"
+msgid "Revived teammates take {0}% less damage for {1}s"
+msgstr "Возрождённые напарники {1} с получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "Revived teammates get +{0}% speed for {1}s"
+msgstr "Возрождённые напарники получают +{0}% к скорости на {1} с"
+
+msgctxt "shape"
+msgid "Revived teammates' buffs last {0}s longer"
+msgstr "Усиления возрождённых напарников длятся на {0} с дольше"
+
+msgctxt "shape"
+msgid "+{0}% speed for {1}s after any revive near you"
+msgstr "+{0}% к скорости на {1} с после любого возрождения рядом с вами"
+
+msgctxt "shape"
+msgid "revived teammates take {0}% less damage, for {1}s longer"
+msgstr "возрождённые напарники получают на {0}% меньше урона, на {1} с дольше"
+
+msgctxt "shape"
+msgid "Carts you push move {0}% faster, and valuables in a cart near you ({1}m) lose {2}% less value when damaged."
+msgstr "Тележки, которые вы толкаете, едут на {0}% быстрее, а ценности в тележке рядом с вами ({1} м) теряют на {2}% меньше стоимости при повреждении."
+
+msgctxt "shape"
+msgid "The last cart you pushed follows you hands-free while you're within {0}m of it, steering around ledges and obstacles. Holding it pauses it; it carries on when let go. Weakness: -{1}% throw strength, -{2}% max stamina."
+msgstr "Последняя тележка, которую вы толкали, сама едет за вами, пока вы в пределах {0} м от неё, объезжая уступы и препятствия. Пока вы её держите, она стоит; отпустите - поедет дальше. Слабость: -{1}% к силе броска, -{2}% к макс. выносливости."
+
+msgctxt "shape"
+msgid "The last cart you pushed follows you hands-free while you're within {0}m of it, steering around ledges and obstacles. Holding it pauses it; it carries on when let go."
+msgstr "Последняя тележка, которую вы толкали, сама едет за вами, пока вы в пределах {0} м от неё, объезжая уступы и препятствия. Пока вы её держите, она стоит; отпустите - поедет дальше."
+
+msgctxt "shape"
+msgid "-{0}% throw strength, -{1}% max stamina."
+msgstr "-{0}% к силе броска, -{1}% к макс. выносливости."
+
+msgctxt "shape"
+msgid "The nearest cart within {0}m drives itself safely to the nearest extraction point (up to {1}s) and parks there. Won't launch without a safe route."
+msgstr "Ближайшая тележка в пределах {0} м сама безопасно едет к ближайшей точке извлечения (до {1} с) и останавливается там. Без безопасного маршрута не поедет."
+
+msgctxt "shape"
+msgid "Carts you push +{0}% speed"
+msgstr "Тележки, которые вы толкаете: +{0}% к скорости"
+
+msgctxt "shape"
+msgid "Loyal Cart follows from {0}m farther"
+msgstr "«Верная тележка» следует за вами с расстояния на {0} м больше"
+
+msgctxt "shape"
+msgid "Loyal Cart keeps up {0}% better"
+msgstr "«Верная тележка» поспевает за вами на {0}% лучше"
+
+msgctxt "shape"
+msgid "carts you push +{0}% speed, and your carts stun monsters they hit for {1}s"
+msgstr "тележки, которые вы толкаете: +{0}% к скорости, а ваши тележки оглушают монстров, в которых врезаются, на {1} с"
+
+msgctxt "shape"
+msgid "Cargo near you loses {0}% less value"
+msgstr "Груз рядом с вами теряет на {0}% меньше стоимости"
+
+msgctxt "shape"
+msgid "Take {0}% less damage while within {1}m of a cart"
+msgstr "Вы получаете на {0}% меньше урона в пределах {1} м от тележки"
+
+msgctxt "shape"
+msgid "When cargo in your cart breaks, get {0}% of its value as Scrap"
+msgstr "Когда груз в вашей тележке разбивается, вы получаете {0}% его стоимости ломом"
+
+msgctxt "shape"
+msgid "cargo near you loses {0}% less value"
+msgstr "груз рядом с вами теряет на {0}% меньше стоимости"
+
+msgctxt "shape"
+msgid "Overdrive drives {0}% faster"
+msgstr "«Форсаж» везёт тележку на {0}% быстрее"
+
+msgctxt "shape"
+msgid "Overdrive grabs a cart {0}% farther away"
+msgstr "«Форсаж» захватывает тележку на {0}% дальше"
+
+msgctxt "shape"
+msgid "Overdrive drives every cart in range, and holds {0} charges"
+msgstr "«Форсаж» ведёт все тележки в радиусе действия и хранит зарядов: {0}"
+
+msgctxt "shape"
+msgid "Objects you hold are {0}% lighter, and you throw {1}% farther."
+msgstr "Предметы у вас в руках на {0}% легче, а бросаете вы на {1}% дальше."
+
+msgctxt "shape"
+msgid "Valuables you let go of fall slowly for {0}s and take {1}% less impact damage. Weakness: -{2}% max health."
+msgstr "Ценности, которые вы отпустили, {0} с падают медленно и получают на {1}% меньше урона от удара. Слабость: -{2}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "Valuables you let go of fall slowly for {0}s and take {1}% less impact damage."
+msgstr "Ценности, которые вы отпустили, {0} с падают медленно и получают на {1}% меньше урона от удара."
+
+msgctxt "shape"
+msgid "-{0}% max health."
+msgstr "-{0}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "A {0}m bubble for {1}s: objects inside float, and monsters inside float helplessly."
+msgstr "Пузырь на {0} м на {1} с: предметы внутри парят, а монстры внутри беспомощно висят в воздухе."
+
+msgctxt "shape"
+msgid "Held objects {0}% lighter"
+msgstr "Предметы в руках на {0}% легче"
+
+msgctxt "shape"
+msgid "Held objects swing {0}% less"
+msgstr "Предметы в руках раскачиваются на {0}% меньше"
+
+msgctxt "shape"
+msgid "Held valuables take {0}% less impact damage"
+msgstr "Ценности в руках получают на {0}% меньше урона от удара"
+
+msgctxt "shape"
+msgid "held objects {0}% lighter and take {1}% less damage"
+msgstr "предметы в руках на {0}% легче и получают на {1}% меньше урона"
+
+msgctxt "shape"
+msgid "Throw {0}% farther"
+msgstr "Бросок на {0}% дальше"
+
+msgctxt "shape"
+msgid "Soft Landing lasts {0}s longer"
+msgstr "«Мягкая посадка» действует на {0} с дольше"
+
+msgctxt "shape"
+msgid "Soft Landing: {0}% less impact damage"
+msgstr "«Мягкая посадка»: на {0}% меньше урона от удара"
+
+msgctxt "shape"
+msgid "Thrown objects that hit a monster deal {0} extra damage"
+msgstr "Брошенные предметы, попавшие в монстра, наносят {0} дополнительного урона"
+
+msgctxt "shape"
+msgid "throw {0}% farther, and thrown objects stun monsters for {1}s"
+msgstr "бросок на {0}% дальше, а брошенные предметы оглушают монстров на {1} с"
+
+msgctxt "shape"
+msgid "Zero-G Field lasts {0}% longer"
+msgstr "«Поле невесомости» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Zero-G Field reaches {0}% farther"
+msgstr "«Поле невесомости» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Zero-G Field cooldown {0}% shorter"
+msgstr "Перезарядка «Поля невесомости» на {0}% короче"
+
+msgctxt "shape"
+msgid "Monsters in the field take {0}% more damage"
+msgstr "Монстры в поле получают на {0}% больше урона"
+
+msgctxt "shape"
+msgid "the field pulls things toward its centre, and holds {0} charges"
+msgstr "поле притягивает всё к своему центру и хранит зарядов: {0}"
+
+msgctxt "shape"
+msgid "Objects you throw make a lure noise where they land: monsters within {0}m go to investigate it."
+msgstr "Брошенные вами предметы издают шум-приманку там, где упали: монстры в пределах {0} м идут его проверить."
+
+msgctxt "shape"
+msgid "While a monster is within {0}m, every {1}s your footsteps are faked {2}m behind you and it goes there instead. Weakness: take {3}% more damage."
+msgstr "Пока монстр в пределах {0} м, каждые {1} с ваши шаги подделываются в {2} м позади вас, и он идёт туда. Слабость: вы получаете на {3}% больше урона."
+
+msgctxt "shape"
+msgid "While a monster is within {0}m, every {1}s your footsteps are faked {2}m behind you and it goes there instead."
+msgstr "Пока монстр в пределах {0} м, каждые {1} с ваши шаги подделываются в {2} м позади вас, и он идёт туда."
+
+msgctxt "shape"
+msgid "take {0}% more damage."
+msgstr "вы получаете на {0}% больше урона."
+
+msgctxt "shape"
+msgid "Drop a beacon that makes noise for {0}s; monsters within {1}m go to it."
+msgstr "Ставит маяк, который шумит {0} с; монстры в пределах {1} м идут к нему."
+
+msgctxt "shape"
+msgid "Lures reach {0}m farther"
+msgstr "Приманки действуют на {0} м дальше"
+
+msgctxt "shape"
+msgid "Lures can trigger {0}s more often"
+msgstr "Приманки могут срабатывать на {0} с чаще"
+
+msgctxt "shape"
+msgid "Lures stun monsters within {0}m of the landing spot for {1}s"
+msgstr "Приманки оглушают монстров в пределах {0} м от места падения на {1} с"
+
+msgctxt "shape"
+msgid "lures reach {0}m farther, and every lure also fakes your footsteps"
+msgstr "приманки действуют на {0} м дальше, и каждая приманка ещё и подделывает ваши шаги"
+
+msgctxt "shape"
+msgid "Fake steps {0}s more often"
+msgstr "Ложные шаги на {0} с чаще"
+
+msgctxt "shape"
+msgid "Fake steps land {0}m farther away"
+msgstr "Ложные шаги звучат на {0} м дальше"
+
+msgctxt "shape"
+msgid "+{0}% sprint speed for {1}s after fake steps"
+msgstr "+{0}% к скорости бега на {1} с после ложных шагов"
+
+msgctxt "shape"
+msgid "Fake steps fool monsters {0}m farther away"
+msgstr "Ложные шаги обманывают монстров на {0} м дальше"
+
+msgctxt "shape"
+msgid "fake steps {0}s more often and fool monsters {1}m farther away"
+msgstr "ложные шаги на {0} с чаще и обманывают монстров на {1} м дальше"
+
+msgctxt "shape"
+msgid "Decoy Beacon lasts {0}% longer"
+msgstr "«Маяк-приманка» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Decoy Beacon reaches {0}% farther"
+msgstr "«Маяк-приманка» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Decoy Beacon cooldown {0}% shorter"
+msgstr "Перезарядка «Маяка-приманки» на {0}% короче"
+
+msgctxt "shape"
+msgid "When the beacon ends, monsters within {0}m are stunned {1}s"
+msgstr "Когда маяк гаснет, монстры в пределах {0} м оглушаются на {1} с"
+
+msgctxt "shape"
+msgid "{0} charges, and beacons last {1}% longer"
+msgstr "зарядов: {0}, а маяки действуют на {1}% дольше"
+
+msgctxt "shape"
+msgid "Explosions within {0}m of you hit monsters {1}% harder and are {2}% bigger."
+msgstr "Взрывы в пределах {0} м от вас бьют по монстрам на {1}% сильнее, а их радиус на {2}% больше."
+
+msgctxt "shape"
+msgid "Those explosions deal {0}% less damage to players and to valuables. Weakness: -{1}% max health."
+msgstr "Эти взрывы наносят на {0}% меньше урона игрокам и ценностям. Слабость: -{1}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "Those explosions deal {0}% less damage to players and to valuables."
+msgstr "Эти взрывы наносят на {0}% меньше урона игрокам и ценностям."
+
+msgctxt "shape"
+msgid "Place a charge at your feet: {0}s later it hits monsters within {1}m for {2} damage and stuns them for {3}s. It never hurts players or loot."
+msgstr "Ставит заряд у ваших ног: через {0} с он наносит монстрам в пределах {1} м {2} урона и оглушает их на {3} с. Игрокам и добыче он не вредит никогда."
+
+msgctxt "shape"
+msgid "Explosions near you +{0}% damage to monsters"
+msgstr "Взрывы рядом с вами: +{0}% урона по монстрам"
+
+msgctxt "shape"
+msgid "Explosions near you {0}% bigger"
+msgstr "Взрывы рядом с вами на {0}% больше"
+
+msgctxt "shape"
+msgid "Explosions near you stun monsters {0}s"
+msgstr "Взрывы рядом с вами оглушают монстров на {0} с"
+
+msgctxt "shape"
+msgid "explosions near you +{0}% damage and {1}% bigger"
+msgstr "взрывы рядом с вами: +{0}% урона и на {1}% больше"
+
+msgctxt "shape"
+msgid "Explosions near you hurt players {0}% less"
+msgstr "Взрывы рядом с вами вредят игрокам на {0}% меньше"
+
+msgctxt "shape"
+msgid "Explosions near you damage valuables {0}% less"
+msgstr "Взрывы рядом с вами повреждают ценности на {0}% меньше"
+
+msgctxt "shape"
+msgid "Your explosion bonuses reach {0}m farther"
+msgstr "Ваши бонусы к взрывам действуют на {0} м дальше"
+
+msgctxt "shape"
+msgid "Explosions near you hurt players and valuables {0}% less"
+msgstr "Взрывы рядом с вами вредят игрокам и ценностям на {0}% меньше"
 
 msgctxt "shape"
 msgid "Thrown items stun monsters they hit for {0} s."

@@ -68,6 +68,14 @@ def shape(en, ru):
     return pe, pr
 
 
+def shape_key(en):
+    """the English side of shape(): the text with every number as a placeholder; None when it has no numbers"""
+    slots = SLOT.findall(en)
+    if not slots or '{' in SLOT.sub('', en): return None
+    it = iter(range(len(slots)))
+    return SLOT.sub(lambda m: '{%d}' % next(it), en)
+
+
 def fill(msgid, msgstr, values=None):
     """a sample of a shape: the placeholders filled with numbers"""
     n = len(re.findall(r'\{\d+\}', msgid))
@@ -139,6 +147,7 @@ def build(data_json, tsv_dir, known, problems):
         checks.append(fill(*sh))
 
     pre, behs, base, slots, post, first, epithet = [], [], [], [], [], [], []
+    left_ids = []
     for u in units:
         todo[u['file']] += 1
         en, kinds = u['text'], u['kinds']
@@ -147,6 +156,7 @@ def build(data_json, tsv_dir, known, problems):
             if en in known and not (set(kinds) & {'pre', 'beh', 'base', 'post', 'guide', 'keywords', 'contract', 'synergy'}):
                 done[u['file']] += 1            # the same text as a code unit: already in the dictionary
                 if '{' not in en and NUMBER.search(en): text(en, known[en], u['id'], exact=False)
+            else: left_ids.append(u['id'])
             continue
         ru, extra, where = have
         done[u['file']] += 1
@@ -239,8 +249,20 @@ def build(data_json, tsv_dir, known, problems):
             # a nickname made of nouns does not change: Гриндл Мелкий Шрифт
             en = f_en + ' the ' + e_en
             if en not in terms: terms[en] = f_ru + ' ' + (e_f if g == 'f' and e_f else e_ru); bosses += 1
+    # a text that differs from a translated one only by its numbers is covered by that shape
+    by_id = {u['id']: u for u in units}
+    still = []
+    for uid in left_ids:
+        u = by_id[uid]
+        key = None if set(u['kinds']) & {'guide', 'keywords'} else shape_key(u['text'])
+        if key is not None and key in shapes:
+            done[u['file']] += 1
+            checks.append((u['text'], fill(key, shapes[key], SLOT.findall(u['text']))[1]))
+        else: still.append(uid)
+    left_ids = still
     stats = collections.OrderedDict()
     stats['units'] = sum(todo.values()); stats['translated'] = sum(done.values())
+    stats['left ids'] = left_ids
     stats['left'] = ', '.join('%s %d' % (f, todo[f] - done[f]) for f in todo if todo[f] != done[f])
     stats['gear names'] = made; stats['boss names'] = bosses
     return terms, shapes, guide, checks, stats
