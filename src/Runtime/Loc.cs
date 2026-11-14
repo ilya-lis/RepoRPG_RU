@@ -457,6 +457,38 @@ namespace RepoRPG_RU
             return sb.ToString();
         }
 
+        /// <summary>A rarity ("Rare", "Starter", "Cursed") in the form asked for; null when the word is not one of them.</summary>
+        private static string InForm(string word, int gender, bool inside)
+        {
+            string[] forms;
+            if (things == null || word.Length < 2 || word.Length > 24 || !kinds.TryGetValue(word.ToUpperInvariant(), out forms)) return null;
+            if (string.Equals(word, word.ToUpperInvariant(), StringComparison.Ordinal)) return Upper(forms[gender]);       // SHOUTED
+            return inside ? LowerFirst(forms[gender]) : forms[gender];
+        }
+
+        /// <summary>
+        /// "Plating · Rare", "PLATING</color>  <color=#4FA3FF>RARE", "Rare Plating</color>  <color=#ffd75a>Unique": a rarity that stands
+        /// alone next to the thing it belongs to takes its form - «Броня · Редкая».
+        /// </summary>
+        private static string Beside(int gender, string word)
+        {
+            return gender < 0 ? null : InForm(word, gender, false);
+        }
+
+        /// <summary>Has the text written so far any words of its own (rich text tags are not words)?</summary>
+        private static bool Worded(StringBuilder sb)
+        {
+            bool tag = false;
+            for (int i = 0; i < sb.Length; i++)
+            {
+                char c = sb[i];
+                if (c == '<') tag = true;
+                else if (c == '>') tag = false;
+                else if (!tag && char.IsLetter(c)) return true;
+            }
+            return false;
+        }
+
         /// <summary>The dictionary, or a name the mod built from the words of its data.</summary>
         private static string Named(string text)
         {
@@ -606,6 +638,19 @@ namespace RepoRPG_RU
                 if (t == null && (unknown || !(Pattern.Simple(rest) && NameLike(rest, false)))) continue;       // a sentence of its own, not a name
                 return (t ?? rest) + suffixes[i].Value;
             }
+            // "Rare Health upgrade" + «  * родство с классом»: the ending was replaced inside the mod, the sentence in front of it
+            // is one the mod puts together and has to be translated here - all of it, or the text is left alone
+            if (!IsLatinLetter(text[text.Length - 1]))
+            {
+                for (int i = 0; i < suffixes.Length; i++)
+                {
+                    string v = suffixes[i].Value;
+                    if (v.Length < 3 || text.Length <= v.Length || !HasCyrillic(v)
+                        || string.CompareOrdinal(text, text.Length - v.Length, v, 0, v.Length) != 0) continue;
+                    string t = Sub(text.Substring(0, text.Length - v.Length), depth + 1);
+                    if (t != null) return t + v;
+                }
+            }
             for (int i = 0; i < prefixes.Length; i++)
             {
                 string k = prefixes[i].Key;
@@ -681,12 +726,15 @@ namespace RepoRPG_RU
             if (at < 0) return null;
             StringBuilder sb = null;
             int start = 0, index = 0, done = 0, foreign = 0;
+            string before = null;
             while (true)
             {
                 int end = at < 0 ? text.Length : at;
                 string part = text.Substring(start, end - start);
                 bool unknown = false;
-                string t = Piece(part, depth, ref unknown);
+                // "Plating · Rare": the kind of an item right after its slot
+                string t = (mode == Cells && before != null ? Beside(Gender(before), part) : null) ?? Piece(part, depth, ref unknown);
+                before = part;
                 if (unknown) return null;
                 if (t != null) done++;
                 else if (mode != Lines && HasLatin(part))
@@ -743,6 +791,7 @@ namespace RepoRPG_RU
             StringBuilder sb = new StringBuilder(text.Length + 16);
             int start = 0, i = lt, tags = 0;
             bool any = false, unknown = false;
+            int thing = -1;             // the gender of the thing this line has named so far
             while (i >= 0 && i < text.Length)
             {
                 int close = text.IndexOf('>', i);
@@ -753,8 +802,14 @@ namespace RepoRPG_RU
                 if (i > start)
                 {
                     string run = text.Substring(start, i - start);
-                    string t = Piece(run, depth, ref unknown);
+                    // "PLATING</color>  <color=#4FA3FF>RARE": the kind of the item in a slot, after the slot
+                    string t = Beside(thing, run) ?? Piece(run, depth, ref unknown);
                     if (unknown) return null;
+                    if (things != null && run.Length <= 120 && IsLatinLetter(run[0]))
+                    {
+                        int g = Gender(run);
+                        if (g >= 0) thing = g;
+                    }
                     if (t != null) any = true;
                     sb.Append(t ?? run);
                 }
@@ -767,7 +822,7 @@ namespace RepoRPG_RU
             if (start < text.Length)
             {
                 string run = text.Substring(start);
-                string t = Piece(run, depth, ref unknown);
+                string t = Beside(thing, run) ?? Piece(run, depth, ref unknown);
                 if (unknown) return null;
                 if (t != null) any = true;
                 sb.Append(t ?? run);
@@ -921,6 +976,12 @@ namespace RepoRPG_RU
             return new string(a);
         }
 
+        private static bool HasCyrillic(string s)
+        {
+            for (int i = 0; i < s.Length; i++) if (s[i] >= '\u0400' && s[i] <= '\u04FF') return true;
+            return false;
+        }
+
         private static bool HasLatin(string s)
         {
             for (int i = 0; i < s.Length; i++)
@@ -948,10 +1009,12 @@ namespace RepoRPG_RU
             public bool[] Roomy;       // "Gift failed: {0}", "+{0} Scrap – {1}", "{0} (level {1})": a text of its own may stand here
             public bool[] Framed;      // "RepoRPG: '{0}' hit an error and was switched off...": the sentence's own words stand on both sides
             public bool[] Known;       // "{0} gear": a rarity stands here - a word the dictionary has, or this is another text ("Spawn gear")
+            public int[] Form;         // "Rarity: {0}": the form a rarity takes there (0 he, 1 she, 2 it, 3 they), -1 as the dictionary has it
+            public bool[] Rarity;      // "{0} gear": nothing but a rarity may stand there ("team gear" is another text)
 
             private const byte Value = 0, Clause = 1, Line = 2;
 
-            public static Pattern Parse(string original, string translation, bool explicitPattern, int[] numbers, int[] words)
+            public static Pattern Parse(string original, string translation, bool explicitPattern, int[] numbers, int[] words, int[] forms)
             {
                 List<string> lits = new List<string>();
                 List<int> slots = new List<int>();
@@ -1047,8 +1110,16 @@ namespace RepoRPG_RU
                 p.Roomy = new bool[p.Slots.Length];
                 p.Framed = new bool[p.Slots.Length];
                 p.Known = new bool[p.Slots.Length];
-                if (words != null)
-                    for (int k = 0; k < p.Slots.Length; k++) p.Known[k] = Array.IndexOf(words, p.Slots[k]) >= 0;
+                p.Form = new int[p.Slots.Length];
+                p.Rarity = new bool[p.Slots.Length];
+                for (int k = 0; k < p.Slots.Length; k++)
+                {
+                    int w = words == null ? -1 : Array.IndexOf(words, p.Slots[k]);
+                    int form = w >= 0 && forms != null && w < forms.Length ? forms[w] : -1;
+                    p.Known[k] = w >= 0;
+                    p.Form[k] = form < 0 ? -1 : form & 3;
+                    p.Rarity[k] = form >= 4;
+                }
                 for (int k = 0; k < p.Slots.Length; k++)
                 {
                     // a long sentence that goes on after the placeholder cannot be mistaken for another one: what it caught is
@@ -1179,7 +1250,9 @@ namespace RepoRPG_RU
                     if (Known[k])
                     {
                         // one of the mod's own words belongs here ("Rare", "in the shop"): the dictionary has it, or this is another text
-                        if (Exact(v) == null) return null;
+                        // (a word that arrives in Russian was replaced inside the mod already: "Rarity: " + «Все»)
+                        if (Exact(v) == null && !HasCyrillic(v)) return null;
+                        if (Rarity[k] && InForm(v, 0, false) == null) return null;
                     }
                     else if (Tight && !Simple(v) && !(things != null && Built(v) != null))      // (a long name the mod built is still a name)
                     {
@@ -1237,6 +1310,19 @@ namespace RepoRPG_RU
                             {
                                 string both = Built(value + " " + caught[slot + 1]);
                                 if (both != null) { sb.Append(both); i = close2; continue; }
+                            }
+                        }
+                        // "Rarity: {0}": the rarity in the form this sentence asks for - «Редкость: редкая»
+                        if (Form[slot] >= 0 && things != null)
+                        {
+                            string formed = InForm(value, Form[slot], Worded(sb));
+                            if (formed != null)
+                            {
+                                sb.Append(formed);
+                                lastSlot = slot;
+                                lastEnd = close + 1;
+                                i = close;
+                                continue;
                             }
                         }
                         // a name inside the text may be translatable on its own: "Equipped: Iron Plate"
@@ -1340,19 +1426,21 @@ namespace RepoRPG_RU
             List<Pattern> all = new List<Pattern>();
             foreach (KeyValuePair<string, string> kv in lang.Patterns)
             {
-                int[] nums, words;
+                int[] nums, words, forms;
                 lang.Numbers.TryGetValue(kv.Key, out nums);
                 lang.Words.TryGetValue(kv.Key, out words);
-                Pattern p = Pattern.Parse(kv.Key, kv.Value, true, nums, words);
+                lang.WordForms.TryGetValue(kv.Key, out forms);
+                Pattern p = Pattern.Parse(kv.Key, kv.Value, true, nums, words, forms);
                 if (p != null) all.Add(p);
             }
             foreach (KeyValuePair<string, string> kv in m)
             {
                 if (kv.Key.IndexOf('{') < 0 || lang.Patterns.ContainsKey(kv.Key)) continue;
-                int[] nums, words;
+                int[] nums, words, forms;
                 lang.Numbers.TryGetValue(kv.Key, out nums);
                 lang.Words.TryGetValue(kv.Key, out words);
-                Pattern p = Pattern.Parse(kv.Key, kv.Value, false, nums, words);
+                lang.WordForms.TryGetValue(kv.Key, out forms);
+                Pattern p = Pattern.Parse(kv.Key, kv.Value, false, nums, words, forms);
                 if (p != null) all.Add(p);
             }
             all.Sort(delegate(Pattern a, Pattern b)

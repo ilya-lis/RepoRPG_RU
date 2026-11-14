@@ -12,7 +12,9 @@
 #   data:contracts    the same for contracts.json: only the values at the paths the rules file names
 #   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)
 #   numbers           not a translation: which placeholders of a sentence are numbers (worked out from the mod's code)
-#   words             not a translation: which placeholders hold one of the mod's own words (a rarity, a tab name)
+#   words             not a translation: which placeholders hold one of the mod's own words (a rarity, a tab name);
+#                     a letter after the number is the form a rarity takes there - m he, f she, n it, p they
+#                     (a capital letter: nothing but a rarity may stand there)
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -919,7 +921,7 @@ msgid "Starter items can't be rerolled or upgraded"
 msgstr "Стартовые предметы нельзя перебрасывать и улучшать"
 
 msgid "Rerolls"
-msgstr "Перебрасывает"
+msgstr "Переброс"
 
 msgid "{0}: {1} affix{2}"
 msgstr "{0}: свойств: {1}"
@@ -1805,9 +1807,6 @@ msgstr "Слейте три ненадетых предмета одного с�
 
 msgid "<color=#9a9ca0>You need three unequipped items of the same slot and rarity.</color>"
 msgstr "<color=#9a9ca0>Нужны три ненадетых предмета одного слота и редкости.</color>"
-
-msgid "You have {0}. Makes one <color={1}>{2}</color> {3}."
-msgstr "У вас {0}. Получится 1 предмет: {3}, редкость - <color={1}>{2}</color>."
 
 msgid "FUSE?"
 msgstr "СЛИТЬ?"
@@ -3358,10 +3357,7 @@ msgid "  <color=#7fb8ff>Equipped</color>"
 msgstr "  <color=#7fb8ff>Надето</color>"
 
 msgid "  <color=#E0344B>[!] Cursed</color>"
-msgstr "  <color=#E0344B>[!] Проклятый</color>"
-
-msgid "  <color=#ffd75a>Unique</color>"
-msgstr "  <color=#ffd75a>Уникальный</color>"
+msgstr "  <color=#E0344B>[!] Проклятие</color>"
 
 msgid "  <color=#7fd8ff>Behavior</color>"
 msgstr "  <color=#7fd8ff>Поведение</color>"
@@ -4523,9 +4519,6 @@ msgstr "БОСС {0}: {1}{2}  {3:0} м"
 
 msgid "  * class affinity"
 msgstr "  * родство с классом"
-
-msgid "Holding: {0} valuable  ${1:N0}"
-msgstr "В руках: ценность ({0})  ${1:N0}"
 
 msgid "MAP MODIFIER: "
 msgstr "МОДИФИКАТОР КАРТЫ: "
@@ -22714,7 +22707,7 @@ msgstr "Изгнан: {0} (больше не будет предложен в э
 
 msgctxt "pattern"
 msgid "Upgrades to {0} and rerolls"
-msgstr "Повышает редкость до «{0}» и перебрасывает"
+msgstr "Новая редкость - {0}, переброс"
 
 msgctxt "pattern"
 msgid "{0}\nKeeps: {1}\n\nCost: {2}"
@@ -22742,7 +22735,7 @@ msgstr "{0} предмет"
 
 msgctxt "pattern"
 msgid "{0} {1} upgrade{2}"
-msgstr "Улучшение: {1} ({0}){2}"
+msgstr "{0} улучшение: {1}{2}"
 
 msgctxt "pattern"
 msgid "Pick a class ({0}) to earn XP from upgrades"
@@ -22794,7 +22787,7 @@ msgstr "улучшение за детали: {0}"
 
 msgctxt "pattern"
 msgid "Upgraded {0} to {1}"
-msgstr "Улучшено: {0} - теперь редкость «{1}»"
+msgstr "Улучшено: {0} - редкость теперь {1}"
 
 msgctxt "pattern"
 msgid "The cart costs {0}"
@@ -22830,7 +22823,7 @@ msgstr " для \"{0}\""
 
 msgctxt "pattern"
 msgid "The item becomes {0}; its stats scale up."
-msgstr "Предмет получит редкость: {0}; его параметры вырастут."
+msgstr "Новая редкость предмета - {0}; его параметры вырастут."
 
 msgctxt "pattern"
 msgid "Line: {0}"
@@ -23155,6 +23148,10 @@ msgstr "{0} (Оружейный верстак)"
 msgctxt "pattern"
 msgid "Fuse 3 {0} {1}"
 msgstr "Слить 3: {0} {1}"
+
+msgctxt "pattern"
+msgid "You have {0}. Makes one <color={1}>{2}</color> {3}."
+msgstr "У вас {0}. Получится 1 предмет: {3}, редкость - <color={1}>{2}</color>."
 
 msgctxt "pattern"
 msgid "Fuse {0} into one {1} {2}? The three are used up (their modules go back to your bag). This can't be undone."
@@ -23850,7 +23847,7 @@ msgstr "<color=#99e6ff><b>Запрос:</b> {0}</color>\n"
 
 msgctxt "pattern"
 msgid "{0} gear"
-msgstr "Снаряжение ({0})"
+msgstr "{0} снаряжение"
 
 msgctxt "pattern"
 msgid "Market: {0}"
@@ -24098,7 +24095,7 @@ msgstr "На одну редкость выше (не выше эпическо�
 
 msgctxt "pattern"
 msgid "Upgrade {0} to {1} for {2} and 2 Core Shards?"
-msgstr "Улучшить «{0}» до редкости «{1}» за {2} и 2 осколка ядра?"
+msgstr "Улучшить «{0}» за {2} и 2 осколка ядра? Новая редкость - {1}."
 
 msgctxt "pattern"
 msgid "Module removal ({0}) and whole-item rerolls / upgrades are on the Gear tab's inspect card."
@@ -24125,8 +24122,8 @@ msgid "Buy {0}"
 msgstr "Купить: {0}"
 
 msgctxt "pattern"
-msgid "{0} {1}upgrade{2}"
-msgstr "{0} {1}(улучшение){2}"
+msgid "Holding: {0} valuable  ${1:N0}"
+msgstr "В руках: {0} ценность  ${1:N0}"
 
 msgctxt "pattern"
 msgid "MAP MODIFIER: {0}"
@@ -29653,6 +29650,10 @@ msgid "gear"
 msgstr "n|снаряжение"
 
 msgctxt "noun"
+msgid "upgrade"
+msgstr "n|улучшение"
+
+msgctxt "noun"
 msgid "Striker Module"
 msgstr "m"
 
@@ -34216,14 +34217,6 @@ msgctxt "@Commit::HostHandle#4738"
 msgid "taken by "
 msgstr "занят: "
 
-msgctxt "@ContractBoard::OptionText#4002"
-msgid "Gear: "
-msgstr "Снаряжение: "
-
-msgctxt "@ContractBoard::OptionText#4002"
-msgid " or better"
-msgstr " или лучше"
-
 msgctxt "@ContractBoard::OptionText#4003"
 msgid "Crafting parts: "
 msgstr "Детали для крафта: "
@@ -34868,10 +34861,6 @@ msgctxt "@RpgRuntime::BuildRosterLines#2336"
 msgid "Synergy: "
 msgstr "Синергия: "
 
-msgctxt "@RpgRuntime::BuildRpgHudLines#2401"
-msgid "upgrade"
-msgstr "(улучшение)"
-
 msgctxt "@RpgRuntime::BuildSynergyLine#2259"
 msgid "</b> with <color="
 msgstr "</b> и <color="
@@ -34927,14 +34916,6 @@ msgstr "Корзина стоит "
 msgctxt "@RpgRuntime::BuyFuturesE#941"
 msgid " futures crate"
 msgstr " фьючерсный ящик"
-
-msgctxt "@RpgRuntime::BuyGearReroll#516"
-msgid "Upgrades to "
-msgstr "Повышает редкость до «"
-
-msgctxt "@RpgRuntime::BuyGearReroll#516"
-msgid " and rerolls"
-msgstr "» и перебрасывает"
 
 msgctxt "@RpgRuntime::BuyGearReroll#518"
 msgid "\nKeeps: "
@@ -35160,10 +35141,6 @@ msgctxt "@RpgRuntime::DrawAbilityChips#1283"
 msgid "★ MASTERED: "
 msgstr "★ ОСВОЕН: "
 
-msgctxt "@RpgRuntime::DrawAllPerks#1763"
-msgid "Rarity: "
-msgstr "Редкость: "
-
 msgctxt "@RpgRuntime::DrawAllPerks#1764"
 msgid "Search: "
 msgstr "Поиск: "
@@ -35264,14 +35241,6 @@ msgctxt "@RpgRuntime::DrawCraftDialog#665"
 msgid " on \""
 msgstr " для \""
 
-msgctxt "@RpgRuntime::DrawCraftDialog#668"
-msgid "The item becomes "
-msgstr "Предмет получит редкость: "
-
-msgctxt "@RpgRuntime::DrawCraftDialog#668"
-msgid "; its stats scale up."
-msgstr "; его параметры вырастут."
-
 msgctxt "@RpgRuntime::DrawCraftDialog#673"
 msgid "Line: "
 msgstr "Свойство: "
@@ -35359,10 +35328,6 @@ msgstr "Создать: "
 msgctxt "@RpgRuntime::DrawGearTab#1762"
 msgid "Slot: "
 msgstr "Слот: "
-
-msgctxt "@RpgRuntime::DrawGearTab#1763"
-msgid "Rarity: "
-msgstr "Редкость: "
 
 msgctxt "@RpgRuntime::DrawGearTab#1764"
 msgid "Search: "
@@ -35783,22 +35748,6 @@ msgstr "» за "
 msgctxt "@RpgRuntime::DrawShopContent#2367"
 msgid "One rarity up (Epic at most), for Scrap plus 2 Core Shards. Uses the item's rarity upgrade. You have "
 msgstr "На одну редкость выше (не выше эпической), за лом и 2 осколка ядра. Расходует повышение редкости предмета. У вас: "
-
-msgctxt "@RpgRuntime::DrawShopContent#2369"
-msgid "Upgrade "
-msgstr "Улучшить «"
-
-msgctxt "@RpgRuntime::DrawShopContent#2369"
-msgid " to "
-msgstr "» до редкости «"
-
-msgctxt "@RpgRuntime::DrawShopContent#2369"
-msgid " for "
-msgstr "» за "
-
-msgctxt "@RpgRuntime::DrawShopContent#2369"
-msgid " and 2 Core Shards?"
-msgstr " и 2 осколка ядра?"
 
 msgctxt "@RpgRuntime::DrawShopContent#2376"
 msgid "Module removal ("
@@ -37757,10 +37706,6 @@ msgid "{0} Unique{1} on file. Each visit, one of them is in your Gear section."
 msgstr "0"
 
 msgctxt "numbers"
-msgid "You have {0}. Makes one <color={1}>{2}</color> {3}."
-msgstr "0"
-
-msgctxt "numbers"
 msgid "Cracking the vault... {0:0.0} / 6 s (monsters hear it)"
 msgstr "0"
 
@@ -39293,6 +39238,10 @@ msgid "Need {0} more {1}"
 msgstr "0"
 
 msgctxt "numbers"
+msgid "You have {0}. Makes one <color={1}>{2}</color> {3}."
+msgstr "0"
+
+msgctxt "numbers"
 msgid "{0}  Lv {1}"
 msgstr "1"
 
@@ -39681,20 +39630,40 @@ msgid "{0} joined {1}"
 msgstr "1"
 
 msgctxt "words"
+msgid "Upgrades to {0} and rerolls"
+msgstr "0f"
+
+msgctxt "words"
 msgid "a {0} item"
 msgstr "0"
 
 msgctxt "words"
 msgid "{0} {1} upgrade{2}"
-msgstr "0"
+msgstr "0N"
+
+msgctxt "words"
+msgid "Upgraded {0} to {1}"
+msgstr "1f"
+
+msgctxt "words"
+msgid "The item becomes {0}; its stats scale up."
+msgstr "0f"
 
 msgctxt "words"
 msgid "{0} futures crate"
 msgstr "0"
 
 msgctxt "words"
+msgid "You have {0}. Makes one <color={1}>{2}</color> {3}."
+msgstr "2f"
+
+msgctxt "words"
 msgid "Already on {0}"
 msgstr "0"
+
+msgctxt "words"
+msgid "Rarity: {0}"
+msgstr "0f"
 
 msgctxt "words"
 msgid "Go to {0}"
@@ -39702,15 +39671,19 @@ msgstr "0"
 
 msgctxt "words"
 msgid "{0} gear"
-msgstr "0"
+msgstr "0N"
 
 msgctxt "words"
 msgid "{0} perk"
 msgstr "0"
 
 msgctxt "words"
-msgid "{0} {1}upgrade{2}"
-msgstr "0"
+msgid "Upgrade {0} to {1} for {2} and 2 Core Shards?"
+msgstr "1f"
+
+msgctxt "words"
+msgid "Holding: {0} valuable  ${1:N0}"
+msgstr "0f"
 
 msgctxt "words"
 msgid "Most levels on {0}"
@@ -39719,6 +39692,10 @@ msgstr "0"
 msgctxt "words"
 msgid "{0} is locked"
 msgstr "0"
+
+msgctxt "words"
+msgid "Gear: {0} or better"
+msgstr "0N"
 
 msgctxt "words"
 msgid "{0}+ gear"

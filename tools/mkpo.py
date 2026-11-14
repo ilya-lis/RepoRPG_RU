@@ -136,8 +136,16 @@ def main():
                     # +numbers<TAB>+{0} Scrap – {1}<TAB>0     placeholder 0 of that sentence is always a number
                     # +words<TAB>{0} gear<TAB>0               placeholder 0 is one of the mod's own words (a rarity, a tab):
                     #                                         the sentence is recognised only when the dictionary has that word
-                    if not re.fullmatch(r'\d+(,\d+)*', cols[2].strip()): problems.append(where + ': expected placeholder numbers like 0,2')
-                    else: (hand_num if cols[0] == '+numbers' else hand_words).append((unescape(cols[1]), set(int(x) for x in cols[2].split(',')), where))
+                    # +words<TAB>Rarity: {0}<TAB>0f           ...and a rarity standing there takes that form: m he, f she, n it,
+                    #                                         p they («Редкость: редкая»). Such a sentence is translated only at
+                    #                                         the moment it is drawn: inside the mod's code nobody knows the word
+                    # +words<TAB>{0} gear<TAB>0N              ...and nothing but a rarity may stand there ("team gear" is another text)
+                    mark = cols[2].strip()
+                    if cols[0] == '+numbers':
+                        if not re.fullmatch(r'\d+(,\d+)*', mark): problems.append(where + ': expected placeholder numbers like 0,2')
+                        else: hand_num.append((unescape(cols[1]), set(int(x) for x in mark.split(',')), where))
+                    elif not re.fullmatch(r'\d+[mfnpMFNP]?(,\d+[mfnpMFNP]?)*', mark): problems.append(where + ': expected placeholder numbers like 0,2 or 0f')
+                    else: hand_words.append((unescape(cols[1]), dict((int(x.rstrip('mfnpMFNP')), x[len(x.rstrip('mfnpMFNP')):]) for x in mark.split(',')), where))
                     continue
                 extra.append((cols[0][1:], unescape(cols[1]), unescape(cols[2]), where)); continue
             if len(cols) != 2: problems.append(where + ': expected id<TAB>text'); continue
@@ -157,6 +165,7 @@ def main():
     chain_scoped = []          # (scope, unit id, {piece: translation})
     checks = []
     lit_by_text = {}
+    formed = set(en for en, marks, where in hand_words if any(marks.values()))
     for uid, (t, where) in tr.items():
         u = by_id[uid]
         src = u['text']
@@ -186,6 +195,12 @@ def main():
             if not t.startswith(want) or t[len(want):len(want) + 1] in ('', ' ') or re.match(r'^(м|с|сек\.?|мин\.?) ', t[len(want):]):
                 problems.append('%s: #%s a stat line has to start with %r and then the name (the mod cuts it at the first space): %r -> %r'
                                 % (where, uid, want, src[:60], t[:60])); continue
+        if src in formed:
+            # "Rarity: {0}" -> «Редкость: {0}» with the rarity in the feminine: only the add-on's own code can do that, so the
+            # sentence stays as the mod wrote it and is translated when it is drawn
+            pat_e[src] = t
+            if any(NUM.match(h) for h in HOLE.findall(src)): numbers(src, u)
+            continue
         m = TAGGED.match(src)
         if m and re.search('[A-Za-z]{2}', src[m.end():]):
             # "season|The run is complete.": a note the host puts into the state of the run, which goes to every player.
@@ -298,7 +313,9 @@ def main():
            '#   data:contracts    the same for contracts.json: only the values at the paths the rules file names',
            '#   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)',
            '#   numbers           not a translation: which placeholders of a sentence are numbers (worked out from the mod\'s code)',
-           '#   words             not a translation: which placeholders hold one of the mod\'s own words (a rarity, a tab name)',
+           '#   words             not a translation: which placeholders hold one of the mod\'s own words (a rarity, a tab name);',
+           '#                     a letter after the number is the form a rarity takes there - m he, f she, n it, p they',
+           '#                     (a capital letter: nothing but a rarity may stand there)',
            'msgid ""', 'msgstr ""', '"Content-Type: text/plain; charset=UTF-8\\n"', '"Language: ru\\n"', '']
     def emit(ctx, table):
         for en, ru in table.items():
@@ -331,9 +348,11 @@ def main():
         if en not in pat_e and en not in glob_e: problems.append('%s: +numbers for a sentence that has no entry: %r' % (where, en[:60])); continue
         num_e[en] = set(num_e.get(en, ())) | idx
     word_e = {}
-    for en, idx, where in hand_words:
+    for en, marks, where in hand_words:
         if en not in pat_e and en not in glob_e: problems.append('%s: +words for a sentence that has no entry: %r' % (where, en[:60])); continue
-        word_e[en] = set(word_e.get(en, ())) | idx
+        if any(marks.values()) and en not in pat_e:
+            problems.append('%s: +words with a form needs a sentence the mod puts together, not a text replaced inside its code: %r' % (where, en[:60])); continue
+        word_e.setdefault(en, {}).update(marks)
     # the generated samples put numbers into every placeholder; where a word of the mod's own belongs, a number proves nothing
     # (those sentences are checked by hand-written cases in tests/drawn.tsv)
     skip = set(sample(en, (pat_e.get(en) or glob_e.get(en)))[0] for en in word_e)
@@ -342,7 +361,8 @@ def main():
         for en in list(glob_e) + list(pat_e):
             idx = table.get(en)
             if not idx: continue
-            out.append('msgctxt ' + po(ctx)); out.append('msgid ' + po(en)); out.append('msgstr ' + po(','.join(str(k) for k in sorted(idx)))); out.append('')
+            out.append('msgctxt ' + po(ctx)); out.append('msgid ' + po(en))
+            out.append('msgstr ' + po(','.join(str(k) + (idx[k] if ctx == 'words' else '') for k in sorted(idx)))); out.append('')
     os.makedirs(os.path.dirname(sys.argv[3]), exist_ok=True)
     open(sys.argv[3], 'w', encoding='utf-8', newline='\n').write('\n'.join(out))
     if len(sys.argv) > 4:

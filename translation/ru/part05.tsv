@@ -106,8 +106,9 @@
 1789	Сбросить фильтры
 1790	◆ НОВОЕ
 1791	<color=#7fb8ff>Надето</color>
-1792	<color=#E0344B>[!] Проклятый</color>
-1793	<color=#ffd75a>Уникальный</color>
+1792	<color=#E0344B>[!] Проклятие</color>
+# 1793 stays as the mod wrote it inside the code: drawn after "Rare Plating", the word takes its form («Уникальная»)
+1793	<color=#ffd75a>Unique</color>
 1794	<color=#7fd8ff>Поведение</color>
 1795	Надето: {0}
 1796	Стартовый

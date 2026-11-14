@@ -98,13 +98,12 @@ Legendary gear	Легендарное снаряжение
 Spawn gear	Spawn gear
 Legendary+ gear	Легендарный+ предмет
 a Rare item	Редкий предмет
-Epic futures crate	Эпический фьючерсный ящик
 Rare perk	Редкий перк
 Go to Shop	Перейти: Магазин
 Go to hell	Go to hell
  · resists Fire	 · сопротивление: Огонь
  · weak to Void	 · слабость: Пустота
-Rare Strength upgrade	Улучшение: Strength (Редкий)
+Rare Strength upgrade	Редкое улучшение: Strength
 shared upgrades	shared upgrades
 shared upgrade	shared upgrade
 # late join: where the player joined is one of three texts of the mod
@@ -193,7 +192,7 @@ Couldn't salvage Heavy Riot Plating: сначала снимите предме�
 Лаборатория прототипов: Prototype Capacitor Weapon Module - в разделе «Снаряжение»	Лаборатория прототипов: Прототип: конденсаторный оружейный модуль - в разделе «Снаряжение»
 Cursed: -10% max health	Проклятие: -10% к макс. здоровью
 Slotted Spark Plug into Sharp Striker Module of the Brawler	Вставлено: Свеча зажигания - в предмет «Острый ударный модуль драчуна»
-Upgraded Heavy Riot Plating to Epic	Улучшено: Тяжёлая штурмовая броня - теперь редкость «Эпический»
+Upgraded Heavy Riot Plating to Epic	Улучшено: Тяжёлая штурмовая броня - редкость теперь эпическая
 Rerolled a line on Heavy Riot Plating: +5% max health	Переброшено свойство предмета «Тяжёлая штурмовая броня»: +5% к макс. здоровью
 Крафт: Повысить параметр - «Heavy Riot Plating» (1/3)	Крафт: Повысить параметр - «Тяжёлая штурмовая броня» (1/3)
 Couldn't pawn Heavy Riot Plating: unequip it first	Не удалось заложить «Тяжёлая штурмовая броня»: сначала снимите предмет
@@ -212,6 +211,36 @@ Item: Heavy Riot Plating (Rare, equipped)	Предмет: Тяжёлая шту�
 Target: Thornshell (Epic)	Цель: Шипастый панцирь (эпический)
 Price Board: next visit's featured deal is Final Notice (Legendary)	Доска цен: предложение на витрине в следующий визит - Последнее уведомление (легендарное)
 Target: Bob (Rare)	Цель: Bob (Редкий)
+# a rarity that stands alone takes the form its sentence asks for («Редкость: редкая») or the form of the thing next to it
+Rarity: Rare	Редкость: редкая
+Rarity: Legendary	Редкость: легендарная
+Rarity: All	Редкость: Все
+Rarity: Все	Редкость: Все
+Gear: Rare or better	Снаряжение: редкое или лучше
+Rare Health upgrade	Редкое улучшение: Здоровье
+Legendary Sprint Speed upgrade	Легендарное улучшение: Скорость бега
+Rare Health upgrade – class affinity x2!	Редкое улучшение: Здоровье – родство с классом x2!
+Rare Health upgrade – родство с классом x2!	Редкое улучшение: Здоровье – родство с классом x2!
+Rare Health upgrade  * class affinity	Редкое улучшение: Здоровье  * родство с классом
+Rare Health upgrade  * родство с классом	Редкое улучшение: Здоровье  * родство с классом
+Rare upgrade	Редкое улучшение
+Rare upgrade  * родство с классом	Редкое улучшение  * родство с классом
+The item becomes Epic; its stats scale up.	Новая редкость предмета - эпическая; его параметры вырастут.
+Upgrade Heavy Riot Plating to Epic for 40 лома and 2 Core Shards?	Улучшить «Тяжёлая штурмовая броня» за 40 лома и 2 осколка ядра? Новая редкость - эпическая.
+You have 4. Makes one <color=#B26BFF>Epic</color> Plating.	У вас 4. Получится 1 предмет: Броня, редкость - <color=#B26BFF>эпическая</color>.
+Holding: Rare valuable  $1,200	В руках: редкая ценность  $1,200
+Upgrades to Epic and rerolls: свойств: 3 (базовый параметр растёт вместе с редкостью)	Новая редкость - эпическая, переброс: свойств: 3 (базовый параметр растёт вместе с редкостью)
+Epic futures crate	Эпический фьючерсный ящик
+Plating · Rare	Броня · Редкая
+Leg Servos · Starter	Ножные сервоприводы · Стартовые
+Weapon Module · Cursed	Оружейный модуль · Проклятый
+Core · Legendary	Ядро · Легендарное
+<color=#9a9ca0>PLATING</color>  <color=#4FA3FF>RARE</color>	<color=#9a9ca0>БРОНЯ</color>  <color=#4FA3FF>РЕДКАЯ</color>
+<color=#9a9ca0>CORE</color>  <color=#b455ff>CURSED</color>	<color=#9a9ca0>ЯДРО</color>  <color=#b455ff>ПРОКЛЯТОЕ</color>
+<color=#9a9ca0>Rare Plating</color>  <color=#7fb8ff>Надето</color>  <color=#ffd75a>Unique</color>  <color=#7fd8ff>Поведение</color>	<color=#9a9ca0>Редкая броня</color>  <color=#7fb8ff>Надето</color>  <color=#ffd75a>Уникальная</color>  <color=#7fd8ff>Поведение</color>
+<color=#9a9ca0>Legendary Core</color>  <color=#ffd75a>Unique</color>	<color=#9a9ca0>Легендарное ядро</color>  <color=#ffd75a>Уникальное</color>
+<color=#ffd75a>Unique</color>	<color=#ffd75a>Уникальный</color>
+Mythic gear	Mythic gear
 # names saved by versions 0.1.x of the add-on, which rewrote these two heads inside the mod
 Проклято: Sharp Striker Module	Проклято: Острый ударный модуль
 Прототип Mender Plating	Прототип Ремонтная броня

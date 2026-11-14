@@ -26,6 +26,11 @@ namespace RepoRPG_RU
         public readonly Dictionary<string, int[]> Numbers = new Dictionary<string, int[]>(StringComparer.Ordinal);
         /// <summary>msgctxt "words": sentence -> the placeholders that hold one of the mod's own words.</summary>
         public readonly Dictionary<string, int[]> Words = new Dictionary<string, int[]>(StringComparer.Ordinal);
+        /// <summary>
+        /// msgctxt "words", "0f": sentence -> for every such placeholder the form a rarity takes there (0 he, 1 she, 2 it, 3 they;
+        /// -1 as it is; 4..7 the same four when nothing but a rarity may stand there - "0F").
+        /// </summary>
+        public readonly Dictionary<string, int[]> WordForms = new Dictionary<string, int[]>(StringComparer.Ordinal);
         /// <summary>msgctxt "pattern": "{0} cancelled the offer" - matched against finished texts at display time only.</summary>
         public readonly Dictionary<string, string> Patterns = new Dictionary<string, string>(StringComparer.Ordinal);
         /// <summary>msgctxt "data" (key "") and "data:stem" (key stem).</summary>
@@ -83,14 +88,31 @@ namespace RepoRPG_RU
             if (e.Ctx == "numbers" || e.Ctx == "words")
             {
                 // not a translation: msgstr lists placeholders of the sentence ("0,2") - the ones that are always numbers,
-                // or the ones that hold a word of the mod's own (a rarity, the name of a tab)
-                List<int> idx = new List<int>();
+                // or the ones that hold a word of the mod's own (a rarity, the name of a tab). A letter after the number of
+                // a word ("0f") is the form a rarity takes there: m he, f she, n it, p they («Редкость: редкая»)
+                List<int> idx = new List<int>(), forms = new List<int>();
+                bool formed = false;
                 foreach (string part in e.Str.Split(','))
                 {
+                    string item = part.Trim();
+                    int form = -1;
+                    if (e.Ctx == "words" && item.Length > 1)
+                    {
+                        // a capital letter: nothing but a rarity may stand there (4..7)
+                        form = "mfnpMFNP".IndexOf(item[item.Length - 1]);
+                        if (form >= 0) item = item.Substring(0, item.Length - 1);
+                    }
                     int k;
-                    if (int.TryParse(part.Trim(), out k) && k >= 0) idx.Add(k);
+                    if (!int.TryParse(item, out k) || k < 0) continue;
+                    idx.Add(k);
+                    forms.Add(form);
+                    if (form >= 0) formed = true;
                 }
-                if (idx.Count > 0) (e.Ctx == "numbers" ? Numbers : Words)[e.Id] = idx.ToArray();
+                if (idx.Count > 0)
+                {
+                    (e.Ctx == "numbers" ? Numbers : Words)[e.Id] = idx.ToArray();
+                    if (formed) WordForms[e.Id] = forms.ToArray();
+                }
                 return;
             }
             bool data = e.Ctx != null && (e.Ctx == "data" || e.Ctx.StartsWith("data:", StringComparison.Ordinal));

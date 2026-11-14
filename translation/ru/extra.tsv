@@ -28,6 +28,7 @@
 +adj	Cursed	Проклятый|Проклятая|Проклятое|Проклятые
 # "Rare gear", "Legendary gear" (a reward): a common word instead of a name
 +noun	gear	n|снаряжение
++noun	upgrade	n|улучшение
 # валюта мода: название берётся из настроек (Currency / Name, ShortName); короткое стоит после чисел
 +term	Scrap	лома
 +term	RPG Scrap	RPG-лом
@@ -128,7 +129,7 @@
 +numbers	+{0} Scrap – {1} (x{2})	0,2
 +numbers	-{0} Scrap – {1}	0
 +numbers	ENDLESS {0}	0
-+words	{0} gear	0
++words	{0} gear	0N
 +words	{0}+ gear	0
 +words	a {0} item	0
 +words	{0} futures crate	0
@@ -139,8 +140,15 @@
 +words	 · resists {0}	0
 +words	 · weak to {0}	0
 +words	Go to {0}	0
-+words	{0} {1} upgrade{2}	0
-+words	{0} {1}upgrade{2}	0
++words	{0} {1} upgrade{2}	0N
++words	Rarity: {0}	0f
++words	Gear: {0} or better	0N
++words	The item becomes {0}; its stats scale up.	0f
++words	Upgraded {0} to {1}	1f
++words	Upgrade {0} to {1} for {2} and 2 Core Shards?	1f
++words	You have {0}. Makes one <color={1}>{2}</color> {3}.	2f
++words	Holding: {0} valuable  ${1:N0}	0f
++words	Upgrades to {0} and rerolls	0f
 +pattern	RepoRPG: this game version changed something - off: {0} and {1} more. See the log.	RepoRPG: в этой версии игры что-то изменилось - отключено: {0} и ещё {1}. См. журнал.
 +numbers	RepoRPG: this game version changed something - off: {0} and {1} more. See the log.	1
 # «mid-level» в коде выглядит как ключ, поэтому в общий список не попал; показывается в сообщениях о позднем подключении
