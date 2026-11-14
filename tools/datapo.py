@@ -257,7 +257,9 @@ def build(data_json, tsv_dir, known, problems):
         key = None if set(u['kinds']) & {'guide', 'keywords'} else shape_key(u['text'])
         if key is not None and key in shapes:
             done[u['file']] += 1
-            checks.append((u['text'], fill(key, shapes[key], SLOT.findall(u['text']))[1]))
+            # the mod puts a number where {t} / {v} is before it shows the text, so the sample gets numbers too
+            values = [v if not v.startswith('{') else str(3 + 4 * i) for i, v in enumerate(SLOT.findall(u['text']))]
+            checks.append(fill(key, shapes[key], values))
         else: still.append(uid)
     left_ids = still
     stats = collections.OrderedDict()

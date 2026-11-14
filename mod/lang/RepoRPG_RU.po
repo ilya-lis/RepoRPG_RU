@@ -5700,7 +5700,7 @@ msgid "Taxman's Ledger"
 msgstr "Гроссбух мытаря"
 
 msgid "Catch! +{0:0}% value"
-msgstr "Поймал! +{0:0}% к стоимости"
+msgstr "Лови! +{0:0}% к стоимости"
 
 msgid "Butterfingers Insurance: no value lost"
 msgstr "Страховка растяпы: стоимость не потеряна"
@@ -17149,6 +17149,94 @@ msgid "Dispatch countdown -2s and dispatched items arrive worth 5% more"
 msgstr "Отсчёт «Отправки»: -2 с, а отправленные предметы прибывают на 5% дороже"
 
 msgctxt "term"
+msgid "Complete 10 extraction points"
+msgstr "Завершите 10 точек извлечения"
+
+msgctxt "term"
+msgid "Scrapper"
+msgstr "Утильщик"
+
+msgctxt "term"
+msgid "extraction gear finds are one rarity higher"
+msgstr "снаряжение, найденное при извлечении, на одну редкость выше"
+
+msgctxt "term"
+msgid "Kill 15 monsters"
+msgstr "Убейте 15 монстров"
+
+msgctxt "term"
+msgid "Nosferatu"
+msgstr "Носферату"
+
+msgctxt "term"
+msgid "weapon hits heal 1 HP more"
+msgstr "удары оружием лечат ещё на 1 ОЗ"
+
+msgctxt "term"
+msgid "Sprint for 5 minutes in total"
+msgstr "Пробегите в сумме 5 минут"
+
+msgctxt "term"
+msgid "sprinting also heals 1 HP every 10 s"
+msgstr "бег также лечит на 1 ОЗ каждые 10 с"
+
+msgctxt "term"
+msgid "Earn 3,000 XP"
+msgstr "Заработайте 3,000 опыта"
+
+msgctxt "term"
+msgid "+10% more XP"
+msgstr "ещё +10% опыта"
+
+msgctxt "term"
+msgid "Find 5 Rare-or-better gear"
+msgstr "Найдите 5 предметов снаряжения редкости «редкое» и выше"
+
+msgctxt "term"
+msgid "Charmed"
+msgstr "Заговорённый"
+
+msgctxt "term"
+msgid "+2 more gear luck"
+msgstr "ещё +2 к удаче снаряжения"
+
+msgctxt "term"
+msgid "Stay near teammates for 10 minutes"
+msgstr "Пробудьте рядом с напарниками 10 минут"
+
+msgctxt "term"
+msgid "Warden Angel"
+msgstr "Ангел-страж"
+
+msgctxt "term"
+msgid "the aura also gives 5% damage resistance"
+msgstr "аура также даёт 5% сопротивления урону"
+
+msgctxt "term"
+msgid "Carry 20 valuables into extractions"
+msgstr "Донесите 20 ценностей до точек извлечения"
+
+msgctxt "term"
+msgid "Pack Horse"
+msgstr "Вьючная лошадь"
+
+msgctxt "term"
+msgid "also +10% grip strength"
+msgstr "а также +10% к силе хвата"
+
+msgctxt "term"
+msgid "Use your ability 30 times"
+msgstr "Примените способность 30 раз"
+
+msgctxt "term"
+msgid "Panoramic"
+msgstr "Панорама"
+
+msgctxt "term"
+msgid "your ability area +10% more"
+msgstr "ещё +10% к области способности"
+
+msgctxt "term"
 msgid "Butterfingers Insurance"
 msgstr "Страховка растяпы"
 
@@ -17193,8 +17281,56 @@ msgid "Using your ability refills 20% stamina."
 msgstr "Применение способности восполняет 20% выносливости."
 
 msgctxt "term"
+msgid "Pied Piper"
+msgstr "Крысолов"
+
+msgctxt "term"
 msgid "Monsters take 0.3 s longer to notice you."
 msgstr "Монстры замечают вас на 0.3 с позже."
+
+msgctxt "term"
+msgid "Catch!"
+msgstr "Лови!"
+
+msgctxt "term"
+msgid "A valuable you throw that is caught within 3 s (by anyone) gains 5% value."
+msgstr "Брошенная вами ценность, пойманная в течение 3 с (кем угодно), получает 5% стоимости."
+
+msgctxt "term"
+msgid "Dead Man's Pulse"
+msgstr "Пульс мертвеца"
+
+msgctxt "term"
+msgid "When you go down, your death head stuns monsters within 5 m for 2 s."
+msgstr "Когда вы погибаете, ваша голова оглушает монстров в пределах 5 м на 2 с."
+
+msgctxt "term"
+msgid "Every 3rd use of your ability costs no charge."
+msgstr "Каждое 3-е применение способности не тратит заряд."
+
+msgctxt "term"
+msgid "Magnet Hands"
+msgstr "Руки-магниты"
+
+msgctxt "term"
+msgid "Small valuables within 3 m drift toward you."
+msgstr "Мелкие ценности в пределах 3 м плывут к вам."
+
+msgctxt "term"
+msgid "Once per level, a teammate within 10 m of you survives a killing hit at 1 HP."
+msgstr "Раз за уровень напарник в пределах 10 м от вас переживает смертельный удар с 1 ОЗ."
+
+msgctxt "term"
+msgid "Ghost Protocol"
+msgstr "Протокол «Призрак»"
+
+msgctxt "term"
+msgid "Once per level, the first monster hit on you also makes you silent for 4 s."
+msgstr "Раз за уровень первый удар монстра по вам также делает вас бесшумным на 4 с."
+
+msgctxt "term"
+msgid "Butter Hands"
+msgstr "Масляные руки"
 
 msgctxt "term"
 msgid "+30% throw strength, but you drop what you're holding when hit."
@@ -25229,6 +25365,66 @@ msgid "Dispatch countdown -{0}s and dispatched items arrive worth {1}% more"
 msgstr "Отсчёт «Отправки»: -{0} с, а отправленные предметы прибывают на {1}% дороже"
 
 msgctxt "shape"
+msgid "Complete {0} extraction points"
+msgstr "Завершите {0} точек извлечения"
+
+msgctxt "shape"
+msgid "Kill {0} monsters"
+msgstr "Убейте {0} монстров"
+
+msgctxt "shape"
+msgid "weapon hits heal {0} HP more"
+msgstr "удары оружием лечат ещё на {0} ОЗ"
+
+msgctxt "shape"
+msgid "Sprint for {0} minutes in total"
+msgstr "Пробегите в сумме {0} минут"
+
+msgctxt "shape"
+msgid "sprinting also heals {0} HP every {1} s"
+msgstr "бег также лечит на {0} ОЗ каждые {1} с"
+
+msgctxt "shape"
+msgid "Earn {0} XP"
+msgstr "Заработайте {0} опыта"
+
+msgctxt "shape"
+msgid "+{0}% more XP"
+msgstr "ещё +{0}% опыта"
+
+msgctxt "shape"
+msgid "Find {0} Rare-or-better gear"
+msgstr "Найдите {0} предметов снаряжения редкости «редкое» и выше"
+
+msgctxt "shape"
+msgid "+{0} more gear luck"
+msgstr "ещё +{0} к удаче снаряжения"
+
+msgctxt "shape"
+msgid "Stay near teammates for {0} minutes"
+msgstr "Пробудьте рядом с напарниками {0} минут"
+
+msgctxt "shape"
+msgid "the aura also gives {0}% damage resistance"
+msgstr "аура также даёт {0}% сопротивления урону"
+
+msgctxt "shape"
+msgid "Carry {0} valuables into extractions"
+msgstr "Донесите {0} ценностей до точек извлечения"
+
+msgctxt "shape"
+msgid "also +{0}% grip strength"
+msgstr "а также +{0}% к силе хвата"
+
+msgctxt "shape"
+msgid "Use your ability {0} times"
+msgstr "Примените способность {0} раз"
+
+msgctxt "shape"
+msgid "your ability area +{0}% more"
+msgstr "ещё +{0}% к области способности"
+
+msgctxt "shape"
 msgid "Thrown items stun monsters they hit for {0} s."
 msgstr "Брошенные предметы оглушают монстров, в которых попали, на {0} с."
 
@@ -25255,6 +25451,30 @@ msgstr "Применение способности восполняет {0}% в
 msgctxt "shape"
 msgid "Monsters take {0} s longer to notice you."
 msgstr "Монстры замечают вас на {0} с позже."
+
+msgctxt "shape"
+msgid "A valuable you throw that is caught within {0} s (by anyone) gains {1}% value."
+msgstr "Брошенная вами ценность, пойманная в течение {0} с (кем угодно), получает {1}% стоимости."
+
+msgctxt "shape"
+msgid "When you go down, your death head stuns monsters within {0} m for {1} s."
+msgstr "Когда вы погибаете, ваша голова оглушает монстров в пределах {0} м на {1} с."
+
+msgctxt "shape"
+msgid "Every {0}rd use of your ability costs no charge."
+msgstr "Каждое {0}-е применение способности не тратит заряд."
+
+msgctxt "shape"
+msgid "Small valuables within {0} m drift toward you."
+msgstr "Мелкие ценности в пределах {0} м плывут к вам."
+
+msgctxt "shape"
+msgid "Once per level, a teammate within {0} m of you survives a killing hit at {1} HP."
+msgstr "Раз за уровень напарник в пределах {0} м от вас переживает смертельный удар с {1} ОЗ."
+
+msgctxt "shape"
+msgid "Once per level, the first monster hit on you also makes you silent for {0} s."
+msgstr "Раз за уровень первый удар монстра по вам также делает вас бесшумным на {0} с."
 
 msgctxt "shape"
 msgid "+{0}% throw strength, but you drop what you're holding when hit."
