@@ -24251,7 +24251,7 @@ msgstr "<color=#ffd75a>РЕПУТАЦИЯ: {0}</color>  {1}  <color=#9a9ca0>· {
 
 msgctxt "pattern"
 msgid "{0}     <color=#ffb21e><b>RIVET:</b></color> <i>\"{1}\"</i>"
-msgstr "{0}     <color=#ffb21e><b>РИВЕТ:</b></color> <i>\"{1}\"</i>"
+msgstr "{0}     <color=#ffb21e><b>РИВЕТ:</b></color> <i>«{1}»</i>"
 
 msgctxt "pattern"
 msgid "{0} is locked"
@@ -25188,6 +25188,18 @@ msgstr "Авто: выбрано - {0} ({1:0} FPS за первую минуту
 msgctxt "pattern"
 msgid "{0}: {1}{2}  {3:0}m"
 msgstr "{0}: {1}{2}  {3:0} м"
+
+msgctxt "pattern"
+msgid "{0}  ({1:N0} / {2:N0} at Hard / Brutal)"
+msgstr "{0}  ({1:N0} / {2:N0} на сложном / жестоком)"
+
+msgctxt "pattern"
+msgid "<color=#ffd75a>Bonus</color> {0}"
+msgstr "<color=#ffd75a>Бонус</color> {0}"
+
+msgctxt "pattern"
+msgid "<color=#ffd75a>Bonus</color> {0}  (needs teammates)"
+msgstr "<color=#ffd75a>Бонус</color> {0}  (нужны напарники)"
 
 msgctxt "shape"
 msgid "Your ability holds {0} charges."
@@ -35811,7 +35823,11 @@ msgstr "<color=#ffd75a>РЕПУТАЦИЯ: "
 
 msgctxt "@RpgRuntime::DrawShopTabBody#2579"
 msgid "     <color=#ffb21e><b>RIVET:</b></color> <i>\""
-msgstr "     <color=#ffb21e><b>РИВЕТ:</b></color> <i>\""
+msgstr "     <color=#ffb21e><b>РИВЕТ:</b></color> <i>«"
+
+msgctxt "@RpgRuntime::DrawShopTabBody#2579"
+msgid "\"</i>"
+msgstr "»</i>"
 
 msgctxt "@RpgRuntime::DrawShopTabBody#2580"
 msgid " is locked"
@@ -39624,6 +39640,10 @@ msgstr "0"
 msgctxt "numbers"
 msgid "RepoRPG: this game version changed something - off: {0} and {1} more. See the log."
 msgstr "1"
+
+msgctxt "numbers"
+msgid "{0}  ({1:N0} / {2:N0} at Hard / Brutal)"
+msgstr "1,2"
 
 msgctxt "words"
 msgid "{0} joined {1}"

@@ -241,6 +241,18 @@ Core · Legendary	Ядро · Легендарное
 <color=#9a9ca0>Legendary Core</color>  <color=#ffd75a>Unique</color>	<color=#9a9ca0>Легендарное ядро</color>  <color=#ffd75a>Уникальное</color>
 <color=#ffd75a>Unique</color>	<color=#ffd75a>Уникальный</color>
 Mythic gear	Mythic gear
+team upgrade	team upgrade
+# the featured deal of the Price Board, as the game draws it and as the mod wrote it
+Предложение на витрине в следующий визит: <color=#B26BFF><b>Sharp Striker Module of the Brawler</b></color> (Epic Weapon Module)\n<color=#9a9ca0>+12% к макс. здоровью</color>	Предложение на витрине в следующий визит: <color=#B26BFF><b>Острый ударный модуль драчуна</b></color> (Эпический оружейный модуль)\n<color=#9a9ca0>+12% к макс. здоровью</color>
+Предложение на витрине в следующий визит: <color=#4FA3FF><b>Heavy Riot Plating</b></color> (Rare Plating, скидка 25%)\n<color=#9a9ca0>+12% к макс. здоровью · +8% к скорости бега</color>	Предложение на витрине в следующий визит: <color=#4FA3FF><b>Тяжёлая штурмовая броня</b></color> (Редкая броня, скидка 25%)\n<color=#9a9ca0>+12% к макс. здоровью · +8% к скорости бега</color>
+Next visit's featured deal: <color=#4FA3FF><b>Heavy Riot Plating</b></color> (Rare Plating, 25% off)\n<color=#9a9ca0>+12% max health · +8% sprint speed</color>	Предложение на витрине в следующий визит: <color=#4FA3FF><b>Тяжёлая штурмовая броня</b></color> (Редкая броня, скидка 25%)\n<color=#9a9ca0>+12% к макс. здоровью · +8% к скорости бега</color>
+Price Board: next visit's featured deal is Heavy Riot Plating (Rare Plating)	Доска цен: предложение на витрине в следующий визит - Тяжёлая штурмовая броня (Редкая броня)
+# the Guide's list of contracts and the reputation notice, as the game draws them
+Kill 5 monsters near you  (8 / 12 на сложном / жестоком)  -  Kaboom & Sons\n<color=#ffd75a>Бонус</color> No death saves used  (нужны напарники)	Убейте монстров рядом с собой: 5  (8 / 12 на сложном / жестоком)  -  Бабах и сыновья\n<color=#ffd75a>Бонус</color> Без использования спасений от смерти  (нужны напарники)
+Madame Brass (репутация 6+)\n1. Carry out a Rare-or-better valuable\n2. Carry out two Rare-or-better valuables in one level\n<color=#ffb21e>Итоговая награда</color> An Epic piece of your wishlisted set (or a random set)	Мадам Брасс (репутация 6+)\n1. Вынесите ценность не ниже редкой\n2. Вынесите за один уровень две ценности не ниже редких\n<color=#ffb21e>Итоговая награда</color> Эпический предмет желаемого комплекта (или случайного комплекта)
++2 к репутации: Kaboom & Sons (5/8)	+2 к репутации: Бабах и сыновья (5/8)
++1 reputation with The Auditor (12, max)	+1 к репутации: Аудитор (12, макс.)
+JUGGERNAUT: BULWARK DUTY	ДЖАГГЕРНАУТ: ДЕЖУРСТВО ОПЛОТА
 # names saved by versions 0.1.x of the add-on, which rewrote these two heads inside the mod
 Проклято: Sharp Striker Module	Проклято: Острый ударный модуль
 Прототип Mender Plating	Прототип Ремонтная броня

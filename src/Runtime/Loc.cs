@@ -1137,7 +1137,9 @@ namespace RepoRPG_RU
                                        || (bl > 1 && before[bl - 1] == ' ' && (before[bl - 2] == '.' || before[bl - 2] == '!' || before[bl - 2] == '?'
                                                                                  || before[bl - 2] == ':' || before[bl - 2] == '-' || before[bl - 2] == '>'));
                     bool breakAfter = lineAfter || after[0] == '.' || after[0] == '!' || after[0] == '?' || after[0] == ':' || after[0] == '<'
-                                      || (after.Length > 1 && after[0] == ' ' && ((after[1] >= 'A' && after[1] <= 'Z') || after[1] == '<' || after[1] == '-' || after[1] == '('));
+                                      || (after.Length > 1 && after[0] == ' ' && ((after[1] >= 'A' && after[1] <= 'Z') || after[1] == '<' || after[1] == '-' || after[1] == '('))
+                                      // "{0}  (8 / 12 at Hard / Brutal)": two spaces set a remark apart from the text it belongs to
+                                      || (after.Length > 2 && after[0] == ' ' && after[1] == ' ' && (after[2] == '(' || after[2] == '-' || after[2] == '<'));
                     p.Kind[k] = lineBefore && lineAfter ? Line : breakBefore && breakAfter ? Clause : Value;
                     bool dashBefore = bl > 1 && before[bl - 1] == ' ' && (before[bl - 2] == '\u2013' || before[bl - 2] == '\u2014');
                     p.Roomy[k] = (breakBefore || dashBefore) && breakAfter;
@@ -1258,7 +1260,10 @@ namespace RepoRPG_RU
                     {
                         // "Gift failed: " + "that player isn't here", "+25 Scrap – " + "starter tool": the reason is a text of the
                         // mod's own. A short pattern may take it when - and only when - that text turns out to have a translation
-                        if (!Roomy[k] || k >= 30 || v.Length > 80 || !Whole(v) || Dropped[k]) return null;
+                        // (a text with commas of its own passes when the dictionary has it exactly as it stands:
+                        //  "Hit 3+ monsters with one Breach Charge, 2 times" + "  (3 / 4 at Hard / Brutal)")
+                        if (!Roomy[k] || k >= 30 || v.Length > 80 || Dropped[k]) return null;
+                        if (!Whole(v) && Exact(v) == null && (shapes == null || Shape(v) == null)) return null;
                         owed |= 1 << k;
                     }
                     if (Kind[k] == Value)
@@ -1308,7 +1313,26 @@ namespace RepoRPG_RU
                             int close2 = Template.IndexOf('}', close + 2);
                             if (close2 > 0 && Fmt.FormatIndex(Template.Substring(close + 2, close2 - close - 1)) == Slots[slot + 1])
                             {
-                                string both = Built(value + " " + caught[slot + 1]);
+                                string next = caught[slot + 1];
+                                string both = Built(value + " " + next);
+                                if (both == null)
+                                {
+                                    // "(Rare Plating, 25% off)": the name ends at the comma, the rest is a text of its own
+                                    int comma = next.IndexOf(", ", StringComparison.Ordinal);
+                                    string name = comma > 0 ? Built(value + " " + next.Substring(0, comma)) : null;
+                                    if (name != null)
+                                    {
+                                        bool cut = false;
+                                        string rest = Piece(next.Substring(comma), depth, ref cut);       // ", 25% off" is an entry as it stands
+                                        if (rest == null && !cut)
+                                        {
+                                            rest = Piece(next.Substring(comma + 2), depth, ref cut);
+                                            if (rest != null) rest = ", " + rest;
+                                        }
+                                        if (cut) return null;
+                                        if (rest != null) both = name + rest;
+                                    }
+                                }
                                 if (both != null) { sb.Append(both); i = close2; continue; }
                             }
                         }

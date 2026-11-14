@@ -234,3 +234,8 @@
 +term	Overview	Обзор
 +term	Half	Половина
 +term	ThreeQuarters	Три четверти
+# the Guide's list of contracts when the mod's own code was left as it is: the goal and the numbers of the harder tiers
++pattern	{0}  ({1:N0} / {2:N0} at Hard / Brutal)	{0}  ({1:N0} / {2:N0} на сложном / жестоком)
++numbers	{0}  ({1:N0} / {2:N0} at Hard / Brutal)	1,2
++pattern	<color=#ffd75a>Bonus</color> {0}	<color=#ffd75a>Бонус</color> {0}
++pattern	<color=#ffd75a>Bonus</color> {0}  (needs teammates)	<color=#ffd75a>Бонус</color> {0}  (нужны напарники)
