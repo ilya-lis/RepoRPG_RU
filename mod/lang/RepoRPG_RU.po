@@ -6711,7 +6711,7 @@ msgid "Team earnings"
 msgstr "Заработок команды"
 
 msgid "Windfall! Double Scrap from that extraction"
-msgstr "Удача! Двойной лом за это извлечение"
+msgstr "Нежданная удача! Двойной лом за это извлечение"
 
 msgid "gifting is turned off by the host"
 msgstr "дарение отключено хостом"
@@ -17441,6 +17441,330 @@ msgid "+10% max stamina"
 msgstr "+10% к макс. выносливости"
 
 msgctxt "term"
+msgid "Lob"
+msgstr "Навес"
+
+msgctxt "term"
+msgid "Thrown items fly 10% farther."
+msgstr "Брошенные предметы летят на 10% дальше."
+
+msgctxt "term"
+msgid "Heavy Toss"
+msgstr "Тяжёлый бросок"
+
+msgctxt "term"
+msgid "A thrown item that hits a monster stuns it for 0.5 s."
+msgstr "Брошенный предмет, попавший в монстра, оглушает его на 0.5 с."
+
+msgctxt "term"
+msgid "Bullseye"
+msgstr "В яблочко"
+
+msgctxt "term"
+msgid "Thrown valuables lose 25% less value when they land."
+msgstr "Брошенные ценности теряют на 25% меньше стоимости при приземлении."
+
+msgctxt "term"
+msgid "First Strike"
+msgstr "Первый удар"
+
+msgctxt "term"
+msgid "Your first weapon hit on each monster does +15% damage."
+msgstr "Ваш первый удар оружием по каждому монстру наносит +15% урона."
+
+msgctxt "term"
+msgid "Finisher"
+msgstr "Добивание"
+
+msgctxt "term"
+msgid "+10% weapon damage to monsters under 30% health."
+msgstr "+10% к урону оружия по монстрам со здоровьем ниже 30%."
+
+msgctxt "term"
+msgid "Overpower"
+msgstr "Подавление"
+
+msgctxt "term"
+msgid "Weapon hits have +5% chance to stun."
+msgstr "Удары оружием получают +5% к шансу оглушить."
+
+msgctxt "term"
+msgid "Clear Head"
+msgstr "Ясная голова"
+
+msgctxt "term"
+msgid "Your first ability use each level comes back 1 s sooner."
+msgstr "Первое применение способности на каждом уровне восстанавливается на 1 с раньше."
+
+msgctxt "term"
+msgid "Second Thought"
+msgstr "Вторая мысль"
+
+msgctxt "term"
+msgid "Your ability lasts 10% longer."
+msgstr "Ваша способность действует на 10% дольше."
+
+msgctxt "term"
+msgid "Flow"
+msgstr "Поток"
+
+msgctxt "term"
+msgid "Using your ability gives +5% move speed for 4 s."
+msgstr "Применение способности даёт +5% к скорости движения на 4 с."
+
+msgctxt "term"
+msgid "After a hit, the next hit within 3 s does 15% less."
+msgstr "После удара следующий удар в течение 3 с наносит на 15% меньше."
+
+msgctxt "term"
+msgid "Below 20% health, +0.3 HP/s regen for 10 s (once per level)."
+msgstr "При здоровье ниже 20%: +0.3 ОЗ/с регенерации на 10 с (раз за уровень)."
+
+msgctxt "term"
+msgid "Bedrock"
+msgstr "Монолит"
+
+msgctxt "term"
+msgid "+5% max health."
+msgstr "+5% к макс. здоровью."
+
+msgctxt "term"
+msgid "Pacer"
+msgstr "Ровный темп"
+
+msgctxt "term"
+msgid "+0.6 stamina/s while your stamina is recharging."
+msgstr "+0.6 выносливости/с, пока выносливость восстанавливается."
+
+msgctxt "term"
+msgid "Hauler's Lungs"
+msgstr "Лёгкие носильщика"
+
+msgctxt "term"
+msgid "Carrying drains 10% less stamina."
+msgstr "Переноска тратит на 10% меньше выносливости."
+
+msgctxt "term"
+msgid "After you dodge a hit, +20% move speed for 2 s."
+msgstr "После уклонения от удара: +20% к скорости движения на 2 с."
+
+msgctxt "term"
+msgid "Quick Feet"
+msgstr "Шустрые ноги"
+
+msgctxt "term"
+msgid "Crouch-walk 10% faster."
+msgstr "Движение в приседе на 10% быстрее."
+
+msgctxt "term"
+msgid "+4% chance to slip out of a hit (dodge)."
+msgstr "+4% к шансу увернуться от удара (уклонение)."
+
+msgctxt "term"
+msgid "Spring"
+msgstr "Пружина"
+
+msgctxt "term"
+msgid "Damage while you're tumbling (falls, knockbacks) is 25% lower."
+msgstr "Урон, пока вы кувыркаетесь (падения, отбрасывания), ниже на 25%."
+
+msgctxt "term"
+msgid "Vault"
+msgstr "Опорный прыжок"
+
+msgctxt "term"
+msgid "+5% jump force while carrying."
+msgstr "+5% к силе прыжка с ношей."
+
+msgctxt "term"
+msgid "Feather Fall"
+msgstr "Мягкое падение"
+
+msgctxt "term"
+msgid "Once per level, a fall off the level leaves you at 10 HP instead of killing you."
+msgstr "Раз за уровень падение за пределы уровня оставляет вам 10 ОЗ, а не убивает."
+
+msgctxt "term"
+msgid "Firm Hold"
+msgstr "Крепкая хватка"
+
+msgctxt "term"
+msgid "+10% grip for 3 s after you're hit, and hits can't make you drop things (Butter Hands)."
+msgstr "+10% к хвату на 3 с после полученного удара, и удары не заставят вас выронить вещи («Масляные руки»)."
+
+msgctxt "term"
+msgid "Steady Carry"
+msgstr "Ровная переноска"
+
+msgctxt "term"
+msgid "Held items swing 20% less."
+msgstr "Предметы в руках раскачиваются на 20% меньше."
+
+msgctxt "term"
+msgid "Iron Hands"
+msgstr "Железные руки"
+
+msgctxt "term"
+msgid "+5% grip strength."
+msgstr "+5% к силе хвата."
+
+msgctxt "term"
+msgid "+5% grab range."
+msgstr "+5% к дальности хвата."
+
+msgctxt "term"
+msgid "Snatch"
+msgstr "Выхват"
+
+msgctxt "term"
+msgid "+5% more grab range."
+msgstr "Ещё +5% к дальности хвата."
+
+msgctxt "term"
+msgid "Reel In"
+msgstr "Подтягивание"
+
+msgctxt "term"
+msgid "Items you grab can't break for 1.5 s while you pull them in."
+msgstr "Схваченные предметы 1.5 с не могут разбиться, пока вы подтягиваете их к себе."
+
+msgctxt "term"
+msgid "Soft Touch"
+msgstr "Мягкое касание"
+
+msgctxt "term"
+msgid "Carried valuables take 10% less impact damage."
+msgstr "Ценности в руках получают на 10% меньше урона от удара."
+
+msgctxt "term"
+msgid "The first impact on a carried valuable each level costs no value."
+msgstr "Первый удар по ценности в руках на каждом уровне не отнимает стоимости."
+
+msgctxt "term"
+msgid "Artisan"
+msgstr "Умелец"
+
+msgctxt "term"
+msgid "Valuables you set down gently (a slow release) can't break for 1.5 s."
+msgstr "Ценности, которые вы аккуратно опустили (медленно отпустили), 1.5 с не могут разбиться."
+
+msgctxt "term"
+msgid "5% less noise."
+msgstr "На 5% меньше шума."
+
+msgctxt "term"
+msgid "Crouching cuts your noise by a further 10%."
+msgstr "Присед снижает ваш шум ещё на 10%."
+
+msgctxt "term"
+msgid "Ghosting"
+msgstr "Призрачность"
+
+msgctxt "term"
+msgid "Crouching still for 2 s makes nearby monsters lose your trail for 3 s (once per 30 s)."
+msgstr "Если 2 с неподвижно сидеть в приседе, монстры поблизости теряют ваш след на 3 с (раз в 30 с)."
+
+msgctxt "term"
+msgid "Patch Up"
+msgstr "Подлатать"
+
+msgctxt "term"
+msgid "Revived teammates near you take 15% less damage for 4 s."
+msgstr "Возрождённые рядом с вами напарники 4 с получают на 15% меньше урона."
+
+msgctxt "term"
+msgid "Bounce Back"
+msgstr "Снова в строю"
+
+msgctxt "term"
+msgid "After you're revived, +10% move speed for 5 s."
+msgstr "После вашего возрождения: +10% к скорости движения на 5 с."
+
+msgctxt "term"
+msgid "Resilient"
+msgstr "Живучий"
+
+msgctxt "term"
+msgid "Regen starts 1 s sooner after a hit."
+msgstr "Регенерация начинается на 1 с раньше после удара."
+
+msgctxt "term"
+msgid "+3% gear find on extraction."
+msgstr "+3% к находкам снаряжения при извлечении."
+
+msgctxt "term"
+msgid "Windfall"
+msgstr "Нежданная удача"
+
+msgctxt "term"
+msgid "5% chance to double your Scrap from a single extraction."
+msgstr "5% шанс удвоить ваш лом за одно извлечение."
+
+msgctxt "term"
+msgid "+1 gear luck."
+msgstr "+1 к удаче снаряжения."
+
+msgctxt "term"
+msgid "Guided Throw"
+msgstr "Наводимый бросок"
+
+msgctxt "term"
+msgid "Thrown objects curve slightly toward where you face."
+msgstr "Брошенные предметы слегка заворачивают туда, куда вы смотрите."
+
+msgctxt "term"
+msgid "Second Engine"
+msgstr "Второй двигатель"
+
+msgctxt "term"
+msgid "Below 40% health, +1.5 stamina/s."
+msgstr "При здоровье ниже 40%: +1.5 выносливости/с."
+
+msgctxt "term"
+msgid "Shadow Runner"
+msgstr "Бегущий в тени"
+
+msgctxt "term"
+msgid "Sprinting makes 15% less noise."
+msgstr "Бег производит на 15% меньше шума."
+
+msgctxt "term"
+msgid "Porter"
+msgstr "Грузчик"
+
+msgctxt "term"
+msgid "When you're hit, the valuable you hold can't break for 1 s."
+msgstr "Когда вас бьют, ценность у вас в руках 1 с не может разбиться."
+
+msgctxt "term"
+msgid "Battle Rhythm"
+msgstr "Боевой ритм"
+
+msgctxt "term"
+msgid "Each kill near you takes 1 s off your ability cooldown (once per 5 s)."
+msgstr "Каждое убийство рядом с вами сокращает перезарядку способности на 1 с (раз в 5 с)."
+
+msgctxt "term"
+msgid "Parkour"
+msgstr "Паркур"
+
+msgctxt "term"
+msgid "Landing from a jump gives +10% move speed for 1.5 s."
+msgstr "Приземление после прыжка даёт +10% к скорости движения на 1.5 с."
+
+msgctxt "term"
+msgid "Revives you take part in give you 10 HP."
+msgstr "Возрождения с вашим участием дают вам 10 ОЗ."
+
+msgctxt "term"
+msgid "Prospector's Eye"
+msgstr "Глаз старателя"
+
+msgctxt "term"
+msgid "Valuables within 4 m of you show their rarity colour."
+msgstr "Ценности в пределах 4 м от вас показывают цвет своей редкости."
+
+msgctxt "term"
 msgid "Madame Brass"
 msgstr "Мадам Брасс"
 
@@ -25555,6 +25879,182 @@ msgstr "при {0}+ зарядах способности они восполн�
 msgctxt "shape"
 msgid "+{0} stamina/s regen (while recharging)"
 msgstr "+{0} к восстановлению выносливости в секунду (пока она восстанавливается)"
+
+msgctxt "shape"
+msgid "Thrown items fly {0}% farther."
+msgstr "Брошенные предметы летят на {0}% дальше."
+
+msgctxt "shape"
+msgid "A thrown item that hits a monster stuns it for {0} s."
+msgstr "Брошенный предмет, попавший в монстра, оглушает его на {0} с."
+
+msgctxt "shape"
+msgid "Thrown valuables lose {0}% less value when they land."
+msgstr "Брошенные ценности теряют на {0}% меньше стоимости при приземлении."
+
+msgctxt "shape"
+msgid "Your first weapon hit on each monster does +{0}% damage."
+msgstr "Ваш первый удар оружием по каждому монстру наносит +{0}% урона."
+
+msgctxt "shape"
+msgid "+{0}% weapon damage to monsters under {1}% health."
+msgstr "+{0}% к урону оружия по монстрам со здоровьем ниже {1}%."
+
+msgctxt "shape"
+msgid "Weapon hits have +{0}% chance to stun."
+msgstr "Удары оружием получают +{0}% к шансу оглушить."
+
+msgctxt "shape"
+msgid "Your first ability use each level comes back {0} s sooner."
+msgstr "Первое применение способности на каждом уровне восстанавливается на {0} с раньше."
+
+msgctxt "shape"
+msgid "Your ability lasts {0}% longer."
+msgstr "Ваша способность действует на {0}% дольше."
+
+msgctxt "shape"
+msgid "Using your ability gives +{0}% move speed for {1} s."
+msgstr "Применение способности даёт +{0}% к скорости движения на {1} с."
+
+msgctxt "shape"
+msgid "After a hit, the next hit within {0} s does {1}% less."
+msgstr "После удара следующий удар в течение {0} с наносит на {1}% меньше."
+
+msgctxt "shape"
+msgid "Below {0}% health, +{1} HP/s regen for {2} s (once per level)."
+msgstr "При здоровье ниже {0}%: +{1} ОЗ/с регенерации на {2} с (раз за уровень)."
+
+msgctxt "shape"
+msgid "+{0}% max health."
+msgstr "+{0}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "+{0} stamina/s while your stamina is recharging."
+msgstr "+{0} выносливости/с, пока выносливость восстанавливается."
+
+msgctxt "shape"
+msgid "Carrying drains {0}% less stamina."
+msgstr "Переноска тратит на {0}% меньше выносливости."
+
+msgctxt "shape"
+msgid "After you dodge a hit, +{0}% move speed for {1} s."
+msgstr "После уклонения от удара: +{0}% к скорости движения на {1} с."
+
+msgctxt "shape"
+msgid "Crouch-walk {0}% faster."
+msgstr "Движение в приседе на {0}% быстрее."
+
+msgctxt "shape"
+msgid "+{0}% chance to slip out of a hit (dodge)."
+msgstr "+{0}% к шансу увернуться от удара (уклонение)."
+
+msgctxt "shape"
+msgid "Damage while you're tumbling (falls, knockbacks) is {0}% lower."
+msgstr "Урон, пока вы кувыркаетесь (падения, отбрасывания), ниже на {0}%."
+
+msgctxt "shape"
+msgid "+{0}% jump force while carrying."
+msgstr "+{0}% к силе прыжка с ношей."
+
+msgctxt "shape"
+msgid "Once per level, a fall off the level leaves you at {0} HP instead of killing you."
+msgstr "Раз за уровень падение за пределы уровня оставляет вам {0} ОЗ, а не убивает."
+
+msgctxt "shape"
+msgid "+{0}% grip for {1} s after you're hit, and hits can't make you drop things (Butter Hands)."
+msgstr "+{0}% к хвату на {1} с после полученного удара, и удары не заставят вас выронить вещи («Масляные руки»)."
+
+msgctxt "shape"
+msgid "Held items swing {0}% less."
+msgstr "Предметы в руках раскачиваются на {0}% меньше."
+
+msgctxt "shape"
+msgid "+{0}% grip strength."
+msgstr "+{0}% к силе хвата."
+
+msgctxt "shape"
+msgid "+{0}% grab range."
+msgstr "+{0}% к дальности хвата."
+
+msgctxt "shape"
+msgid "+{0}% more grab range."
+msgstr "Ещё +{0}% к дальности хвата."
+
+msgctxt "shape"
+msgid "Items you grab can't break for {0} s while you pull them in."
+msgstr "Схваченные предметы {0} с не могут разбиться, пока вы подтягиваете их к себе."
+
+msgctxt "shape"
+msgid "Carried valuables take {0}% less impact damage."
+msgstr "Ценности в руках получают на {0}% меньше урона от удара."
+
+msgctxt "shape"
+msgid "Valuables you set down gently (a slow release) can't break for {0} s."
+msgstr "Ценности, которые вы аккуратно опустили (медленно отпустили), {0} с не могут разбиться."
+
+msgctxt "shape"
+msgid "{0}% less noise."
+msgstr "На {0}% меньше шума."
+
+msgctxt "shape"
+msgid "Crouching cuts your noise by a further {0}%."
+msgstr "Присед снижает ваш шум ещё на {0}%."
+
+msgctxt "shape"
+msgid "Crouching still for {0} s makes nearby monsters lose your trail for {1} s (once per {2} s)."
+msgstr "Если {0} с неподвижно сидеть в приседе, монстры поблизости теряют ваш след на {1} с (раз в {2} с)."
+
+msgctxt "shape"
+msgid "Revived teammates near you take {0}% less damage for {1} s."
+msgstr "Возрождённые рядом с вами напарники {1} с получают на {0}% меньше урона."
+
+msgctxt "shape"
+msgid "After you're revived, +{0}% move speed for {1} s."
+msgstr "После вашего возрождения: +{0}% к скорости движения на {1} с."
+
+msgctxt "shape"
+msgid "Regen starts {0} s sooner after a hit."
+msgstr "Регенерация начинается на {0} с раньше после удара."
+
+msgctxt "shape"
+msgid "+{0}% gear find on extraction."
+msgstr "+{0}% к находкам снаряжения при извлечении."
+
+msgctxt "shape"
+msgid "{0}% chance to double your Scrap from a single extraction."
+msgstr "{0}% шанс удвоить ваш лом за одно извлечение."
+
+msgctxt "shape"
+msgid "+{0} gear luck."
+msgstr "+{0} к удаче снаряжения."
+
+msgctxt "shape"
+msgid "Below {0}% health, +{1} stamina/s."
+msgstr "При здоровье ниже {0}%: +{1} выносливости/с."
+
+msgctxt "shape"
+msgid "Sprinting makes {0}% less noise."
+msgstr "Бег производит на {0}% меньше шума."
+
+msgctxt "shape"
+msgid "When you're hit, the valuable you hold can't break for {0} s."
+msgstr "Когда вас бьют, ценность у вас в руках {0} с не может разбиться."
+
+msgctxt "shape"
+msgid "Each kill near you takes {0} s off your ability cooldown (once per {1} s)."
+msgstr "Каждое убийство рядом с вами сокращает перезарядку способности на {0} с (раз в {1} с)."
+
+msgctxt "shape"
+msgid "Landing from a jump gives +{0}% move speed for {1} s."
+msgstr "Приземление после прыжка даёт +{0}% к скорости движения на {1} с."
+
+msgctxt "shape"
+msgid "Revives you take part in give you {0} HP."
+msgstr "Возрождения с вашим участием дают вам {0} ОЗ."
+
+msgctxt "shape"
+msgid "Valuables within {0} m of you show their rarity colour."
+msgstr "Ценности в пределах {0} м от вас показывают цвет своей редкости."
 
 msgctxt "shape"
 msgid "+{0} ability charge."
