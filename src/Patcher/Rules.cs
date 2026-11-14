@@ -48,6 +48,9 @@ namespace RepoRPG_RU
         /// Guide are shown and searched, nothing else). Without it "Chains are short stories..." would stay English because
         /// a method that draws contract history looks for lines that start with "Chain".</summary>
         public readonly HashSet<string> ProbeFreeData = new HashSet<string>(StringComparer.Ordinal);
+        /// <summary>[font] Type::Method - the method of the mod that picks the font of its menus (no parameters, returns a
+        /// UnityEngine.Font). The add-on offers its own font there first: the game's font with Russian letters.</summary>
+        public readonly List<HookRule> Fonts = new List<HookRule>();
         public readonly List<string> Problems = new List<string>();
         public ulong Fingerprint = Hash.Seed;
         public int FileCount;
@@ -115,6 +118,7 @@ namespace RepoRPG_RU
                     switch (section)
                     {
                         case "hooks": ParseHook(line, file + ":" + n); break;
+                        case "font": ParseFont(line, file + ":" + n); break;
                         case "skip": Skip.Add(line); break;
                         case "id":
                         case "veto": Veto.Add(ParseCall(line)); break;
@@ -175,6 +179,18 @@ namespace RepoRPG_RU
             h.Params = list.ToArray();
             h.Source = source;
             Hooks.Add(h);
+        }
+
+        private void ParseFont(string line, string source)
+        {
+            int sep = line.IndexOf("::", StringComparison.Ordinal);
+            if (sep <= 0 || sep + 2 >= line.Length || line.IndexOf('(') >= 0) throw new FormatException("expected Type::Method");
+            HookRule h = new HookRule();
+            h.Type = line.Substring(0, sep).Trim();
+            h.Method = line.Substring(sep + 2).Trim();
+            h.Params = new string[0];
+            h.Source = source;
+            Fonts.Add(h);
         }
 
         private static CallRule ParseCall(string line)

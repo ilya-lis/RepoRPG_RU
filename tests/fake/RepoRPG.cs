@@ -20,6 +20,8 @@ namespace RepoRPG
         public const string Version = "1.0.100";
         public static ManualLogSource Log = Logger.CreateLogSource("RepoRPG");
         public static ConfigFile Cfg = new ConfigFile();
+        public static ModConfig Settings { get { return settings; } }
+        private static readonly ModConfig settings = new ModConfig();
 
         // what the game would call
         public static List<string> Run(bool rich)
@@ -35,10 +37,25 @@ namespace RepoRPG
         }
     }
 
+    public sealed class ModConfig
+    {
+        public ConfigEntry<string> UiFont;
+    }
+
     public sealed class Content
     {
         private string _text = "";
         public string text { get { return _text; } set { _text = value; } }
+    }
+
+    /// <summary>A second place that picks a font, and not the way the add-on's rules were written for.</summary>
+    public sealed class Hud
+    {
+        public UnityEngine.Font LoadFont()
+        {
+            if (DateTime.Now.Year < 2000) return null;
+            return UnityEngine.Font.CreateDynamicFontFromOSFont("Impact", 32);
+        }
     }
 
     public static class Net
@@ -77,7 +94,9 @@ namespace RepoRPG
 
         public void Setup()
         {
-            Plugin.Cfg.Bind("General", "UiFont", "auto", "Font used by the menu. 'auto' picks the game's font.");
+            Plugin.Settings.UiFont = Plugin.Cfg.Bind("General", "UiFont", "auto", "Font used by the menu. 'auto' picks the game's font.");
+            string asked = Environment.GetEnvironmentVariable("FAKE_UIFONT");          // what the player typed into the mod's settings
+            if (asked != null) Plugin.Settings.UiFont.Value = asked;
             Plugin.Cfg.Bind("HUD", "Scale", 1f, new ConfigDescription("Scale of the HUD.", null, "Advanced"));
             Plugin.Cfg.Bind("HUD", "Anchor", "Left", new ConfigDescription("Where the HUD sits.", null));
             _badge["Shop"] = 2;
@@ -207,6 +226,49 @@ namespace RepoRPG
             // 14. the mod's own {named} placeholders
             Label("Kill {t} monster{s}".Replace("{t}", "3").Replace("{s}", "s"));
             Label("Carry {t} items".Replace("{t}", "2"));
+
+            // 19. the font of the menus, picked the way the real mod picks it - and once more, as after a change of the UI style
+            _font = LoadFont();
+            Out.Add("font=" + _font.name + " " + Wide(_font));
+            UnityEngine.Font again = LoadFont();
+            Out.Add("font-again=" + ((UnityEngine.Object)again == (UnityEngine.Object)_font));
+            // a level change unloads what nothing holds on to
+            UnityEngine.Object.UnloadUnused(new UnityEngine.Object[] { _font });
+            Out.Add("font-after-level=" + ((UnityEngine.Object)_font != (UnityEngine.Object)null));
+            Out.Add("font-hud=" + new Hud().LoadFont().name);
+            Out.Add("destroyed=" + string.Join(",", UnityEngine.Object.Destroyed.ToArray()));
+        }
+
+        private UnityEngine.Font _font;
+
+        private UnityEngine.Font LoadFont()
+        {
+            string text = Plugin.Settings.UiFont.Value.Trim();
+            if (!string.Equals(text, "auto", StringComparison.OrdinalIgnoreCase) && text.Length > 0)
+            {
+                try
+                {
+                    return UnityEngine.Font.CreateDynamicFontFromOSFont(text, 32);
+                }
+                catch
+                {
+                }
+            }
+            return UnityEngine.Font.CreateDynamicFontFromOSFont(new string[2] { "Bahnschrift", "Arial" }, 32);      // "the game's font"
+        }
+
+        /// <summary>Width of a Russian caption in pixels at size 20.</summary>
+        private static int Wide(UnityEngine.Font f)
+        {
+            const string caption = "НАСТРОЙКИ";
+            f.RequestCharactersInTexture(caption, 20, UnityEngine.FontStyle.Normal);
+            float w = 0f;
+            foreach (char c in caption)
+            {
+                UnityEngine.CharacterInfo ci;
+                if (f.GetCharacterInfo(c, out ci, 20, UnityEngine.FontStyle.Normal)) w += ci.width;
+            }
+            return (int)Math.Round(w);
         }
 
         private string Legend() { return _gold > 0 ? "Legend" : "?"; }

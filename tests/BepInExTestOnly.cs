@@ -31,7 +31,7 @@ namespace BepInEx.Configuration
     public class ConfigEntry<T>
     {
         public string Section, Key, Description;
-        public T Value;
+        public T Value { get; set; }                 // a property in BepInEx too: the mod's code calls get_Value
     }
 
     public class ConfigFile

@@ -25,6 +25,8 @@ namespace RepoRPG_RU
         public int HooksApplied;
         public int CallHooks;
         public int HookRulesMissed;
+        public int FontHooks;                // methods that now ask the add-on for the menu font first
+        public int FontRulesMissed;
         public int DataReplaced;
         public int DataFiles;
         public int EnumsKnown, EnumsAnswered, AssemblyRequests;
@@ -64,6 +66,8 @@ namespace RepoRPG_RU
             public readonly Dictionary<uint, List<Edit>> Edits = new Dictionary<uint, List<Edit>>();
             public readonly Dictionary<uint, List<int>> Hooks = new Dictionary<uint, List<int>>();   // method token -> parameter indexes
             public readonly Dictionary<uint, List<int>> Shims = new Dictionary<uint, List<int>>();   // method token -> indexes of calls whose text argument is translated in place
+            public readonly Dictionary<uint, int> Fonts = new Dictionary<uint, int>();               // method token -> how many of its first instructions read the font setting (0 = not found)
+            public readonly Dictionary<uint, int> FontAdded = new Dictionary<uint, int>();           // method token -> instructions the font hook puts in front
             public readonly Dictionary<uint, int> Counts = new Dictionary<uint, int>();              // method token -> original instruction count
             public readonly Dictionary<uint, string> Names = new Dictionary<uint, string>();         // method token -> full name (tokens move when Cecil writes)
             public readonly List<Probe> Probes = new List<Probe>();                                  // string tests that interface text must keep passing
@@ -154,6 +158,31 @@ namespace RepoRPG_RU
                         List<int> list = new List<int>(kv.Value);
                         list.Sort();
                         plan.Hooks[kv.Key.MetadataToken.ToUInt32()] = list;
+                    }
+                }
+
+                // the method that picks the menu font
+                foreach (HookRule rule in rules.Fonts)
+                {
+                    int found = 0;
+                    foreach (TypeDefinition t in AllTypes(module))
+                    {
+                        if (!Analysis.TypeMatches(rule.Type, t.FullName.Replace('/', '.'))) continue;
+                        foreach (MethodDefinition m in t.Methods)
+                        {
+                            if (m.Name != rule.Method || !m.HasBody || m.HasParameters || m.Body.Instructions.Count == 0) continue;
+                            if (m.ReturnType.FullName != "UnityEngine.Font") continue;
+                            found++;
+                            if (!wantHooks) continue;
+                            int setting = FontSetting(m.Body);
+                            plan.Fonts[m.MetadataToken.ToUInt32()] = setting;
+                            plan.FontAdded[m.MetadataToken.ToUInt32()] = FontAdded(m.Body, 0, setting);
+                        }
+                    }
+                    if (found == 0)
+                    {
+                        report.FontRulesMissed++;
+                        report.Notes.Add("font method not found: " + rule.Type + "::" + rule.Method + "  [" + rule.Source + "]");
                     }
                 }
 
@@ -499,6 +528,62 @@ namespace RepoRPG_RU
                     }
                 }
 
+                // The method that picks the menu font asks the add-on first:
+                //     Font f = <RepoRPG_RU>.F(<the mod's own font setting, read the way the method reads it>) as Font;
+                //     if (f != null) return f;
+                //     ... the method as it was
+                // "as", not a cast: whatever comes back, nothing can throw here.
+                // A menu font is a nicety: whatever goes wrong while the question is put together, that method stays as
+                // it was (nothing has been written into it yet) and the rest of the translation is not affected.
+                foreach (KeyValuePair<uint, int> kv in new List<KeyValuePair<uint, int>>(plan.Fonts))
+                {
+                    MethodDefinition m = module.LookupToken((int)kv.Key) as MethodDefinition;
+                    if (m == null || !m.HasBody) throw new InvalidOperationException("font method " + kv.Key.ToString("x8") + " vanished");
+                    MethodBody body = m.Body;
+                    ILProcessor il = body.GetILProcessor();
+                    List<Instruction> add = new List<Instruction>();
+                    Instruction first;
+                    try
+                    {
+                        // found by position: the translation hooks above may have put their own instructions in front
+                        int at = 0;
+                        List<int> hooks;
+                        if (plan.Hooks.TryGetValue(kv.Key, out hooks)) at = hooks.Count * 3;
+                        first = body.Instructions[at];
+                        TypeReference stringType = null;
+                        for (int i = 0; i < kv.Value; i++)
+                        {
+                            Instruction ins = body.Instructions[at + i];
+                            if (ins.OpCode.Code == Code.Nop) continue;
+                            add.Add(Copy(il, ins));
+                            MethodReference call = ins.Operand as MethodReference;
+                            if (call != null && call.DeclaringType.FullName == "System.String") stringType = call.DeclaringType;
+                        }
+                        if (stringType == null) stringType = module.TypeSystem.String;
+                        if (add.Count == 0) add.Add(il.Create(OpCodes.Ldnull));        // the add-on reads the setting from the mod's config file
+                        if (guard == null) guard = AddGuard(module, o, stringType);
+                        Instruction go = il.Create(OpCodes.Pop);
+                        add.Add(il.Create(OpCodes.Call, AddFontGuard(module, o, guard, stringType)));
+                        add.Add(il.Create(OpCodes.Isinst, m.ReturnType));
+                        add.Add(il.Create(OpCodes.Dup));
+                        add.Add(il.Create(OpCodes.Brfalse, go));
+                        add.Add(il.Create(OpCodes.Ret));
+                        add.Add(go);
+                        if (add.Count != FontAdded(body, at, kv.Value)) throw new InvalidOperationException("plan and result differ");
+                    }
+                    catch (Exception e)
+                    {
+                        plan.Fonts.Remove(kv.Key);
+                        plan.FontAdded.Remove(kv.Key);
+                        report.FontRulesMissed++;
+                        report.Notes.Add("font method " + m.DeclaringType.Name + "::" + m.Name + " left as it is: " + e.Message);
+                        continue;
+                    }
+                    foreach (Instruction ins in add) il.InsertBefore(first, ins);
+                    report.FontHooks++;
+                    if (kv.Value == 0) report.Notes.Add("font method " + m.DeclaringType.Name + "::" + m.Name + ": does not begin by reading its setting the way 1.0.100 does - the add-on reads the setting from the mod's config file instead");
+                }
+
                 if (o.RequirePlugin) BumpVersion(module, report);
                 if (o.Settings.TranslateData || o.Dump) TranslateData(module, o, report, plan.Probes);
                 if (o.Stamp != null)
@@ -515,6 +600,146 @@ namespace RepoRPG_RU
                 asm.Write(ms);
                 return ms.ToArray();
             }
+        }
+
+        /// <summary>
+        /// How many instructions at the start of the method read the mod's own font setting:
+        ///     string text = Plugin.Cfg.UiFont.Value.Trim();
+        /// is "load, load, call, call Trim, store" - everything before the store is repeated in front of the method, so the
+        /// add-on is told what the player asked for. 0 = the method does not begin like that.
+        /// </summary>
+        private static int FontSetting(MethodBody body)
+        {
+            for (int i = 0; i < body.Instructions.Count && i < 10; i++)
+            {
+                Instruction ins = body.Instructions[i];
+                switch (ins.OpCode.Code)
+                {
+                    case Code.Nop: case Code.Ldarg_0: case Code.Ldsfld: case Code.Ldfld: break;
+                    case Code.Call: case Code.Callvirt:
+                    {
+                        MethodReference m = ins.Operand as MethodReference;
+                        if (m == null) return 0;
+                        if (m.Name == "Trim" && !m.HasParameters && m.DeclaringType.FullName == "System.String")
+                        {
+                            Instruction next = ins.Next;
+                            if (next == null) return 0;
+                            Code c = next.OpCode.Code;
+                            bool store = c == Code.Stloc_0 || c == Code.Stloc_1 || c == Code.Stloc_2 || c == Code.Stloc_3 || c == Code.Stloc_S || c == Code.Stloc;
+                            return store ? i + 1 : 0;
+                        }
+                        // a getter on the way: Plugin.Cfg, ConfigEntry<string>.Value
+                        if (m.HasParameters || m.ReturnType.FullName == "System.Void") return 0;
+                        break;
+                    }
+                    default: return 0;
+                }
+            }
+            return 0;
+        }
+
+        /// <summary>Number of instructions the font hook puts in front of the method.</summary>
+        private static int FontAdded(MethodBody body, int at, int setting)
+        {
+            int n = 0;
+            for (int i = 0; i < setting; i++)
+                if (body.Instructions[at + i].OpCode.Code != Code.Nop) n++;
+            return (n == 0 ? 1 : n) + 6;
+        }
+
+        private static Instruction Copy(ILProcessor il, Instruction ins)
+        {
+            if (ins.Operand == null) return il.Create(ins.OpCode);
+            FieldReference f = ins.Operand as FieldReference;
+            if (f != null) return il.Create(ins.OpCode, f);
+            MethodReference m = ins.Operand as MethodReference;
+            if (m != null) return il.Create(ins.OpCode, m);
+            throw new InvalidOperationException("font method: cannot repeat " + ins.OpCode.Name);
+        }
+
+        /// <summary>
+        /// Adds to the guard class of the copy:
+        ///       static bool offF;
+        ///       static object F(string s)    { if (offF) return null; try { return CallF(s); } catch { offF = true; return null; } }
+        ///       [NoInlining] static object CallF(string s) { return RepoRPG_RU.Loc.MenuFont(s); }
+        /// null means "pick the font yourself" - also when RepoRPG_RU.dll is missing, old or broken.
+        /// </summary>
+        private static MethodDefinition AddFontGuard(ModuleDefinition module, BuildOptions o, MethodDefinition guard, TypeReference stringType)
+        {
+            TypeDefinition holder = guard.DeclaringType;
+            foreach (MethodDefinition existing in holder.Methods)
+                if (existing.Name == "F") return existing;
+
+            TypeReference objectType = module.TypeSystem.Object;
+            TypeReference loc = null;
+            foreach (MethodDefinition existing in holder.Methods)
+            {
+                if (existing.Name != "Call") continue;
+                foreach (Instruction ins in existing.Body.Instructions)
+                {
+                    MethodReference target = ins.Operand as MethodReference;
+                    if (target != null) loc = target.DeclaringType;
+                }
+            }
+            if (loc == null) throw new InvalidOperationException("the guard class has no reference to the runtime");
+            MethodReference pick = new MethodReference("MenuFont", objectType, loc);
+            pick.HasThis = false;
+            pick.Parameters.Add(new ParameterDefinition(stringType));
+
+            FieldDefinition off = new FieldDefinition("offF", FieldAttributes.Private | FieldAttributes.Static, module.TypeSystem.Boolean);
+            holder.Fields.Add(off);
+
+            MethodDefinition call = new MethodDefinition("CallF", MethodAttributes.Private | MethodAttributes.Static | MethodAttributes.HideBySig, objectType);
+            call.ImplAttributes = MethodImplAttributes.IL | MethodImplAttributes.Managed | MethodImplAttributes.NoInlining;
+            call.Parameters.Add(new ParameterDefinition("s", ParameterAttributes.None, stringType));
+            holder.Methods.Add(call);
+            {
+                ILProcessor il = call.Body.GetILProcessor();
+                il.Append(il.Create(OpCodes.Ldarg_0));
+                il.Append(il.Create(OpCodes.Call, pick));
+                il.Append(il.Create(OpCodes.Ret));
+            }
+
+            MethodDefinition f = new MethodDefinition("F", MethodAttributes.Assembly | MethodAttributes.Static | MethodAttributes.HideBySig, objectType);
+            f.ImplAttributes = MethodImplAttributes.IL | MethodImplAttributes.Managed;
+            f.Parameters.Add(new ParameterDefinition("s", ParameterAttributes.None, stringType));
+            holder.Methods.Add(f);
+            {
+                MethodBody body = f.Body;
+                body.InitLocals = true;
+                VariableDefinition result = new VariableDefinition(objectType);
+                body.Variables.Add(result);
+                ILProcessor il = body.GetILProcessor();
+
+                Instruction retNull = il.Create(OpCodes.Ldnull);
+                Instruction tryStart = il.Create(OpCodes.Ldarg_0);
+                Instruction handlerStart = il.Create(OpCodes.Pop);
+                Instruction done = il.Create(OpCodes.Ldloc_0);
+
+                il.Append(il.Create(OpCodes.Ldsfld, off));
+                il.Append(il.Create(OpCodes.Brtrue, retNull));
+                il.Append(tryStart);                                  // try {
+                il.Append(il.Create(OpCodes.Call, call));
+                il.Append(il.Create(OpCodes.Stloc_0));
+                il.Append(il.Create(OpCodes.Leave, done));            // }
+                il.Append(handlerStart);                              // catch (object) {
+                il.Append(il.Create(OpCodes.Ldc_I4_1));
+                il.Append(il.Create(OpCodes.Stsfld, off));
+                il.Append(il.Create(OpCodes.Leave, retNull));         // }
+                il.Append(done);
+                il.Append(il.Create(OpCodes.Ret));
+                il.Append(retNull);
+                il.Append(il.Create(OpCodes.Ret));
+
+                ExceptionHandler handler = new ExceptionHandler(ExceptionHandlerType.Catch);
+                handler.CatchType = objectType;
+                handler.TryStart = tryStart;
+                handler.TryEnd = handlerStart;
+                handler.HandlerStart = handlerStart;
+                handler.HandlerEnd = done;
+                body.ExceptionHandlers.Add(handler);
+            }
+            return f;
         }
 
         /// <summary>
@@ -725,6 +950,7 @@ namespace RepoRPG_RU
         {
             public int Count;
             public int Shift;
+            public int Font;                 // instructions of the font hook among them
             public List<int> Shims;
             public List<Edit> Edits;
             public bool Seen;
@@ -752,6 +978,7 @@ namespace RepoRPG_RU
                 e.Count = kv.Value;
                 List<int> hooks;
                 e.Shift = plan.Hooks.TryGetValue(kv.Key, out hooks) ? hooks.Count * 3 : 0;
+                if (plan.FontAdded.TryGetValue(kv.Key, out e.Font)) e.Shift += e.Font;
                 plan.Shims.TryGetValue(kv.Key, out e.Shims);
                 plan.Edits.TryGetValue(kv.Key, out e.Edits);
                 if (expected.ContainsKey(name)) ambiguous.Add(name);
@@ -778,6 +1005,16 @@ namespace RepoRPG_RU
                         e.Seen = true;
                         if (body.Instructions.Count != e.Count + e.Shift + (e.Shims == null ? 0 : e.Shims.Count))
                             throw new InvalidOperationException("verification: instruction count changed in " + name);
+                        if (e.Font > 0)
+                        {
+                            bool asked = false;
+                            for (int i = 0; i < e.Shift && i < body.Instructions.Count; i++)
+                            {
+                                MethodReference g = body.Instructions[i].Operand as MethodReference;
+                                if (body.Instructions[i].OpCode.Code == Code.Call && g != null && g.DeclaringType.Name == GuardType && g.Name == "F") asked = true;
+                            }
+                            if (!asked) throw new InvalidOperationException("verification: font hook not written in " + name);
+                        }
                         if (e.Shims != null)
                         {
                             foreach (int at in e.Shims)

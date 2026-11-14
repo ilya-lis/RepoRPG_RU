@@ -2,7 +2,7 @@
 # Builds the add-on and packs release/RepoRPG_RU-<version>.zip in the layout mod managers expect:
 #   manifest.json, README.md, CHANGELOG.md, icon.png
 #   patchers/RepoRPG_RU.Patcher.dll                 -> BepInEx/patchers/<package>/
-#   plugins/RepoRPG_RU.dll, RepoRPG_RU.rules, lang/ -> BepInEx/plugins/<package>/
+#   plugins/RepoRPG_RU.dll, RepoRPG_RU.rules, lang/, font/ -> BepInEx/plugins/<package>/
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -14,11 +14,12 @@ bash tools/build.sh >/dev/null
 
 STAGE=$(mktemp -d)
 trap 'rm -rf "$STAGE"' EXIT
-mkdir -p "$STAGE/patchers" "$STAGE/plugins/lang" release
+mkdir -p "$STAGE/patchers" "$STAGE/plugins/lang" "$STAGE/plugins/font" release
 cp mod/manifest.json mod/README.md mod/CHANGELOG.md mod/icon.png "$STAGE/"
 cp build/RepoRPG_RU.Patcher.dll "$STAGE/patchers/"
 cp build/RepoRPG_RU.dll mod/RepoRPG_RU.rules "$STAGE/plugins/"
 cp mod/lang/*.po "$STAGE/plugins/lang/"
+cp mod/font/RepoRPG_RU.ttf mod/font/RepoRPG_RU.ttf.check mod/font/OFL.txt "$STAGE/plugins/font/"
 
 OUT="$PWD/release/RepoRPG_RU-$VERSION.zip"
 rm -f "$OUT"

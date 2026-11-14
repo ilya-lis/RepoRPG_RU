@@ -142,6 +142,12 @@ RunShape::HostBroadcast#0
 RunShape::HostNote#0
 RunShape::StartVote#2
 
+[font]
+# The method where the mod picks the font of its menus (no parameters, returns a UnityEngine.Font). It asks the add-on first:
+# the game's font has no Russian letters, the add-on's copy of it (font/RepoRPG_RU.ttf) does. Whatever the add-on cannot
+# answer - a font the player chose in the mod's settings, a file Unity did not read - the method decides as before.
+RpgRuntime::LoadFont
+
 [data]
 # The mod's built-in data (embedded JSON). Only the Guide is replaced inside the data: its texts carry tokens the mod fills
 # in itself ({key:menu}, {cfg:Section/Key}), the Guide's search runs over them, and nothing else reads them.

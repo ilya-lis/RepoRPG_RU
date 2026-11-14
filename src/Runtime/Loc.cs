@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Text;
 
 [assembly: AssemblyTitle("RepoRPG RU - runtime")]
-[assembly: AssemblyVersion("0.2.0.0")]
+[assembly: AssemblyVersion("0.2.1.0")]
 
 namespace RepoRPG_RU
 {
@@ -46,6 +46,17 @@ namespace RepoRPG_RU
 
         /// <summary>Number of loaded entries (for diagnostics).</summary>
         public static int Count { get { Init(); return map.Count; } }
+
+        /// <summary>
+        /// Asked by the mod where it picks the font of its menus (the patcher puts the call there). <paramref name="setting"/> is
+        /// the mod's own Controls/UiFont, or null when the mod did not tell. Returns a UnityEngine.Font - the game's font
+        /// with Russian letters - or null: "pick it yourself". Never throws. See Fonts.cs.
+        /// </summary>
+        public static object MenuFont(string setting)
+        {
+            try { return Fonts.Pick(setting); }
+            catch { return null; }
+        }
 
         /// <summary>Returns the translation of <paramref name="text"/> or the text itself. Never throws.</summary>
         public static string T(string text)
@@ -1663,7 +1674,7 @@ namespace RepoRPG_RU
         }
 
         /// <summary>BepInEx/config, asked from BepInEx itself when possible (works for any mod manager layout).</summary>
-        private static string FindConfigPath(string home)
+        internal static string FindConfigPath(string home)
         {
             try
             {

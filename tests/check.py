@@ -11,6 +11,7 @@ HOME = os.path.join(ROOT, 'plugins', 'ilyalis-RepoRPG_RU')
 PATCHERS = os.path.join(ROOT, 'patchers', 'ilyalis-RepoRPG_RU')
 COPY = os.path.join(HOME, 'RepoRPG.dll')
 CFG = os.path.join(ROOT, 'config', 'RepoRPG_RU.cfg')
+GAME = os.path.join(W, 'game')                      # the game's own folder (with a mod manager the profile is elsewhere)
 failures = []
 
 
@@ -27,13 +28,32 @@ def layout(addon=True, original=True):
         shutil.copy(os.path.join(REPO, 'build', 'RepoRPG_RU.Patcher.dll'), PATCHERS)
         shutil.copy(os.path.join(REPO, 'tests', 'fake', 'test.po'), os.path.join(HOME, 'lang'))
         shutil.copy(os.path.join(REPO, 'tests', 'fake', 'test.rules'), os.path.join(HOME, 'RepoRPG_RU.rules'))
+        os.makedirs(os.path.join(HOME, 'font'))
+        for f in ('RepoRPG_RU.ttf', 'RepoRPG_RU.ttf.check'):
+            shutil.copy(os.path.join(REPO, 'mod', 'font', f), os.path.join(HOME, 'font'))
+    shutil.rmtree(GAME, ignore_errors=True)
+    os.makedirs(GAME)
 
 
-def launch(*args):
+def launch(*args, **env):
     r = subprocess.run([os.path.join(RTK, 'run.sh'), os.path.join(W, 'bin', 'Host.exe'), ROOT, *args],
-                       capture_output=True, text=True, encoding='utf-8')
+                       capture_output=True, text=True, encoding='utf-8', env=dict(os.environ, **env))
     out = r.stdout + r.stderr
     return r.returncode, out.splitlines()
+
+
+def font_of(lines, key='font='):
+    """('RepoRPG_RU', 68) from the line 'font=RepoRPG_RU 68': the font the fake mod got and how wide it drew a Russian caption"""
+    for l in lines:
+        if l.startswith(key):
+            f = l[len(key):].rsplit(' ', 1)
+            return (f[0], int(f[1])) if len(f) == 2 and f[1].isdigit() else (l[len(key):], 0)
+    return ('', 0)
+
+
+def font_txt():
+    p = os.path.join(ROOT, 'config', 'RepoRPG_RU', 'font.txt')
+    return open(p, encoding='utf-8').read() if os.path.isfile(p) else ''
 
 
 def check(name, cond, detail=''):
@@ -154,6 +174,21 @@ check('data text the mod would no longer recognise by its wording: left as it is
 check('free-data: a file no wording test reads is translated all the same', '"label": "Груз, который не поднять одному"' in data[1], data[1])
 check('report written', os.path.isfile(os.path.join(ROOT, 'config', 'RepoRPG_RU', 'report.txt')))
 check('config created', os.path.isfile(CFG))
+# the font of the menus
+system = font_of(base)
+ours = font_of(out)
+check('font: without the add-on the mod picks its own', system[0] == 'Bahnschrift' and system[1] > 100, system)
+check('font: the mod gets the add-on\'s font, and a Russian caption is drawn much narrower', ours[0] == 'RepoRPG_RU' and 0 < ours[1] < system[1] * 0.6, (ours, system))
+check('font: the same object when the mod asks again', has(out, 'font-again=True'))
+check('font: survives a level change', has(out, 'font-after-level=True'))
+check('font: nothing made in vain', has(out, 'destroyed='), [l for l in out if l.startswith('destroyed')])
+check('font: a method that does not begin by reading the setting is served too', has(out, 'font-hud=RepoRPG_RU'), [l for l in out if l.startswith('font')])
+check('font: font.txt says what happened', 'итог: шрифт подключён' in font_txt() and 'Ж (100 пикс.): по файлу 49, в игре 49' in font_txt(), font_txt())
+check('font: one line in the log', sum(1 for l in out if 'Шрифт меню: шрифт подключён' in l) == 1, [l for l in out if 'Шрифт' in l])
+check('font: font.txt lists the fonts of the game with their metrics (ours marked)', '  * RepoRPG_RU: 32 / 46 / 31; H 38, W 55' in font_txt(), font_txt())
+rep = open(os.path.join(ROOT, 'config', 'RepoRPG_RU', 'report.txt'), encoding='utf-8').read()
+check('font: report counts the places and the rule without a target', 'спрашивает шрифт у русификатора: 2, правил без цели: 1' in rep and 'font method not found: RpgRuntime::PickFont' in rep, [l for l in rep.splitlines() if 'шрифт' in l or 'font' in l])
+check('font: missing rule reported, not fatal', contains(out, 'где мод выбирает шрифт меню'))
 first = out
 
 print('C. second launch: nothing to rebuild')
@@ -180,6 +215,7 @@ os.remove(os.path.join(HOME, 'RepoRPG_RU.dll'))
 code, out = launch()
 check('still runs', code == 0 and not contains(out, 'PLUGIN FAILED'), out)
 check('baked strings stay, display-time terms fall back', has(out, 'Label:Выберите класс') and has(out, 'Btn:Settings'))
+check('the mod picks its own font', font_of(out) == system and has(out, 'font-hud=Impact'), [l for l in out if l.startswith('font')])
 
 print('G. Enabled = false')
 layout(); launch()
@@ -260,8 +296,105 @@ print('O. flattened install (everything in one plugins folder, no lang/ subfolde
 layout()
 shutil.move(os.path.join(HOME, 'lang', 'test.po'), os.path.join(HOME, 'test.po'))
 os.rmdir(os.path.join(HOME, 'lang'))
+for f in ('RepoRPG_RU.ttf', 'RepoRPG_RU.ttf.check'):
+    shutil.move(os.path.join(HOME, 'font', f), os.path.join(HOME, f))
+os.rmdir(os.path.join(HOME, 'font'))
 code, out = launch()
 check('translated', has(out, 'Label:Выберите класс') and has(out, 'Btn:Настройки'))
+check('font found next to the DLL', font_of(out)[0] == 'RepoRPG_RU', font_of(out))
+
+print('P. the player chose a font in the mod\'s settings: it stays')
+layout()
+code, out = launch(FAKE_UIFONT='Impact')
+check('the mod\'s choice', font_of(out) == ('Impact', system[1]), font_of(out))
+check('font.txt says why', 'выбран свой шрифт («Impact»)' in font_txt(), font_txt())
+check('the method that did not tell its setting: the mod\'s config file has none, so auto', has(out, 'font-hud=RepoRPG_RU'))
+with open(os.path.join(ROOT, 'config', 'rpgmod.semibotrpg.cfg'), 'w', encoding='utf-8') as f:
+    f.write('[Controls]\n\n## Menu font\n# Setting type: String\n# Default value: auto\nUiFont = Impact\n\n[HUD]\n\nUiFont = auto\n')
+code, out = launch()
+check('the setting read from the mod\'s config file', has(out, 'font-hud=Impact') and font_of(out)[0] == 'RepoRPG_RU', [l for l in out if l.startswith('font')])
+code, out = launch(FAKE_UIFONT=' AUTO ')
+check('auto in any case and with blanks is auto', font_of(out)[0] == 'RepoRPG_RU', font_of(out))
+code, out = launch(FAKE_UIFONT='')
+check('an empty setting is auto, as in the mod', font_of(out)[0] == 'RepoRPG_RU', font_of(out))
+
+print('Q. MenuFont = false')
+layout(); launch()
+mtime = os.path.getmtime(COPY)
+set_cfg('MenuFont', 'false')
+code, out = launch()
+check('the mod picks its own font', font_of(out) == system and has(out, 'font-hud=Impact'), [l for l in out if l.startswith('font')])
+check('nothing rebuilt for it', os.path.getmtime(COPY) == mtime and contains(out, 'перевод актуален'))
+check('font.txt says why', 'MenuFont = false' in font_txt(), font_txt())
+check('still translated', has(out, 'Label:Выберите класс'))
+
+print('R. a config file written by an older version gets the new switch, the old ones keep their values')
+layout(); launch()
+lines = [l for l in open(CFG, encoding='utf-8').read().splitlines()]
+start = next(i for i, l in enumerate(lines) if l.startswith('MenuFont ='))
+while not lines[start - 1].startswith('DisplayHooks ='):
+    start -= 1
+end = next(i for i, l in enumerate(lines) if l.startswith('MenuFont =')) + 1
+open(CFG, 'w', encoding='utf-8').write('\n'.join(lines[:start] + lines[end:]) + '\n')
+set_cfg('LogUntranslated', 'false')
+check('(the old file has no MenuFont)', 'MenuFont' not in open(CFG, encoding='utf-8').read())
+code, out = launch()
+cfg = open(CFG, encoding='utf-8').read()
+check('MenuFont added, true', 'MenuFont = true' in cfg, cfg)
+check('the player\'s value kept, the default still told', 'LogUntranslated = false' in cfg and '# Default value: true\nLogUntranslated = false' in cfg, cfg)
+check('font on', font_of(out)[0] == 'RepoRPG_RU')
+
+print('S. the font file is damaged or gone: the mod keeps its own font')
+layout()
+with open(os.path.join(HOME, 'font', 'RepoRPG_RU.ttf'), 'wb') as f:
+    f.write(b'\x00\x01\x00\x00' + b'not a font at all' * 400)
+code, out = launch()
+check('damaged: runs, the mod\'s own font', code == 0 and font_of(out) == system and not contains(out, 'PLUGIN FAILED'), [l for l in out if l.startswith('font')])
+check('damaged: font.txt shows the widths that gave it away', 'по файлу 49, в игре 70' in font_txt() and 'итог: шрифт не подключён' in font_txt(), font_txt())
+check('damaged: what the game made for nothing is destroyed (from the file, then by the name)', has(out, 'destroyed=RepoRPG_RU,RepoRPG RU Menu'), [l for l in out if l.startswith('destroyed')])
+check('damaged: asked once, not on every style change', sum(1 for l in out if 'Шрифт меню:' in l) == 1, [l for l in out if 'Шрифт' in l])
+check('damaged: still translated', has(out, 'Label:Выберите класс'))
+os.remove(os.path.join(HOME, 'font', 'RepoRPG_RU.ttf'))
+code, out = launch()
+check('gone: the mod\'s own font', code == 0 and font_of(out) == system)
+check('gone: font.txt says so', 'не найден' in font_txt(), font_txt())
+layout()
+os.remove(os.path.join(HOME, 'font', 'RepoRPG_RU.ttf.check'))
+code, out = launch()
+check('no check file: not trusted blindly', font_of(out) == system and 'нет файла с контрольными ширинами' in font_txt(), font_txt())
+
+print('T. the runtime of an older release next to the new patcher (a half-finished update)')
+layout()
+shutil.copy(os.path.join(W, 'old', 'RepoRPG_RU.dll'), HOME)
+code, out = launch()
+check('runs, translated', code == 0 and not contains(out, 'PLUGIN FAILED') and has(out, 'Label:Выберите класс') and has(out, 'Btn:Настройки'), out)
+check('the mod picks its own font, both times it asks', font_of(out) == system and has(out, 'font-hud=Impact') and has(out, 'font-again=False'), [l for l in out if l.startswith('font')])
+
+print('U. a game that cannot make a font from a file')
+layout()
+code, out = launch(FAKE_UNITY_NO_PATHS='1')
+check('the mod\'s own font', code == 0 and font_of(out) == system, font_of(out))
+check('font.txt says what to do', 'Установить для всех пользователей' in font_txt() and '«RepoRPG RU Menu»' in font_txt() and 'установленный в системе' in font_txt(), font_txt())
+code, out = launch(FAKE_UNITY_NO_PATHS='1', FAKE_UNITY_INSTALLED='RepoRPG RU Menu=' + os.path.join(REPO, 'mod', 'font', 'RepoRPG_RU.ttf'))
+check('the player installed the file as a system font: found by its name', font_of(out) == ('RepoRPG RU Menu', ours[1]) and 'итог: шрифт подключён' in font_txt(), [font_of(out), font_txt()])
+code, out = launch(FAKE_UNITY_NO_PATHS='1', FAKE_UNITY_INSTALLED='RepoRPG RU Menu=' + os.path.join(REPO, 'mod', 'icon.png'))
+check('another font under that name is not taken', font_of(out) == system, font_of(out))
+
+print('V. Russian letters in the path of the profile')
+layout()
+RU = os.path.join(ROOT, 'plugins', 'павел-RepoRPG_RU')
+os.rename(HOME, RU)
+code, out = launch()
+check('a Unity that reads such paths: straight from the file', font_of(out)[0] == 'RepoRPG_RU' and 'попытка 2' not in font_txt() and not os.listdir(GAME), font_txt())
+code, out = launch(FAKE_UNITY_ASCII_PATHS='1')
+copy = os.path.join(GAME, 'RepoRPG_RU', 'RepoRPG_RU.ttf')
+check('a Unity that cannot: a copy at a path without them', font_of(out)[0] == 'RepoRPG_RU' and os.path.isfile(copy), [font_of(out), font_txt()])
+check('the copy is the file', os.path.isfile(copy) and open(copy, 'rb').read() == open(os.path.join(REPO, 'mod', 'font', 'RepoRPG_RU.ttf'), 'rb').read())
+check('font.txt tells both attempts', 'попытка 1' in font_txt() and 'по файлу 49, в игре 70' in font_txt() and 'попытка 2' in font_txt() and 'прочитан по пути' in font_txt(), font_txt())
+mtime = os.path.getmtime(copy)
+code, out = launch(FAKE_UNITY_ASCII_PATHS='1')
+check('the copy is not written again', os.path.getmtime(copy) == mtime and font_of(out)[0] == 'RepoRPG_RU')
+shutil.rmtree(RU)
 
 print()
 if failures:

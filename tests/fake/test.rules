@@ -7,6 +7,11 @@ RpgRuntime::Notify(text)          # key is an id
 RpgRuntime::AskConfirm(title, body, okLabel)
 RpgRuntime::Missing(text)         # reported, not fatal
 
+[font]
+RpgRuntime::LoadFont
+Hud::LoadFont                     # does not begin by reading the setting: the add-on reads it from the mod's config file
+RpgRuntime::PickFont              # reported, not fatal
+
 [keep]
 RpgRuntime::DebugLog
 Net::SendNotice

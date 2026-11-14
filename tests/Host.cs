@@ -21,6 +21,7 @@ public static class Host
         Paths.PluginPath = Path.Combine(root, "plugins");
         Paths.PatcherPluginPath = Path.Combine(root, "patchers");
         Paths.ConfigPath = Path.Combine(root, "config");
+        Paths.GameRootPath = Path.Combine(Path.GetDirectoryName(root), "game");      // with a mod manager the game is not where the profile is
         Directory.CreateDirectory(Paths.ConfigPath);
         AppDomain.CurrentDomain.AssemblyResolve += LocalResolve;
 

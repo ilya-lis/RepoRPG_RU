@@ -15,6 +15,7 @@ namespace BepInEx
         public static string PatcherPluginPath { get; set; }
         public static string ConfigPath { get; set; }
         public static string CachePath { get; set; }
+        public static string GameRootPath { get; set; }
     }
 }
 

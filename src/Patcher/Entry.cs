@@ -15,7 +15,7 @@ using BepInEx.Logging;
 using Mono.Cecil;
 
 [assembly: AssemblyTitle("RepoRPG RU - patcher")]
-[assembly: AssemblyVersion("0.2.0.0")]
+[assembly: AssemblyVersion("0.2.1.0")]
 
 namespace RepoRPG_RU
 {
@@ -202,6 +202,8 @@ namespace RepoRPG_RU
             env.Info("Сообщение BepInEx «Skipping [RepoRPG " + report.OriginalVersion + "] because a newer version exists» ниже - это нормально: так загружается переведённая копия.");
             if (report.HookRulesMissed > 0)
                 env.Warn(report.HookRulesMissed + " точек перевода не найдены в этой версии RepoRPG (мод обновился?) - часть текста может остаться английской. Подробности в report.txt.");
+            if (report.FontRulesMissed > 0)
+                env.Warn("Место, где мод выбирает шрифт меню, в этой версии RepoRPG не найдено (мод обновился?) - русские буквы будут рисоваться системным шрифтом, как раньше. Подробности: BepInEx/config/RepoRPG_RU/report.txt");
 
             try { WriteReport(env, home, original, lang, report, o, dumpDir); }
             catch (Exception e) { env.Warn("Отчёт не записан: " + e.Message); }
@@ -317,6 +319,8 @@ namespace RepoRPG_RU
             sb.Append("оставлено на перевод при выводе (часть составной фразы, которую нельзя заменить целиком): ").Append(report.SkippedSentence).Append('\n');
             sb.Append("не тронуто (исключённые типы): ").Append(report.SkippedType).Append('\n');
             sb.Append("точек перевода при выводе: ").Append(report.HooksApplied).Append(" + ").Append(report.CallHooks).Append(" в местах вызова").Append(", правил без цели: ").Append(report.HookRulesMissed).Append('\n');
+            sb.Append("шрифт меню: мест, где мод теперь спрашивает шрифт у русификатора: ").Append(report.FontHooks).Append(", правил без цели: ").Append(report.FontRulesMissed)
+              .Append("  (что из этого вышло в игре - в font.txt рядом с этим файлом)\n");
             sb.Append("данные (JSON): заменено ").Append(report.DataReplaced).Append(" значений в ").Append(report.DataFiles).Append(" файлах\n");
             sb.Append("перечисления в константах: известно ").Append(report.EnumsKnown).Append(", запрошено ").Append(report.EnumsAnswered)
               .Append("; обращений к чужим сборкам: ").Append(report.AssemblyRequests).Append('\n');

@@ -3315,7 +3315,7 @@ msgid "Equip {0}"
 msgstr "Надеть {0}"
 
 msgid "Save {0}"
-msgstr "Сохранить {0}"
+msgstr "Сохр. {0}"
 
 msgid "<color=#7fd8ff>MODULE BAG {0}/{1}</color>  "
 msgstr "<color=#7fd8ff>СУМКА МОДУЛЕЙ {0}/{1}</color>  "
