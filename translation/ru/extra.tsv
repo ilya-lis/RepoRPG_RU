@@ -167,3 +167,16 @@
 +term	Grip	Хват
 # имя заказчика «Dispatch» совпадает с названием способности Курьера («Отправка»): заменяется прямо в данных мода
 +inside:contracts	Dispatch	Диспетчерская
+# свойства элиты и боссов: мод показывает имена значений перечисления EliteMod («Armored Swift Brutish»)
++term	Armored	Бронированный
++term	Regenerating	Регенерирующий
++term	Swift	Быстрый
++term	Unstoppable	Неудержимый
++term	Enraged	Разъярённый
++term	Relentless	Неумолимый
++term	Brutish	Свирепый
++term	Vampiric	Вампирический
++term	Shielded	Щитоносный
++term	Warlord	Военачальник
+# строка элиты на HUD: «Champion: Armored Swift  12m» (ранг, свойства, расстояние)
++pattern	{0}: {1}{2}  {3:0}m	{0}: {1}{2}  {3:0} м

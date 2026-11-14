@@ -10254,6 +10254,46 @@ msgid "Grip"
 msgstr "Хват"
 
 msgctxt "term"
+msgid "Armored"
+msgstr "Бронированный"
+
+msgctxt "term"
+msgid "Regenerating"
+msgstr "Регенерирующий"
+
+msgctxt "term"
+msgid "Swift"
+msgstr "Быстрый"
+
+msgctxt "term"
+msgid "Unstoppable"
+msgstr "Неудержимый"
+
+msgctxt "term"
+msgid "Enraged"
+msgstr "Разъярённый"
+
+msgctxt "term"
+msgid "Relentless"
+msgstr "Неумолимый"
+
+msgctxt "term"
+msgid "Brutish"
+msgstr "Свирепый"
+
+msgctxt "term"
+msgid "Vampiric"
+msgstr "Вампирический"
+
+msgctxt "term"
+msgid "Shielded"
+msgstr "Щитоносный"
+
+msgctxt "term"
+msgid "Warlord"
+msgstr "Военачальник"
+
+msgctxt "term"
 msgid "Throw Strength"
 msgstr "Сила броска"
 
@@ -19699,7 +19739,7 @@ msgstr "Первое обновление доски контрактов за �
 
 msgctxt "term"
 msgid "Hazard Pay"
-msgstr "Надбавка за риск"
+msgstr "Доплата за вредность"
 
 msgctxt "term"
 msgid "Every elite killed adds +1% to that level's haul Scrap (at most +10%)."
@@ -19996,6 +20036,462 @@ msgstr "В конце этой главы ждёт финал."
 msgctxt "term"
 msgid "No finish line now. How deep can the team go?"
 msgstr "Финишной черты больше нет. Как глубоко зайдёт команда?"
+
+msgctxt "term"
+msgid "Map modifiers: Heavy Haul, Infestation"
+msgstr "Модификаторы карты: Тяжёлая добыча, Нашествие"
+
+msgctxt "term"
+msgid "Some levels roll a risk-and-reward modifier."
+msgstr "На некоторых уровнях выпадает модификатор с риском и наградой."
+
+msgctxt "term"
+msgid "Elite type: Brutish"
+msgstr "Тип элиты: Свирепый"
+
+msgctxt "term"
+msgid "Deals 30% more damage."
+msgstr "Наносит на 30% больше урона."
+
+msgctxt "term"
+msgid "Contract giver: The Auditor"
+msgstr "Заказчик: Аудитор"
+
+msgctxt "term"
+msgid "High-stakes contracts: 1.5x pay, but a failure costs 15% of the reward."
+msgstr "Контракты с высокими ставками: оплата x1.5, но провал стоит 15% награды."
+
+msgctxt "term"
+msgid "Elite type: Vampiric"
+msgstr "Тип элиты: Вампирический"
+
+msgctxt "term"
+msgid "Heals 20% of its max health whenever it hurts a player."
+msgstr "Восстанавливает 20% своего макс. здоровья каждый раз, когда ранит игрока."
+
+msgctxt "term"
+msgid "Map modifiers: Thin Air, Fragile Goods"
+msgstr "Модификаторы карты: Разрежённый воздух, Хрупкий товар"
+
+msgctxt "term"
+msgid "Two more modifiers join the roll."
+msgstr "В розыгрыш добавляются ещё два модификатора."
+
+msgctxt "term"
+msgid "Shop section: Black Market"
+msgstr "Раздел магазина: Чёрный рынок"
+
+msgctxt "term"
+msgid "A Legendary, an Epic set piece and a module each visit, at 1.6x the price."
+msgstr "Легендарный предмет, эпическая часть комплекта и модуль в каждое посещение - по цене x1.6."
+
+msgctxt "term"
+msgid "Uniques: Final Notice, Repossessor, Night Shift Servos"
+msgstr "Уникальные предметы: Последнее уведомление, Конфискатор, Сервоприводы ночной смены"
+
+msgctxt "term"
+msgid "Three new Uniques can drop."
+msgstr "Могут выпасть три новых уникальных предмета."
+
+msgctxt "term"
+msgid "Boss modifier: Warlord"
+msgstr "Модификатор босса: Военачальник"
+
+msgctxt "term"
+msgid "Monsters within 12 m of the boss take 25% less damage."
+msgstr "Монстры в 12 м от босса получают на 25% меньше урона."
+
+msgctxt "term"
+msgid "Twin bosses"
+msgstr "Боссы-близнецы"
+
+msgctxt "term"
+msgid "Milestone levels have two named bosses, each with 70% of the health."
+msgstr "На этапных уровнях два именных босса, у каждого по 70% здоровья."
+
+msgctxt "term"
+msgid "Elite type: Juggernaut"
+msgstr "Тип элиты: Джаггернаут"
+
+msgctxt "term"
+msgid "60% more health, 15% slower."
+msgstr "На 60% больше здоровья, на 15% медленнее."
+
+msgctxt "term"
+msgid "Map modifiers: Elite Night, Skeleton Crew"
+msgstr "Модификаторы карты: Ночь элиты, Неполный состав"
+
+msgctxt "term"
+msgid "Shop section: Contraband"
+msgstr "Раздел магазина: Контрабанда"
+
+msgctxt "term"
+msgid "Two cursed Legendaries each visit: an extra stat line and a permanent curse, at 1.2x the price."
+msgstr "Два проклятых легендарных предмета в каждое посещение: дополнительная строка характеристик и постоянное проклятие - по цене x1.2."
+
+msgctxt "term"
+msgid "Uniques: Overtime Plating, Ledger of Debts, Danger Money"
+msgstr "Уникальные предметы: Сверхурочная броня, Книга долгов, Надбавка за риск"
+
+msgctxt "term"
+msgid "Three more Uniques can drop."
+msgstr "Могут выпасть ещё три уникальных предмета."
+
+msgctxt "term"
+msgid "Elite type: Shielded"
+msgstr "Тип элиты: Щитоносный"
+
+msgctxt "term"
+msgid "The first 25% of its health is a shield that comes back after 8 s without damage."
+msgstr "Первые 25% его здоровья - щит, который восстанавливается через 8 с без урона."
+
+msgctxt "term"
+msgid "Every level rolls a map modifier, and two can stack."
+msgstr "На каждом уровне выпадает модификатор карты, и два могут сложиться."
+
+msgctxt "term"
+msgid "Heavy Haul"
+msgstr "Тяжёлая добыча"
+
+msgctxt "term"
+msgid "Haul goal +15%"
+msgstr "Цель по добыче +15%"
+
+msgctxt "term"
+msgid "20% more valuables"
+msgstr "На 20% больше ценностей"
+
+msgctxt "term"
+msgid "Infestation"
+msgstr "Нашествие"
+
+msgctxt "term"
+msgid "Monsters +25%"
+msgstr "Монстры +25%"
+
+msgctxt "term"
+msgid "XP +20%"
+msgstr "Опыт +20%"
+
+msgctxt "term"
+msgid "Thin Air"
+msgstr "Разрежённый воздух"
+
+msgctxt "term"
+msgid "Sprinting costs 20% more stamina"
+msgstr "Бег тратит на 20% больше выносливости"
+
+msgctxt "term"
+msgid "Scrap +15%"
+msgstr "Лом +15%"
+
+msgctxt "term"
+msgid "Valuables take 25% more damage"
+msgstr "Ценности получают на 25% больше урона"
+
+msgctxt "term"
+msgid "25% more valuables"
+msgstr "На 25% больше ценностей"
+
+msgctxt "term"
+msgid "Elite chance x2"
+msgstr "Шанс элиты x2"
+
+msgctxt "term"
+msgid "Elites have a 25% chance of an extra gear drop"
+msgstr "У элиты шанс 25% на дополнительное снаряжение"
+
+msgctxt "term"
+msgid "Skeleton Crew"
+msgstr "Неполный состав"
+
+msgctxt "term"
+msgid "Monsters -20%, no gear from extractions"
+msgstr "Монстры -20%, без снаряжения за извлечения"
+
+msgctxt "term"
+msgid "Contracts pay +25%"
+msgstr "Оплата контрактов +25%"
+
+msgctxt "term"
+msgid "The lights are dimmed"
+msgstr "Свет приглушён"
+
+msgctxt "term"
+msgid "Monsters 12% slower, XP +10%"
+msgstr "Монстры на 12% медленнее, опыт +10%"
+
+msgctxt "term"
+msgid "Monsters +10%"
+msgstr "Монстры +10%"
+
+msgctxt "term"
+msgid "A supply crate falls mid-level (worth extra)"
+msgstr "Посреди уровня падает ящик с припасами (ценится дороже)"
+
+msgctxt "term"
+msgid "Title: Rookie"
+msgstr "Титул: Новичок"
+
+msgctxt "term"
+msgid "Rookie"
+msgstr "Новичок"
+
+msgctxt "term"
+msgid "Title shown by your name"
+msgstr "Титул, который показывается рядом с вашим именем"
+
+msgctxt "term"
+msgid "Finish 1 level"
+msgstr "Пройдите уровней: 1"
+
+msgctxt "term"
+msgid "Title: Veteran"
+msgstr "Титул: Ветеран"
+
+msgctxt "term"
+msgid "Veteran"
+msgstr "Ветеран"
+
+msgctxt "term"
+msgid "Finish 25 levels in total"
+msgstr "Пройдите в сумме уровней: 25"
+
+msgctxt "term"
+msgid "Title: Boss Slayer"
+msgstr "Титул: Убийца боссов"
+
+msgctxt "term"
+msgid "Boss Slayer"
+msgstr "Убийца боссов"
+
+msgctxt "term"
+msgid "Kill 5 bosses"
+msgstr "Убейте боссов: 5"
+
+msgctxt "term"
+msgid "Title: Team Player"
+msgstr "Титул: Командный игрок"
+
+msgctxt "term"
+msgid "Team Player"
+msgstr "Командный игрок"
+
+msgctxt "term"
+msgid "Earn 10 end-of-level highlights"
+msgstr "Попадите в «Главное» по итогам уровня (раз: 10)"
+
+msgctxt "term"
+msgid "Title: Specialist"
+msgstr "Титул: Специалист"
+
+msgctxt "term"
+msgid "Master 3 classes"
+msgstr "Освойте классов: 3"
+
+msgctxt "term"
+msgid "Title: Grandmaster"
+msgstr "Титул: Грандмастер"
+
+msgctxt "term"
+msgid "Grandmaster"
+msgstr "Грандмастер"
+
+msgctxt "term"
+msgid "Master 15 classes"
+msgstr "Освойте классов: 15"
+
+msgctxt "term"
+msgid "Title: High Roller"
+msgstr "Титул: Крупный игрок"
+
+msgctxt "term"
+msgid "High Roller"
+msgstr "Крупный игрок"
+
+msgctxt "term"
+msgid "Finish a level on Brutal or harder"
+msgstr "Пройдите уровень на сложности «Жестоко» или выше"
+
+msgctxt "term"
+msgid "Wider pick"
+msgstr "Широкий выбор"
+
+msgctxt "term"
+msgid "4 perks to choose from instead of 3"
+msgstr "4 перка на выбор вместо 3"
+
+msgctxt "term"
+msgid "Reach level 20 with any class"
+msgstr "Достигните 20 уровня любым классом"
+
+msgctxt "term"
+msgid "Second opinion"
+msgstr "Второе мнение"
+
+msgctxt "term"
+msgid "1 free perk reroll per run"
+msgstr "Бесплатных перебросов перков за забег: 1"
+
+msgctxt "term"
+msgid "Earn 5 perk picks in one run"
+msgstr "Получите выборов перка за один забег: 5"
+
+msgctxt "term"
+msgid "Contract board"
+msgstr "Доска контрактов"
+
+msgctxt "term"
+msgid "+1 offer on your contract board"
+msgstr "+1 предложение на вашей доске контрактов"
+
+msgctxt "term"
+msgid "Complete 50 contracts in total"
+msgstr "Выполните в сумме контрактов: 50"
+
+msgctxt "term"
+msgid "Contractor's License"
+msgstr "Лицензия подрядчика"
+
+msgctxt "term"
+msgid "+1 contract slot (take one more contract into each level)"
+msgstr "+1 ячейка контракта (берите на каждый уровень на один контракт больше)"
+
+msgctxt "term"
+msgid "Complete 30 contracts in total"
+msgstr "Выполните в сумме контрактов: 30"
+
+msgctxt "term"
+msgid "Start each run with a random Uncommon item"
+msgstr "Начинайте каждый забег со случайным необычным предметом"
+
+msgctxt "term"
+msgid "Salvage 100 items in total"
+msgstr "Разберите в сумме предметов: 100"
+
+msgctxt "term"
+msgid "Start each run with 15 Scrap"
+msgstr "В начале каждого забега вы получаете 15 лома"
+
+msgctxt "term"
+msgid "Earn 2,000 Scrap in total"
+msgstr "Заработайте в сумме 2,000 лома"
+
+msgctxt "term"
+msgid "Start each run with 3 Sinew and 1 Core Shard"
+msgstr "В начале каждого забега вы получаете: сухожилий - 3, осколков ядра - 1"
+
+msgctxt "term"
+msgid "Craft 25 times in total"
+msgstr "Воспользуйтесь крафтом в сумме 25 раз"
+
+msgctxt "term"
+msgid "Class colours: Alt"
+msgstr "Цвета классов: альтернативные"
+
+msgctxt "term"
+msgid "An alternate menu colour for each mastered class"
+msgstr "Альтернативный цвет меню для каждого освоенного класса"
+
+msgctxt "term"
+msgid "Master any class"
+msgstr "Освойте любой класс"
+
+msgctxt "term"
+msgid "HUD frame: Gold"
+msgstr "Рамка HUD: золотая"
+
+msgctxt "term"
+msgid "A gold frame on your class HUD block"
+msgstr "Золотая рамка на блоке класса в HUD"
+
+msgctxt "term"
+msgid "Win 10 team contracts"
+msgstr "Выполните командных контрактов: 10"
+
+msgctxt "term"
+msgid "Call-out: Flare"
+msgstr "Зов о помощи: вспышка"
+
+msgctxt "term"
+msgid "Your call-out ring is a bright flare"
+msgstr "Кольцо вашего зова о помощи - яркая вспышка"
+
+msgctxt "term"
+msgid "Revive 30 teammates in total"
+msgstr "Возродите в сумме напарников: 30"
+
+msgctxt "term"
+msgid "Loyalty Card"
+msgstr "Карта лояльности"
+
+msgctxt "term"
+msgid "Every run starts at Customer reputation in the mod shop"
+msgstr "Каждый забег начинается с репутацией «Клиент» в магазине мода"
+
+msgctxt "term"
+msgid "Spend 1,000 Scrap in the mod shop (all runs)"
+msgstr "Потратьте 1,000 лома в магазине мода (за все забеги)"
+
+msgctxt "term"
+msgid "Title: Ascended"
+msgstr "Титул: Вознёсшийся"
+
+msgctxt "term"
+msgid "Ascended"
+msgstr "Вознёсшийся"
+
+msgctxt "term"
+msgid "Win a run at Ascension 1"
+msgstr "Выиграйте забег на Вознесении 1"
+
+msgctxt "term"
+msgid "Title: Ascendant"
+msgstr "Титул: Восходящий"
+
+msgctxt "term"
+msgid "Ascendant"
+msgstr "Восходящий"
+
+msgctxt "term"
+msgid "Win a run at Ascension 5"
+msgstr "Выиграйте забег на Вознесении 5"
+
+msgctxt "term"
+msgid "Title: Exalted"
+msgstr "Титул: Возвышенный"
+
+msgctxt "term"
+msgid "Exalted"
+msgstr "Возвышенный"
+
+msgctxt "term"
+msgid "Win a run at Ascension 10"
+msgstr "Выиграйте забег на Вознесении 10"
+
+msgctxt "term"
+msgid "Title: Transcendent"
+msgstr "Титул: Запредельный"
+
+msgctxt "term"
+msgid "Transcendent"
+msgstr "Запредельный"
+
+msgctxt "term"
+msgid "Win a run at Ascension 15"
+msgstr "Выиграйте забег на Вознесении 15"
+
+msgctxt "term"
+msgid "Title: Apex"
+msgstr "Титул: Апекс"
+
+msgctxt "term"
+msgid "Apex"
+msgstr "Апекс"
+
+msgctxt "term"
+msgid "Win a run at Ascension 20"
+msgstr "Выиграйте забег на Вознесении 20"
 
 msgctxt "term"
 msgid "Striker Module"
@@ -45721,6 +46217,10 @@ msgctxt "pattern"
 msgid "Auto: picked {0} ({1:0} FPS in the first minute)."
 msgstr "Авто: выбрано - {0} ({1:0} FPS за первую минуту)."
 
+msgctxt "pattern"
+msgid "{0}: {1}{2}  {3:0}m"
+msgstr "{0}: {1}{2}  {3:0} м"
+
 msgctxt "shape"
 msgid "Your ability holds {0} charges."
 msgstr "Ваша способность хранит зарядов: {0}."
@@ -49760,6 +50260,174 @@ msgstr "+{0} к удаче снаряжения и магазина на уро�
 msgctxt "shape"
 msgid "{0} crafting parts each when the level is cleared"
 msgstr "по {0} детали для крафта каждому, когда уровень пройден"
+
+msgctxt "shape"
+msgid "Deals {0}% more damage."
+msgstr "Наносит на {0}% больше урона."
+
+msgctxt "shape"
+msgid "High-stakes contracts: {0}x pay, but a failure costs {1}% of the reward."
+msgstr "Контракты с высокими ставками: оплата x{0}, но провал стоит {1}% награды."
+
+msgctxt "shape"
+msgid "Heals {0}% of its max health whenever it hurts a player."
+msgstr "Восстанавливает {0}% своего макс. здоровья каждый раз, когда ранит игрока."
+
+msgctxt "shape"
+msgid "A Legendary, an Epic set piece and a module each visit, at {0}x the price."
+msgstr "Легендарный предмет, эпическая часть комплекта и модуль в каждое посещение - по цене x{0}."
+
+msgctxt "shape"
+msgid "Monsters within {0} m of the boss take {1}% less damage."
+msgstr "Монстры в {0} м от босса получают на {1}% меньше урона."
+
+msgctxt "shape"
+msgid "Milestone levels have two named bosses, each with {0}% of the health."
+msgstr "На этапных уровнях два именных босса, у каждого по {0}% здоровья."
+
+msgctxt "shape"
+msgid "{0}% more health, {1}% slower."
+msgstr "На {0}% больше здоровья, на {1}% медленнее."
+
+msgctxt "shape"
+msgid "Two cursed Legendaries each visit: an extra stat line and a permanent curse, at {0}x the price."
+msgstr "Два проклятых легендарных предмета в каждое посещение: дополнительная строка характеристик и постоянное проклятие - по цене x{0}."
+
+msgctxt "shape"
+msgid "The first {0}% of its health is a shield that comes back after {1} s without damage."
+msgstr "Первые {0}% его здоровья - щит, который восстанавливается через {1} с без урона."
+
+msgctxt "shape"
+msgid "Haul goal +{0}%"
+msgstr "Цель по добыче +{0}%"
+
+msgctxt "shape"
+msgid "{0}% more valuables"
+msgstr "На {0}% больше ценностей"
+
+msgctxt "shape"
+msgid "Monsters +{0}%"
+msgstr "Монстры +{0}%"
+
+msgctxt "shape"
+msgid "XP +{0}%"
+msgstr "Опыт +{0}%"
+
+msgctxt "shape"
+msgid "Sprinting costs {0}% more stamina"
+msgstr "Бег тратит на {0}% больше выносливости"
+
+msgctxt "shape"
+msgid "Scrap +{0}%"
+msgstr "Лом +{0}%"
+
+msgctxt "shape"
+msgid "Valuables take {0}% more damage"
+msgstr "Ценности получают на {0}% больше урона"
+
+msgctxt "shape"
+msgid "Elite chance x{0}"
+msgstr "Шанс элиты x{0}"
+
+msgctxt "shape"
+msgid "Elites have a {0}% chance of an extra gear drop"
+msgstr "У элиты шанс {0}% на дополнительное снаряжение"
+
+msgctxt "shape"
+msgid "Monsters -{0}%, no gear from extractions"
+msgstr "Монстры -{0}%, без снаряжения за извлечения"
+
+msgctxt "shape"
+msgid "Contracts pay +{0}%"
+msgstr "Оплата контрактов +{0}%"
+
+msgctxt "shape"
+msgid "Monsters {0}% slower, XP +{1}%"
+msgstr "Монстры на {0}% медленнее, опыт +{1}%"
+
+msgctxt "shape"
+msgid "Finish {0} level"
+msgstr "Пройдите уровней: {0}"
+
+msgctxt "shape"
+msgid "Finish {0} levels in total"
+msgstr "Пройдите в сумме уровней: {0}"
+
+msgctxt "shape"
+msgid "Kill {0} bosses"
+msgstr "Убейте боссов: {0}"
+
+msgctxt "shape"
+msgid "Earn {0} end-of-level highlights"
+msgstr "Попадите в «Главное» по итогам уровня (раз: {0})"
+
+msgctxt "shape"
+msgid "Master {0} classes"
+msgstr "Освойте классов: {0}"
+
+msgctxt "shape"
+msgid "{0} perks to choose from instead of {1}"
+msgstr "{0} перка на выбор вместо {1}"
+
+msgctxt "shape"
+msgid "Reach level {0} with any class"
+msgstr "Достигните {0} уровня любым классом"
+
+msgctxt "shape"
+msgid "{0} free perk reroll per run"
+msgstr "Бесплатных перебросов перков за забег: {0}"
+
+msgctxt "shape"
+msgid "Earn {0} perk picks in one run"
+msgstr "Получите выборов перка за один забег: {0}"
+
+msgctxt "shape"
+msgid "+{0} offer on your contract board"
+msgstr "+{0} предложение на вашей доске контрактов"
+
+msgctxt "shape"
+msgid "Complete {0} contracts in total"
+msgstr "Выполните в сумме контрактов: {0}"
+
+msgctxt "shape"
+msgid "+{0} contract slot (take one more contract into each level)"
+msgstr "+{0} ячейка контракта (берите на каждый уровень на один контракт больше)"
+
+msgctxt "shape"
+msgid "Salvage {0} items in total"
+msgstr "Разберите в сумме предметов: {0}"
+
+msgctxt "shape"
+msgid "Start each run with {0} Scrap"
+msgstr "В начале каждого забега вы получаете {0} лома"
+
+msgctxt "shape"
+msgid "Earn {0} Scrap in total"
+msgstr "Заработайте в сумме {0} лома"
+
+msgctxt "shape"
+msgid "Start each run with {0} Sinew and {1} Core Shard"
+msgstr "В начале каждого забега вы получаете: сухожилий - {0}, осколков ядра - {1}"
+
+msgctxt "shape"
+msgid "Craft {0} times in total"
+msgstr "Воспользуйтесь крафтом в сумме {0} раз"
+
+msgctxt "shape"
+msgid "Win {0} team contracts"
+msgstr "Выполните командных контрактов: {0}"
+
+msgctxt "shape"
+msgid "Revive {0} teammates in total"
+msgstr "Возродите в сумме напарников: {0}"
+
+msgctxt "shape"
+msgid "Spend {0} Scrap in the mod shop (all runs)"
+msgstr "Потратьте {0} лома в магазине мода (за все забеги)"
+
+msgctxt "shape"
+msgid "Win a run at Ascension {0}"
+msgstr "Выиграйте забег на Вознесении {0}"
 
 msgctxt "data:guide"
 msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."

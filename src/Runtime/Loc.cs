@@ -425,33 +425,34 @@ namespace RepoRPG_RU
         }
 
         /// <summary>
-        /// "Rare Sharp Striker Module of the Brawler": two or three names the mod wrote one after another (a rarity and an item).
-        /// Every part starts with a capital and is known to the dictionary as it stands; together they cover the whole run.
+        /// "Rare Sharp Striker Module of the Brawler", "Armored Swift Brutish Warlord": names the mod wrote one after another
+        /// (a rarity and an item, the modifiers of an elite). Every part starts with a capital and is known to the dictionary
+        /// as it stands; together they cover the whole run. The longest name wins at every step.
         /// </summary>
         private static string Names(string run)
         {
-            if (run.Length > 90 || run.IndexOf(' ') < 0) return null;
-            for (int cut = run.Length - 1; cut > 0; cut--)
+            if (run.Length > 120 || run.IndexOf(' ') < 0 || !IsUpperLetter(run[0])) return null;
+            StringBuilder sb = new StringBuilder(run.Length + 16);
+            int budget = 200;
+            return NamesFrom(run, 0, sb, ref budget) ? sb.ToString() : null;
+        }
+
+        private static bool NamesFrom(string run, int from, StringBuilder sb, ref int budget)
+        {
+            int mark = sb.Length;
+            for (int end = run.Length; end > from; end--)
             {
-                if (run[cut] != ' ') continue;
-                if (!IsUpperLetter(run[0]) || cut + 1 >= run.Length || !IsUpperLetter(run[cut + 1])) continue;
-                string head = Exact(run.Substring(0, cut));
-                if (head == null) continue;
-                string rest = run.Substring(cut + 1);
-                string tail = Exact(rest);
-                if (tail == null)
-                {
-                    // one more name at most
-                    for (int cut2 = rest.Length - 1; cut2 > 0 && tail == null; cut2--)
-                    {
-                        if (rest[cut2] != ' ' || cut2 + 1 >= rest.Length || !IsUpperLetter(rest[cut2 + 1])) continue;
-                        string a = Exact(rest.Substring(0, cut2)), b = a == null ? null : Exact(rest.Substring(cut2 + 1));
-                        if (b != null) tail = a + " " + b;
-                    }
-                }
-                if (tail != null) return head + " " + tail;
+                if (end < run.Length && (run[end] != ' ' || end + 1 >= run.Length || !IsUpperLetter(run[end + 1]))) continue;
+                if (from == 0 && end == run.Length) continue;         // the whole run was looked up already
+                if (--budget < 0) return false;
+                string t = Exact(run.Substring(from, end - from));
+                if (t == null) continue;
+                if (from > 0) sb.Append(' ');
+                sb.Append(t);
+                if (end == run.Length || NamesFrom(run, end + 1, sb, ref budget)) return true;
+                sb.Length = mark;
             }
-            return null;
+            return false;
         }
 
         private static bool IsWordChar(char c) { return IsLatinLetter(c) || (c >= '0' && c <= '9') || c == '_'; }
