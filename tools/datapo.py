@@ -192,7 +192,7 @@ def build(data_json, tsv_dir, known, problems):
             if 'post' not in extra: problems.append('%s: the last word of gear names needs post= (genitive)' % where)
             else: post.append((en, extra['post']))
         if 'first' in kinds: first.append((en, ru, extra.get('g', 'm')))
-        if 'epithet' in kinds: epithet.append((en, extra.get('e', ru), extra.get('f') if 'e' not in extra else None))
+        if 'epithet' in kinds: epithet.append((en, extra.get('e', ru), extra.get('f')))
         if kinds == ['pre'] or kinds == ['post'] or kinds == ['first'] or kinds == ['epithet'] or kinds == ['base']:
             continue                                             # never shown on their own
         if 'contract' in kinds:
@@ -241,7 +241,7 @@ def build(data_json, tsv_dir, known, problems):
             en = 'Prototype ' + p_en + ' ' + b_en
             if 'post' in p_x and not all(k in p_x for k in 'fnp'): ru = b_ru + ' ' + p_x['post']
             else: ru = cap({'m': p_m, 'f': p_x['f'], 'n': p_x['n'], 'p': p_x['p']}[g]) + ' ' + low(b_ru)
-            if en not in known and en not in terms: terms[en] = 'Прототип: ' + ru; made += 1
+            if en not in known and en not in terms: terms[en] = 'Прототип: ' + low(ru); made += 1
     bosses = 0
     for f_en, f_ru, g in first:
         for e_en, e_ru, e_f in epithet:
