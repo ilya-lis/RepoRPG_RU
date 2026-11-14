@@ -7173,8 +7173,1526 @@ msgstr "Игрок"
 msgid "Late-join starting Scrap"
 msgstr "Стартовый лом за позднее подключение"
 
+msgid "Grappler: seconds you cling to a wall or hang from a ceiling after hooking it (talents add a little; a Mimic's copy gets half)."
+msgstr "Крючник: сколько секунд вы держитесь за стену или висите под потолком, зацепившись крюком (таланты добавляют немного; копия Мимика получает половину)."
+
+msgid "Grappler: stamina drained per second while clinging or hanging (0 = none). At zero stamina you let go."
+msgstr "Крючник: расход выносливости в секунду, пока вы держитесь или висите (0 = без расхода). Когда выносливость кончается, вы отпускаете."
+
+msgid "Grappler: hooks in a row before you must touch the ground again (each one still needs a charge or the cooldown; a Mimic's copy: 1)."
+msgstr "Крючник: сколько зацепов подряд можно сделать, не касаясь земли (каждому всё равно нужен заряд или перезарядка; копия Мимика: 1)."
+
+msgid "Grappler: parts of object names the Hook can't attach to, comma-separated (e.g. \"railing, fence\"). Empty = none."
+msgstr "Крючник: части названий объектов, за которые Крюк не цепляется, через запятую (например, \"railing, fence\"). Пусто = таких нет."
+
+msgid "Open the class / skill tree menu."
+msgstr "Открыть меню классов и древа навыков."
+
+msgid "Use your class's active ability."
+msgstr "Применить активную способность класса."
+
+msgid "Show class, level, XP and ability cooldown on screen."
+msgstr "Показывать на экране класс, уровень, опыт и перезарядку способности."
+
+msgid "In the lobby and the shop, show a small hint with the key that opens the RepoRPG menu."
+msgstr "В лобби и магазине показывать небольшую подсказку с клавишей, открывающей меню RepoRPG."
+
+msgid "Also show the menu key hint during levels."
+msgstr "Показывать подсказку с клавишей меню и на уровнях."
+
+msgid "Ask before salvaging: Rare+ (Rare and above), All, or None."
+msgstr "Спрашивать перед разборкой: Rare+ (редкие и выше), All (все) или None (никогда)."
+
+msgid "Gear tab: salvage the selected item."
+msgstr "Вкладка снаряжения: разобрать выбранный предмет."
+
+msgid "Medic: health bars over teammates' heads (through walls, within range)."
+msgstr "Медик: полосы здоровья над головами напарников (сквозь стены, в пределах дальности)."
+
+msgid "Medic: the team health list (left side, lowest health first)."
+msgstr "Медик: список здоровья команды (слева, сначала самое низкое здоровье)."
+
+msgid "Medic: how far down (px, 1080p layout) the team list starts - below the game's own health display."
+msgstr "Медик: насколько ниже (пикс., в раскладке 1080p) начинается список команды - под индикатором здоровья самой игры."
+
+msgid "Moves the contracts list (bottom right) up by this many pixels (1080p layout), e.g. if another mod's HUD sits there."
+msgstr "Сдвигает список контрактов (справа внизу) вверх на столько пикселей (в раскладке 1080p) - например, если там находится HUD другого мода."
+
+msgid "Menu font: 'auto' uses the game's font when possible, else Bahnschrift/Impact. Or type any installed font name."
+msgstr "Шрифт меню: «auto» берёт шрифт игры, если это возможно, иначе Bahnschrift/Impact. Либо введите название любого установленного шрифта."
+
+msgid "Play the game's menu hover/click sounds in the mod menu."
+msgstr "Проигрывать в меню мода звуки наведения и нажатия из меню игры."
+
+msgid "Mod menu: at most one hover / navigation sound every this many milliseconds (a new one replaces the last, never stacks)."
+msgstr "Меню мода: не больше одного звука наведения / навигации за столько миллисекунд (новый заменяет предыдущий, звуки не накладываются)."
+
+msgid "Logs a timed profile of the mod's UI every 10s as [ui]: frame time, memory and garbage collections, OnGUI passes, UI sounds played / rate-limited, AudioSource and GameObject counts."
+msgstr "Каждые 10 с записывает в журнал профиль интерфейса мода с пометкой [ui]: время кадра, память и сборки мусора, проходы OnGUI, проигранные и пропущенные звуки интерфейса, количество AudioSource и GameObject."
+
+msgid "Old setting, replaced by UiTextScale (kept so an older choice carries over)."
+msgstr "Старый параметр, заменён на UiTextScale (оставлен, чтобы прежний выбор сохранился)."
+
+msgid "Text size of the mod's menus and HUD, on top of the automatic sizing to your screen (0.75 = 75%, 2 = 200%). Also in the Controls tab."
+msgstr "Размер текста в меню и HUD мода - поверх автоматической подгонки под ваш экран (0.75 = 75%, 2 = 200%). Есть и на вкладке «Управление»."
+
+msgid "For weaker PCs: no menu button animation, slower HUD refresh. Gameplay is unchanged."
+msgstr "Для слабых ПК: без анимации кнопок меню, более редкое обновление HUD. На игровой процесс не влияет."
+
+msgid "Off / Minimal (green glow on the health display) / Standard (glow + one \"+X HP\" number; pop-ups for teammate heals, big heals and revives) / Detailed (also a pop-up per healing source). Personal, never synced."
+msgstr "Off (выкл.) / Minimal (зелёное свечение на индикаторе здоровья) / Standard (свечение и одно число «+X ОЗ»; всплывающие сообщения о лечении от напарников, сильном лечении и возрождениях) / Detailed (ещё и сообщение на каждый источник лечения). Личная настройка, не синхронизируется."
+
+msgid "A short, quiet sound when a teammate heals or revives you. Small and over-time heals are always silent."
+msgstr "Короткий тихий звук, когда напарник лечит или возрождает вас. Слабое и постепенное лечение всегда беззвучно."
+
+msgid "An instant heal of at least this many HP gets a pop-up (Standard)."
+msgstr "Мгновенное лечение не меньше чем на столько ОЗ показывается всплывающим сообщением (Standard)."
+
+msgid "Show the small notifications above your class / XP meter."
+msgstr "Показывать небольшие уведомления над индикатором класса и опыта."
+
+msgid "XP gains, with their source."
+msgstr "Получение опыта с указанием источника."
+
+msgid "Level ups and points earned."
+msgstr "Повышения уровня и полученные очки."
+
+msgid "Gear found, rarity upgrades, appraisals."
+msgstr "Найденное снаряжение, повышения редкости, оценки."
+
+msgid "New and completed contracts."
+msgstr "Новые и выполненные контракты."
+
+msgid "Perk picks and unlocks."
+msgstr "Выборы перков и открытия."
+
+msgid "Mod shop purchases and other small notices."
+msgstr "Покупки в магазине мода и прочие мелкие уведомления."
+
+msgid "Currency earned (and gifts)."
+msgstr "Полученная валюта (и подарки)."
+
+msgid "Seconds each notification stays."
+msgstr "Сколько секунд держится каждое уведомление."
+
+msgid "Most notifications shown at once."
+msgstr "Сколько уведомлений показывается одновременно, не больше."
+
+msgid "Text inside boxes (class cards, perks, skill nodes, gear) grows to fill spare room and shrinks when space is tight. Off = fixed size, only shrinking when it wouldn't fit."
+msgstr "Текст в рамках (карточки классов, перки, узлы навыков, снаряжение) увеличивается, заполняя свободное место, и уменьшается, когда места мало. Выкл. = постоянный размер, уменьшается только если не помещается."
+
+msgid "How much text in boxes may grow when there's room (1.35 = up to 35% bigger)."
+msgstr "Насколько текст в рамках может увеличиваться, когда есть место (1.35 = до 35% крупнее)."
+
+msgid "Menu: select / confirm."
+msgstr "Меню: выбрать / подтвердить."
+
+msgid "Menu: back one level (cancel, then tab bar, then close)."
+msgstr "Меню: на уровень назад (отмена, затем панель вкладок, затем закрытие)."
+
+msgid "Menu: previous sub-tab (inside Character, Loot, Run or Options). Tab / Shift+Tab and 1-4 switch the main tabs."
+msgstr "Меню: предыдущая подвкладка (внутри «Персонаж», «Добыча», «Забег» или «Параметры»). Tab / Shift+Tab и 1-4 переключают основные вкладки."
+
+msgid "Menu: next sub-tab (inside Character, Loot, Run or Options). Tab / Shift+Tab and 1-4 switch the main tabs."
+msgstr "Меню: следующая подвкладка (внутри «Персонаж», «Добыча», «Забег» или «Параметры»). Tab / Shift+Tab и 1-4 переключают основные вкладки."
+
+msgid "Menu: the selected item's extra action (shown in the prompts)."
+msgstr "Меню: дополнительное действие для выбранного элемента (показано в подсказках)."
+
+msgid "Herald: hold to hum (builds Inspire without a microphone, more slowly)."
+msgstr "Глашатай: удерживайте, чтобы гудеть (копит Воодушевление без микрофона, но медленнее)."
+
+msgid "Quartermaster: give the item you're holding to the teammate you're looking at."
+msgstr "Интендант: передать предмет, который вы держите, напарнику, на которого вы смотрите."
+
+msgid "Mimic (Dual Memory): switch between your two copied abilities."
+msgstr "Мимик (Двойная память): переключение между двумя скопированными способностями."
+
+msgid "Cartwright: turn Loyal Cart's following on / off (off: the cart parks and stays a normal cart until you turn it back on)."
+msgstr "Тележник: включить / выключить следование «Верной тележки» (выкл.: тележка останавливается и остаётся обычной, пока вы не включите следование снова)."
+
+msgid "Herald: hold to hum."
+msgstr "Глашатай: удерживайте, чтобы гудеть."
+
+msgid "Cartwright: turn Loyal Cart's following on / off."
+msgstr "Тележник: включить / выключить следование «Верной тележки»."
+
+msgid "Quartermaster: hand off the held item."
+msgstr "Интендант: передать удерживаемый предмет."
+
+msgid "Mimic: switch copied ability."
+msgstr "Мимик: сменить скопированную способность."
+
+msgid "Herald: how loud your microphone must be to count as talking (quiet hiss below this is ignored)."
+msgstr "Глашатай: насколько громким должен быть звук с микрофона, чтобы считаться речью (тихое шипение ниже порога не учитывается)."
+
+msgid "Class, Attributes and Perks tabs: confirm that tab's pending changes (works from anywhere on the tab)."
+msgstr "Вкладки «Класс», «Характеристики» и «Перки»: подтвердить ожидающие изменения на вкладке (работает из любого места вкладки)."
+
+msgid "Class, Attributes and Perks tabs: clear that tab's pending changes (back to the confirmed state)."
+msgstr "Вкладки «Класс», «Характеристики» и «Перки»: сбросить ожидающие изменения на вкладке (вернуться к подтверждённому состоянию)."
+
+msgid "Class, Attributes and Perks tabs: confirm that tab's pending changes."
+msgstr "Вкладки «Класс», «Характеристики» и «Перки»: подтвердить ожидающие изменения на вкладке."
+
+msgid "Class, Attributes and Perks tabs: clear that tab's pending changes. (Shares X with the secondary action: on a talent with pending points, X takes one point back instead.)"
+msgstr "Вкладки «Класс», «Характеристики» и «Перки»: сбросить ожидающие изменения на вкладке. (Делит кнопку X с дополнительным действием: на таланте с ожидающими очками X вместо этого забирает одно очко.)"
+
+msgid "Menu: back one level."
+msgstr "Меню: на уровень назад."
+
+msgid "Menu: previous sub-tab."
+msgstr "Меню: предыдущая подвкладка."
+
+msgid "Menu: next sub-tab."
+msgstr "Меню: следующая подвкладка."
+
+msgid "Menu: previous main tab (Character, Loot, Run, Options)."
+msgstr "Меню: предыдущая основная вкладка («Персонаж», «Добыча», «Забег», «Параметры»)."
+
+msgid "Menu: next main tab (Character, Loot, Run, Options)."
+msgstr "Меню: следующая основная вкладка («Персонаж», «Добыча», «Забег», «Параметры»)."
+
+msgid "Menu: the selected item's extra action."
+msgstr "Меню: дополнительное действие для выбранного элемента."
+
+msgid "Menu: jump to the search box on the Host tab and the Guide (opens the on-screen keyboard). Keyboard: / or Ctrl+F."
+msgstr "Меню: перейти к строке поиска на вкладке «Хост» и в справке (открывает экранную клавиатуру). С клавиатуры: / или Ctrl+F."
+
+msgid "Controller button(s) to hold to open/close the menu. Names: a b x y lb rb lt rt start select ls rs up down left right. Combine with +, e.g. lb+select."
+msgstr "Кнопки геймпада, которые нужно удерживать, чтобы открыть или закрыть меню. Названия: a b x y lb rb lt rt start select ls rs up down left right. Сочетания через +, например lb+select."
+
+msgid "How long to hold MenuButton (0 = instant)."
+msgstr "Сколько нужно удерживать MenuButton (0 = мгновенно)."
+
+msgid "Controller button(s) for your active ability, e.g. lb+rb or rs."
+msgstr "Кнопки геймпада для активной способности, например lb+rb или rs."
+
+msgid "Read Xbox controllers directly through Windows (works even if the game ignores controllers). Turn off only if your controller acts strangely."
+msgstr "Читать геймпады Xbox напрямую через Windows (работает, даже если игра не видит геймпад). Выключайте, только если геймпад ведёт себя странно."
+
+msgid "Class level cap."
+msgstr "Предел уровня класса."
+
+msgid "XP to next level = XpCurveBase + XpCurvePerLevel x level + XpCurveSquare x level squared. (Normal difficulty; 130 before 1.0.55.)"
+msgstr "Опыт до следующего уровня = XpCurveBase + XpCurvePerLevel x уровень + XpCurveSquare x уровень в квадрате. (Сложность «Нормально»; до версии 1.0.55 было 130.)"
+
+msgid "See XpCurveBase. (Normal difficulty; 60 before 1.0.55.)"
+msgstr "Смотрите XpCurveBase. (Сложность «Нормально»; до версии 1.0.55 было 60.)"
+
+msgid "See XpCurveBase: makes later class levels take noticeably longer than early ones (Normal difficulty; new in 1.0.55)."
+msgstr "Смотрите XpCurveBase: из-за этого поздние уровни класса набираются заметно дольше ранних (сложность «Нормально»; появилось в 1.0.55)."
+
+msgid "Cap (%) on all XP bonuses together: perks, gear, attributes, class passives, streak, chapter, crew, map modifiers and gear like the Ledger of Debts. Not capped: the difficulty's XpMultiplier and the catch-up bonus for players behind the team."
+msgstr "Предел (%) для всех бонусов к опыту вместе: перки, снаряжение, характеристики, пассивные умения классов, серия, глава, команда, модификаторы карты и снаряжение вроде «Книги долгов». Не ограничиваются: XpMultiplier сложности и догоняющий бонус для отставших от команды игроков."
+
+msgid "Skill points gained per level."
+msgstr "Очков навыков за уровень."
+
+msgid "Extra skill point every N levels (0 = off)."
+msgstr "Дополнительное очко навыков каждые N уровней (0 = выкл.)."
+
+msgid "Global XP multiplier (the difficulty's; outside the MaxXpBonus cap)."
+msgstr "Общий множитель опыта (задаётся сложностью; не входит в предел MaxXpBonus)."
+
+msgid "XP per enemy kill near you, multiplied by enemy tier (1-3)."
+msgstr "Опыт за убийство врага рядом с вами, умножается на ранг врага (1-3)."
+
+msgid "XP for every player for the first extraction point completed in a level."
+msgstr "Опыт каждому игроку за первую завершённую точку извлечения на уровне."
+
+msgid "Each further extraction in the same level gives this much of the previous one (0.75 = 75%)."
+msgstr "Каждое следующее извлечение на том же уровне даёт такую долю от предыдущего (0.75 = 75%)."
+
+msgid "Extraction XP never drops below this share of the first one (0.4 = 40%)."
+msgstr "Опыт за извлечение не опускается ниже этой доли от первого (0.4 = 40%)."
+
+msgid "XP for every player when a level is completed."
+msgstr "Опыт каждому игроку за пройденный уровень."
+
+msgid "XP when a teammate is revived near you."
+msgstr "Опыт за возрождение напарника рядом с вами."
+
+msgid "Kills within this many meters of you count for you."
+msgstr "Убийства в пределах стольких метров от вас засчитываются вам."
+
+msgid "Revives within this many meters of you count for you."
+msgstr "Возрождения в пределах стольких метров от вас засчитываются вам."
+
+msgid "Falling off the level kills (vanilla just returns you to the truck). A death save (Second Chance, Phoenix Plate, Last Stand) catches the fall and uses its charge; you go back to the truck at 1 HP."
+msgstr "Падение за пределы уровня убивает (в обычной игре вас просто возвращает в грузовик). Спасение от смерти (Второй шанс, Пластина феникса, Последний рубеж) ловит падение и тратит заряд; вы возвращаетесь в грузовик с 1 ОЗ."
+
+msgid "Medic (Field Triage): range (m) of the health bars over teammates' heads (talents can add more). The team list shows everyone."
+msgstr "Медик (сортировка): дальность (м) полос здоровья над головами напарников (таланты могут добавить). В списке команды показаны все."
+
+msgid "Restorer: the most of a valuable's lost value that can ever be won back (%, all sources together; never above its original value)."
+msgstr "Реставратор: наибольшая доля потерянной стоимости ценности, которую вообще можно вернуть (%, все источники вместе; не выше исходной стоимости)."
+
+msgid "Scavenger: most valuables one Scavenger can turn up per level (Keen Eye and Rummage together; talents add a few)."
+msgstr "Старьёвщик: сколько ценностей один Старьёвщик может найти за уровень, не больше («Острый глаз» и «Обыск» вместе; таланты добавляют несколько)."
+
+msgid "Scavenger: what a find is worth, as % of the item's normal value (talents add more, up to 100)."
+msgstr "Старьёвщик: сколько стоит находка, в % от обычной стоимости предмета (таланты добавляют, до 100)."
+
+msgid "Scavenger: finds lose this % of the normal value per hit (150 = 1.5x as fragile; talents reduce it)."
+msgstr "Старьёвщик: находки теряют столько % обычной стоимости за удар (150 = в 1,5 раза более хрупкие; таланты уменьшают)."
+
+msgid "Insurer: cap on Coverage (% of lost value paid back as team Scrap)."
+msgstr "Страховщик: предел «Покрытия» (% потерянной стоимости, возвращаемый команде ломом)."
+
+msgid "Insurer: a Policy only pays if the item was carried / moved this far (m) after tagging and then destroyed by a monster, hazard, fall or explosion - never by a player."
+msgstr "Страховщик: Полис выплачивается, только если предмет после пометки пронесли / переместили на такое расстояние (м), а затем его уничтожил монстр, ловушка, падение или взрыв - но не игрок."
+
+msgid "Lookout: seconds between alerts from the same Watchpost."
+msgstr "Дозорный: секунд между оповещениями от одного сторожевого поста."
+
+msgid "Shepherd: cap on Calm Presence (seconds before monsters react to teammates near the Shepherd)."
+msgstr "Пастух: предел «Спокойного присутствия» (секунд до того, как монстры реагируют на напарников рядом с Пастухом)."
+
+msgid "Grappler: what counts as a small item (kg, the item's physics mass) for Long Reach and Hook (talents add a few kg)."
+msgstr "Крючник: что считается мелким предметом (кг, физическая масса предмета) для «Дальнего захвата» и Крюка (таланты добавляют несколько кг)."
+
+msgid "Grappler: seconds a yanked item can't break (0 = it takes impact damage normally)."
+msgstr "Крючник: сколько секунд притянутый предмет не может разбиться (0 = он получает урон от ударов как обычно)."
+
+msgid "Grappler: Hook pull speed (m/s) at full strength; it eases in and slows near the end."
+msgstr "Крючник: скорость притягивания Крюком (м/с) в полную силу; он разгоняется плавно и замедляется к концу."
+
+msgid "Grappler: how far above the spot the line hits Hook looks for a ledge top to stand on (m)."
+msgstr "Крючник: насколько выше точки попадания троса Крюк ищет край уступа, на который можно встать (м)."
+
+msgid "HUD probe (Debug tab > Features): also list the HUD elements under this screen point, as \"x,y\" in percent from the top-left (e.g. \"22,55\"). Empty = the screen centre only."
+msgstr "Проба HUD (вкладка Debug > Features): также перечислить элементы HUD под этой точкой экрана, в виде \"x,y\" в процентах от левого верхнего угла (например, \"22,55\"). Пусто = только центр экрана."
+
+msgid "Grappler Hook: draws the aim ray, hit point, ledge top and path (green = OK, red = refused) for a few seconds and logs each step as [hook]."
+msgstr "Крюк Крючника: на несколько секунд рисует луч прицеливания, точку попадания, край уступа и путь (зелёный = годится, красный = отказ) и записывает каждый шаг в журнал как [hook]."
+
+msgid "For testing: every wait RepoRPG has (answers from the host, a late joiner's level building) gives up almost at once, to check the game carries on without it."
+msgstr "Для проверки: любое ожидание RepoRPG (ответы хоста, построение уровня у поздно подключившегося) прекращается почти сразу - чтобы убедиться, что игра продолжается и без него."
+
+msgid "Logs every step of a contract completing and being paid, as [contracts] with a timestamp (ms) and frame number."
+msgstr "Записывает в журнал каждый шаг выполнения и оплаты контракта как [contracts], с отметкой времени (мс) и номером кадра."
+
+msgid "Medic Field Triage: logs every 3 s as [triage] each step of the health bars over teammates (class check, settings, health from the host, avatars found, camera, each teammate's screen position, distance and why it's hidden)."
+msgstr "«Полевая сортировка» Медика: каждые 3 с записывает в журнал как [triage] каждый шаг показа полос здоровья над напарниками (проверка класса, настройки, здоровье от хоста, найденные аватары, камера, положение каждого напарника на экране, расстояние и причина, по которой полоса скрыта)."
+
+msgid "Scavenger: how long Rummage takes (standing still)."
+msgstr "Старьёвщик: сколько длится «Обыск» (стоя на месте)."
+
+msgid "Ventriloquist: play the Echo's muffled stand-in noise at the beacon (made from game-style noise, never anyone's real voice). Off = the ring only. No real audio is ever recorded or sent."
+msgstr "Чревовещатель: проигрывать у маяка приглушённый шум-заменитель «Эха» (создаётся из шума в стиле игры, это никогда не чей-то настоящий голос). Выкл. = только кольцо. Настоящий звук никогда не записывается и не передаётся."
+
+msgid "Lookout (Spotter): show monster names and threat over their heads."
+msgstr "Дозорный (Наводчик): показывать названия монстров и угрозу над их головами."
+
+msgid "Host: Gunsmith Overclock (and a Mimic's copy) - battery a shot costs while it lasts (% of normal; 0 = free shots)."
+msgstr "Хост: «Разгон» Оружейника (и копия Мимика) - сколько заряда батареи стоит выстрел, пока он действует (% от обычного; 0 = выстрелы бесплатны)."
+
+msgid "Appraisal Scan: a marker on each tracked valuable (value, distance, floor), through walls, while the scan lasts."
+msgstr "Оценочное сканирование: метка на каждой отслеживаемой ценности (стоимость, расстояние, этаж), видна сквозь стены, пока длится сканирование."
+
+msgid "Appraisal Scan: tracked valuables are highlighted through walls in their rarity colour (off with Reduced effects too)."
+msgstr "Оценочное сканирование: отслеживаемые ценности подсвечиваются сквозь стены цветом своей редкости (отключается и режимом «Меньше эффектов»)."
+
+msgid "Appraisal Scan: seconds tracked items stay marked after the scan ends (talents can add more)."
+msgstr "Оценочное сканирование: сколько секунд предметы остаются отмеченными после конца сканирования (таланты могут добавить)."
+
+msgid "Appraisal Scan: teammates near the Appraiser see the same markers."
+msgstr "Оценочное сканирование: напарники рядом с Оценщиком видят те же метки."
+
+msgid "Appraisal Scan: how near (m) a teammate must be to get shared markers."
+msgstr "Оценочное сканирование: насколько близко (м) должен быть напарник, чтобы видеть общие метки."
+
+msgid "Appraisal Scan copied by a Mimic: % of the range (it also tracks fewer items, by its copy strength)."
+msgstr "Оценочное сканирование, скопированное Мимиком: % дальности (кроме того, оно отслеживает меньше предметов - по силе копии)."
+
+msgid "Quartermaster: Resupply uses per level (refilled when a level starts). Talents can add one."
+msgstr "Интендант: применений «Пополнения» за уровень (восстанавливаются в начале уровня). Таланты могут добавить одно."
+
+msgid "Quartermaster: how much of each battery Resupply restores (% of a full battery)."
+msgstr "Интендант: сколько заряда каждой батареи восстанавливает «Пополнение» (% полной батареи)."
+
+msgid "Quartermaster: cap on Resupply's restore with every talent (% of a full battery)."
+msgstr "Интендант: предел восстановления «Пополнением» со всеми талантами (% полной батареи)."
+
+msgid "Quartermaster: once Resupply is out of charges, it can still be used by paying the Quartermaster's own Scrap (price rises each time that level)."
+msgstr "Интендант: когда заряды «Пополнения» кончились, его всё ещё можно применить, заплатив ломом самого Интенданта (цена растёт с каждым разом на этом уровне)."
+
+msgid "Quartermaster: Scrap price of the first paid Resupply in a level."
+msgstr "Интендант: цена в ломе за первое платное «Пополнение» на уровне."
+
+msgid "Quartermaster: how much the paid Resupply price rises after each paid use that level."
+msgstr "Интендант: насколько растёт цена платного «Пополнения» после каждого платного применения на этом уровне."
+
+msgid "Gambler: Double or Nothing uses per level (refilled when a level starts). Talents and blessings can add one."
+msgstr "Азартный игрок: применений «Вдвое или ничего» за уровень (восстанавливаются в начале уровня). Таланты и благословения могут добавить одно."
+
+msgid "Gambler: seconds to extract the marked valuable before the bet is lost."
+msgstr "Азартный игрок: сколько секунд есть на извлечение отмеченной ценности, прежде чем ставка проиграна."
+
+msgid "Gambler: the bet only pays once it has been live this long (no instant payout from marking next to an extraction)."
+msgstr "Азартный игрок: ставка выплачивается, только если действовала не меньше этого времени (никакой мгновенной выплаты за пометку рядом с точкой извлечения)."
+
+msgid "Gambler: value multiplier for a bet that took no risk at all."
+msgstr "Азартный игрок: множитель стоимости для ставки совсем без риска."
+
+msgid "Gambler: value multiplier at full risk (talents and blessings can add a little)."
+msgstr "Азартный игрок: множитель стоимости при полном риске (таланты и благословения могут немного добавить)."
+
+msgid "Gambler: a lost bet costs this % of the valuable's value, in Scrap."
+msgstr "Азартный игрок: проигранная ставка стоит столько % от стоимости ценности, ломом."
+
+msgid "Gambler: one lost bet never takes more than this % of the Gambler's Scrap (and Scrap never goes below 0)."
+msgstr "Азартный игрок: одна проигранная ставка не отнимает больше этого % лома Азартного игрока (и лом не опускается ниже 0)."
+
+msgid "Gambler: the marked valuable hums, pulling in monsters from this far (m)."
+msgstr "Азартный игрок: отмеченная ценность гудит, привлекая монстров с такого расстояния (м)."
+
+msgid "Gambler: seconds between hums."
+msgstr "Азартный игрок: секунд между гудениями."
+
+msgid "Gambler: danger needed for the full multiplier (1 per second a monster is within 10m of the valuable, 1 per 5 HP the Gambler loses while it's marked; time alone gives up to half)."
+msgstr "Азартный игрок: сколько опасности нужно для полного множителя (1 за каждую секунду, пока монстр в пределах 10 м от ценности, 1 за каждые 5 ОЗ, потерянных Азартным игроком, пока она отмечена; одно лишь время даёт не больше половины)."
+
+msgid "Cap (%) on damage reduction from everything together: passives, gear, attributes, perks, abilities and allies' auras. (Phase Out's immunity is separate.)"
+msgstr "Предел (%) снижения урона от всего вместе: пассивные умения, снаряжение, характеристики, перки, способности и ауры союзников. (Неуязвимость «Фазового сдвига» считается отдельно.)"
+
+msgid "Cap (%) on the damage reduction of an ability's buff after Ability Power (e.g. Iron Wall)."
+msgstr "Предел (%) снижения урона от усиления способности с учётом силы способности (например, «Железная стена»)."
+
+msgid "Cap (%) on the total walk / sprint speed bonus from every source together."
+msgstr "Предел (%) общего бонуса к скорости ходьбы / бега от всех источников вместе."
+
+msgid "Cap on Double or Nothing's multiplier after every talent and blessing."
+msgstr "Предел множителя «Вдвое или ничего» со всеми талантами и благословениями."
+
+msgid "Allow refunding all skill points for free."
+msgstr "Разрешить бесплатный возврат всех очков навыков."
+
+msgid "In the shop, remind players who haven't picked a class yet with a pop-up."
+msgstr "В магазине напоминать всплывающим сообщением игрокам, которые ещё не выбрали класс."
+
+msgid "No longer used: classes are picked only in the lobby and the shop level."
+msgstr "Больше не используется: классы выбираются только в лобби и на уровне магазина."
+
+msgid "Cap (%) on permanent damage reduction from passives + skills. Active abilities can exceed it."
+msgstr "Предел (%) постоянного снижения урона от пассивных умений и навыков. Активные способности могут его превышать."
+
+msgid "Cap (%) on dodge chance."
+msgstr "Предел (%) шанса уклонения."
+
+msgid "Cap (%) on cooldown reduction."
+msgstr "Предел (%) сокращения перезарядки."
+
+msgid "Cap (%) on how much less value an item loses when it gets damaged while you hold it (Hauler talents)."
+msgstr "Предел (%) того, насколько меньше стоимости теряет предмет, повреждённый у вас в руках (таланты Носильщика)."
+
+msgid "Cap (%) on how much value an Appraiser adds to each valuable in their aura."
+msgstr "Предел (%) стоимости, которую Оценщик добавляет каждой ценности в своей ауре."
+
+msgid "Multiplier on every stamina regen bonus (perks, attributes, gear, talents, Power Link). 1 = as described; 0 = off. Bonuses only apply while the game itself is recharging stamina."
+msgstr "Множитель для всех бонусов к восстановлению выносливости (перки, характеристики, снаряжение, таланты, «Энергосвязь»). 1 = как в описании; 0 = выкл. Бонусы действуют, только пока сама игра восстанавливает выносливость."
+
+msgid "Cap on the total extra stamina per second from regen bonuses."
+msgstr "Предел общей дополнительной выносливости в секунду от бонусов к восстановлению."
+
+msgid "Cap (%) on the total max stamina bonus from every source together (perks, attributes, gear, talents, sets)."
+msgstr "Предел (%) общего бонуса к максимальной выносливости от всех источников вместе (перки, характеристики, снаряжение, таланты, комплекты)."
+
+msgid "Cap (%) on how much less stamina sprinting / carrying costs, from every source together. (Featherlight's free first seconds of a sprint are separate.)"
+msgstr "Предел (%) того, насколько меньше выносливости тратится на бег / переноску, от всех источников вместе. (Бесплатные первые секунды бега от «Пёрышка» считаются отдельно.)"
+
+msgid "Floor (% of vanilla) for the sprint stamina cost after everything - RepoRPG's effects and upgrade mods (MoreUpgrades' Sprint Usage) together - so sprinting always costs something. (Featherlight's free first seconds are separate.) 0 = no floor."
+msgstr "Нижняя граница (% от обычной игры) расхода выносливости на бег после всех эффектов - RepoRPG и модов на улучшения (Sprint Usage из MoreUpgrades) вместе - чтобы бег всегда чего-то стоил. (Бесплатные первые секунды от «Пёрышка» считаются отдельно.) 0 = без границы."
+
+msgid "Host: when one upgrade purchase gives a player more than one level (it's shared by more than one mod: the game, MoreUpgrades' team setting, a shared-upgrades mod), keep one level and log which mods share it."
+msgstr "Хост: когда одна покупка улучшения даёт игроку больше одного уровня (улучшение делят несколько модов: игра, командная настройка MoreUpgrades, мод на общие улучшения), оставить один уровень и записать в журнал, какие моды его делят."
+
+msgid "Logs every 2 s while you sprint, as [stamina]: max and current stamina, the measured drain per second, the drain the game uses, every stamina bonus and its cap, the regen bonus and the frame rate."
+msgstr "Каждые 2 с, пока вы бежите, записывает в журнал как [stamina]: максимальную и текущую выносливость, измеренный расход в секунду, расход, который использует игра, каждый бонус к выносливости и его предел, бонус к восстановлению и частоту кадров."
+
+msgid "Cap (%) on Juggernaut Shield Wall damage reduction for allies."
+msgstr "Предел (%) снижения урона для союзников от «Стены щитов» Джаггернаута."
+
+msgid "Cap (%) on Medic Stabilize damage reduction for low-HP allies."
+msgstr "Предел (%) снижения урона для союзников с низким здоровьем от «Стабилизации» Медика."
+
+msgid "Cap (%) on Survivor Scar Tissue damage reduction."
+msgstr "Предел (%) снижения урона от «Рубцовой ткани» Выжившего."
+
+msgid "Cap (%) on extra damage Warden-Marked enemies take."
+msgstr "Предел (%) дополнительного урона по врагам, отмеченным Стражем."
+
+msgid "Cap (%) on how much quieter Stealth (and gear) can make a player."
+msgstr "Предел (%) того, насколько тише Скрытность (и снаряжение) может сделать игрока."
+
+msgid "Cap (%) on the Fortune bonus on top of a player's currency share."
+msgstr "Предел (%) бонуса Удачи сверх доли валюты игрока."
+
+msgid "Cap on your HP regeneration per second from all sources."
+msgstr "Предел вашей регенерации ОЗ в секунду от всех источников."
+
+msgid "Seconds after taking damage before regeneration starts again."
+msgstr "Секунд после получения урона до возобновления регенерации."
+
+msgid "Cap on HP a healing aura gives each ally every 3 seconds."
+msgstr "Предел ОЗ, которые аура лечения даёт каждому союзнику раз в 3 секунды."
+
+msgid "Cap on HP healed when an enemy dies near you."
+msgstr "Предел ОЗ, восстанавливаемых при гибели врага рядом с вами."
+
+msgid "Cap on HP healed per weapon hit."
+msgstr "Предел ОЗ, восстанавливаемых за попадание из оружия."
+
+msgid "Cap on bonus HP given to an ally revived near you."
+msgstr "Предел дополнительных ОЗ для союзника, возрождённого рядом с вами."
+
+msgid "Cap on HP healed when an extraction point completes."
+msgstr "Предел ОЗ, восстанавливаемых при завершении точки извлечения."
+
+msgid "How much of Ability Power applies to ability heals (1 = all of it, 0.5 = half)."
+msgstr "Какая часть силы способности действует на лечение способностями (1 = вся, 0.5 = половина)."
+
+msgid "Attribute points per class level."
+msgstr "Очков характеристик за уровень класса."
+
+msgid "Gear you can carry; when full, the weakest item is salvaged for XP."
+msgstr "Сколько снаряжения можно носить; когда место кончается, самый слабый предмет разбирается на опыт."
+
+msgid "% chance per player to find gear when an extraction point completes."
+msgstr "Шанс (%) каждого игрока найти снаряжение при завершении точки извлечения."
+
+msgid "Kill XP multiplier for Champions (Overlords get one more)."
+msgstr "Множитель опыта за убийство Чемпионов (у Владык на единицу больше)."
+
+msgid "Host: valuables roll Common-Legendary and Rare+ ones are worth more."
+msgstr "Хост: ценности получают редкость от обычной до легендарной, а редкие и выше стоят дороже."
+
+msgid "Host: some enemies spawn as elites with modifiers."
+msgstr "Хост: некоторые враги появляются элитными, с модификаторами."
+
+msgid "% chance an enemy is elite on the first level."
+msgstr "Шанс (%), что враг окажется элитным на первом уровне."
+
+msgid "Extra elite % per completed level."
+msgstr "Дополнительный % элиты за каждый пройденный уровень."
+
+msgid "Cap on elite %."
+msgstr "Предел % элиты."
+
+msgid "Not used since 1.0.20: contracts come from the contract board ([Contracts])."
+msgstr "Не используется с версии 1.0.20: контракты берутся с доски контрактов ([Contracts])."
+
+msgid "Earn a perk pick every N levels of your best class this run (0 = perks off)."
+msgstr "Выбор перка каждые N уровней вашего лучшего класса в этом забеге (0 = перки выключены)."
+
+msgid "How many perks are offered per pick."
+msgstr "Сколько перков предлагается на выбор."
+
+msgid "Cursed perks (a strong bonus with a real drawback) can turn up in perk offers. Off: never offered, and cursed perks already owned do nothing."
+msgstr "Проклятые перки (сильный бонус с настоящим недостатком) могут попадаться среди предложенных. Выкл.: не предлагаются, а уже имеющиеся проклятые перки ничего не делают."
+
+msgid "Evolving perks: some perks grow into a stronger version after a challenge during the run."
+msgstr "Эволюция перков: некоторые перки превращаются в более сильную версию после испытания во время забега."
+
+msgid "Tag bonuses: owning 3 or 5 perks with the same tag adds a bonus."
+msgstr "Бонусы тегов: 3 или 5 перков с одним тегом дают бонус."
+
+msgid "Each perk reroll in the same level costs this much more Scrap (the first costs Shop > PerkRerollScrap)."
+msgstr "Каждый переброс перков на одном уровне стоит на столько лома дороже (первый стоит Shop > PerkRerollScrap)."
+
+msgid "Attribute milestones: 5, 10 and 15 points in an attribute add a bonus (a class's favored attributes reach them a point sooner)."
+msgstr "Этапы характеристик: 5, 10 и 15 очков в характеристике дают бонус (любимые характеристики класса достигают их на очко раньше)."
+
+msgid "Attribute pairings: 8 points in both attributes of a pair adds a combo bonus."
+msgstr "Сочетания характеристик: 8 очков в обеих характеристиках пары дают общий бонус."
+
+msgid "Multiplies every milestone and pairing number."
+msgstr "Умножает все числа этапов и сочетаний."
+
+msgid "Perks each player can banish per run (a banished perk is never offered again). 0 = off."
+msgstr "Сколько перков каждый игрок может изгнать за забег (изгнанный перк больше не предлагается). 0 = выкл."
+
+msgid "Mod XP for using a shop upgrade (x1.5 per rarity tier, x2 for your class's favourite upgrades)."
+msgstr "Опыт мода за использование улучшения из магазина (x1.5 за каждую ступень редкости, x2 для любимых улучшений вашего класса)."
+
+msgid "Shop upgrades roll a rarity: Rare+ also give an attribute point, Epic+ gear, Legendary a perk pick."
+msgstr "Улучшения из магазина получают редкость: редкие и выше дают ещё и очко характеристик, эпические и выше - снаряжение, легендарные - выбор перка."
+
+msgid "Allow mod shop purchases outside the game's shop."
+msgstr "Разрешить покупки в магазине мода вне магазина игры."
+
+msgid "Show everyone a message when someone buys something in the mod shop."
+msgstr "Показывать всем сообщение, когда кто-то покупает что-нибудь в магазине мода."
+
+msgid "Logs (once each) any mod UI text whose colour fails the contrast minimum (4.5:1 text, 3:1 headings) against the theme's panels."
+msgstr "Записывает в журнал (по одному разу) каждый текст интерфейса мода, цвет которого не проходит минимум контраста (4.5:1 для текста, 3:1 для заголовков) на панелях темы."
+
+msgid "Logs what could make the HUD flicker: font texture rebuilds, the HUD hiding / showing, run data reloading, class / theme changes (with counts every 10s), and every change to what the contracts panel draws (frame number, what changed, stack trace), double draws, extra instances and other UI overlapping it. Logs a lot: testing only."
+msgstr "Записывает в журнал всё, что может вызывать мерцание HUD: перестроения текстуры шрифта, скрытие / показ HUD, перезагрузку данных забега, смены класса / темы (со счётчиками каждые 10 с), а также каждое изменение того, что рисует панель контрактов (номер кадра, что изменилось, стек вызовов), двойную отрисовку, лишние экземпляры и другой интерфейс поверх неё. Пишет очень много: только для проверки."
+
+msgid "Logs every stage of using a class ability (key, checks, what the host was asked, what it did) - for tracking down an ability that does nothing."
+msgstr "Записывает в журнал каждый этап применения способности класса (клавиша, проверки, что было запрошено у хоста, что он сделал) - чтобы найти способность, которая ничего не делает."
+
+msgid "Testing only: drops this % of the RepoRPG messages your game receives, to check everything that waits on another player times out cleanly. 0 = off."
+msgstr "Только для проверки: отбрасывает такой % сообщений RepoRPG, получаемых вашей игрой, чтобы убедиться, что всё, что ждёт другого игрока, корректно завершается по времени. 0 = выкл."
+
+msgid "A player's sprint speed in m/s, used until the host has measured real sprinting (the measured speed is used after that; see CartSpeedLog). Follow and Overdrive speeds are set relative to it."
+msgstr "Скорость бега игрока в м/с; используется, пока хост не измерит настоящий бег (после этого берётся измеренная скорость; смотрите CartSpeedLog). Скорости следования и форсажа задаются относительно неё."
+
+msgid "Loyal Cart: how far behind you (m, from the cart's front) it settles. It slows smoothly as it gets there."
+msgstr "Верная тележка: на каком расстоянии позади вас (м, от передней части тележки) она останавливается. Подъезжая, плавно замедляется."
+
+msgid "Loyal Cart: extra speed (m/s) for every meter it is behind the follow distance, on top of matching your speed - the farther behind, the faster."
+msgstr "Верная тележка: дополнительная скорость (м/с) за каждый метр отставания от дистанции следования, сверх вашей скорости - чем дальше позади, тем быстрее."
+
+msgid "Loyal Cart: top catch-up speed, as a multiple of sprint speed."
+msgstr "Верная тележка: наибольшая скорость при догонянии, в долях от скорости бега."
+
+msgid "Cart Overdrive: base driving speed, as a multiple of sprint speed (before talents and ability power)."
+msgstr "Форсаж тележки: базовая скорость езды, в долях от скорости бега (до талантов и силы способности)."
+
+msgid "Seconds a self-driving cart takes to reach full speed (it brakes 1.5x as fast)."
+msgstr "За сколько секунд самоходная тележка набирает полную скорость (тормозит в 1,5 раза быстрее)."
+
+msgid "% speed lost with a full load (at most 25%, so a full cart keeps at least 75% of its speed). Scales with the load's mass."
+msgstr "Потеря скорости (%) при полной загрузке (не больше 25%, так что полная тележка сохраняет не меньше 75% скорости). Зависит от массы груза."
+
+msgid "Load mass (the game's mass units) that counts as a full load for LoadPenalty."
+msgstr "Масса груза (в единицах массы игры), которая считается полной загрузкой для LoadPenalty."
+
+msgid "Turns sharper than this (degrees) slow the cart; smaller path adjustments don't."
+msgstr "Повороты круче этого (в градусах) замедляют тележку; меньшие поправки пути - нет."
+
+msgid "% of its speed the cart keeps through the sharpest turns."
+msgstr "Доля скорости (%), которую тележка сохраняет в самых крутых поворотах."
+
+msgid "Safety cap (m/s) on any self-driving cart, whatever the talents and ability power, so loads stay in."
+msgstr "Страховочный предел (м/с) для любой самоходной тележки, какими бы ни были таланты и сила способности, - чтобы груз не вываливался."
+
+msgid "Cap (%) on the Cartwright's cart-speed talents (Teamster, Momentum Cart, Tight Turns...) added to both follow and Overdrive."
+msgstr "Предел (%) талантов Тележника на скорость тележки («Возчик», «Тележка с разгоном», «Крутые повороты»...), прибавляется и к следованию, и к форсажу."
+
+msgid "Loyal Cart drives along the path you actually walked (same doors, same corners) instead of heading straight for where you are."
+msgstr "Верная тележка едет по тому пути, которым вы действительно прошли (те же двери, те же углы), а не напрямик к вам."
+
+msgid "When you stop, Loyal Cart parks beside / behind you wherever there's room - never in a doorway or narrow spot, never next to a monster."
+msgstr "Когда вы останавливаетесь, Верная тележка встаёт рядом или позади вас, где есть место - не в дверном проёме, не в узком месте и не рядом с монстром."
+
+msgid "When you walk back toward Loyal Cart it pulls aside to let you past instead of blocking the corridor."
+msgstr "Когда вы идёте обратно навстречу Верной тележке, она отъезжает в сторону и пропускает вас, а не перегораживает коридор."
+
+msgid "Loyal Cart waits while a monster is near the next stretch of its route (it keeps moving if the monster is already on top of it)."
+msgstr "Верная тележка ждёт, пока монстр находится рядом со следующим участком её маршрута (и продолжает ехать, если монстр уже вплотную к ней)."
+
+msgid "How close (m) a monster must be to the cart's route to make it wait."
+msgstr "Насколько близко (м) монстр должен быть к маршруту тележки, чтобы она ждала."
+
+msgid "Longest it waits for a monster (s) before following anyway."
+msgstr "Сколько тележка ждёт монстра, не больше (с), прежде чем всё равно поехать следом."
+
+msgid "When you hold a valuable and stand still, Loyal Cart comes round in front of you so you can drop it in."
+msgstr "Когда вы держите ценность и стоите на месте, Верная тележка подъезжает и встаёт перед вами, чтобы вы могли положить ценность в неё."
+
+msgid "A cart at an open extraction point stays there while you haul nearby (within ExtractionWaitRange), and follows again when you go farther."
+msgstr "Тележка у открытой точки извлечения остаётся там, пока вы носите добычу поблизости (в пределах ExtractionWaitRange), и снова едет следом, когда вы уходите дальше."
+
+msgid "How far (m) you can go from a cart waiting at an extraction point before it follows you again."
+msgstr "Как далеко (м) можно отойти от тележки, ждущей у точки извлечения, прежде чем она снова поедет за вами."
+
+msgid "% of its speed a self-driving cart keeps while lining up for and driving through a doorway or narrow walkway."
+msgstr "Доля скорости (%), которую самоходная тележка сохраняет, пока выравнивается перед дверным проёмом или узким проходом и проезжает через него."
+
+msgid "Host: draws each self-driving cart's footprint (cyan), route (green, opening centres yellow), ground probes (green floor, red drop, blue wall beside), side grazes (orange) and blocking hits (red), and logs every reason it stops as [cart stop]."
+msgstr "Хост: рисует у каждой самоходной тележки контур (голубой), маршрут (зелёный, центры проёмов жёлтые), пробы пола (зелёный - пол, красный - обрыв, синий - стена сбоку), боковые касания (оранжевый) и преграды (красный) и записывает в журнал каждую причину остановки как [cart stop]."
+
+msgid "Host: measures every doorway / narrow walkway a self-driving cart drives into (its width against the cart's, every stop and its reason, grazes, back-ups) and writes the totals to BepInEx/config/RepoRPG_cart_doorways.txt. Logged as [cart doorway]."
+msgstr "Хост: измеряет каждый дверной проём / узкий проход, в который въезжает самоходная тележка (его ширина в сравнении с тележкой, каждая остановка и её причина, касания, откаты), и записывает итоги в BepInEx/config/RepoRPG_cart_doorways.txt. В журнале - как [cart doorway]."
+
+msgid "How far (m) before a doorway / narrow walkway the route lines up with its centre line."
+msgstr "За сколько метров до дверного проёма / узкого прохода маршрут выравнивается по его осевой линии."
+
+msgid "Steering lookahead (m) while lining up for and driving through an opening: shorter follows the centre line more closely."
+msgstr "Дальность упреждения руления (м) при выравнивании и проезде через проём: чем меньше, тем точнее тележка держится осевой линии."
+
+msgid "Steering lookahead (m) at low speed in the open."
+msgstr "Дальность упреждения руления (м) на малой скорости на открытом месте."
+
+msgid "Steering lookahead (m) at full speed in the open (longer = smoother curves)."
+msgstr "Дальность упреждения руления (м) на полной скорости на открытом месте (больше = более плавные дуги)."
+
+msgid "How hard a cart that grazes a door frame steers back toward the centre (each graze; it fades out)."
+msgstr "Насколько сильно тележка, задевшая дверную раму, подруливает обратно к центру (при каждом касании; эффект затухает)."
+
+msgid "Farthest (m) ahead along its route a self-driving cart checks the floor for ledges and stairs (it looks farther the faster it goes, up to this)."
+msgstr "На какое наибольшее расстояние (м) вперёд по маршруту самоходная тележка проверяет пол на уступы и лестницы (чем быстрее едет, тем дальше смотрит, вплоть до этого значения)."
+
+msgid "Seconds a cart remembers a spot where it twice had to stop for stairs, a steep slope or a ledge, and won't route through it. 0 = off."
+msgstr "Сколько секунд тележка помнит место, где ей дважды пришлось остановиться из-за лестницы, крутого склона или уступа, и не прокладывает через него маршрут. 0 = выкл."
+
+msgid "Seconds without real progress before a cart counts as stuck (backs up and re-routes, twice, then gives up)."
+msgstr "Сколько секунд без настоящего продвижения, чтобы тележка считалась застрявшей (сдаёт назад и строит новый маршрут, дважды, потом сдаётся)."
+
+msgid "Logs self-driving carts twice a second: target and actual speed, applied velocity change, mass, load, drag, what is slowing it, and measured player speeds. Clients log the speed they see."
+msgstr "Дважды в секунду записывает в журнал данные самоходных тележек: целевую и действительную скорость, приложенное изменение скорости, массу, груз, сопротивление, что её замедляет, и измеренные скорости игроков. Клиенты записывают скорость, которую видят."
+
+msgid "Testing only: delays every RepoRPG message your game receives by this many milliseconds. 0 = off."
+msgstr "Только для проверки: задерживает каждое сообщение RepoRPG, получаемое вашей игрой, на столько миллисекунд. 0 = выкл."
+
+msgid "Host only: adds a Debug tab with test tools (XP, levels, gear, elites, money, skip level, class switch, set level, skill points, run any active, simulated deaths, stat breakdown) and logs each ability stage. Never synced to clients."
+msgstr "Только хост: добавляет вкладку Debug с инструментами проверки (опыт, уровни, снаряжение, элита, деньги, пропуск уровня, смена класса, установка уровня, очки навыков, запуск любой активной способности, имитация смертей, разбор характеристик) и записывает в журнал каждый этап способности. Клиентам не передаётся."
+
+msgid "Price in Scrap: random gear, Uncommon or better."
+msgstr "Цена в ломе: случайное снаряжение, необычное или лучше."
+
+msgid "Salvage: extra Scrap per stat line beyond the rarity's usual count (base Scrap per rarity is salvageScrap in rpg.json)."
+msgstr "Разборка: дополнительный лом за каждое свойство сверх обычного для редкости числа (базовый лом за редкость - salvageScrap в rpg.json)."
+
+msgid "Salvage: extra Scrap for gear with a unique effect."
+msgstr "Разборка: дополнительный лом за снаряжение с уникальным эффектом."
+
+msgid "Salvage: the part of an item's value bought with Scrap (crates, rerolls, upgrades) pays back at most this % of the Scrap spent - so buying to salvage always loses Scrap."
+msgstr "Разборка: та часть стоимости предмета, что куплена за лом (ящики, перебросы, улучшения), возвращает не больше этого % потраченного лома - так что покупка ради разборки всегда убыточна."
+
+msgid "Salvage also gives the rarity's salvage XP, as before."
+msgstr "Разборка также даёт опыт за разборку по редкости, как и раньше."
+
+msgid "Price in Scrap: random gear, Rare or better."
+msgstr "Цена в ломе: случайное снаряжение, редкое или лучше."
+
+msgid "Price in Scrap: reroll a gear item's stats (same rarity)."
+msgstr "Цена в ломе: перебросить свойства предмета снаряжения (та же редкость)."
+
+msgid "Price in Scrap: reroll a gear item one rarity higher."
+msgstr "Цена в ломе: перебросить предмет снаряжения на редкость выше."
+
+msgid "Price in Scrap: new perk choices."
+msgstr "Цена в ломе: новые варианты перков."
+
+msgid "Gear slots added to (or taken from) each player's rotating stock."
+msgstr "Сколько ячеек снаряжения добавляется в сменный ассортимент каждого игрока (или убирается из него)."
+
+msgid "Multiplies the prices of stock, modules, consumables, services and crates."
+msgstr "Умножает цены ассортимента, модулей, расходников, услуг и ящиков."
+
+msgid "Reputation per Scrap spent in the mod shop."
+msgstr "Репутация за каждую единицу лома, потраченную в магазине мода."
+
+msgid "Sell Mystery Crates."
+msgstr "Продавать ящики с сюрпризом."
+
+msgid "Different consumables a player can buy per shop visit (1 of each)."
+msgstr "Сколько разных расходников игрок может купить за одно посещение магазина (по 1 каждого)."
+
+msgid "Scrap to lock a stock item so it stays for the next rotation."
+msgstr "Сколько лома стоит зафиксировать товар, чтобы он остался до следующей смены ассортимента."
+
+msgid "Price in Scrap to refund skill or attribute points (0 = free, anywhere)."
+msgstr "Цена в ломе за возврат очков навыков или характеристик (0 = бесплатно, где угодно)."
+
+msgid "Full name of the mod's currency."
+msgstr "Полное название валюты мода."
+
+msgid "Short name shown next to amounts."
+msgstr "Короткое название, которое показывается рядом с суммами."
+
+msgid "One or two characters shown in the currency badge."
+msgstr "Один или два символа, которые показываются на значке валюты."
+
+msgid "Bonus currency created when the team earns money, as a % of it ($100 of team money = 1 at 100%). Team money is never reduced."
+msgstr "Бонусная валюта, создаваемая, когда команда зарабатывает деньги, в % от них ($100 командных денег = 1 при 100%). Деньги команды при этом не уменьшаются."
+
+msgid "Equal: everyone in the game gets the same share. ByContribution: half is shared equally, half by the value of the valuables each player carried out this level."
+msgstr "Equal: все в игре получают одинаковую долю. ByContribution: половина делится поровну, половина - по стоимости ценностей, вынесенных каждым игроком на этом уровне."
+
+msgid "Balance for players new to a save (including ones who join mid-run)."
+msgstr "Баланс для игроков, новых в этом сохранении (включая тех, кто подключился посреди забега)."
+
+msgid "Let players give some of their currency to teammates (in the Shop tab)."
+msgstr "Разрешить игрокам отдавать часть своей валюты напарникам (на вкладке «Магазин»)."
+
+msgid "The getting-started guide was shown (set to false to see it again on the next menu open; it's always in the Guide tab)."
+msgstr "Вводное обучение уже показано (поставьте false, чтобы увидеть его снова при следующем открытии меню; оно всегда есть на вкладке «Справка»)."
+
+msgid "The menu tab you had open last (reopened next time)."
+msgstr "Вкладка меню, которая была открыта последней (откроется в следующий раз)."
+
+msgid "The class you were looking at last in the menu."
+msgstr "Класс, который вы просматривали в меню последним."
+
+msgid "Menu: undo the last pending point (Class and Attributes tabs)."
+msgstr "Меню: отменить последнее ожидающее очко (вкладки «Класс» и «Характеристики»)."
+
+msgid "Accessibility: no tab fades, colour fades or pulsing (Reduced effects also turns these off)."
+msgstr "Доступность: без плавных переходов вкладок, смены цвета и пульсации (режим «Меньше эффектов» тоже их отключает)."
+
+msgid "Accessibility: things shown by colour also get a letter or shape (rarity letters on markers, status symbols)."
+msgstr "Доступность: то, что показано цветом, получает ещё и букву или фигуру (буквы редкости на метках, символы состояний)."
+
+msgid "Accessibility: size of the bottom-left HUD card (1 = normal), separate from the text size."
+msgstr "Доступность: размер карточки HUD слева внизу (1 = обычный), отдельно от размера текста."
+
+msgid "Bottom-left HUD card: how dark its background is (0 = none, 1 = solid)."
+msgstr "Карточка HUD: насколько тёмный у неё фон (0 = нет фона, 1 = сплошной)."
+
+msgid "Bottom-left HUD card: compact mode - short status icons, no class status lines."
+msgstr "Карточка HUD: компактный режим - короткие значки состояния, без строк состояния класса."
+
+msgid "Auto (picks Low, Medium or High from your frame time in the first minute of play), Low, Medium, High, or Custom (set by hand below / in HUD)."
+msgstr "Auto (выбирает Low, Medium или High по времени кадра за первую минуту игры), Low, Medium, High или Custom (задаётся вручную ниже / в разделе HUD)."
+
+msgid "Medic health bars over heads: the most metres they show at (never more than the Medic's own range)."
+msgstr "Полосы здоровья Медика над головами: наибольшее расстояние в метрах, на котором они видны (не больше собственной дальности Медика)."
+
+msgid "Ability rings and markers on the floor shown at once (the oldest gives way)."
+msgstr "Сколько колец и меток способностей на полу показывается одновременно (самое старое уступает место)."
+
+msgid "What Auto picked last time (for your information)."
+msgstr "Что Auto выбрал в прошлый раз (для сведения)."
+
+msgid "Version of these HUD settings (for future updates to move them over). Don't change it."
+msgstr "Версия этих настроек HUD (чтобы будущие обновления могли их перенести). Не меняйте."
+
+msgid "Bottom-left HUD card (master): Always, TruckAndShop, LevelsOnly or Never. Off hides the whole card; everything on it keeps working."
+msgstr "Карточка HUD слева внизу (главный переключатель): Always, TruckAndShop, LevelsOnly или Never. Выключение скрывает всю карточку; всё, что на ней показано, продолжает работать."
+
+msgid "HUD card: the class row (class icon, name and level)."
+msgstr "Карточка HUD: строка класса (значок класса, название и уровень)."
+
+msgid "HUD card: your Scrap, on the class row."
+msgstr "Карточка HUD: ваш лом, в строке класса."
+
+msgid "HUD card: the XP bar."
+msgstr "Карточка HUD: полоса опыта."
+
+msgid "HUD card: the ability row (cooldown circle, key, name, state). Your ability works either way."
+msgstr "Карточка HUD: строка способности (круг перезарядки, клавиша, название, состояние). Сама способность работает в любом случае."
+
+msgid "HUD card: the ability's name on the ability row."
+msgstr "Карточка HUD: название способности в строке способности."
+
+msgid "HUD card: a row under the ability with your class's other keys (Cart follow, Hum, Hand off, Swap copy) and their state. Only for classes that have them."
+msgstr "Карточка HUD: строка под способностью с другими клавишами вашего класса (следование тележки, гул, передача, смена копии) и их состоянием. Только для классов, у которых они есть."
+
+msgid "HUD card: your class's own lines (drop pad, cart state, Inspire, copied ability, Gambler status, enemies nearby...): Always, TruckAndShop, LevelsOnly or Never."
+msgstr "Карточка HUD: собственные строки вашего класса (площадка доставки, состояние тележки, Воодушевление, скопированная способность, состояние Азартного игрока, враги поблизости...): Always, TruckAndShop, LevelsOnly или Never."
+
+msgid "HUD card, run status: the chapter and next milestone chips."
+msgstr "Карточка HUD, забег: метки главы и следующего этапа."
+
+msgid "HUD card, run status: the streak chip."
+msgstr "Карточка HUD, забег: метка серии."
+
+msgid "HUD card, run status: the heat chip."
+msgstr "Карточка HUD, забег: метка накала."
+
+msgid "HUD card, run status: the Ascension chip."
+msgstr "Карточка HUD, забег: метка Вознесения."
+
+msgid "HUD card, run status: the crew level chip."
+msgstr "Карточка HUD, забег: метка уровня команды."
+
+msgid "HUD card, run status: the payout tier chip."
+msgstr "Карточка HUD, забег: метка ступени выплат."
+
+msgid "HUD card, run status: the map modifier chip."
+msgstr "Карточка HUD, забег: метка модификатора карты."
+
+msgid "HUD card: the chosen route's chip (in levels)."
+msgstr "Карточка HUD: метка выбранного маршрута (на уровнях)."
+
+msgid "HUD card: the \"+N to spend\" chip."
+msgstr "Карточка HUD: метка «+N на трату»."
+
+msgid "HUD card: the catch-up XP chip."
+msgstr "Карточка HUD: метка догоняющего опыта."
+
+msgid "Action needed: the banner and the on-screen list. Off: the tab badges in the menu stay, and a vote with a deadline still comes back once near its end (unless Notices > FinalReminder is off)."
+msgstr "Требуется действие: баннер и список на экране. Выкл.: значки на вкладках меню остаются, а голосование со сроком всё равно один раз возвращается ближе к концу (если не выключен Notices > FinalReminder)."
+
+msgid "Appraiser: the markers on scanned valuables (the scan still runs)."
+msgstr "Оценщик: метки на просканированных ценностях (само сканирование продолжает работать)."
+
+msgid "Appraiser: the outlines on scanned valuables."
+msgstr "Оценщик: контуры просканированных ценностей."
+
+msgid "Elemental status icons above monsters."
+msgstr "Значки стихийных состояний над монстрами."
+
+msgid "Lookout: monster names and threat above their heads."
+msgstr "Дозорный: названия монстров и угроза над их головами."
+
+msgid "The highlights card when you reach the shop."
+msgstr "Карточка «Главное» при входе в магазин."
+
+msgid "This level's contracts, bottom right: Always, TruckAndShop, LevelsOnly or Never (they only exist in levels)."
+msgstr "Контракты этого уровня, справа внизу: Always, TruckAndShop, LevelsOnly или Never (они существуют только на уровнях)."
+
+msgid "Boss and elite names and status, top right."
+msgstr "Имена и состояние боссов и элиты, справа вверху."
+
+msgid "Light beams in the world: research samples' teal beam and light, and the beam where a cursed item turns up."
+msgstr "Лучи света в игровом мире: бирюзовый луч и свечение образцов для исследований и луч там, где появляется проклятый предмет."
+
+msgid "Research Data earned and research finished."
+msgstr "Полученные данные исследований и завершённые исследования."
+
+msgid "Action needed: a banner near the top middle when a vote or choice arrives (then it stays in the compact list until it's done)."
+msgstr "Требуется действие: баннер вверху по центру, когда приходит голосование или выбор (затем остаётся в компактном списке, пока не будет закрыт)."
+
+msgid "Action needed: where the compact list sits - AboveHud (just above the HUD card), LeftMiddle, or BottomCentre."
+msgstr "Требуется действие: где находится компактный список - AboveHud (прямо над карточкой HUD), LeftMiddle или BottomCentre."
+
+msgid "Action needed: a short alert sound when a vote or choice arrives (not for reminders)."
+msgstr "Требуется действие: короткий звуковой сигнал, когда приходит голосование или выбор (для напоминаний не звучит)."
+
+msgid "Action needed: a vote you dismissed comes back once, with a short reminder, when about 10 seconds are left."
+msgstr "Требуется действие: голосование, которое вы скрыли, возвращается один раз, с коротким напоминанием, когда остаётся около 10 секунд."
+
+msgid "Action needed: alerts leave the on-screen list after this many seconds (0 = off) and only show as the count on the menu hint and the tab badges. Deadline reminders still come back."
+msgstr "Требуется действие: оповещения уходят из списка на экране через столько секунд (0 = выкл.) и остаются только числом в подсказке меню и значками на вкладках. Напоминания о сроках всё равно возвращаются."
+
+msgid "Action needed: don't show team votes in the on-screen list (they stay in the menu, with the tab badge)."
+msgstr "Требуется действие: не показывать командные голосования в списке на экране (они остаются в меню, со значком на вкладке)."
+
+msgid "Action needed: don't show your own choices (rewards, perk picks, class) in the on-screen list."
+msgstr "Требуется действие: не показывать ваши собственные выборы (награды, выборы перков, класс) в списке на экране."
+
+msgid "Action needed: don't show minor reminders (unspent skill / attribute points, the class switch) in the on-screen list."
+msgstr "Требуется действие: не показывать мелкие напоминания (непотраченные очки навыков / характеристик, смена класса) в списке на экране."
+
+msgid "Action needed: the menu key opens the menu on the tab that needs you (the most important vote or choice), with it selected."
+msgstr "Требуется действие: клавиша меню открывает меню на той вкладке, где нужно ваше участие (самое важное голосование или выбор), и сразу выделяет его."
+
+msgid "The run status chips on the bottom-left HUD card (chapter, next milestone, streak, boons, heat, crew, payout, map modifier): Always, TruckAndShop (not in levels), or Never. The full details are in the team panel and Account > Runs."
+msgstr "Метки состояния забега на карточке HUD слева внизу (глава, следующий этап, серия, дары, накал, команда, выплата, модификатор карты): Always, TruckAndShop (не на уровнях) или Never. Все подробности - на панели команды и в разделе «Аккаунт» > «Забеги»."
+
+msgid "A short run summary card for a few seconds when you reach the truck or shop, only when something changed (a new chapter, the threat rating went up, a new boon, more heat, crew level)."
+msgstr "Короткая карточка-сводка забега на несколько секунд, когда вы попадаете в грузовик или магазин, - только если что-то изменилось (новая глава, вырос рейтинг угрозы, новый дар, больше накала, уровень команды)."
+
+msgid "HUD card: the time left in the middle of the ability circle (cooldown, next charge, or the effect running out). Off: a plain ring."
+msgstr "Карточка HUD: оставшееся время в центре круга способности (перезарядка, следующий заряд или окончание эффекта). Выкл.: простое кольцо."
+
+msgid "A quiet sound when your ability (or a charge) is ready again."
+msgstr "Тихий звук, когда способность (или заряд) снова готова."
+
+msgid "Class tab: what the right side opens on - Talents (the trees), TalentsWhenPoints (the trees when you have skill points, else as you left it), or Overview (Total Effects). The class column is always shown."
+msgstr "Вкладка «Класс»: что открывается справа - Talents (древа), TalentsWhenPoints (древа, когда есть очки навыков, иначе как вы оставили) или Overview («Итоговые эффекты»). Колонка класса показана всегда."
+
+msgid "Class tab: switch between the talent trees and Total Effects."
+msgstr "Вкладка «Класс»: переключение между древами талантов и «Итоговыми эффектами»."
+
+msgid "Action needed: step through what's waiting (the menu key then opens on it)."
+msgstr "Требуется действие: перебирать то, что ждёт решения (клавиша меню затем откроет меню на нём)."
+
+msgid "Action needed: step through what's waiting."
+msgstr "Требуется действие: перебирать то, что ждёт решения."
+
+msgid "Action needed: hide the selected alert from the on-screen list (hold: all of them). It stays in the menu; nothing is voted or chosen for you. Only while the menu is closed."
+msgstr "Требуется действие: скрыть выбранное оповещение из списка на экране (удержание: все). Оно остаётся в меню; ничего не голосуется и не выбирается за вас. Только пока меню закрыто."
+
+msgid "Action needed: hide the selected alert (hold: all of them)."
+msgstr "Требуется действие: скрыть выбранное оповещение (удержание: все)."
+
+msgid "Team synergies: pairs of classes near each other get a small bonus (table in synergies.json)."
+msgstr "Синергии команды: пары классов, находящихся рядом друг с другом, получают небольшой бонус (таблица в synergies.json)."
+
+msgid "Team synergies: how close (m) two partner classes must be."
+msgstr "Синергии команды: насколько близко (м) должны быть два класса-партнёра."
+
+msgid "Team votes (route, heat, boons, crew drills, sponsors): everyone sees who voted for what. Off: only who has voted and who hasn't."
+msgstr "Командные голосования (маршрут, накал, дары, командные тренировки, спонсоры): все видят, кто за что проголосовал. Выкл.: видно только, кто проголосовал, а кто нет."
+
+msgid "End-of-level highlights card (Most valuable carried, Clutch revive, ...)."
+msgstr "Карточка «Главное» в конце уровня («Самый ценный груз», «Возрождение в последний момент», ...)."
+
+msgid "How many highlights the card shows."
+msgstr "Сколько достижений показывает карточка."
+
+msgid "How long the highlights card stays up in the shop (seconds). Each player can hide it early or hold its key to keep it."
+msgstr "Сколько карточка «Главное» остаётся на экране в магазине (секунд). Каждый игрок может скрыть её раньше или удерживать её клавишу, чтобы оставить."
+
+msgid "Death heads can call out: a marker teammates can see."
+msgstr "Головы погибших могут звать на помощь: это метка, которую видят напарники."
+
+msgid "Seconds between call-outs from one death head."
+msgstr "Секунд между зовами одной головы."
+
+msgid "Call-outs per death."
+msgstr "Зовов о помощи на одну смерть."
+
+msgid "Medic / Undertaker: extra revive XP (%) for a revive within 20 s of the death (falls to 20% at 45 s and 0 at 90 s)."
+msgstr "Медик / Гробовщик: дополнительный опыт за возрождение (%), если оно произошло в течение 20 с после смерти (падает до 20% к 45 с и до 0 к 90 с)."
+
+msgid "A named boss (an elite above Overlord) every few levels, with a Legendary drop for every player (Epic when BossLegendaryChance misses)."
+msgstr "Именной босс (элита выше Владыки) каждые несколько уровней, с легендарной добычей для каждого игрока (эпической, если не сработал BossLegendaryChance)."
+
+msgid "A boss every N levels."
+msgstr "Босс каждые N уровней."
+
+msgid "The first level with a boss (1 = the first level)."
+msgstr "Первый уровень с боссом (1 = первый уровень)."
+
+msgid "Modifiers a boss rolls."
+msgstr "Сколько модификаторов получает босс."
+
+msgid "Boss effective health with 1 player (x)."
+msgstr "Эффективное здоровье босса при 1 игроке (x)."
+
+msgid "Boss effective health with 2-3 players (x)."
+msgstr "Эффективное здоровье босса при 2-3 игроках (x)."
+
+msgid "Boss effective health with 4-6 players (x)."
+msgstr "Эффективное здоровье босса при 4-6 игроках (x)."
+
+msgid "Boss effective health with 7-10 players (x)."
+msgstr "Эффективное здоровье босса при 7-10 игроках (x)."
+
+msgid "Chance (%) a boss's Legendary drop is a Unique."
+msgstr "Шанс (%), что легендарная добыча с босса окажется уникальной."
+
+msgid "Class starter gear: each class gets one small, class-bound Common item once per run (it can't be salvaged for Scrap or rerolled)."
+msgstr "Стартовое снаряжение: каждый класс один раз за забег получает один небольшой обычный предмет, привязанный к классу (его нельзя разобрать на лом или перебросить)."
+
+msgid "Class starter tools: Medic, Trickster, Demolitionist and Gunsmith also get a shop item next to them at their first level of the run (25 Scrap instead if the item isn't in the game)."
+msgstr "Стартовые инструменты: Медик, Плут, Подрывник и Оружейник на своём первом уровне забега получают ещё и предмет из магазина, он появляется рядом с ними (25 лома взамен, если такого предмета в игре нет)."
+
+msgid "Elemental weapons: Fire, Shock, Frost, Corrosive and Void from Weapon Module affixes, element modules and shop coatings; statuses on monsters, combos, elite resistances and weaknesses."
+msgstr "Стихийное оружие: Огонь, Разряд, Мороз, Коррозия и Пустота от свойств оружейных модулей, стихийных модулей и покрытий из магазина; состояния на монстрах, комбинации, сопротивления и слабости элиты."
+
+msgid "How strong elemental effects are (% of normal: damage, stacks' effect, stun and freeze times)."
+msgstr "Насколько сильны стихийные эффекты (% от обычного: урон, действие накоплений, время оглушения и заморозки)."
+
+msgid "Elemental visuals: Full (weapon glow and status icons), Reduced (status icons only), Off (status icons only, no glow). Reduced effects also turns the glow off."
+msgstr "Эффекты стихий: Full (свечение оружия и значки состояний), Reduced (только значки состояний), Off (только значки состояний, без свечения). Режим «Меньше эффектов» тоже отключает свечение."
+
+msgid "Ascension: win a run (beat the finale), then replay at higher Ascension levels (up to 20) - each adds a modifier on top of the lower ones, and gives better rewards."
+msgstr "Вознесение: выиграйте забег (пройдите финал), затем играйте снова на более высоких уровнях Вознесения (до 20) - каждый добавляет модификатор поверх предыдущих и даёт награды лучше."
+
+msgid "Which Ascension levels the host can pick: Host = up to the host's highest win + 1; Anyone = up to anyone in the lobby's highest win + 1."
+msgstr "Какие уровни Вознесения может выбрать хост: Host = до наивысшей победы хоста + 1; Anyone = до наивысшей победы любого игрока в лобби + 1."
+
+msgid "Extra XP (%) per Ascension level (outside the XP bonus cap, like the difficulty)."
+msgstr "Дополнительный опыт (%) за уровень Вознесения (не входит в предел бонуса к опыту, как и сложность)."
+
+msgid "Extra haul Scrap (%) per Ascension level."
+msgstr "Дополнительный лом за добычу (%) за уровень Вознесения."
+
+msgid "Extra Research Data (%) per Ascension level."
+msgstr "Дополнительные данные исследований (%) за уровень Вознесения."
+
+msgid "Research: earn Research Data in runs (samples, bosses, milestones, some contracts) and spend it on projects that unlock new mechanics for good (kept with your account, never reset by a run)."
+msgstr "Исследования: зарабатывайте данные исследований в забегах (образцы, боссы, этапы, некоторые контракты) и тратьте их на проекты, которые навсегда открывают новые механики (хранятся в вашем аккаунте, забег их не сбрасывает)."
+
+msgid "Lobby-wide unlocks (map features, shop sections, extraction rules...): Host = the host's research decides; Anyone = anything anyone in the lobby has researched."
+msgstr "Открытия на всё лобби (особенности карт, разделы магазина, правила извлечения...): Host = решают исследования хоста; Anyone = всё, что исследовал кто-либо в лобби."
+
+msgid "Research Data from every source (set by the difficulty: Relaxed 0.5, Easy 0.75, Normal 1, Hard 1.35, Brutal 1.75)."
+msgstr "Данные исследований из всех источников (задаётся сложностью: Relaxed 0.5, Easy 0.75, Normal 1, Hard 1.35, Brutal 1.75)."
+
+msgid "Research project costs (% of normal)."
+msgstr "Стоимость исследовательских проектов (% от обычной)."
+
+msgid "Chance (%) of one more research sample on a level (a third one: more likely deeper in the run and on harder difficulties). Every level has at least SamplesPerLevel."
+msgstr "Шанс (%) ещё одного образца для исследований на уровне (третьего: вероятнее в глубине забега и на высоких сложностях). На каждом уровне есть как минимум SamplesPerLevel."
+
+msgid "Research samples every level has at least (1-3 per level in all)."
+msgstr "Сколько образцов для исследований есть на каждом уровне как минимум (всего 1-3 на уровень)."
+
+msgid "The living economy: each valuable category's price moves with what the team extracts (and recovers), shop prices follow what's bought, a market request each level, and market events announced at the shop."
+msgstr "Живая экономика: цена каждой категории ценностей меняется в зависимости от того, что команда извлекает (и возвращает), цены магазина следуют за покупками, на каждом уровне есть рыночный запрос, а о рыночных событиях объявляют в магазине."
+
+msgid "How far prices move per level (set by the difficulty: Relaxed 0.5, Easy 0.75, Normal 1, Hard 1.25, Brutal 1.5)."
+msgstr "Насколько цены меняются за уровень (задаётся сложностью: Relaxed 0.5, Easy 0.75, Normal 1, Hard 1.25, Brutal 1.5)."
+
+msgid "Lowest a category's price can go (x normal)."
+msgstr "Нижняя граница цены категории (x от обычной)."
+
+msgid "Highest a category's price can go (x normal)."
+msgstr "Верхняя граница цены категории (x от обычной)."
+
+msgid "Chance (%) at each shop visit that a market event is announced (one at a time)."
+msgstr "Шанс (%) при каждом посещении магазина, что будет объявлено рыночное событие (по одному за раз)."
+
+msgid "How much of the way back to normal prices recover each level (%)."
+msgstr "Какую часть пути обратно к обычным ценам они проходят за уровень (%)."
+
+msgid "Scrap each player gets when the team fills a market request (scaled by how wanted the category is)."
+msgstr "Сколько лома получает каждый игрок, когда команда выполняет рыночный запрос (зависит от того, насколько востребована категория)."
+
+msgid "A killed boss (milestone, named or finale): StayDead = the game's respawn of that monster is blocked for the rest of the level; AsNormalMonster = it comes back as an ordinary monster (no boss modifiers, name or drops). Either way it is never a boss or elite again that level."
+msgstr "Убитый босс (этапа, именной или финальный): StayDead = возрождение этого монстра игрой блокируется до конца уровня; AsNormalMonster = он возвращается обычным монстром (без модификаторов босса, имени и добычи). В любом случае на этом уровне он больше не станет боссом или элитой."
+
+msgid "Apply KilledBossRespawn to killed elites (Champions and Overlords) too."
+msgstr "Применять KilledBossRespawn и к убитой элите (Чемпионам и Владыкам)."
+
+msgid "Logs every blocked or allowed respawn of a killed boss as [boss]."
+msgstr "Записывает в журнал каждое заблокированное или разрешённое возрождение убитого босса как [boss]."
+
+msgid "Cursed gear: bosses can drop a cursed item (a strong benefit with a real drawback) for each player, on top of the normal drop. Never from crates, contracts or the shop."
+msgstr "Проклятое снаряжение: с боссов может выпасть проклятый предмет (сильная польза с настоящим недостатком) для каждого игрока, сверх обычной добычи. Не выпадает из ящиков, за контракты и в магазине."
+
+msgid "Chance (%) per player that a boss drops a cursed item (set by the difficulty: Relaxed 3, Easy 4, Normal 8, Hard 12, Brutal 16)."
+msgstr "Шанс (%) для каждого игрока, что с босса выпадет проклятый предмет (задаётся сложностью: Relaxed 3, Easy 4, Normal 8, Hard 12, Brutal 16)."
+
+msgid "Extra cursed drop chance (%) per chapter reached (later bosses drop more often)."
+msgstr "Дополнительный шанс проклятой добычи (%) за каждую достигнутую главу (с поздних боссов выпадает чаще)."
+
+msgid "Most extra chance (%) from chapters."
+msgstr "Наибольший дополнительный шанс (%) от глав."
+
+msgid "Multiplies the chance a gear drop has a behavior affix (Uncommon 15%, Rare 30%, Epic 50%, Legendary 60%)."
+msgstr "Умножает шанс того, что выпавшее снаряжение получит свойство-поведение (необычное 15%, редкое 30%, эпическое 50%, легендарное 60%)."
+
+msgid "Chance (%) a Legendary drop is a Unique (when its slot has one)."
+msgstr "Шанс (%), что легендарная добыча окажется уникальной (если для её ячейки есть уникальный предмет)."
+
+msgid "Multiplies the attunement points equipped gear earns."
+msgstr "Умножает очки сонастройки, которые зарабатывает надетое снаряжение."
+
+msgid "Chance (%) an elite kill drops a module (gear crates: two thirds of this; bosses always drop one)."
+msgstr "Шанс (%), что с убитой элиты выпадет модуль (ящики снаряжения: две трети от этого; с боссов выпадает всегда)."
+
+msgid "Scrap to take a module back out of its socket."
+msgstr "Сколько лома стоит извлечь модуль из гнезда."
+
+msgid "Chance (%) a Rare-or-better gear drop is a set piece."
+msgstr "Шанс (%), что выпавшее снаряжение редкости «редкое» и выше окажется частью комплекта."
+
+msgid "Monsters drop crafting parts (Sinew, Core Shard, Prime Essence, Boss Heart); craft in the Gear tab."
+msgstr "С монстров выпадают детали для крафта (Сухожилие, Осколок ядра, Первичная эссенция, Сердце босса); крафт - на вкладке «Снаряжение»."
+
+msgid "Seconds a part drop stays before it fades."
+msgstr "Сколько секунд выпавшая деталь лежит, прежде чем исчезнет."
+
+msgid "Crafts allowed on one item."
+msgstr "Сколько раз можно применить крафт к одному предмету."
+
+msgid "Rarity upgrades allowed on one item (crafting)."
+msgstr "Сколько повышений редкости допускается для одного предмета (крафт)."
+
+msgid "Each level offers one optional, risky team contract the lobby votes on."
+msgstr "На каждом уровне предлагается один необязательный рискованный командный контракт, за который голосует лобби."
+
+msgid "Majority: more than half of the votes cast (a tie declines). Unanimous: every player in the lobby votes yes. Host: only the host's vote counts."
+msgstr "Majority: больше половины поданных голосов (при равенстве - отказ). Unanimous: «за» голосует каждый игрок в лобби. Host: считается только голос хоста."
+
+msgid "Contracts offered on each player's board per visit (personal, class, rival, chain)."
+msgstr "Сколько контрактов предлагается на доске каждого игрока за посещение (личные, классовые, соперничество, цепочки)."
+
+msgid "Scrap for the first board reroll each visit."
+msgstr "Сколько лома стоит первое обновление доски за посещение."
+
+msgid "Extra Scrap for each further reroll in the same visit."
+msgstr "Дополнительный лом за каждое следующее обновление в то же посещение."
+
+msgid "Contracts a player can take into a level (Contractor's License adds one)."
+msgstr "Сколько контрактов игрок может взять на уровень («Лицензия подрядчика» добавляет один)."
+
+msgid "Offer rival contracts (friendly competition, 2+ players)."
+msgstr "Предлагать контракты-соперничества (дружеское соревнование, от 2 игроков)."
+
+msgid "Multiplies the Scrap every board contract pays."
+msgstr "Умножает лом, который платит каждый контракт с доски."
+
+msgid "Players can join after the run started (where the Allow settings below permit). Turns itself off when another late-join mod is installed."
+msgstr "Игроки могут подключаться после начала забега (там, где это разрешают параметры Allow ниже). Отключается само, если установлен другой мод на позднее подключение."
+
+msgid "Joining while the team is in the truck between levels."
+msgstr "Подключение, пока команда в грузовике между уровнями."
+
+msgid "Joining in the shop."
+msgstr "Подключение в магазине."
+
+msgid "Joining in the middle of a level."
+msgstr "Подключение посреди уровня."
+
+msgid "Where a late joiner appears: by the truck, or next to the host."
+msgstr "Где появляется поздно подключившийся игрок: у грузовика или рядом с хостом."
+
+msgid "Seconds a late joiner can't be hurt after spawning in."
+msgstr "Сколько секунд поздно подключившийся игрок неуязвим после появления."
+
+msgid "A player who joins mid-level gets 60 s to pick a class (else the next lobby or shop)."
+msgstr "Игрок, подключившийся посреди уровня, получает 60 с на выбор класса (иначе - в следующем лобби или магазине)."
+
+msgid "Replaced by CatchUpShare (kept so an older file's Half / ThreeQuarters converts once)."
+msgstr "Заменён на CatchUpShare (оставлен, чтобы значение Half / ThreeQuarters из старого файла один раз преобразовалось)."
+
+msgid "A new joiner's first class starts at this share (%) of the team's average class level, with its points to spend (0 = off). Once per player per run."
+msgstr "Первый класс нового игрока начинает с этой доли (%) среднего уровня класса в команде, с очками на трату (0 = выкл.). Один раз на игрока за забег."
+
+msgid "A new joiner's starting Scrap: this much per level the team has cleared (at most 300). Once per player per run."
+msgstr "Стартовый лом нового игрока: столько за каждый уровень, пройденный командой (не больше 300). Один раз на игрока за забег."
+
+msgid "A new joiner gets one item per gear slot, rarer the deeper the run (Common, then Uncommon from level 3, Rare from 7, Epic from 13)."
+msgstr "Новый игрок получает по одному предмету на каждую ячейку снаряжения, тем более редкому, чем глубже забег (обычный, затем необычный с 3-го уровня, редкий с 7-го, эпический с 13-го)."
+
+msgid "Bonus XP (%) for a player whose class level is more than 2 below the team's average (e.g. after being dead for levels), until they're within 1 level."
+msgstr "Бонусный опыт (%) для игрока, чей уровень класса больше чем на 2 ниже среднего по команде (например, после нескольких уровней в мёртвом состоянии), пока разница не сократится до 1 уровня."
+
+msgid "A pop-up for everyone when someone joins mid-run."
+msgstr "Всплывающее сообщение для всех, когда кто-то подключается посреди забега."
+
+msgid "Lobby size (players). 6 = vanilla. Set before hosting; changing it in a lobby applies at once. Everyone needs RepoRPG. Stands down when another more-players mod is installed."
+msgstr "Размер лобби (игроков). 6 = как в обычной игре. Задайте до создания лобби; изменение в лобби применяется сразу. RepoRPG нужен всем. Уступает, если установлен другой мод на увеличение числа игроков."
+
+msgid "Scale difficulty by the number of players, worked out at the start of each level (1.0 at 4 players or fewer)."
+msgstr "Масштабировать сложность по числу игроков, рассчитывается в начале каждого уровня (1.0 при 4 игроках и меньше)."
+
+msgid "Also scale below 4 players (fewer monsters, fewer valuables, a lower goal)."
+msgstr "Масштабировать и при числе игроков меньше 4 (меньше монстров, меньше ценностей, ниже цель)."
+
+msgid "Master strength of the scaling (%), on every category."
+msgstr "Общая сила масштабирования (%), для всех категорий."
+
+msgid "Monster count and respawn rate (% of the default curve: x2.2 at 20 players)."
+msgstr "Количество монстров и частота их возрождения (% от стандартной кривой: x2.2 при 20 игроках)."
+
+msgid "Monster health (% of the default curve: x1.6 at 20 players)."
+msgstr "Здоровье монстров (% от стандартной кривой: x1.6 при 20 игроках)."
+
+msgid "Monster damage (% of the default curve: x1.4 at 20 players). Off by default."
+msgstr "Урон монстров (% от стандартной кривой: x1.4 при 20 игроках). По умолчанию выключено."
+
+msgid "Valuable count and value (% of the default curve: x2.5 at 20 players)."
+msgstr "Количество и стоимость ценностей (% от стандартной кривой: x2.5 при 20 игроках)."
+
+msgid "Haul goal (% of the default curve: x2.2 at 20 players)."
+msgstr "Цель по добыче (% от стандартной кривой: x2.2 при 20 игроках)."
+
+msgid "Elite chance (% of the default curve: x1.6 at 20 players; the elite cap stays), and a boss's extra modifier at 12+ players."
+msgstr "Шанс элиты (% от стандартной кривой: x1.6 при 20 игроках; предел элиты остаётся) и дополнительный модификатор босса при 12 и более игроках."
+
+msgid "Scrap from the haul: 100 = each player earns about what they would in a 4-player game. 0 = the haul is split as usual."
+msgstr "Лом за добычу: 100 = каждый игрок зарабатывает примерно столько же, сколько в игре на 4 игроков. 0 = добыча делится как обычно."
+
+msgid "Boss effective health with 11-15 players (x)."
+msgstr "Эффективное здоровье босса при 11-15 игроках (x)."
+
+msgid "Boss effective health with 16-20 players (x)."
+msgstr "Эффективное здоровье босса при 16-20 игроках (x)."
+
+msgid "With the Mutators mod, on a level that has a mutator: Stack = RepoRPG scales as usual; SkipThreat = no run-progress threat that level (its rewards neither); SkipDanger = also no player-count danger (more monsters, health, damage, elites) that level - loot and the goal still scale."
+msgstr "С модом Mutators, на уровне с мутатором: Stack = RepoRPG масштабирует как обычно; SkipThreat = на этом уровне нет угрозы от хода забега (и её наград тоже); SkipDanger = нет ещё и опасности от числа игроков (больше монстров, здоровья, урона, элиты) на этом уровне - добыча и цель всё равно масштабируются."
+
+msgid "Run progress: every level cleared raises a threat rating (applied from the next level): tougher, busier levels with better rewards."
+msgstr "Ход забега: каждый пройденный уровень повышает рейтинг угрозы (действует со следующего уровня): уровни становятся тяжелее и насыщеннее, а награды - лучше."
+
+msgid "How fast the threat rating rises per level cleared (1 = about +1 a level at first, slowing down near the cap). Normal: 0.6 since 1.0.55, so monsters toughen at the pace class levels come."
+msgstr "Как быстро рейтинг угрозы растёт за пройденный уровень (1 = сначала примерно +1 за уровень, с замедлением ближе к пределу). «Нормально»: 0.6 с версии 1.0.55, чтобы монстры крепли в том же темпе, в каком растут уровни класса."
+
+msgid "The highest the threat rating can go (0 = off). At 10: monsters x1.4, health x1.5, elites x1.6, loot x1.3, rewards x1.4."
+msgstr "Наибольшее значение рейтинга угрозы (0 = выкл.). При 10: монстры x1.4, здоровье x1.5, элита x1.6, добыча x1.3, награды x1.4."
+
+msgid "Levels cleared before the rating starts rising."
+msgstr "Сколько уровней нужно пройти, прежде чем рейтинг начнёт расти."
+
+msgid "Monster count and respawn rate per threat point (% of +4%)."
+msgstr "Количество монстров и частота их возрождения за единицу угрозы (% от +4%)."
+
+msgid "Monster health per threat point (% of +5%)."
+msgstr "Здоровье монстров за единицу угрозы (% от +5%)."
+
+msgid "Monster damage per threat point (% of +3%). Off by default."
+msgstr "Урон монстров за единицу угрозы (% от +3%). По умолчанию выключено."
+
+msgid "Elite chance per threat point (% of +6%; the elite cap stays)."
+msgstr "Шанс элиты за единицу угрозы (% от +6%; предел элиты остаётся)."
+
+msgid "Bosses: an extra modifier at threat 5 and 8, and a boss a level sooner from threat 7."
+msgstr "Боссы: дополнительный модификатор при угрозе 5 и 8, а с угрозы 7 босс появляется на уровень раньше."
+
+msgid "Valuables and the haul goal together per threat point (% of +3%): the goal stays the same share of the map."
+msgstr "Ценности и цель по добыче вместе за единицу угрозы (% от +3%): цель остаётся той же долей карты."
+
+msgid "Scrap, contract Scrap (% of +4% per point), gear drop and shop luck (+1 per point)."
+msgstr "Лом, лом за контракты (% от +4% за единицу), выпадение снаряжения и удача в магазине (+1 за единицу)."
+
+msgid "Measures what RepoRPG costs on this computer: every minute, FPS, frame time, the mod's own time and allocations per frame, GC, memory, network rate, where you are, the hot spots ranked, and collections that keep growing -> BepInEx/config/RepoRPG_perf.txt (and [perf] in the log). Off: no cost."
+msgstr "Измеряет, во что RepoRPG обходится этому компьютеру: каждую минуту - FPS, время кадра, собственное время мода и выделения памяти за кадр, сборки мусора, память, сетевой обмен, где вы находитесь, самые затратные места по порядку и коллекции, которые продолжают расти -> BepInEx/config/RepoRPG_perf.txt (и [perf] в журнале). Выкл.: без затрат."
+
+msgid "Logs every 30 s as [netmeter]: RepoRPG's messages and bytes per second (sent / received, by type), Photon's message rate, FPS, worst frame and the mod's own frame cost. For measuring big lobbies."
+msgstr "Каждые 30 с записывает в журнал как [netmeter]: сообщения RepoRPG и байты в секунду (отправлено / получено, по типам), частоту сообщений Photon, FPS, худший кадр и собственные затраты мода на кадр. Для замеров в больших лобби."
+
+msgid "Seconds to vote after the level starts."
+msgstr "Секунд на голосование после начала уровня."
+
+msgid "Multiplies every team contract reward and loss."
+msgstr "Умножает все награды и потери командных контрактов."
+
+msgid "Account progress in this lobby: Mastery XP, unlocks earned (each player's own file)."
+msgstr "Развитие аккаунта в этом лобби: опыт мастерства, полученные открытия (у каждого игрока свой файл)."
+
+msgid "Unlocks with a gameplay effect work here: Wider pick, Second opinion, Contract board, Starter kit, Seed money, Field kit."
+msgstr "Открытия, влияющие на игру, работают здесь: «Широкий выбор», «Второе мнение», «Доска контрактов», «Стартовый набор», «Стартовый капитал», «Полевой набор»."
+
+msgid "Mastered classes get their 4th (prestige) talent tree."
+msgstr "Освоенные классы получают 4-е древо талантов (престижа)."
+
+msgid "Mastered classes can swap in their alternate passive."
+msgstr "Освоенные классы могут заменить пассивное умение на альтернативное."
+
+msgid "Payout tier: extra risk for extra reward, on top of the difficulty preset (the presets leave it alone). Relaxed x0.8, Standard x1, Hard x1.3, Brutal x1.7, Nightmare x2.2 payout."
+msgstr "Ступень выплат: дополнительный риск ради дополнительной награды, поверх пресета сложности (пресеты её не трогают). Выплата: Relaxed x0.8, Standard x1, Hard x1.3, Brutal x1.7, Nightmare x2.2."
+
+msgid "Modifier: one death save per level at most (+0.2 payout)."
+msgstr "Модификатор: не больше одного спасения от смерти за уровень (+0.2 к выплате)."
+
+msgid "Modifier: everyone deals 30% more damage and takes 30% more (+0.15)."
+msgstr "Модификатор: все наносят на 30% больше урона и получают на 30% больше (+0.15)."
+
+msgid "Modifier: the mod shop is closed all run (+0.2)."
+msgstr "Модификатор: магазин мода закрыт весь забег (+0.2)."
+
+msgid "Modifier: valuables take 25% more break damage (+0.15)."
+msgstr "Модификатор: ценности получают на 25% больше урона от ударов (+0.15)."
+
+msgid "Modifier: elite chance doubled (+0.25)."
+msgstr "Модификатор: шанс элиты удвоен (+0.25)."
+
+msgid "Modifier: no team synergies (+0.1)."
+msgstr "Модификатор: без синергий команды (+0.1)."
+
+msgid "Modifier: Scrap from the haul halved (+0.1, doesn't raise Scrap)."
+msgstr "Модификатор: лом за добычу уменьшен вдвое (+0.1, лом не увеличивает)."
+
+msgid "Modifier: no healing from abilities or gear, regen off (+0.25)."
+msgstr "Модификатор: без лечения от способностей и снаряжения, регенерация выключена (+0.25)."
+
+msgid "Modifier: ability cooldowns 25% longer (+0.15)."
+msgstr "Модификатор: перезарядка способностей на 25% дольше (+0.15)."
+
+msgid "Modifier: threat labels, scan markers and Watchpost pings off (+0.1)."
+msgstr "Модификатор: подписи угрозы, метки сканирования и сигналы сторожевого поста выключены (+0.1)."
+
+msgid "The difficulty preset picked with the Difficulty selector (Relaxed, Easy, Normal, Hard, Brutal). Picking one loads its values into the host settings; this entry only remembers which one it was (the selector shows \"Custom (based on ...)\" once a setting differs from it)."
+msgstr "Пресет сложности, выбранный переключателем «Сложность» (Relaxed, Easy, Normal, Hard, Brutal). Выбор пресета загружает его значения в настройки хоста; этот параметр лишь запоминает, какой это был пресет (переключатель показывает «Свой (на основе ...)», как только какая-то настройка от него отличается)."
+
+msgid "Monster count and respawn rate on every level (%), before player-count scaling and run progress."
+msgstr "Количество монстров и частота их возрождения на каждом уровне (%), до масштабирования по числу игроков и хода забега."
+
+msgid "Monster health on every level (%), before player-count scaling and run progress."
+msgstr "Здоровье монстров на каждом уровне (%), до масштабирования по числу игроков и хода забега."
+
+msgid "Monster damage to players on every level (%), before player-count scaling, run progress and the payout tier."
+msgstr "Урон монстров по игрокам на каждом уровне (%), до масштабирования по числу игроков, хода забега и ступени выплат."
+
+msgid "Gear rarity odds (%): above 100 every tier above Common gets more likely (more so the higher the tier), below 100 less likely."
+msgstr "Шансы редкости снаряжения (%): выше 100 - каждая ступень выше обычной становится вероятнее (тем сильнее, чем выше ступень), ниже 100 - менее вероятной."
+
+msgid "Chance (%) a boss's drop is Legendary (else Epic)."
+msgstr "Шанс (%), что добыча с босса будет легендарной (иначе эпической)."
+
+msgid "Salvage: multiplies the Scrap every salvaged item pays (%)."
+msgstr "Разборка: умножает лом, который даёт каждый разобранный предмет (%)."
+
+msgid "The Season: a run is a set number of chapters with a finale boss at the end. Win it, then vote to end the run or keep going (Endless). Off: chapters go on with no finish line, as before."
+msgstr "Сезон: забег - это заданное число глав с финальным боссом в конце. Победите его, затем проголосуйте - закончить забег или продолжать (бесконечный режим). Выкл.: главы идут без финишной черты, как раньше."
+
+msgid "Run length: Short 5 chapters x 5 levels (25), Standard 10 x 5 (50), Marathon 10 x 7 (70), or Custom (Season/Chapters x Milestones/Every)."
+msgstr "Длина забега: Short - 5 глав x 5 уровней (25), Standard - 10 x 5 (50), Marathon - 10 x 7 (70) или Custom (Season/Chapters x Milestones/Every)."
+
+msgid "Custom length: how many chapters (each Milestones/Every levels)."
+msgstr "Своя длина: сколько глав (в каждой Milestones/Every уровней)."
+
+msgid "Heat: after each milestone boss the team votes on a heat card (or Skip). Heat only goes up during a run; each point gives more haul Scrap and more gear and shop luck."
+msgstr "Накал: после каждого босса этапа команда голосует за карту накала (или пропуск). Накал за забег только растёт; каждая единица даёт больше лома за добычу и больше удачи в снаряжении и магазине."
+
+msgid "Route choice: after each normal level the team votes on the next level's route - Safe, or one of two risky routes (a risk and a reward each). Off: map modifiers come at random, as before."
+msgstr "Выбор маршрута: после каждого обычного уровня команда голосует за маршрут следующего уровня - безопасный или один из двух рискованных (у каждого свой риск и своя награда). Выкл.: модификаторы карты выпадают случайно, как раньше."
+
+msgid "Run milestones: every few levels a milestone level with a milestone boss; after it each player picks a reward, the team votes on a run boon, and a new chapter (a step up in difficulty and rewards) starts."
+msgstr "Этапы забега: каждые несколько уровней - уровень-этап с боссом этапа; после него каждый игрок выбирает награду, команда голосует за дар забега, и начинается новая глава (ступень вверх по сложности и наградам)."
+
+msgid "A milestone every this many levels (levels 5, 10, 15 ... at 5)."
+msgstr "Этап каждые столько уровней (уровни 5, 10, 15 ... при значении 5)."
+
+msgid "Extra modifiers a milestone boss rolls on top of a normal boss's (a boss has 5 at most)."
+msgstr "Дополнительные модификаторы босса этапа сверх модификаторов обычного босса (у босса их не больше 5)."
+
+msgid "A milestone boss's effective health, x a normal boss's."
+msgstr "Эффективное здоровье босса этапа, x от обычного босса."
+
+msgid "Added to BossHealth for every chapter after the first."
+msgstr "Прибавляется к BossHealth за каждую главу после первой."
+
+msgid "The milestone reward's Scrap payout (per player), at the first milestone."
+msgstr "Выплата лома за награду этапа (на игрока), на первом этапе."
+
+msgid "The payout grows this much (%) for every milestone after the first."
+msgstr "Выплата растёт на столько (%) за каждый этап после первого."
+
+msgid "Each chapter after the first adds this to the run-progress threat rating (a clear step up)."
+msgstr "Каждая глава после первой прибавляет столько к рейтингу угрозы от хода забега (заметная ступень вверх)."
+
+msgid "Each chapter after the first: this much more XP and Scrap (%), and +1 gear and shop luck."
+msgstr "Каждая глава после первой: на столько больше опыта и лома (%) и +1 к удаче в снаряжении и магазине."
+
+msgid "Team streak: every level cleared in a row adds to the streak; each streak level gives more XP, Scrap and luck, up to the cap. Deaths take some off, a lost level resets it."
+msgstr "Серия команды: каждый пройденный подряд уровень увеличивает серию; каждый уровень серии даёт больше опыта, лома и удачи, вплоть до предела. Смерти немного уменьшают серию, проигранный уровень её сбрасывает."
+
+msgid "XP bonus (%) per streak level."
+msgstr "Бонус к опыту (%) за уровень серии."
+
+msgid "Scrap bonus from the haul (%) per streak level."
+msgstr "Бонус к лому за добычу (%) за уровень серии."
+
+msgid "Gear and shop luck per streak level."
+msgstr "Удача в снаряжении и магазине за уровень серии."
+
+msgid "Streak levels that count for the bonus (the streak itself keeps counting)."
+msgstr "Сколько уровней серии учитывается для бонуса (сама серия продолжает считаться)."
+
+msgid "Streak levels lost when a player dies (a death save doesn't count)."
+msgstr "Сколько уровней серии теряется, когда игрок погибает (спасение от смерти не считается)."
+
+msgid "A lost level (the team didn't extract): Reset = streak back to 0, Halve = halved."
+msgstr "Проигранный уровень (команда не провела извлечение): Reset = серия обнуляется, Halve = уменьшается вдвое."
+
+msgid "Cap (%) on the streak, chapter and crew XP / Scrap bonuses together."
+msgstr "Предел (%) бонусов серии, главы и команды к опыту / лому вместе."
+
+msgid "Chance (%) that a regular boss kill (not a milestone boss) starts a team vote on a run boon."
+msgstr "Шанс (%), что убийство обычного босса (не босса этапа) запустит командное голосование за дар забега."
+
+msgid "Crew level: a shared team level for the run (1-10) from everything the team does; each level adds a small team-wide bonus."
+msgstr "Уровень команды: общий уровень команды на забег (1-10), растёт от всего, что делает команда; каждый уровень даёт небольшой бонус всей команде."
+
+msgid "Crew XP gained (%)."
+msgstr "Получаемый опыт команды (%)."
+
+msgid "Deep-run content: some elite types, boss twists, Uniques, map modifiers, a contract giver and shop sections only appear after enough levels cleared (unlocks.json). Off: none of them appear."
+msgstr "Глубокий забег: некоторые виды элиты, особенности боссов, уникальные предметы, модификаторы карты, один заказчик контрактов и разделы магазина появляются только после достаточного числа пройденных уровней (unlocks.json). Выкл.: ничего из этого не появляется."
+
+msgid "Moves every unlock this many levels later (or earlier, negative)."
+msgstr "Сдвигает каждое открытие на столько уровней позже (или раньше, если значение отрицательное)."
+
+msgid "Chance (%) that a level rolls a map modifier, once they're unlocked (from level 30: every level, two can stack)."
+msgstr "Шанс (%), что уровень получит модификатор карты, когда они открыты (с 30-го уровня: на каждом уровне, могут действовать два сразу)."
+
+msgid "In the shop right after a milestone, switching class carries progress over: the new class starts at SwitchShare % of your current class level (once per milestone)."
+msgstr "В магазине сразу после этапа смена класса переносит прогресс: новый класс начинает с SwitchShare % от уровня вашего текущего класса (один раз за этап)."
+
+msgid "Milestone class switch: the new class starts at this share (%) of the current class level."
+msgstr "Смена класса на этапе: новый класс начинает с этой доли (%) от уровня текущего класса."
+
+msgid "More than one player can play the same class."
+msgstr "Один и тот же класс могут выбрать несколько игроков."
+
+msgid "Show the team's run boons as short codes on the HUD."
+msgstr "Показывать дары забега команды короткими кодами на HUD."
+
+msgid "Host: modded valuables worth far more than vanilla valuables of the same size are scaled down toward the vanilla range (a valuable at or below vanilla's values is left alone)."
+msgstr "Хост: модовые ценности, которые стоят намного больше обычных ценностей того же размера, уменьшаются в цене до диапазона обычной игры (ценность на уровне обычных значений или ниже не трогается)."
+
+msgid "Normalize: how far above vanilla's top value for its size a modded valuable may go (1.5 = up to 1.5x the most valuable vanilla item of that size)."
+msgstr "Нормализация: насколько выше наибольшей обычной стоимости для своего размера может стоить модовая ценность (1.5 = до 1.5x от самого дорогого обычного предмета этого размера)."
+
+msgid "Every valuable's value (after Normalize), and the level's value budget with it: the same number of valuables, each worth this much more or less. Haul goals follow."
+msgstr "Стоимость каждой ценности (после нормализации) и вместе с ней бюджет стоимости уровня: то же число ценностей, каждая стоит на столько больше или меньше. Цели по добыче меняются соответственно."
+
+msgid "Normalize: valuables to leave untouched, comma-separated: a mod's name (its asset bundle, as the report lists it under Source) or a valuable's name; parts of names work."
+msgstr "Нормализация: ценности, которые не нужно трогать, через запятую: название мода (его asset bundle, как указано в отчёте в графе Source) или название ценности; подходят и части названий."
+
+msgid "Host only: a player whose RepoRPG version differs from yours. PauseMod: their mod pauses in your lobby (they're told why). Kick: they're removed from the room."
+msgstr "Только хост: игрок, у которого версия RepoRPG отличается от вашей. PauseMod: его мод приостанавливается в вашем лобби (ему сообщают причину). Kick: его удаляют из комнаты."
+
+msgid "While you're a death head: call out (a marker your team can see)."
+msgstr "Пока вы - голова после смерти: позвать на помощь (метка, которую видит ваша команда)."
+
+msgid "While you're a death head: call out."
+msgstr "Пока вы - голова после смерти: позвать на помощь."
+
+msgid "Highlights card in the shop: tap to hide it, hold to keep it up."
+msgstr "Карточка «Главное» в магазине: нажмите, чтобы скрыть, удерживайте, чтобы оставить."
+
+msgid "Show 'Synergy: Name' on the HUD while a synergy is on."
+msgstr "Показывать на HUD строку «Синергия: название», пока действует синергия."
+
+msgid "The class roster in the pre-game lobby (right middle): who picked which class, and who still has to."
+msgstr "Список классов в лобби перед игрой (справа посередине): кто какой класс выбрал и кому ещё предстоит выбрать."
+
+msgid "Host: also show the class roster in the shop level."
+msgstr "Хост: показывать список классов и на уровне магазина."
+
+msgid "A small tag over each teammate's head with their class and level (\"Courier Lv 7\")."
+msgstr "Небольшая подпись над головой каждого напарника с его классом и уровнем (например, «Курьер, 7 ур.»)."
+
+msgid "Nameplate tags: how far away (metres) they show; they fade out toward the edge."
+msgstr "Имена над головами: с какого расстояния (в метрах) они видны; к границе плавно исчезают."
+
+msgid "Nameplate tags: also show teammates behind walls."
+msgstr "Имена над головами: показывать и напарников за стенами."
+
+msgid "Mark each boss: a gold ring pulsing at its feet and \"BOSS  Name\" with a health bar above it, seen through walls."
+msgstr "Отмечать каждого босса: золотое кольцо, пульсирующее у его ног, и надпись «БОСС  Имя» с полосой здоровья над ним, видны сквозь стены."
+
+msgid "Boss marker: how far away (metres) the label shows."
+msgstr "Метка босса: с какого расстояния (в метрах) видна надпись."
+
+msgid "Hold the team panel key to see every player's class, level and XP."
+msgstr "Удерживайте клавишу панели команды, чтобы увидеть класс, уровень и опыт каждого игрока."
+
+msgid "Team panel order: by class level (highest first) or by join order."
+msgstr "Панель команды, порядок: по уровню класса (сначала самый высокий) или по порядку подключения."
+
+msgid "Hold to show the team panel (every player's class, level and XP)."
+msgstr "Удерживайте, чтобы показать панель команды (класс, уровень и опыт каждого игрока)."
+
+msgid "Hold to show the team panel."
+msgstr "Удерживайте, чтобы показать панель команды."
+
+msgid "The Guide topic shown last (managed by the mod)."
+msgstr "Тема справки, показанная последней (управляется модом)."
+
+msgid "Format of this file (managed by the mod; don't edit). New options are added with their defaults and your settings are kept."
+msgstr "Формат этого файла (управляется модом; не редактируйте). Новые параметры добавляются со значениями по умолчанию, а ваши настройки сохраняются."
+
+msgid "Class tab: the Total Effects view was open last time (reopened with the menu; managed by the mod)."
+msgstr "Вкладка «Класс»: в прошлый раз был открыт вид «Итоговые эффекты» (открывается вместе с меню; управляется модом)."
+
 msgid " (everyone in it)"
 msgstr " (каждому участнику)"
+
+msgid "Select an attribute"
+msgstr "Выберите характеристику"
+
+msgid "What it gives, its milestones and pairings show here."
+msgstr "Здесь показывается, что она даёт, её этапы и сочетания."
+
+msgid "Its lines, modules, a comparison and its actions show here."
+msgstr "Здесь показываются его свойства, модули, сравнение и действия."
+
+msgid "Pick a topic"
+msgstr "Выберите тему"
+
+msgid "Its summary shows here."
+msgstr "Здесь показывается её краткое содержание."
+
+msgid "Select a project"
+msgstr "Выберите проект"
+
+msgid "What it unlocks, what it costs and what it needs show here."
+msgstr "Здесь показывается, что он открывает, сколько стоит и что для него нужно."
+
+msgid "Select a setting"
+msgstr "Выберите настройку"
+
+msgid "What it does, its default and what you changed show here."
+msgstr "Здесь показывается, что она делает, значение по умолчанию и что вы изменили."
+
+msgid "Load a save or join a game to see your run."
+msgstr "Загрузите сохранение или войдите в игру, чтобы увидеть свой забег."
+
+msgid "Loading your progress... open this again in a moment."
+msgstr "Загружается ваш прогресс... откройте это снова чуть позже."
+
+msgid "<color=#9a9ca0>Evolutions are turned off by the host.</color>"
+msgstr "<color=#9a9ca0>Эволюции отключены хостом.</color>"
+
+msgid "<color=#9a9ca0>None yet. Perks with a challenge show their progress on their card.</color>"
+msgstr "<color=#9a9ca0>Пока нет. Перки с испытанием показывают прогресс на своей карточке.</color>"
 
 msgctxt "term"
 msgid "Echo"
@@ -8698,11 +10216,1171 @@ msgstr "Максимум"
 
 msgctxt "term"
 msgid "FULL"
-msgstr "ПОЛНЫЕ"
+msgstr "ПОЛНЫЙ"
 
 msgctxt "term"
 msgid "mid-level"
 msgstr "посреди уровня"
+
+msgctxt "term"
+msgid "Minimal"
+msgstr "Минимальный"
+
+msgctxt "term"
+msgid "Clean"
+msgstr "Чистый"
+
+msgctxt "term"
+msgid "ACTIVE"
+msgstr "АКТИВНО"
+
+msgctxt "term"
+msgid "None yet. Perks with a challenge show their progress on their card."
+msgstr "Пока нет. Перки с испытанием показывают прогресс на своей карточке."
+
+msgctxt "term"
+msgid "Evolutions are turned off by the host."
+msgstr "Эволюции отключены хостом."
+
+msgctxt "term"
+msgid "Getting Started"
+msgstr "С чего начать"
+
+msgctxt "term"
+msgid "Classes"
+msgstr "Классы"
+
+msgctxt "term"
+msgid "Grappler's Hook"
+msgstr "Крюк Крючника"
+
+msgctxt "term"
+msgid "Gunsmith's Field Charger"
+msgstr "Полевой зарядник Оружейника"
+
+msgctxt "term"
+msgid "Leveling & XP"
+msgstr "Уровни и опыт"
+
+msgctxt "term"
+msgid "My Stats"
+msgstr "Мои показатели"
+
+msgctxt "term"
+msgid "Elemental Weapons"
+msgstr "Стихийное оружие"
+
+msgctxt "term"
+msgid "The Market"
+msgstr "Рынок"
+
+msgctxt "term"
+msgid "Crafting & Modules"
+msgstr "Крафт и модули"
+
+msgctxt "term"
+msgid "Scrap & the Shop"
+msgstr "Лом и магазин"
+
+msgctxt "term"
+msgid "Givers & Reputation"
+msgstr "Заказчики и репутация"
+
+msgctxt "term"
+msgid "Team Contracts"
+msgstr "Командные контракты"
+
+msgctxt "term"
+msgid "Elites & Bosses"
+msgstr "Элита и боссы"
+
+msgctxt "term"
+msgid "Death Saves"
+msgstr "Спасения от смерти"
+
+msgctxt "term"
+msgid "Saving & Runs"
+msgstr "Сохранения и забеги"
+
+msgctxt "term"
+msgid "Account & Unlocks"
+msgstr "Аккаунт и открытия"
+
+msgctxt "term"
+msgid "Mastery & Prestige"
+msgstr "Мастерство и престиж"
+
+msgctxt "term"
+msgid "Joining Late"
+msgstr "Позднее подключение"
+
+msgctxt "term"
+msgid "Deeper in the run"
+msgstr "В глубине забега"
+
+msgctxt "term"
+msgid "Big Lobbies"
+msgstr "Большие лобби"
+
+msgctxt "term"
+msgid "Controls"
+msgstr "Управление"
+
+msgctxt "term"
+msgid "HUD Guide"
+msgstr "Справка по HUD"
+
+msgctxt "term"
+msgid "Glossary"
+msgstr "Словарь"
+
+msgctxt "term"
+msgid "Welcome to RepoRPG"
+msgstr "Добро пожаловать в RepoRPG"
+
+msgctxt "term"
+msgid "RepoRPG turns each run into a small RPG: you pick a class, level it up and spend what you earn between levels."
+msgstr "RepoRPG превращает каждый забег в маленькую RPG: вы выбираете класс, прокачиваете его и тратите заработанное между уровнями."
+
+msgctxt "term"
+msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
+msgstr "Каждый забег становится маленькой RPG: вы выбираете класс, прокачиваете его, собираете снаряжение и перки. Когда забег заканчивается, всё начинается заново.\n\nЭто обучение - 5 коротких панелей. Его можно пропустить в любой момент: всё есть на вкладке «Справка»."
+
+msgctxt "term"
+msgid "Juggernaut"
+msgstr "Джаггернаут"
+
+msgctxt "term"
+msgid "Brute"
+msgstr "Громила"
+
+msgctxt "term"
+msgid "Survivor"
+msgstr "Выживший"
+
+msgctxt "term"
+msgid "Bloodbound"
+msgstr "Кровник"
+
+msgctxt "term"
+msgid "Engineer"
+msgstr "Инженер"
+
+msgctxt "term"
+msgid "Warden"
+msgstr "Страж"
+
+msgctxt "term"
+msgid "Phantom"
+msgstr "Фантом"
+
+msgctxt "term"
+msgid "Scout"
+msgstr "Разведчик"
+
+msgctxt "term"
+msgid "Hauler"
+msgstr "Носильщик"
+
+msgctxt "term"
+msgid "Shield Wall"
+msgstr "Стена щитов"
+
+msgctxt "term"
+msgid "Heavy Frame"
+msgstr "Тяжёлый каркас"
+
+msgctxt "term"
+msgid "Iron Wall"
+msgstr "Железная стена"
+
+msgctxt "term"
+msgid "Thick Plating"
+msgstr "Толстая броня"
+
+msgctxt "term"
+msgid "Impact Dampers"
+msgstr "Амортизаторы ударов"
+
+msgctxt "term"
+msgid "Overbuilt"
+msgstr "Усиленная конструкция"
+
+msgctxt "term"
+msgid "Hardened Core"
+msgstr "Закалённое ядро"
+
+msgctxt "term"
+msgid "Immovable Object"
+msgstr "Несокрушимая преграда"
+
+msgctxt "term"
+msgid "Wide Stance"
+msgstr "Широкая стойка"
+
+msgctxt "term"
+msgid "Protector"
+msgstr "Защитник"
+
+msgctxt "term"
+msgid "Rallying Wall"
+msgstr "Сплачивающая стена"
+
+msgctxt "term"
+msgid "Interpose"
+msgstr "Заслон"
+
+msgctxt "term"
+msgid "Living Fortress"
+msgstr "Живая крепость"
+
+msgctxt "term"
+msgid "Quick Lock"
+msgstr "Быстрая фиксация"
+
+msgctxt "term"
+msgid "Reinforced Wall"
+msgstr "Укреплённая стена"
+
+msgctxt "term"
+msgid "Seismic Lock"
+msgstr "Сейсмическая фиксация"
+
+msgctxt "term"
+msgid "Stalwart"
+msgstr "Стойкий"
+
+msgctxt "term"
+msgid "Citadel"
+msgstr "Цитадель"
+
+msgctxt "term"
+msgid "+40% max health. Allies within 5m of you take 10% less damage."
+msgstr "+40% к макс. здоровью. Союзники в пределах 5 м от вас получают на 10% меньше урона."
+
+msgctxt "term"
+msgid "Take 15% less damage, but sprint 10% slower."
+msgstr "Вы получаете на 15% меньше урона, но бегаете на 10% медленнее."
+
+msgctxt "term"
+msgid "Lock your plating: take 60% less damage for 6s, and your Shield Wall protects allies 15% more."
+msgstr "Зафиксируйте броню: на 6 с вы получаете на 60% меньше урона, а «Стена щитов» защищает союзников на 15% сильнее."
+
+msgctxt "term"
+msgid "Pallbearer"
+msgstr "Носильщик гроба"
+
+msgctxt "term"
+msgid "Last Rites"
+msgstr "Последние почести"
+
+msgctxt "term"
+msgid "Steady Hands"
+msgstr "Твёрдые руки"
+
+msgctxt "term"
+msgid "Grave Sense"
+msgstr "Могильное чутьё"
+
+msgctxt "term"
+msgid "Sure Grip"
+msgstr "Надёжный хват"
+
+msgctxt "term"
+msgid "Shroud"
+msgstr "Саван"
+
+msgctxt "term"
+msgid "Ferryman"
+msgstr "Паромщик"
+
+msgctxt "term"
+msgid "Defibrillate"
+msgstr "Дефибрилляция"
+
+msgctxt "term"
+msgid "Wide Rites"
+msgstr "Широкие почести"
+
+msgctxt "term"
+msgid "Long Reach"
+msgstr "Дальний захват"
+
+msgctxt "term"
+msgid "Mass Resurrection"
+msgstr "Массовое воскрешение"
+
+msgctxt "term"
+msgid "Adrenal Wake"
+msgstr "Адреналиновое пробуждение"
+
+msgctxt "term"
+msgid "Fresh Legs"
+msgstr "Свежие ноги"
+
+msgctxt "term"
+msgid "Grace Period"
+msgstr "Отсрочка"
+
+msgctxt "term"
+msgid "Undying Crew"
+msgstr "Бессмертная команда"
+
+msgctxt "term"
+msgid "Keen Eye"
+msgstr "Острый глаз"
+
+msgctxt "term"
+msgid "Appraiser's Eye"
+msgstr "Глаз оценщика"
+
+msgctxt "term"
+msgid "Appraisal Scan"
+msgstr "Оценочное сканирование"
+
+msgctxt "term"
+msgid "Price Tag"
+msgstr "Ценник"
+
+msgctxt "term"
+msgid "Wide Appraisal"
+msgstr "Широкая оценка"
+
+msgctxt "term"
+msgid "Connoisseur"
+msgstr "Знаток"
+
+msgctxt "term"
+msgid "Market Sense"
+msgstr "Чутьё рынка"
+
+msgctxt "term"
+msgid "Golden Eye"
+msgstr "Золотой глаз"
+
+msgctxt "term"
+msgid "Commission"
+msgstr "Комиссия"
+
+msgctxt "term"
+msgid "Lucky Find"
+msgstr "Удачная находка"
+
+msgctxt "term"
+msgid "Insider Deal"
+msgstr "Сделка для своих"
+
+msgctxt "term"
+msgid "Deep Scan"
+msgstr "Глубокое сканирование"
+
+msgctxt "term"
+msgid "Long Range"
+msgstr "Дальний радиус"
+
+msgctxt "term"
+msgid "Lingering Data"
+msgstr "Долгая память"
+
+msgctxt "term"
+msgid "Rapid Survey"
+msgstr "Быстрый осмотр"
+
+msgctxt "term"
+msgid "Omniscience"
+msgstr "Всеведение"
+
+msgctxt "term"
+msgid "Rare or better valuables you appraise gain an extra 10% value; +20% extraction XP and +15% level-complete XP."
+msgstr "Оценённые вами ценности редкости «редкое» и выше получают ещё 10% стоимости; +20% опыта за извлечение и +15% опыта за прохождение уровня."
+
+msgctxt "term"
+msgid "Valuables within 8m of you are appraised automatically (even through walls): each one's value rises 10%, once per item. +15% grab range."
+msgstr "Ценности в пределах 8 м от вас оцениваются автоматически (даже сквозь стены): стоимость каждой растёт на 10%, один раз на предмет. +15% к дальности захвата."
+
+msgctxt "term"
+msgid "For 12s, your HUD tracks the 3 most valuable items within 40m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
+msgstr "В течение 12 с HUD отслеживает 3 самых ценных предмета в пределах 40 м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
+
+msgctxt "term"
+msgid "Bulk Buyer"
+msgstr "Оптовый покупатель"
+
+msgctxt "term"
+msgid "Supply Line"
+msgstr "Линия снабжения"
+
+msgctxt "term"
+msgid "Coupons"
+msgstr "Купоны"
+
+msgctxt "term"
+msgid "Scrap Sense"
+msgstr "Чутьё на лом"
+
+msgctxt "term"
+msgid "Refund Policy"
+msgstr "Правила возврата"
+
+msgctxt "term"
+msgid "Clearance"
+msgstr "Распродажа"
+
+msgctxt "term"
+msgid "Supplier"
+msgstr "Поставщик"
+
+msgctxt "term"
+msgid "Fast Charge"
+msgstr "Быстрая зарядка"
+
+msgctxt "term"
+msgid "Efficient Cells"
+msgstr "Экономичные элементы"
+
+msgctxt "term"
+msgid "Field Charger"
+msgstr "Полевой зарядник"
+
+msgctxt "term"
+msgid "Overcharge"
+msgstr "Перезаряд"
+
+msgctxt "term"
+msgid "Infinite Cells"
+msgstr "Бесконечные элементы"
+
+msgctxt "term"
+msgid "Topped Up"
+msgstr "Под завязку"
+
+msgctxt "term"
+msgid "Wide Net"
+msgstr "Широкая сеть"
+
+msgctxt "term"
+msgid "Long Arm"
+msgstr "Длинная рука"
+
+msgctxt "term"
+msgid "Rations"
+msgstr "Пайки"
+
+msgctxt "term"
+msgid "Spotter"
+msgstr "Наводчик"
+
+msgctxt "term"
+msgid "Exposed"
+msgstr "Разоблачение"
+
+msgctxt "term"
+msgid "Binoculars"
+msgstr "Бинокль"
+
+msgctxt "term"
+msgid "Call-outs"
+msgstr "Оповещения"
+
+msgctxt "term"
+msgid "Binoculars II"
+msgstr "Бинокль II"
+
+msgctxt "term"
+msgid "Call-outs II"
+msgstr "Оповещения II"
+
+msgctxt "term"
+msgid "Hawkeye"
+msgstr "Соколиный глаз"
+
+msgctxt "term"
+msgid "Batteries"
+msgstr "Батареи"
+
+msgctxt "term"
+msgid "Wide Angle"
+msgstr "Широкий угол"
+
+msgctxt "term"
+msgid "Quick Mount"
+msgstr "Быстрая установка"
+
+msgctxt "term"
+msgid "Spare Sensor"
+msgstr "Запасной датчик"
+
+msgctxt "term"
+msgid "Tripwire Flash"
+msgstr "Вспышка-растяжка"
+
+msgctxt "term"
+msgid "Cover"
+msgstr "Прикрытие"
+
+msgctxt "term"
+msgid "Fast Hands"
+msgstr "Ловкие руки"
+
+msgctxt "term"
+msgid "Cover II"
+msgstr "Прикрытие II"
+
+msgctxt "term"
+msgid "Long Watch"
+msgstr "Долгая вахта"
+
+msgctxt "term"
+msgid "Sentry Network"
+msgstr "Сеть постов"
+
+msgctxt "term"
+msgid "Sentinel Sense"
+msgstr "Чутьё стража"
+
+msgctxt "term"
+msgid "Steadfast"
+msgstr "Непоколебимый"
+
+msgctxt "term"
+msgid "Stasis Field"
+msgstr "Стазисное поле"
+
+msgctxt "term"
+msgid "Keen Sensors"
+msgstr "Чуткие датчики"
+
+msgctxt "term"
+msgid "Elite Tracker"
+msgstr "Охотник на элиту"
+
+msgctxt "term"
+msgid "Vigil"
+msgstr "Бдение"
+
+msgctxt "term"
+msgid "All-Seeing"
+msgstr "Всевидящий"
+
+msgctxt "term"
+msgid "Lasting Mark"
+msgstr "Стойкая метка"
+
+msgctxt "term"
+msgid "Reprisal"
+msgstr "Возмездие"
+
+msgctxt "term"
+msgid "Condemn"
+msgstr "Осуждение"
+
+msgctxt "term"
+msgid "Warden's Resolve"
+msgstr "Решимость стража"
+
+msgctxt "term"
+msgid "Sentence"
+msgstr "Приговор"
+
+msgctxt "term"
+msgid "Long Freeze"
+msgstr "Долгая заморозка"
+
+msgctxt "term"
+msgid "Wide Field"
+msgstr "Широкое поле"
+
+msgctxt "term"
+msgid "Recharge"
+msgstr "Перезарядка"
+
+msgctxt "term"
+msgid "Time Lock"
+msgstr "Временной замок"
+
+msgctxt "term"
+msgid "Scar Tissue"
+msgstr "Рубцовая ткань"
+
+msgctxt "term"
+msgid "Emergency Patch"
+msgstr "Экстренная заплатка"
+
+msgctxt "term"
+msgid "Self-Repair"
+msgstr "Самовосстановление"
+
+msgctxt "term"
+msgid "Thick Scars"
+msgstr "Толстые шрамы"
+
+msgctxt "term"
+msgid "Hard Lessons"
+msgstr "Суровые уроки"
+
+msgctxt "term"
+msgid "Old Wounds"
+msgstr "Старые раны"
+
+msgctxt "term"
+msgid "Battle-Scarred"
+msgstr "Закалённый в боях"
+
+msgctxt "term"
+msgid "Grit"
+msgstr "Упорство"
+
+msgctxt "term"
+msgid "Rally"
+msgstr "Подъём"
+
+msgctxt "term"
+msgid "Never Quit"
+msgstr "Не сдаваться"
+
+msgctxt "term"
+msgid "Cockroach"
+msgstr "Таракан"
+
+msgctxt "term"
+msgid "Strong Dose"
+msgstr "Сильная доза"
+
+msgctxt "term"
+msgid "Slow Release"
+msgstr "Медленное действие"
+
+msgctxt "term"
+msgid "Quick Patch"
+msgstr "Быстрая заплатка"
+
+msgctxt "term"
+msgid "Field Dressing"
+msgstr "Полевая перевязка"
+
+msgctxt "term"
+msgid "Phoenix Protocol"
+msgstr "Протокол «Феникс»"
+
+msgctxt "term"
+msgid "Once per level, a lethal hit leaves you at 1 HP with 2.5s of invulnerability."
+msgstr "Раз за уровень смертельный удар оставляет вас с 1 ОЗ и даёт 2.5 с неуязвимости."
+
+msgctxt "term"
+msgid "Throw Strength"
+msgstr "Сила броска"
+
+msgctxt "term"
+msgid "Weapon Damage"
+msgstr "Урон оружия"
+
+msgctxt "term"
+msgid "Focus"
+msgstr "Концентрация"
+
+msgctxt "term"
+msgid "Vitality"
+msgstr "Живучесть"
+
+msgctxt "term"
+msgid "Endurance"
+msgstr "Выносливость"
+
+msgctxt "term"
+msgid "Agility"
+msgstr "Ловкость"
+
+msgctxt "term"
+msgid "Leap"
+msgstr "Прыжок"
+
+msgctxt "term"
+msgid "Grip Strength"
+msgstr "Сила хвата"
+
+msgctxt "term"
+msgid "Reach"
+msgstr "Досягаемость"
+
+msgctxt "term"
+msgid "Finesse"
+msgstr "Аккуратность"
+
+msgctxt "term"
+msgid "Fortune"
+msgstr "Удача"
+
+msgctxt "term"
+msgid "Weapon"
+msgstr "Оружие"
+
+msgctxt "term"
+msgid "Grip"
+msgstr "Хват"
+
+msgctxt "term"
+msgid "carried items take 8% less damage"
+msgstr "переносимые предметы получают на 8% меньше урона"
+
+msgctxt "term"
+msgid "carrying drains 25% less stamina"
+msgstr "переноска тратит на 25% меньше выносливости"
+
+msgctxt "term"
+msgid "+5% throw strength"
+msgstr "+5% к силе броска"
+
+msgctxt "term"
+msgid "thrown valuables can't break for 1 s"
+msgstr "брошенные ценности не могут разбиться в течение 1 с"
+
+msgctxt "term"
+msgid "10% less noise while crouched"
+msgstr "на 10% меньше шума в приседе"
+
+msgctxt "term"
+msgid "monsters notice you 0.5 s later"
+msgstr "монстры замечают вас на 0.5 с позже"
+
+msgctxt "term"
+msgid "your heals on teammates +10%"
+msgstr "ваше лечение напарников +10%"
+
+msgctxt "term"
+msgid "teammates within 6 m take 5% less damage"
+msgstr "напарники в пределах 6 м получают на 5% меньше урона"
+
+msgctxt "term"
+msgid "+3% Scrap share"
+msgstr "+3% к доле лома"
+
+msgctxt "term"
+msgid "+1 gear luck"
+msgstr "+1 к удаче снаряжения"
+
+msgctxt "term"
+msgid "+5% weapon damage to elites"
+msgstr "+5% к урону оружия по элите"
+
+msgctxt "term"
+msgid "elite kills refund 20% of your ability cooldown"
+msgstr "убийство элиты возвращает 20% перезарядки способности"
+
+msgctxt "term"
+msgid "death saves give +20% speed for 3 s"
+msgstr "спасение от смерти даёт +20% к скорости на 3 с"
+
+msgctxt "term"
+msgid "below 25% health, +10% weapon damage"
+msgstr "при здоровье ниже 25%: +10% к урону оружия"
+
+msgctxt "term"
+msgid "5% cooldown reduction"
+msgstr "перезарядка короче на 5%"
+
+msgctxt "term"
+msgid "with 2+ ability charges, they refill 10% faster (inside the cooldown cap)"
+msgstr "при 2+ зарядах способности они восполняются на 10% быстрее (в рамках предела перезарядки)"
+
+msgctxt "term"
+msgid "+5 stamina/s regen (while recharging)"
+msgstr "+5 к восстановлению выносливости в секунду (пока она восстанавливается)"
+
+msgctxt "term"
+msgid "+10% max stamina"
+msgstr "+10% к макс. выносливости"
+
+msgctxt "term"
+msgid "Afterburner"
+msgstr "Дожиг"
+
+msgctxt "term"
+msgid "Using your ability refills 20% stamina."
+msgstr "Применение способности восполняет 20% выносливости."
+
+msgctxt "term"
+msgid "Blood Money"
+msgstr "Кровавые деньги"
+
+msgctxt "term"
+msgid "+25% Scrap share, but you lose 5 HP at every extraction."
+msgstr "+25% к доле лома, но при каждом извлечении вы теряете 5 ОЗ."
+
+msgctxt "term"
+msgid "+30% throw strength, but you drop what you're holding when hit."
+msgstr "+30% к силе броска, но при получении удара вы роняете то, что держите."
+
+msgctxt "term"
+msgid "Double Charge"
+msgstr "Двойной заряд"
+
+msgctxt "term"
+msgid "Your ability holds 2 charges."
+msgstr "Ваша способность хранит зарядов: 2."
+
+msgctxt "term"
+msgid "+30% weapon damage and +40% ability power, but -25% max health."
+msgstr "+30% к урону оружия и +40% к силе способности, но -25% к макс. здоровью."
+
+msgctxt "term"
+msgid "Valuables you carry into an extraction give you 3% extra Scrap on top of your share."
+msgstr "Ценности, которые вы приносите в точку извлечения, дают вам ещё 3% лома сверх вашей доли."
+
+msgctxt "term"
+msgid "Hoarder"
+msgstr "Барахольщик"
+
+msgctxt "term"
+msgid "+2 gear luck, but your inventory holds 4 fewer items."
+msgstr "+2 к удаче снаряжения, но в инвентаре помещается на 4 предмета меньше."
+
+msgctxt "term"
+msgid "Hunter's Mark"
+msgstr "Метка охотника"
+
+msgctxt "term"
+msgid "Monsters you hit are Marked for 5 s: +5% damage from everyone."
+msgstr "Монстры, по которым вы попали, получают метку на 5 с: +5% урона от всех."
+
+msgctxt "term"
+msgid "Last Breath"
+msgstr "Последний вздох"
+
+msgctxt "term"
+msgid "+1 death save every level, but 15% less max health."
+msgstr "+1 спасение от смерти на каждом уровне, но макс. здоровье меньше на 15%."
+
+msgctxt "term"
+msgid "Loud Mouth"
+msgstr "Горлопан"
+
+msgctxt "term"
+msgid "+20% weapon damage, but your footsteps are 30% louder."
+msgstr "+20% к урону оружия, но ваши шаги на 30% громче."
+
+msgctxt "term"
+msgid "Overclocked"
+msgstr "Разогнанный"
+
+msgctxt "term"
+msgid "-25% ability cooldown and +25% ability duration."
+msgstr "-25% к перезарядке способности и +25% к её длительности."
+
+msgctxt "term"
+msgid "Paper Tiger"
+msgstr "Бумажный тигр"
+
+msgctxt "term"
+msgid "+40% ability power, but you take 20% more damage."
+msgstr "+40% к силе способности, но вы получаете на 20% больше урона."
+
+msgctxt "term"
+msgid "Monsters take 0.3 s longer to notice you."
+msgstr "Монстры замечают вас на 0.3 с позже."
+
+msgctxt "term"
+msgid "Second Chance"
+msgstr "Второй шанс"
+
+msgctxt "term"
+msgid "One extra death save every level."
+msgstr "Одно дополнительное спасение от смерти на каждом уровне."
+
+msgctxt "term"
+msgid "Adrenal Loop"
+msgstr "Адреналиновая петля"
+
+msgctxt "term"
+msgid "Each enemy that dies near you takes 6s off your ability cooldown."
+msgstr "Каждый враг, погибший рядом с вами, сокращает перезарядку способности на 6 с."
+
+msgctxt "term"
+msgid "Amplifier"
+msgstr "Усилитель"
+
+msgctxt "term"
+msgid "+50% ability power, but your ability takes 20% longer to recharge."
+msgstr "+50% к силе способности, но она перезаряжается на 20% дольше."
+
+msgctxt "term"
+msgid "Berserk"
+msgstr "Берсерк"
+
+msgctxt "term"
+msgid "Below 35% HP: +30% speed."
+msgstr "Ниже 35% ОЗ: +30% к скорости."
+
+msgctxt "term"
+msgid "Bounty Hunter"
+msgstr "Охотник за наградой"
+
+msgctxt "term"
+msgid "Elites have a 60% chance to drop a second piece of gear."
+msgstr "С элиты с шансом 60% выпадает второй предмет снаряжения."
+
+msgctxt "term"
+msgid "15% chance on hit to stun and 15% to make enemies bleed."
+msgstr "При попадании: 15% шанс оглушить и 15% шанс вызвать у врага кровотечение."
+
+msgctxt "term"
+msgid "Butterfingers Insurance"
+msgstr "Страховка растяпы"
+
+msgctxt "term"
+msgid "Once per level, the first value loss on a valuable you're holding costs nothing."
+msgstr "Раз за уровень первая потеря стоимости ценности, которую вы держите, ничего не стоит."
+
+msgctxt "term"
+msgid "Executioner"
+msgstr "Палач"
+
+msgctxt "term"
+msgid "+20% weapon damage and +25% kill XP, but take 10% more damage."
+msgstr "+20% к урону оружия и +25% опыта за убийства, но вы получаете на 10% больше урона."
+
+msgctxt "term"
+msgid "Guardian"
+msgstr "Хранитель"
+
+msgctxt "term"
+msgid "Allies within 8m regain 1 HP every 3s."
+msgstr "Союзники в пределах 8 м восстанавливают 1 ОЗ каждые 3 с."
+
+msgctxt "term"
+msgid "Iron Skin"
+msgstr "Железная кожа"
+
+msgctxt "term"
+msgid "Take 15% less damage, but move 8% slower."
+msgstr "Вы получаете на 15% меньше урона, но двигаетесь на 8% медленнее."
+
+msgctxt "term"
+msgid "Lifeline"
+msgstr "Спасательный трос"
+
+msgctxt "term"
+msgid "Allies revived near you get +15 HP, and you earn +50% revive XP."
+msgstr "Союзники, возрождённые рядом с вами, получают +15 ОЗ, а вы - +50% опыта за возрождение."
+
+msgctxt "term"
+msgid "Long Arm of the Law"
+msgstr "Длинная рука закона"
+
+msgctxt "term"
+msgid "Thrown items stun monsters they hit for 0.5 s."
+msgstr "Брошенные предметы оглушают монстров, в которых попали, на 0.5 с."
+
+msgctxt "term"
+msgid "Lucky"
+msgstr "Везунчик"
+
+msgctxt "term"
+msgid "+4 gear luck and +10% dodge chance."
+msgstr "+4 к удаче снаряжения и +10% к шансу уклонения."
+
+msgctxt "term"
+msgid "Overbuilt Hydraulics"
+msgstr "Усиленная гидравлика"
+
+msgctxt "term"
+msgid "+50% grab strength and +25% grab range."
+msgstr "+50% к силе захвата и +25% к дальности захвата."
+
+msgctxt "term"
+msgid "Quick Learner"
+msgstr "Способный ученик"
+
+msgctxt "term"
+msgid "+30% XP from everything."
+msgstr "+30% опыта от всего."
+
+msgctxt "term"
+msgid "Quiet Feet"
+msgstr "Тихие шаги"
+
+msgctxt "term"
+msgid "While crouched, you're as quiet as stealth allows (the host's noise cap, 40% by default)."
+msgstr "В приседе вы настолько тихи, насколько позволяет скрытность (предел шума, заданный хостом, по умолчанию 40%)."
+
+msgctxt "term"
+msgid "Shadowstep"
+msgstr "Шаг в тень"
+
+msgctxt "term"
+msgid "Move fast while crouched and slip more hits."
+msgstr "Быстро двигайтесь в приседе и чаще уклоняйтесь от ударов."
+
+msgctxt "term"
+msgid "Team Spirit"
+msgstr "Командный дух"
+
+msgctxt "term"
+msgid "+5% move speed while a teammate is within 6 m."
+msgstr "+5% к скорости движения, пока напарник в пределах 6 м."
+
+msgctxt "term"
+msgid "Treasure Hunter"
+msgstr "Охотник за сокровищами"
+
+msgctxt "term"
+msgid "More XP from extractions, more gear finds and better gear luck."
+msgstr "Больше опыта за извлечения, чаще находки снаряжения и выше удача снаряжения."
+
+msgctxt "term"
+msgid "Vampire"
+msgstr "Вампир"
+
+msgctxt "term"
+msgid "Weapon hits heal 2 HP; enemies dying near you heal 5 HP."
+msgstr "Попадания из оружия лечат на 2 ОЗ; враги, погибающие рядом с вами, лечат на 5 ОЗ."
+
+msgctxt "term"
+msgid "Adrenaline"
+msgstr "Адреналин"
+
+msgctxt "term"
+msgid "Below 35% HP you move much faster; take a little less damage."
+msgstr "Ниже 35% ОЗ вы двигаетесь намного быстрее и получаете чуть меньше урона."
+
+msgctxt "term"
+msgid "Big Battery"
+msgstr "Большая батарея"
+
+msgctxt "term"
+msgid "+50% max stamina (a bigger tank: sprinting still costs the same per second) and +1 stamina/s regen while recharging."
+msgstr "+50% к макс. выносливости (запас больше, но бег стоит столько же в секунду) и +1 к восстановлению выносливости в секунду, пока она восстанавливается."
+
+msgctxt "term"
+msgid "Heal 15 HP whenever an extraction point completes."
+msgstr "Лечит 15 ОЗ при завершении каждой точки извлечения."
+
+msgctxt "term"
+msgid "Haggler"
+msgstr "Торгаш"
+
+msgctxt "term"
+msgid "Mod shop items cost 30% less."
+msgstr "Товары в магазине мода стоят на 30% дешевле."
+
+msgctxt "term"
+msgid "Marathon"
+msgstr "Марафон"
+
+msgctxt "term"
+msgid "Sprinting costs 40% less stamina and stamina regenerates 2/s faster."
+msgstr "Бег тратит на 40% меньше выносливости, а она восстанавливается на 2/с быстрее."
+
+msgctxt "term"
+msgid "Pack Mule"
+msgstr "Вьючный мул"
+
+msgctxt "term"
+msgid "Carrying loot barely tires you, and you grip harder."
+msgstr "Переноска добычи почти не утомляет вас, и хват у вас крепче."
+
+msgctxt "term"
+msgid "+40% chance to find gear when an extraction point completes."
+msgstr "+40% к шансу найти снаряжение при завершении точки извлечения."
+
+msgctxt "term"
+msgid "Sixth Sense"
+msgstr "Шестое чувство"
+
+msgctxt "term"
+msgid "Your HUD warns of enemies within 18m."
+msgstr "HUD предупреждает о врагах в пределах 18 м."
+
+msgctxt "term"
+msgid "Springheel"
+msgstr "Пружинистые пятки"
+
+msgctxt "term"
+msgid "+1 extra jump and +20% jump force."
+msgstr "+1 дополнительный прыжок и +20% к силе прыжка."
+
+msgctxt "term"
+msgid "Tough as Nails"
+msgstr "Крепкий орешек"
+
+msgctxt "term"
+msgid "+30% max health, but sprint 10% slower."
+msgstr "+30% к макс. здоровью, но бег на 10% медленнее."
+
+msgctxt "term"
+msgid "Wide Reach"
+msgstr "Широкий охват"
+
+msgctxt "term"
+msgid "Your ability reaches further and lasts longer."
+msgstr "Ваша способность действует дальше и дольше."
+
+msgctxt "term"
+msgid "Madame Brass"
+msgstr "Мадам Брасс"
+
+msgctxt "term"
+msgid "Kaboom & Sons"
+msgstr "Бабах и сыновья"
+
+msgctxt "term"
+msgid "Hollis Underwood"
+msgstr "Холлис Андервуд"
+
+msgctxt "term"
+msgid "The Auditor"
+msgstr "Аудитор"
+
+msgctxt "term"
+msgid "Big Ticket"
+msgstr "Крупный куш"
+
+msgctxt "term"
+msgid "Carry out $8 000 of valuables"
+msgstr "Вынесите ценностей на $8 000"
+
+msgctxt "term"
+msgid "Kill 1 elite"
+msgstr "Убейте элитных врагов: 1"
+
+msgctxt "term"
+msgid "Clean Delivery"
+msgstr "Чистая доставка"
+
+msgctxt "term"
+msgid "Carry 3 valuables into extractions without them losing value"
+msgstr "Донесите до точек извлечения ценностей без потери стоимости: 3"
+
+msgctxt "term"
+msgid "Haul"
+msgstr "Добыча"
+
+msgctxt "term"
+msgid "Complete 3 extraction points (fewer if the level has fewer)"
+msgstr "Завершите точек извлечения: 3 (меньше, если на уровне их меньше)"
+
+msgctxt "term"
+msgid "Speedrun"
+msgstr "Спидран"
+
+msgctxt "term"
+msgid "Finish the level within 10 min"
+msgstr "Пройдите уровень за 10 мин"
+
+msgctxt "term"
+msgid "The Brass Collection"
+msgstr "Коллекция Брасс"
+
+msgctxt "term"
+msgid "Demolition Derby"
+msgstr "Дерби разрушений"
+
+msgctxt "term"
+msgid "Policy Review"
+msgstr "Проверка полиса"
+
+msgctxt "term"
+msgid "Rush Order"
+msgstr "Срочный заказ"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -11467,6 +14145,278 @@ msgstr "{0} ({1:0} FPS за первую минуту)"
 msgctxt "pattern"
 msgid "Auto: picked {0} ({1:0} FPS in the first minute)."
 msgstr "Авто: выбрано - {0} ({1:0} FPS за первую минуту)."
+
+msgctxt "pattern"
+msgid "+{0}% max health. Allies within {1}m of you take {2}% less damage."
+msgstr "+{0}% к макс. здоровью. Союзники в пределах {1} м от вас получают на {2}% меньше урона."
+
+msgctxt "pattern"
+msgid "Take {0}% less damage, but sprint {1}% slower."
+msgstr "Вы получаете на {0}% меньше урона, но бегаете на {1}% медленнее."
+
+msgctxt "pattern"
+msgid "Lock your plating: take {0}% less damage for {1}s, and your Shield Wall protects allies {2}% more."
+msgstr "Зафиксируйте броню: на {1} с вы получаете на {0}% меньше урона, а «Стена щитов» защищает союзников на {2}% сильнее."
+
+msgctxt "pattern"
+msgid "Rare or better valuables you appraise gain an extra {0}% value; +{1}% extraction XP and +{2}% level-complete XP."
+msgstr "Оценённые вами ценности редкости «редкое» и выше получают ещё {0}% стоимости; +{1}% опыта за извлечение и +{2}% опыта за прохождение уровня."
+
+msgctxt "pattern"
+msgid "Valuables within {0}m of you are appraised automatically (even through walls): each one's value rises {1}%, once per item. +{2}% grab range."
+msgstr "Ценности в пределах {0} м от вас оцениваются автоматически (даже сквозь стены): стоимость каждой растёт на {1}%, один раз на предмет. +{2}% к дальности захвата."
+
+msgctxt "pattern"
+msgid "For {0}s, your HUD tracks the {1} most valuable items within {2}m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
+msgstr "В течение {0} с HUD отслеживает {1} самых ценных предмета в пределах {2} м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
+
+msgctxt "pattern"
+msgid "Once per level, a lethal hit leaves you at {0} HP with {1}s of invulnerability."
+msgstr "Раз за уровень смертельный удар оставляет вас с {0} ОЗ и даёт {1} с неуязвимости."
+
+msgctxt "pattern"
+msgid "carried items take {0}% less damage"
+msgstr "переносимые предметы получают на {0}% меньше урона"
+
+msgctxt "pattern"
+msgid "carrying drains {0}% less stamina"
+msgstr "переноска тратит на {0}% меньше выносливости"
+
+msgctxt "pattern"
+msgid "+{0}% throw strength"
+msgstr "+{0}% к силе броска"
+
+msgctxt "pattern"
+msgid "thrown valuables can't break for {0} s"
+msgstr "брошенные ценности не могут разбиться в течение {0} с"
+
+msgctxt "pattern"
+msgid "{0}% less noise while crouched"
+msgstr "на {0}% меньше шума в приседе"
+
+msgctxt "pattern"
+msgid "monsters notice you {0} s later"
+msgstr "монстры замечают вас на {0} с позже"
+
+msgctxt "pattern"
+msgid "your heals on teammates +{0}%"
+msgstr "ваше лечение напарников +{0}%"
+
+msgctxt "pattern"
+msgid "teammates within {0} m take {1}% less damage"
+msgstr "напарники в пределах {0} м получают на {1}% меньше урона"
+
+msgctxt "pattern"
+msgid "+{0}% Scrap share"
+msgstr "+{0}% к доле лома"
+
+msgctxt "pattern"
+msgid "+{0} gear luck"
+msgstr "+{0} к удаче снаряжения"
+
+msgctxt "pattern"
+msgid "+{0}% weapon damage to elites"
+msgstr "+{0}% к урону оружия по элите"
+
+msgctxt "pattern"
+msgid "elite kills refund {0}% of your ability cooldown"
+msgstr "убийство элиты возвращает {0}% перезарядки способности"
+
+msgctxt "pattern"
+msgid "death saves give +{0}% speed for {1} s"
+msgstr "спасение от смерти даёт +{0}% к скорости на {1} с"
+
+msgctxt "pattern"
+msgid "below {0}% health, +{1}% weapon damage"
+msgstr "при здоровье ниже {0}%: +{1}% к урону оружия"
+
+msgctxt "pattern"
+msgid "{0}% cooldown reduction"
+msgstr "перезарядка короче на {0}%"
+
+msgctxt "pattern"
+msgid "with {0}+ ability charges, they refill {1}% faster (inside the cooldown cap)"
+msgstr "при {0}+ зарядах способности они восполняются на {1}% быстрее (в рамках предела перезарядки)"
+
+msgctxt "pattern"
+msgid "+{0} stamina/s regen (while recharging)"
+msgstr "+{0} к восстановлению выносливости в секунду (пока она восстанавливается)"
+
+msgctxt "pattern"
+msgid "+{0}% max stamina"
+msgstr "+{0}% к макс. выносливости"
+
+msgctxt "pattern"
+msgid "Using your ability refills {0}% stamina."
+msgstr "Применение способности восполняет {0}% выносливости."
+
+msgctxt "pattern"
+msgid "+{0}% Scrap share, but you lose {1} HP at every extraction."
+msgstr "+{0}% к доле лома, но при каждом извлечении вы теряете {1} ОЗ."
+
+msgctxt "pattern"
+msgid "+{0}% throw strength, but you drop what you're holding when hit."
+msgstr "+{0}% к силе броска, но при получении удара вы роняете то, что держите."
+
+msgctxt "pattern"
+msgid "Your ability holds {0} charges."
+msgstr "Ваша способность хранит зарядов: {0}."
+
+msgctxt "pattern"
+msgid "+{0}% weapon damage and +{1}% ability power, but -{2}% max health."
+msgstr "+{0}% к урону оружия и +{1}% к силе способности, но -{2}% к макс. здоровью."
+
+msgctxt "pattern"
+msgid "Valuables you carry into an extraction give you {0}% extra Scrap on top of your share."
+msgstr "Ценности, которые вы приносите в точку извлечения, дают вам ещё {0}% лома сверх вашей доли."
+
+msgctxt "pattern"
+msgid "+{0} gear luck, but your inventory holds {1} fewer items."
+msgstr "+{0} к удаче снаряжения, но в инвентаре помещается на {1} предмета меньше."
+
+msgctxt "pattern"
+msgid "Monsters you hit are Marked for {0} s: +{1}% damage from everyone."
+msgstr "Монстры, по которым вы попали, получают метку на {0} с: +{1}% урона от всех."
+
+msgctxt "pattern"
+msgid "+{0} death save every level, but {1}% less max health."
+msgstr "+{0} спасение от смерти на каждом уровне, но макс. здоровье меньше на {1}%."
+
+msgctxt "pattern"
+msgid "+{0}% weapon damage, but your footsteps are {1}% louder."
+msgstr "+{0}% к урону оружия, но ваши шаги на {1}% громче."
+
+msgctxt "pattern"
+msgid "-{0}% ability cooldown and +{1}% ability duration."
+msgstr "-{0}% к перезарядке способности и +{1}% к её длительности."
+
+msgctxt "pattern"
+msgid "+{0}% ability power, but you take {1}% more damage."
+msgstr "+{0}% к силе способности, но вы получаете на {1}% больше урона."
+
+msgctxt "pattern"
+msgid "Monsters take {0} s longer to notice you."
+msgstr "Монстры замечают вас на {0} с позже."
+
+msgctxt "pattern"
+msgid "Each enemy that dies near you takes {0}s off your ability cooldown."
+msgstr "Каждый враг, погибший рядом с вами, сокращает перезарядку способности на {0} с."
+
+msgctxt "pattern"
+msgid "+{0}% ability power, but your ability takes {1}% longer to recharge."
+msgstr "+{0}% к силе способности, но она перезаряжается на {1}% дольше."
+
+msgctxt "pattern"
+msgid "Below {0}% HP: +{1}% speed."
+msgstr "Ниже {0}% ОЗ: +{1}% к скорости."
+
+msgctxt "pattern"
+msgid "Elites have a {0}% chance to drop a second piece of gear."
+msgstr "С элиты с шансом {0}% выпадает второй предмет снаряжения."
+
+msgctxt "pattern"
+msgid "{0}% chance on hit to stun and {1}% to make enemies bleed."
+msgstr "При попадании: {0}% шанс оглушить и {1}% шанс вызвать у врага кровотечение."
+
+msgctxt "pattern"
+msgid "+{0}% weapon damage and +{1}% kill XP, but take {2}% more damage."
+msgstr "+{0}% к урону оружия и +{1}% опыта за убийства, но вы получаете на {2}% больше урона."
+
+msgctxt "pattern"
+msgid "Allies within {0}m regain {1} HP every {2}s."
+msgstr "Союзники в пределах {0} м восстанавливают {1} ОЗ каждые {2} с."
+
+msgctxt "pattern"
+msgid "Take {0}% less damage, but move {1}% slower."
+msgstr "Вы получаете на {0}% меньше урона, но двигаетесь на {1}% медленнее."
+
+msgctxt "pattern"
+msgid "Allies revived near you get +{0} HP, and you earn +{1}% revive XP."
+msgstr "Союзники, возрождённые рядом с вами, получают +{0} ОЗ, а вы - +{1}% опыта за возрождение."
+
+msgctxt "pattern"
+msgid "Thrown items stun monsters they hit for {0} s."
+msgstr "Брошенные предметы оглушают монстров, в которых попали, на {0} с."
+
+msgctxt "pattern"
+msgid "+{0} gear luck and +{1}% dodge chance."
+msgstr "+{0} к удаче снаряжения и +{1}% к шансу уклонения."
+
+msgctxt "pattern"
+msgid "+{0}% grab strength and +{1}% grab range."
+msgstr "+{0}% к силе захвата и +{1}% к дальности захвата."
+
+msgctxt "pattern"
+msgid "+{0}% XP from everything."
+msgstr "+{0}% опыта от всего."
+
+msgctxt "pattern"
+msgid "While crouched, you're as quiet as stealth allows (the host's noise cap, {0}% by default)."
+msgstr "В приседе вы настолько тихи, насколько позволяет скрытность (предел шума, заданный хостом, по умолчанию {0}%)."
+
+msgctxt "pattern"
+msgid "+{0}% move speed while a teammate is within {1} m."
+msgstr "+{0}% к скорости движения, пока напарник в пределах {1} м."
+
+msgctxt "pattern"
+msgid "Weapon hits heal {0} HP; enemies dying near you heal {1} HP."
+msgstr "Попадания из оружия лечат на {0} ОЗ; враги, погибающие рядом с вами, лечат на {1} ОЗ."
+
+msgctxt "pattern"
+msgid "Below {0}% HP you move much faster; take a little less damage."
+msgstr "Ниже {0}% ОЗ вы двигаетесь намного быстрее и получаете чуть меньше урона."
+
+msgctxt "pattern"
+msgid "+{0}% max stamina (a bigger tank: sprinting still costs the same per second) and +{1} stamina/s regen while recharging."
+msgstr "+{0}% к макс. выносливости (запас больше, но бег стоит столько же в секунду) и +{1} к восстановлению выносливости в секунду, пока она восстанавливается."
+
+msgctxt "pattern"
+msgid "Heal {0} HP whenever an extraction point completes."
+msgstr "Лечит {0} ОЗ при завершении каждой точки извлечения."
+
+msgctxt "pattern"
+msgid "Mod shop items cost {0}% less."
+msgstr "Товары в магазине мода стоят на {0}% дешевле."
+
+msgctxt "pattern"
+msgid "Sprinting costs {0}% less stamina and stamina regenerates {1}/s faster."
+msgstr "Бег тратит на {0}% меньше выносливости, а она восстанавливается на {1}/с быстрее."
+
+msgctxt "pattern"
+msgid "+{0}% chance to find gear when an extraction point completes."
+msgstr "+{0}% к шансу найти снаряжение при завершении точки извлечения."
+
+msgctxt "pattern"
+msgid "Your HUD warns of enemies within {0}m."
+msgstr "HUD предупреждает о врагах в пределах {0} м."
+
+msgctxt "pattern"
+msgid "+{0} extra jump and +{1}% jump force."
+msgstr "+{0} дополнительный прыжок и +{1}% к силе прыжка."
+
+msgctxt "pattern"
+msgid "+{0}% max health, but sprint {1}% slower."
+msgstr "+{0}% к макс. здоровью, но бег на {1}% медленнее."
+
+msgctxt "pattern"
+msgid "Carry out ${0} of valuables"
+msgstr "Вынесите ценностей на ${0}"
+
+msgctxt "pattern"
+msgid "Kill {0} elite"
+msgstr "Убейте элитных врагов: {0}"
+
+msgctxt "pattern"
+msgid "Carry {0} valuables into extractions without them losing value"
+msgstr "Донесите до точек извлечения ценностей без потери стоимости: {0}"
+
+msgctxt "pattern"
+msgid "Complete {0} extraction points (fewer if the level has fewer)"
+msgstr "Завершите точек извлечения: {0} (меньше, если на уровне их меньше)"
+
+msgctxt "pattern"
+msgid "Finish the level within {0} min"
+msgstr "Пройдите уровень за {0} мин"
 
 msgctxt "@AttributeAlloc::Validate#4673"
 msgid "unknown attribute ("
@@ -17039,6 +19989,278 @@ msgstr "0"
 msgctxt "numbers"
 msgid "RepoRPG: this game version changed something - off: {0} and {1} more. See the log."
 msgstr "1"
+
+msgctxt "numbers"
+msgid "+{0}% max health. Allies within {1}m of you take {2}% less damage."
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Take {0}% less damage, but sprint {1}% slower."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Lock your plating: take {0}% less damage for {1}s, and your Shield Wall protects allies {2}% more."
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Rare or better valuables you appraise gain an extra {0}% value; +{1}% extraction XP and +{2}% level-complete XP."
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Valuables within {0}m of you are appraised automatically (even through walls): each one's value rises {1}%, once per item. +{2}% grab range."
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "For {0}s, your HUD tracks the {1} most valuable items within {2}m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Once per level, a lethal hit leaves you at {0} HP with {1}s of invulnerability."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "carried items take {0}% less damage"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "carrying drains {0}% less stamina"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0}% throw strength"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "thrown valuables can't break for {0} s"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% less noise while crouched"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "monsters notice you {0} s later"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "your heals on teammates +{0}%"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "teammates within {0} m take {1}% less damage"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% Scrap share"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} gear luck"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0}% weapon damage to elites"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "elite kills refund {0}% of your ability cooldown"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "death saves give +{0}% speed for {1} s"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "below {0}% health, +{1}% weapon damage"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "{0}% cooldown reduction"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "with {0}+ ability charges, they refill {1}% faster (inside the cooldown cap)"
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0} stamina/s regen (while recharging)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0}% max stamina"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Using your ability refills {0}% stamina."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0}% Scrap share, but you lose {1} HP at every extraction."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% throw strength, but you drop what you're holding when hit."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Your ability holds {0} charges."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0}% weapon damage and +{1}% ability power, but -{2}% max health."
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Valuables you carry into an extraction give you {0}% extra Scrap on top of your share."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} gear luck, but your inventory holds {1} fewer items."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Monsters you hit are Marked for {0} s: +{1}% damage from everyone."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0} death save every level, but {1}% less max health."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% weapon damage, but your footsteps are {1}% louder."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "-{0}% ability cooldown and +{1}% ability duration."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% ability power, but you take {1}% more damage."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Monsters take {0} s longer to notice you."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Each enemy that dies near you takes {0}s off your ability cooldown."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0}% ability power, but your ability takes {1}% longer to recharge."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Below {0}% HP: +{1}% speed."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Elites have a {0}% chance to drop a second piece of gear."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}% chance on hit to stun and {1}% to make enemies bleed."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% weapon damage and +{1}% kill XP, but take {2}% more damage."
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Allies within {0}m regain {1} HP every {2}s."
+msgstr "0,1,2"
+
+msgctxt "numbers"
+msgid "Take {0}% less damage, but move {1}% slower."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Allies revived near you get +{0} HP, and you earn +{1}% revive XP."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Thrown items stun monsters they hit for {0} s."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} gear luck and +{1}% dodge chance."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% grab strength and +{1}% grab range."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% XP from everything."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "While crouched, you're as quiet as stealth allows (the host's noise cap, {0}% by default)."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0}% move speed while a teammate is within {1} m."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Weapon hits heal {0} HP; enemies dying near you heal {1} HP."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Below {0}% HP you move much faster; take a little less damage."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0}% max stamina (a bigger tank: sprinting still costs the same per second) and +{1} stamina/s regen while recharging."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Heal {0} HP whenever an extraction point completes."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Mod shop items cost {0}% less."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Sprinting costs {0}% less stamina and stamina regenerates {1}/s faster."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% chance to find gear when an extraction point completes."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Your HUD warns of enemies within {0}m."
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} extra jump and +{1}% jump force."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "+{0}% max health, but sprint {1}% slower."
+msgstr "0,1"
+
+msgctxt "numbers"
+msgid "Carry out ${0} of valuables"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Kill {0} elite"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Carry {0} valuables into extractions without them losing value"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Complete {0} extraction points (fewer if the level has fewer)"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Finish the level within {0} min"
+msgstr "0"
 
 msgctxt "words"
 msgid "{0} joined {1}"

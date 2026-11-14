@@ -1,0 +1,303 @@
+# Тексты из встроенных данных мода, переведённые по списку untranslated.txt из игры (то, что игрок реально видел).
+# +data: точный текст и та же фраза с числами-заполнителями (числа зависят от настроек; перед измерением ширины мод
+# заменяет цифры нулями). Имена даны в обычном написании: ПРОПИСНЫЕ варианты узнаются сами.
+# Полный перевод данных появится, когда будут сами данные (папка dump).
+# Справка: темы и вводное обучение
++data	Getting Started	С чего начать
++data	Classes	Классы
++data	Grappler's Hook	Крюк Крючника
++data	Gunsmith's Field Charger	Полевой зарядник Оружейника
++data	Leveling & XP	Уровни и опыт
++data	My Stats	Мои показатели
++data	Elemental Weapons	Стихийное оружие
++data	The Market	Рынок
++data	Crafting & Modules	Крафт и модули
++data	Scrap & the Shop	Лом и магазин
++data	Givers & Reputation	Заказчики и репутация
++data	Team Contracts	Командные контракты
++data	Elites & Bosses	Элита и боссы
++data	Death Saves	Спасения от смерти
++data	Saving & Runs	Сохранения и забеги
++data	Account & Unlocks	Аккаунт и открытия
++data	Mastery & Prestige	Мастерство и престиж
++data	Joining Late	Позднее подключение
++data	Deeper in the run	В глубине забега
++data	Big Lobbies	Большие лобби
++data	Controls	Управление
++data	HUD Guide	Справка по HUD
++data	Glossary	Словарь
++data	Welcome to RepoRPG	Добро пожаловать в RepoRPG
++data	RepoRPG turns each run into a small RPG: you pick a class, level it up and spend what you earn between levels.	RepoRPG превращает каждый забег в маленькую RPG: вы выбираете класс, прокачиваете его и тратите заработанное между уровнями.
++term	Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything.	Каждый забег становится маленькой RPG: вы выбираете класс, прокачиваете его, собираете снаряжение и перки. Когда забег заканчивается, всё начинается заново.\n\nЭто обучение - 5 коротких панелей. Его можно пропустить в любой момент: всё есть на вкладке «Справка».
+# Классы
++data	Juggernaut	Джаггернаут
++data	Brute	Громила
++data	Survivor	Выживший
++data	Bloodbound	Кровник
++data	Engineer	Инженер
++data	Warden	Страж
++data	Phantom	Фантом
++data	Scout	Разведчик
++data	Hauler	Носильщик
+# Таланты: Джаггернаут
++data	Shield Wall	Стена щитов
++data	Heavy Frame	Тяжёлый каркас
++data	Iron Wall	Железная стена
++data	Thick Plating	Толстая броня
++data	Impact Dampers	Амортизаторы ударов
++data	Overbuilt	Усиленная конструкция
++data	Hardened Core	Закалённое ядро
++data	Immovable Object	Несокрушимая преграда
++data	Wide Stance	Широкая стойка
++data	Protector	Защитник
++data	Rallying Wall	Сплачивающая стена
++data	Interpose	Заслон
++data	Living Fortress	Живая крепость
++data	Quick Lock	Быстрая фиксация
++data	Reinforced Wall	Укреплённая стена
++data	Seismic Lock	Сейсмическая фиксация
++data	Stalwart	Стойкий
++data	Citadel	Цитадель
++data	+40% max health. Allies within 5m of you take 10% less damage.	+40% к макс. здоровью. Союзники в пределах 5 м от вас получают на 10% меньше урона.
++data	Take 15% less damage, but sprint 10% slower.	Вы получаете на 15% меньше урона, но бегаете на 10% медленнее.
++data	Lock your plating: take 60% less damage for 6s, and your Shield Wall protects allies 15% more.	Зафиксируйте броню: на 6 с вы получаете на 60% меньше урона, а «Стена щитов» защищает союзников на 15% сильнее.
+# Таланты: Гробовщик
++data	Pallbearer	Носильщик гроба
++data	Last Rites	Последние почести
++data	Reboot	Перезагрузка
++data	Steady Hands	Твёрдые руки
++data	Grave Sense	Могильное чутьё
++data	Sure Grip	Надёжный хват
++data	Shroud	Саван
++data	Ferryman	Паромщик
++data	Defibrillate	Дефибрилляция
++data	Wide Rites	Широкие почести
++data	Long Reach	Дальний захват
++data	Mass Resurrection	Массовое воскрешение
++data	Adrenal Wake	Адреналиновое пробуждение
++data	Fresh Legs	Свежие ноги
++data	Grace Period	Отсрочка
++data	Undying Crew	Бессмертная команда
+# Таланты: Оценщик
++data	Keen Eye	Острый глаз
++data	Appraiser's Eye	Глаз оценщика
++data	Appraisal Scan	Оценочное сканирование
++data	Price Tag	Ценник
++data	Wide Appraisal	Широкая оценка
++data	Connoisseur	Знаток
++data	Market Sense	Чутьё рынка
++data	Golden Eye	Золотой глаз
++data	Commission	Комиссия
++data	Lucky Find	Удачная находка
++data	Insider Deal	Сделка для своих
++data	Deep Scan	Глубокое сканирование
++data	Long Range	Дальний радиус
++data	Lingering Data	Долгая память
++data	Rapid Survey	Быстрый осмотр
++data	Omniscience	Всеведение
++data	Rare or better valuables you appraise gain an extra 10% value; +20% extraction XP and +15% level-complete XP.	Оценённые вами ценности редкости «редкое» и выше получают ещё 10% стоимости; +20% опыта за извлечение и +15% опыта за прохождение уровня.
++data	Valuables within 8m of you are appraised automatically (even through walls): each one's value rises 10%, once per item. +15% grab range.	Ценности в пределах 8 м от вас оцениваются автоматически (даже сквозь стены): стоимость каждой растёт на 10%, один раз на предмет. +15% к дальности захвата.
++data	For 12s, your HUD tracks the 3 most valuable items within 40m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best.	В течение 12 с HUD отслеживает 3 самых ценных предмета в пределах 40 м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности.
+# Таланты: Интендант
++data	Bulk Buyer	Оптовый покупатель
++data	Supply Line	Линия снабжения
++data	Coupons	Купоны
++data	Scrap Sense	Чутьё на лом
++data	Refund Policy	Правила возврата
++data	Clearance	Распродажа
++data	Supplier	Поставщик
++data	Fast Charge	Быстрая зарядка
++data	Efficient Cells	Экономичные элементы
++data	Field Charger	Полевой зарядник
++data	Overcharge	Перезаряд
++data	Infinite Cells	Бесконечные элементы
++data	Topped Up	Под завязку
++data	Wide Net	Широкая сеть
++data	Long Arm	Длинная рука
++data	Rations	Пайки
+# Таланты: Дозорный
++data	Spotter	Наводчик
++data	Exposed	Разоблачение
++data	Watchpost	Сторожевой пост
++data	Binoculars	Бинокль
++data	Call-outs	Оповещения
++data	Binoculars II	Бинокль II
++data	Call-outs II	Оповещения II
++data	Hawkeye	Соколиный глаз
++data	Batteries	Батареи
++data	Wide Angle	Широкий угол
++data	Quick Mount	Быстрая установка
++data	Spare Sensor	Запасной датчик
++data	Tripwire Flash	Вспышка-растяжка
++data	Cover	Прикрытие
++data	Fast Hands	Ловкие руки
++data	Cover II	Прикрытие II
++data	Long Watch	Долгая вахта
++data	Sentry Network	Сеть постов
+# Таланты: Страж
++data	Sentinel Sense	Чутьё стража
++data	Steadfast	Непоколебимый
++data	Stasis Field	Стазисное поле
++data	Keen Sensors	Чуткие датчики
++data	Elite Tracker	Охотник на элиту
++data	Vigil	Бдение
++data	All-Seeing	Всевидящий
++data	Lasting Mark	Стойкая метка
++data	Reprisal	Возмездие
++data	Condemn	Осуждение
++data	Warden's Resolve	Решимость стража
++data	Sentence	Приговор
++data	Long Freeze	Долгая заморозка
++data	Wide Field	Широкое поле
++data	Recharge	Перезарядка
++data	Time Lock	Временной замок
+# Таланты: Выживший
++data	Scar Tissue	Рубцовая ткань
++data	Emergency Patch	Экстренная заплатка
++data	Self-Repair	Самовосстановление
++data	Thick Scars	Толстые шрамы
++data	Hard Lessons	Суровые уроки
++data	Old Wounds	Старые раны
++data	Battle-Scarred	Закалённый в боях
++data	Grit	Упорство
++data	Rally	Подъём
++data	Never Quit	Не сдаваться
++data	Cockroach	Таракан
++data	Strong Dose	Сильная доза
++data	Slow Release	Медленное действие
++data	Quick Patch	Быстрая заплатка
++data	Field Dressing	Полевая перевязка
++data	Phoenix Protocol	Протокол «Феникс»
++data	Once per level, a lethal hit leaves you at 1 HP with 2.5s of invulnerability.	Раз за уровень смертельный удар оставляет вас с 1 ОЗ и даёт 2.5 с неуязвимости.
+# Характеристики
++data	Throw Strength	Сила броска
++data	Weapon Damage	Урон оружия
++data	Focus	Концентрация
++data	Vitality	Живучесть
++data	Endurance	Выносливость
++data	Agility	Ловкость
++data	Leap	Прыжок
++data	Grip Strength	Сила хвата
++data	Reach	Досягаемость
++data	Finesse	Аккуратность
++data	Fortune	Удача
++data	Weapon	Оружие
++data	Grip	Хват
++data	carried items take 8% less damage	переносимые предметы получают на 8% меньше урона
++data	carrying drains 25% less stamina	переноска тратит на 25% меньше выносливости
++data	+5% throw strength	+5% к силе броска
++data	thrown valuables can't break for 1 s	брошенные ценности не могут разбиться в течение 1 с
++data	10% less noise while crouched	на 10% меньше шума в приседе
++data	monsters notice you 0.5 s later	монстры замечают вас на 0.5 с позже
++data	your heals on teammates +10%	ваше лечение напарников +10%
++data	teammates within 6 m take 5% less damage	напарники в пределах 6 м получают на 5% меньше урона
++data	+3% Scrap share	+3% к доле лома
++data	+1 gear luck	+1 к удаче снаряжения
++data	+5% weapon damage to elites	+5% к урону оружия по элите
++data	elite kills refund 20% of your ability cooldown	убийство элиты возвращает 20% перезарядки способности
++data	death saves give +20% speed for 3 s	спасение от смерти даёт +20% к скорости на 3 с
++data	below 25% health, +10% weapon damage	при здоровье ниже 25%: +10% к урону оружия
++data	5% cooldown reduction	перезарядка короче на 5%
++data	with 2+ ability charges, they refill 10% faster (inside the cooldown cap)	при 2+ зарядах способности они восполняются на 10% быстрее (в рамках предела перезарядки)
++data	+5 stamina/s regen (while recharging)	+5 к восстановлению выносливости в секунду (пока она восстанавливается)
++data	+10% max stamina	+10% к макс. выносливости
+# Перки
++data	Afterburner	Дожиг
++data	Using your ability refills 20% stamina.	Применение способности восполняет 20% выносливости.
++data	Blood Money	Кровавые деньги
++data	+25% Scrap share, but you lose 5 HP at every extraction.	+25% к доле лома, но при каждом извлечении вы теряете 5 ОЗ.
++data	+30% throw strength, but you drop what you're holding when hit.	+30% к силе броска, но при получении удара вы роняете то, что держите.
++data	Double Charge	Двойной заряд
++data	Your ability holds 2 charges.	Ваша способность хранит зарядов: 2.
++data	+30% weapon damage and +40% ability power, but -25% max health.	+30% к урону оружия и +40% к силе способности, но -25% к макс. здоровью.
++data	Valuables you carry into an extraction give you 3% extra Scrap on top of your share.	Ценности, которые вы приносите в точку извлечения, дают вам ещё 3% лома сверх вашей доли.
++data	Hoarder	Барахольщик
++data	+2 gear luck, but your inventory holds 4 fewer items.	+2 к удаче снаряжения, но в инвентаре помещается на 4 предмета меньше.
++data	Hunter's Mark	Метка охотника
++data	Monsters you hit are Marked for 5 s: +5% damage from everyone.	Монстры, по которым вы попали, получают метку на 5 с: +5% урона от всех.
++data	Last Breath	Последний вздох
++data	+1 death save every level, but 15% less max health.	+1 спасение от смерти на каждом уровне, но макс. здоровье меньше на 15%.
++data	Loud Mouth	Горлопан
++data	+20% weapon damage, but your footsteps are 30% louder.	+20% к урону оружия, но ваши шаги на 30% громче.
++data	Overclocked	Разогнанный
++data	-25% ability cooldown and +25% ability duration.	-25% к перезарядке способности и +25% к её длительности.
++data	Paper Tiger	Бумажный тигр
++data	+40% ability power, but you take 20% more damage.	+40% к силе способности, но вы получаете на 20% больше урона.
++data	Monsters take 0.3 s longer to notice you.	Монстры замечают вас на 0.3 с позже.
++data	Second Chance	Второй шанс
++data	One extra death save every level.	Одно дополнительное спасение от смерти на каждом уровне.
++data	Adrenal Loop	Адреналиновая петля
++data	Each enemy that dies near you takes 6s off your ability cooldown.	Каждый враг, погибший рядом с вами, сокращает перезарядку способности на 6 с.
++data	Amplifier	Усилитель
++data	+50% ability power, but your ability takes 20% longer to recharge.	+50% к силе способности, но она перезаряжается на 20% дольше.
++data	Berserk	Берсерк
++data	Below 35% HP: +30% speed.	Ниже 35% ОЗ: +30% к скорости.
++data	Bounty Hunter	Охотник за наградой
++data	Elites have a 60% chance to drop a second piece of gear.	С элиты с шансом 60% выпадает второй предмет снаряжения.
++data	15% chance on hit to stun and 15% to make enemies bleed.	При попадании: 15% шанс оглушить и 15% шанс вызвать у врага кровотечение.
++data	Butterfingers Insurance	Страховка растяпы
++data	Once per level, the first value loss on a valuable you're holding costs nothing.	Раз за уровень первая потеря стоимости ценности, которую вы держите, ничего не стоит.
++data	Executioner	Палач
++data	+20% weapon damage and +25% kill XP, but take 10% more damage.	+20% к урону оружия и +25% опыта за убийства, но вы получаете на 10% больше урона.
++data	Guardian	Хранитель
++data	Allies within 8m regain 1 HP every 3s.	Союзники в пределах 8 м восстанавливают 1 ОЗ каждые 3 с.
++data	Iron Skin	Железная кожа
++data	Take 15% less damage, but move 8% slower.	Вы получаете на 15% меньше урона, но двигаетесь на 8% медленнее.
++data	Lifeline	Спасательный трос
++data	Allies revived near you get +15 HP, and you earn +50% revive XP.	Союзники, возрождённые рядом с вами, получают +15 ОЗ, а вы - +50% опыта за возрождение.
++data	Long Arm of the Law	Длинная рука закона
++data	Thrown items stun monsters they hit for 0.5 s.	Брошенные предметы оглушают монстров, в которых попали, на 0.5 с.
++data	Lucky	Везунчик
++data	+4 gear luck and +10% dodge chance.	+4 к удаче снаряжения и +10% к шансу уклонения.
++data	Overbuilt Hydraulics	Усиленная гидравлика
++data	+50% grab strength and +25% grab range.	+50% к силе захвата и +25% к дальности захвата.
++data	Quick Learner	Способный ученик
++data	+30% XP from everything.	+30% опыта от всего.
++data	Quiet Feet	Тихие шаги
++data	While crouched, you're as quiet as stealth allows (the host's noise cap, 40% by default).	В приседе вы настолько тихи, насколько позволяет скрытность (предел шума, заданный хостом, по умолчанию 40%).
++data	Shadowstep	Шаг в тень
++data	Move fast while crouched and slip more hits.	Быстро двигайтесь в приседе и чаще уклоняйтесь от ударов.
++data	Team Spirit	Командный дух
++data	+5% move speed while a teammate is within 6 m.	+5% к скорости движения, пока напарник в пределах 6 м.
++data	Treasure Hunter	Охотник за сокровищами
++data	More XP from extractions, more gear finds and better gear luck.	Больше опыта за извлечения, чаще находки снаряжения и выше удача снаряжения.
++data	Vampire	Вампир
++data	Weapon hits heal 2 HP; enemies dying near you heal 5 HP.	Попадания из оружия лечат на 2 ОЗ; враги, погибающие рядом с вами, лечат на 5 ОЗ.
++data	Adrenaline	Адреналин
++data	Below 35% HP you move much faster; take a little less damage.	Ниже 35% ОЗ вы двигаетесь намного быстрее и получаете чуть меньше урона.
++data	Big Battery	Большая батарея
++data	+50% max stamina (a bigger tank: sprinting still costs the same per second) and +1 stamina/s regen while recharging.	+50% к макс. выносливости (запас больше, но бег стоит столько же в секунду) и +1 к восстановлению выносливости в секунду, пока она восстанавливается.
++data	Heal 15 HP whenever an extraction point completes.	Лечит 15 ОЗ при завершении каждой точки извлечения.
++data	Haggler	Торгаш
++data	Mod shop items cost 30% less.	Товары в магазине мода стоят на 30% дешевле.
++data	Marathon	Марафон
++data	Sprinting costs 40% less stamina and stamina regenerates 2/s faster.	Бег тратит на 40% меньше выносливости, а она восстанавливается на 2/с быстрее.
++data	Pack Mule	Вьючный мул
++data	Carrying loot barely tires you, and you grip harder.	Переноска добычи почти не утомляет вас, и хват у вас крепче.
++data	+40% chance to find gear when an extraction point completes.	+40% к шансу найти снаряжение при завершении точки извлечения.
++data	Sixth Sense	Шестое чувство
++data	Your HUD warns of enemies within 18m.	HUD предупреждает о врагах в пределах 18 м.
++data	Springheel	Пружинистые пятки
++data	+1 extra jump and +20% jump force.	+1 дополнительный прыжок и +20% к силе прыжка.
++data	Tough as Nails	Крепкий орешек
++data	+30% max health, but sprint 10% slower.	+30% к макс. здоровью, но бег на 10% медленнее.
++data	Wide Reach	Широкий охват
++data	Your ability reaches further and lasts longer.	Ваша способность действует дальше и дольше.
+# Контракты: заказчики, цепочки, задания
++data	Madame Brass	Мадам Брасс
++data	Kaboom & Sons	Бабах и сыновья
++data	Hollis Underwood	Холлис Андервуд
++data	The Auditor	Аудитор
++data	Big Ticket	Крупный куш
++data	Carry out $8 000 of valuables	Вынесите ценностей на $8 000
++data	Kill 1 elite	Убейте элитных врагов: 1
++data	Clean Delivery	Чистая доставка
++data	Carry 3 valuables into extractions without them losing value	Донесите до точек извлечения ценностей без потери стоимости: 3
++data	Haul	Добыча
++data	Complete 3 extraction points (fewer if the level has fewer)	Завершите точек извлечения: 3 (меньше, если на уровне их меньше)
++data	Speedrun	Спидран
++data	Finish the level within 10 min	Пройдите уровень за 10 мин
++data	The Brass Collection	Коллекция Брасс
++data	Demolition Derby	Дерби разрушений
++data	Policy Review	Проверка полиса
++data	Rush Order	Срочный заказ

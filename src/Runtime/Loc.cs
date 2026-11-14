@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Text;
 
 [assembly: AssemblyTitle("RepoRPG RU - runtime")]
-[assembly: AssemblyVersion("0.1.0.0")]
+[assembly: AssemblyVersion("0.1.1.0")]
 
 namespace RepoRPG_RU
 {
@@ -206,7 +206,25 @@ namespace RepoRPG_RU
             if ((r = Parts(text, ": ", Label, depth)) != null) return r;
             if ((r = Parts(text, ", ", Phrase, depth)) != null) return r;
             if ((r = Peel(text, depth)) != null) return r;
+            if ((r = Counted(text)) != null) return r;
             return Islands(text, depth);
+        }
+
+        /// <summary>"Throw 20", "COMBAT 100": a name the dictionary has and a number after it.</summary>
+        private static string Counted(string text)
+        {
+            int sp = text.LastIndexOf(' ');
+            if (sp < 2 || sp == text.Length - 1 || text.Length - sp > 12) return null;
+            bool digit = false;
+            for (int i = sp + 1; i < text.Length; i++)
+            {
+                char c = text[i];
+                if (c >= '0' && c <= '9') { digit = true; continue; }
+                if (c != '.' && c != ',' && c != '%' && c != '+' && c != '-' && c != '/' && c != '\u00A0') return null;
+            }
+            if (!digit) return null;
+            string name = Exact(text.Substring(0, sp));
+            return name == null ? null : name + text.Substring(sp);
         }
 
         /// <summary>
@@ -461,6 +479,27 @@ namespace RepoRPG_RU
             if (tail > 2 && text[0] == '>' && text[1] == ' ') head = 2;        // "> BUY": the focused button
             while (head < tail && Peelable(text[head])) head++;
             while (tail > head && Peelable(text[tail - 1])) tail--;
+            // "x3: carried items take 8% less damage": how many points it takes, then a text of its own
+            if (text.Length > 5 && text[0] == 'x' && text[1] >= '0' && text[1] <= '9')
+            {
+                int k = 2;
+                while (k < text.Length && k < 5 && text[k] >= '0' && text[k] <= '9') k++;
+                if (k + 2 < text.Length && text[k] == ':' && text[k + 1] == ' ')
+                {
+                    string rest = Sub(text.Substring(k + 2), depth + 1);
+                    if (rest != null) return text.Substring(0, k + 2) + rest;
+                }
+            }
+            // "[F] IRON WALL": the key of an ability in front of its name
+            if (text.Length > 5 && text[0] == '[')
+            {
+                int close = text.IndexOf(']');
+                if (close > 1 && close <= 14 && close + 2 < text.Length && text[close + 1] == ' ')
+                {
+                    string named = Sub(text.Substring(close + 2), depth + 1);
+                    if (named != null) return text.Substring(0, close + 2) + named;
+                }
+            }
             if ((head == 0 && tail == text.Length) || tail - head < 2) return null;
             string core = Sub(text.Substring(head, tail - head), depth + 1);
             if (core != null) return text.Substring(0, head) + core + text.Substring(tail);

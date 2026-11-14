@@ -44,6 +44,8 @@ UnityEngine.GUIContent::set_text
 MenuLib.MenuAPI::CreateREPOButton#0
 MenuLib.MenuAPI::CreateREPOLabel#0
 MenuLib.MenuAPI::CreateREPOPopupPage#0
+# the list of characters the HUD font is asked to prepare in advance: the translation adds the Russian letters to it
+UnityEngine.Font::RequestCharactersInTexture#0
 
 [skip]
 # network, saves, parsers, self-checks: never touched inside the code (their texts are still translated when drawn)
@@ -145,6 +147,10 @@ ignore "late join"
 ignore "more players"
 ignore "shared upgrade"
 ignore "team upgrade"
+# IndexOf("RepoRPG ") reads the version out of the first line of a report FILE the mod wrote earlier, and
+# Replace("Valuable ", "") cleans the name of a game object: neither is ever applied to interface text
+ignore "RepoRPG "
+ignore "Valuable "
 # stat lines (StatInfo.Describe): StartsWith("s ") sorts the labels of ability numbers and EndsWith(" kill") the reasons of
 # XP gains - a stat line never gets there. Left in English they would come out of the mod's own SplitStat()/StatName()
 # as "Mark duration", a text no dictionary entry knows.

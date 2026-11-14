@@ -107,7 +107,7 @@
 +term	Low	Минимум
 +term	High	Максимум
 # значение настройки «Эффекты стихий» - имя значения в верхнем регистре (FULL / REDUCED / OFF)
-+term	FULL	ПОЛНЫЕ
++term	FULL	ПОЛНЫЙ
 # Не переводы, а пометки для распознавания готовых фраз на экране (см. tools/mkpo.py):
 #   +numbers  в этих местах фразы всегда число   («more players» - не «{0} players»)
 #   +words    в этих местах - слово самого мода (редкость, вкладка, сложность): фраза узнаётся, только если слово есть в словаре
@@ -141,3 +141,24 @@
 +words	{0} ({1:0} FPS in the first minute)	0
 +pattern	Auto: picked {0} ({1:0} FPS in the first minute).	Авто: выбрано - {0} ({1:0} FPS за первую минуту).
 +words	Auto: picked {0} ({1:0} FPS in the first minute).	0
+# Тексты пустых панелей и подсказок, которые разбор исходника принял за служебные (найдены по untranslated.txt из игры)
++global	Select an attribute	Выберите характеристику
++global	What it gives, its milestones and pairings show here.	Здесь показывается, что она даёт, её этапы и сочетания.
++global	Its lines, modules, a comparison and its actions show here.	Здесь показываются его свойства, модули, сравнение и действия.
++global	Pick a topic	Выберите тему
++global	Its summary shows here.	Здесь показывается её краткое содержание.
++global	Select a project	Выберите проект
++global	What it unlocks, what it costs and what it needs show here.	Здесь показывается, что он открывает, сколько стоит и что для него нужно.
++global	Select a setting	Выберите настройку
++global	What it does, its default and what you changed show here.	Здесь показывается, что она делает, значение по умолчанию и что вы изменили.
++global	Load a save or join a game to see your run.	Загрузите сохранение или войдите в игру, чтобы увидеть свой забег.
++global	Loading your progress... open this again in a moment.	Загружается ваш прогресс... откройте это снова чуть позже.
++global	<color=#9a9ca0>Evolutions are turned off by the host.</color>	<color=#9a9ca0>Эволюции отключены хостом.</color>
++global	<color=#9a9ca0>None yet. Perks with a challenge show their progress on their card.</color>	<color=#9a9ca0>Пока нет. Перки с испытанием показывают прогресс на своей карточке.</color>
+# Пресеты HUD (имена перечисления HudPreset выводятся как есть) и заголовок списка контрактов
++term	Minimal	Минимальный
++term	Clean	Чистый
++term	ACTIVE	АКТИВНО
+# те же две строки без цветового тега: мод перекрашивает серый текст под тему, и тег приходит с другим цветом
++term	None yet. Perks with a challenge show their progress on their card.	Пока нет. Перки с испытанием показывают прогресс на своей карточке.
++term	Evolutions are turned off by the host.	Эволюции отключены хостом.

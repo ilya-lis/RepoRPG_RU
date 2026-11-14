@@ -60,7 +60,7 @@ Chapter 2/5 - The Depths · next milestone: 3 levels	Глава 2/5 - The Depths
 ENDLESS 3	БЕСКОНЕЧНЫЙ РЕЖИМ 3
 # notes of the run (the tag in front is cut off by the mod before it shows them)
 FINALE - SECOND PHASE: Overlord is enraged!	ФИНАЛ - ВТОРАЯ ФАЗА: Владыка в ярости!
-FINALE - SECOND PHASE: Overlord is enraged and calls Brute to its side!	ФИНАЛ - ВТОРАЯ ФАЗА: Владыка в ярости и зовёт на помощь: Brute!
+FINALE - SECOND PHASE: Overlord is enraged and calls Brute to its side!	ФИНАЛ - ВТОРАЯ ФАЗА: Владыка в ярости и зовёт на помощь: Громила!
 Starter tool: 2x Wrench at your feet	Стартовый инструмент: 2x Wrench у ваших ног
 Starter tool unavailable (wrench): +25 Scrap instead	Стартовый инструмент недоступен (wrench): взамен +25 лома
 # the names of enum values the mod prints as they are
@@ -91,7 +91,7 @@ Tier 3	Ранг 3
 more extra jumps	more extra jumps
 ENDLESS mode	ENDLESS mode
 late join: dead players	late join: dead players
-Herald: hold to hum.	Herald: hold to hum.
+Herald: hold to hum.	Глашатай: удерживайте, чтобы гудеть.
 # a word of the mod's own belongs here ("words" marks, translation/ru/extra.tsv)
 Rare gear	Снаряжение (Редкий)
 Spawn gear	Spawn gear
@@ -117,3 +117,24 @@ RepoRPG: this game version changed something - off: kill XP, revive XP, heals, t
 Авто: выбрано - Medium (47 FPS in the first minute).	Авто: выбрано - Средне (47 FPS за первую минуту).
 Auto: picked Medium (47 FPS in the first minute).	Авто: выбрано - Средне (47 FPS за первую минуту).
 Medium (47 FPS in the first minute)	Средне (47 FPS за первую минуту)
+# what the game really showed untranslated (untranslated.txt of the first run): names and texts from the mod's data
+JUGGERNAUT	ДЖАГГЕРНАУТ
+[F] IRON WALL	[F] ЖЕЛЕЗНАЯ СТЕНА
+★ LIVING FORTRESS	★ ЖИВАЯ КРЕПОСТЬ
+THROW STRENGTH  <color=#ffb21e>0</color>/20	СИЛА БРОСКА  <color=#ffb21e>0</color>/20
+Throw 20	Бросок 20
+<color=#9a9ca0>Grip 0</color>	<color=#9a9ca0>Хват 0</color>
+COMBAT 100	БОЙ 100
+x3: carried items take 8% less damage	x3: переносимые предметы получают на 8% меньше урона
+<color=#a3a6ad>x5: below 25% health, +10% weapon damage</color>	<color=#a3a6ad>x5: при здоровье ниже 25%: +10% к урону оружия</color>
+x5: with 2+ ability charges, they refill 10% faster (inside the cooldown cap)	x5: при 2+ зарядах способности они восполняются на 10% быстрее (в рамках предела перезарядки)
++25% Scrap share, but you lose 5 HP at every extraction.	+25% к доле лома, но при каждом извлечении вы теряете 5 ОЗ.
++00% Scrap share, but you lose 0 HP at every extraction.	+00% к доле лома, но при каждом извлечении вы теряете 0 ОЗ.
++35% Scrap share, but you lose 8 HP at every extraction.	+35% к доле лома, но при каждом извлечении вы теряете 8 ОЗ.
+Lock your plating: take 00% less damage for 0s, and your Shield Wall protects allies 00% more.	Зафиксируйте броню: на 0 с вы получаете на 00% меньше урона, а «Стена щитов» защищает союзников на 00% сильнее.
+Madame Brass	Мадам Брасс
+HOLLIS UNDERWOOD	ХОЛЛИС АНДЕРВУД
+<color=#a3a6ad>None yet. Perks with a challenge show their progress on their card.</color>	<color=#a3a6ad>Пока нет. Перки с испытанием показывают прогресс на своей карточке.</color>
+SELECT A SETTING	ВЫБЕРИТЕ НАСТРОЙКУ
+> MINIMAL	> МИНИМАЛЬНЫЙ
+WASD	WASD

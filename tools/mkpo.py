@@ -73,6 +73,30 @@ def split_runs(pattern):
     return runs, holes
 
 
+NUMBER = re.compile(r'\d+(?:[\u00a0 ]\d{3})+(?!\d)|\d+(?:[.,]\d+)?')
+
+
+def numbered(en, ru):
+    """('+{0}% max health for {1}s', '+{0}% к здоровью на {1} с', 2) - every number becomes a placeholder; () when there are
+    no numbers; None when the translation does not have the very same numbers."""
+    nums = NUMBER.findall(en)
+    if not nums: return ()
+    if '{' in en or '}' in en or '{' in ru or '}' in ru: return ()
+    left = list(enumerate(nums))
+    def take(m):
+        for k, (i, n) in enumerate(left):
+            if n == m.group(0):
+                del left[k]
+                return '{%d}' % i
+        raise KeyError(m.group(0))
+    try: pr = NUMBER.sub(take, ru)
+    except KeyError: return None
+    if left: return None
+    it = iter(range(len(nums)))
+    pe = NUMBER.sub(lambda m: '{%d}' % next(it), en)
+    return pe, pr, len(nums)
+
+
 def sample(text, expected):
     """fill the placeholders of an english text and of its translation with the same values"""
     vals = {}
@@ -139,6 +163,19 @@ def main():
         bad = check(src, t)
         if bad:
             problems.append('%s: #%s %s: %r -> %r' % (where, uid, bad, src[:60], t[:60])); continue
+        if u.get('group') == 'config':
+            # The Settings tab shows a one-line summary of every description, cut by the mod itself (RpgRuntime::SettingSummary):
+            # a leading "Label: " shorter than 24 characters is dropped, then everything from the first ". " on, then the final ".".
+            # The same cuts hit the translation, so an abbreviation in the first sentence ("см. X", "макс. запас") ends it early.
+            n = t.find(': ')
+            body = t[n + 2:] if 0 < n < 24 else t
+            k = body.find('. ')
+            if k > 0 and re.search(r'(?:^|[\s(«"])(?:см|ур|выкл|вкл|напр|т|е|д|пикс|макс|мин|сек|с|м|кг|др)$', body[:k], re.I):
+                problems.append('%s: #%s the summary of this setting would end at an abbreviation (%r): spell the word out or move it'
+                                % (where, uid, body[max(0, k - 12):k + 1])); continue
+            ns = src.find(': ')
+            if 0 < n < 24 and not 0 < ns < 24 and len(body) < 30:
+                problems.append('%s: #%s the summary of this setting would lose its beginning (%r is cut as a label)' % (where, uid, t[:n + 1])); continue
         if 'StatInfo::Describe' in u.get('scopes', ()) and src.startswith('{0}'):
             # the mod takes its own stat lines apart: SplitStat() cuts at the first space ("+5%" | "max health") and
             # StatName()/StatUnit() expect "+1", then "%" or nothing, then a space. A unit glued to the number in English
@@ -222,6 +259,22 @@ def main():
     for kind, en, ru, where in extra:
         bad = check(en, ru)
         if bad: problems.append('%s: %s: %r' % (where, bad, en[:60])); continue
+        if kind == 'data':
+            # a text from the mod's built-in data (a perk, a talent, a contract), copied from what the game showed.
+            # Exact text -> term. Its numbers may change (settings, levels), and before measuring a line the mod replaces
+            # every digit with 0 - so the same sentence is also kept with the numbers as placeholders.
+            term_e[en] = ru
+            checks.append((en, ru))
+            made = numbered(en, ru)
+            if made is None: problems.append('%s: the numbers of the translation differ from the original: %r' % (where, en[:60]))
+            elif made:
+                if made[0] in pat_e and pat_e[made[0]] != made[1]:
+                    problems.append('%s: two different translations of one sentence once the numbers are taken out: %r' % (where, made[0][:60]))
+                else:
+                    pat_e[made[0]] = made[1]
+                    num_e[made[0]] = set(range(made[2]))
+                    checks.append(sample(made[0], made[1]))
+            continue
         if kind == 'term': term_e[en] = ru
         elif kind == 'pattern': pat_e[en] = ru
         elif kind == 'global': glob_e[en] = ru
