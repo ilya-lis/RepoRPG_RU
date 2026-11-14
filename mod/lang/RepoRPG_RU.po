@@ -13730,7 +13730,7 @@ msgstr "«Маяк-приманка» действует на 8% дальше"
 
 msgctxt "term"
 msgid "Quick Deploy"
-msgstr "Быстрая установка"
+msgstr "Быстрое развёртывание"
 
 msgctxt "term"
 msgid "Decoy Beacon cooldown 5% shorter"
@@ -15149,20 +15149,108 @@ msgid "Policy cooldown -5%"
 msgstr "Перезарядка «Полиса»: -5%"
 
 msgctxt "term"
+msgid "Fine Print II"
+msgstr "Мелкий шрифт II"
+
+msgctxt "term"
+msgid "Umbrella Policy"
+msgstr "Зонтичный полис"
+
+msgctxt "term"
+msgid "Policy tags 1 more valuable and holds 2 charges"
+msgstr "«Полис» помечает на 1 ценность больше и хранит зарядов: 2"
+
+msgctxt "term"
+msgid "Low Profile"
+msgstr "Незаметность"
+
+msgctxt "term"
+msgid "Keep the glow down."
+msgstr "Приглушите свечение."
+
+msgctxt "term"
+msgid "Dim Tags"
+msgstr "Тусклые метки"
+
+msgctxt "term"
+msgid "Tagged valuables draw monsters from 10% less far"
+msgstr "Помеченные ценности притягивают монстров с расстояния на 10% меньше"
+
+msgctxt "term"
+msgid "Dim Tags II"
+msgstr "Тусклые метки II"
+
+msgctxt "term"
+msgid "Careful II"
+msgstr "Аккуратность II"
+
+msgctxt "term"
+msgid "Discreet"
+msgstr "Скрытность"
+
+msgctxt "term"
+msgid "tagged valuables draw monsters from 30% less far"
+msgstr "помеченные ценности притягивают монстров с расстояния на 30% меньше"
+
+msgctxt "term"
+msgid "Reconnaissance"
+msgstr "Разведка"
+
+msgctxt "term"
+msgid "Cover the routes monsters roam, not dead ends"
+msgstr "Перекрывайте пути, где бродят монстры, а не тупики"
+
+msgctxt "term"
+msgid "Sees them first. Teammates near you know what every monster is, and your Watchposts call out anything that walks past."
+msgstr "Видит их первым. Напарники рядом с вами знают, что за монстр перед ними, а ваши сторожевые посты сообщают обо всём, что проходит мимо."
+
+msgctxt "term"
+msgid "Sees them first"
+msgstr "Видит их первым"
+
+msgctxt "term"
 msgid "Spotter"
 msgstr "Наводчик"
 
 msgctxt "term"
+msgid "Teammates within 12m of you (and you) see the name and threat level of monsters within 25m."
+msgstr "Напарники в пределах 12 м от вас (и вы сами) видят название и уровень угрозы монстров в пределах 25 м."
+
+msgctxt "term"
 msgid "Exposed"
-msgstr "Разоблачение"
+msgstr "Без прикрытия"
+
+msgctxt "term"
+msgid "Weakness: always looking up, never down: you take 10% more damage."
+msgstr "Слабость: взгляд всегда вверх, а не под ноги: вы получаете на 10% больше урона."
+
+msgctxt "term"
+msgid "always looking up, never down: you take 10% more damage."
+msgstr "взгляд всегда вверх, а не под ноги: вы получаете на 10% больше урона."
+
+msgctxt "term"
+msgid "Plants a sensor on the wall you look at (within 4m). For 60s it alerts the team whenever a monster passes within 6m. Up to 2 at once."
+msgstr "Ставит датчик на стену, на которую вы смотрите (в пределах 4 м). 60 с он оповещает команду всякий раз, когда монстр проходит в пределах 6 м. До 2 одновременно."
+
+msgctxt "term"
+msgid "See farther."
+msgstr "Смотрите дальше."
 
 msgctxt "term"
 msgid "Binoculars"
 msgstr "Бинокль"
 
 msgctxt "term"
+msgid "Spotter range +3m"
+msgstr "Дальность «Наводчика»: +3 м"
+
+msgctxt "term"
 msgid "Call-outs"
 msgstr "Оповещения"
+
+msgctxt "term"
+msgid "Spotter shares with teammates 2m farther"
+msgstr "«Наводчик» делится с напарниками на 2 м дальше"
 
 msgctxt "term"
 msgid "Binoculars II"
@@ -15173,32 +15261,76 @@ msgid "Call-outs II"
 msgstr "Оповещения II"
 
 msgctxt "term"
+msgid "Spotter shares 2m farther"
+msgstr "«Наводчик» делится на 2 м дальше"
+
+msgctxt "term"
 msgid "Hawkeye"
 msgstr "Соколиный глаз"
+
+msgctxt "term"
+msgid "Spotter range +11m and shares 8m farther"
+msgstr "Дальность «Наводчика»: +11 м, делится на 8 м дальше"
+
+msgctxt "term"
+msgid "Better sensors."
+msgstr "Датчики получше."
 
 msgctxt "term"
 msgid "Batteries"
 msgstr "Батареи"
 
 msgctxt "term"
+msgid "Watchposts last 10% longer"
+msgstr "Сторожевые посты действуют на 10% дольше"
+
+msgctxt "term"
 msgid "Wide Angle"
 msgstr "Широкий угол"
+
+msgctxt "term"
+msgid "Watchposts sense 10% farther"
+msgstr "Сторожевые посты чуют на 10% дальше"
 
 msgctxt "term"
 msgid "Quick Mount"
 msgstr "Быстрая установка"
 
 msgctxt "term"
+msgid "Watchpost cooldown -5%"
+msgstr "Перезарядка «Сторожевого поста»: -5%"
+
+msgctxt "term"
 msgid "Spare Sensor"
 msgstr "Запасной датчик"
+
+msgctxt "term"
+msgid "+1 Watchpost at once"
+msgstr "+1 сторожевой пост одновременно"
 
 msgctxt "term"
 msgid "Tripwire Flash"
 msgstr "Вспышка-растяжка"
 
 msgctxt "term"
+msgid "each Watchpost flashes and stuns the first monster that passes it for 2s"
+msgstr "каждый сторожевой пост вспышкой оглушает на 2 с первого монстра, который проходит мимо"
+
+msgctxt "term"
+msgid "Overwatch"
+msgstr "Дозор"
+
+msgctxt "term"
+msgid "Stay in one piece."
+msgstr "Останьтесь целым."
+
+msgctxt "term"
 msgid "Cover"
 msgstr "Прикрытие"
+
+msgctxt "term"
+msgid "Offsets Exposed: take 1.25% less damage"
+msgstr "Смягчает «Без прикрытия»: вы получаете на 1.25% меньше урона"
 
 msgctxt "term"
 msgid "Fast Hands"
@@ -15215,6 +15347,626 @@ msgstr "Долгая вахта"
 msgctxt "term"
 msgid "Sentry Network"
 msgstr "Сеть постов"
+
+msgctxt "term"
+msgid "Watchpost holds 2 charges, sensors last 30% longer"
+msgstr "«Сторожевой пост» хранит зарядов: 2, датчики действуют на 30% дольше"
+
+msgctxt "term"
+msgid "Firearms"
+msgstr "Огнестрел"
+
+msgctxt "term"
+msgid "Overclock when the target is already in your sights"
+msgstr "Включайте «Разгон», когда цель уже на мушке"
+
+msgctxt "term"
+msgid "Keeps the shop's guns firing. Guns cost less battery, recharge from your cart, and Overclock turns them up."
+msgstr "Не даёт оружию из магазина замолчать. Оружие тратит меньше батареи, заряжается от тележки, а «Разгон» выкручивает его на полную."
+
+msgctxt "term"
+msgid "Keeps the shop's guns firing"
+msgstr "Не даёт оружию из магазина замолчать"
+
+msgctxt "term"
+msgid "Guns and launchers you hold use 30% less battery per shot."
+msgstr "Оружие и гранатомёты у вас в руках тратят на 30% меньше батареи за выстрел."
+
+msgctxt "term"
+msgid "Hold a gun within 4m of a cart with a battery in it (a drone, flashlight or modded battery) and hold Interact (E) to recharge the gun from it. The battery is drained by what the gun gains. Weakness: -10% max health."
+msgstr "Держите оружие в пределах 4 м от тележки, в которой лежит батарея (дрон, фонарик или батарея из модов), и удерживайте «Взаимодействие» (E), чтобы зарядить оружие от неё. Батарея теряет столько, сколько получает оружие. Слабость: -10% к макс. здоровью."
+
+msgctxt "term"
+msgid "Hold a gun within 4m of a cart with a battery in it (a drone, flashlight or modded battery) and hold Interact (E) to recharge the gun from it. The battery is drained by what the gun gains."
+msgstr "Держите оружие в пределах 4 м от тележки, в которой лежит батарея (дрон, фонарик или батарея из модов), и удерживайте «Взаимодействие» (E), чтобы зарядить оружие от неё. Батарея теряет столько, сколько получает оружие."
+
+msgctxt "term"
+msgid "For 10s, the gun you hold fires 40% faster, hits 25% harder (not explosions) and uses no battery."
+msgstr "10 с оружие у вас в руках стреляет на 40% быстрее, бьёт на 25% сильнее (кроме взрывов) и не тратит батарею."
+
+msgctxt "term"
+msgid "Efficiency"
+msgstr "Экономичность"
+
+msgctxt "term"
+msgid "More shots per battery."
+msgstr "Больше выстрелов с одной батареи."
+
+msgctxt "term"
+msgid "Tuned Cells"
+msgstr "Настроенные элементы"
+
+msgctxt "term"
+msgid "Guns use 2% less battery"
+msgstr "Оружие тратит на 2% меньше батареи"
+
+msgctxt "term"
+msgid "Field Charger 20% faster"
+msgstr "«Полевой зарядник» быстрее на 20%"
+
+msgctxt "term"
+msgid "Tuned Cells II"
+msgstr "Настроенные элементы II"
+
+msgctxt "term"
+msgid "Fast Charge II"
+msgstr "Быстрая зарядка II"
+
+msgctxt "term"
+msgid "Perpetual"
+msgstr "Вечный"
+
+msgctxt "term"
+msgid "guns use 10% less battery, Field Charger twice as fast"
+msgstr "оружие тратит на 10% меньше батареи, «Полевой зарядник» вдвое быстрее"
+
+msgctxt "term"
+msgid "Run it hot."
+msgstr "Жмите до предела."
+
+msgctxt "term"
+msgid "Hot Barrel"
+msgstr "Горячий ствол"
+
+msgctxt "term"
+msgid "Overclock 10% stronger"
+msgstr "«Разгон» сильнее на 10%"
+
+msgctxt "term"
+msgid "Heat Sink"
+msgstr "Радиатор"
+
+msgctxt "term"
+msgid "Overclock lasts 10% longer"
+msgstr "«Разгон» действует на 10% дольше"
+
+msgctxt "term"
+msgid "Quick Vent"
+msgstr "Быстрый сброс тепла"
+
+msgctxt "term"
+msgid "Overclock cooldown -5%"
+msgstr "Перезарядка «Разгона»: -5%"
+
+msgctxt "term"
+msgid "Hot Barrel II"
+msgstr "Горячий ствол II"
+
+msgctxt "term"
+msgid "Overclock 25% stronger and holds 2 charges"
+msgstr "«Разгон» сильнее на 25% и хранит зарядов: 2"
+
+msgctxt "term"
+msgid "Handling"
+msgstr "Обращение"
+
+msgctxt "term"
+msgid "Steadier aim."
+msgstr "Прицел увереннее."
+
+msgctxt "term"
+msgid "Grip Tape"
+msgstr "Обмотка рукояти"
+
+msgctxt "term"
+msgid "Guns kick 4% less"
+msgstr "Отдача оружия на 4% меньше"
+
+msgctxt "term"
+msgid "Long Barrel"
+msgstr "Длинный ствол"
+
+msgctxt "term"
+msgid "Guns reach 5% farther"
+msgstr "Оружие бьёт на 5% дальше"
+
+msgctxt "term"
+msgid "Grip Tape II"
+msgstr "Обмотка рукояти II"
+
+msgctxt "term"
+msgid "Long Barrel II"
+msgstr "Длинный ствол II"
+
+msgctxt "term"
+msgid "guns kick 25% less and reach 10% farther"
+msgstr "отдача оружия на 25% меньше, а бьёт оно на 10% дальше"
+
+msgctxt "term"
+msgid "Pacification"
+msgstr "Умиротворение"
+
+msgctxt "term"
+msgid "Call out pacified monsters so nobody hits them"
+msgstr "Сообщайте об усмирённых монстрах, чтобы никто их не ударил"
+
+msgctxt "term"
+msgid "Nobody needs to get hurt. Monsters are slow to turn on the team around you, and Pacify talks one down completely."
+msgstr "Никто не должен пострадать. Рядом с вами монстры не спешат нападать на команду, а «Усмирение» полностью успокаивает одного из них."
+
+msgctxt "term"
+msgid "Nobody needs to get hurt"
+msgstr "Никто не должен пострадать"
+
+msgctxt "term"
+msgid "Calm Presence"
+msgstr "Спокойное присутствие"
+
+msgctxt "term"
+msgid "Monsters take 1.5s longer to notice teammates within 8m of you (and you)."
+msgstr "Монстры замечают напарников в пределах 8 м от вас (и вас самих) на 1.5 с позже."
+
+msgctxt "term"
+msgid "Weakness: -25% weapon damage."
+msgstr "Слабость: -25% к урону оружия."
+
+msgctxt "term"
+msgid "-25% weapon damage."
+msgstr "-25% к урону оружия."
+
+msgctxt "term"
+msgid "The monster you look at (within 15m) ignores the whole team for 8s, unless someone hits it."
+msgstr "Монстр, на которого вы смотрите (в пределах 15 м), 8 с не обращает внимания на всю команду, если его никто не ударит."
+
+msgctxt "term"
+msgid "Calm"
+msgstr "Спокойствие"
+
+msgctxt "term"
+msgid "Keep them calm longer."
+msgstr "Держите их спокойными дольше."
+
+msgctxt "term"
+msgid "Soft Voice"
+msgstr "Тихий голос"
+
+msgctxt "term"
+msgid "Calm Presence +0.2s"
+msgstr "«Спокойное присутствие»: +0.2 с"
+
+msgctxt "term"
+msgid "Wider Fold"
+msgstr "Загон пошире"
+
+msgctxt "term"
+msgid "Calm Presence reaches 1m farther"
+msgstr "«Спокойное присутствие» действует на 1 м дальше"
+
+msgctxt "term"
+msgid "Soft Voice II"
+msgstr "Тихий голос II"
+
+msgctxt "term"
+msgid "Wider Fold II"
+msgstr "Загон пошире II"
+
+msgctxt "term"
+msgid "Serenity"
+msgstr "Безмятежность"
+
+msgctxt "term"
+msgid "Calm Presence +0.9s and 4m farther"
+msgstr "«Спокойное присутствие»: +0.9 с и на 4 м дальше"
+
+msgctxt "term"
+msgid "A longer peace."
+msgstr "Мир подольше."
+
+msgctxt "term"
+msgid "Lullaby"
+msgstr "Колыбельная"
+
+msgctxt "term"
+msgid "Pacify lasts 10% longer"
+msgstr "«Усмирение» действует на 10% дольше"
+
+msgctxt "term"
+msgid "Far Call"
+msgstr "Дальний зов"
+
+msgctxt "term"
+msgid "Pacify reaches 10% farther"
+msgstr "«Усмирение» действует на 10% дальше"
+
+msgctxt "term"
+msgid "Pacify cooldown -5%"
+msgstr "Перезарядка «Усмирения»: -5%"
+
+msgctxt "term"
+msgid "Lullaby II"
+msgstr "Колыбельная II"
+
+msgctxt "term"
+msgid "Flock"
+msgstr "Стадо"
+
+msgctxt "term"
+msgid "Pacify also calms every monster within 6m of the one you look at"
+msgstr "«Усмирение» успокаивает и всех монстров в пределах 6 м от того, на которого вы смотрите"
+
+msgctxt "term"
+msgid "Gentle"
+msgstr "Мягкость"
+
+msgctxt "term"
+msgid "Slow them down."
+msgstr "Замедлите их."
+
+msgctxt "term"
+msgid "Drowsy"
+msgstr "Сонливость"
+
+msgctxt "term"
+msgid "Pacified monsters move 6% slower for 5s after it ends"
+msgstr "Усмирённые монстры двигаются на 6% медленнее ещё 5 с после окончания"
+
+msgctxt "term"
+msgid "Self-Defence"
+msgstr "Самооборона"
+
+msgctxt "term"
+msgid "Offsets Pacifist: +5% weapon damage"
+msgstr "Смягчает «Пацифиста»: +5% к урону оружия"
+
+msgctxt "term"
+msgid "Drowsy II"
+msgstr "Сонливость II"
+
+msgctxt "term"
+msgid "Pacified monsters move 10% slower afterward"
+msgstr "После усмирения монстры двигаются на 10% медленнее"
+
+msgctxt "term"
+msgid "Self-Defence II"
+msgstr "Самооборона II"
+
+msgctxt "term"
+msgid "Good Shepherd"
+msgstr "Добрый пастырь"
+
+msgctxt "term"
+msgid "Pacify holds 2 charges, pacified monsters 20% slower afterward"
+msgstr "«Усмирение» хранит зарядов: 2, после него монстры на 20% медленнее"
+
+msgctxt "term"
+msgid "Rigging"
+msgstr "Такелаж"
+
+msgctxt "term"
+msgid "Plan your line before you jump"
+msgstr "Продумайте, куда пойдёт трос, прежде чем прыгать"
+
+msgctxt "term"
+msgid "Gets to anything. A grab that reaches twice as far for small items, and a hook for ledges, walls, ceilings and loot out of reach."
+msgstr "Доберётся до чего угодно. Хват, который вдвое дальше достаёт мелкие предметы, и крюк для уступов, стен, потолков и недосягаемой добычи."
+
+msgctxt "term"
+msgid "Gets to anything"
+msgstr "Доберётся до чего угодно"
+
+msgctxt "term"
+msgid "Your grab reaches 100% farther for small items (up to 4 kg)."
+msgstr "Ваш хват достаёт мелкие предметы (до 4 кг) на 100% дальше."
+
+msgctxt "term"
+msgid "Light Frame"
+msgstr "Лёгкий каркас"
+
+msgctxt "term"
+msgid "Weakness: -15% max health."
+msgstr "Слабость: -15% к макс. здоровью."
+
+msgctxt "term"
+msgid "Fire a line at what you look at (up to 18m). A ledge: you climb onto it. A floor or platform: you land there. A wall or ceiling: you cling briefly (Jump pushes off, Crouch drops, Hook again chains). A small item: it's yanked to you, and it can't break on the way. Never through walls or doors."
+msgstr "Выстреливает трос туда, куда вы смотрите (до 18 м). Уступ: вы на него забираетесь. Пол или платформа: вы приземляетесь там. Стена или потолок: вы ненадолго повисаете («Прыжок» - оттолкнуться, «Присесть» - спрыгнуть, снова «Крюк» - зацепиться дальше). Мелкий предмет: он притягивается к вам и не может разбиться по пути. Никогда не проходит сквозь стены и двери."
+
+msgctxt "term"
+msgid "Longer arms."
+msgstr "Руки подлиннее."
+
+msgctxt "term"
+msgid "Extenders"
+msgstr "Удлинители"
+
+msgctxt "term"
+msgid "Long Reach +10%"
+msgstr "«Дальний захват»: +10%"
+
+msgctxt "term"
+msgid "Heavier Loads"
+msgstr "Грузы потяжелее"
+
+msgctxt "term"
+msgid "Long Reach and Hook take items 1 kg heavier"
+msgstr "«Дальний захват» и «Крюк» берут предметы на 1 кг тяжелее"
+
+msgctxt "term"
+msgid "Extenders II"
+msgstr "Удлинители II"
+
+msgctxt "term"
+msgid "Heavier Loads II"
+msgstr "Грузы потяжелее II"
+
+msgctxt "term"
+msgid "Gecko"
+msgstr "Геккон"
+
+msgctxt "term"
+msgid "Long Reach +30%, items 3 kg heavier"
+msgstr "«Дальний захват»: +30%, предметы на 3 кг тяжелее"
+
+msgctxt "term"
+msgid "A better line."
+msgstr "Трос получше."
+
+msgctxt "term"
+msgid "Longer Line"
+msgstr "Трос подлиннее"
+
+msgctxt "term"
+msgid "Hook reaches 10% farther"
+msgstr "«Крюк» достаёт на 10% дальше"
+
+msgctxt "term"
+msgid "Winch"
+msgstr "Лебёдка"
+
+msgctxt "term"
+msgid "Hook pulls 10% harder and faster, to walls and ceilings too"
+msgstr "«Крюк» тянет на 10% сильнее и быстрее - к стенам и потолкам тоже"
+
+msgctxt "term"
+msgid "Quick Reel"
+msgstr "Быстрая катушка"
+
+msgctxt "term"
+msgid "Hook cooldown -5%"
+msgstr "Перезарядка «Крюка»: -5%"
+
+msgctxt "term"
+msgid "Longer Line II"
+msgstr "Трос подлиннее II"
+
+msgctxt "term"
+msgid "Double Line"
+msgstr "Двойной трос"
+
+msgctxt "term"
+msgid "Hook holds 2 charges, pulls 20% harder and chains 1 more hook before touching ground"
+msgstr "«Крюк» хранит зарядов: 2, тянет на 20% сильнее и позволяет на 1 зацеп больше до касания земли"
+
+msgctxt "term"
+msgid "Land safely."
+msgstr "Приземляйтесь безопасно."
+
+msgctxt "term"
+msgid "Offsets Light Frame: +1.5% max health"
+msgstr "Смягчает «Лёгкий каркас»: +1.5% к макс. здоровью"
+
+msgctxt "term"
+msgid "Soft Catch"
+msgstr "Мягкий приём"
+
+msgctxt "term"
+msgid "Yanked items are protected 0.5s longer"
+msgstr "Притянутые предметы защищены на 0.5 с дольше"
+
+msgctxt "term"
+msgid "Soft Catch II"
+msgstr "Мягкий приём II"
+
+msgctxt "term"
+msgid "Yanked items are protected 0.5s longer, and you cling 0.4s longer"
+msgstr "Притянутые предметы защищены на 0.5 с дольше, а вы держитесь на 0.4 с дольше"
+
+msgctxt "term"
+msgid "Harness"
+msgstr "Страховочная обвязка"
+
+msgctxt "term"
+msgid "+3% max health, yanked items protected 1s longer, clinging drains 50% less stamina"
+msgstr "+3% к макс. здоровью, притянутые предметы защищены на 1 с дольше, удержание на стене тратит на 50% меньше выносливости"
+
+msgctxt "term"
+msgid "Delivery"
+msgstr "Доставка"
+
+msgctxt "term"
+msgid "Dispatch when nobody needs to move the item"
+msgstr "Отправляйте, когда предмет никому не нужно двигать"
+
+msgctxt "term"
+msgid "Skips the walk. Sends small loot straight to the open extraction, and banks what's left on a pad in the truck."
+msgstr "Обходится без прогулок. Отправляет мелкую добычу прямо на открытую точку извлечения, а остальное складывает на площадку в грузовике."
+
+msgctxt "term"
+msgid "Skips the walk"
+msgstr "Обходится без прогулок"
+
+msgctxt "term"
+msgid "A pad on the truck floor, lit in your colour, that only you can use. Tiny, small and medium valuables you set on it (up to 3) count toward the open extraction's haul goal and are delivered with its haul."
+msgstr "Площадка на полу грузовика, подсвеченная вашим цветом; пользоваться ею можете только вы. Крошечные, маленькие и средние ценности, которые вы на неё положили (до 3), идут в зачёт цели открытой точки извлечения и сдаются вместе с её добычей."
+
+msgctxt "term"
+msgid "Sure-Footed"
+msgstr "Твёрдая поступь"
+
+msgctxt "term"
+msgid "While you sprint holding a small or medium valuable, light bumps don't damage it and hard ones do 30% less. Weakness: a dispatched item hums (monsters within 10m come to look), and big, wide or tall items can't be dispatched."
+msgstr "Пока вы бежите с маленькой или средней ценностью в руках, лёгкие удары её не повреждают, а сильные наносят на 30% меньше урона. Слабость: отправляемый предмет гудит (монстры в пределах 10 м приходят посмотреть), а большие, широкие и высокие предметы отправить нельзя."
+
+msgctxt "term"
+msgid "While you sprint holding a small or medium valuable, light bumps don't damage it and hard ones do 30% less."
+msgstr "Пока вы бежите с маленькой или средней ценностью в руках, лёгкие удары её не повреждают, а сильные наносят на 30% меньше урона."
+
+msgctxt "term"
+msgid "a dispatched item hums (monsters within 10m come to look), and big, wide or tall items can't be dispatched."
+msgstr "отправляемый предмет гудит (монстры в пределах 10 м приходят посмотреть), а большие, широкие и высокие предметы отправить нельзя."
+
+msgctxt "term"
+msgid "Tag a tiny, small or medium valuable within 4m. If nobody moves, grabs or damages it for 10s, it teleports onto the open extraction and counts toward its goal. A cancelled dispatch gives half the cooldown back."
+msgstr "Помечает крошечную, маленькую или среднюю ценность в пределах 4 м. Если 10 с её никто не сдвинет, не схватит и не повредит, она телепортируется на открытую точку извлечения и идёт в зачёт её цели. Отменённая отправка возвращает половину перезарядки."
+
+msgctxt "term"
+msgid "Express"
+msgstr "Экспресс"
+
+msgctxt "term"
+msgid "Faster deliveries."
+msgstr "Доставка побыстрее."
+
+msgctxt "term"
+msgid "Quick Label"
+msgstr "Быстрая наклейка"
+
+msgctxt "term"
+msgid "Dispatch countdown -0.6s"
+msgstr "Отсчёт «Отправки»: -0.6 с"
+
+msgctxt "term"
+msgid "Far Label"
+msgstr "Дальняя наклейка"
+
+msgctxt "term"
+msgid "Dispatch tags from 15% farther"
+msgstr "«Отправка» помечает с расстояния на 15% больше"
+
+msgctxt "term"
+msgid "Return Label"
+msgstr "Возвратная наклейка"
+
+msgctxt "term"
+msgid "A cancelled dispatch gives 10% more of its cooldown back"
+msgstr "Отменённая отправка возвращает на 10% больше перезарядки"
+
+msgctxt "term"
+msgid "Priority Mail"
+msgstr "Приоритетная почта"
+
+msgctxt "term"
+msgid "Dispatched items arrive worth 3% more"
+msgstr "Отправленные предметы прибывают на 3% дороже"
+
+msgctxt "term"
+msgid "Same-Day"
+msgstr "День в день"
+
+msgctxt "term"
+msgid "Dispatch holds 2 charges, and two items can count down at once"
+msgstr "«Отправка» хранит зарядов: 2, и отсчёт могут вести два предмета одновременно"
+
+msgctxt "term"
+msgid "Freight Rules"
+msgstr "Правила перевозки"
+
+msgctxt "term"
+msgid "More on the pad, more kinds of parcel."
+msgstr "Больше на площадке, больше видов посылок."
+
+msgctxt "term"
+msgid "Bigger Pad"
+msgstr "Площадка побольше"
+
+msgctxt "term"
+msgid "The Drop Pad holds 1 more item"
+msgstr "Площадка доставки вмещает на 1 предмет больше"
+
+msgctxt "term"
+msgid "Pad Bonus"
+msgstr "Бонус площадки"
+
+msgctxt "term"
+msgid "Items delivered from the Drop Pad are worth 4% more"
+msgstr "Предметы, сданные с площадки доставки, стоят на 4% больше"
+
+msgctxt "term"
+msgid "Fragile Sticker"
+msgstr "Наклейка «Хрупкое»"
+
+msgctxt "term"
+msgid "A tagged item can lose up to 5% of its value before the dispatch cancels"
+msgstr "Помеченный предмет может потерять до 5% стоимости, прежде чем отправка отменится"
+
+msgctxt "term"
+msgid "On the Route"
+msgstr "На маршруте"
+
+msgctxt "term"
+msgid "+6% walk and sprint speed for 6s after one of your dispatches lands"
+msgstr "+6% к скорости ходьбы и бега на 6 с после того, как одна из ваших отправок дошла"
+
+msgctxt "term"
+msgid "Oversize Permit"
+msgstr "Разрешение на негабарит"
+
+msgctxt "term"
+msgid "big items can be dispatched too (5s longer countdown); wide and tall still can't"
+msgstr "большие предметы тоже можно отправлять (отсчёт на 5 с дольше); широкие и высокие - по-прежнему нельзя"
+
+msgctxt "term"
+msgid "Quiet Parcel"
+msgstr "Тихая посылка"
+
+msgctxt "term"
+msgid "Keep the hum down."
+msgstr "Приглушите гул."
+
+msgctxt "term"
+msgid "Muffled Box"
+msgstr "Глухая коробка"
+
+msgctxt "term"
+msgid "Tagged items hum 10% quieter (monsters come from less far)"
+msgstr "Помеченные предметы гудят на 10% тише (монстры сходятся с меньшего расстояния)"
+
+msgctxt "term"
+msgid "Bubble Pack"
+msgstr "Пузырчатый пакет"
+
+msgctxt "term"
+msgid "Sure-Footed protects 10% more"
+msgstr "«Твёрдая поступь» защищает на 10% сильнее"
+
+msgctxt "term"
+msgid "Signed For"
+msgstr "Под роспись"
+
+msgctxt "term"
+msgid "A tagged item can be nudged 0.3m more before the dispatch cancels"
+msgstr "Помеченный предмет можно сдвинуть ещё на 0.3 м, прежде чем отправка отменится"
+
+msgctxt "term"
+msgid "Each of your dispatches that lands gives every teammate 1 Scrap"
+msgstr "Каждая ваша дошедшая отправка даёт каждому напарнику 1 лома"
+
+msgctxt "term"
+msgid "Dead Drop"
+msgstr "Тайник"
+
+msgctxt "term"
+msgid "with no open extraction, Dispatch sends the item to your Drop Pad instead (if it has room)"
+msgstr "если открытой точки извлечения нет, «Отправка» шлёт предмет на вашу площадку доставки (если там есть место)"
 
 msgctxt "term"
 msgid "Loud Mouth"
@@ -21691,6 +22443,326 @@ msgstr "«Полис» помечает с расстояния на {0}% бол
 msgctxt "shape"
 msgid "Policy cooldown -{0}%"
 msgstr "Перезарядка «Полиса»: -{0}%"
+
+msgctxt "shape"
+msgid "Policy tags {0} more valuable and holds {1} charges"
+msgstr "«Полис» помечает на {0} ценность больше и хранит зарядов: {1}"
+
+msgctxt "shape"
+msgid "Tagged valuables draw monsters from {0}% less far"
+msgstr "Помеченные ценности притягивают монстров с расстояния на {0}% меньше"
+
+msgctxt "shape"
+msgid "tagged valuables draw monsters from {0}% less far"
+msgstr "помеченные ценности притягивают монстров с расстояния на {0}% меньше"
+
+msgctxt "shape"
+msgid "Teammates within {0}m of you (and you) see the name and threat level of monsters within {1}m."
+msgstr "Напарники в пределах {0} м от вас (и вы сами) видят название и уровень угрозы монстров в пределах {1} м."
+
+msgctxt "shape"
+msgid "Weakness: always looking up, never down: you take {0}% more damage."
+msgstr "Слабость: взгляд всегда вверх, а не под ноги: вы получаете на {0}% больше урона."
+
+msgctxt "shape"
+msgid "always looking up, never down: you take {0}% more damage."
+msgstr "взгляд всегда вверх, а не под ноги: вы получаете на {0}% больше урона."
+
+msgctxt "shape"
+msgid "Plants a sensor on the wall you look at (within {0}m). For {1}s it alerts the team whenever a monster passes within {2}m. Up to {3} at once."
+msgstr "Ставит датчик на стену, на которую вы смотрите (в пределах {0} м). {1} с он оповещает команду всякий раз, когда монстр проходит в пределах {2} м. До {3} одновременно."
+
+msgctxt "shape"
+msgid "Spotter range +{0}m"
+msgstr "Дальность «Наводчика»: +{0} м"
+
+msgctxt "shape"
+msgid "Spotter shares with teammates {0}m farther"
+msgstr "«Наводчик» делится с напарниками на {0} м дальше"
+
+msgctxt "shape"
+msgid "Spotter shares {0}m farther"
+msgstr "«Наводчик» делится на {0} м дальше"
+
+msgctxt "shape"
+msgid "Spotter range +{0}m and shares {1}m farther"
+msgstr "Дальность «Наводчика»: +{0} м, делится на {1} м дальше"
+
+msgctxt "shape"
+msgid "Watchposts last {0}% longer"
+msgstr "Сторожевые посты действуют на {0}% дольше"
+
+msgctxt "shape"
+msgid "Watchposts sense {0}% farther"
+msgstr "Сторожевые посты чуют на {0}% дальше"
+
+msgctxt "shape"
+msgid "Watchpost cooldown -{0}%"
+msgstr "Перезарядка «Сторожевого поста»: -{0}%"
+
+msgctxt "shape"
+msgid "+{0} Watchpost at once"
+msgstr "+{0} сторожевой пост одновременно"
+
+msgctxt "shape"
+msgid "each Watchpost flashes and stuns the first monster that passes it for {0}s"
+msgstr "каждый сторожевой пост вспышкой оглушает на {0} с первого монстра, который проходит мимо"
+
+msgctxt "shape"
+msgid "Offsets Exposed: take {0}% less damage"
+msgstr "Смягчает «Без прикрытия»: вы получаете на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "Watchpost holds {0} charges, sensors last {1}% longer"
+msgstr "«Сторожевой пост» хранит зарядов: {0}, датчики действуют на {1}% дольше"
+
+msgctxt "shape"
+msgid "Guns and launchers you hold use {0}% less battery per shot."
+msgstr "Оружие и гранатомёты у вас в руках тратят на {0}% меньше батареи за выстрел."
+
+msgctxt "shape"
+msgid "Hold a gun within {0}m of a cart with a battery in it (a drone, flashlight or modded battery) and hold Interact (E) to recharge the gun from it. The battery is drained by what the gun gains. Weakness: -{1}% max health."
+msgstr "Держите оружие в пределах {0} м от тележки, в которой лежит батарея (дрон, фонарик или батарея из модов), и удерживайте «Взаимодействие» (E), чтобы зарядить оружие от неё. Батарея теряет столько, сколько получает оружие. Слабость: -{1}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "Hold a gun within {0}m of a cart with a battery in it (a drone, flashlight or modded battery) and hold Interact (E) to recharge the gun from it. The battery is drained by what the gun gains."
+msgstr "Держите оружие в пределах {0} м от тележки, в которой лежит батарея (дрон, фонарик или батарея из модов), и удерживайте «Взаимодействие» (E), чтобы зарядить оружие от неё. Батарея теряет столько, сколько получает оружие."
+
+msgctxt "shape"
+msgid "For {0}s, the gun you hold fires {1}% faster, hits {2}% harder (not explosions) and uses no battery."
+msgstr "{0} с оружие у вас в руках стреляет на {1}% быстрее, бьёт на {2}% сильнее (кроме взрывов) и не тратит батарею."
+
+msgctxt "shape"
+msgid "Guns use {0}% less battery"
+msgstr "Оружие тратит на {0}% меньше батареи"
+
+msgctxt "shape"
+msgid "Field Charger {0}% faster"
+msgstr "«Полевой зарядник» быстрее на {0}%"
+
+msgctxt "shape"
+msgid "guns use {0}% less battery, Field Charger twice as fast"
+msgstr "оружие тратит на {0}% меньше батареи, «Полевой зарядник» вдвое быстрее"
+
+msgctxt "shape"
+msgid "Overclock {0}% stronger"
+msgstr "«Разгон» сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Overclock lasts {0}% longer"
+msgstr "«Разгон» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Overclock cooldown -{0}%"
+msgstr "Перезарядка «Разгона»: -{0}%"
+
+msgctxt "shape"
+msgid "Overclock {0}% stronger and holds {1} charges"
+msgstr "«Разгон» сильнее на {0}% и хранит зарядов: {1}"
+
+msgctxt "shape"
+msgid "Guns kick {0}% less"
+msgstr "Отдача оружия на {0}% меньше"
+
+msgctxt "shape"
+msgid "Guns reach {0}% farther"
+msgstr "Оружие бьёт на {0}% дальше"
+
+msgctxt "shape"
+msgid "guns kick {0}% less and reach {1}% farther"
+msgstr "отдача оружия на {0}% меньше, а бьёт оно на {1}% дальше"
+
+msgctxt "shape"
+msgid "Monsters take {0}s longer to notice teammates within {1}m of you (and you)."
+msgstr "Монстры замечают напарников в пределах {1} м от вас (и вас самих) на {0} с позже."
+
+msgctxt "shape"
+msgid "Weakness: -{0}% weapon damage."
+msgstr "Слабость: -{0}% к урону оружия."
+
+msgctxt "shape"
+msgid "-{0}% weapon damage."
+msgstr "-{0}% к урону оружия."
+
+msgctxt "shape"
+msgid "The monster you look at (within {0}m) ignores the whole team for {1}s, unless someone hits it."
+msgstr "Монстр, на которого вы смотрите (в пределах {0} м), {1} с не обращает внимания на всю команду, если его никто не ударит."
+
+msgctxt "shape"
+msgid "Calm Presence +{0}s"
+msgstr "«Спокойное присутствие»: +{0} с"
+
+msgctxt "shape"
+msgid "Calm Presence reaches {0}m farther"
+msgstr "«Спокойное присутствие» действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Calm Presence +{0}s and {1}m farther"
+msgstr "«Спокойное присутствие»: +{0} с и на {1} м дальше"
+
+msgctxt "shape"
+msgid "Pacify lasts {0}% longer"
+msgstr "«Усмирение» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Pacify reaches {0}% farther"
+msgstr "«Усмирение» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Pacify cooldown -{0}%"
+msgstr "Перезарядка «Усмирения»: -{0}%"
+
+msgctxt "shape"
+msgid "Pacify also calms every monster within {0}m of the one you look at"
+msgstr "«Усмирение» успокаивает и всех монстров в пределах {0} м от того, на которого вы смотрите"
+
+msgctxt "shape"
+msgid "Pacified monsters move {0}% slower for {1}s after it ends"
+msgstr "Усмирённые монстры двигаются на {0}% медленнее ещё {1} с после окончания"
+
+msgctxt "shape"
+msgid "Offsets Pacifist: +{0}% weapon damage"
+msgstr "Смягчает «Пацифиста»: +{0}% к урону оружия"
+
+msgctxt "shape"
+msgid "Pacified monsters move {0}% slower afterward"
+msgstr "После усмирения монстры двигаются на {0}% медленнее"
+
+msgctxt "shape"
+msgid "Pacify holds {0} charges, pacified monsters {1}% slower afterward"
+msgstr "«Усмирение» хранит зарядов: {0}, после него монстры на {1}% медленнее"
+
+msgctxt "shape"
+msgid "Your grab reaches {0}% farther for small items (up to {1} kg)."
+msgstr "Ваш хват достаёт мелкие предметы (до {1} кг) на {0}% дальше."
+
+msgctxt "shape"
+msgid "Weakness: -{0}% max health."
+msgstr "Слабость: -{0}% к макс. здоровью."
+
+msgctxt "shape"
+msgid "Fire a line at what you look at (up to {0}m). A ledge: you climb onto it. A floor or platform: you land there. A wall or ceiling: you cling briefly (Jump pushes off, Crouch drops, Hook again chains). A small item: it's yanked to you, and it can't break on the way. Never through walls or doors."
+msgstr "Выстреливает трос туда, куда вы смотрите (до {0} м). Уступ: вы на него забираетесь. Пол или платформа: вы приземляетесь там. Стена или потолок: вы ненадолго повисаете («Прыжок» - оттолкнуться, «Присесть» - спрыгнуть, снова «Крюк» - зацепиться дальше). Мелкий предмет: он притягивается к вам и не может разбиться по пути. Никогда не проходит сквозь стены и двери."
+
+msgctxt "shape"
+msgid "Long Reach +{0}%"
+msgstr "«Дальний захват»: +{0}%"
+
+msgctxt "shape"
+msgid "Long Reach and Hook take items {0} kg heavier"
+msgstr "«Дальний захват» и «Крюк» берут предметы на {0} кг тяжелее"
+
+msgctxt "shape"
+msgid "Long Reach +{0}%, items {1} kg heavier"
+msgstr "«Дальний захват»: +{0}%, предметы на {1} кг тяжелее"
+
+msgctxt "shape"
+msgid "Hook reaches {0}% farther"
+msgstr "«Крюк» достаёт на {0}% дальше"
+
+msgctxt "shape"
+msgid "Hook pulls {0}% harder and faster, to walls and ceilings too"
+msgstr "«Крюк» тянет на {0}% сильнее и быстрее - к стенам и потолкам тоже"
+
+msgctxt "shape"
+msgid "Hook cooldown -{0}%"
+msgstr "Перезарядка «Крюка»: -{0}%"
+
+msgctxt "shape"
+msgid "Hook holds {0} charges, pulls {1}% harder and chains {2} more hook before touching ground"
+msgstr "«Крюк» хранит зарядов: {0}, тянет на {1}% сильнее и позволяет на {2} зацеп больше до касания земли"
+
+msgctxt "shape"
+msgid "Offsets Light Frame: +{0}% max health"
+msgstr "Смягчает «Лёгкий каркас»: +{0}% к макс. здоровью"
+
+msgctxt "shape"
+msgid "Yanked items are protected {0}s longer"
+msgstr "Притянутые предметы защищены на {0} с дольше"
+
+msgctxt "shape"
+msgid "Yanked items are protected {0}s longer, and you cling {1}s longer"
+msgstr "Притянутые предметы защищены на {0} с дольше, а вы держитесь на {1} с дольше"
+
+msgctxt "shape"
+msgid "+{0}% max health, yanked items protected {1}s longer, clinging drains {2}% less stamina"
+msgstr "+{0}% к макс. здоровью, притянутые предметы защищены на {1} с дольше, удержание на стене тратит на {2}% меньше выносливости"
+
+msgctxt "shape"
+msgid "A pad on the truck floor, lit in your colour, that only you can use. Tiny, small and medium valuables you set on it (up to {0}) count toward the open extraction's haul goal and are delivered with its haul."
+msgstr "Площадка на полу грузовика, подсвеченная вашим цветом; пользоваться ею можете только вы. Крошечные, маленькие и средние ценности, которые вы на неё положили (до {0}), идут в зачёт цели открытой точки извлечения и сдаются вместе с её добычей."
+
+msgctxt "shape"
+msgid "While you sprint holding a small or medium valuable, light bumps don't damage it and hard ones do {0}% less. Weakness: a dispatched item hums (monsters within {1}m come to look), and big, wide or tall items can't be dispatched."
+msgstr "Пока вы бежите с маленькой или средней ценностью в руках, лёгкие удары её не повреждают, а сильные наносят на {0}% меньше урона. Слабость: отправляемый предмет гудит (монстры в пределах {1} м приходят посмотреть), а большие, широкие и высокие предметы отправить нельзя."
+
+msgctxt "shape"
+msgid "While you sprint holding a small or medium valuable, light bumps don't damage it and hard ones do {0}% less."
+msgstr "Пока вы бежите с маленькой или средней ценностью в руках, лёгкие удары её не повреждают, а сильные наносят на {0}% меньше урона."
+
+msgctxt "shape"
+msgid "a dispatched item hums (monsters within {0}m come to look), and big, wide or tall items can't be dispatched."
+msgstr "отправляемый предмет гудит (монстры в пределах {0} м приходят посмотреть), а большие, широкие и высокие предметы отправить нельзя."
+
+msgctxt "shape"
+msgid "Tag a tiny, small or medium valuable within {0}m. If nobody moves, grabs or damages it for {1}s, it teleports onto the open extraction and counts toward its goal. A cancelled dispatch gives half the cooldown back."
+msgstr "Помечает крошечную, маленькую или среднюю ценность в пределах {0} м. Если {1} с её никто не сдвинет, не схватит и не повредит, она телепортируется на открытую точку извлечения и идёт в зачёт её цели. Отменённая отправка возвращает половину перезарядки."
+
+msgctxt "shape"
+msgid "Dispatch countdown -{0}s"
+msgstr "Отсчёт «Отправки»: -{0} с"
+
+msgctxt "shape"
+msgid "Dispatch tags from {0}% farther"
+msgstr "«Отправка» помечает с расстояния на {0}% больше"
+
+msgctxt "shape"
+msgid "A cancelled dispatch gives {0}% more of its cooldown back"
+msgstr "Отменённая отправка возвращает на {0}% больше перезарядки"
+
+msgctxt "shape"
+msgid "Dispatched items arrive worth {0}% more"
+msgstr "Отправленные предметы прибывают на {0}% дороже"
+
+msgctxt "shape"
+msgid "Dispatch holds {0} charges, and two items can count down at once"
+msgstr "«Отправка» хранит зарядов: {0}, и отсчёт могут вести два предмета одновременно"
+
+msgctxt "shape"
+msgid "The Drop Pad holds {0} more item"
+msgstr "Площадка доставки вмещает на {0} предмет больше"
+
+msgctxt "shape"
+msgid "Items delivered from the Drop Pad are worth {0}% more"
+msgstr "Предметы, сданные с площадки доставки, стоят на {0}% больше"
+
+msgctxt "shape"
+msgid "A tagged item can lose up to {0}% of its value before the dispatch cancels"
+msgstr "Помеченный предмет может потерять до {0}% стоимости, прежде чем отправка отменится"
+
+msgctxt "shape"
+msgid "+{0}% walk and sprint speed for {1}s after one of your dispatches lands"
+msgstr "+{0}% к скорости ходьбы и бега на {1} с после того, как одна из ваших отправок дошла"
+
+msgctxt "shape"
+msgid "big items can be dispatched too ({0}s longer countdown); wide and tall still can't"
+msgstr "большие предметы тоже можно отправлять (отсчёт на {0} с дольше); широкие и высокие - по-прежнему нельзя"
+
+msgctxt "shape"
+msgid "Tagged items hum {0}% quieter (monsters come from less far)"
+msgstr "Помеченные предметы гудят на {0}% тише (монстры сходятся с меньшего расстояния)"
+
+msgctxt "shape"
+msgid "Sure-Footed protects {0}% more"
+msgstr "«Твёрдая поступь» защищает на {0}% сильнее"
+
+msgctxt "shape"
+msgid "A tagged item can be nudged {0}m more before the dispatch cancels"
+msgstr "Помеченный предмет можно сдвинуть ещё на {0} м, прежде чем отправка отменится"
+
+msgctxt "shape"
+msgid "Each of your dispatches that lands gives every teammate {0} Scrap"
+msgstr "Каждая ваша дошедшая отправка даёт каждому напарнику {0} лома"
 
 msgctxt "shape"
 msgid "Thrown items stun monsters they hit for {0} s."
