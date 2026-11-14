@@ -15969,8 +15969,1184 @@ msgid "with no open extraction, Dispatch sends the item to your Drop Pad instead
 msgstr "если открытой точки извлечения нет, «Отправка» шлёт предмет на вашу площадку доставки (если там есть место)"
 
 msgctxt "term"
+msgid "Anchor"
+msgstr "Якорь"
+
+msgctxt "term"
+msgid "10% less damage while standing still"
+msgstr "на 10% меньше урона, пока вы стоите на месте"
+
+msgctxt "term"
+msgid "Triage Kit"
+msgstr "Сортировочный набор"
+
+msgctxt "term"
+msgid "your heals on teammates under 30% health are 40% stronger"
+msgstr "ваше лечение напарников со здоровьем ниже 30% сильнее на 40%"
+
+msgctxt "term"
+msgid "sprinting at 0 stamina refills 25% of it, once every 30 s"
+msgstr "бег при 0 выносливости восполняет 25% её запаса, раз в 30 с"
+
+msgctxt "term"
+msgid "Counterweight"
+msgstr "Контргруз"
+
+msgctxt "term"
+msgid "+15% grip strength and 10% less stamina drain while carrying"
+msgstr "+15% к силе хвата, а переноска тратит на 10% меньше выносливости"
+
+msgctxt "term"
+msgid "after taking a hit, +30% weapon damage for 3 s"
+msgstr "после полученного удара: +30% к урону оружия на 3 с"
+
+msgctxt "term"
+msgid "teammates within 6 m regain 1.5 stamina/s"
+msgstr "напарники в пределах 6 м восстанавливают 1.5 выносливости/с"
+
+msgctxt "term"
+msgid "after a dodge you make no noise for 1.5 s, so monsters lose your trail"
+msgstr "после уклонения вы 1.5 с не издаёте шума, и монстры теряют ваш след"
+
+msgctxt "term"
+msgid "below 30% health, +15% move speed"
+msgstr "при здоровье ниже 30%: +15% к скорости движения"
+
+msgctxt "term"
+msgid "Ledger"
+msgstr "Гроссбух"
+
+msgctxt "term"
+msgid "Lockdown"
+msgstr "Блокада"
+
+msgctxt "term"
+msgid "+10% damage to Marked monsters"
+msgstr "+10% урона по монстрам с меткой"
+
+msgctxt "term"
+msgid "Whisper Network"
+msgstr "Сеть шёпота"
+
+msgctxt "term"
+msgid "teammates talking near you build Inspire (half speed); your voice no longer draws monsters"
+msgstr "разговоры напарников рядом с вами копят Воодушевление (вдвое медленнее); ваш голос больше не привлекает монстров"
+
+msgctxt "term"
+msgid "Echo Memory"
+msgstr "Эхо-память"
+
+msgctxt "term"
+msgid "you learn copies 1 s faster and from 2 m farther"
+msgstr "вы изучаете копии на 1 с быстрее и с расстояния на 2 м больше"
+
+msgctxt "term"
+msgid "Swift Rites"
+msgstr "Скорые почести"
+
+msgctxt "term"
+msgid "+12% move speed while carrying a death head"
+msgstr "+12% к скорости движения с головой погибшего в руках"
+
+msgctxt "term"
+msgid "valuables in your cart take 20% less damage"
+msgstr "ценности в вашей тележке получают на 20% меньше урона"
+
+msgctxt "term"
+msgid "Recoil"
+msgstr "Отдача"
+
+msgctxt "term"
+msgid "your throws are 15% stronger"
+msgstr "ваши броски сильнее на 15%"
+
+msgctxt "term"
+msgid "Double Bluff"
+msgstr "Двойной блеф"
+
+msgctxt "term"
+msgid "Decoy Beacon also makes a second, smaller beacon 4 m away"
+msgstr "«Маяк-приманка» создаёт ещё и второй маяк поменьше в 4 м от себя"
+
+msgctxt "term"
+msgid "your explosions stun 1 s longer but deal 10% less damage"
+msgstr "ваши взрывы оглушают на 1 с дольше, но наносят на 10% меньше урона"
+
+msgctxt "term"
+msgid "Rationing"
+msgstr "Нормирование"
+
+msgctxt "term"
+msgid "Resupply has 1 more charge per level but restores 20% less"
+msgstr "у «Пополнения» на 1 заряд на уровень больше, но оно восстанавливает на 20% меньше"
+
+msgctxt "term"
+msgid "House Edge"
+msgstr "Преимущество казино"
+
+msgctxt "term"
+msgid "lost bets refund 20% of the stake; the top multiplier is 0.2x lower"
+msgstr "проигранные ставки возвращают 20% ставки; наибольший множитель ниже на 0.2x"
+
+msgctxt "term"
+msgid "Hemorrhage"
+msgstr "Кровоизлияние"
+
+msgctxt "term"
+msgid "Front Row"
+msgstr "Первый ряд"
+
+msgctxt "term"
+msgid "Monsters fighting within 6m of you deal 40% more damage to each other (fights are still loud)"
+msgstr "Монстры, дерущиеся в пределах 6 м от вас, наносят друг другу на 40% больше урона (драки по-прежнему шумные)"
+
+msgctxt "term"
+msgid "Ventriloquism Act"
+msgstr "Номер чревовещателя"
+
+msgctxt "term"
+msgid "Echo lasts a third longer but has a 20% longer cooldown"
+msgstr "«Эхо» действует на треть дольше, но перезаряжается на 20% дольше"
+
+msgctxt "term"
+msgid "Kintsugi"
+msgstr "Кинцуги"
+
+msgctxt "term"
+msgid "Picky"
+msgstr "Привереда"
+
+msgctxt "term"
+msgid "Keen Eye finds are worth 25% more but 2% less likely"
+msgstr "находки «Острого глаза» стоят на 25% больше, но шанс на них ниже на 2%"
+
+msgctxt "term"
+msgid "Deductible"
+msgstr "Франшиза"
+
+msgctxt "term"
+msgid "Coverage reaches 8 m farther (teammates' items too) but pays 3% less"
+msgstr "«Покрытие» действует на 8 м дальше (и на предметы напарников), но выплачивает на 3% меньше"
+
+msgctxt "term"
+msgid "Hide in Plain Sight"
+msgstr "На самом виду"
+
+msgctxt "term"
+msgid "while you stand still, monsters notice you 1 s later"
+msgstr "пока вы стоите на месте, монстры замечают вас на 1 с позже"
+
+msgctxt "term"
+msgid "Hair Trigger"
+msgstr "Чувствительный спуск"
+
+msgctxt "term"
+msgid "Overclock 10% stronger, but guns use 10% more battery"
+msgstr "«Разгон» сильнее на 10%, но оружие тратит на 10% больше батареи"
+
+msgctxt "term"
+msgid "Sheepdog"
+msgstr "Пастушья собака"
+
+msgctxt "term"
+msgid "Zipline"
+msgstr "Зиплайн"
+
+msgctxt "term"
+msgid "your Hook pull is 25% stronger"
+msgstr "ваш «Крюк» тянет на 25% сильнее"
+
+msgctxt "term"
+msgid "Courier's Pace"
+msgstr "Шаг курьера"
+
+msgctxt "term"
+msgid "+8% sprint speed while you hold a small or medium valuable (the weakness stays: dispatched items hum, big ones can't go)"
+msgstr "+8% к скорости бега, пока вы держите маленькую или среднюю ценность (слабость остаётся: отправляемые предметы гудят, большие отправить нельзя)"
+
+msgctxt "term"
+msgid "Fortress"
+msgstr "Крепость"
+
+msgctxt "term"
+msgid "Prestige tree (unlocked by mastering the class)."
+msgstr "Древо престижа (открывается после освоения класса)."
+
+msgctxt "term"
+msgid "Rampart"
+msgstr "Вал"
+
+msgctxt "term"
+msgid "Iron Wall +5% area"
+msgstr "«Железная стена»: +5% к области"
+
+msgctxt "term"
+msgid "Blast Plating"
+msgstr "Взрывозащита"
+
+msgctxt "term"
+msgid "3% less damage taken"
+msgstr "на 3% меньше получаемого урона"
+
+msgctxt "term"
+msgid "Hold the Line"
+msgstr "Держать строй"
+
+msgctxt "term"
+msgid "Unbreakable"
+msgstr "Несокрушимый"
+
+msgctxt "term"
+msgid "Iron Wall also makes nearby teammates take 15% less damage"
+msgstr "«Железная стена» также снижает урон по напарникам поблизости на 15%"
+
+msgctxt "term"
+msgid "+4% ability power"
+msgstr "+4% к силе способности"
+
+msgctxt "term"
+msgid "+5% Nanite Burst area"
+msgstr "+5% к области «Нанитного всплеска»"
+
+msgctxt "term"
+msgid "Quick Stitch"
+msgstr "Быстрый шов"
+
+msgctxt "term"
+msgid "+3 HP to allies revived near you"
+msgstr "+3 ОЗ союзникам, возрождённым рядом с вами"
+
+msgctxt "term"
+msgid "Fast Cycle"
+msgstr "Скорый цикл"
+
+msgctxt "term"
+msgid "Defibrillator"
+msgstr "Дефибриллятор"
+
+msgctxt "term"
+msgid "teammates revived near you come back with +25 HP and 10% more revive XP"
+msgstr "напарники, возрождённые рядом с вами, возвращаются с +25 ОЗ, а опыта за возрождение на 10% больше"
+
+msgctxt "term"
+msgid "Outrider"
+msgstr "Авангард"
+
+msgctxt "term"
+msgid "Deep Lungs"
+msgstr "Глубокое дыхание"
+
+msgctxt "term"
+msgid "Carry Speed"
+msgstr "Сохранение скорости"
+
+msgctxt "term"
+msgid "+0.5 s Momentum grace"
+msgstr "+0.5 с отсрочки Импульса"
+
+msgctxt "term"
+msgid "Burst"
+msgstr "Рывок"
+
+msgctxt "term"
+msgid "teammates near you regain 2 stamina/s (4 m)"
+msgstr "напарники рядом с вами восстанавливают 2 выносливости/с (4 м)"
+
+msgctxt "term"
+msgid "Freight"
+msgstr "Грузоперевозки"
+
+msgctxt "term"
+msgid "+3% grip strength"
+msgstr "+3% к силе хвата"
+
+msgctxt "term"
+msgid "Padded"
+msgstr "Мягкая обивка"
+
+msgctxt "term"
+msgid "held items take 3% less damage"
+msgstr "предметы в руках получают на 3% меньше урона"
+
+msgctxt "term"
+msgid "Haul Pace"
+msgstr "Темп перевозки"
+
+msgctxt "term"
+msgid "Overload"
+msgstr "Перегрузка"
+
+msgctxt "term"
+msgid "Conveyor"
+msgstr "Конвейер"
+
+msgctxt "term"
+msgid "valuables you throw can't break for 2 s"
+msgstr "брошенные вами ценности 2 с не могут разбиться"
+
+msgctxt "term"
+msgid "Juggernaut Fist"
+msgstr "Кулак джаггернаута"
+
+msgctxt "term"
+msgid "Heavy Blows"
+msgstr "Тяжёлые удары"
+
+msgctxt "term"
+msgid "+1 Frenzy power"
+msgstr "+1 к силе Ярости"
+
+msgctxt "term"
+msgid "Shockwave +5% area"
+msgstr "«Ударная волна»: +5% к области"
+
+msgctxt "term"
+msgid "Rattle"
+msgstr "Встряска"
+
+msgctxt "term"
+msgid "+2% stun chance on hit"
+msgstr "+2% к шансу оглушить при ударе"
+
+msgctxt "term"
+msgid "Shockwave hits a second time 1 s later at half strength"
+msgstr "«Ударная волна» бьёт второй раз через 1 с вполсилы"
+
+msgctxt "term"
+msgid "Reactor"
+msgstr "Реактор"
+
+msgctxt "term"
+msgid "Coolant"
+msgstr "Охладитель"
+
+msgctxt "term"
+msgid "Long Burn"
+msgstr "Долгое горение"
+
+msgctxt "term"
+msgid "Wide Link"
+msgstr "Широкая связь"
+
+msgctxt "term"
+msgid "+1 m Power Link radius"
+msgstr "+1 м к радиусу «Энергосвязи»"
+
+msgctxt "term"
+msgid "when Overdrive ends, monsters within 4 m are stunned for 1 s"
+msgstr "когда «Форсаж» заканчивается, монстры в пределах 4 м оглушаются на 1 с"
+
+msgctxt "term"
+msgid "Wraith"
+msgstr "Привидение"
+
+msgctxt "term"
+msgid "Long Phase"
+msgstr "Долгая фаза"
+
+msgctxt "term"
+msgid "3% less noise"
+msgstr "на 3% меньше шума"
+
+msgctxt "term"
+msgid "Slip"
+msgstr "Проскальзывание"
+
+msgctxt "term"
+msgid "+3% Shadowstep speed"
+msgstr "+3% к скорости «Шага в тень»"
+
+msgctxt "term"
+msgid "during Phase Out you make no noise, so monsters lose your trail"
+msgstr "во время «Фазового сдвига» вы не издаёте шума, и монстры теряют ваш след"
+
+msgctxt "term"
+msgid "Tough"
+msgstr "Крепкий"
+
+msgctxt "term"
+msgid "Hold On"
+msgstr "Держись"
+
+msgctxt "term"
+msgid "+0.1 HP/s regen"
+msgstr "+0.1 ОЗ/с регенерации"
+
+msgctxt "term"
+msgid "Emergency Patch +5% power"
+msgstr "«Экстренная заплатка»: +5% к силе"
+
+msgctxt "term"
+msgid "Never Die"
+msgstr "Не умирать"
+
+msgctxt "term"
+msgid "your first death save each level also heals 25% of your max health"
+msgstr "первое спасение от смерти на каждом уровне также лечит на 25% вашего макс. здоровья"
+
+msgctxt "term"
+msgid "Auctioneer"
+msgstr "Аукционист"
+
+msgctxt "term"
+msgid "Sharp Eye"
+msgstr "Зоркий глаз"
+
+msgctxt "term"
+msgid "+2% appraisal value"
+msgstr "+2% к стоимости при оценке"
+
+msgctxt "term"
+msgid "Wide Scan"
+msgstr "Широкое сканирование"
+
+msgctxt "term"
+msgid "Appraisal Scan +5% area"
+msgstr "«Оценочное сканирование»: +5% к области"
+
+msgctxt "term"
+msgid "Long Look"
+msgstr "Долгий взгляд"
+
+msgctxt "term"
+msgid "Hammer Price"
+msgstr "Цена с молотка"
+
+msgctxt "term"
+msgid "+6% appraisal value and +10% rare-item appraisal bonus"
+msgstr "+6% к стоимости при оценке и +10% к бонусу оценки редких предметов"
+
+msgctxt "term"
+msgid "Bastion"
+msgstr "Бастион"
+
+msgctxt "term"
+msgid "Stasis Field +5% area"
+msgstr "«Стазисное поле»: +5% к области"
+
+msgctxt "term"
+msgid "Hard Stop"
+msgstr "Жёсткая остановка"
+
+msgctxt "term"
+msgid "Stasis Field +4% power"
+msgstr "«Стазисное поле»: +4% к силе"
+
+msgctxt "term"
+msgid "Judgement"
+msgstr "Правосудие"
+
+msgctxt "term"
+msgid "+3% damage to Marked enemies"
+msgstr "+3% урона по врагам с меткой"
+
+msgctxt "term"
+msgid "Containment"
+msgstr "Сдерживание"
+
+msgctxt "term"
+msgid "Stasis Field lasts 30% longer and Marks last 2 s longer"
+msgstr "«Стазисное поле» действует на 30% дольше, а метки держатся на 2 с дольше"
+
+msgctxt "term"
+msgid "Choir"
+msgstr "Хор"
+
+msgctxt "term"
+msgid "+3% Inspire gain"
+msgstr "+3% к набору Воодушевления"
+
+msgctxt "term"
+msgid "+1 m Inspire radius"
+msgstr "+1 м к радиусу Воодушевления"
+
+msgctxt "term"
+msgid "March"
+msgstr "Марш"
+
+msgctxt "term"
+msgid "+1% Inspire speed bonus"
+msgstr "+1% к бонусу скорости от Воодушевления"
+
+msgctxt "term"
+msgid "Crescendo"
+msgstr "Крещендо"
+
+msgctxt "term"
+msgid "once per level, Rally Cry at full Inspire costs no charge"
+msgstr "раз за уровень «Боевой клич» при полном Воодушевлении не тратит заряд"
+
+msgctxt "term"
+msgid "Close Copy"
+msgstr "Близкая копия"
+
+msgctxt "term"
+msgid "+3% copy strength"
+msgstr "+3% к силе копий"
+
+msgctxt "term"
+msgid "Quick Recall"
+msgstr "Быстрое вспоминание"
+
+msgctxt "term"
+msgid "3% faster copy recharge"
+msgstr "перезарядка копий на 3% быстрее"
+
+msgctxt "term"
+msgid "+1 m copy range"
+msgstr "+1 м к дальности копирования"
+
+msgctxt "term"
+msgid "Lingering"
+msgstr "Долгий след"
+
+msgctxt "term"
+msgid "copies last 8% longer"
+msgstr "копии действуют на 8% дольше"
+
+msgctxt "term"
+msgid "Perfect Mirror"
+msgstr "Идеальное зеркало"
+
+msgctxt "term"
+msgid "once per level, a copy runs at full strength"
+msgstr "раз за уровень копия работает в полную силу"
+
+msgctxt "term"
+msgid "Necropolis"
+msgstr "Некрополь"
+
+msgctxt "term"
+msgid "Firm Hands"
+msgstr "Крепкие руки"
+
+msgctxt "term"
+msgid "+3% revive health"
+msgstr "+3% к здоровью при возрождении"
+
+msgctxt "term"
+msgid "Pallbearer's Pace"
+msgstr "Шаг носильщика гроба"
+
+msgctxt "term"
+msgid "+2% speed carrying a head"
+msgstr "+2% к скорости с головой в руках"
+
+msgctxt "term"
+msgid "Rites"
+msgstr "Почести"
+
+msgctxt "term"
+msgid "Mass Grave"
+msgstr "Братская могила"
+
+msgctxt "term"
+msgid "Reboot revives one more death head at once"
+msgstr "«Перезагрузка» возрождает за раз на одну голову больше"
+
+msgctxt "term"
+msgid "Caravan"
+msgstr "Караван"
+
+msgctxt "term"
+msgid "+3% cart speed"
+msgstr "+3% к скорости тележки"
+
+msgctxt "term"
+msgid "Packed Straw"
+msgstr "Плотная солома"
+
+msgctxt "term"
+msgid "cart items take 3% less damage"
+msgstr "предметы в тележке получают на 3% меньше урона"
+
+msgctxt "term"
+msgid "Leash"
+msgstr "Поводок"
+
+msgctxt "term"
+msgid "+3% follow speed"
+msgstr "+3% к скорости следования"
+
+msgctxt "term"
+msgid "Long Drive"
+msgstr "Долгая поездка"
+
+msgctxt "term"
+msgid "Cart Overdrive lasts 8% longer"
+msgstr "«Форсаж тележки» действует на 8% дольше"
+
+msgctxt "term"
+msgid "you take 15% less damage next to your cart"
+msgstr "рядом со своей тележкой вы получаете на 15% меньше урона"
+
+msgctxt "term"
+msgid "Gravity Well"
+msgstr "Гравитационный колодец"
+
+msgctxt "term"
+msgid "Zero-G +5% area"
+msgstr "«Невесомость»: +5% к области"
+
+msgctxt "term"
+msgid "Long Float"
+msgstr "Долгое парение"
+
+msgctxt "term"
+msgid "Zero-G lasts 8% longer"
+msgstr "«Невесомость» действует на 8% дольше"
+
+msgctxt "term"
+msgid "Launch"
+msgstr "Запуск"
+
+msgctxt "term"
+msgid "Featherlight"
+msgstr "Пёрышко"
+
+msgctxt "term"
+msgid "held items 3% lighter"
+msgstr "предметы в руках на 3% легче"
+
+msgctxt "term"
+msgid "Zero-G Field pulls monsters toward its centre"
+msgstr "«Поле невесомости» притягивает монстров к своему центру"
+
+msgctxt "term"
+msgid "Illusionist"
+msgstr "Иллюзионист"
+
+msgctxt "term"
+msgid "Long Bait"
+msgstr "Долгая наживка"
+
+msgctxt "term"
+msgid "Wide Pull"
+msgstr "Широкая тяга"
+
+msgctxt "term"
+msgid "Decoy Beacon +5% area"
+msgstr "«Маяк-приманка»: +5% к области"
+
+msgctxt "term"
+msgid "Light Feet"
+msgstr "Лёгкие ноги"
+
+msgctxt "term"
+msgid "beacon pop stun +0.1 s"
+msgstr "оглушение от хлопка маяка: +0.1 с"
+
+msgctxt "term"
+msgid "Mirror Image"
+msgstr "Зеркальный образ"
+
+msgctxt "term"
+msgid "Decoy Beacon pulls from 30% farther and lasts 20% longer"
+msgstr "«Маяк-приманка» притягивает с расстояния на 30% больше и действует на 20% дольше"
+
+msgctxt "term"
+msgid "Siegebreaker"
+msgstr "Сокрушитель осад"
+
+msgctxt "term"
+msgid "Bigger Bang"
+msgstr "Взрыв побольше"
+
+msgctxt "term"
+msgid "+3% blast power"
+msgstr "+3% к силе взрыва"
+
+msgctxt "term"
+msgid "+3% blast size"
+msgstr "+3% к размеру взрыва"
+
+msgctxt "term"
+msgid "Stun Charge"
+msgstr "Оглушающий заряд"
+
+msgctxt "term"
+msgid "Breach Charge +4% power"
+msgstr "«Пробивной заряд»: +4% к силе"
+
+msgctxt "term"
+msgid "Safety Margin"
+msgstr "Запас безопасности"
+
+msgctxt "term"
+msgid "+3% blast safety for players"
+msgstr "+3% к защите игроков от взрывов"
+
+msgctxt "term"
+msgid "Chain Reaction"
+msgstr "Цепная реакция"
+
+msgctxt "term"
+msgid "Breach Charge +25% area and +15% power"
+msgstr "«Пробивной заряд»: +25% к области и +15% к силе"
+
+msgctxt "term"
+msgid "Supply Chain"
+msgstr "Цепочка поставок"
+
+msgctxt "term"
+msgid "Full Crates"
+msgstr "Полные ящики"
+
+msgctxt "term"
+msgid "Resupply +4% power"
+msgstr "«Пополнение»: +4% к силе"
+
+msgctxt "term"
+msgid "Long Arms"
+msgstr "Длинные руки"
+
+msgctxt "term"
+msgid "+1 m hand-off range"
+msgstr "+1 м к дальности передачи"
+
+msgctxt "term"
+msgid "Bulk Rate"
+msgstr "Оптовая цена"
+
+msgctxt "term"
+msgid "+1% shop discount"
+msgstr "+1% к скидке в магазине"
+
+msgctxt "term"
+msgid "Fast Turnaround"
+msgstr "Быстрый оборот"
+
+msgctxt "term"
+msgid "Airdrop"
+msgstr "Сброс с воздуха"
+
+msgctxt "term"
+msgid "High Stakes"
+msgstr "Высокие ставки"
+
+msgctxt "term"
+msgid "+0.05x top bet multiplier"
+msgstr "+0.05x к наибольшему множителю ставки"
+
+msgctxt "term"
+msgid "Blessed"
+msgstr "Благословлённый"
+
+msgctxt "term"
+msgid "+2% blessing strength"
+msgstr "+2% к силе благословений"
+
+msgctxt "term"
+msgid "+2% bet insurance"
+msgstr "+2% к страховке ставки"
+
+msgctxt "term"
+msgid "Skim"
+msgstr "Снять сливки"
+
+msgctxt "term"
+msgid "Crimson Pact"
+msgstr "Багровый договор"
+
+msgctxt "term"
+msgid "Cheap Blood"
+msgstr "Дешёвая кровь"
+
+msgctxt "term"
+msgid "Dark Pact"
+msgstr "Тёмный договор"
+
+msgctxt "term"
+msgid "Blood Pact +4% power"
+msgstr "«Кровавый договор»: +4% к силе"
+
+msgctxt "term"
+msgid "Sip"
+msgstr "Глоток"
+
+msgctxt "term"
+msgid "+0.5% lifesteal"
+msgstr "+0.5% к вампиризму"
+
+msgctxt "term"
+msgid "Long Pact"
+msgstr "Долгий договор"
+
+msgctxt "term"
+msgid "Sanguine Bond"
+msgstr "Кровные узы"
+
+msgctxt "term"
+msgid "Blood Pact +20% power and Blood Price 1 HP cheaper"
+msgstr "«Кровавый договор»: +20% к силе, а «Цена крови» дешевле на 1 ОЗ"
+
+msgctxt "term"
+msgid "Ringleader"
+msgstr "Заводила"
+
+msgctxt "term"
+msgid "Bad Temper"
+msgstr "Скверный нрав"
+
+msgctxt "term"
 msgid "Loud Mouth"
 msgstr "Горлопан"
+
+msgctxt "term"
+msgid "Provoked fights hit 5% harder"
+msgstr "В спровоцированных драках удары на 5% сильнее"
+
+msgctxt "term"
+msgid "Hot Seat"
+msgstr "Горячее место"
+
+msgctxt "term"
+msgid "Provoke cooldown -4%"
+msgstr "Перезарядка «Провокации»: -4%"
+
+msgctxt "term"
+msgid "Main Event"
+msgstr "Гвоздь программы"
+
+msgctxt "term"
+msgid "Provoke lasts 20% longer and Ringside adds 10% more"
+msgstr "«Провокация» действует на 20% дольше, а «У ринга» добавляет ещё 10%"
+
+msgctxt "term"
+msgid "Puppeteer"
+msgstr "Кукловод"
+
+msgctxt "term"
+msgid "Long Echo"
+msgstr "Долгое эхо"
+
+msgctxt "term"
+msgid "Wide Echo"
+msgstr "Раскатистое эхо"
+
+msgctxt "term"
+msgid "Echo +5% area"
+msgstr "«Эхо»: +5% к области"
+
+msgctxt "term"
+msgid "Far Throw"
+msgstr "Дальний заброс"
+
+msgctxt "term"
+msgid "+1 m thrown voice"
+msgstr "+1 м к перебросу голоса"
+
+msgctxt "term"
+msgid "Quick Echo"
+msgstr "Быстрое эхо"
+
+msgctxt "term"
+msgid "Ventriloquist's Dummy"
+msgstr "Кукла чревовещателя"
+
+msgctxt "term"
+msgid "Echo makes a second echo point beside the first"
+msgstr "«Эхо» создаёт вторую точку эха рядом с первой"
+
+msgctxt "term"
+msgid "Curator"
+msgstr "Куратор"
+
+msgctxt "term"
+msgid "Deep Mend"
+msgstr "Глубокая починка"
+
+msgctxt "term"
+msgid "Mend +4% power"
+msgstr "«Починка»: +4% к силе"
+
+msgctxt "term"
+msgid "Gentle Care"
+msgstr "Бережный уход"
+
+msgctxt "term"
+msgid "Steady Hands mends 0.3% more"
+msgstr "«Твёрдые руки» чинят на 0.3% больше"
+
+msgctxt "term"
+msgid "Wide Mend"
+msgstr "Широкая починка"
+
+msgctxt "term"
+msgid "Mend +5% area"
+msgstr "«Починка»: +5% к области"
+
+msgctxt "term"
+msgid "+2% protection on held items"
+msgstr "+2% к защите предметов в руках"
+
+msgctxt "term"
+msgid "Masterwork"
+msgstr "Шедевр"
+
+msgctxt "term"
+msgid "valuables you hold take 12% less damage"
+msgstr "ценности у вас в руках получают на 12% меньше урона"
+
+msgctxt "term"
+msgid "Keener Eye"
+msgstr "Глаз поострее"
+
+msgctxt "term"
+msgid "+1% Keen Eye chance"
+msgstr "+1% к шансу «Острого глаза»"
+
+msgctxt "term"
+msgid "Rummage 3% faster"
+msgstr "«Обыск» быстрее на 3%"
+
+msgctxt "term"
+msgid "Quality Finds"
+msgstr "Качественные находки"
+
+msgctxt "term"
+msgid "finds +2% value"
+msgstr "находки: +2% к стоимости"
+
+msgctxt "term"
+msgid "Dig Deep"
+msgstr "Копать глубже"
+
+msgctxt "term"
+msgid "Rummage +4% power"
+msgstr "«Обыск»: +4% к силе"
+
+msgctxt "term"
+msgid "Motherlode"
+msgstr "Золотая жила"
+
+msgctxt "term"
+msgid "Rummage 1 more charge per level"
+msgstr "«Обыск»: на 1 заряд на уровень больше"
+
+msgctxt "term"
+msgid "Actuary"
+msgstr "Актуарий"
+
+msgctxt "term"
+msgid "Better Terms"
+msgstr "Условия получше"
+
+msgctxt "term"
+msgid "+2% coverage"
+msgstr "+2% к покрытию"
+
+msgctxt "term"
+msgid "Short Policy"
+msgstr "Короткий полис"
+
+msgctxt "term"
+msgid "Policy needs 3% less distance"
+msgstr "«Полису» нужно на 3% меньше расстояния"
+
+msgctxt "term"
+msgid "Wide Cover"
+msgstr "Широкое покрытие"
+
+msgctxt "term"
+msgid "+1 m coverage radius"
+msgstr "+1 м к радиусу покрытия"
+
+msgctxt "term"
+msgid "+2% guard on held items"
+msgstr "+2% к охране предметов в руках"
+
+msgctxt "term"
+msgid "Reinsurance"
+msgstr "Перестрахование"
+
+msgctxt "term"
+msgid "+6% coverage and 1 more Policy slot"
+msgstr "+6% к покрытию и на 1 ячейку «Полиса» больше"
+
+msgctxt "term"
+msgid "Sentinel"
+msgstr "Часовой"
+
+msgctxt "term"
+msgid "Long Post"
+msgstr "Долгий пост"
+
+msgctxt "term"
+msgid "Watchpost lasts 8% longer"
+msgstr "«Сторожевой пост» действует на 8% дольше"
+
+msgctxt "term"
+msgid "Wide Eyes"
+msgstr "Глаза пошире"
+
+msgctxt "term"
+msgid "+1 m Spotter radius"
+msgstr "+1 м к радиусу «Наводчика»"
+
+msgctxt "term"
+msgid "Fast Rebuild"
+msgstr "Быстрая перестройка"
+
+msgctxt "term"
+msgid "Far Sight"
+msgstr "Дальнее зрение"
+
+msgctxt "term"
+msgid "+2 m threat label range"
+msgstr "+2 м к дальности меток угрозы"
+
+msgctxt "term"
+msgid "Early Warning"
+msgstr "Раннее оповещение"
+
+msgctxt "term"
+msgid "Watchposts flash monsters they ping"
+msgstr "Сторожевые посты слепят вспышкой замеченных монстров"
+
+msgctxt "term"
+msgid "Armory"
+msgstr "Арсенал"
+
+msgctxt "term"
+msgid "Efficient"
+msgstr "Экономность"
+
+msgctxt "term"
+msgid "3% battery saving"
+msgstr "экономия батареи 3%"
+
+msgctxt "term"
+msgid "Long Overclock"
+msgstr "Долгий разгон"
+
+msgctxt "term"
+msgid "Hot Rounds"
+msgstr "Горячие патроны"
+
+msgctxt "term"
+msgid "Overclock +4% power"
+msgstr "«Разгон»: +4% к силе"
+
+msgctxt "term"
+msgid "Bench Work"
+msgstr "Работа на верстаке"
+
+msgctxt "term"
+msgid "Field Charger +3% faster"
+msgstr "«Полевой зарядник»: на 3% быстрее"
+
+msgctxt "term"
+msgid "Hot Swap"
+msgstr "Горячая замена"
+
+msgctxt "term"
+msgid "Overclock lasts 30% longer and has 1 more charge"
+msgstr "«Разгон» действует на 30% дольше и получает на 1 заряд больше"
+
+msgctxt "term"
+msgid "Flockmaster"
+msgstr "Хозяин стада"
+
+msgctxt "term"
+msgid "Long Calm"
+msgstr "Долгий покой"
+
+msgctxt "term"
+msgid "Wide Calm"
+msgstr "Широкий покой"
+
+msgctxt "term"
+msgid "+1 m Calm Presence radius"
+msgstr "+1 м к радиусу «Спокойного присутствия»"
+
+msgctxt "term"
+msgid "Slow to Wake"
+msgstr "Тяжёлый на подъём"
+
+msgctxt "term"
+msgid "Calm Presence +0.1 s"
+msgstr "«Спокойное присутствие»: +0.1 с"
+
+msgctxt "term"
+msgid "Pacify also calms one more monster nearby"
+msgstr "«Усмирение» успокаивает ещё одного монстра поблизости"
+
+msgctxt "term"
+msgid "Rigger"
+msgstr "Такелажник"
+
+msgctxt "term"
+msgid "Long Line"
+msgstr "Длинный трос"
+
+msgctxt "term"
+msgid "Hook +5% range"
+msgstr "«Крюк»: +5% к дальности"
+
+msgctxt "term"
+msgid "+3% Long Reach"
+msgstr "+3% к «Дальнему захвату»"
+
+msgctxt "term"
+msgid "Fast Reel"
+msgstr "Скорая катушка"
+
+msgctxt "term"
+msgid "Hook +4% power"
+msgstr "«Крюк»: +4% к силе"
+
+msgctxt "term"
+msgid "Light Lift"
+msgstr "Лёгкий подъём"
+
+msgctxt "term"
+msgid "+0.5 kg counts as small"
+msgstr "+0.5 кг к весу мелкого предмета"
+
+msgctxt "term"
+msgid "Swing"
+msgstr "Раскачка"
+
+msgctxt "term"
+msgid "Hook gets 1 more charge"
+msgstr "«Крюк» получает на 1 заряд больше"
+
+msgctxt "term"
+msgid "Postmaster"
+msgstr "Почтмейстер"
+
+msgctxt "term"
+msgid "Express Lane"
+msgstr "Экспресс-линия"
+
+msgctxt "term"
+msgid "Wide Pad"
+msgstr "Широкая площадка"
+
+msgctxt "term"
+msgid "Thick Box"
+msgstr "Толстая коробка"
+
+msgctxt "term"
+msgid "Tagged items hum 5% quieter"
+msgstr "Помеченные предметы гудят на 5% тише"
+
+msgctxt "term"
+msgid "Swift Return"
+msgstr "Быстрый возврат"
+
+msgctxt "term"
+msgid "Dispatch cooldown -4%"
+msgstr "Перезарядка «Отправки»: -4%"
+
+msgctxt "term"
+msgid "Next-Day Air"
+msgstr "Авиадоставка за сутки"
+
+msgctxt "term"
+msgid "Dispatch countdown -2s and dispatched items arrive worth 5% more"
+msgstr "Отсчёт «Отправки»: -2 с, а отправленные предметы прибывают на 5% дороже"
 
 msgctxt "term"
 msgid "Butterfingers Insurance"
@@ -16189,6 +17365,10 @@ msgid "Striker Module of the Hauler"
 msgstr "Ударный модуль носильщика"
 
 msgctxt "term"
+msgid "Striker Module of the Sentinel"
+msgstr "Ударный модуль часового"
+
+msgctxt "term"
 msgid "Field Medic Striker Module"
 msgstr "Ударный модуль полевого медика"
 
@@ -16199,6 +17379,10 @@ msgstr "Ударный модуль полевого медика медика"
 msgctxt "term"
 msgid "Field Medic Striker Module of the Hauler"
 msgstr "Ударный модуль полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Striker Module of the Sentinel"
+msgstr "Ударный модуль полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Striker Module"
@@ -16213,6 +17397,10 @@ msgid "Lucky Striker Module of the Hauler"
 msgstr "Удачливый ударный модуль носильщика"
 
 msgctxt "term"
+msgid "Lucky Striker Module of the Sentinel"
+msgstr "Удачливый ударный модуль часового"
+
+msgctxt "term"
 msgid "Second Wind Striker Module"
 msgstr "Ударный модуль второго дыхания"
 
@@ -16223,6 +17411,10 @@ msgstr "Ударный модуль второго дыхания медика"
 msgctxt "term"
 msgid "Second Wind Striker Module of the Hauler"
 msgstr "Ударный модуль второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Striker Module of the Sentinel"
+msgstr "Ударный модуль второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Striker Module"
@@ -16237,6 +17429,10 @@ msgid "Bulwark Striker Module of the Hauler"
 msgstr "Крепостной ударный модуль носильщика"
 
 msgctxt "term"
+msgid "Bulwark Striker Module of the Sentinel"
+msgstr "Крепостной ударный модуль часового"
+
+msgctxt "term"
 msgid "Momentum Striker Module"
 msgstr "Инерционный ударный модуль"
 
@@ -16247,6 +17443,10 @@ msgstr "Инерционный ударный модуль медика"
 msgctxt "term"
 msgid "Momentum Striker Module of the Hauler"
 msgstr "Инерционный ударный модуль носильщика"
+
+msgctxt "term"
+msgid "Momentum Striker Module of the Sentinel"
+msgstr "Инерционный ударный модуль часового"
 
 msgctxt "term"
 msgid "Mender Striker Module"
@@ -16261,6 +17461,10 @@ msgid "Mender Striker Module of the Hauler"
 msgstr "Ударный модуль мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Striker Module of the Sentinel"
+msgstr "Ударный модуль мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Striker Module"
 msgstr "Твёрдый ударный модуль"
 
@@ -16271,6 +17475,26 @@ msgstr "Твёрдый ударный модуль медика"
 msgctxt "term"
 msgid "Steady Striker Module of the Hauler"
 msgstr "Твёрдый ударный модуль носильщика"
+
+msgctxt "term"
+msgid "Steady Striker Module of the Sentinel"
+msgstr "Твёрдый ударный модуль часового"
+
+msgctxt "term"
+msgid "Featherlight Striker Module"
+msgstr "Невесомый ударный модуль"
+
+msgctxt "term"
+msgid "Featherlight Striker Module of the Medic"
+msgstr "Невесомый ударный модуль медика"
+
+msgctxt "term"
+msgid "Featherlight Striker Module of the Hauler"
+msgstr "Невесомый ударный модуль носильщика"
+
+msgctxt "term"
+msgid "Featherlight Striker Module of the Sentinel"
+msgstr "Невесомый ударный модуль часового"
 
 msgctxt "term"
 msgid "Impact Gauntlet"
@@ -16285,6 +17509,10 @@ msgid "Impact Gauntlet of the Hauler"
 msgstr "Боевая перчатка носильщика"
 
 msgctxt "term"
+msgid "Impact Gauntlet of the Sentinel"
+msgstr "Боевая перчатка часового"
+
+msgctxt "term"
 msgid "Field Medic Impact Gauntlet"
 msgstr "Боевая перчатка полевого медика"
 
@@ -16295,6 +17523,10 @@ msgstr "Боевая перчатка полевого медика медика
 msgctxt "term"
 msgid "Field Medic Impact Gauntlet of the Hauler"
 msgstr "Боевая перчатка полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Impact Gauntlet of the Sentinel"
+msgstr "Боевая перчатка полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Impact Gauntlet"
@@ -16309,6 +17541,10 @@ msgid "Lucky Impact Gauntlet of the Hauler"
 msgstr "Удачливая боевая перчатка носильщика"
 
 msgctxt "term"
+msgid "Lucky Impact Gauntlet of the Sentinel"
+msgstr "Удачливая боевая перчатка часового"
+
+msgctxt "term"
 msgid "Second Wind Impact Gauntlet"
 msgstr "Боевая перчатка второго дыхания"
 
@@ -16319,6 +17555,10 @@ msgstr "Боевая перчатка второго дыхания медика
 msgctxt "term"
 msgid "Second Wind Impact Gauntlet of the Hauler"
 msgstr "Боевая перчатка второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Impact Gauntlet of the Sentinel"
+msgstr "Боевая перчатка второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Impact Gauntlet"
@@ -16333,6 +17573,10 @@ msgid "Bulwark Impact Gauntlet of the Hauler"
 msgstr "Крепостная боевая перчатка носильщика"
 
 msgctxt "term"
+msgid "Bulwark Impact Gauntlet of the Sentinel"
+msgstr "Крепостная боевая перчатка часового"
+
+msgctxt "term"
 msgid "Momentum Impact Gauntlet"
 msgstr "Инерционная боевая перчатка"
 
@@ -16343,6 +17587,10 @@ msgstr "Инерционная боевая перчатка медика"
 msgctxt "term"
 msgid "Momentum Impact Gauntlet of the Hauler"
 msgstr "Инерционная боевая перчатка носильщика"
+
+msgctxt "term"
+msgid "Momentum Impact Gauntlet of the Sentinel"
+msgstr "Инерционная боевая перчатка часового"
 
 msgctxt "term"
 msgid "Mender Impact Gauntlet"
@@ -16357,6 +17605,10 @@ msgid "Mender Impact Gauntlet of the Hauler"
 msgstr "Боевая перчатка мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Impact Gauntlet of the Sentinel"
+msgstr "Боевая перчатка мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Impact Gauntlet"
 msgstr "Твёрдая боевая перчатка"
 
@@ -16367,6 +17619,26 @@ msgstr "Твёрдая боевая перчатка медика"
 msgctxt "term"
 msgid "Steady Impact Gauntlet of the Hauler"
 msgstr "Твёрдая боевая перчатка носильщика"
+
+msgctxt "term"
+msgid "Steady Impact Gauntlet of the Sentinel"
+msgstr "Твёрдая боевая перчатка часового"
+
+msgctxt "term"
+msgid "Featherlight Impact Gauntlet"
+msgstr "Невесомая боевая перчатка"
+
+msgctxt "term"
+msgid "Featherlight Impact Gauntlet of the Medic"
+msgstr "Невесомая боевая перчатка медика"
+
+msgctxt "term"
+msgid "Featherlight Impact Gauntlet of the Hauler"
+msgstr "Невесомая боевая перчатка носильщика"
+
+msgctxt "term"
+msgid "Featherlight Impact Gauntlet of the Sentinel"
+msgstr "Невесомая боевая перчатка часового"
 
 msgctxt "term"
 msgid "Breaker Arm"
@@ -16381,6 +17653,10 @@ msgid "Breaker Arm of the Hauler"
 msgstr "Рука-крушитель носильщика"
 
 msgctxt "term"
+msgid "Breaker Arm of the Sentinel"
+msgstr "Рука-крушитель часового"
+
+msgctxt "term"
 msgid "Field Medic Breaker Arm"
 msgstr "Рука-крушитель полевого медика"
 
@@ -16391,6 +17667,10 @@ msgstr "Рука-крушитель полевого медика медика"
 msgctxt "term"
 msgid "Field Medic Breaker Arm of the Hauler"
 msgstr "Рука-крушитель полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Breaker Arm of the Sentinel"
+msgstr "Рука-крушитель полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Breaker Arm"
@@ -16405,6 +17685,10 @@ msgid "Lucky Breaker Arm of the Hauler"
 msgstr "Удачливая рука-крушитель носильщика"
 
 msgctxt "term"
+msgid "Lucky Breaker Arm of the Sentinel"
+msgstr "Удачливая рука-крушитель часового"
+
+msgctxt "term"
 msgid "Second Wind Breaker Arm"
 msgstr "Рука-крушитель второго дыхания"
 
@@ -16415,6 +17699,10 @@ msgstr "Рука-крушитель второго дыхания медика"
 msgctxt "term"
 msgid "Second Wind Breaker Arm of the Hauler"
 msgstr "Рука-крушитель второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Breaker Arm of the Sentinel"
+msgstr "Рука-крушитель второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Breaker Arm"
@@ -16429,6 +17717,10 @@ msgid "Bulwark Breaker Arm of the Hauler"
 msgstr "Крепостная рука-крушитель носильщика"
 
 msgctxt "term"
+msgid "Bulwark Breaker Arm of the Sentinel"
+msgstr "Крепостная рука-крушитель часового"
+
+msgctxt "term"
 msgid "Momentum Breaker Arm"
 msgstr "Инерционная рука-крушитель"
 
@@ -16439,6 +17731,10 @@ msgstr "Инерционная рука-крушитель медика"
 msgctxt "term"
 msgid "Momentum Breaker Arm of the Hauler"
 msgstr "Инерционная рука-крушитель носильщика"
+
+msgctxt "term"
+msgid "Momentum Breaker Arm of the Sentinel"
+msgstr "Инерционная рука-крушитель часового"
 
 msgctxt "term"
 msgid "Mender Breaker Arm"
@@ -16453,6 +17749,10 @@ msgid "Mender Breaker Arm of the Hauler"
 msgstr "Рука-крушитель мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Breaker Arm of the Sentinel"
+msgstr "Рука-крушитель мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Breaker Arm"
 msgstr "Твёрдая рука-крушитель"
 
@@ -16463,6 +17763,26 @@ msgstr "Твёрдая рука-крушитель медика"
 msgctxt "term"
 msgid "Steady Breaker Arm of the Hauler"
 msgstr "Твёрдая рука-крушитель носильщика"
+
+msgctxt "term"
+msgid "Steady Breaker Arm of the Sentinel"
+msgstr "Твёрдая рука-крушитель часового"
+
+msgctxt "term"
+msgid "Featherlight Breaker Arm"
+msgstr "Невесомая рука-крушитель"
+
+msgctxt "term"
+msgid "Featherlight Breaker Arm of the Medic"
+msgstr "Невесомая рука-крушитель медика"
+
+msgctxt "term"
+msgid "Featherlight Breaker Arm of the Hauler"
+msgstr "Невесомая рука-крушитель носильщика"
+
+msgctxt "term"
+msgid "Featherlight Breaker Arm of the Sentinel"
+msgstr "Невесомая рука-крушитель часового"
 
 msgctxt "term"
 msgid "Ram Fist"
@@ -16477,6 +17797,10 @@ msgid "Ram Fist of the Hauler"
 msgstr "Кулак-таран носильщика"
 
 msgctxt "term"
+msgid "Ram Fist of the Sentinel"
+msgstr "Кулак-таран часового"
+
+msgctxt "term"
 msgid "Field Medic Ram Fist"
 msgstr "Кулак-таран полевого медика"
 
@@ -16487,6 +17811,10 @@ msgstr "Кулак-таран полевого медика медика"
 msgctxt "term"
 msgid "Field Medic Ram Fist of the Hauler"
 msgstr "Кулак-таран полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Ram Fist of the Sentinel"
+msgstr "Кулак-таран полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Ram Fist"
@@ -16501,6 +17829,10 @@ msgid "Lucky Ram Fist of the Hauler"
 msgstr "Удачливый кулак-таран носильщика"
 
 msgctxt "term"
+msgid "Lucky Ram Fist of the Sentinel"
+msgstr "Удачливый кулак-таран часового"
+
+msgctxt "term"
 msgid "Second Wind Ram Fist"
 msgstr "Кулак-таран второго дыхания"
 
@@ -16511,6 +17843,10 @@ msgstr "Кулак-таран второго дыхания медика"
 msgctxt "term"
 msgid "Second Wind Ram Fist of the Hauler"
 msgstr "Кулак-таран второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Ram Fist of the Sentinel"
+msgstr "Кулак-таран второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Ram Fist"
@@ -16525,6 +17861,10 @@ msgid "Bulwark Ram Fist of the Hauler"
 msgstr "Крепостной кулак-таран носильщика"
 
 msgctxt "term"
+msgid "Bulwark Ram Fist of the Sentinel"
+msgstr "Крепостной кулак-таран часового"
+
+msgctxt "term"
 msgid "Momentum Ram Fist"
 msgstr "Инерционный кулак-таран"
 
@@ -16535,6 +17875,10 @@ msgstr "Инерционный кулак-таран медика"
 msgctxt "term"
 msgid "Momentum Ram Fist of the Hauler"
 msgstr "Инерционный кулак-таран носильщика"
+
+msgctxt "term"
+msgid "Momentum Ram Fist of the Sentinel"
+msgstr "Инерционный кулак-таран часового"
 
 msgctxt "term"
 msgid "Mender Ram Fist"
@@ -16549,6 +17893,10 @@ msgid "Mender Ram Fist of the Hauler"
 msgstr "Кулак-таран мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Ram Fist of the Sentinel"
+msgstr "Кулак-таран мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Ram Fist"
 msgstr "Твёрдый кулак-таран"
 
@@ -16559,6 +17907,26 @@ msgstr "Твёрдый кулак-таран медика"
 msgctxt "term"
 msgid "Steady Ram Fist of the Hauler"
 msgstr "Твёрдый кулак-таран носильщика"
+
+msgctxt "term"
+msgid "Steady Ram Fist of the Sentinel"
+msgstr "Твёрдый кулак-таран часового"
+
+msgctxt "term"
+msgid "Featherlight Ram Fist"
+msgstr "Невесомый кулак-таран"
+
+msgctxt "term"
+msgid "Featherlight Ram Fist of the Medic"
+msgstr "Невесомый кулак-таран медика"
+
+msgctxt "term"
+msgid "Featherlight Ram Fist of the Hauler"
+msgstr "Невесомый кулак-таран носильщика"
+
+msgctxt "term"
+msgid "Featherlight Ram Fist of the Sentinel"
+msgstr "Невесомый кулак-таран часового"
 
 msgctxt "term"
 msgid "Scrap Plating"
@@ -16573,6 +17941,10 @@ msgid "Scrap Plating of the Hauler"
 msgstr "Броня из лома носильщика"
 
 msgctxt "term"
+msgid "Scrap Plating of the Sentinel"
+msgstr "Броня из лома часового"
+
+msgctxt "term"
 msgid "Field Medic Scrap Plating"
 msgstr "Броня из лома полевого медика"
 
@@ -16583,6 +17955,10 @@ msgstr "Броня из лома полевого медика медика"
 msgctxt "term"
 msgid "Field Medic Scrap Plating of the Hauler"
 msgstr "Броня из лома полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Scrap Plating of the Sentinel"
+msgstr "Броня из лома полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Scrap Plating"
@@ -16597,6 +17973,10 @@ msgid "Lucky Scrap Plating of the Hauler"
 msgstr "Удачливая броня из лома носильщика"
 
 msgctxt "term"
+msgid "Lucky Scrap Plating of the Sentinel"
+msgstr "Удачливая броня из лома часового"
+
+msgctxt "term"
 msgid "Second Wind Scrap Plating"
 msgstr "Броня из лома второго дыхания"
 
@@ -16607,6 +17987,10 @@ msgstr "Броня из лома второго дыхания медика"
 msgctxt "term"
 msgid "Second Wind Scrap Plating of the Hauler"
 msgstr "Броня из лома второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Scrap Plating of the Sentinel"
+msgstr "Броня из лома второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Scrap Plating"
@@ -16621,6 +18005,10 @@ msgid "Bulwark Scrap Plating of the Hauler"
 msgstr "Крепостная броня из лома носильщика"
 
 msgctxt "term"
+msgid "Bulwark Scrap Plating of the Sentinel"
+msgstr "Крепостная броня из лома часового"
+
+msgctxt "term"
 msgid "Momentum Scrap Plating"
 msgstr "Инерционная броня из лома"
 
@@ -16631,6 +18019,10 @@ msgstr "Инерционная броня из лома медика"
 msgctxt "term"
 msgid "Momentum Scrap Plating of the Hauler"
 msgstr "Инерционная броня из лома носильщика"
+
+msgctxt "term"
+msgid "Momentum Scrap Plating of the Sentinel"
+msgstr "Инерционная броня из лома часового"
 
 msgctxt "term"
 msgid "Mender Scrap Plating"
@@ -16645,6 +18037,10 @@ msgid "Mender Scrap Plating of the Hauler"
 msgstr "Броня из лома мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Scrap Plating of the Sentinel"
+msgstr "Броня из лома мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Scrap Plating"
 msgstr "Твёрдая броня из лома"
 
@@ -16655,6 +18051,26 @@ msgstr "Твёрдая броня из лома медика"
 msgctxt "term"
 msgid "Steady Scrap Plating of the Hauler"
 msgstr "Твёрдая броня из лома носильщика"
+
+msgctxt "term"
+msgid "Steady Scrap Plating of the Sentinel"
+msgstr "Твёрдая броня из лома часового"
+
+msgctxt "term"
+msgid "Featherlight Scrap Plating"
+msgstr "Невесомая броня из лома"
+
+msgctxt "term"
+msgid "Featherlight Scrap Plating of the Medic"
+msgstr "Невесомая броня из лома медика"
+
+msgctxt "term"
+msgid "Featherlight Scrap Plating of the Hauler"
+msgstr "Невесомая броня из лома носильщика"
+
+msgctxt "term"
+msgid "Featherlight Scrap Plating of the Sentinel"
+msgstr "Невесомая броня из лома часового"
 
 msgctxt "term"
 msgid "Riot Plating"
@@ -16669,6 +18085,10 @@ msgid "Riot Plating of the Hauler"
 msgstr "Штурмовая броня носильщика"
 
 msgctxt "term"
+msgid "Riot Plating of the Sentinel"
+msgstr "Штурмовая броня часового"
+
+msgctxt "term"
 msgid "Field Medic Riot Plating"
 msgstr "Штурмовая броня полевого медика"
 
@@ -16679,6 +18099,10 @@ msgstr "Штурмовая броня полевого медика медика
 msgctxt "term"
 msgid "Field Medic Riot Plating of the Hauler"
 msgstr "Штурмовая броня полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Riot Plating of the Sentinel"
+msgstr "Штурмовая броня полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Riot Plating"
@@ -16693,6 +18117,10 @@ msgid "Lucky Riot Plating of the Hauler"
 msgstr "Удачливая штурмовая броня носильщика"
 
 msgctxt "term"
+msgid "Lucky Riot Plating of the Sentinel"
+msgstr "Удачливая штурмовая броня часового"
+
+msgctxt "term"
 msgid "Second Wind Riot Plating"
 msgstr "Штурмовая броня второго дыхания"
 
@@ -16703,6 +18131,10 @@ msgstr "Штурмовая броня второго дыхания медика
 msgctxt "term"
 msgid "Second Wind Riot Plating of the Hauler"
 msgstr "Штурмовая броня второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Riot Plating of the Sentinel"
+msgstr "Штурмовая броня второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Riot Plating"
@@ -16717,6 +18149,10 @@ msgid "Bulwark Riot Plating of the Hauler"
 msgstr "Крепостная штурмовая броня носильщика"
 
 msgctxt "term"
+msgid "Bulwark Riot Plating of the Sentinel"
+msgstr "Крепостная штурмовая броня часового"
+
+msgctxt "term"
 msgid "Momentum Riot Plating"
 msgstr "Инерционная штурмовая броня"
 
@@ -16727,6 +18163,10 @@ msgstr "Инерционная штурмовая броня медика"
 msgctxt "term"
 msgid "Momentum Riot Plating of the Hauler"
 msgstr "Инерционная штурмовая броня носильщика"
+
+msgctxt "term"
+msgid "Momentum Riot Plating of the Sentinel"
+msgstr "Инерционная штурмовая броня часового"
 
 msgctxt "term"
 msgid "Mender Riot Plating"
@@ -16741,6 +18181,10 @@ msgid "Mender Riot Plating of the Hauler"
 msgstr "Штурмовая броня мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Riot Plating of the Sentinel"
+msgstr "Штурмовая броня мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Riot Plating"
 msgstr "Твёрдая штурмовая броня"
 
@@ -16751,6 +18195,26 @@ msgstr "Твёрдая штурмовая броня медика"
 msgctxt "term"
 msgid "Steady Riot Plating of the Hauler"
 msgstr "Твёрдая штурмовая броня носильщика"
+
+msgctxt "term"
+msgid "Steady Riot Plating of the Sentinel"
+msgstr "Твёрдая штурмовая броня часового"
+
+msgctxt "term"
+msgid "Featherlight Riot Plating"
+msgstr "Невесомая штурмовая броня"
+
+msgctxt "term"
+msgid "Featherlight Riot Plating of the Medic"
+msgstr "Невесомая штурмовая броня медика"
+
+msgctxt "term"
+msgid "Featherlight Riot Plating of the Hauler"
+msgstr "Невесомая штурмовая броня носильщика"
+
+msgctxt "term"
+msgid "Featherlight Riot Plating of the Sentinel"
+msgstr "Невесомая штурмовая броня часового"
 
 msgctxt "term"
 msgid "Ceramic Shell"
@@ -16765,6 +18229,10 @@ msgid "Ceramic Shell of the Hauler"
 msgstr "Керамический панцирь носильщика"
 
 msgctxt "term"
+msgid "Ceramic Shell of the Sentinel"
+msgstr "Керамический панцирь часового"
+
+msgctxt "term"
 msgid "Field Medic Ceramic Shell"
 msgstr "Керамический панцирь полевого медика"
 
@@ -16775,6 +18243,10 @@ msgstr "Керамический панцирь полевого медика м
 msgctxt "term"
 msgid "Field Medic Ceramic Shell of the Hauler"
 msgstr "Керамический панцирь полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Ceramic Shell of the Sentinel"
+msgstr "Керамический панцирь полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Ceramic Shell"
@@ -16789,6 +18261,10 @@ msgid "Lucky Ceramic Shell of the Hauler"
 msgstr "Удачливый керамический панцирь носильщика"
 
 msgctxt "term"
+msgid "Lucky Ceramic Shell of the Sentinel"
+msgstr "Удачливый керамический панцирь часового"
+
+msgctxt "term"
 msgid "Second Wind Ceramic Shell"
 msgstr "Керамический панцирь второго дыхания"
 
@@ -16799,6 +18275,10 @@ msgstr "Керамический панцирь второго дыхания м
 msgctxt "term"
 msgid "Second Wind Ceramic Shell of the Hauler"
 msgstr "Керамический панцирь второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Ceramic Shell of the Sentinel"
+msgstr "Керамический панцирь второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Ceramic Shell"
@@ -16813,6 +18293,10 @@ msgid "Bulwark Ceramic Shell of the Hauler"
 msgstr "Крепостной керамический панцирь носильщика"
 
 msgctxt "term"
+msgid "Bulwark Ceramic Shell of the Sentinel"
+msgstr "Крепостной керамический панцирь часового"
+
+msgctxt "term"
 msgid "Momentum Ceramic Shell"
 msgstr "Инерционный керамический панцирь"
 
@@ -16823,6 +18307,10 @@ msgstr "Инерционный керамический панцирь меди�
 msgctxt "term"
 msgid "Momentum Ceramic Shell of the Hauler"
 msgstr "Инерционный керамический панцирь носильщика"
+
+msgctxt "term"
+msgid "Momentum Ceramic Shell of the Sentinel"
+msgstr "Инерционный керамический панцирь часового"
 
 msgctxt "term"
 msgid "Mender Ceramic Shell"
@@ -16837,6 +18325,10 @@ msgid "Mender Ceramic Shell of the Hauler"
 msgstr "Керамический панцирь мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Ceramic Shell of the Sentinel"
+msgstr "Керамический панцирь мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Ceramic Shell"
 msgstr "Твёрдый керамический панцирь"
 
@@ -16847,6 +18339,26 @@ msgstr "Твёрдый керамический панцирь медика"
 msgctxt "term"
 msgid "Steady Ceramic Shell of the Hauler"
 msgstr "Твёрдый керамический панцирь носильщика"
+
+msgctxt "term"
+msgid "Steady Ceramic Shell of the Sentinel"
+msgstr "Твёрдый керамический панцирь часового"
+
+msgctxt "term"
+msgid "Featherlight Ceramic Shell"
+msgstr "Невесомый керамический панцирь"
+
+msgctxt "term"
+msgid "Featherlight Ceramic Shell of the Medic"
+msgstr "Невесомый керамический панцирь медика"
+
+msgctxt "term"
+msgid "Featherlight Ceramic Shell of the Hauler"
+msgstr "Невесомый керамический панцирь носильщика"
+
+msgctxt "term"
+msgid "Featherlight Ceramic Shell of the Sentinel"
+msgstr "Невесомый керамический панцирь часового"
 
 msgctxt "term"
 msgid "Bulkhead Vest"
@@ -16861,6 +18373,10 @@ msgid "Bulkhead Vest of the Hauler"
 msgstr "Жилет-переборка носильщика"
 
 msgctxt "term"
+msgid "Bulkhead Vest of the Sentinel"
+msgstr "Жилет-переборка часового"
+
+msgctxt "term"
 msgid "Field Medic Bulkhead Vest"
 msgstr "Жилет-переборка полевого медика"
 
@@ -16871,6 +18387,10 @@ msgstr "Жилет-переборка полевого медика медика
 msgctxt "term"
 msgid "Field Medic Bulkhead Vest of the Hauler"
 msgstr "Жилет-переборка полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Bulkhead Vest of the Sentinel"
+msgstr "Жилет-переборка полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Bulkhead Vest"
@@ -16885,6 +18405,10 @@ msgid "Lucky Bulkhead Vest of the Hauler"
 msgstr "Удачливый жилет-переборка носильщика"
 
 msgctxt "term"
+msgid "Lucky Bulkhead Vest of the Sentinel"
+msgstr "Удачливый жилет-переборка часового"
+
+msgctxt "term"
 msgid "Second Wind Bulkhead Vest"
 msgstr "Жилет-переборка второго дыхания"
 
@@ -16895,6 +18419,10 @@ msgstr "Жилет-переборка второго дыхания медика
 msgctxt "term"
 msgid "Second Wind Bulkhead Vest of the Hauler"
 msgstr "Жилет-переборка второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Bulkhead Vest of the Sentinel"
+msgstr "Жилет-переборка второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Bulkhead Vest"
@@ -16909,6 +18437,10 @@ msgid "Bulwark Bulkhead Vest of the Hauler"
 msgstr "Крепостной жилет-переборка носильщика"
 
 msgctxt "term"
+msgid "Bulwark Bulkhead Vest of the Sentinel"
+msgstr "Крепостной жилет-переборка часового"
+
+msgctxt "term"
 msgid "Momentum Bulkhead Vest"
 msgstr "Инерционный жилет-переборка"
 
@@ -16919,6 +18451,10 @@ msgstr "Инерционный жилет-переборка медика"
 msgctxt "term"
 msgid "Momentum Bulkhead Vest of the Hauler"
 msgstr "Инерционный жилет-переборка носильщика"
+
+msgctxt "term"
+msgid "Momentum Bulkhead Vest of the Sentinel"
+msgstr "Инерционный жилет-переборка часового"
 
 msgctxt "term"
 msgid "Mender Bulkhead Vest"
@@ -16933,6 +18469,10 @@ msgid "Mender Bulkhead Vest of the Hauler"
 msgstr "Жилет-переборка мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Bulkhead Vest of the Sentinel"
+msgstr "Жилет-переборка мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Bulkhead Vest"
 msgstr "Твёрдый жилет-переборка"
 
@@ -16943,6 +18483,26 @@ msgstr "Твёрдый жилет-переборка медика"
 msgctxt "term"
 msgid "Steady Bulkhead Vest of the Hauler"
 msgstr "Твёрдый жилет-переборка носильщика"
+
+msgctxt "term"
+msgid "Steady Bulkhead Vest of the Sentinel"
+msgstr "Твёрдый жилет-переборка часового"
+
+msgctxt "term"
+msgid "Featherlight Bulkhead Vest"
+msgstr "Невесомый жилет-переборка"
+
+msgctxt "term"
+msgid "Featherlight Bulkhead Vest of the Medic"
+msgstr "Невесомый жилет-переборка медика"
+
+msgctxt "term"
+msgid "Featherlight Bulkhead Vest of the Hauler"
+msgstr "Невесомый жилет-переборка носильщика"
+
+msgctxt "term"
+msgid "Featherlight Bulkhead Vest of the Sentinel"
+msgstr "Невесомый жилет-переборка часового"
 
 msgctxt "term"
 msgid "Leg Servos"
@@ -16957,6 +18517,10 @@ msgid "Leg Servos of the Hauler"
 msgstr "Ножные сервоприводы носильщика"
 
 msgctxt "term"
+msgid "Leg Servos of the Sentinel"
+msgstr "Ножные сервоприводы часового"
+
+msgctxt "term"
 msgid "Field Medic Leg Servos"
 msgstr "Ножные сервоприводы полевого медика"
 
@@ -16967,6 +18531,10 @@ msgstr "Ножные сервоприводы полевого медика ме
 msgctxt "term"
 msgid "Field Medic Leg Servos of the Hauler"
 msgstr "Ножные сервоприводы полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Leg Servos of the Sentinel"
+msgstr "Ножные сервоприводы полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Leg Servos"
@@ -16981,6 +18549,10 @@ msgid "Lucky Leg Servos of the Hauler"
 msgstr "Удачливые ножные сервоприводы носильщика"
 
 msgctxt "term"
+msgid "Lucky Leg Servos of the Sentinel"
+msgstr "Удачливые ножные сервоприводы часового"
+
+msgctxt "term"
 msgid "Second Wind Leg Servos"
 msgstr "Ножные сервоприводы второго дыхания"
 
@@ -16991,6 +18563,10 @@ msgstr "Ножные сервоприводы второго дыхания ме
 msgctxt "term"
 msgid "Second Wind Leg Servos of the Hauler"
 msgstr "Ножные сервоприводы второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Leg Servos of the Sentinel"
+msgstr "Ножные сервоприводы второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Leg Servos"
@@ -17005,6 +18581,10 @@ msgid "Bulwark Leg Servos of the Hauler"
 msgstr "Крепостные ножные сервоприводы носильщика"
 
 msgctxt "term"
+msgid "Bulwark Leg Servos of the Sentinel"
+msgstr "Крепостные ножные сервоприводы часового"
+
+msgctxt "term"
 msgid "Momentum Leg Servos"
 msgstr "Инерционные ножные сервоприводы"
 
@@ -17015,6 +18595,10 @@ msgstr "Инерционные ножные сервоприводы медик�
 msgctxt "term"
 msgid "Momentum Leg Servos of the Hauler"
 msgstr "Инерционные ножные сервоприводы носильщика"
+
+msgctxt "term"
+msgid "Momentum Leg Servos of the Sentinel"
+msgstr "Инерционные ножные сервоприводы часового"
 
 msgctxt "term"
 msgid "Mender Leg Servos"
@@ -17029,6 +18613,10 @@ msgid "Mender Leg Servos of the Hauler"
 msgstr "Ножные сервоприводы мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Leg Servos of the Sentinel"
+msgstr "Ножные сервоприводы мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Leg Servos"
 msgstr "Твёрдые ножные сервоприводы"
 
@@ -17039,6 +18627,26 @@ msgstr "Твёрдые ножные сервоприводы медика"
 msgctxt "term"
 msgid "Steady Leg Servos of the Hauler"
 msgstr "Твёрдые ножные сервоприводы носильщика"
+
+msgctxt "term"
+msgid "Steady Leg Servos of the Sentinel"
+msgstr "Твёрдые ножные сервоприводы часового"
+
+msgctxt "term"
+msgid "Featherlight Leg Servos"
+msgstr "Невесомые ножные сервоприводы"
+
+msgctxt "term"
+msgid "Featherlight Leg Servos of the Medic"
+msgstr "Невесомые ножные сервоприводы медика"
+
+msgctxt "term"
+msgid "Featherlight Leg Servos of the Hauler"
+msgstr "Невесомые ножные сервоприводы носильщика"
+
+msgctxt "term"
+msgid "Featherlight Leg Servos of the Sentinel"
+msgstr "Невесомые ножные сервоприводы часового"
 
 msgctxt "term"
 msgid "Spring Actuators"
@@ -17053,6 +18661,10 @@ msgid "Spring Actuators of the Hauler"
 msgstr "Пружинные приводы носильщика"
 
 msgctxt "term"
+msgid "Spring Actuators of the Sentinel"
+msgstr "Пружинные приводы часового"
+
+msgctxt "term"
 msgid "Field Medic Spring Actuators"
 msgstr "Пружинные приводы полевого медика"
 
@@ -17063,6 +18675,10 @@ msgstr "Пружинные приводы полевого медика меди
 msgctxt "term"
 msgid "Field Medic Spring Actuators of the Hauler"
 msgstr "Пружинные приводы полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Spring Actuators of the Sentinel"
+msgstr "Пружинные приводы полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Spring Actuators"
@@ -17077,6 +18693,10 @@ msgid "Lucky Spring Actuators of the Hauler"
 msgstr "Удачливые пружинные приводы носильщика"
 
 msgctxt "term"
+msgid "Lucky Spring Actuators of the Sentinel"
+msgstr "Удачливые пружинные приводы часового"
+
+msgctxt "term"
 msgid "Second Wind Spring Actuators"
 msgstr "Пружинные приводы второго дыхания"
 
@@ -17087,6 +18707,10 @@ msgstr "Пружинные приводы второго дыхания меди
 msgctxt "term"
 msgid "Second Wind Spring Actuators of the Hauler"
 msgstr "Пружинные приводы второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Spring Actuators of the Sentinel"
+msgstr "Пружинные приводы второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Spring Actuators"
@@ -17101,6 +18725,10 @@ msgid "Bulwark Spring Actuators of the Hauler"
 msgstr "Крепостные пружинные приводы носильщика"
 
 msgctxt "term"
+msgid "Bulwark Spring Actuators of the Sentinel"
+msgstr "Крепостные пружинные приводы часового"
+
+msgctxt "term"
 msgid "Momentum Spring Actuators"
 msgstr "Инерционные пружинные приводы"
 
@@ -17111,6 +18739,10 @@ msgstr "Инерционные пружинные приводы медика"
 msgctxt "term"
 msgid "Momentum Spring Actuators of the Hauler"
 msgstr "Инерционные пружинные приводы носильщика"
+
+msgctxt "term"
+msgid "Momentum Spring Actuators of the Sentinel"
+msgstr "Инерционные пружинные приводы часового"
 
 msgctxt "term"
 msgid "Mender Spring Actuators"
@@ -17125,6 +18757,10 @@ msgid "Mender Spring Actuators of the Hauler"
 msgstr "Пружинные приводы мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Spring Actuators of the Sentinel"
+msgstr "Пружинные приводы мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Spring Actuators"
 msgstr "Твёрдые пружинные приводы"
 
@@ -17135,6 +18771,26 @@ msgstr "Твёрдые пружинные приводы медика"
 msgctxt "term"
 msgid "Steady Spring Actuators of the Hauler"
 msgstr "Твёрдые пружинные приводы носильщика"
+
+msgctxt "term"
+msgid "Steady Spring Actuators of the Sentinel"
+msgstr "Твёрдые пружинные приводы часового"
+
+msgctxt "term"
+msgid "Featherlight Spring Actuators"
+msgstr "Невесомые пружинные приводы"
+
+msgctxt "term"
+msgid "Featherlight Spring Actuators of the Medic"
+msgstr "Невесомые пружинные приводы медика"
+
+msgctxt "term"
+msgid "Featherlight Spring Actuators of the Hauler"
+msgstr "Невесомые пружинные приводы носильщика"
+
+msgctxt "term"
+msgid "Featherlight Spring Actuators of the Sentinel"
+msgstr "Невесомые пружинные приводы часового"
 
 msgctxt "term"
 msgid "Gyro Joints"
@@ -17149,6 +18805,10 @@ msgid "Gyro Joints of the Hauler"
 msgstr "Гироскопические суставы носильщика"
 
 msgctxt "term"
+msgid "Gyro Joints of the Sentinel"
+msgstr "Гироскопические суставы часового"
+
+msgctxt "term"
 msgid "Field Medic Gyro Joints"
 msgstr "Гироскопические суставы полевого медика"
 
@@ -17159,6 +18819,10 @@ msgstr "Гироскопические суставы полевого меди�
 msgctxt "term"
 msgid "Field Medic Gyro Joints of the Hauler"
 msgstr "Гироскопические суставы полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Gyro Joints of the Sentinel"
+msgstr "Гироскопические суставы полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Gyro Joints"
@@ -17173,6 +18837,10 @@ msgid "Lucky Gyro Joints of the Hauler"
 msgstr "Удачливые гироскопические суставы носильщика"
 
 msgctxt "term"
+msgid "Lucky Gyro Joints of the Sentinel"
+msgstr "Удачливые гироскопические суставы часового"
+
+msgctxt "term"
 msgid "Second Wind Gyro Joints"
 msgstr "Гироскопические суставы второго дыхания"
 
@@ -17183,6 +18851,10 @@ msgstr "Гироскопические суставы второго дыхан�
 msgctxt "term"
 msgid "Second Wind Gyro Joints of the Hauler"
 msgstr "Гироскопические суставы второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Gyro Joints of the Sentinel"
+msgstr "Гироскопические суставы второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Gyro Joints"
@@ -17197,6 +18869,10 @@ msgid "Bulwark Gyro Joints of the Hauler"
 msgstr "Крепостные гироскопические суставы носильщика"
 
 msgctxt "term"
+msgid "Bulwark Gyro Joints of the Sentinel"
+msgstr "Крепостные гироскопические суставы часового"
+
+msgctxt "term"
 msgid "Momentum Gyro Joints"
 msgstr "Инерционные гироскопические суставы"
 
@@ -17207,6 +18883,10 @@ msgstr "Инерционные гироскопические суставы м�
 msgctxt "term"
 msgid "Momentum Gyro Joints of the Hauler"
 msgstr "Инерционные гироскопические суставы носильщика"
+
+msgctxt "term"
+msgid "Momentum Gyro Joints of the Sentinel"
+msgstr "Инерционные гироскопические суставы часового"
 
 msgctxt "term"
 msgid "Mender Gyro Joints"
@@ -17221,6 +18901,10 @@ msgid "Mender Gyro Joints of the Hauler"
 msgstr "Гироскопические суставы мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Gyro Joints of the Sentinel"
+msgstr "Гироскопические суставы мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Gyro Joints"
 msgstr "Твёрдые гироскопические суставы"
 
@@ -17231,6 +18915,26 @@ msgstr "Твёрдые гироскопические суставы медик�
 msgctxt "term"
 msgid "Steady Gyro Joints of the Hauler"
 msgstr "Твёрдые гироскопические суставы носильщика"
+
+msgctxt "term"
+msgid "Steady Gyro Joints of the Sentinel"
+msgstr "Твёрдые гироскопические суставы часового"
+
+msgctxt "term"
+msgid "Featherlight Gyro Joints"
+msgstr "Невесомые гироскопические суставы"
+
+msgctxt "term"
+msgid "Featherlight Gyro Joints of the Medic"
+msgstr "Невесомые гироскопические суставы медика"
+
+msgctxt "term"
+msgid "Featherlight Gyro Joints of the Hauler"
+msgstr "Невесомые гироскопические суставы носильщика"
+
+msgctxt "term"
+msgid "Featherlight Gyro Joints of the Sentinel"
+msgstr "Невесомые гироскопические суставы часового"
 
 msgctxt "term"
 msgid "Track Motors"
@@ -17245,6 +18949,10 @@ msgid "Track Motors of the Hauler"
 msgstr "Гусеничные моторы носильщика"
 
 msgctxt "term"
+msgid "Track Motors of the Sentinel"
+msgstr "Гусеничные моторы часового"
+
+msgctxt "term"
 msgid "Field Medic Track Motors"
 msgstr "Гусеничные моторы полевого медика"
 
@@ -17255,6 +18963,10 @@ msgstr "Гусеничные моторы полевого медика меди
 msgctxt "term"
 msgid "Field Medic Track Motors of the Hauler"
 msgstr "Гусеничные моторы полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Track Motors of the Sentinel"
+msgstr "Гусеничные моторы полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Track Motors"
@@ -17269,6 +18981,10 @@ msgid "Lucky Track Motors of the Hauler"
 msgstr "Удачливые гусеничные моторы носильщика"
 
 msgctxt "term"
+msgid "Lucky Track Motors of the Sentinel"
+msgstr "Удачливые гусеничные моторы часового"
+
+msgctxt "term"
 msgid "Second Wind Track Motors"
 msgstr "Гусеничные моторы второго дыхания"
 
@@ -17279,6 +18995,10 @@ msgstr "Гусеничные моторы второго дыхания меди
 msgctxt "term"
 msgid "Second Wind Track Motors of the Hauler"
 msgstr "Гусеничные моторы второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Track Motors of the Sentinel"
+msgstr "Гусеничные моторы второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Track Motors"
@@ -17293,6 +19013,10 @@ msgid "Bulwark Track Motors of the Hauler"
 msgstr "Крепостные гусеничные моторы носильщика"
 
 msgctxt "term"
+msgid "Bulwark Track Motors of the Sentinel"
+msgstr "Крепостные гусеничные моторы часового"
+
+msgctxt "term"
 msgid "Momentum Track Motors"
 msgstr "Инерционные гусеничные моторы"
 
@@ -17303,6 +19027,10 @@ msgstr "Инерционные гусеничные моторы медика"
 msgctxt "term"
 msgid "Momentum Track Motors of the Hauler"
 msgstr "Инерционные гусеничные моторы носильщика"
+
+msgctxt "term"
+msgid "Momentum Track Motors of the Sentinel"
+msgstr "Инерционные гусеничные моторы часового"
 
 msgctxt "term"
 msgid "Mender Track Motors"
@@ -17317,6 +19045,10 @@ msgid "Mender Track Motors of the Hauler"
 msgstr "Гусеничные моторы мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Track Motors of the Sentinel"
+msgstr "Гусеничные моторы мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Track Motors"
 msgstr "Твёрдые гусеничные моторы"
 
@@ -17327,6 +19059,26 @@ msgstr "Твёрдые гусеничные моторы медика"
 msgctxt "term"
 msgid "Steady Track Motors of the Hauler"
 msgstr "Твёрдые гусеничные моторы носильщика"
+
+msgctxt "term"
+msgid "Steady Track Motors of the Sentinel"
+msgstr "Твёрдые гусеничные моторы часового"
+
+msgctxt "term"
+msgid "Featherlight Track Motors"
+msgstr "Невесомые гусеничные моторы"
+
+msgctxt "term"
+msgid "Featherlight Track Motors of the Medic"
+msgstr "Невесомые гусеничные моторы медика"
+
+msgctxt "term"
+msgid "Featherlight Track Motors of the Hauler"
+msgstr "Невесомые гусеничные моторы носильщика"
+
+msgctxt "term"
+msgid "Featherlight Track Motors of the Sentinel"
+msgstr "Невесомые гусеничные моторы часового"
 
 msgctxt "term"
 msgid "Logic Core"
@@ -17341,6 +19093,10 @@ msgid "Logic Core of the Hauler"
 msgstr "Логическое ядро носильщика"
 
 msgctxt "term"
+msgid "Logic Core of the Sentinel"
+msgstr "Логическое ядро часового"
+
+msgctxt "term"
 msgid "Field Medic Logic Core"
 msgstr "Логическое ядро полевого медика"
 
@@ -17351,6 +19107,10 @@ msgstr "Логическое ядро полевого медика медика
 msgctxt "term"
 msgid "Field Medic Logic Core of the Hauler"
 msgstr "Логическое ядро полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Logic Core of the Sentinel"
+msgstr "Логическое ядро полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Logic Core"
@@ -17365,6 +19125,10 @@ msgid "Lucky Logic Core of the Hauler"
 msgstr "Удачливое логическое ядро носильщика"
 
 msgctxt "term"
+msgid "Lucky Logic Core of the Sentinel"
+msgstr "Удачливое логическое ядро часового"
+
+msgctxt "term"
 msgid "Second Wind Logic Core"
 msgstr "Логическое ядро второго дыхания"
 
@@ -17375,6 +19139,10 @@ msgstr "Логическое ядро второго дыхания медика
 msgctxt "term"
 msgid "Second Wind Logic Core of the Hauler"
 msgstr "Логическое ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Logic Core of the Sentinel"
+msgstr "Логическое ядро второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Logic Core"
@@ -17389,6 +19157,10 @@ msgid "Bulwark Logic Core of the Hauler"
 msgstr "Крепостное логическое ядро носильщика"
 
 msgctxt "term"
+msgid "Bulwark Logic Core of the Sentinel"
+msgstr "Крепостное логическое ядро часового"
+
+msgctxt "term"
 msgid "Momentum Logic Core"
 msgstr "Инерционное логическое ядро"
 
@@ -17399,6 +19171,10 @@ msgstr "Инерционное логическое ядро медика"
 msgctxt "term"
 msgid "Momentum Logic Core of the Hauler"
 msgstr "Инерционное логическое ядро носильщика"
+
+msgctxt "term"
+msgid "Momentum Logic Core of the Sentinel"
+msgstr "Инерционное логическое ядро часового"
 
 msgctxt "term"
 msgid "Mender Logic Core"
@@ -17413,6 +19189,10 @@ msgid "Mender Logic Core of the Hauler"
 msgstr "Логическое ядро мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Logic Core of the Sentinel"
+msgstr "Логическое ядро мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Logic Core"
 msgstr "Твёрдое логическое ядро"
 
@@ -17423,6 +19203,26 @@ msgstr "Твёрдое логическое ядро медика"
 msgctxt "term"
 msgid "Steady Logic Core of the Hauler"
 msgstr "Твёрдое логическое ядро носильщика"
+
+msgctxt "term"
+msgid "Steady Logic Core of the Sentinel"
+msgstr "Твёрдое логическое ядро часового"
+
+msgctxt "term"
+msgid "Featherlight Logic Core"
+msgstr "Невесомое логическое ядро"
+
+msgctxt "term"
+msgid "Featherlight Logic Core of the Medic"
+msgstr "Невесомое логическое ядро медика"
+
+msgctxt "term"
+msgid "Featherlight Logic Core of the Hauler"
+msgstr "Невесомое логическое ядро носильщика"
+
+msgctxt "term"
+msgid "Featherlight Logic Core of the Sentinel"
+msgstr "Невесомое логическое ядро часового"
 
 msgctxt "term"
 msgid "Quantum Core"
@@ -17437,6 +19237,10 @@ msgid "Quantum Core of the Hauler"
 msgstr "Квантовое ядро носильщика"
 
 msgctxt "term"
+msgid "Quantum Core of the Sentinel"
+msgstr "Квантовое ядро часового"
+
+msgctxt "term"
 msgid "Field Medic Quantum Core"
 msgstr "Квантовое ядро полевого медика"
 
@@ -17447,6 +19251,10 @@ msgstr "Квантовое ядро полевого медика медика"
 msgctxt "term"
 msgid "Field Medic Quantum Core of the Hauler"
 msgstr "Квантовое ядро полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Quantum Core of the Sentinel"
+msgstr "Квантовое ядро полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Quantum Core"
@@ -17461,6 +19269,10 @@ msgid "Lucky Quantum Core of the Hauler"
 msgstr "Удачливое квантовое ядро носильщика"
 
 msgctxt "term"
+msgid "Lucky Quantum Core of the Sentinel"
+msgstr "Удачливое квантовое ядро часового"
+
+msgctxt "term"
 msgid "Second Wind Quantum Core"
 msgstr "Квантовое ядро второго дыхания"
 
@@ -17471,6 +19283,10 @@ msgstr "Квантовое ядро второго дыхания медика"
 msgctxt "term"
 msgid "Second Wind Quantum Core of the Hauler"
 msgstr "Квантовое ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Quantum Core of the Sentinel"
+msgstr "Квантовое ядро второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Quantum Core"
@@ -17485,6 +19301,10 @@ msgid "Bulwark Quantum Core of the Hauler"
 msgstr "Крепостное квантовое ядро носильщика"
 
 msgctxt "term"
+msgid "Bulwark Quantum Core of the Sentinel"
+msgstr "Крепостное квантовое ядро часового"
+
+msgctxt "term"
 msgid "Momentum Quantum Core"
 msgstr "Инерционное квантовое ядро"
 
@@ -17495,6 +19315,10 @@ msgstr "Инерционное квантовое ядро медика"
 msgctxt "term"
 msgid "Momentum Quantum Core of the Hauler"
 msgstr "Инерционное квантовое ядро носильщика"
+
+msgctxt "term"
+msgid "Momentum Quantum Core of the Sentinel"
+msgstr "Инерционное квантовое ядро часового"
 
 msgctxt "term"
 msgid "Mender Quantum Core"
@@ -17509,6 +19333,10 @@ msgid "Mender Quantum Core of the Hauler"
 msgstr "Квантовое ядро мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Quantum Core of the Sentinel"
+msgstr "Квантовое ядро мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Quantum Core"
 msgstr "Твёрдое квантовое ядро"
 
@@ -17519,6 +19347,26 @@ msgstr "Твёрдое квантовое ядро медика"
 msgctxt "term"
 msgid "Steady Quantum Core of the Hauler"
 msgstr "Твёрдое квантовое ядро носильщика"
+
+msgctxt "term"
+msgid "Steady Quantum Core of the Sentinel"
+msgstr "Твёрдое квантовое ядро часового"
+
+msgctxt "term"
+msgid "Featherlight Quantum Core"
+msgstr "Невесомое квантовое ядро"
+
+msgctxt "term"
+msgid "Featherlight Quantum Core of the Medic"
+msgstr "Невесомое квантовое ядро медика"
+
+msgctxt "term"
+msgid "Featherlight Quantum Core of the Hauler"
+msgstr "Невесомое квантовое ядро носильщика"
+
+msgctxt "term"
+msgid "Featherlight Quantum Core of the Sentinel"
+msgstr "Невесомое квантовое ядро часового"
 
 msgctxt "term"
 msgid "Battery Core"
@@ -17533,6 +19381,10 @@ msgid "Battery Core of the Hauler"
 msgstr "Батарейное ядро носильщика"
 
 msgctxt "term"
+msgid "Battery Core of the Sentinel"
+msgstr "Батарейное ядро часового"
+
+msgctxt "term"
 msgid "Field Medic Battery Core"
 msgstr "Батарейное ядро полевого медика"
 
@@ -17543,6 +19395,10 @@ msgstr "Батарейное ядро полевого медика медика
 msgctxt "term"
 msgid "Field Medic Battery Core of the Hauler"
 msgstr "Батарейное ядро полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Battery Core of the Sentinel"
+msgstr "Батарейное ядро полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Battery Core"
@@ -17557,6 +19413,10 @@ msgid "Lucky Battery Core of the Hauler"
 msgstr "Удачливое батарейное ядро носильщика"
 
 msgctxt "term"
+msgid "Lucky Battery Core of the Sentinel"
+msgstr "Удачливое батарейное ядро часового"
+
+msgctxt "term"
 msgid "Second Wind Battery Core"
 msgstr "Батарейное ядро второго дыхания"
 
@@ -17567,6 +19427,10 @@ msgstr "Батарейное ядро второго дыхания медика
 msgctxt "term"
 msgid "Second Wind Battery Core of the Hauler"
 msgstr "Батарейное ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Battery Core of the Sentinel"
+msgstr "Батарейное ядро второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Battery Core"
@@ -17581,6 +19445,10 @@ msgid "Bulwark Battery Core of the Hauler"
 msgstr "Крепостное батарейное ядро носильщика"
 
 msgctxt "term"
+msgid "Bulwark Battery Core of the Sentinel"
+msgstr "Крепостное батарейное ядро часового"
+
+msgctxt "term"
 msgid "Momentum Battery Core"
 msgstr "Инерционное батарейное ядро"
 
@@ -17591,6 +19459,10 @@ msgstr "Инерционное батарейное ядро медика"
 msgctxt "term"
 msgid "Momentum Battery Core of the Hauler"
 msgstr "Инерционное батарейное ядро носильщика"
+
+msgctxt "term"
+msgid "Momentum Battery Core of the Sentinel"
+msgstr "Инерционное батарейное ядро часового"
 
 msgctxt "term"
 msgid "Mender Battery Core"
@@ -17605,6 +19477,10 @@ msgid "Mender Battery Core of the Hauler"
 msgstr "Батарейное ядро мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Battery Core of the Sentinel"
+msgstr "Батарейное ядро мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Battery Core"
 msgstr "Твёрдое батарейное ядро"
 
@@ -17615,6 +19491,26 @@ msgstr "Твёрдое батарейное ядро медика"
 msgctxt "term"
 msgid "Steady Battery Core of the Hauler"
 msgstr "Твёрдое батарейное ядро носильщика"
+
+msgctxt "term"
+msgid "Steady Battery Core of the Sentinel"
+msgstr "Твёрдое батарейное ядро часового"
+
+msgctxt "term"
+msgid "Featherlight Battery Core"
+msgstr "Невесомое батарейное ядро"
+
+msgctxt "term"
+msgid "Featherlight Battery Core of the Medic"
+msgstr "Невесомое батарейное ядро медика"
+
+msgctxt "term"
+msgid "Featherlight Battery Core of the Hauler"
+msgstr "Невесомое батарейное ядро носильщика"
+
+msgctxt "term"
+msgid "Featherlight Battery Core of the Sentinel"
+msgstr "Невесомое батарейное ядро часового"
 
 msgctxt "term"
 msgid "Neural Core"
@@ -17629,6 +19525,10 @@ msgid "Neural Core of the Hauler"
 msgstr "Нейронное ядро носильщика"
 
 msgctxt "term"
+msgid "Neural Core of the Sentinel"
+msgstr "Нейронное ядро часового"
+
+msgctxt "term"
 msgid "Field Medic Neural Core"
 msgstr "Нейронное ядро полевого медика"
 
@@ -17639,6 +19539,10 @@ msgstr "Нейронное ядро полевого медика медика"
 msgctxt "term"
 msgid "Field Medic Neural Core of the Hauler"
 msgstr "Нейронное ядро полевого медика носильщика"
+
+msgctxt "term"
+msgid "Field Medic Neural Core of the Sentinel"
+msgstr "Нейронное ядро полевого медика часового"
 
 msgctxt "term"
 msgid "Lucky Neural Core"
@@ -17653,6 +19557,10 @@ msgid "Lucky Neural Core of the Hauler"
 msgstr "Удачливое нейронное ядро носильщика"
 
 msgctxt "term"
+msgid "Lucky Neural Core of the Sentinel"
+msgstr "Удачливое нейронное ядро часового"
+
+msgctxt "term"
 msgid "Second Wind Neural Core"
 msgstr "Нейронное ядро второго дыхания"
 
@@ -17663,6 +19571,10 @@ msgstr "Нейронное ядро второго дыхания медика"
 msgctxt "term"
 msgid "Second Wind Neural Core of the Hauler"
 msgstr "Нейронное ядро второго дыхания носильщика"
+
+msgctxt "term"
+msgid "Second Wind Neural Core of the Sentinel"
+msgstr "Нейронное ядро второго дыхания часового"
 
 msgctxt "term"
 msgid "Bulwark Neural Core"
@@ -17677,6 +19589,10 @@ msgid "Bulwark Neural Core of the Hauler"
 msgstr "Крепостное нейронное ядро носильщика"
 
 msgctxt "term"
+msgid "Bulwark Neural Core of the Sentinel"
+msgstr "Крепостное нейронное ядро часового"
+
+msgctxt "term"
 msgid "Momentum Neural Core"
 msgstr "Инерционное нейронное ядро"
 
@@ -17687,6 +19603,10 @@ msgstr "Инерционное нейронное ядро медика"
 msgctxt "term"
 msgid "Momentum Neural Core of the Hauler"
 msgstr "Инерционное нейронное ядро носильщика"
+
+msgctxt "term"
+msgid "Momentum Neural Core of the Sentinel"
+msgstr "Инерционное нейронное ядро часового"
 
 msgctxt "term"
 msgid "Mender Neural Core"
@@ -17701,6 +19621,10 @@ msgid "Mender Neural Core of the Hauler"
 msgstr "Нейронное ядро мастера починки носильщика"
 
 msgctxt "term"
+msgid "Mender Neural Core of the Sentinel"
+msgstr "Нейронное ядро мастера починки часового"
+
+msgctxt "term"
 msgid "Steady Neural Core"
 msgstr "Твёрдое нейронное ядро"
 
@@ -17711,6 +19635,26 @@ msgstr "Твёрдое нейронное ядро медика"
 msgctxt "term"
 msgid "Steady Neural Core of the Hauler"
 msgstr "Твёрдое нейронное ядро носильщика"
+
+msgctxt "term"
+msgid "Steady Neural Core of the Sentinel"
+msgstr "Твёрдое нейронное ядро часового"
+
+msgctxt "term"
+msgid "Featherlight Neural Core"
+msgstr "Невесомое нейронное ядро"
+
+msgctxt "term"
+msgid "Featherlight Neural Core of the Medic"
+msgstr "Невесомое нейронное ядро медика"
+
+msgctxt "term"
+msgid "Featherlight Neural Core of the Hauler"
+msgstr "Невесомое нейронное ядро носильщика"
+
+msgctxt "term"
+msgid "Featherlight Neural Core of the Sentinel"
+msgstr "Невесомое нейронное ядро часового"
 
 msgctxt "term"
 msgid "Prototype Field Medic Weapon Module"
@@ -17737,6 +19681,10 @@ msgid "Prototype Steady Weapon Module"
 msgstr "Прототип: Твёрдый оружейный модуль"
 
 msgctxt "term"
+msgid "Prototype Featherlight Weapon Module"
+msgstr "Прототип: Невесомый оружейный модуль"
+
+msgctxt "term"
 msgid "Prototype Field Medic Plating"
 msgstr "Прототип: Броня полевого медика"
 
@@ -17759,6 +19707,10 @@ msgstr "Прототип: Броня мастера починки"
 msgctxt "term"
 msgid "Prototype Steady Plating"
 msgstr "Прототип: Твёрдая броня"
+
+msgctxt "term"
+msgid "Prototype Featherlight Plating"
+msgstr "Прототип: Невесомая броня"
 
 msgctxt "term"
 msgid "Prototype Field Medic Servos"
@@ -17785,6 +19737,10 @@ msgid "Prototype Steady Servos"
 msgstr "Прототип: Твёрдые сервоприводы"
 
 msgctxt "term"
+msgid "Prototype Featherlight Servos"
+msgstr "Прототип: Невесомые сервоприводы"
+
+msgctxt "term"
 msgid "Prototype Field Medic Core"
 msgstr "Прототип: Ядро полевого медика"
 
@@ -17807,6 +19763,10 @@ msgstr "Прототип: Ядро мастера починки"
 msgctxt "term"
 msgid "Prototype Steady Core"
 msgstr "Прототип: Твёрдое ядро"
+
+msgctxt "term"
+msgid "Prototype Featherlight Core"
+msgstr "Прототип: Невесомое ядро"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -22763,6 +24723,510 @@ msgstr "Помеченный предмет можно сдвинуть ещё �
 msgctxt "shape"
 msgid "Each of your dispatches that lands gives every teammate {0} Scrap"
 msgstr "Каждая ваша дошедшая отправка даёт каждому напарнику {0} лома"
+
+msgctxt "shape"
+msgid "{0}% less damage while standing still"
+msgstr "на {0}% меньше урона, пока вы стоите на месте"
+
+msgctxt "shape"
+msgid "your heals on teammates under {0}% health are {1}% stronger"
+msgstr "ваше лечение напарников со здоровьем ниже {0}% сильнее на {1}%"
+
+msgctxt "shape"
+msgid "sprinting at {0} stamina refills {1}% of it, once every {2} s"
+msgstr "бег при {0} выносливости восполняет {1}% её запаса, раз в {2} с"
+
+msgctxt "shape"
+msgid "+{0}% grip strength and {1}% less stamina drain while carrying"
+msgstr "+{0}% к силе хвата, а переноска тратит на {1}% меньше выносливости"
+
+msgctxt "shape"
+msgid "after taking a hit, +{0}% weapon damage for {1} s"
+msgstr "после полученного удара: +{0}% к урону оружия на {1} с"
+
+msgctxt "shape"
+msgid "teammates within {0} m regain {1} stamina/s"
+msgstr "напарники в пределах {0} м восстанавливают {1} выносливости/с"
+
+msgctxt "shape"
+msgid "after a dodge you make no noise for {0} s, so monsters lose your trail"
+msgstr "после уклонения вы {0} с не издаёте шума, и монстры теряют ваш след"
+
+msgctxt "shape"
+msgid "below {0}% health, +{1}% move speed"
+msgstr "при здоровье ниже {0}%: +{1}% к скорости движения"
+
+msgctxt "shape"
+msgid "+{0}% damage to Marked monsters"
+msgstr "+{0}% урона по монстрам с меткой"
+
+msgctxt "shape"
+msgid "you learn copies {0} s faster and from {1} m farther"
+msgstr "вы изучаете копии на {0} с быстрее и с расстояния на {1} м больше"
+
+msgctxt "shape"
+msgid "+{0}% move speed while carrying a death head"
+msgstr "+{0}% к скорости движения с головой погибшего в руках"
+
+msgctxt "shape"
+msgid "valuables in your cart take {0}% less damage"
+msgstr "ценности в вашей тележке получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "your throws are {0}% stronger"
+msgstr "ваши броски сильнее на {0}%"
+
+msgctxt "shape"
+msgid "Decoy Beacon also makes a second, smaller beacon {0} m away"
+msgstr "«Маяк-приманка» создаёт ещё и второй маяк поменьше в {0} м от себя"
+
+msgctxt "shape"
+msgid "your explosions stun {0} s longer but deal {1}% less damage"
+msgstr "ваши взрывы оглушают на {0} с дольше, но наносят на {1}% меньше урона"
+
+msgctxt "shape"
+msgid "Resupply has {0} more charge per level but restores {1}% less"
+msgstr "у «Пополнения» на {0} заряд на уровень больше, но оно восстанавливает на {1}% меньше"
+
+msgctxt "shape"
+msgid "lost bets refund {0}% of the stake; the top multiplier is {1}x lower"
+msgstr "проигранные ставки возвращают {0}% ставки; наибольший множитель ниже на {1}x"
+
+msgctxt "shape"
+msgid "Monsters fighting within {0}m of you deal {1}% more damage to each other (fights are still loud)"
+msgstr "Монстры, дерущиеся в пределах {0} м от вас, наносят друг другу на {1}% больше урона (драки по-прежнему шумные)"
+
+msgctxt "shape"
+msgid "Echo lasts a third longer but has a {0}% longer cooldown"
+msgstr "«Эхо» действует на треть дольше, но перезаряжается на {0}% дольше"
+
+msgctxt "shape"
+msgid "Keen Eye finds are worth {0}% more but {1}% less likely"
+msgstr "находки «Острого глаза» стоят на {0}% больше, но шанс на них ниже на {1}%"
+
+msgctxt "shape"
+msgid "Coverage reaches {0} m farther (teammates' items too) but pays {1}% less"
+msgstr "«Покрытие» действует на {0} м дальше (и на предметы напарников), но выплачивает на {1}% меньше"
+
+msgctxt "shape"
+msgid "while you stand still, monsters notice you {0} s later"
+msgstr "пока вы стоите на месте, монстры замечают вас на {0} с позже"
+
+msgctxt "shape"
+msgid "Overclock {0}% stronger, but guns use {1}% more battery"
+msgstr "«Разгон» сильнее на {0}%, но оружие тратит на {1}% больше батареи"
+
+msgctxt "shape"
+msgid "your Hook pull is {0}% stronger"
+msgstr "ваш «Крюк» тянет на {0}% сильнее"
+
+msgctxt "shape"
+msgid "+{0}% sprint speed while you hold a small or medium valuable (the weakness stays: dispatched items hum, big ones can't go)"
+msgstr "+{0}% к скорости бега, пока вы держите маленькую или среднюю ценность (слабость остаётся: отправляемые предметы гудят, большие отправить нельзя)"
+
+msgctxt "shape"
+msgid "Iron Wall +{0}% area"
+msgstr "«Железная стена»: +{0}% к области"
+
+msgctxt "shape"
+msgid "{0}% less damage taken"
+msgstr "на {0}% меньше получаемого урона"
+
+msgctxt "shape"
+msgid "Iron Wall also makes nearby teammates take {0}% less damage"
+msgstr "«Железная стена» также снижает урон по напарникам поблизости на {0}%"
+
+msgctxt "shape"
+msgid "+{0}% ability power"
+msgstr "+{0}% к силе способности"
+
+msgctxt "shape"
+msgid "+{0}% Nanite Burst area"
+msgstr "+{0}% к области «Нанитного всплеска»"
+
+msgctxt "shape"
+msgid "+{0} HP to allies revived near you"
+msgstr "+{0} ОЗ союзникам, возрождённым рядом с вами"
+
+msgctxt "shape"
+msgid "teammates revived near you come back with +{0} HP and {1}% more revive XP"
+msgstr "напарники, возрождённые рядом с вами, возвращаются с +{0} ОЗ, а опыта за возрождение на {1}% больше"
+
+msgctxt "shape"
+msgid "+{0} s Momentum grace"
+msgstr "+{0} с отсрочки Импульса"
+
+msgctxt "shape"
+msgid "teammates near you regain {0} stamina/s ({1} m)"
+msgstr "напарники рядом с вами восстанавливают {0} выносливости/с ({1} м)"
+
+msgctxt "shape"
+msgid "+{0}% grip strength"
+msgstr "+{0}% к силе хвата"
+
+msgctxt "shape"
+msgid "held items take {0}% less damage"
+msgstr "предметы в руках получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "valuables you throw can't break for {0} s"
+msgstr "брошенные вами ценности {0} с не могут разбиться"
+
+msgctxt "shape"
+msgid "+{0} Frenzy power"
+msgstr "+{0} к силе Ярости"
+
+msgctxt "shape"
+msgid "Shockwave +{0}% area"
+msgstr "«Ударная волна»: +{0}% к области"
+
+msgctxt "shape"
+msgid "+{0}% stun chance on hit"
+msgstr "+{0}% к шансу оглушить при ударе"
+
+msgctxt "shape"
+msgid "Shockwave hits a second time {0} s later at half strength"
+msgstr "«Ударная волна» бьёт второй раз через {0} с вполсилы"
+
+msgctxt "shape"
+msgid "+{0} m Power Link radius"
+msgstr "+{0} м к радиусу «Энергосвязи»"
+
+msgctxt "shape"
+msgid "when Overdrive ends, monsters within {0} m are stunned for {1} s"
+msgstr "когда «Форсаж» заканчивается, монстры в пределах {0} м оглушаются на {1} с"
+
+msgctxt "shape"
+msgid "{0}% less noise"
+msgstr "на {0}% меньше шума"
+
+msgctxt "shape"
+msgid "+{0}% Shadowstep speed"
+msgstr "+{0}% к скорости «Шага в тень»"
+
+msgctxt "shape"
+msgid "+{0} HP/s regen"
+msgstr "+{0} ОЗ/с регенерации"
+
+msgctxt "shape"
+msgid "Emergency Patch +{0}% power"
+msgstr "«Экстренная заплатка»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "your first death save each level also heals {0}% of your max health"
+msgstr "первое спасение от смерти на каждом уровне также лечит на {0}% вашего макс. здоровья"
+
+msgctxt "shape"
+msgid "+{0}% appraisal value"
+msgstr "+{0}% к стоимости при оценке"
+
+msgctxt "shape"
+msgid "Appraisal Scan +{0}% area"
+msgstr "«Оценочное сканирование»: +{0}% к области"
+
+msgctxt "shape"
+msgid "+{0}% appraisal value and +{1}% rare-item appraisal bonus"
+msgstr "+{0}% к стоимости при оценке и +{1}% к бонусу оценки редких предметов"
+
+msgctxt "shape"
+msgid "Stasis Field +{0}% area"
+msgstr "«Стазисное поле»: +{0}% к области"
+
+msgctxt "shape"
+msgid "Stasis Field +{0}% power"
+msgstr "«Стазисное поле»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "+{0}% damage to Marked enemies"
+msgstr "+{0}% урона по врагам с меткой"
+
+msgctxt "shape"
+msgid "Stasis Field lasts {0}% longer and Marks last {1} s longer"
+msgstr "«Стазисное поле» действует на {0}% дольше, а метки держатся на {1} с дольше"
+
+msgctxt "shape"
+msgid "+{0}% Inspire gain"
+msgstr "+{0}% к набору Воодушевления"
+
+msgctxt "shape"
+msgid "+{0} m Inspire radius"
+msgstr "+{0} м к радиусу Воодушевления"
+
+msgctxt "shape"
+msgid "+{0}% Inspire speed bonus"
+msgstr "+{0}% к бонусу скорости от Воодушевления"
+
+msgctxt "shape"
+msgid "+{0}% copy strength"
+msgstr "+{0}% к силе копий"
+
+msgctxt "shape"
+msgid "{0}% faster copy recharge"
+msgstr "перезарядка копий на {0}% быстрее"
+
+msgctxt "shape"
+msgid "+{0} m copy range"
+msgstr "+{0} м к дальности копирования"
+
+msgctxt "shape"
+msgid "copies last {0}% longer"
+msgstr "копии действуют на {0}% дольше"
+
+msgctxt "shape"
+msgid "+{0}% revive health"
+msgstr "+{0}% к здоровью при возрождении"
+
+msgctxt "shape"
+msgid "+{0}% speed carrying a head"
+msgstr "+{0}% к скорости с головой в руках"
+
+msgctxt "shape"
+msgid "+{0}% cart speed"
+msgstr "+{0}% к скорости тележки"
+
+msgctxt "shape"
+msgid "cart items take {0}% less damage"
+msgstr "предметы в тележке получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "+{0}% follow speed"
+msgstr "+{0}% к скорости следования"
+
+msgctxt "shape"
+msgid "Cart Overdrive lasts {0}% longer"
+msgstr "«Форсаж тележки» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "you take {0}% less damage next to your cart"
+msgstr "рядом со своей тележкой вы получаете на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "Zero-G +{0}% area"
+msgstr "«Невесомость»: +{0}% к области"
+
+msgctxt "shape"
+msgid "Zero-G lasts {0}% longer"
+msgstr "«Невесомость» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "held items {0}% lighter"
+msgstr "предметы в руках на {0}% легче"
+
+msgctxt "shape"
+msgid "Decoy Beacon +{0}% area"
+msgstr "«Маяк-приманка»: +{0}% к области"
+
+msgctxt "shape"
+msgid "beacon pop stun +{0} s"
+msgstr "оглушение от хлопка маяка: +{0} с"
+
+msgctxt "shape"
+msgid "Decoy Beacon pulls from {0}% farther and lasts {1}% longer"
+msgstr "«Маяк-приманка» притягивает с расстояния на {0}% больше и действует на {1}% дольше"
+
+msgctxt "shape"
+msgid "+{0}% blast power"
+msgstr "+{0}% к силе взрыва"
+
+msgctxt "shape"
+msgid "+{0}% blast size"
+msgstr "+{0}% к размеру взрыва"
+
+msgctxt "shape"
+msgid "Breach Charge +{0}% power"
+msgstr "«Пробивной заряд»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "+{0}% blast safety for players"
+msgstr "+{0}% к защите игроков от взрывов"
+
+msgctxt "shape"
+msgid "Breach Charge +{0}% area and +{1}% power"
+msgstr "«Пробивной заряд»: +{0}% к области и +{1}% к силе"
+
+msgctxt "shape"
+msgid "Resupply +{0}% power"
+msgstr "«Пополнение»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "+{0} m hand-off range"
+msgstr "+{0} м к дальности передачи"
+
+msgctxt "shape"
+msgid "+{0}% shop discount"
+msgstr "+{0}% к скидке в магазине"
+
+msgctxt "shape"
+msgid "+{0}x top bet multiplier"
+msgstr "+{0}x к наибольшему множителю ставки"
+
+msgctxt "shape"
+msgid "+{0}% blessing strength"
+msgstr "+{0}% к силе благословений"
+
+msgctxt "shape"
+msgid "+{0}% bet insurance"
+msgstr "+{0}% к страховке ставки"
+
+msgctxt "shape"
+msgid "Blood Pact +{0}% power"
+msgstr "«Кровавый договор»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "+{0}% lifesteal"
+msgstr "+{0}% к вампиризму"
+
+msgctxt "shape"
+msgid "Blood Pact +{0}% power and Blood Price {1} HP cheaper"
+msgstr "«Кровавый договор»: +{0}% к силе, а «Цена крови» дешевле на {1} ОЗ"
+
+msgctxt "shape"
+msgid "Provoked fights hit {0}% harder"
+msgstr "В спровоцированных драках удары на {0}% сильнее"
+
+msgctxt "shape"
+msgid "Provoke cooldown -{0}%"
+msgstr "Перезарядка «Провокации»: -{0}%"
+
+msgctxt "shape"
+msgid "Provoke lasts {0}% longer and Ringside adds {1}% more"
+msgstr "«Провокация» действует на {0}% дольше, а «У ринга» добавляет ещё {1}%"
+
+msgctxt "shape"
+msgid "Echo +{0}% area"
+msgstr "«Эхо»: +{0}% к области"
+
+msgctxt "shape"
+msgid "+{0} m thrown voice"
+msgstr "+{0} м к перебросу голоса"
+
+msgctxt "shape"
+msgid "Mend +{0}% power"
+msgstr "«Починка»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "Steady Hands mends {0}% more"
+msgstr "«Твёрдые руки» чинят на {0}% больше"
+
+msgctxt "shape"
+msgid "Mend +{0}% area"
+msgstr "«Починка»: +{0}% к области"
+
+msgctxt "shape"
+msgid "+{0}% protection on held items"
+msgstr "+{0}% к защите предметов в руках"
+
+msgctxt "shape"
+msgid "valuables you hold take {0}% less damage"
+msgstr "ценности у вас в руках получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "+{0}% Keen Eye chance"
+msgstr "+{0}% к шансу «Острого глаза»"
+
+msgctxt "shape"
+msgid "Rummage {0}% faster"
+msgstr "«Обыск» быстрее на {0}%"
+
+msgctxt "shape"
+msgid "finds +{0}% value"
+msgstr "находки: +{0}% к стоимости"
+
+msgctxt "shape"
+msgid "Rummage +{0}% power"
+msgstr "«Обыск»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "Rummage {0} more charge per level"
+msgstr "«Обыск»: на {0} заряд на уровень больше"
+
+msgctxt "shape"
+msgid "+{0}% coverage"
+msgstr "+{0}% к покрытию"
+
+msgctxt "shape"
+msgid "Policy needs {0}% less distance"
+msgstr "«Полису» нужно на {0}% меньше расстояния"
+
+msgctxt "shape"
+msgid "+{0} m coverage radius"
+msgstr "+{0} м к радиусу покрытия"
+
+msgctxt "shape"
+msgid "+{0}% guard on held items"
+msgstr "+{0}% к охране предметов в руках"
+
+msgctxt "shape"
+msgid "+{0}% coverage and {1} more Policy slot"
+msgstr "+{0}% к покрытию и на {1} ячейку «Полиса» больше"
+
+msgctxt "shape"
+msgid "Watchpost lasts {0}% longer"
+msgstr "«Сторожевой пост» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "+{0} m Spotter radius"
+msgstr "+{0} м к радиусу «Наводчика»"
+
+msgctxt "shape"
+msgid "+{0} m threat label range"
+msgstr "+{0} м к дальности меток угрозы"
+
+msgctxt "shape"
+msgid "{0}% battery saving"
+msgstr "экономия батареи {0}%"
+
+msgctxt "shape"
+msgid "Overclock +{0}% power"
+msgstr "«Разгон»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "Field Charger +{0}% faster"
+msgstr "«Полевой зарядник»: на {0}% быстрее"
+
+msgctxt "shape"
+msgid "Overclock lasts {0}% longer and has {1} more charge"
+msgstr "«Разгон» действует на {0}% дольше и получает на {1} заряд больше"
+
+msgctxt "shape"
+msgid "+{0} m Calm Presence radius"
+msgstr "+{0} м к радиусу «Спокойного присутствия»"
+
+msgctxt "shape"
+msgid "Calm Presence +{0} s"
+msgstr "«Спокойное присутствие»: +{0} с"
+
+msgctxt "shape"
+msgid "Hook +{0}% range"
+msgstr "«Крюк»: +{0}% к дальности"
+
+msgctxt "shape"
+msgid "+{0}% Long Reach"
+msgstr "+{0}% к «Дальнему захвату»"
+
+msgctxt "shape"
+msgid "Hook +{0}% power"
+msgstr "«Крюк»: +{0}% к силе"
+
+msgctxt "shape"
+msgid "+{0} kg counts as small"
+msgstr "+{0} кг к весу мелкого предмета"
+
+msgctxt "shape"
+msgid "Hook gets {0} more charge"
+msgstr "«Крюк» получает на {0} заряд больше"
+
+msgctxt "shape"
+msgid "Tagged items hum {0}% quieter"
+msgstr "Помеченные предметы гудят на {0}% тише"
+
+msgctxt "shape"
+msgid "Dispatch cooldown -{0}%"
+msgstr "Перезарядка «Отправки»: -{0}%"
+
+msgctxt "shape"
+msgid "Dispatch countdown -{0}s and dispatched items arrive worth {1}% more"
+msgstr "Отсчёт «Отправки»: -{0} с, а отправленные предметы прибывают на {1}% дороже"
 
 msgctxt "shape"
 msgid "Thrown items stun monsters they hit for {0} s."
