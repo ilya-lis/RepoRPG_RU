@@ -18721,6 +18721,198 @@ msgid "Grab reaches 10% farther for small items"
 msgstr "Хват достаёт мелкие предметы на 10% дальше"
 
 msgctxt "term"
+msgid "Mover's"
+msgstr "Перевозчик"
+
+msgctxt "term"
+msgid "Held valuables weigh 35% less, so they barely slow you"
+msgstr "Ценности в руках весят на 35% меньше и почти не замедляют вас"
+
+msgctxt "term"
+msgid "The first hit every 20 s does 50% less damage"
+msgstr "Первый удар раз в 20 с наносит на 50% меньше урона"
+
+msgctxt "term"
+msgid "+8% dodge chance; a dodge refunds 2 s of ability cooldown"
+msgstr "+8% к шансу уклонения; уклонение возвращает 2 с перезарядки способности"
+
+msgctxt "term"
+msgid "Teammates you revive come back with +20 HP"
+msgstr "Возрождённые вами напарники возвращаются с +20 ОЗ"
+
+msgctxt "term"
+msgid "+5% Scrap"
+msgstr "+5% лома"
+
+msgctxt "term"
+msgid "Valuables you carry lose 15% less value when hit"
+msgstr "Ценности у вас в руках теряют на 15% меньше стоимости при ударе"
+
+msgctxt "term"
+msgid "+15 stamina/s regen (while recharging), sprinting costs 10% less stamina"
+msgstr "+15 к восстановлению выносливости в секунду (пока она восстанавливается), бег тратит на 10% меньше выносливости"
+
+msgctxt "term"
+msgid "Kills heal 5 HP"
+msgstr "Убийства лечат на 5 ОЗ"
+
+msgctxt "term"
+msgid "Supply Wagon"
+msgstr "Обоз снабжения"
+
+msgctxt "term"
+msgid "Freight Line"
+msgstr "Грузовая линия"
+
+msgctxt "term"
+msgid "Careful Cargo"
+msgstr "Бережный груз"
+
+msgctxt "term"
+msgid "Watchful Flock"
+msgstr "Стадо под присмотром"
+
+msgctxt "term"
+msgid "Double Act"
+msgstr "Дуэт"
+
+msgctxt "term"
+msgid "Chorus"
+msgstr "Многоголосие"
+
+msgctxt "term"
+msgid "Lost Sheep"
+msgstr "Заблудшая овца"
+
+msgctxt "term"
+msgid "Herding"
+msgstr "Выпас"
+
+msgctxt "term"
+msgid "Kill Zone"
+msgstr "Зона поражения"
+
+msgctxt "term"
+msgid "Bench Tuning"
+msgstr "Настройка на верстаке"
+
+msgctxt "term"
+msgid "Ammo Crate"
+msgstr "Ящик с патронами"
+
+msgctxt "term"
+msgid "Reinforced"
+msgstr "Укрепление"
+
+msgctxt "term"
+msgid "Spare Parts"
+msgstr "Запчасти"
+
+msgctxt "term"
+msgid "Understudy"
+msgstr "Дублёр"
+
+msgctxt "term"
+msgid "War Cry"
+msgstr "Воинственный клич"
+
+msgctxt "term"
+msgid "Shoulder to Shoulder"
+msgstr "Плечом к плечу"
+
+msgctxt "term"
+msgid "Frontline Care"
+msgstr "Помощь на передовой"
+
+msgctxt "term"
+msgid "Last Rites Protocol"
+msgstr "Протокол последних почестей"
+
+msgctxt "term"
+msgid "Scar Bond"
+msgstr "Узы шрамов"
+
+msgctxt "term"
+msgid "Not Today"
+msgstr "Не сегодня"
+
+msgctxt "term"
+msgid "A Survivor revived by Reboot comes back with Last Stand ready."
+msgstr "Выживший, возрождённый «Перезагрузкой», возвращается с готовым «Последним рубежом»."
+
+msgctxt "term"
+msgid "Body Retrieval"
+msgstr "Эвакуация тел"
+
+msgctxt "term"
+msgid "The Grappler's Long Reach and Hook yank work on death heads, whatever their weight."
+msgstr "«Дальний захват» и рывок «Крюка» у Крючника действуют на головы погибших при любом их весе."
+
+msgctxt "term"
+msgid "Free Runners"
+msgstr "Фрираннеры"
+
+msgctxt "term"
+msgid "Tether Physics"
+msgstr "Физика троса"
+
+msgctxt "term"
+msgid "Lift Off"
+msgstr "Взлёт"
+
+msgctxt "term"
+msgid "Treasure Map"
+msgstr "Карта сокровищ"
+
+msgctxt "term"
+msgid "Insider Tip"
+msgstr "Инсайдерская наводка"
+
+msgctxt "term"
+msgid "Hedged Bet"
+msgstr "Подстрахованная ставка"
+
+msgctxt "term"
+msgid "Bonded Carrier"
+msgstr "Перевозчик с гарантией"
+
+msgctxt "term"
+msgid "Distance the Hauler carries a Policy item counts double."
+msgstr "Расстояние, которое Носильщик несёт предмет с «Полисом», считается вдвойне."
+
+msgctxt "term"
+msgid "Same-Day Find"
+msgstr "Находка день в день"
+
+msgctxt "term"
+msgid "Priority Appraisal"
+msgstr "Срочная оценка"
+
+msgctxt "term"
+msgid "Registered Mail"
+msgstr "Заказное письмо"
+
+msgctxt "term"
+msgid "Collateral Damage"
+msgstr "Сопутствующий ущерб"
+
+msgctxt "term"
+msgid "Not My Fight"
+msgstr "Не моя драка"
+
+msgctxt "term"
+msgid "Monsters in a fight don't notice the Phantom while it's crouching."
+msgstr "Дерущиеся монстры не замечают Фантома, пока он в приседе."
+
+msgctxt "term"
+msgid "Pile On"
+msgstr "Куча-мала"
+
+msgctxt "term"
+msgid "Study Group"
+msgstr "Учебная группа"
+
+msgctxt "term"
 msgid "Madame Brass"
 msgstr "Мадам Брасс"
 
@@ -47879,6 +48071,194 @@ msgstr "Монстры замечают вас на {0} с позже"
 msgctxt "shape"
 msgid "Grab reaches {0}% farther for small items"
 msgstr "Хват достаёт мелкие предметы на {0}% дальше"
+
+msgctxt "shape"
+msgid "Held valuables weigh {0}% less, so they barely slow you"
+msgstr "Ценности в руках весят на {0}% меньше и почти не замедляют вас"
+
+msgctxt "shape"
+msgid "The first hit every {0} s does {1}% less damage"
+msgstr "Первый удар раз в {0} с наносит на {1}% меньше урона"
+
+msgctxt "shape"
+msgid "+{0}% dodge chance; a dodge refunds {1} s of ability cooldown"
+msgstr "+{0}% к шансу уклонения; уклонение возвращает {1} с перезарядки способности"
+
+msgctxt "shape"
+msgid "Teammates you revive come back with +{0} HP"
+msgstr "Возрождённые вами напарники возвращаются с +{0} ОЗ"
+
+msgctxt "shape"
+msgid "+{0}% Scrap"
+msgstr "+{0}% лома"
+
+msgctxt "shape"
+msgid "Valuables you carry lose {0}% less value when hit"
+msgstr "Ценности у вас в руках теряют на {0}% меньше стоимости при ударе"
+
+msgctxt "shape"
+msgid "+{0} stamina/s regen (while recharging), sprinting costs {1}% less stamina"
+msgstr "+{0} к восстановлению выносливости в секунду (пока она восстанавливается), бег тратит на {1}% меньше выносливости"
+
+msgctxt "shape"
+msgid "Kills heal {0} HP"
+msgstr "Убийства лечат на {0} ОЗ"
+
+msgctxt "shape"
+msgid "Items inside the Cartwright's cart recharge {0}% battery every {1} s."
+msgstr "Предметы в тележке Тележника восстанавливают {0}% батареи каждые {1} с."
+
+msgctxt "shape"
+msgid "Valuables in a cart near the Cartwright lose {0}% less value."
+msgstr "Ценности в тележке рядом с Тележником теряют на {0}% меньше стоимости."
+
+msgctxt "shape"
+msgid "The Restorer's Steady Hands also mends items in carts within {0} m of the Restorer."
+msgstr "«Твёрдые руки» Реставратора чинят и предметы в тележках в пределах {0} м от Реставратора."
+
+msgctxt "shape"
+msgid "Pacify lasts +{0} s on a monster a Watchpost pinged in the last {1} s."
+msgstr "«Усмирение» действует на {0} с дольше на монстра, которого за последние {1} с засёк сторожевой пост."
+
+msgctxt "shape"
+msgid "The Scout sees threat labels {0} m farther; the Lookout's Spotter shares {1} m farther."
+msgstr "Разведчик видит метки угрозы на {0} м дальше; «Наводчик» Дозорного делится на {1} м дальше."
+
+msgctxt "shape"
+msgid "Echo and Decoy Beacon last +{0} s and pull from {1} m farther."
+msgstr "«Эхо» и «Маяк-приманка» действуют на {0} с дольше и притягивают с расстояния на {1} м больше."
+
+msgctxt "shape"
+msgid "Shadowstep lasts +{0} s while the Ventriloquist is talking."
+msgstr "«Шаг в тень» действует на {0} с дольше, пока Чревовещатель говорит."
+
+msgctxt "shape"
+msgid "The Herald's Loud Voice lure is heard from {0} m ahead of the Herald."
+msgstr "Приманку «Громкого голоса» Глашатая слышно из точки в {0} м впереди Глашатая."
+
+msgctxt "shape"
+msgid "Monsters that reach a Decoy Beacon notice teammates {0} s more slowly for {1} s."
+msgstr "Монстры, дошедшие до «Маяка-приманки», {1} с замечают напарников на {0} с позже."
+
+msgctxt "shape"
+msgid "Pacify lasts +{0} s on a monster stunned in the last {1} s."
+msgstr "«Усмирение» действует на {0} с дольше на монстра, оглушённого за последние {1} с."
+
+msgctxt "shape"
+msgid "Overclock lasts +{0} s."
+msgstr "«Разгон» действует на {0} с дольше."
+
+msgctxt "shape"
+msgid "Field Charger reaches {0} m (not {1}) and the recharge hold is {2}% faster."
+msgstr "«Полевой зарядник» достаёт на {0} м (а не на {1}), а зарядка удержанием идёт на {2}% быстрее."
+
+msgctxt "shape"
+msgid "Resupply restores {0}% more to guns."
+msgstr "«Пополнение» восстанавливает оружию на {0}% больше."
+
+msgctxt "shape"
+msgid "Iron Wall lasts +{0} s."
+msgstr "«Железная стена» действует на {0} с дольше."
+
+msgctxt "shape"
+msgid "The Mimic's copied abilities recharge {0}% faster."
+msgstr "Скопированные способности Мимика перезаряжаются на {0}% быстрее."
+
+msgctxt "shape"
+msgid "The Mimic's copies are {0}% stronger while it's Inspired."
+msgstr "Копии Мимика сильнее на {0}%, пока он воодушевлён."
+
+msgctxt "shape"
+msgid "Rally Cry also gives the Brute {0} Frenzy stack."
+msgstr "«Боевой клич» также даёт Громиле зарядов Ярости: {0}."
+
+msgctxt "shape"
+msgid "Both take {0}% less damage."
+msgstr "Оба получают на {0}% меньше урона."
+
+msgctxt "shape"
+msgid "The Medic's heals on the Juggernaut are {0}% stronger."
+msgstr "Лечение Джаггернаута Медиком сильнее на {0}%."
+
+msgctxt "shape"
+msgid "Teammates revived near both come back with {0}% more health."
+msgstr "Напарники, возрождённые рядом с обоими, возвращаются со здоровьем на {0}% больше."
+
+msgctxt "shape"
+msgid "Blood Price costs {0} HP less; the Medic's heals on the Bloodbound are {1}% stronger."
+msgstr "«Цена крови» стоит на {0} ОЗ меньше; лечение Кровника Медиком сильнее на {1}%."
+
+msgctxt "shape"
+msgid "Both take {0}% less damage while under {1}% health."
+msgstr "Оба получают на {0}% меньше урона, пока их здоровье ниже {1}%."
+
+msgctxt "shape"
+msgid "Hook recharges {0}% faster; the Scout's Momentum holds {1} more stack."
+msgstr "«Крюк» перезаряжается на {0}% быстрее; зарядов «Импульса» у Разведчика больше на {1}."
+
+msgctxt "shape"
+msgid "Yanked items float for {0} s and are pulled {1}% harder."
+msgstr "Притянутые предметы парят {0} с и тянутся на {1}% сильнее."
+
+msgctxt "shape"
+msgid "Items the Hauler holds are {0}% lighter."
+msgstr "Предметы в руках Носильщика на {0}% легче."
+
+msgctxt "shape"
+msgid "Monsters inside a Zero-G Field take {0}% more explosion damage."
+msgstr "Монстры внутри «Поля невесомости» получают на {0}% больше урона от взрывов."
+
+msgctxt "shape"
+msgid "Keen Eye chance +{0}% while the Appraiser is within {1} m."
+msgstr "Шанс «Острого глаза»: +{0}%, пока Оценщик в пределах {1} м."
+
+msgctxt "shape"
+msgid "Double or Nothing placed near the Appraiser: top multiplier +{0}x."
+msgstr "«Вдвое или ничего», поставленное рядом с Оценщиком: наибольший множитель +{0}x."
+
+msgctxt "shape"
+msgid "A lost Double or Nothing costs {0}% less Scrap."
+msgstr "Проигранное «Вдвое или ничего» стоит на {0}% меньше лома."
+
+msgctxt "shape"
+msgid "Coverage pays {0}% more on items the Restorer has mended (one ledger: never paid twice)."
+msgstr "«Покрытие» выплачивает на {0}% больше за предметы, которые чинил Реставратор (учёт общий: дважды не платится)."
+
+msgctxt "shape"
+msgid "Valuables the Scavenger turns up (Keen Eye, Rummage) dispatch {0}s faster."
+msgstr "Ценности, найденные Старьёвщиком («Острый глаз», «Обыск»), отправляются на {0} с быстрее."
+
+msgctxt "shape"
+msgid "A dispatched item the Appraiser has appraised arrives worth {0}% more."
+msgstr "Отправленный предмет, оценённый Оценщиком, прибывает на {0}% дороже."
+
+msgctxt "shape"
+msgid "Dispatching a Policy-tagged item counts as moving it the whole way, and it hums {0}% quieter."
+msgstr "Отправка предмета с «Полисом» засчитывается как перенос на всё расстояние, а гудит он на {0}% тише."
+
+msgctxt "shape"
+msgid "Explosions hit fighting monsters {0}% harder, and keep the fight going {1}s longer (once per fight)."
+msgstr "Взрывы бьют дерущихся монстров на {0}% сильнее и продлевают драку на {1} с (раз за драку)."
+
+msgctxt "shape"
+msgid "Shockwave hits fighting monsters {0}% harder, and its stun doesn't cut the fight short."
+msgstr "«Ударная волна» бьёт дерущихся монстров на {0}% сильнее, а её оглушение не прерывает драку."
+
+msgctxt "shape"
+msgid "The Warden and the Juggernaut both take {0}% less damage."
+msgstr "Страж и Джаггернаут оба получают на {0}% меньше урона."
+
+msgctxt "shape"
+msgid "The Medic's and the Scout's ability cooldowns are {0}% shorter."
+msgstr "Перезарядка способностей Медика и Разведчика на {0}% короче."
+
+msgctxt "shape"
+msgid "The Physicist and the Appraiser both earn {0}% more XP."
+msgstr "Физик и Оценщик оба получают на {0}% больше опыта."
+
+msgctxt "shape"
+msgid "Every {0} s together, the Gambler and the Scavenger each get {1} Scrap."
+msgstr "Каждые {0} с вместе Азартный игрок и Старьёвщик получают по {1} лома."
 
 msgctxt "data:guide"
 msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
