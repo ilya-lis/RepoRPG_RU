@@ -14517,6 +14517,638 @@ msgid "Better marks, bigger fights."
 msgstr "Метки лучше, драки крупнее."
 
 msgctxt "term"
+msgid "Long Fuse"
+msgstr "Длинный фитиль"
+
+msgctxt "term"
+msgid "Provoke lasts 8% longer"
+msgstr "«Провокация» действует на 8% дольше"
+
+msgctxt "term"
+msgid "Sharp Tongue"
+msgstr "Острый язык"
+
+msgctxt "term"
+msgid "Provoke marks from 15% farther"
+msgstr "«Провокация» ставит метку с расстояния на 15% больше"
+
+msgctxt "term"
+msgid "Crowd Finder"
+msgstr "Поиск толпы"
+
+msgctxt "term"
+msgid "Provoke finds an attacker 3m farther away"
+msgstr "«Провокация» находит нападающего на 3 м дальше"
+
+msgctxt "term"
+msgid "Free Shot"
+msgstr "Бесплатный удар"
+
+msgctxt "term"
+msgid "If the marked monster dies in the fight, 15% of Provoke's cooldown comes back"
+msgstr "Если отмеченный монстр гибнет в драке, возвращается 15% перезарядки «Провокации»"
+
+msgctxt "term"
+msgid "Free-for-All"
+msgstr "Куча-мала"
+
+msgctxt "term"
+msgid "Provoke sends two attackers"
+msgstr "«Провокация» натравливает двух нападающих"
+
+msgctxt "term"
+msgid "Ringmaster"
+msgstr "Хозяин ринга"
+
+msgctxt "term"
+msgid "Run the show from a safe distance."
+msgstr "Руководите представлением с безопасного расстояния."
+
+msgctxt "term"
+msgid "Muffled Brawl"
+msgstr "Приглушённая потасовка"
+
+msgctxt "term"
+msgid "Fights are 8% quieter (monsters come from less far)"
+msgstr "Драки на 8% тише (монстры сходятся с меньшего расстояния)"
+
+msgctxt "term"
+msgid "Afterglow"
+msgstr "Помутнение"
+
+msgctxt "term"
+msgid "After a fight, both monsters can't see players for 1s"
+msgstr "После драки оба монстра 1 с не видят игроков"
+
+msgctxt "term"
+msgid "+2 Scrap for the team per monster killed in a fight"
+msgstr "+2 лома команде за каждого монстра, убитого в драке"
+
+msgctxt "term"
+msgid "Walk Away"
+msgstr "Уйти в сторонку"
+
+msgctxt "term"
+msgid "+5% walk and sprint speed while a fight is within 15m of you"
+msgstr "+5% к скорости ходьбы и бега, пока в пределах 15 м от вас идёт драка"
+
+msgctxt "term"
+msgid "Stampede"
+msgstr "Давка"
+
+msgctxt "term"
+msgid "a fight ends with both monsters stunned for 2s"
+msgstr "драка заканчивается оглушением обоих монстров на 2 с"
+
+msgctxt "term"
+msgid "Throw Echo away from your team's path"
+msgstr "Бросайте «Эхо» в сторону от пути команды"
+
+msgctxt "term"
+msgid "Talk, and the monsters go the other way. Throw your voice and leave echoes for them to chase."
+msgstr "Говорите - и монстры идут в другую сторону. Перебрасывайте голос и оставляйте им эхо для погони."
+
+msgctxt "term"
+msgid "Talk, and the monsters go the other way"
+msgstr "Говорите - и монстры идут в другую сторону"
+
+msgctxt "term"
+msgid "Thrown Voice"
+msgstr "Переброшенный голос"
+
+msgctxt "term"
+msgid "When you talk, monsters hear it from up to 10m in front of you instead of from you (teammates still hear you normally). No mic? Hold the Hum key to throw a mumble."
+msgstr "Когда вы говорите, монстры слышат голос на расстоянии до 10 м перед вами, а не от вас (напарники слышат вас как обычно). Нет микрофона? Удерживайте клавишу гула, чтобы перебросить бормотание."
+
+msgctxt "term"
+msgid "Stage Fright"
+msgstr "Страх сцены"
+
+msgctxt "term"
+msgid "Weakness: everything else you do is 20% louder to monsters (footsteps, things you carry)."
+msgstr "Слабость: всё остальное, что вы делаете, для монстров на 20% громче (шаги, вещи в руках)."
+
+msgctxt "term"
+msgid "everything else you do is 20% louder to monsters (footsteps, things you carry)."
+msgstr "всё остальное, что вы делаете, для монстров на 20% громче (шаги, вещи в руках)."
+
+msgctxt "term"
+msgid "Leaves an echo beacon where you look (up to 14m) that mumbles for 6s: monsters within 14m of it go to investigate it."
+msgstr "Оставляет там, куда вы смотрите (до 14 м), маяк-эхо, который бормочет 6 с: монстры в пределах 14 м от него идут его проверить."
+
+msgctxt "term"
+msgid "Throw your voice farther."
+msgstr "Перебрасывайте голос дальше."
+
+msgctxt "term"
+msgid "Diaphragm"
+msgstr "Диафрагма"
+
+msgctxt "term"
+msgid "Thrown voice +1m farther"
+msgstr "Голос перебрасывается на 1 м дальше"
+
+msgctxt "term"
+msgid "Mumble"
+msgstr "Бормотание"
+
+msgctxt "term"
+msgid "The Hum key's mumble pulls monsters from 15% farther"
+msgstr "Бормотание с клавиши гула притягивает монстров с расстояния на 15% больше"
+
+msgctxt "term"
+msgid "Hush"
+msgstr "Тише"
+
+msgctxt "term"
+msgid "Offsets Stage Fright: 2% quieter"
+msgstr "Смягчает «Страх сцены»: на 2% тише"
+
+msgctxt "term"
+msgid "Diaphragm II"
+msgstr "Диафрагма II"
+
+msgctxt "term"
+msgid "Far Voice"
+msgstr "Дальний голос"
+
+msgctxt "term"
+msgid "thrown voice +6m farther, mumble 30% stronger"
+msgstr "голос перебрасывается на 6 м дальше, бормотание сильнее на 30%"
+
+msgctxt "term"
+msgid "Echo Chamber"
+msgstr "Эхо-камера"
+
+msgctxt "term"
+msgid "Longer, louder echoes."
+msgstr "Эхо - дольше и громче."
+
+msgctxt "term"
+msgid "Reverb"
+msgstr "Реверберация"
+
+msgctxt "term"
+msgid "Echo lasts 10% longer"
+msgstr "«Эхо» действует на 10% дольше"
+
+msgctxt "term"
+msgid "Acoustics"
+msgstr "Акустика"
+
+msgctxt "term"
+msgid "Echo pulls monsters from 10% farther"
+msgstr "«Эхо» притягивает монстров с расстояния на 10% больше"
+
+msgctxt "term"
+msgid "Quick Lips"
+msgstr "Быстрые губы"
+
+msgctxt "term"
+msgid "Echo cooldown -5%"
+msgstr "Перезарядка «Эха»: -5%"
+
+msgctxt "term"
+msgid "Feedback"
+msgstr "Обратная связь"
+
+msgctxt "term"
+msgid "Monsters that reach the echo flinch for 0.5s"
+msgstr "Монстры, дошедшие до эха, вздрагивают на 0.5 с"
+
+msgctxt "term"
+msgid "Stunning Note"
+msgstr "Оглушительная нота"
+
+msgctxt "term"
+msgid "monsters that reach the echo flinch 1.5s longer, and Echo holds 2 charges"
+msgstr "монстры, дошедшие до эха, вздрагивают на 1.5 с дольше, а «Эхо» хранит зарядов: 2"
+
+msgctxt "term"
+msgid "Stay quiet, stay hidden."
+msgstr "Ведите себя тихо, оставайтесь незаметным."
+
+msgctxt "term"
+msgid "Lingering Echo"
+msgstr "Затяжное эхо"
+
+msgctxt "term"
+msgid "Throat Clear"
+msgstr "Откашливание"
+
+msgctxt "term"
+msgid "Hush II"
+msgstr "Тише II"
+
+msgctxt "term"
+msgid "Double Echo"
+msgstr "Двойное эхо"
+
+msgctxt "term"
+msgid "Echo leaves a second echo 6m to the side of the first"
+msgstr "«Эхо» оставляет второе эхо в 6 м сбоку от первого"
+
+msgctxt "term"
+msgid "Conservation"
+msgstr "Сохранение"
+
+msgctxt "term"
+msgid "Mend near the cart after a rough carry"
+msgstr "Чините рядом с тележкой после трудной переноски"
+
+msgctxt "term"
+msgid "Nothing stays broken. Damaged valuables slowly win back their value in your hands, and Mend fixes everything nearby."
+msgstr "Ничто не остаётся сломанным. Повреждённые ценности в ваших руках понемногу возвращают стоимость, а «Починка» чинит всё поблизости."
+
+msgctxt "term"
+msgid "Nothing stays broken"
+msgstr "Ничто не остаётся сломанным"
+
+msgctxt "term"
+msgid "A valuable you hold wins back 5% of the value it has lost every 2s, up to half of what it lost."
+msgstr "Ценность у вас в руках каждые 2 с возвращает 5% потерянной стоимости - до половины потерянного."
+
+msgctxt "term"
+msgid "Gentle Touch"
+msgstr "Нежное касание"
+
+msgctxt "term"
+msgid "Weakness: carrying drains 20% more stamina."
+msgstr "Слабость: переноска тратит на 20% больше выносливости."
+
+msgctxt "term"
+msgid "carrying drains 20% more stamina."
+msgstr "переноска тратит на 20% больше выносливости."
+
+msgctxt "term"
+msgid "Every valuable within 6m wins back 25% of the value it has lost (up to 75% of what it lost, 25% more than Steady Hands can; once per item per level)."
+msgstr "Каждая ценность в пределах 6 м возвращает 25% потерянной стоимости (до 75% потерянного, на 25% больше, чем могут «Твёрдые руки»; один раз на предмет за уровень)."
+
+msgctxt "term"
+msgid "Fix as you carry."
+msgstr "Чините на ходу."
+
+msgctxt "term"
+msgid "Steady Hands works 1% faster"
+msgstr "«Твёрдые руки» работают на 1% быстрее"
+
+msgctxt "term"
+msgid "Cart Care"
+msgstr "Забота о тележке"
+
+msgctxt "term"
+msgid "Steady Hands also works on valuables in a cart within 3m of you"
+msgstr "«Твёрдые руки» действуют и на ценности в тележке в пределах 3 м от вас"
+
+msgctxt "term"
+msgid "Patience II"
+msgstr "Терпение II"
+
+msgctxt "term"
+msgid "Wider Care"
+msgstr "Широкая забота"
+
+msgctxt "term"
+msgid "Cart Care reaches 1m farther"
+msgstr "«Забота о тележке» действует на 1 м дальше"
+
+msgctxt "term"
+msgid "Workshop"
+msgstr "Мастерская"
+
+msgctxt "term"
+msgid "valuables teammates within 6m of you hold also win back value (Steady Hands)"
+msgstr "ценности в руках напарников в пределах 6 м от вас тоже возвращают стоимость («Твёрдые руки»)"
+
+msgctxt "term"
+msgid "Mender"
+msgstr "Мастер починки"
+
+msgctxt "term"
+msgid "A stronger Mend."
+msgstr "Починка посильнее."
+
+msgctxt "term"
+msgid "Glue"
+msgstr "Клей"
+
+msgctxt "term"
+msgid "Mend restores 10% more"
+msgstr "«Починка» восстанавливает на 10% больше"
+
+msgctxt "term"
+msgid "Mend reaches 10% farther"
+msgstr "«Починка» действует на 10% дальше"
+
+msgctxt "term"
+msgid "Practice"
+msgstr "Практика"
+
+msgctxt "term"
+msgid "Mend cooldown -5%"
+msgstr "Перезарядка «Починки»: -5%"
+
+msgctxt "term"
+msgid "Glue II"
+msgstr "Клей II"
+
+msgctxt "term"
+msgid "Master Mender"
+msgstr "Виртуоз починки"
+
+msgctxt "term"
+msgid "Mend restores 30% more and holds 2 charges"
+msgstr "«Починка» восстанавливает на 30% больше и хранит зарядов: 2"
+
+msgctxt "term"
+msgid "Conservator"
+msgstr "Музейный хранитель"
+
+msgctxt "term"
+msgid "Keep it from breaking."
+msgstr "Не дайте ничему разбиться."
+
+msgctxt "term"
+msgid "Valuables you hold lose 2% less value"
+msgstr "Ценности у вас в руках теряют на 2% меньше стоимости"
+
+msgctxt "term"
+msgid "Offsets Gentle Touch: carrying drains 3.33% less stamina"
+msgstr "Смягчает «Нежное касание»: переноска тратит на 3.33% меньше выносливости"
+
+msgctxt "term"
+msgid "Padding II"
+msgstr "Упаковка II"
+
+msgctxt "term"
+msgid "Steady"
+msgstr "Твёрдость"
+
+msgctxt "term"
+msgid "Museum Grade"
+msgstr "Музейное качество"
+
+msgctxt "term"
+msgid "valuables you hold lose 10% less value"
+msgstr "ценности у вас в руках теряют на 10% меньше стоимости"
+
+msgctxt "term"
+msgid "Foraging"
+msgstr "Собирательство"
+
+msgctxt "term"
+msgid "Rummage in quiet rooms, never with a monster close"
+msgstr "Обыскивайте тихие комнаты - и никогда, если рядом монстр"
+
+msgctxt "term"
+msgid "Leaves no drawer unopened. Finds small valuables in rooms nobody has searched, and turns junk gear into more Scrap."
+msgstr "Не пропустит ни одного ящика. Находит мелкие ценности в комнатах, которые никто не обыскивал, и получает больше лома из ненужного снаряжения."
+
+msgctxt "term"
+msgid "Leaves no drawer unopened"
+msgstr "Не пропустит ни одного ящика"
+
+msgctxt "term"
+msgid "The first time you open a door, locker or cabinet in a room nobody has entered yet, 12% chance to turn up a small valuable. Weakness: what you find is worth half and breaks easily."
+msgstr "Когда вы впервые открываете дверь, шкафчик или тумбу в комнате, куда ещё никто не входил, есть 12% шанс найти мелкую ценность. Слабость: находки стоят вдвое меньше и легко бьются."
+
+msgctxt "term"
+msgid "The first time you open a door, locker or cabinet in a room nobody has entered yet, 12% chance to turn up a small valuable."
+msgstr "Когда вы впервые открываете дверь, шкафчик или тумбу в комнате, куда ещё никто не входил, есть 12% шанс найти мелкую ценность."
+
+msgctxt "term"
+msgid "what you find is worth half and breaks easily."
+msgstr "находки стоят вдвое меньше и легко бьются."
+
+msgctxt "term"
+msgid "Scrounger"
+msgstr "Барахольщик"
+
+msgctxt "term"
+msgid "+10% Scrap when you salvage gear."
+msgstr "+10% лома при разборе снаряжения."
+
+msgctxt "term"
+msgid "Search the room you're in for 4s, standing still: turns up 1-3 small valuables. Each room can be rummaged once per level."
+msgstr "Обыскивает комнату, в которой вы находитесь, 4 с, пока вы стоите на месте: находит 1-3 мелкие ценности. Каждую комнату можно обыскать один раз за уровень."
+
+msgctxt "term"
+msgid "Find more as you go."
+msgstr "Находите больше по пути."
+
+msgctxt "term"
+msgid "Nose for It"
+msgstr "Нюх на добычу"
+
+msgctxt "term"
+msgid "Keen Eye +2% chance"
+msgstr "«Острый глаз»: +2% к шансу"
+
+msgctxt "term"
+msgid "Deep Pockets"
+msgstr "Глубокие карманы"
+
+msgctxt "term"
+msgid "+1 Scavenger find per level"
+msgstr "+1 находка Старьёвщика за уровень"
+
+msgctxt "term"
+msgid "Nose for It II"
+msgstr "Нюх на добычу II"
+
+msgctxt "term"
+msgid "Deeper Pockets"
+msgstr "Карманы поглубже"
+
+msgctxt "term"
+msgid "Treasure Sense"
+msgstr "Чутьё на сокровища"
+
+msgctxt "term"
+msgid "Keen Eye +8% chance, +2 finds per level"
+msgstr "«Острый глаз»: +8% к шансу, +2 находки за уровень"
+
+msgctxt "term"
+msgid "Rummager"
+msgstr "Мастер обыска"
+
+msgctxt "term"
+msgid "A better search."
+msgstr "Обыск получше."
+
+msgctxt "term"
+msgid "Rummage takes 6% less time"
+msgstr "«Обыск» занимает на 6% меньше времени"
+
+msgctxt "term"
+msgid "Thorough"
+msgstr "Тщательность"
+
+msgctxt "term"
+msgid "Rummage finds 15% more"
+msgstr "«Обыск» находит на 15% больше"
+
+msgctxt "term"
+msgid "Rummage cooldown -5%"
+msgstr "Перезарядка «Обыска»: -5%"
+
+msgctxt "term"
+msgid "Quick Hands II"
+msgstr "Быстрые руки II"
+
+msgctxt "term"
+msgid "Ransack"
+msgstr "Погром"
+
+msgctxt "term"
+msgid "Rummage finds 40% more and holds 2 charges"
+msgstr "«Обыск» находит на 40% больше и хранит зарядов: 2"
+
+msgctxt "term"
+msgid "Quality"
+msgstr "Качество"
+
+msgctxt "term"
+msgid "Better junk."
+msgstr "Хлам получше."
+
+msgctxt "term"
+msgid "Eye for Value"
+msgstr "Глаз на ценности"
+
+msgctxt "term"
+msgid "Finds are worth 5% more (of their full value)"
+msgstr "Находки стоят на 5% больше (от полной стоимости)"
+
+msgctxt "term"
+msgid "Finds break 10% less easily"
+msgstr "Находки бьются на 10% труднее"
+
+msgctxt "term"
+msgid "+5% Scrap when you salvage gear"
+msgstr "+5% лома при разборе снаряжения"
+
+msgctxt "term"
+msgid "Eye for Value II"
+msgstr "Глаз на ценности II"
+
+msgctxt "term"
+msgid "Finds are worth 5% more"
+msgstr "Находки стоят на 5% больше"
+
+msgctxt "term"
+msgid "Antique Dealer"
+msgstr "Антиквар"
+
+msgctxt "term"
+msgid "finds are worth 10% more and break 30% less easily"
+msgstr "находки стоят на 10% больше и бьются на 30% труднее"
+
+msgctxt "term"
+msgid "Underwriting"
+msgstr "Страхование"
+
+msgctxt "term"
+msgid "Tag before long, risky carries"
+msgstr "Ставьте метку перед долгой и рискованной переноской"
+
+msgctxt "term"
+msgid "Every loss is somebody's payout. Damage near you turns into Scrap, and a Policy makes sure a lost valuable still counts."
+msgstr "Каждая потеря - чья-то выплата. Ущерб рядом с вами превращается в лом, а «Полис» гарантирует, что потерянная ценность всё равно пойдёт в зачёт."
+
+msgctxt "term"
+msgid "Every loss is somebody's payout"
+msgstr "Каждая потеря - чья-то выплата"
+
+msgctxt "term"
+msgid "Coverage"
+msgstr "Покрытие"
+
+msgctxt "term"
+msgid "When a valuable within 8m of you loses value, 10% of what it lost comes back as Scrap, split equally between the team."
+msgstr "Когда ценность в пределах 8 м от вас теряет стоимость, 10% потерянного возвращается ломом, поровну на всю команду."
+
+msgctxt "term"
+msgid "Claims Adjuster"
+msgstr "Страховой оценщик"
+
+msgctxt "term"
+msgid "Valuables you hold lose 10% less value. Weakness: Policy-tagged valuables glow and monsters keep noticing them."
+msgstr "Ценности у вас в руках теряют на 10% меньше стоимости. Слабость: ценности с полисом светятся, и монстры то и дело их замечают."
+
+msgctxt "term"
+msgid "Valuables you hold lose 10% less value."
+msgstr "Ценности у вас в руках теряют на 10% меньше стоимости."
+
+msgctxt "term"
+msgid "Policy-tagged valuables glow and monsters keep noticing them."
+msgstr "ценности с полисом светятся, и монстры то и дело их замечают."
+
+msgctxt "term"
+msgid "Tag up to 2 valuables within 4m. If a tagged valuable is destroyed by a monster, hazard or fall after being moved at least 20m since you tagged it, its full value still counts toward the haul."
+msgstr "Помечает до 2 ценностей в пределах 4 м. Если помеченную ценность уничтожит монстр, ловушка или падение после того, как её перенесли хотя бы на 20 м от места пометки, её полная стоимость всё равно пойдёт в зачёт добычи."
+
+msgctxt "term"
+msgid "Bigger payouts."
+msgstr "Выплаты покрупнее."
+
+msgctxt "term"
+msgid "Rider"
+msgstr "Допсоглашение"
+
+msgctxt "term"
+msgid "Coverage pays 1% more"
+msgstr "«Покрытие» выплачивает на 1% больше"
+
+msgctxt "term"
+msgid "Coverage reaches 1m farther"
+msgstr "«Покрытие» действует на 1 м дальше"
+
+msgctxt "term"
+msgid "Rider II"
+msgstr "Допсоглашение II"
+
+msgctxt "term"
+msgid "Wider Net"
+msgstr "Сеть пошире"
+
+msgctxt "term"
+msgid "Full Coverage"
+msgstr "Полное покрытие"
+
+msgctxt "term"
+msgid "Coverage pays 5% more and reaches 4m farther"
+msgstr "«Покрытие» выплачивает на 5% больше и действует на 4 м дальше"
+
+msgctxt "term"
+msgid "Underwriter"
+msgstr "Андеррайтер"
+
+msgctxt "term"
+msgid "Better policies."
+msgstr "Полисы получше."
+
+msgctxt "term"
+msgid "Fine Print"
+msgstr "Мелкий шрифт"
+
+msgctxt "term"
+msgid "Policy needs 2m less movement"
+msgstr "«Полису» нужно на 2 м меньше переноса"
+
+msgctxt "term"
+msgid "Policy tags from 10% farther"
+msgstr "«Полис» помечает с расстояния на 10% больше"
+
+msgctxt "term"
+msgid "Quick Signing"
+msgstr "Быстрое подписание"
+
+msgctxt "term"
+msgid "Policy cooldown -5%"
+msgstr "Перезарядка «Полиса»: -5%"
+
+msgctxt "term"
 msgid "Spotter"
 msgstr "Наводчик"
 
@@ -14865,6 +15497,30 @@ msgid "Momentum Striker Module of the Hauler"
 msgstr "Инерционный ударный модуль носильщика"
 
 msgctxt "term"
+msgid "Mender Striker Module"
+msgstr "Ударный модуль мастера починки"
+
+msgctxt "term"
+msgid "Mender Striker Module of the Medic"
+msgstr "Ударный модуль мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Striker Module of the Hauler"
+msgstr "Ударный модуль мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Striker Module"
+msgstr "Твёрдый ударный модуль"
+
+msgctxt "term"
+msgid "Steady Striker Module of the Medic"
+msgstr "Твёрдый ударный модуль медика"
+
+msgctxt "term"
+msgid "Steady Striker Module of the Hauler"
+msgstr "Твёрдый ударный модуль носильщика"
+
+msgctxt "term"
 msgid "Impact Gauntlet"
 msgstr "Боевая перчатка"
 
@@ -14935,6 +15591,30 @@ msgstr "Инерционная боевая перчатка медика"
 msgctxt "term"
 msgid "Momentum Impact Gauntlet of the Hauler"
 msgstr "Инерционная боевая перчатка носильщика"
+
+msgctxt "term"
+msgid "Mender Impact Gauntlet"
+msgstr "Боевая перчатка мастера починки"
+
+msgctxt "term"
+msgid "Mender Impact Gauntlet of the Medic"
+msgstr "Боевая перчатка мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Impact Gauntlet of the Hauler"
+msgstr "Боевая перчатка мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Impact Gauntlet"
+msgstr "Твёрдая боевая перчатка"
+
+msgctxt "term"
+msgid "Steady Impact Gauntlet of the Medic"
+msgstr "Твёрдая боевая перчатка медика"
+
+msgctxt "term"
+msgid "Steady Impact Gauntlet of the Hauler"
+msgstr "Твёрдая боевая перчатка носильщика"
 
 msgctxt "term"
 msgid "Breaker Arm"
@@ -15009,6 +15689,30 @@ msgid "Momentum Breaker Arm of the Hauler"
 msgstr "Инерционная рука-крушитель носильщика"
 
 msgctxt "term"
+msgid "Mender Breaker Arm"
+msgstr "Рука-крушитель мастера починки"
+
+msgctxt "term"
+msgid "Mender Breaker Arm of the Medic"
+msgstr "Рука-крушитель мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Breaker Arm of the Hauler"
+msgstr "Рука-крушитель мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Breaker Arm"
+msgstr "Твёрдая рука-крушитель"
+
+msgctxt "term"
+msgid "Steady Breaker Arm of the Medic"
+msgstr "Твёрдая рука-крушитель медика"
+
+msgctxt "term"
+msgid "Steady Breaker Arm of the Hauler"
+msgstr "Твёрдая рука-крушитель носильщика"
+
+msgctxt "term"
 msgid "Ram Fist"
 msgstr "Кулак-таран"
 
@@ -15079,6 +15783,30 @@ msgstr "Инерционный кулак-таран медика"
 msgctxt "term"
 msgid "Momentum Ram Fist of the Hauler"
 msgstr "Инерционный кулак-таран носильщика"
+
+msgctxt "term"
+msgid "Mender Ram Fist"
+msgstr "Кулак-таран мастера починки"
+
+msgctxt "term"
+msgid "Mender Ram Fist of the Medic"
+msgstr "Кулак-таран мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Ram Fist of the Hauler"
+msgstr "Кулак-таран мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Ram Fist"
+msgstr "Твёрдый кулак-таран"
+
+msgctxt "term"
+msgid "Steady Ram Fist of the Medic"
+msgstr "Твёрдый кулак-таран медика"
+
+msgctxt "term"
+msgid "Steady Ram Fist of the Hauler"
+msgstr "Твёрдый кулак-таран носильщика"
 
 msgctxt "term"
 msgid "Scrap Plating"
@@ -15153,6 +15881,30 @@ msgid "Momentum Scrap Plating of the Hauler"
 msgstr "Инерционная броня из лома носильщика"
 
 msgctxt "term"
+msgid "Mender Scrap Plating"
+msgstr "Броня из лома мастера починки"
+
+msgctxt "term"
+msgid "Mender Scrap Plating of the Medic"
+msgstr "Броня из лома мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Scrap Plating of the Hauler"
+msgstr "Броня из лома мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Scrap Plating"
+msgstr "Твёрдая броня из лома"
+
+msgctxt "term"
+msgid "Steady Scrap Plating of the Medic"
+msgstr "Твёрдая броня из лома медика"
+
+msgctxt "term"
+msgid "Steady Scrap Plating of the Hauler"
+msgstr "Твёрдая броня из лома носильщика"
+
+msgctxt "term"
 msgid "Riot Plating"
 msgstr "Штурмовая броня"
 
@@ -15223,6 +15975,30 @@ msgstr "Инерционная штурмовая броня медика"
 msgctxt "term"
 msgid "Momentum Riot Plating of the Hauler"
 msgstr "Инерционная штурмовая броня носильщика"
+
+msgctxt "term"
+msgid "Mender Riot Plating"
+msgstr "Штурмовая броня мастера починки"
+
+msgctxt "term"
+msgid "Mender Riot Plating of the Medic"
+msgstr "Штурмовая броня мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Riot Plating of the Hauler"
+msgstr "Штурмовая броня мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Riot Plating"
+msgstr "Твёрдая штурмовая броня"
+
+msgctxt "term"
+msgid "Steady Riot Plating of the Medic"
+msgstr "Твёрдая штурмовая броня медика"
+
+msgctxt "term"
+msgid "Steady Riot Plating of the Hauler"
+msgstr "Твёрдая штурмовая броня носильщика"
 
 msgctxt "term"
 msgid "Ceramic Shell"
@@ -15297,6 +16073,30 @@ msgid "Momentum Ceramic Shell of the Hauler"
 msgstr "Инерционный керамический панцирь носильщика"
 
 msgctxt "term"
+msgid "Mender Ceramic Shell"
+msgstr "Керамический панцирь мастера починки"
+
+msgctxt "term"
+msgid "Mender Ceramic Shell of the Medic"
+msgstr "Керамический панцирь мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Ceramic Shell of the Hauler"
+msgstr "Керамический панцирь мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Ceramic Shell"
+msgstr "Твёрдый керамический панцирь"
+
+msgctxt "term"
+msgid "Steady Ceramic Shell of the Medic"
+msgstr "Твёрдый керамический панцирь медика"
+
+msgctxt "term"
+msgid "Steady Ceramic Shell of the Hauler"
+msgstr "Твёрдый керамический панцирь носильщика"
+
+msgctxt "term"
 msgid "Bulkhead Vest"
 msgstr "Жилет-переборка"
 
@@ -15367,6 +16167,30 @@ msgstr "Инерционный жилет-переборка медика"
 msgctxt "term"
 msgid "Momentum Bulkhead Vest of the Hauler"
 msgstr "Инерционный жилет-переборка носильщика"
+
+msgctxt "term"
+msgid "Mender Bulkhead Vest"
+msgstr "Жилет-переборка мастера починки"
+
+msgctxt "term"
+msgid "Mender Bulkhead Vest of the Medic"
+msgstr "Жилет-переборка мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Bulkhead Vest of the Hauler"
+msgstr "Жилет-переборка мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Bulkhead Vest"
+msgstr "Твёрдый жилет-переборка"
+
+msgctxt "term"
+msgid "Steady Bulkhead Vest of the Medic"
+msgstr "Твёрдый жилет-переборка медика"
+
+msgctxt "term"
+msgid "Steady Bulkhead Vest of the Hauler"
+msgstr "Твёрдый жилет-переборка носильщика"
 
 msgctxt "term"
 msgid "Leg Servos"
@@ -15441,6 +16265,30 @@ msgid "Momentum Leg Servos of the Hauler"
 msgstr "Инерционные ножные сервоприводы носильщика"
 
 msgctxt "term"
+msgid "Mender Leg Servos"
+msgstr "Ножные сервоприводы мастера починки"
+
+msgctxt "term"
+msgid "Mender Leg Servos of the Medic"
+msgstr "Ножные сервоприводы мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Leg Servos of the Hauler"
+msgstr "Ножные сервоприводы мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Leg Servos"
+msgstr "Твёрдые ножные сервоприводы"
+
+msgctxt "term"
+msgid "Steady Leg Servos of the Medic"
+msgstr "Твёрдые ножные сервоприводы медика"
+
+msgctxt "term"
+msgid "Steady Leg Servos of the Hauler"
+msgstr "Твёрдые ножные сервоприводы носильщика"
+
+msgctxt "term"
 msgid "Spring Actuators"
 msgstr "Пружинные приводы"
 
@@ -15511,6 +16359,30 @@ msgstr "Инерционные пружинные приводы медика"
 msgctxt "term"
 msgid "Momentum Spring Actuators of the Hauler"
 msgstr "Инерционные пружинные приводы носильщика"
+
+msgctxt "term"
+msgid "Mender Spring Actuators"
+msgstr "Пружинные приводы мастера починки"
+
+msgctxt "term"
+msgid "Mender Spring Actuators of the Medic"
+msgstr "Пружинные приводы мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Spring Actuators of the Hauler"
+msgstr "Пружинные приводы мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Spring Actuators"
+msgstr "Твёрдые пружинные приводы"
+
+msgctxt "term"
+msgid "Steady Spring Actuators of the Medic"
+msgstr "Твёрдые пружинные приводы медика"
+
+msgctxt "term"
+msgid "Steady Spring Actuators of the Hauler"
+msgstr "Твёрдые пружинные приводы носильщика"
 
 msgctxt "term"
 msgid "Gyro Joints"
@@ -15585,6 +16457,30 @@ msgid "Momentum Gyro Joints of the Hauler"
 msgstr "Инерционные гироскопические суставы носильщика"
 
 msgctxt "term"
+msgid "Mender Gyro Joints"
+msgstr "Гироскопические суставы мастера починки"
+
+msgctxt "term"
+msgid "Mender Gyro Joints of the Medic"
+msgstr "Гироскопические суставы мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Gyro Joints of the Hauler"
+msgstr "Гироскопические суставы мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Gyro Joints"
+msgstr "Твёрдые гироскопические суставы"
+
+msgctxt "term"
+msgid "Steady Gyro Joints of the Medic"
+msgstr "Твёрдые гироскопические суставы медика"
+
+msgctxt "term"
+msgid "Steady Gyro Joints of the Hauler"
+msgstr "Твёрдые гироскопические суставы носильщика"
+
+msgctxt "term"
 msgid "Track Motors"
 msgstr "Гусеничные моторы"
 
@@ -15655,6 +16551,30 @@ msgstr "Инерционные гусеничные моторы медика"
 msgctxt "term"
 msgid "Momentum Track Motors of the Hauler"
 msgstr "Инерционные гусеничные моторы носильщика"
+
+msgctxt "term"
+msgid "Mender Track Motors"
+msgstr "Гусеничные моторы мастера починки"
+
+msgctxt "term"
+msgid "Mender Track Motors of the Medic"
+msgstr "Гусеничные моторы мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Track Motors of the Hauler"
+msgstr "Гусеничные моторы мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Track Motors"
+msgstr "Твёрдые гусеничные моторы"
+
+msgctxt "term"
+msgid "Steady Track Motors of the Medic"
+msgstr "Твёрдые гусеничные моторы медика"
+
+msgctxt "term"
+msgid "Steady Track Motors of the Hauler"
+msgstr "Твёрдые гусеничные моторы носильщика"
 
 msgctxt "term"
 msgid "Logic Core"
@@ -15729,6 +16649,30 @@ msgid "Momentum Logic Core of the Hauler"
 msgstr "Инерционное логическое ядро носильщика"
 
 msgctxt "term"
+msgid "Mender Logic Core"
+msgstr "Логическое ядро мастера починки"
+
+msgctxt "term"
+msgid "Mender Logic Core of the Medic"
+msgstr "Логическое ядро мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Logic Core of the Hauler"
+msgstr "Логическое ядро мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Logic Core"
+msgstr "Твёрдое логическое ядро"
+
+msgctxt "term"
+msgid "Steady Logic Core of the Medic"
+msgstr "Твёрдое логическое ядро медика"
+
+msgctxt "term"
+msgid "Steady Logic Core of the Hauler"
+msgstr "Твёрдое логическое ядро носильщика"
+
+msgctxt "term"
 msgid "Quantum Core"
 msgstr "Квантовое ядро"
 
@@ -15799,6 +16743,30 @@ msgstr "Инерционное квантовое ядро медика"
 msgctxt "term"
 msgid "Momentum Quantum Core of the Hauler"
 msgstr "Инерционное квантовое ядро носильщика"
+
+msgctxt "term"
+msgid "Mender Quantum Core"
+msgstr "Квантовое ядро мастера починки"
+
+msgctxt "term"
+msgid "Mender Quantum Core of the Medic"
+msgstr "Квантовое ядро мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Quantum Core of the Hauler"
+msgstr "Квантовое ядро мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Quantum Core"
+msgstr "Твёрдое квантовое ядро"
+
+msgctxt "term"
+msgid "Steady Quantum Core of the Medic"
+msgstr "Твёрдое квантовое ядро медика"
+
+msgctxt "term"
+msgid "Steady Quantum Core of the Hauler"
+msgstr "Твёрдое квантовое ядро носильщика"
 
 msgctxt "term"
 msgid "Battery Core"
@@ -15873,6 +16841,30 @@ msgid "Momentum Battery Core of the Hauler"
 msgstr "Инерционное батарейное ядро носильщика"
 
 msgctxt "term"
+msgid "Mender Battery Core"
+msgstr "Батарейное ядро мастера починки"
+
+msgctxt "term"
+msgid "Mender Battery Core of the Medic"
+msgstr "Батарейное ядро мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Battery Core of the Hauler"
+msgstr "Батарейное ядро мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Battery Core"
+msgstr "Твёрдое батарейное ядро"
+
+msgctxt "term"
+msgid "Steady Battery Core of the Medic"
+msgstr "Твёрдое батарейное ядро медика"
+
+msgctxt "term"
+msgid "Steady Battery Core of the Hauler"
+msgstr "Твёрдое батарейное ядро носильщика"
+
+msgctxt "term"
 msgid "Neural Core"
 msgstr "Нейронное ядро"
 
@@ -15945,6 +16937,30 @@ msgid "Momentum Neural Core of the Hauler"
 msgstr "Инерционное нейронное ядро носильщика"
 
 msgctxt "term"
+msgid "Mender Neural Core"
+msgstr "Нейронное ядро мастера починки"
+
+msgctxt "term"
+msgid "Mender Neural Core of the Medic"
+msgstr "Нейронное ядро мастера починки медика"
+
+msgctxt "term"
+msgid "Mender Neural Core of the Hauler"
+msgstr "Нейронное ядро мастера починки носильщика"
+
+msgctxt "term"
+msgid "Steady Neural Core"
+msgstr "Твёрдое нейронное ядро"
+
+msgctxt "term"
+msgid "Steady Neural Core of the Medic"
+msgstr "Твёрдое нейронное ядро медика"
+
+msgctxt "term"
+msgid "Steady Neural Core of the Hauler"
+msgstr "Твёрдое нейронное ядро носильщика"
+
+msgctxt "term"
 msgid "Prototype Field Medic Weapon Module"
 msgstr "Прототип: Оружейный модуль полевого медика"
 
@@ -15959,6 +16975,14 @@ msgstr "Прототип: Крепостной оружейный модуль"
 msgctxt "term"
 msgid "Prototype Momentum Weapon Module"
 msgstr "Прототип: Инерционный оружейный модуль"
+
+msgctxt "term"
+msgid "Prototype Mender Weapon Module"
+msgstr "Прототип: Оружейный модуль мастера починки"
+
+msgctxt "term"
+msgid "Prototype Steady Weapon Module"
+msgstr "Прототип: Твёрдый оружейный модуль"
 
 msgctxt "term"
 msgid "Prototype Field Medic Plating"
@@ -15977,6 +17001,14 @@ msgid "Prototype Momentum Plating"
 msgstr "Прототип: Инерционная броня"
 
 msgctxt "term"
+msgid "Prototype Mender Plating"
+msgstr "Прототип: Броня мастера починки"
+
+msgctxt "term"
+msgid "Prototype Steady Plating"
+msgstr "Прототип: Твёрдая броня"
+
+msgctxt "term"
 msgid "Prototype Field Medic Servos"
 msgstr "Прототип: Сервоприводы полевого медика"
 
@@ -15993,6 +17025,14 @@ msgid "Prototype Momentum Servos"
 msgstr "Прототип: Инерционные сервоприводы"
 
 msgctxt "term"
+msgid "Prototype Mender Servos"
+msgstr "Прототип: Сервоприводы мастера починки"
+
+msgctxt "term"
+msgid "Prototype Steady Servos"
+msgstr "Прототип: Твёрдые сервоприводы"
+
+msgctxt "term"
 msgid "Prototype Field Medic Core"
 msgstr "Прототип: Ядро полевого медика"
 
@@ -16007,6 +17047,14 @@ msgstr "Прототип: Крепостное ядро"
 msgctxt "term"
 msgid "Prototype Momentum Core"
 msgstr "Прототип: Инерционное ядро"
+
+msgctxt "term"
+msgid "Prototype Mender Core"
+msgstr "Прототип: Ядро мастера починки"
+
+msgctxt "term"
+msgid "Prototype Steady Core"
+msgstr "Прототип: Твёрдое ядро"
 
 msgctxt "pattern"
 msgid "{0}  - next {1}"
@@ -20387,6 +21435,262 @@ msgstr "Каждый удар в драке наносит на {0}% больш�
 msgctxt "shape"
 msgid "{0} more Bad Blood fight can run at once"
 msgstr "Одновременно может идти на {0} драку «Вражды» больше"
+
+msgctxt "shape"
+msgid "Provoke lasts {0}% longer"
+msgstr "«Провокация» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Provoke marks from {0}% farther"
+msgstr "«Провокация» ставит метку с расстояния на {0}% больше"
+
+msgctxt "shape"
+msgid "Provoke finds an attacker {0}m farther away"
+msgstr "«Провокация» находит нападающего на {0} м дальше"
+
+msgctxt "shape"
+msgid "If the marked monster dies in the fight, {0}% of Provoke's cooldown comes back"
+msgstr "Если отмеченный монстр гибнет в драке, возвращается {0}% перезарядки «Провокации»"
+
+msgctxt "shape"
+msgid "Fights are {0}% quieter (monsters come from less far)"
+msgstr "Драки на {0}% тише (монстры сходятся с меньшего расстояния)"
+
+msgctxt "shape"
+msgid "After a fight, both monsters can't see players for {0}s"
+msgstr "После драки оба монстра {0} с не видят игроков"
+
+msgctxt "shape"
+msgid "+{0} Scrap for the team per monster killed in a fight"
+msgstr "+{0} лома команде за каждого монстра, убитого в драке"
+
+msgctxt "shape"
+msgid "+{0}% walk and sprint speed while a fight is within {1}m of you"
+msgstr "+{0}% к скорости ходьбы и бега, пока в пределах {1} м от вас идёт драка"
+
+msgctxt "shape"
+msgid "a fight ends with both monsters stunned for {0}s"
+msgstr "драка заканчивается оглушением обоих монстров на {0} с"
+
+msgctxt "shape"
+msgid "When you talk, monsters hear it from up to {0}m in front of you instead of from you (teammates still hear you normally). No mic? Hold the Hum key to throw a mumble."
+msgstr "Когда вы говорите, монстры слышат голос на расстоянии до {0} м перед вами, а не от вас (напарники слышат вас как обычно). Нет микрофона? Удерживайте клавишу гула, чтобы перебросить бормотание."
+
+msgctxt "shape"
+msgid "Weakness: everything else you do is {0}% louder to monsters (footsteps, things you carry)."
+msgstr "Слабость: всё остальное, что вы делаете, для монстров на {0}% громче (шаги, вещи в руках)."
+
+msgctxt "shape"
+msgid "everything else you do is {0}% louder to monsters (footsteps, things you carry)."
+msgstr "всё остальное, что вы делаете, для монстров на {0}% громче (шаги, вещи в руках)."
+
+msgctxt "shape"
+msgid "Leaves an echo beacon where you look (up to {0}m) that mumbles for {1}s: monsters within {2}m of it go to investigate it."
+msgstr "Оставляет там, куда вы смотрите (до {0} м), маяк-эхо, который бормочет {1} с: монстры в пределах {2} м от него идут его проверить."
+
+msgctxt "shape"
+msgid "Thrown voice +{0}m farther"
+msgstr "Голос перебрасывается на {0} м дальше"
+
+msgctxt "shape"
+msgid "The Hum key's mumble pulls monsters from {0}% farther"
+msgstr "Бормотание с клавиши гула притягивает монстров с расстояния на {0}% больше"
+
+msgctxt "shape"
+msgid "Offsets Stage Fright: {0}% quieter"
+msgstr "Смягчает «Страх сцены»: на {0}% тише"
+
+msgctxt "shape"
+msgid "thrown voice +{0}m farther, mumble {1}% stronger"
+msgstr "голос перебрасывается на {0} м дальше, бормотание сильнее на {1}%"
+
+msgctxt "shape"
+msgid "Echo lasts {0}% longer"
+msgstr "«Эхо» действует на {0}% дольше"
+
+msgctxt "shape"
+msgid "Echo pulls monsters from {0}% farther"
+msgstr "«Эхо» притягивает монстров с расстояния на {0}% больше"
+
+msgctxt "shape"
+msgid "Echo cooldown -{0}%"
+msgstr "Перезарядка «Эха»: -{0}%"
+
+msgctxt "shape"
+msgid "Monsters that reach the echo flinch for {0}s"
+msgstr "Монстры, дошедшие до эха, вздрагивают на {0} с"
+
+msgctxt "shape"
+msgid "monsters that reach the echo flinch {0}s longer, and Echo holds {1} charges"
+msgstr "монстры, дошедшие до эха, вздрагивают на {0} с дольше, а «Эхо» хранит зарядов: {1}"
+
+msgctxt "shape"
+msgid "Echo leaves a second echo {0}m to the side of the first"
+msgstr "«Эхо» оставляет второе эхо в {0} м сбоку от первого"
+
+msgctxt "shape"
+msgid "A valuable you hold wins back {0}% of the value it has lost every {1}s, up to half of what it lost."
+msgstr "Ценность у вас в руках каждые {1} с возвращает {0}% потерянной стоимости - до половины потерянного."
+
+msgctxt "shape"
+msgid "Weakness: carrying drains {0}% more stamina."
+msgstr "Слабость: переноска тратит на {0}% больше выносливости."
+
+msgctxt "shape"
+msgid "carrying drains {0}% more stamina."
+msgstr "переноска тратит на {0}% больше выносливости."
+
+msgctxt "shape"
+msgid "Every valuable within {0}m wins back {1}% of the value it has lost (up to {2}% of what it lost, {3}% more than Steady Hands can; once per item per level)."
+msgstr "Каждая ценность в пределах {0} м возвращает {1}% потерянной стоимости (до {2}% потерянного, на {3}% больше, чем могут «Твёрдые руки»; один раз на предмет за уровень)."
+
+msgctxt "shape"
+msgid "Steady Hands works {0}% faster"
+msgstr "«Твёрдые руки» работают на {0}% быстрее"
+
+msgctxt "shape"
+msgid "Steady Hands also works on valuables in a cart within {0}m of you"
+msgstr "«Твёрдые руки» действуют и на ценности в тележке в пределах {0} м от вас"
+
+msgctxt "shape"
+msgid "Cart Care reaches {0}m farther"
+msgstr "«Забота о тележке» действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "valuables teammates within {0}m of you hold also win back value (Steady Hands)"
+msgstr "ценности в руках напарников в пределах {0} м от вас тоже возвращают стоимость («Твёрдые руки»)"
+
+msgctxt "shape"
+msgid "Mend restores {0}% more"
+msgstr "«Починка» восстанавливает на {0}% больше"
+
+msgctxt "shape"
+msgid "Mend reaches {0}% farther"
+msgstr "«Починка» действует на {0}% дальше"
+
+msgctxt "shape"
+msgid "Mend cooldown -{0}%"
+msgstr "Перезарядка «Починки»: -{0}%"
+
+msgctxt "shape"
+msgid "Mend restores {0}% more and holds {1} charges"
+msgstr "«Починка» восстанавливает на {0}% больше и хранит зарядов: {1}"
+
+msgctxt "shape"
+msgid "Valuables you hold lose {0}% less value"
+msgstr "Ценности у вас в руках теряют на {0}% меньше стоимости"
+
+msgctxt "shape"
+msgid "Offsets Gentle Touch: carrying drains {0}% less stamina"
+msgstr "Смягчает «Нежное касание»: переноска тратит на {0}% меньше выносливости"
+
+msgctxt "shape"
+msgid "valuables you hold lose {0}% less value"
+msgstr "ценности у вас в руках теряют на {0}% меньше стоимости"
+
+msgctxt "shape"
+msgid "The first time you open a door, locker or cabinet in a room nobody has entered yet, {0}% chance to turn up a small valuable. Weakness: what you find is worth half and breaks easily."
+msgstr "Когда вы впервые открываете дверь, шкафчик или тумбу в комнате, куда ещё никто не входил, есть {0}% шанс найти мелкую ценность. Слабость: находки стоят вдвое меньше и легко бьются."
+
+msgctxt "shape"
+msgid "The first time you open a door, locker or cabinet in a room nobody has entered yet, {0}% chance to turn up a small valuable."
+msgstr "Когда вы впервые открываете дверь, шкафчик или тумбу в комнате, куда ещё никто не входил, есть {0}% шанс найти мелкую ценность."
+
+msgctxt "shape"
+msgid "+{0}% Scrap when you salvage gear."
+msgstr "+{0}% лома при разборе снаряжения."
+
+msgctxt "shape"
+msgid "Search the room you're in for {0}s, standing still: turns up {1}-{2} small valuables. Each room can be rummaged once per level."
+msgstr "Обыскивает комнату, в которой вы находитесь, {0} с, пока вы стоите на месте: находит {1}-{2} мелкие ценности. Каждую комнату можно обыскать один раз за уровень."
+
+msgctxt "shape"
+msgid "Keen Eye +{0}% chance"
+msgstr "«Острый глаз»: +{0}% к шансу"
+
+msgctxt "shape"
+msgid "+{0} Scavenger find per level"
+msgstr "+{0} находка Старьёвщика за уровень"
+
+msgctxt "shape"
+msgid "Keen Eye +{0}% chance, +{1} finds per level"
+msgstr "«Острый глаз»: +{0}% к шансу, +{1} находки за уровень"
+
+msgctxt "shape"
+msgid "Rummage takes {0}% less time"
+msgstr "«Обыск» занимает на {0}% меньше времени"
+
+msgctxt "shape"
+msgid "Rummage finds {0}% more"
+msgstr "«Обыск» находит на {0}% больше"
+
+msgctxt "shape"
+msgid "Rummage cooldown -{0}%"
+msgstr "Перезарядка «Обыска»: -{0}%"
+
+msgctxt "shape"
+msgid "Rummage finds {0}% more and holds {1} charges"
+msgstr "«Обыск» находит на {0}% больше и хранит зарядов: {1}"
+
+msgctxt "shape"
+msgid "Finds are worth {0}% more (of their full value)"
+msgstr "Находки стоят на {0}% больше (от полной стоимости)"
+
+msgctxt "shape"
+msgid "Finds break {0}% less easily"
+msgstr "Находки бьются на {0}% труднее"
+
+msgctxt "shape"
+msgid "+{0}% Scrap when you salvage gear"
+msgstr "+{0}% лома при разборе снаряжения"
+
+msgctxt "shape"
+msgid "Finds are worth {0}% more"
+msgstr "Находки стоят на {0}% больше"
+
+msgctxt "shape"
+msgid "finds are worth {0}% more and break {1}% less easily"
+msgstr "находки стоят на {0}% больше и бьются на {1}% труднее"
+
+msgctxt "shape"
+msgid "When a valuable within {0}m of you loses value, {1}% of what it lost comes back as Scrap, split equally between the team."
+msgstr "Когда ценность в пределах {0} м от вас теряет стоимость, {1}% потерянного возвращается ломом, поровну на всю команду."
+
+msgctxt "shape"
+msgid "Valuables you hold lose {0}% less value. Weakness: Policy-tagged valuables glow and monsters keep noticing them."
+msgstr "Ценности у вас в руках теряют на {0}% меньше стоимости. Слабость: ценности с полисом светятся, и монстры то и дело их замечают."
+
+msgctxt "shape"
+msgid "Valuables you hold lose {0}% less value."
+msgstr "Ценности у вас в руках теряют на {0}% меньше стоимости."
+
+msgctxt "shape"
+msgid "Tag up to {0} valuables within {1}m. If a tagged valuable is destroyed by a monster, hazard or fall after being moved at least {2}m since you tagged it, its full value still counts toward the haul."
+msgstr "Помечает до {0} ценностей в пределах {1} м. Если помеченную ценность уничтожит монстр, ловушка или падение после того, как её перенесли хотя бы на {2} м от места пометки, её полная стоимость всё равно пойдёт в зачёт добычи."
+
+msgctxt "shape"
+msgid "Coverage pays {0}% more"
+msgstr "«Покрытие» выплачивает на {0}% больше"
+
+msgctxt "shape"
+msgid "Coverage reaches {0}m farther"
+msgstr "«Покрытие» действует на {0} м дальше"
+
+msgctxt "shape"
+msgid "Coverage pays {0}% more and reaches {1}m farther"
+msgstr "«Покрытие» выплачивает на {0}% больше и действует на {1} м дальше"
+
+msgctxt "shape"
+msgid "Policy needs {0}m less movement"
+msgstr "«Полису» нужно на {0} м меньше переноса"
+
+msgctxt "shape"
+msgid "Policy tags from {0}% farther"
+msgstr "«Полис» помечает с расстояния на {0}% больше"
+
+msgctxt "shape"
+msgid "Policy cooldown -{0}%"
+msgstr "Перезарядка «Полиса»: -{0}%"
 
 msgctxt "shape"
 msgid "Thrown items stun monsters they hit for {0} s."
