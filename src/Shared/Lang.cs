@@ -30,6 +30,11 @@ namespace RepoRPG_RU
         public readonly Dictionary<string, string> Patterns = new Dictionary<string, string>(StringComparer.Ordinal);
         /// <summary>msgctxt "data" (key "") and "data:stem" (key stem).</summary>
         public readonly Dictionary<string, Dictionary<string, string>> Data = new Dictionary<string, Dictionary<string, string>>(StringComparer.Ordinal);
+        /// <summary>
+        /// msgctxt "shape": a text of the mod's data whose numbers change (a talent at rank 3, a contract with another target).
+        /// "+{0}% max health for {1}s" - matched at display time against the text with every number taken out.
+        /// </summary>
+        public readonly Dictionary<string, string> Shapes = new Dictionary<string, string>(StringComparer.Ordinal);
 
         public readonly List<string> Problems = new List<string>();
         public readonly List<string> Files = new List<string>();
@@ -78,13 +83,15 @@ namespace RepoRPG_RU
                 if (idx.Count > 0) (e.Ctx == "numbers" ? Numbers : Words)[e.Id] = idx.ToArray();
                 return;
             }
-            if (!Fmt.SameHoles(e.Id, e.Str))
+            bool data = e.Ctx != null && (e.Ctx == "data" || e.Ctx.StartsWith("data:", StringComparison.Ordinal));
+            if (data ? !Fmt.SameTokens(e.Id, e.Str) : !Fmt.SameHoles(e.Id, e.Str))
             {
                 Rejected++;
                 Problems.Add(e.File + ":" + e.Line + ": {placeholders} differ from the original, entry ignored");
                 return;
             }
             Entries++;
+            if (e.Ctx == "shape") { Shapes[e.Id] = e.Str; return; }
             if (e.Ctx == null) { Global[e.Id] = e.Str; return; }
             if (e.Ctx == "term") { Terms[e.Id] = e.Str; return; }
             if (e.Ctx == "pattern")

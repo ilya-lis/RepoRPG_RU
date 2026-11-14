@@ -186,6 +186,31 @@ namespace RepoRPG_RU
             return true;
         }
 
+        /// <summary>
+        /// Texts of the mod's data carry tokens the mod fills in itself: "{key:menu}", "{cfg:Section/Key}", "{t}", and
+        /// "{cfg:Section/Key?text when on:text when off}" - there the text inside is translated, the part before '?' is not.
+        /// A translation must have the very same tokens (any order).
+        /// </summary>
+        public static bool SameTokens(string a, string b)
+        {
+            if (a.IndexOf('{') < 0 && a.IndexOf('}') < 0 && b.IndexOf('{') < 0 && b.IndexOf('}') < 0) return true;
+            List<string> x = Holes(a), y = Holes(b);
+            if (x.Count != y.Count) return false;
+            for (int i = 0; i < x.Count; i++) x[i] = TokenHead(x[i]);
+            for (int i = 0; i < y.Count; i++) y[i] = TokenHead(y[i]);
+            x.Sort(string.CompareOrdinal);
+            y.Sort(string.CompareOrdinal);
+            for (int i = 0; i < x.Count; i++)
+                if (!string.Equals(x[i], y[i], StringComparison.Ordinal)) return false;
+            return true;
+        }
+
+        private static string TokenHead(string hole)
+        {
+            int q = hole.IndexOf('?');
+            return q > 0 && hole.IndexOf(':') > 0 && hole.IndexOf(':') < q ? hole.Substring(0, q) : hole;
+        }
+
         private static bool IsNamed(string hole)
         {
             return hole.Length >= 3 && hole[0] == '{' && hole[hole.Length - 1] == '}'

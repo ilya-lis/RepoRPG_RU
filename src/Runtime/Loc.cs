@@ -27,6 +27,7 @@ namespace RepoRPG_RU
         private static bool fallbacks;
         private static Dictionary<string, CaseEntry> upper;
         private static Dictionary<string, Pattern[]> byHead, byTail;
+        private static Dictionary<string, string> shapes;
         private static Pattern[] loose;
         private static KeyValuePair<string, string>[] prefixes = new KeyValuePair<string, string>[0], suffixes = new KeyValuePair<string, string>[0];
         private static Dictionary<string, string> memo;
@@ -83,7 +84,11 @@ namespace RepoRPG_RU
             {
                 if (memo.Count >= MemoLimit) memo.Clear();   // timers and counters produce endless variants
                 memo[text] = result;
-                if (result == null && logging) Note(text);
+                if (logging)
+                {
+                    if (result == null) Note(LooksEnglish(text) ? text : Leftover(text) ? "~ " + text : null);
+                    else if (Leftover(result)) Note("~ " + text + "  =>  " + result);
+                }
             }
             return result ?? text;
         }
@@ -142,11 +147,75 @@ namespace RepoRPG_RU
         {
             string r = Exact(text);
             if (r != null) return r;
+            if (shapes != null && (r = Shape(text)) != null) return r;
             if (depth >= MaxDepth || ++steps > MaxSteps) { cuts++; return null; }
             r = Compose(text, depth);
             // "+3% опыта, +3% Scrap": a known name that was left standing between translated parts
             if (r != null && HasLatin(r)) r = Islands(r, depth) ?? r;
             return r;
+        }
+
+        private const char NumberMark = '\u0001';
+
+        private static bool IsDigit(char c) { return c >= '0' && c <= '9'; }
+
+        /// <summary>
+        /// Where a number ends: digits, groups of three after a no-break space ("8 000", the way the game's language settings
+        /// write thousands), then a decimal part after '.' or ','. The same rule as NUMBER of tools/datapo.py.
+        /// </summary>
+        private static int NumberEnd(string s, int i)
+        {
+            int n = s.Length, j = i;
+            while (j < n && IsDigit(s[j])) j++;
+            while (j + 3 < n && (s[j] == '\u00A0' || s[j] == '\u202F') && IsDigit(s[j + 1]) && IsDigit(s[j + 2]) && IsDigit(s[j + 3])) j += 4;
+            if (j + 1 < n && (s[j] == '.' || s[j] == ',') && IsDigit(s[j + 1]))
+            {
+                j += 2;
+                while (j < n && IsDigit(s[j])) j++;
+            }
+            return j;
+        }
+
+        /// <summary>
+        /// A text from the mod's data with other numbers in it: "+12% max health" for the entry "+6% max health" (a talent at
+        /// rank 2), "Kill 3 elites" for "Kill {t} elite{s}", "+00% max health" (the mod measures a line with its digits zeroed).
+        /// The text with every number taken out is looked up as a whole; the numbers go back into the translation.
+        /// </summary>
+        private static string Shape(string text)
+        {
+            int n = text.Length, i = 0;
+            while (i < n && !IsDigit(text[i])) i++;
+            if (i == n) return null;
+            StringBuilder key = new StringBuilder(n);
+            List<string> numbers = new List<string>(4);
+            int copied = 0;
+            while (i < n)
+            {
+                if (!IsDigit(text[i])) { i++; continue; }
+                int end = NumberEnd(text, i);
+                key.Append(text, copied, i - copied).Append(NumberMark);
+                numbers.Add(text.Substring(i, end - i));
+                copied = i = end;
+            }
+            key.Append(text, copied, n - copied);
+            string template;
+            if (!shapes.TryGetValue(key.ToString(), out template)) return null;
+            StringBuilder sb = new StringBuilder(template.Length + 16);
+            for (int k = 0; k < template.Length; k++)
+            {
+                char c = template[k];
+                if (c == '{')
+                {
+                    int close = template.IndexOf('}', k);
+                    int index = close < 0 ? -1 : Fmt.FormatIndex(template.Substring(k, close - k + 1));
+                    if (index < 0 || index >= numbers.Count) return null;
+                    sb.Append(numbers[index]);
+                    k = close;
+                    continue;
+                }
+                sb.Append(c);
+            }
+            return sb.ToString();
         }
 
         private static string Compose(string text, int depth)
@@ -205,9 +274,38 @@ namespace RepoRPG_RU
             if ((r = Parts(text, " - ", Phrase, depth)) != null) return r;
             if ((r = Parts(text, ": ", Label, depth)) != null) return r;
             if ((r = Parts(text, ", ", Phrase, depth)) != null) return r;
+            if ((r = Bracket(text, depth)) != null) return r;
             if ((r = Peel(text, depth)) != null) return r;
             if ((r = Counted(text)) != null) return r;
             return Islands(text, depth);
+        }
+
+        /// <summary>
+        /// "Fleet Foot (+12% walk and sprint speed)", "Iron Plate (Rare, equipped)": a text and what the mod put in brackets
+        /// after it. Each half is a text of its own; what stays as written has to be a name or a number.
+        /// </summary>
+        private static string Bracket(string text, int depth)
+        {
+            int n = text.Length;
+            if (n < 6) return null;
+            char close = text[n - 1];
+            char open = close == ')' ? '(' : close == ']' ? '[' : '\0';
+            if (open == '\0') return null;
+            int level = 0, at = -1;
+            for (int i = n - 1; i >= 0; i--)
+            {
+                char c = text[i];
+                if (c == close) level++;
+                else if (c == open && --level == 0) { at = i; break; }
+            }
+            if (at < 2 || text[at - 1] != ' ' || at + 1 >= n - 1) return null;
+            string outer = text.Substring(0, at - 1), inner = text.Substring(at + 1, n - at - 2);
+            bool unknown = false;
+            string to = Piece(outer, depth, ref unknown), ti = Piece(inner, depth, ref unknown);
+            if (unknown || (to == null && ti == null)) return null;
+            if (to == null && HasLatin(outer) && !NameLike(outer, false)) return null;
+            if (ti == null && HasLatin(inner) && !NameLike(inner, false)) return null;
+            return (to ?? outer) + " " + open + (ti ?? inner) + close;
         }
 
         /// <summary>"Throw 20", "COMBAT 100": a name the dictionary has and a number after it.</summary>
@@ -266,7 +364,8 @@ namespace RepoRPG_RU
                 }
                 if (end - start >= 2 && !(start == 0 && end == n))
                 {
-                    string t = Exact(text.Substring(start, end - start));
+                    string run = text.Substring(start, end - start);
+                    string t = Exact(run) ?? Names(run);
                     if (t != null)
                     {
                         if (sb == null) sb = new StringBuilder(n + 16);
@@ -279,6 +378,36 @@ namespace RepoRPG_RU
             if (sb == null) return null;
             sb.Append(text, copied, n - copied);
             return sb.ToString();
+        }
+
+        /// <summary>
+        /// "Rare Sharp Striker Module of the Brawler": two or three names the mod wrote one after another (a rarity and an item).
+        /// Every part starts with a capital and is known to the dictionary as it stands; together they cover the whole run.
+        /// </summary>
+        private static string Names(string run)
+        {
+            if (run.Length > 90 || run.IndexOf(' ') < 0) return null;
+            for (int cut = run.Length - 1; cut > 0; cut--)
+            {
+                if (run[cut] != ' ') continue;
+                if (!IsUpperLetter(run[0]) || cut + 1 >= run.Length || !IsUpperLetter(run[cut + 1])) continue;
+                string head = Exact(run.Substring(0, cut));
+                if (head == null) continue;
+                string rest = run.Substring(cut + 1);
+                string tail = Exact(rest);
+                if (tail == null)
+                {
+                    // one more name at most
+                    for (int cut2 = rest.Length - 1; cut2 > 0 && tail == null; cut2--)
+                    {
+                        if (rest[cut2] != ' ' || cut2 + 1 >= rest.Length || !IsUpperLetter(rest[cut2 + 1])) continue;
+                        string a = Exact(rest.Substring(0, cut2)), b = a == null ? null : Exact(rest.Substring(cut2 + 1));
+                        if (b != null) tail = a + " " + b;
+                    }
+                }
+                if (tail != null) return head + " " + tail;
+            }
+            return null;
         }
 
         private static bool IsWordChar(char c) { return IsLatinLetter(c) || (c >= '0' && c <= '9') || c == '_'; }
@@ -1050,8 +1179,31 @@ namespace RepoRPG_RU
                 else rest.Add(p);
             }
 
+            Dictionary<string, string> sh = null;
+            if (lang.Shapes.Count > 0)
+            {
+                sh = new Dictionary<string, string>(lang.Shapes.Count, StringComparer.Ordinal);
+                foreach (KeyValuePair<string, string> kv in lang.Shapes)
+                {
+                    // "+{0}% max health for {1}s": the numbers of the entry in the order they stand
+                    StringBuilder key = new StringBuilder(kv.Key.Length);
+                    bool good = true;
+                    for (int i = 0; i < kv.Key.Length && good; i++)
+                    {
+                        char c = kv.Key[i];
+                        if (c != '{') { key.Append(c); continue; }
+                        int close = kv.Key.IndexOf('}', i);
+                        if (close < 0 || Fmt.FormatIndex(kv.Key.Substring(i, close - i + 1)) < 0) { good = false; break; }
+                        key.Append(NumberMark);
+                        i = close;
+                    }
+                    if (good) sh[key.ToString()] = kv.Value;
+                }
+            }
+
             minLength = lo;
             maxLength = hi;
+            shapes = sh;
             upper = up;
             prefixes = pre.ToArray();
             suffixes = suf.ToArray();
@@ -1129,11 +1281,35 @@ namespace RepoRPG_RU
 
         // ------------------------------------------------------------------ "what is still English?" log
 
+        /// <summary>
+        /// A text that came out half Russian, half English ("Благословение: Быстрые ноги (+12% walk and sprint speed)"):
+        /// it goes into the log with "~ " in front, the way it was and the way it was shown.
+        /// </summary>
+        private static bool Leftover(string s)
+        {
+            bool russian = false;
+            int run = 0, best = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                char c = s[i];
+                if (c >= '\u0400' && c <= '\u04FF') { russian = true; run = 0; continue; }
+                if (c == '<')
+                {
+                    int close = s.IndexOf('>', i);
+                    if (close > i && close - i < 24) { i = close; run = 0; continue; }
+                }
+                // words written in small letters: names, keys and abbreviations ("RepoRPG", "HUD", "Tab") are no news
+                if (c >= 'a' && c <= 'z') { if (run > 0 || i == 0 || !IsLatinLetter(s[i - 1])) run++; if (run > best) best = run; }
+                else run = 0;
+            }
+            return russian && best >= 4;
+        }
+
         private static void Note(string text)
         {
             try
             {
-                if (seen.Count < MaxLogged && text.Length <= 400 && LooksEnglish(text))
+                if (text != null && seen.Count < MaxLogged && text.Length <= 400)
                 {
                     string line = Flatten(text);
                     if (seen.Add(line)) pending.Add(line);

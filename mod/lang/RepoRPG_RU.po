@@ -4,6 +4,8 @@
 #   no msgctxt        replaced inside the mod where that is safe, otherwise at the moment the text is drawn
 #   term              only at the moment the text is drawn (words the mod also uses as internal names)
 #   pattern           a sentence the mod puts together itself; {0} stands for the changing part
+#   shape             a text of the mod's data; {0}, {1} are its numbers, which change with ranks and settings
+#   data:guide        a value of the mod's guide.json, replaced inside the data (the Guide tab and its search)
 #   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)
 #   numbers           not a translation: which placeholders of a sentence are numbers (worked out from the mod's code)
 #   words             not a translation: which placeholders hold one of the mod's own words (a rarity, a tab name)
@@ -10243,156 +10245,304 @@ msgid "Evolutions are turned off by the host."
 msgstr "Эволюции отключены хостом."
 
 msgctxt "term"
-msgid "Getting Started"
-msgstr "С чего начать"
+msgid "Weapon"
+msgstr "Оружие"
 
 msgctxt "term"
-msgid "Classes"
-msgstr "Классы"
+msgid "Grip"
+msgstr "Хват"
 
 msgctxt "term"
-msgid "Grappler's Hook"
-msgstr "Крюк Крючника"
+msgid "Throw Strength"
+msgstr "Сила броска"
 
 msgctxt "term"
-msgid "Gunsmith's Field Charger"
-msgstr "Полевой зарядник Оружейника"
+msgid "Weapon Damage"
+msgstr "Урон оружия"
 
 msgctxt "term"
-msgid "Leveling & XP"
-msgstr "Уровни и опыт"
+msgid "Focus"
+msgstr "Концентрация"
 
 msgctxt "term"
-msgid "My Stats"
-msgstr "Мои показатели"
+msgid "Vitality"
+msgstr "Живучесть"
 
 msgctxt "term"
-msgid "Elemental Weapons"
-msgstr "Стихийное оружие"
+msgid "Endurance"
+msgstr "Выносливость"
 
 msgctxt "term"
-msgid "The Market"
-msgstr "Рынок"
+msgid "Agility"
+msgstr "Ловкость"
 
 msgctxt "term"
-msgid "Crafting & Modules"
-msgstr "Крафт и модули"
+msgid "Leap"
+msgstr "Прыжок"
 
 msgctxt "term"
-msgid "Scrap & the Shop"
-msgstr "Лом и магазин"
+msgid "Grip Strength"
+msgstr "Сила хвата"
 
 msgctxt "term"
-msgid "Givers & Reputation"
-msgstr "Заказчики и репутация"
+msgid "Reach"
+msgstr "Досягаемость"
 
 msgctxt "term"
-msgid "Team Contracts"
-msgstr "Командные контракты"
+msgid "Finesse"
+msgstr "Аккуратность"
 
 msgctxt "term"
-msgid "Elites & Bosses"
-msgstr "Элита и боссы"
+msgid "Fortune"
+msgstr "Удача"
 
 msgctxt "term"
-msgid "Death Saves"
-msgstr "Спасения от смерти"
+msgid "Double Charge"
+msgstr "Двойной заряд"
 
 msgctxt "term"
-msgid "Saving & Runs"
-msgstr "Сохранения и забеги"
+msgid "Your ability holds 2 charges."
+msgstr "Ваша способность хранит зарядов: 2."
 
 msgctxt "term"
-msgid "Account & Unlocks"
-msgstr "Аккаунт и открытия"
+msgid "Adrenal Loop"
+msgstr "Адреналиновая петля"
 
 msgctxt "term"
-msgid "Mastery & Prestige"
-msgstr "Мастерство и престиж"
+msgid "Each enemy that dies near you takes 6s off your ability cooldown."
+msgstr "Каждый враг, погибший рядом с вами, сокращает перезарядку способности на 6 с."
 
 msgctxt "term"
-msgid "Joining Late"
-msgstr "Позднее подключение"
+msgid "+30% weapon damage and +40% ability power, but -25% max health."
+msgstr "+30% к урону оружия и +40% к силе способности, но -25% к макс. здоровью."
 
 msgctxt "term"
-msgid "Deeper in the run"
-msgstr "В глубине забега"
+msgid "Iron Skin"
+msgstr "Железная кожа"
 
 msgctxt "term"
-msgid "Big Lobbies"
-msgstr "Большие лобби"
+msgid "Take 15% less damage, but move 8% slower."
+msgstr "Вы получаете на 15% меньше урона, но двигаетесь на 8% медленнее."
 
 msgctxt "term"
-msgid "Controls"
-msgstr "Управление"
+msgid "Second Chance"
+msgstr "Второй шанс"
 
 msgctxt "term"
-msgid "HUD Guide"
-msgstr "Справка по HUD"
+msgid "One extra death save every level."
+msgstr "Одно дополнительное спасение от смерти на каждом уровне."
 
 msgctxt "term"
-msgid "Glossary"
-msgstr "Словарь"
+msgid "+40% chance to find gear when an extraction point completes."
+msgstr "+40% к шансу найти снаряжение при завершении точки извлечения."
 
 msgctxt "term"
-msgid "Welcome to RepoRPG"
-msgstr "Добро пожаловать в RepoRPG"
+msgid "Bounty Hunter"
+msgstr "Охотник за наградой"
 
 msgctxt "term"
-msgid "RepoRPG turns each run into a small RPG: you pick a class, level it up and spend what you earn between levels."
-msgstr "RepoRPG превращает каждый забег в маленькую RPG: вы выбираете класс, прокачиваете его и тратите заработанное между уровнями."
+msgid "Elites have a 60% chance to drop a second piece of gear."
+msgstr "С элиты с шансом 60% выпадает второй предмет снаряжения."
 
 msgctxt "term"
-msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
-msgstr "Каждый забег становится маленькой RPG: вы выбираете класс, прокачиваете его, собираете снаряжение и перки. Когда забег заканчивается, всё начинается заново.\n\nЭто обучение - 5 коротких панелей. Его можно пропустить в любой момент: всё есть на вкладке «Справка»."
+msgid "Heal 15 HP whenever an extraction point completes."
+msgstr "Лечит 15 ОЗ при завершении каждой точки извлечения."
+
+msgctxt "term"
+msgid "Haggler"
+msgstr "Торгаш"
+
+msgctxt "term"
+msgid "Mod shop items cost 30% less."
+msgstr "Товары в магазине мода стоят на 30% дешевле."
+
+msgctxt "term"
+msgid "Vampire"
+msgstr "Вампир"
+
+msgctxt "term"
+msgid "Weapon hits heal 2 HP; enemies dying near you heal 5 HP."
+msgstr "Попадания из оружия лечат на 2 ОЗ; враги, погибающие рядом с вами, лечат на 5 ОЗ."
+
+msgctxt "term"
+msgid "15% chance on hit to stun and 15% to make enemies bleed."
+msgstr "При попадании: 15% шанс оглушить и 15% шанс вызвать у врага кровотечение."
+
+msgctxt "term"
+msgid "Marathon"
+msgstr "Марафон"
+
+msgctxt "term"
+msgid "Sprinting costs 40% less stamina and stamina regenerates 2/s faster."
+msgstr "Бег тратит на 40% меньше выносливости, а она восстанавливается на 2/с быстрее."
+
+msgctxt "term"
+msgid "Springheel"
+msgstr "Пружинистые пятки"
+
+msgctxt "term"
+msgid "+1 extra jump and +20% jump force."
+msgstr "+1 дополнительный прыжок и +20% к силе прыжка."
+
+msgctxt "term"
+msgid "Overbuilt Hydraulics"
+msgstr "Усиленная гидравлика"
+
+msgctxt "term"
+msgid "+50% grab strength and +25% grab range."
+msgstr "+50% к силе захвата и +25% к дальности захвата."
+
+msgctxt "term"
+msgid "Quick Learner"
+msgstr "Способный ученик"
+
+msgctxt "term"
+msgid "+30% XP from everything."
+msgstr "+30% опыта от всего."
+
+msgctxt "term"
+msgid "Lucky"
+msgstr "Везунчик"
+
+msgctxt "term"
+msgid "+4 gear luck and +10% dodge chance."
+msgstr "+4 к удаче снаряжения и +10% к шансу уклонения."
+
+msgctxt "term"
+msgid "Overclocked"
+msgstr "Разогнанный"
+
+msgctxt "term"
+msgid "-25% ability cooldown and +25% ability duration."
+msgstr "-25% к перезарядке способности и +25% к её длительности."
+
+msgctxt "term"
+msgid "Guardian"
+msgstr "Хранитель"
+
+msgctxt "term"
+msgid "Allies within 8m regain 1 HP every 3s."
+msgstr "Союзники в пределах 8 м восстанавливают 1 ОЗ каждые 3 с."
+
+msgctxt "term"
+msgid "Berserk"
+msgstr "Берсерк"
+
+msgctxt "term"
+msgid "Sixth Sense"
+msgstr "Шестое чувство"
+
+msgctxt "term"
+msgid "Your HUD warns of enemies within 18m."
+msgstr "HUD предупреждает о врагах в пределах 18 м."
+
+msgctxt "term"
+msgid "Pack Mule"
+msgstr "Вьючный мул"
+
+msgctxt "term"
+msgid "Carrying loot barely tires you, and you grip harder."
+msgstr "Переноска добычи почти не утомляет вас, и хват у вас крепче."
+
+msgctxt "term"
+msgid "Shadowstep"
+msgstr "Шаг в тень"
+
+msgctxt "term"
+msgid "Move fast while crouched and slip more hits."
+msgstr "Быстро двигайтесь в приседе и чаще уклоняйтесь от ударов."
+
+msgctxt "term"
+msgid "Adrenaline"
+msgstr "Адреналин"
+
+msgctxt "term"
+msgid "Below 35% HP you move much faster; take a little less damage."
+msgstr "Ниже 35% ОЗ вы двигаетесь намного быстрее и получаете чуть меньше урона."
+
+msgctxt "term"
+msgid "Big Battery"
+msgstr "Большая батарея"
+
+msgctxt "term"
+msgid "+50% max stamina (a bigger tank: sprinting still costs the same per second) and +1 stamina/s regen while recharging."
+msgstr "+50% к макс. выносливости (запас больше, но бег стоит столько же в секунду) и +1 к восстановлению выносливости в секунду, пока она восстанавливается."
+
+msgctxt "term"
+msgid "Wide Reach"
+msgstr "Широкий охват"
+
+msgctxt "term"
+msgid "Your ability reaches further and lasts longer."
+msgstr "Ваша способность действует дальше и дольше."
+
+msgctxt "term"
+msgid "Amplifier"
+msgstr "Усилитель"
+
+msgctxt "term"
+msgid "+50% ability power, but your ability takes 20% longer to recharge."
+msgstr "+50% к силе способности, но она перезаряжается на 20% дольше."
+
+msgctxt "term"
+msgid "Treasure Hunter"
+msgstr "Охотник за сокровищами"
+
+msgctxt "term"
+msgid "More XP from extractions, more gear finds and better gear luck."
+msgstr "Больше опыта за извлечения, чаще находки снаряжения и выше удача снаряжения."
+
+msgctxt "term"
+msgid "Executioner"
+msgstr "Палач"
+
+msgctxt "term"
+msgid "+20% weapon damage and +25% kill XP, but take 10% more damage."
+msgstr "+20% к урону оружия и +25% опыта за убийства, но вы получаете на 10% больше урона."
+
+msgctxt "term"
+msgid "Lifeline"
+msgstr "Спасательный трос"
+
+msgctxt "term"
+msgid "Allies revived near you get +15 HP, and you earn +50% revive XP."
+msgstr "Союзники, возрождённые рядом с вами, получают +15 ОЗ, а вы - +50% опыта за возрождение."
+
+msgctxt "term"
+msgid "Tough as Nails"
+msgstr "Крепкий орешек"
+
+msgctxt "term"
+msgid "+30% max health, but sprint 10% slower."
+msgstr "+30% к макс. здоровью, но бег на 10% медленнее."
 
 msgctxt "term"
 msgid "Juggernaut"
 msgstr "Джаггернаут"
 
 msgctxt "term"
-msgid "Brute"
-msgstr "Громила"
-
-msgctxt "term"
-msgid "Survivor"
-msgstr "Выживший"
-
-msgctxt "term"
-msgid "Bloodbound"
-msgstr "Кровник"
-
-msgctxt "term"
-msgid "Engineer"
-msgstr "Инженер"
-
-msgctxt "term"
-msgid "Warden"
-msgstr "Страж"
-
-msgctxt "term"
-msgid "Phantom"
-msgstr "Фантом"
-
-msgctxt "term"
-msgid "Scout"
-msgstr "Разведчик"
-
-msgctxt "term"
-msgid "Hauler"
-msgstr "Носильщик"
-
-msgctxt "term"
 msgid "Shield Wall"
 msgstr "Стена щитов"
+
+msgctxt "term"
+msgid "+40% max health. Allies within 5m of you take 10% less damage."
+msgstr "+40% к макс. здоровью. Союзники в пределах 5 м от вас получают на 10% меньше урона."
 
 msgctxt "term"
 msgid "Heavy Frame"
 msgstr "Тяжёлый каркас"
 
 msgctxt "term"
+msgid "Take 15% less damage, but sprint 10% slower."
+msgstr "Вы получаете на 15% меньше урона, но бегаете на 10% медленнее."
+
+msgctxt "term"
 msgid "Iron Wall"
 msgstr "Железная стена"
+
+msgctxt "term"
+msgid "Lock your plating: take 60% less damage for 6s, and your Shield Wall protects allies 15% more."
+msgstr "Зафиксируйте броню: на 6 с вы получаете на 60% меньше урона, а «Стена щитов» защищает союзников на 15% сильнее."
 
 msgctxt "term"
 msgid "Thick Plating"
@@ -10455,88 +10605,144 @@ msgid "Citadel"
 msgstr "Цитадель"
 
 msgctxt "term"
-msgid "+40% max health. Allies within 5m of you take 10% less damage."
-msgstr "+40% к макс. здоровью. Союзники в пределах 5 м от вас получают на 10% меньше урона."
+msgid "Wide Field"
+msgstr "Широкое поле"
 
 msgctxt "term"
-msgid "Take 15% less damage, but sprint 10% slower."
-msgstr "Вы получаете на 15% меньше урона, но бегаете на 10% медленнее."
+msgid "Scout"
+msgstr "Разведчик"
 
 msgctxt "term"
-msgid "Lock your plating: take 60% less damage for 6s, and your Shield Wall protects allies 15% more."
-msgstr "Зафиксируйте броню: на 6 с вы получаете на 60% меньше урона, а «Стена щитов» защищает союзников на 15% сильнее."
+msgid "Afterburner"
+msgstr "Дожиг"
 
 msgctxt "term"
-msgid "Pallbearer"
-msgstr "Носильщик гроба"
-
-msgctxt "term"
-msgid "Last Rites"
-msgstr "Последние почести"
-
-msgctxt "term"
-msgid "Steady Hands"
-msgstr "Твёрдые руки"
-
-msgctxt "term"
-msgid "Grave Sense"
-msgstr "Могильное чутьё"
-
-msgctxt "term"
-msgid "Sure Grip"
-msgstr "Надёжный хват"
-
-msgctxt "term"
-msgid "Shroud"
-msgstr "Саван"
-
-msgctxt "term"
-msgid "Ferryman"
-msgstr "Паромщик"
-
-msgctxt "term"
-msgid "Defibrillate"
-msgstr "Дефибрилляция"
-
-msgctxt "term"
-msgid "Wide Rites"
-msgstr "Широкие почести"
+msgid "Hauler"
+msgstr "Носильщик"
 
 msgctxt "term"
 msgid "Long Reach"
 msgstr "Дальний захват"
 
 msgctxt "term"
-msgid "Mass Resurrection"
-msgstr "Массовое воскрешение"
+msgid "Brute"
+msgstr "Громила"
 
 msgctxt "term"
-msgid "Adrenal Wake"
-msgstr "Адреналиновое пробуждение"
+msgid "Engineer"
+msgstr "Инженер"
 
 msgctxt "term"
-msgid "Fresh Legs"
-msgstr "Свежие ноги"
+msgid "Efficient Cells"
+msgstr "Экономичные элементы"
 
 msgctxt "term"
-msgid "Grace Period"
-msgstr "Отсрочка"
+msgid "Fast Charge"
+msgstr "Быстрая зарядка"
 
 msgctxt "term"
-msgid "Undying Crew"
-msgstr "Бессмертная команда"
+msgid "Overcharge"
+msgstr "Перезаряд"
+
+msgctxt "term"
+msgid "Phantom"
+msgstr "Фантом"
+
+msgctxt "term"
+msgid "Survivor"
+msgstr "Выживший"
+
+msgctxt "term"
+msgid "Scar Tissue"
+msgstr "Рубцовая ткань"
+
+msgctxt "term"
+msgid "Once per level, a lethal hit leaves you at 1 HP with 2.5s of invulnerability."
+msgstr "Раз за уровень смертельный удар оставляет вас с 1 ОЗ и даёт 2.5 с неуязвимости."
+
+msgctxt "term"
+msgid "Emergency Patch"
+msgstr "Экстренная заплатка"
+
+msgctxt "term"
+msgid "Self-Repair"
+msgstr "Самовосстановление"
+
+msgctxt "term"
+msgid "Thick Scars"
+msgstr "Толстые шрамы"
+
+msgctxt "term"
+msgid "Hard Lessons"
+msgstr "Суровые уроки"
+
+msgctxt "term"
+msgid "Old Wounds"
+msgstr "Старые раны"
+
+msgctxt "term"
+msgid "Battle-Scarred"
+msgstr "Закалённый в боях"
+
+msgctxt "term"
+msgid "Grit"
+msgstr "Упорство"
+
+msgctxt "term"
+msgid "Rally"
+msgstr "Подъём"
+
+msgctxt "term"
+msgid "Never Quit"
+msgstr "Не сдаваться"
+
+msgctxt "term"
+msgid "Cockroach"
+msgstr "Таракан"
+
+msgctxt "term"
+msgid "Strong Dose"
+msgstr "Сильная доза"
+
+msgctxt "term"
+msgid "Slow Release"
+msgstr "Медленное действие"
+
+msgctxt "term"
+msgid "Quick Patch"
+msgstr "Быстрая заплатка"
+
+msgctxt "term"
+msgid "Field Dressing"
+msgstr "Полевая перевязка"
+
+msgctxt "term"
+msgid "Phoenix Protocol"
+msgstr "Протокол «Феникс»"
 
 msgctxt "term"
 msgid "Keen Eye"
 msgstr "Острый глаз"
 
 msgctxt "term"
+msgid "Rare or better valuables you appraise gain an extra 10% value; +20% extraction XP and +15% level-complete XP."
+msgstr "Оценённые вами ценности редкости «редкое» и выше получают ещё 10% стоимости; +20% опыта за извлечение и +15% опыта за прохождение уровня."
+
+msgctxt "term"
 msgid "Appraiser's Eye"
 msgstr "Глаз оценщика"
 
 msgctxt "term"
+msgid "Valuables within 8m of you are appraised automatically (even through walls): each one's value rises 10%, once per item. +15% grab range."
+msgstr "Ценности в пределах 8 м от вас оцениваются автоматически (даже сквозь стены): стоимость каждой растёт на 10%, один раз на предмет. +15% к дальности захвата."
+
+msgctxt "term"
 msgid "Appraisal Scan"
 msgstr "Оценочное сканирование"
+
+msgctxt "term"
+msgid "For 12s, your HUD tracks the 3 most valuable items within 40m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
+msgstr "В течение 12 с HUD отслеживает 3 самых ценных предмета в пределах 40 м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
 
 msgctxt "term"
 msgid "Price Tag"
@@ -10591,16 +10797,128 @@ msgid "Omniscience"
 msgstr "Всеведение"
 
 msgctxt "term"
-msgid "Rare or better valuables you appraise gain an extra 10% value; +20% extraction XP and +15% level-complete XP."
-msgstr "Оценённые вами ценности редкости «редкое» и выше получают ещё 10% стоимости; +20% опыта за извлечение и +15% опыта за прохождение уровня."
+msgid "Warden"
+msgstr "Страж"
 
 msgctxt "term"
-msgid "Valuables within 8m of you are appraised automatically (even through walls): each one's value rises 10%, once per item. +15% grab range."
-msgstr "Ценности в пределах 8 м от вас оцениваются автоматически (даже сквозь стены): стоимость каждой растёт на 10%, один раз на предмет. +15% к дальности захвата."
+msgid "Sentinel Sense"
+msgstr "Чутьё стража"
 
 msgctxt "term"
-msgid "For 12s, your HUD tracks the 3 most valuable items within 40m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
-msgstr "В течение 12 с HUD отслеживает 3 самых ценных предмета в пределах 40 м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
+msgid "Steadfast"
+msgstr "Непоколебимый"
+
+msgctxt "term"
+msgid "Stasis Field"
+msgstr "Стазисное поле"
+
+msgctxt "term"
+msgid "Keen Sensors"
+msgstr "Чуткие датчики"
+
+msgctxt "term"
+msgid "Elite Tracker"
+msgstr "Охотник на элиту"
+
+msgctxt "term"
+msgid "Hunter's Mark"
+msgstr "Метка охотника"
+
+msgctxt "term"
+msgid "Vigil"
+msgstr "Бдение"
+
+msgctxt "term"
+msgid "All-Seeing"
+msgstr "Всевидящий"
+
+msgctxt "term"
+msgid "Lasting Mark"
+msgstr "Стойкая метка"
+
+msgctxt "term"
+msgid "Reprisal"
+msgstr "Возмездие"
+
+msgctxt "term"
+msgid "Condemn"
+msgstr "Осуждение"
+
+msgctxt "term"
+msgid "Warden's Resolve"
+msgstr "Решимость стража"
+
+msgctxt "term"
+msgid "Sentence"
+msgstr "Приговор"
+
+msgctxt "term"
+msgid "Long Freeze"
+msgstr "Долгая заморозка"
+
+msgctxt "term"
+msgid "Recharge"
+msgstr "Перезарядка"
+
+msgctxt "term"
+msgid "Time Lock"
+msgstr "Временной замок"
+
+msgctxt "term"
+msgid "Pallbearer"
+msgstr "Носильщик гроба"
+
+msgctxt "term"
+msgid "Last Rites"
+msgstr "Последние почести"
+
+msgctxt "term"
+msgid "Steady Hands"
+msgstr "Твёрдые руки"
+
+msgctxt "term"
+msgid "Grave Sense"
+msgstr "Могильное чутьё"
+
+msgctxt "term"
+msgid "Sure Grip"
+msgstr "Надёжный хват"
+
+msgctxt "term"
+msgid "Shroud"
+msgstr "Саван"
+
+msgctxt "term"
+msgid "Ferryman"
+msgstr "Паромщик"
+
+msgctxt "term"
+msgid "Defibrillate"
+msgstr "Дефибрилляция"
+
+msgctxt "term"
+msgid "Wide Rites"
+msgstr "Широкие почести"
+
+msgctxt "term"
+msgid "Mass Resurrection"
+msgstr "Массовое воскрешение"
+
+msgctxt "term"
+msgid "Adrenal Wake"
+msgstr "Адреналиновое пробуждение"
+
+msgctxt "term"
+msgid "Fresh Legs"
+msgstr "Свежие ноги"
+
+msgctxt "term"
+msgid "Grace Period"
+msgstr "Отсрочка"
+
+msgctxt "term"
+msgid "Undying Crew"
+msgstr "Бессмертная команда"
 
 msgctxt "term"
 msgid "Bulk Buyer"
@@ -10619,6 +10937,10 @@ msgid "Scrap Sense"
 msgstr "Чутьё на лом"
 
 msgctxt "term"
+msgid "+3% Scrap share"
+msgstr "+3% к доле лома"
+
+msgctxt "term"
 msgid "Refund Policy"
 msgstr "Правила возврата"
 
@@ -10631,20 +10953,8 @@ msgid "Supplier"
 msgstr "Поставщик"
 
 msgctxt "term"
-msgid "Fast Charge"
-msgstr "Быстрая зарядка"
-
-msgctxt "term"
-msgid "Efficient Cells"
-msgstr "Экономичные элементы"
-
-msgctxt "term"
 msgid "Field Charger"
 msgstr "Полевой зарядник"
-
-msgctxt "term"
-msgid "Overcharge"
-msgstr "Перезаряд"
 
 msgctxt "term"
 msgid "Infinite Cells"
@@ -10665,6 +10975,10 @@ msgstr "Длинная рука"
 msgctxt "term"
 msgid "Rations"
 msgstr "Пайки"
+
+msgctxt "term"
+msgid "Bloodbound"
+msgstr "Кровник"
 
 msgctxt "term"
 msgid "Spotter"
@@ -10735,188 +11049,96 @@ msgid "Sentry Network"
 msgstr "Сеть постов"
 
 msgctxt "term"
-msgid "Sentinel Sense"
-msgstr "Чутьё стража"
+msgid "Loud Mouth"
+msgstr "Горлопан"
 
 msgctxt "term"
-msgid "Steadfast"
-msgstr "Непоколебимый"
+msgid "Butterfingers Insurance"
+msgstr "Страховка растяпы"
 
 msgctxt "term"
-msgid "Stasis Field"
-msgstr "Стазисное поле"
+msgid "Once per level, the first value loss on a valuable you're holding costs nothing."
+msgstr "Раз за уровень первая потеря стоимости ценности, которую вы держите, ничего не стоит."
 
 msgctxt "term"
-msgid "Keen Sensors"
-msgstr "Чуткие датчики"
+msgid "Long Arm of the Law"
+msgstr "Длинная рука закона"
 
 msgctxt "term"
-msgid "Elite Tracker"
-msgstr "Охотник на элиту"
+msgid "Thrown items stun monsters they hit for 0.5 s."
+msgstr "Брошенные предметы оглушают монстров, в которых попали, на 0.5 с."
 
 msgctxt "term"
-msgid "Vigil"
-msgstr "Бдение"
+msgid "Quiet Feet"
+msgstr "Тихие шаги"
 
 msgctxt "term"
-msgid "All-Seeing"
-msgstr "Всевидящий"
+msgid "While crouched, you're as quiet as stealth allows (the host's noise cap, 40% by default)."
+msgstr "В приседе вы настолько тихи, насколько позволяет скрытность (предел шума, заданный хостом, по умолчанию 40%)."
 
 msgctxt "term"
-msgid "Lasting Mark"
-msgstr "Стойкая метка"
+msgid "Team Spirit"
+msgstr "Командный дух"
 
 msgctxt "term"
-msgid "Reprisal"
-msgstr "Возмездие"
+msgid "+5% move speed while a teammate is within 6 m."
+msgstr "+5% к скорости движения, пока напарник в пределах 6 м."
 
 msgctxt "term"
-msgid "Condemn"
-msgstr "Осуждение"
+msgid "Valuables you carry into an extraction give you 3% extra Scrap on top of your share."
+msgstr "Ценности, которые вы приносите в точку извлечения, дают вам ещё 3% лома сверх вашей доли."
 
 msgctxt "term"
-msgid "Warden's Resolve"
-msgstr "Решимость стража"
+msgid "Monsters you hit are Marked for 5 s: +5% damage from everyone."
+msgstr "Монстры, по которым вы попали, получают метку на 5 с: +5% урона от всех."
 
 msgctxt "term"
-msgid "Sentence"
-msgstr "Приговор"
+msgid "Using your ability refills 20% stamina."
+msgstr "Применение способности восполняет 20% выносливости."
 
 msgctxt "term"
-msgid "Long Freeze"
-msgstr "Долгая заморозка"
+msgid "Monsters take 0.3 s longer to notice you."
+msgstr "Монстры замечают вас на 0.3 с позже."
 
 msgctxt "term"
-msgid "Wide Field"
-msgstr "Широкое поле"
+msgid "+30% throw strength, but you drop what you're holding when hit."
+msgstr "+30% к силе броска, но при получении удара вы роняете то, что держите."
 
 msgctxt "term"
-msgid "Recharge"
-msgstr "Перезарядка"
+msgid "Blood Money"
+msgstr "Кровавые деньги"
 
 msgctxt "term"
-msgid "Time Lock"
-msgstr "Временной замок"
+msgid "+25% Scrap share, but you lose 5 HP at every extraction."
+msgstr "+25% к доле лома, но при каждом извлечении вы теряете 5 ОЗ."
 
 msgctxt "term"
-msgid "Scar Tissue"
-msgstr "Рубцовая ткань"
+msgid "+20% weapon damage, but your footsteps are 30% louder."
+msgstr "+20% к урону оружия, но ваши шаги на 30% громче."
 
 msgctxt "term"
-msgid "Emergency Patch"
-msgstr "Экстренная заплатка"
+msgid "Paper Tiger"
+msgstr "Бумажный тигр"
 
 msgctxt "term"
-msgid "Self-Repair"
-msgstr "Самовосстановление"
+msgid "+40% ability power, but you take 20% more damage."
+msgstr "+40% к силе способности, но вы получаете на 20% больше урона."
 
 msgctxt "term"
-msgid "Thick Scars"
-msgstr "Толстые шрамы"
+msgid "Hoarder"
+msgstr "Барахольщик"
 
 msgctxt "term"
-msgid "Hard Lessons"
-msgstr "Суровые уроки"
+msgid "+2 gear luck, but your inventory holds 4 fewer items."
+msgstr "+2 к удаче снаряжения, но в инвентаре помещается на 4 предмета меньше."
 
 msgctxt "term"
-msgid "Old Wounds"
-msgstr "Старые раны"
+msgid "Last Breath"
+msgstr "Последний вздох"
 
 msgctxt "term"
-msgid "Battle-Scarred"
-msgstr "Закалённый в боях"
-
-msgctxt "term"
-msgid "Grit"
-msgstr "Упорство"
-
-msgctxt "term"
-msgid "Rally"
-msgstr "Подъём"
-
-msgctxt "term"
-msgid "Never Quit"
-msgstr "Не сдаваться"
-
-msgctxt "term"
-msgid "Cockroach"
-msgstr "Таракан"
-
-msgctxt "term"
-msgid "Strong Dose"
-msgstr "Сильная доза"
-
-msgctxt "term"
-msgid "Slow Release"
-msgstr "Медленное действие"
-
-msgctxt "term"
-msgid "Quick Patch"
-msgstr "Быстрая заплатка"
-
-msgctxt "term"
-msgid "Field Dressing"
-msgstr "Полевая перевязка"
-
-msgctxt "term"
-msgid "Phoenix Protocol"
-msgstr "Протокол «Феникс»"
-
-msgctxt "term"
-msgid "Once per level, a lethal hit leaves you at 1 HP with 2.5s of invulnerability."
-msgstr "Раз за уровень смертельный удар оставляет вас с 1 ОЗ и даёт 2.5 с неуязвимости."
-
-msgctxt "term"
-msgid "Throw Strength"
-msgstr "Сила броска"
-
-msgctxt "term"
-msgid "Weapon Damage"
-msgstr "Урон оружия"
-
-msgctxt "term"
-msgid "Focus"
-msgstr "Концентрация"
-
-msgctxt "term"
-msgid "Vitality"
-msgstr "Живучесть"
-
-msgctxt "term"
-msgid "Endurance"
-msgstr "Выносливость"
-
-msgctxt "term"
-msgid "Agility"
-msgstr "Ловкость"
-
-msgctxt "term"
-msgid "Leap"
-msgstr "Прыжок"
-
-msgctxt "term"
-msgid "Grip Strength"
-msgstr "Сила хвата"
-
-msgctxt "term"
-msgid "Reach"
-msgstr "Досягаемость"
-
-msgctxt "term"
-msgid "Finesse"
-msgstr "Аккуратность"
-
-msgctxt "term"
-msgid "Fortune"
-msgstr "Удача"
-
-msgctxt "term"
-msgid "Weapon"
-msgstr "Оружие"
-
-msgctxt "term"
-msgid "Grip"
-msgstr "Хват"
+msgid "+1 death save every level, but 15% less max health."
+msgstr "+1 спасение от смерти на каждом уровне, но макс. здоровье меньше на 15%."
 
 msgctxt "term"
 msgid "carried items take 8% less damage"
@@ -10949,10 +11171,6 @@ msgstr "ваше лечение напарников +10%"
 msgctxt "term"
 msgid "teammates within 6 m take 5% less damage"
 msgstr "напарники в пределах 6 м получают на 5% меньше урона"
-
-msgctxt "term"
-msgid "+3% Scrap share"
-msgstr "+3% к доле лома"
 
 msgctxt "term"
 msgid "+1 gear luck"
@@ -10991,330 +11209,6 @@ msgid "+10% max stamina"
 msgstr "+10% к макс. выносливости"
 
 msgctxt "term"
-msgid "Afterburner"
-msgstr "Дожиг"
-
-msgctxt "term"
-msgid "Using your ability refills 20% stamina."
-msgstr "Применение способности восполняет 20% выносливости."
-
-msgctxt "term"
-msgid "Blood Money"
-msgstr "Кровавые деньги"
-
-msgctxt "term"
-msgid "+25% Scrap share, but you lose 5 HP at every extraction."
-msgstr "+25% к доле лома, но при каждом извлечении вы теряете 5 ОЗ."
-
-msgctxt "term"
-msgid "+30% throw strength, but you drop what you're holding when hit."
-msgstr "+30% к силе броска, но при получении удара вы роняете то, что держите."
-
-msgctxt "term"
-msgid "Double Charge"
-msgstr "Двойной заряд"
-
-msgctxt "term"
-msgid "Your ability holds 2 charges."
-msgstr "Ваша способность хранит зарядов: 2."
-
-msgctxt "term"
-msgid "+30% weapon damage and +40% ability power, but -25% max health."
-msgstr "+30% к урону оружия и +40% к силе способности, но -25% к макс. здоровью."
-
-msgctxt "term"
-msgid "Valuables you carry into an extraction give you 3% extra Scrap on top of your share."
-msgstr "Ценности, которые вы приносите в точку извлечения, дают вам ещё 3% лома сверх вашей доли."
-
-msgctxt "term"
-msgid "Hoarder"
-msgstr "Барахольщик"
-
-msgctxt "term"
-msgid "+2 gear luck, but your inventory holds 4 fewer items."
-msgstr "+2 к удаче снаряжения, но в инвентаре помещается на 4 предмета меньше."
-
-msgctxt "term"
-msgid "Hunter's Mark"
-msgstr "Метка охотника"
-
-msgctxt "term"
-msgid "Monsters you hit are Marked for 5 s: +5% damage from everyone."
-msgstr "Монстры, по которым вы попали, получают метку на 5 с: +5% урона от всех."
-
-msgctxt "term"
-msgid "Last Breath"
-msgstr "Последний вздох"
-
-msgctxt "term"
-msgid "+1 death save every level, but 15% less max health."
-msgstr "+1 спасение от смерти на каждом уровне, но макс. здоровье меньше на 15%."
-
-msgctxt "term"
-msgid "Loud Mouth"
-msgstr "Горлопан"
-
-msgctxt "term"
-msgid "+20% weapon damage, but your footsteps are 30% louder."
-msgstr "+20% к урону оружия, но ваши шаги на 30% громче."
-
-msgctxt "term"
-msgid "Overclocked"
-msgstr "Разогнанный"
-
-msgctxt "term"
-msgid "-25% ability cooldown and +25% ability duration."
-msgstr "-25% к перезарядке способности и +25% к её длительности."
-
-msgctxt "term"
-msgid "Paper Tiger"
-msgstr "Бумажный тигр"
-
-msgctxt "term"
-msgid "+40% ability power, but you take 20% more damage."
-msgstr "+40% к силе способности, но вы получаете на 20% больше урона."
-
-msgctxt "term"
-msgid "Monsters take 0.3 s longer to notice you."
-msgstr "Монстры замечают вас на 0.3 с позже."
-
-msgctxt "term"
-msgid "Second Chance"
-msgstr "Второй шанс"
-
-msgctxt "term"
-msgid "One extra death save every level."
-msgstr "Одно дополнительное спасение от смерти на каждом уровне."
-
-msgctxt "term"
-msgid "Adrenal Loop"
-msgstr "Адреналиновая петля"
-
-msgctxt "term"
-msgid "Each enemy that dies near you takes 6s off your ability cooldown."
-msgstr "Каждый враг, погибший рядом с вами, сокращает перезарядку способности на 6 с."
-
-msgctxt "term"
-msgid "Amplifier"
-msgstr "Усилитель"
-
-msgctxt "term"
-msgid "+50% ability power, but your ability takes 20% longer to recharge."
-msgstr "+50% к силе способности, но она перезаряжается на 20% дольше."
-
-msgctxt "term"
-msgid "Berserk"
-msgstr "Берсерк"
-
-msgctxt "term"
-msgid "Below 35% HP: +30% speed."
-msgstr "Ниже 35% ОЗ: +30% к скорости."
-
-msgctxt "term"
-msgid "Bounty Hunter"
-msgstr "Охотник за наградой"
-
-msgctxt "term"
-msgid "Elites have a 60% chance to drop a second piece of gear."
-msgstr "С элиты с шансом 60% выпадает второй предмет снаряжения."
-
-msgctxt "term"
-msgid "15% chance on hit to stun and 15% to make enemies bleed."
-msgstr "При попадании: 15% шанс оглушить и 15% шанс вызвать у врага кровотечение."
-
-msgctxt "term"
-msgid "Butterfingers Insurance"
-msgstr "Страховка растяпы"
-
-msgctxt "term"
-msgid "Once per level, the first value loss on a valuable you're holding costs nothing."
-msgstr "Раз за уровень первая потеря стоимости ценности, которую вы держите, ничего не стоит."
-
-msgctxt "term"
-msgid "Executioner"
-msgstr "Палач"
-
-msgctxt "term"
-msgid "+20% weapon damage and +25% kill XP, but take 10% more damage."
-msgstr "+20% к урону оружия и +25% опыта за убийства, но вы получаете на 10% больше урона."
-
-msgctxt "term"
-msgid "Guardian"
-msgstr "Хранитель"
-
-msgctxt "term"
-msgid "Allies within 8m regain 1 HP every 3s."
-msgstr "Союзники в пределах 8 м восстанавливают 1 ОЗ каждые 3 с."
-
-msgctxt "term"
-msgid "Iron Skin"
-msgstr "Железная кожа"
-
-msgctxt "term"
-msgid "Take 15% less damage, but move 8% slower."
-msgstr "Вы получаете на 15% меньше урона, но двигаетесь на 8% медленнее."
-
-msgctxt "term"
-msgid "Lifeline"
-msgstr "Спасательный трос"
-
-msgctxt "term"
-msgid "Allies revived near you get +15 HP, and you earn +50% revive XP."
-msgstr "Союзники, возрождённые рядом с вами, получают +15 ОЗ, а вы - +50% опыта за возрождение."
-
-msgctxt "term"
-msgid "Long Arm of the Law"
-msgstr "Длинная рука закона"
-
-msgctxt "term"
-msgid "Thrown items stun monsters they hit for 0.5 s."
-msgstr "Брошенные предметы оглушают монстров, в которых попали, на 0.5 с."
-
-msgctxt "term"
-msgid "Lucky"
-msgstr "Везунчик"
-
-msgctxt "term"
-msgid "+4 gear luck and +10% dodge chance."
-msgstr "+4 к удаче снаряжения и +10% к шансу уклонения."
-
-msgctxt "term"
-msgid "Overbuilt Hydraulics"
-msgstr "Усиленная гидравлика"
-
-msgctxt "term"
-msgid "+50% grab strength and +25% grab range."
-msgstr "+50% к силе захвата и +25% к дальности захвата."
-
-msgctxt "term"
-msgid "Quick Learner"
-msgstr "Способный ученик"
-
-msgctxt "term"
-msgid "+30% XP from everything."
-msgstr "+30% опыта от всего."
-
-msgctxt "term"
-msgid "Quiet Feet"
-msgstr "Тихие шаги"
-
-msgctxt "term"
-msgid "While crouched, you're as quiet as stealth allows (the host's noise cap, 40% by default)."
-msgstr "В приседе вы настолько тихи, насколько позволяет скрытность (предел шума, заданный хостом, по умолчанию 40%)."
-
-msgctxt "term"
-msgid "Shadowstep"
-msgstr "Шаг в тень"
-
-msgctxt "term"
-msgid "Move fast while crouched and slip more hits."
-msgstr "Быстро двигайтесь в приседе и чаще уклоняйтесь от ударов."
-
-msgctxt "term"
-msgid "Team Spirit"
-msgstr "Командный дух"
-
-msgctxt "term"
-msgid "+5% move speed while a teammate is within 6 m."
-msgstr "+5% к скорости движения, пока напарник в пределах 6 м."
-
-msgctxt "term"
-msgid "Treasure Hunter"
-msgstr "Охотник за сокровищами"
-
-msgctxt "term"
-msgid "More XP from extractions, more gear finds and better gear luck."
-msgstr "Больше опыта за извлечения, чаще находки снаряжения и выше удача снаряжения."
-
-msgctxt "term"
-msgid "Vampire"
-msgstr "Вампир"
-
-msgctxt "term"
-msgid "Weapon hits heal 2 HP; enemies dying near you heal 5 HP."
-msgstr "Попадания из оружия лечат на 2 ОЗ; враги, погибающие рядом с вами, лечат на 5 ОЗ."
-
-msgctxt "term"
-msgid "Adrenaline"
-msgstr "Адреналин"
-
-msgctxt "term"
-msgid "Below 35% HP you move much faster; take a little less damage."
-msgstr "Ниже 35% ОЗ вы двигаетесь намного быстрее и получаете чуть меньше урона."
-
-msgctxt "term"
-msgid "Big Battery"
-msgstr "Большая батарея"
-
-msgctxt "term"
-msgid "+50% max stamina (a bigger tank: sprinting still costs the same per second) and +1 stamina/s regen while recharging."
-msgstr "+50% к макс. выносливости (запас больше, но бег стоит столько же в секунду) и +1 к восстановлению выносливости в секунду, пока она восстанавливается."
-
-msgctxt "term"
-msgid "Heal 15 HP whenever an extraction point completes."
-msgstr "Лечит 15 ОЗ при завершении каждой точки извлечения."
-
-msgctxt "term"
-msgid "Haggler"
-msgstr "Торгаш"
-
-msgctxt "term"
-msgid "Mod shop items cost 30% less."
-msgstr "Товары в магазине мода стоят на 30% дешевле."
-
-msgctxt "term"
-msgid "Marathon"
-msgstr "Марафон"
-
-msgctxt "term"
-msgid "Sprinting costs 40% less stamina and stamina regenerates 2/s faster."
-msgstr "Бег тратит на 40% меньше выносливости, а она восстанавливается на 2/с быстрее."
-
-msgctxt "term"
-msgid "Pack Mule"
-msgstr "Вьючный мул"
-
-msgctxt "term"
-msgid "Carrying loot barely tires you, and you grip harder."
-msgstr "Переноска добычи почти не утомляет вас, и хват у вас крепче."
-
-msgctxt "term"
-msgid "+40% chance to find gear when an extraction point completes."
-msgstr "+40% к шансу найти снаряжение при завершении точки извлечения."
-
-msgctxt "term"
-msgid "Sixth Sense"
-msgstr "Шестое чувство"
-
-msgctxt "term"
-msgid "Your HUD warns of enemies within 18m."
-msgstr "HUD предупреждает о врагах в пределах 18 м."
-
-msgctxt "term"
-msgid "Springheel"
-msgstr "Пружинистые пятки"
-
-msgctxt "term"
-msgid "+1 extra jump and +20% jump force."
-msgstr "+1 дополнительный прыжок и +20% к силе прыжка."
-
-msgctxt "term"
-msgid "Tough as Nails"
-msgstr "Крепкий орешек"
-
-msgctxt "term"
-msgid "+30% max health, but sprint 10% slower."
-msgstr "+30% к макс. здоровью, но бег на 10% медленнее."
-
-msgctxt "term"
-msgid "Wide Reach"
-msgstr "Широкий охват"
-
-msgctxt "term"
-msgid "Your ability reaches further and lasts longer."
-msgstr "Ваша способность действует дальше и дольше."
-
-msgctxt "term"
 msgid "Madame Brass"
 msgstr "Мадам Брасс"
 
@@ -11331,40 +11225,20 @@ msgid "The Auditor"
 msgstr "Аудитор"
 
 msgctxt "term"
-msgid "Big Ticket"
-msgstr "Крупный куш"
-
-msgctxt "term"
-msgid "Carry out $8 000 of valuables"
-msgstr "Вынесите ценностей на $8 000"
-
-msgctxt "term"
-msgid "Kill 1 elite"
-msgstr "Убейте элитных врагов: 1"
-
-msgctxt "term"
-msgid "Clean Delivery"
-msgstr "Чистая доставка"
-
-msgctxt "term"
-msgid "Carry 3 valuables into extractions without them losing value"
-msgstr "Донесите до точек извлечения ценностей без потери стоимости: 3"
-
-msgctxt "term"
 msgid "Haul"
 msgstr "Добыча"
-
-msgctxt "term"
-msgid "Complete 3 extraction points (fewer if the level has fewer)"
-msgstr "Завершите точек извлечения: 3 (меньше, если на уровне их меньше)"
 
 msgctxt "term"
 msgid "Speedrun"
 msgstr "Спидран"
 
 msgctxt "term"
-msgid "Finish the level within 10 min"
-msgstr "Пройдите уровень за 10 мин"
+msgid "Clean Delivery"
+msgstr "Чистая доставка"
+
+msgctxt "term"
+msgid "Big Ticket"
+msgstr "Крупный куш"
 
 msgctxt "term"
 msgid "The Brass Collection"
@@ -14146,277 +14020,357 @@ msgctxt "pattern"
 msgid "Auto: picked {0} ({1:0} FPS in the first minute)."
 msgstr "Авто: выбрано - {0} ({1:0} FPS за первую минуту)."
 
-msgctxt "pattern"
-msgid "+{0}% max health. Allies within {1}m of you take {2}% less damage."
-msgstr "+{0}% к макс. здоровью. Союзники в пределах {1} м от вас получают на {2}% меньше урона."
-
-msgctxt "pattern"
-msgid "Take {0}% less damage, but sprint {1}% slower."
-msgstr "Вы получаете на {0}% меньше урона, но бегаете на {1}% медленнее."
-
-msgctxt "pattern"
-msgid "Lock your plating: take {0}% less damage for {1}s, and your Shield Wall protects allies {2}% more."
-msgstr "Зафиксируйте броню: на {1} с вы получаете на {0}% меньше урона, а «Стена щитов» защищает союзников на {2}% сильнее."
-
-msgctxt "pattern"
-msgid "Rare or better valuables you appraise gain an extra {0}% value; +{1}% extraction XP and +{2}% level-complete XP."
-msgstr "Оценённые вами ценности редкости «редкое» и выше получают ещё {0}% стоимости; +{1}% опыта за извлечение и +{2}% опыта за прохождение уровня."
-
-msgctxt "pattern"
-msgid "Valuables within {0}m of you are appraised automatically (even through walls): each one's value rises {1}%, once per item. +{2}% grab range."
-msgstr "Ценности в пределах {0} м от вас оцениваются автоматически (даже сквозь стены): стоимость каждой растёт на {1}%, один раз на предмет. +{2}% к дальности захвата."
-
-msgctxt "pattern"
-msgid "For {0}s, your HUD tracks the {1} most valuable items within {2}m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
-msgstr "В течение {0} с HUD отслеживает {1} самых ценных предмета в пределах {2} м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
-
-msgctxt "pattern"
-msgid "Once per level, a lethal hit leaves you at {0} HP with {1}s of invulnerability."
-msgstr "Раз за уровень смертельный удар оставляет вас с {0} ОЗ и даёт {1} с неуязвимости."
-
-msgctxt "pattern"
-msgid "carried items take {0}% less damage"
-msgstr "переносимые предметы получают на {0}% меньше урона"
-
-msgctxt "pattern"
-msgid "carrying drains {0}% less stamina"
-msgstr "переноска тратит на {0}% меньше выносливости"
-
-msgctxt "pattern"
-msgid "+{0}% throw strength"
-msgstr "+{0}% к силе броска"
-
-msgctxt "pattern"
-msgid "thrown valuables can't break for {0} s"
-msgstr "брошенные ценности не могут разбиться в течение {0} с"
-
-msgctxt "pattern"
-msgid "{0}% less noise while crouched"
-msgstr "на {0}% меньше шума в приседе"
-
-msgctxt "pattern"
-msgid "monsters notice you {0} s later"
-msgstr "монстры замечают вас на {0} с позже"
-
-msgctxt "pattern"
-msgid "your heals on teammates +{0}%"
-msgstr "ваше лечение напарников +{0}%"
-
-msgctxt "pattern"
-msgid "teammates within {0} m take {1}% less damage"
-msgstr "напарники в пределах {0} м получают на {1}% меньше урона"
-
-msgctxt "pattern"
-msgid "+{0}% Scrap share"
-msgstr "+{0}% к доле лома"
-
-msgctxt "pattern"
-msgid "+{0} gear luck"
-msgstr "+{0} к удаче снаряжения"
-
-msgctxt "pattern"
-msgid "+{0}% weapon damage to elites"
-msgstr "+{0}% к урону оружия по элите"
-
-msgctxt "pattern"
-msgid "elite kills refund {0}% of your ability cooldown"
-msgstr "убийство элиты возвращает {0}% перезарядки способности"
-
-msgctxt "pattern"
-msgid "death saves give +{0}% speed for {1} s"
-msgstr "спасение от смерти даёт +{0}% к скорости на {1} с"
-
-msgctxt "pattern"
-msgid "below {0}% health, +{1}% weapon damage"
-msgstr "при здоровье ниже {0}%: +{1}% к урону оружия"
-
-msgctxt "pattern"
-msgid "{0}% cooldown reduction"
-msgstr "перезарядка короче на {0}%"
-
-msgctxt "pattern"
-msgid "with {0}+ ability charges, they refill {1}% faster (inside the cooldown cap)"
-msgstr "при {0}+ зарядах способности они восполняются на {1}% быстрее (в рамках предела перезарядки)"
-
-msgctxt "pattern"
-msgid "+{0} stamina/s regen (while recharging)"
-msgstr "+{0} к восстановлению выносливости в секунду (пока она восстанавливается)"
-
-msgctxt "pattern"
-msgid "+{0}% max stamina"
-msgstr "+{0}% к макс. выносливости"
-
-msgctxt "pattern"
-msgid "Using your ability refills {0}% stamina."
-msgstr "Применение способности восполняет {0}% выносливости."
-
-msgctxt "pattern"
-msgid "+{0}% Scrap share, but you lose {1} HP at every extraction."
-msgstr "+{0}% к доле лома, но при каждом извлечении вы теряете {1} ОЗ."
-
-msgctxt "pattern"
-msgid "+{0}% throw strength, but you drop what you're holding when hit."
-msgstr "+{0}% к силе броска, но при получении удара вы роняете то, что держите."
-
-msgctxt "pattern"
+msgctxt "shape"
 msgid "Your ability holds {0} charges."
 msgstr "Ваша способность хранит зарядов: {0}."
 
-msgctxt "pattern"
-msgid "+{0}% weapon damage and +{1}% ability power, but -{2}% max health."
-msgstr "+{0}% к урону оружия и +{1}% к силе способности, но -{2}% к макс. здоровью."
-
-msgctxt "pattern"
-msgid "Valuables you carry into an extraction give you {0}% extra Scrap on top of your share."
-msgstr "Ценности, которые вы приносите в точку извлечения, дают вам ещё {0}% лома сверх вашей доли."
-
-msgctxt "pattern"
-msgid "+{0} gear luck, but your inventory holds {1} fewer items."
-msgstr "+{0} к удаче снаряжения, но в инвентаре помещается на {1} предмета меньше."
-
-msgctxt "pattern"
-msgid "Monsters you hit are Marked for {0} s: +{1}% damage from everyone."
-msgstr "Монстры, по которым вы попали, получают метку на {0} с: +{1}% урона от всех."
-
-msgctxt "pattern"
-msgid "+{0} death save every level, but {1}% less max health."
-msgstr "+{0} спасение от смерти на каждом уровне, но макс. здоровье меньше на {1}%."
-
-msgctxt "pattern"
-msgid "+{0}% weapon damage, but your footsteps are {1}% louder."
-msgstr "+{0}% к урону оружия, но ваши шаги на {1}% громче."
-
-msgctxt "pattern"
-msgid "-{0}% ability cooldown and +{1}% ability duration."
-msgstr "-{0}% к перезарядке способности и +{1}% к её длительности."
-
-msgctxt "pattern"
-msgid "+{0}% ability power, but you take {1}% more damage."
-msgstr "+{0}% к силе способности, но вы получаете на {1}% больше урона."
-
-msgctxt "pattern"
-msgid "Monsters take {0} s longer to notice you."
-msgstr "Монстры замечают вас на {0} с позже."
-
-msgctxt "pattern"
+msgctxt "shape"
 msgid "Each enemy that dies near you takes {0}s off your ability cooldown."
 msgstr "Каждый враг, погибший рядом с вами, сокращает перезарядку способности на {0} с."
 
-msgctxt "pattern"
-msgid "+{0}% ability power, but your ability takes {1}% longer to recharge."
-msgstr "+{0}% к силе способности, но она перезаряжается на {1}% дольше."
+msgctxt "shape"
+msgid "+{0}% weapon damage and +{1}% ability power, but -{2}% max health."
+msgstr "+{0}% к урону оружия и +{1}% к силе способности, но -{2}% к макс. здоровью."
 
-msgctxt "pattern"
-msgid "Below {0}% HP: +{1}% speed."
-msgstr "Ниже {0}% ОЗ: +{1}% к скорости."
-
-msgctxt "pattern"
-msgid "Elites have a {0}% chance to drop a second piece of gear."
-msgstr "С элиты с шансом {0}% выпадает второй предмет снаряжения."
-
-msgctxt "pattern"
-msgid "{0}% chance on hit to stun and {1}% to make enemies bleed."
-msgstr "При попадании: {0}% шанс оглушить и {1}% шанс вызвать у врага кровотечение."
-
-msgctxt "pattern"
-msgid "+{0}% weapon damage and +{1}% kill XP, but take {2}% more damage."
-msgstr "+{0}% к урону оружия и +{1}% опыта за убийства, но вы получаете на {2}% больше урона."
-
-msgctxt "pattern"
-msgid "Allies within {0}m regain {1} HP every {2}s."
-msgstr "Союзники в пределах {0} м восстанавливают {1} ОЗ каждые {2} с."
-
-msgctxt "pattern"
+msgctxt "shape"
 msgid "Take {0}% less damage, but move {1}% slower."
 msgstr "Вы получаете на {0}% меньше урона, но двигаетесь на {1}% медленнее."
 
-msgctxt "pattern"
-msgid "Allies revived near you get +{0} HP, and you earn +{1}% revive XP."
-msgstr "Союзники, возрождённые рядом с вами, получают +{0} ОЗ, а вы - +{1}% опыта за возрождение."
-
-msgctxt "pattern"
-msgid "Thrown items stun monsters they hit for {0} s."
-msgstr "Брошенные предметы оглушают монстров, в которых попали, на {0} с."
-
-msgctxt "pattern"
-msgid "+{0} gear luck and +{1}% dodge chance."
-msgstr "+{0} к удаче снаряжения и +{1}% к шансу уклонения."
-
-msgctxt "pattern"
-msgid "+{0}% grab strength and +{1}% grab range."
-msgstr "+{0}% к силе захвата и +{1}% к дальности захвата."
-
-msgctxt "pattern"
-msgid "+{0}% XP from everything."
-msgstr "+{0}% опыта от всего."
-
-msgctxt "pattern"
-msgid "While crouched, you're as quiet as stealth allows (the host's noise cap, {0}% by default)."
-msgstr "В приседе вы настолько тихи, насколько позволяет скрытность (предел шума, заданный хостом, по умолчанию {0}%)."
-
-msgctxt "pattern"
-msgid "+{0}% move speed while a teammate is within {1} m."
-msgstr "+{0}% к скорости движения, пока напарник в пределах {1} м."
-
-msgctxt "pattern"
-msgid "Weapon hits heal {0} HP; enemies dying near you heal {1} HP."
-msgstr "Попадания из оружия лечат на {0} ОЗ; враги, погибающие рядом с вами, лечат на {1} ОЗ."
-
-msgctxt "pattern"
-msgid "Below {0}% HP you move much faster; take a little less damage."
-msgstr "Ниже {0}% ОЗ вы двигаетесь намного быстрее и получаете чуть меньше урона."
-
-msgctxt "pattern"
-msgid "+{0}% max stamina (a bigger tank: sprinting still costs the same per second) and +{1} stamina/s regen while recharging."
-msgstr "+{0}% к макс. выносливости (запас больше, но бег стоит столько же в секунду) и +{1} к восстановлению выносливости в секунду, пока она восстанавливается."
-
-msgctxt "pattern"
-msgid "Heal {0} HP whenever an extraction point completes."
-msgstr "Лечит {0} ОЗ при завершении каждой точки извлечения."
-
-msgctxt "pattern"
-msgid "Mod shop items cost {0}% less."
-msgstr "Товары в магазине мода стоят на {0}% дешевле."
-
-msgctxt "pattern"
-msgid "Sprinting costs {0}% less stamina and stamina regenerates {1}/s faster."
-msgstr "Бег тратит на {0}% меньше выносливости, а она восстанавливается на {1}/с быстрее."
-
-msgctxt "pattern"
+msgctxt "shape"
 msgid "+{0}% chance to find gear when an extraction point completes."
 msgstr "+{0}% к шансу найти снаряжение при завершении точки извлечения."
 
-msgctxt "pattern"
-msgid "Your HUD warns of enemies within {0}m."
-msgstr "HUD предупреждает о врагах в пределах {0} м."
+msgctxt "shape"
+msgid "Elites have a {0}% chance to drop a second piece of gear."
+msgstr "С элиты с шансом {0}% выпадает второй предмет снаряжения."
 
-msgctxt "pattern"
+msgctxt "shape"
+msgid "Heal {0} HP whenever an extraction point completes."
+msgstr "Лечит {0} ОЗ при завершении каждой точки извлечения."
+
+msgctxt "shape"
+msgid "Mod shop items cost {0}% less."
+msgstr "Товары в магазине мода стоят на {0}% дешевле."
+
+msgctxt "shape"
+msgid "Weapon hits heal {0} HP; enemies dying near you heal {1} HP."
+msgstr "Попадания из оружия лечат на {0} ОЗ; враги, погибающие рядом с вами, лечат на {1} ОЗ."
+
+msgctxt "shape"
+msgid "{0}% chance on hit to stun and {1}% to make enemies bleed."
+msgstr "При попадании: {0}% шанс оглушить и {1}% шанс вызвать у врага кровотечение."
+
+msgctxt "shape"
+msgid "Sprinting costs {0}% less stamina and stamina regenerates {1}/s faster."
+msgstr "Бег тратит на {0}% меньше выносливости, а она восстанавливается на {1}/с быстрее."
+
+msgctxt "shape"
 msgid "+{0} extra jump and +{1}% jump force."
 msgstr "+{0} дополнительный прыжок и +{1}% к силе прыжка."
 
-msgctxt "pattern"
+msgctxt "shape"
+msgid "+{0}% grab strength and +{1}% grab range."
+msgstr "+{0}% к силе захвата и +{1}% к дальности захвата."
+
+msgctxt "shape"
+msgid "+{0}% XP from everything."
+msgstr "+{0}% опыта от всего."
+
+msgctxt "shape"
+msgid "+{0} gear luck and +{1}% dodge chance."
+msgstr "+{0} к удаче снаряжения и +{1}% к шансу уклонения."
+
+msgctxt "shape"
+msgid "-{0}% ability cooldown and +{1}% ability duration."
+msgstr "-{0}% к перезарядке способности и +{1}% к её длительности."
+
+msgctxt "shape"
+msgid "Allies within {0}m regain {1} HP every {2}s."
+msgstr "Союзники в пределах {0} м восстанавливают {1} ОЗ каждые {2} с."
+
+msgctxt "shape"
+msgid "Your HUD warns of enemies within {0}m."
+msgstr "HUD предупреждает о врагах в пределах {0} м."
+
+msgctxt "shape"
+msgid "Below {0}% HP you move much faster; take a little less damage."
+msgstr "Ниже {0}% ОЗ вы двигаетесь намного быстрее и получаете чуть меньше урона."
+
+msgctxt "shape"
+msgid "+{0}% max stamina (a bigger tank: sprinting still costs the same per second) and +{1} stamina/s regen while recharging."
+msgstr "+{0}% к макс. выносливости (запас больше, но бег стоит столько же в секунду) и +{1} к восстановлению выносливости в секунду, пока она восстанавливается."
+
+msgctxt "shape"
+msgid "+{0}% ability power, but your ability takes {1}% longer to recharge."
+msgstr "+{0}% к силе способности, но она перезаряжается на {1}% дольше."
+
+msgctxt "shape"
+msgid "+{0}% weapon damage and +{1}% kill XP, but take {2}% more damage."
+msgstr "+{0}% к урону оружия и +{1}% опыта за убийства, но вы получаете на {2}% больше урона."
+
+msgctxt "shape"
+msgid "Allies revived near you get +{0} HP, and you earn +{1}% revive XP."
+msgstr "Союзники, возрождённые рядом с вами, получают +{0} ОЗ, а вы - +{1}% опыта за возрождение."
+
+msgctxt "shape"
 msgid "+{0}% max health, but sprint {1}% slower."
 msgstr "+{0}% к макс. здоровью, но бег на {1}% медленнее."
 
-msgctxt "pattern"
-msgid "Carry out ${0} of valuables"
-msgstr "Вынесите ценностей на ${0}"
+msgctxt "shape"
+msgid "+{0}% max health. Allies within {1}m of you take {2}% less damage."
+msgstr "+{0}% к макс. здоровью. Союзники в пределах {1} м от вас получают на {2}% меньше урона."
 
-msgctxt "pattern"
-msgid "Kill {0} elite"
-msgstr "Убейте элитных врагов: {0}"
+msgctxt "shape"
+msgid "Take {0}% less damage, but sprint {1}% slower."
+msgstr "Вы получаете на {0}% меньше урона, но бегаете на {1}% медленнее."
 
-msgctxt "pattern"
-msgid "Carry {0} valuables into extractions without them losing value"
-msgstr "Донесите до точек извлечения ценностей без потери стоимости: {0}"
+msgctxt "shape"
+msgid "Lock your plating: take {0}% less damage for {1}s, and your Shield Wall protects allies {2}% more."
+msgstr "Зафиксируйте броню: на {1} с вы получаете на {0}% меньше урона, а «Стена щитов» защищает союзников на {2}% сильнее."
 
-msgctxt "pattern"
-msgid "Complete {0} extraction points (fewer if the level has fewer)"
-msgstr "Завершите точек извлечения: {0} (меньше, если на уровне их меньше)"
+msgctxt "shape"
+msgid "Once per level, a lethal hit leaves you at {0} HP with {1}s of invulnerability."
+msgstr "Раз за уровень смертельный удар оставляет вас с {0} ОЗ и даёт {1} с неуязвимости."
 
-msgctxt "pattern"
-msgid "Finish the level within {0} min"
-msgstr "Пройдите уровень за {0} мин"
+msgctxt "shape"
+msgid "Rare or better valuables you appraise gain an extra {0}% value; +{1}% extraction XP and +{2}% level-complete XP."
+msgstr "Оценённые вами ценности редкости «редкое» и выше получают ещё {0}% стоимости; +{1}% опыта за извлечение и +{2}% опыта за прохождение уровня."
+
+msgctxt "shape"
+msgid "Valuables within {0}m of you are appraised automatically (even through walls): each one's value rises {1}%, once per item. +{2}% grab range."
+msgstr "Ценности в пределах {0} м от вас оцениваются автоматически (даже сквозь стены): стоимость каждой растёт на {1}%, один раз на предмет. +{2}% к дальности захвата."
+
+msgctxt "shape"
+msgid "For {0}s, your HUD tracks the {1} most valuable items within {2}m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
+msgstr "В течение {0} с HUD отслеживает {1} самых ценных предмета в пределах {2} м, которых нет в тележке (стоимость, расстояние, направление). Предмет, положенный в тележку, заменяется следующим по ценности."
+
+msgctxt "shape"
+msgid "+{0}% Scrap share"
+msgstr "+{0}% к доле лома"
+
+msgctxt "shape"
+msgid "Thrown items stun monsters they hit for {0} s."
+msgstr "Брошенные предметы оглушают монстров, в которых попали, на {0} с."
+
+msgctxt "shape"
+msgid "While crouched, you're as quiet as stealth allows (the host's noise cap, {0}% by default)."
+msgstr "В приседе вы настолько тихи, насколько позволяет скрытность (предел шума, заданный хостом, по умолчанию {0}%)."
+
+msgctxt "shape"
+msgid "+{0}% move speed while a teammate is within {1} m."
+msgstr "+{0}% к скорости движения, пока напарник в пределах {1} м."
+
+msgctxt "shape"
+msgid "Valuables you carry into an extraction give you {0}% extra Scrap on top of your share."
+msgstr "Ценности, которые вы приносите в точку извлечения, дают вам ещё {0}% лома сверх вашей доли."
+
+msgctxt "shape"
+msgid "Monsters you hit are Marked for {0} s: +{1}% damage from everyone."
+msgstr "Монстры, по которым вы попали, получают метку на {0} с: +{1}% урона от всех."
+
+msgctxt "shape"
+msgid "Using your ability refills {0}% stamina."
+msgstr "Применение способности восполняет {0}% выносливости."
+
+msgctxt "shape"
+msgid "Monsters take {0} s longer to notice you."
+msgstr "Монстры замечают вас на {0} с позже."
+
+msgctxt "shape"
+msgid "+{0}% throw strength, but you drop what you're holding when hit."
+msgstr "+{0}% к силе броска, но при получении удара вы роняете то, что держите."
+
+msgctxt "shape"
+msgid "+{0}% Scrap share, but you lose {1} HP at every extraction."
+msgstr "+{0}% к доле лома, но при каждом извлечении вы теряете {1} ОЗ."
+
+msgctxt "shape"
+msgid "+{0}% weapon damage, but your footsteps are {1}% louder."
+msgstr "+{0}% к урону оружия, но ваши шаги на {1}% громче."
+
+msgctxt "shape"
+msgid "+{0}% ability power, but you take {1}% more damage."
+msgstr "+{0}% к силе способности, но вы получаете на {1}% больше урона."
+
+msgctxt "shape"
+msgid "+{0} gear luck, but your inventory holds {1} fewer items."
+msgstr "+{0} к удаче снаряжения, но в инвентаре помещается на {1} предмета меньше."
+
+msgctxt "shape"
+msgid "+{0} death save every level, but {1}% less max health."
+msgstr "+{0} спасение от смерти на каждом уровне, но макс. здоровье меньше на {1}%."
+
+msgctxt "shape"
+msgid "carried items take {0}% less damage"
+msgstr "переносимые предметы получают на {0}% меньше урона"
+
+msgctxt "shape"
+msgid "carrying drains {0}% less stamina"
+msgstr "переноска тратит на {0}% меньше выносливости"
+
+msgctxt "shape"
+msgid "+{0}% throw strength"
+msgstr "+{0}% к силе броска"
+
+msgctxt "shape"
+msgid "thrown valuables can't break for {0} s"
+msgstr "брошенные ценности не могут разбиться в течение {0} с"
+
+msgctxt "shape"
+msgid "{0}% less noise while crouched"
+msgstr "на {0}% меньше шума в приседе"
+
+msgctxt "shape"
+msgid "monsters notice you {0} s later"
+msgstr "монстры замечают вас на {0} с позже"
+
+msgctxt "shape"
+msgid "your heals on teammates +{0}%"
+msgstr "ваше лечение напарников +{0}%"
+
+msgctxt "shape"
+msgid "teammates within {0} m take {1}% less damage"
+msgstr "напарники в пределах {0} м получают на {1}% меньше урона"
+
+msgctxt "shape"
+msgid "+{0} gear luck"
+msgstr "+{0} к удаче снаряжения"
+
+msgctxt "shape"
+msgid "+{0}% weapon damage to elites"
+msgstr "+{0}% к урону оружия по элите"
+
+msgctxt "shape"
+msgid "elite kills refund {0}% of your ability cooldown"
+msgstr "убийство элиты возвращает {0}% перезарядки способности"
+
+msgctxt "shape"
+msgid "death saves give +{0}% speed for {1} s"
+msgstr "спасение от смерти даёт +{0}% к скорости на {1} с"
+
+msgctxt "shape"
+msgid "below {0}% health, +{1}% weapon damage"
+msgstr "при здоровье ниже {0}%: +{1}% к урону оружия"
+
+msgctxt "shape"
+msgid "{0}% cooldown reduction"
+msgstr "перезарядка короче на {0}%"
+
+msgctxt "shape"
+msgid "with {0}+ ability charges, they refill {1}% faster (inside the cooldown cap)"
+msgstr "при {0}+ зарядах способности они восполняются на {1}% быстрее (в рамках предела перезарядки)"
+
+msgctxt "shape"
+msgid "+{0} stamina/s regen (while recharging)"
+msgstr "+{0} к восстановлению выносливости в секунду (пока она восстанавливается)"
+
+msgctxt "shape"
+msgid "+{0}% max stamina"
+msgstr "+{0}% к макс. выносливости"
+
+msgctxt "shape"
+msgid "+{0} ability charge."
+msgstr "+{0} заряд способности."
+
+msgctxt "data:guide"
+msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
+msgstr "Каждый забег становится маленькой RPG: вы выбираете класс, прокачиваете его, собираете снаряжение и перки. Когда забег заканчивается, всё начинается заново.\n\nЭто обучение - 5 коротких панелей. Его можно пропустить в любой момент: всё есть на вкладке «Справка»."
+
+msgctxt "data:guide"
+msgid "Getting Started"
+msgstr "С чего начать"
+
+msgctxt "data:guide"
+msgid "RepoRPG turns each run into a small RPG: you pick a class, level it up and spend what you earn between levels."
+msgstr "RepoRPG превращает каждый забег в маленькую RPG: вы выбираете класс, прокачиваете его и тратите заработанное между уровнями."
+
+msgctxt "data:guide"
+msgid "Classes"
+msgstr "Классы"
+
+msgctxt "data:guide"
+msgid "Grappler's Hook"
+msgstr "Крюк Крючника"
+
+msgctxt "data:guide"
+msgid "Gunsmith's Field Charger"
+msgstr "Полевой зарядник Оружейника"
+
+msgctxt "data:guide"
+msgid "Leveling & XP"
+msgstr "Уровни и опыт"
+
+msgctxt "data:guide"
+msgid "My Stats"
+msgstr "Мои показатели"
+
+msgctxt "data:guide"
+msgid "Elemental Weapons"
+msgstr "Стихийное оружие"
+
+msgctxt "data:guide"
+msgid "The Market"
+msgstr "Рынок"
+
+msgctxt "data:guide"
+msgid "Crafting & Modules"
+msgstr "Крафт и модули"
+
+msgctxt "data:guide"
+msgid "Scrap & the Shop"
+msgstr "Лом и магазин"
+
+msgctxt "data:guide"
+msgid "Givers & Reputation"
+msgstr "Заказчики и репутация"
+
+msgctxt "data:guide"
+msgid "Team Contracts"
+msgstr "Командные контракты"
+
+msgctxt "data:guide"
+msgid "Elites & Bosses"
+msgstr "Элита и боссы"
+
+msgctxt "data:guide"
+msgid "Death Saves"
+msgstr "Спасения от смерти"
+
+msgctxt "data:guide"
+msgid "Saving & Runs"
+msgstr "Сохранения и забеги"
+
+msgctxt "data:guide"
+msgid "Account & Unlocks"
+msgstr "Аккаунт и открытия"
+
+msgctxt "data:guide"
+msgid "Mastery & Prestige"
+msgstr "Мастерство и престиж"
+
+msgctxt "data:guide"
+msgid "Joining Late"
+msgstr "Позднее подключение"
+
+msgctxt "data:guide"
+msgid "Deeper in the run"
+msgstr "В глубине забега"
+
+msgctxt "data:guide"
+msgid "Big Lobbies"
+msgstr "Большие лобби"
+
+msgctxt "data:guide"
+msgid "Controls"
+msgstr "Управление"
+
+msgctxt "data:guide"
+msgid "HUD Guide"
+msgstr "Справка по HUD"
+
+msgctxt "data:guide"
+msgid "Glossary"
+msgstr "Словарь"
 
 msgctxt "@AttributeAlloc::Validate#4673"
 msgid "unknown attribute ("
@@ -19989,278 +19943,6 @@ msgstr "0"
 msgctxt "numbers"
 msgid "RepoRPG: this game version changed something - off: {0} and {1} more. See the log."
 msgstr "1"
-
-msgctxt "numbers"
-msgid "+{0}% max health. Allies within {1}m of you take {2}% less damage."
-msgstr "0,1,2"
-
-msgctxt "numbers"
-msgid "Take {0}% less damage, but sprint {1}% slower."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Lock your plating: take {0}% less damage for {1}s, and your Shield Wall protects allies {2}% more."
-msgstr "0,1,2"
-
-msgctxt "numbers"
-msgid "Rare or better valuables you appraise gain an extra {0}% value; +{1}% extraction XP and +{2}% level-complete XP."
-msgstr "0,1,2"
-
-msgctxt "numbers"
-msgid "Valuables within {0}m of you are appraised automatically (even through walls): each one's value rises {1}%, once per item. +{2}% grab range."
-msgstr "0,1,2"
-
-msgctxt "numbers"
-msgid "For {0}s, your HUD tracks the {1} most valuable items within {2}m that aren't in a cart (value, distance, direction). One put in a cart is swapped for the next best."
-msgstr "0,1,2"
-
-msgctxt "numbers"
-msgid "Once per level, a lethal hit leaves you at {0} HP with {1}s of invulnerability."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "carried items take {0}% less damage"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "carrying drains {0}% less stamina"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0}% throw strength"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "thrown valuables can't break for {0} s"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "{0}% less noise while crouched"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "monsters notice you {0} s later"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "your heals on teammates +{0}%"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "teammates within {0} m take {1}% less damage"
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% Scrap share"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0} gear luck"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0}% weapon damage to elites"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "elite kills refund {0}% of your ability cooldown"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "death saves give +{0}% speed for {1} s"
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "below {0}% health, +{1}% weapon damage"
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "{0}% cooldown reduction"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "with {0}+ ability charges, they refill {1}% faster (inside the cooldown cap)"
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0} stamina/s regen (while recharging)"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0}% max stamina"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Using your ability refills {0}% stamina."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0}% Scrap share, but you lose {1} HP at every extraction."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% throw strength, but you drop what you're holding when hit."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Your ability holds {0} charges."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0}% weapon damage and +{1}% ability power, but -{2}% max health."
-msgstr "0,1,2"
-
-msgctxt "numbers"
-msgid "Valuables you carry into an extraction give you {0}% extra Scrap on top of your share."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0} gear luck, but your inventory holds {1} fewer items."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Monsters you hit are Marked for {0} s: +{1}% damage from everyone."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0} death save every level, but {1}% less max health."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% weapon damage, but your footsteps are {1}% louder."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "-{0}% ability cooldown and +{1}% ability duration."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% ability power, but you take {1}% more damage."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Monsters take {0} s longer to notice you."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Each enemy that dies near you takes {0}s off your ability cooldown."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0}% ability power, but your ability takes {1}% longer to recharge."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Below {0}% HP: +{1}% speed."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Elites have a {0}% chance to drop a second piece of gear."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "{0}% chance on hit to stun and {1}% to make enemies bleed."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% weapon damage and +{1}% kill XP, but take {2}% more damage."
-msgstr "0,1,2"
-
-msgctxt "numbers"
-msgid "Allies within {0}m regain {1} HP every {2}s."
-msgstr "0,1,2"
-
-msgctxt "numbers"
-msgid "Take {0}% less damage, but move {1}% slower."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Allies revived near you get +{0} HP, and you earn +{1}% revive XP."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Thrown items stun monsters they hit for {0} s."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0} gear luck and +{1}% dodge chance."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% grab strength and +{1}% grab range."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% XP from everything."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "While crouched, you're as quiet as stealth allows (the host's noise cap, {0}% by default)."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0}% move speed while a teammate is within {1} m."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Weapon hits heal {0} HP; enemies dying near you heal {1} HP."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Below {0}% HP you move much faster; take a little less damage."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0}% max stamina (a bigger tank: sprinting still costs the same per second) and +{1} stamina/s regen while recharging."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Heal {0} HP whenever an extraction point completes."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Mod shop items cost {0}% less."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Sprinting costs {0}% less stamina and stamina regenerates {1}/s faster."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% chance to find gear when an extraction point completes."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Your HUD warns of enemies within {0}m."
-msgstr "0"
-
-msgctxt "numbers"
-msgid "+{0} extra jump and +{1}% jump force."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "+{0}% max health, but sprint {1}% slower."
-msgstr "0,1"
-
-msgctxt "numbers"
-msgid "Carry out ${0} of valuables"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Kill {0} elite"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Carry {0} valuables into extractions without them losing value"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Complete {0} extraction points (fewer if the level has fewer)"
-msgstr "0"
-
-msgctxt "numbers"
-msgid "Finish the level within {0} min"
-msgstr "0"
 
 msgctxt "words"
 msgid "{0} joined {1}"

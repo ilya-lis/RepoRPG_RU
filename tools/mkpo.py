@@ -10,6 +10,8 @@
 usage: mkpo.py <units.json> <tsv dir> <out.po> [checks.tsv]
 """
 import json, re, sys, glob, os, collections
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import datapo
 
 HOLE = re.compile(r'\{\{|\}\}|\{[^{}]*\}|[{}]')
 TAG = re.compile(r'</?(?:color|b|i|size|u|s|mark|sup|sub)(?:=[^>]*)?>', re.I)
@@ -259,22 +261,6 @@ def main():
     for kind, en, ru, where in extra:
         bad = check(en, ru)
         if bad: problems.append('%s: %s: %r' % (where, bad, en[:60])); continue
-        if kind == 'data':
-            # a text from the mod's built-in data (a perk, a talent, a contract), copied from what the game showed.
-            # Exact text -> term. Its numbers may change (settings, levels), and before measuring a line the mod replaces
-            # every digit with 0 - so the same sentence is also kept with the numbers as placeholders.
-            term_e[en] = ru
-            checks.append((en, ru))
-            made = numbered(en, ru)
-            if made is None: problems.append('%s: the numbers of the translation differ from the original: %r' % (where, en[:60]))
-            elif made:
-                if made[0] in pat_e and pat_e[made[0]] != made[1]:
-                    problems.append('%s: two different translations of one sentence once the numbers are taken out: %r' % (where, made[0][:60]))
-                else:
-                    pat_e[made[0]] = made[1]
-                    num_e[made[0]] = set(range(made[2]))
-                    checks.append(sample(made[0], made[1]))
-            continue
         if kind == 'term': term_e[en] = ru
         elif kind == 'pattern': pat_e[en] = ru
         elif kind == 'global': glob_e[en] = ru
@@ -288,6 +274,8 @@ def main():
            '#   no msgctxt        replaced inside the mod where that is safe, otherwise at the moment the text is drawn',
            '#   term              only at the moment the text is drawn (words the mod also uses as internal names)',
            '#   pattern           a sentence the mod puts together itself; {0} stands for the changing part',
+           '#   shape             a text of the mod\'s data; {0}, {1} are its numbers, which change with ranks and settings',
+           '#   data:guide        a value of the mod\'s guide.json, replaced inside the data (the Guide tab and its search)',
            '#   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)',
            '#   numbers           not a translation: which placeholders of a sentence are numbers (worked out from the mod\'s code)',
            '#   words             not a translation: which placeholders hold one of the mod\'s own words (a rarity, a tab name)',
@@ -296,7 +284,15 @@ def main():
         for en, ru in table.items():
             if ctx: out.append('msgctxt ' + po(ctx))
             out.append('msgid ' + po(en)); out.append('msgstr ' + po(ru)); out.append('')
-    emit(None, glob_e); emit('term', term_e); emit('pattern', pat_e)
+    # the mod's built-in data: names and descriptions (drawn), the Guide (replaced inside the data)
+    shape_e, guide_e, data_stats = collections.OrderedDict(), collections.OrderedDict(), None
+    data_json = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), 'data.json')
+    if os.path.isfile(data_json):
+        known = dict(glob_e); known.update(term_e)
+        d_terms, shape_e, guide_e, d_checks, data_stats = datapo.build(data_json, os.path.join(sys.argv[2], 'data'), known, problems)
+        for en, ru in d_terms.items(): term_e[en] = ru
+        checks.extend(d_checks)
+    emit(None, glob_e); emit('term', term_e); emit('pattern', pat_e); emit('shape', shape_e); emit('data:guide', guide_e)
     for sc in sorted(scoped): emit('@' + sc, scoped[sc])
     # which placeholders are numbers: "{0} players" is made from a count, so "more players" is another text altogether
     for en, idx, where in hand_num:
@@ -326,6 +322,10 @@ def main():
     have = sum(1 for k in tr if by_id[k]['group'] in ('display', 'maybe'))
     print('translated units: %d (interface %d of %d)   entries: %d global, %d term, %d pattern, %d scoped in %d methods (%d sentences only at draw time)'
           % (len(tr), have, total, len(glob_e), len(term_e), len(pat_e), sum(len(v) for v in scoped.values()), len(scoped), dropped))
+    if data_stats:
+        print('data: %d of %d texts translated; %d terms, %d shapes, %d guide values; generated: %d gear names, %d boss names%s'
+              % (data_stats['translated'], data_stats['units'], len(d_terms), len(shape_e), len(guide_e), data_stats['gear names'],
+                 data_stats['boss names'], ('; left: ' + data_stats['left']) if data_stats['left'] else ''))
     for p in problems: print('  PROBLEM ' + p)
     return 1 if problems else 0
 

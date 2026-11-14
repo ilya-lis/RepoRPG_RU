@@ -137,9 +137,11 @@ RunShape::HostNote#0
 RunShape::StartVote#2
 
 [data]
-# embedded JSON: only these properties are text; everything else is an id, a number or a colour
-*: name, desc, complexityTip, evolveHow, evolveName, evolveDesc, flavor, unlock, bases
-*: !id, !key, !stat, !type, !requires, !tags, !icon, !color, !colour
+# The mod's built-in data (embedded JSON). Only the Guide is replaced inside the data: its texts carry tokens the mod fills
+# in itself ({key:menu}, {cfg:Section/Key}), the Guide's search runs over them, and nothing else reads them.
+# Everything else - names and descriptions of classes, talents, perks, gear, contracts - stays as it is: the mod uses those
+# texts as keys, stores them in saves and sends them to other players. They are translated at the moment they are drawn.
+guide: title, summary, keywords, items, label, text, term, meaning
 
 [probes]
 # the mod looks for these words in the names of OTHER plugins, never in its own interface texts
