@@ -4395,7 +4395,7 @@ msgid "<color=#9a9ca0>SHOP CLOSED</color> - open while you're in the shop betwee
 msgstr "<color=#9a9ca0>МАГАЗИН ЗАКРЫТ</color> - работает, пока вы в магазине между уровнями."
 
 msgid "You earn {0:0.#}% of the money the team makes as bonus {1} "
-msgstr "Вы получаете {0:0.#}% от денег, заработанных командой, в виде бонуса: {1} "
+msgstr "Вы получаете {0:0.#}% от денег, заработанных командой, в виде бонуса {1} "
 
 msgid "(split evenly)"
 msgstr "(делится поровну)"
@@ -10413,6 +10413,10 @@ msgstr "Половина"
 msgctxt "term"
 msgid "ThreeQuarters"
 msgstr "Три четверти"
+
+msgctxt "term"
+msgid "Scrap:"
+msgstr "Лом:"
 
 msgctxt "term"
 msgid "Throw Strength"
@@ -22492,7 +22496,7 @@ msgstr "Принят: {0}"
 
 msgctxt "pattern"
 msgid "Not enough {0} to reroll"
-msgstr "Для обновления не хватает: {0}"
+msgstr "Для обновления не хватает {0}"
 
 msgctxt "pattern"
 msgid "Couldn't reroll: {0}"
@@ -25205,6 +25209,26 @@ msgstr "{0} надет (пропало предметов: {1})"
 msgctxt "pattern"
 msgid "{0} equipped ({1} items gone)"
 msgstr "{0} надет (пропало предметов: {1})"
+
+msgctxt "pattern"
+msgid "{0} Scrap"
+msgstr "{0} лома"
+
+msgctxt "pattern"
+msgid "-{0} Scrap"
+msgstr "-{0} лома"
+
+msgctxt "pattern"
+msgid "+{0} Scrap"
+msgstr "+{0} лома"
+
+msgctxt "pattern"
+msgid "Scrap: {0}"
+msgstr "Лом: {0}"
+
+msgctxt "pattern"
+msgid "Scrap <b>{0}</b>"
+msgstr "Лом <b>{0}</b>"
 
 msgctxt "shape"
 msgid "Your ability holds {0} charges."
@@ -39617,6 +39641,26 @@ msgstr "1"
 msgctxt "numbers"
 msgid "{0} equipped ({1} items gone)"
 msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} Scrap"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "-{0} Scrap"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "+{0} Scrap"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Scrap: {0}"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "Scrap <b>{0}</b>"
+msgstr "0"
 
 msgctxt "words"
 msgid "{0} joined {1}"

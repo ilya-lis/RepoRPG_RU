@@ -248,3 +248,15 @@
 +pattern	{0} equipped ({1} items gone)	{0} надет (пропало предметов: {1})
 +numbers	{0} equipped ({1} item gone)	1
 +numbers	{0} equipped ({1} items gone)	1
+# The short name of the mod's currency (Scrap.Short, a setting) is «лома» after a number and «Лом» as a label
++pattern	{0} Scrap	{0} лома
++numbers	{0} Scrap	0
++pattern	-{0} Scrap	-{0} лома
++numbers	-{0} Scrap	0
++pattern	+{0} Scrap	+{0} лома
++numbers	+{0} Scrap	0
++term	Scrap:	Лом:
++pattern	Scrap: {0}	Лом: {0}
++numbers	Scrap: {0}	0
++pattern	Scrap <b>{0}</b>	Лом <b>{0}</b>
++numbers	Scrap <b>{0}</b>	0

@@ -284,3 +284,11 @@ Loadout 1 saved	Набор 1 сохранён
 Loadout 2 is empty - save one first	Набор 2 пуст - сначала сохраните его
 Loadout 3 equipped (2 items gone)	Набор 3 надет (пропало предметов: 2)
 Набор 3 equipped (1 item gone)	Набор 3 надет (пропало предметов: 1)
+# the short name of the currency: «лома» after a number, «Лом» as a label (the header of the menu, the chip of the HUD)
+Билд: <color=#ffd75a>Tank</color>   <color=#8cf2bf>Scrap: <b>1,234</b></color>	Билд: <color=#ffd75a>Танк</color>   <color=#8cf2bf>Лом: <b>1,234</b></color>
+<color=#8cf2bf>Scrap: <b>12</b></color>	<color=#8cf2bf>Лом: <b>12</b></color>
+Scrap <b>1,200</b>	Лом <b>1,200</b>
+120 Scrap	120 лома
+-30 Scrap	-30 лома
+Куплено: фиксация: Heavy Riot Plating (-10 Scrap)	Куплено: фиксация: Тяжёлая штурмовая броня (-10 лома)
+Для обновления не хватает Scrap	Для обновления не хватает лома
