@@ -186,7 +186,9 @@ namespace RepoRPG_RU
             {
                 List<object> fonts = unity.AllFonts();
                 if (fonts == null || fonts.Count == 0) return;
-                log.Append("шрифты в игре (размер / высота строки / подъём; ширина H и W при 100 пикс.):\n");
+                // "→" and "★" are in none of these fonts: the mod draws them all the same, the game takes them from a system font.
+                // A "-" there for the add-on's font (marked *) would mean such signs are lost with it.
+                log.Append("шрифты в игре (размер / высота строки / подъём; ширина H, W и знаков → ★ при 100 пикс.):\n");
                 int shown = 0;
                 foreach (object f in fonts)
                 {
@@ -595,7 +597,7 @@ namespace RepoRPG_RU
                 return list;
             }
 
-            /// <summary>"Teko-VariableFont_wght: 90 / 129 / 86; H 38, W 55"</summary>
+            /// <summary>"Teko-VariableFont_wght: 90 / 129 / 86; H 38 W 55 → 100 ★ 89"</summary>
             public string Describe(object f)
             {
                 StringBuilder sb = new StringBuilder();
@@ -605,10 +607,14 @@ namespace RepoRPG_RU
                 if (dyn is bool && !(bool)dyn) return sb.Append("; не динамический").ToString();
                 try
                 {
-                    Request(f, "HW", 100);
-                    int h, w;
-                    bool hasH = Advance(f, 'H', 100, out h), hasW = Advance(f, 'W', 100, out w);
-                    sb.Append("; H ").Append(hasH ? h.ToString(CultureInfo.InvariantCulture) : "-").Append(", W ").Append(hasW ? w.ToString(CultureInfo.InvariantCulture) : "-");
+                    const string probe = "HW\u2192\u2605";
+                    Request(f, probe, 100);
+                    sb.Append(';');
+                    foreach (char c in probe)
+                    {
+                        int a;
+                        sb.Append(' ').Append(c).Append(' ').Append(Advance(f, c, 100, out a) ? a.ToString(CultureInfo.InvariantCulture) : "-");
+                    }
                 }
                 catch { sb.Append("; не измерен"); }
                 return sb.ToString();

@@ -185,7 +185,7 @@ check('font: nothing made in vain', has(out, 'destroyed='), [l for l in out if l
 check('font: a method that does not begin by reading the setting is served too', has(out, 'font-hud=RepoRPG_RU'), [l for l in out if l.startswith('font')])
 check('font: font.txt says what happened', 'итог: шрифт подключён' in font_txt() and 'Ж (100 пикс.): по файлу 49, в игре 49' in font_txt(), font_txt())
 check('font: one line in the log', sum(1 for l in out if 'Шрифт меню: шрифт подключён' in l) == 1, [l for l in out if 'Шрифт' in l])
-check('font: font.txt lists the fonts of the game with their metrics (ours marked)', '  * RepoRPG_RU: 32 / 46 / 31; H 38, W 55' in font_txt(), font_txt())
+check('font: font.txt lists the fonts of the game with their metrics (ours marked)', '  * RepoRPG_RU: 32 / 46 / 31; H 38 W 55 → 70 ★ 70' in font_txt(), font_txt())
 rep = open(os.path.join(ROOT, 'config', 'RepoRPG_RU', 'report.txt'), encoding='utf-8').read()
 check('font: report counts the places and the rule without a target', 'спрашивает шрифт у русификатора: 2, правил без цели: 1' in rep and 'font method not found: RpgRuntime::PickFont' in rep, [l for l in rep.splitlines() if 'шрифт' in l or 'font' in l])
 check('font: missing rule reported, not fatal', contains(out, 'где мод выбирает шрифт меню'))
