@@ -19590,6 +19590,414 @@ msgid "Faster. Everyone. All of you."
 msgstr "Быстрее. Все. Все до единого."
 
 msgctxt "term"
+msgid "Clean Hands"
+msgstr "Чистые руки"
+
+msgctxt "term"
+msgid "Deathless"
+msgstr "Без смертей"
+
+msgctxt "term"
+msgid "Finish the level with no monster kills"
+msgstr "Пройдите уровень, не убив ни одного монстра"
+
+msgctxt "term"
+msgid "Big Haul"
+msgstr "Большая добыча"
+
+msgctxt "term"
+msgid "Blitz"
+msgstr "Блиц"
+
+msgctxt "term"
+msgid "Elite Purge"
+msgstr "Чистка элиты"
+
+msgctxt "term"
+msgid "Boss Bounty"
+msgstr "Награда за босса"
+
+msgctxt "term"
+msgid "Heavy Lifting"
+msgstr "Тяжёлая ноша"
+
+msgctxt "term"
+msgid "Valuables take 25% more break damage"
+msgstr "Ценности получают на 25% больше урона от ударов"
+
+msgctxt "term"
+msgid "Monsters notice the team 25% faster"
+msgstr "Монстры замечают команду на 25% быстрее"
+
+msgctxt "term"
+msgid "Marked"
+msgstr "Метка"
+
+msgctxt "term"
+msgid "Elite chance +15%"
+msgstr "Шанс элиты +15%"
+
+msgctxt "term"
+msgid "Drained"
+msgstr "Истощение"
+
+msgctxt "term"
+msgid "The first death each level (anyone's) is saved: back up at 1 HP, without using anyone's death save charges."
+msgstr "Первая смерть на каждом уровне (чья угодно) отменяется: игрок встаёт с 1 ОЗ, и ничьи заряды спасения от смерти не тратятся."
+
+msgctxt "term"
+msgid "Salvage Line"
+msgstr "Спасательная линия"
+
+msgctxt "term"
+msgid "Every finished extraction heals everyone alive 6 HP (counts toward the Max Extraction Heal cap)."
+msgstr "Каждое завершённое извлечение лечит всех живых на 6 ОЗ (учитывается в пределе Max Extraction Heal)."
+
+msgctxt "term"
+msgid "Bone Collectors"
+msgstr "Собиратели костей"
+
+msgctxt "term"
+msgid "Monsters drop 50% more crafting parts."
+msgstr "С монстров выпадает на 50% больше деталей для крафта."
+
+msgctxt "term"
+msgid "Light Load"
+msgstr "Лёгкий груз"
+
+msgctxt "term"
+msgid "Haul goals are 10% lower."
+msgstr "Цели по добыче ниже на 10%."
+
+msgctxt "term"
+msgid "Deaths cost the streak half as much (rounded down)."
+msgstr "Смерти уменьшают серию вдвое слабее (с округлением вниз)."
+
+msgctxt "term"
+msgid "Bounty Board"
+msgstr "Доска наград"
+
+msgctxt "term"
+msgid "Every elite killed pays every player 10 Scrap (a boss 30)."
+msgstr "За каждого убитого элитного монстра каждый игрок получает 10 лома (за босса - 30)."
+
+msgctxt "term"
+msgid "Easy Money"
+msgstr "Лёгкие деньги"
+
+msgctxt "term"
+msgid "Contract targets are 20% lower (rounded up: kill 8 becomes kill 7)."
+msgstr "Цели контрактов ниже на 20% (с округлением вверх: «убить 8» превращается в «убить 7»)."
+
+msgctxt "term"
+msgid "Free Estimate"
+msgstr "Бесплатная смета"
+
+msgctxt "term"
+msgid "The first contract board reroll each visit is free."
+msgstr "Первое обновление доски контрактов за каждое посещение бесплатно."
+
+msgctxt "term"
+msgid "Hazard Pay"
+msgstr "Надбавка за риск"
+
+msgctxt "term"
+msgid "Every elite killed adds +1% to that level's haul Scrap (at most +10%)."
+msgstr "Каждый убитый элитный монстр добавляет +1% к лому за добычу на этом уровне (не больше +10%)."
+
+msgctxt "term"
+msgid "Head Start"
+msgstr "Фора"
+
+msgctxt "term"
+msgid "The first extraction each level fully recharges everyone's ability."
+msgstr "Первое извлечение на каждом уровне полностью перезаряжает способности всех игроков."
+
+msgctxt "term"
+msgid "Crafting costs 1 fewer of each kind of part (never below 1)."
+msgstr "Крафт требует на 1 деталь каждого вида меньше (но не меньше 1)."
+
+msgctxt "term"
+msgid "Finishing every extraction point on a level pays everyone 15 Scrap and a tenth of a level's XP."
+msgstr "Завершение всех точек извлечения на уровне даёт каждому 15 лома и десятую часть опыта за уровень."
+
+msgctxt "term"
+msgid "Lucky Break"
+msgstr "Счастливый случай"
+
+msgctxt "term"
+msgid "1 in 10 gear finds rolls one rarity higher."
+msgstr "1 из 10 находок снаряжения выпадает на одну редкость выше."
+
+msgctxt "term"
+msgid "Lone Wolf"
+msgstr "Одинокий волк"
+
+msgctxt "term"
+msgid "When only one player is left alive (2+ players): they take 30% less damage and move 15% faster (the caps still apply)."
+msgstr "Когда в живых остаётся один игрок (при 2+ игроках): он получает на 30% меньше урона и движется на 15% быстрее (пределы по-прежнему действуют)."
+
+msgctxt "term"
+msgid "Rapid Response"
+msgstr "Быстрое реагирование"
+
+msgctxt "term"
+msgid "A revived player can't be hurt for 5 seconds."
+msgstr "Возрождённый игрок неуязвим 5 секунд."
+
+msgctxt "term"
+msgid "Tip Jar"
+msgstr "Банка для чаевых"
+
+msgctxt "term"
+msgid "Contracts pay 15% more Scrap."
+msgstr "Контракты приносят на 15% больше лома."
+
+msgctxt "term"
+msgid "Crowd Control"
+msgstr "Сдерживание толпы"
+
+msgctxt "term"
+msgid "Elites are 20% rarer and never have more than one modifier (bosses are unchanged)."
+msgstr "Элита встречается на 20% реже и не имеет больше одного модификатора (боссы без изменений)."
+
+msgctxt "term"
+msgid "Marked for Death"
+msgstr "Смертельная метка"
+
+msgctxt "term"
+msgid "Bosses take 15% more damage from everyone."
+msgstr "Боссы получают на 15% больше урона от всех."
+
+msgctxt "term"
+msgid "Safety Net"
+msgstr "Страховочная сеть"
+
+msgctxt "term"
+msgid "The streak never falls below a third of the best streak this run."
+msgstr "Серия не падает ниже трети лучшей серии за этот забег."
+
+msgctxt "term"
+msgid "Everyone earns 10% more XP (inside the XP bonus cap)."
+msgstr "Все получают на 10% больше опыта (в пределах лимита бонусов к опыту)."
+
+msgctxt "term"
+msgid "Data Mine"
+msgstr "Кладезь данных"
+
+msgctxt "term"
+msgid "All Research Data earned is 20% higher."
+msgstr "Все получаемые данные исследований увеличены на 20%."
+
+msgctxt "term"
+msgid "Stockpile"
+msgstr "Запас"
+
+msgctxt "term"
+msgid "Every shop restock has one more Featured item."
+msgstr "При каждом обновлении ассортимента магазина на витрине на один предмет больше."
+
+msgctxt "term"
+msgid "Milestone Scrap payouts are 30% higher."
+msgstr "Выплаты лома за этапы выше на 30%."
+
+msgctxt "term"
+msgid "Monster Surge"
+msgstr "Наплыв монстров"
+
+msgctxt "term"
+msgid "20% more monsters"
+msgstr "на 20% больше монстров"
+
+msgctxt "term"
+msgid "Lean Shop"
+msgstr "Скудный магазин"
+
+msgctxt "term"
+msgid "mod shop prices +15%"
+msgstr "цены в магазине мода +15%"
+
+msgctxt "term"
+msgid "no threat labels, scan markers or Watchpost pings"
+msgstr "без меток угроз, меток сканирования и сигналов сторожевого поста"
+
+msgctxt "term"
+msgid "elites twice as likely"
+msgstr "элита вдвое вероятнее"
+
+msgctxt "term"
+msgid "Hardened Bosses"
+msgstr "Закалённые боссы"
+
+msgctxt "term"
+msgid "bosses get one more modifier and 25% more health"
+msgstr "у боссов на один модификатор и на 25% здоровья больше"
+
+msgctxt "term"
+msgid "everyone takes 30% more damage (and deals 30% more)"
+msgstr "все получают на 30% больше урона (и наносят на 30% больше)"
+
+msgctxt "term"
+msgid "valuables take 25% more damage when hit"
+msgstr "ценности получают на 25% больше урона при ударах"
+
+msgctxt "term"
+msgid "ability cooldowns 25% longer"
+msgstr "перезарядка способностей на 25% дольше"
+
+msgctxt "term"
+msgid "no healing from abilities or gear, regeneration off"
+msgstr "нет лечения от способностей и снаряжения, регенерация отключена"
+
+msgctxt "term"
+msgid "half the Scrap from the haul"
+msgstr "вдвое меньше лома за добычу"
+
+msgctxt "term"
+msgid "Busy Floors"
+msgstr "Оживлённые этажи"
+
+msgctxt "term"
+msgid "Elite Patrol"
+msgstr "Элитный патруль"
+
+msgctxt "term"
+msgid "elites 60% more likely"
+msgstr "элита на 60% вероятнее"
+
+msgctxt "term"
+msgid "Tight Quota"
+msgstr "Жёсткая квота"
+
+msgctxt "term"
+msgid "haul goal +12%"
+msgstr "цель по добыче +12%"
+
+msgctxt "term"
+msgid "Rough Handling"
+msgstr "Грубое обращение"
+
+msgctxt "term"
+msgid "valuables lose 25% more value when hit"
+msgstr "ценности теряют на 25% больше стоимости при ударах"
+
+msgctxt "term"
+msgid "Heavy Air"
+msgstr "Тяжёлый воздух"
+
+msgctxt "term"
+msgid "sprinting costs 15% more stamina"
+msgstr "бег тратит на 15% больше выносливости"
+
+msgctxt "term"
+msgid "Gear Cache"
+msgstr "Тайник снаряжения"
+
+msgctxt "term"
+msgid "everyone finds an Uncommon-or-better gear item when the level is cleared"
+msgstr "каждый находит предмет снаряжения не ниже необычного, когда уровень пройден"
+
+msgctxt "term"
+msgid "Rare Cache"
+msgstr "Редкий тайник"
+
+msgctxt "term"
+msgid "everyone finds a Rare-or-better gear item when the level is cleared"
+msgstr "каждый находит предмет снаряжения не ниже редкого, когда уровень пройден"
+
+msgctxt "term"
+msgid "Bonus Pay"
+msgstr "Премиальные"
+
+msgctxt "term"
+msgid "haul Scrap +25%"
+msgstr "лом за добычу +25%"
+
+msgctxt "term"
+msgid "+3 gear and shop luck on the level"
+msgstr "+3 к удаче снаряжения и магазина на уровне"
+
+msgctxt "term"
+msgid "Salvage Rights"
+msgstr "Право на разбор"
+
+msgctxt "term"
+msgid "4 crafting parts each when the level is cleared"
+msgstr "по 4 детали для крафта каждому, когда уровень пройден"
+
+msgctxt "term"
+msgid "First Shift"
+msgstr "Первая смена"
+
+msgctxt "term"
+msgid "Learn the ropes. The bosses are still sizing you up."
+msgstr "Осваивайтесь. Боссы к вам пока только присматриваются."
+
+msgctxt "term"
+msgid "Overtime"
+msgstr "Сверхурочные"
+
+msgctxt "term"
+msgid "The haul gets heavier and the halls get louder."
+msgstr "Добыча всё тяжелее, а в коридорах всё громче."
+
+msgctxt "term"
+msgid "Deep Stacks"
+msgstr "Глубокие ярусы"
+
+msgctxt "term"
+msgid "Deeper floors, nastier things living in them."
+msgstr "Этажи всё глубже, а их обитатели всё гаже."
+
+msgctxt "term"
+msgid "Elites start hunting in pairs."
+msgstr "Элита начинает охотиться парами."
+
+msgctxt "term"
+msgid "Quarterly Review"
+msgstr "Квартальный отчёт"
+
+msgctxt "term"
+msgid "Halfway. Management expects results."
+msgstr "Полпути. Руководство ждёт результатов."
+
+msgctxt "term"
+msgid "Everything bites harder - and pays better."
+msgstr "Всё кусается больнее - и платит лучше."
+
+msgctxt "term"
+msgid "Night Shift"
+msgstr "Ночная смена"
+
+msgctxt "term"
+msgid "The monsters don't sleep. Neither do you."
+msgstr "Монстры не спят. Вы тоже."
+
+msgctxt "term"
+msgid "Restructuring"
+msgstr "Реструктуризация"
+
+msgctxt "term"
+msgid "Old tricks stop working. New ones show up."
+msgstr "Старые приёмы перестают работать. Появляются новые."
+
+msgctxt "term"
+msgid "One chapter left after this. Don't drop anything."
+msgstr "После этой главы останется одна. Ничего не уроните."
+
+msgctxt "term"
+msgid "Liquidation"
+msgstr "Ликвидация"
+
+msgctxt "term"
+msgid "The finale waits at the end of this chapter."
+msgstr "В конце этой главы ждёт финал."
+
+msgctxt "term"
+msgid "No finish line now. How deep can the team go?"
+msgstr "Финишной черты больше нет. Как глубоко зайдёт команда?"
+
+msgctxt "term"
 msgid "Striker Module"
 msgstr "Ударный модуль"
 
@@ -49196,6 +49604,162 @@ msgstr "Эпические сервоприводы и +{0} к репутаци�
 msgctxt "shape"
 msgid "Finish the level within {0} min with nobody dying"
 msgstr "Пройдите уровень за {0} мин без единой смерти"
+
+msgctxt "shape"
+msgid "Extract {0} valuables without breaking any valuable"
+msgstr "Извлеките ценностей: {0} - не разбив ни одной"
+
+msgctxt "shape"
+msgid "Haul at least {0}% of the level's goal"
+msgstr "Соберите не меньше {0}% от цели уровня"
+
+msgctxt "shape"
+msgid "Finish every extraction within {0} min"
+msgstr "Завершите все извлечения за {0} мин"
+
+msgctxt "shape"
+msgid "Kill the boss within {0} min of it appearing"
+msgstr "Убейте босса за {0} мин после его появления"
+
+msgctxt "shape"
+msgid "Carry one valuable worth ${0} or more into an extraction"
+msgstr "Донесите до точки извлечения одну ценность стоимостью от ${0}"
+
+msgctxt "shape"
+msgid "Valuables take {0}% more break damage"
+msgstr "Ценности получают на {0}% больше урона от ударов"
+
+msgctxt "shape"
+msgid "Monsters notice the team {0}% faster"
+msgstr "Монстры замечают команду на {0}% быстрее"
+
+msgctxt "shape"
+msgid "Elite chance +{0}%"
+msgstr "Шанс элиты +{0}%"
+
+msgctxt "shape"
+msgid "The first death each level (anyone's) is saved: back up at {0} HP, without using anyone's death save charges."
+msgstr "Первая смерть на каждом уровне (чья угодно) отменяется: игрок встаёт с {0} ОЗ, и ничьи заряды спасения от смерти не тратятся."
+
+msgctxt "shape"
+msgid "Every finished extraction heals everyone alive {0} HP (counts toward the Max Extraction Heal cap)."
+msgstr "Каждое завершённое извлечение лечит всех живых на {0} ОЗ (учитывается в пределе Max Extraction Heal)."
+
+msgctxt "shape"
+msgid "Monsters drop {0}% more crafting parts."
+msgstr "С монстров выпадает на {0}% больше деталей для крафта."
+
+msgctxt "shape"
+msgid "Haul goals are {0}% lower."
+msgstr "Цели по добыче ниже на {0}%."
+
+msgctxt "shape"
+msgid "Every elite killed pays every player {0} Scrap (a boss {1})."
+msgstr "За каждого убитого элитного монстра каждый игрок получает {0} лома (за босса - {1})."
+
+msgctxt "shape"
+msgid "Contract targets are {0}% lower (rounded up: kill {1} becomes kill {2})."
+msgstr "Цели контрактов ниже на {0}% (с округлением вверх: «убить {1}» превращается в «убить {2}»)."
+
+msgctxt "shape"
+msgid "Every elite killed adds +{0}% to that level's haul Scrap (at most +{1}%)."
+msgstr "Каждый убитый элитный монстр добавляет +{0}% к лому за добычу на этом уровне (не больше +{1}%)."
+
+msgctxt "shape"
+msgid "Crafting costs {0} fewer of each kind of part (never below {1})."
+msgstr "Крафт требует на {0} деталь каждого вида меньше (но не меньше {1})."
+
+msgctxt "shape"
+msgid "Finishing every extraction point on a level pays everyone {0} Scrap and a tenth of a level's XP."
+msgstr "Завершение всех точек извлечения на уровне даёт каждому {0} лома и десятую часть опыта за уровень."
+
+msgctxt "shape"
+msgid "{0} in {1} gear finds rolls one rarity higher."
+msgstr "{0} из {1} находок снаряжения выпадает на одну редкость выше."
+
+msgctxt "shape"
+msgid "When only one player is left alive ({0}+ players): they take {1}% less damage and move {2}% faster (the caps still apply)."
+msgstr "Когда в живых остаётся один игрок (при {0}+ игроках): он получает на {1}% меньше урона и движется на {2}% быстрее (пределы по-прежнему действуют)."
+
+msgctxt "shape"
+msgid "A revived player can't be hurt for {0} seconds."
+msgstr "Возрождённый игрок неуязвим {0} секунд."
+
+msgctxt "shape"
+msgid "Contracts pay {0}% more Scrap."
+msgstr "Контракты приносят на {0}% больше лома."
+
+msgctxt "shape"
+msgid "Elites are {0}% rarer and never have more than one modifier (bosses are unchanged)."
+msgstr "Элита встречается на {0}% реже и не имеет больше одного модификатора (боссы без изменений)."
+
+msgctxt "shape"
+msgid "Bosses take {0}% more damage from everyone."
+msgstr "Боссы получают на {0}% больше урона от всех."
+
+msgctxt "shape"
+msgid "Everyone earns {0}% more XP (inside the XP bonus cap)."
+msgstr "Все получают на {0}% больше опыта (в пределах лимита бонусов к опыту)."
+
+msgctxt "shape"
+msgid "All Research Data earned is {0}% higher."
+msgstr "Все получаемые данные исследований увеличены на {0}%."
+
+msgctxt "shape"
+msgid "Milestone Scrap payouts are {0}% higher."
+msgstr "Выплаты лома за этапы выше на {0}%."
+
+msgctxt "shape"
+msgid "{0}% more monsters"
+msgstr "на {0}% больше монстров"
+
+msgctxt "shape"
+msgid "mod shop prices +{0}%"
+msgstr "цены в магазине мода +{0}%"
+
+msgctxt "shape"
+msgid "bosses get one more modifier and {0}% more health"
+msgstr "у боссов на один модификатор и на {0}% здоровья больше"
+
+msgctxt "shape"
+msgid "everyone takes {0}% more damage (and deals {1}% more)"
+msgstr "все получают на {0}% больше урона (и наносят на {1}% больше)"
+
+msgctxt "shape"
+msgid "valuables take {0}% more damage when hit"
+msgstr "ценности получают на {0}% больше урона при ударах"
+
+msgctxt "shape"
+msgid "ability cooldowns {0}% longer"
+msgstr "перезарядка способностей на {0}% дольше"
+
+msgctxt "shape"
+msgid "elites {0}% more likely"
+msgstr "элита на {0}% вероятнее"
+
+msgctxt "shape"
+msgid "haul goal +{0}%"
+msgstr "цель по добыче +{0}%"
+
+msgctxt "shape"
+msgid "valuables lose {0}% more value when hit"
+msgstr "ценности теряют на {0}% больше стоимости при ударах"
+
+msgctxt "shape"
+msgid "sprinting costs {0}% more stamina"
+msgstr "бег тратит на {0}% больше выносливости"
+
+msgctxt "shape"
+msgid "haul Scrap +{0}%"
+msgstr "лом за добычу +{0}%"
+
+msgctxt "shape"
+msgid "+{0} gear and shop luck on the level"
+msgstr "+{0} к удаче снаряжения и магазина на уровне"
+
+msgctxt "shape"
+msgid "{0} crafting parts each when the level is cleared"
+msgstr "по {0} детали для крафта каждому, когда уровень пройден"
 
 msgctxt "data:guide"
 msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
