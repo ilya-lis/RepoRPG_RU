@@ -149,7 +149,9 @@ check('json ids/tags/requires kept', '"id": "tank"' in data[0] and '"tags": ["Ta
 check('json array of names', '"bases": ["Танк", "Scout"]' in data[0], data[0])
 check('json numbers byte-identical', '"cost": 1.50' in data[0] and '"version": 3' in data[0])
 check('json with BOM, id/stat kept; a path rule reaches only that path',
-      data[1] == 'data:{ "perks": [ { "id": "Tank", "name": "Танк", "stat": "Tank" } ], "givers": [ { "label": "Танк" } ], "notes": [ { "label": "Tank" } ] }', data[1])
+      data[1] == 'data:{ "perks": [ { "id": "Tank", "name": "Танк", "stat": "Tank" } ], "givers": [ { "label": "Танк" }, { "label": "Груз, который не поднять одному" } ], "notes": [ { "label": "Tank" } ] }', data[1])
+check('data text the mod would no longer recognise by its wording: left as it is', '"desc": "Load too big to lift alone"' in data[0], data[0])
+check('free-data: a file no wording test reads is translated all the same', '"label": "Груз, который не поднять одному"' in data[1], data[1])
 check('report written', os.path.isfile(os.path.join(ROOT, 'config', 'RepoRPG_RU', 'report.txt')))
 check('config created', os.path.isfile(CFG))
 first = out

@@ -1,7 +1,8 @@
 {
   "classes": [
     { "id": "tank", "name": "Tank", "desc": "Soaks damage. \"Hold the line\"", "tags": ["Tank", "melee"], "color": "#a0c0ff",
-      "nodes": [ { "id": "t1", "name": "Thick Plating", "desc": "+10% max health", "requires": "t0", "cost": 1.50 } ] },
+      "nodes": [ { "id": "t1", "name": "Thick Plating", "desc": "+10% max health", "requires": "t0", "cost": 1.50 },
+                 { "id": "t2", "name": "Thick Plating", "desc": "Load too big to lift alone" } ] },
     { "id": "medic", "name": "Medic", "desc": "Heals allies", "complexityTip": "Easy", "bases": ["Tank", "Scout"] }
   ],
   "version": 3

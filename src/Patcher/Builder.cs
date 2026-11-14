@@ -691,7 +691,7 @@ namespace RepoRPG_RU
                         if (any == null || !any.TryGetValue(value, out t)) return null;
                     }
                     else t = own[value];
-                    Probe broken = BrokenProbe(probes, rules.ProbeFree, value, t);
+                    Probe broken = rules.ProbeFreeData.Contains(stemCopy) ? null : BrokenProbe(probes, rules.ProbeFree, value, t);
                     if (broken != null)
                     {
                         report.SkippedProbe++;

@@ -44,6 +44,10 @@ namespace RepoRPG_RU
         /// <summary>[probes] free "text": this text of the mod never reaches any of its wording tests, whatever it looks like
         /// ("s Mark duration" is a stat line, not one of the ability labels that StartsWith("s ") sorts).</summary>
         public readonly HashSet<string> ProbeFree = new HashSet<string>(StringComparer.Ordinal);
+        /// <summary>[probes] free-data "guide": no text of this data file ever reaches a wording test (the paragraphs of the
+        /// Guide are shown and searched, nothing else). Without it "Chains are short stories..." would stay English because
+        /// a method that draws contract history looks for lines that start with "Chain".</summary>
+        public readonly HashSet<string> ProbeFreeData = new HashSet<string>(StringComparer.Ordinal);
         public readonly List<string> Problems = new List<string>();
         public ulong Fingerprint = Hash.Seed;
         public int FileCount;
@@ -134,7 +138,7 @@ namespace RepoRPG_RU
         {
             int q = line.IndexOf('"');
             int end = line.LastIndexOf('"');
-            if (q < 0 || end <= q) throw new FormatException("expected: ignore \"text\",  protect \"text\"  or  free \"text\"");
+            if (q < 0 || end <= q) throw new FormatException("expected: ignore \"text\",  protect \"text\",  free \"text\"  or  free-data \"file\"");
             string verb = line.Substring(0, q).Trim().ToLowerInvariant();
             StringBuilder sb = new StringBuilder();
             for (int i = q + 1; i < end; i++)
@@ -151,7 +155,8 @@ namespace RepoRPG_RU
             if (verb == "ignore") ProbeIgnore.Add(sb.ToString());
             else if (verb == "protect") ProbeProtect.Add(sb.ToString());
             else if (verb == "free") ProbeFree.Add(sb.ToString());
-            else throw new FormatException("expected: ignore \"text\",  protect \"text\"  or  free \"text\"");
+            else if (verb == "free-data") ProbeFreeData.Add(sb.ToString());
+            else throw new FormatException("expected: ignore \"text\",  protect \"text\",  free \"text\"  or  free-data \"file\"");
         }
 
         private void ParseHook(string line, string source)

@@ -266,3 +266,47 @@
 +term	WON	ПОБЕДА
 +numbers	You joined {0} - welcome back, {1} Lv {2}	2
 +numbers	{0} attribute point{1}	0
+# узлы исследований: «T2  Extraction Drill». Мод сам сокращает эту строку под ширину карточки («T2  Extrac…»), поэтому
+# перевести её нужно целиком и до измерения; обрезанное название уже не узнать
++pattern	T{0}  {1}	T{0}  {1}
++numbers	T{0}  {1}	0
++words	T{0}  {1}	1
+# справочник, «Кривая» угрозы: "2 cleared: 0.0  ·  4 cleared: 1.1  ·  …" (сколько уровней пройдено: рейтинг угрозы)
++pattern	{0} cleared: {1}	{0} ур.: {1}
++numbers	{0} cleared: {1}	0,1
+# сводка перков забега: «<b>Scholar</b> (from Quick Learner): +10% more XP» - в коде эта строка собирается из кусков без слов
++pattern	<color=#ffd75a><b>{0}</b></color> (from {1}): {2}	<color=#ffd75a><b>{0}</b></color> (из «{1}»): {2}
+# направление до цели («Голова: Bob 12 м ahead-right (above)», «$1,200  14m left»): слова лежат в массиве, в коде их не заменить
++term	behind	сзади
++term	ahead-right	впереди справа
++term	behind-right	сзади справа
++term	behind-left	сзади слева
++term	ahead-left	впереди слева
++pattern	${0}  {1}m {2}	${0}  {1} м {2}
++numbers	${0}  {1}m {2}	0,1
++words	${0}  {1}m {2}	2
++pattern	${0}  {1}m {2} (above)	${0}  {1} м {2} (выше)
++numbers	${0}  {1}m {2} (above)	0,1
++words	${0}  {1}m {2} (above)	2
++pattern	${0}  {1}m {2} (below)	${0}  {1} м {2} (ниже)
++numbers	${0}  {1}m {2} (below)	0,1
++words	${0}  {1}m {2} (below)	2
++numbers	Head: {0} {1:0}m {2}	1
++words	Head: {0} {1:0}m {2}	2
++numbers	Watchpost: {0} {1:0}m {2}	1
++words	Watchpost: {0} {1:0}m {2}	2
+# модификаторы Вознесения: «A2 Inflation» - название из одного слова в коде не заменяется
++pattern	A{0} {1}	A{0} {1}
++numbers	A{0} {1}	0
++words	A{0} {1}	1
+# история контрактов: «3 completed», «1 failed»; голосование: «Votes: 3 cast»
++pattern	{0} completed	Выполнено: {0}
++numbers	{0} completed	0
++pattern	{0} failed	Провалено: {0}
++numbers	{0} failed	0
++pattern	{0} cast	подано: {0}
++numbers	{0} cast	0
+# тележка Тележника (строка состояния)
++term	follow off - clearing the way	следование выкл. - расчистка пути
+# что сохраняется при перековке («Keeps: 2 sockets, attunement, base stat, crafting, slot and rarity»): слова из списка
++term	crafting	крафт

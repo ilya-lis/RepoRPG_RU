@@ -277,6 +277,7 @@ namespace RepoRPG_RU
             if ((r = Parts(text, "   ", Cells, depth)) != null) return r;
             if ((r = Sentences(text, depth)) != null) return r;
             if ((r = Parts(text, " + ", Phrase, depth)) != null) return r;
+            if ((r = Parts(text, " \u2013 ", Phrase, depth)) != null) return r;      // "Kill 15 monsters – weapon hits heal 1 HP more"
             if ((r = Parts(text, " - ", Phrase, depth)) != null) return r;
             if ((r = Parts(text, ": ", Label, depth)) != null) return r;
             if ((r = Parts(text, ", ", Phrase, depth)) != null) return r;
@@ -404,60 +405,127 @@ namespace RepoRPG_RU
         }
 
         /// <summary>
-        /// Last resort: "Куплено: Iron Plate (Rare)" - known English texts sitting between punctuation or inside a
-        /// sentence that is already Russian (a name from the mod's data, a word the code had to keep).
-        /// </summary>
-        /// <summary>
         /// A name the mod took from its data or its settings and put into a sentence that is already Russian:
         /// "Куплено: Iron Plate (Cursed)", "Нужно ещё 30 Scrap". Only a whole run of English words is replaced, and only when
         /// the dictionary knows exactly that run - a word out of an English phrase is never picked out on its own.
+        /// The text is looked at stretch by stretch (from one rich text tag or line break to the next):
+        ///   in a stretch with Russian in it, what stays English has to look like a name ("Игрок Bob купил Iron Plate"),
+        ///   not like the rest of an English sentence ("Эволюция: Earn 3,000 XP – +10% more XP" is left alone);
+        ///   in a stretch with no Russian the dictionary has to know every word ("<b>3 Scrap</b>", not "Earn 3,000 XP");
+        ///   words with nothing but a number between them are one phrase ("Kill 15 monsters"), never two names.
         /// </summary>
         private static string Islands(string text, int depth)
         {
-            bool russian = false;
-            for (int q = 0; q < text.Length && !russian; q++) russian = text[q] >= '\u0400' && text[q] <= '\u04FF';
-            if (!russian) return null;
+            if (!HasCyrillic(text)) return null;
             StringBuilder sb = null;
             int n = text.Length, i = 0, copied = 0;
             while (i < n)
             {
-                char c = text[i];
-                if (c == '<')
+                int end = i;
+                bool russian = false;
+                while (end < n)
                 {
-                    int close = text.IndexOf('>', i);
-                    if (close > i && close - i <= 40) { i = close + 1; continue; }      // a rich text tag is not a word
-                }
-                if (!IsLatinLetter(c) || (i > 0 && IsWordChar(text[i - 1]))) { i++; continue; }
-                // a run: words that start with a letter, one space (or " & ", "/") between them
-                int start = i, end = i;
-                int j = i;
-                while (j < n)
-                {
-                    if (!IsLatinLetter(text[j])) break;
-                    // "Carry x3": how many times is not a part of the name
-                    if (j > start && text[j] == 'x' && j + 1 < n && IsDigit(text[j + 1])) break;
-                    while (j < n && (IsWordChar(text[j]) || ((text[j] == '\'' || text[j] == '-') && j + 1 < n && IsWordChar(text[j + 1])))) j++;
-                    end = j;
-                    if (j + 1 < n && (text[j] == ' ' || text[j] == '/') && IsLatinLetter(text[j + 1])) { j++; continue; }
-                    if (j + 3 < n && text[j] == ' ' && text[j + 1] == '&' && text[j + 2] == ' ' && IsLatinLetter(text[j + 3])) { j += 3; continue; }
-                    break;
-                }
-                if (end - start >= 2 && !(start == 0 && end == n))
-                {
-                    string run = text.Substring(start, end - start);
-                    string t = Named(run) ?? Names(run);
-                    if (t != null)
+                    char c = text[end];
+                    if (c == '\n') break;
+                    if (c == '<')
                     {
-                        if (sb == null) sb = new StringBuilder(n + 16);
-                        sb.Append(text, copied, start - copied).Append(t);
-                        copied = end;
+                        int close = text.IndexOf('>', end);
+                        if (close > end && close - end <= 40) break;      // a rich text tag is not a word
                     }
+                    if (c >= '\u0400' && c <= '\u04FF') russian = true;
+                    end++;
                 }
-                i = end > start ? end : start + 1;
+                Stretch(text, i, end, russian, depth, ref sb, ref copied);
+                if (end >= n) break;
+                i = text[end] == '\n' ? end + 1 : text.IndexOf('>', end) + 1;
             }
             if (sb == null) return null;
             sb.Append(text, copied, n - copied);
             return sb.ToString();
+        }
+
+        [ThreadStatic] private static List<int> runStart;
+        [ThreadStatic] private static List<int> runEnd;
+        [ThreadStatic] private static List<string> runText;
+
+        /// <summary>One stretch of <see cref="Islands"/>: text[from..to), no tags and no line breaks inside.</summary>
+        private static void Stretch(string text, int from, int to, bool russian, int depth, ref StringBuilder sb, ref int copied)
+        {
+            List<int> starts = runStart ?? (runStart = new List<int>(8)), ends = runEnd ?? (runEnd = new List<int>(8));
+            List<string> found = runText ?? (runText = new List<string>(8));
+            starts.Clear(); ends.Clear(); found.Clear();
+            int n = text.Length, i = from;
+            bool any = false;
+            while (i < to)
+            {
+                char c = text[i];
+                if (!IsLatinLetter(c) || (i > 0 && IsWordChar(text[i - 1]))) { i++; continue; }
+                // a run: words that start with a letter, one space (or " & ", "/") between them
+                int start = i, end = i;
+                int j = i;
+                while (j < to)
+                {
+                    if (!IsLatinLetter(text[j])) break;
+                    // "Carry x3": how many times is not a part of the name
+                    if (j > start && text[j] == 'x' && j + 1 < to && IsDigit(text[j + 1])) break;
+                    while (j < to && (IsWordChar(text[j]) || ((text[j] == '\'' || text[j] == '-') && j + 1 < to && IsWordChar(text[j + 1])))) j++;
+                    end = j;
+                    if (j + 1 < to && (text[j] == ' ' || text[j] == '/') && IsLatinLetter(text[j + 1])) { j++; continue; }
+                    if (j + 3 < to && text[j] == ' ' && text[j + 1] == '&' && text[j + 2] == ' ' && IsLatinLetter(text[j + 3])) { j += 3; continue; }
+                    break;
+                }
+                if (end > start)
+                {
+                    string t = null;
+                    if (end - start >= 2 && !(start == 0 && end == n))
+                    {
+                        string run = text.Substring(start, end - start);
+                        t = Named(run) ?? Names(run);
+                    }
+                    // "Kill 15 monsters": nothing but a number between this run and the one before - one phrase, and not a known one
+                    if (starts.Count > 0 && OnlyNumber(text, ends[ends.Count - 1], start)) return;
+                    if (t == null && (!russian || !NameLike(text.Substring(start, end - start), true))) return;      // the rest of an English sentence
+                    if (t != null)
+                    {
+                        // "Убит Gorak: +50 XP": a number in front of the word - together they may be a phrase of their own («50 опыта»)
+                        int num = start;
+                        if (num > from && text[num - 1] == ' ') num--;
+                        int digits = num;
+                        while (digits > from && (IsDigit(text[digits - 1]) || ((text[digits - 1] == '.' || text[digits - 1] == ',' || text[digits - 1] == '\u00A0')
+                            && digits - 1 > from && IsDigit(text[digits - 2]) && digits < num && IsDigit(text[digits])))) digits--;
+                        if (digits < num && num < start && (digits == from || !IsWordChar(text[digits - 1])) && depth < MaxDepth)
+                        {
+                            string phrase = text.Substring(digits, end - digits);
+                            string counted = Sub(phrase, depth + 1);
+                            if (counted != null && !string.Equals(counted, phrase, StringComparison.Ordinal)) { start = digits; t = counted; }
+                        }
+                    }
+                    starts.Add(start); ends.Add(end); found.Add(t);
+                    if (t != null) any = true;
+                }
+                i = end > start ? end : start + 1;
+            }
+            if (!any) return;
+            for (int k = 0; k < starts.Count; k++)
+            {
+                if (found[k] == null) continue;
+                if (sb == null) sb = new StringBuilder(n + 16);
+                sb.Append(text, copied, starts[k] - copied).Append(found[k]);
+                copied = ends[k];
+            }
+        }
+
+        /// <summary>text[from..to) is a number with spaces around it and nothing else: "Kill" + " 15 " + "monsters".</summary>
+        private static bool OnlyNumber(string text, int from, int to)
+        {
+            bool digit = false;
+            for (int i = from; i < to; i++)
+            {
+                char c = text[i];
+                if (IsDigit(c)) digit = true;
+                else if (c != ' ' && c != '\u00A0' && !((c == '.' || c == ',') && i > from && IsDigit(text[i - 1]) && i + 1 < to && IsDigit(text[i + 1]))) return false;
+            }
+            return digit;
         }
 
         /// <summary>A rarity ("Rare", "Starter", "Cursed") in the form asked for; null when the word is not one of them.</summary>
@@ -840,6 +908,14 @@ namespace RepoRPG_RU
             if (tail > 2 && text[0] == '>' && text[1] == ' ') head = 2;        // "> BUY": the focused button
             while (head < tail && Peelable(text[head])) head++;
             while (tail > head && Peelable(text[tail - 1])) tail--;
+            // "(Spend 1,000 Scrap in the mod shop (all runs))": the inner bracket belongs to the text, only the outer one was added
+            int open = 0;
+            for (int i = head; i < tail; i++)
+            {
+                if (text[i] == '(') open++;
+                else if (text[i] == ')' && open > 0) open--;
+            }
+            while (open > 0 && tail < text.Length && text[tail] == ')') { tail++; open--; }
             // "x3: carried items take 8% less damage": how many points it takes, then a text of its own
             if (text.Length > 5 && text[0] == 'x' && text[1] >= '0' && text[1] <= '9')
             {
@@ -880,9 +956,10 @@ namespace RepoRPG_RU
             if (c <= ' ') return true;
             if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '<' || c == '>' || c == '{' || c == '}' || c == '%') return false;
             if (c < 0x80) return true;                       // ASCII punctuation
-            return c == '\u2022' || c == '\u00B7' || c == '\u2026' || c == '\u2192' || c == '\u2190' || c == '\u2191' || c == '\u2193'
-                || c == '\u25B6' || c == '\u25B8' || c == '\u25BA' || c == '\u2605' || c == '\u2013' || c == '\u2014' || c == '\u00D7'
-                || c == '\u2018' || c == '\u2019' || c == '\u201C' || c == '\u201D' || c == '\u00A0';
+            // arrows, squares and triangles, stars, check marks and crosses: "> FEATURED \u2716", "\u25B2 CAN ADD", "\u2605 CAPSTONE"
+            if ((c >= '\u2190' && c <= '\u21FF') || (c >= '\u25A0' && c <= '\u25FF') || (c >= '\u2600' && c <= '\u27BF')) return true;
+            return c == '\u2022' || c == '\u00B7' || c == '\u2026' || c == '\u2013' || c == '\u2014' || c == '\u00D7'
+                || c == '\u2018' || c == '\u2019' || c == '\u201C' || c == '\u201D' || c == '\u2039' || c == '\u203A' || c == '\u00A0';
         }
 
         private sealed class CaseEntry
@@ -1243,6 +1320,8 @@ namespace RepoRPG_RU
                     if (Numeric[k])
                     {
                         // a number has a digit and no letters: "more players" is not "{0} players", "kill XP" is not "{0} XP"
+                        // (and no blanks around it: in "</color> 3 cast" the space belongs to the line, not to the number)
+                        if (v.Length > 0 && (IsBlank(v[0]) || IsBlank(v[v.Length - 1]))) return null;
                         bool digit = false;
                         for (int q = 0; q < v.Length; q++)
                         {
@@ -1265,8 +1344,10 @@ namespace RepoRPG_RU
                         // mod's own. A short pattern may take it when - and only when - that text turns out to have a translation
                         // (a text with commas of its own passes when the dictionary has it exactly as it stands:
                         //  "Hit 3+ monsters with one Breach Charge, 2 times" + "  (3 / 4 at Hard / Brutal)")
-                        if (!Roomy[k] || k >= 30 || v.Length > 80 || Dropped[k]) return null;
-                        if (!Whole(v) && Exact(v) == null && (shapes == null || Shape(v) == null)) return null;
+                        // (a text the dictionary has letter for letter may be of any length: the description of a talent
+                        //  after "<b>Front Row</b> (replaces Ringside): ")
+                        if (!Roomy[k] || k >= 30 || Dropped[k]) return null;
+                        if ((v.Length > 80 || !Whole(v)) && Exact(v) == null && (shapes == null || Shape(v) == null)) return null;
                         owed |= 1 << k;
                     }
                     if (Kind[k] == Value)

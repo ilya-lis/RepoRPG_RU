@@ -122,6 +122,11 @@ msgctxt "data"
 msgid "Easy"
 msgstr "Легко"
 
+# the fake mod tests texts with StartsWith("Load too big"): in classes.json this stays English, perks.json is declared free
+msgctxt "data"
+msgid "Load too big to lift alone"
+msgstr "Груз, который не поднять одному"
+
 msgctxt "data"
 msgid "t0"
 msgstr "НЕЛЬЗЯ"

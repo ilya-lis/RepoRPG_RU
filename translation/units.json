@@ -39158,7 +39158,7 @@ null,
 },
 {
 "kind": "lit",
-"text": "You'll stop playing {0}. Your {0} progress (level {1}, ",
+"text": "You'll stop playing {0}. Your {1} progress (level {2}, ",
 "shape": "text",
 "group": "maybe",
 "first": 44798,
@@ -75534,7 +75534,7 @@ null
 },
 {
 "kind": "lit",
-"text": "{0} wants {1}: extract {2} ({3}/{2}) for +{4} {5} each",
+"text": "{0} wants {1}: extract {2} ({3}/{4}) for +{5} {6} each",
 "shape": "text",
 "group": "maybe",
 "first": 103677,

@@ -169,6 +169,10 @@ free "s ability cooldown per nearby kill"
 free "s Momentum hold after you stop"
 free "s ability cooldown per dodge"
 free "s Mark duration"
+# The paragraphs of the Guide are shown in the Guide and searched there - nothing else ever reads them. Without this line
+# "Chains are short stories..." would stay English: a method that draws the contract history looks for lines that start
+# with "Chain", and the patcher cannot know that a Guide paragraph never gets there.
+free-data "guide"
 
 # ---------------------------------------------------------------------------------------------------------
 # Generated from the source of RepoRPG 1.0.100 (tools/flow.py): how the mod's own methods use their text arguments.

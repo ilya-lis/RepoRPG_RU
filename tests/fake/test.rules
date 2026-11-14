@@ -34,6 +34,8 @@ protect "Gift"
 ignore "late join"
 # a stat line never reaches the StartsWith("s ") that sorts ability labels
 free "s Mark duration"
+# nothing in this data file ever reaches a wording test
+free-data "perks"
 
 [calls]
 Content::set_text

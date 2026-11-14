@@ -129,13 +129,12 @@ def scan(src):
             parts.append(''.join(cur))
             L.parts=parts; L.holes=holes; L.end=j+1
             L.raw=src[i:j+1]
-            # reconstructed composite-format string, numbering holes by distinct expr text in order of first appearance
-            idx={}; fs=[]
-            for p,(e,a,f) in zip(parts,holes):
+            # reconstructed composite-format string: the compiler numbers every hole in turn, also when the same expression
+            # stands in two of them ($"{a} and {a}" is "{0} and {1}" in the DLL)
+            fs=[]
+            for n,(p,(e,a,f)) in enumerate(zip(parts,holes)):
                 fs.append(p.replace('{','{{').replace('}','}}'))
-                key=e.strip()
-                if key not in idx: idx[key]=len(idx)
-                h='{'+str(idx[key])
+                h='{'+str(n)
                 if a: h+=','+a
                 if f: h+=':'+f
                 fs.append(h+'}')

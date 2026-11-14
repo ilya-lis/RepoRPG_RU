@@ -304,3 +304,49 @@ Champion: Regenerating  4 м	Чемпион: Регенерирующий  4 м
 12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Brutal  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 Scrap	12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Жестоко  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 лома
 12.11.2026  ·  <color=#ffd75a>WON</color>  ·  Brutal  ·  1 level, chapter 1  ·  streak 0  ·  2 bosses  ·  12 Scrap	12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Жестоко  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 лома
 12.11.2026  ·  Hard  ·  5 levels, chapter 2  ·  streak 3  ·  1 boss  ·  1,234 Scrap	12.11.2026  ·  Сложно  ·  уровней: 5, глава 2  ·  серия 3  ·  боссов: 1  ·  1,234 лома
+# 0.2.0 in the game (untranslated.txt of the first run with it), fixed in 0.2.1
+# a talent that replaces another one: the description after the colon may be of any length
+<b>Whisper Network</b> (replaces Loud Voice): teammates talking near you build Inspire (half speed); your voice no longer draws monsters	<b>Сеть шёпота</b> (заменяет «Громкий голос»): разговоры напарников рядом с вами копят Воодушевление (вдвое медленнее); ваш голос больше не привлекает монстров
+<b>Front Row</b> (replaces Ringside): Monsters fighting within 6m of you deal 40% more damage to each other (fights are still loud)	<b>Первый ряд</b> (заменяет «У ринга»): Монстры, дерущиеся в пределах 6 м от вас, наносят друг другу на 40% больше урона (драки по-прежнему шумные)
+<b>Courier's Pace</b> (replaces Sure-Footed): +8% sprint speed while you hold a small or medium valuable (the weakness stays: dispatched items hum, big ones can't go)	<b>Шаг курьера</b> (заменяет «Твёрдая поступь»): +8% к скорости бега, пока вы держите маленькую или среднюю ценность (слабость остаётся: отправляемые предметы гудят, большие отправить нельзя)
+<b>Сеть шёпота</b> (replaces Loud Voice): teammates talking near you build Inspire (half speed); your voice no longer draws monsters	<b>Сеть шёпота</b> (заменяет «Громкий голос»): разговоры напарников рядом с вами копят Воодушевление (вдвое медленнее); ваш голос больше не привлекает монстров
+# what a perk evolves into: the sentence is Russian already (replaced inside the code), the name, the "how" and the
+# effect come from the data; an owned perk shows its progress in a bracket
+<color=#ffb21e>Эволюционирует в Scholar:</color> <color=#9a9ca0>Earn 3,000 XP – +10% more XP</color>	<color=#ffb21e>Эволюционирует в Грамотей:</color> <color=#9a9ca0>Заработайте 3,000 опыта – ещё +10% опыта</color>
+<color=#ffb21e>Эволюционирует в Nosferatu:</color> <color=#9a9ca0>Kill 15 monsters (7/15) – weapon hits heal 1 HP more</color>	<color=#ffb21e>Эволюционирует в Носферату:</color> <color=#9a9ca0>Убейте 15 монстров (7/15) – удары оружием лечат ещё на 1 ОЗ</color>
+<color=#f08a2e>Эволюционирует в Warden Angel:</color> <color=#a3a6ad>Stay near teammates for 10 minutes (0/600) – the aura also gives 5% damage resistance</color>	<color=#f08a2e>Эволюционирует в Ангел-страж:</color> <color=#a3a6ad>Пробудьте рядом с напарниками 10 минут (0/600) – аура также даёт 5% сопротивления урону</color>
+<color=#ffd75a>Эволюция: also +10% grip strength</color>	<color=#ffd75a>Эволюция: а также +10% к силе хвата</color>
+<color=#ffd75a><b>Scholar</b></color> (from Quick Learner): +10% more XP	<color=#ffd75a><b>Грамотей</b></color> (из «Способный ученик»): ещё +10% опыта
+Эволюция! Pack Mule → Pack Horse: also +10% grip strength	Эволюция! Вьючный мул → Вьючная лошадь: а также +10% к силе хвата
+# a research node the mod shortens to the width of its card: the whole line is translated before it is measured
+T1  Cart Winch	T1  Лебёдка для тележки
+T0  Cart Winch	T0  Лебёдка для тележки
+T3  The Archivist	T3  Архивариус
+T2  Consumables II	T2  Расходники II
+# a cross, an arrow or a star around a caption
+> FEATURED ✖	> ВИТРИНА ✖
+Wishlist ✖	Список желаний ✖
+# the Guide: the threat curve, the first sentence of a perk on its card, a bracket with a bracket inside
+2 cleared: 0,0  ·  4 cleared: 1,1  ·  6 cleared: 2,6  ·  10 cleared: 4,7  ·  15 cleared: 6,7  ·  20 cleared: 8,4  ·  30 cleared: 10,8	2 ур.: 0,0  ·  4 ур.: 1,1  ·  6 ур.: 2,6  ·  10 ур.: 4,7  ·  15 ур.: 6,7  ·  20 ур.: 8,4  ·  30 ур.: 10,8
+Below 35% HP: +30% speed.	Ниже 35% ОЗ: +30% к скорости.
+Every run starts at Customer reputation in the mod shop  <color=#9a9ca0>(Spend 1,000 Scrap in the mod shop (all runs))</color>	Каждый забег начинается с репутацией «Клиент» в магазине мода  <color=#9a9ca0>(Потратьте 1,000 лома в магазине мода (за все забеги))</color>
+Каждый забег начинается с репутацией «Клиент» в магазине мода  <color=#a3a6ad>(Spend 1,000 Scrap in the mod shop (all runs))</color>	Каждый забег начинается с репутацией «Клиент» в магазине мода  <color=#a3a6ad>(Потратьте 1,000 лома в магазине мода (за все забеги))</color>
+# English left inside a Russian line: a name is replaced, a number and its word are one phrase, the rest of an English
+# sentence is never translated word by word
+Убит The Liquidator: +50 XP	Убит Ликвидатор: +50 опыта
+Награда: 1,500 XP и 20 Scrap	Награда: 1,500 опыта и 20 лома
+Цель: Kill 15 angry monsters	Цель: Kill 15 angry monsters
+Класс Medic занят игроком big bob	Класс Medic занят игроком big bob
+# texts the mod glues from pieces that have no words of their own, or keeps in an array
+3 completed	Выполнено: 3
+1 failed	Провалено: 1
+\n\n<color=#9a9ca0>Голоса:</color> 3 cast	\n\n<color=#9a9ca0>Голоса:</color> подано: 3
+follow off - clearing the way	следование выкл. - расчистка пути
+Голова: Bob 12 м ahead-right (выше)	Голова: Bob 12 м впереди справа (выше)
+Сторожевой пост: Gnome 14 м behind	Сторожевой пост: Gnome 14 м сзади
+$1,200  14m ahead-left	$1,200  14 м впереди слева
+$1,200  7m behind (ниже)	$1,200  7 м сзади (ниже)
+$900  3m здесь	$900  3 м здесь
+<b>A2 Inflation</b>  Цены в магазине мода +10%.  <color=#73ff66>пройдено</color>	<b>A2 Инфляция</b>  Цены в магазине мода +10%.  <color=#73ff66>пройдено</color>
+2 гнезда с 1 модулем, attunement, базовый параметр, crafting, слот и редкость	2 гнезда с 1 модулем, сонастройка, базовый параметр, крафт, слот и редкость
+Brass wants Art: extract 3 (1/3) for +25 Scrap each	Brass просит «Искусство»: извлеките 3 (1/3) - каждому +25 лома

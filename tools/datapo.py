@@ -95,6 +95,20 @@ def summary(text):
     return text
 
 
+SHORT = ('макс', 'мин', 'ур', 'сек', 'ок', 'см', 'др', 'напр', 'т', 'д', 'п', 'е')
+
+
+def first_sentence(text, russian=False):
+    """RpgRuntime::PerkSummaryLine: a perk card shows the description up to its first full stop ("Below 35% HP: +30% speed.
+    Also +15% weapon damage."). The mod looks for ". "; in Russian a full stop after «макс.» does not end the sentence."""
+    at = 0
+    while True:
+        i = text.find('. ', at)
+        if i <= 0: return text
+        if not (russian and re.search(r'(?:^|[^\w])(?:%s)$' % '|'.join(SHORT), text[:i])): return text[:i + 1]
+        at = i + 2
+
+
 def cap(s): return s[:1].upper() + s[1:]
 def low(s): return s if s[1:2].isupper() else s[:1].lower() + s[1:]         # the same rule as Loc.LowerFirst
 
@@ -236,6 +250,11 @@ def build(data_json, tsv_dir, known, problems, heads=None, things=None):
         if 'class' in kinds:
             se, sr = summary(en), summary(ru)
             if se != en: text(se, sr, where + ' (summary)')
+        if u['path'] == 'perks/desc':
+            se, sr = first_sentence(en), first_sentence(ru, True)
+            if se != en:
+                if sr == ru: problems.append('%s: the perk card shows the first sentence only; the translation has to be two sentences too' % where)
+                else: text(se, sr, where + ' (first sentence)')
         if 'passive' in kinds:
             i = en.lower().find('weakness:')
             if i >= 0:
