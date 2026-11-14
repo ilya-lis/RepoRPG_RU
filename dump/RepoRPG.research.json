@@ -1,0 +1,452 @@
+{
+ "version": 1,
+ "_about": "Research (1.0.70): the tree. tier 1-5 sets cost and levels (research.json costs/levels); requires: ids (a|b = either; * = every other project in the branch); scope lobby = the host's research decides it for everyone (or anyone's, Research/LobbyRule), you = your own. built = false: shown in the tree but can't be started yet (still in development).",
+ "costs": [
+  80,
+  150,
+  250,
+  350,
+  600
+ ],
+ "levels": [
+  2,
+  2,
+  3,
+  4,
+  5
+ ],
+ "branches": [
+  {
+   "id": "logistics",
+   "name": "Logistics"
+  },
+  {
+   "id": "economy",
+   "name": "Economy"
+  },
+  {
+   "id": "arsenal",
+   "name": "Arsenal"
+  },
+  {
+   "id": "exploration",
+   "name": "Exploration"
+  },
+  {
+   "id": "crew",
+   "name": "Crew"
+  }
+ ],
+ "projects": [
+  {
+   "id": "cart_winch",
+   "branch": "logistics",
+   "tier": 1,
+   "name": "Cart Winch",
+   "scope": "you",
+   "requires": [],
+   "unlock": "Look at a cart 3-10 m away and hold Interact (E) to reel it toward you (slowly; it stops if it hits something).",
+   "built": true
+  },
+  {
+   "id": "extraction_drill",
+   "branch": "logistics",
+   "tier": 2,
+   "name": "Extraction Drill",
+   "scope": "lobby",
+   "requires": [
+    "cart_winch"
+   ],
+   "unlock": "When every living player stands in an extraction zone, its countdown runs twice as fast.",
+   "built": true
+  },
+  {
+   "id": "recall_beacon",
+   "branch": "logistics",
+   "tier": 2,
+   "name": "Recall Beacon",
+   "scope": "you",
+   "requires": [
+    "cart_winch"
+   ],
+   "unlock": "Once per level, call the nearest empty cart to where you stand (Research tab, in a level).",
+   "built": true
+  },
+  {
+   "id": "trailer_hitch",
+   "branch": "logistics",
+   "tier": 3,
+   "name": "Trailer Hitch",
+   "scope": "lobby",
+   "requires": [
+    "extraction_drill"
+   ],
+   "unlock": "Push a cart into another to hitch them: pushing one tows the other. Yank them apart to unhitch.",
+   "built": true
+  },
+  {
+   "id": "twin_pads",
+   "branch": "logistics",
+   "tier": 3,
+   "name": "Twin Pads",
+   "scope": "you",
+   "requires": [
+    "recall_beacon"
+   ],
+   "unlock": "The Courier can put a second Drop Pad anywhere (Research tab, in a level). It counts like the one in the truck.",
+   "built": true
+  },
+  {
+   "id": "insulated_cart",
+   "branch": "logistics",
+   "tier": 4,
+   "name": "Insulated Cart",
+   "scope": "you",
+   "requires": [
+    "trailer_hitch|twin_pads"
+   ],
+   "unlock": "Once per level, mark the nearest cart (Research tab): its valuables lose no value from bumps while it stands still.",
+   "built": true
+  },
+  {
+   "id": "dumbwaiter",
+   "branch": "logistics",
+   "tier": 5,
+   "name": "Dumbwaiter",
+   "scope": "lobby",
+   "requires": [
+    "*"
+   ],
+   "unlock": "Every extraction point gets a chute: once per point, leave one valuable on it and it's sent straight to the open extraction.",
+   "built": true
+  },
+  {
+   "id": "price_board",
+   "branch": "economy",
+   "tier": 1,
+   "name": "Price Board",
+   "scope": "you",
+   "requires": [],
+   "unlock": "The shop's Research section shows next visit's featured deal, and that deal will be exactly that item.",
+   "built": true
+  },
+  {
+   "id": "haggling",
+   "branch": "economy",
+   "tier": 2,
+   "name": "Haggling",
+   "scope": "you",
+   "requires": [
+    "price_board"
+   ],
+   "unlock": "Once per shop visit, haggle one item: 50% chance it's 25% cheaper, 50% chance it's 10% dearer (that visit).",
+   "built": true
+  },
+  {
+   "id": "rotation_lock",
+   "branch": "economy",
+   "tier": 2,
+   "name": "Rotation Lock",
+   "scope": "you",
+   "requires": [
+    "price_board"
+   ],
+   "unlock": "Lock one more shop item (3 at most), and your first lock each shop visit is free.",
+   "built": true
+  },
+  {
+   "id": "archivist",
+   "branch": "economy",
+   "tier": 3,
+   "name": "The Archivist",
+   "scope": "lobby",
+   "requires": [
+    "haggling"
+   ],
+   "unlock": "A new contract giver whose contracts pay Research Data (samples, a full catalogue, specimens).",
+   "built": true
+  },
+  {
+   "id": "pawn_counter",
+   "branch": "economy",
+   "tier": 3,
+   "name": "Pawn Counter",
+   "scope": "lobby",
+   "requires": [
+    "rotation_lock"
+   ],
+   "unlock": "New shop section: pawn a gear item for 60% of its salvage, buy it back at 80% until the run ends.",
+   "built": true
+  },
+  {
+   "id": "futures",
+   "branch": "economy",
+   "tier": 4,
+   "name": "Futures",
+   "scope": "lobby",
+   "requires": [
+    "archivist|pawn_counter"
+   ],
+   "unlock": "New shop section: pay now for an item of a chosen rarity, delivered when the team clears the next milestone (one order per visit).",
+   "built": true
+  },
+  {
+   "id": "sponsors",
+   "branch": "economy",
+   "tier": 5,
+   "name": "Sponsors",
+   "scope": "lobby",
+   "requires": [
+    "*"
+   ],
+   "unlock": "At run start the team picks one of three sponsors; each sets a run-long side goal and pays Scrap and Data at the run's end.",
+   "built": true
+  },
+  {
+   "id": "modules2",
+   "branch": "arsenal",
+   "tier": 1,
+   "name": "Modules II",
+   "scope": "you",
+   "requires": [],
+   "unlock": "Three new modules can drop and be bought: Tracer (monsters you hit are marked for the team for 3 s), Spotter Lens (aim at a valuable to see its value) and Tether (items you let go float for 1 s).",
+   "built": true
+  },
+  {
+   "id": "consumables2",
+   "branch": "arsenal",
+   "tier": 2,
+   "name": "Consumables II",
+   "scope": "you",
+   "requires": [
+    "modules2"
+   ],
+   "unlock": "New shop consumables that go off on their own once per level: Smoke Canister (below 50% health, nearby monsters lose sight of you), Decoy Whistle (a monster gets close: a whistle draws monsters away) and Flash Charge (a monster gets very close: a flash stuns it).",
+   "built": true
+  },
+  {
+   "id": "behaviors2",
+   "branch": "arsenal",
+   "tier": 2,
+   "name": "Behaviors II",
+   "scope": "you",
+   "requires": [
+    "modules2"
+   ],
+   "unlock": "Four new behavior affixes can roll on your gear: Hasty, Momentum, Steady and Second Wind.",
+   "built": true
+  },
+  {
+   "id": "gun_bench",
+   "branch": "arsenal",
+   "tier": 3,
+   "name": "Gun Bench",
+   "scope": "you",
+   "requires": [
+    "consumables2"
+   ],
+   "unlock": "Shop service: fit a Suppressor (quiet shots), Scatter Choke (an extra pellet, wider spread) or Stock (less kick) to the guns you hold next level.",
+   "built": true
+  },
+  {
+   "id": "fusion_forge",
+   "branch": "arsenal",
+   "tier": 3,
+   "name": "Fusion Forge",
+   "scope": "you",
+   "requires": [
+    "behaviors2"
+   ],
+   "unlock": "Fuse three unequipped items of one slot and rarity into one item a rarity higher (shop Research section; not Uniques, cursed or starter items).",
+   "built": true
+  },
+  {
+   "id": "blueprints",
+   "branch": "arsenal",
+   "tier": 4,
+   "name": "Blueprint Archive",
+   "scope": "you",
+   "requires": [
+    "gun_bench|fusion_forge"
+   ],
+   "unlock": "Uniques you've found before can appear in your shop (one per visit).",
+   "built": true
+  },
+  {
+   "id": "prototype_lab",
+   "branch": "arsenal",
+   "tier": 5,
+   "name": "Prototype Lab",
+   "scope": "you",
+   "requires": [
+    "*"
+   ],
+   "unlock": "Each run, one prototype item with an effect only research gives (one of 6) appears in your shop.",
+   "built": true
+  },
+  {
+   "id": "sample_scanner",
+   "branch": "exploration",
+   "tier": 1,
+   "name": "Sample Scanner",
+   "scope": "you",
+   "requires": [],
+   "unlock": "Research samples within 25 m show as a ping on your screen.",
+   "built": true
+  },
+  {
+   "id": "new_hazards",
+   "branch": "exploration",
+   "tier": 2,
+   "name": "New Hazards",
+   "scope": "lobby",
+   "requires": [
+    "sample_scanner"
+   ],
+   "unlock": "Two map modifiers join the pool: Blackout (lights dimmed, monsters a little slower) and Supply Drop (a crate worth extra falls mid-level).",
+   "built": true
+  },
+  {
+   "id": "survey_drone",
+   "branch": "exploration",
+   "tier": 2,
+   "name": "Survey Drone",
+   "scope": "you",
+   "requires": [
+    "sample_scanner"
+   ],
+   "unlock": "Once per level (Research tab): a survey drone marks the valuables up to 22 m ahead of you for 10 s.",
+   "built": true
+  },
+  {
+   "id": "vault_cracking",
+   "branch": "exploration",
+   "tier": 3,
+   "name": "Vault Cracking",
+   "scope": "lobby",
+   "requires": [
+    "new_hazards"
+   ],
+   "unlock": "Some levels have a locked vault deep in the map: hold Interact on it for 6 s (monsters hear it) to crack it for more than double its value and Data.",
+   "built": true
+  },
+  {
+   "id": "nest_hunting",
+   "branch": "exploration",
+   "tier": 3,
+   "name": "Nest Hunting",
+   "scope": "lobby",
+   "requires": [
+    "survey_drone"
+   ],
+   "unlock": "Some levels have a Monster Nest: kill all its marked guards and the last one drops a nest core (Data when extracted).",
+   "built": true
+  },
+  {
+   "id": "expeditions",
+   "branch": "exploration",
+   "tier": 4,
+   "name": "Expeditions",
+   "scope": "lobby",
+   "requires": [
+    "vault_cracking|nest_hunting"
+   ],
+   "unlock": "A new route in the route vote: Expedition, with 40% more valuables, more monsters and twice the research samples.",
+   "built": true
+  },
+  {
+   "id": "anomaly_rooms",
+   "branch": "exploration",
+   "tier": 5,
+   "name": "Anomaly Rooms",
+   "scope": "lobby",
+   "requires": [
+    "*"
+   ],
+   "unlock": "Some maps have an anomaly deep inside: valuables float in low gravity around an anomaly sample worth a lot of Data.",
+   "built": true
+  },
+  {
+   "id": "boons2",
+   "branch": "crew",
+   "tier": 1,
+   "name": "Boons II",
+   "scope": "lobby",
+   "requires": [],
+   "unlock": "Four new run boons join the vote pool: Quick Study, Data Mine, Stockpile, Deep Pockets.",
+   "built": true
+  },
+  {
+   "id": "parallel_lab",
+   "branch": "crew",
+   "tier": 2,
+   "name": "Parallel Lab",
+   "scope": "you",
+   "requires": [
+    "boons2"
+   ],
+   "unlock": "Run two research projects at once.",
+   "built": true
+  },
+  {
+   "id": "spectator_uplink",
+   "branch": "crew",
+   "tier": 2,
+   "name": "Spectator Uplink",
+   "scope": "you",
+   "requires": [
+    "boons2"
+   ],
+   "unlock": "While dead, press your ability key to mark the monster or valuable the spectate view looks at, for the living team.",
+   "built": true
+  },
+  {
+   "id": "synergies2",
+   "branch": "crew",
+   "tier": 3,
+   "name": "Synergies II",
+   "scope": "lobby",
+   "requires": [
+    "spectator_uplink"
+   ],
+   "unlock": "Four new class-pair synergies: Iron Wall, Quick Patch, Study Group, Side Hustle.",
+   "built": true
+  },
+  {
+   "id": "gear_exchange",
+   "branch": "crew",
+   "tier": 3,
+   "name": "Gear Exchange",
+   "scope": "you",
+   "requires": [
+    "parallel_lab"
+   ],
+   "unlock": "Trade gear with a teammate in the shop's Research section: one item for one, both confirm.",
+   "built": true
+  },
+  {
+   "id": "crew_drills",
+   "branch": "crew",
+   "tier": 4,
+   "name": "Crew Drills",
+   "scope": "lobby",
+   "requires": [
+    "synergies2|gear_exchange"
+   ],
+   "unlock": "At each crew level the team votes one of three drills: a small team rule for the rest of the run.",
+   "built": true
+  },
+  {
+   "id": "lab_network",
+   "branch": "crew",
+   "tier": 5,
+   "name": "Lab Network",
+   "scope": "you",
+   "requires": [
+    "*"
+   ],
+   "unlock": "Run three research projects at once, and once per run borrow one personal unlock a teammate has researched (Research tab).",
+   "built": true
+  }
+ ]
+}

@@ -1,0 +1,803 @@
+{
+ "version": 1,
+ "milestones": [
+  {
+   "attr": "throw",
+   "at": 5,
+   "name": "Lob",
+   "desc": "Thrown items fly 10% farther.",
+   "effects": [
+    {
+     "stat": "ThrowStrength",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "throw",
+   "at": 10,
+   "name": "Heavy Toss",
+   "desc": "A thrown item that hits a monster stuns it for 0.5 s.",
+   "effects": [
+    {
+     "stat": "attr.throw_stun",
+     "value": 0.5
+    }
+   ]
+  },
+  {
+   "attr": "throw",
+   "at": 15,
+   "name": "Bullseye",
+   "desc": "Thrown valuables lose 25% less value when they land.",
+   "effects": [
+    {
+     "stat": "attr.bullseye",
+     "value": 25
+    }
+   ]
+  },
+  {
+   "attr": "weapon",
+   "at": 5,
+   "name": "First Strike",
+   "desc": "Your first weapon hit on each monster does +15% damage.",
+   "effects": [
+    {
+     "stat": "attr.first_strike",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "attr": "weapon",
+   "at": 10,
+   "name": "Finisher",
+   "desc": "+10% weapon damage to monsters under 30% health.",
+   "effects": [
+    {
+     "stat": "attr.finisher",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "weapon",
+   "at": 15,
+   "name": "Overpower",
+   "desc": "Weapon hits have +5% chance to stun.",
+   "effects": [
+    {
+     "stat": "StunOnHit",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "focus",
+   "at": 5,
+   "name": "Clear Head",
+   "desc": "Your first ability use each level comes back 1 s sooner.",
+   "effects": [
+    {
+     "stat": "attr.clear_head",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "attr": "focus",
+   "at": 10,
+   "name": "Second Thought",
+   "desc": "Your ability lasts 10% longer.",
+   "effects": [
+    {
+     "stat": "ActiveDuration",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "focus",
+   "at": 15,
+   "name": "Flow",
+   "desc": "Using your ability gives +5% move speed for 4 s.",
+   "effects": [
+    {
+     "stat": "attr.flow",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "vitality",
+   "at": 5,
+   "name": "Thick Skin",
+   "desc": "After a hit, the next hit within 3 s does 15% less.",
+   "effects": [
+    {
+     "stat": "attr.thick_skin",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "attr": "vitality",
+   "at": 10,
+   "name": "Second Breath",
+   "desc": "Below 20% health, +0.3 HP/s regen for 10 s (once per level).",
+   "effects": [
+    {
+     "stat": "attr.second_breath",
+     "value": 0.3
+    }
+   ]
+  },
+  {
+   "attr": "vitality",
+   "at": 15,
+   "name": "Bedrock",
+   "desc": "+5% max health.",
+   "effects": [
+    {
+     "stat": "MaxHealth",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "endurance",
+   "at": 5,
+   "name": "Pacer",
+   "desc": "+0.6 stamina/s while your stamina is recharging.",
+   "effects": [
+    {
+     "stat": "StaminaRegen",
+     "value": 0.6
+    }
+   ]
+  },
+  {
+   "attr": "endurance",
+   "at": 10,
+   "name": "Hauler's Lungs",
+   "desc": "Carrying drains 10% less stamina.",
+   "effects": [
+    {
+     "stat": "HoldingStaminaDrain",
+     "value": -10
+    }
+   ]
+  },
+  {
+   "attr": "endurance",
+   "at": 15,
+   "name": "Marathon",
+   "desc": "+10% max stamina.",
+   "effects": [
+    {
+     "stat": "MaxStamina",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "agility",
+   "at": 5,
+   "name": "Sidestep",
+   "desc": "After you dodge a hit, +20% move speed for 2 s.",
+   "effects": [
+    {
+     "stat": "attr.sidestep",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "attr": "agility",
+   "at": 10,
+   "name": "Quick Feet",
+   "desc": "Crouch-walk 10% faster.",
+   "effects": [
+    {
+     "stat": "CrouchSpeed",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "agility",
+   "at": 15,
+   "name": "Slippery",
+   "desc": "+4% chance to slip out of a hit (dodge).",
+   "effects": [
+    {
+     "stat": "DodgeChance",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "attr": "leap",
+   "at": 5,
+   "name": "Spring",
+   "desc": "Damage while you're tumbling (falls, knockbacks) is 25% lower.",
+   "effects": [
+    {
+     "stat": "attr.spring",
+     "value": 25
+    }
+   ]
+  },
+  {
+   "attr": "leap",
+   "at": 10,
+   "name": "Vault",
+   "desc": "+5% jump force while carrying.",
+   "effects": [
+    {
+     "stat": "attr.vault",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "leap",
+   "at": 15,
+   "name": "Feather Fall",
+   "desc": "Once per level, a fall off the level leaves you at 10 HP instead of killing you.",
+   "effects": [
+    {
+     "stat": "attr.feather",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "grip",
+   "at": 5,
+   "name": "Firm Hold",
+   "desc": "+10% grip for 3 s after you're hit, and hits can't make you drop things (Butter Hands).",
+   "effects": [
+    {
+     "stat": "attr.firm_hold",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "grip",
+   "at": 10,
+   "name": "Steady Carry",
+   "desc": "Held items swing 20% less.",
+   "effects": [
+    {
+     "stat": "attr.steady",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "attr": "grip",
+   "at": 15,
+   "name": "Iron Hands",
+   "desc": "+5% grip strength.",
+   "effects": [
+    {
+     "stat": "GrabStrength",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "reach",
+   "at": 5,
+   "name": "Long Arm",
+   "desc": "+5% grab range.",
+   "effects": [
+    {
+     "stat": "GrabRange",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "reach",
+   "at": 10,
+   "name": "Snatch",
+   "desc": "+5% more grab range.",
+   "effects": [
+    {
+     "stat": "GrabRange",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "reach",
+   "at": 15,
+   "name": "Reel In",
+   "desc": "Items you grab can't break for 1.5 s while you pull them in.",
+   "effects": [
+    {
+     "stat": "attr.reel_in",
+     "value": 1.5
+    }
+   ]
+  },
+  {
+   "attr": "finesse",
+   "at": 5,
+   "name": "Soft Touch",
+   "desc": "Carried valuables take 10% less impact damage.",
+   "effects": [
+    {
+     "stat": "HeldItemProtection",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "finesse",
+   "at": 10,
+   "name": "Careful",
+   "desc": "The first impact on a carried valuable each level costs no value.",
+   "effects": [
+    {
+     "stat": "attr.careful",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "attr": "finesse",
+   "at": 15,
+   "name": "Artisan",
+   "desc": "Valuables you set down gently (a slow release) can't break for 1.5 s.",
+   "effects": [
+    {
+     "stat": "attr.artisan",
+     "value": 1.5
+    }
+   ]
+  },
+  {
+   "attr": "stealth",
+   "at": 5,
+   "name": "Hush",
+   "desc": "5% less noise.",
+   "effects": [
+    {
+     "stat": "NoiseReduction",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "stealth",
+   "at": 10,
+   "name": "Low Profile",
+   "desc": "Crouching cuts your noise by a further 10%.",
+   "effects": [
+    {
+     "stat": "attr.crouch_noise",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "stealth",
+   "at": 15,
+   "name": "Ghosting",
+   "desc": "Crouching still for 2 s makes nearby monsters lose your trail for 3 s (once per 30 s).",
+   "effects": [
+    {
+     "stat": "attr.ghosting",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "attr": "recovery",
+   "at": 5,
+   "name": "Patch Up",
+   "desc": "Revived teammates near you take 15% less damage for 4 s.",
+   "effects": [
+    {
+     "stat": "attr.patch_up",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "attr": "recovery",
+   "at": 10,
+   "name": "Bounce Back",
+   "desc": "After you're revived, +10% move speed for 5 s.",
+   "effects": [
+    {
+     "stat": "attr.bounce_back",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "attr": "recovery",
+   "at": 15,
+   "name": "Resilient",
+   "desc": "Regen starts 1 s sooner after a hit.",
+   "effects": [
+    {
+     "stat": "attr.resilient",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "attr": "fortune",
+   "at": 5,
+   "name": "Lucky Find",
+   "desc": "+3% gear find on extraction.",
+   "effects": [
+    {
+     "stat": "GearFind",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "attr": "fortune",
+   "at": 10,
+   "name": "Windfall",
+   "desc": "5% chance to double your Scrap from a single extraction.",
+   "effects": [
+    {
+     "stat": "attr.windfall",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "attr": "fortune",
+   "at": 15,
+   "name": "Golden Touch",
+   "desc": "+1 gear luck.",
+   "effects": [
+    {
+     "stat": "GearLuck",
+     "value": 1
+    }
+   ]
+  }
+ ],
+ "pairings": [
+  {
+   "id": "guided",
+   "a": "throw",
+   "b": "reach",
+   "at": 8,
+   "name": "Guided Throw",
+   "desc": "Thrown objects curve slightly toward where you face.",
+   "effects": [
+    {
+     "stat": "attr.guided",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "second_engine",
+   "a": "vitality",
+   "b": "endurance",
+   "at": 8,
+   "name": "Second Engine",
+   "desc": "Below 40% health, +1.5 stamina/s.",
+   "effects": [
+    {
+     "stat": "attr.second_engine",
+     "value": 1.5
+    }
+   ]
+  },
+  {
+   "id": "shadow_runner",
+   "a": "agility",
+   "b": "stealth",
+   "at": 8,
+   "name": "Shadow Runner",
+   "desc": "Sprinting makes 15% less noise.",
+   "effects": [
+    {
+     "stat": "attr.sprint_noise",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "id": "porter",
+   "a": "grip",
+   "b": "finesse",
+   "at": 8,
+   "name": "Porter",
+   "desc": "When you're hit, the valuable you hold can't break for 1 s.",
+   "effects": [
+    {
+     "stat": "attr.porter",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "battle_rhythm",
+   "a": "weapon",
+   "b": "focus",
+   "at": 8,
+   "name": "Battle Rhythm",
+   "desc": "Each kill near you takes 1 s off your ability cooldown (once per 5 s).",
+   "effects": [
+    {
+     "stat": "attr.rhythm",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "parkour",
+   "a": "leap",
+   "b": "agility",
+   "at": 8,
+   "name": "Parkour",
+   "desc": "Landing from a jump gives +10% move speed for 1.5 s.",
+   "effects": [
+    {
+     "stat": "attr.parkour",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "lifeblood",
+   "a": "recovery",
+   "b": "vitality",
+   "at": 8,
+   "name": "Lifeblood",
+   "desc": "Revives you take part in give you 10 HP.",
+   "effects": [
+    {
+     "stat": "attr.lifeblood",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "prospector",
+   "a": "fortune",
+   "b": "reach",
+   "at": 8,
+   "name": "Prospector's Eye",
+   "desc": "Valuables within 4 m of you show their rarity colour.",
+   "effects": [
+    {
+     "stat": "attr.prospector",
+     "value": 4
+    }
+   ]
+  }
+ ],
+ "affinity": [
+  {
+   "class": "juggernaut",
+   "attrs": [
+    "vitality",
+    "grip"
+   ]
+  },
+  {
+   "class": "medic",
+   "attrs": [
+    "recovery",
+    "focus"
+   ]
+  },
+  {
+   "class": "scout",
+   "attrs": [
+    "agility",
+    "leap",
+    "endurance"
+   ]
+  },
+  {
+   "class": "hauler",
+   "attrs": [
+    "grip",
+    "endurance",
+    "finesse"
+   ]
+  },
+  {
+   "class": "brute",
+   "attrs": [
+    "weapon",
+    "throw"
+   ]
+  },
+  {
+   "class": "engineer",
+   "attrs": [
+    "endurance",
+    "focus"
+   ]
+  },
+  {
+   "class": "phantom",
+   "attrs": [
+    "stealth",
+    "agility"
+   ]
+  },
+  {
+   "class": "survivor",
+   "attrs": [
+    "vitality",
+    "recovery"
+   ]
+  },
+  {
+   "class": "appraiser",
+   "attrs": [
+    "fortune",
+    "reach"
+   ]
+  },
+  {
+   "class": "warden",
+   "attrs": [
+    "weapon",
+    "vitality"
+   ]
+  },
+  {
+   "class": "herald",
+   "attrs": [
+    "focus",
+    "recovery"
+   ]
+  },
+  {
+   "class": "mimic",
+   "attrs": [
+    "focus",
+    "agility"
+   ]
+  },
+  {
+   "class": "undertaker",
+   "attrs": [
+    "recovery",
+    "grip"
+   ]
+  },
+  {
+   "class": "cartwright",
+   "attrs": [
+    "grip",
+    "endurance"
+   ]
+  },
+  {
+   "class": "physicist",
+   "attrs": [
+    "throw",
+    "reach"
+   ]
+  },
+  {
+   "class": "trickster",
+   "attrs": [
+    "stealth",
+    "throw"
+   ]
+  },
+  {
+   "class": "demolitionist",
+   "attrs": [
+    "throw",
+    "vitality"
+   ]
+  },
+  {
+   "class": "quartermaster",
+   "attrs": [
+    "endurance",
+    "fortune"
+   ]
+  },
+  {
+   "class": "gambler",
+   "attrs": [
+    "fortune",
+    "focus"
+   ]
+  },
+  {
+   "class": "bloodbound",
+   "attrs": [
+    "vitality",
+    "weapon"
+   ]
+  },
+  {
+   "class": "instigator",
+   "attrs": [
+    "focus",
+    "throw"
+   ]
+  },
+  {
+   "class": "ventriloquist",
+   "attrs": [
+    "stealth",
+    "focus"
+   ]
+  },
+  {
+   "class": "restorer",
+   "attrs": [
+    "finesse",
+    "grip"
+   ]
+  },
+  {
+   "class": "scavenger",
+   "attrs": [
+    "fortune",
+    "reach",
+    "finesse"
+   ]
+  },
+  {
+   "class": "insurer",
+   "attrs": [
+    "finesse",
+    "fortune"
+   ]
+  },
+  {
+   "class": "lookout",
+   "attrs": [
+    "reach",
+    "leap"
+   ]
+  },
+  {
+   "class": "gunsmith",
+   "attrs": [
+    "weapon",
+    "focus"
+   ]
+  },
+  {
+   "class": "shepherd",
+   "attrs": [
+    "stealth",
+    "recovery"
+   ]
+  },
+  {
+   "class": "grappler",
+   "attrs": [
+    "reach",
+    "leap",
+    "agility"
+   ]
+  },
+  {
+   "class": "courier",
+   "attrs": [
+    "agility",
+    "finesse"
+   ]
+  }
+ ]
+}

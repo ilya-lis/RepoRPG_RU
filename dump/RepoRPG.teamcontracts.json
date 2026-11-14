@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "contracts": [
+    { "id": "clean_hands", "name": "Clean Hands", "goal": "Extract {t} valuables without breaking any valuable", "target": 3,
+      "scrap": 40, "parts": [0, 2, 0, 0], "gear": -1, "attr": 0, "loss": 15, "curse": "" },
+    { "id": "deathless", "name": "Deathless", "goal": "Nobody dies this level", "target": 1,
+      "scrap": 0, "parts": [0, 0, 1, 0], "gear": -1, "attr": 1, "loss": 20, "curse": "" },
+    { "id": "pacifist", "name": "Pacifist", "goal": "Finish the level with no monster kills", "target": 1,
+      "scrap": 30, "parts": [0, 2, 0, 0], "gear": -1, "attr": 0, "loss": 0, "curse": "Exposed" },
+    { "id": "big_haul", "name": "Big Haul", "goal": "Haul at least {t}% of the level's goal", "target": 130,
+      "scrap": 0, "parts": [0, 0, 0, 0], "gear": 3, "attr": 0, "loss": 0, "curse": "Fragile" },
+    { "id": "blitz", "name": "Blitz", "goal": "Finish every extraction within {t} min", "target": 6,
+      "scrap": 50, "parts": [3, 0, 0, 0], "gear": -1, "attr": 0, "loss": 15, "curse": "" },
+    { "id": "elite_purge", "name": "Elite Purge", "goal": "Kill {t} elites", "target": 3,
+      "scrap": 0, "parts": [0, 0, 1, 0], "gear": 3, "attr": 0, "loss": 0, "curse": "Marked" },
+    { "id": "boss_bounty", "name": "Boss Bounty", "goal": "Kill the boss within {t} min of it appearing", "target": 4, "bossOnly": true,
+      "scrap": 0, "parts": [0, 0, 0, 0], "gear": 4, "attr": 0, "loss": 0, "curse": "Drained" },
+    { "id": "heavy_lifting", "name": "Heavy Lifting", "goal": "Carry one valuable worth ${t} or more into an extraction", "target": 5000,
+      "scrap": 40, "parts": [0, 2, 0, 0], "gear": -1, "attr": 0, "loss": 10, "curse": "" }
+  ],
+  "curses": [
+    { "id": "Fragile", "desc": "Valuables take 25% more break damage" },
+    { "id": "Exposed", "desc": "Monsters notice the team 25% faster" },
+    { "id": "Marked", "desc": "Elite chance +15%" },
+    { "id": "Drained", "desc": "Ability cooldowns 20% longer" }
+  ]
+}

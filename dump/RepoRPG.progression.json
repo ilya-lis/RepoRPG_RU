@@ -1,0 +1,235 @@
+{
+ "version": 1,
+ "unlocks": [
+  {
+   "id": "title_rookie",
+   "name": "Title: Rookie",
+   "kind": "title",
+   "title": "Rookie",
+   "gives": "Title shown by your name",
+   "how": "Finish 1 level",
+   "counter": "levels",
+   "target": 1
+  },
+  {
+   "id": "title_veteran",
+   "name": "Title: Veteran",
+   "kind": "title",
+   "title": "Veteran",
+   "gives": "Title shown by your name",
+   "how": "Finish 25 levels in total",
+   "counter": "levels",
+   "target": 25
+  },
+  {
+   "id": "title_bossslayer",
+   "name": "Title: Boss Slayer",
+   "kind": "title",
+   "title": "Boss Slayer",
+   "gives": "Title shown by your name",
+   "how": "Kill 5 bosses",
+   "counter": "bosses",
+   "target": 5
+  },
+  {
+   "id": "title_teamplayer",
+   "name": "Title: Team Player",
+   "kind": "title",
+   "title": "Team Player",
+   "gives": "Title shown by your name",
+   "how": "Earn 10 end-of-level highlights",
+   "counter": "highlights",
+   "target": 10
+  },
+  {
+   "id": "title_specialist",
+   "name": "Title: Specialist",
+   "kind": "title",
+   "title": "Specialist",
+   "gives": "Title shown by your name",
+   "how": "Master 3 classes",
+   "counter": "mastered",
+   "target": 3
+  },
+  {
+   "id": "title_grandmaster",
+   "name": "Title: Grandmaster",
+   "kind": "title",
+   "title": "Grandmaster",
+   "gives": "Title shown by your name",
+   "how": "Master 15 classes",
+   "counter": "mastered",
+   "target": 15
+  },
+  {
+   "id": "title_highroller",
+   "name": "Title: High Roller",
+   "kind": "title",
+   "title": "High Roller",
+   "gives": "Title shown by your name",
+   "how": "Finish a level on Brutal or harder",
+   "counter": "brutal",
+   "target": 1
+  },
+  {
+   "id": "wider_pick",
+   "name": "Wider pick",
+   "kind": "perk",
+   "title": "",
+   "gives": "4 perks to choose from instead of 3",
+   "how": "Reach level 20 with any class",
+   "counter": "maxlevel",
+   "target": 20
+  },
+  {
+   "id": "second_opinion",
+   "name": "Second opinion",
+   "kind": "reroll",
+   "title": "",
+   "gives": "1 free perk reroll per run",
+   "how": "Earn 5 perk picks in one run",
+   "counter": "runpicks",
+   "target": 5
+  },
+  {
+   "id": "contract_board",
+   "name": "Contract board",
+   "kind": "contract",
+   "title": "",
+   "gives": "+1 offer on your contract board",
+   "how": "Complete 50 contracts in total",
+   "counter": "contracts",
+   "target": 50
+  },
+  {
+   "id": "contractors_license",
+   "name": "Contractor's License",
+   "kind": "contract",
+   "title": "",
+   "gives": "+1 contract slot (take one more contract into each level)",
+   "how": "Complete 30 contracts in total",
+   "counter": "contracts",
+   "target": 30
+  },
+  {
+   "id": "starter_kit",
+   "name": "Starter kit",
+   "kind": "starter_gear",
+   "title": "",
+   "gives": "Start each run with a random Uncommon item",
+   "how": "Salvage 100 items in total",
+   "counter": "salvages",
+   "target": 100
+  },
+  {
+   "id": "seed_money",
+   "name": "Seed money",
+   "kind": "starter_scrap",
+   "title": "",
+   "gives": "Start each run with 15 Scrap",
+   "how": "Earn 2,000 Scrap in total",
+   "counter": "scrap",
+   "target": 2000
+  },
+  {
+   "id": "field_kit",
+   "name": "Field kit",
+   "kind": "starter_parts",
+   "title": "",
+   "gives": "Start each run with 3 Sinew and 1 Core Shard",
+   "how": "Craft 25 times in total",
+   "counter": "crafts",
+   "target": 25
+  },
+  {
+   "id": "alt_colours",
+   "name": "Class colours: Alt",
+   "kind": "cosmetic",
+   "title": "",
+   "gives": "An alternate menu colour for each mastered class",
+   "how": "Master any class",
+   "counter": "mastered",
+   "target": 1
+  },
+  {
+   "id": "gold_frame",
+   "name": "HUD frame: Gold",
+   "kind": "cosmetic",
+   "title": "",
+   "gives": "A gold frame on your class HUD block",
+   "how": "Win 10 team contracts",
+   "counter": "teamwins",
+   "target": 10
+  },
+  {
+   "id": "flare_callout",
+   "name": "Call-out: Flare",
+   "kind": "cosmetic",
+   "title": "",
+   "gives": "Your call-out ring is a bright flare",
+   "how": "Revive 30 teammates in total",
+   "counter": "revives",
+   "target": 30
+  },
+  {
+   "id": "loyalty_card",
+   "name": "Loyalty Card",
+   "kind": "shop",
+   "title": "",
+   "gives": "Every run starts at Customer reputation in the mod shop",
+   "how": "Spend 1,000 Scrap in the mod shop (all runs)",
+   "counter": "shopspent",
+   "target": 1000
+  },
+  {
+   "id": "title_ascended",
+   "name": "Title: Ascended",
+   "kind": "title",
+   "title": "Ascended",
+   "gives": "Title shown by your name",
+   "how": "Win a run at Ascension 1",
+   "counter": "ascension",
+   "target": 1
+  },
+  {
+   "id": "title_ascendant",
+   "name": "Title: Ascendant",
+   "kind": "title",
+   "title": "Ascendant",
+   "gives": "Title shown by your name",
+   "how": "Win a run at Ascension 5",
+   "counter": "ascension",
+   "target": 5
+  },
+  {
+   "id": "title_exalted",
+   "name": "Title: Exalted",
+   "kind": "title",
+   "title": "Exalted",
+   "gives": "Title shown by your name",
+   "how": "Win a run at Ascension 10",
+   "counter": "ascension",
+   "target": 10
+  },
+  {
+   "id": "title_transcendent",
+   "name": "Title: Transcendent",
+   "kind": "title",
+   "title": "Transcendent",
+   "gives": "Title shown by your name",
+   "how": "Win a run at Ascension 15",
+   "counter": "ascension",
+   "target": 15
+  },
+  {
+   "id": "title_apex",
+   "name": "Title: Apex",
+   "kind": "title",
+   "title": "Apex",
+   "gives": "Title shown by your name",
+   "how": "Win a run at Ascension 20",
+   "counter": "ascension",
+   "target": 20
+  }
+ ]
+}

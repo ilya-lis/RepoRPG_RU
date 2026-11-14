@@ -1,0 +1,1102 @@
+{
+  "version": 1,
+  "givers": [
+    {
+      "id": "brass",
+      "name": "Madame Brass",
+      "title": "the Collector",
+      "mono": "MB",
+      "color": "#e0b048",
+      "theme": "Rare valuables, careful hauls",
+      "offer": [
+        "Bring it back in one piece, darling. Pieces are worth less.",
+        "I only collect the beautiful ones. Find me one.",
+        "Money is vulgar. Valuables are art."
+      ],
+      "accept": [
+        "Splendid. Do try not to sneeze on it.",
+        "I knew you had taste.",
+        "Gloves on, darling."
+      ],
+      "done": [
+        "Exquisite. It goes on the mantel.",
+        "You may kiss the ring. Metaphorically.",
+        "My collection thanks you."
+      ],
+      "fail": [
+        "Disappointing. Like a fake Fabergé.",
+        "I'll pretend this never happened.",
+        "Darling. No."
+      ]
+    },
+    {
+      "id": "kaboom",
+      "name": "Kaboom & Sons",
+      "title": "Demolition",
+      "mono": "KS",
+      "color": "#ff7a3c",
+      "theme": "Monsters, elites, bosses",
+      "offer": [
+        "We don't do subtle. We do thorough.",
+        "Dad says hit it until it stops moving.",
+        "Family business since the first explosion."
+      ],
+      "accept": [
+        "That's the spirit! Mind the shrapnel.",
+        "Sons! We've got a live one!",
+        "Earplugs are in the truck."
+      ],
+      "done": [
+        "Beautiful mess. Dad's proud.",
+        "Now THAT'S demolition.",
+        "We'll frame the crater."
+      ],
+      "fail": [
+        "Not even a dent? Really?",
+        "Dad's not mad. Just loud.",
+        "Back to the quarry with you."
+      ]
+    },
+    {
+      "id": "hollis",
+      "name": "Hollis Underwood",
+      "title": "Insurance Broker",
+      "mono": "HU",
+      "color": "#6fb7ff",
+      "theme": "No deaths, no damage, no breakage",
+      "offer": [
+        "Risk is a four-letter word. Well. It's a word.",
+        "Read the fine print. Then read it again.",
+        "Accidents are just unpriced events."
+      ],
+      "accept": [
+        "Signed in triplicate. Excellent.",
+        "Your premium is... manageable.",
+        "Try to stay in one piece. Contractually."
+      ],
+      "done": [
+        "No claims! I may frame the form.",
+        "A spotless record. Delicious.",
+        "Actuarially speaking, you're a delight."
+      ],
+      "fail": [
+        "That will raise your premium.",
+        "I'm filing this under 'regrettable'.",
+        "Please sign the incident report."
+      ]
+    },
+    {
+      "id": "dispatch",
+      "name": "Dispatch",
+      "title": "the Courier Union",
+      "mono": "D",
+      "color": "#7ddc6a",
+      "theme": "Speed, extractions, getting home",
+      "offer": [
+        "Time is money. You're wasting both.",
+        "Route's mapped. Clock's running.",
+        "The Union delivers. So do you."
+      ],
+      "accept": [
+        "Logged. Go go go.",
+        "Clock in, semibot.",
+        "Dispatch out."
+      ],
+      "done": [
+        "On time. The Union salutes you.",
+        "Signed, sealed, delivered.",
+        "That's a bonus on the time sheet."
+      ],
+      "fail": [
+        "Late. The Union remembers.",
+        "Missed the window. Again.",
+        "Union rule 1: don't be late."
+      ]
+    },
+    {
+      "id": "auditor",
+      "name": "The Auditor",
+      "title": "the Accountant of Last Resort",
+      "mono": "AU",
+      "color": "#9ad0ff",
+      "theme": "High stakes, high pay - and a fine if you fail",
+      "offer": [
+        "Every figure checked twice. Every failure invoiced.",
+        "The pay is generous. The penalty clause is too.",
+        "Sign here. And here. And initial the fine print."
+      ],
+      "accept": [
+        "Noted. Don't make me write a correction.",
+        "The clock and I are both watching.",
+        "Your signature is binding."
+      ],
+      "done": [
+        "The books balance. Remarkable.",
+        "Paid in full. I'm almost impressed.",
+        "Filed under 'acceptable'."
+      ],
+      "fail": [
+        "Invoiced. With interest.",
+        "The penalty clause applies.",
+        "I'll deduct it from your account."
+      ]
+    },
+    {
+      "id": "archivist",
+      "name": "The Archivist",
+      "title": "Keeper of the Research Archive",
+      "mono": "AR",
+      "color": "#40f2d9",
+      "theme": "Research samples and specimens. Pays in Research Data",
+      "offer": [
+        "Knowledge is the only currency that keeps.",
+        "Bring me something I have not catalogued.",
+        "Samples, specimens, notes. Mind the glass."
+      ],
+      "accept": [
+        "Catalogue number assigned.",
+        "Handle the canisters gently.",
+        "I will prepare a shelf."
+      ],
+      "done": [
+        "Filed, indexed and cross-referenced.",
+        "The archive grows. Thank you.",
+        "A fine specimen. Your Data is sent."
+      ],
+      "fail": [
+        "An empty shelf. A pity.",
+        "The record will show nothing.",
+        "We will try again next time."
+      ]
+    }
+  ],
+  "teamGivers": [
+    {
+      "id": "clean_hands",
+      "giver": "hollis"
+    },
+    {
+      "id": "deathless",
+      "giver": "hollis"
+    },
+    {
+      "id": "pacifist",
+      "giver": "dispatch"
+    },
+    {
+      "id": "big_haul",
+      "giver": "brass"
+    },
+    {
+      "id": "blitz",
+      "giver": "dispatch"
+    },
+    {
+      "id": "elite_purge",
+      "giver": "kaboom"
+    },
+    {
+      "id": "boss_bounty",
+      "giver": "kaboom"
+    },
+    {
+      "id": "heavy_lifting",
+      "giver": "brass"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "exterminate",
+      "name": "Exterminate",
+      "kind": "personal",
+      "giver": "kaboom",
+      "obj": "kill",
+      "targets": [
+        5,
+        8,
+        12
+      ],
+      "desc": "Kill {t} monsters near you",
+      "bonus": "nosave",
+      "bonusDesc": "No death saves used"
+    },
+    {
+      "id": "elite_hunter",
+      "name": "Elite Hunter",
+      "kind": "personal",
+      "giver": "kaboom",
+      "obj": "elite",
+      "targets": [
+        1,
+        2,
+        3
+      ],
+      "desc": "Kill {t} elite{s}",
+      "bonus": "within",
+      "bonusArg": 5,
+      "bonusDesc": "Within 5 min of the level starting"
+    },
+    {
+      "id": "demolition_day",
+      "name": "Demolition Day",
+      "kind": "personal",
+      "giver": "kaboom",
+      "obj": "killburst",
+      "targets": [
+        3,
+        4,
+        6
+      ],
+      "desc": "Kill {t} monsters within 30 s"
+    },
+    {
+      "id": "haul",
+      "name": "Haul",
+      "kind": "personal",
+      "giver": "dispatch",
+      "obj": "extract",
+      "targets": [
+        3,
+        5,
+        7
+      ],
+      "desc": "Complete {t} extraction points (fewer if the level has fewer)",
+      "bonus": "within",
+      "bonusArg": 8,
+      "bonusDesc": "Done within 8 min"
+    },
+    {
+      "id": "speedrun",
+      "name": "Speedrun",
+      "kind": "personal",
+      "giver": "dispatch",
+      "obj": "speed",
+      "targets": [
+        10,
+        8,
+        6
+      ],
+      "desc": "Finish the level within {t} min",
+      "bonus": "nodeath",
+      "bonusDesc": "Nobody in the team dies"
+    },
+    {
+      "id": "express_delivery",
+      "name": "Express Delivery",
+      "kind": "personal",
+      "giver": "dispatch",
+      "obj": "carry",
+      "targets": [
+        3,
+        5,
+        8
+      ],
+      "desc": "Carry {t} valuable{s} into extractions",
+      "bonus": "within",
+      "bonusArg": 8,
+      "bonusDesc": "Done within 8 min"
+    },
+    {
+      "id": "specialist",
+      "name": "Specialist",
+      "kind": "personal",
+      "giver": "dispatch",
+      "obj": "ability",
+      "targets": [
+        5,
+        8,
+        12
+      ],
+      "desc": "Use your ability {t} times"
+    },
+    {
+      "id": "clean_delivery",
+      "name": "Clean Delivery",
+      "kind": "personal",
+      "giver": "hollis",
+      "obj": "cleancarry",
+      "targets": [
+        3,
+        5,
+        8
+      ],
+      "desc": "Carry {t} valuable{s} into extractions without them losing value"
+    },
+    {
+      "id": "unscathed",
+      "name": "Unscathed",
+      "kind": "personal",
+      "giver": "hollis",
+      "obj": "unscathed",
+      "targets": [
+        40,
+        25,
+        10
+      ],
+      "desc": "Take less than {t} damage this level",
+      "bonus": "nodamage",
+      "bonusDesc": "No damage at all"
+    },
+    {
+      "id": "rescue",
+      "name": "Rescue",
+      "kind": "personal",
+      "giver": "hollis",
+      "obj": "revive",
+      "targets": [
+        1,
+        2,
+        3
+      ],
+      "mp": true,
+      "desc": "Revive {t} teammate{s}",
+      "bonus": "fastrevive",
+      "bonusDesc": "One within 10 s of them going down"
+    },
+    {
+      "id": "fine_taste",
+      "name": "Fine Taste",
+      "kind": "personal",
+      "giver": "brass",
+      "obj": "rarecarry",
+      "targets": [
+        1,
+        2,
+        3
+      ],
+      "desc": "Carry out {t} Rare-or-better valuable{s}",
+      "bonus": "double",
+      "bonusDesc": "Twice as many"
+    },
+    {
+      "id": "big_ticket",
+      "name": "Big Ticket",
+      "kind": "personal",
+      "giver": "brass",
+      "obj": "value",
+      "targets": [
+        8000,
+        15000,
+        25000
+      ],
+      "desc": "Carry out ${t} of valuables",
+      "bonus": "nobreak",
+      "bonusDesc": "Without breaking a single valuable"
+    },
+    {
+      "id": "top_earner",
+      "name": "Top Earner",
+      "kind": "rival",
+      "giver": "brass",
+      "obj": "rival.value",
+      "targets": [
+        1,
+        1,
+        1
+      ],
+      "desc": "Carry out the most value of everyone who took it"
+    },
+    {
+      "id": "top_hunter",
+      "name": "Top Hunter",
+      "kind": "rival",
+      "giver": "kaboom",
+      "obj": "rival.kills",
+      "targets": [
+        1,
+        1,
+        1
+      ],
+      "desc": "Kill the most monsters of everyone who took it"
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "kind": "rival",
+      "giver": "hollis",
+      "obj": "rival.guard",
+      "targets": [
+        1,
+        1,
+        1
+      ],
+      "desc": "Revive and heal teammates the most of everyone who took it"
+    },
+    {
+      "id": "first_out",
+      "name": "First Out",
+      "kind": "rival",
+      "giver": "dispatch",
+      "obj": "rival.carry",
+      "targets": [
+        1,
+        1,
+        1
+      ],
+      "desc": "Carry the most valuables into extractions of everyone who took it"
+    },
+    {
+      "id": "cls_juggernaut",
+      "name": "Bulwark Duty",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.juggernaut",
+      "cls": "juggernaut",
+      "targets": [
+        60,
+        120,
+        200
+      ],
+      "desc": "Your Shield Wall stops {t} damage to teammates",
+      "mp": true
+    },
+    {
+      "id": "cls_medic",
+      "name": "Golden Minutes",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.medic",
+      "cls": "medic",
+      "targets": [
+        2,
+        3,
+        4
+      ],
+      "desc": "Revive {t} teammate{s} within 10 s of them going down",
+      "mp": true
+    },
+    {
+      "id": "cls_scout",
+      "name": "Long Legs",
+      "kind": "class",
+      "giver": "dispatch",
+      "obj": "cls.scout",
+      "cls": "scout",
+      "targets": [
+        400,
+        800,
+        1400
+      ],
+      "desc": "Sprint {t} m in total"
+    },
+    {
+      "id": "cls_hauler",
+      "name": "Heavy Freight",
+      "kind": "class",
+      "giver": "dispatch",
+      "obj": "cls.hauler",
+      "cls": "hauler",
+      "targets": [
+        3,
+        5,
+        7
+      ],
+      "desc": "Carry {t} valuable{s} worth $3,000+ each into extractions"
+    },
+    {
+      "id": "cls_brute",
+      "name": "Red Mist",
+      "kind": "class",
+      "giver": "kaboom",
+      "obj": "cls.brute",
+      "cls": "brute",
+      "targets": [
+        3,
+        5,
+        8
+      ],
+      "desc": "Reach full Frenzy {t} time{s}"
+    },
+    {
+      "id": "cls_engineer",
+      "name": "Power Grid",
+      "kind": "class",
+      "giver": "dispatch",
+      "obj": "cls.engineer",
+      "cls": "engineer",
+      "targets": [
+        90,
+        180,
+        300
+      ],
+      "desc": "Keep Power Link on teammates for {t} s in total",
+      "mp": true
+    },
+    {
+      "id": "cls_phantom",
+      "name": "Untouchable",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.phantom",
+      "cls": "phantom",
+      "targets": [
+        5,
+        8,
+        12
+      ],
+      "desc": "Dodge {t} hit{s}"
+    },
+    {
+      "id": "cls_survivor",
+      "name": "Last Breath",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.survivor",
+      "cls": "survivor",
+      "targets": [
+        1,
+        2,
+        3
+      ],
+      "desc": "Use {t} death save{s} and finish the level"
+    },
+    {
+      "id": "cls_appraiser",
+      "name": "Keen Eye",
+      "kind": "class",
+      "giver": "brass",
+      "obj": "cls.appraiser",
+      "cls": "appraiser",
+      "targets": [
+        10000,
+        20000,
+        35000
+      ],
+      "desc": "Appraise ${t} of valuables with Appraisal Scan"
+    },
+    {
+      "id": "cls_warden",
+      "name": "Marked Men",
+      "kind": "class",
+      "giver": "kaboom",
+      "obj": "cls.warden",
+      "cls": "warden",
+      "targets": [
+        8,
+        14,
+        20
+      ],
+      "desc": "Catch {t} monsters in Stasis Fields"
+    },
+    {
+      "id": "cls_herald",
+      "name": "Rallying Cry",
+      "kind": "class",
+      "giver": "dispatch",
+      "obj": "cls.herald",
+      "cls": "herald",
+      "targets": [
+        3,
+        5,
+        7
+      ],
+      "desc": "Fill Inspire to 100% {t} time{s}",
+      "mp": true
+    },
+    {
+      "id": "cls_mimic",
+      "name": "Copycat",
+      "kind": "class",
+      "giver": "brass",
+      "obj": "cls.mimic",
+      "cls": "mimic",
+      "targets": [
+        2,
+        3,
+        4
+      ],
+      "desc": "Use {t} different teammates' classes with Mimicry",
+      "mp": true
+    },
+    {
+      "id": "cls_undertaker",
+      "name": "Last Rites",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.undertaker",
+      "cls": "undertaker",
+      "targets": [
+        2,
+        3,
+        4
+      ],
+      "desc": "Bring back {t} teammate{s} with Reboot",
+      "mp": true
+    },
+    {
+      "id": "cls_cartwright",
+      "name": "Overdrive Express",
+      "kind": "class",
+      "giver": "dispatch",
+      "obj": "cls.cartwright",
+      "cls": "cartwright",
+      "targets": [
+        3,
+        5,
+        7
+      ],
+      "desc": "Deliver {t} loaded cart{s} with Cart Overdrive"
+    },
+    {
+      "id": "cls_physicist",
+      "name": "Applied Force",
+      "kind": "class",
+      "giver": "kaboom",
+      "obj": "cls.physicist",
+      "cls": "physicist",
+      "targets": [
+        4,
+        7,
+        10
+      ],
+      "desc": "Stun {t} monsters with thrown items"
+    },
+    {
+      "id": "cls_trickster",
+      "name": "Bait and Switch",
+      "kind": "class",
+      "giver": "kaboom",
+      "obj": "cls.trickster",
+      "cls": "trickster",
+      "targets": [
+        5,
+        8,
+        12
+      ],
+      "desc": "Lure {t} monsters with Decoy Beacons"
+    },
+    {
+      "id": "cls_demolitionist",
+      "name": "Collateral",
+      "kind": "class",
+      "giver": "kaboom",
+      "obj": "cls.demolitionist",
+      "cls": "demolitionist",
+      "targets": [
+        2,
+        3,
+        4
+      ],
+      "desc": "Hit 3+ monsters with one Breach Charge, {t} time{s}"
+    },
+    {
+      "id": "cls_quartermaster",
+      "name": "Supply Run",
+      "kind": "class",
+      "giver": "dispatch",
+      "obj": "cls.quartermaster",
+      "cls": "quartermaster",
+      "targets": [
+        4,
+        6,
+        9
+      ],
+      "desc": "Resupply teammates {t} time{s} (each teammate counts)",
+      "mp": true
+    },
+    {
+      "id": "cls_gambler",
+      "name": "House Edge",
+      "kind": "class",
+      "giver": "brass",
+      "obj": "cls.gambler",
+      "cls": "gambler",
+      "targets": [
+        3,
+        4,
+        6
+      ],
+      "desc": "Win {t} bet{s}"
+    },
+    {
+      "id": "cls_bloodbound",
+      "name": "Blood Price",
+      "kind": "class",
+      "giver": "kaboom",
+      "obj": "cls.bloodbound",
+      "cls": "bloodbound",
+      "targets": [
+        60,
+        120,
+        200
+      ],
+      "desc": "Heal {t} HP with Leech"
+    },
+    {
+      "id": "cls_instigator",
+      "name": "Bad Neighbours",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.instigator",
+      "cls": "instigator",
+      "targets": [
+        3,
+        5,
+        8
+      ],
+      "desc": "Start {t} monster fight{s} (Provoke or Bad Blood)"
+    },
+    {
+      "id": "cls_ventriloquist",
+      "name": "Thrown Voice",
+      "kind": "class",
+      "giver": "kaboom",
+      "obj": "cls.ventriloquist",
+      "cls": "ventriloquist",
+      "targets": [
+        6,
+        10,
+        14
+      ],
+      "desc": "Lure {t} monsters with Echo"
+    },
+    {
+      "id": "cls_restorer",
+      "name": "Good as New",
+      "kind": "class",
+      "giver": "brass",
+      "obj": "cls.restorer",
+      "cls": "restorer",
+      "targets": [
+        3000,
+        6000,
+        10000
+      ],
+      "desc": "Mend ${t} of valuable damage"
+    },
+    {
+      "id": "cls_scavenger",
+      "name": "Treasure Sense",
+      "kind": "class",
+      "giver": "brass",
+      "obj": "cls.scavenger",
+      "cls": "scavenger",
+      "targets": [
+        4,
+        7,
+        10
+      ],
+      "desc": "Make {t} scavenger find{s}"
+    },
+    {
+      "id": "cls_insurer",
+      "name": "Fully Covered",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.insurer",
+      "cls": "insurer",
+      "targets": [
+        2,
+        3,
+        5
+      ],
+      "desc": "Policies cover {t} valuable{s} that broke"
+    },
+    {
+      "id": "cls_lookout",
+      "name": "Eyes Open",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.lookout",
+      "cls": "lookout",
+      "targets": [
+        10,
+        16,
+        24
+      ],
+      "desc": "Spot {t} monsters for the team"
+    },
+    {
+      "id": "cls_gunsmith",
+      "name": "Steady Aim",
+      "kind": "class",
+      "giver": "kaboom",
+      "obj": "cls.gunsmith",
+      "cls": "gunsmith",
+      "targets": [
+        25,
+        40,
+        60
+      ],
+      "desc": "Land {t} weapon hits"
+    },
+    {
+      "id": "cls_shepherd",
+      "name": "Calm Waters",
+      "kind": "class",
+      "giver": "hollis",
+      "obj": "cls.shepherd",
+      "cls": "shepherd",
+      "targets": [
+        5,
+        8,
+        12
+      ],
+      "desc": "Pacify {t} monsters"
+    },
+    {
+      "id": "cls_grappler",
+      "name": "Reel It In",
+      "kind": "class",
+      "giver": "dispatch",
+      "obj": "cls.grappler",
+      "cls": "grappler",
+      "targets": [
+        6,
+        10,
+        14
+      ],
+      "desc": "Pull {t} items to you with the hook"
+    },
+    {
+      "id": "cls_courier",
+      "name": "Signed, Sealed",
+      "kind": "class",
+      "giver": "dispatch",
+      "obj": "cls.courier",
+      "cls": "courier",
+      "targets": [
+        3,
+        5,
+        8
+      ],
+      "desc": "Dispatch {t} valuable{s} to an extraction"
+    },
+    {
+      "id": "audit_cull",
+      "name": "Hostile Takeover",
+      "kind": "personal",
+      "giver": "auditor",
+      "obj": "kill",
+      "targets": [
+        10,
+        14,
+        18
+      ],
+      "desc": "Kill {t} monsters near you",
+      "unlock": "auditor",
+      "rewardMult": 1.5
+    },
+    {
+      "id": "audit_elites",
+      "name": "Asset Seizure",
+      "kind": "personal",
+      "giver": "auditor",
+      "obj": "elite",
+      "targets": [
+        2,
+        3,
+        4
+      ],
+      "desc": "Kill {t} elites",
+      "unlock": "auditor",
+      "rewardMult": 1.5
+    },
+    {
+      "id": "audit_haul",
+      "name": "Quarterly Target",
+      "kind": "personal",
+      "giver": "auditor",
+      "obj": "extract",
+      "targets": [
+        5,
+        7,
+        9
+      ],
+      "desc": "Finish {t} extraction points",
+      "unlock": "auditor",
+      "rewardMult": 1.5
+    },
+    {
+      "id": "audit_clean",
+      "name": "Clean Books",
+      "kind": "personal",
+      "giver": "auditor",
+      "obj": "unscathed",
+      "targets": [
+        25,
+        15,
+        8
+      ],
+      "desc": "Take at most {t} damage this level",
+      "unlock": "auditor",
+      "rewardMult": 1.5
+    },
+    {
+      "id": "audit_value",
+      "name": "Valuation",
+      "kind": "personal",
+      "giver": "auditor",
+      "obj": "value",
+      "targets": [
+        20000,
+        35000,
+        50000
+      ],
+      "desc": "Carry ${t} of valuables to extraction",
+      "unlock": "auditor",
+      "rewardMult": 1.5
+    },
+    {
+      "id": "audit_speed",
+      "name": "Deadline",
+      "kind": "personal",
+      "giver": "auditor",
+      "obj": "speed",
+      "targets": [
+        8,
+        6,
+        5
+      ],
+      "desc": "Finish the level within {t} minutes",
+      "unlock": "auditor",
+      "rewardMult": 1.5
+    },
+    {
+      "id": "arch_sample",
+      "name": "Sample Run",
+      "kind": "personal",
+      "giver": "archivist",
+      "obj": "res.sample",
+      "targets": [
+        1,
+        1,
+        2
+      ],
+      "desc": "Carry {t} research sample{s} into an extraction yourself",
+      "research": "archivist"
+    },
+    {
+      "id": "arch_sweep",
+      "name": "Full Catalogue",
+      "kind": "personal",
+      "giver": "archivist",
+      "obj": "res.allsamples",
+      "targets": [
+        1,
+        1,
+        1
+      ],
+      "desc": "Finish every extraction point with every research sample on the level brought out",
+      "research": "archivist"
+    },
+    {
+      "id": "arch_specimen",
+      "name": "Specimen Study",
+      "kind": "personal",
+      "giver": "archivist",
+      "obj": "elite",
+      "targets": [
+        1,
+        2,
+        3
+      ],
+      "desc": "Take down {t} elite{s} or bosses for study",
+      "research": "archivist"
+    }
+  ],
+  "chains": [
+    {
+      "id": "brass_collection",
+      "name": "The Brass Collection",
+      "giver": "brass",
+      "reward": "setpiece",
+      "rewardDesc": "An Epic piece of your wishlisted set (or a random set)",
+      "steps": [
+        {
+          "obj": "rarecarry",
+          "target": 1,
+          "desc": "Carry out a Rare-or-better valuable",
+          "line": "I collect beautiful things. Prove you can find one."
+        },
+        {
+          "obj": "rarecarry",
+          "target": 2,
+          "desc": "Carry out two Rare-or-better valuables in one level",
+          "line": "One could be luck. Two is a habit."
+        },
+        {
+          "obj": "bigclean",
+          "target": 1,
+          "desc": "Carry out a $10,000 valuable without a scratch",
+          "line": "The centrepiece. Not a scratch, darling."
+        }
+      ]
+    },
+    {
+      "id": "demolition_derby",
+      "name": "Demolition Derby",
+      "giver": "kaboom",
+      "reward": "weaponunique",
+      "rewardDesc": "A Weapon Module Unique",
+      "steps": [
+        {
+          "obj": "kill",
+          "target": 6,
+          "desc": "Kill 6 monsters near you",
+          "line": "Warm-up round!"
+        },
+        {
+          "obj": "elite",
+          "target": 2,
+          "desc": "Kill 2 elites",
+          "line": "Now the big ones."
+        },
+        {
+          "obj": "trophy",
+          "target": 3,
+          "desc": "Kill a boss, or 3 elites",
+          "line": "Dad wants a trophy for the office."
+        }
+      ]
+    },
+    {
+      "id": "policy_review",
+      "name": "Policy Review",
+      "giver": "hollis",
+      "reward": "bond",
+      "rewardDesc": "Insurer's Bond (Unique Plating)",
+      "steps": [
+        {
+          "obj": "nodeath",
+          "target": 1,
+          "desc": "Nobody dies this level",
+          "line": "Let's establish a baseline."
+        },
+        {
+          "obj": "unscathed",
+          "target": 50,
+          "desc": "Take less than 50 damage this level",
+          "line": "Premiums are calculated on bruises."
+        },
+        {
+          "obj": "strictvalue",
+          "target": 15000,
+          "desc": "Carry out $15,000 of valuables without breaking one",
+          "line": "Flawless. I may cry. Professionally."
+        }
+      ]
+    },
+    {
+      "id": "rush_order",
+      "name": "Rush Order",
+      "giver": "dispatch",
+      "reward": "servos",
+      "rewardDesc": "An Epic Servos piece and +60 shop reputation",
+      "steps": [
+        {
+          "obj": "speed",
+          "target": 8,
+          "desc": "Finish the level within 8 min",
+          "line": "Clock's ticking."
+        },
+        {
+          "obj": "speedall",
+          "target": 6,
+          "desc": "Finish the level within 6 min with nobody dying",
+          "line": "Faster. Everyone. All of you."
+        }
+      ]
+    }
+  ]
+}

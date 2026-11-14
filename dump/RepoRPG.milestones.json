@@ -1,0 +1,217 @@
+{
+  "version": 2,
+  "_about": "Run boons: team-wide rule changes for the rest of the run, won by a team vote (each milestone, and sometimes a boss kill). Effects are built into the mod by id; name, desc, code (2 letters, HUD), color, rarity (0 common, 1 rare, 2 very rare) and weight (how often it's offered) can be changed here.",
+  "boons": [
+    {
+      "id": "second_wind",
+      "name": "Second Wind",
+      "desc": "The first death each level (anyone's) is saved: back up at 1 HP, without using anyone's death save charges.",
+      "code": "SW",
+      "color": "#7fe0ff",
+      "rarity": 1,
+      "weight": 2
+    },
+    {
+      "id": "salvage_line",
+      "name": "Salvage Line",
+      "desc": "Every finished extraction heals everyone alive 6 HP (counts toward the Max Extraction Heal cap).",
+      "code": "SL",
+      "color": "#8cf2bf",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "bone_collectors",
+      "name": "Bone Collectors",
+      "desc": "Monsters drop 50% more crafting parts.",
+      "code": "BC",
+      "color": "#e6d3a3",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "light_load",
+      "name": "Light Load",
+      "desc": "Haul goals are 10% lower.",
+      "code": "LL",
+      "color": "#ffd75a",
+      "rarity": 1,
+      "weight": 2
+    },
+    {
+      "id": "hold_the_line",
+      "name": "Hold the Line",
+      "desc": "Deaths cost the streak half as much (rounded down).",
+      "code": "HL",
+      "color": "#ffb21e",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "bounty_board",
+      "name": "Bounty Board",
+      "desc": "Every elite killed pays every player 10 Scrap (a boss 30).",
+      "code": "BB",
+      "color": "#ff9a5a",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "easy_money",
+      "name": "Easy Money",
+      "desc": "Contract targets are 20% lower (rounded up: kill 8 becomes kill 7).",
+      "code": "EM",
+      "color": "#9cff7a",
+      "rarity": 1,
+      "weight": 2
+    },
+    {
+      "id": "free_estimate",
+      "name": "Free Estimate",
+      "desc": "The first contract board reroll each visit is free.",
+      "code": "FE",
+      "color": "#b8e986",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "hazard_pay",
+      "name": "Hazard Pay",
+      "desc": "Every elite killed adds +1% to that level's haul Scrap (at most +10%).",
+      "code": "HP",
+      "color": "#ff7a7a",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "head_start",
+      "name": "Head Start",
+      "desc": "The first extraction each level fully recharges everyone's ability.",
+      "code": "HS",
+      "color": "#a98bff",
+      "rarity": 1,
+      "weight": 2
+    },
+    {
+      "id": "spare_parts",
+      "name": "Spare Parts",
+      "desc": "Crafting costs 1 fewer of each kind of part (never below 1).",
+      "code": "SP",
+      "color": "#c9b38a",
+      "rarity": 1,
+      "weight": 2
+    },
+    {
+      "id": "full_sweep",
+      "name": "Full Sweep",
+      "desc": "Finishing every extraction point on a level pays everyone 15 Scrap and a tenth of a level's XP.",
+      "code": "FS",
+      "color": "#5ad1ff",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "lucky_break",
+      "name": "Lucky Break",
+      "desc": "1 in 10 gear finds rolls one rarity higher.",
+      "code": "LB",
+      "color": "#ffe066",
+      "rarity": 2,
+      "weight": 1
+    },
+    {
+      "id": "lone_wolf",
+      "name": "Lone Wolf",
+      "desc": "When only one player is left alive (2+ players): they take 30% less damage and move 15% faster (the caps still apply).",
+      "code": "LW",
+      "color": "#d0d0d0",
+      "rarity": 2,
+      "weight": 1
+    },
+    {
+      "id": "rapid_response",
+      "name": "Rapid Response",
+      "desc": "A revived player can't be hurt for 5 seconds.",
+      "code": "RR",
+      "color": "#ff8fd1",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "tip_jar",
+      "name": "Tip Jar",
+      "desc": "Contracts pay 15% more Scrap.",
+      "code": "TJ",
+      "color": "#7affc8",
+      "rarity": 0,
+      "weight": 3
+    },
+    {
+      "id": "crowd_control",
+      "name": "Crowd Control",
+      "desc": "Elites are 20% rarer and never have more than one modifier (bosses are unchanged).",
+      "code": "CC",
+      "color": "#9ab0ff",
+      "rarity": 1,
+      "weight": 2
+    },
+    {
+      "id": "marked_for_death",
+      "name": "Marked for Death",
+      "desc": "Bosses take 15% more damage from everyone.",
+      "code": "MD",
+      "color": "#ff4d4d",
+      "rarity": 2,
+      "weight": 1
+    },
+    {
+      "id": "safety_net",
+      "name": "Safety Net",
+      "desc": "The streak never falls below a third of the best streak this run.",
+      "code": "SN",
+      "color": "#ffc48a",
+      "rarity": 1,
+      "weight": 2
+        },
+    {
+      "id": "quick_study",
+      "name": "Quick Study",
+      "desc": "Everyone earns 10% more XP (inside the XP bonus cap).",
+      "code": "QS",
+      "color": "#8fd0ff",
+      "rarity": 0,
+      "weight": 3,
+      "research": "boons2"
+    },
+    {
+      "id": "data_mine",
+      "name": "Data Mine",
+      "desc": "All Research Data earned is 20% higher.",
+      "code": "DM",
+      "color": "#40f2d9",
+      "rarity": 1,
+      "weight": 2,
+      "research": "boons2"
+    },
+    {
+      "id": "stockpile",
+      "name": "Stockpile",
+      "desc": "Every shop restock has one more Featured item.",
+      "code": "ST",
+      "color": "#ffcf7a",
+      "rarity": 1,
+      "weight": 2,
+      "research": "boons2"
+    },
+    {
+      "id": "deep_pockets",
+      "name": "Deep Pockets",
+      "desc": "Milestone Scrap payouts are 30% higher.",
+      "code": "DP",
+      "color": "#c6ff8a",
+      "rarity": 0,
+      "weight": 3,
+      "research": "boons2"
+    }
+  ]
+}

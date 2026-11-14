@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "sets": [
+    { "id": "movers", "name": "Mover's", "color": "#E8B04B",
+      "two": [ { "stat": "GrabStrength", "value": 10 } ], "twoDesc": "+10% grip strength",
+      "four": [ { "stat": "set.held_mass", "value": 35 } ], "fourDesc": "Held valuables weigh 35% less, so they barely slow you" },
+    { "id": "bulwark", "name": "Bulwark", "color": "#7FA7C9",
+      "two": [ { "stat": "DamageTaken", "value": -6 } ], "twoDesc": "6% less damage taken",
+      "four": [ { "stat": "set.first_hit", "value": 50 } ], "fourDesc": "The first hit every 20 s does 50% less damage" },
+    { "id": "ghost", "name": "Ghost", "color": "#A68CFF",
+      "two": [ { "stat": "NoiseReduction", "value": 15 } ], "twoDesc": "15% less noise",
+      "four": [ { "stat": "DodgeChance", "value": 8 }, { "stat": "DodgeRefund", "value": 2 } ], "fourDesc": "+8% dodge chance; a dodge refunds 2 s of ability cooldown" },
+    { "id": "lifeline", "name": "Lifeline", "color": "#6FE39A",
+      "two": [ { "stat": "HealthRegen", "value": 0.2 } ], "twoDesc": "+0.2 HP/s regen",
+      "four": [ { "stat": "ReviveHeal", "value": 20 } ], "fourDesc": "Teammates you revive come back with +20 HP" },
+    { "id": "prospector", "name": "Prospector", "color": "#F2D35B",
+      "two": [ { "stat": "ScrapBonus", "value": 5 } ], "twoDesc": "+5% Scrap",
+      "four": [ { "stat": "HeldItemProtection", "value": 15 } ], "fourDesc": "Valuables you carry lose 15% less value when hit" },
+    { "id": "overcharge", "name": "Overcharge", "color": "#5FD0F0",
+      "two": [ { "stat": "CooldownReduction", "value": 8 } ], "twoDesc": "8% cooldown reduction",
+      "four": [ { "stat": "ActivePower", "value": 12 } ], "fourDesc": "+12% ability power" },
+    { "id": "sprinter", "name": "Sprinter", "color": "#FF9A5C",
+      "two": [ { "stat": "SprintSpeed", "value": 6 } ], "twoDesc": "+6% sprint speed",
+      "four": [ { "stat": "StaminaRegen", "value": 15 }, { "stat": "StaminaDrain", "value": -10 } ], "fourDesc": "+15 stamina/s regen (while recharging), sprinting costs 10% less stamina" },
+    { "id": "bruiser", "name": "Bruiser", "color": "#FF5F5F",
+      "two": [ { "stat": "WeaponDamage", "value": 8 } ], "twoDesc": "+8% weapon damage",
+      "four": [ { "stat": "HealOnKill", "value": 5 } ], "fourDesc": "Kills heal 5 HP" }
+  ]
+}

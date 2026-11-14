@@ -1,0 +1,2443 @@
+{
+  "version": 1,
+  "_tokens": "{cfg:Section/Key} = the setting's current value (the host's in a lobby). {key:name} = the binding for the device you're using (menu, ability, confirm, back, tabs, secondary, apply, reset, undo, salvage, callout, hum, handoff, mimic, cart, highlights, teampanel, notices). {count:classes|synergies|perks|attributes|rarities}.",
+  "screens": [
+    {
+      "tab": "Class",
+      "topic": "classes"
+    },
+    {
+      "tab": "Attributes",
+      "topic": "attributes"
+    },
+    {
+      "tab": "Gear",
+      "topic": "gear"
+    },
+    {
+      "tab": "Perks",
+      "topic": "perks"
+    },
+    {
+      "tab": "Contracts",
+      "topic": "contracts"
+    },
+    {
+      "tab": "Shop",
+      "topic": "scrap"
+    },
+    {
+      "tab": "Settings",
+      "topic": "controls"
+    },
+    {
+      "tab": "Host",
+      "topic": "host"
+    },
+    {
+      "tab": "Debug",
+      "topic": "start"
+    },
+    {
+      "tab": "Account",
+      "topic": "account"
+    }
+  ],
+  "hostSettings": [
+    {
+      "key": "Leveling/MaxLevel",
+      "label": "Max class level"
+    },
+    {
+      "key": "Leveling/XpMultiplier",
+      "label": "XP multiplier"
+    },
+    {
+      "key": "XP Sources/KillXp",
+      "label": "Kill XP (per monster tier)"
+    },
+    {
+      "key": "XP Sources/ExtractionXpFirst",
+      "label": "First extraction XP"
+    },
+    {
+      "key": "XP Sources/LevelCompleteXp",
+      "label": "Level complete XP"
+    },
+    {
+      "key": "XP Sources/ReviveXp",
+      "label": "Revive XP"
+    },
+    {
+      "key": "Rules/AllowRespec",
+      "label": "Respecs allowed"
+    },
+    {
+      "key": "Rules/AllowClassSwitchInLevel",
+      "label": "Class switch mid-level"
+    },
+    {
+      "key": "Rules/LethalFalls",
+      "label": "Lethal falls"
+    },
+    {
+      "key": "Rules/MaxTotalDamageReduction",
+      "label": "Damage reduction cap (%)"
+    },
+    {
+      "key": "Rules/MaxCooldownReduction",
+      "label": "Cooldown reduction cap (%)"
+    },
+    {
+      "key": "Rules/MaxDodgeChance",
+      "label": "Dodge chance cap (%)"
+    },
+    {
+      "key": "RPG/EliteEnemies",
+      "label": "Elite monsters"
+    },
+    {
+      "key": "Contracts/BoardSize",
+      "label": "Contract board size"
+    },
+    {
+      "key": "Contracts/ContractSlots",
+      "label": "Contract slots"
+    },
+    {
+      "key": "Contracts/RivalContracts",
+      "label": "Rival contracts"
+    },
+    {
+      "key": "RPG/GearChanceOnExtraction",
+      "label": "Gear chance per extraction (%)"
+    },
+    {
+      "key": "Perks/PerkEvery",
+      "label": "Perk pick every N levels"
+    },
+    {
+      "key": "Perks/CursedPerks",
+      "label": "Cursed perks"
+    },
+    {
+      "key": "Perks/Evolutions",
+      "label": "Evolving perks"
+    },
+    {
+      "key": "Perks/TagBonuses",
+      "label": "Perk tag bonuses"
+    },
+    {
+      "key": "Perks/RerollStep",
+      "label": "Perk reroll price step"
+    },
+    {
+      "key": "Perks/Banishes",
+      "label": "Perk banishes per run"
+    },
+    {
+      "key": "Attributes/Milestones",
+      "label": "Attribute milestones"
+    },
+    {
+      "key": "Attributes/Pairings",
+      "label": "Attribute pairings"
+    },
+    {
+      "key": "Attributes/MilestoneStrength",
+      "label": "Milestone strength"
+    },
+    {
+      "key": "Currency/Percent",
+      "label": "Scrap (% of the haul)"
+    },
+    {
+      "key": "Currency/AllowGifting",
+      "label": "Scrap gifting"
+    },
+    {
+      "key": "Shop/ShopAnywhere",
+      "label": "Shop anywhere"
+    },
+    {
+      "key": "Shop/RotationSize",
+      "label": "Shop rotation size"
+    },
+    {
+      "key": "Shop/PriceMultiplier",
+      "label": "Shop price multiplier"
+    },
+    {
+      "key": "Shop/ReputationSpeed",
+      "label": "Shop reputation speed"
+    },
+    {
+      "key": "Shop/Crates",
+      "label": "Mystery crates"
+    },
+    {
+      "key": "Shop/ConsumablesPerLevel",
+      "label": "Consumables per visit"
+    },
+    {
+      "key": "Shop/LockFee",
+      "label": "Shop lock fee"
+    },
+    {
+      "key": "Team/Synergies",
+      "label": "Team synergies"
+    },
+    {
+      "key": "Team/SynergyRange",
+      "label": "Synergy range (m)"
+    },
+    {
+      "key": "Team/Highlights",
+      "label": "Highlights card (shop)"
+    },
+    {
+      "key": "Team/CallOuts",
+      "label": "Death-head call-outs"
+    },
+    {
+      "key": "Team/ClutchReviveBonus",
+      "label": "Clutch revive bonus (%)"
+    },
+    {
+      "key": "Bosses/Bosses",
+      "label": "Bosses"
+    },
+    {
+      "key": "Bosses/BossEvery",
+      "label": "Boss every N levels"
+    },
+    {
+      "key": "Loot/SetPieceChance",
+      "label": "Set piece chance (%)"
+    },
+    {
+      "key": "Loot/CraftingParts",
+      "label": "Crafting parts"
+    },
+    {
+      "key": "Loot/BehaviorAffixChance",
+      "label": "Behavior affix chance"
+    },
+    {
+      "key": "Loot/UniqueChance",
+      "label": "Unique chance"
+    },
+    {
+      "key": "Loot/AttunementSpeed",
+      "label": "Attunement speed"
+    },
+    {
+      "key": "Loot/ModuleDropChance",
+      "label": "Module drop chance"
+    },
+    {
+      "key": "Loot/ModuleRemoveCost",
+      "label": "Module removal cost"
+    },
+    {
+      "key": "TeamContracts/TeamContracts",
+      "label": "Team contracts"
+    },
+    {
+      "key": "TeamContracts/VoteMode",
+      "label": "Team contract vote"
+    },
+    {
+      "key": "Difficulty/Tier",
+      "label": "Difficulty tier"
+    },
+    {
+      "key": "Account/AccountProgress",
+      "label": "Account progress"
+    },
+    {
+      "key": "Account/PrestigeTrees",
+      "label": "Prestige trees"
+    },
+    {
+      "key": "Players/MaxPlayers",
+      "label": "Lobby size"
+    },
+    {
+      "key": "Scaling/Enabled",
+      "label": "Player-count scaling"
+    },
+    {
+      "key": "Scaling/Strength",
+      "label": "Scaling strength (%)"
+    },
+    {
+      "key": "Threat/Enabled",
+      "label": "Threat rating"
+    },
+    {
+      "key": "Threat/MaxRating",
+      "label": "Max threat rating"
+    },
+    {
+      "key": "Threat/Speed",
+      "label": "Threat speed"
+    },
+    {
+      "key": "Valuables/ValueMultiplier",
+      "label": "Valuable value"
+    }
+  ],
+  "walkthrough": [
+    {
+      "title": "WELCOME TO REPORPG",
+      "text": "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
+    },
+    {
+      "title": "1  PICK A CLASS",
+      "text": "Open the Class tab, choose a class and press Play as. Each class has two passives, one active ability and a weakness.\n\nOnly one person can play each class, so agree on picks with your team."
+    },
+    {
+      "title": "2  LEVEL UP",
+      "text": "Your class earns XP from kills, extractions, finished levels, revives and contracts.\n\nEach level gives you points to spend. A dot on the menu hint means something is waiting."
+    },
+    {
+      "title": "3  SPEND YOUR POINTS",
+      "text": "Skill points go into talents (Class tab), attribute points into attributes, and perk picks into perks.\n\nNothing changes until you Confirm. Undo takes back the last point, Reset clears them all."
+    },
+    {
+      "title": "4  GEAR, SCRAP AND YOUR TEAM",
+      "text": "Gear drops from elites, contracts and extractions. Salvage what you don't need for Scrap and spend it in the Shop.\n\nStay near your partner classes for synergy bonuses, and take contracts between levels for extra rewards."
+    }
+  ],
+  "topics": [
+    {
+      "id": "start",
+      "title": "Getting Started",
+      "icon": "GO",
+      "summary": "RepoRPG turns each run into a small RPG: you pick a class, level it up and spend what you earn between levels.",
+      "keywords": "start begin new basics help first how to play menu open key walkthrough tutorial run reset",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Press {key:menu} to open the menu. It opens anywhere except while a level is loading.",
+            "Pick a class on the Class tab, then press Play as. Use your ability with {key:ability}.",
+            "Play as normal. Kills, extractions, revives, finished levels and contracts give your class XP.",
+            "Level up to earn skill points, attribute points and perk picks. Spend them, then Confirm.",
+            "Everything belongs to this run. When the run ends, it all starts fresh (your account unlocks stay)."
+          ]
+        },
+        {
+          "type": "walkthrough",
+          "label": "Show the walkthrough"
+        },
+        {
+          "type": "tip",
+          "text": "The ? button on any tab opens this Guide on the matching topic."
+        },
+        {
+          "type": "goto",
+          "tab": "Class",
+          "label": "Go to the Class tab"
+        }
+      ]
+    },
+    {
+      "id": "classes",
+      "title": "Classes",
+      "icon": "CL",
+      "summary": "Your class is your role for the run: {count:classes} classes, each with two passives, one active ability and a weakness.",
+      "keywords": "class classes role pick choose play as job character ability active passive weakness switch compare filter",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Pick a class in the truck or the shop between levels, or in the pre-game lobby: select it, then press Play as.",
+            "Only one person in the lobby can play each class, so agree on picks with your team.",
+            "Use your active ability with {key:ability}. Its cooldown and charges show at the bottom left.",
+            "Each class has a Complexity: Easy, Medium or Hard (the pips on its card), for how hard it is to play well. The Skill button filters by it and Sort groups the list by it. It's not the run's difficulty.",
+            "Each class levels on its own, so switching back later keeps your progress.",
+            "Switching class during a level is {cfg:Rules/AllowClassSwitchInLevel?allowed:not allowed} on this host.",
+            "Compare shows two classes side by side; the role filter and search narrow the list."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Outside the truck, shop and lobby you can still browse classes, but you can't pick one. Joined mid-level without a class? Pick one at the next shop."
+        },
+        {
+          "type": "note",
+          "text": "New in 1.0.52: the Courier and the Instigator replaced the Lamplighter and the Locksmith. A save that had one of those converts by itself: the level carries over to the new class, its skill points come back to spend, and the next truck or shop offers one free re-pick at that level."
+        },
+        {
+          "type": "dynamic",
+          "name": "classes"
+        },
+        {
+          "type": "goto",
+          "tab": "Class",
+          "label": "Go to the Class tab"
+        }
+      ]
+    },
+    {
+      "id": "grappler",
+      "title": "Grappler's Hook",
+      "icon": "GH",
+      "summary": "The Grappler's Hook pulls you to whatever your crosshair is on, or yanks a small item to you.",
+      "keywords": "grappler hook grapple rope pull climb ledge wall cling ceiling hang chain yank reticle",
+      "blocks": [
+        {
+          "type": "terms",
+          "title": "What the reticle means",
+          "terms": [
+            {
+              "term": "Ring",
+              "meaning": "Yank the item to you."
+            },
+            {
+              "term": "Up arrow",
+              "meaning": "Climb onto the ledge."
+            },
+            {
+              "term": "Flat bar",
+              "meaning": "Land on the floor or platform."
+            },
+            {
+              "term": "Bracket",
+              "meaning": "Cling to the wall."
+            },
+            {
+              "term": "Down arrow",
+              "meaning": "Hang from the ceiling."
+            },
+            {
+              "term": "Red X",
+              "meaning": "Can't hook there; the reason shows, and nothing is spent."
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Hook a wall or ceiling to hold on for {cfg:Classes/HookClingSeconds} s. Holding on uses a little stamina; at zero you let go.",
+            "While holding on, jump to push off, crouch to drop, or hook again to swing to another surface.",
+            "Jump or move forward to climb up when a ledge is just above you.",
+            "Chain up to {cfg:Classes/HookMaxChain} hooks in a row, then touch the ground to reset.",
+            "Doors and props block the line, and you can't hook outside the level."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Getting hit, grabbed or knocked over ends a pull at once. A Mimic's copy has less range, half the hold time and no chaining."
+        }
+      ]
+    },
+    {
+      "id": "fieldcharger",
+      "title": "Gunsmith's Field Charger",
+      "icon": "FC",
+      "summary": "With the Field Charger talent, a Gunsmith can recharge the gun they hold from a battery item in a cart.",
+      "keywords": "gunsmith field charger recharge battery cart gun charge drone flashlight interact",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "How to use it",
+          "items": [
+            "Put a battery item in a cart: anything with a battery that isn't a weapon - a drone, a flashlight, a modded battery pack.",
+            "Hold a gun (the game's or a modded one) within 4 m of the cart. \"[Hold E] Recharge from cart\" shows under the crosshair (E is the game's Interact key).",
+            "Hold the key until the bar fills (about 1.6 s; faster with the talent's upgrades). Let go early and nothing happens.",
+            "The gun fills up as far as the batteries in the cart allow; they lose what the gun gains. \"Gun recharged from cart\" confirms it."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "When it can't",
+          "terms": [
+            {
+              "term": "Gun is full",
+              "meaning": "The gun's battery is already full."
+            },
+            {
+              "term": "No battery in cart",
+              "meaning": "Nothing in the cart in reach has charge left."
+            },
+            {
+              "term": "No cart close enough",
+              "meaning": "Get within 4 m (8 m with Bench Tuning)."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Carts with batteries in them show a small battery icon and a count, to Gunsmiths with the talent only. Other guns in the cart are never drained. A Mimic doesn't get it (it's a talent, not an ability)."
+        }
+      ]
+    },
+    {
+      "id": "leveling",
+      "title": "Leveling & XP",
+      "icon": "XP",
+      "summary": "Your class earns XP from what the team already does, and every level gives you points to spend.",
+      "keywords": "level leveling xp experience exp earn points level up max cap progress",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "Earning XP",
+          "items": [
+            "Kill a monster: {cfg:XP Sources/KillXp} XP per monster tier, shared with everyone within {cfg:XP Sources/KillShareRadius} m. Elites give more.",
+            "Extract: {cfg:XP Sources/ExtractionXpFirst} XP for the first extraction, a little less for each one after.",
+            "Finish a level: {cfg:XP Sources/LevelCompleteXp} XP.",
+            "Revive a teammate: {cfg:XP Sources/ReviveXp} XP for everyone within {cfg:XP Sources/ReviveShareRadius} m.",
+            "Finish a contract: the XP shown on its card.",
+            "Bonuses from perks, gear, attributes, your streak, the chapter and the crew add up, to at most +{cfg:Leveling/MaxXpBonus}% together."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "What each level gives",
+          "items": [
+            "{cfg:Leveling/PointsPerLevel} skill point per level, plus a bonus point every {cfg:Leveling/BonusPointEvery} levels.",
+            "{cfg:RPG/AttributePointsPerLevel} attribute points per level of your best class.",
+            "A perk pick every {cfg:Perks/PerkEvery} levels.",
+            "Classes go up to level {cfg:Leveling/MaxLevel}. The first levels come quickly; each one after takes a bit longer than the last.",
+            "Pace: the max class level comes around run level 19 on Relaxed, 24 on Easy, 30 on Normal, 38 on Hard and 47 on Brutal."
+          ]
+        },
+        {
+          "type": "goto",
+          "tab": "Class",
+          "label": "Go to the Class tab"
+        }
+      ]
+    },
+    {
+      "id": "talents",
+      "title": "Talents",
+      "icon": "TT",
+      "summary": "Each class has three talent trees: spend skill points on ranks to shape how your class plays.",
+      "keywords": "talents talent tree trees skills skill points ranks capstone build spec respec refund total effects",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "The Class tab shows a class on one page: its passives, active, synergies and buttons on the left, every talent tree (every tier) on the right, and the full details of whatever you point at or select in the strip under the trees.",
+            "Select a talent to add a rank; {key:secondary} takes one back.",
+            "A talent needs the one above it and a class level. Highlighted talents are ones you can afford now.",
+            "Each tree ends in a capstone (marked with a star), its biggest effect.",
+            "Press {key:apply} to confirm, {key:reset} to clear, or {key:undo} to take back the last rank.",
+            "Press Effects to see all your talents added up, with your abilities' current numbers."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Changes you haven't confirmed are lost if a level loads while the menu is open."
+        },
+        {
+          "type": "tip",
+          "text": "Want a fresh start? A respec in the Shop refunds every skill point (if the host allows respecs)."
+        },
+        {
+          "type": "goto",
+          "tab": "Class",
+          "label": "Go to the Class tab"
+        }
+      ]
+    },
+    {
+      "id": "attributes",
+      "title": "Attributes",
+      "icon": "AT",
+      "summary": "Attributes are {count:attributes} stats that help every class; they stay when you switch class.",
+      "keywords": "attributes attribute points stats strength agility stealth endurance milestone pairing build title chart",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Earn {cfg:RPG/AttributePointsPerLevel} attribute points per level of your best class, plus some contract rewards.",
+            "Add or remove points with left and right, then press {key:apply}.",
+            "Reach 5, 10 and 15 points in an attribute for its milestones: each adds an extra effect.",
+            "Classes favour 2-3 attributes (gold star): those reach each milestone one point sooner.",
+            "Put 8 points into both attributes of a pair to switch on their combo bonus.",
+            "Your point spread earns a build title, just for show."
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Before you confirm, anything your new points would unlock is marked NEW."
+        },
+        {
+          "type": "goto",
+          "tab": "Attributes",
+          "label": "Go to the Attributes tab"
+        }
+      ]
+    },
+    {
+      "id": "perks",
+      "title": "Perks",
+      "icon": "PK",
+      "summary": "Every {cfg:Perks/PerkEvery} levels you choose one of {cfg:Perks/PerkChoices} perks: bonuses that last the whole run.",
+      "keywords": "perks perk pick choose rarity legendary cursed tags tag bonus evolve evolution reroll banish",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "When you have a pick, choose one card on the Perks tab, then Confirm.",
+            "You're never offered a perk you own or banished. Offers lean toward your class and your tags.",
+            "Collect 3 perks with the same tag to switch on its bonus, and 5 for a second one.",
+            "Some perks evolve: finish the challenge on the card and it gets stronger.",
+            "Reroll to swap all your choices (bought in the Shop, {cfg:Shop/PerkRerollScrap} Scrap to start).",
+            "Banish a perk to never see it again this run ({cfg:Perks/Banishes} per run)."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Rarities",
+          "terms": [
+            {
+              "term": "Common",
+              "meaning": "Plain, steady bonuses."
+            },
+            {
+              "term": "Rare",
+              "meaning": "Stronger, sometimes with a small cost."
+            },
+            {
+              "term": "Epic",
+              "meaning": "Built around one thing: your ability, carrying or monsters."
+            },
+            {
+              "term": "Legendary",
+              "meaning": "Changes how you play. Rare to see."
+            },
+            {
+              "term": "Cursed",
+              "meaning": "A big bonus with a real drawback. You never have to take one."
+            }
+          ]
+        },
+        {
+          "type": "goto",
+          "tab": "Perks",
+          "label": "Go to the Perks tab"
+        }
+      ]
+    },
+    {
+      "id": "mystats",
+      "title": "My Stats",
+      "icon": "ME",
+      "summary": "Every bonus you have right now, added up, and where each one comes from.",
+      "keywords": "my stats stats total bonuses sheet character numbers caps capped",
+      "blocks": [
+        {
+          "type": "dynamic",
+          "name": "mystats"
+        }
+      ]
+    },
+    {
+      "id": "gear",
+      "title": "Gear",
+      "icon": "GR",
+      "summary": "Gear gives you stats in four slots, and rarer gear rolls more and stronger stats.",
+      "keywords": "gear items equipment loot slots rarity salvage compare inventory bag weapon plating servos core sets",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Your slots: {list:slots}.",
+            "Get gear from elites, bosses, contracts and extractions ({cfg:RPG/GearChanceOnExtraction}% per extraction).",
+            "Select an item to compare it with what you're wearing. Your bag holds {cfg:RPG/InventorySize} items.",
+            "Salvage gear you don't need with {key:salvage} to get Scrap.",
+            "Wear 2 pieces of a set for a small bonus, or all 4 for a big one.",
+            "Save up to 3 loadouts and swap them in the truck or the shop."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Upgrading (+1 to +5)",
+          "items": [
+            "Any item but a starter can be upgraded five times, on the Gear tab (under the item) or in the shop's Services, while the shop is open. Every upgrade works.",
+            "+1, +3 and +5 add a new line: pick 1 of 3 offers (stats the item doesn't have yet). +2 and +4 make every random line 15% stronger (never past that stat's maximum). +5 also adds a socket, up to 1 (Common to Rare) or 2 (Epic, Legendary).",
+            "An item can only take so many new lines (Common and Uncommon 1, Rare and Epic 2, Legendary 3). After that, a line upgrade makes every line stronger instead; the preview says so.",
+            "Cost: Scrap (more for each level and for higher rarities) and crafting parts: 2 Sinew, 3 Sinew, 2 Sinew + 1 Core Shard, 2 Core Shard, then 1 Core Shard + 1 Prime Essence (a Legendary's +5: 1 Prime Essence + 1 Boss Heart).",
+            "Upgrading keeps the set, sockets and modules, attunement, a Unique's effect and name, and a cursed item's benefit and curse. A reroll rolls the upgrade lines again but keeps the level and the +15% steps; Rarity up keeps everything.",
+            "Salvaging an upgraded item gives back a quarter of the Scrap spent on its upgrades."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Salvaging asks first for set pieces, Uniques and attuned gear."
+        },
+        {
+          "type": "dynamic",
+          "name": "rarities"
+        },
+        {
+          "type": "tip",
+          "text": "Want to improve an item you like? See Crafting & Modules."
+        },
+        {
+          "type": "goto",
+          "tab": "Gear",
+          "label": "Go to the Gear tab"
+        }
+      ]
+    },
+    {
+      "id": "starters",
+      "title": "Class Starters",
+      "icon": "ST",
+      "summary": "Every class starts each run with a small class-bound gear piece; four also get a tool.",
+      "keywords": "starter starters starting item gear tool kit class bound handgun duck grenade health pack",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Once per run, when your class is set in a level or the shop, you get your class's starter piece: a Common item with the slot's base stat and one small class effect. If the slot is empty it's worn right away.",
+            "Only that class can equip it. It salvages for 0 Scrap and can't be rerolled, upgraded or crafted. Sockets work as normal.",
+            "Switching class (milestones) swaps it for the new class's piece.",
+            "Medic, Trickster, Demolitionist and Gunsmith also get a real shop item next to them a few seconds into their first level of the run. If the game doesn't have that item, they get 25 Scrap instead.",
+            "The host can turn the gear or the tools off in Host Settings (Class Starters)."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Every starter",
+          "terms": [
+            {
+              "term": "Juggernaut: Reinforced Plating",
+              "meaning": "3% less damage taken"
+            },
+            {
+              "term": "Medic: Field Kit Core",
+              "meaning": "Teammates revived near you get +5 HP. Tool: Small health pack"
+            },
+            {
+              "term": "Scout: Light Servos",
+              "meaning": "+4% sprint speed"
+            },
+            {
+              "term": "Hauler: Strap Servos",
+              "meaning": "Power Lift 5% stronger"
+            },
+            {
+              "term": "Brute: Knuckle Module",
+              "meaning": "Shockwave 5% stronger"
+            },
+            {
+              "term": "Engineer: Toolbelt Core",
+              "meaning": "Overdrive lasts 5% longer"
+            },
+            {
+              "term": "Phantom: Muffled Servos",
+              "meaning": "5% less noise you make"
+            },
+            {
+              "term": "Survivor: Ration Core",
+              "meaning": "+0.1 HP/s regen"
+            },
+            {
+              "term": "Appraiser: Loupe Module",
+              "meaning": "Appraisal Scan reaches 5% farther"
+            },
+            {
+              "term": "Warden: Restraint Module",
+              "meaning": "Stasis Field lasts 5% longer"
+            },
+            {
+              "term": "Herald: Megaphone Core",
+              "meaning": "Inspire builds a little faster"
+            },
+            {
+              "term": "Mimic: Mirror Core",
+              "meaning": "Copied abilities 5% stronger"
+            },
+            {
+              "term": "Undertaker: Head Strap",
+              "meaning": "5% faster while carrying a death head"
+            },
+            {
+              "term": "Cartwright: Hitch Module",
+              "meaning": "Your cart follows from 1 m farther away"
+            },
+            {
+              "term": "Physicist: Gravity Servos",
+              "meaning": "Objects you hold 5% lighter"
+            },
+            {
+              "term": "Trickster: Prankster Module",
+              "meaning": "Thrown objects' lure noise reaches 1 m farther. Tool: Rubber duck"
+            },
+            {
+              "term": "Demolitionist: Blast Plating",
+              "meaning": "Your explosions deal 10% less damage to players and valuables. Tool: 2x Explosive grenade"
+            },
+            {
+              "term": "Quartermaster: Ledger Core",
+              "meaning": "3% lower mod-shop prices"
+            },
+            {
+              "term": "Gambler: Lucky Coin Core",
+              "meaning": "Curses 5% weaker"
+            },
+            {
+              "term": "Bloodbound: Vein Module",
+              "meaning": "Kills near you restore +1 HP"
+            },
+            {
+              "term": "Courier: Satchel Core",
+              "meaning": "Drop Pad holds one more item"
+            },
+            {
+              "term": "Instigator: Taunt Module",
+              "meaning": "Provoke lasts 5% longer"
+            },
+            {
+              "term": "Ventriloquist: Throat Core",
+              "meaning": "Thrown voice reaches 2 m farther"
+            },
+            {
+              "term": "Restorer: Polish Kit",
+              "meaning": "Held valuables mend +1% more per tick"
+            },
+            {
+              "term": "Scavenger: Rummage Gloves",
+              "meaning": "Rummage takes 5% less time"
+            },
+            {
+              "term": "Insurer: Fine Print Core",
+              "meaning": "Tagged valuables draw monsters from 5% less far"
+            },
+            {
+              "term": "Lookout: Lens Module",
+              "meaning": "Threat labels show 2 m farther"
+            },
+            {
+              "term": "Gunsmith: Armorer's Module",
+              "meaning": "Guns use 3% less battery. Tool: Handgun"
+            },
+            {
+              "term": "Shepherd: Calm Core",
+              "meaning": "Monsters take 0.1 s longer to notice you"
+            },
+            {
+              "term": "Grappler: Line Spool Servos",
+              "meaning": "Grab reaches 10% farther for small items"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cursed",
+      "title": "Cursed Gear",
+      "icon": "CG",
+      "summary": "Cursed items are powerful Legendaries with a real drawback. Only bosses drop them, and they're shown in red.",
+      "keywords": "cursed curse gear red boss drop drawback bloodpact greed overdrive echo hungering",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "How they work",
+          "items": [
+            "Only bosses drop them (milestone bosses and named bosses), on top of the normal boss drop: {cfg:Bosses/CursedDropChance}% per player, a little more each chapter. Never from crates, contracts or the shop.",
+            "Each one has a strong benefit and a curse that changes how you play. The curse is the red line marked [!]; read it before you equip.",
+            "Equipping asks first. You can take a cursed item off at any time.",
+            "Only one cursed item can be worn at a time.",
+            "Attunement weakens most curses: 15% at Tempered, 30% at Soulbound.",
+            "Rerolls change only the normal affixes. Sockets and modules work as usual. Salvage gives 1.5x a Legendary's Scrap.",
+            "The benefits count toward the global caps, like all gear."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "The cursed items",
+          "terms": [
+            {
+              "term": "Hungering Edge",
+              "meaning": "+25% weapon damage, and +5% more for each monster killed near you this level (up to +25%). Curse: After 45 s without a weapon hit, you lose 1 HP every 3 s until you hit something (never below 10 HP)."
+            },
+            {
+              "term": "Feedback Coil",
+              "meaning": "Each weapon hit also hits the nearest other monster within 4 m for 50% of the damage. Curse: Every weapon hit costs you 2 HP (this can put you down)."
+            },
+            {
+              "term": "Overkill Relay",
+              "meaning": "Damage beyond what a kill needs carries over to the nearest monster within 6 m. Curse: For 3 s after each kill you can't hold valuables."
+            },
+            {
+              "term": "Bloodpact Plating",
+              "meaning": "30% less damage taken. Curse: Heals from teammates (their classes, perks and gear) do nothing for you."
+            },
+            {
+              "term": "Thornshell",
+              "meaning": "A monster that hits you takes twice the damage you took and is pushed back. Curse: Your dodge chance is always 0, from every source."
+            },
+            {
+              "term": "Martyr's Mail",
+              "meaning": "Teammates within 6 m take 35% less damage. Curse: You take that 35% yourself, in full."
+            },
+            {
+              "term": "Hollow Plating",
+              "meaning": "+50% max health. Curse: You start every level at half health, and all healing on you is halved."
+            },
+            {
+              "term": "Overdrive Servos",
+              "meaning": "+25% walk and sprint speed. Curse: Stamina never regenerates while you hold an item."
+            },
+            {
+              "term": "Rift Striders",
+              "meaning": "Jump becomes a 6 m dash the way you're moving (every 4 s). Curse: You can't jump normally."
+            },
+            {
+              "term": "Hangman's Springs",
+              "meaning": "+60% jump force, and no damage from falls and tumbling. Curse: You can't crouch."
+            },
+            {
+              "term": "Greed Core",
+              "meaning": "+25% bonus Scrap share. Curse: The mod shop charges you 25% more."
+            },
+            {
+              "term": "Echo Core",
+              "meaning": "40% shorter ability cooldown. Curse: Every ability use makes a loud noise where you stand that monsters come to investigate."
+            },
+            {
+              "term": "Hourglass Heart",
+              "meaning": "+1 ability charge. Curse: You can't use your ability while holding anything."
+            },
+            {
+              "term": "Parasite Core",
+              "meaning": "+50% XP from everything. Curse: Teammates within 10 m earn 15% less XP."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elements",
+      "title": "Elemental Weapons",
+      "icon": "EL",
+      "summary": "Fire, Shock, Frost, Corrosive and Void: your weapon's hits put statuses on monsters.",
+      "keywords": "element elemental fire burn shock static frost chill freeze corrosive rot void weaken coating combo shatter resist weak",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "Getting an element",
+          "items": [
+            "Easiest: a shop Coating. All five (Incendiary, Voltaic, Glacial, Caustic, Void; 30 Scrap) are always in the shop's Consumables section while elements are on. It works until the next shop.",
+            "Element modules (any socket): one of the two modules in the shop's Modules section (Regular reputation) is always an element module, and about a third of module drops (elites, crates, bosses, contracts) are one.",
+            "Weapon Module behavior affixes (Incendiary, Voltaic, Glacial, Caustic, Hollowing): Uncommon and better Weapon Modules can roll a behavior, most often an elemental one.",
+            "One element at a time: a Coating beats a module, a module beats an affix.",
+            "It works on guns, launchers (their blasts), melee weapons and modded weapons that Overclock supports, never on thrown objects. It never hurts valuables or teammates.",
+            "While you hold a supported weapon, its element shows under the crosshair (or \"not supported on this weapon\"). Everyone sees a coloured glow on an elemental weapon, and puffs of colour on affected monsters (Elements/Vfx Full)."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "The elements",
+          "terms": [
+            {
+              "term": "Fire - Burn",
+              "meaning": "3 damage a second per stack (up to 3), for 4 s. The first burn makes the monster panic for 0.6 s (once every 8 s)."
+            },
+            {
+              "term": "Shock - Static",
+              "meaning": "A 0.4 s stun (once every 3 s per monster). 15% chance to jump to a monster within 5 m."
+            },
+            {
+              "term": "Frost - Chill",
+              "meaning": "-10% speed per stack (down to -40%), 4 s. 5 hits within 4 s freeze it for 1.5 s, then no freeze for 8 s."
+            },
+            {
+              "term": "Corrosive - Rot",
+              "meaning": "+5% damage taken from everything per stack (up to +20%), 6 s."
+            },
+            {
+              "term": "Void - Weaken",
+              "meaning": "It deals 8% less damage per stack (up to -24%), 5 s."
+            }
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Combos",
+          "terms": [
+            {
+              "term": "Shatter",
+              "meaning": "Fire on a frozen monster ends the freeze: +30% of the hit + 15 damage."
+            },
+            {
+              "term": "Overload",
+              "meaning": "Shock on a chilled monster: the stun lasts twice as long."
+            },
+            {
+              "term": "Meltdown",
+              "meaning": "A rotting monster's Burn does 50% more."
+            },
+            {
+              "term": "Short Circuit",
+              "meaning": "Shock jumping from a burning monster sets the next one burning."
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Elites and bosses",
+          "items": [
+            "Some elites resist an element (half the effect) or are weak to one (double); every boss has one of each. It's shown with their modifiers.",
+            "Bosses: stuns and freezes last half as long, and they don't panic.",
+            "Status icons above monsters: Burn orange triangle, Static yellow diamond, Chill light-blue disc, Rot green square, Weaken purple ring; a white outline while frozen."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "The Market",
+      "icon": "MK",
+      "summary": "Valuables are worth more or less by category, and prices move with what the team extracts. The shop and contracts follow the market too.",
+      "keywords": "market economy price category art antiques electronics tech fragile heavy curiosities junk event boom crash shortage sale demand request",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "How prices move",
+          "items": [
+            "Every valuable is in one of eight categories: Art, Antiques, Electronics, Tech, Fragile, Heavy, Curiosities, Junk.",
+            "What the team extracts gets cheaper (more for valuable items). Categories nobody brings back get dearer. Everything drifts back toward normal each level.",
+            "Prices stay between x{cfg:Market/MinMultiplier} and x{cfg:Market/MaxMultiplier}, and a typical map is worth about what it would be without the market.",
+            "Prices change between levels only, so a level's haul goal never moves while you play it.",
+            "The Appraiser's scan shows each valuable's category and price change (\"Art +12%\")."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "The shop and requests",
+          "items": [
+            "Each shop visit shows a market report: the biggest movers, any event, and what's in demand. Shop tab > Market lists every category.",
+            "Shop items the team buys a lot cost more (up to +30%); items nobody buys go on sale (up to -25%). Both drift back to normal.",
+            "Each level a contract giver wants one category: extract 3 for a Scrap bonus for everyone (more when the market wants it badly)."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Market events (announced a level ahead)",
+          "terms": [
+            {
+              "term": "Boom",
+              "meaning": "One category is worth 50% more (2 levels)."
+            },
+            {
+              "term": "Crash",
+              "meaning": "One category is worth 40% less (2 levels)."
+            },
+            {
+              "term": "Shortage",
+              "meaning": "One shop section has half its stock, at 25% more (2 levels)."
+            },
+            {
+              "term": "Collector Frenzy",
+              "meaning": "One valuable type is worth double, and a collector wants it (1 level)."
+            },
+            {
+              "term": "Recession",
+              "meaning": "Every valuable is worth 10% less; contracts pay 25% more (2 levels)."
+            },
+            {
+              "term": "Clearance Sale",
+              "meaning": "One shop section is 30% off (1 level)."
+            },
+            {
+              "term": "Fragile Premium",
+              "meaning": "Fragile goods +40%, everything else -5% (2 levels)."
+            },
+            {
+              "term": "Scrap Drive",
+              "meaning": "Junk is worth double (1 level)."
+            },
+            {
+              "term": "Tech Rush",
+              "meaning": "Electronics and Tech +30%, Art and Antiques -15% (2 levels)."
+            },
+            {
+              "term": "Stimulus",
+              "meaning": "Every price resets to normal, and the haul pays 10% more Scrap (1 level)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "icon": "RS",
+      "summary": "Earn Research Data in runs and spend it on projects that unlock new mechanics for good.",
+      "keywords": "research data sample lab project tree unlock logistics economy arsenal exploration crew boss core",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "How it works",
+          "items": [
+            "Research Data comes from: research samples (15 each; every level has 1 to 3, deep in the map, more deeper in the run and on harder difficulties: a valuable with a teal light and a thin teal beam, labelled within 10 m, 25 m with the Sample Scanner or as an Appraiser; extract it like any valuable and everyone in the level gets the Data), boss kills (60; milestone boss 80; finale 150), reaching a milestone (25), about 1 in 4 completed contracts (5-15), The Archivist's contracts, and a Scavenger's finds (1 in 10 is a sample). Difficulty scales it: Relaxed x0.5, Easy x0.75, Normal x1, Hard x1.35, Brutal x1.75.",
+            "Every gain pops up (\"+15 Research Data\"), and at the end of each level a line sums up the level's Data and any samples left behind.",
+            "Spend it on the Research tab. A started project finishes after a number of levels cleared, in any run; one runs at a time (two with Parallel Lab, three with Lab Network). Cancelling gives half back.",
+            "Research is kept with your account: a run reset never touches it.",
+            "Lobby-wide unlocks use the host's research (or anyone's, if the host chose that); personal ones use your own.",
+            "Personal tools (Recall Beacon, Twin Pads, Insulated Cart, Survey Drone, Lab Network's borrow) are buttons on the Research tab during a level. Shop unlocks (Pawn Counter, Futures, Gun Bench, Fusion Forge, Gear Exchange) are in the shop's Research section."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Logistics",
+          "terms": [
+            {
+              "term": "T1 Cart Winch",
+              "meaning": "Look at a cart 3-10 m away and hold Interact (E) to reel it toward you (slowly; it stops if it hits something). Personal."
+            },
+            {
+              "term": "T2 Extraction Drill",
+              "meaning": "When every living player stands in an extraction zone, its countdown runs twice as fast. Lobby-wide."
+            },
+            {
+              "term": "T2 Recall Beacon",
+              "meaning": "Once per level, call the nearest empty cart to where you stand (Research tab, in a level). Personal."
+            },
+            {
+              "term": "T3 Trailer Hitch",
+              "meaning": "Push a cart into another to hitch them: pushing one tows the other. Yank them apart to unhitch. Lobby-wide."
+            },
+            {
+              "term": "T3 Twin Pads",
+              "meaning": "The Courier can put a second Drop Pad anywhere (Research tab, in a level). It counts like the one in the truck. Personal."
+            },
+            {
+              "term": "T4 Insulated Cart",
+              "meaning": "Once per level, mark the nearest cart (Research tab): its valuables lose no value from bumps while it stands still. Personal."
+            },
+            {
+              "term": "T5 Dumbwaiter",
+              "meaning": "Every extraction point gets a chute: once per point, leave one valuable on it and it's sent straight to the open extraction. Lobby-wide."
+            }
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Economy",
+          "terms": [
+            {
+              "term": "T1 Price Board",
+              "meaning": "The shop's Research section shows next visit's featured deal, and that deal will be exactly that item. Personal."
+            },
+            {
+              "term": "T2 Haggling",
+              "meaning": "Once per shop visit, haggle one item: 50% chance it's 25% cheaper, 50% chance it's 10% dearer (that visit). Personal."
+            },
+            {
+              "term": "T2 Rotation Lock",
+              "meaning": "Lock one more shop item (3 at most), and your first lock each shop visit is free. Personal."
+            },
+            {
+              "term": "T3 The Archivist",
+              "meaning": "A new contract giver whose contracts pay Research Data (samples, a full catalogue, specimens). Lobby-wide."
+            },
+            {
+              "term": "T3 Pawn Counter",
+              "meaning": "New shop section: pawn a gear item for 60% of its salvage, buy it back at 80% until the run ends. Lobby-wide."
+            },
+            {
+              "term": "T4 Futures",
+              "meaning": "New shop section: pay now for an item of a chosen rarity, delivered when the team clears the next milestone (one order per visit). Lobby-wide."
+            },
+            {
+              "term": "T5 Sponsors",
+              "meaning": "At run start the team picks one of three sponsors; each sets a run-long side goal and pays Scrap and Data at the run's end. Lobby-wide."
+            }
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Arsenal",
+          "terms": [
+            {
+              "term": "T1 Modules II",
+              "meaning": "Three new modules can drop and be bought: Tracer (monsters you hit are marked for the team for 3 s), Spotter Lens (aim at a valuable to see its value) and Tether (items you let go float for 1 s). Personal."
+            },
+            {
+              "term": "T2 Consumables II",
+              "meaning": "New shop consumables that go off on their own once per level: Smoke Canister (below 50% health, nearby monsters lose sight of you), Decoy Whistle (a monster gets close: a whistle draws monsters away) and Flash Charge (a monster gets very close: a flash stuns it). Personal."
+            },
+            {
+              "term": "T2 Behaviors II",
+              "meaning": "Four new behavior affixes can roll on your gear: Hasty, Momentum, Steady and Second Wind. Personal."
+            },
+            {
+              "term": "T3 Gun Bench",
+              "meaning": "Shop service: fit a Suppressor (quiet shots), Scatter Choke (an extra pellet, wider spread) or Stock (less kick) to the guns you hold next level. Personal."
+            },
+            {
+              "term": "T3 Fusion Forge",
+              "meaning": "Fuse three unequipped items of one slot and rarity into one item a rarity higher (shop Research section; not Uniques, cursed or starter items). Personal."
+            },
+            {
+              "term": "T4 Blueprint Archive",
+              "meaning": "Uniques you've found before can appear in your shop (one per visit). Personal."
+            },
+            {
+              "term": "T5 Prototype Lab",
+              "meaning": "Each run, one prototype item with an effect only research gives (one of 6) appears in your shop. Personal."
+            }
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Exploration",
+          "terms": [
+            {
+              "term": "T1 Sample Scanner",
+              "meaning": "Research samples within 25 m show as a ping on your screen. Personal."
+            },
+            {
+              "term": "T2 New Hazards",
+              "meaning": "Two map modifiers join the pool: Blackout (lights dimmed, monsters a little slower) and Supply Drop (a crate worth extra falls mid-level). Lobby-wide."
+            },
+            {
+              "term": "T2 Survey Drone",
+              "meaning": "Once per level (Research tab): a survey drone marks the valuables up to 22 m ahead of you for 10 s. Personal."
+            },
+            {
+              "term": "T3 Vault Cracking",
+              "meaning": "Some levels have a locked vault deep in the map: hold Interact on it for 6 s (monsters hear it) to crack it for more than double its value and Data. Lobby-wide."
+            },
+            {
+              "term": "T3 Nest Hunting",
+              "meaning": "Some levels have a Monster Nest: kill all its marked guards and the last one drops a nest core (Data when extracted). Lobby-wide."
+            },
+            {
+              "term": "T4 Expeditions",
+              "meaning": "A new route in the route vote: Expedition, with 40% more valuables, more monsters and twice the research samples. Lobby-wide."
+            },
+            {
+              "term": "T5 Anomaly Rooms",
+              "meaning": "Some maps have an anomaly deep inside: valuables float in low gravity around an anomaly sample worth a lot of Data. Lobby-wide."
+            }
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Crew",
+          "terms": [
+            {
+              "term": "T1 Boons II",
+              "meaning": "Four new run boons join the vote pool: Quick Study, Data Mine, Stockpile, Deep Pockets. Lobby-wide."
+            },
+            {
+              "term": "T2 Parallel Lab",
+              "meaning": "Run two research projects at once. Personal."
+            },
+            {
+              "term": "T2 Spectator Uplink",
+              "meaning": "While dead, press your ability key to mark the monster or valuable the spectate view looks at, for the living team. Personal."
+            },
+            {
+              "term": "T3 Synergies II",
+              "meaning": "Four new class-pair synergies: Iron Wall, Quick Patch, Study Group, Side Hustle. Lobby-wide."
+            },
+            {
+              "term": "T3 Gear Exchange",
+              "meaning": "Trade gear with a teammate in the shop's Research section: one item for one, both confirm. Personal."
+            },
+            {
+              "term": "T4 Crew Drills",
+              "meaning": "At each crew level the team votes one of three drills: a small team rule for the rest of the run. Lobby-wide."
+            },
+            {
+              "term": "T5 Lab Network",
+              "meaning": "Run three research projects at once, and once per run borrow one personal unlock a teammate has researched (Research tab). Personal."
+            }
+          ]
+        },
+        {
+          "type": "goto",
+          "tab": "Research",
+          "label": "Go to the Research tab"
+        }
+      ]
+    },
+    {
+      "id": "ascension",
+      "title": "Ascension",
+      "icon": "AS",
+      "summary": "Win a run, then replay it at higher Ascension levels: each adds a modifier on top of the lower ones, with better rewards.",
+      "keywords": "ascension ascend win victory finale liquidator endless modifier rank title crown apex",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "How it works",
+          "items": [
+            "A run is won by clearing the last chapter (level 50 on Standard) and defeating its finale boss, The Liquidator (Armored, Enraged, Warlord; a second phase at half health). Its level's extractions stay sealed until it falls.",
+            "After the win the team votes: End the run, Keep going (Endless, no more Ascension credit), or Ascend (the next run starts one Ascension higher).",
+            "A win at Ascension N opens Ascension N+1 (up to 20). The host picks the level before the run starts (Settings tab, under the difficulty), up to their best win + 1 (or anyone's: Ascension/Source).",
+            "Per level: +{cfg:Ascension/XpPerLevel}% XP, +{cfg:Ascension/ScrapPerLevel}% haul Scrap, +{cfg:Ascension/DataPerLevel}% Research Data, and +1 gear luck every 4 levels.",
+            "A first win at each level gives Research Data (100 + 25 per level). Titles at A1, A5, A10, A15 and A20, your rank by your name, per-class records, the Crown of Ascent (A10) and the cursed Apex Brand (A20).",
+            "Ascension is kept with your account; a run wipe never touches it."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "The 20 modifiers (each adds to the lower ones)",
+          "terms": [
+            {
+              "term": "A1 Elite Patrols",
+              "meaning": "Elites spawn 25% more often."
+            },
+            {
+              "term": "A2 Inflation",
+              "meaning": "Mod shop prices +10%."
+            },
+            {
+              "term": "A3 Fewer Second Chances",
+              "meaning": "One fewer death save on boss levels (never below 0)."
+            },
+            {
+              "term": "A4 Brittle Haul",
+              "meaning": "Valuables take 15% more damage when hit."
+            },
+            {
+              "term": "A5 Mutating Bosses",
+              "meaning": "Bosses get one more modifier."
+            },
+            {
+              "term": "A6 Narrow Choice",
+              "meaning": "Boon votes offer 2 boons instead of 3."
+            },
+            {
+              "term": "A7 Hard Hitters",
+              "meaning": "Monsters deal 10% more damage."
+            },
+            {
+              "term": "A8 Cold Start",
+              "meaning": "Starting Scrap (Seed money, late-join Scrap) is halved."
+            },
+            {
+              "term": "A9 Rising Heat",
+              "meaning": "In heat votes, Skip only wins with a majority (otherwise the top card wins)."
+            },
+            {
+              "term": "A10 Sharp Ears",
+              "meaning": "Monsters hear noises 15% farther."
+            },
+            {
+              "term": "A11 Short Supply",
+              "meaning": "The shop has one fewer gear item and one fewer consumable each visit."
+            },
+            {
+              "term": "A12 Tough Hides",
+              "meaning": "Monsters have 15% more health."
+            },
+            {
+              "term": "A13 Slow Recovery",
+              "meaning": "Revived players come back with 25% less health."
+            },
+            {
+              "term": "A14 Escorted Bosses",
+              "meaning": "Every boss comes with an elite escort (the finale gets two)."
+            },
+            {
+              "term": "A15 Tight Contracts",
+              "meaning": "Contract targets are 15% higher."
+            },
+            {
+              "term": "A16 Heavy Quotas",
+              "meaning": "Haul goals +10%."
+            },
+            {
+              "term": "A17 Scarce Parts",
+              "meaning": "Monsters drop 30% fewer crafting parts."
+            },
+            {
+              "term": "A18 Veteran Elites",
+              "meaning": "Elites get one more modifier (up to 3)."
+            },
+            {
+              "term": "A19 Marked Earner",
+              "meaning": "Each level, last level's top Scrap earner is Marked: noises near them carry 25% farther."
+            },
+            {
+              "term": "A20 Final Form",
+              "meaning": "The finale boss gets a third phase at 25% health: another escort and one more modifier."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crafting",
+      "title": "Crafting & Modules",
+      "icon": "CR",
+      "summary": "Crafting parts, modules and attunement let you improve the gear you already like.",
+      "keywords": "crafting craft parts sinew core shard prime essence boss heart recipe module socket attunement bonded tempered soulbound unique affix",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "Crafting",
+          "items": [
+            "{cfg:Loot/CraftingParts?Monsters drop crafting parts. Walk over the glowing label to pick up your own copy.:Crafting is off on this host.}",
+            "Parts also come from contracts, extractions and salvaging Rare or better gear. Drops fade after {cfg:Loot/PartLifetime} s.",
+            "Craft on the Gear tab: select an item and press Craft. Each item can be crafted {cfg:Loot/MaxCraftsPerItem} times."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Recipes",
+          "terms": [
+            {
+              "term": "Reroll a stat",
+              "meaning": "3 Sinew + 1 Core Shard."
+            },
+            {
+              "term": "Raise a stat",
+              "meaning": "2 Core Shard."
+            },
+            {
+              "term": "Upgrade rarity (up to Epic)",
+              "meaning": "2 Core Shard + 1 Prime Essence."
+            },
+            {
+              "term": "Upgrade to Legendary",
+              "meaning": "2 Prime Essence + 1 Boss Heart."
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Modules",
+          "items": [
+            "Rare and better gear can have sockets. Slot a module for free from the item's card.",
+            "Get modules from elites, crates and bosses, or craft one.",
+            "Take a module out in the Shop for {cfg:Loot/ModuleRemoveCost} Scrap. Salvaging an item gives its modules back."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Attunement",
+          "items": [
+            "Wear gear to attune it: finishing levels, carrying valuables and kills all count.",
+            "Bonded (25) adds a hidden stat, Tempered (75) boosts the best one, Soulbound (150) boosts the base stat."
+          ]
+        },
+        {
+          "type": "goto",
+          "tab": "Gear",
+          "label": "Go to the Gear tab"
+        }
+      ]
+    },
+    {
+      "id": "scrap",
+      "title": "Scrap & the Shop",
+      "icon": "$",
+      "summary": "Scrap is your own money: you earn it alongside the team's haul and spend it in the mod's Shop.",
+      "keywords": "scrap money currency cash coins earn spend shop rivet store buy crate reputation consumables respec buyback wishlist lock",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Earn Scrap worth {cfg:Currency/Percent}% of what the team extracts, plus salvage and contracts.",
+            "Your Scrap is yours alone: the team's money is never touched.",
+            "Shop {cfg:Shop/ShopAnywhere?anywhere (host setting).:between levels, in the game's shop.}",
+            "Your stock refreshes each shop visit: gear, consumables, crates and one featured deal.",
+            "Lock up to 2 items ({cfg:Shop/LockFee} Scrap each) to keep them for the next visit.",
+            "Spend Scrap here to raise your shop reputation: higher tiers stock better items.",
+            "Salvaged something by mistake? Buy it back before you leave the shop."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "What you can buy",
+          "terms": [
+            {
+              "term": "Crates",
+              "meaning": "Gear Crate {cfg:Shop/GearCrateScrap} Scrap, Premium Crate {cfg:Shop/PremiumCrateScrap} Scrap. The card shows your odds."
+            },
+            {
+              "term": "Consumables",
+              "meaning": "Small bonuses that last until your next shop visit."
+            },
+            {
+              "term": "Services",
+              "meaning": "Respec ({cfg:Shop/RespecScrap} Scrap), perk reroll, affix reroll and more."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Buying then salvaging never makes a profit."
+        },
+        {
+          "type": "goto",
+          "tab": "Shop",
+          "label": "Go to the Shop tab"
+        }
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": "Contracts",
+      "icon": "CT",
+      "summary": "Contracts are side goals for the next level: finish them for Scrap, XP, a reward of your choice and reputation.",
+      "keywords": "contracts contract board quests missions jobs accept reroll slots tier easy hard brutal bonus objective reward giver reputation rival chain",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Open the board in the truck, the shop or the pre-game lobby, and accept up to {cfg:Contracts/ContractSlots} contracts.",
+            "Finish them in the next level to get Scrap and XP, then pick a reward on the Contracts tab.",
+            "Harder tiers (Easy, Hard, Brutal) have bigger goals and pay more.",
+            "Meet a contract's bonus objective for 50% more Scrap.",
+            "Don't like the offers? Reroll for {cfg:Contracts/RerollScrap} Scrap.",
+            "A failed contract only costs a little reputation with its giver.",
+            "The tab is one screen: the board on the left, your active contracts, the team contract and chains in the middle, reputation with every giver along the top and the run's history at the bottom. Point at anything (or click it to keep it) and the panel on the right shows it in full, with Accept, Vote or Drop."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Kinds of contract",
+          "terms": [
+            {
+              "term": "Personal",
+              "meaning": "Your own goal: kills, extractions, valuables, speed."
+            },
+            {
+              "term": "Class",
+              "meaning": "A goal that fits the class you play."
+            },
+            {
+              "term": "Rival",
+              "meaning": "Friendly competition with teammates: the best score wins."
+            },
+            {
+              "term": "Team",
+              "meaning": "One shared goal the lobby votes on, with a big reward and a real loss."
+            }
+          ]
+        },
+        {
+          "type": "goto",
+          "tab": "Contracts",
+          "label": "Go to the Contracts tab"
+        }
+      ]
+    },
+    {
+      "id": "reputation",
+      "title": "Givers & Reputation",
+      "icon": "RP",
+      "summary": "Each contract comes from one of four givers, and finishing their contracts earns their trust for the run.",
+      "keywords": "reputation rep givers giver madame brass kaboom hollis dispatch trust tier stranger known trusted partner chain unlock",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Finish a contract to gain reputation with its giver: Easy +1, Hard +2, Brutal +3.",
+            "Rival, chain and team contracts give +2. A failure takes away 1.",
+            "Reach 3 for Hard contracts, 6 for Brutal ones and their story chain, 10 for a third reward choice.",
+            "New tiers show on your next board. The Givers section shows how close you are.",
+            "Chains are short stories over 2-3 levels that end in a big reward."
+          ]
+        },
+        {
+          "type": "dynamic",
+          "name": "contracts"
+        },
+        {
+          "type": "goto",
+          "tab": "Contracts",
+          "label": "Go to the Contracts tab"
+        }
+      ]
+    },
+    {
+      "id": "teamcontracts",
+      "title": "Team Contracts",
+      "icon": "TC",
+      "summary": "A team contract is one risky goal the whole lobby votes on: a shared reward if you win, a shared loss if you fail.",
+      "keywords": "team contract vote stakes curse risk shared group fragile exposed marked drained",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "{cfg:TeamContracts/TeamContracts?The board offers one team contract for the next level.:Team contracts are off on this host.}",
+            "Vote Accept or Decline on the board ({cfg:TeamContracts/VoteMode} decides).",
+            "In a level, hold {key:callout} to vote Accept during the first {cfg:TeamContracts/VoteSeconds} s.",
+            "Only players there for the vote win or lose. Your Scrap never goes below 0.",
+            "Some failures curse the next level; the curse shows on your HUD."
+          ]
+        },
+        {
+          "type": "dynamic",
+          "name": "teamcontracts"
+        },
+        {
+          "type": "goto",
+          "tab": "Contracts",
+          "label": "Go to the Contracts tab"
+        }
+      ]
+    },
+    {
+      "id": "elites",
+      "title": "Elites & Bosses",
+      "icon": "EL",
+      "summary": "Elites are tougher monsters with special modifiers, and bosses are the toughest of all: both drop better loot.",
+      "keywords": "elites elite bosses boss monsters enemies modifiers armored swift champion overlord legendary drop",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Any monster can spawn as an elite, more often on later levels (up to {cfg:RPG/EliteMaxChance}%).",
+            "Kill an elite for {cfg:RPG/EliteXpMultiplier}x XP and a gear drop.",
+            "Nearby elites show at the top right of your screen.",
+            "{cfg:Bosses/Bosses?Every few levels, one monster becomes a named boss with several modifiers.:Bosses are off on this host.}",
+            "Bosses come every {cfg:Bosses/BossEvery} levels (sooner on Brutal and at a high threat rating).",
+            "Beat a boss and every player gets a Legendary item, Scrap and a Boss Heart."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Modifiers",
+          "terms": [
+            {
+              "term": "Armored",
+              "meaning": "Takes 40% less damage."
+            },
+            {
+              "term": "Regenerating",
+              "meaning": "Heals over time."
+            },
+            {
+              "term": "Swift",
+              "meaning": "Moves 30% faster."
+            },
+            {
+              "term": "Unstoppable",
+              "meaning": "Shrugs off most of a stun."
+            },
+            {
+              "term": "Enraged",
+              "meaning": "Faster and tougher below half health."
+            },
+            {
+              "term": "Relentless (bosses)",
+              "meaning": "Calming effects work half as well."
+            },
+            {
+              "term": "Stalwart (bosses)",
+              "meaning": "Takes half damage from explosions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teamplay",
+      "title": "Team Play",
+      "icon": "TP",
+      "summary": "Playing together pays off: partner classes boost each other, the shop shows your best moments, and fast revives earn more.",
+      "keywords": "team play synergy synergies partner pair highlights card mvp revive call out death head clutch help together",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "Synergies",
+          "items": [
+            "Stay within {cfg:Team/SynergyRange} m of a partner class to switch on a synergy bonus ({cfg:Team/Synergies?on:off} here).",
+            "Each class has 2-3 partners; the HUD shows \"Synergy\" while one is on."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Who plays what",
+          "items": [
+            "In the pre-game lobby, the class roster (right middle) shows who picked which class and who still has to. Players without a class come first. Click your own row to open the Class tab.",
+            "In play, a small tag over each teammate's head shows their class and level. It fades with distance and hides behind walls (both can be changed in Settings). A death head shows \"- Down\".",
+            "Hold {key:teampanel} for the team panel: every player's class, level, XP, mastery (★) and unspent points. While you're spectating, it also shows who you're watching."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Highlights",
+          "items": [
+            "When you reach the shop, a card shows the team's best moments since the last shop.",
+            "Tap {key:highlights} to hide it, or hold it to keep it up."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Reviving",
+          "items": [
+            "Down? As a death head, press {key:callout} to show your team where you are.",
+            "Carry a death head to the extraction or truck to revive them, as usual.",
+            "Medics and Undertakers earn extra XP for fast revives."
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "The full lists are below: every synergy and every highlight."
+        },
+        {
+          "type": "dynamic",
+          "name": "synergies"
+        },
+        {
+          "type": "dynamic",
+          "name": "highlights"
+        }
+      ]
+    },
+    {
+      "id": "deathsaves",
+      "title": "Death Saves",
+      "icon": "DS",
+      "summary": "A death save stops a hit that would kill you, once per charge each level.",
+      "keywords": "death save saves second chance phoenix last stand survive revive charges fall lethal",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Get death saves from perks, gear and some classes.",
+            "Each charge stops one killing hit and gives you a moment of safety.",
+            "Charges refill every level.",
+            "{cfg:Rules/LethalFalls?Falling off the level is deadly, and a death save catches that too.:Falling off the level sends you back to the truck.}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saving",
+      "title": "Saving & Runs",
+      "icon": "SV",
+      "summary": "Your RepoRPG progress is saved with the game's own save, so the same save means the same run.",
+      "keywords": "save saving load run reset progress delete rejoin host keeps data",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Your class levels, talents, gear, perks and Scrap belong to the run.",
+            "Saving, loading or deleting a game save does the same to its run.",
+            "In a lobby, the host keeps everyone's run, so you get yours back when you rejoin the same save.",
+            "Your own settings (controls, HUD, text size) are never part of a run."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "When a run ends, everything in it resets. Your account unlocks and mastery stay."
+        }
+      ]
+    },
+    {
+      "id": "account",
+      "title": "Account & Unlocks",
+      "icon": "AC",
+      "summary": "Your account keeps unlocks, titles and mastery between runs, on your own computer.",
+      "keywords": "account unlocks titles cosmetics badge style collection between runs permanent",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Earn unlocks by playing: they stay on your account for good.",
+            "Some unlocks give you a choice at the start of a run ({cfg:Account/StartingUnlocks?on here:off here}).",
+            "Pick your title and cosmetics on the Account tab. Teammates see your title and badge."
+          ]
+        },
+        {
+          "type": "dynamic",
+          "name": "unlocks"
+        },
+        {
+          "type": "goto",
+          "tab": "Account",
+          "label": "Go to the Account tab"
+        }
+      ]
+    },
+    {
+      "id": "mastery",
+      "title": "Mastery & Prestige",
+      "icon": "★",
+      "summary": "Reach level {cfg:Leveling/MaxLevel} with a class to master it, for a badge and new options on later runs.",
+      "keywords": "mastery master prestige star badge alternate passive fourth tree 4th",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Master a class to get a ★ next to its name and yours, for good.",
+            "Swap in the class's alternate passive before spending points ({cfg:Account/AlternatePassives?allowed here:off here}).",
+            "Unlock a fourth talent tree for the class ({cfg:Account/PrestigeTrees?allowed here:off here})."
+          ]
+        },
+        {
+          "type": "dynamic",
+          "name": "alts"
+        },
+        {
+          "type": "goto",
+          "tab": "Account",
+          "label": "Go to the Account tab"
+        }
+      ]
+    },
+    {
+      "id": "latejoin",
+      "title": "Joining Late",
+      "icon": "LJ",
+      "summary": "{cfg:LateJoin/Enabled?Friends can join after the run has started: in the truck, the shop or mid-level.:Joining after the run has started is off on this host.}",
+      "keywords": "late join joining mid level drop in rejoin friend spawn shield catch up catch up catch-up starting scrap starting gear behind xp bonus",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Join where the host allows: truck {cfg:LateJoin/AllowTruck?on:off}, shop {cfg:LateJoin/AllowShop?on:off}, mid-level {cfg:LateJoin/AllowLevels?on:off}.",
+            "You can't be hurt for {cfg:LateJoin/SpawnShield} s after you appear.",
+            "Rejoin the same save to get your class, levels, gear and Scrap back.",
+            "{cfg:LateJoin/ClassPickOnJoin?Joined mid-level? You have 60 s to pick a class.:Joined mid-level? Pick a class at the next shop.}"
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Catch-up",
+          "items": [
+            "A player who joins after the first level starts their first class at {cfg:LateJoin/CatchUpShare}% of the team's average class level, with the points to spend.",
+            "They also get {cfg:LateJoin/StartScrapPerLevel} Scrap per level cleared (at most 300) and one item per gear slot ({cfg:LateJoin/StartGear?on here:off here}): rarer the deeper the run. Once per player per run.",
+            "Anyone whose class level falls more than 2 below the team's average (say, after being dead for a while) gets +{cfg:LateJoin/BehindXpBonus}% XP until they're within 1 level. The HUD shows CATCH-UP while it's on."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "milestones",
+      "title": "Milestones, Boons & Crew",
+      "icon": "MS",
+      "summary": "Runs come in chapters. Every few levels there's a milestone boss; clearing it gives every player a reward, a team boon vote and a harder chapter. Clear levels in a row for a streak, and everything the team does raises the crew level.",
+      "keywords": "milestone milestones chapter chapters milestone boss streak streaks boon boons run boon vote reward unique payout recap records personal best history second wind salvage line bone collectors light load hold the line bounty board crew crew level team level bonus boss vote easy money free estimate hazard pay head start spare parts full sweep lucky break lone wolf rapid response tip jar crowd control marked for death safety net",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "The Season",
+          "items": [
+            "A run is a set number of chapters: Standard is 10 chapters of 5 levels (50 in all), Short is 25 levels, Marathon 70 ({cfg:Season/Length} here). The last chapter ends with the <b>finale</b>: a tougher milestone boss that enrages at half health and calls an elite escort to its side.",
+            "Beat the finale and extract to <b>win the run</b>: a payout for everyone, a Victory recap and a win on your record. Then the team votes: <b>End</b> the run (everyone goes back to the main menu; the save stays) or <b>Endless</b> (chapters keep coming, each one tougher: more threat, bosses with more modifiers).",
+            "Each chapter has a name, shown when it starts. The HUD card and the truck screen show where you are (Chapter 4/10, Finale, Endless 2). Deep-run unlocks are spread over the whole season."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Routes",
+          "items": [
+            "After each normal level the team votes on the next level's route (Run › Votes, or the Shop's vote strip): <b>Safe</b> (the level as usual) or one of two risky routes, each a risk (more monsters, elites, a higher haul goal, a map modifier...) and a reward (gear, Scrap, luck or crafting parts).",
+            "It's decided when everyone has voted, or when the next level starts. No votes = Safe; a tie goes to the safer route. Milestone (boss) levels have no route vote.",
+            "The chosen route shows on the truck banner and on your HUD card while you play it."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Heat",
+          "items": [
+            "After each milestone boss (not the finale) the team votes in Run › Votes: one of 3 heat cards, or <b>Skip</b>. No votes or a tie = Skip. It's decided when everyone has voted, or when the next level starts.",
+            "Heat only goes up: a card stays for the rest of the run. Skipping is how the team keeps it where it is.",
+            "Each point of heat (up to 10): +4% haul Scrap and +1 gear and shop luck. Never more XP.",
+            "Cards: Monster Surge (1), Lean Shop (1), Blackout (1), Elite Swarm (2), Hardened Bosses (2), Glass Cannon (2), Fragile Goods (2), Short Fuse (2), Iron Bodies (3), Thin Wallets (3).",
+            "Records on the Account tab: the highest heat a chapter was cleared at, and the heat at Victory, per difficulty. Heat shows as a chip on the HUD card and on the truck banner."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Milestones and chapters",
+          "items": [
+            "Every {cfg:Milestones/Every} levels is a milestone level ({cfg:Milestones/Enabled?on here:off here}). It always has a milestone boss: more modifiers, more health, and a Legendary drop for every player.",
+            "Clearing it reaches the milestone and starts the next chapter. Each chapter adds {cfg:Milestones/ChapterThreat} to the threat rating, and {cfg:Milestones/ChapterRewards}% more XP and Scrap and +1 gear and shop luck.",
+            "The HUD and the truck and shop banner show the chapter and how many levels are left to the next milestone."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Your milestone reward",
+          "items": [
+            "After a milestone each player picks one reward in Run › Votes: a Unique (a Legendary for a slot, one you don't have yet) or a Scrap payout ({cfg:Milestones/ScrapPayout} at the first milestone, more for each one after).",
+            "You pick in the truck or the shop, with a confirm. There's no rush: it waits in the run save until you pick, even across a reload."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "The team boon vote",
+          "items": [
+            "After a milestone the team votes on one of three run boons. A regular boss kill can also start a vote ({cfg:Boons/BossVoteChance}% chance). The winner works for everyone for the rest of the run, and boons stack.",
+            "The vote ends when everyone has voted, or when the next level starts. Most votes wins; a tie, or no votes at all, is decided at random. You can change your vote until then. Vote in the truck or the shop.",
+            "The team's boons are listed in the Shop tab's Run Boons section, and their 2-letter codes show on the HUD (Settings: Run boons on the HUD)."
+          ]
+        },
+        {
+          "type": "dynamic",
+          "name": "boons"
+        },
+        {
+          "type": "bullets",
+          "title": "Team streak",
+          "items": [
+            "Every level the team clears adds 1 to the streak ({cfg:Streaks/Enabled?on here:off here}). Each streak level gives +{cfg:Streaks/XpPerLevel}% XP, +{cfg:Streaks/ScrapPerLevel}% Scrap from the haul and +{cfg:Streaks/LuckPerLevel} luck, for up to {cfg:Streaks/Cap} streak levels.",
+            "A death (one a death save doesn't stop) costs {cfg:Streaks/DeathPenalty} streak level(s). A lost level: {cfg:Streaks/FailMode}.",
+            "Streak and chapter bonuses together are capped at {cfg:Streaks/MaxTotalBonus}%."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Crew level",
+          "items": [
+            "The crew level (1-10) is shared by the whole team and resets with the run ({cfg:Crew/Enabled?on here:off here}). Crew XP comes from levels cleared, extraction points, contracts, team contracts, elites, bosses and milestones.",
+            "Each crew level adds a small team-wide bonus: 2 an extra Featured item in the shop, 3 +5% XP, 4 +10% max health, 5 +5% haul Scrap, 6 +1 luck, 7 contracts pay +10%, 8 +5% more XP, 9 mod shop -5%, 10 milestone payouts +25%.",
+            "The crew level is in the row along the top of the Contracts tab (select it to see every bonus). Crew XP and Scrap bonuses share the {cfg:Streaks/MaxTotalBonus}% cap with the streak and chapters."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Recap, records and history",
+          "items": [
+            "When a run ends every player gets a recap on the Account tab (Runs): levels, chapter, haul, bosses, best moments and MVPs. It never pops up over the game.",
+            "Your personal bests (most levels, best streak, highest chapter, most Scrap and bosses in a run, biggest haul in one level) and your last 20 runs are kept on your account."
+          ]
+        },
+        {
+          "type": "goto",
+          "tab": "Shop",
+          "label": "Go to the Shop tab"
+        },
+        {
+          "type": "goto",
+          "tab": "Contracts",
+          "label": "Go to the Contracts tab (crew level)"
+        },
+        {
+          "type": "goto",
+          "tab": "Account",
+          "label": "Go to the Account tab"
+        }
+      ]
+    },
+    {
+      "id": "depth",
+      "title": "Deeper in the run",
+      "icon": "DR",
+      "summary": "The longer the run, the more there is: new elite types, boss twists, Uniques, map modifiers, a fifth contract giver and two shop sections open up as the team clears levels.",
+      "keywords": "deep run unlocks unlock level map modifier modifiers heavy haul infestation thin air fragile goods elite night skeleton crew overtime brutish vampiric juggernaut shielded warlord twin bosses auditor black market contraband cursed final notice repossessor night shift servos overtime plating ledger of debts danger money class switch milestone switch",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "Something new opens up at every milestone through level 30 ({cfg:Unlocks/Enabled?on here:off here}). The team gets a banner in the truck when it does.",
+            "Map modifiers: once unlocked, {cfg:Unlocks/ModifierChance}% of levels roll one, a risk with a reward. It shows in the truck before the level and on the HUD. From level 30 every level has one, and two can stack.",
+            "The Auditor offers high-stakes contracts: 1.5x the pay, but a failure costs 15% of the reward in Scrap.",
+            "The Black Market and Contraband are extra Shop tab sections. Contraband gear is Legendary with an extra stat line and a curse that stays on it."
+          ]
+        },
+        {
+          "type": "dynamic",
+          "name": "depth"
+        },
+        {
+          "type": "bullets",
+          "title": "Switching class at a milestone",
+          "items": [
+            "In the shop right after a milestone ({cfg:Classes/SwitchAtMilestones?on here:off here}), switching class carries your progress over: the new class starts at {cfg:Classes/SwitchShare}% of your current class level, if it's lower than that.",
+            "You get its skill points to spend, and your attribute points are refunded so you can spend them again. Your old class stays at its level on the bench. Gear, perks, Scrap and boons stay. Once per milestone.",
+            "One player per class, unless the host allows duplicates ({cfg:Classes/AllowDuplicates?allowed here:not here})."
+          ]
+        },
+        {
+          "type": "goto",
+          "tab": "Shop",
+          "label": "Go to the Shop tab"
+        }
+      ]
+    },
+    {
+      "id": "difficulty",
+      "title": "Difficulty",
+      "icon": "DF",
+      "summary": "The host picks one of five difficulties (Relaxed to Brutal), and can add a payout tier and modifiers on top. Every level you clear raises a threat rating.",
+      "keywords": "difficulty tier hard brutal nightmare relaxed modifiers hardcore payout challenge threat rating run progress levels cleared later levels scaling preset presets easy normal custom selector pacing leveling speed economy valuables value",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "This lobby: {live:difficulty}.",
+            "The host picks it with the Difficulty selector at the top of the Settings tab or the Host tab. It sets about 45 host settings at once: leveling speed, Scrap and prices, loot, monsters, elites, bosses, run progress and the global caps.",
+            "Picking one loads it as pending changes: nothing changes until the host presses Apply. Changing any one setting afterwards shows Custom (based on ...).",
+            "In a run, XP rates and monsters change from the next level, and point and perk gains from the next run."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Difficulties",
+          "terms": [
+            {
+              "term": "Relaxed",
+              "meaning": "Gentle scaling, quick leveling and generous rewards: the max class level comes in about 19 levels."
+            },
+            {
+              "term": "Easy",
+              "meaning": "A softer run: fewer, weaker monsters, quicker leveling (max class level in about 24 levels), a bit more Scrap and better loot."
+            },
+            {
+              "term": "Normal",
+              "meaning": "The intended experience: the max class level comes late in a long run (around level 30)."
+            },
+            {
+              "term": "Hard",
+              "meaning": "Busier, tougher levels and slower leveling (about 30% of the max class level by level 8, the max around level 38), tighter caps and economy."
+            },
+            {
+              "term": "Brutal",
+              "meaning": "Strict scaling, slow leveling (the max class level around level 47), a tight economy and the tightest caps."
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Payout tier",
+          "items": [
+            "This run: {cfg:Difficulty/Tier}. Extra risk for extra reward, on top of the difficulty. The payout shows on your HUD when it isn't Standard.",
+            "Changes to the tier start with the next run, so the rules never change midway.",
+            "A higher payout means more Scrap, better gear luck and faster mastery."
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Payout tiers",
+          "terms": [
+            {
+              "term": "Relaxed",
+              "meaning": "Monsters hit softer, fewer elites. x0.8"
+            },
+            {
+              "term": "Standard",
+              "meaning": "As normal. x1"
+            },
+            {
+              "term": "Hard",
+              "meaning": "Monsters hit harder, more elites. x1.3"
+            },
+            {
+              "term": "Brutal",
+              "meaning": "Much harder, bosses every 2 levels. x1.7"
+            },
+            {
+              "term": "Nightmare",
+              "meaning": "The hardest, death saves cost 2 charges. x2.2"
+            }
+          ]
+        },
+        {
+          "type": "terms",
+          "title": "Modifiers",
+          "terms": [
+            {
+              "term": "Hardcore",
+              "meaning": "One death save per level."
+            },
+            {
+              "term": "Glass Cannon",
+              "meaning": "Deal and take 30% more damage."
+            },
+            {
+              "term": "No Shop",
+              "meaning": "The mod's shop is closed."
+            },
+            {
+              "term": "Fragile Goods",
+              "meaning": "Valuables break more easily."
+            },
+            {
+              "term": "Elite Swarm",
+              "meaning": "Twice as many elites."
+            },
+            {
+              "term": "Lone Wolves",
+              "meaning": "No synergies."
+            },
+            {
+              "term": "Thin Wallets",
+              "meaning": "Half the Scrap from the haul."
+            },
+            {
+              "term": "Iron Bodies",
+              "meaning": "No healing from abilities or gear."
+            },
+            {
+              "term": "Short Fuse",
+              "meaning": "Ability cooldowns 25% longer."
+            },
+            {
+              "term": "Blackout",
+              "meaning": "No threat labels or markers."
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Threat rating",
+          "items": [
+            "{cfg:Threat/Enabled?Every level your team clears raises a threat rating.:The threat rating is off on this host.}",
+            "It starts after {cfg:Threat/GraceLevels} levels cleared and slows down as it nears its cap of {cfg:Threat/MaxRating}.",
+            "The new rating starts with the next level, never in the middle of one.",
+            "A higher threat means more and tougher monsters, more elites, and bosses with extra modifiers.",
+            "It also means more valuables and a bigger haul goal (they grow together, so the goal stays reachable), more Scrap, better contract rewards and better gear and shop luck.",
+            "You see it in the truck, in the shop and on the Host tab, with a pop-up when it goes up.",
+            "It's part of the run: it's saved with your game save and resets when the run ends."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "How it adds up: the game already makes later levels harder on its own. The threat rating is a gentle extra on top, multiplied with player-count scaling, the difficulty tier and modifiers. The global caps still apply."
+        },
+        {
+          "type": "dynamic",
+          "name": "threat"
+        },
+        {
+          "type": "goto",
+          "tab": "Host",
+          "label": "Go to the Host tab"
+        },
+        {
+          "type": "bullets",
+          "title": "Valuable values",
+          "items": [
+            "{cfg:Valuables/Normalize?Modded valuables worth far more than vanilla ones of the same size are scaled down toward vanilla's values.:Modded valuables keep their own values on this host.}",
+            "A modded valuable may be worth up to {cfg:Valuables/MaxAboveVanilla}x the most valuable vanilla item of its size.",
+            "Every valuable is worth x{cfg:Valuables/ValueMultiplier} on this difficulty; haul goals follow, so they stay reachable."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moreplayers",
+      "title": "Big Lobbies",
+      "icon": "20",
+      "summary": "Lobbies can hold up to 20 players, and the game gets harder as more players join.",
+      "keywords": "more players big lobby lobby size max players 20 scaling difficulty player count crowd",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "The host sets the lobby size before hosting (this host: {cfg:Players/MaxPlayers}).",
+            "{cfg:Scaling/Enabled?With more than 4 players, levels get more monsters, tougher monsters, more loot and a bigger haul goal.:Difficulty scaling by player count is off on this host.}",
+            "Each extra player adds a little less than the one before.",
+            "The lobby and truck show what the next level will use; it stays fixed for the whole level.",
+            "Scrap is adjusted so each player earns about what they would in a group of 4."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Everyone in the lobby needs RepoRPG, on the same version."
+        }
+      ]
+    },
+    {
+      "id": "host",
+      "title": "Host Settings",
+      "icon": "HS",
+      "summary": "The host's settings apply to everyone in the lobby, so you all play by the same rules.",
+      "keywords": "host settings rules balance config lobby presets apply version",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "In someone else's lobby, their settings are used. Your own file is never changed.",
+            "Your controls and display settings always stay yours.",
+            "Hosting? Change settings on the Host tab and press Apply. Each shows when it takes effect.",
+            "Presets: save the settings under a name, then Load, Overwrite, Rename or Delete them from the Presets list. Loading only fills in pending changes (press Apply). Mark one as the default and it's applied whenever you host a new lobby.",
+            "Search: type in the box at the top of the Host tab (or press / or Ctrl+F; on a controller the left stick click opens an on-screen keyboard) to find any setting by name, description or group. Small typos are fine. The filter chips show only changed, pending, or now / next level / run start settings.",
+            "Players on a different RepoRPG version are paused (or removed, if the host chose that)."
+          ]
+        },
+        {
+          "type": "dynamic",
+          "name": "hostsettings"
+        },
+        {
+          "type": "goto",
+          "tab": "Host",
+          "label": "Go to the Host tab"
+        }
+      ]
+    },
+    {
+      "id": "controls",
+      "title": "Controls",
+      "icon": "KB",
+      "summary": "Every RepoRPG action, with its key or button for the device you're using.",
+      "keywords": "controls keys keybinds bindings buttons controller gamepad keyboard rebind input",
+      "blocks": [
+        {
+          "type": "bullets",
+          "title": "How every tab is laid out",
+          "items": [
+            "Tabs come in four groups: Character (Class, Attributes, Perks), Loot (Gear, Shop), Run (Contracts, Votes, Research) and Options (Settings, Host, Account, Guide). Keyboard: 1-4 or Tab / Shift+Tab switch the group, Q / E the tab inside it, 5-9 jump to Gear, Shop, Votes, Contracts and Settings. Controller: LT / RT and LB / RB. A group comes back on the tab you left it on.",
+            "Run › Votes has every vote and choice in one place: route, heat, boons (or End / Endless), your milestone reward, team contracts and crew votes - each a small card with its options in a row and \"2/4 voted\" with an icon per player (who voted for what, unless the host keeps votes private). Click an option to vote or change your vote; point at a vote (or click its title to keep it) for every option in full, the rules and who voted, in the panel on the right. Decided votes move to Recent results at the bottom. Notices open it on the one that needs you.",
+            "Top: the tabs, then a slim bar with your class, level, XP, Scrap, skill and attribute points, Research Data and how many things need you. Click any of them to go to its tab.",
+            "Middle: the tab's own content on the left. On the right, the detail panel: whatever you point at or select, in full, always in the same order (what it is, what it does now, what changes next, what it needs, its buttons).",
+            "Bottom: the action bar (Confirm, Reset, Undo and the tab's main actions), then the keys you can press.",
+            "Statuses look the same everywhere, each with its own shape: Available (dot), Pending (half dot), Selected (diamond), Locked (padlock), Maxed (star), Equipped (tick), New (sparkle), Cursed (triangle), In development (striped square).",
+            "Settings: changes apply at once so you can see them. Undo takes them back, Save keeps them. Closing the menu with changes not saved asks first."
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "In the menu, move with WASD, the arrow keys or the d-pad. {key:confirm} selects, {key:back} goes back and {key:tabs} switch tabs."
+        },
+        {
+          "type": "dynamic",
+          "name": "controls"
+        },
+        {
+          "type": "goto",
+          "tab": "Settings",
+          "label": "Rebind in Settings"
+        }
+      ]
+    },
+    {
+      "id": "hud",
+      "title": "HUD Guide",
+      "icon": "HD",
+      "summary": "What each part of RepoRPG's on-screen display shows, and where to find it.",
+      "keywords": "hud display screen ui overlay popups banner labels markers where action needed notices vote reminder badge hide hidden show preset minimal clean full custom clutter",
+      "blocks": [
+        {
+          "type": "terms",
+          "title": "",
+          "terms": [
+            {
+              "term": "Action needed",
+              "meaning": "Just above your class card: votes, choices and unspent points that wait on you, with the tab to open. Votes show how many have voted and any time left."
+            },
+            {
+              "term": "Bottom left",
+              "meaning": "One card: the run status chips (chapter, next milestone, streak, boons, heat, crew, payout, map modifier), your class, level, Scrap, XP bar and ability, the other keys your class has (Cart follow, Hum, Hand off, Swap copy, with their state), and your class's own lines. Pop-ups and Action Needed stack above it. Every row and chip can be hidden (Settings > HUD); hidden rows take no space."
+            },
+            {
+              "term": "Bottom right",
+              "meaning": "This level's contracts and any active synergy."
+            },
+            {
+              "term": "Top right",
+              "meaning": "Nearby elites and what you're holding."
+            },
+            {
+              "term": "Pop-ups",
+              "meaning": "XP, level ups, loot and contracts, stacked above your class."
+            },
+            {
+              "term": "Labels in the world",
+              "meaning": "Threat labels, room marks, scan markers and calls for help."
+            },
+            {
+              "term": "Highlights card",
+              "meaning": "Top centre in the shop: the team's best moments."
+            },
+            {
+              "term": "Banner",
+              "meaning": "Top centre for a moment: a boss appeared or fell, a team contract ended."
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Action needed",
+          "items": [
+            "When something needs you - a team vote (boon, route, heat, team contract, End / Endless), a reward or perk to pick, a class to choose - a banner shows near the top middle for a few seconds: what's needed and where (\"Vote on Heat - Open [{key:menu}] RepoRPG → Run › Votes\"). Several at once come as one banner.",
+            "It then stays in the small <b>ACTION NEEDED</b> list above your class card until it's done. Unspent skill or attribute points are only a small reminder there (and a dot on the menu hint).",
+            "Press {key:menu}: the menu opens on the tab that needs you, with the item outlined and selected. {key:notices} steps through what's waiting; the menu key then opens that one. Tabs show a count badge.",
+            "A vote with a time limit counts down, with a last reminder at 10 seconds. A vote that closes before you voted says \"Vote closed\". The host sees who hasn't voted yet in each vote panel.",
+            "Hidden while loading, in the level's intro and outro and while you're dead; while spectating only votes show. Settings > Action needed: banner, alert sound, where the list sits, and whether the menu key opens it."
+          ]
+        },
+        {
+          "type": "bullets",
+          "title": "Choosing what you see",
+          "items": [
+            "Settings > HUD: a preset and a live preview of your card. <b>Full</b> shows everything, <b>Minimal</b> keeps your class, ability, alerts and the important pop-ups (level ups, loot, contracts, perks), <b>Clean</b> keeps only the ability circle and alerts. Change anything by hand and it says <b>Custom</b>.",
+            "Every part has its own switch: the whole card, each row (class and level, Scrap, XP bar, ability, its timer and name, your class's lines), each status chip, each kind of pop-up, and the Action needed panel. Settings > In-world has nameplates, Medic health, Appraiser markers and outlines, monster icons, threat labels, the synergy indicator, boss marks and text, and light beams; Settings > Panels & notices has the lobby roster, the menu hint, the highlights and run summary cards and the contracts panel.",
+            "Classes with keys besides their ability get a row under it: the key or button (whichever you are using, updated when you rebind), what it does and its state, such as \"[G] CART FOLLOW: ON\". Greyed out with the reason when it can't be used right now. Compact card: just the keys. Settings > HUD > Class's extra keys hides it.",
+            "Some have a choice of where they show: Always, Truck & shop, Levels only or Never (the card, your class's lines and the contracts panel).",
+            "Hiding only hides it: your ability, scans, contracts and votes all still work. With the Action needed panel hidden, tabs still get their badge, and a vote with a deadline still comes back once near its end (unless Deadline reminder is off).",
+            "These are yours alone: the host never changes them, and they stay through run resets, restarts and updates. Reset HUD puts them all back to default (Undo takes it back until you save)."
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Settings has HUD size, text size, reduced effects and colourblind mode."
+        },
+        {
+          "type": "goto",
+          "tab": "Settings",
+          "label": "Go to the Settings tab"
+        }
+      ]
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary",
+      "icon": "AZ",
+      "summary": "Every RepoRPG term in one place, in plain words.",
+      "keywords": "glossary terms words dictionary meaning definitions what is",
+      "blocks": [
+        {
+          "type": "terms",
+          "title": "",
+          "terms": [
+            {
+              "term": "Run",
+              "meaning": "Everything from a new save until it ends. Most progress resets after a run."
+            },
+            {
+              "term": "Class",
+              "meaning": "Your role for the run: two passives, one active ability and a weakness."
+            },
+            {
+              "term": "Ability",
+              "meaning": "Your class's active power, used with {key:ability}."
+            },
+            {
+              "term": "XP",
+              "meaning": "What your class earns to level up. Each class levels on its own."
+            },
+            {
+              "term": "Skill points",
+              "meaning": "Earned each level; spent on talents."
+            },
+            {
+              "term": "Talents",
+              "meaning": "Upgrades in your class's three trees, bought in ranks."
+            },
+            {
+              "term": "Ranks",
+              "meaning": "How many points a talent has."
+            },
+            {
+              "term": "Capstone",
+              "meaning": "The big talent at the end of a tree."
+            },
+            {
+              "term": "Attribute points",
+              "meaning": "Earned each level; spent on attributes that help every class."
+            },
+            {
+              "term": "Milestone",
+              "meaning": "An extra effect for reaching 5, 10 or 15 points in an attribute."
+            },
+            {
+              "term": "Perks",
+              "meaning": "Run-long bonuses you pick every few levels."
+            },
+            {
+              "term": "Tags",
+              "meaning": "Perk families; collect 3 or 5 of one for a bonus."
+            },
+            {
+              "term": "Pending",
+              "meaning": "Points you've placed but not confirmed yet."
+            },
+            {
+              "term": "Gear",
+              "meaning": "Items in your four slots that add stats."
+            },
+            {
+              "term": "Rarity",
+              "meaning": "How good an item or perk is: Common up to Legendary."
+            },
+            {
+              "term": "Set",
+              "meaning": "Gear pieces that give a bonus when worn together."
+            },
+            {
+              "term": "Unique",
+              "meaning": "A Legendary item with its own special effect."
+            },
+            {
+              "term": "Module",
+              "meaning": "A plug-in for a gear socket."
+            },
+            {
+              "term": "Attunement",
+              "meaning": "Gear gets stronger the longer you wear it."
+            },
+            {
+              "term": "Scrap",
+              "meaning": "Your own money for the mod's Shop. The team's money is separate."
+            },
+            {
+              "term": "Contracts",
+              "meaning": "Side goals for the next level."
+            },
+            {
+              "term": "Reputation",
+              "meaning": "How much a contract giver trusts you this run."
+            },
+            {
+              "term": "Synergy",
+              "meaning": "A bonus two partner classes get while close together."
+            },
+            {
+              "term": "Elite",
+              "meaning": "A tougher monster with modifiers and better loot."
+            },
+            {
+              "term": "Boss",
+              "meaning": "A named, much tougher elite every few levels."
+            },
+            {
+              "term": "Death save",
+              "meaning": "A charge that stops one killing hit."
+            },
+            {
+              "term": "Mastery",
+              "meaning": "Reaching the top level with a class, for good."
+            },
+            {
+              "term": "Host settings",
+              "meaning": "Rules the host sets for the whole lobby."
+            },
+            {
+              "term": "Threat rating",
+              "meaning": "How tough the run has become; it rises with every level cleared."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

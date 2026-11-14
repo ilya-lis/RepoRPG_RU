@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "_comment": "Route choice (between levels): the team votes on the next level's route. Each risky route = one risk (below, or a map modifier from unlocks.json once it's unlocked) + one reward. The Safe route is always offered: no risk, no reward. Risk fields work like map modifiers (monsters, elites, haul goal, valueDamage, stamina...). Reward kinds: gear (each player finds a gear item of at least this rarity when the level is cleared: 0 Common, 1 Uncommon, 2 Rare), scrap (haul Scrap x value), luck (+value gear and shop luck on the level), parts (crafting parts each, when the level is cleared).",
+  "risks": [
+    { "id": "busy_floors", "name": "Busy Floors", "risk": "20% more monsters", "monsters": 1.2 },
+    { "id": "elite_patrol", "name": "Elite Patrol", "risk": "elites 60% more likely", "elites": 1.6 },
+    { "id": "tight_quota", "name": "Tight Quota", "risk": "haul goal +12%", "haul": 1.12 },
+    { "id": "rough_handling", "name": "Rough Handling", "risk": "valuables lose 25% more value when hit", "valueDamage": 1.25 },
+    { "id": "heavy_air", "name": "Heavy Air", "risk": "sprinting costs 15% more stamina", "stamina": 15 }
+  ],
+  "rewards": [
+    { "id": "gear", "name": "Gear Cache", "desc": "everyone finds an Uncommon-or-better gear item when the level is cleared", "kind": "gear", "value": 1 },
+    { "id": "rare_gear", "name": "Rare Cache", "desc": "everyone finds a Rare-or-better gear item when the level is cleared", "kind": "gear", "value": 2, "weight": 0.5 },
+    { "id": "bonus_pay", "name": "Bonus Pay", "desc": "haul Scrap +25%", "kind": "scrap", "value": 1.25 },
+    { "id": "lucky_find", "name": "Lucky Find", "desc": "+3 gear and shop luck on the level", "kind": "luck", "value": 3 },
+    { "id": "salvage", "name": "Salvage Rights", "desc": "4 crafting parts each when the level is cleared", "kind": "parts", "value": 4 }
+  ]
+}

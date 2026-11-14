@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "_comment": "Monster fights (Instigator). Names are the monsters' AI script types (the same in every language). neverAttack: never sent at another monster (stationary, teleporting, attaching or swarm AIs, and the ones with no navigation: CeilingEye, ThinMan, HeartHugger, Oogly). neverTarget: never attacked. Bosses (the mod's tier 3+) only attack with the Feud capstone. A type listed here that this game version doesn't have is logged once and ignored.",
+  "neverAttack": [
+    "EnemyCeilingEye",
+    "EnemyThinMan",
+    "EnemyHidden",
+    "EnemySlowMouth",
+    "EnemyTick",
+    "EnemyGnome",
+    "EnemyGnomeDirector",
+    "EnemyBang",
+    "EnemyBangDirector",
+    "EnemyHeadGrabber",
+    "EnemyHunter",
+    "EnemyBombThrower",
+    "EnemyHeartHugger",
+    "EnemyOogly"
+  ],
+  "neverTarget": [],
+  "hitDamage": [
+    10,
+    18,
+    28
+  ],
+  "hitEvery": 1.2,
+  "reach": 2.6,
+  "search": 15,
+  "maxFights": 6
+}

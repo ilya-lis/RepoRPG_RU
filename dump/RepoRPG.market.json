@@ -1,0 +1,15 @@
+{
+ "version": 1,
+ "_about": "The living economy (1.0.69): which market category each valuable is in. Keywords are matched against the valuable's name (first category in this order wins); 'overrides' sets one valuable by its exact name. Valuables nothing matches: big ones (Big, Wide, Tall, Very tall) are Heavy, cheap ones for their size are Junk, the rest Curiosities.",
+ "categories": [
+  { "id": "fragile", "name": "Fragile", "keywords": ["vase", "bottle", "glass", "champagne", "wine", "egg", "porcelain", "mirror", "potion", "jar", "plate", "teacup", "cup", "mug", "flask", "ceramic", "crystal ball"] },
+  { "id": "electronics", "name": "Electronics", "keywords": ["radio", "tv", "television", "monitor", "computer", "laptop", "phone", "camera", "speaker", "console", "fan", "microwave", "toaster", "arcade", "boombox", "keyboard", "gameboy"] },
+  { "id": "tech", "name": "Tech", "keywords": ["robot", "server", "reactor", "uranium", "sample", "science", "laser", "battery", "drone", "cube", "orb", "power", "core", "tube", "engine", "generator", "circuit", "chip", "satellite"] },
+  { "id": "art", "name": "Art", "keywords": ["painting", "picture", "portrait", "statue", "sculpture", "bust", "canvas", "art", "easel", "mona", "figurine"] },
+  { "id": "antiques", "name": "Antiques", "keywords": ["clock", "watch", "gramophone", "goblet", "chalice", "crown", "ring", "bracelet", "necklace", "music box", "candelabra", "antique", "ocarina", "harp", "piano", "violin", "lamp", "chandelier", "trophy", "scepter", "staff", "book", "globe"] },
+  { "id": "heavy", "name": "Heavy", "keywords": ["barrel", "anvil", "kettlebell", "safe", "crate", "tank", "dumbbell", "weight", "boulder", "furnace", "cannon"] },
+  { "id": "curiosities", "name": "Curiosities", "keywords": ["doll", "skull", "frog", "monkey", "toy", "clown", "fossil", "bone", "idol", "mask", "bonsai", "plant", "duck", "puppet", "egg", "head", "creature"] },
+  { "id": "junk", "name": "Junk", "keywords": ["junk", "scrap", "trash", "can", "tire", "bucket", "pipe"] }
+ ],
+ "overrides": []
+}

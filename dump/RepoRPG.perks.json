@@ -1,0 +1,821 @@
+{
+ "version": 1,
+ "meta": [
+  {
+   "id": "double_charge",
+   "rarity": 2,
+   "tags": [
+    "Ability"
+   ]
+  },
+  {
+   "id": "adrenal_loop",
+   "rarity": 1,
+   "tags": [
+    "Ability",
+    "Monster"
+   ]
+  },
+  {
+   "id": "glass_cannon",
+   "rarity": 2,
+   "tags": [
+    "Risk",
+    "Monster"
+   ]
+  },
+  {
+   "id": "iron_skin",
+   "rarity": 1,
+   "tags": [
+    "Support"
+   ]
+  },
+  {
+   "id": "second_chance",
+   "rarity": 2,
+   "tags": [
+    "Risk"
+   ]
+  },
+  {
+   "id": "scavenger",
+   "rarity": 0,
+   "tags": [
+    "Loot"
+   ],
+   "evolveCounter": "extractions",
+   "evolveTarget": 10,
+   "evolveHow": "Complete 10 extraction points",
+   "evolveName": "Scrapper",
+   "evolveDesc": "extraction gear finds are one rarity higher",
+   "evolveEffects": [
+    {
+     "stat": "perk.scrapper",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "bounty_hunter",
+   "rarity": 1,
+   "tags": [
+    "Loot",
+    "Monster"
+   ]
+  },
+  {
+   "id": "field_medic",
+   "rarity": 0,
+   "tags": [
+    "Support"
+   ]
+  },
+  {
+   "id": "haggler",
+   "rarity": 0,
+   "tags": [
+    "Loot"
+   ]
+  },
+  {
+   "id": "vampire",
+   "rarity": 1,
+   "tags": [
+    "Monster"
+   ],
+   "evolveCounter": "kills",
+   "evolveTarget": 15,
+   "evolveHow": "Kill 15 monsters",
+   "evolveName": "Nosferatu",
+   "evolveDesc": "weapon hits heal 1 HP more",
+   "evolveEffects": [
+    {
+     "stat": "Lifesteal",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "bruiser",
+   "rarity": 1,
+   "tags": [
+    "Monster"
+   ]
+  },
+  {
+   "id": "marathon",
+   "rarity": 0,
+   "tags": [
+    "Mobility"
+   ],
+   "evolveCounter": "sprint",
+   "evolveTarget": 300,
+   "evolveHow": "Sprint for 5 minutes in total",
+   "evolveName": "Ultramarathon",
+   "evolveDesc": "sprinting also heals 1 HP every 10 s",
+   "evolveEffects": [
+    {
+     "stat": "perk.sprint_heal",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "springheel",
+   "rarity": 0,
+   "tags": [
+    "Mobility"
+   ]
+  },
+  {
+   "id": "hydraulics",
+   "rarity": 1,
+   "tags": [
+    "Carry",
+    "Throw"
+   ]
+  },
+  {
+   "id": "quick_learner",
+   "rarity": 1,
+   "tags": [
+    "Loot"
+   ],
+   "evolveCounter": "xp",
+   "evolveTarget": 3000,
+   "evolveHow": "Earn 3,000 XP",
+   "evolveName": "Scholar",
+   "evolveDesc": "+10% more XP",
+   "evolveEffects": [
+    {
+     "stat": "XpGain",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "lucky",
+   "rarity": 1,
+   "tags": [
+    "Loot",
+    "Risk"
+   ],
+   "evolveCounter": "rarefinds",
+   "evolveTarget": 5,
+   "evolveHow": "Find 5 Rare-or-better gear",
+   "evolveName": "Charmed",
+   "evolveDesc": "+2 more gear luck",
+   "evolveEffects": [
+    {
+     "stat": "GearLuck",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "id": "overclocked",
+   "rarity": 2,
+   "tags": [
+    "Ability"
+   ]
+  },
+  {
+   "id": "guardian",
+   "rarity": 1,
+   "tags": [
+    "Support"
+   ],
+   "evolveCounter": "near",
+   "evolveTarget": 600,
+   "evolveHow": "Stay near teammates for 10 minutes",
+   "evolveName": "Warden Angel",
+   "evolveDesc": "the aura also gives 5% damage resistance",
+   "evolveEffects": [
+    {
+     "stat": "GuardAura",
+     "value": 5
+    },
+    {
+     "stat": "GuardRadius",
+     "value": 8
+    }
+   ]
+  },
+  {
+   "id": "berserk",
+   "rarity": 1,
+   "tags": [
+    "Risk",
+    "Monster"
+   ]
+  },
+  {
+   "id": "sixth_sense",
+   "rarity": 0,
+   "tags": [
+    "Stealth"
+   ]
+  },
+  {
+   "id": "pack_mule",
+   "rarity": 0,
+   "tags": [
+    "Carry"
+   ],
+   "evolveCounter": "carried",
+   "evolveTarget": 20,
+   "evolveHow": "Carry 20 valuables into extractions",
+   "evolveName": "Pack Horse",
+   "evolveDesc": "also +10% grip strength",
+   "evolveEffects": [
+    {
+     "stat": "GrabStrength",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "shadowstep",
+   "rarity": 1,
+   "tags": [
+    "Stealth",
+    "Mobility"
+   ]
+  },
+  {
+   "id": "adrenaline",
+   "rarity": 0,
+   "tags": [
+    "Risk",
+    "Mobility"
+   ]
+  },
+  {
+   "id": "big_battery",
+   "rarity": 0,
+   "tags": [
+    "Mobility"
+   ]
+  },
+  {
+   "id": "wide_reach",
+   "rarity": 0,
+   "tags": [
+    "Ability"
+   ],
+   "evolveCounter": "uses",
+   "evolveTarget": 30,
+   "evolveHow": "Use your ability 30 times",
+   "evolveName": "Panoramic",
+   "evolveDesc": "your ability area +10% more",
+   "evolveEffects": [
+    {
+     "stat": "ActiveArea",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "amplifier",
+   "rarity": 1,
+   "tags": [
+    "Ability",
+    "Risk"
+   ]
+  },
+  {
+   "id": "treasure_hunter",
+   "rarity": 1,
+   "tags": [
+    "Loot"
+   ]
+  },
+  {
+   "id": "executioner",
+   "rarity": 1,
+   "tags": [
+    "Monster",
+    "Risk"
+   ]
+  },
+  {
+   "id": "lifeline",
+   "rarity": 1,
+   "tags": [
+    "Support"
+   ]
+  },
+  {
+   "id": "tough_as_nails",
+   "rarity": 0,
+   "tags": [
+    "Support"
+   ]
+  }
+ ],
+ "perks": [
+  {
+   "id": "butterfingers_ins",
+   "name": "Butterfingers Insurance",
+   "desc": "Once per level, the first value loss on a valuable you're holding costs nothing.",
+   "rarity": 1,
+   "tags": [
+    "Carry"
+   ],
+   "effects": [
+    {
+     "stat": "perk.drop_guard",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "long_arm",
+   "name": "Long Arm of the Law",
+   "desc": "Thrown items stun monsters they hit for 0.5 s.",
+   "rarity": 1,
+   "tags": [
+    "Throw"
+   ],
+   "effects": [
+    {
+     "stat": "perk.throw_stun",
+     "value": 0.5
+    }
+   ]
+  },
+  {
+   "id": "quiet_feet",
+   "name": "Quiet Feet",
+   "desc": "While crouched, you're as quiet as stealth allows (the host's noise cap, 40% by default).",
+   "rarity": 1,
+   "tags": [
+    "Stealth"
+   ],
+   "effects": [
+    {
+     "stat": "perk.quiet_crouch",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "team_spirit",
+   "name": "Team Spirit",
+   "desc": "+5% move speed while a teammate is within 6 m.",
+   "rarity": 1,
+   "tags": [
+    "Support"
+   ],
+   "effects": [
+    {
+     "stat": "perk.team_speed",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "id": "haul_hound",
+   "name": "Haul Hound",
+   "desc": "Valuables you carry into an extraction give you 3% extra Scrap on top of your share.",
+   "rarity": 2,
+   "tags": [
+    "Loot",
+    "Carry"
+   ],
+   "effects": [
+    {
+     "stat": "perk.haul_scrap",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "id": "hunters_mark",
+   "name": "Hunter's Mark",
+   "desc": "Monsters you hit are Marked for 5 s: +5% damage from everyone.",
+   "rarity": 2,
+   "tags": [
+    "Monster"
+   ],
+   "effects": [
+    {
+     "stat": "perk.mark",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "id": "afterburner",
+   "name": "Afterburner",
+   "desc": "Using your ability refills 20% stamina.",
+   "rarity": 2,
+   "tags": [
+    "Mobility",
+    "Ability"
+   ],
+   "effects": [
+    {
+     "stat": "perk.ability_stamina",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "id": "pied_piper",
+   "name": "Pied Piper",
+   "desc": "Monsters take 0.3 s longer to notice you.",
+   "rarity": 2,
+   "tags": [
+    "Stealth",
+    "Support"
+   ],
+   "effects": [
+    {
+     "stat": "perk.notice",
+     "value": 0.3
+    }
+   ]
+  },
+  {
+   "id": "catch",
+   "name": "Catch!",
+   "desc": "A valuable you throw that is caught within 3 s (by anyone) gains 5% value.",
+   "rarity": 3,
+   "tags": [
+    "Throw",
+    "Loot"
+   ],
+   "effects": [
+    {
+     "stat": "perk.catch",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "id": "dead_mans_pulse",
+   "name": "Dead Man's Pulse",
+   "desc": "When you go down, your death head stuns monsters within 5 m for 2 s.",
+   "rarity": 3,
+   "tags": [
+    "Risk",
+    "Monster"
+   ],
+   "effects": [
+    {
+     "stat": "perk.death_pulse",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "id": "encore",
+   "name": "Encore",
+   "desc": "Every 3rd use of your ability costs no charge.",
+   "rarity": 3,
+   "tags": [
+    "Ability"
+   ],
+   "effects": [
+    {
+     "stat": "perk.encore",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "id": "magnet_hands",
+   "name": "Magnet Hands",
+   "desc": "Small valuables within 3 m drift toward you.",
+   "rarity": 3,
+   "tags": [
+    "Carry",
+    "Loot"
+   ],
+   "effects": [
+    {
+     "stat": "perk.magnet",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "id": "guardian_angel",
+   "name": "Guardian Angel",
+   "desc": "Once per level, a teammate within 10 m of you survives a killing hit at 1 HP.",
+   "rarity": 3,
+   "tags": [
+    "Support",
+    "Risk"
+   ],
+   "effects": [
+    {
+     "stat": "perk.angel",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "ghost_protocol",
+   "name": "Ghost Protocol",
+   "desc": "Once per level, the first monster hit on you also makes you silent for 4 s.",
+   "rarity": 3,
+   "tags": [
+    "Stealth"
+   ],
+   "effects": [
+    {
+     "stat": "perk.ghost",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "id": "butter_hands",
+   "name": "Butter Hands",
+   "desc": "+30% throw strength, but you drop what you're holding when hit.",
+   "rarity": 2,
+   "tags": [
+    "Throw",
+    "Risk"
+   ],
+   "cursed": true,
+   "effects": [
+    {
+     "stat": "ThrowStrength",
+     "value": 30
+    },
+    {
+     "stat": "perk.drop_on_hit",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "blood_money",
+   "name": "Blood Money",
+   "desc": "+25% Scrap share, but you lose 5 HP at every extraction.",
+   "rarity": 2,
+   "tags": [
+    "Loot",
+    "Risk"
+   ],
+   "cursed": true,
+   "effects": [
+    {
+     "stat": "ScrapBonus",
+     "value": 25
+    },
+    {
+     "stat": "perk.blood_money",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "id": "loud_mouth",
+   "name": "Loud Mouth",
+   "desc": "+20% weapon damage, but your footsteps are 30% louder.",
+   "rarity": 2,
+   "tags": [
+    "Monster",
+    "Risk"
+   ],
+   "cursed": true,
+   "effects": [
+    {
+     "stat": "WeaponDamage",
+     "value": 20
+    },
+    {
+     "stat": "NoiseReduction",
+     "value": -30
+    }
+   ]
+  },
+  {
+   "id": "paper_tiger",
+   "name": "Paper Tiger",
+   "desc": "+40% ability power, but you take 20% more damage.",
+   "rarity": 2,
+   "tags": [
+    "Ability",
+    "Risk"
+   ],
+   "cursed": true,
+   "effects": [
+    {
+     "stat": "ActivePower",
+     "value": 40
+    },
+    {
+     "stat": "DamageTaken",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "id": "hoarder",
+   "name": "Hoarder",
+   "desc": "+2 gear luck, but your inventory holds 4 fewer items.",
+   "rarity": 2,
+   "tags": [
+    "Loot",
+    "Risk"
+   ],
+   "cursed": true,
+   "effects": [
+    {
+     "stat": "GearLuck",
+     "value": 2
+    },
+    {
+     "stat": "perk.hoarder",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "id": "last_breath",
+   "name": "Last Breath",
+   "desc": "+1 death save every level, but 15% less max health.",
+   "rarity": 2,
+   "tags": [
+    "Risk",
+    "Support"
+   ],
+   "cursed": true,
+   "effects": [
+    {
+     "stat": "DeathSaves",
+     "value": 1
+    },
+    {
+     "stat": "MaxHealth",
+     "value": -15
+    }
+   ]
+  }
+ ],
+ "tags": [
+  {
+   "tag": "Carry",
+   "three": [
+    {
+     "stat": "HeldItemProtection",
+     "value": 8
+    }
+   ],
+   "threeDesc": "carried items take 8% less damage",
+   "five": [
+    {
+     "stat": "HoldingStaminaDrain",
+     "value": -25
+    }
+   ],
+   "fiveDesc": "carrying drains 25% less stamina"
+  },
+  {
+   "tag": "Throw",
+   "three": [
+    {
+     "stat": "ThrowStrength",
+     "value": 5
+    }
+   ],
+   "threeDesc": "+5% throw strength",
+   "five": [
+    {
+     "stat": "perk.throw_guard",
+     "value": 1
+    }
+   ],
+   "fiveDesc": "thrown valuables can't break for 1 s"
+  },
+  {
+   "tag": "Stealth",
+   "three": [
+    {
+     "stat": "perk.crouch_noise",
+     "value": 10
+    }
+   ],
+   "threeDesc": "10% less noise while crouched",
+   "five": [
+    {
+     "stat": "perk.notice",
+     "value": 0.5
+    }
+   ],
+   "fiveDesc": "monsters notice you 0.5 s later"
+  },
+  {
+   "tag": "Support",
+   "three": [
+    {
+     "stat": "perk.heal_more",
+     "value": 10
+    }
+   ],
+   "threeDesc": "your heals on teammates +10%",
+   "five": [
+    {
+     "stat": "GuardAura",
+     "value": 5
+    },
+    {
+     "stat": "GuardRadius",
+     "value": 6
+    }
+   ],
+   "fiveDesc": "teammates within 6 m take 5% less damage"
+  },
+  {
+   "tag": "Loot",
+   "three": [
+    {
+     "stat": "ScrapBonus",
+     "value": 3
+    }
+   ],
+   "threeDesc": "+3% Scrap share",
+   "five": [
+    {
+     "stat": "GearLuck",
+     "value": 1
+    }
+   ],
+   "fiveDesc": "+1 gear luck"
+  },
+  {
+   "tag": "Monster",
+   "three": [
+    {
+     "stat": "perk.elite_dmg",
+     "value": 5
+    }
+   ],
+   "threeDesc": "+5% weapon damage to elites",
+   "five": [
+    {
+     "stat": "perk.elite_refund",
+     "value": 20
+    }
+   ],
+   "fiveDesc": "elite kills refund 20% of your ability cooldown"
+  },
+  {
+   "tag": "Risk",
+   "three": [
+    {
+     "stat": "perk.save_speed",
+     "value": 20
+    }
+   ],
+   "threeDesc": "death saves give +20% speed for 3 s",
+   "five": [
+    {
+     "stat": "perk.low_dmg",
+     "value": 10
+    }
+   ],
+   "fiveDesc": "below 25% health, +10% weapon damage"
+  },
+  {
+   "tag": "Ability",
+   "three": [
+    {
+     "stat": "CooldownReduction",
+     "value": 5
+    }
+   ],
+   "threeDesc": "5% cooldown reduction",
+   "five": [
+    {
+     "stat": "perk.charge_rate",
+     "value": 10
+    }
+   ],
+   "fiveDesc": "with 2+ ability charges, they refill 10% faster (inside the cooldown cap)"
+  },
+  {
+   "tag": "Mobility",
+   "three": [
+    {
+     "stat": "StaminaRegen",
+     "value": 5
+    }
+   ],
+   "threeDesc": "+5 stamina/s regen (while recharging)",
+   "five": [
+    {
+     "stat": "MaxStamina",
+     "value": 10
+    }
+   ],
+   "fiveDesc": "+10% max stamina"
+  }
+ ]
+}
