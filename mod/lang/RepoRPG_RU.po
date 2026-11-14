@@ -7873,7 +7873,7 @@ msgid "Price in Scrap: new perk choices."
 msgstr "Цена в ломе: новые варианты перков."
 
 msgid "Gear slots added to (or taken from) each player's rotating stock."
-msgstr "Сколько ячеек снаряжения добавляется в сменный ассортимент каждого игрока (или убирается из него)."
+msgstr "Сколько слотов снаряжения добавляется в сменный ассортимент каждого игрока (или убирается из него)."
 
 msgid "Multiplies the prices of stock, modules, consumables, services and crates."
 msgstr "Умножает цены ассортимента, модулей, расходников, услуг и ящиков."
@@ -8248,7 +8248,7 @@ msgid "Multiplies the chance a gear drop has a behavior affix (Uncommon 15%, Rar
 msgstr "Умножает шанс того, что выпавшее снаряжение получит свойство-поведение (необычное 15%, редкое 30%, эпическое 50%, легендарное 60%)."
 
 msgid "Chance (%) a Legendary drop is a Unique (when its slot has one)."
-msgstr "Шанс (%), что легендарная добыча окажется уникальной (если для её ячейки есть уникальный предмет)."
+msgstr "Шанс (%), что легендарная добыча окажется уникальной (если для её слота есть уникальный предмет)."
 
 msgid "Multiplies the attunement points equipped gear earns."
 msgstr "Умножает очки сонастройки, которые зарабатывает надетое снаряжение."
@@ -8329,7 +8329,7 @@ msgid "A new joiner's starting Scrap: this much per level the team has cleared (
 msgstr "Стартовый лом нового игрока: столько за каждый уровень, пройденный командой (не больше 300). Один раз на игрока за забег."
 
 msgid "A new joiner gets one item per gear slot, rarer the deeper the run (Common, then Uncommon from level 3, Rare from 7, Epic from 13)."
-msgstr "Новый игрок получает по одному предмету на каждую ячейку снаряжения, тем более редкому, чем глубже забег (обычный, затем необычный с 3-го уровня, редкий с 7-го, эпический с 13-го)."
+msgstr "Новый игрок получает по одному предмету на каждый слот снаряжения, тем более редкому, чем глубже забег (обычный, затем необычный с 3-го уровня, редкий с 7-го, эпический с 13-го)."
 
 msgid "Bonus XP (%) for a player whose class level is more than 2 below the team's average (e.g. after being dead for levels), until they're within 1 level."
 msgstr "Бонусный опыт (%) для игрока, чей уровень класса больше чем на 2 ниже среднего по команде (например, после нескольких уровней в мёртвом состоянии), пока разница не сократится до 1 уровня."
@@ -17003,7 +17003,7 @@ msgstr "Перестрахование"
 
 msgctxt "term"
 msgid "+6% coverage and 1 more Policy slot"
-msgstr "+6% к покрытию и на 1 ячейку «Полиса» больше"
+msgstr "+6% к покрытию и на 1 слот «Полиса» больше"
 
 msgctxt "term"
 msgid "Sentinel"
@@ -20355,7 +20355,7 @@ msgstr "Лицензия подрядчика"
 
 msgctxt "term"
 msgid "+1 contract slot (take one more contract into each level)"
-msgstr "+1 ячейка контракта (берите на каждый уровень на один контракт больше)"
+msgstr "+1 слот контракта (берите на каждый уровень на один контракт больше)"
 
 msgctxt "term"
 msgid "Complete 30 contracts in total"
@@ -20643,7 +20643,7 @@ msgstr "Услуга магазина: установите глушитель (
 
 msgctxt "term"
 msgid "Fuse three unequipped items of one slot and rarity into one item a rarity higher (shop Research section; not Uniques, cursed or starter items)."
-msgstr "Объедините три ненадетых предмета одной ячейки и редкости в один предмет на редкость выше (раздел «Исследования» в магазине; кроме уникальных, проклятых и стартовых предметов)."
+msgstr "Объедините три ненадетых предмета одного слота и редкости в один предмет на редкость выше (раздел «Исследования» в магазине; кроме уникальных, проклятых и стартовых предметов)."
 
 msgctxt "term"
 msgid "Blueprint Archive"
@@ -50151,7 +50151,7 @@ msgstr "+{0}% к охране предметов в руках"
 
 msgctxt "shape"
 msgid "+{0}% coverage and {1} more Policy slot"
-msgstr "+{0}% к покрытию и на {1} ячейку «Полиса» больше"
+msgstr "+{0}% к покрытию и на {1} слот «Полиса» больше"
 
 msgctxt "shape"
 msgid "Watchpost lasts {0}% longer"
@@ -51695,7 +51695,7 @@ msgstr "Выполните в сумме контрактов: {0}"
 
 msgctxt "shape"
 msgid "+{0} contract slot (take one more contract into each level)"
-msgstr "+{0} ячейка контракта (берите на каждый уровень на один контракт больше)"
+msgstr "+{0} слот контракта (берите на каждый уровень на один контракт больше)"
 
 msgctxt "shape"
 msgid "Salvage {0} items in total"
@@ -51778,8 +51778,288 @@ msgid "A new route in the route vote: Expedition, with {0}% more valuables, more
 msgstr "Новый маршрут в голосовании за маршрут: «Экспедиция» - на {0}% больше ценностей, больше монстров и вдвое больше образцов для исследований."
 
 msgctxt "data:guide"
+msgid "Max class level"
+msgstr "Макс. уровень класса"
+
+msgctxt "data:guide"
+msgid "XP multiplier"
+msgstr "Множитель опыта"
+
+msgctxt "data:guide"
+msgid "Kill XP (per monster tier)"
+msgstr "Опыт за убийство (за ранг монстра)"
+
+msgctxt "data:guide"
+msgid "First extraction XP"
+msgstr "Опыт за первое извлечение"
+
+msgctxt "data:guide"
+msgid "Level complete XP"
+msgstr "Опыт за прохождение уровня"
+
+msgctxt "data:guide"
+msgid "Revive XP"
+msgstr "Опыт за возрождение"
+
+msgctxt "data:guide"
+msgid "Respecs allowed"
+msgstr "Сброс навыков разрешён"
+
+msgctxt "data:guide"
+msgid "Class switch mid-level"
+msgstr "Смена класса посреди уровня"
+
+msgctxt "data:guide"
+msgid "Lethal falls"
+msgstr "Смертельные падения"
+
+msgctxt "data:guide"
+msgid "Damage reduction cap (%)"
+msgstr "Предел снижения урона (%)"
+
+msgctxt "data:guide"
+msgid "Cooldown reduction cap (%)"
+msgstr "Предел ускорения перезарядки (%)"
+
+msgctxt "data:guide"
+msgid "Dodge chance cap (%)"
+msgstr "Предел шанса уклонения (%)"
+
+msgctxt "data:guide"
+msgid "Elite monsters"
+msgstr "Элитные монстры"
+
+msgctxt "data:guide"
+msgid "Contract board size"
+msgstr "Размер доски контрактов"
+
+msgctxt "data:guide"
+msgid "Contract slots"
+msgstr "Слоты контрактов"
+
+msgctxt "data:guide"
+msgid "Rival contracts"
+msgstr "Контракты-состязания"
+
+msgctxt "data:guide"
+msgid "Gear chance per extraction (%)"
+msgstr "Шанс снаряжения за извлечение (%)"
+
+msgctxt "data:guide"
+msgid "Perk pick every N levels"
+msgstr "Выбор перка каждые N уровней"
+
+msgctxt "data:guide"
+msgid "Cursed perks"
+msgstr "Проклятые перки"
+
+msgctxt "data:guide"
+msgid "Evolving perks"
+msgstr "Развивающиеся перки"
+
+msgctxt "data:guide"
+msgid "Perk tag bonuses"
+msgstr "Бонусы меток перков"
+
+msgctxt "data:guide"
+msgid "Perk reroll price step"
+msgstr "Шаг цены переброса перков"
+
+msgctxt "data:guide"
+msgid "Perk banishes per run"
+msgstr "Изгнаний перков за забег"
+
+msgctxt "data:guide"
+msgid "Attribute milestones"
+msgstr "Вехи характеристик"
+
+msgctxt "data:guide"
+msgid "Attribute pairings"
+msgstr "Сочетания характеристик"
+
+msgctxt "data:guide"
+msgid "Milestone strength"
+msgstr "Сила вех"
+
+msgctxt "data:guide"
+msgid "Scrap (% of the haul)"
+msgstr "Лом (% от добычи)"
+
+msgctxt "data:guide"
+msgid "Scrap gifting"
+msgstr "Передача лома"
+
+msgctxt "data:guide"
+msgid "Shop anywhere"
+msgstr "Магазин где угодно"
+
+msgctxt "data:guide"
+msgid "Shop rotation size"
+msgstr "Размер ассортимента магазина"
+
+msgctxt "data:guide"
+msgid "Shop price multiplier"
+msgstr "Множитель цен магазина"
+
+msgctxt "data:guide"
+msgid "Shop reputation speed"
+msgstr "Скорость репутации в магазине"
+
+msgctxt "data:guide"
+msgid "Mystery crates"
+msgstr "Ящики с сюрпризом"
+
+msgctxt "data:guide"
+msgid "Consumables per visit"
+msgstr "Расходников за посещение"
+
+msgctxt "data:guide"
+msgid "Shop lock fee"
+msgstr "Плата за закрепление в магазине"
+
+msgctxt "data:guide"
+msgid "Team synergies"
+msgstr "Командные синергии"
+
+msgctxt "data:guide"
+msgid "Synergy range (m)"
+msgstr "Дальность синергий (м)"
+
+msgctxt "data:guide"
+msgid "Highlights card (shop)"
+msgstr "Карточка «Главное» (магазин)"
+
+msgctxt "data:guide"
+msgid "Death-head call-outs"
+msgstr "Зов головы после смерти"
+
+msgctxt "data:guide"
+msgid "Clutch revive bonus (%)"
+msgstr "Бонус за возрождение в последний момент (%)"
+
+msgctxt "data:guide"
+msgid "Bosses"
+msgstr "Боссы"
+
+msgctxt "data:guide"
+msgid "Boss every N levels"
+msgstr "Босс каждые N уровней"
+
+msgctxt "data:guide"
+msgid "Set piece chance (%)"
+msgstr "Шанс части комплекта (%)"
+
+msgctxt "data:guide"
+msgid "Crafting parts"
+msgstr "Детали для крафта"
+
+msgctxt "data:guide"
+msgid "Behavior affix chance"
+msgstr "Шанс свойства-поведения"
+
+msgctxt "data:guide"
+msgid "Unique chance"
+msgstr "Шанс уникального предмета"
+
+msgctxt "data:guide"
+msgid "Attunement speed"
+msgstr "Скорость сонастройки"
+
+msgctxt "data:guide"
+msgid "Module drop chance"
+msgstr "Шанс выпадения модуля"
+
+msgctxt "data:guide"
+msgid "Module removal cost"
+msgstr "Цена снятия модуля"
+
+msgctxt "data:guide"
+msgid "Team contracts"
+msgstr "Командные контракты"
+
+msgctxt "data:guide"
+msgid "Team contract vote"
+msgstr "Голосование за командный контракт"
+
+msgctxt "data:guide"
+msgid "Difficulty tier"
+msgstr "Уровень сложности"
+
+msgctxt "data:guide"
+msgid "Account progress"
+msgstr "Прогресс аккаунта"
+
+msgctxt "data:guide"
+msgid "Prestige trees"
+msgstr "Древа престижа"
+
+msgctxt "data:guide"
+msgid "Lobby size"
+msgstr "Размер лобби"
+
+msgctxt "data:guide"
+msgid "Player-count scaling"
+msgstr "Масштабирование по числу игроков"
+
+msgctxt "data:guide"
+msgid "Scaling strength (%)"
+msgstr "Сила масштабирования (%)"
+
+msgctxt "data:guide"
+msgid "Threat rating"
+msgstr "Рейтинг угрозы"
+
+msgctxt "data:guide"
+msgid "Max threat rating"
+msgstr "Макс. рейтинг угрозы"
+
+msgctxt "data:guide"
+msgid "Threat speed"
+msgstr "Скорость роста угрозы"
+
+msgctxt "data:guide"
+msgid "Valuable value"
+msgstr "Стоимость ценностей"
+
+msgctxt "data:guide"
+msgid "WELCOME TO REPORPG"
+msgstr "ДОБРО ПОЖАЛОВАТЬ В REPORPG"
+
+msgctxt "data:guide"
 msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
 msgstr "Каждый забег становится маленькой RPG: вы выбираете класс, прокачиваете его, собираете снаряжение и перки. Когда забег заканчивается, всё начинается заново.\n\nЭто обучение - 5 коротких панелей. Его можно пропустить в любой момент: всё есть на вкладке «Справка»."
+
+msgctxt "data:guide"
+msgid "1  PICK A CLASS"
+msgstr "1  ВЫБЕРИТЕ КЛАСС"
+
+msgctxt "data:guide"
+msgid "Open the Class tab, choose a class and press Play as. Each class has two passives, one active ability and a weakness.\n\nOnly one person can play each class, so agree on picks with your team."
+msgstr "Откройте вкладку «Класс», выберите класс и нажмите «Играть за». У каждого класса два пассивных умения, одна активная способность и слабость.\n\nЗа каждый класс может играть только один человек, так что договоритесь о выборе с командой."
+
+msgctxt "data:guide"
+msgid "2  LEVEL UP"
+msgstr "2  ПОВЫШАЙТЕ УРОВЕНЬ"
+
+msgctxt "data:guide"
+msgid "Your class earns XP from kills, extractions, finished levels, revives and contracts.\n\nEach level gives you points to spend. A dot on the menu hint means something is waiting."
+msgstr "Ваш класс получает опыт за убийства, извлечения, пройденные уровни, возрождения и контракты.\n\nКаждый уровень даёт очки, которые можно потратить. Точка на подсказке меню значит, что вас что-то ждёт."
+
+msgctxt "data:guide"
+msgid "3  SPEND YOUR POINTS"
+msgstr "3  ТРАТЬТЕ ОЧКИ"
+
+msgctxt "data:guide"
+msgid "Skill points go into talents (Class tab), attribute points into attributes, and perk picks into perks.\n\nNothing changes until you Confirm. Undo takes back the last point, Reset clears them all."
+msgstr "Очки навыков идут на таланты (вкладка «Класс»), очки характеристик - на характеристики, а выборы перков - на перки.\n\nНичего не меняется, пока вы не нажмёте «Подтвердить». «Отменить» возвращает последнее очко, «Сброс» убирает все."
+
+msgctxt "data:guide"
+msgid "4  GEAR, SCRAP AND YOUR TEAM"
+msgstr "4  СНАРЯЖЕНИЕ, ЛОМ И КОМАНДА"
+
+msgctxt "data:guide"
+msgid "Gear drops from elites, contracts and extractions. Salvage what you don't need for Scrap and spend it in the Shop.\n\nStay near your partner classes for synergy bonuses, and take contracts between levels for extra rewards."
+msgstr "Снаряжение выпадает с элиты, за контракты и извлечения. Разбирайте ненужное на лом и тратьте его в магазине.\n\nДержитесь рядом с классами-партнёрами ради бонусов синергии и берите между уровнями контракты ради дополнительных наград."
 
 msgctxt "data:guide"
 msgid "Getting Started"
@@ -51790,28 +52070,1136 @@ msgid "RepoRPG turns each run into a small RPG: you pick a class, level it up an
 msgstr "RepoRPG превращает каждый забег в маленькую RPG: вы выбираете класс, прокачиваете его и тратите заработанное между уровнями."
 
 msgctxt "data:guide"
+msgid "start begin new basics help first how to play menu open key walkthrough tutorial run reset"
+msgstr "start begin new basics help first how to play menu open key walkthrough tutorial run reset начало старт новичок основы помощь первый как играть меню открыть клавиша обучение знакомство забег сброс"
+
+msgctxt "data:guide"
+msgid "Press {key:menu} to open the menu. It opens anywhere except while a level is loading."
+msgstr "Нажмите {key:menu}, чтобы открыть меню. Оно открывается где угодно, кроме загрузки уровня."
+
+msgctxt "data:guide"
+msgid "Pick a class on the Class tab, then press Play as. Use your ability with {key:ability}."
+msgstr "Выберите класс на вкладке «Класс», затем нажмите «Играть за». Применяйте способность клавишей {key:ability}."
+
+msgctxt "data:guide"
+msgid "Play as normal. Kills, extractions, revives, finished levels and contracts give your class XP."
+msgstr "Играйте как обычно. Убийства, извлечения, возрождения, пройденные уровни и контракты дают опыт вашему классу."
+
+msgctxt "data:guide"
+msgid "Level up to earn skill points, attribute points and perk picks. Spend them, then Confirm."
+msgstr "Повышайте уровень, чтобы получать очки навыков, очки характеристик и выборы перков. Потратьте их и нажмите «Подтвердить»."
+
+msgctxt "data:guide"
+msgid "Everything belongs to this run. When the run ends, it all starts fresh (your account unlocks stay)."
+msgstr "Всё относится к текущему забегу. Когда забег заканчивается, всё начинается заново (открытия аккаунта остаются)."
+
+msgctxt "data:guide"
+msgid "Show the walkthrough"
+msgstr "Показать знакомство с модом"
+
+msgctxt "data:guide"
+msgid "The ? button on any tab opens this Guide on the matching topic."
+msgstr "Кнопка «?» на любой вкладке открывает эту справку на подходящей теме."
+
+msgctxt "data:guide"
+msgid "Go to the Class tab"
+msgstr "Перейти на вкладку «Класс»"
+
+msgctxt "data:guide"
 msgid "Classes"
 msgstr "Классы"
+
+msgctxt "data:guide"
+msgid "Your class is your role for the run: {count:classes} classes, each with two passives, one active ability and a weakness."
+msgstr "Класс - ваша роль на забег: классов - {count:classes}, у каждого два пассивных умения, одна активная способность и слабость."
+
+msgctxt "data:guide"
+msgid "class classes role pick choose play as job character ability active passive weakness switch compare filter"
+msgstr "class classes role pick choose play as job character ability active passive weakness switch compare filter класс классы роль выбрать выбор играть за персонаж способность активная пассивное умение слабость сменить сравнить фильтр"
+
+msgctxt "data:guide"
+msgid "Pick a class in the truck or the shop between levels, or in the pre-game lobby: select it, then press Play as."
+msgstr "Выбирайте класс в грузовике или магазине между уровнями либо в лобби перед игрой: выделите его и нажмите «Играть за»."
+
+msgctxt "data:guide"
+msgid "Only one person in the lobby can play each class, so agree on picks with your team."
+msgstr "За каждый класс в лобби может играть только один человек, так что договоритесь о выборе с командой."
+
+msgctxt "data:guide"
+msgid "Use your active ability with {key:ability}. Its cooldown and charges show at the bottom left."
+msgstr "Применяйте активную способность клавишей {key:ability}. Её перезарядка и заряды показаны слева внизу."
+
+msgctxt "data:guide"
+msgid "Each class has a Complexity: Easy, Medium or Hard (the pips on its card), for how hard it is to play well. The Skill button filters by it and Sort groups the list by it. It's not the run's difficulty."
+msgstr "У каждого класса есть сложность: «Легко», «Средне» или «Сложно» (точки на его карточке) - насколько трудно играть им хорошо. Кнопка «Навык» фильтрует по ней, а «Сортировка» группирует по ней список. Это не сложность забега."
+
+msgctxt "data:guide"
+msgid "Each class levels on its own, so switching back later keeps your progress."
+msgstr "Каждый класс прокачивается отдельно, так что при возврате к нему ваш прогресс сохранится."
+
+msgctxt "data:guide"
+msgid "Switching class during a level is {cfg:Rules/AllowClassSwitchInLevel?allowed:not allowed} on this host."
+msgstr "Смена класса во время уровня на этом хосте {cfg:Rules/AllowClassSwitchInLevel?разрешена:запрещена}."
+
+msgctxt "data:guide"
+msgid "Compare shows two classes side by side; the role filter and search narrow the list."
+msgstr "«Сравнить» показывает два класса рядом; фильтр по роли и поиск сужают список."
+
+msgctxt "data:guide"
+msgid "Outside the truck, shop and lobby you can still browse classes, but you can't pick one. Joined mid-level without a class? Pick one at the next shop."
+msgstr "Вне грузовика, магазина и лобби классы можно просматривать, но нельзя выбрать. Подключились посреди уровня без класса? Выберите его в следующем магазине."
+
+msgctxt "data:guide"
+msgid "New in 1.0.52: the Courier and the Instigator replaced the Lamplighter and the Locksmith. A save that had one of those converts by itself: the level carries over to the new class, its skill points come back to spend, and the next truck or shop offers one free re-pick at that level."
+msgstr "Новое в 1.0.52: Курьер и Подстрекатель заменили Фонарщика и Взломщика. Сохранение с одним из них преобразуется само: уровень переносится на новый класс, очки навыков возвращаются, чтобы потратить их заново, а в следующем грузовике или магазине можно один раз бесплатно сменить класс на том же уровне."
 
 msgctxt "data:guide"
 msgid "Grappler's Hook"
 msgstr "Крюк Крючника"
 
 msgctxt "data:guide"
+msgid "The Grappler's Hook pulls you to whatever your crosshair is on, or yanks a small item to you."
+msgstr "Крюк Крючника подтягивает вас к тому, на что наведён прицел, или притягивает к вам небольшой предмет."
+
+msgctxt "data:guide"
+msgid "grappler hook grapple rope pull climb ledge wall cling ceiling hang chain yank reticle"
+msgstr "grappler hook grapple rope pull climb ledge wall cling ceiling hang chain yank reticle крючник крюк кошка трос тянуть притянуть залезть уступ стена цепляться потолок висеть цепочка рывок прицел"
+
+msgctxt "data:guide"
+msgid "What the reticle means"
+msgstr "Что означает прицел"
+
+msgctxt "data:guide"
+msgid "Ring"
+msgstr "Кольцо"
+
+msgctxt "data:guide"
+msgid "Yank the item to you."
+msgstr "Притянуть предмет к себе."
+
+msgctxt "data:guide"
+msgid "Up arrow"
+msgstr "Стрелка вверх"
+
+msgctxt "data:guide"
+msgid "Climb onto the ledge."
+msgstr "Забраться на уступ."
+
+msgctxt "data:guide"
+msgid "Flat bar"
+msgstr "Плоская черта"
+
+msgctxt "data:guide"
+msgid "Land on the floor or platform."
+msgstr "Приземлиться на пол или платформу."
+
+msgctxt "data:guide"
+msgid "Bracket"
+msgstr "Скобка"
+
+msgctxt "data:guide"
+msgid "Cling to the wall."
+msgstr "Зацепиться за стену."
+
+msgctxt "data:guide"
+msgid "Down arrow"
+msgstr "Стрелка вниз"
+
+msgctxt "data:guide"
+msgid "Hang from the ceiling."
+msgstr "Повиснуть на потолке."
+
+msgctxt "data:guide"
+msgid "Red X"
+msgstr "Красный крест"
+
+msgctxt "data:guide"
+msgid "Can't hook there; the reason shows, and nothing is spent."
+msgstr "Туда зацепиться нельзя; причина показана, и ничего не тратится."
+
+msgctxt "data:guide"
+msgid "Hook a wall or ceiling to hold on for {cfg:Classes/HookClingSeconds} s. Holding on uses a little stamina; at zero you let go."
+msgstr "Зацепитесь за стену или потолок, чтобы держаться {cfg:Classes/HookClingSeconds} с. Пока вы держитесь, понемногу тратится выносливость; на нуле вы отпускаете."
+
+msgctxt "data:guide"
+msgid "While holding on, jump to push off, crouch to drop, or hook again to swing to another surface."
+msgstr "Пока держитесь, прыгните, чтобы оттолкнуться, присядьте, чтобы спрыгнуть, или выпустите крюк ещё раз, чтобы перемахнуть на другую поверхность."
+
+msgctxt "data:guide"
+msgid "Jump or move forward to climb up when a ledge is just above you."
+msgstr "Прыгните или двигайтесь вперёд, чтобы залезть наверх, когда уступ прямо над вами."
+
+msgctxt "data:guide"
+msgid "Chain up to {cfg:Classes/HookMaxChain} hooks in a row, then touch the ground to reset."
+msgstr "Цепляйтесь подряд до {cfg:Classes/HookMaxChain} раз, затем коснитесь земли, чтобы сбросить счёт."
+
+msgctxt "data:guide"
+msgid "Doors and props block the line, and you can't hook outside the level."
+msgstr "Двери и предметы обстановки перекрывают линию, а за пределы уровня зацепиться нельзя."
+
+msgctxt "data:guide"
+msgid "Getting hit, grabbed or knocked over ends a pull at once. A Mimic's copy has less range, half the hold time and no chaining."
+msgstr "Удар, захват или падение с ног сразу прерывают подтягивание. У копии Мимика меньше дальность, вдвое меньше время удержания и нет цепочек."
+
+msgctxt "data:guide"
 msgid "Gunsmith's Field Charger"
 msgstr "Полевой зарядник Оружейника"
+
+msgctxt "data:guide"
+msgid "With the Field Charger talent, a Gunsmith can recharge the gun they hold from a battery item in a cart."
+msgstr "С талантом «Полевой зарядник» Оружейник может заряжать оружие в руках от предмета с батареей, лежащего в тележке."
+
+msgctxt "data:guide"
+msgid "gunsmith field charger recharge battery cart gun charge drone flashlight interact"
+msgstr "gunsmith field charger recharge battery cart gun charge drone flashlight interact оружейник полевой зарядник зарядка зарядить батарея тележка оружие заряд дрон фонарик взаимодействие"
+
+msgctxt "data:guide"
+msgid "How to use it"
+msgstr "Как пользоваться"
+
+msgctxt "data:guide"
+msgid "Put a battery item in a cart: anything with a battery that isn't a weapon - a drone, a flashlight, a modded battery pack."
+msgstr "Положите в тележку предмет с батареей: любой предмет с батареей, кроме оружия, - дрон, фонарик, батарею из модов."
+
+msgctxt "data:guide"
+msgid "Hold a gun (the game's or a modded one) within 4 m of the cart. \"[Hold E] Recharge from cart\" shows under the crosshair (E is the game's Interact key)."
+msgstr "Держите оружие (из игры или из модов) в пределах 4 м от тележки. Под прицелом появится «[Удерживайте E] Зарядить от тележки» (E - клавиша взаимодействия игры)."
+
+msgctxt "data:guide"
+msgid "Hold the key until the bar fills (about 1.6 s; faster with the talent's upgrades). Let go early and nothing happens."
+msgstr "Удерживайте клавишу, пока полоса не заполнится (около 1.6 с; быстрее с улучшениями таланта). Отпустите раньше - и ничего не произойдёт."
+
+msgctxt "data:guide"
+msgid "The gun fills up as far as the batteries in the cart allow; they lose what the gun gains. \"Gun recharged from cart\" confirms it."
+msgstr "Оружие заряжается настолько, насколько хватает батарей в тележке; они теряют столько, сколько получает оружие. Это подтверждает сообщение «Оружие заряжено от тележки»."
+
+msgctxt "data:guide"
+msgid "When it can't"
+msgstr "Когда не получится"
+
+msgctxt "data:guide"
+msgid "Gun is full"
+msgstr "Оружие заряжено полностью"
+
+msgctxt "data:guide"
+msgid "The gun's battery is already full."
+msgstr "Батарея оружия уже полна."
+
+msgctxt "data:guide"
+msgid "No battery in cart"
+msgstr "В тележке нет батареи"
+
+msgctxt "data:guide"
+msgid "Nothing in the cart in reach has charge left."
+msgstr "Ни в одном предмете в доступной тележке не осталось заряда."
+
+msgctxt "data:guide"
+msgid "No cart close enough"
+msgstr "Рядом нет тележки"
+
+msgctxt "data:guide"
+msgid "Get within 4 m (8 m with Bench Tuning)."
+msgstr "Подойдите на 4 м (на 8 м с «Настройкой на верстаке»)."
+
+msgctxt "data:guide"
+msgid "Carts with batteries in them show a small battery icon and a count, to Gunsmiths with the talent only. Other guns in the cart are never drained. A Mimic doesn't get it (it's a talent, not an ability)."
+msgstr "На тележках с батареями показаны маленький значок батареи и их число - только Оружейникам с этим талантом. Другое оружие в тележке никогда не разряжается. Мимику это недоступно (это талант, а не способность)."
 
 msgctxt "data:guide"
 msgid "Leveling & XP"
 msgstr "Уровни и опыт"
 
 msgctxt "data:guide"
+msgid "Your class earns XP from what the team already does, and every level gives you points to spend."
+msgstr "Ваш класс получает опыт за то, что команда и так делает, а каждый уровень даёт очки, которые можно потратить."
+
+msgctxt "data:guide"
+msgid "level leveling xp experience exp earn points level up max cap progress"
+msgstr "level leveling xp experience exp earn points level up max cap progress уровень уровни прокачка опыт получить очки повышение уровня максимум предел прогресс"
+
+msgctxt "data:guide"
+msgid "Earning XP"
+msgstr "Как получать опыт"
+
+msgctxt "data:guide"
+msgid "Kill a monster: {cfg:XP Sources/KillXp} XP per monster tier, shared with everyone within {cfg:XP Sources/KillShareRadius} m. Elites give more."
+msgstr "Убейте монстра: {cfg:XP Sources/KillXp} опыта за ранг монстра - его делят все в пределах {cfg:XP Sources/KillShareRadius} м. Элита даёт больше."
+
+msgctxt "data:guide"
+msgid "Extract: {cfg:XP Sources/ExtractionXpFirst} XP for the first extraction, a little less for each one after."
+msgstr "Извлечение: {cfg:XP Sources/ExtractionXpFirst} опыта за первое извлечение и чуть меньше за каждое следующее."
+
+msgctxt "data:guide"
+msgid "Finish a level: {cfg:XP Sources/LevelCompleteXp} XP."
+msgstr "Пройдите уровень: {cfg:XP Sources/LevelCompleteXp} опыта."
+
+msgctxt "data:guide"
+msgid "Revive a teammate: {cfg:XP Sources/ReviveXp} XP for everyone within {cfg:XP Sources/ReviveShareRadius} m."
+msgstr "Возродите напарника: {cfg:XP Sources/ReviveXp} опыта всем в пределах {cfg:XP Sources/ReviveShareRadius} м."
+
+msgctxt "data:guide"
+msgid "Finish a contract: the XP shown on its card."
+msgstr "Выполните контракт: опыт указан на его карточке."
+
+msgctxt "data:guide"
+msgid "Bonuses from perks, gear, attributes, your streak, the chapter and the crew add up, to at most +{cfg:Leveling/MaxXpBonus}% together."
+msgstr "Бонусы от перков, снаряжения, характеристик, серии, главы и команды складываются - вместе не больше +{cfg:Leveling/MaxXpBonus}%."
+
+msgctxt "data:guide"
+msgid "What each level gives"
+msgstr "Что даёт каждый уровень"
+
+msgctxt "data:guide"
+msgid "{cfg:Leveling/PointsPerLevel} skill point per level, plus a bonus point every {cfg:Leveling/BonusPointEvery} levels."
+msgstr "Очков навыков за уровень: {cfg:Leveling/PointsPerLevel}, плюс бонусное очко каждые {cfg:Leveling/BonusPointEvery} уровней."
+
+msgctxt "data:guide"
+msgid "{cfg:RPG/AttributePointsPerLevel} attribute points per level of your best class."
+msgstr "Очков характеристик за уровень вашего лучшего класса: {cfg:RPG/AttributePointsPerLevel}."
+
+msgctxt "data:guide"
+msgid "A perk pick every {cfg:Perks/PerkEvery} levels."
+msgstr "Выбор перка каждые {cfg:Perks/PerkEvery} уровней."
+
+msgctxt "data:guide"
+msgid "Classes go up to level {cfg:Leveling/MaxLevel}. The first levels come quickly; each one after takes a bit longer than the last."
+msgstr "Классы растут до уровня {cfg:Leveling/MaxLevel}. Первые уровни идут быстро; каждый следующий требует чуть больше предыдущего."
+
+msgctxt "data:guide"
+msgid "Pace: the max class level comes around run level 19 on Relaxed, 24 on Easy, 30 on Normal, 38 on Hard and 47 on Brutal."
+msgstr "Темп: максимальный уровень класса достигается примерно к 19-му уровню забега на «Расслабленно», к 24-му на «Легко», к 30-му на «Нормально», к 38-му на «Сложно» и к 47-му на «Жестоко»."
+
+msgctxt "data:guide"
+msgid "Talents"
+msgstr "Таланты"
+
+msgctxt "data:guide"
+msgid "Each class has three talent trees: spend skill points on ranks to shape how your class plays."
+msgstr "У каждого класса три древа талантов: тратьте очки навыков на ранги и задавайте стиль игры своего класса."
+
+msgctxt "data:guide"
+msgid "talents talent tree trees skills skill points ranks capstone build spec respec refund total effects"
+msgstr "talents talent tree trees skills skill points ranks capstone build spec respec refund total effects таланты талант древо дерево навыки очки навыков ранги вершина билд сборка сброс возврат итог эффекты"
+
+msgctxt "data:guide"
+msgid "The Class tab shows a class on one page: its passives, active, synergies and buttons on the left, every talent tree (every tier) on the right, and the full details of whatever you point at or select in the strip under the trees."
+msgstr "Вкладка «Класс» показывает класс на одной странице: слева его пассивные умения, активная способность, синергии и кнопки, справа все древа талантов (все ярусы), а в полосе под древами - все подробности о том, на что вы навели курсор или что выбрали."
+
+msgctxt "data:guide"
+msgid "Select a talent to add a rank; {key:secondary} takes one back."
+msgstr "Выберите талант, чтобы добавить ранг; {key:secondary} забирает один ранг."
+
+msgctxt "data:guide"
+msgid "A talent needs the one above it and a class level. Highlighted talents are ones you can afford now."
+msgstr "Таланту нужны талант над ним и уровень класса. Подсвечены таланты, на которые у вас сейчас хватает очков."
+
+msgctxt "data:guide"
+msgid "Each tree ends in a capstone (marked with a star), its biggest effect."
+msgstr "Каждое древо заканчивается вершиной (отмечена звездой) - самым сильным эффектом."
+
+msgctxt "data:guide"
+msgid "Press {key:apply} to confirm, {key:reset} to clear, or {key:undo} to take back the last rank."
+msgstr "Нажмите {key:apply}, чтобы подтвердить, {key:reset}, чтобы сбросить, или {key:undo}, чтобы вернуть последний ранг."
+
+msgctxt "data:guide"
+msgid "Press Effects to see all your talents added up, with your abilities' current numbers."
+msgstr "Нажмите «Эффекты», чтобы увидеть сумму всех ваших талантов и текущие числа ваших способностей."
+
+msgctxt "data:guide"
+msgid "Changes you haven't confirmed are lost if a level loads while the menu is open."
+msgstr "Неподтверждённые изменения пропадут, если уровень загрузится при открытом меню."
+
+msgctxt "data:guide"
+msgid "Want a fresh start? A respec in the Shop refunds every skill point (if the host allows respecs)."
+msgstr "Хотите начать с чистого листа? Сброс навыков в магазине возвращает все очки навыков (если хост разрешает сброс)."
+
+msgctxt "data:guide"
+msgid "Attributes"
+msgstr "Характеристики"
+
+msgctxt "data:guide"
+msgid "Attributes are {count:attributes} stats that help every class; they stay when you switch class."
+msgstr "Характеристики - это показатели ({count:attributes}), которые помогают любому классу; они сохраняются при смене класса."
+
+msgctxt "data:guide"
+msgid "attributes attribute points stats strength agility stealth endurance milestone pairing build title chart"
+msgstr "attributes attribute points stats strength agility stealth endurance milestone pairing build title chart характеристики характеристика очки показатели сила ловкость скрытность выносливость веха сочетание билд сборка звание диаграмма"
+
+msgctxt "data:guide"
+msgid "Earn {cfg:RPG/AttributePointsPerLevel} attribute points per level of your best class, plus some contract rewards."
+msgstr "Вы получаете очков характеристик за уровень вашего лучшего класса: {cfg:RPG/AttributePointsPerLevel}, плюс некоторые награды за контракты."
+
+msgctxt "data:guide"
+msgid "Add or remove points with left and right, then press {key:apply}."
+msgstr "Добавляйте и убирайте очки клавишами влево и вправо, затем нажмите {key:apply}."
+
+msgctxt "data:guide"
+msgid "Reach 5, 10 and 15 points in an attribute for its milestones: each adds an extra effect."
+msgstr "Наберите 5, 10 и 15 очков в характеристике ради её вех: каждая добавляет дополнительный эффект."
+
+msgctxt "data:guide"
+msgid "Classes favour 2-3 attributes (gold star): those reach each milestone one point sooner."
+msgstr "Классы предпочитают 2-3 характеристики (золотая звезда): в них каждая веха достигается на одно очко раньше."
+
+msgctxt "data:guide"
+msgid "Put 8 points into both attributes of a pair to switch on their combo bonus."
+msgstr "Вложите по 8 очков в обе характеристики пары, чтобы включить их общий бонус."
+
+msgctxt "data:guide"
+msgid "Your point spread earns a build title, just for show."
+msgstr "Распределение очков приносит звание сборки - просто для красоты."
+
+msgctxt "data:guide"
+msgid "Before you confirm, anything your new points would unlock is marked NEW."
+msgstr "До подтверждения всё, что откроют ваши новые очки, помечено «НОВОЕ»."
+
+msgctxt "data:guide"
+msgid "Go to the Attributes tab"
+msgstr "Перейти на вкладку «Характеристики»"
+
+msgctxt "data:guide"
+msgid "Perks"
+msgstr "Перки"
+
+msgctxt "data:guide"
+msgid "Every {cfg:Perks/PerkEvery} levels you choose one of {cfg:Perks/PerkChoices} perks: bonuses that last the whole run."
+msgstr "Каждые {cfg:Perks/PerkEvery} уровней вы выбираете один из {cfg:Perks/PerkChoices} перков - бонусов, которые действуют весь забег."
+
+msgctxt "data:guide"
+msgid "perks perk pick choose rarity legendary cursed tags tag bonus evolve evolution reroll banish"
+msgstr "perks perk pick choose rarity legendary cursed tags tag bonus evolve evolution reroll banish перки перк выбор выбрать редкость легендарный проклятый метки метка бонус развитие эволюция переброс изгнать изгнание"
+
+msgctxt "data:guide"
+msgid "When you have a pick, choose one card on the Perks tab, then Confirm."
+msgstr "Когда у вас есть выбор, выберите одну карточку на вкладке «Перки» и нажмите «Подтвердить»."
+
+msgctxt "data:guide"
+msgid "You're never offered a perk you own or banished. Offers lean toward your class and your tags."
+msgstr "Вам никогда не предложат перк, который у вас уже есть или который вы изгнали. Предложения склоняются к вашему классу и вашим меткам."
+
+msgctxt "data:guide"
+msgid "Collect 3 perks with the same tag to switch on its bonus, and 5 for a second one."
+msgstr "Соберите 3 перка с одной меткой, чтобы включить её бонус, и 5 - чтобы включить второй."
+
+msgctxt "data:guide"
+msgid "Some perks evolve: finish the challenge on the card and it gets stronger."
+msgstr "Некоторые перки развиваются: выполните испытание на карточке, и перк станет сильнее."
+
+msgctxt "data:guide"
+msgid "Reroll to swap all your choices (bought in the Shop, {cfg:Shop/PerkRerollScrap} Scrap to start)."
+msgstr "Переброс меняет все предложенные варианты (покупается в магазине, для начала {cfg:Shop/PerkRerollScrap} лома)."
+
+msgctxt "data:guide"
+msgid "Banish a perk to never see it again this run ({cfg:Perks/Banishes} per run)."
+msgstr "Изгоните перк, чтобы больше не видеть его в этом забеге (изгнаний за забег: {cfg:Perks/Banishes})."
+
+msgctxt "data:guide"
+msgid "Rarities"
+msgstr "Редкости"
+
+msgctxt "data:guide"
+msgid "Common"
+msgstr "Обычный"
+
+msgctxt "data:guide"
+msgid "Plain, steady bonuses."
+msgstr "Простые, надёжные бонусы."
+
+msgctxt "data:guide"
+msgid "Rare"
+msgstr "Редкий"
+
+msgctxt "data:guide"
+msgid "Stronger, sometimes with a small cost."
+msgstr "Сильнее, иногда с небольшой платой."
+
+msgctxt "data:guide"
+msgid "Epic"
+msgstr "Эпический"
+
+msgctxt "data:guide"
+msgid "Built around one thing: your ability, carrying or monsters."
+msgstr "Построен вокруг чего-то одного: вашей способности, переноски или монстров."
+
+msgctxt "data:guide"
+msgid "Legendary"
+msgstr "Легендарный"
+
+msgctxt "data:guide"
+msgid "Changes how you play. Rare to see."
+msgstr "Меняет стиль игры. Встречается редко."
+
+msgctxt "data:guide"
+msgid "Cursed"
+msgstr "Проклятый"
+
+msgctxt "data:guide"
+msgid "A big bonus with a real drawback. You never have to take one."
+msgstr "Большой бонус с настоящим недостатком. Брать такой вас никто не заставляет."
+
+msgctxt "data:guide"
+msgid "Go to the Perks tab"
+msgstr "Перейти на вкладку «Перки»"
+
+msgctxt "data:guide"
 msgid "My Stats"
 msgstr "Мои показатели"
 
 msgctxt "data:guide"
+msgid "Every bonus you have right now, added up, and where each one comes from."
+msgstr "Все бонусы, которые у вас есть прямо сейчас, в сумме - и откуда берётся каждый."
+
+msgctxt "data:guide"
+msgid "my stats stats total bonuses sheet character numbers caps capped"
+msgstr "my stats stats total bonuses sheet character numbers caps capped мои показатели показатели итог бонусы лист персонаж числа пределы предел"
+
+msgctxt "data:guide"
+msgid "Gear"
+msgstr "Снаряжение"
+
+msgctxt "data:guide"
+msgid "Gear gives you stats in four slots, and rarer gear rolls more and stronger stats."
+msgstr "Снаряжение даёт характеристики в четырёх слотах, а более редкое снаряжение получает больше строк и сильнее."
+
+msgctxt "data:guide"
+msgid "gear items equipment loot slots rarity salvage compare inventory bag weapon plating servos core sets"
+msgstr "gear items equipment loot slots rarity salvage compare inventory bag weapon plating servos core sets снаряжение предметы экипировка добыча слоты редкость разбор сравнить инвентарь сумка оружие броня сервоприводы ядро комплекты"
+
+msgctxt "data:guide"
+msgid "Your slots: {list:slots}."
+msgstr "Ваши слоты: {list:slots}."
+
+msgctxt "data:guide"
+msgid "Get gear from elites, bosses, contracts and extractions ({cfg:RPG/GearChanceOnExtraction}% per extraction)."
+msgstr "Получайте снаряжение с элиты, боссов, за контракты и извлечения ({cfg:RPG/GearChanceOnExtraction}% за извлечение)."
+
+msgctxt "data:guide"
+msgid "Select an item to compare it with what you're wearing. Your bag holds {cfg:RPG/InventorySize} items."
+msgstr "Выберите предмет, чтобы сравнить его с тем, что на вас надето. В сумку помещается предметов: {cfg:RPG/InventorySize}."
+
+msgctxt "data:guide"
+msgid "Salvage gear you don't need with {key:salvage} to get Scrap."
+msgstr "Разбирайте ненужное снаряжение клавишей {key:salvage}, чтобы получить лом."
+
+msgctxt "data:guide"
+msgid "Wear 2 pieces of a set for a small bonus, or all 4 for a big one."
+msgstr "Носите 2 части комплекта ради небольшого бонуса или все 4 ради большого."
+
+msgctxt "data:guide"
+msgid "Save up to 3 loadouts and swap them in the truck or the shop."
+msgstr "Сохраняйте до 3 наборов и меняйте их в грузовике или магазине."
+
+msgctxt "data:guide"
+msgid "Upgrading (+1 to +5)"
+msgstr "Улучшение (от +1 до +5)"
+
+msgctxt "data:guide"
+msgid "Any item but a starter can be upgraded five times, on the Gear tab (under the item) or in the shop's Services, while the shop is open. Every upgrade works."
+msgstr "Любой предмет, кроме стартового, можно улучшить пять раз - на вкладке «Снаряжение» (под предметом) или в «Услугах» магазина, пока магазин открыт. Каждое улучшение удаётся."
+
+msgctxt "data:guide"
+msgid "+1, +3 and +5 add a new line: pick 1 of 3 offers (stats the item doesn't have yet). +2 and +4 make every random line 15% stronger (never past that stat's maximum). +5 also adds a socket, up to 1 (Common to Rare) or 2 (Epic, Legendary)."
+msgstr "+1, +3 и +5 добавляют новую строку: выберите 1 из 3 предложений (характеристики, которых у предмета ещё нет). +2 и +4 усиливают каждую случайную строку на 15% (но не выше максимума этой характеристики). +5 ещё и добавляет гнездо - до 1 (от обычного до редкого) или 2 (эпический, легендарный)."
+
+msgctxt "data:guide"
+msgid "An item can only take so many new lines (Common and Uncommon 1, Rare and Epic 2, Legendary 3). After that, a line upgrade makes every line stronger instead; the preview says so."
+msgstr "Предмет может получить лишь ограниченное число новых строк (обычный и необычный - 1, редкий и эпический - 2, легендарный - 3). После этого улучшение со строкой вместо неё усиливает все строки; об этом сказано в предпросмотре."
+
+msgctxt "data:guide"
+msgid "Cost: Scrap (more for each level and for higher rarities) and crafting parts: 2 Sinew, 3 Sinew, 2 Sinew + 1 Core Shard, 2 Core Shard, then 1 Core Shard + 1 Prime Essence (a Legendary's +5: 1 Prime Essence + 1 Boss Heart)."
+msgstr "Цена: лом (больше за каждый уровень и за более высокую редкость) и детали для крафта: 2 сухожилия, 3 сухожилия, 2 сухожилия + 1 осколок ядра, 2 осколка ядра, затем 1 осколок ядра + 1 первичная эссенция (+5 для легендарного: 1 первичная эссенция + 1 сердце босса)."
+
+msgctxt "data:guide"
+msgid "Upgrading keeps the set, sockets and modules, attunement, a Unique's effect and name, and a cursed item's benefit and curse. A reroll rolls the upgrade lines again but keeps the level and the +15% steps; Rarity up keeps everything."
+msgstr "Улучшение сохраняет комплект, гнёзда и модули, сонастройку, эффект и название уникального предмета, а также пользу и проклятие проклятого. Переброс заново перебрасывает строки от улучшений, но сохраняет уровень и шаги по +15%; «Повысить редкость» сохраняет всё."
+
+msgctxt "data:guide"
+msgid "Salvaging an upgraded item gives back a quarter of the Scrap spent on its upgrades."
+msgstr "Разбор улучшенного предмета возвращает четверть лома, потраченного на его улучшения."
+
+msgctxt "data:guide"
+msgid "Salvaging asks first for set pieces, Uniques and attuned gear."
+msgstr "Перед разбором частей комплектов, уникальных предметов и сонастроенного снаряжения игра спрашивает подтверждение."
+
+msgctxt "data:guide"
+msgid "Want to improve an item you like? See Crafting & Modules."
+msgstr "Хотите улучшить предмет, который вам нравится? См. «Крафт и модули»."
+
+msgctxt "data:guide"
+msgid "Go to the Gear tab"
+msgstr "Перейти на вкладку «Снаряжение»"
+
+msgctxt "data:guide"
+msgid "Class Starters"
+msgstr "Стартовые предметы классов"
+
+msgctxt "data:guide"
+msgid "Every class starts each run with a small class-bound gear piece; four also get a tool."
+msgstr "Каждый класс начинает забег с небольшим предметом снаряжения, привязанным к классу; четыре класса получают ещё и инструмент."
+
+msgctxt "data:guide"
+msgid "starter starters starting item gear tool kit class bound handgun duck grenade health pack"
+msgstr "starter starters starting item gear tool kit class bound handgun duck grenade health pack стартовый стартовые начальный предмет снаряжение инструмент набор привязан к классу пистолет утка граната аптечка"
+
+msgctxt "data:guide"
+msgid "Once per run, when your class is set in a level or the shop, you get your class's starter piece: a Common item with the slot's base stat and one small class effect. If the slot is empty it's worn right away."
+msgstr "Раз за забег, когда ваш класс выбран на уровне или в магазине, вы получаете стартовый предмет своего класса: обычный предмет с базовой характеристикой слота и одним небольшим эффектом класса. Если слот пуст, предмет надевается сразу."
+
+msgctxt "data:guide"
+msgid "Only that class can equip it. It salvages for 0 Scrap and can't be rerolled, upgraded or crafted. Sockets work as normal."
+msgstr "Надеть его может только этот класс. При разборе он даёт 0 лома; его нельзя перебросить, улучшить или изменить крафтом. Гнёзда работают как обычно."
+
+msgctxt "data:guide"
+msgid "Switching class (milestones) swaps it for the new class's piece."
+msgstr "При смене класса (этапы) он заменяется предметом нового класса."
+
+msgctxt "data:guide"
+msgid "Medic, Trickster, Demolitionist and Gunsmith also get a real shop item next to them a few seconds into their first level of the run. If the game doesn't have that item, they get 25 Scrap instead."
+msgstr "Медик, Плут, Подрывник и Оружейник получают ещё и настоящий предмет из магазина - он появляется рядом с ними через несколько секунд после начала их первого уровня в забеге. Если в игре нет такого предмета, они получают 25 лома."
+
+msgctxt "data:guide"
+msgid "The host can turn the gear or the tools off in Host Settings (Class Starters)."
+msgstr "Хост может отключить снаряжение или инструменты в настройках хоста («Стартовые предметы классов»)."
+
+msgctxt "data:guide"
+msgid "Every starter"
+msgstr "Все стартовые предметы"
+
+msgctxt "data:guide"
+msgid "Juggernaut: Reinforced Plating"
+msgstr "Джаггернаут: Усиленная броня"
+
+msgctxt "data:guide"
+msgid "3% less damage taken"
+msgstr "на 3% меньше получаемого урона"
+
+msgctxt "data:guide"
+msgid "Medic: Field Kit Core"
+msgstr "Медик: Ядро полевого набора"
+
+msgctxt "data:guide"
+msgid "Teammates revived near you get +5 HP. Tool: Small health pack"
+msgstr "Напарники, возрождённые рядом с вами, получают +5 ОЗ. Инструмент: малая аптечка"
+
+msgctxt "data:guide"
+msgid "Scout: Light Servos"
+msgstr "Разведчик: Лёгкие сервоприводы"
+
+msgctxt "data:guide"
+msgid "+4% sprint speed"
+msgstr "+4% к скорости бега"
+
+msgctxt "data:guide"
+msgid "Hauler: Strap Servos"
+msgstr "Носильщик: Сервоприводы с ремнями"
+
+msgctxt "data:guide"
+msgid "Power Lift 5% stronger"
+msgstr "«Силовой подъём» сильнее на 5%"
+
+msgctxt "data:guide"
+msgid "Brute: Knuckle Module"
+msgstr "Громила: Кастетный модуль"
+
+msgctxt "data:guide"
+msgid "Shockwave 5% stronger"
+msgstr "«Ударная волна» сильнее на 5%"
+
+msgctxt "data:guide"
+msgid "Engineer: Toolbelt Core"
+msgstr "Инженер: Ядро с поясом для инструментов"
+
+msgctxt "data:guide"
+msgid "Overdrive lasts 5% longer"
+msgstr "«Форсаж» действует на 5% дольше"
+
+msgctxt "data:guide"
+msgid "Phantom: Muffled Servos"
+msgstr "Фантом: Приглушённые сервоприводы"
+
+msgctxt "data:guide"
+msgid "5% less noise you make"
+msgstr "Вы производите на 5% меньше шума"
+
+msgctxt "data:guide"
+msgid "Survivor: Ration Core"
+msgstr "Выживший: Пайковое ядро"
+
+msgctxt "data:guide"
+msgid "+0.1 HP/s regen"
+msgstr "+0.1 ОЗ/с регенерации"
+
+msgctxt "data:guide"
+msgid "Appraiser: Loupe Module"
+msgstr "Оценщик: Модуль-лупа"
+
+msgctxt "data:guide"
+msgid "Appraisal Scan reaches 5% farther"
+msgstr "«Оценочное сканирование» действует на 5% дальше"
+
+msgctxt "data:guide"
+msgid "Warden: Restraint Module"
+msgstr "Страж: Модуль сдерживания"
+
+msgctxt "data:guide"
+msgid "Stasis Field lasts 5% longer"
+msgstr "«Стазисное поле» действует на 5% дольше"
+
+msgctxt "data:guide"
+msgid "Herald: Megaphone Core"
+msgstr "Глашатай: Ядро-мегафон"
+
+msgctxt "data:guide"
+msgid "Inspire builds a little faster"
+msgstr "Воодушевление копится чуть быстрее"
+
+msgctxt "data:guide"
+msgid "Mimic: Mirror Core"
+msgstr "Мимик: Зеркальное ядро"
+
+msgctxt "data:guide"
+msgid "Copied abilities 5% stronger"
+msgstr "Скопированные способности сильнее на 5%"
+
+msgctxt "data:guide"
+msgid "Undertaker: Head Strap"
+msgstr "Гробовщик: Ремень для головы"
+
+msgctxt "data:guide"
+msgid "5% faster while carrying a death head"
+msgstr "На 5% быстрее с головой погибшего в руках"
+
+msgctxt "data:guide"
+msgid "Cartwright: Hitch Module"
+msgstr "Тележник: Модуль-сцепка"
+
+msgctxt "data:guide"
+msgid "Your cart follows from 1 m farther away"
+msgstr "Ваша тележка следует за вами с расстояния на 1 м больше"
+
+msgctxt "data:guide"
+msgid "Physicist: Gravity Servos"
+msgstr "Физик: Гравитационные сервоприводы"
+
+msgctxt "data:guide"
+msgid "Objects you hold 5% lighter"
+msgstr "Предметы у вас в руках на 5% легче"
+
+msgctxt "data:guide"
+msgid "Trickster: Prankster Module"
+msgstr "Плут: Модуль шутника"
+
+msgctxt "data:guide"
+msgid "Thrown objects' lure noise reaches 1 m farther. Tool: Rubber duck"
+msgstr "Шум-приманка брошенных предметов действует на 1 м дальше. Инструмент: резиновая утка"
+
+msgctxt "data:guide"
+msgid "Demolitionist: Blast Plating"
+msgstr "Подрывник: Взрывозащита"
+
+msgctxt "data:guide"
+msgid "Your explosions deal 10% less damage to players and valuables. Tool: 2x Explosive grenade"
+msgstr "Ваши взрывы наносят на 10% меньше урона игрокам и ценностям. Инструмент: 2 взрывные гранаты"
+
+msgctxt "data:guide"
+msgid "Quartermaster: Ledger Core"
+msgstr "Интендант: Ядро-гроссбух"
+
+msgctxt "data:guide"
+msgid "3% lower mod-shop prices"
+msgstr "Цены в магазине мода ниже на 3%"
+
+msgctxt "data:guide"
+msgid "Gambler: Lucky Coin Core"
+msgstr "Азартный игрок: Ядро счастливой монеты"
+
+msgctxt "data:guide"
+msgid "Curses 5% weaker"
+msgstr "Проклятия слабее на 5%"
+
+msgctxt "data:guide"
+msgid "Bloodbound: Vein Module"
+msgstr "Кровник: Венозный модуль"
+
+msgctxt "data:guide"
+msgid "Kills near you restore +1 HP"
+msgstr "Убийства рядом с вами восстанавливают +1 ОЗ"
+
+msgctxt "data:guide"
+msgid "Courier: Satchel Core"
+msgstr "Курьер: Ядро-сумка"
+
+msgctxt "data:guide"
+msgid "Drop Pad holds one more item"
+msgstr "Площадка доставки вмещает на один предмет больше"
+
+msgctxt "data:guide"
+msgid "Instigator: Taunt Module"
+msgstr "Подстрекатель: Модуль насмешки"
+
+msgctxt "data:guide"
+msgid "Provoke lasts 5% longer"
+msgstr "«Провокация» действует на 5% дольше"
+
+msgctxt "data:guide"
+msgid "Ventriloquist: Throat Core"
+msgstr "Чревовещатель: Гортанное ядро"
+
+msgctxt "data:guide"
+msgid "Thrown voice reaches 2 m farther"
+msgstr "Переброшенный голос действует на 2 м дальше"
+
+msgctxt "data:guide"
+msgid "Restorer: Polish Kit"
+msgstr "Реставратор: Набор для полировки"
+
+msgctxt "data:guide"
+msgid "Held valuables mend +1% more per tick"
+msgstr "Ценности в руках чинятся на +1% больше за такт"
+
+msgctxt "data:guide"
+msgid "Scavenger: Rummage Gloves"
+msgstr "Старьёвщик: Перчатки для обыска"
+
+msgctxt "data:guide"
+msgid "Rummage takes 5% less time"
+msgstr "«Обыск» занимает на 5% меньше времени"
+
+msgctxt "data:guide"
+msgid "Insurer: Fine Print Core"
+msgstr "Страховщик: Ядро мелкого шрифта"
+
+msgctxt "data:guide"
+msgid "Tagged valuables draw monsters from 5% less far"
+msgstr "Помеченные ценности притягивают монстров с расстояния на 5% меньше"
+
+msgctxt "data:guide"
+msgid "Lookout: Lens Module"
+msgstr "Дозорный: Модуль-линза"
+
+msgctxt "data:guide"
+msgid "Threat labels show 2 m farther"
+msgstr "Метки угрозы видны на 2 м дальше"
+
+msgctxt "data:guide"
+msgid "Gunsmith: Armorer's Module"
+msgstr "Оружейник: Модуль оружейника"
+
+msgctxt "data:guide"
+msgid "Guns use 3% less battery. Tool: Handgun"
+msgstr "Оружие тратит на 3% меньше батареи. Инструмент: пистолет"
+
+msgctxt "data:guide"
+msgid "Shepherd: Calm Core"
+msgstr "Пастух: Ядро спокойствия"
+
+msgctxt "data:guide"
+msgid "Monsters take 0.1 s longer to notice you"
+msgstr "Монстры замечают вас на 0.1 с позже"
+
+msgctxt "data:guide"
+msgid "Grappler: Line Spool Servos"
+msgstr "Крючник: Сервоприводы с катушкой троса"
+
+msgctxt "data:guide"
+msgid "Grab reaches 10% farther for small items"
+msgstr "Хват достаёт мелкие предметы на 10% дальше"
+
+msgctxt "data:guide"
+msgid "Cursed Gear"
+msgstr "Проклятое снаряжение"
+
+msgctxt "data:guide"
+msgid "Cursed items are powerful Legendaries with a real drawback. Only bosses drop them, and they're shown in red."
+msgstr "Проклятые предметы - мощные легендарные предметы с настоящим недостатком. Они выпадают только с боссов и показаны красным."
+
+msgctxt "data:guide"
+msgid "cursed curse gear red boss drop drawback bloodpact greed overdrive echo hungering"
+msgstr "cursed curse gear red boss drop drawback bloodpact greed overdrive echo hungering проклятый проклятое проклятие снаряжение красный босс выпадение недостаток кровавый договор жадность форсаж эхо голодное"
+
+msgctxt "data:guide"
+msgid "How they work"
+msgstr "Как они работают"
+
+msgctxt "data:guide"
+msgid "Only bosses drop them (milestone bosses and named bosses), on top of the normal boss drop: {cfg:Bosses/CursedDropChance}% per player, a little more each chapter. Never from crates, contracts or the shop."
+msgstr "Они выпадают только с боссов (этапных и именных) сверх обычной добычи с босса: {cfg:Bosses/CursedDropChance}% на игрока и чуть больше с каждой главой. Никогда - из ящиков, за контракты и в магазине."
+
+msgctxt "data:guide"
+msgid "Each one has a strong benefit and a curse that changes how you play. The curse is the red line marked [!]; read it before you equip."
+msgstr "У каждого есть сильная польза и проклятие, которое меняет стиль игры. Проклятие - красная строка с пометкой [!]; прочитайте её, прежде чем надеть предмет."
+
+msgctxt "data:guide"
+msgid "Equipping asks first. You can take a cursed item off at any time."
+msgstr "Перед надеванием игра спрашивает подтверждение. Снять проклятый предмет можно в любой момент."
+
+msgctxt "data:guide"
+msgid "Only one cursed item can be worn at a time."
+msgstr "Одновременно можно носить только один проклятый предмет."
+
+msgctxt "data:guide"
+msgid "Attunement weakens most curses: 15% at Tempered, 30% at Soulbound."
+msgstr "Сонастройка ослабляет большинство проклятий: на 15% на ступени «Закалённый» и на 30% на ступени «Связанный душой»."
+
+msgctxt "data:guide"
+msgid "Rerolls change only the normal affixes. Sockets and modules work as usual. Salvage gives 1.5x a Legendary's Scrap."
+msgstr "Переброс меняет только обычные свойства. Гнёзда и модули работают как обычно. Разбор даёт в 1.5 раза больше лома, чем легендарный предмет."
+
+msgctxt "data:guide"
+msgid "The benefits count toward the global caps, like all gear."
+msgstr "Польза учитывается в общих пределах, как и у всего снаряжения."
+
+msgctxt "data:guide"
+msgid "The cursed items"
+msgstr "Проклятые предметы"
+
+msgctxt "data:guide"
+msgid "Hungering Edge"
+msgstr "Голодное лезвие"
+
+msgctxt "data:guide"
+msgid "+25% weapon damage, and +5% more for each monster killed near you this level (up to +25%). Curse: After 45 s without a weapon hit, you lose 1 HP every 3 s until you hit something (never below 10 HP)."
+msgstr "+25% к урону оружия и ещё +5% за каждого монстра, убитого рядом с вами на этом уровне (до +25%). Проклятие: после 45 с без удара оружием вы теряете 1 ОЗ каждые 3 с, пока во что-нибудь не попадёте (не ниже 10 ОЗ)."
+
+msgctxt "data:guide"
+msgid "Feedback Coil"
+msgstr "Катушка обратной связи"
+
+msgctxt "data:guide"
+msgid "Each weapon hit also hits the nearest other monster within 4 m for 50% of the damage. Curse: Every weapon hit costs you 2 HP (this can put you down)."
+msgstr "Каждый удар оружием бьёт и по ближайшему другому монстру в пределах 4 м на 50% урона. Проклятие: каждый удар оружием стоит вам 2 ОЗ (это может вас свалить)."
+
+msgctxt "data:guide"
+msgid "Overkill Relay"
+msgstr "Реле перегруза"
+
+msgctxt "data:guide"
+msgid "Damage beyond what a kill needs carries over to the nearest monster within 6 m. Curse: For 3 s after each kill you can't hold valuables."
+msgstr "Урон сверх необходимого для убийства переходит на ближайшего монстра в пределах 6 м. Проклятие: 3 с после каждого убийства вы не можете держать ценности."
+
+msgctxt "data:guide"
+msgid "Bloodpact Plating"
+msgstr "Броня кровавого договора"
+
+msgctxt "data:guide"
+msgid "30% less damage taken. Curse: Heals from teammates (their classes, perks and gear) do nothing for you."
+msgstr "На 30% меньше получаемого урона. Проклятие: лечение от напарников (их классы, перки и снаряжение) на вас не действует."
+
+msgctxt "data:guide"
+msgid "Thornshell"
+msgstr "Шипастый панцирь"
+
+msgctxt "data:guide"
+msgid "A monster that hits you takes twice the damage you took and is pushed back. Curse: Your dodge chance is always 0, from every source."
+msgstr "Монстр, ударивший вас, получает вдвое больше урона, чем получили вы, и отбрасывается. Проклятие: ваш шанс уклонения всегда равен 0, из любых источников."
+
+msgctxt "data:guide"
+msgid "Martyr's Mail"
+msgstr "Кольчуга мученика"
+
+msgctxt "data:guide"
+msgid "Teammates within 6 m take 35% less damage. Curse: You take that 35% yourself, in full."
+msgstr "Напарники в пределах 6 м получают на 35% меньше урона. Проклятие: эти 35% вы принимаете на себя, полностью."
+
+msgctxt "data:guide"
+msgid "Hollow Plating"
+msgstr "Полая броня"
+
+msgctxt "data:guide"
+msgid "+50% max health. Curse: You start every level at half health, and all healing on you is halved."
+msgstr "+50% к макс. здоровью. Проклятие: каждый уровень вы начинаете с половиной здоровья, а всё лечение по вам вдвое слабее."
+
+msgctxt "data:guide"
+msgid "Overdrive Servos"
+msgstr "Форсированные сервоприводы"
+
+msgctxt "data:guide"
+msgid "+25% walk and sprint speed. Curse: Stamina never regenerates while you hold an item."
+msgstr "+25% к скорости ходьбы и бега. Проклятие: выносливость не восстанавливается, пока вы держите предмет."
+
+msgctxt "data:guide"
+msgid "Rift Striders"
+msgstr "Разломоходы"
+
+msgctxt "data:guide"
+msgid "Jump becomes a 6 m dash the way you're moving (every 4 s). Curse: You can't jump normally."
+msgstr "Прыжок превращается в рывок на 6 м в сторону движения (раз в 4 с). Проклятие: обычный прыжок вам недоступен."
+
+msgctxt "data:guide"
+msgid "Hangman's Springs"
+msgstr "Пружины висельника"
+
+msgctxt "data:guide"
+msgid "+60% jump force, and no damage from falls and tumbling. Curse: You can't crouch."
+msgstr "+60% к силе прыжка и никакого урона от падений и кувырков. Проклятие: вы не можете приседать."
+
+msgctxt "data:guide"
+msgid "Greed Core"
+msgstr "Ядро жадности"
+
+msgctxt "data:guide"
+msgid "+25% bonus Scrap share. Curse: The mod shop charges you 25% more."
+msgstr "+25% к бонусной доле лома. Проклятие: магазин мода берёт с вас на 25% больше."
+
+msgctxt "data:guide"
+msgid "Echo Core"
+msgstr "Ядро эха"
+
+msgctxt "data:guide"
+msgid "40% shorter ability cooldown. Curse: Every ability use makes a loud noise where you stand that monsters come to investigate."
+msgstr "Перезарядка способности на 40% короче. Проклятие: каждое применение способности издаёт там, где вы стоите, громкий шум, и монстры идут его проверить."
+
+msgctxt "data:guide"
+msgid "Hourglass Heart"
+msgstr "Сердце-часы"
+
+msgctxt "data:guide"
+msgid "+1 ability charge. Curse: You can't use your ability while holding anything."
+msgstr "+1 заряд способности. Проклятие: вы не можете применять способность, пока что-то держите."
+
+msgctxt "data:guide"
+msgid "Parasite Core"
+msgstr "Ядро-паразит"
+
+msgctxt "data:guide"
+msgid "+50% XP from everything. Curse: Teammates within 10 m earn 15% less XP."
+msgstr "+50% опыта от всего. Проклятие: напарники в пределах 10 м получают на 15% меньше опыта."
+
+msgctxt "data:guide"
 msgid "Elemental Weapons"
 msgstr "Стихийное оружие"
+
+msgctxt "data:guide"
+msgid "Fire, Shock, Frost, Corrosive and Void: your weapon's hits put statuses on monsters."
+msgstr "Огонь, Разряд, Мороз, Коррозия и Пустота: удары вашего оружия накладывают на монстров состояния."
+
+msgctxt "data:guide"
+msgid "element elemental fire burn shock static frost chill freeze corrosive rot void weaken coating combo shatter resist weak"
+msgstr "element elemental fire burn shock static frost chill freeze corrosive rot void weaken coating combo shatter resist weak стихия стихии стихийный огонь горение разряд статика мороз холод заморозка коррозия гниение пустота ослабление покрытие комбо раскол сопротивление слабость"
+
+msgctxt "data:guide"
+msgid "Getting an element"
+msgstr "Как получить стихию"
+
+msgctxt "data:guide"
+msgid "Easiest: a shop Coating. All five (Incendiary, Voltaic, Glacial, Caustic, Void; 30 Scrap) are always in the shop's Consumables section while elements are on. It works until the next shop."
+msgstr "Проще всего - покрытие из магазина. Все пять (зажигательное, электрическое, ледяное, едкое, Пустоты; 30 лома) всегда есть в разделе «Расходники» магазина, пока стихии включены. Оно действует до следующего магазина."
+
+msgctxt "data:guide"
+msgid "Element modules (any socket): one of the two modules in the shop's Modules section (Regular reputation) is always an element module, and about a third of module drops (elites, crates, bosses, contracts) are one."
+msgstr "Стихийные модули (в любое гнездо): один из двух модулей в разделе «Модули» магазина (репутация «Завсегдатай») - всегда стихийный, и примерно треть выпадающих модулей (элита, ящики, боссы, контракты) - тоже."
+
+msgctxt "data:guide"
+msgid "Weapon Module behavior affixes (Incendiary, Voltaic, Glacial, Caustic, Hollowing): Uncommon and better Weapon Modules can roll a behavior, most often an elemental one."
+msgstr "Свойства-поведения оружейных модулей («Зажигательный», «Электрический», «Ледяной», «Едкий», «Опустошающий»): оружейные модули необычной редкости и выше могут получить поведение, чаще всего стихийное."
+
+msgctxt "data:guide"
+msgid "One element at a time: a Coating beats a module, a module beats an affix."
+msgstr "Одна стихия за раз: покрытие сильнее модуля, модуль сильнее свойства."
+
+msgctxt "data:guide"
+msgid "It works on guns, launchers (their blasts), melee weapons and modded weapons that Overclock supports, never on thrown objects. It never hurts valuables or teammates."
+msgstr "Стихия работает на огнестрельном оружии, гранатомётах (их взрывах), оружии ближнего боя и оружии из модов, которое поддерживает «Разгон», но никогда - на брошенных предметах. Она никогда не вредит ценностям и напарникам."
+
+msgctxt "data:guide"
+msgid "While you hold a supported weapon, its element shows under the crosshair (or \"not supported on this weapon\"). Everyone sees a coloured glow on an elemental weapon, and puffs of colour on affected monsters (Elements/Vfx Full)."
+msgstr "Пока вы держите поддерживаемое оружие, его стихия показана под прицелом (или «не поддерживается этим оружием»). Все видят цветное свечение стихийного оружия и цветные облачка на затронутых монстрах (Elements/Vfx: Full)."
+
+msgctxt "data:guide"
+msgid "The elements"
+msgstr "Стихии"
+
+msgctxt "data:guide"
+msgid "Fire - Burn"
+msgstr "Огонь - Горение"
+
+msgctxt "data:guide"
+msgid "3 damage a second per stack (up to 3), for 4 s. The first burn makes the monster panic for 0.6 s (once every 8 s)."
+msgstr "3 урона в секунду за заряд (до 3), на 4 с. Первое горение заставляет монстра паниковать 0.6 с (раз в 8 с)."
+
+msgctxt "data:guide"
+msgid "Shock - Static"
+msgstr "Разряд - Статика"
+
+msgctxt "data:guide"
+msgid "A 0.4 s stun (once every 3 s per monster). 15% chance to jump to a monster within 5 m."
+msgstr "Оглушение на 0.4 с (раз в 3 с на монстра). Шанс 15% перескочить на монстра в пределах 5 м."
+
+msgctxt "data:guide"
+msgid "Frost - Chill"
+msgstr "Мороз - Холод"
+
+msgctxt "data:guide"
+msgid "-10% speed per stack (down to -40%), 4 s. 5 hits within 4 s freeze it for 1.5 s, then no freeze for 8 s."
+msgstr "-10% к скорости за заряд (до -40%), 4 с. 5 ударов за 4 с замораживают монстра на 1.5 с, после чего заморозки нет 8 с."
+
+msgctxt "data:guide"
+msgid "Corrosive - Rot"
+msgstr "Коррозия - Гниение"
+
+msgctxt "data:guide"
+msgid "+5% damage taken from everything per stack (up to +20%), 6 s."
+msgstr "+5% к получаемому отовсюду урону за заряд (до +20%), 6 с."
+
+msgctxt "data:guide"
+msgid "Void - Weaken"
+msgstr "Пустота - Ослабление"
+
+msgctxt "data:guide"
+msgid "It deals 8% less damage per stack (up to -24%), 5 s."
+msgstr "Монстр наносит на 8% меньше урона за заряд (до -24%), 5 с."
+
+msgctxt "data:guide"
+msgid "Combos"
+msgstr "Комбо"
+
+msgctxt "data:guide"
+msgid "Shatter"
+msgstr "Раскол"
+
+msgctxt "data:guide"
+msgid "Fire on a frozen monster ends the freeze: +30% of the hit + 15 damage."
+msgstr "Огонь по замороженному монстру прекращает заморозку: +30% от удара + 15 урона."
+
+msgctxt "data:guide"
+msgid "Overload"
+msgstr "Перегрузка"
+
+msgctxt "data:guide"
+msgid "Shock on a chilled monster: the stun lasts twice as long."
+msgstr "Разряд по монстру с Холодом: оглушение длится вдвое дольше."
+
+msgctxt "data:guide"
+msgid "Meltdown"
+msgstr "Расплавление"
+
+msgctxt "data:guide"
+msgid "A rotting monster's Burn does 50% more."
+msgstr "Горение монстра с Гниением наносит на 50% больше."
+
+msgctxt "data:guide"
+msgid "Short Circuit"
+msgstr "Короткое замыкание"
+
+msgctxt "data:guide"
+msgid "Shock jumping from a burning monster sets the next one burning."
+msgstr "Разряд, перескакивая с горящего монстра, поджигает следующего."
+
+msgctxt "data:guide"
+msgid "Elites and bosses"
+msgstr "Элита и боссы"
+
+msgctxt "data:guide"
+msgid "Some elites resist an element (half the effect) or are weak to one (double); every boss has one of each. It's shown with their modifiers."
+msgstr "Некоторые элитные монстры сопротивляются одной стихии (половина эффекта) или уязвимы к одной (двойной эффект); у каждого босса есть и то, и другое. Это показано рядом с их модификаторами."
+
+msgctxt "data:guide"
+msgid "Bosses: stuns and freezes last half as long, and they don't panic."
+msgstr "Боссы: оглушение и заморозка длятся вдвое меньше, и они не паникуют."
+
+msgctxt "data:guide"
+msgid "Status icons above monsters: Burn orange triangle, Static yellow diamond, Chill light-blue disc, Rot green square, Weaken purple ring; a white outline while frozen."
+msgstr "Значки состояний над монстрами: Горение - оранжевый треугольник, Статика - жёлтый ромб, Холод - голубой диск, Гниение - зелёный квадрат, Ослабление - фиолетовое кольцо; белый контур - пока монстр заморожен."
 
 msgctxt "data:guide"
 msgid "The Market"
