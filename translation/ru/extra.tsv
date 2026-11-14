@@ -260,3 +260,9 @@
 +numbers	Scrap: {0}	0
 +pattern	Scrap <b>{0}</b>	Лом <b>{0}</b>
 +numbers	Scrap <b>{0}</b>	0
+# counts the analysis of the code did not recognise as numbers (the value is also used to pick the plural ending)
++numbers	{0}  ·  {1}{2}  ·  {3} level{4}, chapter {5}  ·  streak {6}  ·  {7} boss{8}  ·  {9:N0} {10}	3,5,6,7,9
++numbers	Run over: {0} level{1}, chapter {2}. 	0,2
++term	WON	ПОБЕДА
++numbers	You joined {0} - welcome back, {1} Lv {2}	2
++numbers	{0} attribute point{1}	0

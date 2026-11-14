@@ -385,7 +385,7 @@ namespace RepoRPG_RU
             return (h ?? head) + text.Substring(headEnd, open - headEnd) + "\u00AB" + line + "\u00BB" + text.Substring(close + 1);
         }
 
-        /// <summary>"Throw 20", "COMBAT 100": a name the dictionary has and a number after it.</summary>
+        /// <summary>"Throw 20", "COMBAT 100", "Carry x3": a name the dictionary has and a number after it.</summary>
         private static string Counted(string text)
         {
             int sp = text.LastIndexOf(' ');
@@ -395,6 +395,7 @@ namespace RepoRPG_RU
             {
                 char c = text[i];
                 if (c >= '0' && c <= '9') { digit = true; continue; }
+                if (i == sp + 1 && (c == 'x' || c == '\u00D7')) continue;
                 if (c != '.' && c != ',' && c != '%' && c != '+' && c != '-' && c != '/' && c != '\u00A0') return null;
             }
             if (!digit) return null;
@@ -433,6 +434,8 @@ namespace RepoRPG_RU
                 while (j < n)
                 {
                     if (!IsLatinLetter(text[j])) break;
+                    // "Carry x3": how many times is not a part of the name
+                    if (j > start && text[j] == 'x' && j + 1 < n && IsDigit(text[j + 1])) break;
                     while (j < n && (IsWordChar(text[j]) || ((text[j] == '\'' || text[j] == '-') && j + 1 < n && IsWordChar(text[j + 1])))) j++;
                     end = j;
                     if (j + 1 < n && (text[j] == ' ' || text[j] == '/') && IsLatinLetter(text[j + 1])) { j++; continue; }

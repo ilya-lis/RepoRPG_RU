@@ -292,3 +292,15 @@ Scrap <b>1,200</b>	Лом <b>1,200</b>
 -30 Scrap	-30 лома
 Куплено: фиксация: Heavy Riot Plating (-10 Scrap)	Куплено: фиксация: Тяжёлая штурмовая броня (-10 лома)
 Для обновления не хватает Scrap	Для обновления не хватает лома
+# "Carry x3": how many times is not a part of the name
+Бонус тега: Carry x3 – переносимые предметы получают на 8% меньше урона	Бонус тега: Переноска x3 – переносимые предметы получают на 8% меньше урона
+Улучшение: Sprint Speed x2	Улучшение: Скорость бега x2
+Завершает: Throw x5	Завершает: Бросок x5
+# the lines of the HUD about a boss and an elite, the way they are drawn (the sentence is Russian, the names are the mod's)
+БОСС Hollow Jim the Last Shift: Armored · сопротивление: Fire · слабость: Shock  7 м	БОСС Полый Джим Последняя Смена: Бронированный · сопротивление: Огонь · слабость: Разряд  7 м
+БОСС The Liquidator: Shielded  30 м	БОСС Ликвидатор: Щитоносный  30 м
+Champion: Regenerating  4 м	Чемпион: Регенерирующий  4 м
+# a line of the run history: the difficulty comes from the save
+12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Brutal  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 Scrap	12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Жестоко  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 лома
+12.11.2026  ·  <color=#ffd75a>WON</color>  ·  Brutal  ·  1 level, chapter 1  ·  streak 0  ·  2 bosses  ·  12 Scrap	12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Жестоко  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 лома
+12.11.2026  ·  Hard  ·  5 levels, chapter 2  ·  streak 3  ·  1 boss  ·  1,234 Scrap	12.11.2026  ·  Сложно  ·  уровней: 5, глава 2  ·  серия 3  ·  боссов: 1  ·  1,234 лома
