@@ -149,6 +149,9 @@ RunShape::StartVote#2
 # Everything else - names and descriptions of classes, talents, perks, gear, contracts - stays as it is: the mod uses those
 # texts as keys, stores them in saves and sends them to other players. They are translated at the moment they are drawn.
 guide: title, summary, keywords, items, label, text, term, meaning
+# One name is two things in English: "Dispatch" is the Courier's ability and the contract giver. A drawn text cannot tell
+# them apart, so the giver's name is replaced where it stands in the data (it is only ever shown, the mod finds givers by id).
+contracts: givers/name
 
 [probes]
 # the mod looks for these words in the names of OTHER plugins, never in its own interface texts

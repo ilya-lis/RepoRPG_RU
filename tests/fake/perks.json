@@ -1,1 +1,1 @@
-﻿{ "perks": [ { "id": "Tank", "name": "Tank", "stat": "Tank" } ] }
+﻿{ "perks": [ { "id": "Tank", "name": "Tank", "stat": "Tank" } ], "givers": [ { "label": "Tank" } ], "notes": [ { "label": "Tank" } ] }

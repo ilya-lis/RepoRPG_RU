@@ -209,12 +209,16 @@ namespace RepoRPG_RU
             }
         }
 
-        public bool DataAllowed(string stem, string property)
+        /// <summary>
+        /// "guide: title, text" allows a property wherever it stands in that file; "contracts: givers/name" only the values
+        /// at that very path (the names of the properties from the root down, arrays add nothing).
+        /// </summary>
+        public bool DataAllowed(string stem, string property, string path)
         {
             if (property == null) return false;
             if (DataDeny.Contains(stem + ":" + property) || DataDeny.Contains("*:" + property)) return false;
             HashSet<string> set;
-            if (Data.TryGetValue(stem, out set) && set.Contains(property)) return true;
+            if (Data.TryGetValue(stem, out set) && (set.Contains(property) || (path != null && set.Contains(path)))) return true;
             if (Data.TryGetValue("*", out set) && set.Contains(property)) return true;
             return false;
         }

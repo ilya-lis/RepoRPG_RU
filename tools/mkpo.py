@@ -258,6 +258,9 @@ def main():
         for uid, pieces in alive:
             for a, b in pieces.items(): scoped.setdefault(sc + '#' + uid, collections.OrderedDict())[a] = b
 
+    # +inside:contracts<TAB>Dispatch<TAB>Диспетчерская: a value replaced where it stands in that file of the mod's data
+    # (only at the paths the [data] rules of tools/genrules.py allow). For a name that is two different things in English.
+    inside = collections.OrderedDict()
     for kind, en, ru, where in extra:
         bad = check(en, ru)
         if bad: problems.append('%s: %s: %r' % (where, bad, en[:60])); continue
@@ -265,6 +268,7 @@ def main():
         elif kind == 'pattern': pat_e[en] = ru
         elif kind == 'global': glob_e[en] = ru
         elif kind.startswith('@'): scoped.setdefault(kind[1:], collections.OrderedDict())[en] = ru
+        elif kind.startswith('inside:'): inside.setdefault(kind[7:], collections.OrderedDict())[en] = (ru, where)
         else: problems.append('%s: unknown kind +%s' % (where, kind)); continue
         if kind in ('term', 'pattern', 'global'): checks.append(sample(en, ru))
 
@@ -276,6 +280,7 @@ def main():
            '#   pattern           a sentence the mod puts together itself; {0} stands for the changing part',
            '#   shape             a text of the mod\'s data; {0}, {1} are its numbers, which change with ranks and settings',
            '#   data:guide        a value of the mod\'s guide.json, replaced inside the data (the Guide tab and its search)',
+           '#   data:contracts    the same for contracts.json: only the values at the paths the rules file names',
            '#   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)',
            '#   numbers           not a translation: which placeholders of a sentence are numbers (worked out from the mod\'s code)',
            '#   words             not a translation: which placeholders hold one of the mod\'s own words (a rarity, a tab name)',
@@ -293,6 +298,13 @@ def main():
         for en, ru in d_terms.items(): term_e[en] = ru
         checks.extend(d_checks)
     emit(None, glob_e); emit('term', term_e); emit('pattern', pat_e); emit('shape', shape_e); emit('data:guide', guide_e)
+    for stem, table in inside.items():
+        if os.path.isfile(data_json):
+            texts = set(u['text'] for u in json.load(open(data_json, encoding='utf-8'))
+                        if u['file'] == stem or any(a.startswith(stem + ':') for a in u['also']))
+            for en, (ru, where) in table.items():
+                if en not in texts: problems.append('%s: %s.json has no text %r' % (where, stem, en[:60]))
+        emit('data:' + stem, collections.OrderedDict((en, ru) for en, (ru, where) in table.items()))
     for sc in sorted(scoped): emit('@' + sc, scoped[sc])
     # which placeholders are numbers: "{0} players" is made from a count, so "more players" is another text altogether
     for en, idx, where in hand_num:

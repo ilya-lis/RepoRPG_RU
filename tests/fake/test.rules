@@ -23,6 +23,8 @@ RpgRuntime::Host*
 [data]
 *: name, desc
 classes: complexityTip, bases
+# a path: only the values at that place of the file
+perks: givers/label
 *: !id, !stat, !tags, !requires, !color
 
 [probes]

@@ -6,6 +6,7 @@
 #   pattern           a sentence the mod puts together itself; {0} stands for the changing part
 #   shape             a text of the mod's data; {0}, {1} are its numbers, which change with ranks and settings
 #   data:guide        a value of the mod's guide.json, replaced inside the data (the Guide tab and its search)
+#   data:contracts    the same for contracts.json: only the values at the paths the rules file names
 #   @Type::Member     only inside that method of the mod; "#N" marks the pieces of one sentence (all replaced or none)
 #   numbers           not a translation: which placeholders of a sentence are numbers (worked out from the mod's code)
 #   words             not a translation: which placeholders hold one of the mod's own words (a rarity, a tab name)
@@ -17214,7 +17215,7 @@ msgstr "аура также даёт 5% сопротивления урону"
 
 msgctxt "term"
 msgid "Carry 20 valuables into extractions"
-msgstr "Донесите 20 ценностей до точек извлечения"
+msgstr "Донесите ценностей до точек извлечения: 20"
 
 msgctxt "term"
 msgid "Pack Horse"
@@ -18917,48 +18918,676 @@ msgid "Madame Brass"
 msgstr "Мадам Брасс"
 
 msgctxt "term"
+msgid "the Collector"
+msgstr "Коллекционер"
+
+msgctxt "term"
+msgid "Rare valuables, careful hauls"
+msgstr "Редкие ценности, бережная доставка"
+
+msgctxt "term"
+msgid "Bring it back in one piece, darling. Pieces are worth less."
+msgstr "Принесите в целости, дорогуша. Осколки стоят меньше."
+
+msgctxt "term"
+msgid "I only collect the beautiful ones. Find me one."
+msgstr "Я собираю только прекрасное. Найдите мне такое."
+
+msgctxt "term"
+msgid "Money is vulgar. Valuables are art."
+msgstr "Деньги - это пошло. Ценности - это искусство."
+
+msgctxt "term"
+msgid "Splendid. Do try not to sneeze on it."
+msgstr "Великолепно. Постарайтесь на неё не чихать."
+
+msgctxt "term"
+msgid "I knew you had taste."
+msgstr "Я знала, что у вас есть вкус."
+
+msgctxt "term"
+msgid "Gloves on, darling."
+msgstr "Наденьте перчатки, дорогуша."
+
+msgctxt "term"
+msgid "Exquisite. It goes on the mantel."
+msgstr "Изысканно. Поставлю на каминную полку."
+
+msgctxt "term"
+msgid "You may kiss the ring. Metaphorically."
+msgstr "Можете поцеловать перстень. Образно говоря."
+
+msgctxt "term"
+msgid "My collection thanks you."
+msgstr "Моя коллекция благодарит вас."
+
+msgctxt "term"
+msgid "Disappointing. Like a fake Fabergé."
+msgstr "Разочарование. Как поддельный Фаберже."
+
+msgctxt "term"
+msgid "I'll pretend this never happened."
+msgstr "Сделаю вид, что этого не было."
+
+msgctxt "term"
+msgid "Darling. No."
+msgstr "Дорогуша. Нет."
+
+msgctxt "term"
 msgid "Kaboom & Sons"
 msgstr "Бабах и сыновья"
+
+msgctxt "term"
+msgid "Demolition"
+msgstr "Подрывные работы"
+
+msgctxt "term"
+msgid "Monsters, elites, bosses"
+msgstr "Монстры, элита, боссы"
+
+msgctxt "term"
+msgid "We don't do subtle. We do thorough."
+msgstr "Мы не работаем тонко. Мы работаем основательно."
+
+msgctxt "term"
+msgid "Dad says hit it until it stops moving."
+msgstr "Папа говорит: бей, пока не перестанет шевелиться."
+
+msgctxt "term"
+msgid "Family business since the first explosion."
+msgstr "Семейное дело с самого первого взрыва."
+
+msgctxt "term"
+msgid "That's the spirit! Mind the shrapnel."
+msgstr "Вот это настрой! Берегитесь осколков."
+
+msgctxt "term"
+msgid "Sons! We've got a live one!"
+msgstr "Сыновья! У нас тут живчик!"
+
+msgctxt "term"
+msgid "Earplugs are in the truck."
+msgstr "Беруши в грузовике."
+
+msgctxt "term"
+msgid "Beautiful mess. Dad's proud."
+msgstr "Красивый разгром. Папа гордится."
+
+msgctxt "term"
+msgid "Now THAT'S demolition."
+msgstr "Вот ЭТО называется снос."
+
+msgctxt "term"
+msgid "We'll frame the crater."
+msgstr "Воронку повесим в рамочку."
+
+msgctxt "term"
+msgid "Not even a dent? Really?"
+msgstr "Даже ни вмятины? Серьёзно?"
+
+msgctxt "term"
+msgid "Dad's not mad. Just loud."
+msgstr "Папа не злится. Он просто громкий."
+
+msgctxt "term"
+msgid "Back to the quarry with you."
+msgstr "Марш обратно в карьер."
 
 msgctxt "term"
 msgid "Hollis Underwood"
 msgstr "Холлис Андервуд"
 
 msgctxt "term"
+msgid "Insurance Broker"
+msgstr "Страховой брокер"
+
+msgctxt "term"
+msgid "No deaths, no damage, no breakage"
+msgstr "Без смертей, без урона, без поломок"
+
+msgctxt "term"
+msgid "Risk is a four-letter word. Well. It's a word."
+msgstr "Риск - слово из четырёх букв. Ну. В общем, слово."
+
+msgctxt "term"
+msgid "Read the fine print. Then read it again."
+msgstr "Прочтите мелкий шрифт. Потом прочтите ещё раз."
+
+msgctxt "term"
+msgid "Accidents are just unpriced events."
+msgstr "Несчастные случаи - это просто неоценённые события."
+
+msgctxt "term"
+msgid "Signed in triplicate. Excellent."
+msgstr "Подписано в трёх экземплярах. Превосходно."
+
+msgctxt "term"
+msgid "Your premium is... manageable."
+msgstr "Ваш взнос... посилен."
+
+msgctxt "term"
+msgid "Try to stay in one piece. Contractually."
+msgstr "Постарайтесь остаться целым. По условиям договора."
+
+msgctxt "term"
+msgid "No claims! I may frame the form."
+msgstr "Ни одного требования! Пожалуй, вставлю бланк в рамку."
+
+msgctxt "term"
+msgid "A spotless record. Delicious."
+msgstr "Безупречная история. Восхитительно."
+
+msgctxt "term"
+msgid "Actuarially speaking, you're a delight."
+msgstr "С актуарной точки зрения вы - прелесть."
+
+msgctxt "term"
+msgid "That will raise your premium."
+msgstr "Это повысит ваш взнос."
+
+msgctxt "term"
+msgid "I'm filing this under 'regrettable'."
+msgstr "Подошью это в папку „прискорбное“."
+
+msgctxt "term"
+msgid "Please sign the incident report."
+msgstr "Подпишите, пожалуйста, акт о происшествии."
+
+msgctxt "term"
+msgid "the Courier Union"
+msgstr "Союз курьеров"
+
+msgctxt "term"
+msgid "Speed, extractions, getting home"
+msgstr "Скорость, извлечения, возвращение домой"
+
+msgctxt "term"
+msgid "Time is money. You're wasting both."
+msgstr "Время - деньги. Вы тратите и то и другое."
+
+msgctxt "term"
+msgid "Route's mapped. Clock's running."
+msgstr "Маршрут проложен. Часы идут."
+
+msgctxt "term"
+msgid "The Union delivers. So do you."
+msgstr "Союз доставляет. И вы тоже."
+
+msgctxt "term"
+msgid "Logged. Go go go."
+msgstr "Записано. Вперёд, вперёд, вперёд."
+
+msgctxt "term"
+msgid "Clock in, semibot."
+msgstr "Отмечайся, семибот."
+
+msgctxt "term"
+msgid "Dispatch out."
+msgstr "Диспетчерская, конец связи."
+
+msgctxt "term"
+msgid "On time. The Union salutes you."
+msgstr "Вовремя. Союз салютует вам."
+
+msgctxt "term"
+msgid "Signed, sealed, delivered."
+msgstr "Подписано, запечатано, доставлено."
+
+msgctxt "term"
+msgid "That's a bonus on the time sheet."
+msgstr "Это премия в табеле."
+
+msgctxt "term"
+msgid "Late. The Union remembers."
+msgstr "Опоздание. Союз помнит."
+
+msgctxt "term"
+msgid "Missed the window. Again."
+msgstr "Окно упущено. Снова."
+
+msgctxt "term"
+msgid "Union rule 1: don't be late."
+msgstr "Правило Союза № 1: не опаздывать."
+
+msgctxt "term"
 msgid "The Auditor"
 msgstr "Аудитор"
+
+msgctxt "term"
+msgid "the Accountant of Last Resort"
+msgstr "Бухгалтер последней инстанции"
+
+msgctxt "term"
+msgid "High stakes, high pay - and a fine if you fail"
+msgstr "Высокие ставки, высокая оплата - и штраф за провал"
+
+msgctxt "term"
+msgid "Every figure checked twice. Every failure invoiced."
+msgstr "Каждая цифра проверена дважды. За каждый провал выставлен счёт."
+
+msgctxt "term"
+msgid "The pay is generous. The penalty clause is too."
+msgstr "Оплата щедрая. Пункт о штрафах - тоже."
+
+msgctxt "term"
+msgid "Sign here. And here. And initial the fine print."
+msgstr "Подпишите здесь. И здесь. И инициалы под мелким шрифтом."
+
+msgctxt "term"
+msgid "Noted. Don't make me write a correction."
+msgstr "Принято к сведению. Не заставляйте меня писать исправление."
+
+msgctxt "term"
+msgid "The clock and I are both watching."
+msgstr "Часы и я - мы оба следим."
+
+msgctxt "term"
+msgid "Your signature is binding."
+msgstr "Ваша подпись имеет обязательную силу."
+
+msgctxt "term"
+msgid "The books balance. Remarkable."
+msgstr "Баланс сошёлся. Поразительно."
+
+msgctxt "term"
+msgid "Paid in full. I'm almost impressed."
+msgstr "Оплачено полностью. Я почти впечатлён."
+
+msgctxt "term"
+msgid "Filed under 'acceptable'."
+msgstr "Подшито в папку «приемлемо»."
+
+msgctxt "term"
+msgid "Invoiced. With interest."
+msgstr "Счёт выставлен. С процентами."
+
+msgctxt "term"
+msgid "The penalty clause applies."
+msgstr "Применяется пункт о штрафах."
+
+msgctxt "term"
+msgid "I'll deduct it from your account."
+msgstr "Вычту это с вашего счёта."
+
+msgctxt "term"
+msgid "Keeper of the Research Archive"
+msgstr "Хранитель исследовательского архива"
+
+msgctxt "term"
+msgid "Research samples and specimens. Pays in Research Data"
+msgstr "Образцы и экземпляры для исследований. Платит данными исследований"
+
+msgctxt "term"
+msgid "Knowledge is the only currency that keeps."
+msgstr "Знание - единственная валюта, которая не портится."
+
+msgctxt "term"
+msgid "Bring me something I have not catalogued."
+msgstr "Принесите мне то, чего нет в моём каталоге."
+
+msgctxt "term"
+msgid "Samples, specimens, notes. Mind the glass."
+msgstr "Образцы, экземпляры, записи. Осторожнее со стеклом."
+
+msgctxt "term"
+msgid "Catalogue number assigned."
+msgstr "Каталожный номер присвоен."
+
+msgctxt "term"
+msgid "Handle the canisters gently."
+msgstr "Обращайтесь с контейнерами бережно."
+
+msgctxt "term"
+msgid "I will prepare a shelf."
+msgstr "Я подготовлю полку."
+
+msgctxt "term"
+msgid "Filed, indexed and cross-referenced."
+msgstr "Подшито, внесено в указатель и снабжено перекрёстными ссылками."
+
+msgctxt "term"
+msgid "The archive grows. Thank you."
+msgstr "Архив растёт. Благодарю."
+
+msgctxt "term"
+msgid "A fine specimen. Your Data is sent."
+msgstr "Прекрасный экземпляр. Ваши данные отправлены."
+
+msgctxt "term"
+msgid "An empty shelf. A pity."
+msgstr "Пустая полка. Жаль."
+
+msgctxt "term"
+msgid "The record will show nothing."
+msgstr "В записях не останется ничего."
+
+msgctxt "term"
+msgid "We will try again next time."
+msgstr "В следующий раз попробуем снова."
+
+msgctxt "term"
+msgid "Exterminate"
+msgstr "Истребление"
+
+msgctxt "term"
+msgid "No death saves used"
+msgstr "Без использования спасений от смерти"
+
+msgctxt "term"
+msgid "Elite Hunter"
+msgstr "Охотник на элиту"
+
+msgctxt "term"
+msgid "Within 5 min of the level starting"
+msgstr "В первые 5 мин после начала уровня"
+
+msgctxt "term"
+msgid "Demolition Day"
+msgstr "День сноса"
 
 msgctxt "term"
 msgid "Haul"
 msgstr "Добыча"
 
 msgctxt "term"
+msgid "Done within 8 min"
+msgstr "Выполнено за 8 мин"
+
+msgctxt "term"
 msgid "Speedrun"
 msgstr "Спидран"
+
+msgctxt "term"
+msgid "Nobody in the team dies"
+msgstr "Никто в команде не погибает"
+
+msgctxt "term"
+msgid "Express Delivery"
+msgstr "Экспресс-доставка"
 
 msgctxt "term"
 msgid "Clean Delivery"
 msgstr "Чистая доставка"
 
 msgctxt "term"
+msgid "Unscathed"
+msgstr "Невредимый"
+
+msgctxt "term"
+msgid "No damage at all"
+msgstr "Совсем без урона"
+
+msgctxt "term"
+msgid "Rescue"
+msgstr "Спасение"
+
+msgctxt "term"
+msgid "One within 10 s of them going down"
+msgstr "Одного - в течение 10 с после его гибели"
+
+msgctxt "term"
+msgid "Fine Taste"
+msgstr "Тонкий вкус"
+
+msgctxt "term"
+msgid "Twice as many"
+msgstr "Вдвое больше"
+
+msgctxt "term"
 msgid "Big Ticket"
 msgstr "Крупный куш"
+
+msgctxt "term"
+msgid "Without breaking a single valuable"
+msgstr "Не разбив ни одной ценности"
+
+msgctxt "term"
+msgid "Top Earner"
+msgstr "Лучший добытчик"
+
+msgctxt "term"
+msgid "Carry out the most value of everyone who took it"
+msgstr "Вынесите больше всех по стоимости среди взявших контракт"
+
+msgctxt "term"
+msgid "Top Hunter"
+msgstr "Лучший охотник"
+
+msgctxt "term"
+msgid "Kill the most monsters of everyone who took it"
+msgstr "Убейте больше всех монстров среди взявших контракт"
+
+msgctxt "term"
+msgid "Revive and heal teammates the most of everyone who took it"
+msgstr "Возрождайте и лечите напарников больше всех среди взявших контракт"
+
+msgctxt "term"
+msgid "First Out"
+msgstr "Первый на выход"
+
+msgctxt "term"
+msgid "Carry the most valuables into extractions of everyone who took it"
+msgstr "Донесите до точек извлечения больше всех ценностей среди взявших контракт"
+
+msgctxt "term"
+msgid "Bulwark Duty"
+msgstr "Дежурство оплота"
+
+msgctxt "term"
+msgid "Golden Minutes"
+msgstr "Золотые минуты"
+
+msgctxt "term"
+msgid "Long Legs"
+msgstr "Длинные ноги"
+
+msgctxt "term"
+msgid "Heavy Freight"
+msgstr "Тяжёлый груз"
+
+msgctxt "term"
+msgid "Red Mist"
+msgstr "Красная пелена"
+
+msgctxt "term"
+msgid "Marked Men"
+msgstr "Меченые"
+
+msgctxt "term"
+msgid "Rallying Cry"
+msgstr "Призывный клич"
+
+msgctxt "term"
+msgid "Overdrive Express"
+msgstr "Форсаж-экспресс"
+
+msgctxt "term"
+msgid "Applied Force"
+msgstr "Приложенная сила"
+
+msgctxt "term"
+msgid "Bait and Switch"
+msgstr "Обманный манёвр"
+
+msgctxt "term"
+msgid "Collateral"
+msgstr "Попутный ущерб"
+
+msgctxt "term"
+msgid "Supply Run"
+msgstr "Рейс снабжения"
+
+msgctxt "term"
+msgid "Bad Neighbours"
+msgstr "Плохие соседи"
+
+msgctxt "term"
+msgid "Good as New"
+msgstr "Как новенькое"
+
+msgctxt "term"
+msgid "Fully Covered"
+msgstr "Полностью застраховано"
+
+msgctxt "term"
+msgid "Eyes Open"
+msgstr "Смотри в оба"
+
+msgctxt "term"
+msgid "Steady Aim"
+msgstr "Твёрдый прицел"
+
+msgctxt "term"
+msgid "Calm Waters"
+msgstr "Спокойные воды"
+
+msgctxt "term"
+msgid "Reel It In"
+msgstr "Мотай катушку"
+
+msgctxt "term"
+msgid "Signed, Sealed"
+msgstr "Подписано, запечатано"
+
+msgctxt "term"
+msgid "Hostile Takeover"
+msgstr "Враждебное поглощение"
+
+msgctxt "term"
+msgid "Asset Seizure"
+msgstr "Арест активов"
+
+msgctxt "term"
+msgid "Quarterly Target"
+msgstr "Квартальный план"
+
+msgctxt "term"
+msgid "Clean Books"
+msgstr "Чистая отчётность"
+
+msgctxt "term"
+msgid "Deadline"
+msgstr "Крайний срок"
+
+msgctxt "term"
+msgid "Sample Run"
+msgstr "Рейс за образцами"
+
+msgctxt "term"
+msgid "Full Catalogue"
+msgstr "Полный каталог"
+
+msgctxt "term"
+msgid "Finish every extraction point with every research sample on the level brought out"
+msgstr "Завершите все точки извлечения, вынеся все образцы для исследований с уровня"
+
+msgctxt "term"
+msgid "Specimen Study"
+msgstr "Изучение экземпляров"
 
 msgctxt "term"
 msgid "The Brass Collection"
 msgstr "Коллекция Брасс"
 
 msgctxt "term"
+msgid "An Epic piece of your wishlisted set (or a random set)"
+msgstr "Эпический предмет желаемого комплекта (или случайного комплекта)"
+
+msgctxt "term"
+msgid "Carry out a Rare-or-better valuable"
+msgstr "Вынесите ценность не ниже редкой"
+
+msgctxt "term"
+msgid "I collect beautiful things. Prove you can find one."
+msgstr "Я собираю прекрасные вещи. Докажите, что можете найти такую."
+
+msgctxt "term"
+msgid "Carry out two Rare-or-better valuables in one level"
+msgstr "Вынесите за один уровень две ценности не ниже редких"
+
+msgctxt "term"
+msgid "One could be luck. Two is a habit."
+msgstr "Одна - может быть везением. Две - уже привычка."
+
+msgctxt "term"
+msgid "Carry out a $10,000 valuable without a scratch"
+msgstr "Вынесите ценность за $10,000 без единой царапины"
+
+msgctxt "term"
+msgid "The centrepiece. Not a scratch, darling."
+msgstr "Жемчужина коллекции. Ни царапины, дорогуша."
+
+msgctxt "term"
 msgid "Demolition Derby"
 msgstr "Дерби разрушений"
+
+msgctxt "term"
+msgid "A Weapon Module Unique"
+msgstr "Уникальный оружейный модуль"
+
+msgctxt "term"
+msgid "Warm-up round!"
+msgstr "Разминочный раунд!"
+
+msgctxt "term"
+msgid "Now the big ones."
+msgstr "Теперь те, что покрупнее."
+
+msgctxt "term"
+msgid "Kill a boss, or 3 elites"
+msgstr "Убейте босса или 3 элитных монстров"
+
+msgctxt "term"
+msgid "Dad wants a trophy for the office."
+msgstr "Папа хочет трофей в контору."
 
 msgctxt "term"
 msgid "Policy Review"
 msgstr "Проверка полиса"
 
 msgctxt "term"
+msgid "Insurer's Bond (Unique Plating)"
+msgstr "Гарантия страховщика (уникальная броня)"
+
+msgctxt "term"
+msgid "Nobody dies this level"
+msgstr "На этом уровне никто не погибает"
+
+msgctxt "term"
+msgid "Let's establish a baseline."
+msgstr "Давайте установим точку отсчёта."
+
+msgctxt "term"
+msgid "Premiums are calculated on bruises."
+msgstr "Взносы рассчитываются по синякам."
+
+msgctxt "term"
+msgid "Carry out $15,000 of valuables without breaking one"
+msgstr "Вынесите ценностей на $15,000, не разбив ни одной"
+
+msgctxt "term"
+msgid "Flawless. I may cry. Professionally."
+msgstr "Безупречно. Я сейчас расплачусь. Профессионально."
+
+msgctxt "term"
 msgid "Rush Order"
 msgstr "Срочный заказ"
+
+msgctxt "term"
+msgid "An Epic Servos piece and +60 shop reputation"
+msgstr "Эпические сервоприводы и +60 к репутации в магазине"
+
+msgctxt "term"
+msgid "Clock's ticking."
+msgstr "Часы тикают."
+
+msgctxt "term"
+msgid "Finish the level within 6 min with nobody dying"
+msgstr "Пройдите уровень за 6 мин без единой смерти"
+
+msgctxt "term"
+msgid "Faster. Everyone. All of you."
+msgstr "Быстрее. Все. Все до единого."
 
 msgctxt "term"
 msgid "Striker Module"
@@ -47426,7 +48055,7 @@ msgstr "аура также даёт {0}% сопротивления урону"
 
 msgctxt "shape"
 msgid "Carry {0} valuables into extractions"
-msgstr "Донесите {0} ценностей до точек извлечения"
+msgstr "Донесите ценностей до точек извлечения: {0}"
 
 msgctxt "shape"
 msgid "also +{0}% grip strength"
@@ -48260,6 +48889,314 @@ msgctxt "shape"
 msgid "Every {0} s together, the Gambler and the Scavenger each get {1} Scrap."
 msgstr "Каждые {0} с вместе Азартный игрок и Старьёвщик получают по {1} лома."
 
+msgctxt "shape"
+msgid "Union rule {0}: don't be late."
+msgstr "Правило Союза № {0}: не опаздывать."
+
+msgctxt "shape"
+msgid "Kill {0} monsters near you"
+msgstr "Убейте монстров рядом с собой: {0}"
+
+msgctxt "shape"
+msgid "Kill {0} elite"
+msgstr "Убейте элитных монстров: {0}"
+
+msgctxt "shape"
+msgid "Kill {0} elites"
+msgstr "Убейте элитных монстров: {0}"
+
+msgctxt "shape"
+msgid "Within {0} min of the level starting"
+msgstr "В первые {0} мин после начала уровня"
+
+msgctxt "shape"
+msgid "Kill {0} monsters within {1} s"
+msgstr "Убейте монстров за {1} с: {0}"
+
+msgctxt "shape"
+msgid "Complete {0} extraction points (fewer if the level has fewer)"
+msgstr "Завершите точек извлечения: {0} (меньше, если на уровне их меньше)"
+
+msgctxt "shape"
+msgid "Done within {0} min"
+msgstr "Выполнено за {0} мин"
+
+msgctxt "shape"
+msgid "Finish the level within {0} min"
+msgstr "Пройдите уровень за {0} мин"
+
+msgctxt "shape"
+msgid "Carry {0} valuable into extractions"
+msgstr "Донесите ценностей до точек извлечения: {0}"
+
+msgctxt "shape"
+msgid "Carry {0} valuable into extractions without them losing value"
+msgstr "Донесите ценностей до точек извлечения без потери стоимости: {0}"
+
+msgctxt "shape"
+msgid "Carry {0} valuables into extractions without them losing value"
+msgstr "Донесите ценностей до точек извлечения без потери стоимости: {0}"
+
+msgctxt "shape"
+msgid "Take less than {0} damage this level"
+msgstr "Получите меньше {0} урона на этом уровне"
+
+msgctxt "shape"
+msgid "Revive {0} teammate"
+msgstr "Возродите напарников: {0}"
+
+msgctxt "shape"
+msgid "Revive {0} teammates"
+msgstr "Возродите напарников: {0}"
+
+msgctxt "shape"
+msgid "One within {0} s of them going down"
+msgstr "Одного - в течение {0} с после его гибели"
+
+msgctxt "shape"
+msgid "Carry out {0} Rare-or-better valuable"
+msgstr "Вынесите ценностей не ниже редких: {0}"
+
+msgctxt "shape"
+msgid "Carry out {0} Rare-or-better valuables"
+msgstr "Вынесите ценностей не ниже редких: {0}"
+
+msgctxt "shape"
+msgid "Carry out ${0} of valuables"
+msgstr "Вынесите ценностей на ${0}"
+
+msgctxt "shape"
+msgid "Your Shield Wall stops {0} damage to teammates"
+msgstr "Ваша «Стена щитов» останавливает {0} урона по напарникам"
+
+msgctxt "shape"
+msgid "Revive {0} teammate within {1} s of them going down"
+msgstr "Возродите напарников в течение {1} с после гибели: {0}"
+
+msgctxt "shape"
+msgid "Revive {0} teammates within {1} s of them going down"
+msgstr "Возродите напарников в течение {1} с после гибели: {0}"
+
+msgctxt "shape"
+msgid "Sprint {0} m in total"
+msgstr "Пробегите в сумме {0} м"
+
+msgctxt "shape"
+msgid "Carry {0} valuable worth ${1}+ each into extractions"
+msgstr "Донесите до точек извлечения ценностей стоимостью от ${1}: {0}"
+
+msgctxt "shape"
+msgid "Carry {0} valuables worth ${1}+ each into extractions"
+msgstr "Донесите до точек извлечения ценностей стоимостью от ${1}: {0}"
+
+msgctxt "shape"
+msgid "Reach full Frenzy {0} time"
+msgstr "Наберите полную Ярость (раз: {0})"
+
+msgctxt "shape"
+msgid "Reach full Frenzy {0} times"
+msgstr "Наберите полную Ярость (раз: {0})"
+
+msgctxt "shape"
+msgid "Keep Power Link on teammates for {0} s in total"
+msgstr "Держите «Энергосвязь» на напарниках в сумме {0} с"
+
+msgctxt "shape"
+msgid "Dodge {0} hit"
+msgstr "Уклонитесь от ударов: {0}"
+
+msgctxt "shape"
+msgid "Dodge {0} hits"
+msgstr "Уклонитесь от ударов: {0}"
+
+msgctxt "shape"
+msgid "Use {0} death save and finish the level"
+msgstr "Используйте спасений от смерти: {0} - и пройдите уровень"
+
+msgctxt "shape"
+msgid "Use {0} death saves and finish the level"
+msgstr "Используйте спасений от смерти: {0} - и пройдите уровень"
+
+msgctxt "shape"
+msgid "Appraise ${0} of valuables with Appraisal Scan"
+msgstr "Оцените «Оценочным сканированием» ценностей на ${0}"
+
+msgctxt "shape"
+msgid "Catch {0} monsters in Stasis Fields"
+msgstr "Поймайте монстров в «Стазисные поля»: {0}"
+
+msgctxt "shape"
+msgid "Fill Inspire to {0}% {1} time"
+msgstr "Наберите Воодушевление до {0}% (раз: {1})"
+
+msgctxt "shape"
+msgid "Fill Inspire to {0}% {1} times"
+msgstr "Наберите Воодушевление до {0}% (раз: {1})"
+
+msgctxt "shape"
+msgid "Use {0} different teammates' classes with Mimicry"
+msgstr "Примените «Мимикрией» разных классов напарников: {0}"
+
+msgctxt "shape"
+msgid "Bring back {0} teammate with Reboot"
+msgstr "Верните «Перезагрузкой» напарников: {0}"
+
+msgctxt "shape"
+msgid "Bring back {0} teammates with Reboot"
+msgstr "Верните «Перезагрузкой» напарников: {0}"
+
+msgctxt "shape"
+msgid "Deliver {0} loaded cart with Cart Overdrive"
+msgstr "Доставьте с «Форсажем тележки» гружёных тележек: {0}"
+
+msgctxt "shape"
+msgid "Deliver {0} loaded carts with Cart Overdrive"
+msgstr "Доставьте с «Форсажем тележки» гружёных тележек: {0}"
+
+msgctxt "shape"
+msgid "Stun {0} monsters with thrown items"
+msgstr "Оглушите монстров брошенными предметами: {0}"
+
+msgctxt "shape"
+msgid "Lure {0} monsters with Decoy Beacons"
+msgstr "Приманите монстров «Маяками-приманками»: {0}"
+
+msgctxt "shape"
+msgid "Hit {0}+ monsters with one Breach Charge, {1} time"
+msgstr "Заденьте {0}+ монстров одним «Пробивным зарядом» (раз: {1})"
+
+msgctxt "shape"
+msgid "Hit {0}+ monsters with one Breach Charge, {1} times"
+msgstr "Заденьте {0}+ монстров одним «Пробивным зарядом» (раз: {1})"
+
+msgctxt "shape"
+msgid "Resupply teammates {0} time (each teammate counts)"
+msgstr "Пополните запасы напарников (раз: {0}; считается каждый напарник)"
+
+msgctxt "shape"
+msgid "Resupply teammates {0} times (each teammate counts)"
+msgstr "Пополните запасы напарников (раз: {0}; считается каждый напарник)"
+
+msgctxt "shape"
+msgid "Win {0} bet"
+msgstr "Выиграйте ставок: {0}"
+
+msgctxt "shape"
+msgid "Win {0} bets"
+msgstr "Выиграйте ставок: {0}"
+
+msgctxt "shape"
+msgid "Heal {0} HP with Leech"
+msgstr "Восстановите «Пиявкой» {0} ОЗ"
+
+msgctxt "shape"
+msgid "Start {0} monster fight (Provoke or Bad Blood)"
+msgstr "Начните драк монстров: {0} («Провокация» или «Вражда»)"
+
+msgctxt "shape"
+msgid "Start {0} monster fights (Provoke or Bad Blood)"
+msgstr "Начните драк монстров: {0} («Провокация» или «Вражда»)"
+
+msgctxt "shape"
+msgid "Lure {0} monsters with Echo"
+msgstr "Приманите монстров «Эхом»: {0}"
+
+msgctxt "shape"
+msgid "Mend ${0} of valuable damage"
+msgstr "Почините повреждений ценностей на ${0}"
+
+msgctxt "shape"
+msgid "Make {0} scavenger find"
+msgstr "Сделайте находок старьёвщика: {0}"
+
+msgctxt "shape"
+msgid "Make {0} scavenger finds"
+msgstr "Сделайте находок старьёвщика: {0}"
+
+msgctxt "shape"
+msgid "Policies cover {0} valuable that broke"
+msgstr "Полисы покрывают разбившихся ценностей: {0}"
+
+msgctxt "shape"
+msgid "Policies cover {0} valuables that broke"
+msgstr "Полисы покрывают разбившихся ценностей: {0}"
+
+msgctxt "shape"
+msgid "Spot {0} monsters for the team"
+msgstr "Засеките монстров для команды: {0}"
+
+msgctxt "shape"
+msgid "Land {0} weapon hits"
+msgstr "Нанесите ударов оружием: {0}"
+
+msgctxt "shape"
+msgid "Pacify {0} monsters"
+msgstr "Усмирите монстров: {0}"
+
+msgctxt "shape"
+msgid "Pull {0} items to you with the hook"
+msgstr "Притяните к себе крюком предметов: {0}"
+
+msgctxt "shape"
+msgid "Dispatch {0} valuable to an extraction"
+msgstr "Отправьте ценностей на точку извлечения: {0}"
+
+msgctxt "shape"
+msgid "Dispatch {0} valuables to an extraction"
+msgstr "Отправьте ценностей на точку извлечения: {0}"
+
+msgctxt "shape"
+msgid "Finish {0} extraction points"
+msgstr "Завершите точек извлечения: {0}"
+
+msgctxt "shape"
+msgid "Take at most {0} damage this level"
+msgstr "Получите не больше {0} урона на этом уровне"
+
+msgctxt "shape"
+msgid "Carry ${0} of valuables to extraction"
+msgstr "Донесите до извлечения ценностей на ${0}"
+
+msgctxt "shape"
+msgid "Finish the level within {0} minutes"
+msgstr "Пройдите уровень за {0} мин"
+
+msgctxt "shape"
+msgid "Carry {0} research sample into an extraction yourself"
+msgstr "Лично донесите до точки извлечения образцов для исследований: {0}"
+
+msgctxt "shape"
+msgid "Carry {0} research samples into an extraction yourself"
+msgstr "Лично донесите до точки извлечения образцов для исследований: {0}"
+
+msgctxt "shape"
+msgid "Take down {0} elite or bosses for study"
+msgstr "Одолейте для изучения элитных монстров или боссов: {0}"
+
+msgctxt "shape"
+msgid "Take down {0} elites or bosses for study"
+msgstr "Одолейте для изучения элитных монстров или боссов: {0}"
+
+msgctxt "shape"
+msgid "Carry out a ${0} valuable without a scratch"
+msgstr "Вынесите ценность за ${0} без единой царапины"
+
+msgctxt "shape"
+msgid "Kill a boss, or {0} elites"
+msgstr "Убейте босса или {0} элитных монстров"
+
+msgctxt "shape"
+msgid "Carry out ${0} of valuables without breaking one"
+msgstr "Вынесите ценностей на ${0}, не разбив ни одной"
+
+msgctxt "shape"
+msgid "An Epic Servos piece and +{0} shop reputation"
+msgstr "Эпические сервоприводы и +{0} к репутации в магазине"
+
+msgctxt "shape"
+msgid "Finish the level within {0} min with nobody dying"
+msgstr "Пройдите уровень за {0} мин без единой смерти"
+
 msgctxt "data:guide"
 msgid "Each run becomes a small RPG: you pick a class, level it up, and collect gear and perks. Everything starts fresh when the run ends.\n\nThis walkthrough is 5 short panels. Skip it any time: the Guide tab has everything."
 msgstr "Каждый забег становится маленькой RPG: вы выбираете класс, прокачиваете его, собираете снаряжение и перки. Когда забег заканчивается, всё начинается заново.\n\nЭто обучение - 5 коротких панелей. Его можно пропустить в любой момент: всё есть на вкладке «Справка»."
@@ -48359,6 +49296,10 @@ msgstr "Справка по HUD"
 msgctxt "data:guide"
 msgid "Glossary"
 msgstr "Словарь"
+
+msgctxt "data:contracts"
+msgid "Dispatch"
+msgstr "Диспетчерская"
 
 msgctxt "@AttributeAlloc::Validate#4673"
 msgid "unknown attribute ("

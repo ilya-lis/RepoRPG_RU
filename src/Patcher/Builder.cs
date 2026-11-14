@@ -681,7 +681,7 @@ namespace RepoRPG_RU
                 int replaced;
                 string result = JsonText.Translate(json, delegate(string path, string property, string value)
                 {
-                    bool allowed = rules.DataAllowed(stemCopy, property);
+                    bool allowed = rules.DataAllowed(stemCopy, property, path);
                     if (dump) report.DataDump.Add(stemCopy + "\t" + path + "\t" + (allowed ? "+" : "-") + "\t" + Escape(value));
                     if (!allowed || !translate) return null;
                     string t;

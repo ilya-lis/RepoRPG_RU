@@ -148,7 +148,8 @@ check('json names/descs', '"name": "Танк"' in data[0] and '"desc": "Держ
 check('json ids/tags/requires kept', '"id": "tank"' in data[0] and '"tags": ["Tank", "melee"]' in data[0] and '"requires": "t0"' in data[0])
 check('json array of names', '"bases": ["Танк", "Scout"]' in data[0], data[0])
 check('json numbers byte-identical', '"cost": 1.50' in data[0] and '"version": 3' in data[0])
-check('json with BOM, id/stat kept', data[1] == 'data:{ "perks": [ { "id": "Tank", "name": "Танк", "stat": "Tank" } ] }', data[1])
+check('json with BOM, id/stat kept; a path rule reaches only that path',
+      data[1] == 'data:{ "perks": [ { "id": "Tank", "name": "Танк", "stat": "Tank" } ], "givers": [ { "label": "Танк" } ], "notes": [ { "label": "Tank" } ] }', data[1])
 check('report written', os.path.isfile(os.path.join(ROOT, 'config', 'RepoRPG_RU', 'report.txt')))
 check('config created', os.path.isfile(CFG))
 first = out

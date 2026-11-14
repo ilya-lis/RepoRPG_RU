@@ -263,6 +263,7 @@ namespace RepoRPG_RU
 
             // texts glued together by the mod
             if ((r = Parts(text, "\n", Lines, depth)) != null) return r;
+            if ((r = Quoted(text, depth)) != null) return r;
             if ((r = Edge(text, depth)) != null) return r;
             if ((r = Runs(text, depth)) != null) return r;
             if ((r = Parts(text, "  \u00B7  ", Cells, depth)) != null) return r;
@@ -306,6 +307,49 @@ namespace RepoRPG_RU
             if (to == null && HasLatin(outer) && !NameLike(outer, false)) return null;
             if (ti == null && HasLatin(inner) && !NameLike(inner, false)) return null;
             return (to ?? outer) + " " + open + (ti ?? inner) + close;
+        }
+
+        /// <summary>
+        /// 'Kaboom &amp; Sons: "Earplugs are in the truck."', '&lt;i&gt;"One could be luck. Two is a habit."&lt;/i&gt;': a line of the mod's
+        /// data that the mod put in quotes at the end of a text. The line is a text of its own (it may have ": " or " - " inside,
+        /// so it is taken out before anything is split); what stands before it is another one.
+        /// </summary>
+        private static string Quoted(string text, int depth)
+        {
+            int close = text.Length - 1;
+            while (close > 0 && text[close] != '"')
+            {
+                char c = text[close];
+                if (IsBlank(c)) { close--; continue; }
+                if (c != '>') return null;
+                int lt = text.LastIndexOf('<', close);
+                if (lt < 0 || close - lt > 40) return null;
+                close = lt - 1;
+            }
+            if (close <= 0) return null;
+            int open = text.IndexOf('"');
+            if (open >= close - 2) return null;
+            bool unknown = false;
+            string line = Piece(text.Substring(open + 1, close - open - 1), depth, ref unknown);
+            if (line == null) return null;
+            // the tags that open right before the quote belong to it: <i>"..."</i>
+            int headEnd = open;
+            while (headEnd > 0)
+            {
+                char c = text[headEnd - 1];
+                if (IsBlank(c)) { headEnd--; continue; }
+                if (c != '>') break;
+                int lt = text.LastIndexOf('<', headEnd - 1);
+                if (lt < 0 || headEnd - lt > 41 || lt + 1 >= headEnd || text[lt + 1] == '/') break;
+                headEnd = lt;
+            }
+            string head = text.Substring(0, headEnd), h = null;
+            if (head.Length > 0 && HasLatin(head))
+            {
+                h = Piece(head, depth, ref unknown);
+                if (unknown || (h == null && !NameLike(head, false))) return null;
+            }
+            return (h ?? head) + text.Substring(headEnd, open - headEnd) + "\u00AB" + line + "\u00BB" + text.Substring(close + 1);
         }
 
         /// <summary>"Throw 20", "COMBAT 100": a name the dictionary has and a number after it.</summary>
