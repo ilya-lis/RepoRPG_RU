@@ -1,0 +1,1475 @@
+{
+  "version": 1,
+  "attributeVersion": 2,
+  "attributes": [
+    {
+      "id": "throw",
+      "name": "Throw Strength",
+      "category": "Combat",
+      "desc": "Thrown objects fly farther and hit harder.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "ThrowStrength",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "weapon",
+      "name": "Weapon Damage",
+      "category": "Combat",
+      "desc": "Held weapons and melee hits deal more damage.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "WeaponDamage",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "category": "Combat",
+      "desc": "Use your class ability more often, and harder.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "CooldownReduction",
+          "value": 2
+        },
+        {
+          "stat": "ActivePower",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "vitality",
+      "name": "Vitality",
+      "category": "Physical",
+      "desc": "More max health.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "MaxHealth",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "endurance",
+      "name": "Endurance",
+      "category": "Physical",
+      "desc": "More stamina, and it comes back faster.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "MaxStamina",
+          "value": 3
+        },
+        {
+          "stat": "StaminaRegen",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "id": "agility",
+      "name": "Agility",
+      "category": "Physical",
+      "desc": "Walk, sprint and crouch faster.",
+      "maxPoints": 20,
+      "softCap": 8,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "MoveSpeed",
+          "value": 1.2
+        },
+        {
+          "stat": "SprintSpeed",
+          "value": 1.2
+        },
+        {
+          "stat": "CrouchSpeed",
+          "value": 1.5
+        }
+      ]
+    },
+    {
+      "id": "leap",
+      "name": "Leap",
+      "category": "Physical",
+      "desc": "Jump higher.",
+      "maxPoints": 20,
+      "softCap": 8,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "JumpForce",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "grip",
+      "name": "Grip Strength",
+      "category": "Physical",
+      "desc": "Lift heavier things and hold them steadier.",
+      "maxPoints": 20,
+      "softCap": 8,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "GrabStrength",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "reach",
+      "name": "Reach",
+      "category": "Utility",
+      "desc": "Grab things from farther away.",
+      "maxPoints": 20,
+      "softCap": 8,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "GrabRange",
+          "value": 2.5
+        }
+      ]
+    },
+    {
+      "id": "finesse",
+      "name": "Finesse",
+      "category": "Utility",
+      "desc": "Carrying things costs less stamina.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "HoldingStaminaDrain",
+          "value": -2
+        }
+      ]
+    },
+    {
+      "id": "stealth",
+      "name": "Stealth",
+      "category": "Utility",
+      "desc": "Your movement and the things you handle make less noise, so monsters notice you later.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "NoiseReduction",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "name": "Recovery",
+      "category": "Utility",
+      "desc": "Slowly heal between fights; more XP for revives.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "HealthRegen",
+          "value": 0.02
+        },
+        {
+          "stat": "ReviveXp",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "fortune",
+      "name": "Fortune",
+      "category": "Utility",
+      "desc": "Slightly better gear rarity, and a bonus on top of your currency share.",
+      "maxPoints": 20,
+      "softCap": 10,
+      "falloff": 0.5,
+      "effects": [
+        {
+          "stat": "GearLuck",
+          "value": 0.5
+        },
+        {
+          "stat": "ScrapBonus",
+          "value": 1.5
+        }
+      ]
+    }
+  ],
+  "rarities": [
+    {
+      "name": "Common",
+      "color": "#C8C8C8",
+      "weight": 55,
+      "mult": 1.0,
+      "affixes": 1,
+      "valueWeight": 70,
+      "valueMult": 1.0,
+      "salvageXp": 6,
+      "salvageScrap": 2
+    },
+    {
+      "name": "Uncommon",
+      "color": "#5FD35F",
+      "weight": 27,
+      "mult": 1.2,
+      "affixes": 2,
+      "valueWeight": 18,
+      "valueMult": 1.25,
+      "salvageXp": 12,
+      "salvageScrap": 5
+    },
+    {
+      "name": "Rare",
+      "color": "#4FA3FF",
+      "weight": 12,
+      "mult": 1.45,
+      "affixes": 2,
+      "valueWeight": 8,
+      "valueMult": 1.6,
+      "salvageXp": 24,
+      "salvageScrap": 12
+    },
+    {
+      "name": "Epic",
+      "color": "#B26BFF",
+      "weight": 5,
+      "mult": 1.75,
+      "affixes": 3,
+      "valueWeight": 3,
+      "valueMult": 2.2,
+      "salvageXp": 48,
+      "salvageScrap": 25
+    },
+    {
+      "name": "Legendary",
+      "color": "#FFA62B",
+      "weight": 1,
+      "mult": 2.1,
+      "affixes": 3,
+      "valueWeight": 1,
+      "valueMult": 3.5,
+      "salvageXp": 96,
+      "salvageScrap": 50
+    }
+  ],
+  "slots": [
+    {
+      "id": "weapon",
+      "name": "Weapon Module",
+      "desc": "Your hits: damage, stuns, bleeds, throws.",
+      "bases": [
+        "Striker Module",
+        "Impact Gauntlet",
+        "Breaker Arm",
+        "Ram Fist"
+      ],
+      "affixes": [
+        {
+          "stat": "WeaponDamage",
+          "min": 4,
+          "max": 8
+        },
+        {
+          "stat": "ThrowStrength",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "stat": "GrabStrength",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "stat": "StunOnHit",
+          "min": 2,
+          "max": 4
+        },
+        {
+          "stat": "BleedOnHit",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "stat": "Lifesteal",
+          "min": 1,
+          "max": 1
+        },
+        {
+          "stat": "KillXp",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "stat": "GrabRange",
+          "min": 4,
+          "max": 8
+        }
+      ]
+    },
+    {
+      "id": "plating",
+      "name": "Plating",
+      "desc": "Survival: health, armour, healing, dodging.",
+      "bases": [
+        "Scrap Plating",
+        "Riot Plating",
+        "Ceramic Shell",
+        "Bulkhead Vest"
+      ],
+      "affixes": [
+        {
+          "stat": "MaxHealth",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "stat": "DamageTaken",
+          "min": -4,
+          "max": -2
+        },
+        {
+          "stat": "HealthRegen",
+          "min": 0.03,
+          "max": 0.08
+        },
+        {
+          "stat": "DodgeChance",
+          "min": 1.5,
+          "max": 3
+        },
+        {
+          "stat": "HealOnKill",
+          "min": 2,
+          "max": 4
+        },
+        {
+          "stat": "ReviveHeal",
+          "min": 3,
+          "max": 8
+        }
+      ]
+    },
+    {
+      "id": "servos",
+      "name": "Servos",
+      "desc": "Movement: speed, jumps and stamina.",
+      "bases": [
+        "Leg Servos",
+        "Spring Actuators",
+        "Gyro Joints",
+        "Track Motors"
+      ],
+      "affixes": [
+        {
+          "stat": "MoveSpeed",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "stat": "SprintSpeed",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "stat": "JumpForce",
+          "min": 4,
+          "max": 8
+        },
+        {
+          "stat": "MaxStamina",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "stat": "StaminaRegen",
+          "min": 0.5,
+          "max": 1.5
+        },
+        {
+          "stat": "CrouchSpeed",
+          "min": 6,
+          "max": 12
+        },
+        {
+          "stat": "StaminaDrain",
+          "min": -6,
+          "max": -3
+        },
+        {
+          "stat": "HoldingStaminaDrain",
+          "min": -6,
+          "max": -3
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "name": "Core",
+      "desc": "Your ability: cooldown, power, area, XP.",
+      "bases": [
+        "Logic Core",
+        "Quantum Core",
+        "Battery Core",
+        "Neural Core"
+      ],
+      "affixes": [
+        {
+          "stat": "CooldownReduction",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "stat": "ActivePower",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "stat": "ActiveDuration",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "stat": "ActiveArea",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "stat": "XpGain",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "stat": "GearLuck",
+          "min": 1,
+          "max": 2
+        },
+        {
+          "stat": "ExtractXp",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "stat": "NoiseReduction",
+          "min": 4,
+          "max": 8
+        },
+        {
+          "stat": "ScrapBonus",
+          "min": 3,
+          "max": 6
+        }
+      ]
+    }
+  ],
+  "uniques": [
+    {
+      "name": "Bloodletter",
+      "slot": "weapon",
+      "desc": "Hits often make enemies bleed.",
+      "effects": [
+        {
+          "stat": "BleedOnHit",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Concussor",
+      "slot": "weapon",
+      "desc": "Hits often stun.",
+      "effects": [
+        {
+          "stat": "StunOnHit",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "name": "Leech Coil",
+      "slot": "weapon",
+      "desc": "Every hit heals you.",
+      "effects": [
+        {
+          "stat": "Lifesteal",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Phoenix Plate",
+      "slot": "plating",
+      "desc": "Cheat death one more time per level.",
+      "effects": [
+        {
+          "stat": "DeathSaves",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Aegis Shell",
+      "slot": "plating",
+      "desc": "Shrug off a chunk of every hit.",
+      "effects": [
+        {
+          "stat": "DamageTaken",
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Overclocked Legs",
+      "slot": "servos",
+      "desc": "An extra mid-air jump.",
+      "effects": [
+        {
+          "stat": "ExtraJumps",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Perpetual Drive",
+      "slot": "servos",
+      "desc": "Sprinting barely costs stamina.",
+      "effects": [
+        {
+          "stat": "StaminaDrain",
+          "value": -35
+        }
+      ]
+    },
+    {
+      "name": "Chrono Core",
+      "slot": "core",
+      "desc": "Your ability comes back much faster.",
+      "effects": [
+        {
+          "stat": "CooldownReduction",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Midas Core",
+      "slot": "core",
+      "desc": "XP and loot luck pour in.",
+      "effects": [
+        {
+          "stat": "XpGain",
+          "value": 25
+        },
+        {
+          "stat": "GearLuck",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "perks": [
+    {
+      "id": "double_charge",
+      "name": "Double Charge",
+      "desc": "Your ability holds 2 charges.",
+      "effects": [
+        {
+          "stat": "AbilityCharges",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "adrenal_loop",
+      "name": "Adrenal Loop",
+      "desc": "Each enemy that dies near you takes 6s off your ability cooldown.",
+      "effects": [
+        {
+          "stat": "KillCooldownRefund",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "id": "glass_cannon",
+      "name": "Glass Cannon",
+      "desc": "+30% weapon damage and +40% ability power, but -25% max health.",
+      "effects": [
+        {
+          "stat": "WeaponDamage",
+          "value": 30
+        },
+        {
+          "stat": "ActivePower",
+          "value": 40
+        },
+        {
+          "stat": "MaxHealth",
+          "value": -25
+        }
+      ]
+    },
+    {
+      "id": "iron_skin",
+      "name": "Iron Skin",
+      "desc": "Take 15% less damage, but move 8% slower.",
+      "effects": [
+        {
+          "stat": "DamageTaken",
+          "value": -15
+        },
+        {
+          "stat": "MoveSpeed",
+          "value": -8
+        },
+        {
+          "stat": "SprintSpeed",
+          "value": -8
+        }
+      ]
+    },
+    {
+      "id": "second_chance",
+      "name": "Second Chance",
+      "desc": "One extra death save every level.",
+      "effects": [
+        {
+          "stat": "DeathSaves",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "scavenger",
+      "name": "Scavenger",
+      "desc": "+40% chance to find gear when an extraction point completes.",
+      "effects": [
+        {
+          "stat": "GearFind",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": "bounty_hunter",
+      "name": "Bounty Hunter",
+      "desc": "Elites have a 60% chance to drop a second piece of gear.",
+      "effects": [
+        {
+          "stat": "EliteExtraDrop",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": "field_medic",
+      "name": "Field Medic",
+      "desc": "Heal 15 HP whenever an extraction point completes.",
+      "effects": [
+        {
+          "stat": "ExtractionHeal",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "haggler",
+      "name": "Haggler",
+      "desc": "Mod shop items cost 30% less.",
+      "effects": [
+        {
+          "stat": "ShopDiscount",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "vampire",
+      "name": "Vampire",
+      "desc": "Weapon hits heal 2 HP; enemies dying near you heal 5 HP.",
+      "effects": [
+        {
+          "stat": "Lifesteal",
+          "value": 2
+        },
+        {
+          "stat": "HealOnKill",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "bruiser",
+      "name": "Bruiser",
+      "desc": "15% chance on hit to stun and 15% to make enemies bleed.",
+      "effects": [
+        {
+          "stat": "StunOnHit",
+          "value": 15
+        },
+        {
+          "stat": "BleedOnHit",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "marathon",
+      "name": "Marathon",
+      "desc": "Sprinting costs 40% less stamina and stamina regenerates 2/s faster.",
+      "effects": [
+        {
+          "stat": "StaminaDrain",
+          "value": -40
+        },
+        {
+          "stat": "StaminaRegen",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "springheel",
+      "name": "Springheel",
+      "desc": "+1 extra jump and +20% jump force.",
+      "effects": [
+        {
+          "stat": "ExtraJumps",
+          "value": 1
+        },
+        {
+          "stat": "JumpForce",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "hydraulics",
+      "name": "Overbuilt Hydraulics",
+      "desc": "+50% grab strength and +25% grab range.",
+      "effects": [
+        {
+          "stat": "GrabStrength",
+          "value": 50
+        },
+        {
+          "stat": "GrabRange",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "id": "quick_learner",
+      "name": "Quick Learner",
+      "desc": "+30% XP from everything.",
+      "effects": [
+        {
+          "stat": "XpGain",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "lucky",
+      "name": "Lucky",
+      "desc": "+4 gear luck and +10% dodge chance.",
+      "effects": [
+        {
+          "stat": "GearLuck",
+          "value": 4
+        },
+        {
+          "stat": "DodgeChance",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "overclocked",
+      "name": "Overclocked",
+      "desc": "-25% ability cooldown and +25% ability duration.",
+      "effects": [
+        {
+          "stat": "CooldownReduction",
+          "value": 25
+        },
+        {
+          "stat": "ActiveDuration",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "desc": "Allies within 8m regain 1 HP every 3s.",
+      "effects": [
+        {
+          "stat": "AllyRegen",
+          "value": 1
+        },
+        {
+          "stat": "AuraRadius",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "berserk",
+      "name": "Berserk",
+      "desc": "Below 35% HP: +30% speed. Also +15% weapon damage.",
+      "effects": [
+        {
+          "stat": "LowHealthSpeed",
+          "value": 30
+        },
+        {
+          "stat": "WeaponDamage",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "sixth_sense",
+      "name": "Sixth Sense",
+      "desc": "Your HUD warns of enemies within 18m.",
+      "effects": [
+        {
+          "stat": "EnemySense",
+          "value": 18
+        }
+      ]
+    },
+    {
+      "id": "pack_mule",
+      "name": "Pack Mule",
+      "desc": "Carrying loot barely tires you, and you grip harder.",
+      "effects": [
+        {
+          "stat": "HoldingStaminaDrain",
+          "value": -50
+        },
+        {
+          "stat": "GrabStrength",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "shadowstep",
+      "name": "Shadowstep",
+      "desc": "Move fast while crouched and slip more hits.",
+      "effects": [
+        {
+          "stat": "CrouchSpeed",
+          "value": 50
+        },
+        {
+          "stat": "DodgeChance",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "id": "adrenaline",
+      "name": "Adrenaline",
+      "desc": "Below 35% HP you move much faster; take a little less damage.",
+      "effects": [
+        {
+          "stat": "LowHealthSpeed",
+          "value": 25
+        },
+        {
+          "stat": "DamageTaken",
+          "value": -5
+        }
+      ]
+    },
+    {
+      "id": "big_battery",
+      "name": "Big Battery",
+      "desc": "+50% max stamina (a bigger tank: sprinting still costs the same per second) and +1 stamina/s regen while recharging.",
+      "effects": [
+        {
+          "stat": "MaxStamina",
+          "value": 50
+        },
+        {
+          "stat": "StaminaRegen",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wide_reach",
+      "name": "Wide Reach",
+      "desc": "Your ability reaches further and lasts longer.",
+      "effects": [
+        {
+          "stat": "ActiveArea",
+          "value": 40
+        },
+        {
+          "stat": "ActiveDuration",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "amplifier",
+      "name": "Amplifier",
+      "desc": "+50% ability power, but your ability takes 20% longer to recharge.",
+      "effects": [
+        {
+          "stat": "ActivePower",
+          "value": 50
+        },
+        {
+          "stat": "CooldownReduction",
+          "value": -20
+        }
+      ]
+    },
+    {
+      "id": "treasure_hunter",
+      "name": "Treasure Hunter",
+      "desc": "More XP from extractions, more gear finds and better gear luck.",
+      "effects": [
+        {
+          "stat": "ExtractXp",
+          "value": 15
+        },
+        {
+          "stat": "GearFind",
+          "value": 20
+        },
+        {
+          "stat": "GearLuck",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "executioner",
+      "name": "Executioner",
+      "desc": "+20% weapon damage and +25% kill XP, but take 10% more damage.",
+      "effects": [
+        {
+          "stat": "WeaponDamage",
+          "value": 20
+        },
+        {
+          "stat": "KillXp",
+          "value": 25
+        },
+        {
+          "stat": "DamageTaken",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "lifeline",
+      "name": "Lifeline",
+      "desc": "Allies revived near you get +15 HP, and you earn +50% revive XP.",
+      "effects": [
+        {
+          "stat": "ReviveHeal",
+          "value": 15
+        },
+        {
+          "stat": "ReviveXp",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": "tough_as_nails",
+      "name": "Tough as Nails",
+      "desc": "+30% max health, but sprint 10% slower.",
+      "effects": [
+        {
+          "stat": "MaxHealth",
+          "value": 30
+        },
+        {
+          "stat": "SprintSpeed",
+          "value": -10
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "key": "Health",
+      "name": "Health",
+      "effects": [
+        {
+          "stat": "HealthRegen",
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "key": "Stamina",
+      "name": "Stamina",
+      "effects": [
+        {
+          "stat": "StaminaRegen",
+          "value": 0.4
+        }
+      ]
+    },
+    {
+      "key": "Speed",
+      "name": "Sprint Speed",
+      "effects": [
+        {
+          "stat": "CooldownReduction",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "key": "Strength",
+      "name": "Grab Strength",
+      "effects": [
+        {
+          "stat": "WeaponDamage",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "key": "Range",
+      "name": "Grab Range",
+      "effects": [
+        {
+          "stat": "GearLuck",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "key": "Throw",
+      "name": "Throw Strength",
+      "effects": [
+        {
+          "stat": "StunOnHit",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "key": "ExtraJump",
+      "name": "Extra Jump",
+      "effects": [
+        {
+          "stat": "JumpForce",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "key": "Launch",
+      "name": "Tumble Launch",
+      "effects": [
+        {
+          "stat": "DodgeChance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "key": "MapPlayerCount",
+      "name": "Map Player Count",
+      "effects": [
+        {
+          "stat": "EnemySense",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "key": "TumbleWings",
+      "name": "Tumble Wings",
+      "effects": [
+        {
+          "stat": "XpGain",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "key": "TumbleClimb",
+      "name": "Tumble Climb",
+      "effects": [
+        {
+          "stat": "LowHealthSpeed",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "key": "DeathHeadBattery",
+      "name": "Death Head Battery",
+      "effects": [
+        {
+          "stat": "ReviveHeal",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "key": "CrouchRest",
+      "name": "Crouch Rest",
+      "effects": [
+        {
+          "stat": "ExtractionHeal",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "blessings": [
+    {
+      "id": "fleet",
+      "name": "Fleet Foot",
+      "desc": "+12% walk and sprint speed",
+      "effects": [
+        {
+          "stat": "MoveSpeed",
+          "value": 12
+        },
+        {
+          "stat": "SprintSpeed",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "id": "ironskin",
+      "name": "Iron Skin",
+      "desc": "Take 12% less damage",
+      "effects": [
+        {
+          "stat": "DamageTaken",
+          "value": -12
+        }
+      ]
+    },
+    {
+      "id": "vigor",
+      "name": "Vigor",
+      "desc": "+20% max health",
+      "effects": [
+        {
+          "stat": "MaxHealth",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "lungs",
+      "name": "Big Lungs",
+      "desc": "+30% max stamina",
+      "effects": [
+        {
+          "stat": "MaxStamina",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "grip",
+      "name": "Iron Grip",
+      "desc": "+25% grab strength",
+      "effects": [
+        {
+          "stat": "GrabStrength",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "id": "arm",
+      "name": "Golden Arm",
+      "desc": "+25% throw strength",
+      "effects": [
+        {
+          "stat": "ThrowStrength",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "id": "scholar",
+      "name": "Scholar",
+      "desc": "+20% XP",
+      "effects": [
+        {
+          "stat": "XpGain",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "lucky",
+      "name": "Four-Leaf",
+      "desc": "+2 gear luck",
+      "effects": [
+        {
+          "stat": "GearLuck",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "secondwind",
+      "name": "Second Wind",
+      "desc": "+1 death save this level",
+      "effects": [
+        {
+          "stat": "DeathSaves",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "loadeddice",
+      "name": "Loaded Dice",
+      "desc": "+1 Double or Nothing this level",
+      "effects": [
+        {
+          "stat": "gambler.bet_uses",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "hotstreak",
+      "name": "Hot Streak",
+      "desc": "Double or Nothing's top multiplier +0.5x",
+      "effects": [
+        {
+          "stat": "gambler.bet_maxmult",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "id": "quickhands",
+      "name": "Quick Hands",
+      "desc": "Ability cooldowns 12% shorter",
+      "effects": [
+        {
+          "stat": "CooldownReduction",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "id": "springs",
+      "name": "Springs",
+      "desc": "+20% jump force",
+      "effects": [
+        {
+          "stat": "JumpForce",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "tycoon",
+      "name": "Tycoon",
+      "desc": "+10% Scrap share",
+      "effects": [
+        {
+          "stat": "ScrapBonus",
+          "value": 10
+        }
+      ]
+    }
+  ],
+  "curses": [
+    {
+      "id": "sluggish",
+      "name": "Sluggish",
+      "desc": "-8% walk and sprint speed",
+      "effects": [
+        {
+          "stat": "MoveSpeed",
+          "value": -8
+        },
+        {
+          "stat": "SprintSpeed",
+          "value": -8
+        }
+      ]
+    },
+    {
+      "id": "brittle",
+      "name": "Brittle",
+      "desc": "Take 10% more damage",
+      "effects": [
+        {
+          "stat": "DamageTaken",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "frail",
+      "name": "Frail",
+      "desc": "-10% max health",
+      "effects": [
+        {
+          "stat": "MaxHealth",
+          "value": -10
+        }
+      ]
+    },
+    {
+      "id": "winded",
+      "name": "Winded",
+      "desc": "-20% max stamina",
+      "effects": [
+        {
+          "stat": "MaxStamina",
+          "value": -20
+        }
+      ]
+    },
+    {
+      "id": "butterfingers",
+      "name": "Butterfingers",
+      "desc": "-15% grab strength",
+      "effects": [
+        {
+          "stat": "GrabStrength",
+          "value": -15
+        }
+      ]
+    },
+    {
+      "id": "limparm",
+      "name": "Limp Arm",
+      "desc": "-20% throw strength",
+      "effects": [
+        {
+          "stat": "ThrowStrength",
+          "value": -20
+        }
+      ]
+    },
+    {
+      "id": "dull",
+      "name": "Dull",
+      "desc": "-15% XP",
+      "effects": [
+        {
+          "stat": "XpGain",
+          "value": -15
+        }
+      ]
+    },
+    {
+      "id": "leaden",
+      "name": "Leaden",
+      "desc": "-15% jump force",
+      "effects": [
+        {
+          "stat": "JumpForce",
+          "value": -15
+        }
+      ]
+    },
+    {
+      "id": "wheezing",
+      "name": "Wheezing",
+      "desc": "Sprinting drains 20% more stamina",
+      "effects": [
+        {
+          "stat": "StaminaDrain",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "shortreach",
+      "name": "Short Reach",
+      "desc": "-10% grab range",
+      "effects": [
+        {
+          "stat": "GrabRange",
+          "value": -10
+        }
+      ]
+    },
+    {
+      "id": "slowhands",
+      "name": "Slow Hands",
+      "desc": "Ability cooldowns 10% longer",
+      "effects": [
+        {
+          "stat": "CooldownReduction",
+          "value": -10
+        }
+      ]
+    },
+    {
+      "id": "shortfuse",
+      "name": "Short Fuse",
+      "desc": "Double or Nothing's timer 30% shorter",
+      "effects": [
+        {
+          "stat": "gambler.bet_timer",
+          "value": -30
+        }
+      ]
+    },
+    {
+      "id": "loudmark",
+      "name": "Loud Mark",
+      "desc": "Your marked valuable hums 50% farther",
+      "effects": [
+        {
+          "stat": "gambler.bet_lure",
+          "value": 50
+        }
+      ]
+    }
+  ],
+  "threatTiers": [
+    { "name": "Low threat", "color": "#9BE58C", "minDifficulty": 1 },
+    { "name": "Dangerous", "color": "#FFD166", "minDifficulty": 2 },
+    { "name": "Deadly", "color": "#FF6B5E", "minDifficulty": 3 },
+    { "name": "Lethal", "color": "#FF4FD8", "minDifficulty": 4 }
+  ]
+}

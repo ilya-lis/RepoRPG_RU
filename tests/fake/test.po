@@ -1,0 +1,263 @@
+# test dictionary
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Choose your class"
+msgstr "Выберите класс"
+
+msgid "Class"
+msgstr "Класс"
+
+msgid "Gear"
+msgstr "Снаряжение"
+
+msgid "Shop"
+msgstr "Магазин"
+
+msgctxt "term"
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Not enough gold"
+msgstr "Недостаточно золота"
+
+msgid "<b>Not enough gold</b>"
+msgstr "<b>Недостаточно золота</b>"
+
+msgid "Purchased"
+msgstr "Куплено"
+
+msgid "Level "
+msgstr "Уровень "
+
+msgid "Level {0} - {1:0.#} XP"
+msgstr "Уровень {0} — {1:0.#} опыта"
+
+msgid "Gold: {0}"
+msgstr "Золото: {0}"
+
+msgid "Gear: "
+msgstr "Снаряжение: "
+
+msgid " equipped"
+msgstr " — надето"
+
+msgid "Unlocks at level "
+msgstr "Откроется на уровне "
+
+msgid "Rare item"
+msgstr "Редкий предмет"
+
+msgid "Rare"
+msgstr "Редкий"
+
+msgid "Epic item"
+msgstr "Эпический предмет"
+
+msgid "Reset class?"
+msgstr "Сбросить класс?"
+
+msgid "This refunds all points."
+msgstr "Все очки будут возвращены."
+
+msgid "Reset"
+msgstr "Сбросить"
+
+msgid "Class reset"
+msgstr "Класс сброшен"
+
+msgid "Font used by the menu. 'auto' picks the game's font."
+msgstr "Шрифт меню. «auto» — шрифт игры."
+
+msgid "Scale of the HUD."
+msgstr "Масштаб интерфейса."
+
+msgid "Where the HUD sits."
+msgstr "Где расположен интерфейс."
+
+msgid "General"
+msgstr "Общее"
+
+msgid "auto"
+msgstr "авто"
+
+msgid "Left"
+msgstr "Слева"
+
+msgid "Advanced"
+msgstr "Расширенные"
+
+msgid "Monday"
+msgstr "Понедельник"
+
+msgid "1.0.100"
+msgstr "1.0.100-ру"
+
+msgctxt "term"
+msgid "Iron Plate"
+msgstr "Железная пластина"
+
+# broken on purpose: placeholder mismatch must be rejected
+msgid "Level {0}"
+msgstr "Уровень {1}"
+
+msgctxt "data"
+msgid "Tank"
+msgstr "Танк"
+
+msgctxt "data:classes"
+msgid "Soaks damage. \"Hold the line\""
+msgstr "Держит урон. «Ни шагу назад»"
+
+msgctxt "data"
+msgid "Thick Plating"
+msgstr "Толстая броня"
+
+msgctxt "data"
+msgid "+10% max health"
+msgstr "+10% к макс. здоровью"
+
+msgctxt "data"
+msgid "Easy"
+msgstr "Легко"
+
+# the fake mod tests texts with StartsWith("Load too big"): in classes.json this stays English, perks.json is declared free
+msgctxt "data"
+msgid "Load too big to lift alone"
+msgstr "Груз, который не поднять одному"
+
+msgctxt "data"
+msgid "t0"
+msgstr "НЕЛЬЗЯ"
+
+msgctxt "data"
+msgid "melee"
+msgstr "НЕЛЬЗЯ"
+
+msgid "Quick Slots"
+msgstr "Быстрые ячейки"
+
+msgid "Team Vote"
+msgstr "Голосование"
+
+msgid "Hold to sprint"
+msgstr "Удерживайте для бега"
+
+msgid "Press to dash"
+msgstr "Нажмите для рывка"
+
+msgid "On"
+msgstr "Вкл"
+
+msgid "Off"
+msgstr "Выкл"
+
+msgid "Mode: "
+msgstr "Режим: "
+
+msgctxt "@RpgRuntime::Header"
+msgid "Overview"
+msgstr "Обзор"
+
+# --- probes
+msgid "Load too big for this door"
+msgstr "Груз слишком велик для этой двери"
+
+msgid "Bonus x2"
+msgstr "Бонус x2"
+
+msgid "A hidden affix appears."
+msgstr "Появляется скрытое свойство."
+
+msgid "Gift from a friend"
+msgstr "Подарок от друга"
+
+msgid "Waiting for a late join"
+msgstr "Ждём опоздавшего игрока"
+
+msgid "HUD: shows the level. Hidden in menus."
+msgstr "Интерфейс: показывает уровень. Скрыт в меню."
+
+# --- display-time fallbacks
+msgid "Legend"
+msgstr "Легенда"
+
+msgid "Provoked: {0} vs {1}"
+msgstr "Спровоцирован: {0} против {1}"
+
+msgctxt "pattern"
+msgid "Taken by {0}"
+msgstr "Занято: {0}"
+
+msgctxt "pattern"
+msgid "Equipped: {0}"
+msgstr "Надето: {0}"
+
+msgctxt "pattern"
+msgid "No placeholder here"
+msgstr "Так нельзя"
+
+# --- named placeholders: dropping one is fine, inventing one is not
+msgid "Kill {t} monster{s}"
+msgstr "Убейте монстров: {t}"
+
+msgid "Carry {t} items"
+msgstr "Несите {x} предметов"
+
+# --- translated where the mod measures it
+msgctxt "term"
+msgid "Wide"
+msgstr "Широкий"
+
+# --- sentences glued together by the mod: all pieces or none
+msgctxt "@RpgRuntime::Sentences#1"
+msgid "Slotted "
+msgstr "Вставлено: "
+
+msgctxt "@RpgRuntime::Sentences#1"
+msgid " into "
+msgstr " в "
+
+msgctxt "@RpgRuntime::Sentences#2"
+msgid "Load too big "
+msgstr "Груз слишком велик: "
+
+msgctxt "@RpgRuntime::Sentences#2"
+msgid " carts wide"
+msgstr " тележек в ширину"
+
+msgctxt "pattern"
+msgid "Load too big {0} carts wide"
+msgstr "Груз слишком велик: {0} тележек в ширину"
+
+# --- stat lines: cut by the mod at the first space; tests that name their comparison mode
+msgctxt "@RpgRuntime::Describe#1"
+msgid "% max health"
+msgstr "% к макс. здоровью"
+
+msgctxt "@RpgRuntime::Describe#2"
+msgid "s Mark duration"
+msgstr " к длительности Метки (сек.)"
+
+msgctxt "@RpgRuntime::Describe#3"
+msgid "s stun"
+msgstr " с оглушения"
+
+msgctxt "pattern"
+msgid "{0}s stun"
+msgstr "{0} с оглушения"
+
+msgid "Gear: "
+msgstr "Снаряжение: "
+
+msgid "Layer3"
+msgstr "Слой 3"
+
+# --- host-side logic ([skip] RpgRuntime::Host*)
+msgid "Too many trades are open"
+msgstr "Открыто слишком много обменов"
+
+msgid "No answer in time"
+msgstr "Нет ответа вовремя"
+

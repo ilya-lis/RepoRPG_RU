@@ -1,0 +1,417 @@
+{
+ "version": 1,
+ "alts": [
+  {
+   "class": "juggernaut",
+   "replaces": "Heavy Frame",
+   "name": "Anchor",
+   "desc": "10% less damage while standing still",
+   "effects": [
+    {
+     "stat": "juggernaut.alt_anchor",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "class": "medic",
+   "replaces": "Revive Protocol",
+   "name": "Triage Kit",
+   "desc": "your heals on teammates under 30% health are 40% stronger",
+   "effects": [
+    {
+     "stat": "medic.alt_triage",
+     "value": 40
+    }
+   ]
+  },
+  {
+   "class": "scout",
+   "replaces": "Spring Legs",
+   "name": "Second Wind",
+   "desc": "sprinting at 0 stamina refills 25% of it, once every 30 s",
+   "effects": [
+    {
+     "stat": "scout.alt_wind",
+     "value": 25
+    }
+   ]
+  },
+  {
+   "class": "hauler",
+   "replaces": "Steady Grip",
+   "name": "Counterweight",
+   "desc": "+15% grip strength and 10% less stamina drain while carrying",
+   "effects": [
+    {
+     "stat": "GrabStrength",
+     "value": 15
+    },
+    {
+     "stat": "HoldingStaminaDrain",
+     "value": -10
+    }
+   ]
+  },
+  {
+   "class": "brute",
+   "replaces": "Frenzy",
+   "name": "Grudge",
+   "desc": "after taking a hit, +30% weapon damage for 3 s",
+   "effects": [
+    {
+     "stat": "brute.alt_grudge",
+     "value": 30
+    }
+   ]
+  },
+  {
+   "class": "engineer",
+   "replaces": "Efficient Cells",
+   "name": "Shared Grid",
+   "desc": "teammates within 6 m regain 1.5 stamina/s",
+   "effects": [
+    {
+     "stat": "LinkStamina",
+     "value": 1.5
+    },
+    {
+     "stat": "LinkRadius",
+     "value": 6
+    }
+   ]
+  },
+  {
+   "class": "phantom",
+   "replaces": "Silent Servos",
+   "name": "Afterimage",
+   "desc": "after a dodge you make no noise for 1.5 s, so monsters lose your trail",
+   "effects": [
+    {
+     "stat": "phantom.alt_after",
+     "value": 1.5
+    }
+   ]
+  },
+  {
+   "class": "survivor",
+   "replaces": "Scar Tissue",
+   "name": "Adrenaline",
+   "desc": "below 30% health, +15% move speed",
+   "effects": [
+    {
+     "stat": "survivor.alt_adren",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "class": "appraiser",
+   "replaces": "Appraiser's Eye",
+   "name": "Ledger",
+   "desc": "+2% Scrap share",
+   "effects": [
+    {
+     "stat": "ScrapBonus",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "class": "warden",
+   "replaces": "Steadfast",
+   "name": "Lockdown",
+   "desc": "+10% damage to Marked monsters",
+   "effects": [
+    {
+     "stat": "MarkDamage",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "class": "herald",
+   "replaces": "Loud Voice",
+   "name": "Whisper Network",
+   "desc": "teammates talking near you build Inspire (half speed); your voice no longer draws monsters",
+   "effects": [
+    {
+     "stat": "herald.alt_whisper",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "class": "mimic",
+   "replaces": "Hollow Kit",
+   "name": "Echo Memory",
+   "desc": "you learn copies 1 s faster and from 2 m farther",
+   "effects": [
+    {
+     "stat": "mimic.copy_time",
+     "value": -1
+    },
+    {
+     "stat": "mimic.copy_range",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "class": "undertaker",
+   "replaces": "Pallbearer",
+   "name": "Swift Rites",
+   "desc": "+12% move speed while carrying a death head",
+   "effects": [
+    {
+     "stat": "undertaker.head_speed",
+     "value": 12
+    }
+   ]
+  },
+  {
+   "class": "cartwright",
+   "replaces": "Teamster",
+   "name": "Shock Absorbers",
+   "desc": "valuables in your cart take 20% less damage",
+   "effects": [
+    {
+     "stat": "cartwright.cart_guard",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "class": "physicist",
+   "replaces": "Soft Landing",
+   "name": "Recoil",
+   "desc": "your throws are 15% stronger",
+   "effects": [
+    {
+     "stat": "ThrowStrength",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "class": "trickster",
+   "replaces": "False Steps",
+   "name": "Double Bluff",
+   "desc": "Decoy Beacon also makes a second, smaller beacon 4 m away",
+   "effects": [
+    {
+     "stat": "trickster.alt_double",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "class": "demolitionist",
+   "replaces": "Controlled Burn",
+   "name": "Concussive",
+   "desc": "your explosions stun 1 s longer but deal 10% less damage",
+   "effects": [
+    {
+     "stat": "demolitionist.blast_stun",
+     "value": 1
+    },
+    {
+     "stat": "demolitionist.blast_power",
+     "value": -10
+    }
+   ]
+  },
+  {
+   "class": "quartermaster",
+   "replaces": "Bulk Buyer",
+   "name": "Rationing",
+   "desc": "Resupply has 1 more charge per level but restores 20% less",
+   "effects": [
+    {
+     "stat": "quartermaster.supply_extra",
+     "value": 1
+    },
+    {
+     "stat": "quartermaster.supply_power",
+     "value": -20
+    }
+   ]
+  },
+  {
+   "class": "gambler",
+   "replaces": "Lucky Streak",
+   "name": "House Edge",
+   "desc": "lost bets refund 20% of the stake; the top multiplier is 0.2x lower",
+   "effects": [
+    {
+     "stat": "gambler.bet_insure",
+     "value": 20
+    },
+    {
+     "stat": "gambler.bet_maxmult",
+     "value": -0.2
+    }
+   ]
+  },
+  {
+   "class": "bloodbound",
+   "replaces": "Feed",
+   "name": "Hemorrhage",
+   "desc": "Blood Price costs 1 HP less",
+   "effects": [
+    {
+     "stat": "bloodbound.leech",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "class": "instigator",
+   "replaces": "Ringside",
+   "name": "Front Row",
+   "desc": "Monsters fighting within 6m of you deal 40% more damage to each other (fights are still loud)",
+   "effects": [
+    {
+     "stat": "instigator.ringside",
+     "value": 40
+    },
+    {
+     "stat": "instigator.ring_radius",
+     "value": 6
+    },
+    {
+     "stat": "instigator.noise",
+     "value": 12
+    }
+   ]
+  },
+  {
+   "class": "ventriloquist",
+   "replaces": "Stage Fright",
+   "name": "Ventriloquism Act",
+   "desc": "Echo lasts a third longer but has a 20% longer cooldown",
+   "effects": [
+    {
+     "stat": "ventriloquist.echo_duration",
+     "value": 33
+    },
+    {
+     "stat": "ventriloquist.echo_cooldown",
+     "value": -20
+    }
+   ]
+  },
+  {
+   "class": "restorer",
+   "replaces": "Gentle Touch",
+   "name": "Kintsugi",
+   "desc": "Mend restores 10% more",
+   "effects": [
+    {
+     "stat": "restorer.mend_power",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "class": "scavenger",
+   "replaces": "Scrounger",
+   "name": "Picky",
+   "desc": "Keen Eye finds are worth 25% more but 2% less likely",
+   "effects": [
+    {
+     "stat": "scavenger.find_value",
+     "value": 25
+    },
+    {
+     "stat": "scavenger.find_chance",
+     "value": -2
+    }
+   ]
+  },
+  {
+   "class": "insurer",
+   "replaces": "Claims Adjuster",
+   "name": "Deductible",
+   "desc": "Coverage reaches 8 m farther (teammates' items too) but pays 3% less",
+   "effects": [
+    {
+     "stat": "insurer.cover_radius",
+     "value": 8
+    },
+    {
+     "stat": "insurer.cover_pct",
+     "value": -3
+    }
+   ]
+  },
+  {
+   "class": "lookout",
+   "replaces": "Exposed",
+   "name": "Hide in Plain Sight",
+   "desc": "while you stand still, monsters notice you 1 s later",
+   "effects": [
+    {
+     "stat": "lookout.alt_hide",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "class": "gunsmith",
+   "replaces": "Efficient Rounds",
+   "name": "Hair Trigger",
+   "desc": "Overclock 10% stronger, but guns use 10% more battery",
+   "effects": [
+    {
+     "stat": "gunsmith.overclock_power",
+     "value": 10
+    },
+    {
+     "stat": "gunsmith.battery_save",
+     "value": -10
+    }
+   ]
+  },
+  {
+   "class": "shepherd",
+   "replaces": "Pacifist",
+   "name": "Sheepdog",
+   "desc": "Pacify reaches 20% farther",
+   "effects": [
+    {
+     "stat": "shepherd.pacify_area",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "class": "grappler",
+   "replaces": "Light Frame",
+   "name": "Zipline",
+   "desc": "your Hook pull is 25% stronger",
+   "effects": [
+    {
+     "stat": "grappler.hook_power",
+     "value": 25
+    }
+   ]
+  },
+  {
+   "class": "courier",
+   "replaces": "Sure-Footed",
+   "name": "Courier's Pace",
+   "desc": "+8% sprint speed while you hold a small or medium valuable (the weakness stays: dispatched items hum, big ones can't go)",
+   "effects": [
+    {
+     "stat": "courier.alt_pace",
+     "value": 8
+    },
+    {
+     "stat": "courier.hum_radius",
+     "value": 10
+    }
+   ]
+  }
+ ]
+}

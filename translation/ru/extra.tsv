@@ -1,0 +1,312 @@
+# Дополнения к автоматически собранным записям: +вид<TAB>английский<TAB>русский
++pattern	{0} XP	{0} опыта
++term	max	макс.
++term	REWARD	НАГРАДА
++term	STAKES	СТАВКИ
++global	 (everyone in it)	 (каждому участнику)
+# классы, упомянутые в коде (полный список - в данных мода)
++term	Herald	Глашатай
++term	Quartermaster	Интендант
++term	Mimic	Мимик
++term	Cartwright	Тележник
+# редкости
++term	Common	Обычный
++term	Uncommon	Необычный
++term	Rare	Редкий
++term	Epic	Эпический
++term	Legendary	Легендарный
++term	Unique	Уникальный
+# The same words in front of a name: "Rare Impact Gauntlet", "Starter Reinforced Plating", "Cursed Sharp Striker Module".
+# They take the form of the thing named (he|she|it|they); the add-on puts such names together when they are drawn.
++adj	Common	Обычный|Обычная|Обычное|Обычные
++adj	Uncommon	Необычный|Необычная|Необычное|Необычные
++adj	Rare	Редкий|Редкая|Редкое|Редкие
++adj	Epic	Эпический|Эпическая|Эпическое|Эпические
++adj	Legendary	Легендарный|Легендарная|Легендарное|Легендарные
++adj	Unique	Уникальный|Уникальная|Уникальное|Уникальные
++adj	Starter	Стартовый|Стартовая|Стартовое|Стартовые
++adj	Cursed	Проклятый|Проклятая|Проклятое|Проклятые
+# "Rare gear", "Legendary gear" (a reward): a common word instead of a name
++noun	gear	n|снаряжение
++noun	upgrade	n|улучшение
+# валюта мода: название берётся из настроек (Currency / Name, ShortName); короткое стоит после чисел
++term	Scrap	лома
++term	RPG Scrap	RPG-лом
+# ступени сонастройки
++term	Bonded	Привязанный
++term	Tempered	Закалённый
++term	Soulbound	Связанный душой
+# слова, которые мод ищет в описаниях из данных: в переводе данных их нужно оставить как есть, на экране они переводятся
++term	Weakness	Слабость
+# классы
++term	Medic	Медик
++term	Appraiser	Оценщик
++term	Lookout	Дозорный
++term	Gambler	Азартный игрок
++term	Undertaker	Гробовщик
++term	Physicist	Физик
++term	Trickster	Плут
++term	Demolitionist	Подрывник
++term	Courier	Курьер
++term	Ventriloquist	Чревовещатель
++term	Restorer	Реставратор
++term	Scavenger	Старьёвщик
++term	Insurer	Страховщик
++term	Shepherd	Пастух
++term	Grappler	Крючник
++term	Instigator	Подстрекатель
++term	Gunsmith	Оружейник
++term	Pacifist	Пацифист
+# названия из данных, которые встречаются в сообщениях
++term	Gambler's Die	Кубик азартного игрока
++@RpgRuntime::ResearchDetail	Personal	Личное
++@RpgRuntime::ShopEntryDetail	Unlock	Снять фиксацию
++pattern	{0}s stun	{0} с оглушения
++pattern	{0}% self heal	{0}% самолечения
++pattern	{0} HP ally heal	{0} ОЗ лечения союзника
++pattern	{0}% heal over time	{0}% лечения со временем
++pattern	{0} rally strength	сила клича {0}
++pattern	{0}% revive health	{0}% здоровья при возрождении
++pattern	{0}% power	{0}% силы
++pattern	{0} damage	{0} урона
+# сложность: классов (Easy / Medium / Hard), контрактов (Easy / Hard / Brutal), предустановок и уровня выплат.
+# Наречия, потому что одно и то же слово стоит то при «сложность», то при «контракт», то при «класс»
++term	Medium	Средне
++term	Unrated	Без оценки
++term	Standard	Стандартно
++term	Nightmare	Кошмар
++term	Easy	Легко
++term	Hard	Сложно
++term	Brutal	Жестоко
++term	Relaxed	Расслабленно
++term	Normal	Нормально
+# PlayerScaling.Describe: "5 players: Monsters x1.2, Scrap x1.1" - the names are handed to a local function and glued to the factor
+# no colon in the first one: Banner() takes what follows the first ':' of "5 players: Monsters x1.2"
++@PlayerScaling::Describe	{0} player{1}	Игроков {0}
++@PlayerScaling::Describe	Monsters	Монстры
++@PlayerScaling::Describe	Health	Здоровье
++@PlayerScaling::Describe	Damage	Урон
++@PlayerScaling::Describe	Valuables	Ценности
++@PlayerScaling::Describe	Haul goal	Цель добычи
++@PlayerScaling::Describe	Elites	Элита
++@PlayerScaling::Describe	Scrap	Лом
++@PlayerScaling::Describe	Bosses +1 modifier	Боссы +1 модификатор
+# the run note "streak-|Streak " + "broken" + ": the level was lost" (the word alone means too many things to translate)
++term	Streak broken: the level was lost	Серия прервана: уровень проигран
+# the same names when the line arrives whole (code not rewritten)
++pattern	Monsters x{0}	Монстры x{0}
++pattern	Health x{0}	Здоровье x{0}
++pattern	Damage x{0}	Урон x{0}
++pattern	Valuables x{0}	Ценности x{0}
++pattern	Haul goal x{0}	Цель добычи x{0}
++pattern	Elites x{0}	Элита x{0}
++pattern	Scrap x{0}	Лом x{0}
+# Research.CanStart: "Requires " + (all the other projects of a branch | A or B) - whole, for the code that was not rewritten
++pattern	Requires Every other {0} project	Требуется: все остальные проекты ветки «{0}»
++pattern	Requires {0} or {1}	Требуется: {0} или {1}
+# Market.EventText: name + " (" + when + "): " + description
++pattern	{0} (this level)	{0} (этот уровень)
++pattern	{0} (next level)	{0} (следующий уровень)
++pattern	{0} ({1} more levels)	{0} (ещё уровней: {1})
++pattern	{0} (from the next level, {1} levels)	{0} (со следующего уровня, уровней: {1})
+# всплывающие строки о ломе собираются без единого слова: число, короткое название валюты и причина
++pattern	+{0} Scrap – {1}	+{0} лома – {1}
++pattern	+{0} Scrap – {1} (x{2})	+{0} лома – {1} (x{2})
++pattern	-{0} Scrap – {1}	-{0} лома – {1}
+# подпись главы мод переводит в верхний регистр сам; в бесконечном режиме слова «Chapter» в ней нет
++pattern	ENDLESS {0}	БЕСКОНЕЧНЫЙ РЕЖИМ {0}
+# профили производительности: на кнопках стоят имена значений (Auto, Low, Medium, High, Custom), а не тексты
++term	Auto	Авто
++term	Low	Минимум
++term	High	Максимум
+# значение настройки «Эффекты стихий» - имя значения в верхнем регистре (FULL / REDUCED / OFF)
++term	FULL	ПОЛНЫЙ
+# Не переводы, а пометки для распознавания готовых фраз на экране (см. tools/mkpo.py):
+#   +numbers  в этих местах фразы всегда число   («more players» - не «{0} players»)
+#   +words    в этих местах - слово самого мода (редкость, вкладка, сложность): фраза узнаётся, только если слово есть в словаре
++numbers	Need {0} more {1}	0
++numbers	+{0} Scrap – {1}	0
++numbers	+{0} Scrap – {1} (x{2})	0,2
++numbers	-{0} Scrap – {1}	0
++numbers	ENDLESS {0}	0
++words	{0} gear	0N
++words	{0}+ gear	0
++words	a {0} item	0
++words	{0} futures crate	0
++words	{0} perk	0
++words	{0} is locked	0
++words	Already on {0}	0
++words	Most levels on {0}	0
++words	 · resists {0}	0
++words	 · weak to {0}	0
++words	Go to {0}	0
++words	{0} {1} upgrade{2}	0N
++words	Rarity: {0}	0f
++words	Gear: {0} or better	0N
++words	The item becomes {0}; its stats scale up.	0f
++words	Upgraded {0} to {1}	1f
++words	Upgrade {0} to {1} for {2} and 2 Core Shards?	1f
++words	You have {0}. Makes one <color={1}>{2}</color> {3}.	2f
++words	Holding: {0} valuable  ${1:N0}	0f
++words	Upgrades to {0} and rerolls	0f
++pattern	RepoRPG: this game version changed something - off: {0} and {1} more. See the log.	RepoRPG: в этой версии игры что-то изменилось - отключено: {0} и ещё {1}. См. журнал.
++numbers	RepoRPG: this game version changed something - off: {0} and {1} more. See the log.	1
+# «mid-level» в коде выглядит как ключ, поэтому в общий список не попал; показывается в сообщениях о позднем подключении
++@RpgRuntime::OnLateJoinNote	mid-level	посреди уровня
++@RpgRuntime::OnLateJoinAnnounce	mid-level	посреди уровня
++term	mid-level	посреди уровня
++words	{0} joined {1}	1
+# Эта строка записывается в файл настроек мода (Performance / AutoPicked): в коде остаётся как есть, переводится при выводе
++pattern	{0} ({1:0} FPS in the first minute)	{0} ({1:0} FPS за первую минуту)
++words	{0} ({1:0} FPS in the first minute)	0
++pattern	Auto: picked {0} ({1:0} FPS in the first minute).	Авто: выбрано - {0} ({1:0} FPS за первую минуту).
++words	Auto: picked {0} ({1:0} FPS in the first minute).	0
+# Тексты пустых панелей и подсказок, которые разбор исходника принял за служебные (найдены по untranslated.txt из игры)
++global	Select an attribute	Выберите характеристику
++global	What it gives, its milestones and pairings show here.	Здесь показывается, что она даёт, её этапы и сочетания.
++global	Its lines, modules, a comparison and its actions show here.	Здесь показываются его свойства, модули, сравнение и действия.
++global	Pick a topic	Выберите тему
++global	Its summary shows here.	Здесь показывается её краткое содержание.
++global	Select a project	Выберите проект
++global	What it unlocks, what it costs and what it needs show here.	Здесь показывается, что он открывает, сколько стоит и что для него нужно.
++global	Select a setting	Выберите настройку
++global	What it does, its default and what you changed show here.	Здесь показывается, что она делает, значение по умолчанию и что вы изменили.
++global	Load a save or join a game to see your run.	Загрузите сохранение или войдите в игру, чтобы увидеть свой забег.
++global	Loading your progress... open this again in a moment.	Загружается ваш прогресс... откройте это снова чуть позже.
++global	<color=#9a9ca0>Evolutions are turned off by the host.</color>	<color=#9a9ca0>Эволюции отключены хостом.</color>
++global	<color=#9a9ca0>None yet. Perks with a challenge show their progress on their card.</color>	<color=#9a9ca0>Пока нет. Перки с испытанием показывают прогресс на своей карточке.</color>
+# Пресеты HUD (имена перечисления HudPreset выводятся как есть) и заголовок списка контрактов
++term	Minimal	Минимальный
++term	Clean	Чистый
++term	ACTIVE	АКТИВНО
+# те же две строки без цветового тега: мод перекрашивает серый текст под тему, и тег приходит с другим цветом
++term	None yet. Perks with a challenge show their progress on their card.	Пока нет. Перки с испытанием показывают прогресс на своей карточке.
++term	Evolutions are turned off by the host.	Эволюции отключены хостом.
+# короткие названия характеристик в списках («Бросок 20»): в данных мода их нет, они из кода
++term	Weapon	Оружие
++term	Grip	Хват
+# имя заказчика «Dispatch» совпадает с названием способности Курьера («Отправка»): заменяется прямо в данных мода
++inside:contracts	Dispatch	Диспетчерская
+# свойства элиты и боссов: мод показывает имена значений перечисления EliteMod («Armored Swift Brutish»)
++term	Armored	Бронированный
++term	Regenerating	Регенерирующий
++term	Swift	Быстрый
++term	Unstoppable	Неудержимый
++term	Enraged	Разъярённый
++term	Relentless	Неумолимый
++term	Brutish	Свирепый
++term	Vampiric	Вампирический
++term	Shielded	Щитоносный
++term	Warlord	Военачальник
+# строка элиты на HUD: «Champion: Armored Swift  12m» (ранг, свойства, расстояние)
++pattern	{0}: {1}{2}  {3:0}m	{0}: {1}{2}  {3:0} м
+# значения перечислений настроек: вкладка «Хост» и справка показывают их имена как есть («TruckAndShop», «Majority»);
+# описания настроек называют их по-английски, и при выводе они заменяются теми же словами
++term	TruckAndShop	Грузовик и магазин
++term	LevelsOnly	Только уровни
++term	Small	Мелко
++term	Large	Крупно
++term	Majority	Большинство
++term	Unanimous	Единогласно
++term	Level	Уровень
++term	JoinOrder	Порядок входа
++term	Halve	Вдвое меньше
++term	Equal	Поровну
++term	ByContribution	По вкладу
++term	Short	Короткий
++term	Anyone	Любой игрок
++term	AboveHud	Над HUD
++term	LeftMiddle	Слева по центру
++term	BottomCentre	Снизу по центру
++term	Stack	Складывать
++term	SkipThreat	Без угрозы
++term	SkipDanger	Без опасности
++term	PauseMod	Приостановить мод
++term	Kick	Исключить
++term	StayDead	Остаётся мёртвым
++term	AsNormalMonster	Как обычный монстр
++term	Truck	Грузовик
++term	Detailed	Подробно
++term	Full	Полный
++term	Reduced	Меньше
++term	Talents	Таланты
++term	TalentsWhenPoints	Таланты, если есть очки
++term	Overview	Обзор
++term	Half	Половина
++term	ThreeQuarters	Три четверти
+# the Guide's list of contracts when the mod's own code was left as it is: the goal and the numbers of the harder tiers
++pattern	{0}  ({1:N0} / {2:N0} at Hard / Brutal)	{0}  ({1:N0} / {2:N0} на сложном / жестоком)
++numbers	{0}  ({1:N0} / {2:N0} at Hard / Brutal)	1,2
++pattern	<color=#ffd75a>Bonus</color> {0}	<color=#ffd75a>Бонус</color> {0}
++pattern	<color=#ffd75a>Bonus</color> {0}  (needs teammates)	<color=#ffd75a>Бонус</color> {0}  (нужны напарники)
+# The three loadouts keep the names the mod gave them in the save ("Loadout 1"; «Набор 1» from versions 0.1.x of the add-on):
+# what the mod says about a loadout is translated when it is drawn (units 368-372 stay as they are inside the code)
++pattern	{0} saved	{0} сохранён
++pattern	{0} is empty - save one first	{0} пуст - сначала сохраните его
++pattern	{0} equipped	{0} надет
++pattern	{0} equipped ({1} item gone)	{0} надет (пропало предметов: {1})
++pattern	{0} equipped ({1} items gone)	{0} надет (пропало предметов: {1})
++numbers	{0} equipped ({1} item gone)	1
++numbers	{0} equipped ({1} items gone)	1
+# The short name of the mod's currency (Scrap.Short, a setting) is «лома» after a number and «Лом» as a label
++pattern	{0} Scrap	{0} лома
++numbers	{0} Scrap	0
++pattern	-{0} Scrap	-{0} лома
++numbers	-{0} Scrap	0
++pattern	+{0} Scrap	+{0} лома
++numbers	+{0} Scrap	0
++term	Scrap:	Лом:
++pattern	Scrap: {0}	Лом: {0}
++numbers	Scrap: {0}	0
++pattern	Scrap <b>{0}</b>	Лом <b>{0}</b>
++numbers	Scrap <b>{0}</b>	0
+# counts the analysis of the code did not recognise as numbers (the value is also used to pick the plural ending)
++numbers	{0}  ·  {1}{2}  ·  {3} level{4}, chapter {5}  ·  streak {6}  ·  {7} boss{8}  ·  {9:N0} {10}	3,5,6,7,9
++numbers	Run over: {0} level{1}, chapter {2}. 	0,2
++term	WON	ПОБЕДА
++numbers	You joined {0} - welcome back, {1} Lv {2}	2
++numbers	{0} attribute point{1}	0
+# узлы исследований: «T2  Extraction Drill». Мод сам сокращает эту строку под ширину карточки («T2  Extrac…»), поэтому
+# перевести её нужно целиком и до измерения; обрезанное название уже не узнать
++pattern	T{0}  {1}	T{0}  {1}
++numbers	T{0}  {1}	0
++words	T{0}  {1}	1
+# справочник, «Кривая» угрозы: "2 cleared: 0.0  ·  4 cleared: 1.1  ·  …" (сколько уровней пройдено: рейтинг угрозы)
++pattern	{0} cleared: {1}	{0} ур.: {1}
++numbers	{0} cleared: {1}	0,1
+# сводка перков забега: «<b>Scholar</b> (from Quick Learner): +10% more XP» - в коде эта строка собирается из кусков без слов
++pattern	<color=#ffd75a><b>{0}</b></color> (from {1}): {2}	<color=#ffd75a><b>{0}</b></color> (из «{1}»): {2}
+# направление до цели («Голова: Bob 12 м ahead-right (above)», «$1,200  14m left»): слова лежат в массиве, в коде их не заменить
++term	behind	сзади
++term	ahead-right	впереди справа
++term	behind-right	сзади справа
++term	behind-left	сзади слева
++term	ahead-left	впереди слева
++pattern	${0}  {1}m {2}	${0}  {1} м {2}
++numbers	${0}  {1}m {2}	0,1
++words	${0}  {1}m {2}	2
++pattern	${0}  {1}m {2} (above)	${0}  {1} м {2} (выше)
++numbers	${0}  {1}m {2} (above)	0,1
++words	${0}  {1}m {2} (above)	2
++pattern	${0}  {1}m {2} (below)	${0}  {1} м {2} (ниже)
++numbers	${0}  {1}m {2} (below)	0,1
++words	${0}  {1}m {2} (below)	2
++numbers	Head: {0} {1:0}m {2}	1
++words	Head: {0} {1:0}m {2}	2
++numbers	Watchpost: {0} {1:0}m {2}	1
++words	Watchpost: {0} {1:0}m {2}	2
+# модификаторы Вознесения: «A2 Inflation» - название из одного слова в коде не заменяется
++pattern	A{0} {1}	A{0} {1}
++numbers	A{0} {1}	0
++words	A{0} {1}	1
+# история контрактов: «3 completed», «1 failed»; голосование: «Votes: 3 cast»
++pattern	{0} completed	Выполнено: {0}
++numbers	{0} completed	0
++pattern	{0} failed	Провалено: {0}
++numbers	{0} failed	0
++pattern	{0} cast	подано: {0}
++numbers	{0} cast	0
+# тележка Тележника (строка состояния)
++term	follow off - clearing the way	следование выкл. - расчистка пути
+# что сохраняется при перековке («Keeps: 2 sockets, attunement, base stat, crafting, slot and rarity»): слова из списка
++term	crafting	крафт

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "_comment": "The Season: chapter names (shown when a chapter starts and on the truck screen), the finale boss (chapter 10's milestone boss, or the last chapter's for other run lengths) and the victory payout. Edit freely; a run longer than this list reuses the last names.",
+  "chapters": [
+    { "name": "First Shift", "flavor": "Learn the ropes. The bosses are still sizing you up." },
+    { "name": "Overtime", "flavor": "The haul gets heavier and the halls get louder." },
+    { "name": "Deep Stacks", "flavor": "Deeper floors, nastier things living in them." },
+    { "name": "Hostile Takeover", "flavor": "Elites start hunting in pairs." },
+    { "name": "Quarterly Review", "flavor": "Halfway. Management expects results." },
+    { "name": "Hazard Pay", "flavor": "Everything bites harder - and pays better." },
+    { "name": "Night Shift", "flavor": "The monsters don't sleep. Neither do you." },
+    { "name": "Restructuring", "flavor": "Old tricks stop working. New ones show up." },
+    { "name": "Final Notice", "flavor": "One chapter left after this. Don't drop anything." },
+    { "name": "Liquidation", "flavor": "The finale waits at the end of this chapter." }
+  ],
+  "endless": { "name": "Endless", "flavor": "No finish line now. How deep can the team go?" },
+  "finale": {
+    "extraModifiers": 1,
+    "healthMult": 1.5,
+    "secondPhaseAt": 0.5,
+    "escortModifiers": 2
+  },
+  "victoryScrap": 150,
+  "endlessThreatPerChapter": 1,
+  "endlessBossModsPerChapter": 1
+}

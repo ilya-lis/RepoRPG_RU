@@ -1,0 +1,2058 @@
+{
+ "version": 1,
+ "bases": [
+  {
+   "slot": "weapon",
+   "stat": "WeaponDamage",
+   "min": 4,
+   "max": 8
+  },
+  {
+   "slot": "plating",
+   "stat": "MaxHealth",
+   "min": 5,
+   "max": 10
+  },
+  {
+   "slot": "servos",
+   "stat": "MoveSpeed",
+   "min": 3,
+   "max": 6
+  },
+  {
+   "slot": "core",
+   "stat": "CooldownReduction",
+   "min": 3,
+   "max": 6
+  }
+ ],
+ "behaviorChance": [
+  0,
+  15,
+  30,
+  50,
+  60
+ ],
+ "behaviors": [
+  {
+   "id": "salvager",
+   "name": "Salvager's",
+   "slots": [],
+   "desc": "Salvaging this item gives double Scrap.",
+   "effects": [
+    {
+     "stat": "gear.salvager",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "studious",
+   "name": "Studious",
+   "slots": [],
+   "desc": "Salvaging this item gives double XP.",
+   "effects": [
+    {
+     "stat": "gear.studious",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "charged",
+   "name": "Charged",
+   "slots": [
+    "core"
+   ],
+   "desc": "Your ability's first cooldown each level is 30% shorter.",
+   "effects": [
+    {
+     "stat": "gear.charged",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "vigilant",
+   "name": "Vigilant",
+   "slots": [
+    "plating"
+   ],
+   "desc": "The first time a monster comes within 8 m each level, +15% move speed for 3 s.",
+   "effects": [
+    {
+     "stat": "gear.vigilant",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "id": "siphoning",
+   "name": "Siphoning",
+   "slots": [
+    "weapon"
+   ],
+   "desc": "Kills near you restore 10% stamina.",
+   "effects": [
+    {
+     "stat": "gear.siphon",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "featherlight",
+   "name": "Featherlight",
+   "slots": [
+    "servos"
+   ],
+   "desc": "The first 2 s of each sprint cost no stamina.",
+   "effects": [
+    {
+     "stat": "gear.featherlight",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "id": "static",
+   "name": "Static",
+   "slots": [
+    "weapon"
+   ],
+   "desc": "Every 5th weapon hit stuns the monster for 1 s.",
+   "effects": [
+    {
+     "stat": "gear.static",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "prospecting",
+   "name": "Prospecting",
+   "slots": [
+    "core"
+   ],
+   "desc": "The first valuable you pick up each level gains 5% value.",
+   "effects": [
+    {
+     "stat": "gear.prospect",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "id": "couriers",
+   "name": "Courier's",
+   "slots": [
+    "servos"
+   ],
+   "desc": "Valuables you carry out count 10% more in the by-contribution Scrap split.",
+   "effects": [
+    {
+     "stat": "gear.courier",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "heavy",
+   "name": "Heavy",
+   "slots": [
+    "plating"
+   ],
+   "desc": "+15% max health, but -5% move speed.",
+   "effects": [
+    {
+     "stat": "MaxHealth",
+     "value": 15
+    },
+    {
+     "stat": "MoveSpeed",
+     "value": -5
+    },
+    {
+     "stat": "gear.heavy",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "reckless",
+   "name": "Reckless",
+   "slots": [
+    "weapon"
+   ],
+   "desc": "+12% weapon damage, but +6% damage taken.",
+   "effects": [
+    {
+     "stat": "WeaponDamage",
+     "value": 12
+    },
+    {
+     "stat": "DamageTaken",
+     "value": 6
+    },
+    {
+     "stat": "gear.reckless",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "echoing",
+   "name": "Echoing",
+   "slots": [
+    "servos"
+   ],
+   "desc": "Monsters that hear you investigate a spot 3 m off from you.",
+   "effects": [
+    {
+     "stat": "gear.echo",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "id": "incendiary",
+   "name": "Incendiary",
+   "slots": [
+    "weapon"
+   ],
+   "desc": "Your weapon's hits Burn monsters (damage over time; the first burn makes them panic briefly).",
+   "effects": [
+    {
+     "stat": "gear.elem_fire",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "voltaic",
+   "name": "Voltaic",
+   "slots": [
+    "weapon"
+   ],
+   "desc": "Your weapon's hits Shock monsters (a short stun; sometimes it jumps to a second monster).",
+   "effects": [
+    {
+     "stat": "gear.elem_shock",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "glacial",
+   "name": "Glacial",
+   "slots": [
+    "weapon"
+   ],
+   "desc": "Your weapon's hits Chill monsters (slower; 5 hits in 4 s freeze them).",
+   "effects": [
+    {
+     "stat": "gear.elem_frost",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "caustic",
+   "name": "Caustic",
+   "slots": [
+    "weapon"
+   ],
+   "desc": "Your weapon's hits Rot monsters (they take more damage from everything for a while).",
+   "effects": [
+    {
+     "stat": "gear.elem_rot",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "hollowing",
+   "name": "Hollowing",
+   "slots": [
+    "weapon"
+   ],
+   "desc": "Your weapon's hits Weaken monsters (they deal you less damage for a while).",
+   "effects": [
+    {
+     "stat": "gear.elem_void",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "hasty",
+   "name": "Hasty",
+   "slots": [
+    "servos"
+   ],
+   "research": "behaviors2",
+   "desc": "Picking up a valuable gives +12% move speed for 3 s.",
+   "effects": [
+    {
+     "stat": "gear.hasty",
+     "value": 12
+    }
+   ]
+  },
+  {
+   "id": "momentum",
+   "name": "Momentum",
+   "slots": [
+    "servos"
+   ],
+   "research": "behaviors2",
+   "desc": "After 3 s of sprinting, +10% sprint speed until you stop.",
+   "effects": [
+    {
+     "stat": "gear.momentum",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "steady",
+   "name": "Steady",
+   "slots": [
+    "plating"
+   ],
+   "research": "behaviors2",
+   "desc": "Stand still for 1.5 s: take 15% less damage until you move.",
+   "effects": [
+    {
+     "stat": "gear.steady",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "id": "second_wind",
+   "name": "Second Wind",
+   "slots": [
+    "core"
+   ],
+   "research": "behaviors2",
+   "desc": "The first time you drop below 35% health each level, refill half your stamina.",
+   "effects": [
+    {
+     "stat": "gear.second_wind",
+     "value": 50
+    }
+   ]
+  },
+  {
+   "id": "proto_mender",
+   "name": "Mender",
+   "slots": [
+    "prototype"
+   ],
+   "research": "prototype_lab",
+   "desc": "Prototype: stand still for 3 s to heal 2 HP every second.",
+   "effects": [
+    {
+     "stat": "gear.proto_mender",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "id": "proto_bulwark",
+   "name": "Bulwark",
+   "slots": [
+    "prototype"
+   ],
+   "research": "prototype_lab",
+   "desc": "Prototype: below 30% health you take 25% less damage.",
+   "effects": [
+    {
+     "stat": "gear.proto_bulwark",
+     "value": 25
+    }
+   ]
+  },
+  {
+   "id": "proto_static",
+   "name": "Static Field",
+   "slots": [
+    "prototype"
+   ],
+   "research": "prototype_lab",
+   "desc": "Prototype: every 20 s, monsters within 4 m of you are stunned for 1.5 s.",
+   "effects": [
+    {
+     "stat": "gear.proto_static",
+     "value": 1.5
+    }
+   ]
+  },
+  {
+   "id": "proto_medic",
+   "name": "Field Medic",
+   "slots": [
+    "prototype"
+   ],
+   "research": "prototype_lab",
+   "desc": "Prototype: every 4 s, hurt teammates within 8 m regain 1 HP.",
+   "effects": [
+    {
+     "stat": "gear.proto_medic",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "proto_surge",
+   "name": "Surge",
+   "slots": [
+    "prototype"
+   ],
+   "research": "prototype_lab",
+   "desc": "Prototype: starting a sprint gives +20% sprint speed for 3 s (every 20 s).",
+   "effects": [
+    {
+     "stat": "gear.proto_surge",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "id": "proto_capacitor",
+   "name": "Capacitor",
+   "slots": [
+    "prototype"
+   ],
+   "research": "prototype_lab",
+   "desc": "Prototype: every 90 s in a level, your ability gets a charge back.",
+   "effects": [
+    {
+     "stat": "gear.proto_capacitor",
+     "value": 90
+    }
+   ]
+  }
+ ],
+ "prefixes": [
+  {
+   "stat": "WeaponDamage",
+   "word": "Sharp"
+  },
+  {
+   "stat": "DamageTaken",
+   "word": "Hardened"
+  },
+  {
+   "stat": "MoveSpeed",
+   "word": "Swift"
+  },
+  {
+   "stat": "SprintSpeed",
+   "word": "Swift"
+  },
+  {
+   "stat": "JumpForce",
+   "word": "Springy"
+  },
+  {
+   "stat": "MaxStamina",
+   "word": "Tireless"
+  },
+  {
+   "stat": "StaminaRegen",
+   "word": "Tireless"
+  },
+  {
+   "stat": "StaminaDrain",
+   "word": "Tireless"
+  },
+  {
+   "stat": "HoldingStaminaDrain",
+   "word": "Tireless"
+  },
+  {
+   "stat": "CooldownReduction",
+   "word": "Focused"
+  },
+  {
+   "stat": "ActivePower",
+   "word": "Amplified"
+  },
+  {
+   "stat": "ActiveDuration",
+   "word": "Amplified"
+  },
+  {
+   "stat": "ActiveArea",
+   "word": "Amplified"
+  },
+  {
+   "stat": "GearLuck",
+   "word": "Lucky"
+  },
+  {
+   "stat": "ScrapBonus",
+   "word": "Lucky"
+  },
+  {
+   "stat": "NoiseReduction",
+   "word": "Quiet"
+  },
+  {
+   "stat": "GrabStrength",
+   "word": "Grippy"
+  },
+  {
+   "stat": "GrabRange",
+   "word": "Grippy"
+  },
+  {
+   "stat": "ThrowStrength",
+   "word": "Grippy"
+  },
+  {
+   "stat": "MaxHealth",
+   "word": "Sturdy"
+  },
+  {
+   "stat": "HealthRegen",
+   "word": "Sturdy"
+  },
+  {
+   "stat": "DodgeChance",
+   "word": "Nimble"
+  },
+  {
+   "stat": "CrouchSpeed",
+   "word": "Nimble"
+  },
+  {
+   "stat": "StunOnHit",
+   "word": "Brutal"
+  },
+  {
+   "stat": "BleedOnHit",
+   "word": "Brutal"
+  },
+  {
+   "stat": "Lifesteal",
+   "word": "Hungry"
+  },
+  {
+   "stat": "HealOnKill",
+   "word": "Hungry"
+  },
+  {
+   "stat": "ReviveHeal",
+   "word": "Caring"
+  },
+  {
+   "stat": "KillXp",
+   "word": "Keen"
+  },
+  {
+   "stat": "XpGain",
+   "word": "Keen"
+  },
+  {
+   "stat": "ExtractXp",
+   "word": "Keen"
+  }
+ ],
+ "suffixes": [
+  {
+   "stat": "WeaponDamage",
+   "word": "Brawler"
+  },
+  {
+   "stat": "StunOnHit",
+   "word": "Brawler"
+  },
+  {
+   "stat": "BleedOnHit",
+   "word": "Brawler"
+  },
+  {
+   "stat": "Lifesteal",
+   "word": "Brawler"
+  },
+  {
+   "stat": "KillXp",
+   "word": "Brawler"
+  },
+  {
+   "stat": "ThrowStrength",
+   "word": "Hauler"
+  },
+  {
+   "stat": "GrabStrength",
+   "word": "Hauler"
+  },
+  {
+   "stat": "GrabRange",
+   "word": "Hauler"
+  },
+  {
+   "stat": "HoldingStaminaDrain",
+   "word": "Hauler"
+  },
+  {
+   "stat": "MaxHealth",
+   "word": "Sentinel"
+  },
+  {
+   "stat": "DamageTaken",
+   "word": "Sentinel"
+  },
+  {
+   "stat": "DodgeChance",
+   "word": "Sentinel"
+  },
+  {
+   "stat": "HealthRegen",
+   "word": "Medic"
+  },
+  {
+   "stat": "HealOnKill",
+   "word": "Medic"
+  },
+  {
+   "stat": "ReviveHeal",
+   "word": "Medic"
+  },
+  {
+   "stat": "MoveSpeed",
+   "word": "Sprinter"
+  },
+  {
+   "stat": "SprintSpeed",
+   "word": "Sprinter"
+  },
+  {
+   "stat": "JumpForce",
+   "word": "Sprinter"
+  },
+  {
+   "stat": "MaxStamina",
+   "word": "Sprinter"
+  },
+  {
+   "stat": "StaminaRegen",
+   "word": "Sprinter"
+  },
+  {
+   "stat": "CrouchSpeed",
+   "word": "Sprinter"
+  },
+  {
+   "stat": "StaminaDrain",
+   "word": "Sprinter"
+  },
+  {
+   "stat": "CooldownReduction",
+   "word": "Sage"
+  },
+  {
+   "stat": "ActivePower",
+   "word": "Sage"
+  },
+  {
+   "stat": "ActiveDuration",
+   "word": "Sage"
+  },
+  {
+   "stat": "ActiveArea",
+   "word": "Sage"
+  },
+  {
+   "stat": "XpGain",
+   "word": "Sage"
+  },
+  {
+   "stat": "ExtractXp",
+   "word": "Sage"
+  },
+  {
+   "stat": "GearLuck",
+   "word": "Prospector"
+  },
+  {
+   "stat": "ScrapBonus",
+   "word": "Prospector"
+  },
+  {
+   "stat": "NoiseReduction",
+   "word": "Prospector"
+  }
+ ],
+ "uniques": [
+  {
+   "name": "Bloodletter",
+   "slot": "weapon",
+   "role": "Fighter",
+   "desc": "+15% bleed chance; bleeding monsters take 10% more damage from everyone.",
+   "flavor": "It doesn't cut. It invites.",
+   "effects": [
+    {
+     "stat": "BleedOnHit",
+     "value": 15
+    },
+    {
+     "stat": "gear.bleed_amp",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "name": "Concussor",
+   "slot": "weapon",
+   "role": "Control",
+   "desc": "Every weapon hit stuns for 0.3 s, but -20% weapon damage.",
+   "flavor": "Ring the bell. Repeat.",
+   "effects": [
+    {
+     "stat": "gear.stun_all",
+     "value": 0.3
+    },
+    {
+     "stat": "WeaponDamage",
+     "value": -20
+    }
+   ]
+  },
+  {
+   "name": "Leech Coil",
+   "slot": "weapon",
+   "role": "Sustain",
+   "desc": "+2 HP per hit; your kills heal teammates within 6 m by 3 HP.",
+   "flavor": "Share and share alike.",
+   "effects": [
+    {
+     "stat": "Lifesteal",
+     "value": 2
+    },
+    {
+     "stat": "gear.kill_heal",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "name": "Wrecking Arm",
+   "slot": "weapon",
+   "role": "Physical",
+   "desc": "Thrown items hurt monsters they hit (10 damage plus your weapon damage %), but -15% grip.",
+   "flavor": "Everything is a projectile.",
+   "effects": [
+    {
+     "stat": "gear.throw_dmg",
+     "value": 10
+    },
+    {
+     "stat": "GrabStrength",
+     "value": -15
+    }
+   ]
+  },
+  {
+   "name": "The Negotiator",
+   "slot": "weapon",
+   "role": "Control",
+   "desc": "Monsters you hit are 20% slower for 2 s.",
+   "flavor": "Let's talk this out.",
+   "effects": [
+    {
+     "stat": "gear.slow_hit",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "name": "Phoenix Plate",
+   "slot": "plating",
+   "role": "Survival",
+   "desc": "+1 death save per level; a death save stuns monsters within 4 m for 1.5 s.",
+   "flavor": "Not today. Not like this.",
+   "effects": [
+    {
+     "stat": "DeathSaves",
+     "value": 1
+    },
+    {
+     "stat": "gear.save_stun",
+     "value": 1.5
+    }
+   ]
+  },
+  {
+   "name": "Aegis Shell",
+   "slot": "plating",
+   "role": "Tank",
+   "desc": "-10% damage taken, but -10% sprint speed.",
+   "flavor": "Slow is smooth. Smooth is alive.",
+   "effects": [
+    {
+     "stat": "DamageTaken",
+     "value": -10
+    },
+    {
+     "stat": "SprintSpeed",
+     "value": -10
+    }
+   ]
+  },
+  {
+   "name": "Mirror Plate",
+   "slot": "plating",
+   "role": "Stealth",
+   "desc": "A dodge stuns monsters within 3 m for 1 s.",
+   "flavor": "You hit... yourself?",
+   "effects": [
+    {
+     "stat": "gear.dodge_stun",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Insurer's Bond",
+   "slot": "plating",
+   "role": "Support",
+   "desc": "When you go down, valuables held by teammates within 8 m can't break for 5 s.",
+   "flavor": "Coverage begins at the moment of loss.",
+   "effects": [
+    {
+     "stat": "gear.bond",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "name": "Overclocked Legs",
+   "slot": "servos",
+   "role": "Mobility",
+   "desc": "+1 mid-air jump; a mid-air jump gives +15% speed for 1.5 s.",
+   "flavor": "Gravity is a suggestion.",
+   "effects": [
+    {
+     "stat": "ExtraJumps",
+     "value": 1
+    },
+    {
+     "stat": "gear.air_speed",
+     "value": 15
+    }
+   ]
+  },
+  {
+   "name": "Perpetual Drive",
+   "slot": "servos",
+   "role": "Endurance",
+   "desc": "Sprinting costs 35% less stamina, but -1 stamina/s regen.",
+   "flavor": "Never stop. Never stop.",
+   "effects": [
+    {
+     "stat": "StaminaDrain",
+     "value": -35
+    },
+    {
+     "stat": "StaminaRegen",
+     "value": -1
+    }
+   ]
+  },
+  {
+   "name": "Rocket Boots",
+   "slot": "servos",
+   "role": "Mobility",
+   "desc": "+25% jump force while sprinting, but your jumps make noise monsters hear.",
+   "flavor": "Subtlety not included.",
+   "effects": [
+    {
+     "stat": "gear.rocket",
+     "value": 25
+    }
+   ]
+  },
+  {
+   "name": "Courier's Stride",
+   "slot": "servos",
+   "role": "Cargo",
+   "desc": "+10% move speed while carrying a valuable.",
+   "flavor": "The package must arrive.",
+   "effects": [
+    {
+     "stat": "gear.carry_speed",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "name": "Chrono Core",
+   "slot": "core",
+   "role": "Ability",
+   "desc": "-15% cooldown; your first ability use each level costs no charge.",
+   "flavor": "Again. Again. Again.",
+   "effects": [
+    {
+     "stat": "CooldownReduction",
+     "value": 15
+    },
+    {
+     "stat": "gear.free_first",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Midas Core",
+   "slot": "core",
+   "role": "Economy",
+   "desc": "+25% XP and +2 gear luck, but valuables you hold lose 10% more value when hit.",
+   "flavor": "Everything it touches, it ruins expensively.",
+   "effects": [
+    {
+     "stat": "XpGain",
+     "value": 25
+    },
+    {
+     "stat": "GearLuck",
+     "value": 2
+    },
+    {
+     "stat": "gear.midas",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "name": "The Taxman's Ledger",
+   "slot": "core",
+   "role": "Economy",
+   "desc": "+5% Scrap from extractions; you lose 1% of your Scrap when a valuable a teammate holds is damaged (at most every 10 s).",
+   "flavor": "Death and taxes. Mostly taxes.",
+   "effects": [
+    {
+     "stat": "gear.tax",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "name": "Gambler's Die",
+   "slot": "core",
+   "role": "Chaos",
+   "desc": "Each level, one stat line on your gear is doubled and another halved (random).",
+   "flavor": "Feeling lucky?",
+   "effects": [
+    {
+     "stat": "gear.die",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "name": "Shepherd's Bell",
+   "slot": "core",
+   "role": "Support",
+   "desc": "Once per level, when a teammate within 10 m goes down, monsters near them are stunned for 2 s.",
+   "flavor": "Everyone gets home.",
+   "effects": [
+    {
+     "stat": "gear.bell",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "name": "Final Notice",
+   "slot": "weapon",
+   "role": "Fighter",
+   "desc": "+20% weapon damage while a boss is alive on the level.",
+   "flavor": "Payment is overdue.",
+   "effects": [
+    {
+     "stat": "gear.boss_hunter",
+     "value": 20
+    }
+   ],
+   "unlock": "uniques1"
+  },
+  {
+   "name": "Repossessor",
+   "slot": "weapon",
+   "role": "Fortune",
+   "desc": "+1 gear luck for each elite that dies near you this level (up to 5).",
+   "flavor": "Everything goes back eventually.",
+   "effects": [
+    {
+     "stat": "gear.repo_luck",
+     "value": 1
+    }
+   ],
+   "unlock": "uniques1"
+  },
+  {
+   "name": "Night Shift Servos",
+   "slot": "servos",
+   "role": "Scout",
+   "desc": "+15% move speed while no teammate is within 15 m.",
+   "flavor": "Nobody else is on the clock.",
+   "effects": [
+    {
+     "stat": "gear.lone_speed",
+     "value": 15
+    }
+   ],
+   "unlock": "uniques1"
+  },
+  {
+   "name": "Overtime Plating",
+   "slot": "plating",
+   "role": "Tank",
+   "desc": "Each death save you use this level: 5% less damage taken for the rest of the level (up to 3).",
+   "flavor": "Time and a half, all night.",
+   "effects": [
+    {
+     "stat": "gear.save_armor",
+     "value": 5
+    }
+   ],
+   "unlock": "uniques2"
+  },
+  {
+   "name": "Ledger of Debts",
+   "slot": "core",
+   "role": "Support",
+   "desc": "+10% XP for the rest of the level each time a teammate dies (up to 3).",
+   "flavor": "Someone has to keep the books.",
+   "effects": [
+    {
+     "stat": "gear.debt_xp",
+     "value": 10
+    }
+   ],
+   "unlock": "uniques2"
+  },
+  {
+   "name": "Danger Money",
+   "slot": "core",
+   "role": "Fortune",
+   "desc": "+10% Scrap on levels with a map modifier.",
+   "flavor": "Hazard rates apply.",
+   "effects": [
+    {
+     "stat": "gear.danger_scrap",
+     "value": 10
+    }
+   ],
+   "unlock": "uniques2"
+  },
+  {
+   "name": "Crown of Ascent",
+   "slot": "core",
+   "role": "Team",
+   "desc": "Your heat vote counts twice.",
+   "flavor": "Twenty times up the mountain. They listen now.",
+   "unlock": "asc10",
+   "effects": [
+    {
+     "stat": "gear.crown",
+     "value": 1
+    }
+   ]
+  }
+ ],
+ "modules": [
+  {
+   "id": "spark",
+   "name": "Spark Plug",
+   "effects": [
+    {
+     "stat": "CooldownReduction",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "id": "absorber",
+   "name": "Shock Absorber",
+   "effects": [
+    {
+     "stat": "DamageTaken",
+     "value": -3
+    }
+   ]
+  },
+  {
+   "id": "grippad",
+   "name": "Grip Pad",
+   "effects": [
+    {
+     "stat": "GrabStrength",
+     "value": 6
+    }
+   ]
+  },
+  {
+   "id": "coolant",
+   "name": "Coolant Cell",
+   "effects": [
+    {
+     "stat": "StaminaRegen",
+     "value": 0.8
+    }
+   ]
+  },
+  {
+   "id": "amp",
+   "name": "Amp Coil",
+   "effects": [
+    {
+     "stat": "ActivePower",
+     "value": 6
+    }
+   ]
+  },
+  {
+   "id": "lens",
+   "name": "Lens",
+   "effects": [
+    {
+     "stat": "GrabRange",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "id": "silencer",
+   "name": "Silencer",
+   "effects": [
+    {
+     "stat": "NoiseReduction",
+     "value": 6
+    }
+   ]
+  },
+  {
+   "id": "charm",
+   "name": "Lucky Charm",
+   "effects": [
+    {
+     "stat": "GearLuck",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "magnet",
+   "name": "Scrap Magnet",
+   "effects": [
+    {
+     "stat": "ScrapBonus",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "id": "trigger",
+   "name": "Trigger Spring",
+   "effects": [
+    {
+     "stat": "ThrowStrength",
+     "value": 6
+    }
+   ]
+  },
+  {
+   "id": "incendiary_mod",
+   "name": "Incendiary Module",
+   "effects": [
+    {
+     "stat": "gear.elem_mod_fire",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "voltaic_mod",
+   "name": "Voltaic Module",
+   "effects": [
+    {
+     "stat": "gear.elem_mod_shock",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "glacial_mod",
+   "name": "Glacial Module",
+   "effects": [
+    {
+     "stat": "gear.elem_mod_frost",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "caustic_mod",
+   "name": "Caustic Module",
+   "effects": [
+    {
+     "stat": "gear.elem_mod_rot",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "void_mod",
+   "name": "Void Module",
+   "effects": [
+    {
+     "stat": "gear.elem_mod_void",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "tracer",
+   "name": "Tracer",
+   "research": "modules2",
+   "effects": [
+    {
+     "stat": "gear.tracer",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "id": "spotter",
+   "name": "Spotter Lens",
+   "research": "modules2",
+   "effects": [
+    {
+     "stat": "gear.spotter",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "tether",
+   "name": "Tether",
+   "research": "modules2",
+   "effects": [
+    {
+     "stat": "gear.tether",
+     "value": 1
+    }
+   ]
+  }
+ ],
+ "attunement": [
+  {
+   "at": 25,
+   "name": "Bonded",
+   "desc": "A hidden stat affix appears."
+  },
+  {
+   "at": 75,
+   "name": "Tempered",
+   "desc": "The strongest affix gets +25%."
+  },
+  {
+   "at": 150,
+   "name": "Soulbound",
+   "desc": "Base stat +25%; never auto-salvaged when the inventory is full."
+  }
+ ],
+ "cursed": [
+  {
+   "id": "hunger",
+   "name": "Hungering Edge",
+   "slot": "weapon",
+   "benefit": "+25% weapon damage, and +5% more for each monster killed near you this level (up to +25%).",
+   "curse": "After 45 s without a weapon hit, you lose 1 HP every 3 s until you hit something (never below 10 HP).",
+   "fixedCurse": false,
+   "flavor": "It was fed once. It remembers.",
+   "effects": [
+    {
+     "stat": "WeaponDamage",
+     "value": 25
+    },
+    {
+     "stat": "gear.cursed.hunger",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "feedback",
+   "name": "Feedback Coil",
+   "slot": "weapon",
+   "benefit": "Each weapon hit also hits the nearest other monster within 4 m for 50% of the damage.",
+   "curse": "Every weapon hit costs you 2 HP (this can put you down).",
+   "fixedCurse": false,
+   "flavor": "The current has to go somewhere.",
+   "effects": [
+    {
+     "stat": "gear.cursed.feedback",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "overkill",
+   "name": "Overkill Relay",
+   "slot": "weapon",
+   "benefit": "Damage beyond what a kill needs carries over to the nearest monster within 6 m.",
+   "curse": "For 3 s after each kill you can't hold valuables.",
+   "fixedCurse": false,
+   "flavor": "Never waste a joule.",
+   "effects": [
+    {
+     "stat": "gear.cursed.overkill",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "bloodpact",
+   "name": "Bloodpact Plating",
+   "slot": "plating",
+   "benefit": "30% less damage taken.",
+   "curse": "Heals from teammates (their classes, perks and gear) do nothing for you.",
+   "fixedCurse": false,
+   "flavor": "Signed in your own blood. Nobody else's.",
+   "effects": [
+    {
+     "stat": "DamageTaken",
+     "value": -30
+    },
+    {
+     "stat": "gear.cursed.bloodpact",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "thorns",
+   "name": "Thornshell",
+   "slot": "plating",
+   "benefit": "A monster that hits you takes twice the damage you took and is pushed back.",
+   "curse": "Your dodge chance is always 0, from every source.",
+   "fixedCurse": false,
+   "flavor": "Touch me and find out.",
+   "effects": [
+    {
+     "stat": "gear.cursed.thorns",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "martyr",
+   "name": "Martyr's Mail",
+   "slot": "plating",
+   "benefit": "Teammates within 6 m take 35% less damage.",
+   "curse": "You take that 35% yourself, in full.",
+   "fixedCurse": false,
+   "flavor": "Someone has to.",
+   "effects": [
+    {
+     "stat": "gear.cursed.martyr",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "hollow",
+   "name": "Hollow Plating",
+   "slot": "plating",
+   "benefit": "+50% max health.",
+   "curse": "You start every level at half health, and all healing on you is halved.",
+   "fixedCurse": false,
+   "flavor": "Plenty of room inside. Nothing to fill it.",
+   "effects": [
+    {
+     "stat": "MaxHealth",
+     "value": 50
+    },
+    {
+     "stat": "gear.cursed.hollow",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "overdrive",
+   "name": "Overdrive Servos",
+   "slot": "servos",
+   "benefit": "+25% walk and sprint speed.",
+   "curse": "Stamina never regenerates while you hold an item.",
+   "fixedCurse": false,
+   "flavor": "Redline is a suggestion.",
+   "effects": [
+    {
+     "stat": "MoveSpeed",
+     "value": 25
+    },
+    {
+     "stat": "SprintSpeed",
+     "value": 25
+    },
+    {
+     "stat": "gear.cursed.overdrive",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "rift",
+   "name": "Rift Striders",
+   "slot": "servos",
+   "benefit": "Jump becomes a 6 m dash the way you're moving (every 4 s).",
+   "curse": "You can't jump normally.",
+   "fixedCurse": true,
+   "flavor": "Why go over when you can go through?",
+   "effects": [
+    {
+     "stat": "gear.cursed.rift",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "hangman",
+   "name": "Hangman's Springs",
+   "slot": "servos",
+   "benefit": "+60% jump force, and no damage from falls and tumbling.",
+   "curse": "You can't crouch.",
+   "fixedCurse": true,
+   "flavor": "Stand tall. You have no choice.",
+   "effects": [
+    {
+     "stat": "JumpForce",
+     "value": 60
+    },
+    {
+     "stat": "gear.cursed.hangman",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "greed",
+   "name": "Greed Core",
+   "slot": "core",
+   "benefit": "+25% bonus Scrap share.",
+   "curse": "The mod shop charges you 25% more.",
+   "fixedCurse": false,
+   "flavor": "More. Always more.",
+   "effects": [
+    {
+     "stat": "ScrapBonus",
+     "value": 25
+    },
+    {
+     "stat": "gear.cursed.greed",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "echo",
+   "name": "Echo Core",
+   "slot": "core",
+   "benefit": "40% shorter ability cooldown.",
+   "curse": "Every ability use makes a loud noise where you stand that monsters come to investigate.",
+   "fixedCurse": false,
+   "flavor": "Every word you say, they hear twice.",
+   "effects": [
+    {
+     "stat": "CooldownReduction",
+     "value": 40
+    },
+    {
+     "stat": "gear.cursed.echo",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "hourglass",
+   "name": "Hourglass Heart",
+   "slot": "core",
+   "benefit": "+1 ability charge.",
+   "curse": "You can't use your ability while holding anything.",
+   "fixedCurse": true,
+   "flavor": "Two grains at once. Empty hands only.",
+   "effects": [
+    {
+     "stat": "AbilityCharges",
+     "value": 1
+    },
+    {
+     "stat": "gear.cursed.hourglass",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "parasite",
+   "name": "Parasite Core",
+   "slot": "core",
+   "benefit": "+50% XP from everything.",
+   "curse": "Teammates within 10 m earn 15% less XP.",
+   "fixedCurse": false,
+   "flavor": "It learns from everyone. It shares with no one.",
+   "effects": [
+    {
+     "stat": "XpGain",
+     "value": 50
+    },
+    {
+     "stat": "gear.cursed.parasite",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "id": "apex",
+   "name": "Apex Brand",
+   "slot": "weapon",
+   "benefit": "+40% weapon damage to bosses.",
+   "curse": "Bosses deal you 20% more damage.",
+   "fixedCurse": false,
+   "flavor": "Only the last one standing gets to wear it.",
+   "unlock": "asc20",
+   "effects": [
+    {
+     "stat": "gear.cursed.apex",
+     "value": 1
+    }
+   ]
+  }
+ ],
+ "starters": [
+  {
+   "cls": "juggernaut",
+   "name": "Reinforced Plating",
+   "slot": "plating",
+   "desc": "3% less damage taken",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "DamageTaken",
+     "value": -3
+    }
+   ]
+  },
+  {
+   "cls": "medic",
+   "name": "Field Kit Core",
+   "slot": "core",
+   "desc": "Teammates revived near you get +5 HP",
+   "tool": "health pack small",
+   "toolCount": 1,
+   "toolName": "Small health pack",
+   "effects": [
+    {
+     "stat": "ReviveHeal",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "scout",
+   "name": "Light Servos",
+   "slot": "servos",
+   "desc": "+4% sprint speed",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "SprintSpeed",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "cls": "hauler",
+   "name": "Strap Servos",
+   "slot": "servos",
+   "desc": "Power Lift 5% stronger",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "hauler.lift_power",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "brute",
+   "name": "Knuckle Module",
+   "slot": "weapon",
+   "desc": "Shockwave 5% stronger",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "brute.quake_power",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "engineer",
+   "name": "Toolbelt Core",
+   "slot": "core",
+   "desc": "Overdrive lasts 5% longer",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "engineer.overdrive_duration",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "phantom",
+   "name": "Muffled Servos",
+   "slot": "servos",
+   "desc": "5% less noise you make",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "NoiseReduction",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "survivor",
+   "name": "Ration Core",
+   "slot": "core",
+   "desc": "+0.1 HP/s regen",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "HealthRegen",
+     "value": 0.1
+    }
+   ]
+  },
+  {
+   "cls": "appraiser",
+   "name": "Loupe Module",
+   "slot": "weapon",
+   "desc": "Appraisal Scan reaches 5% farther",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "appraiser.scan_area",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "warden",
+   "name": "Restraint Module",
+   "slot": "weapon",
+   "desc": "Stasis Field lasts 5% longer",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "warden.stasis_duration",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "herald",
+   "name": "Megaphone Core",
+   "slot": "core",
+   "desc": "Inspire builds a little faster",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "herald.inspire_gain",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "cls": "mimic",
+   "name": "Mirror Core",
+   "slot": "core",
+   "desc": "Copied abilities 5% stronger",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "mimic.copy_power",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "undertaker",
+   "name": "Head Strap",
+   "slot": "servos",
+   "desc": "5% faster while carrying a death head",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "undertaker.head_speed",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "cartwright",
+   "name": "Hitch Module",
+   "slot": "core",
+   "desc": "Your cart follows from 1 m farther away",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "cartwright.follow",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "cls": "physicist",
+   "name": "Gravity Servos",
+   "slot": "servos",
+   "desc": "Objects you hold 5% lighter",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "physicist.held_mass",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "trickster",
+   "name": "Prankster Module",
+   "slot": "weapon",
+   "desc": "Thrown objects' lure noise reaches 1 m farther",
+   "tool": "rubber duck",
+   "toolCount": 1,
+   "toolName": "Rubber duck",
+   "effects": [
+    {
+     "stat": "trickster.lure_radius",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "cls": "demolitionist",
+   "name": "Blast Plating",
+   "slot": "plating",
+   "desc": "Your explosions deal 10% less damage to players and valuables",
+   "tool": "grenade explosive",
+   "toolCount": 2,
+   "toolName": "Explosive grenade",
+   "effects": [
+    {
+     "stat": "demolitionist.blast_safe",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "cls": "quartermaster",
+   "name": "Ledger Core",
+   "slot": "core",
+   "desc": "3% lower mod-shop prices",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "quartermaster.discount",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "cls": "gambler",
+   "name": "Lucky Coin Core",
+   "slot": "core",
+   "desc": "Curses 5% weaker",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "gambler.curse_soft",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "bloodbound",
+   "name": "Vein Module",
+   "slot": "weapon",
+   "desc": "Kills near you restore +1 HP",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "bloodbound.feed",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "cls": "courier",
+   "name": "Satchel Core",
+   "slot": "core",
+   "desc": "Drop Pad holds one more item",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "courier.pad_slots",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "cls": "instigator",
+   "name": "Taunt Module",
+   "slot": "weapon",
+   "desc": "Provoke lasts 5% longer",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "instigator.provoke_duration",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "ventriloquist",
+   "name": "Throat Core",
+   "slot": "core",
+   "desc": "Thrown voice reaches 2 m farther",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "ventriloquist.throw_dist",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "cls": "restorer",
+   "name": "Polish Kit",
+   "slot": "core",
+   "desc": "Held valuables mend +1% more per tick",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "restorer.mend_rate",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "cls": "scavenger",
+   "name": "Rummage Gloves",
+   "slot": "servos",
+   "desc": "Rummage takes 5% less time",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "scavenger.rummage_speed",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "insurer",
+   "name": "Fine Print Core",
+   "slot": "core",
+   "desc": "Tagged valuables draw monsters from 5% less far",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "insurer.policy_quiet",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "cls": "lookout",
+   "name": "Lens Module",
+   "slot": "weapon",
+   "desc": "Threat labels show 2 m farther",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "lookout.spot_range",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "cls": "gunsmith",
+   "name": "Armorer's Module",
+   "slot": "weapon",
+   "desc": "Guns use 3% less battery",
+   "tool": "gun handgun",
+   "toolCount": 1,
+   "toolName": "Handgun",
+   "effects": [
+    {
+     "stat": "gunsmith.battery_save",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "cls": "shepherd",
+   "name": "Calm Core",
+   "slot": "core",
+   "desc": "Monsters take 0.1 s longer to notice you",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "shepherd.calm_delay",
+     "value": 0.1
+    }
+   ]
+  },
+  {
+   "cls": "grappler",
+   "name": "Line Spool Servos",
+   "slot": "servos",
+   "desc": "Grab reaches 10% farther for small items",
+   "tool": "",
+   "toolCount": 0,
+   "toolName": "",
+   "effects": [
+    {
+     "stat": "grappler.reach",
+     "value": 10
+    }
+   ]
+  }
+ ],
+ "upgrades": {
+  "max": 5,
+  "scrap": [
+   15,
+   25,
+   40,
+   60,
+   90
+  ],
+  "rarityFactor": [
+   0.6,
+   0.8,
+   1.0,
+   1.3,
+   1.6
+  ],
+  "parts": [
+   2,
+   0,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0,
+   2,
+   1,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0
+  ],
+  "legendaryLastParts": [
+   0,
+   0,
+   1,
+   1
+  ],
+  "lineLevels": [
+   1,
+   3,
+   5
+  ],
+  "step": 15,
+  "extraLines": [
+   1,
+   1,
+   2,
+   2,
+   3
+  ],
+  "socketMax": [
+   1,
+   1,
+   1,
+   2,
+   2
+  ],
+  "socketAt": 5,
+  "salvageBack": 25,
+  "choices": 3
+ }
+}

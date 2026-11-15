@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "_about": "Deep-run content (Phase 2b): what unlocks at which level cleared, and the map modifiers. 'level' is levels cleared; the host can shift all of them with Unlocks/LevelShift. Effects are built into the mod by id; names, text and the modifier numbers can be changed here.",
+  "unlocks": [
+    {
+      "id": "mods1",
+      "kind": "modifiers",
+      "level": 5,
+      "name": "Map modifiers: Heavy Haul, Infestation",
+      "hint": "Some levels roll a risk-and-reward modifier."
+    },
+    {
+      "id": "brutish",
+      "kind": "elite",
+      "level": 5,
+      "name": "Elite type: Brutish",
+      "hint": "Deals 30% more damage."
+    },
+    {
+      "id": "auditor",
+      "kind": "giver",
+      "level": 10,
+      "name": "Contract giver: The Auditor",
+      "hint": "High-stakes contracts: 1.5x pay, but a failure costs 15% of the reward."
+    },
+    {
+      "id": "vampiric",
+      "kind": "elite",
+      "level": 10,
+      "name": "Elite type: Vampiric",
+      "hint": "Heals 20% of its max health whenever it hurts a player."
+    },
+    {
+      "id": "mods2",
+      "kind": "modifiers",
+      "level": 10,
+      "name": "Map modifiers: Thin Air, Fragile Goods",
+      "hint": "Two more modifiers join the roll."
+    },
+    {
+      "id": "blackmarket",
+      "kind": "shop",
+      "level": 15,
+      "name": "Shop section: Black Market",
+      "hint": "A Legendary, an Epic set piece and a module each visit, at 1.6x the price."
+    },
+    {
+      "id": "uniques1",
+      "kind": "uniques",
+      "level": 15,
+      "name": "Uniques: Final Notice, Repossessor, Night Shift Servos",
+      "hint": "Three new Uniques can drop."
+    },
+    {
+      "id": "warlord",
+      "kind": "boss",
+      "level": 15,
+      "name": "Boss modifier: Warlord",
+      "hint": "Monsters within 12 m of the boss take 25% less damage."
+    },
+    {
+      "id": "twinbosses",
+      "kind": "boss",
+      "level": 20,
+      "name": "Twin bosses",
+      "hint": "Milestone levels have two named bosses, each with 70% of the health."
+    },
+    {
+      "id": "juggernaut",
+      "kind": "elite",
+      "level": 20,
+      "name": "Elite type: Juggernaut",
+      "hint": "60% more health, 15% slower."
+    },
+    {
+      "id": "mods3",
+      "kind": "modifiers",
+      "level": 20,
+      "name": "Map modifiers: Elite Night, Skeleton Crew",
+      "hint": "Two more modifiers join the roll."
+    },
+    {
+      "id": "contraband",
+      "kind": "shop",
+      "level": 25,
+      "name": "Shop section: Contraband",
+      "hint": "Two cursed Legendaries each visit: an extra stat line and a permanent curse, at 1.2x the price."
+    },
+    {
+      "id": "uniques2",
+      "kind": "uniques",
+      "level": 25,
+      "name": "Uniques: Overtime Plating, Ledger of Debts, Danger Money",
+      "hint": "Three more Uniques can drop."
+    },
+    {
+      "id": "shielded",
+      "kind": "elite",
+      "level": 25,
+      "name": "Elite type: Shielded",
+      "hint": "The first 25% of its health is a shield that comes back after 8 s without damage."
+    },
+    {
+      "id": "overtime",
+      "kind": "modifiers",
+      "level": 30,
+      "name": "Overtime",
+      "hint": "Every level rolls a map modifier, and two can stack."
+    }
+  ],
+  "modifiers": [
+    {
+      "id": "heavy_haul",
+      "name": "Heavy Haul",
+      "unlock": "mods1",
+      "risk": "Haul goal +15%",
+      "reward": "20% more valuables",
+      "haul": 1.15,
+      "valuables": 1.2
+    },
+    {
+      "id": "infestation",
+      "name": "Infestation",
+      "unlock": "mods1",
+      "risk": "Monsters +25%",
+      "reward": "XP +20%",
+      "monsters": 1.25,
+      "xp": 1.2
+    },
+    {
+      "id": "thin_air",
+      "name": "Thin Air",
+      "unlock": "mods2",
+      "risk": "Sprinting costs 20% more stamina",
+      "reward": "Scrap +15%",
+      "stamina": 20,
+      "scrap": 1.15
+    },
+    {
+      "id": "fragile_goods",
+      "name": "Fragile Goods",
+      "unlock": "mods2",
+      "risk": "Valuables take 25% more damage",
+      "reward": "25% more valuables",
+      "valueDamage": 1.25,
+      "valuables": 1.25
+    },
+    {
+      "id": "elite_night",
+      "name": "Elite Night",
+      "unlock": "mods3",
+      "risk": "Elite chance x2",
+      "reward": "Elites have a 25% chance of an extra gear drop",
+      "elites": 2.0,
+      "eliteGear": 25
+    },
+    {
+      "id": "skeleton_crew",
+      "name": "Skeleton Crew",
+      "unlock": "mods3",
+      "risk": "Monsters -20%, no gear from extractions",
+      "reward": "Contracts pay +25%",
+      "monsters": 0.8,
+      "noExtractGear": true,
+      "contracts": 1.25
+    },
+    {
+      "id": "blackout",
+      "name": "Blackout",
+      "unlock": "",
+      "research": "new_hazards",
+      "risk": "The lights are dimmed",
+      "reward": "Monsters 12% slower, XP +10%",
+      "xp": 1.1
+    },
+    {
+      "id": "supply_drop",
+      "name": "Supply Drop",
+      "unlock": "",
+      "research": "new_hazards",
+      "risk": "Monsters +10%",
+      "reward": "A supply crate falls mid-level (worth extra)",
+      "monsters": 1.1
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[hooks]
+RpgRuntime::Label(text)
+RpgRuntime::Btn(label)
+RpgRuntime::Toast(text)
+RpgRuntime::TextW(text)
+RpgRuntime::Notify(text)          # key is an id
+RpgRuntime::AskConfirm(title, body, okLabel)
+RpgRuntime::Missing(text)         # reported, not fatal
+
+[font]
+RpgRuntime::LoadFont
+Hud::LoadFont                     # does not begin by reading the setting: the add-on reads it from the mod's config file
+RpgRuntime::PickFont              # reported, not fatal
+
+[keep]
+RpgRuntime::DebugLog
+Net::SendNotice
+
+[id]
+Game::Get
+RpgRuntime::Notify#0
+RpgRuntime::Spaced
+
+[skip]
+Net
+RpgRuntime::Host*
+
+[data]
+*: name, desc
+classes: complexityTip, bases
+# a path: only the values at that place of the file
+perks: givers/label
+*: !id, !stat, !tags, !requires, !color
+
+[probes]
+# a bare word looked for with IndexOf is ignored unless listed here
+protect "Gift"
+# plugin name detection, never applied to interface text
+ignore "late join"
+# a stat line never reaches the StartsWith("s ") that sorts ability labels
+free "s Mark duration"
+# nothing in this data file ever reaches a wording test
+free-data "perks"
+
+[calls]
+Content::set_text

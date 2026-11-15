@@ -1,0 +1,12 @@
+# Widths of a few letters of RepoRPG_RU.ttf at 100 pixels, written by tools/mkfont.py.
+# Before the add-on hands the font to the mod it asks the game for the same widths: if they differ,
+# the game did not read this file (it put a system font in its place) and the mod keeps its own font.
+# The family name is the one the font is found by when it is installed in the system.
+family	RepoRPG RU Menu
+# letter <TAB> size <TAB> width
+U+0048	100	38
+U+0057	100	55
+U+0416	100	49
+U+0428	100	51
+U+0414	100	36
+U+044E	100	42

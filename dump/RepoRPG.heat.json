@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "_comment": "Heat (after each milestone boss): the team votes on one of the offered heat cards, or Skip. Cards stay for the rest of the run (heat only goes up). Each point of heat: +scrapPerHeat % haul Scrap and +luckPerHeat gear and shop luck, up to maxRewardHeat. Card ids that match a difficulty modifier switch that modifier on (elite_swarm, glass_cannon, thin_wallets, fragile_goods, iron_bodies, short_fuse, blackout); monster_surge, hardened_bosses and lean_shop are heat-only.",
+  "offered": 3,
+  "scrapPerHeat": 4,
+  "luckPerHeat": 1,
+  "maxRewardHeat": 10,
+  "cards": [
+    {
+      "id": "monster_surge",
+      "name": "Monster Surge",
+      "heat": 1,
+      "desc": "20% more monsters"
+    },
+    {
+      "id": "lean_shop",
+      "name": "Lean Shop",
+      "heat": 1,
+      "desc": "mod shop prices +15%"
+    },
+    {
+      "id": "blackout",
+      "name": "Blackout",
+      "heat": 1,
+      "desc": "no threat labels, scan markers or Watchpost pings"
+    },
+    {
+      "id": "elite_swarm",
+      "name": "Elite Swarm",
+      "heat": 2,
+      "desc": "elites twice as likely"
+    },
+    {
+      "id": "hardened_bosses",
+      "name": "Hardened Bosses",
+      "heat": 2,
+      "desc": "bosses get one more modifier and 25% more health"
+    },
+    {
+      "id": "glass_cannon",
+      "name": "Glass Cannon",
+      "heat": 2,
+      "desc": "everyone takes 30% more damage (and deals 30% more)"
+    },
+    {
+      "id": "fragile_goods",
+      "name": "Fragile Goods",
+      "heat": 2,
+      "desc": "valuables take 25% more damage when hit"
+    },
+    {
+      "id": "short_fuse",
+      "name": "Short Fuse",
+      "heat": 2,
+      "desc": "ability cooldowns 25% longer"
+    },
+    {
+      "id": "iron_bodies",
+      "name": "Iron Bodies",
+      "heat": 3,
+      "desc": "no healing from abilities or gear, regeneration off"
+    },
+    {
+      "id": "thin_wallets",
+      "name": "Thin Wallets",
+      "heat": 3,
+      "desc": "half the Scrap from the haul"
+    }
+  ]
+}

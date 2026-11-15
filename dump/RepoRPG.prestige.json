@@ -1,0 +1,2659 @@
+{
+ "version": 1,
+ "trees": [
+  {
+   "class": "juggernaut",
+   "name": "Fortress",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "juggernaut.p.n1",
+     "name": "Rampart",
+     "desc": "+3% max health",
+     "effects": [
+      {
+       "stat": "MaxHealth",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "juggernaut.p.n2",
+     "name": "Wide Stance",
+     "desc": "Iron Wall +5% area",
+     "effects": [
+      {
+       "stat": "juggernaut.wall_area",
+       "value": 5
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "juggernaut.p.n1"
+    },
+    {
+     "id": "juggernaut.p.n3",
+     "name": "Blast Plating",
+     "desc": "3% less damage taken",
+     "effects": [
+      {
+       "stat": "DamageTaken",
+       "value": -3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "juggernaut.p.n2"
+    },
+    {
+     "id": "juggernaut.p.n4",
+     "name": "Hold the Line",
+     "desc": "Iron Wall lasts 8% longer",
+     "effects": [
+      {
+       "stat": "juggernaut.wall_duration",
+       "value": 8
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "juggernaut.p.n3"
+    },
+    {
+     "id": "juggernaut.p.n5",
+     "name": "Unbreakable",
+     "desc": "CAPSTONE: Iron Wall also makes nearby teammates take 15% less damage",
+     "effects": [
+      {
+       "stat": "juggernaut.wall_guard",
+       "value": 15
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "juggernaut.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "medic",
+   "name": "Field Surgeon",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "medic.p.n1",
+     "name": "Steady Hands",
+     "desc": "+4% ability power",
+     "effects": [
+      {
+       "stat": "medic.burst_power",
+       "value": 4
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "medic.p.n2",
+     "name": "Wide Field",
+     "desc": "+5% Nanite Burst area",
+     "effects": [
+      {
+       "stat": "medic.burst_area",
+       "value": 5
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "medic.p.n1"
+    },
+    {
+     "id": "medic.p.n3",
+     "name": "Quick Stitch",
+     "desc": "+3 HP to allies revived near you",
+     "effects": [
+      {
+       "stat": "ReviveHeal",
+       "value": 3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "medic.p.n2"
+    },
+    {
+     "id": "medic.p.n4",
+     "name": "Fast Cycle",
+     "desc": "2% cooldown reduction",
+     "effects": [
+      {
+       "stat": "medic.burst_cooldown",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "medic.p.n3"
+    },
+    {
+     "id": "medic.p.n5",
+     "name": "Defibrillator",
+     "desc": "CAPSTONE: teammates revived near you come back with +25 HP and 10% more revive XP",
+     "effects": [
+      {
+       "stat": "ReviveHeal",
+       "value": 25
+      },
+      {
+       "stat": "ReviveXp",
+       "value": 10
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "medic.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "scout",
+   "name": "Outrider",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "scout.p.n1",
+     "name": "Long Stride",
+     "desc": "+2% sprint speed",
+     "effects": [
+      {
+       "stat": "SprintSpeed",
+       "value": 2
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "scout.p.n2",
+     "name": "Deep Lungs",
+     "desc": "+3% max stamina",
+     "effects": [
+      {
+       "stat": "MaxStamina",
+       "value": 3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "scout.p.n1"
+    },
+    {
+     "id": "scout.p.n3",
+     "name": "Carry Speed",
+     "desc": "+0.5 s Momentum grace",
+     "effects": [
+      {
+       "stat": "MomentumGrace",
+       "value": 0.5
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "scout.p.n2"
+    },
+    {
+     "id": "scout.p.n4",
+     "name": "Burst",
+     "desc": "Overclock Sprint lasts 8% longer",
+     "effects": [
+      {
+       "stat": "scout.sprint_duration",
+       "value": 8
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "scout.p.n3"
+    },
+    {
+     "id": "scout.p.n5",
+     "name": "Slipstream",
+     "desc": "CAPSTONE: teammates near you regain 2 stamina/s (4 m)",
+     "effects": [
+      {
+       "stat": "LinkStamina",
+       "value": 2
+      },
+      {
+       "stat": "LinkRadius",
+       "value": 4
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "scout.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "hauler",
+   "name": "Freight",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "hauler.p.n1",
+     "name": "Iron Grip",
+     "desc": "+3% grip strength",
+     "effects": [
+      {
+       "stat": "GrabStrength",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "hauler.p.n2",
+     "name": "Padded",
+     "desc": "held items take 3% less damage",
+     "effects": [
+      {
+       "stat": "HeldItemProtection",
+       "value": 3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "hauler.p.n1"
+    },
+    {
+     "id": "hauler.p.n3",
+     "name": "Haul Pace",
+     "desc": "3% less stamina drain while carrying",
+     "effects": [
+      {
+       "stat": "HoldingStaminaDrain",
+       "value": -3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "hauler.p.n2"
+    },
+    {
+     "id": "hauler.p.n4",
+     "name": "Overload",
+     "desc": "Power Lift lasts 8% longer",
+     "effects": [
+      {
+       "stat": "hauler.lift_duration",
+       "value": 8
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "hauler.p.n3"
+    },
+    {
+     "id": "hauler.p.n5",
+     "name": "Conveyor",
+     "desc": "CAPSTONE: valuables you throw can't break for 2 s",
+     "effects": [
+      {
+       "stat": "hauler.cap_conveyor",
+       "value": 2
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "hauler.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "brute",
+   "name": "Juggernaut Fist",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "brute.p.n1",
+     "name": "Heavy Blows",
+     "desc": "+3% weapon damage",
+     "effects": [
+      {
+       "stat": "WeaponDamage",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "brute.p.n2",
+     "name": "Bloodrush",
+     "desc": "+1 Frenzy power",
+     "effects": [
+      {
+       "stat": "FrenzyPower",
+       "value": 1
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "brute.p.n1"
+    },
+    {
+     "id": "brute.p.n3",
+     "name": "Wide Quake",
+     "desc": "Shockwave +5% area",
+     "effects": [
+      {
+       "stat": "brute.quake_area",
+       "value": 5
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "brute.p.n2"
+    },
+    {
+     "id": "brute.p.n4",
+     "name": "Rattle",
+     "desc": "+2% stun chance on hit",
+     "effects": [
+      {
+       "stat": "StunOnHit",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "brute.p.n3"
+    },
+    {
+     "id": "brute.p.n5",
+     "name": "Aftershock",
+     "desc": "CAPSTONE: Shockwave hits a second time 1 s later at half strength",
+     "effects": [
+      {
+       "stat": "brute.cap_aftershock",
+       "value": 50
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "brute.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "engineer",
+   "name": "Reactor",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "engineer.p.n1",
+     "name": "Coolant",
+     "desc": "+3 stamina/s regen (while recharging)",
+     "effects": [
+      {
+       "stat": "StaminaRegen",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "engineer.p.n2",
+     "name": "Long Burn",
+     "desc": "Overdrive lasts 8% longer",
+     "effects": [
+      {
+       "stat": "engineer.overdrive_duration",
+       "value": 8
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "engineer.p.n1"
+    },
+    {
+     "id": "engineer.p.n3",
+     "name": "Wide Link",
+     "desc": "+1 m Power Link radius",
+     "effects": [
+      {
+       "stat": "LinkRadius",
+       "value": 1
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "engineer.p.n2"
+    },
+    {
+     "id": "engineer.p.n4",
+     "name": "Rapid Cycle",
+     "desc": "2% cooldown reduction",
+     "effects": [
+      {
+       "stat": "engineer.overdrive_cooldown",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "engineer.p.n3"
+    },
+    {
+     "id": "engineer.p.n5",
+     "name": "Meltdown",
+     "desc": "CAPSTONE: when Overdrive ends, monsters within 4 m are stunned for 1 s",
+     "effects": [
+      {
+       "stat": "engineer.cap_meltdown",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "engineer.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "phantom",
+   "name": "Wraith",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "phantom.p.n1",
+     "name": "Blur",
+     "desc": "+1% dodge chance",
+     "effects": [
+      {
+       "stat": "DodgeChance",
+       "value": 1
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "phantom.p.n2",
+     "name": "Long Phase",
+     "desc": "Phase Out lasts 8% longer",
+     "effects": [
+      {
+       "stat": "phantom.phase_duration",
+       "value": 8
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "phantom.p.n1"
+    },
+    {
+     "id": "phantom.p.n3",
+     "name": "Hush",
+     "desc": "3% less noise",
+     "effects": [
+      {
+       "stat": "NoiseReduction",
+       "value": 3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "phantom.p.n2"
+    },
+    {
+     "id": "phantom.p.n4",
+     "name": "Slip",
+     "desc": "+3% Shadowstep speed",
+     "effects": [
+      {
+       "stat": "ShadowstepSpeed",
+       "value": 3
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "phantom.p.n3"
+    },
+    {
+     "id": "phantom.p.n5",
+     "name": "Vanish",
+     "desc": "CAPSTONE: during Phase Out you make no noise, so monsters lose your trail",
+     "effects": [
+      {
+       "stat": "phantom.cap_vanish",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "phantom.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "survivor",
+   "name": "Endurance",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "survivor.p.n1",
+     "name": "Tough",
+     "desc": "+2% max health",
+     "effects": [
+      {
+       "stat": "MaxHealth",
+       "value": 2
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "survivor.p.n2",
+     "name": "Hold On",
+     "desc": "+0.1 HP/s regen",
+     "effects": [
+      {
+       "stat": "HealthRegen",
+       "value": 0.1
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "survivor.p.n1"
+    },
+    {
+     "id": "survivor.p.n3",
+     "name": "Thick Skin",
+     "desc": "2% less damage taken",
+     "effects": [
+      {
+       "stat": "DamageTaken",
+       "value": -2
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "survivor.p.n2"
+    },
+    {
+     "id": "survivor.p.n4",
+     "name": "Field Dressing",
+     "desc": "Emergency Patch +5% power",
+     "effects": [
+      {
+       "stat": "survivor.patch_power",
+       "value": 5
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "survivor.p.n3"
+    },
+    {
+     "id": "survivor.p.n5",
+     "name": "Never Die",
+     "desc": "CAPSTONE: your first death save each level also heals 25% of your max health",
+     "effects": [
+      {
+       "stat": "survivor.cap_never",
+       "value": 25
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "survivor.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "appraiser",
+   "name": "Auctioneer",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "appraiser.p.n1",
+     "name": "Sharp Eye",
+     "desc": "+2% appraisal value",
+     "effects": [
+      {
+       "stat": "AppraiseValue",
+       "value": 2
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "appraiser.p.n2",
+     "name": "Wide Scan",
+     "desc": "Appraisal Scan +5% area",
+     "effects": [
+      {
+       "stat": "appraiser.scan_area",
+       "value": 5
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "appraiser.p.n1"
+    },
+    {
+     "id": "appraiser.p.n3",
+     "name": "Commission",
+     "desc": "+1% Scrap share",
+     "effects": [
+      {
+       "stat": "ScrapBonus",
+       "value": 1
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "appraiser.p.n2"
+    },
+    {
+     "id": "appraiser.p.n4",
+     "name": "Long Look",
+     "desc": "Appraisal Scan lasts 8% longer",
+     "effects": [
+      {
+       "stat": "appraiser.scan_duration",
+       "value": 8
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "appraiser.p.n3"
+    },
+    {
+     "id": "appraiser.p.n5",
+     "name": "Hammer Price",
+     "desc": "CAPSTONE: +6% appraisal value and +10% rare-item appraisal bonus",
+     "effects": [
+      {
+       "stat": "AppraiseValue",
+       "value": 6
+      },
+      {
+       "stat": "AppraiseRareBonus",
+       "value": 10
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "appraiser.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "warden",
+   "name": "Bastion",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "warden.p.n1",
+     "name": "Wide Field",
+     "desc": "Stasis Field +5% area",
+     "effects": [
+      {
+       "stat": "warden.stasis_area",
+       "value": 5
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "warden.p.n2",
+     "name": "Hard Stop",
+     "desc": "Stasis Field +4% power",
+     "effects": [
+      {
+       "stat": "warden.stasis_power",
+       "value": 4
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "warden.p.n1"
+    },
+    {
+     "id": "warden.p.n3",
+     "name": "Judgement",
+     "desc": "+3% damage to Marked enemies",
+     "effects": [
+      {
+       "stat": "MarkDamage",
+       "value": 3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "warden.p.n2"
+    },
+    {
+     "id": "warden.p.n4",
+     "name": "Long Watch",
+     "desc": "Stasis Field lasts 8% longer",
+     "effects": [
+      {
+       "stat": "warden.stasis_duration",
+       "value": 8
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "warden.p.n3"
+    },
+    {
+     "id": "warden.p.n5",
+     "name": "Containment",
+     "desc": "CAPSTONE: Stasis Field lasts 30% longer and Marks last 2 s longer",
+     "effects": [
+      {
+       "stat": "warden.stasis_duration",
+       "value": 30
+      },
+      {
+       "stat": "MarkDuration",
+       "value": 2
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "warden.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "herald",
+   "name": "Choir",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "herald.p.n1",
+     "name": "Projection",
+     "desc": "+3% Inspire gain",
+     "effects": [
+      {
+       "stat": "herald.inspire_gain",
+       "value": 0.3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "herald.p.n2",
+     "name": "Reach",
+     "desc": "+1 m Inspire radius",
+     "effects": [
+      {
+       "stat": "herald.inspire_radius",
+       "value": 1
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "herald.p.n1"
+    },
+    {
+     "id": "herald.p.n3",
+     "name": "Encore",
+     "desc": "Rally Cry lasts 8% longer",
+     "effects": [
+      {
+       "stat": "herald.rally_duration",
+       "value": 8
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "herald.p.n2"
+    },
+    {
+     "id": "herald.p.n4",
+     "name": "March",
+     "desc": "+1% Inspire speed bonus",
+     "effects": [
+      {
+       "stat": "herald.inspire_speed",
+       "value": 1
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "herald.p.n3"
+    },
+    {
+     "id": "herald.p.n5",
+     "name": "Crescendo",
+     "desc": "CAPSTONE: once per level, Rally Cry at full Inspire costs no charge",
+     "effects": [
+      {
+       "stat": "herald.cap_crescendo",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "herald.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "mimic",
+   "name": "Doppelganger",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "mimic.p.n1",
+     "name": "Close Copy",
+     "desc": "+3% copy strength",
+     "effects": [
+      {
+       "stat": "mimic.copy_power",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "mimic.p.n2",
+     "name": "Quick Recall",
+     "desc": "3% faster copy recharge",
+     "effects": [
+      {
+       "stat": "mimic.mimic_cooldown",
+       "value": 3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "mimic.p.n1"
+    },
+    {
+     "id": "mimic.p.n3",
+     "name": "Long Range",
+     "desc": "+1 m copy range",
+     "effects": [
+      {
+       "stat": "mimic.copy_range",
+       "value": 1
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "mimic.p.n2"
+    },
+    {
+     "id": "mimic.p.n4",
+     "name": "Lingering",
+     "desc": "copies last 8% longer",
+     "effects": [
+      {
+       "stat": "mimic.mimic_duration",
+       "value": 8
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "mimic.p.n3"
+    },
+    {
+     "id": "mimic.p.n5",
+     "name": "Perfect Mirror",
+     "desc": "CAPSTONE: once per level, a copy runs at full strength",
+     "effects": [
+      {
+       "stat": "mimic.cap_mirror",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "mimic.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "undertaker",
+   "name": "Necropolis",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "undertaker.p.n1",
+     "name": "Firm Hands",
+     "desc": "+3% revive health",
+     "effects": [
+      {
+       "stat": "undertaker.revive_health",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "undertaker.p.n2",
+     "name": "Pallbearer's Pace",
+     "desc": "+2% speed carrying a head",
+     "effects": [
+      {
+       "stat": "undertaker.head_speed",
+       "value": 2
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "undertaker.p.n1"
+    },
+    {
+     "id": "undertaker.p.n3",
+     "name": "Rites",
+     "desc": "+3 HP to allies revived near you",
+     "effects": [
+      {
+       "stat": "ReviveHeal",
+       "value": 3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "undertaker.p.n2"
+    },
+    {
+     "id": "undertaker.p.n4",
+     "name": "Vigil",
+     "desc": "2% cooldown reduction",
+     "effects": [
+      {
+       "stat": "undertaker.reboot_cooldown",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "undertaker.p.n3"
+    },
+    {
+     "id": "undertaker.p.n5",
+     "name": "Mass Grave",
+     "desc": "CAPSTONE: Reboot revives one more death head at once",
+     "effects": [
+      {
+       "stat": "undertaker.mass",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "undertaker.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "cartwright",
+   "name": "Caravan",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "cartwright.p.n1",
+     "name": "Greased Wheels",
+     "desc": "+3% cart speed",
+     "effects": [
+      {
+       "stat": "cartwright.cart_speed",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "cartwright.p.n2",
+     "name": "Packed Straw",
+     "desc": "cart items take 3% less damage",
+     "effects": [
+      {
+       "stat": "cartwright.cart_guard",
+       "value": 3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "cartwright.p.n1"
+    },
+    {
+     "id": "cartwright.p.n3",
+     "name": "Leash",
+     "desc": "+3% follow speed",
+     "effects": [
+      {
+       "stat": "cartwright.follow_speed",
+       "value": 3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "cartwright.p.n2"
+    },
+    {
+     "id": "cartwright.p.n4",
+     "name": "Long Drive",
+     "desc": "Cart Overdrive lasts 8% longer",
+     "effects": [
+      {
+       "stat": "cartwright.drive_duration",
+       "value": 8
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "cartwright.p.n3"
+    },
+    {
+     "id": "cartwright.p.n5",
+     "name": "Armored Cart",
+     "desc": "CAPSTONE: you take 15% less damage next to your cart",
+     "effects": [
+      {
+       "stat": "cartwright.cart_shelter",
+       "value": 15
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "cartwright.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "physicist",
+   "name": "Gravity Well",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "physicist.p.n1",
+     "name": "Wide Field",
+     "desc": "Zero-G +5% area",
+     "effects": [
+      {
+       "stat": "physicist.zerog_area",
+       "value": 5
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "physicist.p.n2",
+     "name": "Long Float",
+     "desc": "Zero-G lasts 8% longer",
+     "effects": [
+      {
+       "stat": "physicist.zerog_duration",
+       "value": 8
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "physicist.p.n1"
+    },
+    {
+     "id": "physicist.p.n3",
+     "name": "Launch",
+     "desc": "+3% throw strength",
+     "effects": [
+      {
+       "stat": "ThrowStrength",
+       "value": 3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "physicist.p.n2"
+    },
+    {
+     "id": "physicist.p.n4",
+     "name": "Featherlight",
+     "desc": "held items 3% lighter",
+     "effects": [
+      {
+       "stat": "physicist.held_mass",
+       "value": 3
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "physicist.p.n3"
+    },
+    {
+     "id": "physicist.p.n5",
+     "name": "Singularity",
+     "desc": "CAPSTONE: Zero-G Field pulls monsters toward its centre",
+     "effects": [
+      {
+       "stat": "physicist.pull",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "physicist.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "trickster",
+   "name": "Illusionist",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "trickster.p.n1",
+     "name": "Long Bait",
+     "desc": "Decoy Beacon lasts 8% longer",
+     "effects": [
+      {
+       "stat": "trickster.beacon_duration",
+       "value": 8
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "trickster.p.n2",
+     "name": "Wide Pull",
+     "desc": "Decoy Beacon +5% area",
+     "effects": [
+      {
+       "stat": "trickster.beacon_area",
+       "value": 5
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "trickster.p.n1"
+    },
+    {
+     "id": "trickster.p.n3",
+     "name": "Light Feet",
+     "desc": "3% less noise",
+     "effects": [
+      {
+       "stat": "NoiseReduction",
+       "value": 3
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "trickster.p.n2"
+    },
+    {
+     "id": "trickster.p.n4",
+     "name": "Bang",
+     "desc": "beacon pop stun +0.1 s",
+     "effects": [
+      {
+       "stat": "trickster.beacon_bang",
+       "value": 0.1
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "trickster.p.n3"
+    },
+    {
+     "id": "trickster.p.n5",
+     "name": "Mirror Image",
+     "desc": "CAPSTONE: Decoy Beacon pulls from 30% farther and lasts 20% longer",
+     "effects": [
+      {
+       "stat": "trickster.beacon_area",
+       "value": 30
+      },
+      {
+       "stat": "trickster.beacon_duration",
+       "value": 20
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "trickster.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "demolitionist",
+   "name": "Siegebreaker",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "demolitionist.p.n1",
+     "name": "Bigger Bang",
+     "desc": "+3% blast power",
+     "effects": [
+      {
+       "stat": "demolitionist.blast_power",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "demolitionist.p.n2",
+     "name": "Wide Blast",
+     "desc": "+3% blast size",
+     "effects": [
+      {
+       "stat": "demolitionist.blast_size",
+       "value": 3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "demolitionist.p.n1"
+    },
+    {
+     "id": "demolitionist.p.n3",
+     "name": "Stun Charge",
+     "desc": "Breach Charge +4% power",
+     "effects": [
+      {
+       "stat": "demolitionist.breach_power",
+       "value": 4
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "demolitionist.p.n2"
+    },
+    {
+     "id": "demolitionist.p.n4",
+     "name": "Safety Margin",
+     "desc": "+3% blast safety for players",
+     "effects": [
+      {
+       "stat": "demolitionist.blast_safe",
+       "value": 3
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "demolitionist.p.n3"
+    },
+    {
+     "id": "demolitionist.p.n5",
+     "name": "Chain Reaction",
+     "desc": "CAPSTONE: Breach Charge +25% area and +15% power",
+     "effects": [
+      {
+       "stat": "demolitionist.breach_area",
+       "value": 25
+      },
+      {
+       "stat": "demolitionist.breach_power",
+       "value": 15
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "demolitionist.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "quartermaster",
+   "name": "Supply Chain",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "quartermaster.p.n1",
+     "name": "Full Crates",
+     "desc": "Resupply +4% power",
+     "effects": [
+      {
+       "stat": "quartermaster.supply_power",
+       "value": 4
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "quartermaster.p.n2",
+     "name": "Long Arms",
+     "desc": "+1 m hand-off range",
+     "effects": [
+      {
+       "stat": "quartermaster.handoff",
+       "value": 1
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "quartermaster.p.n1"
+    },
+    {
+     "id": "quartermaster.p.n3",
+     "name": "Bulk Rate",
+     "desc": "+1% shop discount",
+     "effects": [
+      {
+       "stat": "quartermaster.discount",
+       "value": 1
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "quartermaster.p.n2"
+    },
+    {
+     "id": "quartermaster.p.n4",
+     "name": "Fast Turnaround",
+     "desc": "2% cooldown reduction",
+     "effects": [
+      {
+       "stat": "quartermaster.supply_cooldown",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "quartermaster.p.n3"
+    },
+    {
+     "id": "quartermaster.p.n5",
+     "name": "Airdrop",
+     "desc": "CAPSTONE: Resupply reaches 40% farther",
+     "effects": [
+      {
+       "stat": "quartermaster.supply_area",
+       "value": 40
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "quartermaster.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "gambler",
+   "name": "High Stakes",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "gambler.p.n1",
+     "name": "Raise",
+     "desc": "+0.05x top bet multiplier",
+     "effects": [
+      {
+       "stat": "gambler.bet_maxmult",
+       "value": 0.05
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "gambler.p.n2",
+     "name": "Blessed",
+     "desc": "+2% blessing strength",
+     "effects": [
+      {
+       "stat": "gambler.bless_power",
+       "value": 2
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "gambler.p.n1"
+    },
+    {
+     "id": "gambler.p.n3",
+     "name": "Hedge",
+     "desc": "+2% bet insurance",
+     "effects": [
+      {
+       "stat": "gambler.bet_insure",
+       "value": 2
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "gambler.p.n2"
+    },
+    {
+     "id": "gambler.p.n4",
+     "name": "Skim",
+     "desc": "+1% Scrap share",
+     "effects": [
+      {
+       "stat": "ScrapBonus",
+       "value": 1
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "gambler.p.n3"
+    },
+    {
+     "id": "gambler.p.n5",
+     "name": "Jackpot",
+     "desc": "CAPSTONE: +0.3x top bet multiplier",
+     "effects": [
+      {
+       "stat": "gambler.bet_maxmult",
+       "value": 0.3
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "gambler.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "bloodbound",
+   "name": "Crimson Pact",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "bloodbound.p.n1",
+     "name": "Cheap Blood",
+     "desc": "Blood Price costs 0.3 HP less",
+     "effects": [
+      {
+       "stat": "bloodbound.leech",
+       "value": 0.3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "bloodbound.p.n2",
+     "name": "Dark Pact",
+     "desc": "Blood Pact +4% power",
+     "effects": [
+      {
+       "stat": "bloodbound.pact_power",
+       "value": 4
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "bloodbound.p.n1"
+    },
+    {
+     "id": "bloodbound.p.n3",
+     "name": "Sip",
+     "desc": "+0.5% lifesteal",
+     "effects": [
+      {
+       "stat": "Lifesteal",
+       "value": 0.5
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "bloodbound.p.n2"
+    },
+    {
+     "id": "bloodbound.p.n4",
+     "name": "Long Pact",
+     "desc": "Blood Pact lasts 8% longer",
+     "effects": [
+      {
+       "stat": "bloodbound.pact_duration",
+       "value": 8
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "bloodbound.p.n3"
+    },
+    {
+     "id": "bloodbound.p.n5",
+     "name": "Sanguine Bond",
+     "desc": "CAPSTONE: Blood Pact +20% power and Blood Price 1 HP cheaper",
+     "effects": [
+      {
+       "stat": "bloodbound.pact_power",
+       "value": 20
+      },
+      {
+       "stat": "bloodbound.leech",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "bloodbound.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "instigator",
+   "name": "Ringleader",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "instigator.p.n1",
+     "name": "Bad Temper",
+     "desc": "Bad Blood fights last 0.5s longer",
+     "effects": [
+      {
+       "stat": "instigator.bad_blood",
+       "value": 0.5
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "instigator.p.n2",
+     "name": "Loud Mouth",
+     "desc": "Provoke marks from 5% farther",
+     "effects": [
+      {
+       "stat": "instigator.provoke_area",
+       "value": 5
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "instigator.p.n1"
+    },
+    {
+     "id": "instigator.p.n3",
+     "name": "Bruiser",
+     "desc": "Provoked fights hit 5% harder",
+     "effects": [
+      {
+       "stat": "instigator.provoke_power",
+       "value": 5
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "instigator.p.n2"
+    },
+    {
+     "id": "instigator.p.n4",
+     "name": "Hot Seat",
+     "desc": "Provoke cooldown -4%",
+     "effects": [
+      {
+       "stat": "instigator.provoke_cooldown",
+       "value": 4
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "instigator.p.n3"
+    },
+    {
+     "id": "instigator.p.n5",
+     "name": "Main Event",
+     "desc": "CAPSTONE: Provoke lasts 20% longer and Ringside adds 10% more",
+     "effects": [
+      {
+       "stat": "instigator.provoke_duration",
+       "value": 20
+      },
+      {
+       "stat": "instigator.ringside",
+       "value": 10
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "instigator.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "ventriloquist",
+   "name": "Puppeteer",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "ventriloquist.p.n1",
+     "name": "Long Echo",
+     "desc": "Echo lasts 8% longer",
+     "effects": [
+      {
+       "stat": "ventriloquist.echo_duration",
+       "value": 8
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "ventriloquist.p.n2",
+     "name": "Wide Echo",
+     "desc": "Echo +5% area",
+     "effects": [
+      {
+       "stat": "ventriloquist.echo_area",
+       "value": 5
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "ventriloquist.p.n1"
+    },
+    {
+     "id": "ventriloquist.p.n3",
+     "name": "Far Throw",
+     "desc": "+1 m thrown voice",
+     "effects": [
+      {
+       "stat": "ventriloquist.throw_dist",
+       "value": 1
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "ventriloquist.p.n2"
+    },
+    {
+     "id": "ventriloquist.p.n4",
+     "name": "Quick Echo",
+     "desc": "2% cooldown reduction",
+     "effects": [
+      {
+       "stat": "ventriloquist.echo_cooldown",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "ventriloquist.p.n3"
+    },
+    {
+     "id": "ventriloquist.p.n5",
+     "name": "Ventriloquist's Dummy",
+     "desc": "CAPSTONE: Echo makes a second echo point beside the first",
+     "effects": [
+      {
+       "stat": "ventriloquist.double_echo",
+       "value": 4
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "ventriloquist.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "restorer",
+   "name": "Curator",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "restorer.p.n1",
+     "name": "Deep Mend",
+     "desc": "Mend +4% power",
+     "effects": [
+      {
+       "stat": "restorer.mend_power",
+       "value": 4
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "restorer.p.n2",
+     "name": "Gentle Care",
+     "desc": "Steady Hands mends 0.3% more",
+     "effects": [
+      {
+       "stat": "restorer.mend_rate",
+       "value": 0.3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "restorer.p.n1"
+    },
+    {
+     "id": "restorer.p.n3",
+     "name": "Wide Mend",
+     "desc": "Mend +5% area",
+     "effects": [
+      {
+       "stat": "restorer.mend_area",
+       "value": 5
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "restorer.p.n2"
+    },
+    {
+     "id": "restorer.p.n4",
+     "name": "Careful",
+     "desc": "+2% protection on held items",
+     "effects": [
+      {
+       "stat": "restorer.protect",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "restorer.p.n3"
+    },
+    {
+     "id": "restorer.p.n5",
+     "name": "Masterwork",
+     "desc": "CAPSTONE: valuables you hold take 12% less damage",
+     "effects": [
+      {
+       "stat": "restorer.protect",
+       "value": 12
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "restorer.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "scavenger",
+   "name": "Treasure Hunter",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "scavenger.p.n1",
+     "name": "Keener Eye",
+     "desc": "+1% Keen Eye chance",
+     "effects": [
+      {
+       "stat": "scavenger.find_chance",
+       "value": 1
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "scavenger.p.n2",
+     "name": "Quick Hands",
+     "desc": "Rummage 3% faster",
+     "effects": [
+      {
+       "stat": "scavenger.rummage_speed",
+       "value": 3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "scavenger.p.n1"
+    },
+    {
+     "id": "scavenger.p.n3",
+     "name": "Quality Finds",
+     "desc": "finds +2% value",
+     "effects": [
+      {
+       "stat": "scavenger.find_value",
+       "value": 2
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "scavenger.p.n2"
+    },
+    {
+     "id": "scavenger.p.n4",
+     "name": "Dig Deep",
+     "desc": "Rummage +4% power",
+     "effects": [
+      {
+       "stat": "scavenger.rummage_power",
+       "value": 4
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "scavenger.p.n3"
+    },
+    {
+     "id": "scavenger.p.n5",
+     "name": "Motherlode",
+     "desc": "CAPSTONE: Rummage 1 more charge per level",
+     "effects": [
+      {
+       "stat": "scavenger.rummage_charges",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "scavenger.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "insurer",
+   "name": "Actuary",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "insurer.p.n1",
+     "name": "Better Terms",
+     "desc": "+2% coverage",
+     "effects": [
+      {
+       "stat": "insurer.cover_pct",
+       "value": 2
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "insurer.p.n2",
+     "name": "Short Policy",
+     "desc": "Policy needs 3% less distance",
+     "effects": [
+      {
+       "stat": "insurer.policy_dist",
+       "value": -3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "insurer.p.n1"
+    },
+    {
+     "id": "insurer.p.n3",
+     "name": "Wide Cover",
+     "desc": "+1 m coverage radius",
+     "effects": [
+      {
+       "stat": "insurer.cover_radius",
+       "value": 1
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "insurer.p.n2"
+    },
+    {
+     "id": "insurer.p.n4",
+     "name": "Bonded",
+     "desc": "+2% guard on held items",
+     "effects": [
+      {
+       "stat": "insurer.held_guard",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "insurer.p.n3"
+    },
+    {
+     "id": "insurer.p.n5",
+     "name": "Reinsurance",
+     "desc": "CAPSTONE: +6% coverage and 1 more Policy slot",
+     "effects": [
+      {
+       "stat": "insurer.cover_pct",
+       "value": 6
+      },
+      {
+       "stat": "insurer.policy_slots",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "insurer.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "lookout",
+   "name": "Sentinel",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "lookout.p.n1",
+     "name": "Long Post",
+     "desc": "Watchpost lasts 8% longer",
+     "effects": [
+      {
+       "stat": "lookout.watchpost_duration",
+       "value": 8
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "lookout.p.n2",
+     "name": "Wide Eyes",
+     "desc": "+1 m Spotter radius",
+     "effects": [
+      {
+       "stat": "lookout.spot_radius",
+       "value": 1
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "lookout.p.n1"
+    },
+    {
+     "id": "lookout.p.n3",
+     "name": "Fast Rebuild",
+     "desc": "2% cooldown reduction",
+     "effects": [
+      {
+       "stat": "lookout.watchpost_cooldown",
+       "value": 2
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "lookout.p.n2"
+    },
+    {
+     "id": "lookout.p.n4",
+     "name": "Far Sight",
+     "desc": "+2 m threat label range",
+     "effects": [
+      {
+       "stat": "lookout.spot_range",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "lookout.p.n3"
+    },
+    {
+     "id": "lookout.p.n5",
+     "name": "Early Warning",
+     "desc": "CAPSTONE: Watchposts flash monsters they ping",
+     "effects": [
+      {
+       "stat": "lookout.flash",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "lookout.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "gunsmith",
+   "name": "Armory",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "gunsmith.p.n1",
+     "name": "Efficient",
+     "desc": "3% battery saving",
+     "effects": [
+      {
+       "stat": "gunsmith.battery_save",
+       "value": 3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "gunsmith.p.n2",
+     "name": "Long Overclock",
+     "desc": "Overclock lasts 8% longer",
+     "effects": [
+      {
+       "stat": "gunsmith.overclock_duration",
+       "value": 8
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "gunsmith.p.n1"
+    },
+    {
+     "id": "gunsmith.p.n3",
+     "name": "Hot Rounds",
+     "desc": "Overclock +4% power",
+     "effects": [
+      {
+       "stat": "gunsmith.overclock_power",
+       "value": 4
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "gunsmith.p.n2"
+    },
+    {
+     "id": "gunsmith.p.n4",
+     "name": "Bench Work",
+     "desc": "Field Charger +3% faster",
+     "effects": [
+      {
+       "stat": "gunsmith.charge_rate",
+       "value": 0.3
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "gunsmith.p.n3"
+    },
+    {
+     "id": "gunsmith.p.n5",
+     "name": "Hot Swap",
+     "desc": "CAPSTONE: Overclock lasts 30% longer and has 1 more charge",
+     "effects": [
+      {
+       "stat": "gunsmith.overclock_duration",
+       "value": 30
+      },
+      {
+       "stat": "gunsmith.overclock_charges",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "gunsmith.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "shepherd",
+   "name": "Flockmaster",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "shepherd.p.n1",
+     "name": "Long Calm",
+     "desc": "Pacify lasts 8% longer",
+     "effects": [
+      {
+       "stat": "shepherd.pacify_duration",
+       "value": 8
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "shepherd.p.n2",
+     "name": "Wide Calm",
+     "desc": "+1 m Calm Presence radius",
+     "effects": [
+      {
+       "stat": "shepherd.calm_radius",
+       "value": 1
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "shepherd.p.n1"
+    },
+    {
+     "id": "shepherd.p.n3",
+     "name": "Slow to Wake",
+     "desc": "Calm Presence +0.1 s",
+     "effects": [
+      {
+       "stat": "shepherd.calm_delay",
+       "value": 0.1
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "shepherd.p.n2"
+    },
+    {
+     "id": "shepherd.p.n4",
+     "name": "Patience",
+     "desc": "2% cooldown reduction",
+     "effects": [
+      {
+       "stat": "shepherd.pacify_cooldown",
+       "value": 2
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "shepherd.p.n3"
+    },
+    {
+     "id": "shepherd.p.n5",
+     "name": "Lullaby",
+     "desc": "CAPSTONE: Pacify also calms one more monster nearby",
+     "effects": [
+      {
+       "stat": "shepherd.flock",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "shepherd.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "grappler",
+   "name": "Rigger",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "grappler.p.n1",
+     "name": "Long Line",
+     "desc": "Hook +5% range",
+     "effects": [
+      {
+       "stat": "grappler.hook_area",
+       "value": 5
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "grappler.p.n2",
+     "name": "Long Reach",
+     "desc": "+3% Long Reach",
+     "effects": [
+      {
+       "stat": "grappler.reach",
+       "value": 3
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "grappler.p.n1"
+    },
+    {
+     "id": "grappler.p.n3",
+     "name": "Fast Reel",
+     "desc": "Hook +4% power",
+     "effects": [
+      {
+       "stat": "grappler.hook_power",
+       "value": 4
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "grappler.p.n2"
+    },
+    {
+     "id": "grappler.p.n4",
+     "name": "Light Lift",
+     "desc": "+0.5 kg counts as small",
+     "effects": [
+      {
+       "stat": "grappler.heavy",
+       "value": 0.5
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "grappler.p.n3"
+    },
+    {
+     "id": "grappler.p.n5",
+     "name": "Swing",
+     "desc": "CAPSTONE: Hook gets 1 more charge",
+     "effects": [
+      {
+       "stat": "grappler.hook_charges",
+       "value": 1
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "grappler.p.n4"
+    }
+   ]
+  },
+  {
+   "class": "courier",
+   "name": "Postmaster",
+   "desc": "Prestige tree (unlocked by mastering the class).",
+   "nodes": [
+    {
+     "id": "courier.p.n1",
+     "name": "Express Lane",
+     "desc": "Dispatch countdown -0.3s",
+     "effects": [
+      {
+       "stat": "courier.countdown_less",
+       "value": 0.3
+      }
+     ],
+     "tier": 1,
+     "maxRank": 3,
+     "unlockLevel": 5,
+     "capstone": false,
+     "requires": ""
+    },
+    {
+     "id": "courier.p.n2",
+     "name": "Wide Pad",
+     "desc": "The Drop Pad holds 1 more item",
+     "effects": [
+      {
+       "stat": "courier.pad_slots",
+       "value": 1
+      }
+     ],
+     "tier": 2,
+     "maxRank": 3,
+     "unlockLevel": 10,
+     "capstone": false,
+     "requires": "courier.p.n1"
+    },
+    {
+     "id": "courier.p.n3",
+     "name": "Thick Box",
+     "desc": "Tagged items hum 5% quieter",
+     "effects": [
+      {
+       "stat": "courier.hum_quiet",
+       "value": 5
+      }
+     ],
+     "tier": 3,
+     "maxRank": 3,
+     "unlockLevel": 15,
+     "capstone": false,
+     "requires": "courier.p.n2"
+    },
+    {
+     "id": "courier.p.n4",
+     "name": "Swift Return",
+     "desc": "Dispatch cooldown -4%",
+     "effects": [
+      {
+       "stat": "courier.dispatch_cooldown",
+       "value": 4
+      }
+     ],
+     "tier": 4,
+     "maxRank": 3,
+     "unlockLevel": 20,
+     "capstone": false,
+     "requires": "courier.p.n3"
+    },
+    {
+     "id": "courier.p.n5",
+     "name": "Next-Day Air",
+     "desc": "CAPSTONE: Dispatch countdown -2s and dispatched items arrive worth 5% more",
+     "effects": [
+      {
+       "stat": "courier.countdown_less",
+       "value": 2
+      },
+      {
+       "stat": "courier.arrive_value",
+       "value": 5
+      }
+     ],
+     "tier": 5,
+     "maxRank": 1,
+     "unlockLevel": 25,
+     "capstone": true,
+     "requires": "courier.p.n4"
+    }
+   ]
+  }
+ ]
+}

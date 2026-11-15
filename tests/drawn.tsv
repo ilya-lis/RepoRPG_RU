@@ -1,0 +1,352 @@
+# Texts as the mod puts them on the screen when the code itself was left alone: what a host sends (notices, refusals,
+# the recap, the highlights card), popups glued from a number and a reason, labels the mod shortens or shouts.
+# English as it arrives<TAB>what the player must see. Checked by tests/langcheck.sh together with the generated samples.
+#
+# the recap of a run and the highlights card (put together by the host)
+Most valuable carried: Bob ($12,345)	Самый ценный груз: Bob ($12,345)
+Fewest deaths: Alice (0)	Меньше всего смертей: Alice (0)
+Most Scrap earned: Bob (1,240)	Больше всего заработано лома: Bob (1,240)
+Clutch revive	Возрождение в последний момент
+revived a teammate in 12 s	возродил напарника за 12 с
+$2,340 carried to extraction	$2,340 донесено до извлечения
+$2,340 carried to extraction (level 3)	$2,340 донесено до извлечения (уровень 3)
+3 contracts completed	выполнено контрактов: 3
+1 contract completed	выполнено контрактов: 1
+took 150 damage and walked out	получил 150 урона и ушёл на своих ногах
+1.5 min with a synergy on	1.5 мин с активной синергией
+not a scratch, $1,200 carried	ни царапины и $1,200 груза
+# team contracts and the sponsor (shared state)
+Team contract accepted: Big Haul	Командный контракт принят: Большая добыча
+Team contract declined: Big Haul - no reward, no stakes	Командный контракт отклонён: Большая добыча - ни награды, ни ставок
+Team contract complete: Big Haul!	Командный контракт выполнен: Большая добыча!
+Team contract failed: Big Haul	Командный контракт провален: Большая добыча
+Finish 6 contracts as a team: 3/6	Выполните контракты командой (6): 3/6
+Lose no more than 2 lives in the whole team (and clear 5 levels): 1 lost so far	Жизней, потерянных всей командой, - не больше 2 (и пройдите 5 уровней): пока потеряно 1
+Reach a streak of 5 levels: paid out	Достигните серии уровней (5): выплачено
+Sponsor: Brass - Finish 6 contracts as a team	Спонсор: Brass - Выполните контракты командой (6)
+# Scrap popups: a number, the short name of the currency and a reason the host sent
++25 Scrap – starter tool	+25 лома – стартовый инструмент
++120 Scrap – Valuables extracted	+120 лома – Ценности извлечены
++120 Scrap – Level haul (x2)	+120 лома – Добыча за уровень (x2)
++1,250 Scrap – Team earnings	+1,250 лома – Заработок команды
++10 Scrap – Gift from Bob	+10 лома – Подарок от Bob
+-10 Scrap – Gift to Bob	-10 лома – Подарок для Bob
+-40 Scrap – Team contract failed	-40 лома – Командный контракт провален
+-40 Scrap – Auditor contract failed	-40 лома – Контракт Аудитора провален
++8.5 Scrap – Rival contract	+8.5 лома – Контракт соперничества
+# refusals: the reason comes from the host, the words in front of it are the client's own (already Russian or not)
+Gift failed: that player isn't here	Не удалось подарить: этого игрока здесь нет
+Gift failed: gifting is turned off by the host	Не удалось подарить: дарение отключено хостом
+Gift failed: no save loaded	Не удалось подарить: сохранение не загружено
+Gift failed: not verified	Не удалось подарить: не подтверждено
+Gift failed: abc	Не удалось подарить: abc
+Характеристики не применены: nothing to apply	Характеристики не применены: нечего применять
+Attributes not applied: the host is on a different save	Характеристики не применены: у хоста другое сохранение
+Характеристики не применены: only 2 attribute points left	Характеристики не применены: осталось очков характеристик: всего 2
+Перки не применены: that perk was banished	Перки не применены: этот перк изгнан
+Таланты не применены: Quick Hands needs Steady Grip	Таланты не применены: Быстрые руки: требуется Твёрдый хват
+Таланты не применены: Quick Hands unlocks at level 5	Таланты не применены: Быстрые руки: открывается на уровне 5
+Talents not applied: you aren't playing Medic	Таланты не применены: вы играете не за класс Медик
+Taken by Bob - you're still on No class	Занят: Bob - вы по-прежнему без класса
+Couldn't take that class: class selection is only open in the lobby or shop - you're still on No class	Не удалось взять этот класс: выбор класса открыт только в лобби или магазине - вы по-прежнему без класса
+# the chapter label: the mod shortens it (Replace("Chapter ", "CH ")) and shouts it (ToUpperInvariant)
+CH 2/5	ГЛ. 2/5
+CHAPTER 2/5	ГЛАВА 2/5
+Chapter 2/5	Глава 2/5
+FINALE - CHAPTER 2/5	ФИНАЛ - ГЛАВА 2/5
+ФИНАЛ - CHAPTER 2/5	ФИНАЛ - ГЛАВА 2/5
+MILESTONE LEVEL - CHAPTER 2/5	ЭТАПНЫЙ УРОВЕНЬ - ГЛАВА 2/5
+Chapter 2/5 - The Depths · next milestone: 3 levels	Глава 2/5 - The Depths · до следующего этапа уровней: 3
+ENDLESS 3	БЕСКОНЕЧНЫЙ РЕЖИМ 3
+# notes of the run (the tag in front is cut off by the mod before it shows them)
+FINALE - SECOND PHASE: Overlord is enraged!	ФИНАЛ - ВТОРАЯ ФАЗА: Владыка в ярости!
+FINALE - SECOND PHASE: Overlord is enraged and calls Brute to its side!	ФИНАЛ - ВТОРАЯ ФАЗА: Владыка в ярости и зовёт на помощь: Громила!
+Starter tool: 2x Wrench at your feet	Стартовый инструмент: 2x Wrench у ваших ног
+Starter tool unavailable (wrench): +25 Scrap instead	Стартовый инструмент недоступен (wrench): взамен +25 лома
+# the names of enum values the mod prints as they are
+Performance: Low	Производительность: Минимум
+Performance: Auto	Производительность: Авто
+Medium (47 FPS in the first minute)	Средне (47 FPS за первую минуту)
+# must stay as they are: a short pattern may not take what it has no translation for
+Skip to next level	Skip to next level
+team contract kill	team contract kill
+# notices of the mod's self-checks: the sentence is translated, the names of the features stay as the log has them
+RepoRPG: this game version changed something - off: kill XP, revive XP and heals. See the log.	RepoRPG: в этой версии игры что-то изменилось - отключено: kill XP, revive XP and heals. См. журнал.
+RepoRPG: 'contracts level end, EnemyHurtPatch' hit an error and was switched off until the next level. The rest of the mod keeps working.	RepoRPG: в функции «contracts level end, EnemyHurtPatch» произошла ошибка, и она отключена до следующего уровня. Остальная часть мода продолжает работать.
+Late join: Late Join Fix by somebody (v1.2) handles joining; RepoRPG catches joiners up	Позднее подключение: подключением занимается Late Join Fix by somebody (v1.2); RepoRPG помогает новичкам догнать команду
++150 Scrap – Late-join starting Scrap	+150 лома – Стартовый лом за позднее подключение
+MARKET REPORT: Prices steady\n<color=#9a9ca0>Shop tab > Market for every price</color>	СВОДКА РЫНКА: Цены стабильны\n<color=#9a9ca0>Все цены: вкладка «Магазин» > «Рынок»</color>
+# a number belongs here and nothing else ("numbers" marks worked out from the mod's code)
+2 players	игроков: 2
+more players	more players
+dead players	dead players
+50 XP	50 опыта
+kill XP	kill XP
+3 perk picks	выборов перка: 3
+Grant perk pick	Grant perk pick
+Milestone 3	Этап 3
+milestone data	milestone data
+Tier 3	Ранг 3
++2 extra jumps	+2 к доп. прыжкам
+more extra jumps	more extra jumps
+ENDLESS mode	ENDLESS mode
+late join: dead players	late join: dead players
+Herald: hold to hum.	Глашатай: удерживайте, чтобы гудеть.
+# a word of the mod's own belongs here ("words" marks, translation/ru/extra.tsv)
+Rare gear	Редкое снаряжение
+Legendary gear	Легендарное снаряжение
+Spawn gear	Spawn gear
+Legendary+ gear	Легендарный+ предмет
+a Rare item	Редкий предмет
+Rare perk	Редкий перк
+Go to Shop	Перейти: Магазин
+Go to hell	Go to hell
+ · resists Fire	 · сопротивление: Огонь
+ · weak to Void	 · слабость: Пустота
+Rare Strength upgrade	Редкое улучшение: Strength
+shared upgrades	shared upgrades
+shared upgrade	shared upgrade
+# late join: where the player joined is one of three texts of the mod
+Bob joined mid-level	Bob присоединяется посреди уровня
+Bob joined in the shop	Bob присоединяется в магазине
+Bob joined the dark side	Bob joined the dark side
+A player присоединяется в магазине	Игрок присоединяется в магазине
+You joined mid-level - welcome back, Medic Lv 3	Вы присоединились посреди уровня - с возвращением, Медик ур. 3
+RepoRPG: this game version changed something - off: kill XP, revive XP, heals, team XP, cart hooks, map hooks and 3 more. See the log.	RepoRPG: в этой версии игры что-то изменилось - отключено: kill XP, revive XP, heals, team XP, cart hooks, map hooks и ещё 3. См. журнал.
+Авто: выбрано - Medium (47 FPS за первую минуту).	Авто: выбрано - Средне (47 FPS за первую минуту).
+Авто: выбрано - Medium (47 FPS in the first minute).	Авто: выбрано - Средне (47 FPS за первую минуту).
+Auto: picked Medium (47 FPS in the first minute).	Авто: выбрано - Средне (47 FPS за первую минуту).
+Medium (47 FPS in the first minute)	Средне (47 FPS за первую минуту)
+# what the game really showed untranslated (untranslated.txt of the first run): names and texts from the mod's data
+JUGGERNAUT	ДЖАГГЕРНАУТ
+[F] IRON WALL	[F] ЖЕЛЕЗНАЯ СТЕНА
+★ LIVING FORTRESS	★ ЖИВАЯ КРЕПОСТЬ
+THROW STRENGTH  <color=#ffb21e>0</color>/20	СИЛА БРОСКА  <color=#ffb21e>0</color>/20
+Throw 20	Бросок 20
+<color=#9a9ca0>Grip 0</color>	<color=#9a9ca0>Хват 0</color>
+COMBAT 100	БОЙ 100
+x3: carried items take 8% less damage	x3: переносимые предметы получают на 8% меньше урона
+<color=#a3a6ad>x5: below 25% health, +10% weapon damage</color>	<color=#a3a6ad>x5: при здоровье ниже 25%: +10% к урону оружия</color>
+x5: with 2+ ability charges, they refill 10% faster (inside the cooldown cap)	x5: при 2+ зарядах способности они восполняются на 10% быстрее (в рамках предела перезарядки)
++25% Scrap share, but you lose 5 HP at every extraction.	+25% к доле лома, но при каждом извлечении вы теряете 5 ОЗ.
++00% Scrap share, but you lose 0 HP at every extraction.	+00% к доле лома, но при каждом извлечении вы теряете 0 ОЗ.
++35% Scrap share, but you lose 8 HP at every extraction.	+35% к доле лома, но при каждом извлечении вы теряете 8 ОЗ.
+Lock your plating: take 00% less damage for 0s, and your Shield Wall protects allies 00% more.	Зафиксируйте броню: на 0 с вы получаете на 00% меньше урона, а «Стена щитов» защищает союзников на 00% сильнее.
+Madame Brass	Мадам Брасс
+HOLLIS UNDERWOOD	ХОЛЛИС АНДЕРВУД
+<color=#a3a6ad>None yet. Perks with a challenge show their progress on their card.</color>	<color=#a3a6ad>Пока нет. Перки с испытанием показывают прогресс на своей карточке.</color>
+SELECT A SETTING	ВЫБЕРИТЕ НАСТРОЙКУ
+> MINIMAL	> МИНИМАЛЬНЫЙ
+WASD	WASD
+Accepted: Exterminate - Kaboom & Sons: "Earplugs are in the truck."	Принят: Истребление - Бабах и сыновья: «Беруши в грузовике.»
+Принят: Speedrun - Диспетчерская: "Route's mapped. Clock's running."	Принят: Спидран - Диспетчерская: «Маршрут проложен. Часы идут.»
+Контракт выполнен: Speedrun + бонус! - "On time. The Union salutes you."	Контракт выполнен: Спидран + бонус! - «Вовремя. Союз салютует вам.»
+Контракт провален: Speedrun (время вышло) - "Union rule 1: don't be late."	Контракт провален: Спидран (время вышло) - «Правило Союза № 1: не опаздывать.»
+<color=#9a9ca0>Next:</color> <i>"One could be luck. Two is a habit."</i>	<color=#9a9ca0>Далее:</color> <i>«Одна - может быть везением. Две - уже привычка.»</i>
+<i><color=#c8c8c8>Madame Brass: "I'm filing this under 'regrettable'."</color></i>	<i><color=#c8c8c8>Мадам Брасс: «Подошью это в папку „прискорбное“.»</color></i>
+<color=#9a9ca0><i>"It doesn't cut. It invites."</i></color>	<color=#9a9ca0><i>«Он не режет. Он приглашает.»</i></color>
+Заказчик · the Courier Union	Заказчик · Союз курьеров
+Элита: Armored Swift Brutish Vampiric Warlord  12 м	Элита: Бронированный Быстрый Свирепый Вампирический Военачальник  12 м
+Champion: Armored Swift  12m	Чемпион: Бронированный Быстрый  12 м
+curse next level: Marked (Elite chance +15%)	проклятие на следующем уровне: Метка (Шанс элиты +15%)
+GRINDLE THE UNBROKEN IS DOWN!	ГРИНДЛ НЕСЛОМЛЕННЫЙ - БОСС ПОВЕРЖЕН!
+MILESTONE BOSS: Madame Ohm the Night Manager  -  Armored Enraged	ЭТАПНЫЙ БОСС: Мадам Ом Ночная Управляющая  -  Бронированный Разъярённый
+БОСС Rustmaw the Fine Print: Armored Enraged · сопротивление: Rot  12 м	БОСС Ржавая Пасть Мелкий Шрифт: Бронированный Разъярённый · сопротивление: Гниение  12 м
+# names the mod builds from words (a rarity, "Starter", "Cursed", a behaviour, the thing, whose it is): put together in
+# agreement when drawn. The heads are Russian already where the mod's code is rewritten ("EQUIP " -> «НАДЕТЬ: »)
+Rare Sharp Striker Module of the Brawler	Редкий острый ударный модуль драчуна
+Uncommon Impact Gauntlet	Необычная боевая перчатка
+Common Ration Core	Обычное пайковое ядро
+Uncommon Light Servos	Необычные лёгкие сервоприводы
+Legendary Final Notice	Легендарное последнее уведомление
+Legendary The Negotiator	Легендарный переговорщик
+Starter Reinforced Plating	Стартовая усиленная броня
+Cursed Hungering Edge	Проклятое голодное лезвие
+Cursed Sharp Striker Module of the Brawler	Проклятый острый ударный модуль драчуна
+Rare Cursed Heavy Riot Plating	Редкая проклятая тяжёлая штурмовая броня
+Static Field Quantum Core of the Sage	Электростатическое квантовое ядро мудреца
+Epic Prototype Mender Plating	Эпический прототип: ремонтная броня
+SHARP STRIKER MODULE OF THE BRAWLER	ОСТРЫЙ УДАРНЫЙ МОДУЛЬ ДРАЧУНА
+Sharp Striker Module +2	Острый ударный модуль +2
+<color=#4FA3FF><b>Rare Impact Gauntlet of the Sage</b></color> <color=#9a9ca0>(Weapon Module)</color>  +5% weapon damage	<color=#4FA3FF><b>Редкая боевая перчатка мудреца</b></color> <color=#9a9ca0>(Оружейный модуль)</color>  +5% к урону оружия
+<color=#4FA3FF><b>Rare Swift Leg Servos</b></color>   Крафт 1/3   Повышений редкости 0/2	<color=#4FA3FF><b>Редкие быстрые ножные сервоприводы</b></color>   Крафт 1/3   Повышений редкости 0/2
+<color=#9a9ca0>Rare Plating</color>  <color=#7fb8ff>Надето</color>	<color=#9a9ca0>Редкая броня</color>  <color=#7fb8ff>Надето</color>
+Legendary Core: +5% XP · +3% sprint speed	Легендарное ядро: +5% опыта · +3% к скорости бега
+Найдено: Rare Swift Leg Servos [комплект Mover's] (extraction)	Найдено: Редкие быстрые ножные сервоприводы [комплект Перевозчик] (извлечение)
+Found Rare Swift Leg Servos (extraction)	Найдено: Редкие быстрые ножные сервоприводы (извлечение)
+Upgraded: Epic Quantum Core	Улучшено: Эпическое квантовое ядро
+Rerolled: Epic Quantum Core	Переброшено: Эпическое квантовое ядро
+НАДЕТЬ: CURSED IMPACT GAUNTLET?	НАДЕТЬ: ПРОКЛЯТАЯ БОЕВАЯ ПЕРЧАТКА?
+EQUIP SHARP STRIKER MODULE OF THE BRAWLER?	НАДЕТЬ: ОСТРЫЙ УДАРНЫЙ МОДУЛЬ ДРАЧУНА?
+ПЕРЕБРОСИТЬ: HEAVY RIOT PLATING?	ПЕРЕБРОСИТЬ: ТЯЖЁЛАЯ ШТУРМОВАЯ БРОНЯ?
+УЛУЧШИТЬ: SHARP STRIKER MODULE ДО +2?	УЛУЧШИТЬ: ОСТРЫЙ УДАРНЫЙ МОДУЛЬ ДО +2?
+Разобрать предмет «Rare Impact Gauntlet» за +12 лома? Это нельзя отменить.	Разобрать предмет «Редкая боевая перчатка» за +12 лома? Это нельзя отменить.
+Разобрать предмет «Starter Reinforced Plating» за +2 лома? Это нельзя отменить.	Разобрать предмет «Стартовая усиленная броня» за +2 лома? Это нельзя отменить.
+Salvage Rare Impact Gauntlet for +12 Scrap? This can't be undone.	Разобрать предмет «Редкая боевая перчатка» за +12 лома? Это нельзя отменить.
+Слить 3: Rare Plating	Слить 3: Редкая броня
+Слить Sharp Striker Module, Swift Striker Module, Heavy Striker Module в один предмет: Epic Weapon Module? Все три будут израсходованы (их модули вернутся в вашу сумку). Это нельзя отменить.	Слить Острый ударный модуль, Быстрый ударный модуль, Тяжёлый ударный модуль в один предмет: Эпический оружейный модуль? Все три будут израсходованы (их модули вернутся в вашу сумку). Это нельзя отменить.
+Couldn't buy Sharp Striker Module of the Brawler: not enough Scrap	Не удалось купить «Острый ударный модуль драчуна»: не хватает лома
+Couldn't salvage Heavy Riot Plating: unequip it first	Не удалось разобрать «Тяжёлая штурмовая броня»: сначала снимите предмет
+Couldn't salvage Heavy Riot Plating: сначала снимите предмет	Не удалось разобрать «Тяжёлая штурмовая броня»: сначала снимите предмет
+Выкупить «Swift Leg Servos» за 30 лома?	Выкупить «Быстрые ножные сервоприводы» за 30 лома?
+Лаборатория прототипов: Prototype Capacitor Weapon Module - в разделе «Снаряжение»	Лаборатория прототипов: Прототип: конденсаторный оружейный модуль - в разделе «Снаряжение»
+Cursed: -10% max health	Проклятие: -10% к макс. здоровью
+Slotted Spark Plug into Sharp Striker Module of the Brawler	Вставлено: Свеча зажигания - в предмет «Острый ударный модуль драчуна»
+Upgraded Heavy Riot Plating to Epic	Улучшено: Тяжёлая штурмовая броня - редкость теперь эпическая
+Rerolled a line on Heavy Riot Plating: +5% max health	Переброшено свойство предмета «Тяжёлая штурмовая броня»: +5% к макс. здоровью
+Крафт: Повысить параметр - «Heavy Riot Plating» (1/3)	Крафт: Повысить параметр - «Тяжёлая штурмовая броня» (1/3)
+Couldn't pawn Heavy Riot Plating: unequip it first	Не удалось заложить «Тяжёлая штурмовая броня»: сначала снимите предмет
+Повышает редкость до «Epic» и перебрасывает	Повышает редкость до «Эпический» и перебрасывает
+Улучшить «Heavy Riot Plating» до редкости «Epic» за 40 лома и 2 осколка ядра?	Улучшить «Тяжёлая штурмовая броня» до редкости «Эпический» за 40 лома и 2 осколка ядра?
++20 к сонастройке предмета «Swift Leg Servos» за 25 лома?	+20 к сонастройке предмета «Быстрые ножные сервоприводы» за 25 лома?
+У вас 4. Получится 1 предмет: Plating, редкость - <color=#B26BFF>Epic</color>.	У вас 4. Получится 1 предмет: Броня, редкость - <color=#B26BFF>Эпический</color>.
+Создать: Spark Plug (1P)	Создать: Свеча зажигания (1P)
+Только один проклятый предмет за раз. Снято: Hungering Edge	Только один проклятый предмет за раз. Снято: Голодное лезвие
+Only one cursed item at a time: Hungering Edge taken off	Только один проклятый предмет за раз. Снято: Голодное лезвие
+Inventory full: salvaged Scrap Plating	Инвентарь полон. Разобрано: Броня из лома
+# the rarity in a bracket after the item takes the item's form
+Предмет: Heavy Riot Plating (Rare, equipped)	Предмет: Тяжёлая штурмовая броня (редкая, надето)
+Item: Heavy Riot Plating (Rare, equipped)	Предмет: Тяжёлая штурмовая броня (редкая, надето)
+Цель: Swift Leg Servos (Cursed)	Цель: Быстрые ножные сервоприводы (проклятые)
+Target: Thornshell (Epic)	Цель: Шипастый панцирь (эпический)
+Price Board: next visit's featured deal is Final Notice (Legendary)	Доска цен: предложение на витрине в следующий визит - Последнее уведомление (легендарное)
+Target: Bob (Rare)	Цель: Bob (Редкий)
+# a rarity that stands alone takes the form its sentence asks for («Редкость: редкая») or the form of the thing next to it
+Rarity: Rare	Редкость: редкая
+Rarity: Legendary	Редкость: легендарная
+Rarity: All	Редкость: Все
+Rarity: Все	Редкость: Все
+Gear: Rare or better	Снаряжение: редкое или лучше
+Rare Health upgrade	Редкое улучшение: Здоровье
+Legendary Sprint Speed upgrade	Легендарное улучшение: Скорость бега
+Rare Health upgrade – class affinity x2!	Редкое улучшение: Здоровье – родство с классом x2!
+Rare Health upgrade – родство с классом x2!	Редкое улучшение: Здоровье – родство с классом x2!
+Rare Health upgrade  * class affinity	Редкое улучшение: Здоровье  * родство с классом
+Rare Health upgrade  * родство с классом	Редкое улучшение: Здоровье  * родство с классом
+Rare upgrade	Редкое улучшение
+Rare upgrade  * родство с классом	Редкое улучшение  * родство с классом
+The item becomes Epic; its stats scale up.	Новая редкость предмета - эпическая; его параметры вырастут.
+Upgrade Heavy Riot Plating to Epic for 40 лома and 2 Core Shards?	Улучшить «Тяжёлая штурмовая броня» за 40 лома и 2 осколка ядра? Новая редкость - эпическая.
+You have 4. Makes one <color=#B26BFF>Epic</color> Plating.	У вас 4. Получится 1 предмет: Броня, редкость - <color=#B26BFF>эпическая</color>.
+Holding: Rare valuable  $1,200	В руках: редкая ценность  $1,200
+Upgrades to Epic and rerolls: свойств: 3 (базовый параметр растёт вместе с редкостью)	Новая редкость - эпическая, переброс: свойств: 3 (базовый параметр растёт вместе с редкостью)
+Epic futures crate	Эпический фьючерсный ящик
+Plating · Rare	Броня · Редкая
+Leg Servos · Starter	Ножные сервоприводы · Стартовые
+Weapon Module · Cursed	Оружейный модуль · Проклятый
+Core · Legendary	Ядро · Легендарное
+<color=#9a9ca0>PLATING</color>  <color=#4FA3FF>RARE</color>	<color=#9a9ca0>БРОНЯ</color>  <color=#4FA3FF>РЕДКАЯ</color>
+<color=#9a9ca0>CORE</color>  <color=#b455ff>CURSED</color>	<color=#9a9ca0>ЯДРО</color>  <color=#b455ff>ПРОКЛЯТОЕ</color>
+<color=#9a9ca0>Rare Plating</color>  <color=#7fb8ff>Надето</color>  <color=#ffd75a>Unique</color>  <color=#7fd8ff>Поведение</color>	<color=#9a9ca0>Редкая броня</color>  <color=#7fb8ff>Надето</color>  <color=#ffd75a>Уникальная</color>  <color=#7fd8ff>Поведение</color>
+<color=#9a9ca0>Legendary Core</color>  <color=#ffd75a>Unique</color>	<color=#9a9ca0>Легендарное ядро</color>  <color=#ffd75a>Уникальное</color>
+<color=#ffd75a>Unique</color>	<color=#ffd75a>Уникальный</color>
+Mythic gear	Mythic gear
+team upgrade	team upgrade
+# the featured deal of the Price Board, as the game draws it and as the mod wrote it
+Предложение на витрине в следующий визит: <color=#B26BFF><b>Sharp Striker Module of the Brawler</b></color> (Epic Weapon Module)\n<color=#9a9ca0>+12% к макс. здоровью</color>	Предложение на витрине в следующий визит: <color=#B26BFF><b>Острый ударный модуль драчуна</b></color> (Эпический оружейный модуль)\n<color=#9a9ca0>+12% к макс. здоровью</color>
+Предложение на витрине в следующий визит: <color=#4FA3FF><b>Heavy Riot Plating</b></color> (Rare Plating, скидка 25%)\n<color=#9a9ca0>+12% к макс. здоровью · +8% к скорости бега</color>	Предложение на витрине в следующий визит: <color=#4FA3FF><b>Тяжёлая штурмовая броня</b></color> (Редкая броня, скидка 25%)\n<color=#9a9ca0>+12% к макс. здоровью · +8% к скорости бега</color>
+Next visit's featured deal: <color=#4FA3FF><b>Heavy Riot Plating</b></color> (Rare Plating, 25% off)\n<color=#9a9ca0>+12% max health · +8% sprint speed</color>	Предложение на витрине в следующий визит: <color=#4FA3FF><b>Тяжёлая штурмовая броня</b></color> (Редкая броня, скидка 25%)\n<color=#9a9ca0>+12% к макс. здоровью · +8% к скорости бега</color>
+Price Board: next visit's featured deal is Heavy Riot Plating (Rare Plating)	Доска цен: предложение на витрине в следующий визит - Тяжёлая штурмовая броня (Редкая броня)
+# the Guide's list of contracts and the reputation notice, as the game draws them
+Kill 5 monsters near you  (8 / 12 на сложном / жестоком)  -  Kaboom & Sons\n<color=#ffd75a>Бонус</color> No death saves used  (нужны напарники)	Убейте монстров рядом с собой: 5  (8 / 12 на сложном / жестоком)  -  Бабах и сыновья\n<color=#ffd75a>Бонус</color> Без использования спасений от смерти  (нужны напарники)
+Madame Brass (репутация 6+)\n1. Carry out a Rare-or-better valuable\n2. Carry out two Rare-or-better valuables in one level\n<color=#ffb21e>Итоговая награда</color> An Epic piece of your wishlisted set (or a random set)	Мадам Брасс (репутация 6+)\n1. Вынесите ценность не ниже редкой\n2. Вынесите за один уровень две ценности не ниже редких\n<color=#ffb21e>Итоговая награда</color> Эпический предмет желаемого комплекта (или случайного комплекта)
++2 к репутации: Kaboom & Sons (5/8)	+2 к репутации: Бабах и сыновья (5/8)
++1 reputation with The Auditor (12, max)	+1 к репутации: Аудитор (12, макс.)
+JUGGERNAUT: BULWARK DUTY	ДЖАГГЕРНАУТ: ДЕЖУРСТВО ОПЛОТА
+# names saved by versions 0.1.x of the add-on, which rewrote these two heads inside the mod
+Проклято: Sharp Striker Module	Проклято: Острый ударный модуль
+Прототип Mender Plating	Прототип Ремонтная броня
+# not names: a known word in front of something else stays as it is
+Rare Find	Rare Find
+Heavy Metal Core Sample	Heavy Metal Core Sample
+# what a purchase is called in its notice: the item's name stands after a colon
+Куплено: улучшение: Heavy Riot Plating (-40 лома)	Куплено: улучшение: Тяжёлая штурмовая броня (-40 лома)
+Куплено: фиксация: Heavy Riot Plating (-10 лома)	Куплено: фиксация: Тяжёлая штурмовая броня (-10 лома)
+Не удалось купить «фиксация: Heavy Riot Plating»: не хватает лома	Не удалось купить «фиксация: Тяжёлая штурмовая броня»: не хватает лома
+Нет связи с хостом - переброс: Heavy Riot Plating: не куплено	Нет связи с хостом - переброс: Тяжёлая штурмовая броня: не куплено
+Куплено: Rare фьючерсный ящик (-120 лома)	Куплено: Редкий фьючерсный ящик (-120 лома)
+Куплено: Heavy Riot Plating (витрина) (-40 лома)	Куплено: Тяжёлая штурмовая броня (витрина) (-40 лома)
+# sentences with a name of the mod's data in them: the name stays in the nominative (after a colon, in «», after «класс»)
+Хост не выплатил награду за контракт «Clean Delivery» (shop closed)	Хост не выплатил награду за контракт «Чистая доставка» (магазин закрыт)
+Heavy Riot Plating: ступень «Bonded»!	Тяжёлая штурмовая броня: ступень «Привязанный»!
+Vasya играет за класс Medic - нажмите F5, чтобы выбрать другой класс	Vasya играет за класс Медик - нажмите F5, чтобы выбрать другой класс
+Фора: способность «Nanite Burst» перезаряжена	Фора: способность «Нанитный всплеск» перезаряжена
+Обмен состоялся. Получено: Heavy Riot Plating - от игрока Vasya	Обмен состоялся. Получено: Тяжёлая штурмовая броня - от игрока Vasya
+Нет связи с хостом - Heavy Riot Plating: не разобрано	Нет связи с хостом - Тяжёлая штурмовая броня: не разобрано
+ИГРАТЬ ЗА КЛАСС JUGGERNAUT?	ИГРАТЬ ЗА КЛАСС ДЖАГГЕРНАУТ?
+Играть за класс Medic	Играть за класс Медик
+Сравнение: теперь выберите другой класс. Первый: Hauler	Сравнение: теперь выберите другой класс. Первый: Носильщик
+Clean Delivery: контракт вернётся на доску. Бесплатно.	Чистая доставка: контракт вернётся на доску. Бесплатно.
+Провал стоит только репутации (-1) у заказчика: Kaboom & Sons. Больше ничего не теряется.	Провал стоит только репутации (-1) у заказчика: Бабах и сыновья. Больше ничего не теряется.
+# the three loadouts keep their names in the save: "Loadout 1", or «Набор 1» from versions 0.1.x
+Loadout 1 saved	Набор 1 сохранён
+Набор 1 saved	Набор 1 сохранён
+Loadout 2 is empty - save one first	Набор 2 пуст - сначала сохраните его
+Loadout 3 equipped (2 items gone)	Набор 3 надет (пропало предметов: 2)
+Набор 3 equipped (1 item gone)	Набор 3 надет (пропало предметов: 1)
+# the short name of the currency: «лома» after a number, «Лом» as a label (the header of the menu, the chip of the HUD)
+Билд: <color=#ffd75a>Tank</color>   <color=#8cf2bf>Scrap: <b>1,234</b></color>	Билд: <color=#ffd75a>Танк</color>   <color=#8cf2bf>Лом: <b>1,234</b></color>
+<color=#8cf2bf>Scrap: <b>12</b></color>	<color=#8cf2bf>Лом: <b>12</b></color>
+Scrap <b>1,200</b>	Лом <b>1,200</b>
+120 Scrap	120 лома
+-30 Scrap	-30 лома
+Куплено: фиксация: Heavy Riot Plating (-10 Scrap)	Куплено: фиксация: Тяжёлая штурмовая броня (-10 лома)
+Для обновления не хватает Scrap	Для обновления не хватает лома
+# "Carry x3": how many times is not a part of the name
+Бонус тега: Carry x3 – переносимые предметы получают на 8% меньше урона	Бонус тега: Переноска x3 – переносимые предметы получают на 8% меньше урона
+Улучшение: Sprint Speed x2	Улучшение: Скорость бега x2
+Завершает: Throw x5	Завершает: Бросок x5
+# the lines of the HUD about a boss and an elite, the way they are drawn (the sentence is Russian, the names are the mod's)
+БОСС Hollow Jim the Last Shift: Armored · сопротивление: Fire · слабость: Shock  7 м	БОСС Полый Джим Последняя Смена: Бронированный · сопротивление: Огонь · слабость: Разряд  7 м
+БОСС The Liquidator: Shielded  30 м	БОСС Ликвидатор: Щитоносный  30 м
+Champion: Regenerating  4 м	Чемпион: Регенерирующий  4 м
+# a line of the run history: the difficulty comes from the save
+12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Brutal  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 Scrap	12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Жестоко  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 лома
+12.11.2026  ·  <color=#ffd75a>WON</color>  ·  Brutal  ·  1 level, chapter 1  ·  streak 0  ·  2 bosses  ·  12 Scrap	12.11.2026  ·  <color=#ffd75a>ПОБЕДА</color>  ·  Жестоко  ·  уровней: 1, глава 1  ·  серия 0  ·  боссов: 2  ·  12 лома
+12.11.2026  ·  Hard  ·  5 levels, chapter 2  ·  streak 3  ·  1 boss  ·  1,234 Scrap	12.11.2026  ·  Сложно  ·  уровней: 5, глава 2  ·  серия 3  ·  боссов: 1  ·  1,234 лома
+# 0.2.0 in the game (untranslated.txt of the first run with it), fixed in 0.2.1
+# a talent that replaces another one: the description after the colon may be of any length
+<b>Whisper Network</b> (replaces Loud Voice): teammates talking near you build Inspire (half speed); your voice no longer draws monsters	<b>Сеть шёпота</b> (заменяет «Громкий голос»): разговоры напарников рядом с вами копят Воодушевление (вдвое медленнее); ваш голос больше не привлекает монстров
+<b>Front Row</b> (replaces Ringside): Monsters fighting within 6m of you deal 40% more damage to each other (fights are still loud)	<b>Первый ряд</b> (заменяет «У ринга»): Монстры, дерущиеся в пределах 6 м от вас, наносят друг другу на 40% больше урона (драки по-прежнему шумные)
+<b>Courier's Pace</b> (replaces Sure-Footed): +8% sprint speed while you hold a small or medium valuable (the weakness stays: dispatched items hum, big ones can't go)	<b>Шаг курьера</b> (заменяет «Твёрдая поступь»): +8% к скорости бега, пока вы держите маленькую или среднюю ценность (слабость остаётся: отправляемые предметы гудят, большие отправить нельзя)
+<b>Сеть шёпота</b> (replaces Loud Voice): teammates talking near you build Inspire (half speed); your voice no longer draws monsters	<b>Сеть шёпота</b> (заменяет «Громкий голос»): разговоры напарников рядом с вами копят Воодушевление (вдвое медленнее); ваш голос больше не привлекает монстров
+# what a perk evolves into: the sentence is Russian already (replaced inside the code), the name, the "how" and the
+# effect come from the data; an owned perk shows its progress in a bracket
+<color=#ffb21e>Эволюционирует в Scholar:</color> <color=#9a9ca0>Earn 3,000 XP – +10% more XP</color>	<color=#ffb21e>Эволюционирует в Грамотей:</color> <color=#9a9ca0>Заработайте 3,000 опыта – ещё +10% опыта</color>
+<color=#ffb21e>Эволюционирует в Nosferatu:</color> <color=#9a9ca0>Kill 15 monsters (7/15) – weapon hits heal 1 HP more</color>	<color=#ffb21e>Эволюционирует в Носферату:</color> <color=#9a9ca0>Убейте 15 монстров (7/15) – удары оружием лечат ещё на 1 ОЗ</color>
+<color=#f08a2e>Эволюционирует в Warden Angel:</color> <color=#a3a6ad>Stay near teammates for 10 minutes (0/600) – the aura also gives 5% damage resistance</color>	<color=#f08a2e>Эволюционирует в Ангел-страж:</color> <color=#a3a6ad>Пробудьте рядом с напарниками 10 минут (0/600) – аура также даёт 5% сопротивления урону</color>
+<color=#ffd75a>Эволюция: also +10% grip strength</color>	<color=#ffd75a>Эволюция: а также +10% к силе хвата</color>
+<color=#ffd75a><b>Scholar</b></color> (from Quick Learner): +10% more XP	<color=#ffd75a><b>Грамотей</b></color> (из «Способный ученик»): ещё +10% опыта
+Эволюция! Pack Mule → Pack Horse: also +10% grip strength	Эволюция! Вьючный мул → Вьючная лошадь: а также +10% к силе хвата
+# a research node the mod shortens to the width of its card: the whole line is translated before it is measured
+T1  Cart Winch	T1  Лебёдка для тележки
+T0  Cart Winch	T0  Лебёдка для тележки
+T3  The Archivist	T3  Архивариус
+T2  Consumables II	T2  Расходники II
+# a cross, an arrow or a star around a caption
+> FEATURED ✖	> ВИТРИНА ✖
+Wishlist ✖	Список желаний ✖
+# the Guide: the threat curve, the first sentence of a perk on its card, a bracket with a bracket inside
+2 cleared: 0,0  ·  4 cleared: 1,1  ·  6 cleared: 2,6  ·  10 cleared: 4,7  ·  15 cleared: 6,7  ·  20 cleared: 8,4  ·  30 cleared: 10,8	2 ур.: 0,0  ·  4 ур.: 1,1  ·  6 ур.: 2,6  ·  10 ур.: 4,7  ·  15 ур.: 6,7  ·  20 ур.: 8,4  ·  30 ур.: 10,8
+Below 35% HP: +30% speed.	Ниже 35% ОЗ: +30% к скорости.
+Every run starts at Customer reputation in the mod shop  <color=#9a9ca0>(Spend 1,000 Scrap in the mod shop (all runs))</color>	Каждый забег начинается с репутацией «Клиент» в магазине мода  <color=#9a9ca0>(Потратьте 1,000 лома в магазине мода (за все забеги))</color>
+Каждый забег начинается с репутацией «Клиент» в магазине мода  <color=#a3a6ad>(Spend 1,000 Scrap in the mod shop (all runs))</color>	Каждый забег начинается с репутацией «Клиент» в магазине мода  <color=#a3a6ad>(Потратьте 1,000 лома в магазине мода (за все забеги))</color>
+# English left inside a Russian line: a name is replaced, a number and its word are one phrase, the rest of an English
+# sentence is never translated word by word
+Убит The Liquidator: +50 XP	Убит Ликвидатор: +50 опыта
+Награда: 1,500 XP и 20 Scrap	Награда: 1,500 опыта и 20 лома
+Цель: Kill 15 angry monsters	Цель: Kill 15 angry monsters
+Класс Medic занят игроком big bob	Класс Medic занят игроком big bob
+# texts the mod glues from pieces that have no words of their own, or keeps in an array
+3 completed	Выполнено: 3
+1 failed	Провалено: 1
+\n\n<color=#9a9ca0>Голоса:</color> 3 cast	\n\n<color=#9a9ca0>Голоса:</color> подано: 3
+follow off - clearing the way	следование выкл. - расчистка пути
+Голова: Bob 12 м ahead-right (выше)	Голова: Bob 12 м впереди справа (выше)
+Сторожевой пост: Gnome 14 м behind	Сторожевой пост: Gnome 14 м сзади
+$1,200  14m ahead-left	$1,200  14 м впереди слева
+$1,200  7m behind (ниже)	$1,200  7 м сзади (ниже)
+$900  3m здесь	$900  3 м здесь
+<b>A2 Inflation</b>  Цены в магазине мода +10%.  <color=#73ff66>пройдено</color>	<b>A2 Инфляция</b>  Цены в магазине мода +10%.  <color=#73ff66>пройдено</color>
+2 гнезда с 1 модулем, attunement, базовый параметр, crafting, слот и редкость	2 гнезда с 1 модулем, сонастройка, базовый параметр, крафт, слот и редкость
+Brass wants Art: extract 3 (1/3) for +25 Scrap each	Brass просит «Искусство»: извлеките 3 (1/3) - каждому +25 лома

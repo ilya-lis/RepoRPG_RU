@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "range": 15,
+  "synergies": [
+    {
+      "id": "supply_wagon",
+      "a": "cartwright",
+      "b": "quartermaster",
+      "name": "Supply Wagon",
+      "desc": "Items inside the Cartwright's cart recharge {v}% battery every {v2} s.",
+      "value": 2,
+      "value2": 5
+    },
+    {
+      "id": "freight_line",
+      "a": "hauler",
+      "b": "cartwright",
+      "name": "Freight Line",
+      "desc": "Valuables in a cart near the Cartwright lose {v}% less value.",
+      "value": 10,
+      "value2": 0
+    },
+    {
+      "id": "careful_cargo",
+      "a": "restorer",
+      "b": "cartwright",
+      "name": "Careful Cargo",
+      "desc": "The Restorer's Steady Hands also mends items in carts within {v} m of the Restorer.",
+      "value": 4,
+      "value2": 0
+    },
+    {
+      "id": "watchful_flock",
+      "a": "lookout",
+      "b": "shepherd",
+      "name": "Watchful Flock",
+      "desc": "Pacify lasts +{v} s on a monster a Watchpost pinged in the last {v2} s.",
+      "value": 2,
+      "value2": 10
+    },
+    {
+      "id": "pathfinder",
+      "a": "lookout",
+      "b": "scout",
+      "name": "Pathfinder",
+      "desc": "The Scout sees threat labels {v} m farther; the Lookout's Spotter shares {v2} m farther.",
+      "value": 10,
+      "value2": 4
+    },
+    {
+      "id": "double_act",
+      "a": "ventriloquist",
+      "b": "trickster",
+      "name": "Double Act",
+      "desc": "Echo and Decoy Beacon last +{v} s and pull from {v2} m farther.",
+      "value": 2,
+      "value2": 3
+    },
+    {
+      "id": "misdirection",
+      "a": "ventriloquist",
+      "b": "phantom",
+      "name": "Misdirection",
+      "desc": "Shadowstep lasts +{v} s while the Ventriloquist is talking.",
+      "value": 1,
+      "value2": 0
+    },
+    {
+      "id": "chorus",
+      "a": "herald",
+      "b": "ventriloquist",
+      "name": "Chorus",
+      "desc": "The Herald's Loud Voice lure is heard from {v} m ahead of the Herald.",
+      "value": 6,
+      "value2": 0
+    },
+    {
+      "id": "lost_sheep",
+      "a": "trickster",
+      "b": "shepherd",
+      "name": "Lost Sheep",
+      "desc": "Monsters that reach a Decoy Beacon notice teammates {v} s more slowly for {v2} s.",
+      "value": 1,
+      "value2": 8
+    },
+    {
+      "id": "herding",
+      "a": "warden",
+      "b": "shepherd",
+      "name": "Herding",
+      "desc": "Pacify lasts +{v} s on a monster stunned in the last {v2} s.",
+      "value": 1.5,
+      "value2": 3
+    },
+    {
+      "id": "kill_zone",
+      "a": "warden",
+      "b": "gunsmith",
+      "name": "Kill Zone",
+      "desc": "Overclock lasts +{v} s.",
+      "value": 2,
+      "value2": 0
+    },
+    {
+      "id": "bench_tuning",
+      "a": "engineer",
+      "b": "gunsmith",
+      "name": "Bench Tuning",
+      "desc": "Field Charger reaches {v} m (not 4) and the recharge hold is {v2}% faster.",
+      "value": 8,
+      "value2": 50
+    },
+    {
+      "id": "ammo_crate",
+      "a": "quartermaster",
+      "b": "gunsmith",
+      "name": "Ammo Crate",
+      "desc": "Resupply restores {v}% more to guns.",
+      "value": 15,
+      "value2": 0
+    },
+    {
+      "id": "reinforced",
+      "a": "engineer",
+      "b": "juggernaut",
+      "name": "Reinforced",
+      "desc": "Iron Wall lasts +{v} s.",
+      "value": 1,
+      "value2": 0
+    },
+    {
+      "id": "spare_parts",
+      "a": "engineer",
+      "b": "mimic",
+      "name": "Spare Parts",
+      "desc": "The Mimic's copied abilities recharge {v}% faster.",
+      "value": 10,
+      "value2": 0
+    },
+    {
+      "id": "understudy",
+      "a": "herald",
+      "b": "mimic",
+      "name": "Understudy",
+      "desc": "The Mimic's copies are {v}% stronger while it's Inspired.",
+      "value": 10,
+      "value2": 0
+    },
+    {
+      "id": "war_cry",
+      "a": "herald",
+      "b": "brute",
+      "name": "War Cry",
+      "desc": "Rally Cry also gives the Brute {v} Frenzy stack.",
+      "value": 1,
+      "value2": 0
+    },
+    {
+      "id": "shoulder",
+      "a": "juggernaut",
+      "b": "brute",
+      "name": "Shoulder to Shoulder",
+      "desc": "Both take {v}% less damage.",
+      "value": 4,
+      "value2": 0
+    },
+    {
+      "id": "frontline_care",
+      "a": "juggernaut",
+      "b": "medic",
+      "name": "Frontline Care",
+      "desc": "The Medic's heals on the Juggernaut are {v}% stronger.",
+      "value": 15,
+      "value2": 0
+    },
+    {
+      "id": "last_rites_protocol",
+      "a": "undertaker",
+      "b": "medic",
+      "name": "Last Rites Protocol",
+      "desc": "Teammates revived near both come back with {v}% more health.",
+      "value": 10,
+      "value2": 0
+    },
+    {
+      "id": "transfusion",
+      "a": "bloodbound",
+      "b": "medic",
+      "name": "Transfusion",
+      "desc": "Blood Price costs {v} HP less; the Medic's heals on the Bloodbound are {v2}% stronger.",
+      "value": 1,
+      "value2": 20
+    },
+    {
+      "id": "scar_bond",
+      "a": "bloodbound",
+      "b": "survivor",
+      "name": "Scar Bond",
+      "desc": "Both take {v}% less damage while under {v2}% health.",
+      "value": 5,
+      "value2": 40
+    },
+    {
+      "id": "not_today",
+      "a": "undertaker",
+      "b": "survivor",
+      "name": "Not Today",
+      "desc": "A Survivor revived by Reboot comes back with Last Stand ready.",
+      "value": 0,
+      "value2": 0
+    },
+    {
+      "id": "body_retrieval",
+      "a": "undertaker",
+      "b": "grappler",
+      "name": "Body Retrieval",
+      "desc": "The Grappler's Long Reach and Hook yank work on death heads, whatever their weight.",
+      "value": 0,
+      "value2": 0
+    },
+    {
+      "id": "free_runners",
+      "a": "scout",
+      "b": "grappler",
+      "name": "Free Runners",
+      "desc": "Hook recharges {v}% faster; the Scout's Momentum holds {v2} more stack.",
+      "value": 10,
+      "value2": 1
+    },
+    {
+      "id": "tether_physics",
+      "a": "physicist",
+      "b": "grappler",
+      "name": "Tether Physics",
+      "desc": "Yanked items float for {v} s and are pulled {v2}% harder.",
+      "value": 1,
+      "value2": 20
+    },
+    {
+      "id": "featherweight",
+      "a": "physicist",
+      "b": "hauler",
+      "name": "Featherweight",
+      "desc": "Items the Hauler holds are {v}% lighter.",
+      "value": 10,
+      "value2": 0
+    },
+    {
+      "id": "lift_off",
+      "a": "physicist",
+      "b": "demolitionist",
+      "name": "Lift Off",
+      "desc": "Monsters inside a Zero-G Field take {v}% more explosion damage.",
+      "value": 15,
+      "value2": 0
+    },
+    {
+      "id": "treasure_map",
+      "a": "appraiser",
+      "b": "scavenger",
+      "name": "Treasure Map",
+      "desc": "Keen Eye chance +{v}% while the Appraiser is within {v2} m.",
+      "value": 4,
+      "value2": 20
+    },
+    {
+      "id": "insider_tip",
+      "a": "appraiser",
+      "b": "gambler",
+      "name": "Insider Tip",
+      "desc": "Double or Nothing placed near the Appraiser: top multiplier +{v}x.",
+      "value": 0.2,
+      "value2": 0
+    },
+    {
+      "id": "hedged_bet",
+      "a": "gambler",
+      "b": "insurer",
+      "name": "Hedged Bet",
+      "desc": "A lost Double or Nothing costs {v}% less Scrap.",
+      "value": 25,
+      "value2": 0
+    },
+    {
+      "id": "full_coverage",
+      "a": "restorer",
+      "b": "insurer",
+      "name": "Full Coverage",
+      "desc": "Coverage pays {v}% more on items the Restorer has mended (one ledger: never paid twice).",
+      "value": 3,
+      "value2": 0
+    },
+    {
+      "id": "bonded_carrier",
+      "a": "insurer",
+      "b": "hauler",
+      "name": "Bonded Carrier",
+      "desc": "Distance the Hauler carries a Policy item counts double.",
+      "value": 2,
+      "value2": 0
+    },
+    {
+      "id": "same_day_find",
+      "a": "courier",
+      "b": "scavenger",
+      "name": "Same-Day Find",
+      "desc": "Valuables the Scavenger turns up (Keen Eye, Rummage) dispatch {v}s faster.",
+      "value": 3,
+      "value2": 0
+    },
+    {
+      "id": "priority_appraisal",
+      "a": "appraiser",
+      "b": "courier",
+      "name": "Priority Appraisal",
+      "desc": "A dispatched item the Appraiser has appraised arrives worth {v}% more.",
+      "value": 10,
+      "value2": 0
+    },
+    {
+      "id": "registered_mail",
+      "a": "courier",
+      "b": "insurer",
+      "name": "Registered Mail",
+      "desc": "Dispatching a Policy-tagged item counts as moving it the whole way, and it hums {v}% quieter.",
+      "value": 30,
+      "value2": 0
+    },
+    {
+      "id": "collateral_damage",
+      "a": "demolitionist",
+      "b": "instigator",
+      "name": "Collateral Damage",
+      "desc": "Explosions hit fighting monsters {v}% harder, and keep the fight going {v2}s longer (once per fight).",
+      "value": 30,
+      "value2": 2
+    },
+    {
+      "id": "not_my_fight",
+      "a": "instigator",
+      "b": "phantom",
+      "name": "Not My Fight",
+      "desc": "Monsters in a fight don't notice the Phantom while it's crouching.",
+      "value": 0,
+      "value2": 0
+    },
+    {
+      "id": "pile_on",
+      "a": "brute",
+      "b": "instigator",
+      "name": "Pile On",
+      "desc": "Shockwave hits fighting monsters {v}% harder, and its stun doesn't cut the fight short.",
+      "value": 30,
+      "value2": 0
+        },
+    {
+      "id": "iron_wall",
+      "a": "warden",
+      "b": "juggernaut",
+      "name": "Iron Wall",
+      "desc": "The Warden and the Juggernaut both take {v}% less damage.",
+      "value": 8,
+      "value2": 0,
+      "research": "synergies2"
+    },
+    {
+      "id": "quick_patch",
+      "a": "medic",
+      "b": "scout",
+      "name": "Quick Patch",
+      "desc": "The Medic's and the Scout's ability cooldowns are {v}% shorter.",
+      "value": 10,
+      "value2": 0,
+      "research": "synergies2"
+    },
+    {
+      "id": "study_group",
+      "a": "physicist",
+      "b": "appraiser",
+      "name": "Study Group",
+      "desc": "The Physicist and the Appraiser both earn {v}% more XP.",
+      "value": 8,
+      "value2": 0,
+      "research": "synergies2"
+    },
+    {
+      "id": "side_hustle",
+      "a": "gambler",
+      "b": "scavenger",
+      "name": "Side Hustle",
+      "desc": "Every {v2} s together, the Gambler and the Scavenger each get {v} Scrap.",
+      "value": 4,
+      "value2": 60,
+      "research": "synergies2"
+    }
+  ]
+}
