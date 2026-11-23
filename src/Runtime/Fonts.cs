@@ -158,6 +158,20 @@ namespace RepoRPG_RU
                     if (paths.Count == 1) log.Append("  в пути к файлу есть буквы не из латиницы, а другого пути к нему нет\n");
                 }
             }
+            // Font(string) treats its argument as a family name, not as a file path. Register the bundled
+            // file privately with Windows first, then ask Unity to create a dynamic font by its family name.
+            // FR_PRIVATE keeps the font local to this process; it is never installed system-wide.
+            // Windows reports whether a font path uses the system code page or Unicode; this API accepts both.
+            if (family != null && unity.CanAskSystem && RegisterPrivate(file, log))
+            {
+                log.Append("попытка ").Append(++attempt).Append(": временно зарегистрированный шрифт «").Append(family).Append("»\n");
+                if (Try(unity, family, true, expect, log))
+                {
+                    Survey(unity, tried, log);
+                    summary = "шрифт подключён: файл русификатора (временно зарегистрирован только для игры)";
+                    return tried;
+                }
+            }
             if (family != null && unity.CanAskSystem)
             {
                 log.Append("попытка ").Append(++attempt).Append(": шрифт «").Append(family).Append("», установленный в системе\n");
@@ -229,6 +243,28 @@ namespace RepoRPG_RU
         }
 
         // ------------------------------------------------------------------ the file and its check
+
+
+        [System.Runtime.InteropServices.DllImport("gdi32.dll", CharSet = System.Runtime.InteropServices.CharSet.Unicode, EntryPoint = "AddFontResourceExW", SetLastError = true)]
+        private static extern int AddFontResourceEx(string path, uint flags, IntPtr reserved);
+
+        private const uint PrivateFont = 0x10;
+
+        private static bool RegisterPrivate(string path, StringBuilder log)
+        {
+            try
+            {
+                if (Path.DirectorySeparatorChar != '\\') return false;
+                if (AddFontResourceEx(path, PrivateFont, IntPtr.Zero) > 0)
+                {
+                    log.Append("Файл временно зарегистрирован в процессе игры; после закрытия игры регистрация исчезнет\n");
+                    return true;
+                }
+                log.Append("Windows не зарегистрировала файл временно (код ").Append(System.Runtime.InteropServices.Marshal.GetLastWin32Error()).Append(")\n");
+            }
+            catch (Exception e) { log.Append("Временная регистрация недоступна: ").Append(e.GetType().Name).Append(": ").Append(e.Message).Append('\n'); }
+            return false;
+        }
 
         private static string Find(string dir)
         {
