@@ -163,7 +163,7 @@
 +words	Auto: picked {0} ({1:0} FPS in the first minute).	0
 # Тексты пустых панелей и подсказок, которые разбор исходника принял за служебные (найдены по untranslated.txt из игры)
 +global	Select an attribute	Выберите характеристику
-+global	What it gives, its milestones and pairings show here.	Здесь показывается, что она даёт, её этапы и сочетания.
++global	What it gives, its milestones and pairings show here.	Здесь показывается, что она даёт, её вехи и сочетания.
 +global	Its lines, modules, a comparison and its actions show here.	Здесь показываются его свойства, модули, сравнение и действия.
 +global	Pick a topic	Выберите тему
 +global	Its summary shows here.	Здесь показывается её краткое содержание.
@@ -310,3 +310,49 @@
 +term	follow off - clearing the way	следование выкл. - расчистка пути
 # что сохраняется при перековке («Keeps: 2 sockets, attunement, base stat, crafting, slot and rarity»): слова из списка
 +term	crafting	крафт
+# ---------------------------------------------------------------------------------------------------------------
+# 0.2.2 - по файлу untranslated.txt первой игры на уровнях (версия 0.2.1)
+# метка на уровне: название или цена, два пробела и расстояние («Sinew  12m», «$1 200  14m»)
++pattern	{0}  {1}m	{0}  {1} м
++numbers	{0}  {1}m	1
+# детали для крафта после числа: «+1 Sinew, 1 Core Shard», «Crafting parts: 3 Sinew», «за 2 Core Shard?».
+# {0|одна|две-четыре|пять и больше}: слово в той форме, которую просит число в {0}
++pattern	{0} Sinew	{0} {0|сухожилие|сухожилия|сухожилий}
++numbers	{0} Sinew	0
++pattern	{0} Core Shard	{0} {0|осколок ядра|осколка ядра|осколков ядра}
++numbers	{0} Core Shard	0
++pattern	{0} Prime Essence	{0} {0|первичная эссенция|первичные эссенции|первичных эссенций}
++numbers	{0} Prime Essence	0
++pattern	{0} Boss Heart	{0} {0|сердце босса|сердца босса|сердец босса}
++numbers	{0} Boss Heart	0
+# итог исследований за уровень приходит от хоста: «Level research: +0 Data (0 now) · 1 sample left behind»
++pattern	{0} sample{1} left behind	образцов оставлено: {0}
++numbers	{0} sample{1} left behind	0
+# окно выбора награды: «<награда>\n\nThe other option is gone once you take it.» - хвост приклеен отдельной строкой
++term	The other option is gone once you take it.	Второй вариант пропадёт, когда вы возьмёте этот.
++term	The other options are gone once you take it.	Остальные варианты пропадут, когда вы возьмёте этот.
+# причина, по которой хост не выплатил контракт (приходит от хоста): «The host didn't pay Heavy Freight (not accepted)»
++term	not accepted	не принят
++term	not reached	цель не достигнута
++term	stale	устарел
++term	not in a level	не на уровне
++pattern	The host didn't pay {0} (rival)	Хост не выплатил награду за контракт «{0}» (контракт соперника)
+# скорость восстановления выносливости в строке свойства: «+2 stamina/s»
++term	stamina/s	выносливости/с
+# итог командного голосования: «Team contract: Big Haul accepted»; карточка итога пишет то же заглавными - «BIG HAUL ACCEPTED»
++term	Clean Hands accepted	«Чистые руки» принят
++term	Clean Hands declined	«Чистые руки» отклонён
++term	Deathless accepted	«Без смертей» принят
++term	Deathless declined	«Без смертей» отклонён
++term	Pacifist accepted	«Пацифист» принят
++term	Pacifist declined	«Пацифист» отклонён
++term	Big Haul accepted	«Большая добыча» принят
++term	Big Haul declined	«Большая добыча» отклонён
++term	Blitz accepted	«Блиц» принят
++term	Blitz declined	«Блиц» отклонён
++term	Elite Purge accepted	«Чистка элиты» принят
++term	Elite Purge declined	«Чистка элиты» отклонён
++term	Boss Bounty accepted	«Награда за босса» принят
++term	Boss Bounty declined	«Награда за босса» отклонён
++term	Heavy Lifting accepted	«Тяжёлая ноша» принят
++term	Heavy Lifting declined	«Тяжёлая ноша» отклонён

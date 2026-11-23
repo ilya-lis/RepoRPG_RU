@@ -18,6 +18,19 @@ TAG = re.compile(r'</?(?:color|b|i|size|u|s|mark|sup|sub)(?:=[^>]*)?>', re.I)
 NUM = re.compile(r'^\{(\d+)([,:][^{}]*)?\}$')
 NAMED = re.compile(r'^\{[A-Za-z][^{}]*\}$')
 SIMPLE_NAME = re.compile(r'^\{[A-Za-z][A-Za-z0-9]{0,7}\}$')
+# "{0|осколок|осколка|осколков}": a word of a +pattern translation in the form the number in {0} asks for (Loc.Pattern.Plural)
+CHOICE = re.compile(r'^\{(\d+)\|([^|{}]+)\|([^|{}]+)\|([^|{}]+)\}$')
+
+
+def plural(number):
+    """0 - «1 осколок», 1 - «2 осколка» (and fractions), 2 - «5 осколков»; mirrors Loc.Pattern.Plural"""
+    m = re.search(r'(\d+)\D*$', number)
+    if not m: return 2
+    digits, before = m.group(1), number[:m.start(1)]
+    if len(before) > 1 and before[-1] in '.,' and before[-2].isdigit() and not (before[-1] == ',' and len(digits) == 3): return 1
+    tens, ones = (int(digits[-2]) if len(digits) >= 2 else 0), int(digits[-1])
+    if tens == 1: return 2
+    return 0 if ones == 1 else 1 if 2 <= ones <= 4 else 2
 
 
 def unescape(s):
@@ -43,9 +56,15 @@ def edges(src, tr):
     return lead + tr.strip(' \n\t') + trail if src.strip(' \n\t') else tr
 
 
-def check(src, tr):
-    """-> problem text or None; mirrors Fmt.SameHoles of the add-on"""
+def check(src, tr, choices=False):
+    """-> problem text or None; mirrors Fmt.SameHoles of the add-on (choices: a +pattern, where "{0|one|few|many}" is allowed)"""
     hs, ht = HOLE.findall(src), HOLE.findall(tr)
+    if choices:
+        have = {int(m.group(1)) for m in (NUM.match(h) for h in hs) if m}
+        for h in ht:
+            if '|' in h and (not CHOICE.match(h) or int(CHOICE.match(h).group(1)) not in have):
+                return 'the word forms %s need three forms and a placeholder of the original: {0|one|few|many}' % h
+        ht = [h for h in ht if not CHOICE.match(h)]
     known = {h for h in hs if NUM.match(h) or NAMED.match(h)}
     for h in ht:
         if (NUM.match(h) or NAMED.match(h)) and h not in known: return 'placeholder %s is not in the original' % h
@@ -114,6 +133,8 @@ def sample(text, expected):
             if h == '}}': return '}'
             n = NUM.match(h)
             if n: return vals.setdefault(int(n.group(1)), str(3 + 4 * int(n.group(1))))
+            c = CHOICE.match(h)
+            if c: return c.group(2 + plural(vals.setdefault(int(c.group(1)), str(3 + 4 * int(c.group(1))))))
             return h
         return HOLE.sub(rep, s)
     return fill(text), fill(expected)
@@ -281,7 +302,7 @@ def main():
     # +noun<TAB>gear<TAB>n|снаряжение: a common word such a name may end with - its gender and its translation
     adj_e, noun_e, of_e = collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict()
     for kind, en, ru, where in extra:
-        bad = check(en, ru)
+        bad = check(en, ru, kind == 'pattern')
         if bad: problems.append('%s: %s: %r' % (where, bad, en[:60])); continue
         if kind == 'adj':
             if len(ru.split('|')) != 4 or not all(x.strip() for x in ru.split('|')): problems.append('%s: +adj needs four forms: m|f|n|p' % where)

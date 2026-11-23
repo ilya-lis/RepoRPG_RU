@@ -119,7 +119,7 @@ namespace RepoRPG_RU
 
     internal static class BuildInfo
     {
-        public const string Version = "0.2.1";
+        public const string Version = "0.2.2";
         public const string Id = "ilyalis.reporpg.ru";
         public const string TargetGuid = "rpgmod.semibotrpg";
         public const string TargetFile = "RepoRPG.dll";

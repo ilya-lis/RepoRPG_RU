@@ -191,6 +191,8 @@ namespace RepoRPG
             // 11. single word coming out of a method, and a line nobody translated
             Label(Header());
             Label("Untranslated line");
+            // a counter: one text for the log of untranslated texts, whatever the numbers are
+            for (int stage = 3; stage <= 5; stage++) Label("Stage " + stage + " of 7");
 
             // 12. texts the mod recognises by their wording (they come from somewhere else, as in the real mod)
             string why = Text(0);

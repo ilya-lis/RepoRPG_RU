@@ -42,6 +42,9 @@ namespace UnityEngine
         public HideFlags hideFlags { get; set; }
 
         public static void Destroy(Object obj) { if (!ReferenceEquals(obj, null)) { obj.destroyed = true; Destroyed.Add(obj.name); } }
+
+        /// <summary>Not in Unity: for a double of an object the engine lets go by itself (an unloaded asset bundle).</summary>
+        protected void Gone() { destroyed = true; }
         public static void Destroy(Object obj, float t) { Destroy(obj); }
 
         /// <summary>What a level change does: everything not marked to be kept goes away.</summary>

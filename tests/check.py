@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Scenarios for tests/run.sh. Each scenario lays out a BepInEx folder, starts the imitation host and checks its output."""
-import os, shutil, subprocess, sys
+import json, os, shutil, subprocess, sys
 
 RTK = os.environ['RTK']
 W = os.environ['W']
@@ -12,6 +12,8 @@ PATCHERS = os.path.join(ROOT, 'patchers', 'ilyalis-RepoRPG_RU')
 COPY = os.path.join(HOME, 'RepoRPG.dll')
 CFG = os.path.join(ROOT, 'config', 'RepoRPG_RU.cfg')
 GAME = os.path.join(W, 'game')                      # the game's own folder (with a mod manager the profile is elsewhere)
+FONT_FILES = ('RepoRPG_RU.bundle', 'RepoRPG_RU.ttf', 'RepoRPG_RU.ttf.check')
+VERSION = json.load(open(os.path.join(REPO, 'mod', 'manifest.json'), encoding='utf-8'))['version_number']
 failures = []
 
 
@@ -29,7 +31,7 @@ def layout(addon=True, original=True):
         shutil.copy(os.path.join(REPO, 'tests', 'fake', 'test.po'), os.path.join(HOME, 'lang'))
         shutil.copy(os.path.join(REPO, 'tests', 'fake', 'test.rules'), os.path.join(HOME, 'RepoRPG_RU.rules'))
         os.makedirs(os.path.join(HOME, 'font'))
-        for f in ('RepoRPG_RU.ttf', 'RepoRPG_RU.ttf.check'):
+        for f in FONT_FILES:
             shutil.copy(os.path.join(REPO, 'mod', 'font', f), os.path.join(HOME, 'font'))
     shutil.rmtree(GAME, ignore_errors=True)
     os.makedirs(GAME)
@@ -185,7 +187,11 @@ check('font: nothing made in vain', has(out, 'destroyed='), [l for l in out if l
 check('font: a method that does not begin by reading the setting is served too', has(out, 'font-hud=RepoRPG_RU'), [l for l in out if l.startswith('font')])
 check('font: font.txt says what happened', 'итог: шрифт подключён' in font_txt() and 'Ж (100 пикс.): по файлу 49, в игре 49' in font_txt(), font_txt())
 check('font: one line in the log', sum(1 for l in out if 'Шрифт меню: шрифт подключён' in l) == 1, [l for l in out if 'Шрифт' in l])
-check('font: font.txt lists the fonts of the game with their metrics (ours marked)', '  * RepoRPG_RU: 32 / 46 / 31; H 38 W 55 → 70 ★ 70' in font_txt(), font_txt())
+check('font: it came out of the asset bundle, at the first attempt', 'попытка 1: набор ресурсов Unity RepoRPG_RU.bundle' in font_txt() and 'попытка 2' not in font_txt()
+      and 'набор открыт, шрифтов в нём: 1' in font_txt(), font_txt())
+check('font: font.txt lists the fonts of the game with their metrics (ours marked: the size, line and rise of the game\'s own Teko)',
+      '  * RepoRPG_RU: 16 / 22 / 15; H 38 W 55 → 70 ★ 70' in font_txt(), font_txt())
+check('font: the bundle is let go, the font is kept', has(out, 'destroyed='), [l for l in out if l.startswith('destroyed')])
 rep = open(os.path.join(ROOT, 'config', 'RepoRPG_RU', 'report.txt'), encoding='utf-8').read()
 check('font: report counts the places and the rule without a target', 'спрашивает шрифт у русификатора: 2, правил без цели: 1' in rep and 'font method not found: RpgRuntime::PickFont' in rep, [l for l in rep.splitlines() if 'шрифт' in l or 'font' in l])
 check('font: missing rule reported, not fatal', contains(out, 'где мод выбирает шрифт меню'))
@@ -290,13 +296,30 @@ check('literal dump has scope + use + consumer', 'RpgRuntime::OnGUI\tDisplay\tRe
 un = os.path.join(ROOT, 'config', 'RepoRPG_RU', 'untranslated.txt')
 check('untranslated log', os.path.isfile(un) and 'Untranslated line' in open(un, encoding='utf-8').read().splitlines(),
       open(un, encoding='utf-8').read() if os.path.isfile(un) else 'no file')
-check('untranslated log has no russian', os.path.isfile(un) and not any('\u0400' <= ch <= '\u04ff' for ch in open(un, encoding='utf-8').read()))
+body = [l for l in open(un, encoding='utf-8').read().splitlines() if not l.startswith('#')]
+check('untranslated log has no russian', os.path.isfile(un) and not any('\u0400' <= ch <= '\u04ff' for l in body for ch in l), body)
+head = open(un, encoding='utf-8').read().splitlines()[0]
+check('untranslated log: the first line names the version', head.startswith('# RepoRPG RU ') and VERSION in head, head)
+check('untranslated log: a text that differs by its numbers only is written once', sum(1 for l in body if l.startswith('Stage ')) == 1, [l for l in body if 'Stage' in l])
+code, out = launch()
+again = open(un, encoding='utf-8').read().splitlines()
+check('untranslated log: the same version adds to its file, nothing twice', again[0] == head and sorted(l for l in again if not l.startswith('#')) == sorted(body), again)
+with open(un, 'w', encoding='utf-8') as f:
+    f.write('# RepoRPG RU 0.0.9 - an older release\nUntranslated line\nOld news\n')
+code, out = launch()
+fresh = open(un, encoding='utf-8').read().splitlines()
+check('untranslated log: the file of another version is started anew', fresh[0] == head and 'Old news' not in fresh and 'Untranslated line' in fresh, fresh)
+with open(un, 'w', encoding='utf-8') as f:
+    f.write('Untranslated line\nOld news\n')
+code, out = launch()
+fresh = open(un, encoding='utf-8').read().splitlines()
+check('untranslated log: so is a file without a first line (0.2.1 and older)', fresh[0] == head and 'Old news' not in fresh and 'Untranslated line' in fresh, fresh)
 
 print('O. flattened install (everything in one plugins folder, no lang/ subfolder)')
 layout()
 shutil.move(os.path.join(HOME, 'lang', 'test.po'), os.path.join(HOME, 'test.po'))
 os.rmdir(os.path.join(HOME, 'lang'))
-for f in ('RepoRPG_RU.ttf', 'RepoRPG_RU.ttf.check'):
+for f in FONT_FILES:
     shutil.move(os.path.join(HOME, 'font', f), os.path.join(HOME, f))
 os.rmdir(os.path.join(HOME, 'font'))
 code, out = launch()
@@ -344,20 +367,52 @@ check('MenuFont added, true', 'MenuFont = true' in cfg, cfg)
 check('the player\'s value kept, the default still told', 'LogUntranslated = false' in cfg and '# Default value: true\nLogUntranslated = false' in cfg, cfg)
 check('font on', font_of(out)[0] == 'RepoRPG_RU')
 
-print('S. the font file is damaged or gone: the mod keeps its own font')
+print('S. the font is damaged or gone: the mod keeps its own font')
 layout()
-with open(os.path.join(HOME, 'font', 'RepoRPG_RU.ttf'), 'wb') as f:
-    f.write(b'\x00\x01\x00\x00' + b'not a font at all' * 400)
+BUNDLE = os.path.join(HOME, 'font', 'RepoRPG_RU.bundle')
+good = open(BUNDLE, 'rb').read()
+ttf = open(os.path.join(REPO, 'mod', 'font', 'RepoRPG_RU.ttf'), 'rb').read()
+check('(the bundle holds the font file as it is)', good.count(ttf) == 1)
+# the font inside the bundle is not a font: the game opens the bundle and draws the letters with a system font
+with open(BUNDLE, 'wb') as f:
+    f.write(good.replace(ttf, ttf[:4] + bytes(len(ttf) - 4)))
 code, out = launch()
-check('damaged: runs, the mod\'s own font', code == 0 and font_of(out) == system and not contains(out, 'PLUGIN FAILED'), [l for l in out if l.startswith('font')])
-check('damaged: font.txt shows the widths that gave it away', 'по файлу 49, в игре 70' in font_txt() and 'итог: шрифт не подключён' in font_txt(), font_txt())
-check('damaged: what the game made for nothing is destroyed (from the file, then by the name)', has(out, 'destroyed=RepoRPG_RU,RepoRPG RU Menu'), [l for l in out if l.startswith('destroyed')])
-check('damaged: asked once, not on every style change', sum(1 for l in out if 'Шрифт меню:' in l) == 1, [l for l in out if 'Шрифт' in l])
-check('damaged: still translated', has(out, 'Label:Выберите класс'))
+check('damaged font: runs, the mod\'s own font', code == 0 and font_of(out) == system and not contains(out, 'PLUGIN FAILED'), [l for l in out if l.startswith('font')])
+check('damaged font: font.txt shows the widths that gave it away', 'по файлу 49, в игре 70' in font_txt() and 'итог: шрифт не подключён' in font_txt(), font_txt())
+check('damaged font: what the game made for nothing is destroyed (from the bundle, then by the name)', has(out, 'destroyed=RepoRPG_RU,RepoRPG RU Menu'), [l for l in out if l.startswith('destroyed')])
+check('damaged font: asked once, not on every style change', sum(1 for l in out if 'Шрифт меню:' in l) == 1, [l for l in out if 'Шрифт' in l])
+check('damaged font: still translated', has(out, 'Label:Выберите класс'))
+check('damaged font: font.txt tells where the game looks for system fonts', 'системные шрифты игра берёт из файлов (2), папки: C:\\Windows\\Fonts' in font_txt()
+      and 'шрифт «RepoRPG RU Menu» среди системных (2): нет' in font_txt(), font_txt())
+# the family name inside the bundle is not the one of the font file: the game would look for another font
+with open(BUNDLE, 'wb') as f:
+    f.write(good.replace(b'RepoRPG RU Menu\x00', b'RepoRPG RU Meny\x00', 1))
+check('(the bundle names the family once, outside the font file)', good.count(b'RepoRPG RU Menu\x00') == 1 and ttf.count(b'RepoRPG RU Menu\x00') == 0)
+code, out = launch()
+check('another family name in the bundle: not taken', code == 0 and font_of(out) == system and 'по файлу 49, в игре 70' in font_txt(), [font_of(out), font_txt()])
+# not a bundle at all, a bundle cut short, a bundle with a loose end (the test double is strict about those: see its head)
+head = good.rfind(b'\x0a\x00\x00\x00RepoRPG_RU\x00\x00', 0, good.find(ttf))          # the font object: its name, then the line height
+no_material = bytearray(good)
+no_material[head + 24] ^= 0x55                                                        # ... then the material: file (4 bytes), id (8)
+shader = b'\x01\x00\x00\x00' + (10101).to_bytes(8, 'little')                           # file 1 (the engine's resources), id 10101
+check('(the font object and its material\'s shader are where the test expects them)', head > 0 and good.count(shader) == 2, [head, good.count(shader)])
+for label, data in (('not a bundle', b'UnityFS\x00' + b'garbage' * 300), ('half a bundle', good[:len(good) // 2]), ('an empty file', b''),
+                    ('a font without its material', bytes(no_material)),
+                    ('a material with another shader', good.replace(shader, b'\x01\x00\x00\x00' + (10102).to_bytes(8, 'little')))):
+    with open(BUNDLE, 'wb') as f:
+        f.write(data)
+    code, out = launch()
+    check(label + ': runs, the mod\'s own font', code == 0 and font_of(out) == system and not contains(out, 'PLUGIN FAILED'), [l for l in out if l.startswith('font')])
+    check(label + ': font.txt says so', 'игра не открыла набор ресурсов' in font_txt() and 'итог: шрифт не подключён' in font_txt(), font_txt())
+    check(label + ': font.txt asks for the game\'s log', 'BepInEx/LogOutput.log' in font_txt(), font_txt())
+os.remove(BUNDLE)
+code, out = launch()
+check('no bundle: the mod\'s own font', code == 0 and font_of(out) == system)
+check('no bundle: font.txt says so and what to do', 'файла RepoRPG_RU.bundle рядом со шрифтом нет' in font_txt() and 'Установить для всех пользователей' in font_txt(), font_txt())
 os.remove(os.path.join(HOME, 'font', 'RepoRPG_RU.ttf'))
 code, out = launch()
-check('gone: the mod\'s own font', code == 0 and font_of(out) == system)
-check('gone: font.txt says so', 'не найден' in font_txt(), font_txt())
+check('no font file: the mod\'s own font', code == 0 and font_of(out) == system)
+check('no font file: font.txt says so', 'не найден' in font_txt(), font_txt())
 layout()
 os.remove(os.path.join(HOME, 'font', 'RepoRPG_RU.ttf.check'))
 code, out = launch()
@@ -370,30 +425,44 @@ code, out = launch()
 check('runs, translated', code == 0 and not contains(out, 'PLUGIN FAILED') and has(out, 'Label:Выберите класс') and has(out, 'Btn:Настройки'), out)
 check('the mod picks its own font, both times it asks', font_of(out) == system and has(out, 'font-hud=Impact') and has(out, 'font-again=False'), [l for l in out if l.startswith('font')])
 
-print('U. a game that cannot make a font from a file')
+print('U. a game that takes no asset bundle')
 layout()
-code, out = launch(FAKE_UNITY_NO_PATHS='1')
+code, out = launch(FAKE_UNITY_NO_BUNDLES='1')
 check('the mod\'s own font', code == 0 and font_of(out) == system, font_of(out))
-check('font.txt says what to do', 'Установить для всех пользователей' in font_txt() and '«RepoRPG RU Menu»' in font_txt() and 'установленный в системе' in font_txt(), font_txt())
-code, out = launch(FAKE_UNITY_NO_PATHS='1', FAKE_UNITY_INSTALLED='RepoRPG RU Menu=' + os.path.join(REPO, 'mod', 'font', 'RepoRPG_RU.ttf'))
-check('the player installed the file as a system font: found by its name', font_of(out) == ('RepoRPG RU Menu', ours[1]) and 'итог: шрифт подключён' in font_txt(), [font_of(out), font_txt()])
-code, out = launch(FAKE_UNITY_NO_PATHS='1', FAKE_UNITY_INSTALLED='RepoRPG RU Menu=' + os.path.join(REPO, 'mod', 'icon.png'))
+check('font.txt says what to do', 'игра не открыла набор ресурсов' in font_txt() and 'Установить для всех пользователей' in font_txt() and '«RepoRPG RU Menu»' in font_txt()
+      and 'попытка 2: шрифт «RepoRPG RU Menu», установленный в системе' in font_txt(), font_txt())
+code, out = launch(FAKE_UNITY_NO_BUNDLES='1', FAKE_UNITY_INSTALLED='RepoRPG RU Menu=' + os.path.join(REPO, 'mod', 'font', 'RepoRPG_RU.ttf'))
+check('the player installed the file as a system font: found by its name', font_of(out) == ('RepoRPG RU Menu', ours[1]) and 'итог: шрифт подключён' in font_txt()
+      and 'установленный в системе («RepoRPG RU Menu»)' in font_txt(), [font_of(out), font_txt()])
+code, out = launch(FAKE_UNITY_NO_BUNDLES='1', FAKE_UNITY_INSTALLED='RepoRPG RU Menu=' + os.path.join(REPO, 'mod', 'icon.png'))
 check('another font under that name is not taken', font_of(out) == system, font_of(out))
+code, out = launch(FAKE_UNITY_INSTALLED='RepoRPG RU Menu=' + os.path.join(REPO, 'mod', 'icon.png'))
+check('the bundle comes first: a wrong font installed under that name changes nothing', font_of(out) == ours, font_of(out))
+os.remove(os.path.join(W, 'bin', 'UnityEngine.AssetBundleModule.dll'))
+code, out = launch()
+check('a game without the asset bundle module: runs, the mod\'s own font', code == 0 and font_of(out) == system and not contains(out, 'PLUGIN FAILED'), [l for l in out if l.startswith('font')])
+check('font.txt says so', 'нет загрузки наборов ресурсов' in font_txt() and 'итог: шрифт не подключён' in font_txt(), font_txt())
+shutil.copy(os.path.join(W, 'bin', 'keep', 'UnityEngine.AssetBundleModule.dll'), os.path.join(W, 'bin'))
 
-print('V. Russian letters in the path of the profile')
+print('V. Russian letters in the path of the profile; what release 0.2.1 left behind')
 layout()
 RU = os.path.join(ROOT, 'plugins', 'павел-RepoRPG_RU')
 os.rename(HOME, RU)
 code, out = launch()
-check('a Unity that reads such paths: straight from the file', font_of(out)[0] == 'RepoRPG_RU' and 'попытка 2' not in font_txt() and not os.listdir(GAME), font_txt())
-code, out = launch(FAKE_UNITY_ASCII_PATHS='1')
-copy = os.path.join(GAME, 'RepoRPG_RU', 'RepoRPG_RU.ttf')
-check('a Unity that cannot: a copy at a path without them', font_of(out)[0] == 'RepoRPG_RU' and os.path.isfile(copy), [font_of(out), font_txt()])
-check('the copy is the file', os.path.isfile(copy) and open(copy, 'rb').read() == open(os.path.join(REPO, 'mod', 'font', 'RepoRPG_RU.ttf'), 'rb').read())
-check('font.txt tells both attempts', 'попытка 1' in font_txt() and 'по файлу 49, в игре 70' in font_txt() and 'попытка 2' in font_txt() and 'прочитан по пути' in font_txt(), font_txt())
-mtime = os.path.getmtime(copy)
-code, out = launch(FAKE_UNITY_ASCII_PATHS='1')
-check('the copy is not written again', os.path.getmtime(copy) == mtime and font_of(out)[0] == 'RepoRPG_RU')
+check('the font is connected all the same', font_of(out) == ours and 'попытка 2' not in font_txt(), [font_of(out), font_txt()])
+check('nothing is copied anywhere', not os.listdir(GAME), os.listdir(GAME))
+# 0.2.1 copied the font file to a folder of its own in the game's folder (or C:\ProgramData) for such a profile
+left = os.path.join(GAME, 'RepoRPG_RU')
+os.makedirs(left)
+shutil.copy(os.path.join(REPO, 'mod', 'font', 'RepoRPG_RU.ttf'), left)
+code, out = launch()
+check('the copy 0.2.1 left is removed with its folder', not os.path.exists(left) and font_of(out) == ours, os.listdir(GAME))
+check('font.txt tells about it', 'удалена копия шрифта, которую оставила версия 0.2.1' in font_txt(), font_txt())
+os.makedirs(left)
+shutil.copy(os.path.join(REPO, 'mod', 'font', 'RepoRPG_RU.ttf'), left)
+open(os.path.join(left, 'notes.txt'), 'w').write('somebody else\'s file')
+code, out = launch()
+check('a folder with anything else in it is left alone', sorted(os.listdir(left)) == ['RepoRPG_RU.ttf', 'notes.txt'], os.listdir(left))
 shutil.rmtree(RU)
 
 print()
