@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Text;
 
 [assembly: AssemblyTitle("RepoRPG RU - runtime")]
-[assembly: AssemblyVersion("0.2.1.0")]
+[assembly: AssemblyVersion("0.2.2.0")]
 
 namespace RepoRPG_RU
 {
@@ -33,6 +33,9 @@ namespace RepoRPG_RU
         private static Dictionary<string, Thing> things;        // "STRIKER MODULE" -> the gender and the translation
         private static Dictionary<string, string> owners;       // "BRAWLER" -> "драчуна"
         private static Pattern[] loose;
+        // the same patterns in capitals: the mod's HUD shouts whole lines ("HOLDING: COMMON VALUABLE  $3 300")
+        private static Dictionary<string, Pattern[]> loudHead, loudTail;
+        private static Pattern[] loudLoose;
         private static KeyValuePair<string, string>[] prefixes = new KeyValuePair<string, string>[0], suffixes = new KeyValuePair<string, string>[0];
         private static Dictionary<string, string> memo;
         private const int MemoLimit = 6000;
@@ -238,6 +241,15 @@ namespace RepoRPG_RU
         {
             string r;
 
+            // "Cursed Impact Gauntlet?", "SALVAGE RARE IRON PLATE?" + its last mark: a name the mod built is one thing, and a
+            // pattern ("Cursed {0}") must not take it apart
+            if (things != null && text.Length > 3)
+            {
+                char mark = text[text.Length - 1];
+                if ((mark == '?' || mark == '!' || mark == '.' || mark == ':') && IsLatinLetter(text[text.Length - 2])
+                    && (r = Built(text.Substring(0, text.Length - 1))) != null) return r + mark;
+            }
+
             // a whole sentence the mod filled in: the most exact answer there is
             if (text.Length >= 2)
             {
@@ -245,6 +257,13 @@ namespace RepoRPG_RU
                 if (byHead.TryGetValue(text.Substring(0, 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
                 if (byTail.TryGetValue(text.Substring(text.Length - 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
                 if (loose.Length > 0 && (r = Try(loose, text, depth)) != null) return r;
+                // "$7 300  33M AHEAD", "HOLDING: COMMON VALUABLE  $3 300": a sentence the mod filled in and then put in capitals
+                if (loudLoose != null && Shouted(text))
+                {
+                    if (loudHead.TryGetValue(text.Substring(0, 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
+                    if (loudTail.TryGetValue(text.Substring(text.Length - 2), out bucket) && (r = Try(bucket, text, depth)) != null) return r;
+                    if (loudLoose.Length > 0 && (r = Try(loudLoose, text, depth)) != null) return r;
+                }
             }
 
             // spaces and line breaks around the text say nothing: " Rare gear" is "Rare gear"
@@ -258,18 +277,27 @@ namespace RepoRPG_RU
             }
 
             // rich text wrapper: <color=#fff><b>TEXT</b></color>
-            int head = 0, tail = text.Length;
+            int head = 0, tail = text.Length, head1 = -1, tail1 = -1;
             while (head < tail && text[head] == '<')
             {
                 int close = text.IndexOf('>', head);
                 if (close < 0 || close - head > 40 || text[head + 1] == '/') break;
                 head = close + 1;
+                if (head1 < 0) head1 = head;
             }
             while (tail > head && text[tail - 1] == '>')
             {
                 int open = text.LastIndexOf('<', tail - 1);
                 if (open < head || tail - open > 40 || open + 1 >= tail || text[open + 1] != '/') break;
                 tail = open;
+                if (tail1 < 0) tail1 = tail;
+            }
+            // "<color=#9a9ca0><color=#ffd75a>All milestones reached</color></color>": the entry has a colour of its own, the mod
+            // wrapped it in another one - only the outer pair is not part of the text
+            if (head1 > 0 && tail1 > 0 && (head1 < head || tail1 > tail) && tail1 > head1)
+            {
+                string own = Exact(text.Substring(head1, tail1 - head1));
+                if (own != null) return text.Substring(0, head1) + own + text.Substring(tail1);
             }
             if ((head > 0 || tail < text.Length) && tail > head)
             {
@@ -411,6 +439,7 @@ namespace RepoRPG_RU
                 if (c != '.' && c != ',' && c != '%' && c != '+' && c != '-' && c != '/' && c != '\u00A0') return null;
             }
             if (!digit) return null;
+            while (sp > 2 && text[sp - 1] == ' ') sp--;                 // "RPG SCRAP  91": two spaces set the number apart
             string name = Named(text.Substring(0, sp));
             return name == null ? null : name + text.Substring(sp);
         }
@@ -949,7 +978,15 @@ namespace RepoRPG_RU
                 }
             }
             if ((head == 0 && tail == text.Length) || tail - head < 2) return null;
-            string core = Sub(text.Substring(head, tail - head), depth + 1);
+            string core;
+            // "· Four new run boons join the vote pool: Quick Study, Data Mine." - a bullet in front of a sentence of the mod's
+            // data: the full stop at the end is the sentence's own
+            if (head > 0 && tail < text.Length && text.Length - head >= 2)
+            {
+                core = Sub(text.Substring(head), depth + 1);
+                if (core != null) return text.Substring(0, head) + core;
+            }
+            core = Sub(text.Substring(head, tail - head), depth + 1);
             if (core != null) return text.Substring(0, head) + core + text.Substring(tail);
             // "Medium (47 FPS in the first minute)" + ".": the bracket belongs to the text, only the full stop was added
             int n = text.Length;
@@ -1067,6 +1104,58 @@ namespace RepoRPG_RU
             return new string(a);
         }
 
+        /// <summary>Written in capitals by the mod: no small Latin letter outside rich text tags, and at least three capital ones.</summary>
+        private static bool Shouted(string s)
+        {
+            int capitals = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                char c = s[i];
+                if (c == '<')
+                {
+                    int close = s.IndexOf('>', i);
+                    if (close > i && close - i <= 40) { i = close; continue; }
+                }
+                if (c >= 'a' && c <= 'z') return false;
+                if (c >= 'A' && c <= 'Z') capitals++;
+            }
+            return capitals >= 3;
+        }
+
+        /// <summary>
+        /// The text in capitals the way the mod's HUD writes it: rich text tags stay as they are, and so do the {0} placeholders
+        /// of a pattern (<paramref name="holes"/>).
+        /// </summary>
+        private static string UpperOutside(string s, bool holes)
+        {
+            StringBuilder sb = null;
+            int n = s.Length, from = 0;
+            for (int i = 0; i < n; i++)
+            {
+                char c = s[i];
+                int end = -1;
+                if (c == '<')
+                {
+                    int close = s.IndexOf('>', i);
+                    if (close > i && close - i <= 40) end = close;
+                }
+                else if (holes && c == '{')
+                {
+                    int close = s.IndexOf('}', i);
+                    if (close > i) end = close;
+                }
+                if (end < 0) continue;
+                if (sb == null) sb = new StringBuilder(n);
+                if (i > from) sb.Append(Upper(s.Substring(from, i - from)));
+                sb.Append(s, i, end - i + 1);
+                from = end + 1;
+                i = end;
+            }
+            if (sb == null) return Upper(s);
+            if (from < n) sb.Append(Upper(s.Substring(from)));
+            return sb.ToString();
+        }
+
         private static bool HasCyrillic(string s)
         {
             for (int i = 0; i < s.Length; i++) if (s[i] >= '\u0400' && s[i] <= '\u04FF') return true;
@@ -1102,6 +1191,30 @@ namespace RepoRPG_RU
             public bool[] Known;       // "{0} gear": a rarity stands here - a word the dictionary has, or this is another text ("Spawn gear")
             public int[] Form;         // "Rarity: {0}": the form a rarity takes there (0 he, 1 she, 2 it, 3 they), -1 as the dictionary has it
             public bool[] Rarity;      // "{0} gear": nothing but a rarity may stand there ("team gear" is another text)
+            public bool Loud;          // the copy in capitals of another pattern (see Shout)
+
+            /// <summary>
+            /// The same pattern for a text the mod put in capitals after filling it in ("TAKEN BY {0}" for "Taken by {0}"):
+            /// what the pattern is and what its placeholders may take was worked out from the text as the mod wrote it, so
+            /// all of that is kept - only the letters to look for and the letters of the answer change. Null when the pattern
+            /// is written in capitals already.
+            /// </summary>
+            public Pattern Shout()
+            {
+                string[] lits = new string[Lits.Length];
+                bool same = true;
+                for (int i = 0; i < lits.Length; i++)
+                {
+                    lits[i] = UpperOutside(Lits[i], false);
+                    if (!string.Equals(lits[i], Lits[i], StringComparison.Ordinal)) same = false;
+                }
+                if (same) return null;
+                Pattern p = (Pattern)MemberwiseClone();
+                p.Lits = lits;
+                p.Template = UpperOutside(Template, true);
+                p.Loud = true;
+                return p;
+            }
 
             private const byte Value = 0, Clause = 1, Line = 2;
 
@@ -1194,7 +1307,7 @@ namespace RepoRPG_RU
                 for (int k = 0; k < p.Slots.Length; k++)
                 {
                     bool kept = false;
-                    foreach (string h in used) if (Fmt.FormatIndex(h) == p.Slots[k]) kept = true;
+                    foreach (string h in used) if (Fmt.FormatIndex(h) == p.Slots[k] || Fmt.ChoiceIndex(h) == p.Slots[k]) kept = true;
                     p.Dropped[k] = !kept;
                 }
                 p.Kind = new byte[p.Slots.Length];
@@ -1237,6 +1350,24 @@ namespace RepoRPG_RU
                 }
                 foreach (string l in p.Lits) p.Weight += l.Length;
                 return p;
+            }
+
+            /// <summary>
+            /// Which of the three forms of a Russian word goes with this number: 0 - «1 осколок», 1 - «2 осколка» (and fractions),
+            /// 2 - «5 осколков». The number is the last one in the text: "+3", "1 250", "x2".
+            /// </summary>
+            internal static int Plural(string v)
+            {
+                int end = v.Length;
+                while (end > 0 && !IsDigit(v[end - 1])) end--;
+                if (end == 0) return 2;
+                int start = end;
+                while (start > 0 && IsDigit(v[start - 1])) start--;
+                // a fraction: "0.5", "1,5" - but "1,200" is twelve hundred
+                if (start > 1 && (v[start - 1] == '.' || v[start - 1] == ',') && IsDigit(v[start - 2]) && !(v[start - 1] == ',' && end - start == 3)) return 1;
+                int tens = end - start >= 2 ? v[end - 2] - '0' : 0, ones = v[end - 1] - '0';
+                if (tens == 1) return 2;
+                return ones == 1 ? 0 : ones >= 2 && ones <= 4 ? 1 : 2;
             }
 
             // What a short pattern may catch: a name, a number, a price. Not a sentence, not several things in a row,
@@ -1393,6 +1524,19 @@ namespace RepoRPG_RU
                         if (i + 1 < Template.Length && Template[i + 1] == '{') { sb.Append('{'); i++; continue; }
                         int close = Template.IndexOf('}', i);
                         if (close < 0) return null;
+                        int bar = Template.IndexOf('|', i, close - i);
+                        if (bar > 0)
+                        {
+                            // "{0|сухожилие|сухожилия|сухожилий}": the word in the form the number in {0} asks for (1, 2-4, 5 and more)
+                            int of = Fmt.ChoiceIndex(Template.Substring(i, close - i + 1));
+                            int numberSlot = of < 0 ? -1 : Array.IndexOf(Slots, of);
+                            if (numberSlot < 0) return null;
+                            string[] wordForms = Template.Substring(bar + 1, close - bar - 1).Split('|');
+                            string word = wordForms[Plural(caught[numberSlot])];
+                            sb.Append(Loud ? Upper(word) : word);
+                            i = close;
+                            continue;
+                        }
                         int index = Fmt.FormatIndex(Template.Substring(i, close - i + 1));
                         int slot = index < 0 ? -1 : Array.IndexOf(Slots, index);
                         if (slot < 0)
@@ -1570,12 +1714,15 @@ namespace RepoRPG_RU
             Dictionary<string, List<Pattern>> heads = new Dictionary<string, List<Pattern>>(StringComparer.Ordinal);
             Dictionary<string, List<Pattern>> tails = new Dictionary<string, List<Pattern>>(StringComparer.Ordinal);
             List<Pattern> rest = new List<Pattern>();
+            // ...and the same in capitals, kept apart: only a text written in capitals is ever compared with them
+            Dictionary<string, List<Pattern>> loudHeads = new Dictionary<string, List<Pattern>>(StringComparer.Ordinal);
+            Dictionary<string, List<Pattern>> loudTails = new Dictionary<string, List<Pattern>>(StringComparer.Ordinal);
+            List<Pattern> loudRest = new List<Pattern>();
             foreach (Pattern p in all)
             {
-                string first = p.Lits[0], lastLit = p.Lits[p.Lits.Length - 1];
-                if (first.Length >= 2) Bucket(heads, first.Substring(0, 2), p);
-                else if (lastLit.Length >= 2) Bucket(tails, lastLit.Substring(lastLit.Length - 2), p);
-                else rest.Add(p);
+                Sort(p, heads, tails, rest);
+                Pattern loud = p.Shout();
+                if (loud != null) Sort(loud, loudHeads, loudTails, loudRest);
             }
 
             Dictionary<string, string> sh = null;
@@ -1597,6 +1744,12 @@ namespace RepoRPG_RU
                         i = close;
                     }
                     if (good) sh[key.ToString()] = kv.Value;
+                }
+                // "KILL 3 ELITES": the HUD writes the goal of a contract in capitals
+                foreach (KeyValuePair<string, string> kv in new List<KeyValuePair<string, string>>(sh))
+                {
+                    string loud = UpperOutside(kv.Key, false);
+                    if (!sh.ContainsKey(loud)) sh[loud] = UpperOutside(kv.Value, true);
                 }
             }
 
@@ -1635,6 +1788,9 @@ namespace RepoRPG_RU
             byHead = Freeze(heads);
             byTail = Freeze(tails);
             loose = rest.ToArray();
+            loudHead = Freeze(loudHeads);
+            loudTail = Freeze(loudTails);
+            loudLoose = loudRest.ToArray();
             memo = new Dictionary<string, string>(StringComparer.Ordinal);
             map = m;
             fallbacks = m.Count > 0;
@@ -1646,17 +1802,34 @@ namespace RepoRPG_RU
                 logPath = Path.Combine(dir, "untranslated.txt");
                 seen = new HashSet<string>(StringComparer.Ordinal);
                 pending = new List<string>();
+                // The file belongs to one version of the add-on: what an older one could not translate says nothing about this
+                // one (and would hide the same text if it is still English - a text is written down once).
+                string header = "# RepoRPG RU " + BuildInfo.Version + " - тексты мода, которые остались английскими (целиком или частично; «~» - частично). "
+                                + "С каждой новой версией русификатора файл начинается заново.";
                 try
                 {
-                    if (File.Exists(logPath))
-                        foreach (string line in File.ReadAllLines(logPath, Encoding.UTF8))
-                            if (line.Length > 0) seen.Add(line);
+                    string[] lines = File.Exists(logPath) ? File.ReadAllLines(logPath, Encoding.UTF8) : new string[0];
+                    if (lines.Length > 0 && string.Equals(lines[0], header, StringComparison.Ordinal))
+                    {
+                        foreach (string line in lines)
+                            if (line.Length > 0) seen.Add(Zeroed(line));
+                    }
+                    else File.WriteAllText(logPath, header + "\n", new UTF8Encoding(false));
                 }
                 catch { }
                 nextFlush = Environment.TickCount;
                 try { AppDomain.CurrentDomain.ProcessExit += delegate { Flush(); }; } catch { }
                 logging = true;
             }
+        }
+
+        /// <summary>Where a pattern is looked for: by the two letters it starts with, by the two it ends with, or among the rest.</summary>
+        private static void Sort(Pattern p, Dictionary<string, List<Pattern>> heads, Dictionary<string, List<Pattern>> tails, List<Pattern> rest)
+        {
+            string first = p.Lits[0], lastLit = p.Lits[p.Lits.Length - 1];
+            if (first.Length >= 2) Bucket(heads, first.Substring(0, 2), p);
+            else if (lastLit.Length >= 2) Bucket(tails, lastLit.Substring(lastLit.Length - 2), p);
+            else rest.Add(p);
         }
 
         private static void Bucket(Dictionary<string, List<Pattern>> table, string key, Pattern p)
@@ -1737,7 +1910,8 @@ namespace RepoRPG_RU
                 if (text != null && seen.Count < MaxLogged && text.Length <= 400)
                 {
                     string line = Flatten(text);
-                    if (seen.Add(line)) pending.Add(line);
+                    // "$7 300  33M AHEAD", "$7 300  32M AHEAD", ...: one text, whatever its numbers are
+                    if (seen.Add(Zeroed(line))) pending.Add(line);
                 }
                 if (pending.Count == 0) return;
                 int now = Environment.TickCount;
@@ -1749,6 +1923,19 @@ namespace RepoRPG_RU
             {
                 logging = false;
             }
+        }
+
+        /// <summary>The text with every digit turned into 0: counters and distances do not make it another text.</summary>
+        private static string Zeroed(string s)
+        {
+            char[] a = null;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] < '1' || s[i] > '9') continue;
+                if (a == null) a = s.ToCharArray();
+                a[i] = '0';
+            }
+            return a == null ? s : new string(a);
         }
 
         private static void Flush()

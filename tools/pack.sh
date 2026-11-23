@@ -19,7 +19,7 @@ cp mod/manifest.json mod/README.md mod/CHANGELOG.md mod/icon.png "$STAGE/"
 cp build/RepoRPG_RU.Patcher.dll "$STAGE/patchers/"
 cp build/RepoRPG_RU.dll mod/RepoRPG_RU.rules "$STAGE/plugins/"
 cp mod/lang/*.po "$STAGE/plugins/lang/"
-cp mod/font/RepoRPG_RU.ttf mod/font/RepoRPG_RU.ttf.check mod/font/OFL.txt "$STAGE/plugins/font/"
+cp mod/font/RepoRPG_RU.bundle mod/font/RepoRPG_RU.ttf mod/font/RepoRPG_RU.ttf.check mod/font/OFL.txt "$STAGE/plugins/font/"
 
 OUT="$PWD/release/RepoRPG_RU-$VERSION.zip"
 rm -f "$OUT"

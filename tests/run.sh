@@ -13,6 +13,10 @@ rm -rf "$W" && mkdir -p "$W/bin" "$W/fake"
 "$RTK/csc.sh" "${CORE[@]}" -target:library -langversion:7.3 -out:"$W/bin/BepInEx.dll" src/Stubs/BepInEx.cs tests/BepInExTestOnly.cs
 "$RTK/csc.sh" "${CORE[@]}" -target:library -langversion:7.3 -out:"$W/bin/UnityEngine.CoreModule.dll" tests/unity/CoreModule.cs
 "$RTK/csc.sh" "${CORE[@]}" -target:library -langversion:7.3 -out:"$W/bin/UnityEngine.TextRenderingModule.dll" -r:"$W/bin/UnityEngine.CoreModule.dll" tests/unity/TextRenderingModule.cs
+# (the mod never mentions asset bundles: like in the game, that module is loaded only when the add-on asks for it by name)
+"$RTK/csc.sh" "${CORE[@]}" -target:library -langversion:7.3 -out:"$W/bin/UnityEngine.AssetBundleModule.dll" -r:"$W/bin/UnityEngine.CoreModule.dll" \
+    -r:"$W/bin/UnityEngine.TextRenderingModule.dll" tests/unity/AssetBundleModule.cs
+mkdir -p "$W/bin/keep" && cp "$W/bin/UnityEngine.AssetBundleModule.dll" "$W/bin/keep/"       # one scenario takes the module away
 UNITY=(-r:"$W/bin/UnityEngine.CoreModule.dll" -r:"$W/bin/UnityEngine.TextRenderingModule.dll")
 cp "$RTK/lib/Mono.Cecil.dll" "$W/bin/"
 "$RTK/csc.sh" "${CORE[@]}" -target:exe -langversion:7.3 -out:"$W/bin/Host.exe" -r:"$W/bin/BepInEx.dll" -r:"$W/bin/Mono.Cecil.dll" tests/Host.cs

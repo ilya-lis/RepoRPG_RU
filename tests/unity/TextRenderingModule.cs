@@ -1,17 +1,20 @@
 // Test double of UnityEngine.TextRenderingModule: Font, FontStyle and CharacterInfo with the signatures of Unity 6
 // (UnityCsReference, branch 6000.3, Modules/TextRendering/TextRendering.bindings.cs). Never shipped.
 //
-// Like the real thing, a Font made from a path is a dynamic font: letters must be asked for before they can be measured,
-// and a file that cannot be read does not make the constructor fail - the letters then silently come from a system font.
-// The double reads real TrueType files (head, hhea, hmtx and the Windows Unicode cmap), so the widths it reports for
+// It behaves the way the game was seen to behave (font.txt of release 0.2.1, Unity 6000.3.17):
+//   * `new Font(path)` makes an object named after the path, not dynamic and without a single character;
+//   * a font asked for by a name the system does not have comes back all the same - as some other system font;
+//   * a font that comes out of an asset bundle is a dynamic font with the file inside it (see AssetBundleModule.cs):
+//     letters must be asked for before they can be measured, and what the file lacks comes from a system font.
+// The double reads real TrueType data (head, hhea, hmtx, name and the Windows Unicode cmap), so the widths it reports for
 // the add-on's font are the ones written in that file. A "system font" is 0.70 em per letter, the width of Arial's capitals.
 //
-// FAKE_UNITY_ASCII_PATHS=1 makes it unable to open paths with letters outside ASCII (what a native fopen() does on Windows).
-// FAKE_UNITY_NO_PATHS=1     makes it unable to read a font from any path.
 // FAKE_UNITY_INSTALLED=<family>=<file>  is a font installed in the system.
 using System;
 using System.Collections.Generic;
 using System.IO;
+
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("UnityEngine.AssetBundleModule")]
 
 namespace UnityEngine
 {
@@ -43,34 +46,33 @@ namespace UnityEngine
         private Dictionary<int, int> glyphs;     // letter -> glyph, from the file
         private int[] advances;
         private int unitsPerEm;
+        private string family;                   // of the font data
+        private readonly bool isDynamic;
+        private readonly float size, line, rise;
 
-        public static readonly List<string> Opened = new List<string>();
-
-        public bool dynamic { get { return true; } }
+        public bool dynamic { get { return isDynamic; } }
         public string[] fontNames { get; set; }
-        public int fontSize { get { return 32; } }
-        public int lineHeight { get { return (int)Math.Round(fontSize * (glyphs == null ? 1.15f : lineUnits / (float)unitsPerEm)); } }
-        public int ascent { get { return (int)Math.Round(fontSize * (glyphs == null ? 0.905f : ascentUnits / (float)unitsPerEm)); } }
-        private int lineUnits, ascentUnits;
+        public int fontSize { get { return (int)size; } }
+        public int lineHeight { get { return (int)line; } }
+        public int ascent { get { return (int)rise; } }
 
         public Font() { name = "Arial"; fontNames = new string[] { "Arial" }; }
 
         public Font(string name)
         {
-            // the same test the real constructor makes: a bare name is a font name, anything else a path
+            // the same test the real constructor makes: a bare name is a font name, anything else a path.
+            // Either way the object has no characters: this is not how a usable font is made.
             bool isFileName = Path.GetDirectoryName(name) == string.Empty;
-            if (isFileName) { this.name = name; fontNames = new string[] { name }; return; }
-            this.name = Path.GetFileNameWithoutExtension(name);
-            fontNames = new string[] { this.name };
-            Opened.Add(name);
-            try { Read(name); }
-            catch { glyphs = null; }                // unreadable: a system font takes over, nobody is told
+            this.name = isFileName ? name : Path.Combine(Path.GetDirectoryName(name), Path.GetFileNameWithoutExtension(name));
+            fontNames = new string[0];
         }
 
         private Font(string[] names, int size)
         {
             name = names.Length > 0 ? names[0] : "Arial";
             fontNames = names;
+            isDynamic = true;
+            this.size = size; line = size * 1.15f; rise = size * 0.905f;
             string installed = Environment.GetEnvironmentVariable("FAKE_UNITY_INSTALLED");
             int eq = installed == null ? -1 : installed.IndexOf('=');
             if (eq > 0 && names.Length > 0 && names[0] == installed.Substring(0, eq))
@@ -80,20 +82,55 @@ namespace UnityEngine
             }
         }
 
+        /// <summary>The font object of an asset bundle: the fields Unity stores for it (AssetBundleModule.cs reads them).</summary>
+        internal Font(string name, byte[] data, string[] names, bool dynamic, float fontSize, float lineSpacing, float ascent)
+        {
+            this.name = name;
+            fontNames = names;
+            isDynamic = dynamic;
+            size = fontSize; line = lineSpacing; rise = ascent;
+            try
+            {
+                Parse(data);
+                // the engine finds the face of a dynamic font by the first of its names: another name there, another font drawn
+                if (names.Length == 0 || names[0] != family) glyphs = null;
+            }
+            catch { glyphs = null; }
+        }
+
         public static Font CreateDynamicFontFromOSFont(string fontname, int size) { return new Font(new string[] { fontname }, size); }
         public static Font CreateDynamicFontFromOSFont(string[] fontnames, int size) { return new Font(fontnames, size); }
 
-        public bool HasCharacter(char c) { return glyphs == null || glyphs.ContainsKey(c); }
+        public static string[] GetPathsToOSFonts()
+        {
+            List<string> list = new List<string>(new string[] { "C:\\Windows\\Fonts\\arial.ttf", "C:\\Windows\\Fonts\\segoeui.ttf" });
+            string installed = Environment.GetEnvironmentVariable("FAKE_UNITY_INSTALLED");
+            int eq = installed == null ? -1 : installed.IndexOf('=');
+            if (eq > 0) list.Add("C:\\Windows\\Fonts\\" + Path.GetFileName(installed.Substring(eq + 1)));
+            return list.ToArray();
+        }
+
+        public static string[] GetOSInstalledFontNames()
+        {
+            List<string> list = new List<string>(new string[] { "Arial", "Segoe UI" });
+            string installed = Environment.GetEnvironmentVariable("FAKE_UNITY_INSTALLED");
+            int eq = installed == null ? -1 : installed.IndexOf('=');
+            if (eq > 0) list.Add(installed.Substring(0, eq));
+            return list.ToArray();
+        }
+
+        public bool HasCharacter(char c) { return isDynamic && (glyphs == null || glyphs.ContainsKey(c)); }
 
         public void RequestCharactersInTexture(string characters, int size, FontStyle style)
         {
+            if (!isDynamic) return;
             foreach (char c in characters) requested[Key(c, size, style)] = true;
         }
 
         public bool GetCharacterInfo(char ch, out CharacterInfo info, int size, FontStyle style)
         {
             info = new CharacterInfo();
-            if (!requested.ContainsKey(Key(ch, size, style))) return false;
+            if (!isDynamic || !requested.ContainsKey(Key(ch, size, style))) return false;
             int glyph;
             float em = 0.70f;                                              // the system font
             if (glyphs != null && glyphs.TryGetValue(ch, out glyph)) em = advances[Math.Min(glyph, advances.Length - 1)] / (float)unitsPerEm;
@@ -108,30 +145,29 @@ namespace UnityEngine
 
         // ------------------------------------------------------------------ a small TrueType reader
 
-        private void Read(string path)
-        {
-            if (Environment.GetEnvironmentVariable("FAKE_UNITY_NO_PATHS") == "1") throw new IOException("cannot open");
-            if (Environment.GetEnvironmentVariable("FAKE_UNITY_ASCII_PATHS") == "1")
-                foreach (char c in path) if (c > '~') throw new IOException("cannot open");
-            Parse(File.ReadAllBytes(path));
-        }
-
         private void Parse(byte[] d)
         {
             if (U32(d, 0) != 0x00010000) throw new IOException("not a TrueType file");
             int tables = U16(d, 4);
-            int head = -1, hhea = -1, hmtx = -1, cmap = -1;
+            int head = -1, hhea = -1, hmtx = -1, cmap = -1, names = -1;
             for (int i = 0; i < tables; i++)
             {
                 int rec = 12 + i * 16;
                 string tag = "" + (char)d[rec] + (char)d[rec + 1] + (char)d[rec + 2] + (char)d[rec + 3];
                 int offset = (int)U32(d, rec + 8);
                 if (tag == "head") head = offset; else if (tag == "hhea") hhea = offset; else if (tag == "hmtx") hmtx = offset; else if (tag == "cmap") cmap = offset;
+                else if (tag == "name") names = offset;
             }
-            if (head < 0 || hhea < 0 || hmtx < 0 || cmap < 0) throw new IOException("tables missing");
+            if (head < 0 || hhea < 0 || hmtx < 0 || cmap < 0 || names < 0) throw new IOException("tables missing");
             unitsPerEm = U16(d, head + 18);
-            ascentUnits = (short)U16(d, hhea + 4);
-            lineUnits = ascentUnits - (short)U16(d, hhea + 6) + (short)U16(d, hhea + 8);
+            // the family: name 1 of the Windows platform, UTF-16
+            int records = U16(d, names + 2), strings = names + U16(d, names + 4);
+            for (int i = 0; i < records; i++)
+            {
+                int rec = names + 6 + i * 12;
+                if (U16(d, rec) != 3 || U16(d, rec + 6) != 1) continue;
+                family = System.Text.Encoding.BigEndianUnicode.GetString(d, strings + U16(d, rec + 10), U16(d, rec + 8));
+            }
             int metrics = U16(d, hhea + 34);
             advances = new int[metrics];
             for (int i = 0; i < metrics; i++) advances[i] = U16(d, hmtx + i * 4);

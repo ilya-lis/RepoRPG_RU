@@ -228,6 +228,63 @@ namespace RepoRPG_RU
             return (next == '}' || next == ':' || next == ',') ? n : -1;
         }
 
+        /// <summary>
+        /// "{0|осколок|осколка|осколков}" -> 0: a word of the translation in the form the number in {0} asks for. Only a text
+        /// that is put together at display time may have it (msgctxt "pattern"): string.Format knows nothing of the kind.
+        /// -1 for anything else.
+        /// </summary>
+        public static int ChoiceIndex(string hole)
+        {
+            if (hole.Length < 9 || hole[0] != '{' || hole[hole.Length - 1] != '}') return -1;
+            int i = 1, n = 0;
+            if (hole[i] < '0' || hole[i] > '9') return -1;
+            while (i < hole.Length - 1 && hole[i] >= '0' && hole[i] <= '9') { n = n * 10 + (hole[i] - '0'); i++; if (n > 9999) return -1; }
+            if (hole[i] != '|') return -1;
+            int bars = 0, run = 0;
+            for (i++; i < hole.Length - 1; i++)
+            {
+                if (hole[i] == '|') { if (run == 0) return -1; bars++; run = 0; }
+                else run++;
+            }
+            return bars == 2 && run > 0 ? n : -1;
+        }
+
+        /// <summary>
+        /// A display-time translation without its "{0|one|few|many}" words - what is left has to pass <see cref="SameHoles"/>.
+        /// Null when such a word counts by a placeholder the original does not have.
+        /// </summary>
+        public static string WithoutChoices(string original, string translation)
+        {
+            if (translation.IndexOf('|') < 0) return translation;
+            HashSet<int> have = new HashSet<int>();
+            foreach (string h in Holes(original)) { int k = FormatIndex(h); if (k >= 0) have.Add(k); }
+            StringBuilder sb = new StringBuilder(translation.Length);
+            int i = 0, n = translation.Length;
+            while (i < n)
+            {
+                char c = translation[i];
+                if ((c == '{' || c == '}') && i + 1 < n && translation[i + 1] == c) { sb.Append(c).Append(c); i += 2; continue; }     // "{{", "}}": a brace
+                if (c == '{')
+                {
+                    int close = translation.IndexOf('}', i);
+                    if (close > i)
+                    {
+                        string hole = translation.Substring(i, close - i + 1);
+                        if (hole.IndexOf('|') > 0)
+                        {
+                            int k = ChoiceIndex(hole);
+                            if (k < 0 || !have.Contains(k)) return null;
+                            i = close + 1;
+                            continue;
+                        }
+                    }
+                }
+                sb.Append(c);
+                i++;
+            }
+            return sb.ToString();
+        }
+
         public static List<string> Holes(string s)
         {
             List<string> r = new List<string>();

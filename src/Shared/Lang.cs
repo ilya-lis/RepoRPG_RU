@@ -116,7 +116,9 @@ namespace RepoRPG_RU
                 return;
             }
             bool data = e.Ctx != null && (e.Ctx == "data" || e.Ctx.StartsWith("data:", StringComparison.Ordinal));
-            if (data ? !Fmt.SameTokens(e.Id, e.Str) : !Fmt.SameHoles(e.Id, e.Str))
+            // "{0} {0|осколок|осколка|осколков}": a word that follows a number - for texts put together at display time only
+            string plain = e.Ctx == "pattern" ? Fmt.WithoutChoices(e.Id, e.Str) : e.Str;
+            if (plain == null || (data ? !Fmt.SameTokens(e.Id, e.Str) : !Fmt.SameHoles(e.Id, plain)))
             {
                 Rejected++;
                 Problems.Add(e.File + ":" + e.Line + ": {placeholders} differ from the original, entry ignored");

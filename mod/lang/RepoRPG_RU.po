@@ -8655,7 +8655,7 @@ msgid "Select an attribute"
 msgstr "Выберите характеристику"
 
 msgid "What it gives, its milestones and pairings show here."
-msgstr "Здесь показывается, что она даёт, её этапы и сочетания."
+msgstr "Здесь показывается, что она даёт, её вехи и сочетания."
 
 msgid "Its lines, modules, a comparison and its actions show here."
 msgstr "Здесь показываются его свойства, модули, сравнение и действия."
@@ -10449,6 +10449,98 @@ msgstr "следование выкл. - расчистка пути"
 msgctxt "term"
 msgid "crafting"
 msgstr "крафт"
+
+msgctxt "term"
+msgid "The other option is gone once you take it."
+msgstr "Второй вариант пропадёт, когда вы возьмёте этот."
+
+msgctxt "term"
+msgid "The other options are gone once you take it."
+msgstr "Остальные варианты пропадут, когда вы возьмёте этот."
+
+msgctxt "term"
+msgid "not accepted"
+msgstr "не принят"
+
+msgctxt "term"
+msgid "not reached"
+msgstr "цель не достигнута"
+
+msgctxt "term"
+msgid "stale"
+msgstr "устарел"
+
+msgctxt "term"
+msgid "not in a level"
+msgstr "не на уровне"
+
+msgctxt "term"
+msgid "stamina/s"
+msgstr "выносливости/с"
+
+msgctxt "term"
+msgid "Clean Hands accepted"
+msgstr "«Чистые руки» принят"
+
+msgctxt "term"
+msgid "Clean Hands declined"
+msgstr "«Чистые руки» отклонён"
+
+msgctxt "term"
+msgid "Deathless accepted"
+msgstr "«Без смертей» принят"
+
+msgctxt "term"
+msgid "Deathless declined"
+msgstr "«Без смертей» отклонён"
+
+msgctxt "term"
+msgid "Pacifist accepted"
+msgstr "«Пацифист» принят"
+
+msgctxt "term"
+msgid "Pacifist declined"
+msgstr "«Пацифист» отклонён"
+
+msgctxt "term"
+msgid "Big Haul accepted"
+msgstr "«Большая добыча» принят"
+
+msgctxt "term"
+msgid "Big Haul declined"
+msgstr "«Большая добыча» отклонён"
+
+msgctxt "term"
+msgid "Blitz accepted"
+msgstr "«Блиц» принят"
+
+msgctxt "term"
+msgid "Blitz declined"
+msgstr "«Блиц» отклонён"
+
+msgctxt "term"
+msgid "Elite Purge accepted"
+msgstr "«Чистка элиты» принят"
+
+msgctxt "term"
+msgid "Elite Purge declined"
+msgstr "«Чистка элиты» отклонён"
+
+msgctxt "term"
+msgid "Boss Bounty accepted"
+msgstr "«Награда за босса» принят"
+
+msgctxt "term"
+msgid "Boss Bounty declined"
+msgstr "«Награда за босса» отклонён"
+
+msgctxt "term"
+msgid "Heavy Lifting accepted"
+msgstr "«Тяжёлая ноша» принят"
+
+msgctxt "term"
+msgid "Heavy Lifting declined"
+msgstr "«Тяжёлая ноша» отклонён"
 
 msgctxt "term"
 msgid "Throw Strength"
@@ -25306,6 +25398,34 @@ msgctxt "pattern"
 msgid "{0} cast"
 msgstr "подано: {0}"
 
+msgctxt "pattern"
+msgid "{0}  {1}m"
+msgstr "{0}  {1} м"
+
+msgctxt "pattern"
+msgid "{0} Sinew"
+msgstr "{0} {0|сухожилие|сухожилия|сухожилий}"
+
+msgctxt "pattern"
+msgid "{0} Core Shard"
+msgstr "{0} {0|осколок ядра|осколка ядра|осколков ядра}"
+
+msgctxt "pattern"
+msgid "{0} Prime Essence"
+msgstr "{0} {0|первичная эссенция|первичные эссенции|первичных эссенций}"
+
+msgctxt "pattern"
+msgid "{0} Boss Heart"
+msgstr "{0} {0|сердце босса|сердца босса|сердец босса}"
+
+msgctxt "pattern"
+msgid "{0} sample{1} left behind"
+msgstr "образцов оставлено: {0}"
+
+msgctxt "pattern"
+msgid "The host didn't pay {0} (rival)"
+msgstr "Хост не выплатил награду за контракт «{0}» (контракт соперника)"
+
 msgctxt "shape"
 msgid "Your ability holds {0} charges."
 msgstr "Ваша способность хранит зарядов: {0}."
@@ -39784,6 +39904,30 @@ msgstr "0"
 
 msgctxt "numbers"
 msgid "{0} cast"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0}  {1}m"
+msgstr "1"
+
+msgctxt "numbers"
+msgid "{0} Sinew"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} Core Shard"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} Prime Essence"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} Boss Heart"
+msgstr "0"
+
+msgctxt "numbers"
+msgid "{0} sample{1} left behind"
 msgstr "0"
 
 msgctxt "words"
