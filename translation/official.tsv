@@ -1,0 +1,77 @@
+# Слова самой игры R.E.P.O. в её официальном русском переводе - те, что встречаются в текстах RepoRPG.
+# Перевод мода пишет эти вещи так же, как игра. Источник - таблицы строк игры, которые студия выкладывает для авторов модов:
+# github.com/Semiwork-Studios-AB/REPOAssets (Localization/Tables, Apache-2.0); списано с состояния 453c614 от 2026-11-13.
+#
+#   английское слово <TAB> как в игре <TAB> где это видно (таблица/ключ; несколько - через запятую)
+#                    <TAB> чего в переводе мода быть не должно (регулярное выражение по русскому тексту)
+#                    <TAB> кроме текстов, английский оригинал которых подходит под это выражение (без учёта регистра)
+#
+# tools/terms.py      проверяет перевод мода по четвёртому столбцу (запускается из tests/langcheck.sh);
+# tools/official.py check   сверяет второй столбец с таблицами игры - после обновления игры покажет, что изменилось.
+#
+# --- сбор добычи
+extraction point	точка сбора	HUD/BIG_MESSAGE.EXTRACTION.ACTIVATED	извле[чк]|извлёк	module|socket|^remove \{0\}$
+Extracting	Сбор	Game/EXTRACTION.EXTRACTING
+Extract	Сдайте	HUD/TUTORIAL.EXTRACTION_POINTS.FOCUS_TEXT
+Extraction point completed	Точка сбора завершена	HUD/BIG_MESSAGE.EXTRACTION.COMPLETED
+valuables	ценные вещи	HUD/TUTORIAL.EXTRACTION_POINTS.FOCUS_TEXT	ценност	next best
+truck	фургон	HUD/TUTORIAL.TRUCK.FOCUS_TEXT, HUD/FOCUS.EXTRACTION.BACK_TO_TRUCK	грузовик
+C.A.R.T.	Т.Л.Ж.К.	HUD/ITEM.CART_MEDIUM
+Total Haul	Всего добыто	Menu/SAVES.SAVE_INFO.TOTAL_HAUL	вывез|вывоз
+Taxman	Налоговик	Game/TRUCK_SCREEN.TAXMAN	мытар
+Semibot	полубот	HUD/ITEM.WALKIE_TALKIE	семибот
+# --- игроки
+host	Организатор	Menu/POPUP.KICKED.BODY, Menu/POPUP.DISCONNECTED.HOST_DISCONNECTED	(?<![а-яё])хост
+kicked	выгнал	Menu/POPUP.KICKED.BODY
+Revive	оживить	HUD/TUTORIAL.REVIVING.TEXT	возро[жд]	respawn
+heals	исцеляет	HUD/TUTORIAL.FINAL_EXTRACTION.TEXT	(?<![а-яё])(?:вы|из)?леч[иае]
+restores	восстанавливает	Menu/MOONS.MOON_1.ATTRIBUTE_1
+Death Head Battery	Батарея мёртвой головы	HUD/STATS.UPGRADE.DEATH_HEAD_BATTERY	голов[а-яё]* (?:погибш|после смерти)	dead teammates
+Grabbing	Захват	Menu/SETTINGS.CONTROLS.GRABBING	(?<![а-яё])хват(?:а|у|ом|е)?(?![а-яё])
+Grabber	Захват	Menu/COSMETICS.TYPE.GRABBER_MESH
+overcharge	перегруж	Menu/MOONS.MOON_2.ATTRIBUTE_1
+Monsters	Монстры	Menu/MOONS.MOON_2.ATTRIBUTE_1
+energy	энерги	HUD/TUTORIAL.SPRINTING.TEXT
+Cosmetics	Элементы внешности	Menu/SETTINGS.GAMEPLAY.COSMETICS	украшени
+Spectate	наблюдение	Menu/SETTINGS.CONTROLS.SPECTATE_NEXT
+inventory	инвентарь	HUD/TUTORIAL.INVENTORY_FILL.FOCUS_TEXT
+# --- улучшения игры (в моде - список «Улучшения» и товары магазина)
+Upgrades	Улучшения	HUD/STATS.UPGRADES.HEADER
+Health	Здоровье	HUD/STATS.UPGRADE.HEALTH
+Stamina	Выносливость	HUD/STATS.UPGRADE.STAMINA
+Sprint Speed	Скорость бега	HUD/STATS.UPGRADE.SPEED
+Strength	Сила	HUD/STATS.UPGRADE.STRENGTH
+Range	Дальность	HUD/STATS.UPGRADE.RANGE
+Extra Jump	Ещё один прыжок	HUD/STATS.UPGRADE.EXTRA_JUMP
+Tumble Launch	Рывок при кувырке	HUD/STATS.UPGRADE.LAUNCH	в падении	^(?!.*[Tt]umbl)
+Tumble Wings	Крылья при кувырке	HUD/STATS.UPGRADE.TUMBLE_WINGS
+Tumble Climb	Карабкание при кувырке	HUD/STATS.UPGRADE.TUMBLE_CLIMB
+Map Player Count	Счётчик игроков на карте	HUD/STATS.UPGRADE.MAP_PLAYER_COUNT
+Crouch Rest	Отдых в приседе	HUD/STATS.UPGRADE.CROUCH_REST
+Reroll	переброс	HUD/UPGRADE_STAND.INTERACT
+# --- предметы игры, которые мод выдаёт как стартовые инструменты
+Rubber Duck	Резиновая уточка	HUD/ITEM.RUBBER_DUCK	резинов[а-яё]+ утк
+Small Health Pack	Малая аптечка	HUD/ITEM.HEALTH_PACK_SMALL
+Gun	Пистолет	HUD/ITEM.GUN_HANDGUN
+Grenade	Граната	HUD/ITEM.GRENADE_EXPLOSIVE
+# --- меню и настройки
+Settings	Настройки	Menu/MAIN.SETTINGS
+Gameplay	Игра	Menu/SETTINGS.GAMEPLAY
+Controls	Управление	Menu/SETTINGS.CONTROLS
+Audio	Звук	Menu/SETTINGS.AUDIO
+On	Вкл.	Menu/SETTINGS.BOOL.ON
+Off	Выкл.	Menu/SETTINGS.BOOL.OFF
+Back	Назад	Menu/SETTINGS.BACK
+Confirm	Подтвердить	Menu/SETTINGS.CONTROLS.CONFIRM
+Lobby	Лобби	Menu/LOBBY.HEADER
+Shop	Магазин	Menu/LOADING.LEVEL.SHOP
+Level	Уровень	HUD/LEVEL.HEADER
+Singleplayer	Одиночная игра	Menu/MAIN.SINGLEPLAYER
+Crouch	Присесть	Menu/SETTINGS.CONTROLS.CROUCH
+Sprint	Бежать	Menu/SETTINGS.CONTROLS.SPRINT
+Tumble	Свернуться	Menu/SETTINGS.CONTROLS.TUMBLE
+# --- клавиши
+Space	Пробел	Input/KEYBOARD.SPACE
+Mouse Left	ЛКМ	Input/MOUSE.LEFT
+Mouse Right	ПКМ	Input/MOUSE.RIGHT
+Mouse Middle	СКМ	Input/MOUSE.MIDDLE

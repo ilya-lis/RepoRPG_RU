@@ -144,7 +144,8 @@ def main():
     units = json.load(open(sys.argv[1], encoding='utf-8'))
     by_id = {str(u['id']): u for u in units}
     tr, extra, problems = {}, [], []
-    hand_num, hand_words = [], []
+    hand_num, hand_words, hand_names = [], [], []
+    late = set()               # ids of the units marked "d": drawn, never replaced inside the code
     for f in sorted(glob.glob(os.path.join(sys.argv[2], '*.tsv'))):
         for n, line in enumerate(open(f, encoding='utf-8'), 1):
             line = line.rstrip('\n').rstrip('\r')
@@ -153,6 +154,16 @@ def main():
             where = '%s:%d' % (os.path.basename(f), n)
             if cols[0].startswith('+'):
                 if len(cols) != 3: problems.append(where + ': expected +kind<TAB>english<TAB>russian'); continue
+                if cols[0] == '+names':
+                    # +names<TAB>Provoked: {0} vs {1} ({2:0}s)<TAB>0,1     placeholders 0 and 1 hold a name the mod took from the
+                    #                                         game as it is - a monster. Such a name is looked up among the
+                    #                                         +game entries, and nowhere else are those asked: "Reaper" or
+                    #                                         "Chef" is a monster here and somebody's nickname everywhere else.
+                    #                                         The sentence is translated only at the moment it is drawn.
+                    mark = cols[2].strip()
+                    if not re.fullmatch(r'\d+(,\d+)*', mark): problems.append(where + ': expected placeholder numbers like 0,2')
+                    else: hand_names.append((unescape(cols[1]), set(int(x) for x in mark.split(',')), where))
+                    continue
                 if cols[0] in ('+numbers', '+words'):
                     # +numbers<TAB>+{0} Scrap – {1}<TAB>0     placeholder 0 of that sentence is always a number
                     # +words<TAB>{0} gear<TAB>0               placeholder 0 is one of the mod's own words (a rarity, a tab):
@@ -170,10 +181,14 @@ def main():
                     continue
                 extra.append((cols[0][1:], unescape(cols[1]), unescape(cols[2]), where)); continue
             if len(cols) != 2: problems.append(where + ': expected id<TAB>text'); continue
-            key = cols[0].strip().rstrip('ct')
+            # "1769d": the text is translated only at the moment it is drawn - the code of the mod keeps it as it is.
+            # For a sentence glued from pieces ("NO " + the name of a slot) whose whole has a wording of its own in places
+            # ("NO WEAPON MODULE" - «НЕТ ОРУЖ. МОДУЛЯ»): a piece replaced inside the code would hide the whole from the dictionary.
+            key = cols[0].strip().rstrip('ctd')
             if key not in by_id: problems.append(where + ': unknown id ' + cols[0]); continue
             if key in tr: problems.append(where + ': id %s translated twice' % key)
             tr[key] = (unescape(cols[1]), where)
+            if cols[0].strip().endswith('d'): late.add(key)
 
     glob_e, term_e, pat_e = collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict()
     num_e = {}                 # english text with placeholders -> the placeholders that are numbers wherever the mod makes it
@@ -187,6 +202,8 @@ def main():
     checks = []
     lit_by_text = {}
     formed = set(en for en, marks, where in hand_words if any(marks.values()))
+    # "Provoked: {0} vs {1}": the monster's name is known only when the sentence is filled in, so it is translated then
+    formed |= set(en for en, idx, where in hand_names)
     for uid, (t, where) in tr.items():
         u = by_id[uid]
         src = u['text']
@@ -216,11 +233,14 @@ def main():
             if not t.startswith(want) or t[len(want):len(want) + 1] in ('', ' ') or re.match(r'^(м|с|сек\.?|мин\.?) ', t[len(want):]):
                 problems.append('%s: #%s a stat line has to start with %r and then the name (the mod cuts it at the first space): %r -> %r'
                                 % (where, uid, want, src[:60], t[:60])); continue
-        if src in formed:
+        if src in formed or uid in late:
             # "Rarity: {0}" -> «Редкость: {0}» with the rarity in the feminine: only the add-on's own code can do that, so the
             # sentence stays as the mod wrote it and is translated when it is drawn
-            pat_e[src] = t
-            if any(NUM.match(h) for h in HOLE.findall(src)): numbers(src, u)
+            if any(NUM.match(h) for h in HOLE.findall(src)):
+                pat_e[src] = t
+                numbers(src, u)
+            else: term_e[src] = t
+            checks.append(sample(src, t))
             continue
         m = TAGGED.match(src)
         if m and re.search('[A-Za-z]{2}', src[m.end():]):
@@ -301,6 +321,9 @@ def main():
     #       form of the thing named - he, she, it, they (Loc.Built)
     # +noun<TAB>gear<TAB>n|снаряжение: a common word such a name may end with - its gender and its translation
     adj_e, noun_e, of_e = collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict()
+    # +game<TAB>Huntsman<TAB>Охотник: a name the mod reads from the game (EnemyParent.enemyName) and the name the game's own
+    #       Russian translation gives it. Used only inside the sentences marked with +names
+    game_e = collections.OrderedDict()
     for kind, en, ru, where in extra:
         bad = check(en, ru, kind == 'pattern')
         if bad: problems.append('%s: %s: %r' % (where, bad, en[:60])); continue
@@ -312,7 +335,10 @@ def main():
             if not re.fullmatch(r'[mfnp]\|[^|]+', ru): problems.append('%s: +noun needs a gender and the translation: n|снаряжение' % where)
             else: noun_e[en] = ru
             continue
-        if kind == 'term': term_e[en] = ru
+        if kind == 'game':
+            if en in game_e and game_e[en] != ru: problems.append('%s: +game %r has two translations' % (where, en))
+            game_e[en] = ru
+        elif kind == 'term': term_e[en] = ru
         elif kind == 'pattern': pat_e[en] = ru
         elif kind == 'global': glob_e[en] = ru
         elif kind.startswith('@'): scoped.setdefault(kind[1:], collections.OrderedDict())[en] = ru
@@ -337,6 +363,8 @@ def main():
            '#   words             not a translation: which placeholders hold one of the mod\'s own words (a rarity, a tab name);',
            '#                     a letter after the number is the form a rarity takes there - m he, f she, n it, p they',
            '#                     (a capital letter: nothing but a rarity may stand there)',
+           '#   game              the name of a monster as the game has it and as its official Russian translation has it',
+           '#   names             not a translation: which placeholders of a sentence hold such a name (looked up in "game")',
            'msgid ""', 'msgstr ""', '"Content-Type: text/plain; charset=UTF-8\\n"', '"Language: ru\\n"', '']
     def emit(ctx, table):
         for en, ru in table.items():
@@ -355,7 +383,7 @@ def main():
     for en in noun_e:
         if '|' not in noun_e[en] and en not in term_e and en not in glob_e: problems.append('noun %r: the dictionary has no such name' % en)
     emit(None, glob_e); emit('term', term_e); emit('pattern', pat_e); emit('shape', shape_e)
-    emit('adj', adj_e); emit('noun', noun_e); emit('of', of_e); emit('data:guide', guide_e)
+    emit('adj', adj_e); emit('noun', noun_e); emit('of', of_e); emit('game', game_e); emit('data:guide', guide_e)
     for stem, table in inside.items():
         if os.path.isfile(data_json):
             texts = set(u['text'] for u in json.load(open(data_json, encoding='utf-8'))
@@ -374,11 +402,18 @@ def main():
         if any(marks.values()) and en not in pat_e:
             problems.append('%s: +words with a form needs a sentence the mod puts together, not a text replaced inside its code: %r' % (where, en[:60])); continue
         word_e.setdefault(en, {}).update(marks)
+    name_e = {}
+    for en, idx, where in hand_names:
+        if en not in pat_e: problems.append('%s: +names for a sentence that has no entry: %r' % (where, en[:60])); continue
+        holes = set(int(m.group(1)) for m in (NUM.match(h) for h in HOLE.findall(en)) if m)
+        if not idx <= holes: problems.append('%s: +names names a placeholder the sentence does not have: %r' % (where, en[:60])); continue
+        name_e[en] = dict.fromkeys(set(name_e.get(en, ())) | idx, '')
+    if name_e and not game_e: problems.append('+names without a single +game entry: there is nothing to look the names up in')
     # the generated samples put numbers into every placeholder; where a word of the mod's own belongs, a number proves nothing
     # (those sentences are checked by hand-written cases in tests/drawn.tsv)
     skip = set(sample(en, (pat_e.get(en) or glob_e.get(en)))[0] for en in word_e)
     checks = [c for c in checks if c[0] not in skip]
-    for ctx, table in (('numbers', num_e), ('words', word_e)):
+    for ctx, table in (('numbers', num_e), ('words', word_e), ('names', name_e)):
         for en in list(glob_e) + list(pat_e):
             idx = table.get(en)
             if not idx: continue

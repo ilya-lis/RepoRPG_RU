@@ -31,6 +31,16 @@ namespace RepoRPG_RU
         /// -1 as it is; 4..7 the same four when nothing but a rarity may stand there - "0F").
         /// </summary>
         public readonly Dictionary<string, int[]> WordForms = new Dictionary<string, int[]>(StringComparer.Ordinal);
+        /// <summary>
+        /// msgctxt "names": sentence -> the placeholders that hold a name the mod took from the game as it is (a monster:
+        /// "Provoked: {0} vs {1}"). Only there such a name is looked up in <see cref="GameNames"/>.
+        /// </summary>
+        public readonly Dictionary<string, int[]> Named = new Dictionary<string, int[]>(StringComparer.Ordinal);
+        /// <summary>
+        /// msgctxt "game": the name of a thing of the game itself (a monster) -> its name in the game's official translation.
+        /// Kept apart from the dictionary on purpose: "Reaper", "Chef" or "Clown" may just as well be somebody's nickname.
+        /// </summary>
+        public readonly Dictionary<string, string> GameNames = new Dictionary<string, string>(StringComparer.Ordinal);
         /// <summary>msgctxt "pattern": "{0} cancelled the offer" - matched against finished texts at display time only.</summary>
         public readonly Dictionary<string, string> Patterns = new Dictionary<string, string>(StringComparer.Ordinal);
         /// <summary>msgctxt "data" (key "") and "data:stem" (key stem).</summary>
@@ -85,7 +95,7 @@ namespace RepoRPG_RU
 
         private void Add(PoEntry e)
         {
-            if (e.Ctx == "numbers" || e.Ctx == "words")
+            if (e.Ctx == "numbers" || e.Ctx == "words" || e.Ctx == "names")
             {
                 // not a translation: msgstr lists placeholders of the sentence ("0,2") - the ones that are always numbers,
                 // or the ones that hold a word of the mod's own (a rarity, the name of a tab). A letter after the number of
@@ -110,9 +120,22 @@ namespace RepoRPG_RU
                 }
                 if (idx.Count > 0)
                 {
-                    (e.Ctx == "numbers" ? Numbers : Words)[e.Id] = idx.ToArray();
+                    (e.Ctx == "numbers" ? Numbers : e.Ctx == "names" ? Named : Words)[e.Id] = idx.ToArray();
                     if (formed) WordForms[e.Id] = forms.ToArray();
                 }
+                return;
+            }
+            if (e.Ctx == "game")
+            {
+                // a name, not a sentence: nothing to check but that both sides are there
+                if (e.Id.Trim().Length == 0 || e.Str.Trim().Length == 0)
+                {
+                    Rejected++;
+                    Problems.Add(e.File + ":" + e.Line + ": a name of the game needs both the name and its translation, entry ignored");
+                    return;
+                }
+                Entries++;
+                GameNames[e.Id] = e.Str;
                 return;
             }
             bool data = e.Ctx != null && (e.Ctx == "data" || e.Ctx.StartsWith("data:", StringComparison.Ordinal));
