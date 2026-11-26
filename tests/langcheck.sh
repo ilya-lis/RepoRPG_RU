@@ -17,6 +17,8 @@ REF="$RTK/reference-assemblies/v4.6"
 "$RTK/run.sh" "$W/Shipped.exe" mod "$W/lang"
 status=0
 "$RTK/run.sh" "$W/LangCheck.exe" "$W/checks.tsv" "$@" || status=$?
+# the words of the game itself are written the way its official Russian localisation writes them (translation/official.tsv)
+python3 tools/terms.py || status=$?
 # The mod's own data files, rewritten the way the patcher rewrites them (tests/DataCheck.cs), then compared with the
 # originals (tests/datacheck.py): same structure, same keys, tokens and numbers in place. Needs dump/ - the data files as
 # the mod ships them (BepInEx/config/RepoRPG_RU/dump after a start with DumpStrings = true).

@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Text;
 
 [assembly: AssemblyTitle("RepoRPG RU - runtime")]
-[assembly: AssemblyVersion("0.2.2.0")]
+[assembly: AssemblyVersion("0.2.3.0")]
 
 namespace RepoRPG_RU
 {
@@ -32,6 +32,9 @@ namespace RepoRPG_RU
         private static Dictionary<string, string[]> kinds;      // "SHARP" -> its four forms
         private static Dictionary<string, Thing> things;        // "STRIKER MODULE" -> the gender and the translation
         private static Dictionary<string, string> owners;       // "BRAWLER" -> "драчуна"
+        // what the mod reads from the game as it is - the names of monsters - under their names in the game's own translation:
+        // "HUNTSMAN" -> «Охотник». Asked only where a sentence is known to hold such a name (Pattern.Named).
+        private static Dictionary<string, string> gameNames;
         private static Pattern[] loose;
         // the same patterns in capitals: the mod's HUD shouts whole lines ("HOLDING: COMMON VALUABLE  $3 300")
         private static Dictionary<string, Pattern[]> loudHead, loudTail;
@@ -172,6 +175,19 @@ namespace RepoRPG_RU
             // "+3% опыта, +3% Scrap": a known name that was left standing between translated parts
             if (r != null && HasLatin(r)) r = Islands(r, depth) ?? r;
             return r;
+        }
+
+        /// <summary>
+        /// «Охотник» for "Huntsman": the name of a monster as the game's official translation has it; null for a name the
+        /// game does not have (a monster of another mod) or one that arrived translated already.
+        /// </summary>
+        private static string GameName(string name)
+        {
+            if (gameNames == null || name.Length < 2 || name.Length > 40 || !HasLatin(name)) return null;
+            string r;
+            if (!gameNames.TryGetValue(name.ToUpperInvariant(), out r)) return null;
+            // "HUNTSMAN  ·  DEADLY": the mod shouted the line, the name included
+            return Shouted(name) ? Upper(r) : r;
         }
 
         private const char NumberMark = '\u0001';
@@ -1191,6 +1207,7 @@ namespace RepoRPG_RU
             public bool[] Known;       // "{0} gear": a rarity stands here - a word the dictionary has, or this is another text ("Spawn gear")
             public int[] Form;         // "Rarity: {0}": the form a rarity takes there (0 he, 1 she, 2 it, 3 they), -1 as the dictionary has it
             public bool[] Rarity;      // "{0} gear": nothing but a rarity may stand there ("team gear" is another text)
+            public bool[] Named;       // "Provoked: {0} vs {1}": a name the mod took from the game stands there (a monster)
             public bool Loud;          // the copy in capitals of another pattern (see Shout)
 
             /// <summary>
@@ -1218,7 +1235,8 @@ namespace RepoRPG_RU
 
             private const byte Value = 0, Clause = 1, Line = 2;
 
-            public static Pattern Parse(string original, string translation, bool explicitPattern, int[] numbers, int[] words, int[] forms)
+            public static Pattern Parse(string original, string translation, bool explicitPattern, int[] numbers, int[] words, int[] forms,
+                                        int[] names = null)
             {
                 List<string> lits = new List<string>();
                 List<int> slots = new List<int>();
@@ -1316,6 +1334,11 @@ namespace RepoRPG_RU
                 p.Known = new bool[p.Slots.Length];
                 p.Form = new int[p.Slots.Length];
                 p.Rarity = new bool[p.Slots.Length];
+                if (names != null && names.Length > 0)
+                {
+                    p.Named = new bool[p.Slots.Length];
+                    for (int k = 0; k < p.Slots.Length; k++) p.Named[k] = Array.IndexOf(names, p.Slots[k]) >= 0;
+                }
                 for (int k = 0; k < p.Slots.Length; k++)
                 {
                     int w = words == null ? -1 : Array.IndexOf(words, p.Slots[k]);
@@ -1588,6 +1611,19 @@ namespace RepoRPG_RU
                                 continue;
                             }
                         }
+                        // "Provoked: Huntsman vs Robe": the monsters under the names the game itself gives them in Russian
+                        if (Named != null && Named[slot])
+                        {
+                            string official = GameName(value);
+                            if (official != null)
+                            {
+                                sb.Append(official);
+                                lastSlot = slot;
+                                lastEnd = close + 1;
+                                i = close;
+                                continue;
+                            }
+                        }
                         // a name inside the text may be translatable on its own: "Equipped: Iron Plate"
                         bool unknown = false;
                         string inner = null;
@@ -1689,11 +1725,12 @@ namespace RepoRPG_RU
             List<Pattern> all = new List<Pattern>();
             foreach (KeyValuePair<string, string> kv in lang.Patterns)
             {
-                int[] nums, words, forms;
+                int[] nums, words, forms, names;
                 lang.Numbers.TryGetValue(kv.Key, out nums);
                 lang.Words.TryGetValue(kv.Key, out words);
                 lang.WordForms.TryGetValue(kv.Key, out forms);
-                Pattern p = Pattern.Parse(kv.Key, kv.Value, true, nums, words, forms);
+                lang.Named.TryGetValue(kv.Key, out names);
+                Pattern p = Pattern.Parse(kv.Key, kv.Value, true, nums, words, forms, names);
                 if (p != null) all.Add(p);
             }
             foreach (KeyValuePair<string, string> kv in m)
@@ -1753,6 +1790,13 @@ namespace RepoRPG_RU
                 }
             }
 
+            Dictionary<string, string> gn = null;
+            if (lang.GameNames.Count > 0)
+            {
+                gn = new Dictionary<string, string>(lang.GameNames.Count, StringComparer.Ordinal);
+                foreach (KeyValuePair<string, string> kv in lang.GameNames) gn[kv.Key.Trim().ToUpperInvariant()] = kv.Value;
+            }
+
             Dictionary<string, string[]> kn = null;
             Dictionary<string, Thing> th = null;
             Dictionary<string, string> ow = null;
@@ -1779,6 +1823,7 @@ namespace RepoRPG_RU
             minLength = lo;
             maxLength = hi;
             kinds = kn;
+            gameNames = gn;
             owners = ow;
             things = th;
             shapes = sh;

@@ -1,6 +1,6 @@
 {
   "name": "RepoRPG_RU",
-  "version_number": "0.2.2",
+  "version_number": "0.2.3",
   "website_url": "https://github.com/ilya-lis/RepoRPG_RU",
   "description": "Русификатор мода RepoRPG: меню, классы, перки, снаряжение, контракты и справочник на русском. Оригинальный файл мода не изменяется. Russian translation of the RepoRPG mod.",
   "dependencies": [

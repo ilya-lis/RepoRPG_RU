@@ -62,11 +62,11 @@
 +@RpgRuntime::ResearchDetail	Personal	Личное
 +@RpgRuntime::ShopEntryDetail	Unlock	Снять фиксацию
 +pattern	{0}s stun	{0} с оглушения
-+pattern	{0}% self heal	{0}% самолечения
-+pattern	{0} HP ally heal	{0} ОЗ лечения союзника
-+pattern	{0}% heal over time	{0}% лечения со временем
++pattern	{0}% self heal	{0}% самоисцеления
++pattern	{0} HP ally heal	{0} ОЗ исцеления союзника
++pattern	{0}% heal over time	{0}% исцеления со временем
 +pattern	{0} rally strength	сила клича {0}
-+pattern	{0}% revive health	{0}% здоровья при возрождении
++pattern	{0}% revive health	{0}% здоровья при оживлении
 +pattern	{0}% power	{0}% силы
 +pattern	{0} damage	{0} урона
 # сложность: классов (Easy / Medium / Hard), контрактов (Easy / Hard / Brutal), предустановок и уровня выплат.
@@ -86,8 +86,8 @@
 +@PlayerScaling::Describe	Monsters	Монстры
 +@PlayerScaling::Describe	Health	Здоровье
 +@PlayerScaling::Describe	Damage	Урон
-+@PlayerScaling::Describe	Valuables	Ценности
-+@PlayerScaling::Describe	Haul goal	Цель добычи
++@PlayerScaling::Describe	Valuables	Ценные вещи
++@PlayerScaling::Describe	Haul goal	Цель по добыче
 +@PlayerScaling::Describe	Elites	Элита
 +@PlayerScaling::Describe	Scrap	Лом
 +@PlayerScaling::Describe	Bosses +1 modifier	Боссы +1 модификатор
@@ -97,8 +97,8 @@
 +pattern	Monsters x{0}	Монстры x{0}
 +pattern	Health x{0}	Здоровье x{0}
 +pattern	Damage x{0}	Урон x{0}
-+pattern	Valuables x{0}	Ценности x{0}
-+pattern	Haul goal x{0}	Цель добычи x{0}
++pattern	Valuables x{0}	Ценные вещи x{0}
++pattern	Haul goal x{0}	Цель по добыче x{0}
 +pattern	Elites x{0}	Элита x{0}
 +pattern	Scrap x{0}	Лом x{0}
 # Research.CanStart: "Requires " + (all the other projects of a branch | A or B) - whole, for the code that was not rewritten
@@ -173,7 +173,7 @@
 +global	What it does, its default and what you changed show here.	Здесь показывается, что она делает, значение по умолчанию и что вы изменили.
 +global	Load a save or join a game to see your run.	Загрузите сохранение или войдите в игру, чтобы увидеть свой забег.
 +global	Loading your progress... open this again in a moment.	Загружается ваш прогресс... откройте это снова чуть позже.
-+global	<color=#9a9ca0>Evolutions are turned off by the host.</color>	<color=#9a9ca0>Эволюции отключены хостом.</color>
++global	<color=#9a9ca0>Evolutions are turned off by the host.</color>	<color=#9a9ca0>Эволюции отключены организатором.</color>
 +global	<color=#9a9ca0>None yet. Perks with a challenge show their progress on their card.</color>	<color=#9a9ca0>Пока нет. Перки с испытанием показывают прогресс на своей карточке.</color>
 # Пресеты HUD (имена перечисления HudPreset выводятся как есть) и заголовок списка контрактов
 +term	Minimal	Минимальный
@@ -181,10 +181,10 @@
 +term	ACTIVE	АКТИВНО
 # те же две строки без цветового тега: мод перекрашивает серый текст под тему, и тег приходит с другим цветом
 +term	None yet. Perks with a challenge show their progress on their card.	Пока нет. Перки с испытанием показывают прогресс на своей карточке.
-+term	Evolutions are turned off by the host.	Эволюции отключены хостом.
++term	Evolutions are turned off by the host.	Эволюции отключены организатором.
 # короткие названия характеристик в списках («Бросок 20»): в данных мода их нет, они из кода
 +term	Weapon	Оружие
-+term	Grip	Хват
++term	Grip	Захват
 # имя заказчика «Dispatch» совпадает с названием способности Курьера («Отправка»): заменяется прямо в данных мода
 +inside:contracts	Dispatch	Диспетчерская
 # свойства элиты и боссов: мод показывает имена значений перечисления EliteMod («Armored Swift Brutish»)
@@ -202,7 +202,7 @@
 +pattern	{0}: {1}{2}  {3:0}m	{0}: {1}{2}  {3:0} м
 # значения перечислений настроек: вкладка «Хост» и справка показывают их имена как есть («TruckAndShop», «Majority»);
 # описания настроек называют их по-английски, и при выводе они заменяются теми же словами
-+term	TruckAndShop	Грузовик и магазин
++term	TruckAndShop	Фургон и магазин
 +term	LevelsOnly	Только уровни
 +term	Small	Мелко
 +term	Large	Крупно
@@ -222,10 +222,10 @@
 +term	SkipThreat	Без угрозы
 +term	SkipDanger	Без опасности
 +term	PauseMod	Приостановить мод
-+term	Kick	Исключить
++term	Kick	Выгнать
 +term	StayDead	Остаётся мёртвым
 +term	AsNormalMonster	Как обычный монстр
-+term	Truck	Грузовик
++term	Truck	Фургон
 +term	Detailed	Подробно
 +term	Full	Полный
 +term	Reduced	Меньше
@@ -336,7 +336,7 @@
 +term	not reached	цель не достигнута
 +term	stale	устарел
 +term	not in a level	не на уровне
-+pattern	The host didn't pay {0} (rival)	Хост не выплатил награду за контракт «{0}» (контракт соперника)
++pattern	The host didn't pay {0} (rival)	Организатор не выплатил награду за контракт «{0}» (контракт соперника)
 # скорость восстановления выносливости в строке свойства: «+2 stamina/s»
 +term	stamina/s	выносливости/с
 # итог командного голосования: «Team contract: Big Haul accepted»; карточка итога пишет то же заглавными - «BIG HAUL ACCEPTED»
@@ -356,3 +356,64 @@
 +term	Boss Bounty declined	«Награда за босса» отклонён
 +term	Heavy Lifting accepted	«Тяжёлая ноша» принят
 +term	Heavy Lifting declined	«Тяжёлая ноша» отклонён
+
+# --- 0.2.3: имена монстров из самой игры ---
+# Мод берёт имя монстра у игры как есть (EnemyParent.enemyName: "Huntsman") и вставляет в свои фразы: подпись угрозы,
+# сигнал сторожевого поста, «Провокация», «Усмирение». Ниже - имена из официального русского перевода игры (таблица HUD,
+# ключи ENEMY.*). В общий словарь они не входят: «Reaper», «Chef» или «Clown» может оказаться и ником игрока, - поэтому
+# имя ищется только там, где фраза помечена +names (номера заполнителей с именем монстра).
++game	Animal	Животное
++game	Banger	Взрывник
++game	Clown	Шут
++game	Birthday Boy	Именинник
++game	Cleanup Crew	Уборочная бригада
++game	Bowtie	Бабочкин
++game	Peeper	Смотритель
++game	Apex Predator	Высший хищник
++game	Elsa	Эльза
++game	Mentalist	Телепат
++game	Gnome	Гном
++game	Headman	Главарь
++game	Headgrab	Главохват
++game	Heart Hugger	Сердцежим
++game	Hidden	Неизвестный
++game	Huntsman	Охотник
++game	Oogly	Чердачник
++game	Robe	Мантия
++game	Reaper	Пугалка
++game	Loom	Иллюзия
++game	Spewer	Блевотник
++game	Trudge	Шагатель
++game	Gambit	Рулетка
++game	Shadow Child	Дитя Тени
++game	Tick	Клещ
++game	Bella	Динь
++game	Chef	Повар
++game	Upscream	Крикун
++game	Rugrat	Спиногрыз
++game	Pony	Пони
++names	Watchpost: {0} {1:0}m {2}	0
++names	Provoked: {0} vs {1} ({2:0}s)	0,1
++names	Provoked: two monsters vs {0} ({1:0}s)	0
++names	Provoke: {0} couldn't reach {1} - cooldown refunded	0,1
++names	Pacified {0} for {1:0}s	0
++names	 and calls {0} to its side!	0
+# подпись угрозы над монстром: имя + "  ·  " + ступень угрозы (rpg.json, threatTiers) или "Tier N"
++pattern	{0}  ·  Low threat	{0}  ·  Низкая угроза
++pattern	{0}  ·  Dangerous	{0}  ·  Опасно
++pattern	{0}  ·  Deadly	{0}  ·  Смертельно
++pattern	{0}  ·  Lethal	{0}  ·  Гибельно
++pattern	{0}  ·  Tier {1}	{0}  ·  Ранг {1}
++numbers	{0}  ·  Tier {1}	1
++names	{0}  ·  Low threat	0
++names	{0}  ·  Dangerous	0
++names	{0}  ·  Deadly	0
++names	{0}  ·  Lethal	0
++names	{0}  ·  Tier {1}	0
+# пустой слот на вкладке «Снаряжение»: "NO " + название слота заглавными. Общий перевод «НЕТ: {0}» (запись 1769, только при
+# выводе) для двух слотов игры не помещается в рамку (на экране 1920x1080 она вмещает около 5.4 ширины шрифта),
+# поэтому у четырёх слотов мода подпись своя - и в родительном падеже, без двоеточия
++term	NO WEAPON MODULE	НЕТ ОРУЖ. МОДУЛЯ
++term	NO PLATING	НЕТ БРОНИ
++term	NO SERVOS	НЕТ ПРИВОДОВ
++term	NO CORE	НЕТ ЯДРА
